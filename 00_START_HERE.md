@@ -1,5 +1,8 @@
 # Aequitas in one page
 
+Repository: **https://github.com/albamuth/aequitas**
+
+
 ## The idea
 
 Everything anyone makes, uses, or throws away is matter and energy moving through the world. That movement can be recorded. Once it is recorded honestly, most of what we find unjust about the economy stops being possible.

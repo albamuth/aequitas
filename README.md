@@ -11,8 +11,8 @@ It makes a small number of falsifiable claims. They are stated below with the co
 ## Verify something in five minutes
 
 ```bash
-git clone <this repo>
-cd sims
+git clone https://github.com/albamuth/aequitas.git
+cd aequitas/sims
 python arithmetic_audits.py
 ```
 
