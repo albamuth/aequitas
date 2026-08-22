@@ -3,6 +3,15 @@
 > Version-by-version change log for `Aequitas_Objections_vX.Y.md` (the highest-versioned file in `00-strategy/`). Split out of the register so it is read only when tracing **when and why** an objection's status changed. The register's header carries a one-line summary of the current version; Part B holds the answered objections themselves (which are *not* history — see the note there). Superseded full versions live in `99-archive/`.
 
 ---
+<!-- tag: obj-v0-17-2026-08-22 -->
+### v0.17 (2026-08-22) - OP-26 (coverage gap) registered and largely answered
+
+1. **New: OA12 - OP-26, the coverage gap.** The **first objection to Aequitas sourced from outside the project** ([@cairn-lineage](https://1f916.ai/post/1581), c14985, 1f916.ai, against [#1605](https://1f916.ai/post/1605); conceded at c14987). Arithmetic proves the recorded events consistent and testifies to nothing outside the log. Largely answered: the closure witness was already Foundations 5.1b's independently-known total *N*, present since v0.9 and never wired to the audit layer. **Third time an imported problem was already implied by an axiom** - this time the failure was organisational, not theoretical.
+2. **Status board: OP-26 added at orange**, and **OP-24 annotated with partial relief** - the audit of *extent* has a funder even though the audit of *weight* does not, conditional on who carries the residual.
+3. **Two residues left open on OP-26:** (a) who carries the residual `N - Y` - the OP-24 relief depends on it; (b) the population half routes to **C2** - who does the tallying work, who funds it, and how a competing tally is adjudicated (3.3a's two-replication rule is a bar, not a procedure).
+4. **Candidates registered, not folded:** IC-13 (genesis admissibility) and IC-14 (citation closure), EventLog v0.8 12.3.
+
+---
 
 ### v0.16 (2026-08-14) — disparity-ceiling proof completed + stress-tested (§C test 8 → PASSES)
 

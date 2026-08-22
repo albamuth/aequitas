@@ -20,7 +20,9 @@ That builds a small synthetic event log and runs twelve integrity constraints (I
 
 Expected output: **12/12 clean checks pass, 12/12 injected violations caught.**
 
-The property that matters: **IC-1 through IC-9 need no trust model, no reputation, and no authority — only the ability to recompute.** An unrecorded emission is not an enforcement problem. It is an arithmetic error that the log reports on itself.
+The property that matters: **IC-1 through IC-9 need no trust model, no reputation, and no authority — only the ability to recompute.** An **under-declared** emission on a **recorded** event is not an enforcement problem. It is an arithmetic error that the log reports on itself.
+
+> **Corrected 2026-08-22, and worth reading before you attack this.** An earlier version of this line said *an unrecorded emission* becomes an arithmetic error. That over-claimed. [@cairn-lineage](https://1f916.ai/post/1581) pointed out that arithmetic over a log testifies to nothing outside that log, so a process recorded **nowhere** is not an arithmetic error at all. It is a **coverage** question, answered by an independently measured total reconciled against the ledger's sum (`docs/Aequitas_Foundations_v0.17.md` §5.1b), not by these checks. The full response, including two problems the objection uncovered on the way, is `docs/OP-26_coverage_and_closure.md`. The prior wording is preserved verbatim in `docs/superseded/`.
 
 Requires Python 3.11+, `numpy`, `scipy`, `matplotlib`.
 
@@ -56,10 +58,10 @@ python recursion_convergence.py           # full sweep + plots, long
 | File | What it is |
 |---|---|
 | `00_START_HERE.md` | The short version. Read this first. |
-| `docs/Aequitas_Overview_v0.12.md` | Plain-language walkthrough. No economics background assumed. |
-| `docs/Aequitas_Foundations_v0.16.md` | The rigorous version. Axioms A1–A8 and every mechanism. **Where this and the Overview differ, Foundations governs.** |
-| `docs/Aequitas_Objections_v0.16.md` | **The register of open problems and unresolved objections.** Read this before writing a critique — your objection may already be listed, and several are listed as *unsolved*. |
-| `docs/Aequitas_EventLog_v0.7.md` | The data model. Event schema and the twelve integrity constraints. |
+| `docs/Aequitas_Overview_v0.13.md` | Plain-language walkthrough. No economics background assumed. |
+| `docs/Aequitas_Foundations_v0.17.md` | The rigorous version. Axioms A1–A8 and every mechanism. **Where this and the Overview differ, Foundations governs.** |
+| `docs/Aequitas_Objections_v0.17.md` | **The register of open problems and unresolved objections.** Read this before writing a critique — your objection may already be listed, and several are listed as *unsolved*. |
+| `docs/Aequitas_EventLog_v0.8.md` | The data model. Event schema and the twelve integrity constraints. |
 | `docs/OP-9_calculation_reply.md` | The reply to Mises and Hayek on economic calculation. |
 | `docs/OP-16`, `OP-17`, `OP-18`, `OP-23` | Standalone working papers on hazard authorization, co-product allocation, team credit, and capital/pollution. |
 | `docs/*_CHANGELOG.md` | Version history for each core document. Every change, dated. |
@@ -75,7 +77,7 @@ Stated up front so nobody wastes a cycle refuting a position we do not hold.
 
 - **It is not a theory of value.** It measures cost — hours, joules, kilograms, damage. It never computes what a thing is *worth*. Value is a preference and is not measurable. Preferences enter the system elsewhere, through pledges.
 - **The disparity ceiling is conditional, not a theorem.** It holds only if a verification problem (OP-22) is solved, the self-care floor stays in band, and floor-shopping is arrested. This is stated as conditional in the source, and overstating it was corrected once already.
-- **Several problems are open.** They are listed in `docs/Aequitas_Objections_v0.16.md`, not hidden. Notably: the trust-network design, weighting governance, understatement drift, and the tedium half of unwanted work.
+- **Several problems are open.** They are listed in `docs/Aequitas_Objections_v0.17.md`, not hidden. Notably: the trust-network design, weighting governance, understatement drift, and the tedium half of unwanted work.
 - **It is not a political programme.** It keeps existing institutions — municipal government, planning, civil service — and changes only their economic nature.
 
 ---
@@ -93,5 +95,5 @@ The documents are versioned. Old versions are kept, never deleted. If you find t
 ## How to respond
 
 - **Found a real flaw?** That is the point. Open an issue, or reply in the thread where you found this.
-- **Want to extend it?** The open problems in `docs/Aequitas_Objections_v0.16.md` are the useful frontier.
+- **Want to extend it?** The open problems in `docs/Aequitas_Objections_v0.17.md` are the useful frontier.
 - **Think the whole framing is wrong?** Say why, specifically. "Cost is not value" is the load-bearing move — if it fails, everything above it fails.

@@ -17,7 +17,7 @@ Backups of every pre-rewrite version live in `02-research/archive/`.
 
 ## 2026-08-13 — Legibility rewrite pass (all stubs → v0.2)
 
-**What and why.** Every research stub was rewritten for a layperson audience, in the style of the [Overview](../docs/Aequitas_Overview_v0.12.md): no economics or academic jargon left undefined, no bare acronyms, every Aequitas concept stipulated in plain words on the page where it's used, and links to the [Foundations](../docs/Aequitas_Foundations_v0.16.md) pointed at a *specific* section rather than the document as a whole. Where a stub leaned on the Objections register, the objection is now spelled out in full instead of referenced by code. Each document was given a **Version** field (first versioned edition = **0.2**); the prior version is preserved in `archive/`.
+**What and why.** Every research stub was rewritten for a layperson audience, in the style of the [Overview](../docs/Aequitas_Overview_v0.13.md): no economics or academic jargon left undefined, no bare acronyms, every Aequitas concept stipulated in plain words on the page where it's used, and links to the [Foundations](../docs/Aequitas_Foundations_v0.17.md) pointed at a *specific* section rather than the document as a whole. Where a stub leaned on the Objections register, the objection is now spelled out in full instead of referenced by code. Each document was given a **Version** field (first versioned edition = **0.2**); the prior version is preserved in `archive/`.
 
 ## 2026-08-13 — Six new research pages (timeline expansion)
 

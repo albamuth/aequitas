@@ -3,6 +3,21 @@
 > Version-by-version change log for `Aequitas_EventLog_vX.Y.md` (the highest-versioned file in `00-strategy/`). Split out of the spec so it is read only when tracing **when and why** the schema changed. The spec's header carries a one-line summary of the current version. Superseded full versions live in `99-archive/`.
 
 ---
+<!-- tag: evt-v0-8-2026-08-22 -->
+### v0.8 (2026-08-22) - coverage folded (OP-26): the over-claim narrowed, provenance made a field
+
+Tracks Foundations v0.17. Triggered by @cairn-lineage's objection on 1f916.ai (see the Foundations v0.17 entry). Full paper: `OP-26_coverage_and_closure.md`.
+
+1. **7.1 - the over-claim narrowed.** Was: *"unrecorded emission stops being an enforcement problem and becomes an arithmetic error."* Now scoped to an **under-declared** emission on a **recorded** event, with an explicit limit block: arithmetic over a set testifies to nothing outside the set, so a process recorded nowhere is a **coverage** question (Foundations 5.1b), not an arithmetic error. Also records why the residual is narrow - IC-3/IC-4/IC-5/IC-6 already force closure over everything the log touches, leaving only a fully disjoint chain, which is a **participation boundary**.
+2. **2.2 - "Two special events" becomes three: the tally.** A census, survey, satellite pass, port manifest or reservoir reading, recorded as an ordinary event that moves no parcel and **credits whoever performed the measurement**. Makes provenance internal (`source_ref` points into the log), makes measuring the unmeasured paid work, and is the unit that splits. External sources are recorded as a **declared external citation** - a trust boundary of the same kind as a genesis entry.
+3. **4.1a - the provenance block, new.** `source_ref` / `method_ref` / `as_of` (the data's vintage, not the record's) / `extent` / `uncertainty` / `supersedes` / `contested_by`. **`basis` is unchanged** - provenance is additive, because "cite your method" is not enforceable against a category tag. Noted: **the provenance block and 7.4's extent block are the same object**, so a verdict's extent is the union of its records' extents.
+4. **7.2a - IC-12 boundary additivity generalised from processes to tallies.** A split tally's parts must sum to the coarser figure they came from; when the sum fails the discrepancy is *located*. This is how a fabricated tally is caught **without testing the citation** - a fabricator does not control which sub-extent is measured next. Names the attack it invites (tally-level boundary gerrymandering) and answers cohort-boundary gerrymandering by the same additivity.
+5. **7.4 - the extent rule, new.** A verdict is `(result, domain, extent, closure-basis)`, never a bare result. **A passing check must publish what it was capable of detecting.** Where closure-basis is absent the verdict is downgraded, not invalidated (8.1 floor rule).
+6. **8.1 - the residual rule runs continuously**, plus the **conservative-count rule** and the **floor rule**. Monotonicity governs basis; the floor rule governs extent.
+7. **8.2a - contest without replacement, new.** Resolves the case 8.2 had flagged open (a measurement later found wrong). **No record is ever purged or edited; a challenged record is annotated** via `contested_by`. Supersede and contest are distinct operations. The defence against a false record is independent testability, not a gate at write time.
+8. **12.3 - two candidates registered, NOT folded.** **IC-13 (genesis admissibility)** - a genesis entry's asserted creation must precede the network's ledger epoch, closing an origin-laundering route that no constraint previously blocked. **IC-14 (citation closure)** - every estimate traces to an in-log tally or a declared external citation, else it is *unsourced*. One trust boundary with two doors: a terminus the log cannot re-derive is a laundering surface. **Stress-test together before folding.**
+
+---
 
 ### v0.7 (2026-08-14) — pledges permanent; `retracted_by` removed; contingent reserve (§5.1c)
 

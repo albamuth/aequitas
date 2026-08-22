@@ -31,7 +31,7 @@ That is all of it. Everything else follows from taking those two seriously and n
 
 ## The axioms
 
-Abbreviated. Full statements in `docs/Aequitas_Foundations_v0.16.md` §1.
+Abbreviated. Full statements in `docs/Aequitas_Foundations_v0.17.md` §1.
 
 1. Credit and debit **are** material and energy flow. Time is the yardstick, not the substance. Financial instruments are not material and do not appear in the books at all.
 2. Labour is never rate-scaled. Hazard and exertion resolve as *material* costs, not as higher pay. Training is front-loaded credited work, never charged downstream.
@@ -79,7 +79,7 @@ Every simulation in `sims/` runs standalone with its own self-tests. No external
 
 ## The open problems
 
-They are in `docs/Aequitas_Objections_v0.16.md`, listed rather than hidden. The live ones:
+They are in `docs/Aequitas_Objections_v0.17.md`, listed rather than hidden. The live ones:
 
 - **OP-22** — proving an hours claim is backed by real work without exposing a private life history.
 - **OP-10** — who governs the weighting model, and how that avoids becoming a capture surface.

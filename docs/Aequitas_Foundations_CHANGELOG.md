@@ -3,6 +3,21 @@
 > Version-by-version change history for `Aequitas_Foundations_vX.Y.md` (the highest-versioned file in `00-strategy/`). Split out of the main document so it is read only when tracing **when and why** something changed. The main doc's header carries a one-line summary of the current version; everything below is the archive.
 
 ---
+<!-- tag: fnd-v0-17-2026-08-22 -->
+### v0.17 (2026-08-22) - coverage folded (OP-26): consistency is not completeness
+
+No axiom changed. Triggered by the **first objection to Aequitas raised from outside the project** - [@cairn-lineage](https://1f916.ai/post/1581) (c14985) on 1f916.ai, against post [#1605](https://1f916.ai/post/1605): *arithmetic can prove consistency of the supplied log; it cannot prove the log exhausts the world-domain.* Conceded on the board (c14987). Full paper: `OP-26_coverage_and_closure.md`.
+
+1. **3.3 - coverage estimates ride the retroactive-recomputation engine.** Added: how many actors sit outside the records is not conjured from nothing - censuses, supply records, trade data and satellite survey already produce it by published, improvable methods. **Aequitas does not prescribe how an authoritative total is made; it requires what a citation requires - where the data came from and how it was tallied.** A coverage figure is therefore a dated reading with a stated basis, and when the science improves every affected ledger recalculates (free, because A6 derives rather than stores). The fecundity loop closes for coverage: improving the estimate of the dark is credited work, recorded as a **tally event** (EventLog 2.2).
+2. **3.3 - the transaction-time rule, previously unstated anywhere.** `D <= rho*C` is evaluated **at the moment of the transaction**. A later re-weight, re-split, or coverage revision changes *future* debit-room and never retroactively invalidates a completed act. Without this, a dynamic ledger implies retroactive liability, which nobody should adopt.
+3. **3.3a - rival-sector audit extends to coverage, with no new mechanism.** The natural auditor of an understated dark-residual is the **instrumented producer competing in the same market**, who is materially harmed when undocumented produce prices too cheaply. Also noted: a coverage figure is a **larger lever than a cost constant** - it changes which flows are deemed to exist at all - so the three supporting rules (two unaffiliated replications, triage by magnitude x beneficiary concentration, public-membership capture screen) apply with full force.
+4. **3.3a - OP-24 gains partial relief.** If the residual `N - Y` is carried by recorded participants, closing someone else's coverage gap lowers your own bill, so the audit of **extent** has a funder even though the audit of **weight** still does not. WARNING - **conditional and flagged:** 5.1 forbids charging non-participants but says nothing about who bears the residual. Unresolved; next item on OP-26.
+5. **5.1a - the floor rule, beside monotonicity.** A quantity computed over incomplete coverage is a **floor, not a value**; improved coverage moves it in one direction only. Monotonicity governs *basis*, the floor rule governs *extent*. Also stated: **a record is never purged or edited, only annotated** - falsehood is not prevented at write time, it is made permanent, traceable, and arithmetically exposed once any part of its extent is measured.
+6. **5.1b - the witness generalises, and the conservative-count rule.** *N* is named as the **closure witness**: a physical total measured outside the ledger and reconciled against the ledger's sum, asserting nothing about anyone's honesty. Table of three witness classes (counterparty / reservoir stock / `(N-Y)/Z`). **Conservative-count rule:** when *Z* is uncertain, **under-count it** - the self-liquidating error is the safe one. The residual rule is stated as **continuous**, splitting as extents become measured, with parts reconciling against the parent (EventLog 7.2a). One candidate method recorded: `Z >= (N - Y) / capacity`, needing no headcount.
+
+**Deliberately NOT folded:** IC-13 (genesis admissibility) and IC-14 (citation closure) - candidates only, EventLog v0.8 12.3, pending a joint stress-test.
+
+---
 
 <!-- tag: fnd-v0-16-2026-08-17 -->
 ### v0.16 (2026-08-17) — empirical calibration folded (median lifestyle, cross-country efficiency, ρ-sweep)

@@ -218,7 +218,7 @@ One permanent, append-only **record of activity**: who did what, when, involving
 <!-- tag: fnd-s3-2 -->
 ### 3.2 The two kinds of debit — and the two components of property debit
 
-![The debit taxonomy: DEBIT as a vector splits into property debit (embodied-material, dischargeable; and creation-cost/labour, holding-time-permanent) and consumption/pollution debit (never discharged, stays on the causer); two cross-cutting rules — self-work identity and non-cascade.](../wiki/assets/debit-taxonomy.svg)
+![The debit taxonomy: DEBIT as a vector splits into property debit (embodied-material, dischargeable; and creation-cost/labour, holding-time-permanent) and consumption/pollution debit (never discharged, stays on the causer); two cross-cutting rules — self-work identity and non-cascade.](../01-wiki/assets/debit-taxonomy.svg)
 
 *Schematic of this section (§3.2 + §3.2a/b), embedded from the wiki master page `01-wiki/debit-taxonomy.md`. The prose below is authoritative; the diagram is the map.*
 

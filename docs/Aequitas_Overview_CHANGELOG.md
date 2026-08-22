@@ -3,6 +3,16 @@
 > Version-by-version change log for `Aequitas_Overview_vX.Y.md` (the highest-versioned file in `00-strategy/`). Split out of the main document so it is read only when tracing **when and why** something changed. The main doc's header carries a one-line summary of the current version. Superseded full versions live in `99-archive/`.
 
 ---
+<!-- tag: ovw-v0-13-2026-08-22 -->
+### v0.13 (2026-08-22) - section 7 gains the honest limit of the checks
+
+Reader-facing fold of OP-26. Conforms to Foundations v0.17 3.3/5.1b.
+
+1. **New section-7 passage: "What the checks can see - and what they cannot."** States plainly that the arithmetic catches a factory that under-declares and cannot see a workshop that never joined, and that the second half is answered by ordinary outside measurement - a satellite pass, a harvest total, a census - reconciled against the books. The gap is framed as **a measurement, not an accusation**.
+2. **Two consequences added in plain language:** the estimate applied to whoever stays outside **gets worse as everyone else joins**, so staying dark stops paying; and **no number here is ever final** - a tally is a citation, better measurement recalculates every affected record backwards, and a wrong figure is annotated rather than deleted. Framed as how science handles a mistake, and as the only method that needs no authority at the door.
+3. **New guarantee stated for the first time:** the check on what you may consume is made **at the moment you do it** - a later revision changes what you may do next, never whether what you already did was allowed. *A ledger that recalculates must never mean a debt that ambushes you.*
+
+---
 
 ### v0.12 (2026-08-17) — labour-abundance gets numbers; efficiency (not more work) creates abundance
 
