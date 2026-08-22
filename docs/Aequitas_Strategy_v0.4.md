@@ -3,7 +3,7 @@
 
 > **Version:** 0.4 · **Date:** 2026-08-11
 > **Target:** Implementer whitepaper (protocol specification) in ~3 months.
-> **Companion docs:** `Aequitas_Foundations_v0.16.md` (axioms), `Aequitas_Objections_v0.16.md` (register), `Aequitas_EventLog_v0.7.md` (schema), `../NEXT.md` (task queue)
+> **Companion docs:** `Aequitas_Foundations_v0.17.md` (axioms), `Aequitas_Objections_v0.17.md` (register), `Aequitas_EventLog_v0.8.md` (schema), `../NEXT.md` (task queue)
 > **Supersedes:** `99-archive/Aequitas_Strategy_v0.3.md`. **Roadmap refreshed to current reality** (2026-08-11), plus a presentation pass. The v0.3 critical path (`C1 → OP-18 → C3 → C4`) is retired: **OP-17 and OP-18 are closed, the recursion-convergence sim passed, C11 is closed, and the scenario suite (5 sims) + disparity-ceiling sim shipped.** The binding work is no longer *allocation/measurement* but **governance** — OP-10 (weighting model), OP-24 (understatement drift), OP-16 (onerousness). Component statuses (§3), phases (§4), sequencing (§6), risks (§7), and the done-criteria (§8) updated to match. Also: companion pointers re-threaded, inline version-notes stripped, a Contents list added, and the change log (§9) moved to `Aequitas_Strategy_CHANGELOG.md`. `../NEXT.md` remains the live task queue.
 > **Change history:** `00-strategy/Aequitas_Strategy_CHANGELOG.md`.
 
@@ -168,7 +168,7 @@ This also answers the socialist-calculation critique pre-emptively: we don't arg
 - [ ] Wiki covering every core concept
 - [x] ~~An allocation convention for OP-17~~ — **better: a measurement, not a convention**
 - [x] ~~A declared labour-allocation convention for OP-18~~ — **done:** labour rides the material split, defended against the cooperative-game axioms (B9).
-- [ ] Every open problem in `Aequitas_Objections_v0.16.md` either solved, dissolved, or explicitly scoped as v2 — **the remaining live blockers are governance: OP-10, OP-24, and OP-16's tedium/indignity half (its hazard half is addressed by the contingent reserve, §6.4c).**
+- [ ] Every open problem in `Aequitas_Objections_v0.17.md` either solved, dissolved, or explicitly scoped as v2 — **the remaining live blockers are governance: OP-10, OP-24, and OP-16's tedium/indignity half (its hazard half is addressed by the contingent reserve, §6.4c).**
 
 ---
 
