@@ -36,6 +36,6 @@ Two *distinct* pools (they answer different questions and overlap, so they're ne
 
 - Capital share of US national income ~31% — [Tax Foundation / BEA](https://taxfoundation.org/blog/labor-share-net-income-within-historical-range/).
 - Guard labour — [Jayadev & Bowles, *Estimating Guard Labor* / *Garrison America*](https://scholarworks.umb.edu/econ_faculty_pubs/6/); [Petach & Wilson 2024, *The Rise of Guard Labor*](https://journals.sagepub.com/doi/abs/10.1177/04866134231195390).
-- Total employed hours — this project (BLS ERM, [`track1_labour.py`](track1_labour.py)).
+- Total employed hours — this project (BLS ERM, `track1_labour.py`).
 
 *Tracks Foundations v0.11 A3 (non-fungibility) / §1 / §7.1. Feeds Q5.*

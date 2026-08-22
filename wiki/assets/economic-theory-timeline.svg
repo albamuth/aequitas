@@ -1,0 +1,249 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1060 1960" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <marker id="arrC" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L7,3 L0,6 Z" fill="#b23b2e"/>
+    </marker>
+    <marker id="arrB" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L7,3 L0,6 Z" fill="#2a8c80"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="1060" height="1960" fill="#faf8f3"/>
+
+  <!-- ===== Header ===== -->
+  <text x="530" y="34" text-anchor="middle" font-size="22" font-weight="bold" fill="#2b2b2b">A Genealogy of Economic Theory</text>
+  <text x="530" y="56" text-anchor="middle" font-size="13" fill="#666" font-style="italic">from the Venetian merchant houses to Aequitas — each work linked to what it answers</text>
+
+  <text x="150" y="82" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#3a6b4f">&#8592;  communal · anarcho-communist · participatory</text>
+  <text x="905" y="82" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#8a5a22">market-liberal · laissez-faire · libertarian  &#8594;</text>
+  <line x1="525" y1="92" x2="525" y2="1912" stroke="#cfc8ba" stroke-width="1" stroke-dasharray="2 6"/>
+
+  <line x1="42" y1="98" x2="42" y2="1908" stroke="#b8afa0" stroke-width="1.5"/>
+  <path d="M42,1908 l-4,-9 l8,0 Z" fill="#b8afa0"/>
+  <text x="30" y="150" text-anchor="middle" font-size="11" font-weight="bold" fill="#8a8272" transform="rotate(-90 30 150)">PAST</text>
+  <text x="30" y="1840" text-anchor="middle" font-size="11" font-weight="bold" fill="#8a8272" transform="rotate(-90 30 1840)">PRESENT</text>
+
+  <g font-size="11" fill="#444">
+    <line x1="700" y1="106" x2="734" y2="106" stroke="#b23b2e" stroke-width="2" marker-end="url(#arrC)"/>
+    <text x="740" y="110">counters / refutes</text>
+    <line x1="700" y1="124" x2="734" y2="124" stroke="#2a8c80" stroke-width="1.8" marker-end="url(#arrB)"/>
+    <text x="740" y="128">builds on / descends from</text>
+    <line x1="700" y1="142" x2="734" y2="142" stroke="#9a8c98" stroke-width="1.5" stroke-dasharray="5 4"/>
+    <text x="740" y="146">parallel / convergent</text>
+  </g>
+
+  <!-- ===== Connections ===== -->
+  <g fill="none" stroke-opacity="0.46">
+    <!-- counters (red) -->
+    <path d="M615 210 C615 205 765 205 765 200" stroke="#b23b2e" stroke-width="2" marker-end="url(#arrC)"/>
+    <path d="M240 384 C240 322 615 322 615 260" stroke="#b23b2e" stroke-width="1.8" marker-end="url(#arrC)"/>
+    <path d="M188 442 C188 438 240 438 240 434" stroke="#b23b2e" stroke-width="2" marker-end="url(#arrC)"/>
+    <path d="M713 500 C713 496 188 496 188 492" stroke="#b23b2e" stroke-width="1.7" marker-end="url(#arrC)"/>
+    <path d="M360 674 C360 612 713 612 713 550" stroke="#b23b2e" stroke-width="1.8" marker-end="url(#arrC)"/>
+    <path d="M773 815 C582 855 582 855 390 815" stroke="#b23b2e" stroke-width="2" marker-end="url(#arrC)"/>
+    <path d="M375 906 C375 873 863 873 863 840" stroke="#b23b2e" stroke-width="1.7" marker-end="url(#arrC)"/>
+    <path d="M825 1022 C825 989 375 989 375 956" stroke="#b23b2e" stroke-width="1.8" marker-end="url(#arrC)"/>
+    <path d="M825 1022 C825 989 563 989 563 956" stroke="#b23b2e" stroke-width="2" marker-end="url(#arrC)"/>
+    <path d="M563 906 C563 728 713 728 713 550" stroke="#b23b2e" stroke-width="1.7" marker-end="url(#arrC)"/>
+    <path d="M360 1022 C360 641 615 641 615 260" stroke="#b23b2e" stroke-width="1.5" marker-end="url(#arrC)"/>
+    <path d="M800 1196 C800 1163 400 1163 400 1130" stroke="#b23b2e" stroke-width="1.8" marker-end="url(#arrC)"/>
+    <path d="M885 1138 C885 902 172 902 172 666" stroke="#b23b2e" stroke-width="1.4" marker-end="url(#arrC)"/>
+    <path d="M235 1544 C235 1308 825 1308 825 1072" stroke="#b23b2e" stroke-width="1.6" marker-end="url(#arrC)"/>
+    <path d="M240 1660 C240 960 615 960 615 260" stroke="#b23b2e" stroke-width="1.4" marker-end="url(#arrC)"/>
+    <path d="M413 1850 C413 1461 825 1461 825 1072" stroke="#b23b2e" stroke-width="1.7" marker-end="url(#arrC)"/>
+
+    <!-- builds-on (teal) -->
+    <path d="M765 150 C765 145 690 145 690 140" stroke="#2a8c80" stroke-width="1.7" marker-end="url(#arrB)"/>
+    <path d="M655 268 C655 264 615 264 615 260" stroke="#2a8c80" stroke-width="1.7" marker-end="url(#arrB)"/>
+    <path d="M188 442 C188 380 655 380 655 318" stroke="#2a8c80" stroke-width="1.6" marker-end="url(#arrB)"/>
+    <path d="M488 558 C488 438 655 438 655 318" stroke="#2a8c80" stroke-width="1.6" marker-end="url(#arrB)"/>
+    <path d="M300 790 C300 641 188 641 188 492" stroke="#2a8c80" stroke-width="1.5" marker-end="url(#arrB)"/>
+    <path d="M863 790 C863 670 713 670 713 550" stroke="#2a8c80" stroke-width="1.7" marker-end="url(#arrB)"/>
+    <path d="M825 1022 C825 931 863 931 863 840" stroke="#2a8c80" stroke-width="1.7" marker-end="url(#arrB)"/>
+    <path d="M390 964 C390 960 375 960 375 956" stroke="#2a8c80" stroke-width="1.6" marker-end="url(#arrB)"/>
+    <path d="M390 848 C390 815 465 815 465 782" stroke="#2a8c80" stroke-width="1.6" marker-end="url(#arrB)"/>
+    <path d="M590 848 C590 786 360 786 360 724" stroke="#2a8c80" stroke-width="1.6" marker-end="url(#arrB)"/>
+    <path d="M885 1138 C885 1105 825 1105 825 1072" stroke="#2a8c80" stroke-width="1.7" marker-end="url(#arrB)"/>
+    <path d="M210 1312 C210 989 172 989 172 666" stroke="#2a8c80" stroke-width="1.4" marker-end="url(#arrB)"/>
+    <path d="M525 1602 C525 1453 525 1453 525 1304" stroke="#2a8c80" stroke-width="1.7" marker-end="url(#arrB)"/>
+    <path d="M235 1544 C235 1279 390 1279 390 1014" stroke="#2a8c80" stroke-width="1.6" marker-end="url(#arrB)"/>
+    <path d="M235 1544 C235 1018 188 1018 188 492" stroke="#2a8c80" stroke-width="1.4" marker-end="url(#arrB)"/>
+    <path d="M360 1486 C360 989 188 989 188 492" stroke="#2a8c80" stroke-width="1.4" marker-end="url(#arrB)"/>
+    <path d="M430 1428 C430 902 285 902 285 376" stroke="#2a8c80" stroke-width="1.4" marker-end="url(#arrB)"/>
+    <path d="M338 1776 C338 1395 390 1395 390 1014" stroke="#2a8c80" stroke-width="1.4" marker-end="url(#arrB)"/>
+    <path d="M488 1420 C488 1633 413 1633 413 1847" stroke="#2a8c80" stroke-width="1.6" marker-end="url(#arrB)"/>
+    <path d="M590 898 C590 1372 413 1372 413 1847" stroke="#2a8c80" stroke-width="1.4" marker-end="url(#arrB)"/>
+    <path d="M300 1768 C300 1807 413 1807 413 1847" stroke="#2a8c80" stroke-width="1.5" marker-end="url(#arrB)"/>
+    <path d="M413 1850 C413 1780 240 1780 240 1710" stroke="#2a8c80" stroke-width="1.6" marker-end="url(#arrB)"/>
+    <path d="M413 1850 C413 1345 300 1345 300 840" stroke="#2a8c80" stroke-width="1.4" marker-end="url(#arrB)"/>
+    <path d="M413 1850 C413 1432 390 1432 390 1014" stroke="#2a8c80" stroke-width="1.6" marker-end="url(#arrB)"/>
+    <path d="M413 1850 C413 1722 235 1722 235 1594" stroke="#2a8c80" stroke-width="1.6" marker-end="url(#arrB)"/>
+    <path d="M413 1850 C413 1664 225 1664 225 1478" stroke="#2a8c80" stroke-width="1.6" marker-end="url(#arrB)"/>
+    <path d="M413 1850 C413 1693 360 1693 360 1536" stroke="#2a8c80" stroke-width="1.6" marker-end="url(#arrB)"/>
+    <path d="M413 1850 C413 1490 588 1490 588 1130" stroke="#2a8c80" stroke-width="1.5" marker-end="url(#arrB)"/>
+    <path d="M413 1850 C413 1751 525 1751 525 1652" stroke="#2a8c80" stroke-width="1.6" marker-end="url(#arrB)"/>
+    <path d="M413 1850 C413 1461 360 1461 360 1072" stroke="#2a8c80" stroke-width="1.5" marker-end="url(#arrB)"/>
+    <path d="M413 1850 C413 1606 210 1606 210 1362" stroke="#2a8c80" stroke-width="1.6" marker-end="url(#arrB)"/>
+    <path d="M413 1850 C413 1229 488 1229 488 608" stroke="#2a8c80" stroke-width="1.3" marker-end="url(#arrB)"/>
+
+    <!-- parallel / convergent (dashed grey) -->
+    <path d="M285 376 C285 380 240 380 240 384" stroke="#9a8c98" stroke-width="1.5" stroke-dasharray="5 4"/>
+    <path d="M172 616 C172 554 188 554 188 492" stroke="#9a8c98" stroke-width="1.5" stroke-dasharray="5 4"/>
+    <path d="M525 1254 C525 697 690 697 690 140" stroke="#9a8c98" stroke-width="1.3" stroke-dasharray="5 4"/>
+    <path d="M225 1478 C225 1511 235 1511 235 1544" stroke="#9a8c98" stroke-width="1.5" stroke-dasharray="5 4"/>
+    <path d="M430 1428 C430 1105 465 1105 465 782" stroke="#9a8c98" stroke-width="1.4" stroke-dasharray="5 4"/>
+  </g>
+
+  <!-- ===== Nodes ===== -->
+  <g font-size="11">
+    <g><rect x="600" y="91" width="180" height="48" rx="5" fill="#f2e9dc" stroke="#a9793f" stroke-width="1.3"/>
+    <text x="690" y="111" text-anchor="middle" font-weight="bold" fill="#3a2f22">1300s · Venice &amp; Genoa</text>
+    <text x="690" y="128" text-anchor="middle" fill="#5a4a35" font-style="italic">merchant capital (antimarket)</text></g>
+
+    <g><rect x="675" y="151" width="180" height="48" rx="5" fill="#f2e9dc" stroke="#a9793f" stroke-width="1.3"/>
+    <text x="765" y="171" text-anchor="middle" font-weight="bold" fill="#3a2f22">16th–18th c.</text>
+    <text x="765" y="188" text-anchor="middle" fill="#5a4a35" font-style="italic">Mercantilism</text></g>
+
+    <g><rect x="525" y="211" width="180" height="48" rx="5" fill="#eceef2" stroke="#6b7280" stroke-width="1.3"/>
+    <text x="615" y="231" text-anchor="middle" font-weight="bold" fill="#2b2b2b">1776 · Adam Smith</text>
+    <text x="615" y="248" text-anchor="middle" fill="#4a4a4a" font-style="italic">The Wealth of Nations</text></g>
+
+    <g><rect x="565" y="269" width="180" height="48" rx="5" fill="#f2e9dc" stroke="#a9793f" stroke-width="1.3"/>
+    <text x="655" y="289" text-anchor="middle" font-weight="bold" fill="#3a2f22">1817 · Ricardo</text>
+    <text x="655" y="306" text-anchor="middle" fill="#5a4a35" font-style="italic">Principles (rent, value)</text></g>
+
+    <g><rect x="195" y="327" width="180" height="48" rx="5" fill="#e3eee6" stroke="#4c8060" stroke-width="1.3"/>
+    <text x="285" y="347" text-anchor="middle" font-weight="bold" fill="#22392c">1827 · Josiah Warren</text>
+    <text x="285" y="364" text-anchor="middle" fill="#37543f" font-style="italic">Cost the Limit of Price</text></g>
+
+    <g><rect x="150" y="385" width="180" height="48" rx="5" fill="#e3eee6" stroke="#4c8060" stroke-width="1.3"/>
+    <text x="240" y="405" text-anchor="middle" font-weight="bold" fill="#22392c">1840 · Proudhon</text>
+    <text x="240" y="422" text-anchor="middle" fill="#37543f" font-style="italic">What Is Property?</text></g>
+
+    <g><rect x="98" y="443" width="180" height="48" rx="5" fill="#e3eee6" stroke="#4c8060" stroke-width="1.3"/>
+    <text x="188" y="463" text-anchor="middle" font-weight="bold" fill="#22392c">1848–67 · Marx</text>
+    <text x="188" y="480" text-anchor="middle" fill="#37543f" font-style="italic">Manifesto · Capital</text></g>
+
+    <g><rect x="623" y="501" width="180" height="48" rx="5" fill="#f2e9dc" stroke="#a9793f" stroke-width="1.3"/>
+    <text x="713" y="521" text-anchor="middle" font-weight="bold" fill="#3a2f22">1871 · Marginalists</text>
+    <text x="713" y="538" text-anchor="middle" fill="#5a4a35" font-style="italic">subjective value</text></g>
+
+    <g><rect x="398" y="559" width="180" height="48" rx="5" fill="#eceef2" stroke="#6b7280" stroke-width="1.3"/>
+    <text x="488" y="579" text-anchor="middle" font-weight="bold" fill="#2b2b2b">1879 · Henry George</text>
+    <text x="488" y="596" text-anchor="middle" fill="#4a4a4a" font-style="italic">Progress and Poverty</text></g>
+
+    <g><rect x="82" y="617" width="180" height="48" rx="5" fill="#e3eee6" stroke="#4c8060" stroke-width="1.3"/>
+    <text x="172" y="637" text-anchor="middle" font-weight="bold" fill="#22392c">1892 · Kropotkin</text>
+    <text x="172" y="654" text-anchor="middle" fill="#37543f" font-style="italic">The Conquest of Bread</text></g>
+
+    <g><rect x="270" y="675" width="180" height="48" rx="5" fill="#e3eee6" stroke="#4c8060" stroke-width="1.3"/>
+    <text x="360" y="695" text-anchor="middle" font-weight="bold" fill="#22392c">1899 · Veblen</text>
+    <text x="360" y="712" text-anchor="middle" fill="#37543f" font-style="italic">The Leisure Class</text></g>
+
+    <g><rect x="375" y="733" width="180" height="48" rx="5" fill="#eceef2" stroke="#6b7280" stroke-width="1.3"/>
+    <text x="465" y="753" text-anchor="middle" font-weight="bold" fill="#2b2b2b">1916 · Gesell</text>
+    <text x="465" y="770" text-anchor="middle" fill="#4a4a4a" font-style="italic">Free-Money / demurrage</text></g>
+
+    <g><rect x="210" y="791" width="180" height="48" rx="5" fill="#e3eee6" stroke="#4c8060" stroke-width="1.3"/>
+    <text x="300" y="811" text-anchor="middle" font-weight="bold" fill="#22392c">1919 · Neurath</text>
+    <text x="300" y="828" text-anchor="middle" fill="#37543f" font-style="italic">calculation in kind</text></g>
+
+    <g><rect x="773" y="791" width="180" height="48" rx="5" fill="#f2e9dc" stroke="#a9793f" stroke-width="1.3"/>
+    <text x="863" y="811" text-anchor="middle" font-weight="bold" fill="#3a2f22">1920 · Mises</text>
+    <text x="863" y="828" text-anchor="middle" fill="#5a4a35" font-style="italic">Economic Calculation</text></g>
+
+    <g><rect x="300" y="849" width="180" height="48" rx="5" fill="#e3eee6" stroke="#4c8060" stroke-width="1.3"/>
+    <text x="390" y="869" text-anchor="middle" font-weight="bold" fill="#22392c">1932 · Wörgl</text>
+    <text x="390" y="886" text-anchor="middle" fill="#37543f" font-style="italic">stamp scrip</text></g>
+
+    <g><rect x="500" y="849" width="180" height="48" rx="5" fill="#eceef2" stroke="#6b7280" stroke-width="1.3"/>
+    <text x="590" y="869" text-anchor="middle" font-weight="bold" fill="#2b2b2b">1933 · Technocracy</text>
+    <text x="590" y="886" text-anchor="middle" fill="#4a4a4a" font-style="italic">energy accounting</text></g>
+
+    <g><rect x="473" y="907" width="180" height="48" rx="5" fill="#eceef2" stroke="#6b7280" stroke-width="1.3"/>
+    <text x="563" y="927" text-anchor="middle" font-weight="bold" fill="#2b2b2b">1936 · Keynes</text>
+    <text x="563" y="944" text-anchor="middle" fill="#4a4a4a" font-style="italic">The General Theory</text></g>
+
+    <g><rect x="285" y="907" width="180" height="48" rx="5" fill="#e3eee6" stroke="#4c8060" stroke-width="1.3"/>
+    <text x="375" y="927" text-anchor="middle" font-weight="bold" fill="#22392c">1936 · Lange–Lerner</text>
+    <text x="375" y="944" text-anchor="middle" fill="#37543f" font-style="italic">market socialism</text></g>
+
+    <g><rect x="300" y="965" width="180" height="48" rx="5" fill="#e3eee6" stroke="#4c8060" stroke-width="1.3"/>
+    <text x="390" y="985" text-anchor="middle" font-weight="bold" fill="#22392c">1939 · Kantorovich</text>
+    <text x="390" y="1002" text-anchor="middle" fill="#37543f" font-style="italic">shadow prices</text></g>
+
+    <g><rect x="270" y="1023" width="180" height="48" rx="5" fill="#e3eee6" stroke="#4c8060" stroke-width="1.3"/>
+    <text x="360" y="1043" text-anchor="middle" font-weight="bold" fill="#22392c">1944 · Polanyi</text>
+    <text x="360" y="1060" text-anchor="middle" fill="#37543f" font-style="italic">The Great Transformation</text></g>
+
+    <g><rect x="735" y="1023" width="180" height="48" rx="5" fill="#f2e9dc" stroke="#a9793f" stroke-width="1.3"/>
+    <text x="825" y="1043" text-anchor="middle" font-weight="bold" fill="#3a2f22">1944 · Hayek</text>
+    <text x="825" y="1060" text-anchor="middle" fill="#5a4a35" font-style="italic">Road to Serfdom</text></g>
+
+    <g><rect x="310" y="1081" width="180" height="48" rx="5" fill="#e3eee6" stroke="#4c8060" stroke-width="1.3"/>
+    <text x="400" y="1101" text-anchor="middle" font-weight="bold" fill="#22392c">1971 · Rawls</text>
+    <text x="400" y="1118" text-anchor="middle" fill="#37543f" font-style="italic">A Theory of Justice</text></g>
+
+    <g><rect x="498" y="1081" width="180" height="48" rx="5" fill="#eceef2" stroke="#6b7280" stroke-width="1.3"/>
+    <text x="588" y="1101" text-anchor="middle" font-weight="bold" fill="#2b2b2b">1971 · Georgescu-Roegen</text>
+    <text x="588" y="1118" text-anchor="middle" fill="#4a4a4a" font-style="italic">entropy &amp; the economy</text></g>
+
+    <g><rect x="795" y="1139" width="180" height="48" rx="5" fill="#f2e9dc" stroke="#a9793f" stroke-width="1.3"/>
+    <text x="885" y="1159" text-anchor="middle" font-weight="bold" fill="#3a2f22">1973 · Rothbard</text>
+    <text x="885" y="1176" text-anchor="middle" fill="#5a4a35" font-style="italic">anarcho-capitalism</text></g>
+
+    <g><rect x="710" y="1197" width="180" height="48" rx="5" fill="#f2e9dc" stroke="#a9793f" stroke-width="1.3"/>
+    <text x="800" y="1217" text-anchor="middle" font-weight="bold" fill="#3a2f22">1974 · Nozick</text>
+    <text x="800" y="1234" text-anchor="middle" fill="#5a4a35" font-style="italic">Anarchy, State &amp; Utopia</text></g>
+
+    <g><rect x="435" y="1255" width="180" height="48" rx="5" fill="#eceef2" stroke="#6b7280" stroke-width="1.3"/>
+    <text x="525" y="1275" text-anchor="middle" font-weight="bold" fill="#2b2b2b">1979 · Braudel</text>
+    <text x="525" y="1292" text-anchor="middle" fill="#4a4a4a" font-style="italic">Civilization &amp; Capitalism</text></g>
+
+    <g><rect x="120" y="1313" width="180" height="48" rx="5" fill="#e3eee6" stroke="#4c8060" stroke-width="1.3"/>
+    <text x="210" y="1333" text-anchor="middle" font-weight="bold" fill="#22392c">1982 · Bookchin</text>
+    <text x="210" y="1350" text-anchor="middle" fill="#37543f" font-style="italic">social ecology</text></g>
+
+    <g><rect x="398" y="1371" width="180" height="48" rx="5" fill="#eceef2" stroke="#6b7280" stroke-width="1.3"/>
+    <text x="488" y="1391" text-anchor="middle" font-weight="bold" fill="#2b2b2b">1990 · Ostrom</text>
+    <text x="488" y="1408" text-anchor="middle" fill="#4a4a4a" font-style="italic">Governing the Commons</text></g>
+
+    <g><rect x="135" y="1429" width="180" height="48" rx="5" fill="#e3eee6" stroke="#4c8060" stroke-width="1.3"/>
+    <text x="225" y="1449" text-anchor="middle" font-weight="bold" fill="#22392c">1991 · Albert &amp; Hahnel</text>
+    <text x="225" y="1466" text-anchor="middle" fill="#37543f" font-style="italic">Participatory Economics</text></g>
+
+    <g><rect x="340" y="1429" width="180" height="48" rx="5" fill="#eceef2" stroke="#6b7280" stroke-width="1.3"/>
+    <text x="430" y="1449" text-anchor="middle" font-weight="bold" fill="#2b2b2b">1991 · Ithaca HOURS</text>
+    <text x="430" y="1466" text-anchor="middle" fill="#4a4a4a" font-style="italic">local currencies</text></g>
+
+    <g><rect x="270" y="1487" width="180" height="48" rx="5" fill="#e3eee6" stroke="#4c8060" stroke-width="1.3"/>
+    <text x="360" y="1507" text-anchor="middle" font-weight="bold" fill="#22392c">1992 · Ellerman</text>
+    <text x="360" y="1524" text-anchor="middle" fill="#37543f" font-style="italic">labour theory of property</text></g>
+
+    <g><rect x="145" y="1545" width="180" height="48" rx="5" fill="#e3eee6" stroke="#4c8060" stroke-width="1.3"/>
+    <text x="235" y="1565" text-anchor="middle" font-weight="bold" fill="#22392c">1993 · Cockshott–Cottrell</text>
+    <text x="235" y="1582" text-anchor="middle" fill="#37543f" font-style="italic">Towards a New Socialism</text></g>
+
+    <g><rect x="435" y="1603" width="180" height="48" rx="5" fill="#eceef2" stroke="#6b7280" stroke-width="1.3"/>
+    <text x="525" y="1623" text-anchor="middle" font-weight="bold" fill="#2b2b2b">1996 · DeLanda</text>
+    <text x="525" y="1640" text-anchor="middle" fill="#4a4a4a" font-style="italic">Markets &amp; Antimarkets</text></g>
+
+    <g><rect x="150" y="1661" width="180" height="48" rx="5" fill="#e3eee6" stroke="#4c8060" stroke-width="1.3"/>
+    <text x="240" y="1681" text-anchor="middle" font-weight="bold" fill="#22392c">2011 · Graeber</text>
+    <text x="240" y="1698" text-anchor="middle" fill="#37543f" font-style="italic">Debt: The First 5000 Years</text></g>
+
+    <g><rect x="210" y="1719" width="180" height="48" rx="5" fill="#e3eee6" stroke="#4c8060" stroke-width="1.3"/>
+    <text x="300" y="1739" text-anchor="middle" font-weight="bold" fill="#22392c">2016 · Saadia</text>
+    <text x="300" y="1756" text-anchor="middle" fill="#37543f" font-style="italic">Trekonomics</text></g>
+
+    <g><rect x="248" y="1777" width="180" height="48" rx="5" fill="#e3eee6" stroke="#4c8060" stroke-width="1.3"/>
+    <text x="338" y="1797" text-anchor="middle" font-weight="bold" fill="#22392c">2021 · Dapprich</text>
+    <text x="338" y="1814" text-anchor="middle" fill="#37543f" font-style="italic">optimal planning</text></g>
+
+    <g><rect x="305" y="1847" width="216" height="56" rx="7" fill="#fff2cc" stroke="#c9962a" stroke-width="2.6"/>
+    <text x="413" y="1871" text-anchor="middle" font-weight="bold" font-size="14" fill="#7a5410">2026 · AEQUITAS</text>
+    <text x="413" y="1890" text-anchor="middle" font-size="11" fill="#8a6416" font-style="italic">material-flow accounting</text></g>
+  </g>
+
+  <text x="530" y="1938" text-anchor="middle" font-size="10.5" fill="#8a8272" font-style="italic">Aequitas draws on the material/planning &amp; ecological tradition (Neurath · Kantorovich · Cockshott · Participatory Economics · Ellerman · Polanyi · Bookchin) while answering the Austrian critique (Mises · Hayek) that sank its predecessors.</text>
+</svg>

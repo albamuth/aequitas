@@ -96,7 +96,7 @@ Two kinds of debit behave differently, and the difference matters:
 
 **So a thing carries its whole story, but not everyone's debt.** Buying the sandwich, you take on its *material* and the fact that you ate it — not the farmer's pollution and not the trucker's fuel. What you *do* receive is the full record of where it came from, so you can prefer the cleaner loaf before you buy. **The debt sits with whoever caused each harm; only the story travels with the bread.** This turns out to be a stronger arrangement than making the shopper pay for the farm's runoff — more on why in §4.
 
-![The debit taxonomy at a glance: a debit splits into property debit (the material you hold, which travels with the thing; and the making-hours, which stay partly with you — see §2) and consumption/pollution debit (permanent, on whoever caused it). Two rules cut across both: working on your own things nets to zero, and cost never passes to someone who didn't cause it.](../01-wiki/assets/debit-taxonomy.svg)
+![The debit taxonomy at a glance: a debit splits into property debit (the material you hold, which travels with the thing; and the making-hours, which stay partly with you — see §2) and consumption/pollution debit (permanent, on whoever caused it). Two rules cut across both: working on your own things nets to zero, and cost never passes to someone who didn't cause it.](../wiki/assets/debit-taxonomy.svg)
 
 *The whole taxonomy on one page. It shows a little more than this section does — the "making" hours of a thing stay partly with you even after you pass it on, which §2 comes back to — but the two big ideas are here: what travels and what stays, and who is on the hook.*
 
