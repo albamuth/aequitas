@@ -265,3 +265,27 @@ Restated correctly, and it is a smaller and more honest problem than either of m
 **I solved an architecture problem the project did not have, because I recognised a pattern from outside instead of reading what was already written.** Data minimisation is correct advice for systems that collect more than they need. **Aequitas collects exactly what it needs, and what it needs is everything** — that is what "no externalities" means at the record level.
 
 The project's own rule says *check the axioms before importing an outside solution.* **I checked the axioms for a mechanism and found one; I did not check them for the premise.** A7 was sitting there the whole time saying the records must be complete.
+
+
+---
+
+## 12. CORRECTION to §9 — compatibility means one ledger
+
+*Same day. §9 framed multi-network accounts as a Sybil vector reaching `k × 24/F`. **The framing was wrong.***
+
+**Author's correction:**
+
+> A person can hold an account on two networks, but those networks are counting the same thing. **The networks cannot be compatible unless they can arrive at the same ledger for a single person.**
+
+**Two networks counting the same person are counting the same thing.** Compatibility is not a property bolted on afterwards — **it is the ability to re-derive each other's numbers and land on the same ledger** (OP-14, comparison never conversion).
+
+So:
+
+- **Compatible networks produce one ledger for that person, seen from two places.** The self-care floor is credited **once**, because it is one life. **There is nothing to sum, and `k × 24/F` was arithmetic on two things that are the same thing.**
+- **Incompatible networks do not interoperate.** Goods and claims do not cross. Each holds a **partial** record of that person's material life.
+
+**What survives is not a breached bound but a coverage gap** — and that is machinery already built: §5.1c (the residual is held, not allocated) and EventLog §7.4 (a verdict declares its extent). An incompatible pair leaves two partial ledgers, each obliged to say it is partial.
+
+**Federation is therefore not a defence against an exploit. It is what interoperation means.**
+
+§9's finding still did real work — it exposed that condition 4 of the ceiling wrongly claimed IC-7 covered the multi-network case, and that correction stands. **The error was in what replaced it.** Both docs are now re-framed: Foundations §7.5 condition 5, `06-simulation/DISPARITY_CEILING.md` §4 condition 5.
