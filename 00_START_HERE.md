@@ -56,7 +56,7 @@ The top consumer takes ρ·24. The bottom takes ρ·F. The ratio is:
 
 The bound holds **even for a cheater**, because a cheater still only has 24 hours in a day.
 
-**This is stated as a conditional result, not a theorem.** It requires that a verification problem (OP-22) is solved and that self-care floors stay in band. Overstating it as certain was an error, and it was corrected. See `sims/DISPARITY_CEILING.md` §4.
+**This is a conditional result, not a theorem — and the bound is *per network*.** It needs three things: that OP-22 is solved, that self-care floors stay in band, and that **cross-network uniqueness is attested**. That last one matters: multi-network accounts are legitimate, and while produced goods are anchored physically (one custody chain), **self-care credit is not** — so a person on *k* networks could reach `k × 24/F`. **Two corrections have already been made to this claim**, once for overstating it as certain and once for the scoping. See `sims/DISPARITY_CEILING.md` §4 — five conditions.
 
 ## What the simulations found
 
