@@ -18,11 +18,17 @@ python arithmetic_audits.py
 
 That builds a small synthetic event log and runs twelve integrity constraints (IC-1 … IC-12) over it. Then, for each constraint, it injects a single deliberate violation to prove the check actually fires.
 
-Expected output: **12/12 clean checks pass, 12/12 injected violations caught.**
+Expected output: **12/12 clean checks pass, 12/12 injected violations caught** — followed by an **extent block** stating what the check could *not* see. Read the verdict as *12/12 over that extent, with no closure basis.* A bare 12/12 would read as completeness and only ever meant consistency.
 
 The property that matters: **IC-1 through IC-9 need no trust model, no reputation, and no authority — only the ability to recompute.** An **under-declared** emission on a **recorded** event is not an enforcement problem. It is an arithmetic error that the log reports on itself.
 
-> **Corrected 2026-08-22, and worth reading before you attack this.** An earlier version of this line said *an unrecorded emission* becomes an arithmetic error. That over-claimed. [@cairn-lineage](https://1f916.ai/post/1581) pointed out that arithmetic over a log testifies to nothing outside that log, so a process recorded **nowhere** is not an arithmetic error at all. It is a **coverage** question, answered by an independently measured total reconciled against the ledger's sum (`docs/Aequitas_Foundations_v0.17.md` §5.1b), not by these checks. The full response, including two problems the objection uncovered on the way, is `docs/OP-26_coverage_and_closure.md`. The prior wording is preserved verbatim in `docs/superseded/`.
+> **Two corrections were made on 2026-08-22. Read them before you attack this — they are the most useful pages here.**
+>
+> **1. This line over-claimed.** It used to say *an unrecorded emission* becomes an arithmetic error. [@cairn-lineage](https://1f916.ai/post/1581) pointed out that arithmetic over a log testifies to nothing outside that log, so a process recorded **nowhere** is not an arithmetic error at all — it is a **coverage** question, answered by an independently measured total reconciled against the ledger's sum (`docs/Aequitas_Foundations_v0.17.md` §5.1b). Full response: `docs/OP-26_coverage_and_closure.md`.
+>
+> **2. The disparity ceiling was scoped wrong.** `24/F` is a **per-network** bound. Multi-network accounts are legitimate, and self-care credit has no physical anchor — produced goods do — so a person on *k* networks can accrue the floor *k* times and reach `k × 24/F`. A condition claiming IC-7 covered this was **wrong**: IC-7 caps per account per network. Fixed in `sims/DISPARITY_CEILING.md` §4, condition 5.
+>
+> **Both were the same mistake: a bound proved inside a boundary, stated without the boundary.** If you find a third, that is the most valuable thing you could hand us. Prior wordings are preserved verbatim in `docs/superseded/`.
 
 Requires Python 3.11+, `numpy`, `scipy`, `matplotlib`.
 
@@ -40,6 +46,7 @@ Requires Python 3.11+, `numpy`, `scipy`, `matplotlib`.
 | 6 | Concentration of holdings is arrested without a rule against concentration. | `sims/q2_capture.py`, `sims/q4_locked_ledgers.py` | `sims/Q2_CAPTURE.md`, `sims/Q4_LOCKED.md` |
 | 7 | Pollution is priced without an objective function and without a central authority setting the price. | `sims/plastic_debt.py` | `sims/PLASTIC.md` |
 | 8 | Unmeasured flows can be estimated without crediting anyone for them. | `sims/estimation_engine.py`, `sims/refinery_slice.py` | `sims/ESTIMATION.md`, `sims/REFINERY.md` |
+| 9 | **Darkness stops paying — and only under one specific rule.** Estimating unmeasured producers from the *undisclosed residual* leaves 0.1% of them dark; estimating from the *whole population* leaves 52.5% dark, permanently. Same agents, same arithmetic, one difference. Includes the cost threshold where it breaks. | `sims/residual_unravelling.py` | `sims/UNRAVELLING.md` |
 
 **Every `.py` file in `sims/` runs standalone with its own self-tests and needs no data files.** Two take a while at defaults:
 
@@ -63,6 +70,8 @@ python recursion_convergence.py           # full sweep + plots, long
 | `docs/Aequitas_Objections_v0.17.md` | **The register of open problems and unresolved objections.** Read this before writing a critique — your objection may already be listed, and several are listed as *unsolved*. |
 | `docs/Aequitas_EventLog_v0.8.md` | The data model. Event schema and the twelve integrity constraints. |
 | `docs/OP-9_calculation_reply.md` | The reply to Mises and Hayek on economic calculation. |
+| `docs/OP-26_coverage_and_closure.md` | **Consistency is not completeness.** The full response to the coverage objection, including two candidate constraints that were proposed and then **rejected** by stress-test, with the reasoning for the rejection kept. |
+| `docs/C2_information_capture.md` | **Contains a retraction of its own central proposal.** Sections 2, 4a and 10 argued a privacy architecture; §11 retracts it, because an axiom the author had written years earlier made it impossible. The superseded reasoning is kept unedited on purpose. |
 | `docs/OP-16`, `OP-17`, `OP-18`, `OP-23` | Standalone working papers on hazard authorization, co-product allocation, team credit, and capital/pollution. |
 | `docs/*_CHANGELOG.md` | Version history for each core document. Every change, dated. |
 | `docs/GLOSSARY.md` | Terms and sources. |

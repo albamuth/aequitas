@@ -1,9 +1,9 @@
 # The Disparity Ceiling — formal statement (queue #8, Part 1)
 
 **Sim:** [`disparity_ceiling_sim.py`](disparity_ceiling_sim.py) — 5 self-tests green · **Tracks:** Foundations v0.14 · EventLog v0.7 · Objections §C test 8
-**Status:** **Conditional result** (on OP-22 + four conditions in §4), **consumption axis only**, within-model. **Stress-tested 2026-08-14 → PASSES** (§3a). Upgrades the [`01-wiki/disparity-ceiling.md`](../wiki/disparity-ceiling.md) sketch from *hypothesis* to *stated, simulated, stress-tested, conditional result*. **New readers: start at §0 (plain-language explainer).**
+**Status:** **Conditional result** (on OP-22 + **five** conditions in §4 — the fifth added 2026-08-22, correcting an error in the fourth), **consumption axis only**, within-model. **Stress-tested 2026-08-14 → PASSES** (§3a). Upgrades the [`01-wiki/disparity-ceiling.md`](../wiki/disparity-ceiling.md) sketch from *hypothesis* to *stated, simulated, stress-tested, conditional result*. **New readers: start at §0 (plain-language explainer).**
 
-> **The claim, in one line.** Under Aequitas the ratio between the most anyone can sustainably consume and a bare-subsistence allowance is **24/F** (where *F* is the network's self-care floor in hours/day) — a small number, independent of the tolerance dial ρ and of the weighting model, and **invariant to fraud**. Under money the same ratio runs to **~10⁶×** and compounds without limit.
+> **The claim, in one line.** Under Aequitas the ratio between the most anyone can sustainably consume and a bare-subsistence allowance is **24/F** *per network* — the global bound is 24/F **only under cross-network uniqueness attestation** (§4 condition 5) (where *F* is the network's self-care floor in hours/day) — a small number, independent of the tolerance dial ρ and of the weighting model, and **invariant to fraud**. Under money the same ratio runs to **~10⁶×** and compounds without limit.
 
 ---
 
@@ -117,7 +117,10 @@ The `24/F` bound is a **within-model** statement — true inside one network's b
 1. **F sits in a narrow band across networks.** Otherwise a person compares a generous network's allowance against a stingy network's floor, and the effective ratio drifts above 24/F.
 2. **Floor-shopping is arrested by counterparty re-computation (OP-14).** Each counterparty re-reads a claim through its *own* F and ρ (comparison, never conversion), so a low floor cannot be *exported*.
 3. **OP-22 is solved.** That re-computation requires proving "backed by *X* hours under model *M*" **without revealing the private ledger** (zero-knowledge disclosure). The guard is only as real as this mechanism — **OP-22 is the load-bearing dependency**, and it is unsolved.
-4. **No gross-hour fraud beyond IC-7.** On the consumption axis IC-7 already caps this; the residual "fake gross hours → influence" pump is **OP-1**, on the influence axis, out of scope here.
+4. **No gross-hour fraud beyond IC-7.** *Within one network*, IC-7 caps this on the consumption axis; the residual "fake gross hours → influence" pump is **OP-1**, on the influence axis, out of scope here.
+5. **Cross-network uniqueness is attested.** ⚠️ **Added 2026-08-22, and it corrects an error in condition 4 as it was previously written.** Multi-network accounts are legitimate (Foundations §5.3a; `00-strategy/C2_information_capture.md` §8) — one person may hold an account on Alpha and another on Beta. **IC-7 does not cap this, because it applies per account per network.** Produced goods are anchored physically (a parcel has one custody chain, IC-5), so output-backed credit cannot be duplicated across networks without surfacing. **Self-care credit has no such anchor** — it is credited by proof-of-life and needs no output — so a person on *k* networks can accrue the floor *k* times, and the effective ceiling becomes **k × 24/F**.
+
+   *The answer, and it is a good one:* **merge collapses duplicates.** On federation, two networks holding the same records for A and B collapse them into one account, and a network that accepts inflated credit **damages its own books**, so cross-checking uniqueness with peers is in its own interest — OP-14 applied to persons rather than to goods. **The more networks interoperate, the more expensive the exploit.** Routes to OP-1, OP-14, C6, C2.
 
 ---
 

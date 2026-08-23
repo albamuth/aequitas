@@ -16,6 +16,8 @@ python arithmetic_audits.py            # build log, run all checks, print the re
 python arithmetic_audits.py --test     # self-tests only (pytest-free)
 ```
 
+**The verdict now declares its own extent (EventLog v0.8 §7.4).** `print_extent_block()` prints `(result, domain, extent, closure-basis)` beside the pass/fail lines, and for this scenario the closure basis is **NONE** — no reservoir reconciliation, no external counterparty, no independent total *N*, and two origin termini (`G1`, `G2`) that the log cannot re-derive from its own bytes. Five blind spots are named explicitly, the first being that a process recorded **nowhere** is invisible to every check here. **This was added because OP-26 punished exactly the claim this module used to make**: a bare `12/12` reads as completeness when it only ever meant consistency. Read the verdict as *12/12 over that extent, with no closure basis.*
+
 **Status: 12/12 clean checks pass, 12/12 injected violations caught**, plus the two v0.4 projection properties demonstrated. Reuses (does **not** rebuild) the recursion sim's proven forward solver for IC-10's recursive layer.
 
 ---

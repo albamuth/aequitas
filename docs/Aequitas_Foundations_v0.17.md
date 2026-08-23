@@ -4,7 +4,7 @@
 > **Version:** 0.17
 > **Date:** 2026-08-22
 > **Status:** Working foundations.
-> **Supersedes:** `99-archive/Aequitas_Foundations_v0.16.md`. **Coverage folded in (OP-26) — consistency is not completeness, and the closure witness turns out to have been in §5.1b all along.** An external objection established that arithmetic over a log testifies to nothing outside that log; the answer is that a **closure witness is neither an assertion nor a proof but a citation** — method, provenance, vintage, extent, and an obligation to recompute when it improves. Four things follow. **§3.3** now states that coverage estimates ride the retroactive-recomputation engine like any other science, and adds the previously-unstated **transaction-time rule**: the ratio gate is evaluated when the transaction happens, so a later re-weight changes *future* room and never the validity of a completed act. **§3.3a** extends rival-sector audit to coverage estimates — the natural auditor of a dark-residual figure is the *instrumented producer in the same market* — and notes the lever is larger than a cost constant, because a coverage figure changes which flows are deemed to exist at all. **§5.1a** gains the **floor rule** beside monotonicity: a quantity computed over incomplete coverage is a lower bound, not a value. **§5.1b** gains the **conservative-count rule** (under-count the dark; the self-liquidating error is the safe one) and generalises the witness from production to any conserved dimension. Schema consequences are in EventLog v0.8 §4.1a/§7.4. No axiom changed. Full paper: `00-strategy/OP-26_coverage_and_closure.md`.
+> **Supersedes:** `99-archive/Aequitas_Foundations_v0.16.md`. **Coverage folded in (OP-26) — consistency is not completeness, and the closure witness turns out to have been in §5.1b all along.** An external objection established that arithmetic over a log testifies to nothing outside that log; the answer is that a **closure witness is neither an assertion nor a proof but a citation** — method, provenance, vintage, extent, and an obligation to recompute when it improves. Four things follow. **§3.3** now states that coverage estimates ride the retroactive-recomputation engine like any other science, and adds the previously-unstated **transaction-time rule**: the ratio gate is evaluated when the transaction happens, so a later re-weight changes *future* room and never the validity of a completed act. **§3.3a** extends rival-sector audit to coverage estimates — the natural auditor of a dark-residual figure is the *instrumented producer in the same market* — and notes the lever is larger than a cost constant, because a coverage figure changes which flows are deemed to exist at all. **§5.1a** gains the **floor rule** beside monotonicity: a quantity computed over incomplete coverage is a lower bound, not a value. **§5.3b** is new: **what a network owes, and what funding one means.** Tallying is **algorithmic**, which is what makes §3.3's *citation* requirement enforceable — a published algorithm gives `method_ref` a version number to point at. A trustworthy network **publishes its estimating numbers, its methods, and anonymised data covering all participants**; how much it reveals about institutions and businesses is its own call. **"Funding" is not a budget** — it is the recognition of an activity as creditable, and recording is never gated (A7), so the credit for audit work was never scarce; what is scarce is **demand (pledges) and verification**. This narrows OP-24's *funding* half out of existence while leaving its *incentive* half intact. **The bootstrap is a genesis entry pointed at the network itself.** ⚠️ Founding credit is flagged as the one record with no possible contemporaneous check — bounded by IC-7, public re-computation, and the `24/F` ceiling, but not closed. **§5.3a** is new: **privacy is a network choice.** The trust network does the tallying, so it holds what is private and it decides the practice — pseudo-privacy on the payment-intermediary model, or radical transparency, or anything between. Aequitas states principles and does not dictate implementation; inter-network compatibility is negotiated between networks. This is the third dial of the same kind as ρ and the floor `F`. **Opacity is priced rather than forbidden** — a counterparty discounts what it cannot verify (OP-14), so a privacy practice becomes a property of a network's output. Three residues are flagged: **information capture by the network itself**, a **measured coverage cost** to privacy, and a network's choice **binding members who did not make it**. **§5.1d** is new: **the back-trace horizon is birth, and it runs on both sides** — a lifetime of estimated consumption arrives together with a lifetime of self-care credit, which at roughly 3,650 h/yr against roughly 1,380 h/yr makes onboarding a windfall for a median person rather than a penalty. Evidence is voluntary, moves the figure either way, may arrive at any later date, and re-derives the ledger under A6. Two conditions carry it: estimates for undisclosed periods are computed over the **undisclosed residual**, and estimates **err against the estimated party** on both sides so evidence always pays — with the self-care floor exempt, because it is credited by proof-of-life and not estimated at all. **⚠️ It escalates OP-22 sharply: a back-trace is a life dossier.** **§5.1c** is new: **the residual is held, not allocated** — a coverage gap is computed and published but charged to nobody, and a dark producer's share is back-traced to them when they onboard, which is also the only way they can transact at all. A4 is not abandoned but **pending**, and the damage is already priced through §3.3's ambient stock without anyone being charged for another's units. **§5.1b** gains the **conservative-count rule** (under-count the dark; the self-liquidating error is the safe one) and generalises the witness from production to any conserved dimension. Schema consequences are in EventLog v0.8 §4.1a/§7.4. No axiom changed. Full paper: `00-strategy/OP-26_coverage_and_closure.md`.
 > **Prior (v0.16):** **Empirical calibration folded into §3.5 and §7.5 — the "labour is abundant, physical throughput binds" thesis is now anchored to measured numbers, and the ρ prime-rate is calibrated.** Three results, all from `06-simulation/`: (1) the **labour cost of a median US lifestyle is ≈ 1,380 h/yr**, built bottom-up from measured supply chains (BLS ERM × PCE + EXIOBASE imports + §6.2b durables + own-pollution remediation), *far* below the ~3,650 h/yr self-care credit every human earns — so the median commands about a third of one person's annual credit. (2) **Cross-country efficiency (Q6):** the US is the labour- *and* carbon-inefficient outlier — it commands 50–80% more embodied labour and 2.5–4× the CO₂ per capita than Germany/Sweden/France/Japan/Spain for a comparable-or-worse material standard; efficient peers deliver the same life at ~⅔ the labour. (3) **The ρ-sweep** (`rho_sweep.py`) shows a pickable ρ clears the market, moves predictably under shocks, and — the load-bearing new finding — **efficient production, not extra labour, is what crosses society toward post-scarcity**, while the `24/F` ceiling stays invariant throughout. No mechanism or axiom changed; this is anchoring, and the absolute ρ\* is illustrative (OP-10-dependent) while the directions are robust.
 > **Prior (v0.15):** **Disparity-ceiling proof completed and stress-tested → PASSES (§7.5).** The `24/F` bound has a formal statement (`06-simulation/DISPARITY_CEILING.md`, with a plain-language explainer) and an adversarial pass that dissolved three attacks (Methuselah hoarder, dynasty/household, collector). The load-bearing precision it forced: **credit and debit are cumulative running tallies (A6), the gate `D ≤ ρ·C` is a ratio re-checked at each event, and credit is *never spent* — a purchase adds to debit, never decrements credit (A3: not a currency).** So there is no "banking" of credit to splurge; hoarding only front-loads one's own `ρ·C`, and at equal age disparity is exactly `24/F` (the only spread beyond it is age). The result is coupled to v0.14's pledge fold: making pledged surplus non-consumable (§6.4c) closed the one transfer channel that could have breached A3.
 > **Prior (v0.14):** **Pledges made PERMANENT (§6.2b, §6.4, §6.4a), reversing v0.13's revocable model.** A pledge is a *permanent, non-revocable* grant of debit-room; a person's lifetime pledging-budget equals their lifetime earned credit, spent down once (pledging never diminishes credit itself). A task's pledges first cushion its cost, split pro-rata by hours **on the task**; any **surplus becomes a non-consumable contingent reserve** earmarked to any *verified task-caused future cost* (causation by physical-trace; diffuse/latent harm by cohort convention). The reserve is a **buffer, not a shield** — once exhausted, residual task-caused debit reverts to the causer (§3.2/§3.7). A pledge to an abandoned task is **burned**, not reverted. This gives onerous *hazardous* work a demand-gated incentive without profit or rate-scaling (the hazard half of OP-16); sim `06-simulation/pledge_reserve.py`. Full change log in the companion `Aequitas_Foundations_CHANGELOG.md`.
@@ -46,8 +46,12 @@
   - [5.1 Coverage without coercion](#51-coverage-without-coercion)
   - [5.1a Realization](#51a-realization)
   - [5.1b The residual rule — averages cover only the unmeasured](#51b-the-residual-rule--averages-cover-only-the-unmeasured)
+  - [5.1c The residual is held, not allocated](#51c-the-residual-is-held-not-allocated)
+  - [5.1d The back-trace horizon is birth — and it runs on both sides](#51d-the-back-trace-horizon-is-birth--and-it-runs-on-both-sides)
   - [5.2 Onboarding as resolution — and as the adoption incentive](#52-onboarding-as-resolution--and-as-the-adoption-incentive)
   - [5.3 Privacy — market data public, personal ledgers private](#53-privacy--market-data-public-personal-ledgers-private)
+  - [5.3a Privacy is a network choice — Aequitas sets principles, not practice](#53a-privacy-is-a-network-choice--aequitas-sets-principles-not-practice)
+  - [5.3b What a trust network owes, and what "funding" one means](#53b-what-a-trust-network-owes-and-what-funding-one-means)
 - [6. One Credit, Three Feedback Channels](#6-one-credit-three-feedback-channels)
   - [6.1 Why "enrichment" is named at all](#61-why-enrichment-is-named-at-all)
   - [6.1b Self-care is credited work — and it is the floor's mechanism](#61b-self-care-is-credited-work--and-it-is-the-floors-mechanism)
@@ -345,9 +349,12 @@ Three supporting rules:
 
 > **And the rival-sector argument extends to coverage with no new mechanism.** Ask who is materially harmed when a dark residual is *understated*, and the answer is immediate: **the instrumented producer competing in the same market.** A grower who paid to measure their own supply chain is directly damaged when undocumented produce prices too cheaply. They will fund the replication. Consumers police neither direction here either; rivals police both.
 
-**This gives OP-24 partial relief it did not have.** OP-24's core complaint is that a constant which *understates* has no natural corrector, because correcting it worsens every subscriber's ledger. That still holds for weighting constants. It does **not** hold for coverage: if the residual `N − Y` is carried by the recorded participants — and it must be, because it is real material that really moved — then **closing someone else's coverage gap lowers your own bill.** The audit of *extent* has a funder even where the audit of *weight* does not.
+**This gives OP-24 partial relief it did not have.** OP-24's core complaint is that a constant which *understates* has no natural corrector, because correcting it worsens every subscriber's ledger. That still holds for weighting constants. It does **not** hold for coverage, which has **two** funders that a weighting constant lacks:
 
-> ⚠️ **Conditional, and the condition is unresolved.** This depends on the residual actually being carried by participants rather than written off. §5.1 forbids charging **non-participants** for their estimated position; it says nothing about who bears the residual itself. **That question is open and is the next thing to settle on OP-26.**
+1. **The rival producer.** An instrumented grower is materially harmed when undocumented produce prices too cheaply, and will fund the work of exposing it — the same argument as the rival-sector rule above, needing nothing new.
+2. **The dark producer themselves.** They cannot transact inside the system at all until they onboard (§5.1c), so the pull toward the records is theirs, not something anyone has to impose.
+
+**Neither funder requires the residual to be allocated to anybody**, which matters, because it is not — see §5.1c. The audit of *extent* therefore has a funder even where the audit of *weight* does not.
 
 <!-- tag: fnd-s3-4 -->
 ### 3.4 Resolution is opportunistic
@@ -510,6 +517,54 @@ An unmeasured producer's estimated output is the **independently-known total min
 
 **"Dark" means outside Aequitas, not low-tech within it.** Participation carries a transparency requirement — a good moving through the Aequitas economy carries records of its origin. Seeking data on non-participants, and assisting producers to bring their supply chain into the record, are both **credited trust-network work**.
 
+<!-- tag: fnd-s5-1c -->
+### 5.1c The residual is held, not allocated
+
+A coverage gap is real material that really moved. The question is whose books it sits on, and the answer is **nobody's — yet**.
+
+> **The residual is computed, published, and left unassigned. It is not debit on any account. When a dark producer onboards, their share is back-traced from the records that already exist and assigned to them — the actual causer. Until they onboard, they cannot transact inside the system at all.**
+
+**Why this is the axiom-respecting answer and not a dodge.** A4 (no externalities) is not abandoned here; it is **pending**. The cost does not vanish and is not written off — it is held as a computable claim waiting for a claimant. Assigning it to innocent participants in the meantime would contradict the rule that consumption and pollution debit **stays with whoever caused it** (§3.2), and would be collective punishment in the exact sense §3.3 already rejects.
+
+**Nothing extra has to be built to make the back-trace possible.** Both records already exist and are already kept for other reasons: the **ambient-stock measurement** of regional pollution (§3.3) and the **independently-known production total** of §5.1b. A producer's share is derivable from those the moment there is a producer to derive it for.
+
+**And the damage is not unpriced in the meantime.** Because pollution weight floats with the **ambient stock** (§3.3), the dark producers' emissions are already in the stock everyone is weighed against. Participants therefore pay a rate that reflects the *total* damage while being charged only for their **own** units — proportionality, not collective punishment, exactly as §3.3 states. **The residual is felt correctly without being allocated.**
+
+**What the gap is instead of a debit: a published coverage figure.** *"These books cover 60% of this region's measured output."* That is the extent rule (EventLog §7.4) at regional scale, and it does real work — a counterparty re-computing under its own model (OP-14) can discount goods from a thinly-covered region. Coverage becomes a quality property of a network's own output rather than a charge against its members.
+
+<!-- tag: fnd-s5-1d -->
+### 5.1d The back-trace horizon is birth — and it runs on both sides
+
+**The back-trace reaches back to the person's birth.** Not to the ledger's epoch, not to the onboarding date. A whole life.
+
+That sounds punitive and is the opposite, for one reason that has to be stated first and never dropped:
+
+> **The back-trace is symmetric. Both sides are reconstructed — the debit *and* the credit.**
+
+§5.1 already estimates non-participants on both sides, and §7.5 credits every living human for the work of staying alive, qualified by *being alive* rather than by being able to work. So a lifetime back-trace brings a lifetime of self-care credit with it.
+
+**The arithmetic, which is the whole argument.** A median lifestyle embodies roughly **1,380 hours** of others' labour per year (§3.5). Simply being alive credits roughly **3,650 hours** per year. Per year of life, credit runs about **2.6×** consumption. A person onboarding at forty therefore arrives with roughly 146,000 hours of estimated credit against roughly 55,000 hours of estimated consumption.
+
+**Onboarding is a windfall for a median person, and that is not a coincidence — it is §5.2's adoption incentive, computed.** The people for whom a full back-trace is *costly* are those whose lifetime consumption genuinely exceeded their lifetime contribution. That is correct targeting, not a defect.
+
+**Estimate is the default; evidence is voluntary and moves you off it.** An onboarding person supplies whatever narrows the estimate — where they were born, how long they lived in each place, which jobs they held, how far they commuted, which cars they owned and the mileage on them — and **accepts the cohort estimate for every period and activity they leave dark.** Nothing is compulsory.
+
+**Evidence moves the figure in either direction, and that is why people supply it.** Mileage records plus a car model may show a hybrid driven below the commuter average — and the debit falls. The same records could raise it. The point is that the estimate is not a verdict.
+
+**Details may arrive at any later date, and the ledger re-derives.** This needs no new machinery: the ledger is derived from the log and never stored (A6), and §3.3 already recalculates every affected record when the science improves. **A life is refined the same way a cost constant is.** Supersession stays monotone (§5.1a) — an observation may never be replaced by an estimate.
+
+**Two conditions make this work, and without either it breaks.**
+
+1. **Estimates for undisclosed periods are computed over the *undisclosed residual*, not over the whole population.** This is §5.1b's rule generalised from producers to periods and dimensions *within a life*. Without it, a person who documents only their flattering years free-rides forever on an average their own silence inflates. With it, the pool of the undisclosed worsens as the well-documented leave it — the same adverse-selection reversal, one level down. **Selective disclosure is expected and is not an exploit, provided the residual rule holds.**
+2. **An estimate errs against the estimated party, on both sides.** Debit is estimated at the unfavourable end, credit at the conservative end, so **supplying evidence always pays** whichever direction the truth lies. This is the conservative-count rule (§5.1b) applied per person.
+
+> **The floor is exempt, and must stay exempt.** The self-care floor is **not** an estimate — it is credited by proof-of-life (§6.1b, §7.5), and being alive is the whole qualification. So condition 2 never bites on subsistence. **Someone who cannot document a life is not thereby impoverished by this rule**, which is the difference between a conservative estimate and a punishment for poor record-keeping.
+
+**Why this does not contradict §5.1 or the transaction-time rule.** §5.1 forbids charging a **non-participant** for an estimated position, and that is untouched — nothing is charged until they onboard, and onboarding is voluntary. The transaction-time rule (§3.3) protects **completed acts that the system gated at the time**; pre-onboarding acts were never gated by Aequitas, so there is no permission being revoked retroactively. **What is reconstructed is a position, not a verdict on past conduct.**
+
+> ⚠️ **This escalates OP-22 (minimum audit disclosure) sharply, and that is the strongest objection to it.** A full back-trace is a life dossier — birthplace, every residence, employment history, commuting distance, vehicles owned, mileage. Disclosure is voluntary, but the *incentive* runs toward disclosing, so the system exerts steady pressure on people to assemble exactly the record a surveillance state would want. **§5.3's "market data public, personal ledgers private" now has to hold across a lifetime**, and OP-22's question — proving a claim is backed without exposing the history behind it — becomes the load-bearing privacy problem of the whole system rather than a C7 implementation detail. **Registered, not solved.**
+
+
 <!-- tag: fnd-s5-2 -->
 ### 5.2 Onboarding as resolution — and as the adoption incentive
 
@@ -536,9 +591,77 @@ Account holders keep a **private ledger with provable claims** — zero-knowledg
 
 **Aequitas also does not replace existing recourse.** Courts, small claims, contract law, and ordinary social pressure continue to exist and continue to handle fraud between people. The system's contribution is upstream of enforcement: by removing wealth concentration and material insecurity, it **removes most of the motive** for the scams those mechanisms exist to punish.
 
-> **⚠️ The narrow question that remains — OP-22.** The bank analogy has one gap: there is no bank to externalize validation to. Verification is the trust-network ecosystem (Level 2), and an auditor must be able to see *something*. So the live question is not "surveillance or privacy" but **"what is the minimum an auditor must see to verify a claim without seeing a history?"** Zero-knowledge proofs are the right shape of answer and are already specified above; what is missing is the precise disclosure set. **This is a C7 (privacy layer) implementation problem, not a foundational contradiction.**
+> **⚠️ The narrow question that remains — OP-22.** The bank analogy has one gap: there is no bank to externalize validation to. Verification is the trust-network ecosystem (Level 2), and an auditor must be able to see *something*. So the live question is not "surveillance or privacy" but **"what is the minimum an auditor must see to verify a claim without seeing a history?"** Zero-knowledge proofs are the right shape of answer and are already specified above; what is missing is the precise disclosure set.
+
+<!-- tag: fnd-s5-3a -->
+### 5.3a Privacy is a network choice — Aequitas sets principles, not practice
+
+**The gap in the bank analogy closes by naming what plays the bank's part. It is the trust network.** The network does the tallying and the tracking, so it is the party that holds what is private — and it is therefore the party that decides how privacy works.
+
+> **Each trust network sets its own privacy practice. Aequitas states the principles and does not dictate the implementation. Compatibility between networks is a matter for those networks to negotiate.**
+
+**The working shape is the payment intermediary.** A card network today facilitates a transaction in which **neither party learns the other's private details**. The intermediary knows both sides; the counterparties know a token and an outcome. That is *pseudo-privacy*, it is deployed at planetary scale, and it is the nearest existing analogue of what a Level-2 network does here.
+
+**A network may also choose the opposite.** Radical transparency — no personal privacy at all — is an available and legitimate setting. Nothing in the axioms forbids it. Some communities will want it.
+
+**This is the same move as ρ and the self-care floor `F`.** Aequitas *uses* those dials and never sets their value (§3.5, A8). Privacy is a third dial of the same kind: a network-level choice that the accounting reads and never legislates. **A global privacy constant would be exactly the central authority A8 forbids.**
+
+**Opacity is priced, not forbidden — and that is what stops network-shopping.** A counterparty re-computes a claim through its own model (OP-14) and **discounts what it cannot verify**. So a network that chooses heavy opacity finds its members' claims trade at a discount elsewhere, exactly as a network with thin coverage does (§5.1c). **A network's privacy level becomes a priceable property of its output** rather than a rule anyone enforces — the same shape as every other answer in this document: *price the costly path rather than forbidding it at a door somebody has to guard.*
+
+**Three residues, and none of them is small.**
+
+> **⚠️ (a) The network becomes the most information-rich actor in the system.** Whoever tallies, holds. A Level-2 network that keeps its members' lifetime back-traces (§5.1d) holds a concentration of *information* comparable to the concentration of *wealth* this project exists to dissolve. §3.3a's public-membership capture screen was written for **sector** capture and does not address **information** capture. **This is P4/OP-10 shaped and it is currently unanswered.** "You may leave" is a weak exit when the thing you would be leaving behind is your life history.
+
+> **⚠️ (b) Privacy has a measured coverage cost.** Privacy-preserving verification is more expensive than open verification. `06-simulation/residual_unravelling.py` measures where that matters: **once verification costs more than roughly 40% of a median unit's debit, the residual rule stops unravelling the dark pool and darkness becomes stable again.** A network is therefore choosing, whether it knows it or not, on a curve with coverage at the other end. **The trade-off is real, it now has a number, and no network should pick a privacy practice without pricing it.**
+
+> **⚠️ (c) A network's choice binds members who did not make it.** Children born into a radically transparent network, and people who joined before a practice changed, did not choose it. Entry, exit, and the portability of a personal record across a privacy boundary are **C2 questions**, and this ruling adds them to C2's list.
+
+**What is settled and what is not.** *Who decides* is settled: the network. *What Aequitas mandates* is settled: principles, not practice. **What remains open is the minimum disclosure set itself** — what an auditor must see to verify a claim without seeing a history — which stays a C7 implementation problem, now with a named holder and a priced trade-off attached.
 
 ---
+
+<!-- tag: fnd-s5-3b -->
+### 5.3b What a trust network owes, and what "funding" one means
+
+§5.3a settles that a network chooses its privacy practice. This settles what it owes in return, and dissolves the question of how it is paid for.
+
+#### The tally is an algorithm, and the algorithm is published
+
+**Tallying is algorithmic.** The estimate for a dark producer, the residual arithmetic of §5.1b, the cohort model of §5.1 — these are computations, not judgements exercised case by case.
+
+That matters more than it sounds, because it is what makes §3.3's *citation* requirement enforceable. **"Cite your method" against a human process is an aspiration. Against a published algorithm it is a version number**, and `method_ref` (EventLog §4.1a) has something concrete to point at. Anyone can re-run it on the same inputs and get the same answer, which is the whole content of "not an authority assertion."
+
+> **To be trustworthy, a network publishes: every estimating number it uses, every method, and anonymised data covering all of its participants.** Its books are in the light. A network that will not show its arithmetic is asking to be trusted rather than checked, which is the thing this system exists to stop needing.
+
+**How much to reveal about institutions, co-ops and individual businesses is the network's own call**, balancing the confidence transparency earns against the privacy its members want. That is the §5.3a dial again, applied to entities rather than persons.
+
+> **⚠️ And it cuts against itself.** Anonymised participant data is *more* re-identifiable the more of it there is — the chain-analysis problem §5.3 already names. **Publishing more to earn trust also publishes more to de-anonymise.** A network is choosing on this axis whether it means to or not, and it is a different axis from §5.3a's verification-cost curve, not the same one twice.
+
+**What the publication rule does buy is a sharper bound on information capture.** §5.3a's residue (a) was "the network becomes the most information-rich actor." With full anonymised publication, its remaining advantage narrows to exactly one thing: **it holds the linkage between the anonymised rows and the people.** That is a much smaller and much more attackable statement of the problem than the one it replaces — still unsolved, but now specific.
+
+#### "Funding" is not a budget — it is recognition
+
+**There is no treasury, no allocation, and no grant.** Asking who *funds* an auditor imports a question from money that does not survive translation.
+
+> **Funding, in Aequitas, is simply the recognition of an activity as creditable.**
+
+Audit work is work. It is recorded when it happens, and recording is never gated on approval (§6.4a, EventLog §5.1b) — gating recording on permission would contradict **A7** and re-open the origin-closure failure A7 repealed. So the credit for doing the work is not scarce and never needed a funder.
+
+**What *is* scarce is demand and verification.** A **pledge** says someone wants the work done (§6.4); **verification** decides when the credit realizes (§6.4a). Those are the real levers, and they are the ones §3.3a's rival-sector argument already pulls: the instrumented producer harmed by a cheap dark competitor is the party who *pledges* for the audit.
+
+**This narrows OP-24 rather than answering it.** OP-24's complaint was that a correction which worsens every subscriber's ledger has "no funder." The **funding** half dissolves — there was never a budget to find. The **incentive** half stands untouched: someone must still *want* the correction, and for an understating weight constant, the rival sector is still the only party who does.
+
+**Participants may pledge toward the network's own infrastructure** like any other work. Nothing special is needed for it.
+
+#### The bootstrap: a network's founding is its own genesis entry
+
+A trust network is the basis on which all accounting rests, so it cannot be paid by an accounting that does not exist yet. **The network is created first. Assigning its founders credit for creating it, once it is live, is the network's own decision, however it chooses to be governed.**
+
+**This is not a special case, and it should not be written as one.** It is exactly the situation §6.2a already handles: a **genesis entry** admits a thing that existed before the ledger, at an estimated cost, crediting the estimator, superseded when better records appear. And §5.1d has just established that reconstructing a position from before the ledger existed is ordinary rather than exceptional.
+
+> **A network's founding work is admitted the way any pre-ledger asset is admitted: as an estimated record, entered after the fact, open to supersession.** The bootstrap is a genesis entry pointed at the network itself.
+
+> **⚠️ The one genuinely unguarded record in the system.** Founding credit is written when there is no counterparty, no rival network, and no prior ledger to check it against — the single case where nothing contemporaneous can verify a claim. Three things bound the damage rather than prevent it: **IC-7** caps it at wall-clock hours × founders, so it cannot be arbitrarily large; it is **publicly recorded** and a later network can re-compute it (OP-14); and because credit is **non-transferable** (A3) and consumption is ratio-gated, over-crediting founders buys only consumption room, **bounded by the `24/F` ceiling** like everyone else's. *The disparity ceiling doing exactly the backstop job it was argued to do is worth noting.* **Bounded, not closed. C2 should say what a network's founding record must disclose.**
 
 <!-- tag: fnd-s6 -->
 ## 6. One Credit, Three Feedback Channels

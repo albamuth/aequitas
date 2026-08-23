@@ -5,7 +5,7 @@
 > **Date:** 2026-08-22
 > **Status:** Working draft. The structure is settled; the taxonomies and the marked mechanisms are open.
 > **Depends on:** `Aequitas_Foundations_v0.17.md` A1–A8
-> **Supersedes:** `99-archive/Aequitas_EventLog_v0.7.md`. **Coverage folded in (OP-26): consistency is not completeness, and provenance becomes a field rather than a word.** One over-claim in §7.1 is narrowed — IC-1/IC-2 convert an *under-declared* emission on a *recorded* event into an arithmetic error, and say nothing about a process recorded nowhere, which is a **coverage** question answered by Foundations §5.1b. Four additions follow: a **provenance block** beside the three axes (§4.1a) carrying `source_ref`, `method_ref`, `as_of`, `extent`, `uncertainty` and `supersedes`; **a tally is an event** that credits whoever performed it (§2.2), so provenance points into the log and is audited by the existing machinery; **the extent rule** (§7.4) — a passing check must publish what it was capable of detecting; and **IC-12 boundary additivity generalised from processes to tallies** (§7.2a), so a split tally's parts must sum to the coarser figure they came from. §8.1 gains the **conservative-count** and **floor** rules; §8.2's flagged open case — a measurement later found wrong — is resolved as **contest-without-replacement**. Two candidate constraints, **IC-13 (genesis admissibility)** and **IC-14 (citation closure)**, are registered in §12.3 as *candidates only* pending a joint stress-test. Full paper: `00-strategy/OP-26_coverage_and_closure.md`.
+> **Supersedes:** `99-archive/Aequitas_EventLog_v0.7.md`. **Coverage folded in (OP-26): consistency is not completeness, and provenance becomes a field rather than a word.** One over-claim in §7.1 is narrowed — IC-1/IC-2 convert an *under-declared* emission on a *recorded* event into an arithmetic error, and say nothing about a process recorded nowhere, which is a **coverage** question answered by Foundations §5.1b. Four additions follow: a **provenance block** beside the three axes (§4.1a) carrying `source_ref`, `method_ref`, `as_of`, `extent`, `uncertainty` and `supersedes`; **a tally is an event** that credits whoever performed it (§2.2), so provenance points into the log and is audited by the existing machinery; **the extent rule** (§7.4) — a passing check must publish what it was capable of detecting; and **IC-12 boundary additivity generalised from processes to tallies** (§7.2a), so a split tally's parts must sum to the coarser figure they came from. §8.1 gains the **conservative-count** and **floor** rules; §8.2's flagged open case — a measurement later found wrong — is resolved as **contest-without-replacement**. Two candidate constraints, **IC-13 (genesis admissibility)** and **IC-14 (citation closure)**, were stress-tested the same day and **rejected** (§12.3a): IC-13 refuses the ordinary late-joiner case and is defeated by epoch-shopping, and neither is arithmetic on the log. They are replaced by a **weighting rule** (a genesis creation-cost is estimated at the end unfavourable to the admitter, so laundering costs more than honest recording) and a **mandatory field** (the §4.1a provenance block, making "unsourced" a malformed record rather than a checker's finding). Full paper: `00-strategy/OP-26_coverage_and_closure.md`.
 > **Prior (v0.7):** **Conforms the pledge records to Foundations v0.14 (pledges made permanent + the contingent reserve).** A pledge is now a **permanent, non-revocable grant of debit-room**, drawn from a finite lifetime pledging-budget (= lifetime earned credit). Record-level consequences: the **`retracted_by`** field is removed (there is no withdrawal); **`expires_at`** now marks a *burn* deadline, not a reversion (an undischarged pledge lapses and its budget is lost, never returned — resolving C5 in the negative); **IC-8** is read cumulatively; and surplus pledges beyond a task's cost form a **contingent reserve** (§5.1c) that activates only against a verified task-caused cost, with overflow reverting to the causer.
 > **Change history:** `00-strategy/Aequitas_EventLog_CHANGELOG.md`.
 > **Validates against:** the sandwich trace (§10)
@@ -783,9 +783,9 @@ The DAG sum is the expensive operation and it is the whole of C4's feasibility q
 ---
 
 <!-- tag: evt-s12-3 -->
-### 12.3 Two trust boundaries with the same weakness — ⚠️ candidates, not constraints
+### 12.3 Two trust boundaries with the same weakness — ❌ candidates REJECTED 2026-08-22
 
-**Neither of the following is folded as an integrity constraint. Both are registered here as candidates pending a joint stress-test** (Objections OP-26). They are the same hole in two places, and the proposed defence for both is §7.2a's additivity-on-split.
+**Stress-tested jointly and both rejected as integrity constraints.** The attack they were written against is real; the instrument was wrong in both cases. The replacements are in §12.3a. Recorded here in full because the reasoning matters more than the verdict.
 
 **The shape.** IC-3 admits parcels by two termini: a reservoir extraction, or a **genesis entry**. §4.1a admits estimates by two termini: an in-log tally, or a **declared external citation**. In each pair, the second terminus is a claim the log cannot re-derive from its own bytes. **A terminus that cannot be re-derived is a laundering surface.**
 
@@ -800,6 +800,47 @@ The DAG sum is the expensive operation and it is the whole of C4's feasibility q
 > **Candidate IC-14 — citation closure.** Every estimate traces back to one of two valid termini: a **tally event inside the log**, or a **declared external citation**. An estimate with neither is **unsourced**, and the log reports it. Two termini for parcels, two termini for claims.
 >
 > *Mitigation, stated rather than assumed:* the citation must be **resolvable and independently re-runnable**, and Foundations §3.3a's **two unaffiliated replications** stand before any re-weight. Beyond that, §7.2a does the work — a fabricator cannot choose which sub-extent gets measured next.
+
+<!-- tag: evt-s12-3a -->
+### 12.3a Why both were rejected, and what replaces them
+
+**Stress-test, 2026-08-22. Verdict: FAILS as integrity constraints.**
+
+**IC-13 refuses the ordinary case.** A non-participant makes something in 2041 and sells it into a network founded in 2040. Its true creation is **after** that epoch, so an honest genesis entry would be *blocked* — and that is the normal onboarding path (Foundations §5.2), not an attack. A constraint that refuses the common case to catch the rare one fails universality.
+
+**Epoch-shopping makes it toothless anyway.** Found a network today and *everything on Earth* predates its epoch. IC-13 is therefore satisfied trivially by the newest network, which is a fresh laundering licence per network — and networks are cheap to found. Worse, it **rewards founding networks and penalises joining one**, inverting the adoption incentive, and it stratifies goods by the age of the network that admitted them.
+
+**Neither is arithmetic on the log, and that is the deeper objection.** IC-1…IC-9 check recorded quantities against *other recorded quantities*. IC-13 checks a **self-asserted date** against a constant; nothing in the log contradicts a launderer who writes "made in 2019". IC-14 demands *a* citation, not a true one. Both are plausibility filters wearing an integrity constraint's name — and shipping them as ICs would re-widen the §7.1 claim that this very fold had to narrow.
+
+**Replacement for IC-13 — the author's ruling, 2026-08-22. A weighting rule, not a constraint, and the date disappears entirely.**
+
+> **A good created at any time, in order to be transacted in the system, must show its logistical origin-chain record, and the seller must be onboarded.** Where no record or evidence of origin exists, **the cost is estimated exactly as all dark production is estimated** (Foundations §5.1b).
+
+Two consequences do the work that a date test could not:
+
+1. **The producer forfeits their efficiency.** A cohort estimate is by construction the *average* of the dark pool. Any producer who is genuinely better than that average — leaner process, shorter chain, cleaner energy — **cannot show a single unit of that advantage without records.** Efficiency becomes unbankable in the dark.
+2. **The producer inherits the pool's pollution and waste.** The estimate carries the **averaged** pollution and waste of dark production, not their own. A clean producer with no records is charged as a dirty one.
+
+**No date is checked, and nothing legitimate is refused.** Both requirements are already implied by existing machinery: origin-or-estimate is IC-3's two termini, and "the seller must be onboarded" is IC-5 — a parcel has exactly one holder, holders are `Account`s, and every change of holder is an event. **The ruling is a clarification of what the schema already required, not a new rule.** That is why it passes universality where IC-13 failed.
+
+> **What genesis actually is, restated.** A genesis entry is not a special category of object defined by its age. It is **the dark-production estimate applied to origin** — the record you get when no chain is available. Predating the ledger is one *reason* a chain is unavailable, not a *rule* about what qualifies. IC-13's error was trying to promote the explanation into a gate.
+
+**Two qualifications that must travel with this rule.**
+
+- **Evidence is not instrumentation.** §4.1 admits `recalled` and `testified` as legitimate bases at Level 1. A low-tech producer supplies an origin chain at L1 basis and is fully served. Read as "instrument or be punished," the rule would fail universality; read as "show your chain at whatever basis you have," it does not. **Say so wherever this is stated.**
+- **The transitional subsidy is real.** A producer *worse* than the dark average is better off staying dark, and is subsidised by the pool's better members. §5.1b's residual rule closes this over time — the average worsens as good producers leave — but it converges rather than biting immediately. **Name it as a transitional cost, not a hole.**
+
+⚠️ **Owed: a sim** comparing stay-dark against onboard, for producers above and below the pool average, under §5.1b residual dynamics. The rule only holds if the estimate genuinely dominates for enough of the distribution, and the convergence speed is unmeasured.
+
+**Where it belongs on fold:** Foundations §6.2a (with the front-loading rule) and §5.1b (as the origin case of the residual rule); EventLog §2.2's genesis paragraph.
+
+**Replacement for IC-14 — a mandatory field, not a constraint.**
+
+> **The §4.1a provenance block is mandatory on any estimated record.**
+
+"Unsourced" then becomes a **malformed record refused at write time**, not a condition discovered by a checker afterwards, and §7.4's extent rule already reports what a verdict could see. IC-14 was redundant with machinery folded in the same version.
+
+**What survives from the original worry.** A terminus the log cannot re-derive from its own bytes is still a soft spot. The answer is not to gate it but to **price it** — genesis and external citations are admissible, and both carry conservative estimates plus §3.3a's two unaffiliated replications before they can move history. That is the same answer the project gives everywhere else: *make the dishonest path cost more, rather than forbidding it at a door somebody has to guard.*
 
 ---
 

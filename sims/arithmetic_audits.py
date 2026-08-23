@@ -1034,6 +1034,118 @@ CHECKS = [
 ]
 
 
+def extent_block(log: LogState) -> dict:
+    """The extent rule (EventLog v0.8 sec.7.4): a verdict is
+    (result, domain, extent, closure-basis) -- never a bare result.
+
+    This exists because of OP-26. An earlier version of this module reported
+    "12/12 clean, 12/12 caught" with no statement of its own blind spots, which
+    is exactly the shape of claim the coverage objection punished: internal
+    consistency read as completeness. A zero here means only that no violation
+    was observed BY THESE CHECKS, OVER THIS EXTENT.
+
+    Nothing below is a pass/fail check. It is the disclosure that has to travel
+    beside the verdict.
+    """
+    events = log.events
+    window = (min(e.start for e in events), max(e.end for e in events)) if events else (0.0, 0.0)
+
+    # -- what dimensions were actually carried by the record ------------------
+    units = sorted({f.unit for e in events for f in (e.inputs + e.outputs)})
+
+    # -- origin termini, split by whether the log can re-derive them ----------
+    genesis_events = [e.id for e in events if is_genesis(e)]
+    genesis_parcels = sorted(pid for pid, p in log.parcels.items() if p.origin_genesis)
+    reservoir_rooted = sorted(pid for pid, p in log.parcels.items()
+                              if p.origin_reservoir is not None)
+
+    # -- flows leaving the accounted world for a commons ----------------------
+    reservoir_out = [(e.id, f.endpoint_id, f.magnitude, f.unit)
+                     for e in events for f in e.outputs if not f.is_parcel]
+    reservoirs_touched = sorted({r for _, r, _, _ in reservoir_out})
+
+    return {
+        "domain": {
+            "accounts": sorted(log.accounts()),
+            "parcels": len(log.parcels),
+            "reservoirs_registered": sorted(log.reservoirs),
+            "window_days": (round(window[0] / (24 * HOUR), 3),
+                            round(window[1] / (24 * HOUR), 3)),
+            "as_of_day": round(log.now / (24 * HOUR), 3),
+        },
+        "extent": {
+            "events_replayed": len(events),
+            "dimensions_carried": units,
+            "parcels_rooted_in_a_reservoir": reservoir_rooted,
+            "parcels_admitted_by_genesis": genesis_parcels,
+            "reservoirs_receiving_flows": reservoirs_touched,
+            "reservoir_out_flows": len(reservoir_out),
+        },
+        "closure_basis": {
+            # The honest answers. Each is "none" for a reason worth stating.
+            "reservoir_reconciliation": None,
+            "counterparty_attestation_external": None,
+            "population_total_N": None,
+            "genesis_termini_not_re_derivable": genesis_events,
+        },
+        "blind_spots": [
+            "Whole processes recorded NOWHERE are invisible here. IC-1..IC-9 test "
+            "the supplied log against itself; a disjoint chain (unrecorded extraction "
+            "-> off-ledger transformation -> off-ledger sink) leaves nothing dangling. "
+            "That is a coverage question (Foundations sec.5.1b), not an arithmetic one.",
+            "No reservoir stock is reconciled. Nothing here compares the sum of "
+            "recorded emissions against an independently measured ambient stock, so "
+            "the coverage gap for reservoir-directed flows is UNMEASURED, not zero.",
+            "Genesis termini cannot be re-derived from the log's own bytes. A genesis "
+            "entry is admitted on its estimate; see EventLog sec.12.3a.",
+            "No external counterparty attests any hand-off here. Every custody change "
+            "is internal to this synthetic log.",
+            "IC-10..IC-12 read a process-energetics model. They are arithmetic, but "
+            "they are not assumption-free (sec.7.2).",
+        ],
+    }
+
+
+def print_extent_block(log: LogState) -> None:
+    blk = extent_block(log)
+    print("\n" + "=" * 70)
+    print("EXTENT OF THIS VERDICT  (EventLog sec.7.4 -- the extent rule)")
+    print("=" * 70)
+    print("A passing check must publish what it was capable of detecting.\n")
+
+    d, x, c = blk["domain"], blk["extent"], blk["closure_basis"]
+    print("  DOMAIN     -- what this check was about")
+    print(f"    accounts            : {', '.join(d['accounts'])}")
+    print(f"    parcels             : {d['parcels']}")
+    print(f"    reservoirs registered: {', '.join(d['reservoirs_registered'])}")
+    print(f"    window (days)       : {d['window_days'][0]} .. {d['window_days'][1]}"
+          f"   as-of {d['as_of_day']}")
+
+    print("\n  EXTENT     -- what it actually covered")
+    print(f"    events replayed     : {x['events_replayed']}")
+    print(f"    dimensions carried  : {', '.join(x['dimensions_carried'])}")
+    print(f"    rooted in a reservoir: {len(x['parcels_rooted_in_a_reservoir'])} "
+          f"{x['parcels_rooted_in_a_reservoir']}")
+    print(f"    admitted by genesis : {len(x['parcels_admitted_by_genesis'])} "
+          f"{x['parcels_admitted_by_genesis']}")
+    print(f"    flows to a commons  : {x['reservoir_out_flows']} "
+          f"into {', '.join(x['reservoirs_receiving_flows']) or '(none)'}")
+
+    print("\n  CLOSURE BASIS -- what warrants the claim that this extent is complete")
+    print(f"    reservoir reconciliation : {c['reservoir_reconciliation'] or 'NONE'}")
+    print(f"    external counterparty    : {c['counterparty_attestation_external'] or 'NONE'}")
+    print(f"    independent total N      : {c['population_total_N'] or 'NONE'}")
+    print(f"    un-re-derivable termini  : {c['genesis_termini_not_re_derivable'] or '(none)'}")
+
+    print("\n  BLIND SPOTS")
+    for i, b in enumerate(blk["blind_spots"], 1):
+        print(f"    {i}. {b}")
+
+    print("\n  READ THE VERDICT AS: 12/12 clean and 12/12 caught, over the extent above,")
+    print("  with NO closure basis. Consistency, not completeness (Foundations sec.5.1c).")
+    print("=" * 70)
+
+
 def run_report(log: LogState) -> None:
     print("=" * 70)
     print("C11 -- ARITHMETIC AUDITS  (IC-1 .. IC-12 over a synthetic event log)")
@@ -1073,6 +1185,8 @@ def run_report(log: LogState) -> None:
     print(f"All 12 clean checks pass and all 12 violations caught: "
           f"{'YES' if all_caught else 'NO'}")
     print("=" * 70)
+
+    print_extent_block(log)
 
     # -- v0.4 projection properties (demonstrated, not pass/fail ICs) -----------
     print("\n--- CREDIT REALIZATION (sec.7.3): recorded always; counts on verification ---")
@@ -1189,9 +1303,31 @@ def _tests() -> None:
     _d0, tshares = creation_cost_holding_time(transit, "P:t")
     assert "carrier" not in tshares and set(tshares) == {"owner"}
 
+    # -- extent rule (EventLog sec.7.4) ---------------------------------------
+    _log = build_scenario()
+    blk = extent_block(_log)
+    assert set(blk) == {"domain", "extent", "closure_basis", "blind_spots"}, \
+        "a verdict is (result, domain, extent, closure-basis)"
+    assert blk["extent"]["events_replayed"] == len(_log.events)
+    assert blk["extent"]["dimensions_carried"], "must name the dimensions it saw"
+    # The load-bearing assertion: this scenario HAS no closure basis, and the
+    # block must say so rather than leaving the field absent or implying one.
+    assert blk["closure_basis"]["reservoir_reconciliation"] is None
+    assert blk["closure_basis"]["population_total_N"] is None
+    assert blk["closure_basis"]["genesis_termini_not_re_derivable"], \
+        "the scenario admits parcels by genesis; those termini must be disclosed"
+    assert len(blk["blind_spots"]) >= 4, "a check that names no blind spot is not disclosing"
+    # Flows to a commons exist and are reported, so the unmeasured coverage gap
+    # is attached to something concrete rather than being an abstract caveat.
+    assert blk["extent"]["reservoir_out_flows"] > 0
+    print(f"[ok] extent block: {blk['extent']['events_replayed']} events, "
+          f"{len(blk['closure_basis']['genesis_termini_not_re_derivable'])} "
+          f"un-re-derivable termini, closure basis NONE, "
+          f"{len(blk['blind_spots'])} blind spots declared")
+
     print("All C11 self-tests passed "
           "(12 checks pass on the clean log; 12 violations caught; "
-          "realization + holding-time properties hold).")
+          "realization + holding-time properties hold; the verdict declares its extent).")
 
 
 def main() -> None:
