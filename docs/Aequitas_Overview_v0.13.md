@@ -4,7 +4,7 @@
 > **Version:** 0.13
 > **Date:** 2026-08-22
 > **Audience:** everyone. No economics background assumed, none required.
-> **Supersedes:** `99-archive/Aequitas_Overview_v0.12.md`. **A new section in §7 on the honest limit of the checks — what they can see, and what they cannot.** An outside critic pointed out that arithmetic over a record proves the record consistent and says nothing about what was never written down. That is right, and §7 now says so plainly: the books catch a factory that under-declares, and they cannot see a workshop that never joined. What answers *that* is not a cleverer check but an ordinary measurement from outside — a satellite pass, a harvest total, a census — reconciled against what the books say. **The system does not demand a final number; it demands a citation, and it recalculates when the citation improves.** Also stated for the first time: **a later correction changes what you may do next, never whether what you already did was allowed.** Conforms to Foundations v0.17 §3.3/§5.1b. Change history in `Aequitas_Overview_CHANGELOG.md`.
+> **Supersedes:** `99-archive/Aequitas_Overview_v0.12.md`. **Two additions.** First, §0 now says **who actually does this** — Aequitas is a system the way capitalism is a system, and **trust networks are the implementers**, the ones who keep the books, check the arithmetic and publish their methods. They are best read as **laboratories rather than banks**: they compete on how close to the truth they can get, and a network that lets fraud through is helped by a rival, because in a system where networks trade a bad method in one corrupts the books of the other. Nothing else in the document makes sense without knowing who is doing the counting. Detail in `00-strategy/C2_TrustNetworks_v0.1.md`. Second, **a new section in §7 on the honest limit of the checks — what they can see, and what they cannot.** An outside critic pointed out that arithmetic over a record proves the record consistent and says nothing about what was never written down. That is right, and §7 now says so plainly: the books catch a factory that under-declares, and they cannot see a workshop that never joined. What answers *that* is not a cleverer check but an ordinary measurement from outside — a satellite pass, a harvest total, a census — reconciled against what the books say. **The system does not demand a final number; it demands a citation, and it recalculates when the citation improves.** Also stated for the first time: **a later correction changes what you may do next, never whether what you already did was allowed.** Conforms to Foundations v0.17 §3.3/§5.1b. Change history in `Aequitas_Overview_CHANGELOG.md`.
 > **Prior (v0.12):** **The labour-abundance claim in §1 now carries measured numbers, and a striking new finding: efficiency, not more work, is what creates abundance.** A bottom-up estimate finds a median US lifestyle commands ≈ 1,380 hours of others' labour per year — about a third of what one person earns just by being alive. And when the same standard is produced the German, Japanese, or Spanish way rather than the American way, it takes ~⅔ the labour and ~a quarter the carbon, because the US is a global efficiency outlier — its sprawl, fossil reliance, and long adversarial supply chains all cost extra in the ledger. So "we can't afford a decent life for everyone" turns out to be a statement about the *wasteful production method*, not about human hours. Conforms to Foundations v0.16 §3.5/§7.5. Change history in `Aequitas_Overview_CHANGELOG.md`.
 > **Rigorous version:** `00-strategy/Aequitas_Foundations_v0.17.md`. This document is the plain-language companion; where they differ, the Foundations govern.
 > **Change history:** `00-strategy/Aequitas_Overview_CHANGELOG.md`.
@@ -17,6 +17,7 @@
 ## Contents
 
 - [0 — What this is, in one page](#0--what-this-is-in-one-page)
+  - [And who actually does this?](#and-who-actually-does-this)
 - [1 — Problem: Inequality](#1--problem-inequality)
 - [2 — Problem: Debt](#2--problem-debt)
 - [3 — Problem: Gambling and Rent](#3--problem-gambling-and-rent)
@@ -59,6 +60,23 @@ Two words do all the work:
 | **Debit** | A record that something was taken from the world — material, energy, or damage — and who is holding the consequence. |
 
 That is the entire vocabulary. The rest of this document is what follows from taking it seriously and never making an exception.
+
+<!-- tag: ovw-s0-who -->
+### And who actually does this?
+
+**Aequitas is a system in the sense that capitalism is a system.** Nobody joins capitalism. There is no office, no membership, no headquarters. It is a set of ideas about how value moves, and **banks, firms and governments are what actually carry it out.**
+
+Aequitas is the same shape. It is a set of principles about how cost is counted. **The people who carry it out are called trust networks**, and almost everything in this document is really a description of something a trust network does.
+
+> **A trust network keeps the books.** It records the material flows, the hand-offs, the services, the pledges, and the measurements of the world itself — how much of a pollutant is in the air, how much a region actually grew. **It checks the arithmetic. It publishes its methods so anyone can check them back.**
+
+**Think of them as laboratories rather than banks.** Their business is getting the numbers right, and they publish how they got them so that other networks can find their mistakes. **A network that lets fraud through is helped by a rival network sharing the method that catches it** — not out of goodwill, but because in a system where two networks trade, a bad method in one corrupts the books of the other.
+
+**This matters for reading the rest of the document.** When a later section says the books catch an under-declared emission, or that an estimate improves as better data arrives, or that a purchase is refused because someone is over their limit — **a trust network is the thing doing it.** Aequitas says what should be counted. Trust networks are where the counting happens, or fails to.
+
+**And they are not prescribed by this project.** How a network handles privacy, what technology it runs on, which laws it must satisfy, how it documents its own founding — all of that is theirs to decide. **They compete on one thing only: how close to the truth they can get.** A network people cannot check is a network people will not use.
+
+*The detail is in `00-strategy/C2_TrustNetworks_v0.1.md`.*
 
 ---
 

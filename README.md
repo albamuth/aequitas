@@ -71,6 +71,7 @@ python recursion_convergence.py           # full sweep + plots, long
 | `docs/Aequitas_EventLog_v0.8.md` | The data model. Event schema and the twelve integrity constraints. |
 | `docs/OP-9_calculation_reply.md` | The reply to Mises and Hayek on economic calculation. |
 | `docs/OP-26_coverage_and_closure.md` | **Consistency is not completeness.** The full response to the coverage objection, including two candidate constraints that were proposed and then **rejected** by stress-test, with the reasoning for the rejection kept. |
+| `docs/C2_TrustNetworks_v0.1.md` | **Who actually implements this.** Aequitas is a system the way capitalism is a system — nobody joins it, and **trust networks are what carry it out**. What they hold, publish, verify; how they are funded; how disputes and fraud resolve. **Read as laboratories, not banks.** |
 | `docs/C2_information_capture.md` | **Contains a retraction of its own central proposal.** Sections 2, 4a and 10 argued a privacy architecture; §11 retracts it, because an axiom the author had written years earlier made it impossible. The superseded reasoning is kept unedited on purpose. |
 | `docs/OP-16`, `OP-17`, `OP-18`, `OP-23` | Standalone working papers on hazard authorization, co-product allocation, team credit, and capital/pollution. |
 | `docs/*_CHANGELOG.md` | Version history for each core document. Every change, dated. |
