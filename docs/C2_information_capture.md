@@ -249,6 +249,10 @@ Restated correctly, and it is a smaller and more honest problem than either of m
 
 - **The exposure is visible.** A network's publicity policy is published (§5.3b), so how much it discloses is a known property, and §5.3a's discount mechanism acts on it — a counterparty discounts what it cannot verify. **Priced, not forbidden.** Again.
 - **The protection is horizontal, not architectural.** Aequitas does not reduce capture by making each database smaller. It reduces capture by **there being many networks, none of them global**, each holding its own region's life, none holding everyone's. **Decentralisation here means *many holders*, not *less held*.** That is consistent with A8 and with every other structure in the project, and I should have reached it first.
+
+  > ⚠️ **This protection has an expiry date, and §5.3c names it.** The expected trajectory is **convergence** — networks federate, then merge, toward a single network rather than permanent regional isolation. **A protection that depends on there being many networks weakens exactly as the ecosystem succeeds.**
+  >
+  > The distinction that may save it: **what merges is the *method*, not necessarily the *custodian*.** Many holders can share one algorithm set the way many operators share one protocol — one accounting domain, many databases. **If that holds, this protection survives convergence. If convergence means one operator, it does not, and the end state of the design is the largest information concentration in the system.** Unresolved; registered against OP-10 and C2.
 - **⚠️ And the irreducible part, stated plainly.** Comprehensive records are a requirement, not a choice, so **the databases are comprehensive by design and the breach-and-coercion surface is real and permanent.** No mechanism proposed anywhere in this project removes it. What bounds it is scale — a network holds a region, not a world — and publicity, which removes the *differential* advantage of holding without removing the holding. **This is a genuine residual cost of the system and should be stated as one rather than argued away.**
 
 ## 11.5 What survives from §§1–10
