@@ -1,6 +1,6 @@
 # C2 — Information capture: verify, don't hold
 
-> **Status:** ❌ **§§2, 4a and 10 are RETRACTED — see §11, which is the live text.** The "verify, don't hold" principle was built on a false premise. **The trust network *is* the database**; holding the records is its function, not a failure mode. What survives: the **uniqueness ≠ identification** split (§3, ruled in §8), the **multi-network Sybil vector** (§9), and the retention-disclosure idea in the corrected form of a **publicity policy** (§11).
+> **Status:** ✅ **CLOSED — see §13.** Information capture is scoped out with recorded reasons: the escape is non-participation and never closes; trust networks are **laboratories, not banks**; and a monopoly earned by better methods is not the monopoly capitalism produces. ❌ **§§2, 4a and 10 are RETRACTED — see §11.** The "verify, don't hold" principle was built on a false premise. **The trust network *is* the database**; holding the records is its function, not a failure mode. What survives: the **uniqueness ≠ identification** split (§3, ruled in §8), the **multi-network Sybil vector** (§9), and the retention-disclosure idea in the corrected form of a **publicity policy** (§11).
 > **Read §11 first.** Sections 1–10 are kept unedited because the reasoning error is instructive and the project does not delete superseded work.
 > **Answers:** Foundations §5.3a residue (a), sharpened by §5.3b · OP-22 · P4 / OP-10 (capture)
 > **Tracks:** Foundations v0.17 §4, §5.3, §5.3a, §5.3b · EventLog v0.8 §4.1a
@@ -293,3 +293,33 @@ So:
 **Federation is therefore not a defence against an exploit. It is what interoperation means.**
 
 §9's finding still did real work — it exposed that condition 4 of the ceiling wrongly claimed IC-7 covered the multi-network case, and that correction stands. **The error was in what replaced it.** Both docs are now re-framed: Foundations §7.5 condition 5, `06-simulation/DISPARITY_CEILING.md` §4 condition 5.
+
+
+---
+
+# 13. CLOSED — scoped out, with reasons (2026-08-22)
+
+**Author's ruling.** Information capture is not a problem this project addresses, and the reasons are good ones.
+
+**First, the escape never closes.** §12 worried that convergence removes exit. **It mistook which exit matters.** The way out of Aequitas is **not participating** — the gift economy exists now, always has, and does not stop existing because an accounting system does. **Nobody is enclosed.**
+
+**Second, exit was never the discipline anyway.** Leaving does not fix a bad method; it removes the person who left. **What fixes a method is replication** — which §3.3a already required, as *two unaffiliated replications*, before anyone called it that.
+
+**Third, and this is the reframe that does the work:**
+
+> **Trust networks are laboratories, not banks. Their goal is truth and their motive is consensus rather than competition. A network whose methods let fraud through is *helped* by another network sharing the methods that catch it.**
+
+**It does not rest on virtue.** In an interoperating pair, **a bad method in one contaminates the books of the other**, so the neighbour's interest in helping is selfish. Same logic as OP-14, aimed at methods instead of claims.
+
+**Fourth, the four reasons this is out of scope:**
+
+1. **Hypothetical.** Convergence is a prediction, not an observation.
+2. **Unknown timing and technology.** A safeguard designed now against conditions we cannot describe is decoration.
+3. **A monopoly earned by better methods is not the monopoly capitalism produces.** Capitalist monopolies come from exclusion and anti-market practice, **not** from serving people better. A single Aequitas network would arrive because its methods are the best ones. **That is good service.**
+4. **Data security and backups are a technology problem**, outside this project's scope.
+
+**The strongest form of point 3, and why it holds: methods are published (§5.3b) and replicable. The monopoly is over *which method is used*, never over *who may propose one*. No exclusion, no moat** — which is precisely what a capitalist monopoly has and this does not.
+
+> **⚠️ One watch item, not a defence.** A monopoly earned on merit can stop being meritorious and keep the position. **The guard is publication plus replication, not competition.** If §5.3b's publication requirement ever weakens, the merit argument weakens with it. **The two are load-bearing for each other.**
+
+**Status of this paper: closed.** §§2/4a/10 retracted (§11), §9 re-framed (§12), and the underlying question scoped out here. **What it leaves behind that is still live:** the uniqueness ≠ identification split (§3, ruled §8), and the correction it forced to `DISPARITY_CEILING.md` condition 4.
