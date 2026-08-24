@@ -1,6 +1,6 @@
 # Refinery slice — physical split vs price allocation
 
-> **Date:** 2026-08-06 · **Code:** [`refinery_slice.py`](refinery_slice.py) · **Plan:** [`refinery_slice_PLAN.md`](refinery_slice_PLAN.md) · **Data:** [`../00-strategy/GLOSSARY.md#src-refinery-process-energy`](../docs/GLOSSARY.md#src-refinery-process-energy)
+> **Date:** 2026-08-06 · **Code:** [`refinery_slice.py`](refinery_slice.py) · **Plan:** [`refinery_slice_PLAN.md`](refinery_slice_PLAN.md) · **Data:** [`../docs/GLOSSARY.md#src-refinery-process-energy`](../docs/GLOSSARY.md#src-refinery-process-energy)
 > **Answers:** Objections §C **Test 4** / Foundations **§11(a)** — re-derive a refinery's fraction slate under §3.4a process-physics allocation and show it differs *materially* from the market-value (price) allocation USEEIO/EXIOBASE fall back to.
 > **Status: ✅ BUILT & RUN — energy dimension on REAL DOE data.** The energy split now uses the DOE 2015 Petroleum Refining Bandwidth Study per-process energies (Table 4-2, U.S. 2010); six faithfulness gates pass; physical and price allocations diverge up to **~6×** on the same slate.
 

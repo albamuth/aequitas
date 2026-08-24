@@ -35,7 +35,7 @@ Now, the four simulations.
 
 ## Simulation 1 — the self-eating economy
 
-**Files:** [`recursion_convergence.py`](recursion_convergence.py), write-up [`RESULTS.md`](RESULTS.md), **raw data `results.csv` (5,224 rows).**
+**Files:** [`recursion_convergence.py`](recursion_convergence.py), write-up [`RESULTS.md`](RESULTS.md), **raw data [`results.csv`](results.csv) (5,224 rows).**
 
 ### The question it's actually asking
 
@@ -71,7 +71,7 @@ The theorem assumes the split fractions (where the process sent its inputs) are 
 
 ## Simulation 2 — checking our homework against the standard tool
 
-**File:** `exiobase_loader.py` (described in [`ESTIMATION.md`](ESTIMATION.md) §5).
+**File:** [`exiobase_loader.py`](exiobase_loader.py) (described in [`ESTIMATION.md`](ESTIMATION.md) §5).
 
 ### The question
 
@@ -91,7 +91,7 @@ Our code reproduced pymrio's own footprint numbers **to fourteen decimal places*
 
 ## Simulation 3 — the pretend cow (this is the honest one)
 
-**File:** [`estimation_engine.py`](estimation_engine.py), write-up [`ESTIMATION.md`](ESTIMATION.md), table `estimation_debit_vectors.csv`.
+**File:** [`estimation_engine.py`](estimation_engine.py), write-up [`ESTIMATION.md`](ESTIMATION.md), table [`estimation_debit_vectors.csv`](estimation_debit_vectors.csv).
 
 I want to be very direct about this one, because it's the one most vulnerable to your suspicion.
 
@@ -115,7 +115,7 @@ One part *does* rise above pure tautology: it shows the rule is **self-consisten
 
 ## Simulation 4 — the real refinery
 
-**File:** [`refinery_slice.py`](refinery_slice.py), write-up [`REFINERY.md`](REFINERY.md), table `refinery_allocation.csv`, data sources [`../00-strategy/GLOSSARY.md#src-refinery-process-energy`](../docs/GLOSSARY.md#src-refinery-process-energy).
+**File:** [`refinery_slice.py`](refinery_slice.py), write-up [`REFINERY.md`](REFINERY.md), table [`refinery_allocation.csv`](refinery_allocation.csv), data sources [`../docs/GLOSSARY.md#src-refinery-process-energy`](../docs/GLOSSARY.md#src-refinery-process-energy).
 
 This is the one that uses **real government data** and produces a finding that isn't baked in from the start.
 
@@ -125,7 +125,7 @@ An [oil refinery](https://en.wikipedia.org/wiki/Oil_refinery) is the joint-produ
 
 The standard answer (what economic databases use) is: **split by revenue** — the valuable products owe more. Aequitas's answer is: **split by the energy each product's processing actually consumed.** Do these disagree? And if so, who's right?
 
-To answer, we needed real numbers for how much energy each refining step uses. Those come from the **U.S. Department of Energy's 2015 Petroleum Refining Bandwidth Study** — actual measured energy consumption, process by process, for the whole U.S. refining sector in 2010. (An amusing side-note: the tool we first used to read the DOE report claimed the PDF was "corrupted." It wasn't — the automated reader just choked on it. The real text was fine, and the numbers are in [`../00-strategy/GLOSSARY.md#src-refinery-process-energy`](../docs/GLOSSARY.md#src-refinery-process-energy) for anyone to check.)
+To answer, we needed real numbers for how much energy each refining step uses. Those come from the **U.S. Department of Energy's 2015 Petroleum Refining Bandwidth Study** — actual measured energy consumption, process by process, for the whole U.S. refining sector in 2010. (An amusing side-note: the tool we first used to read the DOE report claimed the PDF was "corrupted." It wasn't — the automated reader just choked on it. The real text was fine, and the numbers are in [`../docs/GLOSSARY.md#src-refinery-process-energy`](../docs/GLOSSARY.md#src-refinery-process-energy) for anyone to check.)
 
 ### The finding
 
@@ -185,9 +185,9 @@ Everything is inspectable. From this folder:
   python refinery_slice.py
   ```
 
-- **The cattle and refinery result tables** are saved as `estimation_debit_vectors.csv` and `refinery_allocation.csv` — open them in a spreadsheet and the arithmetic is checkable by hand (e.g. petcoke's energy share = coking energy 51.3 + distillation share 39.3 = 90.6, out of 2,162 total = 4.2%).
+- **The cattle and refinery result tables** are saved as [`estimation_debit_vectors.csv`](estimation_debit_vectors.csv) and [`refinery_allocation.csv`](refinery_allocation.csv) — open them in a spreadsheet and the arithmetic is checkable by hand (e.g. petcoke's energy share = coking energy 51.3 + distillation share 39.3 = 90.6, out of 2,162 total = 4.2%).
 
-- **The real refinery energy numbers** (U.S. DOE, 2010) are transcribed in [`../00-strategy/GLOSSARY.md#src-refinery-process-energy`](../docs/GLOSSARY.md#src-refinery-process-energy), with links to the original reports.
+- **The real refinery energy numbers** (U.S. DOE, 2010) are transcribed in [`../docs/GLOSSARY.md#src-refinery-process-energy`](../docs/GLOSSARY.md#src-refinery-process-energy), with links to the original reports.
 
 ---
 

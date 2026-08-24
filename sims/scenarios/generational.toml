@@ -1,0 +1,54 @@
+#  ===========================================================================
+#  STATERA SCENARIO — age is the only spread beyond the bound
+#
+#  Run it:  python run_scenario.py scenarios/generational.toml
+#
+#  WHAT THIS TESTS. Foundations §7.5 (the basic-needs floor) claims the gap
+#  between the top and the bottom can only exceed 24/F because of AGE — time
+#  lived, not class. This scenario is the smallest thing that can check it.
+#
+#  Two people, sixty years:
+#     · one works the physical maximum, 24 hours a day, from year 0
+#     · one earns only the self-care floor, 10 hours a day, from year 40
+#
+#  Expected gap:  (24 x 60) / (10 x 20)  =  1440 / 200  =  7.20x
+#  which is exactly 3 (the age ratio) x 2.40 (the rate bound 24/F).
+#
+#  If it comes out as anything else, either the model or §7.5 is wrong.
+#  Both would be results.
+#  ===========================================================================
+
+name = "Generational — a 60-year worker against a 20-year floor person"
+seed = 42
+periods = 60
+
+[period]
+days = 365          # one period is one year
+
+[population]
+mode = "cohorts"    # spell the people out by hand, below
+
+[dials]
+rho = 1.5
+floor_h = 10.0
+
+[want]
+mode = "none"       # nobody buys anything; we are watching credit accrue only
+
+[report]
+every = 10          # print every 10th period; all 60 are still run and checked
+cohorts = true      # show each person's own line at the end
+
+# --- the two people ---------------------------------------------------------
+
+[[cohort]]
+name = "max worker"
+rate_h = 24.0       # the physical maximum. IC-7 caps any account here.
+headcount = 1
+born = 0            # exists from the first period
+
+[[cohort]]
+name = "floor person"
+rate_h = 10.0       # earns the self-care floor and nothing more
+headcount = 1
+born = 40           # born forty years later, so lives 20 of the 60 years

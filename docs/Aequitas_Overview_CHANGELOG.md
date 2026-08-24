@@ -3,6 +3,26 @@
 > Version-by-version change log for `Aequitas_Overview_vX.Y.md` (the highest-versioned file in `00-strategy/`). Split out of the main document so it is read only when tracing **when and why** something changed. The main doc's header carries a one-line summary of the current version. Superseded full versions live in `99-archive/`.
 
 ---
+<!-- tag: ovw-v0-15-2026-08-23 -->
+### v0.15 (2026-08-23) - section 9 answers "can I use this while everyone else still uses money?"
+
+Reader-facing form of Foundations v0.19 5.5 (OP-27). One addition; nothing else changed.
+
+1. **New subsection in section 9.** **Yes, and both ways of crossing the line cost you something on purpose.** Bringing in a thing made with money: it has no history, so it is priced from a **published standard figure** for that kind of thing, **deliberately set a bit dear** so keeping real records is always worth more - and you spent money on it and got none back. Selling out for money: allowed, but **you keep the thing's debt**, and the books count it as a **gift**.
+2. **Why the money is invisible, in plain words.** The books record matter and energy; **money is neither**. A banknote changing hands is not a physical event the ledger has any way to notice - *"invisible, in the way a colour is invisible to a set of scales."* Not a rule anyone wrote, but a consequence of what the system counts.
+3. **Two things stated plainly because readers assume they must be false.** **Money cannot buy standing** - pay a hundred people to make things and *they* earn the hours, because credit is a record of who actually did the work; **you cannot buy someone else's hours at any price**. And **buying cheap inside to sell dear outside wrecks the person doing it** - everything taken on from inside adds to what you owe, selling it outside never removes it, so their account worsens with every load pulled out until it stops them buying more. **Nobody has to catch them; the books just stop lending them rope.**
+
+**Why it was needed.** *Can I use this while everybody around me still uses money?* is roughly the third question a normal reader asks, and the document had no answer anywhere.
+
+<!-- tag: ovw-v0-14-2026-08-23 -->
+### v0.14 (2026-08-23) - section 0 says what Aequitas is not
+
+Reader-facing form of the Foundations v0.18 scope fold. Conforms to Foundations v0.18 1.2/9. One addition; nothing else changed.
+
+1. **New passage in section 0, directly under "not a currency, not a token, not a blockchain":** *and it is not a piece of software.* States that these documents do not specify one and never will - database, record shape, cryptography and privacy practice all belong to whoever builds it, **the same way banks, not capitalism, decide what a banking system runs on.** What the project owes a builder is named instead: **a list of what must be true** for the books to be Aequitas at all. *What must be true is here. How to build it is theirs.*
+
+**Why it was needed.** Two consecutive sessions of work drifted into record-keeping detail and away from the economics, traced to Foundations 9 and 11 contradicting the 1.2 scope ruling. Appendix A already said the right thing - *a standard, not a product* - but that sits at the end of the document and section 0 said nothing.
+
 <!-- tag: ovw-v0-13-2026-08-22 -->
 ### v0.13 (2026-08-22) - section 7 gains the honest limit of the checks
 

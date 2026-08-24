@@ -67,4 +67,4 @@ This gives *hazardous* unwanted work a demand-gated incentive with no danger-pay
 
 ---
 *Status: settled (permanent grant of debit-room + contingent reserve, Foundations v0.14)*
-*Source: `00-strategy/Aequitas_Foundations_v0.17.md` §6.4, §6.4a, §6.4c, §6.2b · `00-strategy/Aequitas_EventLog_v0.8.md` §5.1, §5.1c, IC-8/IC-9*
+*Source: `00-strategy/Aequitas_Foundations_v0.19.md` §6.4, §6.4a, §6.4c, §6.2b · `00-strategy/Aequitas_EventLog_v0.8.md` §5.1, §5.1c, IC-8/IC-9*

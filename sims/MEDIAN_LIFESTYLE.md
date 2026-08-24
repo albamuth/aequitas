@@ -4,7 +4,7 @@
 
 **This is the rigorous, bottom-up version.** An earlier top-down attempt (~470–750 hours) was thrown out — it *assumed* where labour goes, missed the work frozen into durable things like houses, and ignored the labour done overseas. This rebuild fixes all three, using measured supply chains and real trade data.
 
-**Companion to:** the calculation scripts `track1_labour.py` … `track4_pollution.py`, the running-numbers log [`median_lifestyle_RESULTS.md`](median_lifestyle_RESULTS.md), and the charts in `median_lifestyle_v2_charts.py`. Part of the disparity-ceiling proof (the anchor that says where a real lifestyle sits).
+**Companion to:** the calculation scripts `track1_labour.py` … `track4_pollution.py`, the running-numbers log [`median_lifestyle_RESULTS.md`](median_lifestyle_RESULTS.md), and the charts in [`median_lifestyle_v2_charts.py`](median_lifestyle_v2_charts.py). Part of the disparity-ceiling proof (the anchor that says where a real lifestyle sits).
 
 ---
 
@@ -18,7 +18,7 @@ Aequitas measures the cost of things in **hours of human work**, not dollars —
 
 > **A median US adult's lifestyle commands about 1,600 hours of human labour per year — roughly 0.9 of one person's full-time work-year — and about half of it is performed abroad.**
 
-!A horizontal bar totalling about 1,620 hours a year, split into four parts: domestic consumption 772 hours, housing construction 45, imported (foreign) labour 785, and pollution clean-up 18. A caption notes it equals about 0.9 of one person's full-time work-year, with 48% performed abroad.
+![A horizontal bar totalling about 1,620 hours a year, split into four parts: domestic consumption 772 hours, housing construction 45, imported (foreign) labour 785, and pollution clean-up 18. A caption notes it equals about 0.9 of one person's full-time work-year, with 48% performed abroad.](figA_breakdown.png)
 
 Four separate streams of work add up to that total. Here's each one, in plain terms.
 
@@ -39,7 +39,7 @@ Everything a person buys in a year — groceries, electricity, a haircut, a doct
 - **What people spend, by category:** the US government's [Consumer Expenditure Survey](https://www.bls.gov/cex/).
 - **How much work hides behind each dollar of spending:** the [BLS Employment Requirements Matrix](https://www.bls.gov/emp/data/emp-requirements.htm) — a table, built from the national accounts, that says how many jobs (direct *and* all the way down the supply chain) stand behind $1 million of demand for each kind of product. It ranges from **0.7 jobs** per million dollars of gasoline (a few people run a very automated refinery) to **18 jobs** for a school.
 
-!Bar chart of where the domestic hours go: healthcare 34 billion hours a year, retail and wholesale 39 billion, food service 22 billion, housing services 8 billion, and everything else 96 billion.
+![Bar chart of where the domestic hours go: healthcare 34 billion hours a year, retail and wholesale 39 billion, food service 22 billion, housing services 8 billion, and everything else 96 billion.](figB_domestic.png)
 
 The hours cluster in **labour-intensive services** — hospitals, shops, restaurants — not in factories. That's the first surprise: making *stuff* takes less human time than looking after *people*.
 
@@ -53,7 +53,7 @@ Here's the big one. The Track 1 table only counts work done *inside the US*. But
 
 The result: **785 hours a year of foreign labour** — almost exactly as much as the entire domestic total. A median lifestyle is **about half homemade, half imported labour**.
 
-!Bar chart of the foreign origins of labour embodied in US consumption, in billion hours a year: rest of Asia-Pacific 52.8, India 40.4, China 33.9, Mexico 18.4, rest of the Americas 13.8, rest of Africa 9.5, Indonesia 6.0, Middle East 5.5.
+![Bar chart of the foreign origins of labour embodied in US consumption, in billion hours a year: rest of Asia-Pacific 52.8, India 40.4, China 33.9, Mexico 18.4, rest of the Americas 13.8, rest of Africa 9.5, Indonesia 6.0, Middle East 5.5.](figC_foreign.png)
 
 Notice **India and the rest of low-wage Asia**, not just China. This is the key thing a simpler estimate gets wrong: in *hours*, the poorest exporters count for the most, because when wages are very low, a single dollar of imports buys a great many hours of someone's time. Only a country-by-country model can see that — and it's why our first quick guess (about 350 hours) was less than half the real figure.
 
@@ -84,7 +84,7 @@ So far we've followed one *adult*. Now let's count *every* person (children incl
 
 The average is what you'd get **if all consumption were shared out evenly** — it's pulled up by the wealthy. You might expect a big gap. There isn't one:
 
-!Two panels. Left: median person 1,045 hours vs average person 1,250 hours of labour commanded per year — only 1.2 times apart. Right: if everyone lived like the average American, the resources needed as a multiple of what the planet or workforce can supply — labour 1.5×, materials 1.5×, carbon 2.7×, land 3.7× — all above the sustainable line.
+![Two panels. Left: median person 1,045 hours vs average person 1,250 hours of labour commanded per year — only 1.2 times apart. Right: if everyone lived like the average American, the resources needed as a multiple of what the planet or workforce can supply — labour 1.5×, materials 1.5×, carbon 2.7×, land 3.7× — all above the sustainable line.](figD_average.png)
 
 **The average lifestyle is only ~1.2× the typical one.** Compare that to *income*, where the top runs tens of thousands of times the middle. Why the difference? **You can't eat 1,000× the food or live in 1,000× the house.** Consumption is physically self-limiting in a way money isn't — which is the whole disparity-ceiling idea, showing up in real data before Aequitas changes a single rule. Wealth and income run away; *lifestyle* doesn't.
 

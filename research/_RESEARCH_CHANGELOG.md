@@ -5,19 +5,36 @@ Backups of every pre-rewrite version live in `02-research/archive/`.
 
 ---
 
+## 2026-08-23 — Two new data notes for the economy simulator, and four missing source-index rows
+
+**Both new files serve the simulator's consumer cohorts** ([`06-simulation/KERNEL_PLAN_v0.2.md`](../sims/KERNEL_PLAN_v0.2.md)).
+
+| New file | What it settles |
+|---|---|
+| [`Data_consumer-segmentation-archetypes_v0.1.md`](Data_consumer-segmentation-archetypes_v0.1.md) | Where cohort profiles come from. Surveys that carry quantities (BLS CE, Eurostat HBS, World Bank Global Consumption Database, LIS) against marketing systems that do not. **Ruling: an archetype may name a cohort; it may never supply a number.** |
+| [`Data_labour-and-pollution-intensity_v0.1.md`](Data_labour-and-pollution-intensity_v0.1.md) | Turning survey dollars into hours. **Spend × intensity, and the dollars cancel.** The BLS Employment Requirements Matrix and EXIOBASE are the tables; the CE-to-industry bridge is the hard part; the price-split bias and the coverage gap **both point the same way, so every figure is a floor.** |
+
+**The archetype ruling is the substantive one.** The twelve Jungian marketing archetypes were raised as a possible basis for consumer types. **They carry no consumption quantities and there is no evidence they predict any** — they were built to help a brand choose a voice. Letting one set a number would put a marketing construct inside a materialist accounting, which is **A1** violated in our own instrument. **They keep a narrow and real job: making a cohort readable on a screen, and giving the culture dial a vocabulary.** The numbers underneath still come from household surveys.
+
+**Source index repaired.** [`GLOSSARY.md`](../docs/GLOSSARY.md) → **v0.3**. The index had drifted behind this folder — **cross-country labour efficiency** and the **GDPR erasure note** existed as files with no row. Added those two plus the two above, and a new [Simulation, cohort, and data terms](../docs/GLOSSARY.md#simulation-terms) table (13 rows, each with a hidden anchor) covering cohort, exemplar consumer, headcount weight, archetype, brand personality, psychographic segmentation, intensity, ERM, CE, HBS, participation rate, coverage floor, and price-split bias.
+
+**⚠️ One blocking gap recorded, not solved.** The 1% coverage cut needs a **participation rate** — what share of households bought a thing at all. **The BLS release gives mean spend and never says that.** Until the number is found, the cut is an intention rather than a working rule.
+
+---
+
 ## 2026-08-13 — Versioned filenames + glossary single-indirection
 
 **Renamed every research file to `Author_topic_vX.Y.md`** (author-first; `Category_topic_vX.Y.md` — `Data_`, `History_`, `Problem_`, `Review_` — for the no-author notes). Rewritten stubs are `_v0.2`; the six new figure pages and the new **Dapprich** page are `_v0.1`.
 
 **New indirection architecture (mirrors the acronym registry):** the versioned filename now lives in exactly **one** place — the [Research source index](../docs/GLOSSARY.md#research-sources) in `GLOSSARY.md`. Every other document (main strategy docs, wiki, sims, and the research files' own cross-links) points to a **stable `#src-…` anchor** in the glossary, never to a research file directly. A version bump now touches **one glossary cell** instead of dozens of links. 39 files were rewired; journal and `99-archive` left frozen as historical record.
 
-**Also new:** [`Dapprich_optimal-planning_v0.1.md`](Dapprich_optimal-planning_v0.1.md) — the timeline referenced Dapprich but had no page. GLOSSARY.md gained a table-of-contents and the source index.
+**Also new:** [`Dapprich_optimal-planning_v0.1.md`](../research/Dapprich_optimal-planning_v0.1.md) — the timeline referenced Dapprich but had no page. GLOSSARY.md gained a table-of-contents and the source index.
 
 ---
 
 ## 2026-08-13 — Legibility rewrite pass (all stubs → v0.2)
 
-**What and why.** Every research stub was rewritten for a layperson audience, in the style of the [Overview](../docs/Aequitas_Overview_v0.13.md): no economics or academic jargon left undefined, no bare acronyms, every Aequitas concept stipulated in plain words on the page where it's used, and links to the [Foundations](../docs/Aequitas_Foundations_v0.17.md) pointed at a *specific* section rather than the document as a whole. Where a stub leaned on the Objections register, the objection is now spelled out in full instead of referenced by code. Each document was given a **Version** field (first versioned edition = **0.2**); the prior version is preserved in `archive/`.
+**What and why.** Every research stub was rewritten for a layperson audience, in the style of the [Overview](../docs/Aequitas_Overview_v0.10.md): no economics or academic jargon left undefined, no bare acronyms, every Aequitas concept stipulated in plain words on the page where it's used, and links to the [Foundations](../docs/Aequitas_Foundations_v0.13.md) pointed at a *specific* section rather than the document as a whole. Where a stub leaned on the Objections register, the objection is now spelled out in full instead of referenced by code. Each document was given a **Version** field (first versioned edition = **0.2**); the prior version is preserved in `archive/`.
 
 ## 2026-08-13 — Six new research pages (timeline expansion)
 

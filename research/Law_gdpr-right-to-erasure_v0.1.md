@@ -59,7 +59,7 @@ No time limit attaches to this one, which is why it is the stronger argument for
 
 **And it is not a lawyer's costume.** Foundations §5.3c rules that **trust networks are laboratories, not banks** — their goal is truth, their method is published, their discipline is replication. A ledger of material flows kept for recomputation as the science improves (§3.3) is, on its face, **processing for scientific and statistical purposes**. The exemption bites where erasure would *seriously impair* those objectives, and §5.4's own argument is exactly that: **recomputation cannot run over deleted records.**
 
-**Art 89 attaches safeguards**, chiefly data minimisation and **pseudonymisation where the purpose can still be achieved**. Aequitas is unusually well placed here: the **uniqueness ≠ identification** ruling (`../docs/C2_information_capture.md` §3, §8) means a network must establish that an account is *one human*, never *which* human. **A pseudonymised ledger is the design, not a concession made to satisfy Art 89.**
+**Art 89 attaches safeguards**, chiefly data minimisation and **pseudonymisation where the purpose can still be achieved**. Aequitas is unusually well placed here: the **uniqueness ≠ identification** ruling (`00-strategy/C2_information_capture.md` §3, §8) means a network must establish that an account is *one human*, never *which* human. **A pseudonymised ledger is the design, not a concession made to satisfy Art 89.**
 
 ## 4. What survives — the honest residue
 

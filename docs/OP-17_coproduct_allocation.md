@@ -2,7 +2,7 @@
 
 **Status:** ✅ **Resolved for the material/energy half. Two new problems spun out (OP-23, OP-24).**
 **Version:** v3 — 2026-08-01 (v1 and v2 superseded same day, unreleased; see §10)
-**Register:** `Aequitas_Objections_v0.5.md` — A1 / B7
+**Register:** `Aequitas_Objections_v0.18.md` — A1 / B7
 **Research:** `GLOSSARY.md#src-joint-production-allocation-problem` · `GLOSSARY.md#src-auditor-independence`
 **Amends:** Foundations §1.1 (row 1 **deleted**), §3.3, §3.4 (**narrowed**), §4, §10 · EventLog §7 (IC-10, IC-11, IC-12), §13
 **Stress-tested:** 2026-08-01, verdict *passes with changes* — changes applied in this version.

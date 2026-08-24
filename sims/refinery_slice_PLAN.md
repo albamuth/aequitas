@@ -47,7 +47,7 @@ The §3.4a instrument for a refinery is "cracking enthalpy / where the process s
 
 - **[NEW] `06-simulation/refinery_slice.py`** — builds the refinery as a `MultiDimEconomy` (single joint process, rectangular `B`), computes the per-fraction debit vector under the physical θ; a `price_allocate()` function for the contrast; a comparison table + the divergence metric.
 - **[NEW] `06-simulation/REFINERY.md`** — write-up: the two allocations, the numbers, which fractions move and why, honest caveats (θ source resolution, US-average yields), the A5 argument (price unusable as truth).
-- **[NEW] `../00-strategy/GLOSSARY.md#src-refinery-process-energy`** — source stub for the process-energy data (closes the open to-do in `joint-production-allocation-problem.md` line 74), with citation + link + why it matters.
+- **[NEW] `../docs/GLOSSARY.md#src-refinery-process-energy`** — source stub for the process-energy data (closes the open to-do in `joint-production-allocation-problem.md` line 74), with citation + link + why it matters.
 - **[MODIFY] `estimation_engine.py`** — only if the single-joint-process path needs a helper; expected minimal, engine already handles `Θ ≠ I`.
 
 ## 5. Test assertions (faithfulness gates)

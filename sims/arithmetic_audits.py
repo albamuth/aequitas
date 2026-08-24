@@ -1,7 +1,7 @@
 """
 C11 -- Arithmetic audits: IC-1 through IC-12 over a synthetic event log.
 
-The EventLog spec (Aequitas_EventLog_v0.6.md sec.7) defines twelve integrity
+The EventLog spec (Aequitas_EventLog_v0.8.md sec.7) defines twelve integrity
 constraints that must hold over any Aequitas event log. This module makes all
 twelve *runnable*: it builds one small, hand-verifiable synthetic event log
 (the milling/baking chain from the spec's sandwich trace, sec.10, plus two

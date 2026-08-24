@@ -258,4 +258,4 @@ Why this survives A2 where a rate premium does not:
 
 ---
 
-*Related:* `00-strategy/Aequitas_Objections_v0.1.md` (OP-16, OP-19, OP-9, P4, P5, W1) · `GLOSSARY.md#src-participatory-economics` · `GLOSSARY.md#src-local-currency-experiments`
+*Related:* `00-strategy/Aequitas_Objections_v0.18.md` (OP-16, OP-19, OP-9, P4, P5, W1) · `GLOSSARY.md#src-participatory-economics` · `GLOSSARY.md#src-local-currency-experiments`

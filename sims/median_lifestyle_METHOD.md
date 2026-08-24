@@ -1,7 +1,7 @@
 # Method Plan — Work-Hours to Support a Median US Adult (v2, bottom-up)
 
 **Status:** PROPOSED — awaiting approval before any data-gathering or coding.
-**Supersedes the method in** `median_lifestyle.py` / [`MEDIAN_LIFESTYLE.md`](MEDIAN_LIFESTYLE.md) (top-down v1), which was rejected as unsound: it *assumes* the labour allocation, misses carried-forward labour in durables, and mixed data years. v1 is kept only as a rough sanity bracket.
+**Supersedes the method in** [`median_lifestyle.py`](median_lifestyle.py) / [`MEDIAN_LIFESTYLE.md`](MEDIAN_LIFESTYLE.md) (top-down v1), which was rejected as unsound: it *assumes* the labour allocation, misses carried-forward labour in durables, and mixed data years. v1 is kept only as a rough sanity bracket.
 
 **Goal (one line):** estimate the total human work-hours per year embodied in the consumption of a **median US *adult*** (not per-capita), for one **internally-consistent year**, built up **category by category**, plus the labour to remediate that adult's **own** pollution.
 

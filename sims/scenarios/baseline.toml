@@ -1,0 +1,63 @@
+#  ===========================================================================
+#  STATERA SCENARIO — the baseline
+#
+#  Run it:   python run_scenario.py scenarios/baseline.toml
+#  Check it: python run_scenario.py scenarios/baseline.toml --check
+#
+#  Every setting below is a DIAL. Change any of them and re-run.
+#  If you add a key that is not listed here, the run stops and says so — a
+#  typo must never quietly change what a scenario tests.
+#  ===========================================================================
+
+name = "Baseline — a whole population, ten years"
+
+# Required. The same seed always gives the same run.
+# A run that cannot be repeated exactly is not a scenario.
+seed = 42
+
+periods = 10
+
+[period]
+# How long one period lasts, in days.
+#   1   = daily     (fine detail, short runs)
+#   30  = monthly   (the Lab default)
+#   365 = yearly    (needed for generational runs — see generational.toml)
+days = 365
+
+[population]
+# "draw"    = build a spread of workers automatically, from the floor up to 24 h/day
+# "cohorts" = read the [[cohort]] tables instead (see generational.toml)
+mode = "draw"
+
+n = 20000            # how many cohorts
+headcount_each = 1.0 # how many real people each cohort stands for
+
+[dials]
+# rho — THE GATE. You may carry rho hours of debit for every hour of credit
+# you have earned. Turn it up and people may take more for the same work.
+# Aequitas USES this number and never sets it; a trust network picks it.
+rho = 1.5
+
+# F — THE SELF-CARE FLOOR, in hours per day. Every living person is credited
+# this much for the work of staying alive, whether or not they can work.
+# It is also the denominator of the fairness bound: the gap between the top
+# and the bottom can never exceed 24 / F.  At 10 h that is 2.40x.
+floor_h = 10.0
+
+[dials.weights]
+# How the three physical costs get combined into one comparable number.
+# WHOEVER SETS THESE CONTROLS EVERY COMPARISON. This is the project's largest
+# open problem (weighting governance). Keeping mass and energy at 0.0 means
+# this run prices labour hours only — which is why the report calls its
+# figures a FLOOR and not a value.
+labour_h = 1.0
+mass_kg = 0.0
+energy_mj = 0.0
+
+[want]
+# "unbounded" = everyone consumes right up to their gate. The worst case, and
+#               the right setting for testing whether the bound holds.
+# "fixed"     = every cohort wants `hours_per_day` and no more.
+# "none"      = nobody consumes; credit accrues only.
+mode = "unbounded"
+hours_per_day = 4.0

@@ -1,7 +1,8 @@
 # Aequitas — Acronym Registry & Glossary
 
-> **Version:** 0.2 · **Date:** 2026-08-13 · **Status:** canonical index
+> **Version:** 0.3 · **Date:** 2026-08-23 · **Status:** canonical index
 > **Why this exists:** the [external critique](#src-external-critique-2026-08-09) flagged abbreviation density (OP-#, C#, IC-#, A#, P#, §x.x) with no master index as the #1 accessibility barrier. This is that index, and the resolution target for the acronym-titling pass in `NEXT.md`.
+> **v0.3 (2026-08-23):** added the [Simulation, cohort, and data terms](#simulation-terms) table — the vocabulary the economy simulator introduced — and **four missing rows to the source index**, which had drifted behind `02-research/`: cross-country labour efficiency, the GDPR erasure note, and two new files on consumer segmentation and on labour/pollution intensity.
 > **v0.2 (2026-08-13):** added the [Research & academic terms](#research-terms) table — the outside vocabulary (economic theory, alternative-currency history, accounting method) used across `02-research/`, each with a plain definition, the research doc that best explains it, and an external authoritative (non-paywalled) source. Every definition below was checked against its linked source on 2026-08-13.
 
 ## Contents
@@ -16,6 +17,7 @@
 - [Legacy problem-codes (P#)](#legacy-problems)
 - [Research & academic terms](#research-terms)
   - [**Research source index** — every research file, latest version](#research-sources)
+  - [Simulation, cohort, and data terms](#simulation-terms)
   - [Value, property, and markets](#research-terms)
   - [Calculation and planning](#research-terms)
   - [Energy and material accounting](#research-terms)
@@ -191,6 +193,30 @@ The "in our research" links point to the **source index** just below — the sin
 | <a id="src-refinery-process-energy"></a>**Refinery process energy** | Real US energy tables splitting a refinery fuel-by-fuel — the worked joint-production example. | [Data_refinery-process-energy_v0.2](../research/Data_refinery-process-energy_v0.2.md) |
 | <a id="src-plastic-lca-and-cleanup-cost"></a>**Plastic LCA & cleanup** | Energy to make vs. recycle plastic, plus ocean-cleanup cost; anchors the permanent-pollution-debt result. | [Data_plastic-lca-cleanup_v0.2](../research/Data_plastic-lca-cleanup_v0.2.md) |
 | <a id="src-external-critique-2026-08-09"></a>**External critique (2026-08-09)** | First outside review; it validated the risk register and set the Mises/Hayek-reply priority. | [Review_external-critique-2026-08-09_v0.2](../research/Review_external-critique-2026-08-09_v0.2.md) |
+| <a id="src-cross-country-labour-efficiency"></a>**Cross-country labour efficiency** | The US commands 50–80% more embodied labour and 2.5–4× the CO₂ per head than Germany, Sweden, France, Japan or Spain for a comparable standard. What the simulator's locale dial must reproduce. | [Data_cross-country-labour-efficiency_v0.1](../research/Data_cross-country-labour-efficiency_v0.1.md) |
+| <a id="src-consumer-segmentation-archetypes"></a>**Consumer segmentation & archetypes** | Where cohort profiles come from — household surveys carry quantities, marketing archetypes carry only names. **An archetype may name a cohort; it may never supply a number.** | [Data_consumer-segmentation-archetypes_v0.1](../research/Data_consumer-segmentation-archetypes_v0.1.md) |
+| <a id="src-labour-and-pollution-intensity"></a>**Labour & pollution intensity** | Turning survey dollars into hours, kilograms and megajoules: spend × intensity, the dollars cancel. Carries the price-split bias and why every figure it produces is a floor. | [Data_labour-and-pollution-intensity_v0.1](../research/Data_labour-and-pollution-intensity_v0.1.md) |
+| <a id="src-gdpr-right-to-erasure"></a>**GDPR right to erasure** | Erasure is not absolute; three of Article 17's five exemptions apply, and the research exemption carries no time limit. Out of scope per §1.2 — checked anyway. | [Law_gdpr-right-to-erasure_v0.1](../research/Law_gdpr-right-to-erasure_v0.1.md) |
+
+### <a id="simulation-terms"></a>Simulation, cohort, and data terms
+
+The vocabulary the economy simulator introduced. **Every row carries a hidden anchor**, so any document can link straight to a definition — e.g. `[cohort](GLOSSARY.md#term-cohort)`.
+
+| Term | Short definition | In our research | Authoritative source |
+|---|---|---|---|
+| <a id="term-cohort"></a>**Cohort** | A group of people the simulator treats as identical, sharing one consumer type, one birth period, and one locale. Carries a headcount rather than existing as separate individuals. | [segmentation](#src-consumer-segmentation-archetypes) | [Cohort (statistics)](https://en.wikipedia.org/wiki/Cohort_(statistics)) |
+| <a id="term-exemplar-consumer"></a>**Exemplar consumer** | The single modelled person who stands for a whole cohort. If 30% of the population is type A, the type-A exemplar's rows are the basis for 30% of everyone. | — | — |
+| <a id="term-headcount-weight"></a>**Headcount weight** | The column on an event-log row saying how many real people that row speaks for. At a weight of 1 the simulator models individuals. | — | — |
+| <a id="term-consumer-archetype"></a>**Consumer archetype** | One of twelve brand personalities (Innocent, Hero, Outlaw, Caregiver…) adapted from Jung by Mark & Pearson. **A naming device. It carries no consumption quantity and there is no evidence it predicts one.** | [segmentation §4](#src-consumer-segmentation-archetypes) | [Jungian archetypes](https://en.wikipedia.org/wiki/Jungian_archetypes) · [practitioner guide](https://octopusandson.com/marketing-archetypes-guide/) |
+| <a id="term-brand-personality"></a>**Brand personality** | Aaker's five-dimension scale — sincerity, excitement, competence, sophistication, ruggedness. The nearest academically validated relative of the archetypes. Measures perception, not throughput. | [segmentation §4](#src-consumer-segmentation-archetypes) | [Wikipedia](https://en.wikipedia.org/wiki/Brand_personality) |
+| <a id="term-psychographic-segmentation"></a>**Psychographic segmentation** | Grouping people by values and motivation rather than by age or income. VALS and PRIZM are the working systems. | [segmentation §3](#src-consumer-segmentation-archetypes) | [VALS](https://www.strategicbusinessinsights.com/vals/) |
+| <a id="term-intensity"></a>**Intensity** | How much labour, pollution, or material sits behind one dollar of spending in a sector. **Spend × intensity = hours; the dollars cancel.** | [intensity](#src-labour-and-pollution-intensity) | [Input–output model](https://en.wikipedia.org/wiki/Input%E2%80%93output_model) |
+| <a id="term-erm"></a>**ERM** — Employment Requirements Matrix | The BLS table giving jobs and hours needed, directly and through the whole supply chain, per million dollars of final demand by industry. **The US labour intensity source.** | [intensity §2](#src-labour-and-pollution-intensity) | [BLS](https://www.bls.gov/emp/data/input-output-matrix.htm) *(unverified — withdrawn once, 2026-02-06)* |
+| <a id="term-ce"></a>**CE** — Consumer Expenditure Survey | The BLS survey of what US households buy, split by age, income, region and household composition. **The US cohort source.** | [segmentation §2](#src-consumer-segmentation-archetypes) | [BLS CE](https://www.bls.gov/cex/tables.htm) |
+| <a id="term-hbs"></a>**HBS** — Household Budget Survey | Eurostat's harmonised European equivalent of the CE. **The European cohort source.** | [segmentation §2](#src-consumer-segmentation-archetypes) | [Eurostat](https://ec.europa.eu/eurostat/web/household-budget-surveys) *(unverified)* |
+| <a id="term-participation-rate"></a>**Participation rate** | The share of households that bought a thing at all, as opposed to the average spent per household. **Needed for the 1% coverage cut, and we do not have it yet.** | [segmentation §6](#src-consumer-segmentation-archetypes) | — |
+| <a id="term-coverage-floor"></a>**Coverage floor** | A cost computed over an incomplete basket is a **lower bound, never a value.** Foundations §5.1a and §9 requirement 13. Every figure the simulator prints must say so. | [intensity §4](#src-labour-and-pollution-intensity) | Foundations §5.1a |
+| <a id="term-price-split-bias"></a>**Price-split bias** | Input–output tables divide physical impacts by dollars, which **under-counts cheap heavy flows** (waste, bulk materials, land) and over-counts expensive light ones. Direction known; must be declared. | [intensity §4](#src-labour-and-pollution-intensity) · [estimation §7](#src-estimation-engine-data-sources) | [Physical vs monetary IO](https://www.sciencedirect.com/science/article/abs/pii/S092180090500248X) |
 
 ### Value, property, and markets
 

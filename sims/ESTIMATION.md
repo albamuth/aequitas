@@ -107,7 +107,7 @@ Averages (§5.1b) cover only **unmeasured** producers; a measured animal carries
 
 ## 5. Real-data slice — EXIOBASE via pymrio
 
-> **Code:** `exiobase_loader.py` · built 2026-08-06 · 3 self-tests pass
+> **Code:** [`exiobase_loader.py`](exiobase_loader.py) · built 2026-08-06 · 3 self-tests pass
 
 The real-data slice feeds an actual EEIO table into the **same forward solver**, via `pymrio` (the standard EXIOBASE parser). It is built against `pymrio.load_test()` — pymrio's built-in multi-regional IO table, which has the real EXIOBASE structure and API (technical-coefficient matrix `A` + satellite extension accounts) but is tiny and needs no multi-GB download. Pointing it at a downloaded full EXIOBASE 3 is a one-call swap (`load_real`, `REAL_EXIOBASE_DIMS`); the mapping and solve code do not change.
 

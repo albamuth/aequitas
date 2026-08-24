@@ -3,6 +3,43 @@
 > Version-by-version change history for `Aequitas_Foundations_vX.Y.md` (the highest-versioned file in `00-strategy/`). Split out of the main document so it is read only when tracing **when and why** something changed. The main doc's header carries a one-line summary of the current version; everything below is the archive.
 
 ---
+<!-- tag: fnd-v0-19-2026-08-23 -->
+### v0.19 (2026-08-23) - 5.5: parallel implementation (OP-27)
+
+**No axiom changed. No mechanism changed. No cross-boundary rule was needed** - which is the result, not a caveat.
+
+**The question.** Aequitas has to be usable by someone who still uses money, as an alternative that does not exclude them. **11 and 5.2 both assume an answer and neither writes one**, and every participant for years will have most of their counterparties outside. A design that only works once everyone is inside cannot get anyone inside. Attacks **fecundity**, which is one of the three criteria in 2.
+
+1. **5.5 is new. Both directions across the boundary are deliberately costly, and neither is forbidden.**
+   - **Selling in.** A good made with money-bought inputs is **dark until it is sold into Aequitas**. At that hand-off the maker either onboards it fully or applies a **pre-approved published template** that assigns a debit-cost immediately, so the trade clears without waiting for a reconstruction. **The maker spent money and receives none.**
+   - **Selling out.** Permitted. **The debit stays with the seller** - no participant took the goods on, so the ledger does not lighten (3.2). To the network the seller **made a gift** (5.3c), and **the network does not acknowledge the money at all.**
+2. **Money's invisibility is A1, restated rather than added.** Financial instruments are not matter or energy and *"never appear on any ledger"*, so a payment is not an event. The goods moved and the books record that; the money moved and the books cannot see it.
+3. **The template is the only new object, and it is a cache rather than a mechanism** - 5.1b's dark-production estimate, computed per class of good and published. Two inherited rules: it **errs against the seller** (5.1b's conservative-count rule, or onboarding properly never pays) and it is **published with method and vintage** (5.3b). **Flagged as a capture surface**: whoever sets it sets the entry price for every dark good, which is OP-24 at the boundary and inherits OP-24's answer (3.3a, the rival producer funds the replication).
+4. **An apparent 3.2 / 3.2b contradiction was raised and fails.** 3.2 governs **property** debit, dischargeable on transfer; 3.2b governs **consumption and pollution**, which never transfers. An outward sale is a property question and 3.2b was never in play. The associated worry - that a producer selling mostly outward is locked out *for succeeding* - also fails: a locked-out seller **has money and is never denied essentials** (7.5), and the lock **reverses** the moment they sell one batch inward. **A gradient, not a trap.** The debit-dumping counter disappears with it, because it only existed under an A7 reading the ruling rejects.
+5. **Stress test, two results kept in the body.** **Money cannot buy Aequitas standing at any scale** - pay a hundred workers and *they* are credited their own hours (A2, A3, Ellerman), the financier nothing, and IC-7 caps every account at 24 h/day regardless of who paid. **The boundary is permeable to goods and impermeable to standing.** And **extraction self-limits**: buying inside takes on property debit that selling outward never discharges, so `D` grows with every unit extracted while `C` grows only with the extractor's own capped hours, and their own ratio gate shuts them out of the supply they are draining.
+6. **10 records OP-27 closed**, with **repeat-shell entities** added as a sibling of OP-25 (a co-op is not a person, and one-human-one-account does not obviously bound how many exist - a C6 question) and **template capture** routed to OP-24 / OP-10.
+
+**Companions bumped in lockstep:** `Aequitas_Objections_v0.18.md` (B13, and a status-board row) and `Aequitas_Overview_v0.15.md` (9 gains the reader-facing answer). **EventLog untouched** - the fate of an outward-sold good closes through 3.6's existing route, the last recorded holder having consumed what no one else would take, so no new terminus and no schema change. **Strategy untouched** - sequencing did not move.
+
+**Paper and full stress test:** `00-strategy/OP-27_parallel_implementation.md`.
+
+<!-- tag: fnd-v0-18-2026-08-23 -->
+### v0.18 (2026-08-23) - scope fold: 9 and 11 reconciled with 1.2
+
+**No axiom changed. No mechanism changed.** This is a scope correction, and the thing corrected is a contradiction this document carried against itself for one day.
+
+**The contradiction.** 1.2 (added v0.17, 2026-08-22) ruled that *cost accounting is the principle; records and data collection are praxis*, and put choice of database, protocol and cryptography explicitly out of scope. **9 still said the first document's audience was "implementers" and the next deliverable a "full spec", and 11 read as a software product plan.** The two pulled opposite ways, and the pull was the named cause of the project drifting into data-architecture work - two consecutive sessions spent on event-log integrity checks while the top blocker (OP-10, weighting governance) sat untouched.
+
+**Author ruling, 2026-08-23: 1.2 governs.** Aequitas is an economic system, stated and tested against scenarios. It is not a data-architecture project. **But implementers remain a real audience with a real need** - someone building a trust network must be able to read these documents and know *which system they are implementing* - and that need is met by conformance requirements, never by an architecture.
+
+1. **9 rewritten.** Opens with the governing line: *these documents state what must be true; they never state how to build it.* The implementer-facing deliverable becomes a **conformance statement**, and 9 now carries the list explicitly - **17 numbered requirements** drawn from the axioms and mechanisms already present (A1 materialism, A3 non-transferability, A6 derived-not-stored, IC-1..IC-4 conservation and closure, IC-7 the 24-hour cap, IC-8 pledge backing, 3.2a divide-before-collapse, 3.3 transaction-time, 5.1a basis and floor, 5.1b residual estimation, 5.1c the leftover charged to nobody, 5.3b published methods, 7.5 essentials never gated). A companion table names what a conformance statement does **not** carry: field names, storage, transport, cryptography, privacy practice, the values of rho and F, corporate form. The document list gains a second entry (**Conformance requirements**) and the "audience implementers / build first" framing is gone.
+2. **1.2 gains the standing screening question.** The dial test was already written there as a test for what belongs in these documents; it is now stated as the standing screen applied to *anything proposed*, with a pointer to what it leaves behind. **Conservation of mass and energy survives at both ends of every dial. A field name does not.**
+3. **11 reframed and retitled** - *First Foothold - the MVP* becomes *First Foothold - how adoption plausibly starts*. All of its evidence is kept (parallel overlay, the complementary-currency warning, product debit-costing, progressive-resolution intake, WIR and Sardex, B2B inside dense input loops, a downturn as the moment). A scope note governing the whole section states that **building a demonstration is praxis a project may choose to take on, never a deliverable of this work, and nothing in 1-10 waits on it.**
+
+**Companions bumped in lockstep:** `Aequitas_Strategy_v0.5.md` (where 1 carried the sharpest form of the same contradiction) and `Aequitas_Overview_v0.14.md` (reader-facing scope line in 0). EventLog and Objections untouched - no requirement in them changed.
+
+**And the three-month deliverable was renamed the same day.** `Aequitas_Protocol_v1.0.md` carried the same contradiction in its title, one level up. **Author ruling: `Aequitas_System_v1.0.md`** - the deliverable is the economic system, and the conformance list is one section inside it rather than the point of it. Changed in `NEXT.md` and Strategy 8; no file moved, because the document does not exist yet.
+
 <!-- tag: fnd-v0-17-2026-08-22 -->
 ### v0.17 (2026-08-22) - coverage folded (OP-26): consistency is not completeness
 

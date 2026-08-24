@@ -19,7 +19,7 @@
 
 A refinery is the textbook case of the joint-production problem (see [Joint-production problem](../docs/GLOSSARY.md#src-joint-production-allocation-problem)): one stream of crude oil goes in, and a whole slate of fuels comes out — gasoline, diesel, jet fuel, tar, coke. The question is *how to divide the refinery's cost among those fuels.*
 
-Aequitas's rule is: **measure where the process physically sent its energy**, fuel by fuel, and split the cost accordingly. See [Foundations §3.4a](../docs/Aequitas_Foundations_v0.17.md#34a-joint-production--the-process-allocates-itself). That's exactly what Argonne's process-level method produces — it assigns each refining unit's *metered* energy to the fuels that actually pass through it. Standard footprint databases don't do this; they fall back to splitting by *market value* instead. The worked example contrasts the two — and the difference is the point.
+Aequitas's rule is: **measure where the process physically sent its energy**, fuel by fuel, and split the cost accordingly. See [Foundations §3.4a](../docs/Aequitas_Foundations_v0.19.md#34a-joint-production--the-process-allocates-itself). That's exactly what Argonne's process-level method produces — it assigns each refining unit's *metered* energy to the fuels that actually pass through it. Standard footprint databases don't do this; they fall back to splitting by *market value* instead. The worked example contrasts the two — and the difference is the point.
 
 ## The DOE study — extracted energy tables (US, 2010)
 

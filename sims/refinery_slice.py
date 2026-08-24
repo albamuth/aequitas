@@ -36,7 +36,7 @@ distillation channel and a measured conversion channel routed by standard
 refinery flow. Volume yields are the standard EIA refinery-yield proportions
 (gasoline ~46-49%). Materials (crude mass), labour, and prices remain
 representative and are flagged -- the DOE bandwidth study is process energy only,
-so those dimensions are the next refinement. Sources: `../00-strategy/GLOSSARY.md#src-refinery-process-energy`.
+so those dimensions are the next refinement. Sources: `../docs/GLOSSARY.md#src-refinery-process-energy`.
 
 Run:  python refinery_slice.py            # build, report the two allocations
       python refinery_slice.py --test      # self-tests only

@@ -1,6 +1,6 @@
 # Track 1 — Domestic embodied labour in a median US adult's consumption (2023)
 
-**Script:** `track1_embodied_hours.py` · 5 self-tests green.
+**Script:** [`track1_embodied_hours.py`](track1_embodied_hours.py) · 5 self-tests green.
 **Supersedes** the top-down `median_lifestyle.py` (which *assumed* the labour allocation). Here the allocation is **measured** from published supply chains.
 
 ## Headline
@@ -51,7 +51,7 @@ Top single commodities: private hospitals (48h), retail (47h), food & drinking p
 
 ## By CE-comparable category (the 132-detail bridge)
 
-**Script:** `track1_by_category.py` · 3 self-tests green · reproduces the 612h aggregate exactly. Uses `NOMINAL_FD.xlsx` (176 commodities × 132 detail final-demand categories, PCE = cols 1–79), extracted on disk from `data/io_full.zip → IONom/` — **no Wayback re-pull needed.** Trade/transport margins (51h) reallocated to goods buckets by goods-dollar share.
+**Script:** [`track1_by_category.py`](track1_by_category.py) · 3 self-tests green · reproduces the 612h aggregate exactly. Uses `NOMINAL_FD.xlsx` (176 commodities × 132 detail final-demand categories, PCE = cols 1–79), extracted on disk from `data/io_full.zip → IONom/` — **no Wayback re-pull needed.** Trade/transport margins (51h) reallocated to goods buckets by goods-dollar share.
 
 | CE category | embodied h/cap | CE 2023 $ (mean/CU) |
 |---|---|---|

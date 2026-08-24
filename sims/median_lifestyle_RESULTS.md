@@ -22,7 +22,7 @@
 
 ---
 
-## Track 1 — consumption flows ✅ `track1_labour.py`
+## Track 1 — consumption flows ✅ [`track1_labour.py`](track1_labour.py)
 
 **Method:** US PCE by commodity (BLS IO final-demand file, 2023, **producer values** — margins pre-allocated) × total (direct+indirect) jobs per $1M (BLS Employment Requirements Matrix, 2023, **domestic/import-adjusted**) × 1,750 h/job.
 
@@ -49,7 +49,7 @@ Healthcare ~34 B · retail+wholesale ~34 B · food service ~22 B hrs dominate.
 
 ---
 
-## Track 2 — housing construction (annualised) ✅ `track2_housing.py`
+## Track 2 — housing construction (annualised) ✅ [`track2_housing.py`](track2_housing.py)
 
 **Method:** a home's construction labour was spent years ago, so it never shows in this year's PCE. Front-loaded + holding-time-split (§6.2b) → **annualise total build labour over the service life.** The ERM **Construction** total-multiplier (5.8 jobs/$M) already includes lumber/steel/concrete/windows/plumbing/electrical production labour as *indirect* requirements — so applied to **construction cost** (structure, excl land/finance) it *is* the bill-of-materials labour, via IO, no per-material rates invented.
 
@@ -63,7 +63,7 @@ Healthcare ~34 B · retail+wholesale ~34 B · food service ~22 B hrs dominate.
 
 ---
 
-## Track 3 — imports (foreign labour) ✅ EXIOBASE MEASURED `track3_exiobase.py`
+## Track 3 — imports (foreign labour) ✅ EXIOBASE MEASURED [`track3_exiobase.py`](track3_exiobase.py)
 
 **Method:** consumption-based labour footprint from the **EXIOBASE 3 global MRIO (2022, pxp)**: `x_driven = L @ Y_us_households`; `hours = S_emp · x_driven`; split by origin region. Real foreign supply chains and country-of-origin wages baked in; currency cancels (hours/M.EUR × M.EUR).
 
@@ -73,7 +73,7 @@ Healthcare ~34 B · retail+wholesale ~34 B · food service ~22 B hrs dominate.
 
 **Top foreign origins (B h/yr):** Rest-of-Asia-Pacific 52.8 · India 40.4 · China 33.9 · Mexico 18.4 · Rest-of-Americas 13.8 · Rest-of-Africa 9.5 · Indonesia 6.0 · Middle East 5.5. **Ultra-low-wage origins (India, rest-of-world) dominate embodied hours** — which is exactly why the earlier macro ballpark (350, band 137–782) undershot: it couldn't weight countries. The measured value (785) sits at the *top* of that band.
 
-*Superseded ballpark: `track3_imports.py` (kept for the method + the lesson that country-weighting matters). Data year 2022 (1 yr behind the 2023 base — minor, flagged).*
+*Superseded ballpark: [`track3_imports.py`](track3_imports.py) (kept for the method + the lesson that country-weighting matters). Data year 2022 (1 yr behind the 2023 base — minor, flagged).*
 
 ---
 
@@ -83,7 +83,7 @@ Healthcare ~34 B · retail+wholesale ~34 B · food service ~22 B hrs dominate.
 
 **Emissions the adult causes:** vehicle 4.6 + home fuel 1.5 + **electricity 2.2** = **8.3 t CO₂/yr** (electricity ~doubles the non-vehicle carbon). Anchors: EPA typical vehicle 4.6 t; EIA residential fuel; eGRID ~0.37 t/MWh × residential electricity.
 
-**Carbon → labour (REAL EEIO intensity, `track4_carbon_intensity.py`):** each method is a basket of BLS sectors with measured ERM multipliers (not the economy-average shortcut). **Nature-based** (forestry-like) = 6.15 jobs/$M → 0.01077 h/$ × $50/t = **0.539 h/t**. **DAC** (energy/capital-heavy, labour-*light*) = 3.81 jobs/$M → 0.00666 h/$ × $500/t = **3.33 h/t** (the shortcut overstated DAC by ~37% — its dollars buy electricity (3.2) and chemicals (1.9), not hands). + wastewater ~1.6 h/yr.
+**Carbon → labour (REAL EEIO intensity, [`track4_carbon_intensity.py`](track4_carbon_intensity.py)):** each method is a basket of BLS sectors with measured ERM multipliers (not the economy-average shortcut). **Nature-based** (forestry-like) = 6.15 jobs/$M → 0.01077 h/$ × $50/t = **0.539 h/t**. **DAC** (energy/capital-heavy, labour-*light*) = 3.81 jobs/$M → 0.00666 h/$ × $500/t = **3.33 h/t** (the shortcut overstated DAC by ~37% — its dollars buy electricity (3.2) and chemicals (1.9), not hands). + wastewater ~1.6 h/yr.
 
 **Result: 6–29 h/adult (mid ~18).** Small next to Tracks 1–3; spread is the nature-vs-DAC carbon basis. *Cost-share splits are the one remaining assumption (DAC cost literature); the multipliers are measured. Implementation note: used **average** grid emission factor; **marginal** (the "turbines spin up" intuition) is a refinement.*
 
@@ -91,7 +91,7 @@ Healthcare ~34 B · retail+wholesale ~34 B · food service ~22 B hrs dominate.
 
 ## The AVERAGE person (mean, per person) — the "even-distribution" standard
 
-*The mean, pulled up by the wealthy, = the living standard everyone would have under even distribution. Household figures ÷ 2.51 persons. `average_household.py` (labour) + `average_footprint.py` (environment, EXIOBASE 2022).*
+*The mean, pulled up by the wealthy, = the living standard everyone would have under even distribution. Household figures ÷ 2.51 persons. [`average_household.py`](average_household.py) (labour) + [`average_footprint.py`](average_footprint.py) (environment, EXIOBASE 2022).*
 
 **Purchasing power (labour-hours/yr per person):** Track 1 consumption 595 · Track 2 housing 36 · Track 3 imports 605 · Track 4 pollution ~14 → **~1,250 h/yr, 48% foreign.** Per household (×2.51) ~3,135. **Median person ~1,045 → mean/median = 1.20** (consumption is far more even than income, Gini ~0.3 vs ~0.5 — real consumption is naturally bounded, the disparity-ceiling intuition).
 

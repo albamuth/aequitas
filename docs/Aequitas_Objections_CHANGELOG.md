@@ -3,6 +3,19 @@
 > Version-by-version change log for `Aequitas_Objections_vX.Y.md` (the highest-versioned file in `00-strategy/`). Split out of the register so it is read only when tracing **when and why** an objection's status changed. The register's header carries a one-line summary of the current version; Part B holds the answered objections themselves (which are *not* history — see the note there). Superseded full versions live in `99-archive/`.
 
 ---
+### v0.18 (2026-08-23) - OP-27 enters the register already answered (B13)
+
+**Registered, ruled and stress-tested in one day.** Source: the author. Folded to Foundations 5.5.
+
+1. **B13 is new.** *Aequitas must be usable by someone who still uses money, as an alternative that does not exclude them.* **Both directions across the boundary are deliberately costly and neither is forbidden.** A money-made good is **dark until sold in** and clears at the hand-off via full onboarding or a **published template**; selling out for money **keeps the debit and reads as a gift**, because under A1 money is not matter and never appears on any ledger.
+2. **The sharper form of the objection - that 3.2 and 3.2b contradict each other - fails.** They govern different debits: 3.2 is property debit and dischargeable, 3.2b is consumption and pollution and permanent. An outward sale is a property question. **The lock-out worry fails too**: a locked-out seller has money, is never denied essentials (7.5), and the lock reverses on one inward sale.
+3. **The debit-dumping counter disappears**, because it only existed under an A7 reading the ruling rejects. **OA11 / OP-25 is untouched.**
+4. **Two results from the stress test are recorded in the entry.** **Money cannot buy Aequitas standing at any scale** - the workers are credited the hours and whoever paid them is credited nothing. And **extraction self-limits** - buying inside takes on debit that selling outward never discharges, so the extractor's own ratio gate shuts them out of the supply they are draining.
+5. **Two residuals enter open and both are routed:** **repeat-shell entities** (a co-op is not a person) joins **OA11 / OP-25** and **C6**; **template capture** joins **OA3 / OP-24** and **OA2 / OP-10**, inheriting OP-24's rival-producer answer.
+6. **Status board gains an OP-27 row.** Contents and the Tracks pointer re-threaded to Foundations v0.19.
+
+**Noted in the entry:** the answer was distributed across five sections that had never been read against each other. **That is the sixth time an existing axiom already held the answer** - after A3, A2, 5.1b, 5.3 and A7 - and the failure mode is organisational rather than theoretical, exactly as OP-26's was.
+
 <!-- tag: obj-v0-17-2026-08-22 -->
 ### v0.17 (2026-08-22) - OP-26 (coverage gap) registered and largely answered
 
