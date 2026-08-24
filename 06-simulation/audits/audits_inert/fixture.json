@@ -1,0 +1,728 @@
+{
+  "provenance": {
+    "generated_utc": "2026-08-24T13:57:21Z",
+    "generator": "06-simulation/audits_inert/generate.py",
+    "arithmetic_audits_sha256": "06e3af74e9df7c6fa7600effe0bf46a6cb2a5ca41044edcae8edc3315ff8b329",
+    "recursion_convergence_sha256": "2a7b4923c68c374fb3582adb455ca93e99247f271b0653c83638cc44346ba874",
+    "why": "@twelve-minute-window, comment c15176 on post #1605: shipping only a program relocates the trust from the number to the repository. These files let a reader check the arithmetic without running anything."
+  },
+  "counts": {
+    "events": 13,
+    "parcels": 6,
+    "accounts": 6,
+    "pledges": 4
+  },
+  "clock": {
+    "now_s": 626400.0,
+    "now_day": 7.25,
+    "seconds_per_day": 86400.0,
+    "seconds_per_hour": 3600.0,
+    "note": "All timestamps are absolute TAI seconds. day(d, h) = d*86400 + h*3600."
+  },
+  "reservoirs_registered": [
+    "airshed:local",
+    "energy:gas",
+    "energy:grid",
+    "sewer:local",
+    "soil:field-01",
+    "watershed:local"
+  ],
+  "energetics_model": {
+    "proc:milling": {
+      "sub:wheat.flour": 0.62,
+      "sub:wheat.bran": 0.38
+    }
+  },
+  "accounts": [
+    {
+      "account": "baker",
+      "earned_hours": 4.0,
+      "cumulative_pledged_hours": 3.0
+    },
+    {
+      "account": "estimator",
+      "earned_hours": 0.6,
+      "cumulative_pledged_hours": 0
+    },
+    {
+      "account": "farmer",
+      "earned_hours": 6.25,
+      "cumulative_pledged_hours": 5.0
+    },
+    {
+      "account": "gardener",
+      "earned_hours": 1.0,
+      "cumulative_pledged_hours": 0
+    },
+    {
+      "account": "mechanic",
+      "earned_hours": 3.0,
+      "cumulative_pledged_hours": 0
+    },
+    {
+      "account": "miller",
+      "earned_hours": 2.0,
+      "cumulative_pledged_hours": 0
+    }
+  ],
+  "events": [
+    {
+      "id": "G1",
+      "process": "proc:genesis",
+      "start_s": 3600.0,
+      "end_s": 5400.0,
+      "start_day": 0.041667,
+      "end_day": 0.0625,
+      "is_genesis": true,
+      "is_deployment": false,
+      "dissipation_j": 0.0,
+      "inputs": [],
+      "outputs": [
+        {
+          "endpoint_kind": "parcel",
+          "endpoint_id": "P:tool",
+          "substance": "sub:steel-tool",
+          "magnitude": 5.0,
+          "unit": "kg",
+          "custody": "farmer"
+        }
+      ],
+      "agents": [
+        {
+          "account": "estimator",
+          "role": "role:estimation",
+          "start_s": 3600.0,
+          "end_s": 5400.0,
+          "start_day": 0.041667,
+          "end_day": 0.0625,
+          "hours": 0.5
+        }
+      ]
+    },
+    {
+      "id": "G2",
+      "process": "proc:genesis",
+      "start_s": 7200.0,
+      "end_s": 7560.0,
+      "start_day": 0.083333,
+      "end_day": 0.0875,
+      "is_genesis": true,
+      "is_deployment": false,
+      "dissipation_j": 0.0,
+      "inputs": [],
+      "outputs": [
+        {
+          "endpoint_kind": "parcel",
+          "endpoint_id": "P:part",
+          "substance": "sub:steel-part",
+          "magnitude": 0.1,
+          "unit": "kg",
+          "custody": "mechanic"
+        }
+      ],
+      "agents": [
+        {
+          "account": "estimator",
+          "role": "role:estimation",
+          "start_s": 7200.0,
+          "end_s": 7560.0,
+          "start_day": 0.083333,
+          "end_day": 0.0875,
+          "hours": 0.1
+        }
+      ]
+    },
+    {
+      "id": "D1",
+      "process": "proc:deployment",
+      "start_s": 10800.0,
+      "end_s": 10800.0,
+      "start_day": 0.125,
+      "end_day": 0.125,
+      "is_genesis": false,
+      "is_deployment": true,
+      "dissipation_j": 0.0,
+      "inputs": [
+        {
+          "endpoint_kind": "parcel",
+          "endpoint_id": "P:tool",
+          "substance": "sub:steel-tool",
+          "magnitude": 5.0,
+          "unit": "kg",
+          "custody": "farmer"
+        }
+      ],
+      "outputs": [
+        {
+          "endpoint_kind": "parcel",
+          "endpoint_id": "P:tool",
+          "substance": "sub:steel-tool",
+          "magnitude": 5.0,
+          "unit": "kg",
+          "custody": "farmer"
+        }
+      ],
+      "agents": []
+    },
+    {
+      "id": "E1",
+      "process": "proc:agri.cultivation",
+      "start_s": 21600.0,
+      "end_s": 43200.0,
+      "start_day": 0.25,
+      "end_day": 0.5,
+      "is_genesis": false,
+      "is_deployment": false,
+      "dissipation_j": 0.0,
+      "inputs": [
+        {
+          "endpoint_kind": "reservoir",
+          "endpoint_id": "soil:field-01",
+          "substance": "sub:wheat.grain",
+          "magnitude": 10.0,
+          "unit": "kg",
+          "custody": null
+        }
+      ],
+      "outputs": [
+        {
+          "endpoint_kind": "parcel",
+          "endpoint_id": "P:grain",
+          "substance": "sub:wheat.grain",
+          "magnitude": 10.0,
+          "unit": "kg",
+          "custody": "farmer"
+        }
+      ],
+      "agents": [
+        {
+          "account": "farmer",
+          "role": "role:cultivation",
+          "start_s": 21600.0,
+          "end_s": 43200.0,
+          "start_day": 0.25,
+          "end_day": 0.5,
+          "hours": 6.0
+        }
+      ]
+    },
+    {
+      "id": "E2",
+      "process": "proc:transport",
+      "start_s": 108000.0,
+      "end_s": 111600.0,
+      "start_day": 1.25,
+      "end_day": 1.291667,
+      "is_genesis": false,
+      "is_deployment": false,
+      "dissipation_j": 0.0,
+      "inputs": [
+        {
+          "endpoint_kind": "parcel",
+          "endpoint_id": "P:grain",
+          "substance": "sub:wheat.grain",
+          "magnitude": 10.0,
+          "unit": "kg",
+          "custody": "farmer"
+        }
+      ],
+      "outputs": [
+        {
+          "endpoint_kind": "parcel",
+          "endpoint_id": "P:grain",
+          "substance": "sub:wheat.grain",
+          "magnitude": 10.0,
+          "unit": "kg",
+          "custody": "miller"
+        }
+      ],
+      "agents": []
+    },
+    {
+      "id": "E3",
+      "process": "proc:milling",
+      "start_s": 194400.0,
+      "end_s": 201600.0,
+      "start_day": 2.25,
+      "end_day": 2.333333,
+      "is_genesis": false,
+      "is_deployment": false,
+      "dissipation_j": 100.0,
+      "inputs": [
+        {
+          "endpoint_kind": "parcel",
+          "endpoint_id": "P:grain",
+          "substance": "sub:wheat.grain",
+          "magnitude": 10.0,
+          "unit": "kg",
+          "custody": "miller"
+        },
+        {
+          "endpoint_kind": "reservoir",
+          "endpoint_id": "energy:grid",
+          "substance": "sub:electricity",
+          "magnitude": 100.0,
+          "unit": "J",
+          "custody": null
+        }
+      ],
+      "outputs": [
+        {
+          "endpoint_kind": "parcel",
+          "endpoint_id": "P:flour",
+          "substance": "sub:wheat.flour",
+          "magnitude": 7.0,
+          "unit": "kg",
+          "custody": "miller"
+        },
+        {
+          "endpoint_kind": "parcel",
+          "endpoint_id": "P:bran",
+          "substance": "sub:wheat.bran",
+          "magnitude": 3.0,
+          "unit": "kg",
+          "custody": "miller"
+        }
+      ],
+      "agents": [
+        {
+          "account": "miller",
+          "role": "role:milling",
+          "start_s": 194400.0,
+          "end_s": 201600.0,
+          "start_day": 2.25,
+          "end_day": 2.333333,
+          "hours": 2.0
+        }
+      ]
+    },
+    {
+      "id": "E4",
+      "process": "proc:compost",
+      "start_s": 205200.0,
+      "end_s": 205200.0,
+      "start_day": 2.375,
+      "end_day": 2.375,
+      "is_genesis": false,
+      "is_deployment": false,
+      "dissipation_j": 0.0,
+      "inputs": [
+        {
+          "endpoint_kind": "parcel",
+          "endpoint_id": "P:bran",
+          "substance": "sub:wheat.bran",
+          "magnitude": 3.0,
+          "unit": "kg",
+          "custody": "miller"
+        }
+      ],
+      "outputs": [
+        {
+          "endpoint_kind": "reservoir",
+          "endpoint_id": "soil:field-01",
+          "substance": "sub:wheat.bran",
+          "magnitude": 3.0,
+          "unit": "kg",
+          "custody": null
+        }
+      ],
+      "agents": []
+    },
+    {
+      "id": "E5",
+      "process": "proc:transport",
+      "start_s": 280800.0,
+      "end_s": 284400.0,
+      "start_day": 3.25,
+      "end_day": 3.291667,
+      "is_genesis": false,
+      "is_deployment": false,
+      "dissipation_j": 0.0,
+      "inputs": [
+        {
+          "endpoint_kind": "parcel",
+          "endpoint_id": "P:flour",
+          "substance": "sub:wheat.flour",
+          "magnitude": 7.0,
+          "unit": "kg",
+          "custody": "miller"
+        }
+      ],
+      "outputs": [
+        {
+          "endpoint_kind": "parcel",
+          "endpoint_id": "P:flour",
+          "substance": "sub:wheat.flour",
+          "magnitude": 7.0,
+          "unit": "kg",
+          "custody": "baker"
+        }
+      ],
+      "agents": []
+    },
+    {
+      "id": "E6",
+      "process": "proc:baking",
+      "start_s": 367200.0,
+      "end_s": 381600.0,
+      "start_day": 4.25,
+      "end_day": 4.416667,
+      "is_genesis": false,
+      "is_deployment": false,
+      "dissipation_j": 200.0,
+      "inputs": [
+        {
+          "endpoint_kind": "parcel",
+          "endpoint_id": "P:flour",
+          "substance": "sub:wheat.flour",
+          "magnitude": 7.0,
+          "unit": "kg",
+          "custody": "baker"
+        },
+        {
+          "endpoint_kind": "reservoir",
+          "endpoint_id": "watershed:local",
+          "substance": "sub:water",
+          "magnitude": 3.0,
+          "unit": "kg",
+          "custody": null
+        },
+        {
+          "endpoint_kind": "reservoir",
+          "endpoint_id": "energy:gas",
+          "substance": "sub:natural-gas",
+          "magnitude": 200.0,
+          "unit": "J",
+          "custody": null
+        }
+      ],
+      "outputs": [
+        {
+          "endpoint_kind": "parcel",
+          "endpoint_id": "P:bread",
+          "substance": "sub:bread",
+          "magnitude": 9.5,
+          "unit": "kg",
+          "custody": "baker"
+        },
+        {
+          "endpoint_kind": "reservoir",
+          "endpoint_id": "airshed:local",
+          "substance": "sub:water-vapour",
+          "magnitude": 0.5,
+          "unit": "kg",
+          "custody": null
+        }
+      ],
+      "agents": [
+        {
+          "account": "baker",
+          "role": "role:baking",
+          "start_s": 367200.0,
+          "end_s": 381600.0,
+          "start_day": 4.25,
+          "end_day": 4.416667,
+          "hours": 4.0
+        }
+      ]
+    },
+    {
+      "id": "E7",
+      "process": "proc:sale",
+      "start_s": 453600.0,
+      "end_s": 453600.0,
+      "start_day": 5.25,
+      "end_day": 5.25,
+      "is_genesis": false,
+      "is_deployment": false,
+      "dissipation_j": 0.0,
+      "inputs": [
+        {
+          "endpoint_kind": "parcel",
+          "endpoint_id": "P:bread",
+          "substance": "sub:bread",
+          "magnitude": 9.5,
+          "unit": "kg",
+          "custody": "baker"
+        }
+      ],
+      "outputs": [
+        {
+          "endpoint_kind": "parcel",
+          "endpoint_id": "P:bread",
+          "substance": "sub:bread",
+          "magnitude": 9.5,
+          "unit": "kg",
+          "custody": "farmer"
+        }
+      ],
+      "agents": []
+    },
+    {
+      "id": "E8",
+      "process": "proc:consumption",
+      "start_s": 475200.0,
+      "end_s": 478800.0,
+      "start_day": 5.5,
+      "end_day": 5.541667,
+      "is_genesis": false,
+      "is_deployment": false,
+      "dissipation_j": 0.0,
+      "inputs": [
+        {
+          "endpoint_kind": "parcel",
+          "endpoint_id": "P:bread",
+          "substance": "sub:bread",
+          "magnitude": 9.5,
+          "unit": "kg",
+          "custody": "farmer"
+        }
+      ],
+      "outputs": [
+        {
+          "endpoint_kind": "reservoir",
+          "endpoint_id": "airshed:local",
+          "substance": "sub:CO2+H2O",
+          "magnitude": 9.0,
+          "unit": "kg",
+          "custody": null
+        },
+        {
+          "endpoint_kind": "reservoir",
+          "endpoint_id": "sewer:local",
+          "substance": "sub:waste",
+          "magnitude": 0.5,
+          "unit": "kg",
+          "custody": null
+        }
+      ],
+      "agents": [
+        {
+          "account": "farmer",
+          "role": "role:eating",
+          "start_s": 475200.0,
+          "end_s": 476100.0,
+          "start_day": 5.5,
+          "end_day": 5.510417,
+          "hours": 0.25
+        }
+      ]
+    },
+    {
+      "id": "E10",
+      "process": "proc:repair",
+      "start_s": 540000.0,
+      "end_s": 550800.0,
+      "start_day": 6.25,
+      "end_day": 6.375,
+      "is_genesis": false,
+      "is_deployment": false,
+      "dissipation_j": 0.0,
+      "inputs": [
+        {
+          "endpoint_kind": "parcel",
+          "endpoint_id": "P:tool",
+          "substance": "sub:steel-tool",
+          "magnitude": 5.0,
+          "unit": "kg",
+          "custody": "farmer"
+        },
+        {
+          "endpoint_kind": "parcel",
+          "endpoint_id": "P:part",
+          "substance": "sub:steel-part",
+          "magnitude": 0.1,
+          "unit": "kg",
+          "custody": "mechanic"
+        }
+      ],
+      "outputs": [
+        {
+          "endpoint_kind": "parcel",
+          "endpoint_id": "P:tool",
+          "substance": "sub:steel-tool",
+          "magnitude": 5.1,
+          "unit": "kg",
+          "custody": "farmer"
+        }
+      ],
+      "agents": [
+        {
+          "account": "mechanic",
+          "role": "role:repair",
+          "start_s": 540000.0,
+          "end_s": 550800.0,
+          "start_day": 6.25,
+          "end_day": 6.375,
+          "hours": 3.0
+        }
+      ]
+    },
+    {
+      "id": "E11",
+      "process": "proc:groundskeeping",
+      "start_s": 561600.0,
+      "end_s": 565200.0,
+      "start_day": 6.5,
+      "end_day": 6.541667,
+      "is_genesis": false,
+      "is_deployment": false,
+      "dissipation_j": 0.0,
+      "inputs": [
+        {
+          "endpoint_kind": "reservoir",
+          "endpoint_id": "soil:field-01",
+          "substance": "sub:grass",
+          "magnitude": 2.0,
+          "unit": "kg",
+          "custody": null
+        }
+      ],
+      "outputs": [
+        {
+          "endpoint_kind": "reservoir",
+          "endpoint_id": "soil:field-01",
+          "substance": "sub:grass-clippings",
+          "magnitude": 2.0,
+          "unit": "kg",
+          "custody": null
+        }
+      ],
+      "agents": [
+        {
+          "account": "gardener",
+          "role": "role:mowing",
+          "start_s": 561600.0,
+          "end_s": 565200.0,
+          "start_day": 6.5,
+          "end_day": 6.541667,
+          "hours": 1.0
+        }
+      ]
+    }
+  ],
+  "pledges": [
+    {
+      "id": "PL1",
+      "pledger": "farmer",
+      "hours": 3.0,
+      "timestamp_s": 496800.0,
+      "timestamp_day": 5.75,
+      "expires_at_s": 2613600.0,
+      "expires_at_day": 30.25,
+      "discharged_by": "E10"
+    },
+    {
+      "id": "PL2",
+      "pledger": "baker",
+      "hours": 1.0,
+      "timestamp_s": 540000.0,
+      "timestamp_day": 6.25,
+      "expires_at_s": 2613600.0,
+      "expires_at_day": 30.25,
+      "discharged_by": "E11"
+    },
+    {
+      "id": "PL3",
+      "pledger": "farmer",
+      "hours": 2.0,
+      "timestamp_s": 583200.0,
+      "timestamp_day": 6.75,
+      "expires_at_s": 2613600.0,
+      "expires_at_day": 30.25,
+      "discharged_by": null
+    },
+    {
+      "id": "PL4",
+      "pledger": "baker",
+      "hours": 2.0,
+      "timestamp_s": 540000.0,
+      "timestamp_day": 6.25,
+      "expires_at_s": 583200.0,
+      "expires_at_day": 6.75,
+      "discharged_by": null
+    }
+  ],
+  "derived_parcels": [
+    {
+      "id": "P:tool",
+      "substance": "sub:steel-tool",
+      "created_by": "G1",
+      "created_at_s": 3600.0,
+      "created_at_day": 0.041667,
+      "destroyed_by": null,
+      "destroyed_at_s": null,
+      "destroyed_at_day": null,
+      "origin_reservoirs": [],
+      "origin_genesis": true,
+      "status_at_now": "held"
+    },
+    {
+      "id": "P:part",
+      "substance": "sub:steel-part",
+      "created_by": "G2",
+      "created_at_s": 7200.0,
+      "created_at_day": 0.083333,
+      "destroyed_by": "E10",
+      "destroyed_at_s": 540000.0,
+      "destroyed_at_day": 6.25,
+      "origin_reservoirs": [],
+      "origin_genesis": true,
+      "status_at_now": "consumed"
+    },
+    {
+      "id": "P:grain",
+      "substance": "sub:wheat.grain",
+      "created_by": "E1",
+      "created_at_s": 21600.0,
+      "created_at_day": 0.25,
+      "destroyed_by": "E3",
+      "destroyed_at_s": 194400.0,
+      "destroyed_at_day": 2.25,
+      "origin_reservoirs": [
+        "soil:field-01"
+      ],
+      "origin_genesis": false,
+      "status_at_now": "consumed"
+    },
+    {
+      "id": "P:flour",
+      "substance": "sub:wheat.flour",
+      "created_by": "E3",
+      "created_at_s": 194400.0,
+      "created_at_day": 2.25,
+      "destroyed_by": "E6",
+      "destroyed_at_s": 367200.0,
+      "destroyed_at_day": 4.25,
+      "origin_reservoirs": [],
+      "origin_genesis": false,
+      "status_at_now": "consumed"
+    },
+    {
+      "id": "P:bran",
+      "substance": "sub:wheat.bran",
+      "created_by": "E3",
+      "created_at_s": 194400.0,
+      "created_at_day": 2.25,
+      "destroyed_by": "E4",
+      "destroyed_at_s": 205200.0,
+      "destroyed_at_day": 2.375,
+      "origin_reservoirs": [],
+      "origin_genesis": false,
+      "status_at_now": "released"
+    },
+    {
+      "id": "P:bread",
+      "substance": "sub:bread",
+      "created_by": "E6",
+      "created_at_s": 367200.0,
+      "created_at_day": 4.25,
+      "destroyed_by": "E8",
+      "destroyed_at_s": 475200.0,
+      "destroyed_at_day": 5.5,
+      "origin_reservoirs": [],
+      "origin_genesis": false,
+      "status_at_now": "consumed"
+    }
+  ]
+}

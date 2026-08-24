@@ -1,0 +1,443 @@
+# Aequitas — Objections Register
+
+> **Version:** 0.5 · **Date:** 2026-08-01
+> **Supersedes:** `99-archive/Aequitas_Objections_v0.4.md` — **OP-17 closed and moved to Part B; OP-23 and OP-24 added; the headline finding narrowed.**
+> **Tracks:** `Aequitas_Foundations_v0.4.md` · `Aequitas_EventLog_v0.3.md` · `OP-17_coproduct_allocation.md` · `OP-16_authorization_stress_test.md`
+> **Purpose:** one place holding every serious objection to the theory, its source, the axiom it attacks, and its status.
+
+**Part B is not an archive.** It holds the objections that have been answered, and it is the most immediately useful section in the project — those are the arguments the academic paper is built from, and every one of them will be raised again by someone who has not read this. `99-archive/` holds superseded *document versions*; an answered objection is not superseded, it is ammunition. Nothing here gets filed away.
+
+**Sources:** a comparative pass over Participatory Economics, Cockshott & Cottrell, Sraffa/Steedman, LCA allocation theory, Kantorovich, Ellerman, Odum and Sensorica, plus the **field record** of local currencies and time banking (§A0), and the **auditor-independence literature** (§A9).
+
+---
+
+## Status board
+
+| | Item | Status |
+|---|---|---|
+| 🔴 | **OP-18 — Responsibility is not divisible** | ⬆ **Promoted. Now blocks C3** — labour is the layer OP-17 could not split. |
+| 🔴 | **OP-10 / P8 — Weighting-model governance** | Open. One side entrance closed (§3.2a); cost constants have a mechanism (§3.3a); the general problem stands. |
+| 🔴 | **OP-24 — Understatement drift** | **New.** Errors favouring subscribers have no funder. Attacks A4. |
+| 🟠 | **OP-23 — Shared-overhead attribution** | **New.** Spun out of OP-17. Thin exactly where material inputs are small. |
+| 🟠 | **OP-16 — Onerousness gap** | **Half answered.** Skill half fixed by A2 v0.3. Tedium half open. |
+| 🟠 | **OP-6 — Feedback mechanics** | Promoted; also carries signal flooding. |
+| 🟠 | **P4 — Coordinator class** | **Weakened but alive.** Credit-accumulation form dead; institutional form is not. |
+| 🟠 | **OP-9 / P5 — Preference revelation** | **Substantially answered.** Needs writing up. |
+| 🔽 | **OP-22 — Minimum audit disclosure** | Narrowed to a C7 implementation question. |
+| ✅ | **OP-17 — Joint production allocation** | **CLOSED** for the material/energy half — see **B7**. |
+| ✅ | **P7 — "theory of value"** · **W1 — A3 defeats sinks** · **P9** · **S1** · **Ellerman** | **Fixed / claimed / adopted.** |
+| ✅ | ~~OP-11~~ · ~~OP-5~~ · ~~OP-8 firewall~~ · ~~OP-19~~ · ~~OP-20~~ · ~~OP-21~~ | **Dissolved, resolved, or closed.** |
+
+**Eleven items closed; eight live.** The pattern in what closes has held for a third session: **every closure came from removing a division or from finding that the division was a measurement all along — never from picking a split.**
+
+---
+
+## 0. The headline finding — *narrowed in v0.5*
+
+**Aequitas's hard problem is division of the untraceable.**
+
+The v0.4 statement was *"division, not measurement,"* and it was too broad. OP-17's resolution shows why: a refinery's debit **does** divide across its fractions, because the cracking energy physically went somewhere and a meter can find it. The division was a measurement that nobody had thought to take.
+
+> **The test that separates the two cases — and it is the most transferable result the project has produced:**
+> **Did the thing being divided leave a physical trace?**
+> **Trace → measure.** Feed energy, cracking enthalpy, a turbine's heat/power curve.
+> **No trace → declare a convention and say so.** Labour hours across co-products; shared overhead; joint responsibility across a team.
+
+**What remains genuinely indivisible is small and sharply defined.** Three items, and they are the same item at three scales: **labour across co-products (OP-18), overhead across co-products (OP-23), and responsibility across a team (OP-18 again).** Every one of them is a case where no instrument will ever help, because there is nothing to instrument.
+
+*Foundations v0.4 adopts this:* §3.4 is narrowed, §3.4a states the allocation rule, and §1.1 loses a row rather than gaining an entry.
+
+---
+---
+
+# PART A — LIVE OBJECTIONS
+
+Ranked by how much of the theory fails if the objection stands.
+
+---
+
+## A0. The field record — what actually kills these systems
+
+Source: `02-research/local-currency-experiments.md`. Ithaca HOURS, Burlington Bread, time banking, Wörgl, WIR, Sardex, LETS. A century of people building these and finding out what breaks — the closest thing the project has to an experimental literature.
+
+**It does not show one failure repeated. It shows three.**
+
+| Class | What breaks | Cases | Aequitas |
+|---|---|---|---|
+| **1 — Valuation** | Flat-hour crediting cannot recruit skill | Warren; **time banking, 45 years** | 🟠 Skill half fixed; **OP-16** open |
+| **2 — Circulation** | Scrip pools at sinks and stops moving | Ithaca, Burlington | ✅ **Immune — see B2** |
+| **3 — Institutional** | Founder dependency, state suppression | Ithaca (Glover left); Wörgl (banned) | ✅ Addressed — see B5, B2 |
+
+---
+
+## A1 — OP-18. Responsibility for joint work is not divisible
+
+**Attacks:** A1's attribution claim, A2, C1's agent field.
+**Sources:** [Ellerman](http://et.worldeconomicsassociation.org/files/WEA-ET-5-1-Ellerman.pdf) · `02-research/ellerman-labor-theory-of-property.md`
+**Status:** 🔴 **Open, and promoted to the critical path in v0.5.**
+
+Ellerman is explicit that de facto responsibility for a joint product is **joint and non-decomposable**. The whole team is responsible for the whole output. There is no factual measure saying the welder caused 40% of the bridge — and Aequitas needs exactly that number to credit nine people separately.
+
+**Hours-worked is an allocation convention, not a measurement.** Foundations §1.1 declares it as one, which converts a universality violation into an honest one. **It does not make the convention correct**, and a critic can still ask why hours rather than some other basis.
+
+> **🔴 Why this now blocks C3, which OP-17 previously did.**
+> §3.4a splits a joint process's **materials and energy** by measuring where the process physically sent them. **Labour has no such trace.** The farmer's eight hours were spent on the animal, not on the hide, and splitting those hours by tissue-deposition energetics would assume labour is expended in proportion to metabolic energy — an assumption, not a measurement.
+> C3 needs **per-product labour hours**. That is precisely the layer [EXIOBASE](https://www.exiobase.eu/) carries and almost nobody else collects, and it is precisely the layer no instrument can split. **The critical path moved from OP-17 to OP-18 without anything being solved twice.**
+
+**Does the OP-17 rule transfer?** Partially, and the honest answer is *no, not for the hard part.* Where a team's output responds measurably to a member's participation, something like a derivative exists. Where it does not, nothing does. **Test this before assuming it transfers** — Ellerman's objection is about *responsibility*, which may not be a cost function at all.
+
+*(The ally half of Ellerman — responsibility imputation as the grounding for A1 — is adopted and lives in B6.)*
+
+---
+
+## A2 — OP-10 / P8. Weighting-model governance, and the Hayek residue
+
+**Attacks:** A8, decentralization.
+**Status:** 🔴 Open. Largest hole in A8. **Two partial answers added in v0.5.**
+
+Whoever sets the mitigation-cost model controls every balance in history without touching a core rule.
+
+**The comparison sharpens it.** Parecon's Iteration Facilitation Board is [attacked as implausible](https://ejpe.org/journal/article/view/867) for assuming a body can announce opportunity costs for all goods, resources, labour categories and capital stocks. **Aequitas's weighting-model maintainer is structurally the same object.** The verification ladder answers *data collection* — it gathers locally rather than centrally — but it does not answer *model maintenance*, which remains central by default.
+
+**Progress in v0.5, from the OP-17 work:**
+
+1. **A side entrance is closed.** Foundations §3.2a requires every division of a debit to be computed **per dimension on the vector, before collapsing** to a comparable scalar. Had splits been computed on the collapsed number, the weighting-model maintainer would have controlled every allocation in history *invisibly*. Per-dimension splits are weighting-independent. **This hole existed and nobody had noticed it.**
+2. **Cost constants have a mechanism** — rival-sector audit, §3.3a and A10 below. It is specific to constants, not to the model as a whole.
+
+**What remains:** the general problem. The strongest available reply is competing local variance under A8 — multiple weighting models, openly published, each recomputable by anyone from the same log. **That reply is asserted in A8 and still nowhere specified. Specify it.**
+
+**Entangled with OP-9** (a scarcity price is the dual of an optimisation, so whoever sets the objective function sets every scarcity price) and with Foundations §10.1 (a trust network that can declare an activity creditable can issue credit). **Three problems, one capture surface. Work them together.**
+
+> **Worth recording as a design constraint discovered in v0.5:** the two candidate allocation rules that were *rejected* — Aumann–Shapley marginal allocation and Kantorovich shadow prices — **both required an objective function**, and would each have re-opened OP-10 through the allocation layer. The rule that was adopted requires none. **When choosing between mechanisms, "does this need an objective function?" is a fast proxy for "does this re-open OP-10?"**
+
+---
+
+## A3 — OP-24. Understatement drift *(new in v0.5)*
+
+**Attacks:** A4 — progressively, and without any single visible violation.
+**Sources:** `02-research/auditor-independence.md` · [credit rating agencies and the subprime crisis](https://en.wikipedia.org/wiki/Credit_rating_agencies_and_the_subprime_crisis)
+**Status:** 🔴 **Open. Fix proposed, unproven.**
+
+Retroactive re-weighting (§3.3) makes cost constants extraordinarily powerful: whoever publishes the energetics of a process sets every split in that sector, backwards through all history.
+
+**One channel of capture is structurally closed and should be claimed.** There is no market-dominating corporation to fund a favourable result, because A5 removes the profit that pays for captured science today. Labs are credited by trust networks for doing work. **The Enron-shaped failure cannot operate the same way here.**
+
+**But the mirror problem is real, and it was introduced by the fix for the first one.** A general-membership trust network is dominated by the *consuming* side of any given good — everyone eats beef, few raise cattle. Its members therefore collectively benefit from beef's debit being **understated**. And the incentive to correct is one-sided:
+
+| Error direction | Who wants it fixed | Result |
+|---|---|---|
+| Constant **overstates** debit | Every subscriber | Corrected |
+| Constant **understates** debit | Nobody — correcting it worsens every subscriber's ledger | **Nobody funds the replication** |
+
+**Result: systemic drift toward under-costing** — precisely how every carbon-accounting regime attempted so far has failed. Foundations §3.5 tolerates it arithmetically (no global balance is required), which is what makes it insidious: **there is no equation that breaks.** It simply erodes A4.
+
+**Aggravating factor: replication cost is asymmetric.** Competing networks discipline *estimates* cheaply — re-interviewing a farmer is cheap. They do not discipline *constants*: re-running calorimetry is not cheap. So the competitive pressure that works everywhere else in the system is weakest exactly here.
+
+**Proposed fix — rival-sector audit (Foundations §3.3a):**
+
+> **The natural auditor of a cost constant is the rival sector, not the consumer.** If beef's energetics are understated, plant-protein producers are materially harmed and will fund the replication. Consumers police neither direction; rivals police both.
+
+Plus three supporting rules: two unaffiliated replications before a constant may re-weight history; triage weighted by **magnitude × concentration of beneficiary** rather than magnitude alone (materiality thresholds alone *help* an attacker, whose job becomes making a falsification look immaterial); and networks concentrated in the sector they audit are captured by construction, which is **detectable from public membership composition.**
+
+**Why the fix is unproven.** It assumes a rival sector exists and is dense enough to fund replication. For beef versus plant protein, plausible. For a good with no substitute, or a constant that cuts across all sectors equally, there is no rival and no auditor. **Test: simulate a population of trust networks with this incentive structure and measure at what rival density the drift stops being arrested.**
+
+---
+
+## A4 — OP-23. Shared-overhead attribution *(new in v0.5)*
+
+**Attacks:** universality, via §1.1.
+**Status:** 🟠 **Open. Spun out of OP-17, which resolved everything around it.**
+
+First-order inputs decompose metabolically or thermodynamically. **Overhead does not.** The barn shelters the whole animal; the vet treats the whole animal; supervision covers the herd. No physical trace runs from the barn to the hide.
+
+**Interim rule (Foundations §1.1):** overhead attaches to the bundle and flows to outputs in the proportions the traceable inputs established. Derived rather than freshly invented — but two problems are known:
+
+1. **It presumes overhead is *caused* in the same proportion as feed.** A hide requires no more barn than a kilogram of muscle does.
+2. **🔴 The residue is not small in overhead-heavy processes.** A semiconductor fab's cleanroom and tooling dwarf its material inputs, so inheriting proportions from a tiny traceable base does nearly all the work. **The rule is strong for agriculture and process industry and thin for capital-intensive manufacturing** — and that is a large fraction of a modern economy.
+
+**Known exploit, unclosed: overhead stuffing.** Reclassify traceable inputs as overhead to escape measurement into the soft inheritance rule. §1.1's declaration makes the choice visible; nothing yet makes it expensive.
+
+**Candidate directions, none worked:** treat capital as a parcel whose debit amortizes by *measured wear* rather than by time; or apply the front-loading principle (§6.2a) to tooling, so the fab's construction is pledged and discharged rather than amortized into wafers. **The second is more promising and is consistent with three previous closures.**
+
+---
+
+## A5 — OP-16. The onerousness gap
+
+**Attacks:** A2, and the system's ability to allocate labour at all.
+**Sources:** [Hahnel](https://znetwork.org/znetarticle/in-defense-of-participatory-economics-by-robin-hahnel/) · [PLOS One time-banking review, 2025](https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0322760) · `02-research/participatory-economics.md`
+**Status:** 🟠 **Half answered.** The remaining half has no good candidate.
+
+Parecon remunerates **duration, intensity, and onerousness**. Aequitas refuses to rate-scale labour (A2) and resolves differences materially instead.
+
+**What A2 v0.3 covers:** exertion (extra calories), hazard (retroactive health debit), and **skill** (training is credited work rather than a downstream charge).
+
+**What remains uncovered: disutility with no material signature.** Tedium, isolation, indignity. Two jobs with identical calories, identical training, and identical health outcomes credit identically per hour — but nobody wants one of them.
+
+**This is not theoretical.** Time banking credits every hour identically — exactly A2's flat hour — and 45 years across dozens of countries produces chronic **skill mismatch**, credit hoarding, and skills in short supply.
+
+**Candidates:**
+- **(a) Hour-ceiling differentiation — strongest.** Pay the premium in *hours, not rate*: a sustainable sewer shift is 4h, a pleasant one 8h; both credit 1hr/hr, so no multiplier exists anywhere. Justification is **physiological and measured**. Weakness: who sets the ceilings → **OP-10**.
+- **(b) Check how much of OP-16 is simply unmeasured hazard.** Night shift, isolation, and repetitive strain have documented health costs A2's hazard clause **already** injects. **Do this first** — it may shrink the problem substantially.
+- **(c) Automation pressure.** Unfilled pledges are a visible, quantified signal saying *automate this*.
+- **(d) Rotation** (balanced job complexes). Carries [the compulsory-labour critique](http://libcom.org/blog/workers-critique-parecon-11042012). Last resort.
+
+> **Withdrawn candidate:** *"route onerous work to service credit."* There is no separate service credit to pay a premium in. Recorded so it is not re-proposed.
+
+**Test:** compute the debit-cost of night-shift office cleaner, day-shift office cleaner, and rural postal carrier. **If the numbers come out identical, OP-16 is confirmed and (b) is eliminated.**
+
+---
+
+## A6 — OP-6. Feedback mechanics
+
+**Attacks:** §6.3, §6.4. **Status:** 🟠 Open, and **promoted**.
+
+How signals aggregate without becoming a popularity plutocracy.
+
+**Why it is more urgent than its old ranking implied.** Accumulation is forbidden by A3, and a high producer's marginal credit does nothing once their ceiling exceeds their appetite. **Feedback and pledging are therefore the entire motivation system for anyone past their own consumption ceiling** — which is to say, for exactly the people the economy most depends on.
+
+**Two live sub-problems:**
+1. **Signal flooding** *(inherited from OP-20)*. Signals are unbacked and plentiful by design, and generation cost for low-quality content trends to zero. Nothing in the schema constrains this; it is projection-side and has no answer yet.
+2. **OP-8 reframed — can feedback be bought?** **A signal that credit can purchase is a currency by the back door.**
+
+---
+
+## A7 — P4. Abolishing property income does not abolish class
+
+**Attacks:** the "surgical, keep functional institutions" positioning in §8; constrains OP-1.
+**Sources:** [Albert & Hahnel on the coordinator class](https://znetwork.org/znetarticle/parecon-and-anarcho-syndicalism-an-interview-with-michael-albert-by-michael-albert/) · `02-research/participatory-economics.md`
+**Status:** 🟠 **Weakened but alive.**
+
+Parecon's central historical claim: Soviet-type systems abolished capitalists and produced a new ruling class anyway — a **coordinator class** monopolising empowering work.
+
+> **⚠️ What v0.3 got wrong.** The register previously argued that *"OP-1 converts service credit into influence."* **That argument is void.** There is no separate service credit, and credit tracks **hours, not material throughput**. A carer's hour and a steelworker's hour confer identical weight. **No credit-accumulation flywheel exists.**
+
+**What survives.** The coordinator-class risk was never *only* about income. It is about **who holds empowering work**, and **§8 deliberately keeps existing institutions** — municipal government, planning bodies, civil service — precisely the institutions in which conceptual and agenda-setting work is concentrated. Removing profit does not redistribute *that*.
+
+**The new residual, introduced by pledging.** Pledging power accrues per hour worked, equally for everyone — egalitarian across *sectors*, but weighted by **hours available to work**, which is not equally distributed. Caregivers, part-time workers, the disabled, and the chronically ill hold systematically less say in what gets produced. **Live and unaddressed.**
+
+**Consequences for OP-1:** *proposal power with universal suffrage* is the only candidate that structurally separates agenda-setting from deciding. Parecon's **decision weight proportional to how much you are affected** is a fifth candidate, and it does not accumulate at all — the best available answer to the hours-inequality residual.
+
+---
+
+## A8 — OP-9 / P5. Preference revelation
+
+**Attacks:** A5. The Mises/Hayek line of attack.
+**Sources:** `02-research/neurath-calculation-in-kind.md` · [Dapprich](https://brightagebeyond.com/wp-content/uploads/2022/05/dapprich-philipp-2021-optimal-planning-with-consumer-feedback-a-simulation-of-a-socialist-economy.pdf) · `02-research/kantorovich-shadow-prices.md` · `02-research/cockshott-cottrell-labour-time.md`
+**Status:** 🟠 **Substantially answered. Needs writing up, not inventing.**
+
+Cost says what a thing takes. It does not rank two people who both want the last one.
+
+**Two complementary answers:**
+
+1. **Pledges supply the demand signal** (Foundations §6.4) — with no prices, no central optimizer, and **no Iteration Facilitation Board.**
+2. **Scarcity-as-debit handles rationing.** On [Kantorovich's](https://www.nobelprize.org/prizes/economic-sciences/1975/kantorovich/lecture/) objectively determined valuations, a shadow price is the **cost of a binding constraint**, not a margin extracted by a seller. **Recorded as debit rather than skimmed as margin, this is compatible with A5 and arguably required by A4.**
+
+**P5 — the Cockshott variant.** Their demand lever is the *gap* between market-clearing price and labour value. **A5 collapses that gap to zero by construction**, so Aequitas inherits their problem with one fewer instrument. **Pledges are the replacement.**
+
+**Remaining catch:** a dual price requires a primal optimisation, which requires an objective function — **straight into OP-10.** Federating it per-constraint may help, since most scarcity constraints are local (this lake, this ore body). **Unverified.**
+
+> **⚠️ Sharpened in v0.5 — the OP-17 session confirmed the danger.** A demand-contingent allocation rule was proposed and rejected: splitting a steer's debit by which cuts are sought-after makes two identical steers in two towns carry different splits, which **fails universality and is price allocation in costume.** The general lesson: **whenever demand is invited into the cost side, check whether A5 has been reintroduced under a new name.** OP-9's answer must keep scarcity strictly as a *material* cost.
+
+---
+
+## A9 — OP-22. Minimum audit disclosure
+
+**Attacks:** §5.3. **Status:** 🔽 **Narrowed from a foundational conflict to an implementation question.**
+
+The correct bar for attribution is **no worse than today** — a gallery buyer already has no proof the artist painted the work — and provenance only becomes fraught in the capitalized art market that A5 removes. On privacy, the world already runs counterparty-visible and third-party-opaque, and Aequitas replaces neither courts nor social pressure.
+
+**What survives is narrow and technical.** Banking externalizes validation to institutions; **Aequitas has no institution to externalize to.** So: **what is the minimum an auditor must see to verify a claim without seeing a history?** Zero-knowledge proofs are the right shape; the disclosure set is not specified. **C7.**
+
+---
+
+## A10 — The auditor-independence problem *(new in v0.5)*
+
+**Attacks:** the trust-network model (Level 2), and therefore C2.
+**Sources:** `02-research/auditor-independence.md` · [Arthur Andersen](https://en.wikipedia.org/wiki/Arthur_Andersen) · [Sarbanes–Oxley](https://en.wikipedia.org/wiki/Sarbanes%E2%80%93Oxley_Act)
+**Status:** 🟠 **Partly answered by a cheap structural rule. Full trust-network design deferred.**
+
+*"Trust networks compete on accuracy, because accuracy benefits their subscribers."* **That claim does not survive contact with the record.** Subscribers do not want accuracy; they want a favourable assignment. Every issuer-pays rating arrangement in history has drifted the same way, and **removing the profit motive does not fix it, because the conflict is directional rather than monetary** — a client-owned Arthur Andersen would have been worse than the one Enron paid, not better.
+
+**The cheap structural answer, adopted in Foundations §3.3a and §10.1:**
+
+> **A trust network whose membership is concentrated in the sector it audits is captured by construction.**
+
+In Aequitas everyone is both producer and consumer, so a **general-membership** network is dominated by the consuming side for any particular good, and its incentives align against that good's producers automatically. Only **sector-specific** networks fail this way. And membership composition is public in the log, so this is a **detectable screening property, not a rule anyone must enforce.**
+
+**What it costs:** the fix creates **OP-24** (A3 above) — consumer-dominated networks are biased toward understating what their members consume. The two findings must be read together; neither is safe alone.
+
+**Deferred:** the shape of trust networks generally — funding, membership, competition, dispute handling — is **C2 work and explicitly not settled here.** Author's decision, 2026-08-01.
+
+---
+---
+
+# PART B — ANSWERED
+
+**The answer sheet.** Every item here will be raised again by someone who has not read this document, and most of them are the academic paper's strongest material. Do not file this away.
+
+---
+
+## B7 — OP-17. Joint production ✅ **CLOSED for materials and energy**
+
+**Shipped:** Foundations v0.4 §3.4a, §3.2a, §1.1; EventLog v0.3 IC-10/IC-11/IC-12.
+**Full argument:** `00-strategy/OP-17_coproduct_allocation.md`
+**Sources:** [Sraffa/Steedman/Morishima on negative labour values](https://www.scienceopen.com/hosted-document?doi=10.13169/worlrevipoliecon.14.1.0063) · [ISO 14044 allocation critique](https://link.springer.com/article/10.1007/s11367-016-1161-2) · `02-research/joint-production-allocation-problem.md`
+
+**The objection.** A process yields beef and leather, or a refinery's full fraction slate. One physical event, several outputs, one pool of debit. Splitting by mass, energy content, exergy, or economic value gives **four different answers, none more physically true than the others.** ISO 14044 ranks the options and then falls back to **market price**, which A5 forbids. The classical form is sharper: under joint production, labour values can go **negative**.
+
+**Why it looked unanswerable.** Both literatures searched for a **carrier quantity** — a property of the *outputs* by which cost could be apportioned. Every candidate works in some industries and is a category error in others.
+
+**The answer.**
+
+> **A joint process's debit divides according to where the process itself physically sent its inputs.** The instrument is whatever that process makes traceable — tissue-deposition energetics for an animal, cracking enthalpy for a refinery, the extraction curve for a turbine. **These are not rival conventions; they are different instruments reading the same underlying quantity, which is hours (A2).**
+
+**Why Aequitas can say this and the LCA literature cannot: it has a universal denominator and they do not.** Every physical quantity in the ledger is already a proxy for hours-to-produce or hours-to-mitigate, so the question "mass or energy?" — unanswerable as posed — never has to be asked.
+
+**Tested** against a slaughterhouse (tissue energetics), an oil refinery (cracking enthalpy), and a CHP plant (turbine curve): one justification, three instruments, no case requiring its own excuse.
+
+**Four things that fell out:**
+
+| | |
+|---|---|
+| **Steedman is blocked, not inherited** | Nothing is inverted, so negative values do not arise: each share is a forward measurement of what physically went in. ⚠️ *Asserted, not yet proven for a recursive economy — see §C, test 1.* |
+| **Waste outputs are co-products** | Counting manure and methane in the split **removes the residual**, and with it the entire question of who absorbs an unwanted output. |
+| **Fate sets ledger character; the process sets cost share** | Manure is pollution debit in a lagoon, a co-product in a biodigester, an observed fertiliser offset when spread. The allocation literature conflates these two questions. |
+| **A §1.1 row was deleted rather than filled in** | The strongest possible outcome for a declared-convention entry. |
+
+**What it did not solve, and says so:** **labour** (→ OP-18, which now blocks C3) and **shared overhead** (→ OP-23).
+
+**Two rules that were rejected and why — both worth remembering:**
+- **Aumann–Shapley marginal allocation.** Rigorous, but needs a domain condition ("is the plant dial-able?"), and its fixed-proportion fallback assumed a right to refuse custody that does not exist. **Also requires a cost function, i.e. an objective — re-opening OP-10.**
+- **Demand-contingent splitting.** Makes two identical steers in two towns carry different splits. **Universality failure, and price allocation in costume.**
+
+---
+
+## B1 — P7. "Nothing else is value" ✅ FIXED
+
+**Shipped:** Foundations §0 and A1.
+**Sources:** [Ayres on emergy ignoring demand](https://www.centre-cired.fr/en/is-emergy-really-a-theory-of-value-2/) · [Sensorica](https://wiki.p2pfoundation.net/Open_Value_Accounting) · `02-research/technocracy-energy-accounting.md`
+
+Every single-substance objective theory of value has been rejected on one ground: **supply-side only, ignores demand.** The refutation takes one sentence — and the old §0 wording invited it.
+
+**The fix:** §0 ends *"Cost is nothing other than this,"* followed by an explicit statement that **Aequitas is a theory of cost, not of value**, and A1 is retitled *Materialism of Cost*. Value enters as feedback and pledges (§6), never as an accounting quantity.
+
+**Confirmation from practice:** Sensorica **renamed its "value accounting system" to a "contribution accounting system"** on exactly this reasoning.
+
+**Cost of the fix: one paragraph. It removed the single easiest attack on the project.**
+
+---
+
+## B2 — W1. A3 defeats the sink problem ✅ CLAIMED
+
+**Shipped:** Foundations §7.6.
+
+Ithaca HOURS and Burlington Bread both died of the *same specific mechanism*, and it was not valuation. Scrip flows toward businesses whose own inputs come from outside the network, making them one-way sinks. Ithaca's remaining businesses were **"drowning in Hours"**; Bread **piled up at Muddy Waters and Sugar Snap.**
+
+**This cannot occur in Aequitas, because there is no medium of exchange.** Credit is non-fungible and never moves (A3); only debit moves, attached to its object. **Nobody can drown in credit they cannot spend, because nobody ever receives credit *from* anyone.**
+
+**Corollary — Wörgl.** The stamp scrip cut unemployment 16% while Austrian unemployment rose 19%, and was terminated by the Oesterreichische Nationalbank in 1933 to protect the legal-tender monopoly. **It was killed for working.** Aequitas has no issuer and no notes, so that instrument does not fit it. **The ban on calling Aequitas a currency is a strategic argument, not a branding preference.**
+
+---
+
+## B3 — Front-loading ✅ DISSOLVED OP-11, OP-5, OP-21
+
+**Shipped:** Foundations §6.2, §6.2a; EventLog §6, §13.
+
+> **A large up-front cost with diffuse benefit is discharged when incurred, by those who pledged for it. It is never amortized downstream onto whoever happens to consume the result.**
+
+**~~OP-11 — training amortization.~~** Every candidate denominator was defective. **The A2 v0.3 amendment removes the downstream flow entirely, so there is no denominator to choose.**
+
+**~~OP-21 — media reproduction.~~** Production is front-loaded and pledged; the audience pays **delivery only.** Pledgers **receive no profit and cannot receive one.**
+
+**~~OP-5 — education.~~** Answered by the same amendment plus pledging, which supplies the limit. **No perpetual-studenthood exploit.**
+
+**Why the question was malformed in all three cases:** downstream amortization always requires choosing an arbitrary window. **Front-loading removes the division rather than solving it.**
+
+> **⚠️ Candidate application, untested — OP-23.** If tooling and plant were front-loaded and pledged rather than amortized into output, the shared-overhead problem would shrink the same way. **Worth trying before inventing a new overhead convention.**
+
+**⚠️ Residual: cold start.** Pledges follow reputation, so a first-time creator attracts none.
+
+---
+
+## B4 — One credit, three feedback channels ✅ DISSOLVED OP-8
+
+**Shipped:** Foundations §6 (restructured).
+
+An apprentice plumber's single hour is simultaneously **enrichment**, **service**, and **production**. That hour is not partitionable, so **no accounting rule may use the categories as a boundary.**
+
+**Consequence for non-convertibility.** Under the corrected structure **no firewall is required**: enrichment *work* credits as time like everything else, and enrichment *feedback* is non-convertible because **it was never credit in the first place.**
+
+**What survives** is the inverse and lives in Part A: **can feedback be bought?**
+
+**This also voided the producer-plutocracy objection** — credit tracks hours, not tonnage.
+
+---
+
+## B5 — OP-19, OP-20, S1, W2, P9 ✅
+
+**~~OP-19 — the saturated producer.~~ Resolved by pledges.** Pledging gives surplus a purpose: direct what gets made rather than hold it.
+
+**~~OP-20 — unobservable work.~~ Closed with no new mechanism.** **IC-7** caps claimed hours at wall-clock; **conservative weighting** prices unattested near-zero-material claims at ~zero; **pledges** are the only route from asserted to backed. **Conservative weighting has gone from a granularity incentive to a defence the theory depends on**, and must be specified early in C4.
+
+**S1 — "does this need a Paul Glover?" ✅ Adopted** as the fourth screening question. **A mechanism that depends on an enthusiast has an expiry date**, and must pay its own maintainer from inside the system.
+
+**W2 — WIR and Sardex give the MVP a target shape. ✅ Usable now.** **B2B in dense input loops** on **mutual credit**. WIR: 1934–present, ~60,000 businesses, demonstrably countercyclical. **A downturn is the moment.**
+
+**P9 — §11 read as a local currency. ✅ Fixed.** **Aequitas's overlay computes a number money cannot produce.**
+
+---
+
+## B6 — Ellerman replaces Marx ✅ ADOPTED
+
+**Shipped:** Foundations A1.
+**Source:** [*The Labour Theory of Property and Marginal Productivity Theory*](http://et.worldeconomicsassociation.org/files/WEA-ET-5-1-Ellerman.pdf) · `02-research/ellerman-labor-theory-of-property.md`
+
+A1's attribution claim now rests on **responsibility imputation**: impute responsibility in accordance with who was in fact responsible. Not a moral claim about desert, but the principle courts already use for crimes, transplanted to production.
+
+**Why this is better positioning than any labour theory of value:** it is juridical rather than value-theoretic, so it inherits none of the transformation problem, the negative-values problem, or a century of hostile priors.
+
+**Three things it buys:** A3 becomes a consequence rather than a design choice; a second independent route to §7.1; and the reply to *"why do the machine's owners get nothing?"* — because machines do not act.
+
+*Take the principle, decline the institution.* **The cost of adopting him is OP-18** — his own argument that joint responsibility is non-decomposable, now the project's blocking problem.
+
+**Also banked — tractability:** [Cockshott & Cottrell](https://en.wikipedia.org/wiki/Towards_a_New_Socialism) demonstrated in-kind calculation at national scale with sparse-matrix methods. **Cite them rather than re-proving it.**
+
+---
+---
+
+## C. Tests owed
+
+Named so they are not silently skipped. **Test 1 is the sharpest surviving technical risk in the project.**
+
+1. **🔴 Recursion convergence.** Every input's debit is itself a joint split, so §3.4a's allocation is defined recursively with no proof it terminates or converges. **This is where Sraffa could re-enter** — and it would falsify IC-10's non-negativity as a *derived* property, leaving it merely asserted. **Sparse-matrix sim over a synthetic joint-production economy, Cockshott & Cottrell's method.**
+2. **Understatement drift** (A3). Simulate trust networks under §3.3a's incentives; find the rival density at which the drift stops being arrested.
+3. **The fuzzy middle.** Hide-to-carcass ratios vary slightly by breed and feed. Does the rule behave sensibly at small differences? [Mackenzie et al. on biophysical allocation in livestock](https://pmc.ncbi.nlm.nih.gov/articles/PMC12971801/) is the hardest published case.
+4. **Refinery re-derivation.** Process-physics allocation versus USEEIO price allocation on the same slate. **A materially different answer is the most publishable technical result available early.**
+5. **OP-16 cleaner test.** Night-shift vs day-shift vs rural carrier. If identical, (b) is eliminated.
+
+## D. Not yet examined
+
+- **Ostrom** — polycentric governance, commons design principles. Bears on A8 and OP-10. **Highest value of these.**
+- **Georgescu-Roegen** — entropy and the economic process. Bears on §3.5.
+- **Lange–Lerner** market socialism, and why Hayek rejected it.
+- **Nove**, *The Economics of Feasible Socialism*.
+- **Graeber**, *Debt* — bears on permanent consumption debit.
+- **Sensorica** in depth · **WIR + Sardex** on their own · **Banque du Peuple post-mortem** · **Warren's colonies**.
+- **Aumann–Shapley / cooperative cost-game literature** — rejected as the OP-17 rule, but its axioms (efficiency, symmetry, dummy, additivity) are a good checklist for **OP-18**, where a convention genuinely is required.
+
+---
+
+## E. Changes in v0.5
+
+1. **OP-17 closed and moved to Part B as B7**, with the rejected alternatives recorded so they are not re-proposed.
+2. **§0 narrowed** — from *"division, not measurement"* to **"division of the untraceable,"** with the physical-trace test that separates the cases. This is the session's most transferable result.
+3. **OP-18 promoted to blocking (A1).** It inherits C3 from OP-17: materials and energy now split, labour does not.
+4. **OP-24 added (A3)** — understatement drift. **OP-23 added (A4)** — shared overhead.
+5. **A10 added** — the auditor-independence problem, with the general-membership screening rule as a partial answer and full trust-network design explicitly deferred to C2.
+6. **A2 (OP-10) updated** — a side entrance closed by §3.2a (split before collapse), and a fast proxy recorded: *"does this need an objective function?"* Both rejected allocation rules did.
+7. **A8 (OP-9) sharpened** with the demand-contingency warning from the OP-17 session.
+8. **§C created** — tests owed, promoted out of the old "not yet examined" section so they are schedulable work rather than reading.
+
+---
+
+*End of v0.5.*

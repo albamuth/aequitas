@@ -31,7 +31,7 @@ That is all of it. Everything else follows from taking those two seriously and n
 
 ## The axioms
 
-Abbreviated. Full statements in `docs/Aequitas_Foundations_v0.19.md` §1.
+Abbreviated. Full statements in `00-strategy/Aequitas_Foundations_v0.20.md` §1.
 
 1. Credit and debit **are** material and energy flow. Time is the yardstick, not the substance. Financial instruments are not material and do not appear in the books at all.
 2. Labour is never rate-scaled. Hazard and exertion resolve as *material* costs, not as higher pay. Training is front-loaded credited work, never charged downstream.
@@ -56,7 +56,7 @@ The top consumer takes ρ·24. The bottom takes ρ·F. The ratio is:
 
 The bound holds **even for a cheater**, because a cheater still only has 24 hours in a day.
 
-**This is a conditional result, not a theorem — and the bound is *per network*.** It needs three things: that OP-22 is solved, that self-care floors stay in band, and that **cross-network uniqueness is attested**. That last one matters: multi-network accounts are legitimate, and while produced goods are anchored physically (one custody chain), **self-care credit is not** — so a person on *k* networks could reach `k × 24/F`. **Two corrections have already been made to this claim**, once for overstating it as certain and once for the scoping. See `sims/DISPARITY_CEILING.md` §4 — five conditions.
+**This is a conditional result, not a theorem — and the bound is *per network*.** It needs three things: that OP-22 is solved, that self-care floors stay in band, and that **cross-network uniqueness is attested**. That last one matters: multi-network accounts are legitimate, and while produced goods are anchored physically (one custody chain), **self-care credit is not** — so a person on *k* networks could reach `k × 24/F`. **Two corrections have already been made to this claim**, once for overstating it as certain and once for the scoping. See `06-simulation/disparity-ceiling/DISPARITY_CEILING.md` §4 — five conditions.
 
 ## What the simulations found
 
@@ -67,25 +67,29 @@ The bound holds **even for a cheater**, because a cheater still only has 24 hour
 ## Verify it yourself
 
 ```bash
-cd sims
+cd 06-simulation/audits
 python arithmetic_audits.py
 ```
 
 Twelve ledger integrity constraints, each run clean and then run again against a deliberately injected violation. Expected: **12/12 pass, 12/12 violations caught.**
 
-The load-bearing property: **IC-1 through IC-9 need no trust model, no reputation, and no authority — only the ability to recompute.** An unrecorded emission is not an enforcement problem. It is an arithmetic error the log reports on itself.
+The property that matters: **IC-1 through IC-9 need no trust model, no reputation, and no authority — only the ability to recompute.** An **under-declared** emission on a **recorded** event is not an enforcement problem. It is an arithmetic error that the log reports on itself.
 
-Every simulation in `sims/` runs standalone with its own self-tests. No external data files.
+> **⚠️ That sentence used to say something stronger, and the stronger version was wrong.** It said *an unrecorded* emission becomes an arithmetic error. [@cairn-lineage](https://1f916.ai/post/1581) showed that arithmetic over a log testifies to nothing outside that log, so a process recorded **nowhere** is not an arithmetic error at all — it is a **coverage** question. Corrected 2026-08-22. See `README.md` for both corrections made that day, and `00-strategy/OP-26_coverage_and_closure.md` for the full response. *(This page kept the retracted wording until 2026-08-24. That was an oversight, not a position.)*
+
+**Nothing here is checked by running our code alone.** For the audit suite the fixture, the twelve constraints written as arithmetic rather than as Python, and the expected verdict for every injected case are published as plain data in `06-simulation/audits/audits_inert/`. **You can check the result without executing anything**, which is the point — running our program only tells you our program is self-consistent.
+
+Every simulation in `06-simulation/` runs standalone with its own self-tests, and each project folder has a `README.md`, a `CHANGELOG.md` and a `RESULTS.md`. The one exception is the empirical labour work, which needs third-party datasets we cannot redistribute; those scripts say so.
 
 ## The open problems
 
-They are in `docs/Aequitas_Objections_v0.18.md`, listed rather than hidden. The live ones:
+They are in `00-strategy/Aequitas_Objections_v0.19.md`, listed rather than hidden. The live ones:
 
 - **OP-22** — proving an hours claim is backed by real work without exposing a private life history.
-- **OP-10** — who governs the weighting model, and how that avoids becoming a capture surface.
+- **OP-10** — who governs the weighting model, and how that avoids becoming a capture surface. **The top blocker.**
 - **OP-24** — systematic understatement drift.
-- **C2** — the trust-network design itself is still a straw-man. This is the current work item.
-- The **tedium** half of unwanted work. The hazard half is addressed; the boring-and-undignified half is not.
+- **OP-16** — the **tedium** half of unwanted work. The hazard half is addressed; the boring-and-undignified half is not.
+- **OP-26** — coverage. Largely answered, and the residue is real: for a genuinely open population there may be **no authority-free way to prove the records cover the world.**
 
 ## The best thing you can do
 

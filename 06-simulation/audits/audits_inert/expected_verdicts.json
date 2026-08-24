@@ -1,0 +1,2351 @@
+{
+  "provenance": {
+    "generated_utc": "2026-08-24T13:57:21Z",
+    "generator": "06-simulation/audits_inert/generate.py",
+    "arithmetic_audits_sha256": "06e3af74e9df7c6fa7600effe0bf46a6cb2a5ca41044edcae8edc3315ff8b329",
+    "recursion_convergence_sha256": "2a7b4923c68c374fb3582adb455ca93e99247f271b0653c83638cc44346ba874",
+    "why": "@twelve-minute-window, comment c15176 on post #1605: shipping only a program relocates the trust from the number to the repository. These files let a reader check the arithmetic without running anything."
+  },
+  "clean": {
+    "verdicts": [
+      {
+        "ic": "IC-1",
+        "name": "mass balance",
+        "verdict": "PASS",
+        "message": "all events mass-balance"
+      },
+      {
+        "ic": "IC-2",
+        "name": "energy balance",
+        "verdict": "PASS",
+        "message": "all events energy-balance"
+      },
+      {
+        "ic": "IC-3",
+        "name": "origin closure",
+        "verdict": "PASS",
+        "message": "every parcel traces to a reservoir or a genesis entry"
+      },
+      {
+        "ic": "IC-4",
+        "name": "fate closure",
+        "verdict": "PASS",
+        "message": "every parcel is held/consumed/released"
+      },
+      {
+        "ic": "IC-5",
+        "name": "custody continuity",
+        "verdict": "PASS",
+        "message": "custody chains are single-valued and continuous"
+      },
+      {
+        "ic": "IC-6",
+        "name": "interval sanity",
+        "verdict": "PASS",
+        "message": "no event acts on a parcel outside its lifetime"
+      },
+      {
+        "ic": "IC-7",
+        "name": "agent-time cap",
+        "verdict": "PASS",
+        "message": "no account exceeds 24h work per 24h"
+      },
+      {
+        "ic": "IC-8",
+        "name": "pledge backing",
+        "verdict": "PASS",
+        "message": "no account over-pledges its lifetime earned credit"
+      },
+      {
+        "ic": "IC-9",
+        "name": "pledge discharge",
+        "verdict": "PASS",
+        "message": "discharges reference real events, none after a burn; no object forced on the pledger"
+      },
+      {
+        "ic": "IC-10",
+        "name": "non-negative allocation",
+        "verdict": "PASS",
+        "message": "theta>=0 and recursive min(p)=0.0000>=0 (rho=0.980)"
+      },
+      {
+        "ic": "IC-11",
+        "name": "exhaustive allocation",
+        "verdict": "PASS",
+        "message": "every joint split is exhaustive (theta sums to 1) in each dim"
+      },
+      {
+        "ic": "IC-12",
+        "name": "boundary additivity",
+        "verdict": "PASS",
+        "message": "whole==staged: flour 0.80000, bran 0.80000 (max d=0.0e+00)"
+      }
+    ],
+    "all_pass": true,
+    "cross_check": [
+      {
+        "ic": "IC-1",
+        "python_verdict": "PASS",
+        "stated_arithmetic_finds_a_failure": false,
+        "agree": true
+      },
+      {
+        "ic": "IC-2",
+        "python_verdict": "PASS",
+        "stated_arithmetic_finds_a_failure": false,
+        "agree": true
+      },
+      {
+        "ic": "IC-3",
+        "python_verdict": "PASS",
+        "stated_arithmetic_finds_a_failure": false,
+        "agree": true
+      },
+      {
+        "ic": "IC-4",
+        "python_verdict": "PASS",
+        "stated_arithmetic_finds_a_failure": false,
+        "agree": true
+      },
+      {
+        "ic": "IC-5",
+        "python_verdict": "PASS",
+        "stated_arithmetic_finds_a_failure": false,
+        "agree": true
+      },
+      {
+        "ic": "IC-6",
+        "python_verdict": "PASS",
+        "stated_arithmetic_finds_a_failure": false,
+        "agree": true
+      },
+      {
+        "ic": "IC-7",
+        "python_verdict": "PASS",
+        "stated_arithmetic_finds_a_failure": false,
+        "agree": true
+      },
+      {
+        "ic": "IC-8",
+        "python_verdict": "PASS",
+        "stated_arithmetic_finds_a_failure": false,
+        "agree": true
+      },
+      {
+        "ic": "IC-9",
+        "python_verdict": "PASS",
+        "stated_arithmetic_finds_a_failure": false,
+        "agree": true
+      },
+      {
+        "ic": "IC-10",
+        "python_verdict": "PASS",
+        "stated_arithmetic_finds_a_failure": false,
+        "agree": true
+      },
+      {
+        "ic": "IC-11",
+        "python_verdict": "PASS",
+        "stated_arithmetic_finds_a_failure": false,
+        "agree": true
+      },
+      {
+        "ic": "IC-12",
+        "python_verdict": "PASS",
+        "stated_arithmetic_finds_a_failure": false,
+        "agree": true
+      }
+    ]
+  },
+  "injections": [
+    {
+      "id": "INJ-1",
+      "target_ic": "IC-1",
+      "target_name": "mass balance",
+      "description": "E6 (baking) bread output raised from 9.5 kg to 10.5 kg.",
+      "parameter_change": null,
+      "log_diff": [
+        {
+          "path": "events.E6.outputs[0].magnitude",
+          "clean": 9.5,
+          "injected": 10.5
+        }
+      ],
+      "verdicts": [
+        {
+          "ic": "IC-1",
+          "name": "mass balance",
+          "verdict": "FAIL",
+          "message": "E6: mass in 10.0 != out 11.0"
+        },
+        {
+          "ic": "IC-2",
+          "name": "energy balance",
+          "verdict": "PASS",
+          "message": "all events energy-balance"
+        },
+        {
+          "ic": "IC-3",
+          "name": "origin closure",
+          "verdict": "PASS",
+          "message": "every parcel traces to a reservoir or a genesis entry"
+        },
+        {
+          "ic": "IC-4",
+          "name": "fate closure",
+          "verdict": "PASS",
+          "message": "every parcel is held/consumed/released"
+        },
+        {
+          "ic": "IC-5",
+          "name": "custody continuity",
+          "verdict": "PASS",
+          "message": "custody chains are single-valued and continuous"
+        },
+        {
+          "ic": "IC-6",
+          "name": "interval sanity",
+          "verdict": "PASS",
+          "message": "no event acts on a parcel outside its lifetime"
+        },
+        {
+          "ic": "IC-7",
+          "name": "agent-time cap",
+          "verdict": "PASS",
+          "message": "no account exceeds 24h work per 24h"
+        },
+        {
+          "ic": "IC-8",
+          "name": "pledge backing",
+          "verdict": "PASS",
+          "message": "no account over-pledges its lifetime earned credit"
+        },
+        {
+          "ic": "IC-9",
+          "name": "pledge discharge",
+          "verdict": "PASS",
+          "message": "discharges reference real events, none after a burn; no object forced on the pledger"
+        },
+        {
+          "ic": "IC-10",
+          "name": "non-negative allocation",
+          "verdict": "PASS",
+          "message": "theta>=0 and recursive min(p)=0.0000>=0 (rho=0.980)"
+        },
+        {
+          "ic": "IC-11",
+          "name": "exhaustive allocation",
+          "verdict": "PASS",
+          "message": "every joint split is exhaustive (theta sums to 1) in each dim"
+        },
+        {
+          "ic": "IC-12",
+          "name": "boundary additivity",
+          "verdict": "PASS",
+          "message": "whole==staged: flour 0.80000, bran 0.80000 (max d=0.0e+00)"
+        }
+      ],
+      "failing_quantities": [
+        {
+          "where": "E6",
+          "quantity": "mass in - mass out",
+          "expected": 0.0,
+          "actual": -1.0,
+          "off_by": -1.0,
+          "unit": "kg"
+        }
+      ],
+      "cross_check": [
+        {
+          "ic": "IC-1",
+          "python_verdict": "FAIL",
+          "stated_arithmetic_finds_a_failure": true,
+          "agree": true
+        },
+        {
+          "ic": "IC-2",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-3",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-4",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-5",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-6",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-7",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-8",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-9",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-10",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-11",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-12",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        }
+      ]
+    },
+    {
+      "id": "INJ-2",
+      "target_ic": "IC-2",
+      "target_name": "energy balance",
+      "description": "E6 (baking) declared dissipation dropped from 200 J to 0 J.",
+      "parameter_change": null,
+      "log_diff": [
+        {
+          "path": "events.E6.dissipation_j",
+          "clean": 200.0,
+          "injected": 0.0
+        }
+      ],
+      "verdicts": [
+        {
+          "ic": "IC-1",
+          "name": "mass balance",
+          "verdict": "PASS",
+          "message": "all events mass-balance"
+        },
+        {
+          "ic": "IC-2",
+          "name": "energy balance",
+          "verdict": "FAIL",
+          "message": "E6: energy in 200.0 != out 0 + dissipation 0.0"
+        },
+        {
+          "ic": "IC-3",
+          "name": "origin closure",
+          "verdict": "PASS",
+          "message": "every parcel traces to a reservoir or a genesis entry"
+        },
+        {
+          "ic": "IC-4",
+          "name": "fate closure",
+          "verdict": "PASS",
+          "message": "every parcel is held/consumed/released"
+        },
+        {
+          "ic": "IC-5",
+          "name": "custody continuity",
+          "verdict": "PASS",
+          "message": "custody chains are single-valued and continuous"
+        },
+        {
+          "ic": "IC-6",
+          "name": "interval sanity",
+          "verdict": "PASS",
+          "message": "no event acts on a parcel outside its lifetime"
+        },
+        {
+          "ic": "IC-7",
+          "name": "agent-time cap",
+          "verdict": "PASS",
+          "message": "no account exceeds 24h work per 24h"
+        },
+        {
+          "ic": "IC-8",
+          "name": "pledge backing",
+          "verdict": "PASS",
+          "message": "no account over-pledges its lifetime earned credit"
+        },
+        {
+          "ic": "IC-9",
+          "name": "pledge discharge",
+          "verdict": "PASS",
+          "message": "discharges reference real events, none after a burn; no object forced on the pledger"
+        },
+        {
+          "ic": "IC-10",
+          "name": "non-negative allocation",
+          "verdict": "PASS",
+          "message": "theta>=0 and recursive min(p)=0.0000>=0 (rho=0.980)"
+        },
+        {
+          "ic": "IC-11",
+          "name": "exhaustive allocation",
+          "verdict": "PASS",
+          "message": "every joint split is exhaustive (theta sums to 1) in each dim"
+        },
+        {
+          "ic": "IC-12",
+          "name": "boundary additivity",
+          "verdict": "PASS",
+          "message": "whole==staged: flour 0.80000, bran 0.80000 (max d=0.0e+00)"
+        }
+      ],
+      "failing_quantities": [
+        {
+          "where": "E6",
+          "quantity": "energy in - (energy out + dissipation)",
+          "expected": 0.0,
+          "actual": 200.0,
+          "off_by": 200.0,
+          "unit": "J"
+        }
+      ],
+      "cross_check": [
+        {
+          "ic": "IC-1",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-2",
+          "python_verdict": "FAIL",
+          "stated_arithmetic_finds_a_failure": true,
+          "agree": true
+        },
+        {
+          "ic": "IC-3",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-4",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-5",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-6",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-7",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-8",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-9",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-10",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-11",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-12",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        }
+      ]
+    },
+    {
+      "id": "INJ-3",
+      "target_ic": "IC-3",
+      "target_name": "origin closure",
+      "description": "E6's flour input renamed to a parcel no event creates, and E5's output renamed too so the chain is broken rather than merely relabelled.",
+      "parameter_change": null,
+      "log_diff": [
+        {
+          "path": "events.E5.outputs[0].endpoint_id",
+          "clean": "P:flour",
+          "injected": "P:phantom-orphan"
+        },
+        {
+          "path": "events.E6.inputs[0].endpoint_id",
+          "clean": "P:flour",
+          "injected": "P:phantom-flour"
+        }
+      ],
+      "verdicts": [
+        {
+          "ic": "IC-1",
+          "name": "mass balance",
+          "verdict": "PASS",
+          "message": "all events mass-balance"
+        },
+        {
+          "ic": "IC-2",
+          "name": "energy balance",
+          "verdict": "PASS",
+          "message": "all events energy-balance"
+        },
+        {
+          "ic": "IC-3",
+          "name": "origin closure",
+          "verdict": "FAIL",
+          "message": "parcel P:bread has no reservoir/genesis ancestry"
+        },
+        {
+          "ic": "IC-4",
+          "name": "fate closure",
+          "verdict": "PASS",
+          "message": "every parcel is held/consumed/released"
+        },
+        {
+          "ic": "IC-5",
+          "name": "custody continuity",
+          "verdict": "PASS",
+          "message": "custody chains are single-valued and continuous"
+        },
+        {
+          "ic": "IC-6",
+          "name": "interval sanity",
+          "verdict": "PASS",
+          "message": "no event acts on a parcel outside its lifetime"
+        },
+        {
+          "ic": "IC-7",
+          "name": "agent-time cap",
+          "verdict": "PASS",
+          "message": "no account exceeds 24h work per 24h"
+        },
+        {
+          "ic": "IC-8",
+          "name": "pledge backing",
+          "verdict": "PASS",
+          "message": "no account over-pledges its lifetime earned credit"
+        },
+        {
+          "ic": "IC-9",
+          "name": "pledge discharge",
+          "verdict": "PASS",
+          "message": "discharges reference real events, none after a burn; no object forced on the pledger"
+        },
+        {
+          "ic": "IC-10",
+          "name": "non-negative allocation",
+          "verdict": "PASS",
+          "message": "theta>=0 and recursive min(p)=0.0000>=0 (rho=0.980)"
+        },
+        {
+          "ic": "IC-11",
+          "name": "exhaustive allocation",
+          "verdict": "PASS",
+          "message": "every joint split is exhaustive (theta sums to 1) in each dim"
+        },
+        {
+          "ic": "IC-12",
+          "name": "boundary additivity",
+          "verdict": "PASS",
+          "message": "whole==staged: flour 0.80000, bran 0.80000 (max d=0.0e+00)"
+        }
+      ],
+      "failing_quantities": [
+        {
+          "where": "P:bread",
+          "quantity": "count of valid origin termini",
+          "expected": 1,
+          "actual": 0,
+          "off_by": 1,
+          "unit": "termini (a count, not a balance)"
+        }
+      ],
+      "cross_check": [
+        {
+          "ic": "IC-1",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-2",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-3",
+          "python_verdict": "FAIL",
+          "stated_arithmetic_finds_a_failure": true,
+          "agree": true
+        },
+        {
+          "ic": "IC-4",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-5",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-6",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-7",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-8",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-9",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-10",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-11",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-12",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        }
+      ]
+    },
+    {
+      "id": "INJ-4",
+      "target_ic": "IC-4",
+      "target_name": "fate closure",
+      "description": "E4 sends the bran to 'void:unregistered-sink', an endpoint absent from the reservoir registry.",
+      "parameter_change": null,
+      "log_diff": [
+        {
+          "path": "events.E4.outputs[0].endpoint_id",
+          "clean": "soil:field-01",
+          "injected": "void:unregistered-sink"
+        }
+      ],
+      "verdicts": [
+        {
+          "ic": "IC-1",
+          "name": "mass balance",
+          "verdict": "PASS",
+          "message": "all events mass-balance"
+        },
+        {
+          "ic": "IC-2",
+          "name": "energy balance",
+          "verdict": "PASS",
+          "message": "all events energy-balance"
+        },
+        {
+          "ic": "IC-3",
+          "name": "origin closure",
+          "verdict": "PASS",
+          "message": "every parcel traces to a reservoir or a genesis entry"
+        },
+        {
+          "ic": "IC-4",
+          "name": "fate closure",
+          "verdict": "FAIL",
+          "message": "unaccounted parcels: ['P:bran']"
+        },
+        {
+          "ic": "IC-5",
+          "name": "custody continuity",
+          "verdict": "PASS",
+          "message": "custody chains are single-valued and continuous"
+        },
+        {
+          "ic": "IC-6",
+          "name": "interval sanity",
+          "verdict": "PASS",
+          "message": "no event acts on a parcel outside its lifetime"
+        },
+        {
+          "ic": "IC-7",
+          "name": "agent-time cap",
+          "verdict": "PASS",
+          "message": "no account exceeds 24h work per 24h"
+        },
+        {
+          "ic": "IC-8",
+          "name": "pledge backing",
+          "verdict": "PASS",
+          "message": "no account over-pledges its lifetime earned credit"
+        },
+        {
+          "ic": "IC-9",
+          "name": "pledge discharge",
+          "verdict": "PASS",
+          "message": "discharges reference real events, none after a burn; no object forced on the pledger"
+        },
+        {
+          "ic": "IC-10",
+          "name": "non-negative allocation",
+          "verdict": "PASS",
+          "message": "theta>=0 and recursive min(p)=0.0000>=0 (rho=0.980)"
+        },
+        {
+          "ic": "IC-11",
+          "name": "exhaustive allocation",
+          "verdict": "PASS",
+          "message": "every joint split is exhaustive (theta sums to 1) in each dim"
+        },
+        {
+          "ic": "IC-12",
+          "name": "boundary additivity",
+          "verdict": "PASS",
+          "message": "whole==staged: flour 0.80000, bran 0.80000 (max d=0.0e+00)"
+        }
+      ],
+      "failing_quantities": [
+        {
+          "where": "P:bran",
+          "quantity": "mass whose fate the log does not name",
+          "expected": 0.0,
+          "actual": 3.0,
+          "off_by": 3.0,
+          "unit": "kg"
+        }
+      ],
+      "cross_check": [
+        {
+          "ic": "IC-1",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-2",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-3",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-4",
+          "python_verdict": "FAIL",
+          "stated_arithmetic_finds_a_failure": true,
+          "agree": true
+        },
+        {
+          "ic": "IC-5",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-6",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-7",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-8",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-9",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-10",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-11",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-12",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        }
+      ]
+    },
+    {
+      "id": "INJ-5",
+      "target_ic": "IC-5",
+      "target_name": "custody continuity",
+      "description": "E3 (milling) declares its grain input was held by 'stranger'.",
+      "parameter_change": null,
+      "log_diff": [
+        {
+          "path": "events.E3.inputs[0].custody",
+          "clean": "miller",
+          "injected": "stranger"
+        }
+      ],
+      "verdicts": [
+        {
+          "ic": "IC-1",
+          "name": "mass balance",
+          "verdict": "PASS",
+          "message": "all events mass-balance"
+        },
+        {
+          "ic": "IC-2",
+          "name": "energy balance",
+          "verdict": "PASS",
+          "message": "all events energy-balance"
+        },
+        {
+          "ic": "IC-3",
+          "name": "origin closure",
+          "verdict": "PASS",
+          "message": "every parcel traces to a reservoir or a genesis entry"
+        },
+        {
+          "ic": "IC-4",
+          "name": "fate closure",
+          "verdict": "PASS",
+          "message": "every parcel is held/consumed/released"
+        },
+        {
+          "ic": "IC-5",
+          "name": "custody continuity",
+          "verdict": "FAIL",
+          "message": "P:grain@E3: claims holder stranger, actually miller"
+        },
+        {
+          "ic": "IC-6",
+          "name": "interval sanity",
+          "verdict": "PASS",
+          "message": "no event acts on a parcel outside its lifetime"
+        },
+        {
+          "ic": "IC-7",
+          "name": "agent-time cap",
+          "verdict": "PASS",
+          "message": "no account exceeds 24h work per 24h"
+        },
+        {
+          "ic": "IC-8",
+          "name": "pledge backing",
+          "verdict": "PASS",
+          "message": "no account over-pledges its lifetime earned credit"
+        },
+        {
+          "ic": "IC-9",
+          "name": "pledge discharge",
+          "verdict": "PASS",
+          "message": "discharges reference real events, none after a burn; no object forced on the pledger"
+        },
+        {
+          "ic": "IC-10",
+          "name": "non-negative allocation",
+          "verdict": "PASS",
+          "message": "theta>=0 and recursive min(p)=0.0000>=0 (rho=0.980)"
+        },
+        {
+          "ic": "IC-11",
+          "name": "exhaustive allocation",
+          "verdict": "PASS",
+          "message": "every joint split is exhaustive (theta sums to 1) in each dim"
+        },
+        {
+          "ic": "IC-12",
+          "name": "boundary additivity",
+          "verdict": "PASS",
+          "message": "whole==staged: flour 0.80000, bran 0.80000 (max d=0.0e+00)"
+        }
+      ],
+      "failing_quantities": [
+        {
+          "where": "P:grain@E3",
+          "quantity": "declared source holder",
+          "expected": "miller",
+          "actual": "stranger",
+          "off_by": "identity mismatch (not a numeric residual)",
+          "unit": "account name"
+        }
+      ],
+      "cross_check": [
+        {
+          "ic": "IC-1",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-2",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-3",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-4",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-5",
+          "python_verdict": "FAIL",
+          "stated_arithmetic_finds_a_failure": true,
+          "agree": true
+        },
+        {
+          "ic": "IC-6",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-7",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-8",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-9",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-10",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-11",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-12",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        }
+      ]
+    },
+    {
+      "id": "INJ-6",
+      "target_ic": "IC-6",
+      "target_name": "interval sanity",
+      "description": "E6 (baking) moved back one day, so it consumes flour before milling produces it.",
+      "parameter_change": null,
+      "log_diff": [
+        {
+          "path": "events.E6.end_day",
+          "clean": 4.416667,
+          "injected": 1.416667
+        },
+        {
+          "path": "events.E6.end_s",
+          "clean": 381600.0,
+          "injected": 122400.0
+        },
+        {
+          "path": "events.E6.start_day",
+          "clean": 4.25,
+          "injected": 1.25
+        },
+        {
+          "path": "events.E6.start_s",
+          "clean": 367200.0,
+          "injected": 108000.0
+        }
+      ],
+      "verdicts": [
+        {
+          "ic": "IC-1",
+          "name": "mass balance",
+          "verdict": "PASS",
+          "message": "all events mass-balance"
+        },
+        {
+          "ic": "IC-2",
+          "name": "energy balance",
+          "verdict": "PASS",
+          "message": "all events energy-balance"
+        },
+        {
+          "ic": "IC-3",
+          "name": "origin closure",
+          "verdict": "PASS",
+          "message": "every parcel traces to a reservoir or a genesis entry"
+        },
+        {
+          "ic": "IC-4",
+          "name": "fate closure",
+          "verdict": "PASS",
+          "message": "every parcel is held/consumed/released"
+        },
+        {
+          "ic": "IC-5",
+          "name": "custody continuity",
+          "verdict": "PASS",
+          "message": "custody chains are single-valued and continuous"
+        },
+        {
+          "ic": "IC-6",
+          "name": "interval sanity",
+          "verdict": "FAIL",
+          "message": "E6 consumes P:flour before it exists"
+        },
+        {
+          "ic": "IC-7",
+          "name": "agent-time cap",
+          "verdict": "PASS",
+          "message": "no account exceeds 24h work per 24h"
+        },
+        {
+          "ic": "IC-8",
+          "name": "pledge backing",
+          "verdict": "PASS",
+          "message": "no account over-pledges its lifetime earned credit"
+        },
+        {
+          "ic": "IC-9",
+          "name": "pledge discharge",
+          "verdict": "PASS",
+          "message": "discharges reference real events, none after a burn; no object forced on the pledger"
+        },
+        {
+          "ic": "IC-10",
+          "name": "non-negative allocation",
+          "verdict": "PASS",
+          "message": "theta>=0 and recursive min(p)=0.0000>=0 (rho=0.980)"
+        },
+        {
+          "ic": "IC-11",
+          "name": "exhaustive allocation",
+          "verdict": "PASS",
+          "message": "every joint split is exhaustive (theta sums to 1) in each dim"
+        },
+        {
+          "ic": "IC-12",
+          "name": "boundary additivity",
+          "verdict": "PASS",
+          "message": "whole==staged: flour 0.80000, bran 0.80000 (max d=0.0e+00)"
+        }
+      ],
+      "failing_quantities": [
+        {
+          "where": "E6 consumes P:flour",
+          "quantity": "event start - parcel creation instant",
+          "expected": ">= 0",
+          "actual": -86400.0,
+          "off_by": 86400.0,
+          "unit": "seconds early"
+        }
+      ],
+      "cross_check": [
+        {
+          "ic": "IC-1",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-2",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-3",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-4",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-5",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-6",
+          "python_verdict": "FAIL",
+          "stated_arithmetic_finds_a_failure": true,
+          "agree": true
+        },
+        {
+          "ic": "IC-7",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-8",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-9",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-10",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-11",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-12",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        }
+      ]
+    },
+    {
+      "id": "INJ-7",
+      "target_ic": "IC-7",
+      "target_name": "agent-time cap",
+      "description": "The farmer's two roles are stretched to 20 h and 10 h and made to overlap, claiming 30 h inside one 24 h window.",
+      "parameter_change": null,
+      "log_diff": [
+        {
+          "path": "events.E1.agents[0].end_day",
+          "clean": 0.5,
+          "injected": 0.833333
+        },
+        {
+          "path": "events.E1.agents[0].end_s",
+          "clean": 43200.0,
+          "injected": 72000.0
+        },
+        {
+          "path": "events.E1.agents[0].hours",
+          "clean": 6.0,
+          "injected": 20.0
+        },
+        {
+          "path": "events.E1.agents[0].start_day",
+          "clean": 0.25,
+          "injected": 0.0
+        },
+        {
+          "path": "events.E1.agents[0].start_s",
+          "clean": 21600.0,
+          "injected": 0.0
+        },
+        {
+          "path": "events.E8.agents[0].end_day",
+          "clean": 5.510417,
+          "injected": 0.625
+        },
+        {
+          "path": "events.E8.agents[0].end_s",
+          "clean": 476100.0,
+          "injected": 54000.0
+        },
+        {
+          "path": "events.E8.agents[0].hours",
+          "clean": 0.25,
+          "injected": 10.0
+        },
+        {
+          "path": "events.E8.agents[0].start_day",
+          "clean": 5.5,
+          "injected": 0.208333
+        },
+        {
+          "path": "events.E8.agents[0].start_s",
+          "clean": 475200.0,
+          "injected": 18000.0
+        }
+      ],
+      "verdicts": [
+        {
+          "ic": "IC-1",
+          "name": "mass balance",
+          "verdict": "PASS",
+          "message": "all events mass-balance"
+        },
+        {
+          "ic": "IC-2",
+          "name": "energy balance",
+          "verdict": "PASS",
+          "message": "all events energy-balance"
+        },
+        {
+          "ic": "IC-3",
+          "name": "origin closure",
+          "verdict": "PASS",
+          "message": "every parcel traces to a reservoir or a genesis entry"
+        },
+        {
+          "ic": "IC-4",
+          "name": "fate closure",
+          "verdict": "PASS",
+          "message": "every parcel is held/consumed/released"
+        },
+        {
+          "ic": "IC-5",
+          "name": "custody continuity",
+          "verdict": "PASS",
+          "message": "custody chains are single-valued and continuous"
+        },
+        {
+          "ic": "IC-6",
+          "name": "interval sanity",
+          "verdict": "PASS",
+          "message": "no event acts on a parcel outside its lifetime"
+        },
+        {
+          "ic": "IC-7",
+          "name": "agent-time cap",
+          "verdict": "FAIL",
+          "message": "farmer: 30.0h in a 24h window from 0.0"
+        },
+        {
+          "ic": "IC-8",
+          "name": "pledge backing",
+          "verdict": "PASS",
+          "message": "no account over-pledges its lifetime earned credit"
+        },
+        {
+          "ic": "IC-9",
+          "name": "pledge discharge",
+          "verdict": "PASS",
+          "message": "discharges reference real events, none after a burn; no object forced on the pledger"
+        },
+        {
+          "ic": "IC-10",
+          "name": "non-negative allocation",
+          "verdict": "PASS",
+          "message": "theta>=0 and recursive min(p)=0.0000>=0 (rho=0.980)"
+        },
+        {
+          "ic": "IC-11",
+          "name": "exhaustive allocation",
+          "verdict": "PASS",
+          "message": "every joint split is exhaustive (theta sums to 1) in each dim"
+        },
+        {
+          "ic": "IC-12",
+          "name": "boundary additivity",
+          "verdict": "PASS",
+          "message": "whole==staged: flour 0.80000, bran 0.80000 (max d=0.0e+00)"
+        }
+      ],
+      "failing_quantities": [
+        {
+          "where": "farmer in the 24 h window from t=0.0",
+          "quantity": "credited hours inside one 24 h window",
+          "expected": 24.0,
+          "actual": 30.0,
+          "off_by": 6.0,
+          "unit": "hours"
+        }
+      ],
+      "cross_check": [
+        {
+          "ic": "IC-1",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-2",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-3",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-4",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-5",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-6",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-7",
+          "python_verdict": "FAIL",
+          "stated_arithmetic_finds_a_failure": true,
+          "agree": true
+        },
+        {
+          "ic": "IC-8",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-9",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-10",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-11",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-12",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        }
+      ]
+    },
+    {
+      "id": "INJ-8",
+      "target_ic": "IC-8",
+      "target_name": "pledge backing",
+      "description": "Pledge PL3 raised from 2 h to 100 h.",
+      "parameter_change": null,
+      "log_diff": [
+        {
+          "path": "pledges.PL3.hours",
+          "clean": 2.0,
+          "injected": 100.0
+        }
+      ],
+      "verdicts": [
+        {
+          "ic": "IC-1",
+          "name": "mass balance",
+          "verdict": "PASS",
+          "message": "all events mass-balance"
+        },
+        {
+          "ic": "IC-2",
+          "name": "energy balance",
+          "verdict": "PASS",
+          "message": "all events energy-balance"
+        },
+        {
+          "ic": "IC-3",
+          "name": "origin closure",
+          "verdict": "PASS",
+          "message": "every parcel traces to a reservoir or a genesis entry"
+        },
+        {
+          "ic": "IC-4",
+          "name": "fate closure",
+          "verdict": "PASS",
+          "message": "every parcel is held/consumed/released"
+        },
+        {
+          "ic": "IC-5",
+          "name": "custody continuity",
+          "verdict": "PASS",
+          "message": "custody chains are single-valued and continuous"
+        },
+        {
+          "ic": "IC-6",
+          "name": "interval sanity",
+          "verdict": "PASS",
+          "message": "no event acts on a parcel outside its lifetime"
+        },
+        {
+          "ic": "IC-7",
+          "name": "agent-time cap",
+          "verdict": "PASS",
+          "message": "no account exceeds 24h work per 24h"
+        },
+        {
+          "ic": "IC-8",
+          "name": "pledge backing",
+          "verdict": "FAIL",
+          "message": "farmer: cumulative pledges 103.0h > lifetime earned 6.25h"
+        },
+        {
+          "ic": "IC-9",
+          "name": "pledge discharge",
+          "verdict": "PASS",
+          "message": "discharges reference real events, none after a burn; no object forced on the pledger"
+        },
+        {
+          "ic": "IC-10",
+          "name": "non-negative allocation",
+          "verdict": "PASS",
+          "message": "theta>=0 and recursive min(p)=0.0000>=0 (rho=0.980)"
+        },
+        {
+          "ic": "IC-11",
+          "name": "exhaustive allocation",
+          "verdict": "PASS",
+          "message": "every joint split is exhaustive (theta sums to 1) in each dim"
+        },
+        {
+          "ic": "IC-12",
+          "name": "boundary additivity",
+          "verdict": "PASS",
+          "message": "whole==staged: flour 0.80000, bran 0.80000 (max d=0.0e+00)"
+        }
+      ],
+      "failing_quantities": [
+        {
+          "where": "farmer",
+          "quantity": "cumulative pledged hours - lifetime earned hours",
+          "expected": "<= 0",
+          "actual": 96.75,
+          "off_by": 96.75,
+          "unit": "hours"
+        }
+      ],
+      "cross_check": [
+        {
+          "ic": "IC-1",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-2",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-3",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-4",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-5",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-6",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-7",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-8",
+          "python_verdict": "FAIL",
+          "stated_arithmetic_finds_a_failure": true,
+          "agree": true
+        },
+        {
+          "ic": "IC-9",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-10",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-11",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-12",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        }
+      ]
+    },
+    {
+      "id": "INJ-9",
+      "target_ic": "IC-9",
+      "target_name": "pledge discharge",
+      "description": "PL1's expiry pulled back to day 5, so the event that discharges it on day 6 happens after the pledge had already burned.",
+      "parameter_change": null,
+      "log_diff": [
+        {
+          "path": "pledges.PL1.expires_at_day",
+          "clean": 30.25,
+          "injected": 5.25
+        },
+        {
+          "path": "pledges.PL1.expires_at_s",
+          "clean": 2613600.0,
+          "injected": 453600.0
+        }
+      ],
+      "verdicts": [
+        {
+          "ic": "IC-1",
+          "name": "mass balance",
+          "verdict": "PASS",
+          "message": "all events mass-balance"
+        },
+        {
+          "ic": "IC-2",
+          "name": "energy balance",
+          "verdict": "PASS",
+          "message": "all events energy-balance"
+        },
+        {
+          "ic": "IC-3",
+          "name": "origin closure",
+          "verdict": "PASS",
+          "message": "every parcel traces to a reservoir or a genesis entry"
+        },
+        {
+          "ic": "IC-4",
+          "name": "fate closure",
+          "verdict": "PASS",
+          "message": "every parcel is held/consumed/released"
+        },
+        {
+          "ic": "IC-5",
+          "name": "custody continuity",
+          "verdict": "PASS",
+          "message": "custody chains are single-valued and continuous"
+        },
+        {
+          "ic": "IC-6",
+          "name": "interval sanity",
+          "verdict": "PASS",
+          "message": "no event acts on a parcel outside its lifetime"
+        },
+        {
+          "ic": "IC-7",
+          "name": "agent-time cap",
+          "verdict": "PASS",
+          "message": "no account exceeds 24h work per 24h"
+        },
+        {
+          "ic": "IC-8",
+          "name": "pledge backing",
+          "verdict": "PASS",
+          "message": "no account over-pledges its lifetime earned credit"
+        },
+        {
+          "ic": "IC-9",
+          "name": "pledge discharge",
+          "verdict": "FAIL",
+          "message": "pledge PL1: discharged by E10 at 540000.0 after expiry 453600.0 -- it had already burned"
+        },
+        {
+          "ic": "IC-10",
+          "name": "non-negative allocation",
+          "verdict": "PASS",
+          "message": "theta>=0 and recursive min(p)=0.0000>=0 (rho=0.980)"
+        },
+        {
+          "ic": "IC-11",
+          "name": "exhaustive allocation",
+          "verdict": "PASS",
+          "message": "every joint split is exhaustive (theta sums to 1) in each dim"
+        },
+        {
+          "ic": "IC-12",
+          "name": "boundary additivity",
+          "verdict": "PASS",
+          "message": "whole==staged: flour 0.80000, bran 0.80000 (max d=0.0e+00)"
+        }
+      ],
+      "failing_quantities": [
+        {
+          "where": "PL1 discharged by E10",
+          "quantity": "discharge instant - expiry instant",
+          "expected": "<= 0",
+          "actual": 86400.0,
+          "off_by": 86400.0,
+          "unit": "seconds after the pledge had burned"
+        }
+      ],
+      "cross_check": [
+        {
+          "ic": "IC-1",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-2",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-3",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-4",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-5",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-6",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-7",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-8",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-9",
+          "python_verdict": "FAIL",
+          "stated_arithmetic_finds_a_failure": true,
+          "agree": true
+        },
+        {
+          "ic": "IC-10",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-11",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-12",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        }
+      ]
+    },
+    {
+      "id": "INJ-10",
+      "target_ic": "IC-10",
+      "target_name": "non-negative allocation",
+      "description": "The published energetics model for milling is set to flour 1.1, bran -0.1.",
+      "parameter_change": null,
+      "log_diff": [
+        {
+          "path": "energetics_model.proc:milling.sub:wheat.bran",
+          "clean": 0.38,
+          "injected": -0.1
+        },
+        {
+          "path": "energetics_model.proc:milling.sub:wheat.flour",
+          "clean": 0.62,
+          "injected": 1.1
+        }
+      ],
+      "verdicts": [
+        {
+          "ic": "IC-1",
+          "name": "mass balance",
+          "verdict": "PASS",
+          "message": "all events mass-balance"
+        },
+        {
+          "ic": "IC-2",
+          "name": "energy balance",
+          "verdict": "PASS",
+          "message": "all events energy-balance"
+        },
+        {
+          "ic": "IC-3",
+          "name": "origin closure",
+          "verdict": "PASS",
+          "message": "every parcel traces to a reservoir or a genesis entry"
+        },
+        {
+          "ic": "IC-4",
+          "name": "fate closure",
+          "verdict": "PASS",
+          "message": "every parcel is held/consumed/released"
+        },
+        {
+          "ic": "IC-5",
+          "name": "custody continuity",
+          "verdict": "PASS",
+          "message": "custody chains are single-valued and continuous"
+        },
+        {
+          "ic": "IC-6",
+          "name": "interval sanity",
+          "verdict": "PASS",
+          "message": "no event acts on a parcel outside its lifetime"
+        },
+        {
+          "ic": "IC-7",
+          "name": "agent-time cap",
+          "verdict": "PASS",
+          "message": "no account exceeds 24h work per 24h"
+        },
+        {
+          "ic": "IC-8",
+          "name": "pledge backing",
+          "verdict": "PASS",
+          "message": "no account over-pledges its lifetime earned credit"
+        },
+        {
+          "ic": "IC-9",
+          "name": "pledge discharge",
+          "verdict": "PASS",
+          "message": "discharges reference real events, none after a burn; no object forced on the pledger"
+        },
+        {
+          "ic": "IC-10",
+          "name": "non-negative allocation",
+          "verdict": "FAIL",
+          "message": "E3[energy]: theta[P:bran] = -0.1 < 0"
+        },
+        {
+          "ic": "IC-11",
+          "name": "exhaustive allocation",
+          "verdict": "PASS",
+          "message": "every joint split is exhaustive (theta sums to 1) in each dim"
+        },
+        {
+          "ic": "IC-12",
+          "name": "boundary additivity",
+          "verdict": "PASS",
+          "message": "whole==staged: flour 0.80000, bran 0.80000 (max d=0.0e+00)"
+        }
+      ],
+      "failing_quantities": [
+        {
+          "where": "E3[energy] P:bran",
+          "quantity": "allocated share theta",
+          "expected": ">= 0",
+          "actual": -0.1,
+          "off_by": 0.1,
+          "unit": "share (dimensionless)"
+        }
+      ],
+      "cross_check": [
+        {
+          "ic": "IC-1",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-2",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-3",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-4",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-5",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-6",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-7",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-8",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-9",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-10",
+          "python_verdict": "FAIL",
+          "stated_arithmetic_finds_a_failure": true,
+          "agree": true
+        },
+        {
+          "ic": "IC-11",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-12",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        }
+      ]
+    },
+    {
+      "id": "INJ-11",
+      "target_ic": "IC-11",
+      "target_name": "exhaustive allocation",
+      "description": "The published energetics model for milling is set to flour 0.6, bran 0.3, summing to 0.9.",
+      "parameter_change": null,
+      "log_diff": [
+        {
+          "path": "energetics_model.proc:milling.sub:wheat.bran",
+          "clean": 0.38,
+          "injected": 0.3
+        },
+        {
+          "path": "energetics_model.proc:milling.sub:wheat.flour",
+          "clean": 0.62,
+          "injected": 0.6
+        }
+      ],
+      "verdicts": [
+        {
+          "ic": "IC-1",
+          "name": "mass balance",
+          "verdict": "PASS",
+          "message": "all events mass-balance"
+        },
+        {
+          "ic": "IC-2",
+          "name": "energy balance",
+          "verdict": "PASS",
+          "message": "all events energy-balance"
+        },
+        {
+          "ic": "IC-3",
+          "name": "origin closure",
+          "verdict": "PASS",
+          "message": "every parcel traces to a reservoir or a genesis entry"
+        },
+        {
+          "ic": "IC-4",
+          "name": "fate closure",
+          "verdict": "PASS",
+          "message": "every parcel is held/consumed/released"
+        },
+        {
+          "ic": "IC-5",
+          "name": "custody continuity",
+          "verdict": "PASS",
+          "message": "custody chains are single-valued and continuous"
+        },
+        {
+          "ic": "IC-6",
+          "name": "interval sanity",
+          "verdict": "PASS",
+          "message": "no event acts on a parcel outside its lifetime"
+        },
+        {
+          "ic": "IC-7",
+          "name": "agent-time cap",
+          "verdict": "PASS",
+          "message": "no account exceeds 24h work per 24h"
+        },
+        {
+          "ic": "IC-8",
+          "name": "pledge backing",
+          "verdict": "PASS",
+          "message": "no account over-pledges its lifetime earned credit"
+        },
+        {
+          "ic": "IC-9",
+          "name": "pledge discharge",
+          "verdict": "PASS",
+          "message": "discharges reference real events, none after a burn; no object forced on the pledger"
+        },
+        {
+          "ic": "IC-10",
+          "name": "non-negative allocation",
+          "verdict": "PASS",
+          "message": "theta>=0 and recursive min(p)=0.0000>=0 (rho=0.980)"
+        },
+        {
+          "ic": "IC-11",
+          "name": "exhaustive allocation",
+          "verdict": "FAIL",
+          "message": "E3[energy]: theta sums to 0.8999999999999999, not 1 (dimension unallocated)"
+        },
+        {
+          "ic": "IC-12",
+          "name": "boundary additivity",
+          "verdict": "PASS",
+          "message": "whole==staged: flour 0.80000, bran 0.80000 (max d=0.0e+00)"
+        }
+      ],
+      "failing_quantities": [
+        {
+          "where": "E3[energy]",
+          "quantity": "sum of allocated shares theta",
+          "expected": 1.0,
+          "actual": 0.8999999999999999,
+          "off_by": -0.10000000000000009,
+          "unit": "share (dimensionless)"
+        }
+      ],
+      "cross_check": [
+        {
+          "ic": "IC-1",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-2",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-3",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-4",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-5",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-6",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-7",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-8",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-9",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-10",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-11",
+          "python_verdict": "FAIL",
+          "stated_arithmetic_finds_a_failure": true,
+          "agree": true
+        },
+        {
+          "ic": "IC-12",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        }
+      ]
+    },
+    {
+      "id": "INJ-12",
+      "target_ic": "IC-12",
+      "target_name": "boundary additivity",
+      "description": "The sieve stage is re-split 0.8 / 0.2 while the whole process keeps 0.7 / 0.3. No event log is touched -- IC-12 does not read one.",
+      "parameter_change": {
+        "staged_theta": [
+          0.8,
+          0.2
+        ]
+      },
+      "log_diff": [],
+      "verdicts": [
+        {
+          "ic": "IC-1",
+          "name": "mass balance",
+          "verdict": "PASS",
+          "message": "all events mass-balance"
+        },
+        {
+          "ic": "IC-2",
+          "name": "energy balance",
+          "verdict": "PASS",
+          "message": "all events energy-balance"
+        },
+        {
+          "ic": "IC-3",
+          "name": "origin closure",
+          "verdict": "PASS",
+          "message": "every parcel traces to a reservoir or a genesis entry"
+        },
+        {
+          "ic": "IC-4",
+          "name": "fate closure",
+          "verdict": "PASS",
+          "message": "every parcel is held/consumed/released"
+        },
+        {
+          "ic": "IC-5",
+          "name": "custody continuity",
+          "verdict": "PASS",
+          "message": "custody chains are single-valued and continuous"
+        },
+        {
+          "ic": "IC-6",
+          "name": "interval sanity",
+          "verdict": "PASS",
+          "message": "no event acts on a parcel outside its lifetime"
+        },
+        {
+          "ic": "IC-7",
+          "name": "agent-time cap",
+          "verdict": "PASS",
+          "message": "no account exceeds 24h work per 24h"
+        },
+        {
+          "ic": "IC-8",
+          "name": "pledge backing",
+          "verdict": "PASS",
+          "message": "no account over-pledges its lifetime earned credit"
+        },
+        {
+          "ic": "IC-9",
+          "name": "pledge discharge",
+          "verdict": "PASS",
+          "message": "discharges reference real events, none after a burn; no object forced on the pledger"
+        },
+        {
+          "ic": "IC-10",
+          "name": "non-negative allocation",
+          "verdict": "PASS",
+          "message": "theta>=0 and recursive min(p)=0.0000>=0 (rho=0.980)"
+        },
+        {
+          "ic": "IC-11",
+          "name": "exhaustive allocation",
+          "verdict": "PASS",
+          "message": "every joint split is exhaustive (theta sums to 1) in each dim"
+        },
+        {
+          "ic": "IC-12",
+          "name": "boundary additivity",
+          "verdict": "FAIL",
+          "message": "whole vs staged diverge: flour 0.80000 vs 0.91429 (d=1.14e-01), bran 0.80000 vs 0.53333 (d=2.67e-01)"
+        }
+      ],
+      "failing_quantities": [
+        {
+          "where": "flour per-unit debit",
+          "quantity": "whole-process debit - staged debit",
+          "expected": 0.0,
+          "actual": -0.11428571428571455,
+          "off_by": 0.11428571428571455,
+          "unit": "hours per kg"
+        },
+        {
+          "where": "bran per-unit debit",
+          "quantity": "whole-process debit - staged debit",
+          "expected": 0.0,
+          "actual": 0.2666666666666666,
+          "off_by": 0.2666666666666666,
+          "unit": "hours per kg"
+        }
+      ],
+      "cross_check": [
+        {
+          "ic": "IC-1",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-2",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-3",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-4",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-5",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-6",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-7",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-8",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-9",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-10",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-11",
+          "python_verdict": "PASS",
+          "stated_arithmetic_finds_a_failure": false,
+          "agree": true
+        },
+        {
+          "ic": "IC-12",
+          "python_verdict": "FAIL",
+          "stated_arithmetic_finds_a_failure": true,
+          "agree": true
+        }
+      ]
+    }
+  ],
+  "implementation_notes": [
+    {
+      "id": "N1",
+      "where": "check_ic12_boundary_additivity, arithmetic_audits.py",
+      "finding": "IC-12 takes the event log as its first argument and never uses it. Its numbers come from a milling decomposition hard-coded inside `_milling_debit`: cultivation 6 h making 10 kg of grain, then either one 2 h milling step or a 1 h grind plus a 1 h sieve. Nothing in fixture.json can change the IC-12 row.",
+      "consequence": "A reader checking IC-12 must check the numbers in constraints.md section IC-12, not the fixture."
+    },
+    {
+      "id": "N2",
+      "where": "check_ic10_nonneg_allocation, arithmetic_audits.py",
+      "finding": "IC-10 returns FAIL for two different reasons: a negative allocated share, and an economy whose spectral radius is not below 1 so the solver is undefined. Only the first is a negative allocation.",
+      "consequence": "A FAIL on IC-10 does not by itself mean a share went negative. The message distinguishes them; the verdict does not."
+    },
+    {
+      "id": "N6",
+      "where": "check_ic2_energy_balance docstring",
+      "finding": "The docstring states the constraint without its genesis exemption. The code exempts genesis entries from IC-2 as well as from IC-1.",
+      "consequence": "constraints.md states the exemption for both."
+    },
+    {
+      "id": "N7",
+      "where": "LogState.parcel_status, arithmetic_audits.py",
+      "finding": "'Released' requires the destroying event to emit a reservoir flow whose SUBSTANCE equals the parcel's own substance. The prose describes it only as being sent to a named reservoir.",
+      "consequence": "Load-bearing on this fixture. E8 turns bread into CO2, water and sewage, none of them 'sub:bread', so the bread reads as consumed rather than released. Both are valid fates, so IC-4 still passes."
+    },
+    {
+      "id": "N8",
+      "where": "log_to_economy + check_ic10_nonneg_allocation",
+      "finding": "IC-10 reports min(p) = 0.0000 and passes. The zero belongs to sub:steel-part, which no process in the derived economy makes: `log_to_economy` excludes genesis events, so a genesis-admitted substance has an all-zero row in B, an all-zero row in A~, and c = 0. Its per-unit debit is zero because it has no producer, not because a split came out at zero.",
+      "consequence": "'min(p) >= 0' is true and is weaker than it looks on this fixture. The estimated creation-cost that a genesis entry is supposed to carry does not reach the IC-10 projection at all."
+    },
+    {
+      "id": "N9",
+      "where": "log_to_economy, the E10 repair event",
+      "finding": "The reported spectral radius rho = 0.980 is one number: A~[steel-tool, steel-tool] = theta * A / B = 1.0 * 5.0 / 5.1 = 0.98039..., the repair consuming a 5.0 kg tool and emitting a 5.1 kg tool. Every other entry of A~ is smaller. The amplification 1 / (1 - 0.98039) = 51 is what turns the mechanic's 3 hours into a per-unit tool debit of 30.0 h/kg.",
+      "consequence": "The rho quoted beside the IC-10 verdict describes the repair loop, not the food chain. It is close to 1 for a structural reason a reader should be told, not because the economy is near collapse."
+    }
+  ]
+}

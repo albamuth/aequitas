@@ -1,0 +1,299 @@
+{
+  "provenance": {
+    "generated_utc": "2026-08-24T13:57:48Z",
+    "generator": "06-simulation/audits_inert/generate_bonus.py",
+    "source": "06-simulation/disparity_ceiling_sim.py",
+    "source_sha256": "52708969a5a81fb3f5d79a60b9ecac46425a32507d572fcaa220f05a084633ea"
+  },
+  "parameters": {
+    "self_care_floor_F_hours_per_day": 10.0,
+    "day_hours": 24.0,
+    "structural_ceiling_24_over_F": 2.4,
+    "population_N": 200000,
+    "numpy_seed": 42,
+    "population_draw": {
+      "share_with_little_or_no_paid_work": 0.35,
+      "workers_discretionary_hours": "normal(mean=6.0, sd=3.0), clipped to [0, 24-F]",
+      "non_workers_discretionary_hours": "uniform(0, 1.5)",
+      "credit_rate": "c_i = F + w_i"
+    },
+    "money_calibration": {
+      "income_lognormal_sigma": 0.86,
+      "wealth_lognormal_sigma": 1.8,
+      "wealth_pareto_tail_exponent": 1.5,
+      "wealth_pareto_applied_to_top_fraction": 0.01,
+      "billionaires_per_households": "700 / 131e6",
+      "SCF_2022_targets": {
+        "p90": 9.96,
+        "p95": 19.6,
+        "p99": 70.9,
+        "mean": 5.51
+      },
+      "billionaire_over_median": 1036806.6355624676,
+      "sources_not_reproduced_here": "2022 Survey of Consumer Finances (Federal Reserve) and Forbes. Cited in the sim's own comments; not re-verified by this generator."
+    }
+  },
+  "closed_form": {
+    "claim_1_ceiling": {
+      "statement": "Credit rate c_i = F + w_i with w_i in [0, 24-F], so c_i is in [F, 24]. Consumption at the gate is d_i = rho * c_i. The disparity is max(d) / (rho * F) = max(c) / F <= 24 / F. rho cancels.",
+      "F_hours_per_day": 10.0,
+      "day_hours": 24.0,
+      "ceiling_24_over_F": 2.4,
+      "needs_a_random_draw": false
+    },
+    "claim_3_fraud_invariance": {
+      "statement": "A fraudster's claimed rate is min(c_i * inflate, 24). IC-7 caps any claim at 24 h per 24 h, so max(claimed c) / F <= 24 / F whatever the fraud rate or the inflation factor.",
+      "inflation_factor_used": 2.0,
+      "ceiling_under_any_fraud_rate": 2.4,
+      "needs_a_random_draw": false
+    },
+    "claim_4_frontloading": {
+      "statement": "Credit C and debit D are cumulative running tallies. The gate D <= rho*C is re-checked every period and a breaching purchase is clipped to the room that exists. A hoarder who takes nothing for T-1 periods faces room rho*c*T in the final period, which is exactly what the steady consumer already took over T periods. Hoarding changes the timing and not the total.",
+      "rho": 1.5,
+      "periods_T": 40,
+      "top_credit_rate_c": 24.0,
+      "hoarder_attempted_hours": 14400.0,
+      "hoarder_attempted_arithmetic": "rho * c * T * 10 = 1.5 * 24.0 * 40 * 10",
+      "hoarder_allowed_hours": 1440.0,
+      "hoarder_allowed_arithmetic": "rho * c * T = 1.5 * 24.0 * 40",
+      "steady_vs_hoarder_max_abs_difference": 2.2737367544323206e-12,
+      "equal_age_disparity": 2.4,
+      "equal_age_arithmetic": "(rho*24.0*40) / (rho*10.0*40) = 24.0/10.0",
+      "cross_age_60y_over_20y": 7.2,
+      "cross_age_arithmetic": "(24.0*60) / (10.0*20) = 3 * 24.0/10.0",
+      "needs_a_random_draw": false
+    }
+  },
+  "monte_carlo": {
+    "claim_1_table": {
+      "columns": [
+        "rho",
+        "top_over_floor",
+        "p99.9_over_p50",
+        "gini"
+      ],
+      "rows": [
+        [
+          1.0,
+          2.4,
+          1.7389217654802407,
+          0.13704520145898025
+        ],
+        [
+          1.1,
+          2.4000000000000004,
+          1.7389217654802407,
+          0.13704520145899265
+        ],
+        [
+          1.2,
+          2.4,
+          1.7389217654802407,
+          0.13704520145903246
+        ],
+        [
+          1.3,
+          2.4000000000000004,
+          1.7389217654802407,
+          0.13704520145896076
+        ],
+        [
+          1.4,
+          2.3999999999999995,
+          1.7389217654802405,
+          0.13704520145895605
+        ],
+        [
+          1.5,
+          2.4,
+          1.738921765480241,
+          0.13704520145899177
+        ],
+        [
+          1.6,
+          2.4000000000000004,
+          1.7389217654802407,
+          0.13704520145891724
+        ],
+        [
+          1.7000000000000002,
+          2.4000000000000004,
+          1.7389217654802407,
+          0.137045201459018
+        ],
+        [
+          1.8,
+          2.4000000000000004,
+          1.738921765480241,
+          0.1370452014589532
+        ],
+        [
+          1.9,
+          2.4,
+          1.7389217654802407,
+          0.1370452014590129
+        ],
+        [
+          2.0,
+          2.4,
+          1.7389217654802407,
+          0.13704520145898025
+        ],
+        [
+          2.1,
+          2.4000000000000004,
+          1.7389217654802407,
+          0.13704520145895435
+        ],
+        [
+          2.2,
+          2.4000000000000004,
+          1.7389217654802407,
+          0.13704520145899265
+        ],
+        [
+          2.3,
+          2.4,
+          1.7389217654802407,
+          0.13704520145897556
+        ],
+        [
+          2.4000000000000004,
+          2.4,
+          1.7389217654802407,
+          0.13704520145903298
+        ],
+        [
+          2.5,
+          2.4,
+          1.7389217654802405,
+          0.13704520145898588
+        ],
+        [
+          2.6,
+          2.4000000000000004,
+          1.7389217654802407,
+          0.13704520145896076
+        ],
+        [
+          2.7,
+          2.4000000000000004,
+          1.7389217654802407,
+          0.13704520145898363
+        ],
+        [
+          2.8,
+          2.3999999999999995,
+          1.7389217654802405,
+          0.13704520145895605
+        ],
+        [
+          2.9000000000000004,
+          2.4,
+          1.7389217654802407,
+          0.13704520145901983
+        ],
+        [
+          3.0,
+          2.4,
+          1.738921765480241,
+          0.13704520145899177
+        ]
+      ],
+      "top_over_floor_min": 2.3999999999999995,
+      "top_over_floor_max": 2.4000000000000004,
+      "top_over_floor_std": 3.2140817316761255e-16
+    },
+    "money_comparison_ratios_to_median": {
+      "income_p90": 3.0036047183937806,
+      "income_p99": 7.375180363586307,
+      "income_p99_9": 14.052839458851924,
+      "wealth_p90": 10.28107467493778,
+      "wealth_p99": 70.81616425771962,
+      "billionaire_over_median": 1036806.6355624676,
+      "calibration_targets_SCF_2022": {
+        "p90": 9.96,
+        "p95": 19.6,
+        "p99": 70.9,
+        "mean": 5.51
+      }
+    },
+    "claim_2_clearing_rho": {
+      "scenarios": {
+        "baseline": 1.2386934673366834,
+        "pop -15%": 1.2562814070351758,
+        "disaster -30% capacity": 0.8165829145728642,
+        "pollution +25% debit": 1.185929648241206
+      },
+      "baseline_rho": 1.2386934673366834,
+      "capacity_K": 3261784.7762446874,
+      "search_grid": {
+        "low": 0.5,
+        "high": 4.0,
+        "points": 200,
+        "step": 0.017587939698492462
+      },
+      "note": "rho* is the grid point minimising |demand - capacity|, so it is resolved no finer than one grid step."
+    },
+    "claim_3_table": {
+      "columns": [
+        "fraud_rate",
+        "top_over_floor",
+        "gini"
+      ],
+      "rows": [
+        [
+          0.0,
+          2.4,
+          0.1371372792672092
+        ],
+        [
+          0.05,
+          2.4,
+          0.1489971048606414
+        ],
+        [
+          0.1,
+          2.4,
+          0.1579898124118168
+        ],
+        [
+          0.15000000000000002,
+          2.4,
+          0.16448437776316988
+        ],
+        [
+          0.2,
+          2.4,
+          0.16860497823052517
+        ],
+        [
+          0.25,
+          2.4,
+          0.1706644691005856
+        ],
+        [
+          0.30000000000000004,
+          2.4,
+          0.1707180441862106
+        ],
+        [
+          0.35000000000000003,
+          2.4,
+          0.16901167179127527
+        ],
+        [
+          0.4,
+          2.4,
+          0.1654100201326141
+        ]
+      ],
+      "top_over_floor_max": 2.4
+    }
+  },
+  "how_to_check_this_without_running_it": [
+    "Claims 1, 3 and 4 need no random numbers. Their arithmetic is in `closed_form` above and every digit can be redone on paper.",
+    "Claim 2 needs the 200,000-agent draw. That draw is not exported: it is 200,000 numbers and no reader checks those by hand. What is exported is the seed, the distributions, the search grid and the result. This is a weaker answer to the objection than the arithmetic_audits fixture, and it is stated as one.",
+    "The module draws from one generator, np.random.default_rng(42), in call order. The order used here is report()'s. A different order gives different Monte-Carlo digits from the same seed."
+  ]
+}

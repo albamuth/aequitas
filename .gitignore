@@ -6,3 +6,7 @@ __pycache__/
 
 .DS_Store
 Thumbs.db
+
+# 288 MB of source tables (EXIOBASE, BLS ERM, IO). Download them;
+# every script says where from. Never committed.
+06-simulation/data/

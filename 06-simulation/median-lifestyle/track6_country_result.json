@@ -1,0 +1,186 @@
+{
+  "US": {
+    "hours_per_capita": 1282.6872956717948,
+    "energy_GJ_per_capita": 0.0,
+    "co2_t_per_capita": 11.232598881350237,
+    "foreign_share": 0.4740269992869361,
+    "hh_fd_MEUR": 16630423.59490676,
+    "population_m": 333.3
+  },
+  "DE": {
+    "hours_per_capita": 819.7593517692845,
+    "energy_GJ_per_capita": 0.0,
+    "co2_t_per_capita": 4.583503855240294,
+    "foreign_share": 0.7253424134145982,
+    "hh_fd_MEUR": 1924912.3130436928,
+    "population_m": 83.8
+  },
+  "FR": {
+    "hours_per_capita": 856.2514981607759,
+    "energy_GJ_per_capita": 0.0,
+    "co2_t_per_capita": 3.2140600997444158,
+    "foreign_share": 0.6724858324152464,
+    "hh_fd_MEUR": 1373535.30350499,
+    "population_m": 68.0
+  },
+  "GB": {
+    "hours_per_capita": 1006.7214578781148,
+    "energy_GJ_per_capita": 0.0,
+    "co2_t_per_capita": 4.251199060512568,
+    "foreign_share": 0.7218917370700879,
+    "hh_fd_MEUR": 1817459.7431863642,
+    "population_m": 67.0
+  },
+  "IT": {
+    "hours_per_capita": 767.3558926733713,
+    "energy_GJ_per_capita": 0.0,
+    "co2_t_per_capita": 4.495106378381877,
+    "foreign_share": 0.5768953779113793,
+    "hh_fd_MEUR": 1151838.8444996937,
+    "population_m": 59.0
+  },
+  "ES": {
+    "hours_per_capita": 709.1567425762194,
+    "energy_GJ_per_capita": 0.0,
+    "co2_t_per_capita": 2.70376153720719,
+    "foreign_share": 0.6348784607864492,
+    "hh_fd_MEUR": 747165.5819050038,
+    "population_m": 47.8
+  },
+  "SE": {
+    "hours_per_capita": 831.8973888210365,
+    "energy_GJ_per_capita": 0.0,
+    "co2_t_per_capita": 3.1870281584919757,
+    "foreign_share": 0.6951546401241074,
+    "hh_fd_MEUR": 238884.6996301135,
+    "population_m": 10.5
+  },
+  "NL": {
+    "hours_per_capita": 1164.8400654572351,
+    "energy_GJ_per_capita": 0.0,
+    "co2_t_per_capita": 5.626708912308898,
+    "foreign_share": 0.9026000364398927,
+    "hh_fd_MEUR": 402338.13621054695,
+    "population_m": 17.7
+  },
+  "DK": {
+    "hours_per_capita": 993.6466526987448,
+    "energy_GJ_per_capita": 0.0,
+    "co2_t_per_capita": 4.843096449971856,
+    "foreign_share": 0.8000992321640662,
+    "hh_fd_MEUR": 160728.07259588368,
+    "population_m": 5.9
+  },
+  "NO": {
+    "hours_per_capita": 871.7865038518829,
+    "energy_GJ_per_capita": 0.0,
+    "co2_t_per_capita": 5.914270828278982,
+    "foreign_share": 0.7702559291162276,
+    "hh_fd_MEUR": 172945.10229561233,
+    "population_m": 5.5
+  },
+  "FI": {
+    "hours_per_capita": 739.4449704111618,
+    "energy_GJ_per_capita": 0.0,
+    "co2_t_per_capita": 4.7835014921395285,
+    "foreign_share": 0.6970967060481738,
+    "hh_fd_MEUR": 128976.56578973786,
+    "population_m": 5.55
+  },
+  "CH": {
+    "hours_per_capita": 1240.11811866266,
+    "energy_GJ_per_capita": 0.0,
+    "co2_t_per_capita": 7.719043474722305,
+    "foreign_share": 0.8028586111741827,
+    "hh_fd_MEUR": 374939.4275545079,
+    "population_m": 8.8
+  },
+  "AT": {
+    "hours_per_capita": 915.7841694082784,
+    "energy_GJ_per_capita": 0.0,
+    "co2_t_per_capita": 4.102271428864617,
+    "foreign_share": 0.6881303524796133,
+    "hh_fd_MEUR": 224324.7199561229,
+    "population_m": 9.0
+  },
+  "BE": {
+    "hours_per_capita": 1151.4349472558852,
+    "energy_GJ_per_capita": 0.0,
+    "co2_t_per_capita": 5.6873478849800305,
+    "foreign_share": 0.912147166378857,
+    "hh_fd_MEUR": 273488.14260731294,
+    "population_m": 11.6
+  },
+  "IE": {
+    "hours_per_capita": 1780.837306411806,
+    "energy_GJ_per_capita": 0.0,
+    "co2_t_per_capita": 6.796398944521038,
+    "foreign_share": 0.991343350684451,
+    "hh_fd_MEUR": 123647.05796271411,
+    "population_m": 5.1
+  },
+  "PT": {
+    "hours_per_capita": 787.4943254855456,
+    "energy_GJ_per_capita": 0.0,
+    "co2_t_per_capita": 2.449944437364445,
+    "foreign_share": 0.5159303574510302,
+    "hh_fd_MEUR": 149907.56698040882,
+    "population_m": 10.3
+  },
+  "PL": {
+    "hours_per_capita": 546.4614429546955,
+    "energy_GJ_per_capita": 0.0,
+    "co2_t_per_capita": 3.536806567874899,
+    "foreign_share": 0.4678386154531918,
+    "hh_fd_MEUR": 363683.04890665214,
+    "population_m": 37.7
+  },
+  "CA": {
+    "hours_per_capita": 676.4779015517829,
+    "energy_GJ_per_capita": 0.0,
+    "co2_t_per_capita": 5.296181156120262,
+    "foreign_share": 0.643662420475651,
+    "hh_fd_MEUR": 964497.4753716356,
+    "population_m": 38.9
+  },
+  "AU": {
+    "hours_per_capita": 807.1940054201452,
+    "energy_GJ_per_capita": 0.0,
+    "co2_t_per_capita": 5.810593659617829,
+    "foreign_share": 0.6298403485828619,
+    "hh_fd_MEUR": 774503.9645823382,
+    "population_m": 26.0
+  },
+  "JP": {
+    "hours_per_capita": 861.5417617247233,
+    "energy_GJ_per_capita": 0.0,
+    "co2_t_per_capita": 4.428515588692876,
+    "foreign_share": 0.420813865097023,
+    "hh_fd_MEUR": 2127364.595915023,
+    "population_m": 125.0
+  },
+  "KR": {
+    "hours_per_capita": 825.1948599182475,
+    "energy_GJ_per_capita": 0.0,
+    "co2_t_per_capita": 5.158006438142569,
+    "foreign_share": 0.4714447289206447,
+    "hh_fd_MEUR": 690973.855449453,
+    "population_m": 51.6
+  },
+  "CZ": {
+    "hours_per_capita": 580.5097052147912,
+    "energy_GJ_per_capita": 0.0,
+    "co2_t_per_capita": 3.4926121906433,
+    "foreign_share": 0.6850881292934138,
+    "hh_fd_MEUR": 126063.10910993526,
+    "population_m": 10.5
+  },
+  "GR": {
+    "hours_per_capita": 703.3348147819916,
+    "energy_GJ_per_capita": 0.0,
+    "co2_t_per_capita": 3.171812125485098,
+    "foreign_share": 0.527261579938985,
+    "hh_fd_MEUR": 140842.87124239054,
+    "population_m": 10.4
+  }
+}

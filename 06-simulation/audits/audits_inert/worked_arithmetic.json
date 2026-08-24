@@ -1,0 +1,1032 @@
+{
+  "provenance": {
+    "generated_utc": "2026-08-24T13:57:21Z",
+    "generator": "06-simulation/audits_inert/generate.py",
+    "arithmetic_audits_sha256": "06e3af74e9df7c6fa7600effe0bf46a6cb2a5ca41044edcae8edc3315ff8b329",
+    "recursion_convergence_sha256": "2a7b4923c68c374fb3582adb455ca93e99247f271b0653c83638cc44346ba874",
+    "why": "@twelve-minute-window, comment c15176 on post #1605: shipping only a program relocates the trust from the number to the repository. These files let a reader check the arithmetic without running anything."
+  },
+  "note": "Every quantity each constraint sums, computed on the clean log. Redo any of it by hand from fixture.json.",
+  "by_constraint": {
+    "IC-1": {
+      "rows": [
+        {
+          "event": "G1",
+          "exempt": true,
+          "reason": "genesis entry"
+        },
+        {
+          "event": "G2",
+          "exempt": true,
+          "reason": "genesis entry"
+        },
+        {
+          "event": "D1",
+          "exempt": false,
+          "mass_in_kg": 5.0,
+          "mass_out_kg": 5.0,
+          "residual_kg": 0.0,
+          "holds": true
+        },
+        {
+          "event": "E1",
+          "exempt": false,
+          "mass_in_kg": 10.0,
+          "mass_out_kg": 10.0,
+          "residual_kg": 0.0,
+          "holds": true
+        },
+        {
+          "event": "E2",
+          "exempt": false,
+          "mass_in_kg": 10.0,
+          "mass_out_kg": 10.0,
+          "residual_kg": 0.0,
+          "holds": true
+        },
+        {
+          "event": "E3",
+          "exempt": false,
+          "mass_in_kg": 10.0,
+          "mass_out_kg": 10.0,
+          "residual_kg": 0.0,
+          "holds": true
+        },
+        {
+          "event": "E4",
+          "exempt": false,
+          "mass_in_kg": 3.0,
+          "mass_out_kg": 3.0,
+          "residual_kg": 0.0,
+          "holds": true
+        },
+        {
+          "event": "E5",
+          "exempt": false,
+          "mass_in_kg": 7.0,
+          "mass_out_kg": 7.0,
+          "residual_kg": 0.0,
+          "holds": true
+        },
+        {
+          "event": "E6",
+          "exempt": false,
+          "mass_in_kg": 10.0,
+          "mass_out_kg": 10.0,
+          "residual_kg": 0.0,
+          "holds": true
+        },
+        {
+          "event": "E7",
+          "exempt": false,
+          "mass_in_kg": 9.5,
+          "mass_out_kg": 9.5,
+          "residual_kg": 0.0,
+          "holds": true
+        },
+        {
+          "event": "E8",
+          "exempt": false,
+          "mass_in_kg": 9.5,
+          "mass_out_kg": 9.5,
+          "residual_kg": 0.0,
+          "holds": true
+        },
+        {
+          "event": "E10",
+          "exempt": false,
+          "mass_in_kg": 5.1,
+          "mass_out_kg": 5.1,
+          "residual_kg": 0.0,
+          "holds": true
+        },
+        {
+          "event": "E11",
+          "exempt": false,
+          "mass_in_kg": 2.0,
+          "mass_out_kg": 2.0,
+          "residual_kg": 0.0,
+          "holds": true
+        }
+      ],
+      "failures": []
+    },
+    "IC-2": {
+      "rows": [
+        {
+          "event": "G1",
+          "exempt": true,
+          "reason": "genesis entry"
+        },
+        {
+          "event": "G2",
+          "exempt": true,
+          "reason": "genesis entry"
+        },
+        {
+          "event": "D1",
+          "exempt": false,
+          "energy_in_J": 0,
+          "energy_out_J": 0,
+          "dissipation_J": 0.0,
+          "residual_J": 0.0,
+          "holds": true
+        },
+        {
+          "event": "E1",
+          "exempt": false,
+          "energy_in_J": 0,
+          "energy_out_J": 0,
+          "dissipation_J": 0.0,
+          "residual_J": 0.0,
+          "holds": true
+        },
+        {
+          "event": "E2",
+          "exempt": false,
+          "energy_in_J": 0,
+          "energy_out_J": 0,
+          "dissipation_J": 0.0,
+          "residual_J": 0.0,
+          "holds": true
+        },
+        {
+          "event": "E3",
+          "exempt": false,
+          "energy_in_J": 100.0,
+          "energy_out_J": 0,
+          "dissipation_J": 100.0,
+          "residual_J": 0.0,
+          "holds": true
+        },
+        {
+          "event": "E4",
+          "exempt": false,
+          "energy_in_J": 0,
+          "energy_out_J": 0,
+          "dissipation_J": 0.0,
+          "residual_J": 0.0,
+          "holds": true
+        },
+        {
+          "event": "E5",
+          "exempt": false,
+          "energy_in_J": 0,
+          "energy_out_J": 0,
+          "dissipation_J": 0.0,
+          "residual_J": 0.0,
+          "holds": true
+        },
+        {
+          "event": "E6",
+          "exempt": false,
+          "energy_in_J": 200.0,
+          "energy_out_J": 0,
+          "dissipation_J": 200.0,
+          "residual_J": 0.0,
+          "holds": true
+        },
+        {
+          "event": "E7",
+          "exempt": false,
+          "energy_in_J": 0,
+          "energy_out_J": 0,
+          "dissipation_J": 0.0,
+          "residual_J": 0.0,
+          "holds": true
+        },
+        {
+          "event": "E8",
+          "exempt": false,
+          "energy_in_J": 0,
+          "energy_out_J": 0,
+          "dissipation_J": 0.0,
+          "residual_J": 0.0,
+          "holds": true
+        },
+        {
+          "event": "E10",
+          "exempt": false,
+          "energy_in_J": 0,
+          "energy_out_J": 0,
+          "dissipation_J": 0.0,
+          "residual_J": 0.0,
+          "holds": true
+        },
+        {
+          "event": "E11",
+          "exempt": false,
+          "energy_in_J": 0,
+          "energy_out_J": 0,
+          "dissipation_J": 0.0,
+          "residual_J": 0.0,
+          "holds": true
+        }
+      ],
+      "failures": []
+    },
+    "IC-3": {
+      "rows": [
+        {
+          "parcel": "P:tool",
+          "terminus": "genesis",
+          "traces_to_a_valid_root": true
+        },
+        {
+          "parcel": "P:part",
+          "terminus": "genesis",
+          "traces_to_a_valid_root": true
+        },
+        {
+          "parcel": "P:grain",
+          "terminus": "reservoir soil:field-01",
+          "traces_to_a_valid_root": true
+        },
+        {
+          "parcel": "P:flour",
+          "terminus": "via parcel ancestry",
+          "traces_to_a_valid_root": true
+        },
+        {
+          "parcel": "P:bran",
+          "terminus": "via parcel ancestry",
+          "traces_to_a_valid_root": true
+        },
+        {
+          "parcel": "P:bread",
+          "terminus": "via parcel ancestry",
+          "traces_to_a_valid_root": true
+        }
+      ],
+      "failures": []
+    },
+    "IC-4": {
+      "rows": [
+        {
+          "parcel": "P:tool",
+          "status_at_now": "held",
+          "last_recorded_kg": 5.1,
+          "holds": true
+        },
+        {
+          "parcel": "P:part",
+          "status_at_now": "consumed",
+          "last_recorded_kg": 0.1,
+          "holds": true
+        },
+        {
+          "parcel": "P:grain",
+          "status_at_now": "consumed",
+          "last_recorded_kg": 10.0,
+          "holds": true
+        },
+        {
+          "parcel": "P:flour",
+          "status_at_now": "consumed",
+          "last_recorded_kg": 7.0,
+          "holds": true
+        },
+        {
+          "parcel": "P:bran",
+          "status_at_now": "released",
+          "last_recorded_kg": 3.0,
+          "holds": true
+        },
+        {
+          "parcel": "P:bread",
+          "status_at_now": "consumed",
+          "last_recorded_kg": 9.5,
+          "holds": true
+        }
+      ],
+      "failures": []
+    },
+    "IC-5": {
+      "rows": [
+        {
+          "parcel": "P:tool",
+          "custody_chain": [
+            {
+              "event": "G1",
+              "holder_before": null,
+              "declared_in_custody": null,
+              "declared_out_custody": "farmer",
+              "holder_after": "farmer",
+              "holds": true
+            },
+            {
+              "event": "D1",
+              "holder_before": "farmer",
+              "declared_in_custody": "farmer",
+              "declared_out_custody": "farmer",
+              "holder_after": "farmer",
+              "holds": true
+            },
+            {
+              "event": "E10",
+              "holder_before": "farmer",
+              "declared_in_custody": "farmer",
+              "declared_out_custody": "farmer",
+              "holder_after": "farmer",
+              "holds": true
+            }
+          ]
+        },
+        {
+          "parcel": "P:part",
+          "custody_chain": [
+            {
+              "event": "G2",
+              "holder_before": null,
+              "declared_in_custody": null,
+              "declared_out_custody": "mechanic",
+              "holder_after": "mechanic",
+              "holds": true
+            },
+            {
+              "event": "E10",
+              "holder_before": "mechanic",
+              "declared_in_custody": "mechanic",
+              "declared_out_custody": null,
+              "holder_after": null,
+              "holds": true
+            }
+          ]
+        },
+        {
+          "parcel": "P:grain",
+          "custody_chain": [
+            {
+              "event": "E1",
+              "holder_before": null,
+              "declared_in_custody": null,
+              "declared_out_custody": "farmer",
+              "holder_after": "farmer",
+              "holds": true
+            },
+            {
+              "event": "E2",
+              "holder_before": "farmer",
+              "declared_in_custody": "farmer",
+              "declared_out_custody": "miller",
+              "holder_after": "miller",
+              "holds": true
+            },
+            {
+              "event": "E3",
+              "holder_before": "miller",
+              "declared_in_custody": "miller",
+              "declared_out_custody": null,
+              "holder_after": null,
+              "holds": true
+            }
+          ]
+        },
+        {
+          "parcel": "P:flour",
+          "custody_chain": [
+            {
+              "event": "E3",
+              "holder_before": null,
+              "declared_in_custody": null,
+              "declared_out_custody": "miller",
+              "holder_after": "miller",
+              "holds": true
+            },
+            {
+              "event": "E5",
+              "holder_before": "miller",
+              "declared_in_custody": "miller",
+              "declared_out_custody": "baker",
+              "holder_after": "baker",
+              "holds": true
+            },
+            {
+              "event": "E6",
+              "holder_before": "baker",
+              "declared_in_custody": "baker",
+              "declared_out_custody": null,
+              "holder_after": null,
+              "holds": true
+            }
+          ]
+        },
+        {
+          "parcel": "P:bran",
+          "custody_chain": [
+            {
+              "event": "E3",
+              "holder_before": null,
+              "declared_in_custody": null,
+              "declared_out_custody": "miller",
+              "holder_after": "miller",
+              "holds": true
+            },
+            {
+              "event": "E4",
+              "holder_before": "miller",
+              "declared_in_custody": "miller",
+              "declared_out_custody": null,
+              "holder_after": null,
+              "holds": true
+            }
+          ]
+        },
+        {
+          "parcel": "P:bread",
+          "custody_chain": [
+            {
+              "event": "E6",
+              "holder_before": null,
+              "declared_in_custody": null,
+              "declared_out_custody": "baker",
+              "holder_after": "baker",
+              "holds": true
+            },
+            {
+              "event": "E7",
+              "holder_before": "baker",
+              "declared_in_custody": "baker",
+              "declared_out_custody": "farmer",
+              "holder_after": "farmer",
+              "holds": true
+            },
+            {
+              "event": "E8",
+              "holder_before": "farmer",
+              "declared_in_custody": "farmer",
+              "declared_out_custody": null,
+              "holder_after": null,
+              "holds": true
+            }
+          ]
+        }
+      ],
+      "failures": []
+    },
+    "IC-6": {
+      "rows": [
+        {
+          "event": "D1",
+          "parcel": "P:tool",
+          "event_start_s": 10800.0,
+          "parcel_created_at_s": 3600.0,
+          "parcel_destroyed_at_s": null,
+          "holds": true
+        },
+        {
+          "event": "E2",
+          "parcel": "P:grain",
+          "event_start_s": 108000.0,
+          "parcel_created_at_s": 21600.0,
+          "parcel_destroyed_at_s": 194400.0,
+          "holds": true
+        },
+        {
+          "event": "E3",
+          "parcel": "P:grain",
+          "event_start_s": 194400.0,
+          "parcel_created_at_s": 21600.0,
+          "parcel_destroyed_at_s": 194400.0,
+          "holds": true
+        },
+        {
+          "event": "E4",
+          "parcel": "P:bran",
+          "event_start_s": 205200.0,
+          "parcel_created_at_s": 194400.0,
+          "parcel_destroyed_at_s": 205200.0,
+          "holds": true
+        },
+        {
+          "event": "E5",
+          "parcel": "P:flour",
+          "event_start_s": 280800.0,
+          "parcel_created_at_s": 194400.0,
+          "parcel_destroyed_at_s": 367200.0,
+          "holds": true
+        },
+        {
+          "event": "E6",
+          "parcel": "P:flour",
+          "event_start_s": 367200.0,
+          "parcel_created_at_s": 194400.0,
+          "parcel_destroyed_at_s": 367200.0,
+          "holds": true
+        },
+        {
+          "event": "E7",
+          "parcel": "P:bread",
+          "event_start_s": 453600.0,
+          "parcel_created_at_s": 367200.0,
+          "parcel_destroyed_at_s": 475200.0,
+          "holds": true
+        },
+        {
+          "event": "E8",
+          "parcel": "P:bread",
+          "event_start_s": 475200.0,
+          "parcel_created_at_s": 367200.0,
+          "parcel_destroyed_at_s": 475200.0,
+          "holds": true
+        },
+        {
+          "event": "E10",
+          "parcel": "P:tool",
+          "event_start_s": 540000.0,
+          "parcel_created_at_s": 3600.0,
+          "parcel_destroyed_at_s": null,
+          "holds": true
+        },
+        {
+          "event": "E10",
+          "parcel": "P:part",
+          "event_start_s": 540000.0,
+          "parcel_created_at_s": 7200.0,
+          "parcel_destroyed_at_s": 540000.0,
+          "holds": true
+        }
+      ],
+      "failures": []
+    },
+    "IC-7": {
+      "rows": [
+        {
+          "account": "baker",
+          "roles": 1,
+          "worst_window_start_s": 367200.0,
+          "worst_window_busy_hours": 4.0,
+          "cap_hours": 24.0,
+          "holds": true
+        },
+        {
+          "account": "estimator",
+          "roles": 2,
+          "worst_window_start_s": 3600.0,
+          "worst_window_busy_hours": 0.6,
+          "cap_hours": 24.0,
+          "holds": true
+        },
+        {
+          "account": "farmer",
+          "roles": 2,
+          "worst_window_start_s": 21600.0,
+          "worst_window_busy_hours": 6.0,
+          "cap_hours": 24.0,
+          "holds": true
+        },
+        {
+          "account": "gardener",
+          "roles": 1,
+          "worst_window_start_s": 561600.0,
+          "worst_window_busy_hours": 1.0,
+          "cap_hours": 24.0,
+          "holds": true
+        },
+        {
+          "account": "mechanic",
+          "roles": 1,
+          "worst_window_start_s": 540000.0,
+          "worst_window_busy_hours": 3.0,
+          "cap_hours": 24.0,
+          "holds": true
+        },
+        {
+          "account": "miller",
+          "roles": 1,
+          "worst_window_start_s": 194400.0,
+          "worst_window_busy_hours": 2.0,
+          "cap_hours": 24.0,
+          "holds": true
+        }
+      ],
+      "failures": []
+    },
+    "IC-8": {
+      "rows": [
+        {
+          "account": "baker",
+          "cumulative_pledged_hours": 3.0,
+          "lifetime_earned_hours": 4.0,
+          "headroom_hours": 1.0,
+          "holds": true
+        },
+        {
+          "account": "estimator",
+          "cumulative_pledged_hours": 0,
+          "lifetime_earned_hours": 0.6,
+          "headroom_hours": 0.6,
+          "holds": true
+        },
+        {
+          "account": "farmer",
+          "cumulative_pledged_hours": 5.0,
+          "lifetime_earned_hours": 6.25,
+          "headroom_hours": 1.25,
+          "holds": true
+        },
+        {
+          "account": "gardener",
+          "cumulative_pledged_hours": 0,
+          "lifetime_earned_hours": 1.0,
+          "headroom_hours": 1.0,
+          "holds": true
+        },
+        {
+          "account": "mechanic",
+          "cumulative_pledged_hours": 0,
+          "lifetime_earned_hours": 3.0,
+          "headroom_hours": 3.0,
+          "holds": true
+        },
+        {
+          "account": "miller",
+          "cumulative_pledged_hours": 0,
+          "lifetime_earned_hours": 2.0,
+          "headroom_hours": 2.0,
+          "holds": true
+        }
+      ],
+      "failures": []
+    },
+    "IC-9": {
+      "rows": [
+        {
+          "pledge": "PL1",
+          "state": "discharged",
+          "discharge_event": "E10",
+          "discharge_start_s": 540000.0,
+          "expires_at_s": 2613600.0,
+          "late_by_s": -2073600.0,
+          "holds": true
+        },
+        {
+          "pledge": "PL2",
+          "state": "discharged",
+          "discharge_event": "E11",
+          "discharge_start_s": 561600.0,
+          "expires_at_s": 2613600.0,
+          "late_by_s": -2052000.0,
+          "holds": true
+        },
+        {
+          "pledge": "PL3",
+          "state": "outstanding",
+          "holds": true
+        },
+        {
+          "pledge": "PL4",
+          "state": "burned",
+          "holds": true
+        }
+      ],
+      "failures": []
+    },
+    "IC-10": {
+      "rows": [
+        {
+          "event": "E3",
+          "dimension": "mass",
+          "theta": {
+            "P:flour": 0.7,
+            "P:bran": 0.3
+          },
+          "sum": 1.0,
+          "min": 0.3
+        },
+        {
+          "event": "E3",
+          "dimension": "energy",
+          "theta": {
+            "P:flour": 0.62,
+            "P:bran": 0.38
+          },
+          "sum": 1.0,
+          "min": 0.38
+        }
+      ],
+      "recursive_layer": {
+        "products_in_row_order": [
+          "sub:wheat.grain",
+          "sub:wheat.flour",
+          "sub:wheat.bran",
+          "sub:bread",
+          "sub:steel-tool",
+          "sub:steel-part"
+        ],
+        "labour_hours_per_process_l": [
+          6.0,
+          2.0,
+          4.0,
+          3.0
+        ],
+        "A_used": [
+          [
+            0.0,
+            10.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            7.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            5.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.1
+          ]
+        ],
+        "B_made": [
+          [
+            10.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            7.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            3.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            9.5,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            5.1
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "Theta_split": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.7,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.3,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "A_tilde": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.9999999999999999,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.9999999999999999,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.7368421052631579,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.9803921568627452,
+            0.019607843137254905
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "c": [
+          0.6000000000000001,
+          0.19999999999999998,
+          0.19999999999999998,
+          0.42105263157894735,
+          0.5882352941176472,
+          0.0
+        ],
+        "spectral_radius_rho": 0.9803921568627452,
+        "productive_rho_lt_1": true,
+        "p_per_unit_debit_hours_per_kg": [
+          0.6000000000000001,
+          0.7999999999999999,
+          0.7999999999999999,
+          1.0105263157894737,
+          30.000000000000114,
+          0.0
+        ],
+        "min_p": 0.0
+      },
+      "failures": []
+    },
+    "IC-11": {
+      "rows": [
+        {
+          "event": "E3",
+          "dimension": "mass",
+          "theta": {
+            "P:flour": 0.7,
+            "P:bran": 0.3
+          },
+          "sum": 1.0,
+          "min": 0.3,
+          "deviation_from_1": 0.0,
+          "holds": true
+        },
+        {
+          "event": "E3",
+          "dimension": "energy",
+          "theta": {
+            "P:flour": 0.62,
+            "P:bran": 0.38
+          },
+          "sum": 1.0,
+          "min": 0.38,
+          "deviation_from_1": 0.0,
+          "holds": true
+        }
+      ],
+      "failures": []
+    },
+    "IC-12": {
+      "rows": [
+        {
+          "whole_theta": [
+            0.7,
+            0.3
+          ],
+          "staged_theta": [
+            0.7,
+            0.3
+          ],
+          "whole_labour_hours": {
+            "cultivation": 6.0,
+            "milling": 2.0
+          },
+          "staged_labour_hours": {
+            "cultivation": 6.0,
+            "grind": 1.0,
+            "sieve": 1.0
+          },
+          "p_flour_whole": 0.7999999999999999,
+          "p_flour_staged": 0.7999999999999999,
+          "p_bran_whole": 0.7999999999999999,
+          "p_bran_staged": 0.7999999999999999,
+          "delta_flour": 0.0,
+          "delta_bran": 0.0
+        }
+      ],
+      "failures": [],
+      "note": "IC-12 as implemented never reads the event log. It builds its own milling decomposition inside `_milling_debit`. The fixture does not determine this row."
+    }
+  },
+  "extent_block": {
+    "domain": {
+      "accounts": [
+        "baker",
+        "estimator",
+        "farmer",
+        "gardener",
+        "mechanic",
+        "miller"
+      ],
+      "parcels": 6,
+      "reservoirs_registered": [
+        "airshed:local",
+        "energy:gas",
+        "energy:grid",
+        "sewer:local",
+        "soil:field-01",
+        "watershed:local"
+      ],
+      "window_days": [
+        0.042,
+        6.542
+      ],
+      "as_of_day": 7.25
+    },
+    "extent": {
+      "events_replayed": 13,
+      "dimensions_carried": [
+        "J",
+        "kg"
+      ],
+      "parcels_rooted_in_a_reservoir": [
+        "P:grain"
+      ],
+      "parcels_admitted_by_genesis": [
+        "P:part",
+        "P:tool"
+      ],
+      "reservoirs_receiving_flows": [
+        "airshed:local",
+        "sewer:local",
+        "soil:field-01"
+      ],
+      "reservoir_out_flows": 5
+    },
+    "closure_basis": {
+      "reservoir_reconciliation": null,
+      "counterparty_attestation_external": null,
+      "population_total_N": null,
+      "genesis_termini_not_re_derivable": [
+        "G1",
+        "G2"
+      ]
+    },
+    "blind_spots": [
+      "Whole processes recorded NOWHERE are invisible here. IC-1..IC-9 test the supplied log against itself; a disjoint chain (unrecorded extraction -> off-ledger transformation -> off-ledger sink) leaves nothing dangling. That is a coverage question (Foundations sec.5.1b), not an arithmetic one.",
+      "No reservoir stock is reconciled. Nothing here compares the sum of recorded emissions against an independently measured ambient stock, so the coverage gap for reservoir-directed flows is UNMEASURED, not zero.",
+      "Genesis termini cannot be re-derived from the log's own bytes. A genesis entry is admitted on its estimate; see EventLog sec.12.3a.",
+      "No external counterparty attests any hand-off here. Every custody change is internal to this synthetic log.",
+      "IC-10..IC-12 read a process-energetics model. They are arithmetic, but they are not assumption-free (sec.7.2)."
+    ]
+  }
+}
