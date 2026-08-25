@@ -27,7 +27,8 @@ These are versioned, and they move **in lockstep**. When one is bumped, every do
 
 | File | Holds | Size |
 |---|---|---|
-| **`Aequitas_Foundations_v*.md`** | **The system itself.** The eight axioms (§1), the ledger model (§3), verification (§4), identity and coverage (§5), credit and pledges (§6), consequences (§7), the conformance list (§9), and the open problems (§10). **Everything else in this folder is downstream of this file.** | ~200 KB |
+| **`Aequitas_Foundations_v*.md`** | **The system itself.** The eight axioms (§1), the ledger model (§3), verification (§4), identity and coverage (§5), credit and pledges (§6), and consequences (§7). **It ends at §8, which is a pointer table.** Truncated on 2026-08-25: the conformance list, the open problems and the adoption reading moved to the three files below. **Everything else in this folder is downstream of this file.** | ~190 KB |
+| **`Aequitas_Conformance_v*.md`** | **What must be true for an implementation to *be* Aequitas.** Sixteen numbered requirements, each pointing back at the section of Foundations that argues for it. **§4 records what is deliberately *not* a requirement, and why.** **Audience: implementers.** Not a schema, not a protocol, not a product. | ~8 KB |
 | **`Aequitas_Objections_v*.md`** | **The objections register.** Every serious attack on the theory, who made it, which axiom it hits, and its status. **Part B is the answered ones, and it is not an archive** — it is the argument sheet, and every item will be raised again by someone who has not read it. | ~100 KB |
 | **`Aequitas_EventLog_v*.md`** | **The data model (C1).** What a record contains, and the integrity constraints IC-1 … IC-12 that check it. Read this only when the question is about *what gets recorded*. | ~75 KB |
 | **`Aequitas_Overview_v*.md`** | **The plain-language version.** No economics background needed. Where it and Foundations differ, **Foundations wins.** | ~65 KB |

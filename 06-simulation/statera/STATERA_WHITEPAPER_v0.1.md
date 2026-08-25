@@ -81,7 +81,7 @@ Four objects, and nothing else.
 | **`EventLog`** | Append-only, columnar. Parallel numpy arrays, one per field. Offers no `delete`, `truncate`, `update`, `remove` or `edit` — asserted by `test_log_is_append_only`. |
 | **`Projection`** | The ledger, derived from the log by a segment-sum over the actor column. Cached, and the cache is re-checked against a from-scratch recompute every period. |
 | **`Kernel`** | Agents, dials, the time axis, the gate. |
-| **`Conformance`** | Seven checks from Foundations §9 (the conformance requirements), run at the end of every period. A failure raises and stops the run. |
+| **`Conformance`** | Seven checks from `Aequitas_Conformance_v0.2.md` (the conformance requirements), run at the end of every period. A failure raises and stops the run. |
 
 ### The event kinds
 
@@ -585,7 +585,7 @@ The 1,380 h/yr median-lifestyle figure comes from [`MEDIAN_LIFESTYLE_RESULT.md`]
 1. Input–output tables split physical impacts by dollars, which under-counts cheap heavy flows — waste, bulk materials, land.
 2. The basket has coverage gaps.
 
-That is Foundations §5.1a's floor rule and §9 requirement 13, and it means **there is one honest statement to make, not two competing ones.**
+That is Foundations §5.1a's floor rule and conformance requirement 13, and it means **there is one honest statement to make, not two competing ones.**
 
 ### What the kernel actually uses
 
@@ -763,7 +763,7 @@ _ = collapse(heavier, k.dials.weights)   # future room shrinks; history stands
 
 ### 19.1 The 17 conformance requirements — what Statera can and cannot check
 
-Foundations §9 lists 17 requirements that must hold for an implementation to be Aequitas. Statera asserts some as running invariants, satisfies some structurally without asserting them, and cannot express the rest.
+`Aequitas_Conformance_v0.2.md` lists 16 requirements that must hold for an implementation to be Aequitas. Statera asserts some as running invariants, satisfies some structurally without asserting them, and cannot express the rest.
 
 | # | Requirement | Status in Statera |
 |---|---|---|
@@ -806,7 +806,7 @@ Foundations §9 lists 17 requirements that must hold for an implementation to be
 - **The observed spread depends on N and on the seed (§8).** The bound does not.
 - **The low-floor finding is a property of the population model** — 35% doing little paid work, the rest centred on about 6 hours with a 3-hour spread. A society with genuinely different working hours fills the bound differently.
 - **The disparity bound is conditional, and Foundations says so.** §7.5 lists five conditions, of which the sharpest is OP-22 ([minimum audit disclosure](../../00-strategy/GLOSSARY.md#op-22)) — proving a claim is backed without exposing the history behind it. **Statera assumes that guard is implementable. It does not model it.**
-- **Every cost figure the programme will produce is a floor, never a value** (§15). Two independent errors point the same way. Foundations §5.1a and §9 requirement 13 both require it to be said on the face of the result.
+- **Every cost figure the programme will produce is a floor, never a value** (§15). Two independent errors point the same way. Foundations §5.1a and conformance requirement 13 both require it to be said on the face of the result.
 
 ---
 

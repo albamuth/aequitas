@@ -1,9 +1,9 @@
 <!-- tag: str-aequitas-overall-strategy -->
 # Aequitas — Overall Strategy
 
-> **Version:** 0.5 · **Date:** 2026-08-23
+> **Version:** 0.6 · **Date:** 2026-08-25
 > **Target:** A statement of the system, tested against scenarios, in ~3 months — with a conformance list an implementer can build against.
-> **Companion docs:** `Aequitas_Foundations_v0.22.md` (axioms), `Aequitas_Objections_v0.21.md` (register), `Aequitas_EventLog_v0.9.md` (record model), `../NEXT.md` (task queue)
+> **Companion docs:** `Aequitas_Foundations_v0.25.md` (axioms), `Aequitas_Objections_v0.22.md` (register), `Aequitas_EventLog_v0.9.md` (record model), `../NEXT.md` (task queue)
 > **Version history & what each version superseded:** `00-strategy/Aequitas_Strategy_CHANGELOG.md`.
 
 ---
@@ -19,6 +19,7 @@
 - [6. Sequencing principle](#6-sequencing-principle)
 - [7. Known strategic risks](#7-known-strategic-risks)
 - [8. What "done" looks like at 3 months](#8-what-done-looks-like-at-3-months)
+- [9. First Foothold — how adoption plausibly starts](#9-first-foothold--how-adoption-plausibly-starts)
 - [Change history](#change-history)
 
 ---
@@ -33,7 +34,7 @@ Not a manifesto. Not a pitch. **And not an architecture.**
 > **Two halves, and the second one is small.**
 >
 > - **The system.** What Aequitas is, what must hold, and what follows. Every claim that sounds impossible ships with a simulation that demonstrates it (§2).
-> - **The conformance list.** The things that must be true for an implementation to *be* Aequitas — conservation holds, the ledger is derived and never stored, credit never transfers, coverage is published with its extent, and so on. **Foundations §9 carries the current list.**
+> - **The conformance list.** The things that must be true for an implementation to *be* Aequitas — conservation holds, the ledger is derived and never stored, credit never transfers, coverage is published with its extent, and so on. **[`Aequitas_Conformance_v0.2.md`](Aequitas_Conformance_v0.2.md) carries the current list**, moved out of `Aequitas_Conformance_v0.2.md` on 2026-08-25.
 
 **What is deliberately not the goal.** A data model, a storage design, a transport protocol, a choice of cryptography, a privacy practice. **Foundations §1.2 rules all of these praxis**, and they belong to whoever implements. An earlier version of this section named three of them as deliverables, which is how this project spent nights on record-integrity work while its top blocker was governance.
 
@@ -167,13 +168,13 @@ This also answers the socialist-calculation critique pre-emptively: we don't arg
 
 | Risk | Mitigation |
 |---|---|
-| **🔴 Weighting-model governance (OP-10 (weighting governance))** — whoever sets the cost model controls every balance in history without touching a rule | The **top blocker.** Partial answers: split-before-collapse (§3.2a), rival-sector audit for constants (§3.3a). The general problem is open; the answer is competing open variance under A8, still unspecified. Work it with OP-24 and §10.1 — three problems, one capture surface. |
+| **🔴 Weighting-model governance (OP-10 (weighting governance))** — whoever sets the cost model controls every balance in history without touching a rule | The **top blocker.** Partial answers: split-before-collapse (§3.2a), rival-sector audit for constants (§3.3a). The general problem is open; the answer is competing open variance under A8, still unspecified. Work it with OP-24 and Foundations A8's always-creditable-activity ruling — three problems, one capture surface. |
 | **🔴 Understatement drift (OP-24 (understatement drift))** — costs quietly bias low and nothing corrects them | Rival-sector audit (Foundations §3.3a). **Unproven.** Sim owed. Note this erodes **A4 (no externalities)** without breaking any equation, which is what makes it insidious. |
 | **🔴 The onerousness gap (OP-16 (onerousness gap))** — tedium/indignity have no material signature, and nothing allocates labour to the boring necessary jobs | Half answered by A2 (exertion/hazard/skill resolve materially). Leading candidate for the rest: hour-ceiling differentiation (pay the premium in time off, not rate). All candidates speculative; check first how much is simply unmeasured hazard. |
 | ~~**The allocation recursion does not converge**~~ | **Retired — the sim ran and passed.** Non-negative Neumann series, 100% convergent for `ρ(Ã) < 1`; Sraffa blocked by construction (`recursion_convergence.py`). |
 | ~~**OP-18 has no defensible convention**~~ | **Retired — closed by a declared convention** (labour rides the material split), axiom-scored and stress-tested. |
 | **The academic attack lands on preference revelation** (Mises/Hayek) | Largely answered: pledges + scarcity-as-debit. **Needs writing up, not inventing.** ⚠️ Guard against demand re-entering the *cost* side — the OP-17 session caught one such proposal. |
-| **Read as one more failed local currency** | Foundations §7.6 and §11: no medium of exchange, so no circulation failure; the overlay computes what money cannot. |
+| **Read as one more failed local currency** | Foundations §7.6 and §9 below: no medium of exchange, so no circulation failure; the overlay computes what money cannot. |
 | **Trust networks drift into issuer-pays capture** | Partly answered: a network concentrated in the sector it audits is captured by construction, and membership is public. **Full trust-network design deferred to C2 (verification / trust networks) by decision.** |
 | **Scope creep into philosophy** | `NEXT.md` parking lot. |
 | **🔴 Scope creep into data architecture** — the one that actually happened. An outreach channel that rewards runnable code pulled two nights into event-log integrity work while the top blocker was governance. | **Foundations §1.2 + §9.** The documents state what must be true, never how to build it. Apply the dial test before adding anything: *if a principle survives at both ends of a dial, the dial is not part of the principle.* Watch the outreach queue specifically — the venue's incentive is not the project's. |
@@ -186,23 +187,55 @@ This also answers the socialist-calculation critique pre-emptively: we don't arg
 <!-- tag: str-s8 -->
 ## 8. What "done" looks like at 3 months
 
-- [ ] `Aequitas_System_v1.0.md` — the system stated and tested, plus the conformance list (Foundations §9). *Renamed from `Aequitas_Protocol_v1.0.md` on 2026-08-23: "protocol" named the deliverable after the smaller half of it.*
+- [ ] `Aequitas_System_v1.0.md` — the system stated and tested, plus the conformance list ([`Aequitas_Conformance_v0.2.md`](Aequitas_Conformance_v0.2.md)). *Renamed from `Aequitas_Protocol_v1.0.md` on 2026-08-23: "protocol" named the deliverable after the smaller half of it.*
 - [x] ~~3+ Python simulations backing its central claims, **including allocation-recursion convergence**~~ — **done and exceeded:** recursion convergence, the disparity-ceiling sim, the five-sim scenario suite, and the median-lifestyle anchor all ship.
 - [ ] 4+ worked use cases, each encodable in the schema, **at least one with joint production**
 - [ ] Wiki covering every core concept
 - [x] ~~An allocation convention for OP-17~~ — **better: a measurement, not a convention**
 - [x] ~~A declared labour-allocation convention for OP-18~~ — **done:** labour rides the material split, defended against the cooperative-game axioms (B9).
-- [ ] Every open problem in `Aequitas_Objections_v0.21.md` either solved, dissolved, or explicitly scoped as v2 — **the remaining live blockers are governance: OP-10, OP-24, and OP-16's tedium/indignity half (its hazard half is addressed by the contingent reserve, §6.4c).**
+- [ ] Every open problem in `Aequitas_Objections_v0.22.md` either solved, dissolved, or explicitly scoped as v2 — **the remaining live blockers are governance: OP-10, OP-24, and OP-16's tedium/indignity half (its hazard half is addressed by the contingent reserve, §6.4c).**
 
 ---
+
+---
+
+<!-- tag: str-s9 -->
+## 9. First Foothold — how adoption plausibly starts
+
+> **Scope note, and it governs the whole section.** This is a reading of the historical record on how a system like this gets a foothold. **It is not a deliverable of this work.** Under Foundations §1.2, building a demonstration is praxis a project **may** choose to take on; nothing here is owed, and no result in Foundations waits on it. What follows is evidence about adoption, offered to whoever decides to try.
+
+**Full-cost accounting as a parallel overlay on existing commerce.** No adoption, no permission, no legal change — it computes and publishes truth alongside money.
+
+> **⚠️ Read that sentence cold and it describes every complementary currency that ever died.** Ithaca HOURS was *defined* as $10; Burlington Bread mirrored dollars in slices. None was an independent unit of account — they were national currency with a local-loyalty restriction, they added nothing money did not already do, and they died quietly.
+>
+> **The distinction is the whole point of the MVP: Aequitas's overlay computes a number money cannot produce.** A true debit-cost is not a price with a different label; it is information that does not exist anywhere in the current system. If the MVP ever stops being able to say that, it has become a loyalty scheme.
+
+**(a) Product & service debit-costing.** Compute and publish the true debit-cost of real products. *Materials and energy are unblocked (Foundations §3.4a); the labour layer is gated on OP-18 (labour & team credit).* **A first publishable target: re-derive a refinery's fraction slate under process-physics allocation and compare it against USEEIO's price allocation.** A materially different answer is the strongest technical result available early.
+
+**(b) Account intake with progressive resolution.** A person opens an account and answers questions; their estimated position resolves from **global average → granular cohort → individual record**.
+
+> A **"try it" account** — answer questions about yourself and watch your assigned position sharpen from the global average toward something specific to your location, age, work, and holdings. It demonstrates the estimation engine, the onboarding incentive, and the honesty of the accounting at once.
+
+**If a first *real* deployment is ever wanted rather than an overlay**, the field record is unambiguous about the shape: WIR (1934–present, ~60,000 businesses) and Sardex (4,000+ businesses) survived by starting **B2B inside dense input loops**, where no participant is a one-way sink. Both are countercyclical — adoption rises when conventional money is scarce. **A downturn is the moment.**
+
+<!-- tag: str-s9-docs -->
+### The document programme
+
+1. **Foundations** — the system itself: axioms, mechanisms, and what follows from them. **Audience: anyone.**
+2. **Conformance requirements** — [`Aequitas_Conformance_v0.2.md`](Aequitas_Conformance_v0.2.md), precise enough to check an implementation against. **Audience: implementers.** Not a schema, not a protocol, not a product.
+3. **Academic paper** — engages Marx / Hayek / Ostrom; must answer the socialist-calculation critique head-on. Lead with: theory of *cost* not value; Ellerman on attribution; Cockshott & Cottrell on tractability; pledges as a decentralized answer to preference revelation. **Add: joint production solved by process physics rather than by convention (Foundations §3.4a) — this is the reply to Sraffa/Steedman and to ISO 14044 simultaneously.**
+4. **Civic reformer brief** — municipalities, co-ops, transition communities.
+5. **Public-facing text.**
+
+> **Moved here on 2026-08-25 by author ruling.** This was Foundations §11 and the tail of `Aequitas_Conformance_v0.2.md`. **Neither states what the system is, so neither belonged in Foundations.** Nothing was cut.
 
 ---
 
 <!-- tag: str-changelog-pointer -->
 ## Change history
 
-The version-by-version change log (former §9) now lives in a separate file, read only when needed: **[`Aequitas_Strategy_CHANGELOG.md`](Aequitas_Strategy_CHANGELOG.md)**.
+The version-by-version change log now lives in a separate file, read only when needed: **[`Aequitas_Strategy_CHANGELOG.md`](Aequitas_Strategy_CHANGELOG.md)**.
 
 ---
 
-*End of v0.5.*
+*End of v0.6.*

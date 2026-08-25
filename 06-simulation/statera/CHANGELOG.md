@@ -107,8 +107,8 @@ The five-model outside critique (`07-outreach/critique/REPORT_v0.1.md`) found th
 
 #### 6. New capabilities worth naming
 
-- **`run_scenario.py` + TOML scenarios.** A settings file a human edits, with comments explaining each dial. **Unknown keys are an error, never ignored.** Every report ends with a **COVERAGE line calling its own figures a floor** — §9 requirement 13, built in rather than bolted on.
-- **12 of the 17 §9 conformance requirements are now expressible, up from 10.** Requirement 2 (causer attribution) arrived with the chains; requirement 13 (publish a floor) with the runner. **Still out of reach: 6, 12, 14, 15, 16.**
+- **`run_scenario.py` + TOML scenarios.** A settings file a human edits, with comments explaining each dial. **Unknown keys are an error, never ignored.** Every report ends with a **COVERAGE line calling its own figures a floor** — conformance requirement 13, built in rather than bolted on.
+- **12 of the 16 conformance requirements are now expressible, up from 10.** Requirement 2 (causer attribution) arrived with the chains; requirement 13 (publish a floor) with the runner. **Still out of reach: 6, 12, 14, 15, 16.**
 
 ---
 
@@ -141,7 +141,7 @@ The five-model outside critique (`07-outreach/critique/REPORT_v0.1.md`) found th
 - **Toy economy.** One product. No industries, no supply chains.
 - **No agent behaviour.** People ask and get gated. Nobody joins, leaves, or cheats.
 - **No money side.** No second economy to trade with, so Foundations §5.5 (parallel implementation — trading across the money boundary) cannot be tested.
-- **7 of the 17 rules** in Foundations §9 (the conformance list — the things that must be true for an implementation to be Aequitas) cannot be tested yet. Missing: numbers 2, 6, 12, 13, 14, 15 and 16 — causer attribution, annotate-never-delete, basis and extent, the floor rule, residual estimation, and published methods.
+- **7 of the 17 rules** in `Aequitas_Conformance_v0.2.md` (the conformance list — the things that must be true for an implementation to be Aequitas) cannot be tested yet. Missing: numbers 2, 6, 12, 13, 14, 15 and 16 — causer attribution, annotate-never-delete, basis and extent, the floor rule, residual estimation, and published methods.
 
 ---
 

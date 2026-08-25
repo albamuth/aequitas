@@ -153,7 +153,7 @@ a year of breathing records 365 kg in the log and costs 0 h
 ## Honest limits
 
 - **The economy is still a toy.** One aggregate consumption good with a debit intensity. **The five exemplar chains are built but their numbers are labelled placeholders** — calibration against real physical data is step 5 and is blocked on a download.
-- **Every published figure is a labour-hours-only gate.** The default weighting puts mass and energy at 0.0, so all of it is a **floor, never a value** (§5.1a, §9 requirement 13). Every scenario run prints this on its own face.
+- **Every published figure is a labour-hours-only gate.** The default weighting puts mass and energy at 0.0, so all of it is a **floor, never a value** (§5.1a, conformance requirement 13). Every scenario run prints this on its own face.
 - **No behaviour layer.** Agents request and are gated. Nobody joins, leaves, pledges strategically, or cheats.
 - **No money side**, so §5.5 parallel implementation cannot be tested.
 - **12 of the 17 conformance requirements in §9 are expressible.** Up from 10 — requirement 2 (causer attribution) arrived with the chains, and requirement 13 (publish a floor) with the scenario runner. **Still out of reach: 6** (annotate, never delete — needs a contest event), **12** (basis, method, vintage, extent), **14, 15** (residual estimation and the unallocated leftover — both need dark producers), and **16** (published methods, which is a documentation duty rather than a runtime one).

@@ -41,7 +41,7 @@
 
 ### Decision 3 — The conformance panel is permanent and always visible
 
-The Foundations §9 requirements run as live checks, on screen, every period. **Green while they hold. Red the instant one fails, with the requirement named and the run stopped at the offending event.**
+The conformance requirements run as live checks, on screen, every period. **Green while they hold. Red the instant one fails, with the requirement named and the run stopped at the offending event.**
 
 **This is the part no other economy toy has**, and it is the part that makes this Aequitas rather than a generic model. **A simulator that cannot fail cannot teach**, and one that fails silently is worse than one that cannot fail at all.
 
@@ -212,7 +212,7 @@ The author has ADHD and a long day is the normal case. **These are constraints, 
 
 **§4 stands as written.** v1 is the time axis, four charts, the conformance rail, the agent inspector, the dials, one shock shape, share-by-link, and a toy economy. **Adoption — a locality competing with money — is v2**, because it needs the behaviour layer and the outside-world plug, and waiting for it means shipping nothing for about two months.
 
-**What v1 can still show, so this is not a thin thing:** the ceiling holding while ρ moves, a disaster landing at period 120 and the floor absorbing it, a population shift, and every §9 requirement checking itself in public.
+**What v1 can still show, so this is not a thin thing:** the ceiling holding while ρ moves, a disaster landing at period 120 and the floor absorbing it, a population shift, and every conformance requirement checking itself in public.
 
 ### Proceeding on these two unless the author says otherwise
 

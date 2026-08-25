@@ -2,7 +2,7 @@
 # Aequitas — Objections Register
 
 > **Version:** 0.21 · **Date:** 2026-08-24
-> **Tracks:** `Aequitas_Foundations_v0.22.md` · `Aequitas_EventLog_v0.9.md` · `OP-27_parallel_implementation.md` · `OP-26_coverage_and_closure.md` · `OP-18_labour_and_team_credit.md` · `OP-23_capital_and_pollution.md` · `OP-17_coproduct_allocation.md` · `06-simulation/allocation-engine/RECURSION_RESULTS.md` · `06-simulation/disparity-ceiling/DISPARITY_CEILING.md` · `06-simulation/pledge-reserve/pledge_reserve.py` · `06-simulation/scenario-suite/scenario_suite_METHOD.md`
+> **Tracks:** `Aequitas_Foundations_v0.23.md` · `Aequitas_EventLog_v0.9.md` · `OP-27_parallel_implementation.md` · `OP-26_coverage_and_closure.md` · `OP-18_labour_and_team_credit.md` · `OP-23_capital_and_pollution.md` · `OP-17_coproduct_allocation.md` · `06-simulation/allocation-engine/RECURSION_RESULTS.md` · `06-simulation/disparity-ceiling/DISPARITY_CEILING.md` · `06-simulation/pledge-reserve/pledge_reserve.py` · `06-simulation/scenario-suite/scenario_suite_METHOD.md`
 > **Version history & what each version superseded:** `00-strategy/Aequitas_Objections_CHANGELOG.md`.
 > **Purpose:** one place holding every serious objection to the theory, its source, the axiom it attacks, and its status.
 

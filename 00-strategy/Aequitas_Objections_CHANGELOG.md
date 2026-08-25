@@ -3,6 +3,24 @@
 > Version-by-version change log for `Aequitas_Objections_vX.Y.md` (the highest-versioned file in `00-strategy/`). Split out of the register so it is read only when tracing **when and why** an objection's status changed. The register's header carries a one-line summary of the current version; Part B holds the answered objections themselves (which are *not* history — see the note there). Superseded full versions live in `99-archive/`.
 
 ---
+<!-- tag: obj-v0-22-2026-08-25 -->
+### v0.22 (2026-08-25) - the register becomes the only ranked list of open problems
+
+**Foundations was truncated at section 8 on the same day, which deleted its section 10.** That section had carried a ranked summary of this register since v0.1. **Author ruling: a summary of the objections belongs here, not in the document that states the system.**
+
+**Seven entries existed only in Foundations 10 and are folded into the status board, so nothing was lost:**
+
+- **OP-4 (debit tolerance)** - the denominator of the disparity ceiling and the setter of the floor magnitude. **Carries the two additions made in Foundations v0.23**: the floor's **lower bound** (essentials must stay affordable - at rho = 1.2 and 700 h/yr of essentials the minimum is 1.6 h/day) and its **upper bound** (at F = 10 the floor alone entitles 3.17x a median lifestyle, so the gate stops binding); and **whether a network credits a child's learning time is a second dial on the same ceiling**, 2.400x if credited and 2.085x if not.
+- **OP-8 (feedback firewall), reframed** - can feedback be bought? Guarded by 6.4b, which forbids *credit* realising on feedback.
+- **OP-3 (estimation convergence)** - needs a cohort production model as well as a consumption model.
+- **OP-14 (cohort shopping)** - now also floor and routing shopping, **narrowed by the OP-22 ruling** because a seller chooses which network a transaction lands on.
+- **OP-15 (ghost harvesting)**, **OP-7 (cross-level trade)**, and **OP-2 (anti-collusion at Level 2, deprioritized)** - stated, not worked.
+
+**New owed test, C item 9 - the stable band of F and rho.** Find the values inside which essentials stay affordable and the ledger still rations what is genuinely short. **Existing runs take F as given.** The 700 h/yr essentials figure in Foundations 7.5.3 is illustrative and must be measured from the median-lifestyle data before the test is meaningful.
+
+**No objection changed status and no ruling moved in this version.**
+
+---
 ### v0.21 (2026-08-24) - the critique batch closes: B7 narrowed, B12 reversed, B13's shell residual closed, OA8 gains move (e)
 
 Tracks Foundations v0.22 / Overview v0.17. Source throughout: `07-outreach/critique/REPORT_v0.1.md`.

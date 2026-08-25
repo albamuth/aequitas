@@ -133,7 +133,7 @@ Foundations §7.5 says **age is the only spread beyond `24/F`**. v0.1 could not 
 
 > **🔒 An invented mix is reported as invented, every time it appears.** §5.1a monotonicity: **an observation may never be superseded by an estimate**, and a made-up population may never be quietly presented as a real one. **The screen carries the `basis` beside the result, not in a footnote.**
 
-**Ship three presets:** United States, Europe, South America. **Each records which survey each field came from**, because §5.3b and §9 requirement 16 require the estimating numbers and methods to be published so anyone can re-run them.
+**Ship three presets:** United States, Europe, South America. **Each records which survey each field came from**, because §5.3b and conformance requirement 16 require the estimating numbers and methods to be published so anyone can re-run them.
 
 ### 4b. The mix sweep — the capability the author actually asked for
 
@@ -310,7 +310,7 @@ The proposed units are **labour per square foot to build** and **labour per squa
 
 > **Drop a category only if it is under 1% of the population AND under 1% of every physical dimension** — hours, kilograms, and megajoules, each checked on its own. If it is 0.1% of people but 4% of energy, **keep it.**
 
-**2. Publish the gap and report a floor.** Foundations **§5.1a** and **§9 requirement 13**: *a quantity computed over incomplete coverage is published as a floor, with the gap named.*
+**2. Publish the gap and report a floor.** Foundations **§5.1a** and **conformance requirement 13**: *a quantity computed over incomplete coverage is published as a floor, with the gap named.*
 
 > **So every cost figure this simulator produces is a lower bound, not a value**, and the screen must say so. This is not a caveat we are adding out of modesty. **It is a conformance requirement, and a simulator that breaks it is not simulating Aequitas.**
 
@@ -348,7 +348,7 @@ The proposed units are **labour per square foot to build** and **labour per squa
 
 ## 7. What becomes checkable that was not
 
-Foundations §9 lists **17 conformance requirements**. v0.1 could express 10 of them. v0.2 adds three.
+`Aequitas_Conformance_v0.2.md` lists **17 conformance requirements**. v0.1 could express 10 of them. v0.2 adds three.
 
 | # | Requirement | v0.1 | v0.2 |
 |---|---|---|---|
@@ -381,7 +381,7 @@ Weights are applied only inside `collapse()`. So a shock of the form
 3. **Headcounts become fractional** as mortality decays a cohort. Acceptable in a model. Stated, not hidden.
 4. **A cohort exemplar cannot cheat on its own.** Fraud and collusion scenarios need `weight = 1.0` individual agents. The code supports it; the long runs will not use it.
 5. **Each exemplar chain's cost per unit is one chain's answer.** It is a measurement of a modelled process, not of the world.
-6. **Every cost figure is a floor, never a value.** The five chains cover ~89% of material consumption. The missing ~11%, plus everything dropped by the 1% cut, means the true cost is **at least** what the simulator says and never less. **This must appear on screen, not only in a footnote** — §9 requirement 13.
+6. **Every cost figure is a floor, never a value.** The five chains cover ~89% of material consumption. The missing ~11%, plus everything dropped by the 1% cut, means the true cost is **at least** what the simulator says and never less. **This must appear on screen, not only in a footnote** — conformance requirement 13.
 7. **The 1% cut lies about the top tail.** Switch it off for any tail result. See §5.
 
 ---
@@ -396,7 +396,7 @@ Weights are applied only inside `collapse()`. So a shock of the form
 | **2** | The period loop. | **A ten-period run holds every §9 check, and the bound stays at `24/F` for whatever floor the scenario set.** |
 | **3** | Ages, births, deaths. | Credit accruing from birth reproduces the age term: a 60-year worker against a 20-year floor person is **7.2×** at `F` = 10 h. |
 | **4** | **The five exemplar chains** — housing, transport, food, healthcare, entertainment. Build them in that order, largest share first. | IC-1 to IC-4 close on every chain; **the doctor's education is provably absent from the medical bill** and **the film's production is provably absent from the ticket**; and the five together price a basket within range of the [measured 1,380 h/yr median](../median-lifestyle/MEDIAN_LIFESTYLE_RESULT.md). |
-| **4b** | The coverage declaration. | The simulator states, on screen, what share of the basket it covers and what it dropped — and **labels every cost figure a floor.** A run that cannot state its own coverage fails §9 requirement 13 and must refuse to report. |
+| **4b** | The coverage declaration. | The simulator states, on screen, what share of the basket it covers and what it dropped — and **labels every cost figure a floor.** A run that cannot state its own coverage fails conformance requirement 13 and must refuse to report. |
 | **5** | Consumer types from the BLS tables. | The population's mean want reproduces **1,380 h/yr**. Moving the locale dial reproduces the Q6 spread — Germany and Japan at roughly two-thirds the US labour. |
 | **6** | The `rho` policy plug, all three modes. | `fixed` reproduces `rho*` = 1.20. `rule` and `solve` both settle on it from either side. |
 | **7** | Mid-run re-weight shock. | A +25% pollution re-weight at period 60 tightens future room and **invalidates no past event.** |
