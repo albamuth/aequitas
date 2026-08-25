@@ -34,7 +34,7 @@
   - [3.2b Only property transfers — pollution and transport never do](#32b-only-property-transfers--pollution-and-transport-never-do)
   - [3.2c An organisation's debit is its members' debit](#32c-an-organisations-debit-is-its-members-debit)
   - [3.3 Retroactive re-weighting](#33-retroactive-re-weighting)
-  - [3.3a Who checks the science — rival-sector audit](#33a-who-checks-the-science--rival-sector-audit)
+  - [3.3a Who checks the science — the problem, and whose problem it is](#33a-who-checks-the-science--the-problem-and-whose-problem-it-is)
   - [3.4 Resolution is opportunistic](#34-resolution-is-opportunistic)
   - [3.4a Joint production — dividing one process's debit among several outputs](#34a-joint-production--dividing-one-processs-debit-among-several-outputs)
   - [3.5 The books never balance — and must not](#35-the-books-never-balance--and-must-not)
@@ -275,6 +275,8 @@ Two thought experiments, both fully compatible with everything in this document:
 | Corporate or legal form of a trust network | The implementer |
 | Which cryptography, which database, which protocol | The implementer |
 | Whether the ecosystem converges to one network | A prediction, not a design input (§5.3c) |
+| **How a cost constant gets audited** — who replicates, what triggers a review, how a contested constant is handled while contested | The implementer (§3.3a). **The requirement that it be answered is not out of scope**; the five properties in §3.3a are conformance items 16a–16c. |
+| **Which instrument reads a joint process's split**, and over what period | The industry (§3.4a). Same shape: the obligations are fixed here, the method is not. |
 
 **This is not a way of avoiding hard questions.** Every item above is real and someone must answer it. **It is a statement about which document answers it** — and about the failure mode of writing a theory of cost that quietly becomes a theory of software, governance, and compliance because those questions arrived while nobody was drawing the line.
 
@@ -288,11 +290,11 @@ Two thought experiments, both fully compatible with everything in this document:
 | Criterion | How Aequitas satisfies it |
 |---|---|
 | **Universality** | One mechanism only — material flow accounting. No exceptions for professions, nations, or classes. Units (mass, energy, seconds) are measurable identically anywhere in the universe. Coverage extends to non-participants by statistical estimation **on both sides of the ledger** (A7 (universal accounting)). Where a genuine convention is required, §1.1 names it rather than concealing it. |
-| **Decentralization** | No issuer, no central bank, no authoritative institution. Anyone may verify any claim from the event log. The verification ladder (§4) begins with peer attestation, which requires no infrastructure and therefore no permission. Governance is core-immutable with competing open variance. **Cost constants are disciplined by rival-sector audit (§3.3a), which needs no reviewing body.** |
+| **Decentralization** | No issuer, no central bank, no authoritative institution. Anyone may verify any claim from the event log. The verification ladder (§4) begins with peer attestation, which requires no infrastructure and therefore no permission. Governance is core-immutable with competing open variance. **Cost constants are the weakest point of this criterion, and §3.3a says so rather than claiming otherwise** — the auditing practice is a network's own design, held to five published properties (conformance 16a–16c), and no network has yet demonstrated a working one. |
 | **Fecundity** | The verification ladder *pulls* technological development (§4). Retroactive re-weighting (§3.3) creates permanent demand for better science. Regulators invert into services businesses want (§7.3). Onboarding is individually rational (§5.2). Pledges give surplus a purpose (§6.4). **Every co-product allocation is an open scientific question that better instruments improve (§3.4a).** |
 
 **Fourth screening question — "does this need a Paul Glover?"**
-Ithaca HOURS died when its founder relocated; he himself said every local currency needs a full-time networker to promote, facilitate, and troubleshoot. A mechanism that depends on an enthusiast is a mechanism with an expiry date. **Every proposed mechanism must pay its own maintainer from inside the system** — as auditing-as-credited-work does, and as rival-sector audit does (§3.3a). Apply alongside universality, decentralization, and *who games this?*
+Ithaca HOURS died when its founder relocated; he himself said every local currency needs a full-time networker to promote, facilitate, and troubleshoot. A mechanism that depends on an enthusiast is a mechanism with an expiry date. **Every proposed mechanism must pay its own maintainer from inside the system** — as auditing-as-credited-work does. **Cost-constant auditing is the case that does *not* clearly pass this test**, which is why §3.3a states it as an unsolved network-design problem rather than a mechanism. Apply alongside universality, decentralization, and *who games this?*
 
 ---
 
@@ -476,43 +478,73 @@ So a coverage figure is a dated reading with a stated basis, exactly like every 
 > Without this, a dynamic ledger implies retroactive liability — a revision could make a past purchase an offence — and no one should adopt a system that does that. Re-weighting corrects *the record of what things cost*; it does not reopen *what people were permitted to do* under the record as it then stood.
 
 <!-- tag: fnd-s3-3a -->
-### 3.3a Who checks the science — rival-sector audit
+### 3.3a Who checks the science — the problem, and whose problem it is
 
-Retroactive re-weighting makes cost constants enormously powerful: whoever publishes the energetics of a process sets every split in that sector, backwards through all of history. That is a capture surface, and it needs an answer that is not a standards body.
+> **Ruling, v0.22: how a cost constant gets audited is a trust-network design problem, not a foundational one.** This section states the problem and the properties any answer must have. **It does not supply the answer, and earlier versions overstated the one they offered.** See "What this section used to claim" below.
 
-**What Aequitas removes for free.** There is no market-dominating corporation to fund a favourable result, because A5 (cost, not price) removes the profit that pays for captured science today. Labs are credited by trust networks for doing the work. **The classic funding-bias channel is structurally closed, and that should be claimed.**
+#### The problem
 
-**What it does not remove.** Trust networks are dominated by the *consuming* side of any given good — everyone eats beef, few raise cattle — so their members collectively benefit from that good's debit being **understated**. And the incentive to correct is one-sided:
+**Terms.** A **cost constant** is a published number saying what a process takes — the energy to smelt a tonne of aluminium, the hours to remediate a tonne of CO₂. **Re-weighting** is §3.3: when a constant improves, every record computed from it recalculates, backwards through history.
 
-| Error direction | Who wants it fixed | Result |
+**So whoever publishes a constant sets every figure in that sector, for all time.** That is the largest capture surface in the system.
+
+**And the pressure on it runs one way.**
+
+| Error direction | Who wants it fixed | What happens |
 |---|---|---|
-| Constant **overstates** debit | Every subscriber | Corrected |
-| Constant **understates** debit | Nobody; correcting it worsens every subscriber's ledger | **Nobody funds the replication** |
+| The constant **overstates** a debit | Everyone paying it | Corrected quickly |
+| The constant **understates** a debit | Nobody — correcting it worsens every subscriber's ledger | **Nothing happens** |
 
-Left alone this produces **systemic drift toward under-costing** — the failure mode of every carbon-accounting regime attempted so far. §3.5 tolerates it arithmetically, but it erodes **A4 (no externalities)**, and A4 is not optional. Registered as **OP-24 (understatement drift)**.
+**The result is systematic drift toward under-costing.** This is not a prediction. **It is the observed failure mode of every carbon-accounting regime attempted so far**, and §3.5 tolerates it arithmetically, which is what makes it insidious: **no equation breaks.** Registered as **OP-24 (understatement drift)**.
 
-> **The rule: the natural auditor of a cost constant is the rival sector, not the consumer.**
+**One channel is closed for free, and should be claimed.** There is no market-dominating firm to fund a favourable result, because **A5 (cost, not price) removes the profit that pays for captured science today.** The Enron-shaped failure cannot operate the same way here. **That is real and it is not sufficient.**
+
+#### What this section used to claim, and why it was withdrawn
+
+From v0.4 to v0.21 this section offered a fix:
+
+> *"The natural auditor of a cost constant is the rival sector, not the consumer. If beef's energetics are understated, plant-protein producers are materially harmed and will fund the replication."*
+
+**Two objections, and the second is the one that sinks it.**
+
+1. **Rivals are often absent.** The register already said this. A good with no substitute has no rival, and **a constant that cuts across every sector equally has no rival by construction.**
+2. **A rival's best move is not to fund your correction.** Funding a replication costs real hours and the benefit is **shared with every other producer in the rival sector** — a public good among rivals. **Getting their own constant set generously is cheaper and the benefit is private.** So the equilibrium is **mutual understatement, not mutual policing.** The mechanism assumed rivals are adversaries; on this axis their interests are aligned.
+
+> **And it failed hardest where the stakes are highest.** This section itself called the **ambient-stock and baseline constants** the largest levers in the weighting model. **Those have no rival at all** — everyone benefits from a high pollution baseline and a low stock reading. **A mechanism that works for beef versus plant protein and fails for CO₂ is pointed the wrong way round.**
+
+**Rival-sector audit survives as one pressure among several. It is not the answer and this document no longer presents it as one.**
+
+#### Whose problem it is
+
+**A network cannot operate without answering this**, and no two networks will answer it the same way. That is the §1.2 test: **state what must be true, never how to build it.** The same ruling was made for split methods (§3.4a) and for privacy practice (§5.3a).
+
+> **Auditing cost constants is one of the problems a trust network exists to solve.** How it does so — who replicates, how replication is commissioned, what triggers a review, how a contested constant is handled while it is contested — is the network's design, published and checkable like everything else it does.
+
+**Design requirements. An implementation must be able to show how it meets each of these.**
+
+| # | What must hold | Why |
+|---|---|---|
+| **1** | **Two unaffiliated replications before a constant may re-weight history.** | Retroactivity is too powerful to trigger from a single source. |
+| **2** | **Every constant is published with its method, its version, and its uncertainty interval.** | A constant nobody can re-derive is an authority assertion. Without an interval, "how well is this known" has no answer. |
+| **3** | **Review is triaged by magnitude × concentration of beneficiary**, never by magnitude alone. | A materiality threshold alone helps an attacker, whose job then becomes making a falsification look immaterial. |
+| **4** | **A network's membership composition is public.** | **A network concentrated in the sector it audits is captured by construction.** This makes capture a *detectable screening property* rather than a rule anyone enforces. General-membership networks are structurally sounder than sector-specific ones. *(The co-op form does not fix this: the conflict is directional, not monetary — Arthur Andersen was paid by Enron, and a client-owned Andersen would have been worse.)* |
+| **5** | **The network states which constants it has not reviewed, and how old each reading is.** | The floor rule (§5.1a) applied to weights: an unreviewed constant is a floor on confidence, never a value. |
+
+**Everything in §3.3's stock rules is governed by these too** — the natural-remediation baseline and the ambient-stock measurement are the largest levers in the model, and they are constants like any other.
+
+**And coverage figures are governed by these with full force.** A mis-set energetics coefficient changes what a recorded flow *weighs*. A mis-set coverage figure — the *N*, *Y* or *Z* of §5.1b — changes **which flows are deemed to exist at all.**
+
+> **Coverage has something weights do not: two parties with a private interest in getting it right.** The **instrumented producer**, materially harmed when undocumented produce prices too cheaply, and **the dark producer**, who cannot transact inside the system until they onboard (§5.1c). **Neither requires the residual to be allocated to anybody**, which matters, because it is not.
 >
-> If beef's energetics are understated, plant-protein producers are materially harmed and will fund the replication. Consumers police neither direction; rivals police both. This is an incentive, not an enforcement mechanism, and it is already implied by A5 — which removes profit *in exchange* while explicitly preserving **competition on efficiency** (§7.1). Rival-sector audit is that competition applied to the cost model itself.
+> **This is why OP-24 is narrower than it looks: the audit of *extent* has interested parties; the audit of *weight* does not.** That asymmetry is the useful thing this section knows.
 
-Three supporting rules:
+#### What is not scoped out
 
-1. **Two unaffiliated replications before a constant may re-weight history.** Retroactivity is too powerful to trigger from a single source.
-2. **Audit triage weights magnitude × concentration of beneficiary.** Materiality thresholds alone help an attacker, whose job then becomes making the falsification look immaterial.
-3. **A trust network concentrated in the sector it audits is captured by construction.** Membership composition is public, so this is a **detectable screening property** rather than a rule anyone enforces. General-membership networks are structurally sounder than sector-specific ones. *(The co-op form does not fix this on its own: the conflict is directional, not monetary — Arthur Andersen was paid by Enron, and a client-owned Andersen would have been worse.)*
+**The requirement stays here even though the mechanism does not.** A4 (no externalities) requires every cost to be accounted to whoever caused it. **It does not require the first estimate to be right** — §3.3 already makes every figure a dated reading that improves. **But systematic, uncorrected drift is costs escaping, and that is an A4 failure.**
 
-**The v0.5 stock constants are governed here too**. The **natural-remediation equilibrium baseline** and the **ambient-stock measurement** of §3.3 are powerful new constants — whoever sets them moves every pollution record in history — so they fall under exactly this regime: two unaffiliated replications before a re-weight, triage by magnitude × beneficiary concentration, and public membership as a capture screen. This is **OP-24** (understatement drift) acquiring a larger lever, not a new mechanism.
+> **So a network that cannot show how it audits its constants is not conforming. It is not free to have no answer.**
 
-**Coverage estimates are governed here too, and they are the largest lever of all.** A mis-set energetics coefficient changes what a recorded flow *weighs*. A mis-set coverage figure — the *N*, *Y*, or *Z* of §5.1b — changes **which flows are deemed to exist at all**. The three supporting rules above therefore apply to it with full force.
-
-> **And the rival-sector argument extends to coverage with no new mechanism.** Ask who is materially harmed when a dark residual is *understated*, and the answer is immediate: **the instrumented producer competing in the same market.** A grower who paid to measure their own supply chain is directly damaged when undocumented produce prices too cheaply. They will fund the replication. Consumers police neither direction here either; rivals police both.
-
-**This gives OP-24 partial relief it did not have.** OP-24's core complaint is that a constant which *understates* has no natural corrector, because correcting it worsens every subscriber's ledger. That still holds for weighting constants. It does **not** hold for coverage, which has **two** funders that a weighting constant lacks:
-
-1. **The rival producer.** An instrumented grower is materially harmed when undocumented produce prices too cheaply, and will fund the work of exposing it — the same argument as the rival-sector rule above, needing nothing new.
-2. **The dark producer themselves.** They cannot transact inside the system at all until they onboard (§5.1c), so the pull toward the records is theirs, not something anyone has to impose.
-
-**Neither funder requires the residual to be allocated to anybody**, which matters, because it is not — see §5.1c. The audit of *extent* therefore has a funder even where the audit of *weight* does not.
+**⚠️ And say the honest part plainly: no network has yet demonstrated a working answer, because no network yet exists.** The five requirements above are what a design will be judged against. **They are not evidence that the problem is solved.** Test still owed: simulate a population of networks under these incentives and find the conditions under which drift stops being arrested (Objections §C, item 2).
 
 <!-- tag: fnd-s3-4 -->
 ### 3.4 Resolution is opportunistic
@@ -572,7 +604,7 @@ This is the part earlier versions stated too strongly, and an outside review was
 
 **There is no profit motive, because there is no margin to protect (A5).** There *is* a weaker motive, and it must be named: **understating your own debit improves your debit-to-credit ratio and makes your goods lighter for whoever takes them.** That is the standing open problem **OP-24 (understatement drift)**.
 
-**The check is the rival producer, not the consumer** (§3.3a). Consumers of a good benefit from that good being under-costed, so they will not fund a correction. A competing producer is directly harmed by it and will. **This is why the method must be published: a rival cannot challenge arithmetic they cannot see.**
+**Consumers of a good benefit from that good being under-costed, so they will not fund a correction.** A competing producer is at least *harmed* by it, which is better than nobody — but **§3.3a explains why that is a weak pressure rather than a mechanism**, and treats constant-auditing as an open network-design problem. **What this section fixes is the precondition: the method must be published, because nobody can challenge arithmetic they cannot see.**
 
 **And the claim is auditable against records that already exist.** A mill claiming a figure for its flour can be asked for its power bills, its intake weights, its output weights, and its account of which power went to milling rather than to lighting and offices. The claim must reconcile with those records, within a stated margin of error.
 
@@ -655,7 +687,7 @@ Land cannot be *owned*. A building does not sit on property it holds title to �
 
 Two things persist regardless of remediation: the structure's **construction and maintenance** debts (§3.2, §6.2b) stay in the entity record forever — remediating the land clears the *occupation* debt, not the record of what was built. And the holder bears only what *they* effected: original-construction pollution and human harm stay on the original causer (§3.2b), never transferring to a later occupant.
 
-**Governance rides existing machinery.** The remediation cost is a mitigation-cost estimate under the §3.3 stock-dependence rule and is disciplined by §3.3a rival-sector audit / OP-24 — no new capture surface.
+**Governance rides existing machinery.** The remediation cost is a mitigation-cost estimate under the §3.3 stock-dependence rule and is governed by §3.3a — no new capture surface, and no new answer either: it inherits OP-24 unsolved.
 
 > **⚠️ Hard edge — the "natural state" baseline.** What is the natural state of an already-urban bounded space (a plot in Manhattan)? This is the same shape as the §3.3 pollution baseline (a convention with a measurable basis, contested at the margin) and inherits its governance. **Registered as the open sub-question of this section**; the mechanism is sound, the baseline convention needs specifying.
 
@@ -1032,7 +1064,7 @@ Audit work is work. It is recorded when it happens, and recording is never gated
 
 **What *is* scarce is demand and verification.** A **pledge** says someone wants the work done (§6.4); **verification** decides when the credit realizes (§6.4a). Those are the real levers, and they are the ones §3.3a's rival-sector argument already pulls: the instrumented producer harmed by a cheap dark competitor is the party who *pledges* for the audit.
 
-**This narrows OP-24 rather than answering it.** OP-24's complaint was that a correction which worsens every subscriber's ledger has "no funder." The **funding** half dissolves — there was never a budget to find. The **incentive** half stands untouched: someone must still *want* the correction, and for an understating weight constant, the rival sector is still the only party who does.
+**This narrows OP-24 rather than answering it.** OP-24's complaint was that a correction which worsens every subscriber's ledger has "no funder." The **funding** half dissolves — there was never a budget to find. The **incentive** half stands untouched, and v0.22 sharpened it: someone must still *want* the correction, and **§3.3a now shows the rival sector does not reliably want it either** — funding a correction is a public good among rivals, while getting one's own constant set generously is cheaper and private.
 
 **Participants may pledge toward the network's own infrastructure** like any other work. Nothing special is needed for it.
 
@@ -1826,6 +1858,9 @@ An implementation is Aequitas if, and only if, all of the following hold. Each i
 | 14c | Every verification rung is **published with its running cost**, so a counterparty can see what a claim's assurance cost to produce. | §4, §5.3b |
 | 15 | The coverage leftover is **computed, published, and charged to no account** until its causer onboards. | §5.1c |
 | 16 | **Every estimating number and every method the implementer uses is published**, so anyone can re-run it. | §5.3b |
+| 16a | **Every cost constant carries its method, its version, and its uncertainty interval**, and the implementer **states which constants it has not reviewed and how old each reading is.** | §3.3a, §5.1a |
+| 16b | **A constant may re-weight history only after two unaffiliated replications.** Review is triaged by **magnitude × concentration of beneficiary**, never magnitude alone. **Membership composition is public**, so a network concentrated in the sector it audits is detectable. | §3.3a |
+| 16c | **The implementer can show how it audits its cost constants.** *How* is its own design (§1.2); **having no answer is not conforming.** | §3.3a, §1.2 |
 | 17 | **Essential provision is never gated** on a person's standing. Any restriction reaches non-essentials only. | §7.5 |
 
 ### What a conformance statement does not carry
@@ -1859,7 +1894,7 @@ Ranked by how load-bearing they are. Full detail in `00-strategy/Aequitas_Object
 - **OP-10 (weighting governance) — Weighting-model governance.** Whoever sets the cost model controls every balance in history without touching a core rule. Largest hole in A8 (no governing body). §3.2a closes one side entrance (split before collapse) and §3.3a supplies a mechanism for cost constants; the general problem stands. **Now the top blocking problem.** *v0.8 identifies its highest-leverage single instance:* the **self-care floor** (§6.1b) is a weighting constant that is both **universal** (every human) and **influence-bearing** (§6.4), so it moves every account's consumption *and* voice at once — the fattest OP-10 target in the system. The v0.8 anti-arbitrage guard (counterparty re-computation, §6.4b) is the general shape of the answer, and it depends on OP-22 (audit disclosure).
 
 **High**
-- **OP-24 (understatement drift) — Understatement drift.** Errors that overstate debit get corrected; errors that understate it have no funder. Proposed fix — rival-sector audit (§3.3a) — is unproven and wants a simulation. **Attacks A4 (no externalities).**
+- **OP-24 (understatement drift) — Understatement drift.** Errors that overstate debit get corrected; errors that understate it have no funder. **Attacks A4 (no externalities).** *v0.22 withdrew the proposed fix:* **rival-sector audit is a weak mechanism** — a rival's best move is to get their own constant set generously rather than to fund your correction, so the equilibrium is mutual understatement; and it fails hardest on the stock and baseline constants, which have no rival at all. **The mechanism is now out of scope and the requirement is not** (§3.3a): auditing cost constants is a trust-network design problem, held to five published properties, conformance **16a–16c**. **A network with no answer is not conforming.** Simulation still owed.
 - **OP-16 (onerousness gap) — The onerousness gap.** A2 resolves exertion, hazard, and skill. **Tedium and indignity have no material signature and nothing allocates labour to them.** Leading candidate: *hour-ceiling differentiation* — pay the premium in hours, not rate, justified by measured physiological sustainability limits. First check how much of OP-16 is simply unmeasured hazard.
 - **OP-1 (service → influence) — Service → influence.** Strongest candidate: **pledging power accrues per hour worked, equally for all.** Not a voting scheme. *v0.7 adds a sub-question:* since realized credit → pledging-power is measured in *gross hours*, collusive hand-offs (§6.4a) could in principle fake gross hours to pump influence — bounded by IC-7 (24-hour cap) and paid in ratio, possibly self-starving via the debit-room cost of pledging. **The influence residual of the credit-realization model lands here.** *v0.8 adds the other half:* self-care credit generates a **universal basic voice** (§6.4), which bounds the *influence* disparity to the same **`24 h ÷ floor`** ceiling as consumption — a strong result, and it holds **across any compatible set of networks** for the reason §7.5 condition 5 gives — networks counting the same person must arrive at the same ledger to be compatible at all, so one life is counted once — but its routing is a network lever (§6.4) and its backing is only checkable via OP-22. Universal basic influence is largely a *feature* (equal baseline voice, anti-oligarchy); the open part is the collusion residual above.
 - **OP-6 (feedback mechanics) — Feedback mechanics.** How signals aggregate without becoming a popularity plutocracy. With accumulation forbidden, feedback and pledging are the entire motivation system for anyone past their own consumption ceiling.

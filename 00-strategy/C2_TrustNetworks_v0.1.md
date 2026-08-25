@@ -192,7 +192,27 @@ A trust network is the basis on which all accounting rests, so it cannot be paid
 
 **OP-10 — weighting-model governance. Who controls the cost model.**
 
-Everything above supplies a **mechanism**: methods are published (§5), replication is the discipline (§2), rival-sector audit gives the correction an interested funder, and no adjudicator exists to capture (§8). **Whether that is sufficient is unproven, and OP-10 remains the top blocking problem in the project.**
+Everything above supplies part of a **mechanism**: methods are published (§5), replication is the discipline (§2), and no adjudicator exists to capture (§8). **Whether that is sufficient is unproven, and OP-10 remains the top blocking problem in the project.**
+
+> **⚠️ One prop was removed on 2026-08-24 and this section no longer leans on it.** It previously said *"rival-sector audit gives the correction an interested funder."* **Author ruling: that is a weak mechanism and it is withdrawn.** A rival's best move is not to fund your correction — it is to get **their own** constant set generously, which is cheaper and privately beneficial. **The equilibrium is mutual understatement, not mutual policing.** And it fails hardest on the ambient-stock and baseline constants, which have no rival at all. See Foundations §3.3a and Objections **OA3**.
+
+### 🔴 Auditing cost constants — now explicitly a trust-network design problem
+
+**Foundations §3.3a ruled on 2026-08-24 that *how* a cost constant gets audited is out of scope for Foundations and in scope for a network.** Whoever publishes a constant sets every figure in that sector, backwards through history (§3.3), and the pressure on it runs one way: **overstatements get corrected because everyone paying them wants that; understatements have nobody.**
+
+**A network must be able to show its answer.** These five properties are conformance items **16a–16c** — not suggestions:
+
+| # | Requirement |
+|---|---|
+| 1 | **Two unaffiliated replications** before a constant may re-weight history. |
+| 2 | Every constant published with its **method, version, and uncertainty interval**. |
+| 3 | Review triaged by **magnitude × concentration of beneficiary**, never magnitude alone. |
+| 4 | **Membership composition is public** — a network concentrated in the sector it audits is captured by construction, and this makes that detectable rather than something anyone must police. |
+| 5 | A public statement of **which constants have not been reviewed, and how old each reading is**. |
+
+> **This is a requirement on the straw-man, and the straw-man does not yet meet it.** §3 lists eight verifications a network performs; **constant-auditing is a ninth and it has no design here.** Drafting one is the next piece of C2 work.
+
+**And say the honest part: no network has demonstrated a working answer, because no network exists.** The five properties are what a design gets judged against, not evidence the problem is solved.
 
 Three smaller items:
 
