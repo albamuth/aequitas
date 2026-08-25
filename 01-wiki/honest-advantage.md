@@ -8,7 +8,7 @@ People cheat systems they believe are unfair. The widespread appetite for gaming
 
 Aequitas's security argument runs the other way:
 
-1. **Honest participation returns more.** With no profit taken from exchange ([[price-equals-cost]]), a worker's credit reflects what they actually contributed.
+1. **Honest participation returns more.** With no profit taken from exchange ([[cost-not-price]]), a worker's credit reflects what they actually contributed.
 2. **The upside of cheating is tiny.** Fraud cannot compound, pool, or transfer — see [[disparity-ceiling]].
 3. **Therefore cheating is not worth the effort**, for most people, most of the time.
 
@@ -42,7 +42,7 @@ And it is honest about limits: **no security design is flawless or immune to mor
 
 ## Depends on
 
-- [[price-equals-cost]] · [[disparity-ceiling]] · [[onboarding-incentive]]
+- [[cost-not-price]] · [[disparity-ceiling]] · [[onboarding-incentive]]
 
 ---
 *Status: provisional — the core claim is undemonstrated*

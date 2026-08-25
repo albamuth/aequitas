@@ -94,7 +94,7 @@ Either cascade breaks the books. This is the same constraint as the [[#The Front
 
 ## Depends on
 
-- [[material-flow-value]] · [[non-fungibility]] · [[price-equals-cost]]
+- [[material-flow-value]] · [[non-fungibility]] · [[cost-not-price]]
 
 ## Consequences
 
@@ -103,9 +103,9 @@ Either cascade breaks the books. This is the same constraint as the [[#The Front
 ## Open questions
 
 - [[protocol-governance|OP-10]] — who controls the collapse (weighting) model
-- C5 — transfer rules and pledge reversion; consent/refusal on acquisition
+- C5 — consent/refusal on acquisition. *(Pledge reversion is **resolved**: pledges are permanent and non-revocable, and an unfulfilled pledge burns — nothing reverts. Foundations §6.4, [[pledge-and-signal]].)*
 - OP-25 — illicit dumping (escaping end-of-life debit by abandonment)
 
 ---
-*Status: settled (tracks Foundations v0.8 §3.2, §3.2a, §3.2b, §6.2, §6.2a, §6.2b)*
-*Source: `00-strategy/Aequitas_Foundations_v0.8.md`; objections B3, B8 in `Aequitas_Objections_v0.10.md`*
+*Status: settled (tracks Foundations v0.20 §3.2, §3.2a, §3.2b, §6.2, §6.2a, §6.2b)*
+*Source: highest-versioned `00-strategy/Aequitas_Foundations_v*.md`; objections B3, B8 in the current `Aequitas_Objections_v*.md`*

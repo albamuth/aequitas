@@ -51,11 +51,11 @@ The fixed core. Do not re-litigate (see `CLAUDE.md`).
 | <a id="a1"></a>**A1** | materialism of cost | Cost **is** material/energy flow. | Foundations §1 |
 | <a id="a2"></a>**A2** | time as measure | Time is a yardstick, not the substance; labour never rate-scaled *(amended v0.3)*. | Foundations §1 |
 | <a id="a3"></a>**A3** | non-fungibility | Credit is non-transferable; no medium of exchange. | Foundations §1 |
-| <a id="a4"></a>**A4** | no externalities | Every cost lands on a ledger; nothing escapes. *(Eroded by OP-24 — see note.)* | Foundations §1 |
-| <a id="a5"></a>**A5** | price ≡ cost | No profit in exchange. | Foundations §1 |
+| <a id="a4"></a>**A4** | no externalities | Every cost is accounted to whoever caused it; nothing escapes. **On *a* ledger — never necessarily the product's.** *(Eroded by OP-24 — see note.)* | Foundations §1 |
+| <a id="a5"></a>**A5** | **cost, not price** | A thing's cost is what was **consumed** to make it. Nothing is added (no margin, no profit in exchange) and nothing enters that the thing did not consume — so a durable asset is **never amortised into what it made** (§6.2b). The figure is a dated estimate, not a verdict. *(Renamed in Foundations v0.21; it read "price ≡ cost", which contradicted §6.2b. See Objections B8.)* | Foundations §1 |
 | <a id="a6"></a>**A6** | derived, not stored | The ledger is computed from the event log on demand. | Foundations §1 |
 | <a id="a7"></a>**A7** | universal accounting | Work is recorded universally; credit *realized* voluntarily *(amended v0.2)*. | Foundations §1 |
-| <a id="a8"></a>**A8** | local governance | Governance is a protocol property with local variance, not a central institution. | Foundations §1 |
+| <a id="a8"></a>**A8** | no governing body | Governance is a protocol property with open variance, not a central institution. | Foundations §1 |
 
 ---
 
@@ -91,7 +91,7 @@ IC-1…IC-9 check the log (pure arithmetic). IC-10…IC-12 check a projection ag
 | <a id="ic-6"></a>**IC-6** | interval sanity | No consuming a parcel before it exists or after it's destroyed. | EventLog §7 |
 | <a id="ic-7"></a>**IC-7** | 24-hour cap | Agent-time can't exceed wall-clock; ≤24h credited per 24h. | EventLog §7 |
 | <a id="ic-8"></a>**IC-8** | pledge backing | Outstanding pledged hours ≤ earned credit (no fractional reserve). | EventLog §7 |
-| <a id="ic-9"></a>**IC-9** | pledge discharge | On occurrence, a held object's debit follows possession to whoever accepts it (not necessarily the pledger); a pure service moves none. Pledges are revocable. | EventLog §7 |
+| <a id="ic-9"></a>**IC-9** | pledge discharge | On occurrence, a held object's debit follows possession to whoever accepts it (not necessarily the pledger); a pure service moves none. Pledges are **permanent and non-revocable** (§6.4); an unfulfilled pledge burns, it is not returned. | EventLog §7 |
 | <a id="ic-10"></a>**IC-10** | non-negative allocation | No output's share of any dimension is negative. | EventLog §7.2 |
 | <a id="ic-11"></a>**IC-11** | exhaustive allocation | Per dimension, shares sum to the recorded input total. | EventLog §7.2 |
 | <a id="ic-12"></a>**IC-12** | boundary additivity | Stage-by-stage split = whole-process split (anti-gerrymandering). | EventLog §7.2 |

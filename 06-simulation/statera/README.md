@@ -1,6 +1,6 @@
 # Statera — the Aequitas simulation kernel
 
-> **Version:** 0.2 · **Date:** 2026-08-23 · **Tracks Foundations v0.19.**
+> **Version:** 0.2 · **Date:** 2026-08-23 · **Tracks Foundations v0.22.**
 > **Status: live. This is the current work** — the kernel every future scenario runs on.
 > **Results:** [`RESULTS.md`](RESULTS.md) — the headline numbers, so you need not re-run.
 > **Change history:** [`CHANGELOG.md`](CHANGELOG.md), which carries a plain-language account of what the kernel can and cannot do.
@@ -166,4 +166,4 @@ a year of breathing records 365 kg in the log and costs 0 h
 
 **Step 5 — consumer types from real demographic data.** Blocked on downloading the BLS Consumer Expenditure demographic tables. *Done when the population's mean want reproduces 1,380 h/yr and the locale dial reproduces the cross-country spread.*
 
-*Tracks Foundations v0.19: A1, A3, A6, A7; §3.2, §3.2a, §3.2b, §3.3, §3.4a, §3.6, §5.1a, §5.4, §6.1b, §6.2, §6.2a, §6.2b, §6.4, §6.4a, §7.5, §9; IC-1, IC-2, IC-3, IC-4, IC-7, IC-8.*
+*Tracks Foundations v0.22: A1, A3, A6, A7; §3.2, §3.2a, §3.2b, §3.3, §3.4a, §3.6, §5.1a, §5.4, §6.1b, §6.2, §6.2a, §6.2b, §6.4, §6.4a, §7.5, §9; IC-1, IC-2, IC-3, IC-4, IC-7, IC-8.*

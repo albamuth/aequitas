@@ -48,7 +48,7 @@ So there is nothing to "bank and blow." A lifelong hoarder who consumes nothing 
 
 ## Depends on
 
-- [[non-fungibility]] · [[price-equals-cost]] · [[property-debit]] · [[distributed-auditing]] · [[basic-needs-floor]] · [[event-record]]
+- [[non-fungibility]] · [[cost-not-price]] · [[property-debit]] · [[distributed-auditing]] · [[basic-needs-floor]] · [[event-record]]
 
 ## Consequences
 

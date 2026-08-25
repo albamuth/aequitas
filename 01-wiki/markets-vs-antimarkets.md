@@ -21,7 +21,7 @@ He also notes the direction of innovation runs the other way from the folk story
 
 Concretely:
 
-1. **It rescues the framing.** [[price-equals-cost]] does not abolish the market — it abolishes the price-*setter*. Small-producer markets under real competition already tend toward price ≡ cost; Aequitas makes that structural rather than contingent.
+1. **It rescues the framing.** [[cost-not-price]] does not abolish the market — it abolishes the price-*setter*. Small-producer markets under real competition already tend toward selling at cost; Aequitas makes that structural rather than contingent.
 2. **It supplies the rhetorical position.** Aequitas can credibly claim to be *pro-market and anti-capitalist*, with historical evidence rather than assertion. See [[capitalism-cannot-function]].
 3. **It matches the meshwork/hierarchy distinction** to Aequitas's own decentralization criterion — DeLanda argues synergistic properties in markets, ecosystems, and decentralized networks "emerge spontaneously," which is precisely the fecundity claim.
 
@@ -40,7 +40,7 @@ Also: the market/antimarket line is contested among economic historians and is a
 
 ## Related
 
-- [[capitalism-cannot-function]] · [[price-equals-cost]] · [[protocol-governance]]
+- [[capitalism-cannot-function]] · [[cost-not-price]] · [[protocol-governance]]
 
 ---
 *Status: reference — external theory, not Aequitas doctrine*

@@ -136,6 +136,23 @@ class Chain:
         labour is credited to whoever did it. Pollution is not among the things
         that can be passed, by construction -- there is no argument to name it.
 
+        MATTER CONSERVES ACROSS DIFFERENT-SIZED COHORTS, and getting this wrong was
+        a real defect (outside-critique finding #13, 2026-08-24). The log is
+        per-exemplar, so `mass_kg=780` means 780 kg shed by ONE sending exemplar.
+        The sending cohort sheds `780 * headcount(frm)` in total; the receiving
+        cohort must take on exactly that total, split across its own members, or
+        the population-weighted books create or destroy matter. So the receiver's
+        per-exemplar quantity is scaled by `headcount(frm) / headcount(to)`:
+
+            1 farmer (headcount 1) hands 780 kg to a cohort of 100 eaters
+            -> each eater takes 7.8 kg, the 100 of them take 780 kg, and it balances.
+
+        When the two headcounts are equal the scale is 1.0 and this is exactly what
+        it always did -- which is why every headcount-1 chain still passes unchanged.
+        The pair is TAGGED AS A CONSERVATION PROCESS so `check_conservation` weighs
+        both sides by headcount and catches any residual: previously a hand-off was
+        untagged and the check could not see a cross-cohort leak at all.
+
         `expires` is the last period at which this parcel can still be handed on.
         PAST IT THE HAND-OFF IS REFUSED. The goods have joined the last holder's
         waste stream, and getting rid of them is `dispose`, which is a service and
@@ -168,11 +185,22 @@ class Chain:
                 f"them is `dispose`, which is a service with a cost.")
         if labour_h:
             self._credit(frm, labour_h, f"carry {note}")
-        w_from, w_to = self.k.weight[frm], self.k.weight[to]
+        w_from, w_to = float(self.k.weight[frm]), float(self.k.weight[to])
+        if w_to <= 0:
+            raise ChainError(
+                f"{self.name} / '{note}': cannot hand goods to an empty cohort "
+                f"(headcount 0). Nobody is there to take them on.")
+        # Per-exemplar quantity the receiver takes on, so the two sides balance
+        # once weighed by headcount (see docstring). Scale is 1.0 when headcounts
+        # match, which keeps every existing headcount-1 chain byte-identical.
+        scale = w_from / w_to
+        received = {d: v * scale for d, v in dims.items()}
+        pid = self._pid
+        self._pid += 1
         self.k.log.append(np.array([frm]), TRANSFER, self.k.period,
-                          weight=w_from, expires=expires, **_neg(dims))
+                          weight=w_from, expires=expires, process=pid, **_neg(dims))
         self.k.log.append(np.array([to]), TRANSFER, self.k.period,
-                          weight=w_to, expires=expires, **_pos(dims))
+                          weight=w_to, expires=expires, process=pid, **_pos(received))
         self.steps.append(("handoff", note, dict(dims), labour_h))
         return self
 
@@ -289,14 +317,28 @@ def frontload(k: Kernel, bearer: int, cost_h: float, pledger: int = None,
     pledges may never exceed LIFETIME EARNED CREDIT, and a student has not earned
     any. That is the correct answer and it is the point. Society pledges for
     doctors to exist; the student is who the pledges are spent ON.
+
+    THE GRANT LANDS ON THE BEARER, EARMARKED (finding #11, 2026-08-24). Recording
+    only the pledger's budget draw left the bearer holding the whole creation-cost
+    with no cushion, so `room()` never saw the debit-room Sec.6.2b says a pledge
+    confers -- the Front-Loading Rule was asserted by these chains but not actually
+    run. Now the bearer's creation-cost row is flagged `creation=True`, and a grant
+    of `pledged_h` is recorded on the bearer; `Kernel.room()` offsets the bearer's
+    debit by `min(granted, creation_cost)`. That cushions the specific bite and
+    never becomes spendable headroom (Sec.6.4c). Budget still draws on the pledger,
+    so IC-8 is unchanged.
     """
     k.log.append(np.array([bearer]), CONSUME, k.period, labour_h=float(cost_h),
-                 weight=k.weight[bearer])
+                 weight=k.weight[bearer], creation=True)
     if pledged_h:
         if pledger is None:
             raise ChainError("a pledge needs a pledger who has earned the credit")
+        # the pledger spends budget ...
         k.log.append(np.array([pledger]), PLEDGE, k.period,
                      credit_h=-float(pledged_h), weight=k.weight[pledger])
+        # ... and the bearer receives the earmarked debit-room grant.
+        k.log.append(np.array([bearer]), PLEDGE, k.period,
+                     grant_h=float(pledged_h), weight=k.weight[bearer])
     return None          # deliberately. There is no per-unit number to hand back.
 
 
@@ -737,8 +779,95 @@ def test_single_use_lands_whole_on_its_user():
           "opened it, however briefly they held it")
 
 
+def test_a_pledge_grants_earmarked_debit_room():
+    """Finding #11: a pledge cushions a front-loaded creation-cost -- and nothing else.
+
+    A new co-op has not yet accrued the credit to balance a large creation-cost it
+    needs to take on, so its gate shuts. A community pledge -- raising its debit
+    ceiling for that named purpose -- grants it debit-room and the gate opens, but
+    ONLY up to the creation-cost (Sec.6.2b); the grant never becomes spendable
+    headroom for ordinary consumption (Sec.6.4c). Three checks:
+
+      1. Before any pledge, the bearer's room is negative (locked out).
+      2. A grant equal to the creation-cost restores room to its pre-cost level.
+      3. A grant LARGER than the creation-cost does not over-restore -- the excess
+         is inert, exactly as the contingent-reserve rule requires.
+    """
+    # A pledger cohort that has worked for 50 years, and a co-op born one year ago,
+    # so the co-op has nowhere near the accrued credit to carry a large cost.
+    # Breathing off so the only debit in play is the creation-cost under test.
+    PLEDGER, COOP = 0, 1
+    k = Kernel(2, np.array([12.0, 12.0]),
+               Dials(rho=1.5, days_per_period=365.0, metabolic_co2_kg_per_day=0.0),
+               born=np.array([0, 49]))
+    for _ in range(50):                     # periods 0..49; the co-op accrues only at 49
+        k.accrue(days=365.0)
+        k.period += 1
+    # Snapshot the co-op's room before it takes on any creation-cost. One year of
+    # credit is real but small -- far too little to balance the cost that follows.
+    baseline = k.room()[COOP]
+    assert baseline > 0
+
+    # The co-op takes on a 30,000 h creation-cost (a clinic, a press, a plant).
+    cost_h = 30_000.0
+    k.log.append(np.array([COOP]), CONSUME, k.period, labour_h=cost_h,
+                 weight=1.0, creation=True)
+    Conformance.run_all(k)
+    assert k.room()[COOP] < 0, "the creation-cost should have shut the co-op's gate"
+
+    # The community pledges exactly the creation-cost. Budget draws on the pledger
+    # (who has earned it); the earmarked grant lands on the co-op.
+    k.log.append(np.array([PLEDGER]), PLEDGE, k.period, credit_h=-cost_h, weight=1.0)
+    k.log.append(np.array([COOP]), PLEDGE, k.period, grant_h=cost_h, weight=1.0)
+    Conformance.run_all(k)
+    assert abs(k.room()[COOP] - baseline) < 1e-6, \
+        "an exact grant should restore the co-op to its pre-cost room, no more"
+
+    # Now over-pledge: another grant on top. It must NOT push room above baseline,
+    # because the offset is capped at the creation-cost (Sec.6.4c).
+    k.log.append(np.array([PLEDGER]), PLEDGE, k.period, credit_h=-cost_h, weight=1.0)
+    k.log.append(np.array([COOP]), PLEDGE, k.period, grant_h=cost_h, weight=1.0)
+    Conformance.run_all(k)
+    assert abs(k.room()[COOP] - baseline) < 1e-6, \
+        "a grant beyond the creation-cost became spendable headroom (Sec.6.4c breach)"
+    print("[ok] a pledge grants earmarked debit-room: it cushions a 30,000 h "
+          "creation-cost exactly, and an over-pledge adds no spendable headroom")
+
+
+def test_a_handoff_conserves_across_different_headcounts():
+    """Outside-critique finding #13: cross-cohort trade must not create matter.
+
+    One farmer (headcount 1) hands 780 kg to a cohort of 100 eaters. The farmer
+    sheds 780 kg; the hundred eaters must take on 780 kg between them, 7.8 kg each.
+    Population-weighted, the books balance. Before the fix the receiver took 780 kg
+    PER exemplar -- 78,000 kg for the cohort -- and 77,220 kg appeared from nowhere,
+    invisibly, because the hand-off was not tagged for the conservation check.
+    """
+    k = Kernel(N_ACTORS, np.full(N_ACTORS, 12.0),
+               Dials(days_per_period=365.0, metabolic_co2_kg_per_day=0.0),
+               weight=np.array([1.0] + [100.0] + [1.0] * (N_ACTORS - 2)))
+    c = Chain(k, "cross-headcount")
+    c.extract(FARMER, labour_h=1.0, note="grain", mass_kg=780.0)
+    c.handoff(FARMER, CARRIER, note="to a cohort of 100", mass_kg=780.0)  # CARRIER w=100
+    Conformance.run_all(k)          # would raise IC-1/IC-2 without the scaling
+
+    d = k.proj.debit()["mass_kg"]
+    assert abs(d[FARMER]) < TOL, f"the farmer kept {d[FARMER]:.1f} kg after selling"
+    assert abs(d[CARRIER] - 7.8) < TOL, \
+        f"each of 100 receivers should hold 7.8 kg, got {d[CARRIER]:.2f}"
+    # Population-weighted, matter is conserved: 780 out, 780 in.
+    pop_out = 780.0 * k.weight[FARMER]
+    pop_in = d[CARRIER] * k.weight[CARRIER]
+    assert abs(pop_out - pop_in) < TOL, \
+        f"population mass not conserved: {pop_out:.1f} out, {pop_in:.1f} in"
+    print(f"[ok] a hand-off conserves across headcounts: 1 farmer sheds 780 kg, "
+          f"100 receivers take {d[CARRIER]:.1f} kg each (= 780 kg, no matter invented)")
+
+
 def run_tests():
     test_every_chain_closes()
+    test_a_handoff_conserves_across_different_headcounts()
+    test_a_pledge_grants_earmarked_debit_room()
     test_the_custody_chain_ending_is_the_fate()
     test_expired_goods_cannot_be_handed_on()
     test_disposal_is_a_service_not_a_handoff()

@@ -3,7 +3,7 @@
 
 > **Version:** 0.5 · **Date:** 2026-08-23
 > **Target:** A statement of the system, tested against scenarios, in ~3 months — with a conformance list an implementer can build against.
-> **Companion docs:** `Aequitas_Foundations_v0.20.md` (axioms), `Aequitas_Objections_v0.19.md` (register), `Aequitas_EventLog_v0.9.md` (record model), `../NEXT.md` (task queue)
+> **Companion docs:** `Aequitas_Foundations_v0.22.md` (axioms), `Aequitas_Objections_v0.21.md` (register), `Aequitas_EventLog_v0.9.md` (record model), `../NEXT.md` (task queue)
 > **Version history & what each version superseded:** `00-strategy/Aequitas_Strategy_CHANGELOG.md`.
 
 ---
@@ -167,7 +167,7 @@ This also answers the socialist-calculation critique pre-emptively: we don't arg
 
 | Risk | Mitigation |
 |---|---|
-| **🔴 Weighting-model governance (OP-10 (weighting governance))** — whoever sets the cost model controls every balance in history without touching a rule | The **top blocker.** Partial answers: split-before-collapse (§3.2a), rival-sector audit for constants (§3.3a). The general problem is open; the answer is competing local variance under A8, still unspecified. Work it with OP-24 and §10.1 — three problems, one capture surface. |
+| **🔴 Weighting-model governance (OP-10 (weighting governance))** — whoever sets the cost model controls every balance in history without touching a rule | The **top blocker.** Partial answers: split-before-collapse (§3.2a), rival-sector audit for constants (§3.3a). The general problem is open; the answer is competing open variance under A8, still unspecified. Work it with OP-24 and §10.1 — three problems, one capture surface. |
 | **🔴 Understatement drift (OP-24 (understatement drift))** — costs quietly bias low and nothing corrects them | Rival-sector audit (Foundations §3.3a). **Unproven.** Sim owed. Note this erodes **A4 (no externalities)** without breaking any equation, which is what makes it insidious. |
 | **🔴 The onerousness gap (OP-16 (onerousness gap))** — tedium/indignity have no material signature, and nothing allocates labour to the boring necessary jobs | Half answered by A2 (exertion/hazard/skill resolve materially). Leading candidate for the rest: hour-ceiling differentiation (pay the premium in time off, not rate). All candidates speculative; check first how much is simply unmeasured hazard. |
 | ~~**The allocation recursion does not converge**~~ | **Retired — the sim ran and passed.** Non-negative Neumann series, 100% convergent for `ρ(Ã) < 1`; Sraffa blocked by construction (`recursion_convergence.py`). |
@@ -192,7 +192,7 @@ This also answers the socialist-calculation critique pre-emptively: we don't arg
 - [ ] Wiki covering every core concept
 - [x] ~~An allocation convention for OP-17~~ — **better: a measurement, not a convention**
 - [x] ~~A declared labour-allocation convention for OP-18~~ — **done:** labour rides the material split, defended against the cooperative-game axioms (B9).
-- [ ] Every open problem in `Aequitas_Objections_v0.19.md` either solved, dissolved, or explicitly scoped as v2 — **the remaining live blockers are governance: OP-10, OP-24, and OP-16's tedium/indignity half (its hazard half is addressed by the contingent reserve, §6.4c).**
+- [ ] Every open problem in `Aequitas_Objections_v0.21.md` either solved, dissolved, or explicitly scoped as v2 — **the remaining live blockers are governance: OP-10, OP-24, and OP-16's tedium/indignity half (its hazard half is addressed by the contingent reserve, §6.4c).**
 
 ---
 

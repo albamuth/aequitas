@@ -28,7 +28,7 @@ Note what it does *not* discourage: the homeowner still gets a better house. The
 ## Depends on
 
 - [[property-debit]]
-- [[price-equals-cost]]
+- [[cost-not-price]]
 
 ## Consequences
 

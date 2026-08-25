@@ -12,7 +12,7 @@ The critical property: **attribution without exclusion.** Nothing about tracing 
 
 Intellectual property exists because, under capitalism, the only way to reward a creator is to let them charge for access — which requires excluding non-payers. That exclusion is pure deadweight loss: it makes a non-rival good artificially rival.
 
-Aequitas doesn't need it. Since [[price-equals-cost]] means copying an idea costs only the material of copying, and since enrichment rewards creators without any transfer occurring, the reward and the exclusion come apart cleanly. **This is one of the strongest and most publicly legible consequences of the theory.**
+Aequitas doesn't need it. Since [[cost-not-price]] means copying an idea costs only the material of copying, and since enrichment rewards creators without any transfer occurring, the reward and the exclusion come apart cleanly. **This is one of the strongest and most publicly legible consequences of the theory.**
 
 ## Who games this
 

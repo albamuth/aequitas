@@ -4,7 +4,7 @@
 > **Date:** 2026-08-23
 > **Raised by:** the author. **Ruled by the author the same day.**
 > **Status:** 🟢 **Ruled and stress-tested. Passes.** One capture surface named and routed; one residual flagged.
-> **Reads against:** `Aequitas_Foundations_v0.20.md` A1, A2, A3, A5, A7, §3.2, §3.2b, §3.6, §5.1, §5.1b, §5.3c, §6.4a, §7.5, §11 · `Aequitas_EventLog_v0.9.md` §12.3a
+> **Reads against:** `Aequitas_Foundations_v0.22.md` A1, A2, A3, A5, A7, §3.2, §3.2b, §3.6, §5.1, §5.1b, §5.3c, §6.4a, §7.5, §11 · `Aequitas_EventLog_v0.9.md` §12.3a
 > **Supersedes the open version of this paper**, which argued §3.2 and §3.2b contradict each other at the boundary. **They do not. The objection is answered in §3 below.**
 
 ---

@@ -1,5 +1,7 @@
 # Service Credit
 
+> ⚠️ **STALE — DO NOT LEARN THE SYSTEM FROM THIS PAGE.** It describes the pre-v0.3 *three credit types* model, which Foundations replaced. There is **one credit — time worked** — and production/service/enrichment are three *feedback channels*, not credit types, with no accounting boundary between them (Foundations §6). This page is kept only until it is rewritten (queued in `NEXT.md`); read [[index]] and Foundations §6 instead.
+
 > Credit for labor that produces no object — care, teaching, medicine, civil service. It converts not to holdings but to **responsibility and influence**.
 
 ## What it is

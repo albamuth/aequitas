@@ -12,7 +12,7 @@
 
 **This is the closest thing in history to Aequitas, and it died.** Technocracy proposed scrapping money and running the economy on *energy* instead — measuring everything in units of energy, and handing out non-tradeable coupons that expired. Aequitas has to be able to say, precisely, what it does differently and why that difference is the one that matters.
 
-It bears on: measuring cost as physical flow ([Foundations §A1](../00-strategy/Aequitas_Foundations_v0.13.md#a1-materialism-of-cost)); the rule that a record of your work can never be traded away ([Foundations §A3 (non-fungibility)](../00-strategy/Aequitas_Foundations_v0.13.md#a3-non-fungibility)); the rule that no organisation owns the system's core ([Foundations §A8 (local governance)](../00-strategy/Aequitas_Foundations_v0.13.md#a8-local-governance)); and the entire question of how a system like this ever gets adopted.
+It bears on: measuring cost as physical flow ([Foundations §A1](../00-strategy/Aequitas_Foundations_v0.13.md#a1-materialism-of-cost)); the rule that a record of your work can never be traded away ([Foundations §A3 (non-fungibility)](../00-strategy/Aequitas_Foundations_v0.13.md#a3-non-fungibility)); the rule that no organisation owns the system's core ([Foundations §A8 (no governing body)](../00-strategy/Aequitas_Foundations_v0.13.md#a8-no-governing-body)); and the entire question of how a system like this ever gets adopted.
 
 ## Key findings
 

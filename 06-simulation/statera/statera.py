@@ -143,6 +143,15 @@ class EventLog:
     # a shelf life carries its expiry in the log, and once past it the holder
     # cannot pass the debit to anybody -- it has joined their waste stream.
     expires: list = field(default_factory=list)
+    # Debit-room GRANTED to the actor on this row by somebody's pledge (Sec.6.2b).
+    # A grant cushions the bite of a front-loaded creation-cost; it is NOT spendable
+    # headroom (Sec.6.4c: pledge surplus is non-consumable), which is why `room()`
+    # caps the offset at the creation-cost it is earmarked against.
+    grant_h: list = field(default_factory=list)
+    # Marks a debit row as CREATION-COST (a front-loaded asset cost, Sec.6.2a), the
+    # only debit a grant is allowed to offset. Ordinary consumption is not creation
+    # cost and a grant can never cushion it.
+    creation: list = field(default_factory=list)
 
     def __post_init__(self):
         for d in DIMS:
@@ -154,7 +163,7 @@ class EventLog:
 
     def append(self, actor, kind, period, credit_h=0.0, essential=False,
                rho_at=np.nan, room_at=np.nan, process=-1, weight=1.0,
-               expires=np.inf, **quantities):
+               expires=np.inf, grant_h=0.0, creation=False, **quantities):
         """Add one event. The only mutation this class permits."""
         unknown = set(quantities) - set(DIMS)
         if unknown:
@@ -164,6 +173,8 @@ class EventLog:
         n = np.size(actor)
         self.weight.append(np.broadcast_to(np.asarray(weight, float), (n,)).copy())
         self.expires.append(np.broadcast_to(np.asarray(expires, float), (n,)).copy())
+        self.grant_h.append(np.broadcast_to(np.asarray(grant_h, float), (n,)).copy())
+        self.creation.append(np.broadcast_to(np.asarray(creation, bool), (n,)).copy())
         self.actor.append(np.asarray(actor, dtype=np.int64).reshape(-1))
         self.kind.append(np.full(n, kind, dtype=np.int8))
         self.period.append(np.full(n, period, dtype=np.int32))
@@ -246,6 +257,12 @@ class Projection:
         return self._cache["debit"]
 
     def pledged(self) -> np.ndarray:
+        """Pledging budget SPENT per actor -- the finite lifetime budget IC-8 caps.
+
+        A pledge draws the budget with a negative credit_h row on the PLEDGER. Only
+        those rows count here; a grant recorded on the recipient carries credit_h = 0
+        and does not touch anyone's budget.
+        """
         self._fresh()
         if "pledged" not in self._cache:
             k = self.log.col("kind")
@@ -255,12 +272,76 @@ class Projection:
                 minlength=self.log.n_agents)
         return self._cache["pledged"]
 
+    def granted(self) -> np.ndarray:
+        """Debit-room granted TO each actor by others' pledges (Sec.6.2b), in hours.
+
+        Earmarked: `room()` caps how much of this actually offsets debit at the
+        actor's creation-cost, so a grant can never become spendable headroom
+        (Sec.6.4c). This is the raw granted total; the cap is applied in the gate.
+        """
+        self._fresh()
+        if "granted" not in self._cache:
+            self._cache["granted"] = np.bincount(
+                self.log.col("actor"), weights=self.log.col("grant_h"),
+                minlength=self.log.n_agents)
+        return self._cache["granted"]
+
+    def creation_cost(self) -> np.ndarray:
+        """Front-loaded creation-cost debit per actor, in labour-hours (Sec.6.2a).
+
+        The only debit a grant may cushion. Measured as the labour_h on rows flagged
+        `creation`, so ordinary consumption debit is never offsettable by a pledge.
+        """
+        self._fresh()
+        if "creation_cost" not in self._cache:
+            sel = self.log.col("creation")
+            self._cache["creation_cost"] = np.bincount(
+                self.log.col("actor")[sel], weights=self.log.dim("labour_h")[sel],
+                minlength=self.log.n_agents) if sel.any() else np.zeros(self.log.n_agents)
+        return self._cache["creation_cost"]
+
 
 # =============================================================================
 # Collapse and division (Sec.3.2a)
 # =============================================================================
 
 DEFAULT_WEIGHTS = {"labour_h": 1.0, "mass_kg": 0.0, "energy_mj": 0.0}
+
+
+def validate_gate_weights(weights: dict) -> None:
+    """A weighting model used by the GATE must keep the gate binding and coherent.
+
+    Outside-critique finding #12 (2026-08-24): the gate is `rho*C - collapse(D, w)`,
+    where credit `C` is in labour-hours. For the two sides to be comparable, the
+    labour dimension of the debit must map to hours one-for-one, so `labour_h` MUST
+    carry weight 1.0. A weighting that zeroes it makes the collapsed debit ignore
+    everything `consume()` records (which is denominated in labour_h), so the gate
+    never tightens and consumption is unbounded -- a silent, catastrophic hole that
+    `run_scenario.py` exposed by letting a TOML file set `[dials.weights]` freely.
+
+    Every other dimension is a MITIGATION-COST CONVERSION into hours and must be
+    non-negative: `mass_kg = 0.05` means "0.05 h to mitigate 1 kg". Zero is fine
+    (a flow at its natural-remediation baseline, like breathing) and is the default;
+    a discovered pollutant is modelled by RAISING it above zero (Sec.3.3), which is
+    what makes a re-weight actually bite -- see `test_a_reweight_moves_a_number`.
+
+    This is a guard on the GATE weighting only. A reporting collapse (a mass-only
+    cost view, say) may weight however it likes and does not come through here.
+    """
+    if weights is None:
+        return
+    lab = weights.get("labour_h", 0.0)
+    if abs(lab - 1.0) > 1e-12:
+        raise ConformanceError(
+            f"gate weighting must set labour_h = 1.0 (credit is in labour-hours, so "
+            f"the labour dimension of debit must be comparable 1:1); got {lab}. "
+            f"A zero or scaled labour weight makes the ratio gate non-binding and "
+            f"consumption unbounded. Weight other dimensions as mitigation-hours.")
+    for d in DIMS:
+        if weights.get(d, 0.0) < 0:
+            raise ConformanceError(
+                f"gate weight for {d} is negative ({weights[d]}); a mitigation cost "
+                f"cannot be below zero.")
 
 
 def collapse(debit: dict, weights: dict = None) -> np.ndarray:
@@ -359,6 +440,11 @@ class Kernel:
         self.lifespan = (np.full(self.n, np.inf) if lifespan is None
                          else np.asarray(lifespan, float).copy())
         self.dials = dials or Dials()
+        # The gate weighting must keep the gate binding (finding #12). Validate it
+        # once, here, where the kernel commits to using it -- not in Dials, because
+        # the same dict may also be handed to `collapse` for reporting, where a
+        # non-labour weighting is legitimate.
+        validate_gate_weights(self.dials.weights)
         self.log = EventLog(n_agents=self.n)
         self.proj = Projection(self.log)
         self.period = 0
@@ -436,14 +522,27 @@ class Kernel:
 
     # --- the gate -----------------------------------------------------------
     def room(self) -> np.ndarray:
-        """Discretionary debit-room remaining: rho*C - D, re-checked at each event.
+        """Discretionary debit-room remaining: rho*C - D + earmarked grant, re-checked
+        at each event.
 
         A ratio, never a balance drawn down (Sec.7.5). Credit is not spent by a
         purchase, so a 'hoarder' can only front-load their own allowance.
+
+        THE GRANT TERM CUSHIONS A FRONT-LOADED CREATION-COST AND NOTHING ELSE
+        (Sec.6.2b, finding #11). A pledge grants debit-room to a recipient carrying a
+        big capital/creation cost, so they are not locked out of ordinary consumption
+        while they hold it. But the offset is capped at the recipient's own
+        creation-cost: `min(granted, creation_cost)`. It can remove that specific
+        bite down to zero and no further -- it never becomes spendable headroom for
+        discretionary consumption, which is Sec.6.4c (pledge surplus is
+        non-consumable). Nothing vanishes from the ledger either (A1): the
+        creation-cost debit stays recorded in D; the grant only changes what the
+        GATE counts against the recipient while they carry it.
         """
         C = self.proj.credit()
         D = collapse(self.proj.debit(), self.dials.weights)
-        return self.dials.rho * C - D
+        offset = np.minimum(self.proj.granted(), self.proj.creation_cost())
+        return self.dials.rho * C - D + offset
 
     def consume(self, request_h: np.ndarray, essential=False, dims: dict = None):
         """Attempt consumption. Returns (admitted, refused) in collapsed units.
@@ -762,6 +861,25 @@ class Conformance:
                     f"ledger. Past its shelf life a thing joins its last holder's "
                     f"waste stream and handing it on cannot lighten their books.")
 
+    @staticmethod
+    def check_grants(k: Kernel):
+        """Sec.6.2b (finding #11): granted debit-room must be backed by real pledges.
+
+        A grant of debit-room to a recipient is only legitimate if somebody actually
+        pledged for it. Population-weighted, total granted room may not exceed total
+        pledging budget spent -- otherwise the network is conjuring cushioning out of
+        nothing, the same failure IC-8 forbids on the pledger's side. (The earmark
+        cap in `room()` separately stops a grant becoming spendable headroom; this
+        checks the grant was funded at all.)
+        """
+        granted_pop = float((k.proj.granted() * k.weight).sum())
+        pledged_pop = float((k.proj.pledged() * k.weight).sum())
+        if granted_pop > pledged_pop + 1e-6:
+            raise ConformanceError(
+                f"Sec.6.2b: {granted_pop:.3f} h of debit-room granted but only "
+                f"{pledged_pop:.3f} h of pledging budget spent to back it -- a grant "
+                f"must be funded by a real pledge.")
+
     @classmethod
     def run_all(cls, k: Kernel):
         cls.check_ic7(k)
@@ -772,6 +890,7 @@ class Conformance:
         cls.check_essentials_never_gated(k)
         cls.check_transaction_time(k)
         cls.check_no_expired_discharge(k)
+        cls.check_grants(k)
 
 
 # =============================================================================
@@ -1283,6 +1402,59 @@ def test_essentials_over_the_gate_do_not_kill_the_run():
           f"still runs, and nothing discretionary was admitted")
 
 
+def test_a_zeroed_labour_weight_is_refused():
+    """Finding #12: a gate weighting that zeroes labour_h makes the gate non-binding.
+
+    Before the guard, Dials(weights={'labour_h': 0.0, 'mass_kg': 1.0}) built a kernel
+    whose `room()` ignored everything `consume()` records, so a request of any size
+    was admitted against a room that never shrank. run_scenario.py let a TOML file
+    set exactly this. The kernel now refuses it at construction.
+    """
+    for bad in ({"labour_h": 0.0, "mass_kg": 1.0},
+                {"labour_h": 0.5, "mass_kg": 0.0},
+                {"labour_h": 1.0, "mass_kg": -0.1}):
+        try:
+            Kernel(3, np.full(3, 12.0), Dials(weights=bad))
+        except ConformanceError:
+            continue
+        raise AssertionError(f"a non-binding gate weighting was accepted: {bad}")
+    # The valid shape -- labour 1:1, a pollutant priced in mitigation-hours -- passes.
+    Kernel(3, np.full(3, 12.0), Dials(weights={"labour_h": 1.0, "mass_kg": 0.05}))
+    print("[ok] a gate weighting that zeroes or scales labour_h is refused (#12); "
+          "labour 1:1 plus a priced pollutant is accepted")
+
+
+def test_a_reweight_moves_a_number():
+    """Finding #12: a discovered-pollutant re-weight must actually change the gate.
+
+    The STATERA_PLAN Sec.7 pollutant shock multiplies the mass_kg gate weight. If
+    that weight starts at the 0.0 default (breathing at baseline), 1.25 * 0.0 = 0.0
+    and the shock is arithmetically inert -- the headline re-weight scenario would
+    prove nothing. A pollutant that binds consumption must START from a non-zero
+    mitigation cost. This asserts the mechanism works when it does.
+    """
+    n = 4
+    # An actor carrying real mass debit (say a tonne of a persistent pollutant).
+    # Breathing is off so the only mass in the books is the pollutant under test.
+    k = Kernel(n, np.full(n, 12.0),
+               Dials(rho=1.5, weights={"labour_h": 1.0, "mass_kg": 0.05},
+                     metabolic_co2_kg_per_day=0.0))
+    k.accrue(days=1.0)
+    k.log.append(np.arange(n), CONSUME, k.period, mass_kg=1000.0, weight=k.weight)
+
+    room_before = k.room().copy()
+    # The pollutant is found to be five times worse: re-weight its mitigation cost.
+    k.dials.weights = {"labour_h": 1.0, "mass_kg": 0.25}
+    room_after = k.room()
+
+    moved = room_before - room_after
+    assert np.all(moved > 0), "a heavier pollutant weight did not shrink the room"
+    # 1000 kg * (0.25 - 0.05) = 200 h of room removed.
+    assert np.allclose(moved, 200.0), f"expected 200 h removed, got {moved[0]:.3f}"
+    print(f"[ok] a re-weight moves a number: pricing 1,000 kg of a pollutant five "
+          f"times higher removes {moved[0]:.0f} h of discretionary room")
+
+
 def test_metabolic_co2_is_recorded_and_weighs_nothing():
     """A1 records the flow. Sec.3.3 weighs it at zero. Both, with no conflict.
 
@@ -1324,6 +1496,8 @@ def run_tests():
     test_ic8_catches_overpledging()
     test_a_pledge_does_not_move_the_pledgers_credit()
     test_essentials_over_the_gate_do_not_kill_the_run()
+    test_a_zeroed_labour_weight_is_refused()
+    test_a_reweight_moves_a_number()
     test_metabolic_co2_is_recorded_and_weighs_nothing()
     test_ceiling_is_rho_independent()
     test_ceiling_at_the_published_floor()

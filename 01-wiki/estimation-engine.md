@@ -31,7 +31,7 @@ Full source map with links: `../00-strategy/GLOSSARY.md#src-estimation-engine-da
 
 **EEIO models are monetary.** They record inter-sector transactions in dollars and use **price as the allocation key** for distributing physical impacts.
 
-That collides directly with [[price-equals-cost]] and [[material-flow-value]]: we would be using price to compute the very quantity we claim should replace price.
+That collides directly with [[cost-not-price]] and [[material-flow-value]]: we would be using price to compute the very quantity we claim should replace price.
 
 **[[co-product-allocation]] supplies the replacement.** Where a joint process's own physics is measurable — tissue energetics, cracking enthalpy, a turbine curve — the split is a **measurement**, and price allocation is not merely undesirable but *wrong*. So:
 

@@ -6,7 +6,7 @@
 
 [[retroactive-reweighting]] makes cost constants extraordinarily powerful. Whoever publishes the energetics of a process sets every [[co-product-allocation]] split in that sector — **backwards through all of history.** That is a capture surface, and it needs an answer that is not a standards body.
 
-**One channel closes for free, and it is worth claiming.** There is no market-dominating corporation to fund a favourable result, because [[price-equals-cost]] removes the profit that pays for captured science today. Labs are credited by trust networks for doing the work. **The Enron-shaped failure cannot operate the same way here.**
+**One channel closes for free, and it is worth claiming.** There is no market-dominating corporation to fund a favourable result, because [[cost-not-price]] removes the profit that pays for captured science today. Labs are credited by trust networks for doing the work. **The Enron-shaped failure cannot operate the same way here.**
 
 **But the obvious fix introduces its mirror.** A general-membership trust network is dominated by the *consuming* side of any given good — everyone eats beef, few raise cattle. Its members therefore collectively benefit from beef's debit being **understated**. And the incentive to correct runs one way only:
 
@@ -35,7 +35,7 @@ Three supporting rules:
 
 - **Decentralized.** No authority, no standards body, no appointed reviewer. It is an incentive, not an enforcement rule.
 - **Self-funding.** The replication is credited work paid for by a party with a real stake — it passes *"does this need a Paul Glover?"* without help. See [[distributed-auditing]].
-- **Already implied by an axiom.** [[price-equals-cost]] removes profit *in exchange* while explicitly preserving **competition on quality, artfulness and efficiency**. Rival-sector audit is that competition applied to the cost model itself.
+- **Already implied by an axiom.** [[cost-not-price]] removes profit *in exchange* while explicitly preserving **competition on quality, artfulness and efficiency**. Rival-sector audit is that competition applied to the cost model itself.
 
 ## Why the co-op form is not the fix
 
@@ -54,7 +54,7 @@ See `../00-strategy/GLOSSARY.md#src-auditor-independence`.
 ## Depends on
 
 - [[retroactive-reweighting]] — the thing that makes constants worth capturing
-- [[price-equals-cost]] — closes the funding-bias channel, and supplies the rivalry
+- [[cost-not-price]] — closes the funding-bias channel, and supplies the rivalry
 - [[distributed-auditing]] — auditing is credited work
 
 ## Consequences

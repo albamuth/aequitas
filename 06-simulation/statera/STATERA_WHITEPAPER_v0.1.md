@@ -240,7 +240,7 @@ Three properties.
 
 - **Credit is never spent by a purchase.** A purchase adds to `D`; it never decrements `C`. This is axiom A3 again, and it is what kills the "hoard for a lifetime, splurge in one lump" attack. A hoarder can only front-load their own `ρ·C`. Asserted by `test_credit_is_never_spent`.
 - **Essentials are never gated.** Foundations §7.5 restricts non-essentials only, because a gate on essentials falls hardest on the newborn, the old, the sick and the disabled — exactly who that section protects. Asserted by `test_essentials_are_never_gated` at ρ = 0.01.
-- **`ρ` is a dial the network sets, and Aequitas never sets.** Axiom A8 (local governance).
+- **`ρ` is a dial the network sets, and Aequitas never sets.** Axiom A8 (no governing body).
 
 Each consumption event stores the `ρ` and the room that held when it happened. Foundations §3.3 calls this the transaction-time rule: **a later re-weight changes future room and never the validity of a completed act.**
 

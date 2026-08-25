@@ -6,7 +6,7 @@
 
 Under conventional regulation, a firm's interest and the regulator's interest are opposed: compliance is a cost, and evasion pays. Enforcement is therefore permanently adversarial and permanently underfunded relative to the incentive to evade.
 
-Under Aequitas the sign flips. Because [[price-equals-cost]] means a product's price *is* its full material cost, and because harms are priced in ([[no-externalities]]), anything that genuinely reduces harm reduces the product's debit-cost — which makes it more competitive.
+Under Aequitas the sign flips. Because [[cost-not-price]] means a product's price *is* its full material cost, and because harms are priced in ([[no-externalities]]), anything that genuinely reduces harm reduces the product's debit-cost — which makes it more competitive.
 
 So a body with the expertise to identify and quantify harm reduction is offering the most valuable service a producer can buy. **The regulator becomes a supplier.**
 
@@ -25,7 +25,7 @@ The separation between *measuring* and *advising* must be specified. Linked dire
 ## Depends on
 
 - [[no-externalities]]
-- [[price-equals-cost]]
+- [[cost-not-price]]
 - [[retroactive-reweighting]]
 
 ## Consequences

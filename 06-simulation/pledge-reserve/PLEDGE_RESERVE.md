@@ -7,7 +7,7 @@
 
 ## The question
 
-Should over-pledging highly-desired unwanted work (a toxic site everyone wants cleaned but nobody wants to do) give the doer an added benefit? A market pays a **wage premium** for nasty work. Aequitas has no wage and no profit (price ≡ cost, A2). So either onerous work goes chronically understaffed (the OP-16 problem, confirmed by 45 years of time-banking), or we find an axiom-clean incentive.
+Should over-pledging highly-desired unwanted work (a toxic site everyone wants cleaned but nobody wants to do) give the doer an added benefit? A market pays a **wage premium** for nasty work. Aequitas has no wage and no profit (A5 (cost, not price), A2). So either onerous work goes chronically understaffed (the OP-16 problem, confirmed by 45 years of time-banking), or we find an axiom-clean incentive.
 
 ## The ruling being tested
 

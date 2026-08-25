@@ -19,7 +19,7 @@ Mechanism:
 |---|---|
 | Value = energy expended | [[material-flow-value]] — matter *and* energy |
 | Non-transferable certificates | [[non-fungibility]] — goes further; credit isn't spendable at all |
-| Replace the price system | [[price-equals-cost]] |
+| Replace the price system | [[cost-not-price]] |
 | Expiry to prevent hoarding | Not needed — nothing accumulates to hoard |
 | Rule by technical experts | **Explicitly rejected** — [[protocol-governance]] A8 |
 

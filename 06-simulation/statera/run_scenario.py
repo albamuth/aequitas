@@ -33,7 +33,7 @@ from pathlib import Path
 import numpy as np
 
 from statera import (Kernel, Dials, Conformance, ConformanceError, DIMS, DAY,
-                     collapse, ceiling, draw_population)
+                     collapse, ceiling, draw_population, validate_gate_weights)
 
 # =============================================================================
 # The schema -- every key a scenario may carry, and nothing else
@@ -101,6 +101,15 @@ def load(path: Path) -> dict:
     want_mode = raw.get("want", {}).get("mode", "unbounded")
     if want_mode not in WANT_MODES:
         raise ScenarioError(f"want.mode must be one of {WANT_MODES}")
+    # A gate weighting set in TOML must keep the gate binding (finding #12): catch
+    # a non-binding weighting here, at --check time, with the key named -- not at
+    # run time deep inside the kernel.
+    weights = raw.get("dials", {}).get("weights")
+    if weights is not None:
+        try:
+            validate_gate_weights(weights)
+        except ConformanceError as e:
+            raise ScenarioError(f"[dials.weights]: {e}") from None
     if pop_mode == "cohorts" and not raw.get("cohort"):
         raise ScenarioError(
             "population.mode = 'cohorts' but no [[cohort]] tables were given")

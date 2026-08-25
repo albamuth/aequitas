@@ -6,7 +6,7 @@
 
 A steer yields beef, hide, tallow, bone, manure and enteric methane. A refinery yields a full fraction slate from one crude stream. A CHP plant yields heat and electricity at once. In each case there is **one pool of consumed energy, materials and labour** and several things coming out.
 
-Split by mass, by energy content, by exergy, or by market price and you get four different answers, **none more physically true than the others.** [ISO 14044](https://iso-library.com/standard/14044/) ranks the physical options and then, when they are "inappropriate," falls through to **market price** — which [[price-equals-cost]] forbids, since price is supposed to be the *output* of the accounting, not an input.
+Split by mass, by energy content, by exergy, or by market price and you get four different answers, **none more physically true than the others.** [ISO 14044](https://iso-library.com/standard/14044/) ranks the physical options and then, when they are "inappropriate," falls through to **market price** — which [[cost-not-price]] forbids, since price is supposed to be the *output* of the accounting, not an input.
 
 The classical form is sharper. Once joint production is admitted, [Sraffa and Steedman showed labour values can go **negative**](https://www.scienceopen.com/hosted-document?doi=10.13169/worlrevipoliecon.14.1.0063) — a commodity "containing" less than zero labour. Any single-substance cost accounting inherits this.
 
@@ -79,7 +79,7 @@ Where composition varies, mass is the **low-resolution reading**: recorded at lo
 - [[physical-trace-test]] — the general rule this case produced
 - [[estimation-engine]] — materials and energy unblocked; labour is not
 - [[rival-sector-audit]] — what disciplines the constants the split depends on
-- [[price-equals-cost]] — the reply to ISO 14044's price fallback
+- [[cost-not-price]] — the reply to ISO 14044's price fallback
 
 ## Open questions
 

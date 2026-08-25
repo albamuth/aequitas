@@ -29,7 +29,7 @@ Without A1 the system has an issuer, and with an issuer it has an oligarchy.
 - [[time-as-yardstick]] — time measures the flow, it isn't the flow
 - [[non-fungibility]] — a record of a specific event can't be a token
 - [[no-externalities]] — if value *is* material flow, there is no "outside"
-- [[price-equals-cost]]
+- [[cost-not-price]]
 - [[derived-ledger]]
 
 ## Prior art

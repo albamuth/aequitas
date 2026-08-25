@@ -16,7 +16,7 @@ Proudhon called capital "dead labor" — already paid, essentially unproductive 
 ## What Aequitas inherits
 
 - **The diagnosis.** Rent and interest as extraction rather than compensation is exactly [[capitalism-cannot-function]], reached 186 years earlier.
-- **Cost-based exchange.** [[price-equals-cost]] is Proudhon's just price with the labor theory swapped for a material-flow theory ([[material-flow-value]]).
+- **Cost-based exchange.** [[cost-not-price]] is Proudhon's just price with the labor theory swapped for a material-flow theory ([[material-flow-value]]).
 - **The possession/property split** maps closely onto [[property-debit]]: you may hold and use, but holding carries burden rather than yield.
 
 ## Where Aequitas diverges — and why it matters

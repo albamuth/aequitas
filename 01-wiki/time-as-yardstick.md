@@ -40,7 +40,7 @@ This turns out to solve a problem a century of life-cycle-assessment literature 
 
 ## Consequences
 
-- [[price-equals-cost]]
+- [[cost-not-price]]
 - [[education-as-credited-work]] — training as front-loaded credited work
 - [[co-product-allocation]] — the denominator insight in use
 - [[physical-trace-test]]

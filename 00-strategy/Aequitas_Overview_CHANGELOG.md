@@ -3,6 +3,29 @@
 > Version-by-version change log for `Aequitas_Overview_vX.Y.md` (the highest-versioned file in `00-strategy/`). Split out of the main document so it is read only when tracing **when and why** something changed. The main doc's header carries a one-line summary of the current version. Superseded full versions live in `99-archive/`.
 
 ---
+<!-- tag: ovw-v0-17-2026-08-24 -->
+### v0.17 (2026-08-24) - section 6 answers "but a price already tells you what people want", and the size of a trust network is cleared up
+
+Reader-facing form of Foundations v0.22 6.4d and the A8 clarification. Two additions; nothing else changed.
+
+1. **New subsection in section 6.** **The objection economists bring first hides an assumption nobody states: that a price honestly reports scarcity and wanting.** In a market with a few big sellers it does not - **a lot of scarcity is made on purpose, and wanting is manufactured on an industrial scale.** Braudel's two layers, with [DeLanda](https://nettime.org/Lists-Archives/nettime-l-9610/msg00025.html) on the upper one: it *"has always engaged in anti-competitive practices, manipulating demand and supply."* **So Aequitas is not smashing a clean instrument - it is replacing a signal the seller helped write.**
+2. **What a pledge does that a price cannot: it cannot be advertised into existence.** A seller can make you want something; **a seller cannot put more hours in your day.** And the say in what gets made goes from *about a million times* the middle, down to *about 2.4 times*, with everyone alive holding some.
+3. **Two examples with the numbers.** **Radicchio:** an extra box on a shelf is about two hours of work, a wish costs half an hour, so **four people wishing fills one box** - a haulier reads it, the shopkeeper takes it, no price moved. **A mural:** 5,000 likes become 500 hours of room against a 300-hour need, and **the 200-hour surplus never becomes spending money** - it is set aside against harm and lapses if nothing goes wrong. **Nobody gets a bonus for being popular.** Plus the catch: **a flat rate per like limits nothing** (fifty thousand likes a year before it pinches); the sensible setting is a **share of a budget**.
+4. **Two things said plainly because readers assume otherwise.** Likes cannot buy credit. And **this does not answer who gets the last radicchio** - pledges decide how many are grown; who gets the last one is a queue or a lottery where the thing is handed over.
+5. **New box in section 0: a trust network has no set size.** Several readers took "no single body owns the rules" to mean networks are small and geographic. **They are not.** A network can cover a valley, a trade, a country, several continents, or the world; networks that work together are expected to keep merging; and the 2.4-times fairness cap holds **across every network that can trade with every other**, not one town at a time. **Where the document does mean somewhere local - a butcher's queue, a one-power-station village - that is a fact about a physical object, not about the network.**
+
+---
+<!-- tag: ovw-v0-16-2026-08-24 -->
+### v0.16 (2026-08-24) - section 3 answers "why isn't the barn in the beef?"
+
+Reader-facing form of Foundations v0.21 (A5 reworded from *"price = cost"* to **"cost, not price"**, and A4 from *"priced into it"* to *"accounted to whoever caused it"*). One passage rewritten; nothing else changed.
+
+1. **"Prices are simply costs" becomes "there is no price at all - only a cost."** Same punch, and it stops teaching the phrase that an outside economist review broke. The number on a thing states what that thing took, and **you cannot mark up a measurement.**
+2. **The new half: that number is narrower than people expect, on purpose.** It carries **what the thing used up**, and nothing else. A farm's barn is not in the beef; a factory's machines are not in what they made. **This is the most common objection to Aequitas**, so it now gets a boxed answer rather than a clause.
+3. **With the numbers, because the objection is arithmetic.** A 20,000-hour barn over 40,000 kg of beef would add **half an hour to every kilogram**; Aequitas adds nothing. **The 20,000 hours did not disappear** - they sit on the farmer, needing about **16,700 hours of credit behind them, roughly four and a half years of everything one person earns.** *That* is what stops a barn going up that nobody needs. Do it the other way and the cost comes off **one** farmer onto about **40,000 shoppers** who never chose to build anything. **The rule that looks like it is hiding a cost is the rule that keeps the cost pointed at whoever chose it.**
+4. **And the honest consequence, said out loud.** Two farms selling the same beef - one with a big barn, one with a shed - show the **same** number per kilogram. **What keeps the big barn honest is the farmer's own ledger, not the sticker**, the same way pollution is kept honest by sitting on whoever caused it (section 4) rather than by hoping a shopper notices.
+
+---
 <!-- tag: ovw-v0-15-2026-08-23 -->
 ### v0.15 (2026-08-23) - section 9 answers "can I use this while everyone else still uses money?"
 

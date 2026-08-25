@@ -2,7 +2,7 @@
 # OP-9 — The socialist-calculation reply (Mises / Hayek)
 
 > **Status:** 🟢 **Written up 2026-08-09.** The argument was "substantially answered" in the register (Objections OA8); this is the standing statement, not new invention. Downgrades OP-9 from 🟠 *"needs writing up"* to **answered-for-cost, one residue open** (the Hayek tacit-knowledge remainder, which is not a calculation objection — see §6).
-> **Attacks:** A1 (materialism of cost), A5 (price ≡ cost), A6 (derived, not stored), and the whole claim that an economy without money-prices can allocate rationally.
+> **Attacks:** A1 (materialism of cost), A5 (cost, not price), A6 (derived, not stored), and the whole claim that an economy without money-prices can allocate rationally.
 > **Guard:** the reply must **never let demand back onto the cost side** — the OP-17 session proved a demand-contingent cost rule is "price allocation in costume" (Objections OA8). Scarcity is admitted only as a *material* cost.
 > **Sources:** [Mises, *Economic Calculation in the Socialist Commonwealth* (1920)](https://mises.org/library/economic-calculation-socialist-commonwealth) · [Hayek, "The Use of Knowledge in Society" (1945)](https://www.econlib.org/library/Essays/hykKnw.html) · [Kantorovich, Nobel lecture (1975)](https://www.nobelprize.org/prizes/economic-sciences/1975/kantorovich/lecture/) · [Dapprich (2021)](https://brightagebeyond.com/wp-content/uploads/2022/05/dapprich-philipp-2021-optimal-planning-with-consumer-feedback-a-simulation-of-a-socialist-economy.pdf) · [Cockshott & Cottrell, *Towards a New Socialism* (1993)](https://en.wikipedia.org/wiki/Towards_a_New_Socialism) · research notes: `GLOSSARY.md#src-neurath-calculation-in-kind`, `GLOSSARY.md#src-kantorovich-shadow-prices`, `GLOSSARY.md#src-cockshott-cottrell-labour-time`.
 
@@ -12,7 +12,7 @@
 
 Aequitas *is* calculation in kind — [[material-flow-value]] with modern instruments. The oldest and most cited proof that this cannot work is the **socialist-calculation argument**. Every economically literate reader brings it, and the external critique (2026-08-09) named writing it up as its single top priority. The good news, established across three research notes: **the answer already exists in the theory's own machinery.** This document assembles it in one place and marks the one piece that is genuinely still open.
 
-The reply has four moves and one honest remainder:
+The reply has **five** moves and one honest remainder:
 
 | | Move | Defeats |
 |---|---|---|
@@ -20,6 +20,7 @@ The reply has four moves and one honest remainder:
 | **(b)** | **Pledges reveal preference** — with no prices, no optimizer, no board. | The "you've described supply and ignored demand" charge |
 | **(c)** | **Tractability is settled.** In-kind calculation at national scale runs. | The Mises objection in its *computational* form |
 | **(d)** | **Scarcity is a material cost (a debit), not a margin.** Rationing without profit and **without an objective function**. | The "you still need scarcity prices" fallback |
+| **(e)** | **The price being defended is not an honest signal.** In a concentrated market the same firms restrict supply and manufacture demand. **Aequitas is not replacing a clean instrument.** | The unstated premise under all of the above *(added 2026-08-22 → written up 2026-08-24)* |
 | **(⚠)** | **Hayek's tacit-knowledge point is only partly answered** — and it is not a calculation objection. | (registered, not claimed as closed) |
 
 ---
@@ -86,7 +87,7 @@ The sophisticated fallback survives (a)–(c): *even granting cost ≠ value, yo
 
 > **Recorded as a *debit* rather than skimmed as a *margin*, scarcity is compatible with A5 and arguably *required* by A4 (no externalities): a scarcity externality is an externality.**
 
-This gives Aequitas a principled way to ration a genuinely unique resource **without inventing profit, without an auction, and without abandoning price ≡ cost.** Dapprich's extension is directly supportive: shadow prices capture constraints — finite land, environmental limits — that *cannot be reduced to labour time*, and Aequitas already counts in material and energy, the right substrate for constraint modelling.
+This gives Aequitas a principled way to ration a genuinely unique resource **without inventing profit, without an auction, and without abandoning A5 (cost, not price)** — because the constraint is recorded as something physically consumed, not as a margin added on top. Dapprich's extension is directly supportive: shadow prices capture constraints — finite land, environmental limits — that *cannot be reduced to labour time*, and Aequitas already counts in material and energy, the right substrate for constraint modelling.
 
 **But here is the guard, and it is the whole difficulty.** A dual price requires a primal optimization, which requires an **objective function** — a social judgment about what is being maximized. Whoever sets it sets every scarcity valuation in the economy. That is **OP-10 (weighting-model governance)**, the project's top blocker, walking straight back in through the allocation layer. The v0.5 screening question exists for exactly this: *"does this need an objective function?"* is a fast proxy for *"does this re-open OP-10?"* — and both allocation rules the project has **rejected** (Aumann–Shapley, global Kantorovich shadow prices) failed it.
 
@@ -96,6 +97,72 @@ So scarcity-as-debit is admitted **only in the form that dodges the objective fu
 - **Route physically-scarce *outputs* to distribution, not to cost.** The prized tenderloin (≈1 % yield) costs the *same per pound* as hamburger, because it embodies the same feed and labour (Foundations §3.4a). Its scarcity is real and handled on the **demand side** — a butcher's lottery, queue, or pledge-priority (Foundations §7.5) — **never by inflating its cost**, which would ration it by who can absorb the larger debit: price-rationing by standing, the exact thing A5 removes.
 
 **Status of (d): the strongest available answer, with one unclosed edge.** Scarcity-as-debit rescues A5 and satisfies A4. Its clean form is per-constraint federation, which *plausibly* avoids the global objective function — but that "plausibly" is unproven, and where a constraint genuinely spans the whole economy, the objective-function problem is real and lives on as part of **OP-10**. This is honestly labelled, not hidden: OP-9's scarcity answer bottoms out in OP-10, and the two must be worked as one problem.
+
+---
+
+## 5a. (e) The price being defended is not an honest signal
+
+> **Added 2026-08-24, by author ruling, after two outside economists re-opened OP-9 on the "who allocates scarce goods?" question.**
+
+### The premise nobody states
+
+Moves (a) to (d) answer the objection on its own ground. **This move refuses the ground.**
+
+Every version of the objection assumes the following, and never argues for it:
+
+1. **Scarcity is a physical fact, and the price reports it.**
+2. **Demand is a fact about what people want, and the price reports that too.**
+3. **Therefore a price is an honest reading of preference, and removing it destroys information.**
+
+**In a market with a few large sellers, none of the three holds.**
+
+| Assumption | What is actually the case |
+|---|---|
+| Scarcity is physical | **Much scarcity is produced.** Supply is withheld to hold the number up. |
+| Demand is given | **Demand is manufactured, at industrial scale.** That is what advertising is. |
+| The price reports preference | **The same firms set supply and work on demand.** The price partly reports its own producer. |
+
+### This is economic history, not ideology
+
+Fernand Braudel separates two layers. At the bottom, **market towns**: many small sellers, price settling from below by competition. Above them, a small number of large operators who **set** prices rather than take them.
+
+[Manuel DeLanda's summary](https://nettime.org/Lists-Archives/nettime-l-9610/msg00025.html) of the upper layer states the point directly:
+
+> Capitalism *"has always engaged in anti-competitive practices, manipulating demand and supply in a variety of ways."*
+
+He calls that layer an **anti-market**. He also notes that inside a large firm *"prices are increasingly replaced by commands as coordinating mechanisms"* — so the largest actors are not running on price signals internally either.
+
+**Two things follow, and the second is the useful one.**
+
+1. **The signal Aequitas is accused of destroying is already degraded** where market power is concentrated. **This is the demand-side twin of move (a):** just as Aequitas declines to compute *value* and computes *cost* instead, it declines to infer demand from a number the seller helped write.
+2. **The argument cuts against the free-market right and the Marxist left at once**, because both treat capitalism as one system rather than two layers. **Aequitas is pro-market and anti-capitalist**, and this is where that claim is grounded. Research note: `02-research/DeLanda_markets-antimarkets_v0.2.md`.
+
+⚠️ **State it as a tendency, not a taxonomy.** Real small-producer markets also have unequal information and local monopolies. *"Markets are fine, capitalism is the problem"* is tidier than the truth. **For an academic write-up, cite Braudel directly and keep DeLanda for the popular text.**
+
+### What a pledge does that a price cannot
+
+> **A pledge cannot be advertised into existence.**
+
+It is backed 1:1 by hours the pledger actually worked, it is spent once from a lifetime budget, and it is public (Foundations §5.3, §6.4). **A seller can raise desire. A seller cannot raise the hours in someone else's day.**
+
+**And the lever is far less concentrated, which is measured rather than asserted:**
+
+| System | Concentration of the demand lever |
+|---|---|
+| Money | Top-tail wealth ≈ **10⁶ ×** the median (SCF 2022 + Forbes) |
+| Aequitas | Pledging power bounded by **24 ÷ F ≈ 2.4 ×** at a 10-hour floor |
+
+**Every living person holds some**, because self-care credits everyone (Foundations §6.1b). Sources: `06-simulation/disparity-ceiling/DISPARITY_CEILING.md`, Foundations §7.5.
+
+### Worked examples
+
+Both are in **Foundations §6.4d** with the arithmetic: a **radicchio** request where **four 0.5-hour pledges** cover the ≈2 hours of work to put an extra box on a shelf; and an artist whose **5,000 likes** convert to **500 h** of pledged debit-room against a **300 h** need, with the 200 h surplus becoming a non-consumable reserve under §6.4c rather than a bonus.
+
+**One design finding recorded there:** a **flat rate per like breaks the budget discipline** (at 0.1 h a like, a person could give 54,500 likes a year before their budget bound). **The sound preset is a share of a budget**, which normalises itself.
+
+### What move (e) does not do
+
+**It does not answer the last-unit question.** Two people, one radicchio. **Pledges decide how many are grown; they do not decide who gets the last one.** That is distribution, answered at the point of hand-over by a queue, a lottery, or pledge-priority (Foundations §7.5). **Move (e) attacks the premise that a price was doing that job honestly. It does not claim to do the job itself.**
 
 ---
 

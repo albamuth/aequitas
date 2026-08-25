@@ -1,10 +1,10 @@
 <!-- tag: ovw-aequitas-overview -->
 # Aequitas — Overview
 
-> **Version:** 0.15
-> **Date:** 2026-08-23
+> **Version:** 0.17
+> **Date:** 2026-08-24
 > **Audience:** everyone. No economics background assumed, none required.
-> **Rigorous version:** `00-strategy/Aequitas_Foundations_v0.20.md`. This document is the plain-language companion; where they differ, the Foundations govern.
+> **Rigorous version:** `00-strategy/Aequitas_Foundations_v0.22.md`. This document is the plain-language companion; where they differ, the Foundations govern.
 > **Version history & what each version superseded:** `00-strategy/Aequitas_Overview_CHANGELOG.md`.
 
 *Aequitas* (genitive *aequitatis*) is the Latin word for fairness, evenness, symmetry — the quality of things being level with one another.
@@ -76,6 +76,12 @@ Aequitas is the same shape. It is a set of principles about how cost is counted.
 **This matters for reading the rest of the document.** When a later section says the books catch an under-declared emission, or that an estimate improves as better data arrives, or that a purchase is refused because someone is over their limit — **a trust network is the thing doing it.** Aequitas says what should be counted. Trust networks are where the counting happens, or fails to.
 
 **And they are not prescribed by this project.** How a network handles privacy, what technology it runs on, which laws it must satisfy, how it documents its own founding — all of that is theirs to decide. **They compete on one thing only: how close to the truth they can get.** A network people cannot check is a network people will not use.
+
+> **One thing to clear up, because readers keep getting it wrong.** **A trust network has no set size.** It can cover a valley, a trade, a country, several continents, or the world. **Nothing here says networks are small or that they match a town or a region.**
+>
+> Aequitas does say that no single body may own the rules, and that different networks may run different settings and must publish them. **That is about not having a boss. It is not about being small.** In fact networks that work together are expected to keep merging over time, and the fairness limit above — the roughly 2.4-times cap — holds **across every network that can trade with every other**, not one town at a time.
+>
+> **Where this document does talk about something local, it means a physical thing being handed to a physical person somewhere** — the queue at a butcher's counter, or a village with one power station. **That is a fact about the object, not about the network.**
 
 *The detail is in `00-strategy/C2_TrustNetworks_v0.1.md`.*
 
@@ -182,7 +188,7 @@ Education. Research. Infrastructure. Films. A blockbuster's viewers pay for the 
 
 **And this is the only thing that lets the books ever close.** Picture charging a hospital's construction to its patients. To do it honestly you would have to fold in the builder's costs, and the cement plant's, and the steel mill's, and the schooling of the engineers who designed the place — back and back, with no end, to the first human who ever built anything. The sum never finishes. Front-loading is what stops the regress: a building's cost is fixed once, up front, and a patient's bill never reaches back past the front door.
 
-**So who carries a building year to year?** The whole cost rides the **building itself**, shared among the people who run it — and shared *by how long each has worked there*. A nurse hired on Monday inherits almost none of it; a thirty-year veteran a little more. Nobody takes on a whole hospital by walking in the door — which is exactly what would otherwise scare people away from staffing the places that need it most. The community's pledges don't erase that cost — they give the staff the *room* to carry it, cushioning the bite. Withdraw the pledges and the weight comes back, so a place leans on them hardest when it is new and aims to grow sturdy enough not to need every one.
+**So who carries a building year to year?** The whole cost rides the **building itself**, shared among the people who run it — and shared *by how long each has worked there*. A nurse hired on Monday inherits almost none of it; a thirty-year veteran a little more. Nobody takes on a whole hospital by walking in the door — which is exactly what would otherwise scare people away from staffing the places that need it most. The community's pledges don't erase that cost — they give the staff the *room* to carry it, cushioning the bite. And because a pledge is **permanent — it can't be taken back** (see §6) — the staff can rely on that room and get on with the work; the cost is a one-time expense to whoever pledged, not a loan that can be called in.
 
 **And the share you built up stays yours — you can't hand it off by walking away.** The *stuff* of a thing (its material) travels with it when you pass it on. But your share of the *work that made it*, earned by the time you held it, stays on your record. Own a 500,000-hour mansion for ten years and hand it on, and after the next owner has held it as long as you did, roughly half of that making-cost is still on your books. You can't dodge it by giving the thing to someone outside the system either — if there's no record of a hand-off, the record still shows *you* holding it, so you keep the whole weight. The one thing that lightens your load is a *real* new holder taking it on. A useful side effect: **second-hand things start out cheap** for the new owner — they've put in no time yet — and grow heavier the longer they keep them.
 
@@ -231,7 +237,21 @@ There is no chip. There is nothing to push across the table, nothing to lend, no
 
 Note that none of the above is *banned*. Nobody writes a rule against usury or rent-seeking, nobody enforces it, nobody can be bribed to look away. **These activities are unavailable in the way that dividing by zero is unavailable.** One structural property closes five doors, which is a much better bargain than five laws.
 
-The same property means **prices are simply costs.** There is no margin, because a price is a statement of what something took, and you cannot mark up a measurement. If a shop asks more than a thing cost, the number is just wrong, and the books show it.
+The same property means **there is no price at all — only a cost.** The number on a thing is a statement of what that thing took, and **you cannot mark up a measurement.** If a shop asks more than a thing cost, the number is just wrong, and the books show it.
+
+**And that number is narrower than people expect, on purpose.** It carries **what the thing used up**, and nothing else. A farm's barn is not in the beef. A factory's machines are not in what they made.
+
+> **This is the most common objection to Aequitas, so here is the answer with a number in it.**
+>
+> A barn costs **20,000 hours** to build and shelters cattle for **20 years**, over which the farm sells **40,000 kg** of beef. Split the barn across the beef and you would add **0.5 hours to every kilogram**. Aequitas adds **nothing.**
+>
+> **The 20,000 hours did not disappear.** They sit on the farmer, for as long as they hold the barn. To carry that much debt you need about **16,700 hours** of credit standing behind it — **roughly four and a half years of everything one person earns.** *That* is what stops a barn going up that nobody needs.
+>
+> **Now do it the other way and watch who pays.** The 20,000 hours come off the one farmer and land on about **40,000 shoppers**, half an hour each. None of them chose to build a barn. **The only person who made the decision is the only person the cost stops bothering.**
+>
+> **The rule that looks like it is hiding a cost is the rule that keeps the cost pointed at whoever chose it.**
+
+**One honest consequence, and the books say so out loud.** Two farms selling the same beef — one with a big barn, one with a shed — show the **same** number per kilogram. The number tells you what the beef took, not what the farm's whole way of working costs. **What keeps the big barn honest is the farmer's own ledger, not the sticker** — the same way pollution is kept honest by sitting on whoever caused it (§4), rather than by hoping a shopper notices.
 
 **What survives — and it is essential.** Removing profit does not remove competition. Producers still compete, hard, on **quality, craft, and efficiency**: doing the same thing with fewer hours, less material, less waste. That is genuine rivalry with the extraction stripped out, and the system leans on it heavily (see §7).
 
@@ -356,6 +376,52 @@ Three things this quietly fixes:
 - **It gets dangerous work done — without danger-pay.** Everyone earns the same credit per hour, so there's no hazard bonus to lure people into a toxic cleanup. Instead, when lots of people pledge to see it done, the pledges *beyond* what the job costs become an **insurance fund** for that job: it only pays out if the work later harms whoever did it (their medical care, cleaning up a mess that resurfaces, harm to bystanders). Society de-risks the worker exactly as much as it wants the job done. Because that fund can only ever cover real harm — never be pocketed as a treat — it rewards the nasty work without making anyone richer than anyone else. (It helps with *dangerous* unwanted work; plain *boring* work is still an open problem.)
 
 **One honest weakness.** Pledges follow reputation, so a first-time maker attracts none. This is the same cold-start problem unknown creators face with money today, and the barrier is much lower — attention rather than capital — but it is real and shouldn't be waved away.
+
+<!-- tag: ovw-demand-lever -->
+### "But a price already tells you what people want"
+
+**This is the objection economists bring first, and it hides an assumption nobody states out loud:** that a price is an honest report of how scarce a thing is and how much people want it.
+
+**In a market with a few big sellers, it is not.**
+
+| What people assume | What is actually going on |
+|---|---|
+| Scarcity is a physical fact, and the price reports it | **A lot of scarcity is made on purpose.** Hold back supply and the number stays up. |
+| Wanting is a fact, and the price reports that too | **Wanting is manufactured, on an industrial scale.** That is the entire job of advertising. |
+| So the price tells you what people want | **The same firms control supply and work on demand.** The price is partly reporting its own author. |
+
+**This is not a slogan — it is economic history.** Fernand Braudel described two layers, not one: market towns full of small sellers where price settles from below, and above them a handful of operators large enough to *set* prices rather than take them. [Manuel DeLanda](https://nettime.org/Lists-Archives/nettime-l-9610/msg00025.html) sums that upper layer up bluntly: it *"has always engaged in anti-competitive practices, manipulating demand and supply in a variety of ways."* **He calls it an anti-market — and that, not commerce, is what Aequitas is against.**
+
+> **So Aequitas is not smashing a clean instrument and offering a worse one. It is replacing a signal the seller helped write.**
+
+**A pledge cannot be advertised into existence.** It is backed by hours you actually worked, spent once, and visible to everyone. **A seller can make you want something. A seller cannot put more hours in your day.**
+
+**And the power to say what gets made is spread far more evenly:**
+
+| | How unequal the say is |
+|---|---|
+| Money | The top reaches about **a million times** the middle |
+| Aequitas | Bounded at about **2.4 times** — and everyone alive holds some, because staying alive earns credit |
+
+#### Two examples
+
+**Someone wants radicchio at their corner shop.** They tell their phone. Under settings they chose earlier, it puts **half an hour** of pledge behind getting radicchio to that shop.
+
+Putting one extra box on that shelf — picking it, loading it, the lorry's extra minutes, stacking it — is about **two hours of work**. So **four people wishing for it fills one box.** A haulier sees the pledges, adds a box, the shopkeeper takes it. **No price moved and nobody planned it.**
+
+**An artist posts a photo of their street mural.** **Five thousand people like it.** Their apps turn those likes into pledges, at a rate each person set for themselves.
+
+| | |
+|---|---|
+| Room raised for the artist | **500 hours** |
+| What their next mural needs — paint, travel | **300 hours** |
+| Left over | **200 hours** |
+
+**The leftover does not become spending money.** It is set aside against harm the job might cause, and if nothing goes wrong it simply lapses. **Nobody gets a bonus for being popular.**
+
+*(One catch worth knowing: a flat rate per like doesn't limit anything — at six minutes a like you could hand out fifty thousand likes a year before it pinched. The sensible setting is a **share of a budget**: "this like costs my art budget divided by the likes I give this month." That balances itself.)*
+
+**Two things this does not do.** It does not let likes buy credit — a pledge is not credit, and no amount of applause turns into earned hours. And **it does not answer who gets the last radicchio when two people want it.** Pledges decide how many get grown. Who gets the last one is a queue, a lottery, or first-in-line at the shop — decided where the thing is handed over, not by this document.
 
 <!-- tag: ovw-when-does-the-work-actually -->
 ### When does the work actually count?
@@ -516,6 +582,6 @@ What was deliberately dropped:
 
 ---
 
-*For the rigorous statement of everything above, with the arguments and the open problems in full: `00-strategy/Aequitas_Foundations_v0.20.md`.*
+*For the rigorous statement of everything above, with the arguments and the open problems in full: `00-strategy/Aequitas_Foundations_v0.22.md`.*
 
-*End of v0.15.*
+*End of v0.17.*

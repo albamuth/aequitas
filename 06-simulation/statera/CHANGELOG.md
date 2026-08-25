@@ -8,6 +8,21 @@
 
 ---
 
+<!-- tag: sta-critique-fixes-2026-08-24 -->
+### 2026-08-24 — three code fixes from the outside-critique run
+
+The five-model outside critique (`07-outreach/critique/REPORT_v0.1.md`) found three kernel defects. All fixed. #12 and #13 were the *simulation failing to obey a spec that was already correct*; #11 implements a Foundations mechanism (§6.2b) the kernel had left out. No Foundations ruling moved.
+
+**Finding #13 — a hand-off created or destroyed matter across different-sized cohorts.** `Chain.handoff` wrote the same per-exemplar quantity to both sides of a custody change and was **not** tagged for the conservation check, so trade between a headcount-1 producer and a headcount-100 consumer silently invented matter (100 receivers each took the full amount the one sender shed). Fixed in [`chains.py`](chains.py): the receiver's per-exemplar quantity is now scaled by `headcount(frm)/headcount(to)`, and the pair is tagged as a conservation process so `check_conservation` weighs both sides by headcount. **Scale is 1.0 when headcounts match, so every existing headcount-1 chain is byte-identical.** New test: `test_a_handoff_conserves_across_different_headcounts`.
+
+**Finding #12 — the ratio gate could be silently made non-binding.** The gate is `rho·C − collapse(D, weights)` with credit `C` in labour-hours, but a weighting model that zeroed `labour_h` (settable straight from a scenario's `[dials.weights]` TOML) made the collapsed debit ignore everything `consume()` records, so consumption was unbounded. And the planned §7 "discovered pollutant" shock multiplied `mass_kg`'s **0.0** default weight — `1.25 × 0.0 = 0.0` — so the headline re-weight scenario would have proved nothing. Fixed in [`statera.py`](statera.py): new `validate_gate_weights` pins `labour_h = 1.0` and forbids negative mitigation weights, called at kernel construction and at scenario `--check` time ([`run_scenario.py`](run_scenario.py)). New tests: `test_a_zeroed_labour_weight_is_refused`, `test_a_reweight_moves_a_number`. [`STATERA_PLAN_v0.2.md`](STATERA_PLAN_v0.2.md) §7 gains a warning that the pollutant shock must start from a non-zero weight.
+
+**Finding #11 — pledges granted no debit-room to a recipient.** `frontload` recorded the pledger's budget draw (IC-8) but never the *grant* Sec.6.2b confers on the bearer, so `room()` had no term for it and the Front-Loading Rule was asserted by the healthcare/entertainment chains without being run — the chains only passed because a 120-year warm-up left every actor credit-rich. Implemented as **earmarked grants** (author decision, 2026-08-24): the bearer's creation-cost row is flagged `creation=True`; a pledge records a `grant_h` on the bearer; `room()` adds `min(granted, creation_cost)`. The offset cushions that specific bite down to zero and **never becomes spendable headroom** (Sec.6.4c — pledge surplus is non-consumable), and nothing leaves the ledger (A1 — the creation-cost debit stays in `D`). New columns `grant_h` and `creation` on the log; new projections `granted()` and `creation_cost()`; new `check_grants` asserting granted room is backed by real pledging budget. New test `test_a_pledge_grants_earmarked_debit_room`: a one-year-old co-op locked out by a 30,000 h creation-cost is cushioned exactly by a matching pledge, and an over-pledge adds nothing.
+
+**Kernel self-tests 24 → 27, chain tests 14 → 16, all green.**
+
+---
+
 <!-- tag: sta-reorg-2026-08-24 -->
 ### 2026-08-24 — moved into its own folder. No behaviour changed.
 

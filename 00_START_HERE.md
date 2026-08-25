@@ -31,16 +31,19 @@ That is all of it. Everything else follows from taking those two seriously and n
 
 ## The axioms
 
-Abbreviated. Full statements in `00-strategy/Aequitas_Foundations_v0.20.md` §1.
+Abbreviated. Full statements in `00-strategy/Aequitas_Foundations_v0.22.md` §1.
 
 1. Credit and debit **are** material and energy flow. Time is the yardstick, not the substance. Financial instruments are not material and do not appear in the books at all.
 2. Labour is never rate-scaled. Hazard and exertion resolve as *material* costs, not as higher pay. Training is front-loaded credited work, never charged downstream.
-3. Price ≡ cost. There is no profit in exchange. Credit cannot be transferred, lent, or inherited.
-4. Property debit is dischargeable on transfer. Consumption debit is permanent and stays with whoever caused it. Custody follows possession.
+3. **Cost, not price.** A thing's cost is what was **consumed** to make it. Nothing is added to that figure — no margin, no profit in exchange — and nothing enters it that the thing did not consume, so a factory is never amortised into what it made. Credit cannot be transferred, lent, or inherited.
+4. Property debit is dischargeable on transfer. Consumption debit is permanent and stays with whoever caused it. Custody follows possession. **Every cost is accounted to whoever caused it — on *a* ledger, never necessarily the product's.**
 5. The ledger is *derived* from an append-only event log, never stored. Debit is a vector, collapsed only on demand.
 6. One credit — time worked. Three feedback channels, not three credit types.
 7. Verification is a four-level maturity ladder, not an assumption of honesty.
-8. One verified human, one account. Non-participants are estimated statistically, never credited.
+8. One verified human, one account. Non-participants are estimated statistically, never credited. **An organisation is not a final holder of debit** — its debit is its members', divided by hours worked, so closing it moves nothing.
+9. **No governing body.** Nobody may acquire authority over the core rules. Everything below the core may vary between trust networks, must be published, and must be re-computable by anyone. **This says nothing about size: a trust network may cover a valley or the world.**
+
+> **⚠️ Item 3 changed on 2026-08-24, and the old wording is worth knowing about.** It read **"price ≡ cost"** from the first draft until v0.21. An outside economist review showed that phrasing contradicted the rule that a factory's cost stays on the factory: *if the barn is not in the beef, then beef's "price" is not beef's cost.* **The ruling was right and the axiom's wording was wrong** — it said a cost lands on the *thing*, while every mechanism in the system says a cost lands on whoever **caused** it. **A4 carried the same defect** and was repaired in the same pass. Full argument: `00-strategy/A5_repair_PLAN_v0.1.md` and Objections **B8**.
 
 ## The headline result: the disparity ceiling
 
@@ -83,7 +86,7 @@ Every simulation in `06-simulation/` runs standalone with its own self-tests, an
 
 ## The open problems
 
-They are in `00-strategy/Aequitas_Objections_v0.19.md`, listed rather than hidden. The live ones:
+They are in `00-strategy/Aequitas_Objections_v0.21.md`, listed rather than hidden. The live ones:
 
 - **OP-22** — proving an hours claim is backed by real work without exposing a private life history.
 - **OP-10** — who governs the weighting model, and how that avoids becoming a capture surface. **The top blocker.**

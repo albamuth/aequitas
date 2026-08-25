@@ -17,7 +17,7 @@ The replicator functions as both device and metaphor for automation, and critica
 
 ## Where it is not useful — be strict about this
 
-**Trekonomics has no mechanism.** It describes a destination with no route, and it assumes away the hard part: with replicators and unlimited energy, allocation is trivial because nothing is scarce. Aequitas's entire problem is allocation *under* scarcity. Saadia's world doesn't need [[debit-tolerance]], [[price-equals-cost]], or a [[verification-ladder]] because it doesn't need accounting at all.
+**Trekonomics has no mechanism.** It describes a destination with no route, and it assumes away the hard part: with replicators and unlimited energy, allocation is trivial because nothing is scarce. Aequitas's entire problem is allocation *under* scarcity. Saadia's world doesn't need [[debit-tolerance]], [[cost-not-price]], or a [[verification-ladder]] because it doesn't need accounting at all.
 
 There is also a documented critique worth taking seriously: the book underweights **social identity and in-group favoritism**. Removing material scarcity does not remove status competition — and a system where [[enrichment]] *is* status may intensify it. That is a direct warning about OP-6's popularity-plutocracy risk.
 

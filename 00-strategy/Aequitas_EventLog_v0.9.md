@@ -4,7 +4,7 @@
 > **Version:** 0.9
 > **Date:** 2026-08-24
 > **Status:** Working draft. The structure is settled; the taxonomies and the marked mechanisms are open.
-> **Depends on:** `Aequitas_Foundations_v0.20.md` A1–A8
+> **Depends on:** `Aequitas_Foundations_v0.22.md` A1–A8
 > **Version history & what each version superseded:** `00-strategy/Aequitas_EventLog_CHANGELOG.md`.
 > **Validates against:** the sandwich trace (§10)
 
@@ -227,7 +227,7 @@ Note that `method_ref` also appears inside `Confidence` (§4.2), where it names 
 Confidence { p: number | interval, assessor: AccountRef, method_ref: ModelRef }
 ```
 
-Confidence must be **asserted by someone**, not floated. An unattributed confidence number is an authority with no name, which is precisely what A8 (local governance) forbids. Different assessors may disagree about the same quantity; that disagreement is data.
+Confidence must be **asserted by someone**, not floated. An unattributed confidence number is an authority with no name, which is precisely what A8 (no governing body) forbids. Different assessors may disagree about the same quantity; that disagreement is data.
 
 Confidence is **not** derivable from basis. Do not build a table that maps `instrumented → 0.95`.
 
@@ -633,7 +633,7 @@ The schema has no field for: **price · wage · rate · profit · margin · inte
 
 | Absent | Axiom |
 |---|---|
-| price, margin, profit | A5 (price ≡ cost) — [[price-equals-cost]] |
+| price, margin, profit | A5 (cost, not price) — [[cost-not-price]] |
 | wage, rate, multiplier | A2 (time as measure) — [[time-as-yardstick]] |
 | currency, transferable credit | A3 (non-fungibility) — [[non-fungibility]] |
 | balance, account total | A6 (derived, not stored) — [[derived-ledger]] |

@@ -23,7 +23,7 @@ This one distinction does an enormous amount of the theory's work. It makes **pr
 
 Under capitalism, holding an asset generates income (rent, appreciation, interest). Under Aequitas, holding an asset generates *debit*, and the only way to get rid of it is to give the asset to someone else — who then carries it. There is no position in which merely owning something pays.
 
-Combined with [[price-equals-cost]], this is the whole of [[capitalism-cannot-function]]: no rent, no rental income, no speculation, no compounding capital. None of it is banned. There is simply no mechanism.
+Combined with [[cost-not-price]], this is the whole of [[capitalism-cannot-function]]: no rent, no rental income, no speculation, no compounding capital. None of it is banned. There is simply no mechanism.
 
 See [[self-work-identity]] for the surprising and important corollary about improving your own property.
 
@@ -34,7 +34,7 @@ See [[self-work-identity]] for the surprising and important corollary about impr
 ## Depends on
 
 - [[material-flow-value]]
-- [[price-equals-cost]]
+- [[cost-not-price]]
 
 ## Consequences
 

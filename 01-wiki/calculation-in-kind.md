@@ -10,7 +10,7 @@ This provoked Ludwig von Mises's "Economic Calculation in a Socialist Commonweal
 
 ## Why this is the central objection Aequitas must answer
 
-**Aequitas is calculation in kind.** [[material-flow-value]] is Neurath's position with a physical-flow value theory, and [[price-equals-cost]] removes money prices exactly as Mises said could not be done. Any serious economist reading the whitepaper will reach for Mises within a page.
+**Aequitas is calculation in kind.** [[material-flow-value]] is Neurath's position with a physical-flow value theory, and [[cost-not-price]] removes money prices exactly as Mises said could not be done. Any serious economist reading the whitepaper will reach for Mises within a page.
 
 The answers Aequitas has, and their honest strength:
 

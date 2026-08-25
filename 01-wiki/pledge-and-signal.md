@@ -28,7 +28,7 @@ A pledge is **not** a purchase, **not** a spend of your credit, and **not** a pr
 
 ## The contingent reserve — over-pledging dangerous work
 
-When a task attracts **more pledged hours than it costs**, the surplus is **not** a bonus to the doer and **not** spendable — that would be profit ([[price-equals-cost]]) and would let someone concentrate consumption. Instead it becomes a **contingent reserve**: earmarked, non-spendable room that pays out **only against a verified future cost caused by the task** — the doer's later injury or illness, a site's remediation resurfacing, third-party harm.
+When a task attracts **more pledged hours than it costs**, the surplus is **not** a bonus to the doer and **not** spendable — that would be profit ([[cost-not-price]]) and would let someone concentrate consumption. Instead it becomes a **contingent reserve**: earmarked, non-spendable room that pays out **only against a verified future cost caused by the task** — the doer's later injury or illness, a site's remediation resurfacing, third-party harm.
 
 - **Split by hours *on the task*** — the cover reaches whoever did *this* work, not whoever's been a co-op member longest.
 - **Causation by physical-trace** — a claim draws the reserve only if the harm traces to the task; diffuse/latent harm goes to a cohort convention.
@@ -38,7 +38,7 @@ This gives *hazardous* unwanted work a demand-gated incentive with no danger-pay
 
 ## What it's for
 
-- **A decentralized demand signal** — the job [[price-equals-cost|prices]] do, split back into its two honest halves.
+- **A decentralized demand signal** — the job [[cost-not-price|prices]] do, split back into its two honest halves.
 - **A purpose for surplus.** Credit can't be accumulated into wealth ([[non-fungibility]]), so a high producer directs what gets made instead of hoarding.
 - **Funding the front-loaded and the speculative** — education, research, films, and [[debit-taxonomy|capital]]; a large enough pool of pledges *is* an X-prize.
 - **A universal basic voice.** Because staying alive is credited work, every living person gets some pledging-power simply for being alive — an equal baseline say in what society makes next.

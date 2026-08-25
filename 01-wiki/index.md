@@ -9,8 +9,8 @@
 | A1 | [[material-flow-value]] | Credit and debit are records of matter and energy moving. |
 | A2 | [[time-as-yardstick]] | Time measures flows; it is not itself value. Labor is never rate-scaled. |
 | A3 | [[non-fungibility]] | Credits are unique event records. Only debit moves. |
-| A4 | [[no-externalities]] | Every consequence is priced in, including ones found later. |
-| A5 | [[price-equals-cost]] | No profit in exchange. |
+| A4 | [[no-externalities]] | Every consequence is accounted to whoever caused it, including ones found later. |
+| A5 | [[cost-not-price]] | A thing's cost is what was **consumed** to make it. Nothing is added; nothing enters that the thing did not consume. |
 | A6 | [[derived-ledger]] | The event log is authoritative; balances are computed. |
 | A7 | [[statistical-coverage]] | Everyone is accounted for; only participants are credited. |
 | A8 | [[protocol-governance]] | No institution may own the core rules. |

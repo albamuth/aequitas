@@ -368,6 +368,8 @@ Weights are applied only inside `collapse()`. So a shock of the form
 
 **re-weights all of history at once, at no cost**, because the ledger was never stored. This is the author's *"a discovered pollutant that was previously unaccounted for"* scenario, and it arrives almost for free from the v0.1 design.
 
+> **⚠️ The shock must start from a NON-ZERO weight, or it does nothing** *(outside-critique finding #12, 2026-08-24)*. `mass_kg` defaults to `0.0` (breathing sits at its natural-remediation baseline, Sec.3.3), and `1.25 × 0.0 = 0.0` — a `multiply` shock on a zero weight is arithmetically inert, and a scenario built that way would prove nothing while looking like it tested re-weighting. So this scenario must **set `dials.weights.mass_kg` to a small non-zero mitigation cost from period 0** (the pollutant was always there, just uncosted), and the shock then *raises* it — which is what `test_a_reweight_moves_a_number` in `statera.py` asserts actually shrinks the gate. A `multiply` on a baseline-zero flow is the wrong model for "discovered pollutant"; an `add`/`set` to a non-zero cost, or a `multiply` on an already-priced flow, is the right one. (Note also: `labour_h` is pinned to `1.0` and cannot be a shock target — the gate guard refuses any other value.)
+
 ---
 
 ## 8. Honest limits of the cohort model

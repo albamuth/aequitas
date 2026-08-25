@@ -1,6 +1,6 @@
 # Cost the Limit of Price
 
-> Josiah Warren's 1827 maxim — and the **only historical field test of [[price-equals-cost]]**. It ran for three years, it worked commercially, and it broke on exactly the problem [[time-as-yardstick]] exists to solve.
+> Josiah Warren's 1827 maxim — and the **only historical field test of [[cost-not-price]]**. It ran for three years, it worked commercially, and it broke on exactly the problem [[time-as-yardstick]] exists to solve.
 
 ## What happened
 
@@ -38,7 +38,7 @@ This is a strong, specific, historically grounded claim: **Aequitas closes a 199
 ## Related
 
 - [[mutualism]] — Proudhon reached the same doctrine independently, later
-- [[time-as-yardstick]] · [[price-equals-cost]]
+- [[time-as-yardstick]] · [[cost-not-price]]
 
 ---
 *Status: reference — external history*

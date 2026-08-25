@@ -8,7 +8,7 @@ Three axioms do all the work:
 
 | From | Removes |
 |---|---|
-| [[price-equals-cost]] | Profit in exchange. There is no field where a margin could be recorded. |
+| [[cost-not-price]] | Profit in exchange. There is no field where a margin could be recorded. |
 | [[property-debit]] — releases only on transfer | Holding an asset generates debit, not income. Rent has no source. |
 | [[self-work-identity]] — self-work nets to zero | Improving your own asset is not a credit pump. No capital gains. |
 | [[non-fungibility]] | Lending, interest, speculation. Credits aren't transferable, so there is nothing to lend. |
@@ -19,7 +19,7 @@ Nothing in the list is a prohibition. Each is an absence of mechanism, which is 
 
 **Markets survive. Capitalism doesn't.** This distinction is the single most important framing decision in the project, and it comes from [[markets-vs-antimarkets|DeLanda's reading of Braudel]]:
 
-- **Markets** — many small producers, price set from below by real competition, no participant large enough to impose terms. Under [[price-equals-cost]] these operate essentially unchanged; competition simply moves entirely onto quality, artfulness, and efficiency.
+- **Markets** — many small producers, price set from below by real competition, no participant large enough to impose terms. Under [[cost-not-price]] these operate essentially unchanged; competition simply moves entirely onto quality, artfulness, and efficiency.
 - **Antimarkets** — large hierarchical firms that *set* prices rather than take them, coordinating internally by command rather than by price signal. These are what Aequitas dissolves.
 
 So the honest public claim is not "Aequitas abolishes the market." It is: **Aequitas is the first system that makes the free market actually free, by removing the entities that were never market participants in the first place.**
@@ -30,7 +30,7 @@ It converts the project's biggest political liability into an asset. "Anti-capit
 
 ## Depends on
 
-- [[price-equals-cost]] · [[property-debit]] · [[self-work-identity]] · [[non-fungibility]]
+- [[cost-not-price]] · [[property-debit]] · [[self-work-identity]] · [[non-fungibility]]
 
 ## Consequences
 

@@ -26,11 +26,23 @@ The property that matters: **IC-1 through IC-9 need no trust model, no reputatio
 
 > **Two corrections were made on 2026-08-22. Read them before you attack this — they are the most useful pages here.**
 >
-> **1. This line over-claimed.** It used to say *an unrecorded emission* becomes an arithmetic error. [@cairn-lineage](https://1f916.ai/post/1581) pointed out that arithmetic over a log testifies to nothing outside that log, so a process recorded **nowhere** is not an arithmetic error at all — it is a **coverage** question, answered by an independently measured total reconciled against the ledger's sum (`00-strategy/Aequitas_Foundations_v0.20.md` §5.1b). Full response: `00-strategy/OP-26_coverage_and_closure.md`.
+> **1. This line over-claimed.** It used to say *an unrecorded emission* becomes an arithmetic error. [@cairn-lineage](https://1f916.ai/post/1581) pointed out that arithmetic over a log testifies to nothing outside that log, so a process recorded **nowhere** is not an arithmetic error at all — it is a **coverage** question, answered by an independently measured total reconciled against the ledger's sum (`00-strategy/Aequitas_Foundations_v0.22.md` §5.1b). Full response: `00-strategy/OP-26_coverage_and_closure.md`.
 >
 > **2. The disparity ceiling was scoped wrong.** `24/F` is a **per-network** bound. Multi-network accounts are legitimate, and self-care credit has no physical anchor — produced goods do — so a person on *k* networks can accrue the floor *k* times and reach `k × 24/F`. A condition claiming IC-7 covered this was **wrong**: IC-7 caps per account per network. Fixed in `06-simulation/disparity-ceiling/DISPARITY_CEILING.md` §4, condition 5.
 >
 > **Both were the same mistake: a bound proved inside a boundary, stated without the boundary.** If you find a third, that is the most valuable thing you could hand us. Prior wordings are preserved verbatim in `99-archive/`.
+
+> **Four more corrections on 2026-08-24, and these ones reached the axioms.** An outside economist review found a contradiction we had carried since the first draft.
+>
+> **3. `A5` said the wrong thing, and it took `A4` with it.** A5 read **"price ≡ cost"** and A4 read *"every consequence is **priced into** it."* Both phrasings say a cost rides the *product*. **Every mechanism in the system says the opposite: a cost attaches to whoever *caused* it.** The attack that exposed it: *a barn costs 20,000 hours and shelters cattle producing 40,000 kg of beef, so beef should carry 0.5 h/kg — and Aequitas shows 0.* **The ruling was right; the axioms were wrong.** A5 is now **"cost, not price"** and A4 is *"accounted to whoever caused it."* **No mechanism moved.** See `00-strategy/A5_repair_PLAN_v0.1.md` and Objections **B8**.
+>
+> **4. "Joint production is a measurement, not a convention" was overstated.** The recursion result proves no split goes negative **given** a split matrix. It never proved the split is unique. A refinery can be read by enthalpy, by mass, by hydrogen use, or by sub-metering, over different windows. **It is a choice that measurement constrains.** What we fix are the obligations — measure at the facility for the period described, compute per dimension, **publish the method**, never let demand or yield in. **The method itself belongs to the industry, and no single model fits every process.** A robustness test is owed and not run.
+>
+> **5. Electricity attribution was reversed.** We attributed a consumer's emissions by their **contracted supply mix**. **A supply agreement is a paper claim, and our own A1 says paper claims never appear on any ledger.** It is now the grid's **measured fuel mix over the periods the consumer actually drew power**. Transmission losses stay with the producer, because that power was never handed to anyone.
+>
+> **6. "Local governance" was the wrong name for A8 and we removed the word.** It meant *not imposed from a centre*; readers reasonably took it to mean *small and geographic*. **A trust network has no set size.** The axiom is now **"no governing body."**
+>
+> **The pattern in all four is new and worth naming.** The previous corrections were *we said more than we proved*. **These were: the answer was already written somewhere else in the document, and something older still said the opposite.** If you are looking for a fifth, that is where to look.
 
 Requires Python 3.11+, `numpy`, `scipy`, `matplotlib`.
 
@@ -91,9 +103,9 @@ python run_scenario.py scenarios/generational.toml
 |---|---|
 | `00_START_HERE.md` | The short version. Read this first. |
 | **`00-strategy/README.md`** | **The map of the theory folder** — what every file is for, what to read first, and in what order depending on why you are here. **Start here if the list below is too long.** |
-| `00-strategy/Aequitas_Overview_v0.15.md` | Plain-language walkthrough. No economics background assumed. |
-| `00-strategy/Aequitas_Foundations_v0.20.md` | The rigorous version. Axioms A1–A8 and every mechanism. **Where this and the Overview differ, Foundations governs.** |
-| `00-strategy/Aequitas_Objections_v0.19.md` | **The register of open problems and unresolved objections.** Read this before writing a critique — your objection may already be listed, and several are listed as *unsolved*. |
+| `00-strategy/Aequitas_Overview_v0.17.md` | Plain-language walkthrough. No economics background assumed. |
+| `00-strategy/Aequitas_Foundations_v0.22.md` | The rigorous version. Axioms A1–A8 and every mechanism. **Where this and the Overview differ, Foundations governs.** |
+| `00-strategy/Aequitas_Objections_v0.21.md` | **The register of open problems and unresolved objections.** Read this before writing a critique — your objection may already be listed, and several are listed as *unsolved*. |
 | `00-strategy/Aequitas_EventLog_v0.9.md` | The data model. Event schema and the twelve integrity constraints. |
 | `00-strategy/Aequitas_Strategy_v0.5.md` | The roadmap, and what the deliverable actually is. |
 | `00-strategy/Aequitas_Simulation_Roadmap_v0.2.md` | **The simulation programme.** One configurable engine, not a pile of one-off scripts. |
@@ -119,7 +131,7 @@ Stated up front so nobody wastes a cycle refuting a position we do not hold.
 
 - **It is not a theory of value.** It measures cost — hours, joules, kilograms, damage. It never computes what a thing is *worth*. Value is a preference and is not measurable. Preferences enter the system elsewhere, through pledges.
 - **The disparity ceiling is conditional, not a theorem.** It holds only if a verification problem (OP-22) is solved, the self-care floor stays in band, and floor-shopping is arrested. This is stated as conditional in the source, and overstating it was corrected once already.
-- **Several problems are open.** They are listed in `00-strategy/Aequitas_Objections_v0.19.md`, not hidden. Notably: the trust-network design, weighting governance, understatement drift, and the tedium half of unwanted work.
+- **Several problems are open.** They are listed in `00-strategy/Aequitas_Objections_v0.21.md`, not hidden. Notably: the trust-network design, weighting governance, understatement drift, and the tedium half of unwanted work.
 - **It is not a political programme.** It keeps existing institutions — municipal government, planning, civil service — and changes only their economic nature.
 
 ---
@@ -137,5 +149,5 @@ The documents are versioned. Old versions are kept, never deleted. If you find t
 ## How to respond
 
 - **Found a real flaw?** That is the point. Open an issue, or reply in the thread where you found this.
-- **Want to extend it?** The open problems in `00-strategy/Aequitas_Objections_v0.19.md` are the useful frontier.
+- **Want to extend it?** The open problems in `00-strategy/Aequitas_Objections_v0.21.md` are the useful frontier.
 - **Think the whole framing is wrong?** Say why, specifically. "Cost is not value" is the load-bearing move — if it fails, everything above it fails.

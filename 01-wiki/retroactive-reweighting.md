@@ -21,7 +21,7 @@ It is also what makes [[no-externalities]] an honest claim rather than a boast. 
 
 ## Who games this
 
-The obvious exploit: **capture the weighting model.** If one body decides what a tonne of CO₂ costs to remediate, that body silently controls every balance in the world. **This is the single largest centralization risk in Aequitas (OP-10) and it is not solved.** Candidate defences — competing weighting models under local variance (A8), forced publication of methodology, recomputation by any party from the same log — are asserted and still unspecified.
+The obvious exploit: **capture the weighting model.** If one body decides what a tonne of CO₂ costs to remediate, that body silently controls every balance in the world. **This is the single largest centralization risk in Aequitas (OP-10) and it is not solved.** Candidate defences — competing weighting models under open variance (A8), forced publication of methodology, recomputation by any party from the same log — are asserted and still unspecified.
 
 **Three partial answers now exist, all from the OP-17 work:**
 

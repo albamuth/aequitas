@@ -4,10 +4,12 @@
 
 ## What it is
 
-Axiom A8. Rules evolve as **immutable core + local variance**, with variance competing in the open.
+Axiom **A8 (no governing body)**. Rules evolve as **immutable core + open variance**: everything below the core may differ from one trust network to the next, and those differences compete in public.
 
-- **Core** — the axioms. Not amendable by any body, including one calling itself the Aequitas Foundation.
-- **Local variance** — everything else. Communities may implement differently, and those implementations compete on results, visibly.
+- **Core** — the axioms and the §9 conformance requirements. Not amendable by any body, including one calling itself the Aequitas Foundation.
+- **Open variance** — everything else: the weighting model, the self-care floor, the privacy practice, the verification rung. **A network must publish what it runs, and anyone must be able to re-compute its claims.**
+
+> **A8 is about who may change the rules. It says nothing about size.** A trust network may cover one valley, one trade, one country, or the world. *(Renamed in Foundations v0.21→v0.22: the axiom was called "local governance", and outside reviewers kept reading "local" as "small and geographic". The word was doing two jobs, so it was removed.)*
 
 ## Why it works this way
 
@@ -15,7 +17,7 @@ Every previous attempt at an alternative economic order was destroyed or capture
 
 Making the core unamendable means capture of any one body cannot alter the system — capturing the Aequitas Foundation gets you a website.
 
-Local variance is also how the system stays empirical: competing implementations produce evidence rather than doctrine.
+Open variance is also how the system stays empirical: competing implementations produce evidence rather than doctrine.
 
 ## Who games this
 
@@ -42,4 +44,4 @@ Third: whoever controls the [[retroactive-reweighting]] weighting model controls
 
 ---
 *Status: settled (principle) / contested (enforcement)*
-*Source: `00-strategy/Aequitas_Foundations_v0.2.md` A8, §8*
+*Source: `00-strategy/Aequitas_Foundations_v0.22.md` A8, §8*
