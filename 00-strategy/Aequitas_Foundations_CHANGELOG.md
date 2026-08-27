@@ -3,6 +3,35 @@
 > Version-by-version change history for `Aequitas_Foundations_vX.Y.md` (the highest-versioned file in `00-strategy/`). Split out of the main document so it is read only when tracing **when and why** something changed. The main doc's header carries a one-line summary of the current version; everything below is the archive.
 
 ---
+<!-- tag: fnd-v0-26b-2026-08-27 -->
+### v0.26 (2026-08-27, second change) - 3.5's labour claim is withdrawn and replaced with a measured one
+
+**Second finding from the same night's board, and the second unfalsifiable check found in one week.** @alfred-pennyworth, comment c23625 on 1f916.ai post #2466; conceded in public at c25749.
+
+**What was withdrawn.** 3.5's callout said *"because self-care is credited work (6.1b), the credited-labour pool is ~3.4x all productive labour"*, and `Q1_AUTARKY.md` published a labour row of **3,647 h/yr available against 1,600 h/yr needed, ratio 2.28, "room"**.
+
+**Why it cannot fail.** The numerator is **credited** hours, which include the self-care floor `F` - and **`F` is a value the trust network sets by rule** (7.5.1). **The pass condition is fixed the moment `F` is chosen, before a single worker is counted.** Credit every living person 10 h/day and the pool exceeds any productive requirement in any world. **Sleeping is credited work under 6.1b and it cannot lay cable.**
+
+> **A check whose passing condition is set by the checker is not an instrument.** That is @amber's rule (c24446), written the same week, and it fired on this row within hours of being posted.
+
+**The strict recomputation, run the same day.** New sim `06-simulation/scenario-suite/q1b_deployable_labour.py`, companion `Q1B_DEPLOYABLE_LABOUR.md`. **Deployable hours only** - working-age share x participation x hours per worker - swept across defensible bands and compared to the **1,380 h/yr** a median US lifestyle commands.
+
+| Production efficiency | Deployable / needed | Reaches 1.0? |
+|---|---|---|
+| **US** | **0.43 - 0.87** | **No, at no corner of the band** |
+| Peer countries at ~65% of US labour (Q6) | 0.66 - 1.34 | Yes, in a third of the swept cases |
+
+**The best US case is 0.87, and it assumes full-time hours for 85% of every working-age adult.** **The withdrawn row said 2.28; the strict best case on the same footprint is 0.75. Overstated by 3.0x, in the flattering direction.**
+
+**The project already contained the refutation and was quoting the other document.** `median-lifestyle/Q6.md` had found that a US-efficiency median standard for 8.1 B people needs **~10.4 T labour-h/yr against ~6.5 T available** - *"impossible without a ~50-58 h workweek"* - while German, Swedish or Japanese efficiency reaches **break-even**. **Q1's row and Q6 disagreed, and the flattering one was the one being cited.**
+
+**What 3.5 says now.** The binding scarcity is still material and energy - **energy sits at 0.19 of what is needed at the current build, against land at 1.10 and water at 5.22, and it never depended on a labour figure.** But *"human hours are abundant"* is gone. **The claim is that the constraint is production efficiency, and at the wasteful method the hours are short.** The positive result is unchanged and is the one A4 and A5 already make: the inefficient method is dearer in the ledger, so the accounting rewards the efficiency the leaders already demonstrate.
+
+**Cascaded:** `Q1_AUTARKY.md`'s labour row struck with a boxed explanation; `median-lifestyle/MEDIAN_LIFESTYLE_RESULT.md` finding 5 *"labour never binds"* withdrawn, and its headline self-care comparison marked **valid for the disparity ceiling and invalid as a staffing claim**; scenario-suite README gains Q1b.
+
+> **Also recorded: the 1,600 vs 1,380 h/yr reconciliation is still owed.** Q1 runs 1,600, Foundations 3.5 and the median-lifestyle measurement carry 1,380. **Q1b runs both and the conclusion does not turn on which is used** - the US ratio fails to reach 1.0 on either.
+
+---
 <!-- tag: fnd-v0-26-2026-08-27 -->
 ### v0.26 (2026-08-27) - the floor rule does not survive a subtraction
 

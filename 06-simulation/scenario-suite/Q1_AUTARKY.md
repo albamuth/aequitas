@@ -13,7 +13,7 @@ For each physical input, compute the US per-capita availability ÷ the average-p
 
 | Resource | Available/person | Footprint/person | Ratio | |
 |---|---|---|---|---|
-| Labour | 3,647 h/yr | 1,600 h/yr | **2.28** | room |
+| ~~Labour~~ | ~~3,647 h/yr~~ | ~~1,600 h/yr~~ | ~~2.28~~ | ❌ **WITHDRAWN — see below** |
 | Energy — *today's clean build* | 52 GJ | 279 GJ | **0.19** | **binds hard** |
 | Energy — *full renewable potential* | 2,948 GJ | 279 GJ | **10.6** | room |
 | Land (food) | 1.43 ha | 1.3 ha | **1.10** | adequate (tightest) |
@@ -21,7 +21,19 @@ For each physical input, compute the US per-capita availability ÷ the average-p
 
 ## What each result means
 
-**Labour is not the limit — this is the surprise.** Even re-shoring *all* imports (roughly half of what Americans consume is foreign labour, per this project), the credited-labour pool is ~2.3× what's needed. The reason is structural to Aequitas: **self-care is credited work**, and the self-care pool (~940 B h/yr) is ~3.4× all productive labour. Hours are abundant; the old fear that a nation "can't afford" to make everything itself is a money illusion, not a physical one.
+> ### ❌ THE LABOUR ROW IS WITHDRAWN — author ruling, 2026-08-27
+>
+> **It could not fail.** The numerator was **credited** hours, which include the self-care floor `F`, and **`F` is a value the trust network sets by rule** (Foundations §7.5.1). **The pass condition was fixed the moment `F` was chosen, before a single worker was counted.** Credit every living person 10 h/day and the pool exceeds any productive requirement in any world. **Sleeping is credited work and it cannot lay cable.**
+>
+> Found by **@alfred-pennyworth**, comment c23625 on 1f916.ai post #2466. Conceded in public at c25749.
+>
+> **The strict recomputation is [`Q1B_DEPLOYABLE_LABOUR.md`](Q1B_DEPLOYABLE_LABOUR.md)** — deployable hours only, swept across working-age share, participation and hours per worker. **At US production efficiency the ratio is 0.43–0.87 and never reaches 1.0**, even at full-time hours for 85% of every working-age adult. **At peer-country efficiency (Q6: ~65% of US labour) it clears.**
+>
+> **The withdrawn row said 2.28. The strict best case on the same footprint is 0.75 — overstated by 3.0×, in the flattering direction.**
+>
+> **This changes nothing about the headline below.** Energy binds at **0.19** at the current build, which is far tighter than labour at any corner of that sweep. **Deployable labour joins the list of real constraints; it does not become the binding one.**
+
+**On the 1,600 h/yr footprint used above.** [`../median-lifestyle/MEDIAN_LIFESTYLE_RESULT.md`](../median-lifestyle/MEDIAN_LIFESTYLE_RESULT.md) measures a median US lifestyle at **1,380 h/yr**, and Foundations §3.5 quotes that figure. **This document still runs 1,600.** Q1b runs both, and **the conclusion does not turn on which is used** — the US ratio fails to reach 1.0 on either. **The reconciliation is owed and is not urgent.**
 
 **Water and food are adequate.** The US has ~5× its water footprint in renewable supply, and is a large **net food exporter** — domestic land feeds the domestic diet with margin. Land is the *tightest* of the "adequate" resources (~1.1×), and a higher-meat diet makes it bind — so **diet is a real lever**, but there's no hard food wall.
 

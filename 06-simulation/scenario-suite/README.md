@@ -10,6 +10,7 @@ Five questions the author asked on 2026-08-10, each answered by its own script w
 | Q | Question | Script | Companion |
 |---|---|---|---|
 | **Q1** | What is the highest egalitarian standard the US could sustain with no imports or exports? | [`q1_autarky.py`](q1_autarky.py) | [`Q1_AUTARKY.md`](Q1_AUTARKY.md) |
+| **Q1b** | Q1 said the US has 2.28× the labour it needs. **Is that true of hours anyone could actually work?** | [`q1b_deployable_labour.py`](q1b_deployable_labour.py) | [`Q1B_DEPLOYABLE_LABOUR.md`](Q1B_DEPLOYABLE_LABOUR.md) |
 | **Q2** | How much labour is captured by ownership or spent on enforcement? | [`q2_capture.py`](q2_capture.py) | [`Q2_CAPTURE.md`](Q2_CAPTURE.md) |
 | **Q3** | What is the labour debt of plastic pollution? | [`plastic_debt.py`](plastic_debt.py) | [`PLASTIC.md`](PLASTIC.md) |
 | **Q4** | Who is already past a permanent ledger lockout? | [`q4_locked_ledgers.py`](q4_locked_ledgers.py) | [`Q4_LOCKED.md`](Q4_LOCKED.md) |
@@ -21,6 +22,7 @@ Five questions the author asked on 2026-08-10, each answered by its own script w
 
 ```bash
 python q1_autarky.py --test
+python q1b_deployable_labour.py --test
 python q2_capture.py --test
 python plastic_debt.py --test
 python q4_locked_ledgers.py --test     # also writes three figures
