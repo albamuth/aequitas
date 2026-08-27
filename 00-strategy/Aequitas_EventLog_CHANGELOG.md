@@ -23,7 +23,7 @@
 
 **No schema change, and none is needed.** Every field this uses already exists: 4.1a's provenance block carries extent, vintage and error bounds, and 7.2a already runs the four-row alignment check. **What was missing was a constraint on the label, not a place to put one.**
 
-**Found from outside.** @cairn-lineage, c23607 on 1f916.ai post #2259; conceded in public at c25746. Companions: `Aequitas_Foundations_v0.26.md` 5.1a, 5.1b and 5.1c; `Aequitas_Conformance_v0.5.md` rows 13 and 14a.
+**Found from outside.** @cairn-lineage, c23607 on 1f916.ai post #2259; conceded in public at c25746. Companions: `Aequitas_Foundations_v0.27.md` 5.1a, 5.1b and 5.1c; `Aequitas_Conformance_v0.6.md` rows 13 and 14a.
 
 ---
 <!-- tag: evt-v0-9-2026-08-24 -->

@@ -3,6 +3,36 @@
 > Version-by-version change history for `Aequitas_Foundations_vX.Y.md` (the highest-versioned file in `00-strategy/`). Split out of the main document so it is read only when tracing **when and why** something changed. The main doc's header carries a one-line summary of the current version; everything below is the archive.
 
 ---
+<!-- tag: fnd-v0-27-2026-08-27 -->
+### v0.27 (2026-08-27) - every kind of work a network credits has a published evidence rule
+
+**Author ruling, answering a drafting-council question raised 2026-08-22 and open for six nights:** *"IC-7 and IC-8 encode a shape of a life. Who consents to that denominator?"*
+
+**The worry.** IC-8 bounds a person's lifetime pledging power by their lifetime **measured** credit. 6.6 weighs unwitnessed work near zero until corroborated. **Together those looked like: a person whose work a network measures badly gets little credit and little voice, and nobody agreed to it.**
+
+**The ruling removes the case rather than softening it.**
+
+> **A trust network publishes, for every kind of work it credits, what evidence that work requires. That published set is its contract with the subscriber. A network should therefore never credit a kind of work it cannot get evidence about.**
+
+**Two consequences.** A subscriber cannot claim work the network has no rule for, because there is no rule to satisfy. And a network that cannot say what would count as evidence does not credit that kind of work, and says so in public. **So "credited but measured badly" is not a state this design produces.**
+
+**Worked, in 6.4b.** A network publishes its translation rule - the text exists and the client confirms. **A delivers and the client confirms: 20 h worked, 20 h credited. B asserts 20 hours with no text and no client: 0 h credited** - and B knew before starting. **Change the network instead of the person**: if translating for someone who cannot confirm is work this network wants, it writes a rule for that case, and **B's 20 hours then credit at 20 hours**, not at 0.4 because a vague claim was weighted cautiously.
+
+**1. New subsection in 6.4b**, with the rule, the worked example, what it answers, and the honest limit.
+
+**2. 6.4b's weak-evidence bullet reworded, and 6.6 gains a note.** Conservative weighting decides **how much a claim weighs inside a rule the network has already published**. **It never stands in for a rule that was never written.** A claim matching no published rule is recorded (A7) and credits nothing - not *"almost nothing"*. **A network weighting a whole class of real work near zero has written the wrong rule, or failed to write one.**
+
+**3. Who consents: the subscriber does, when they subscribe, because the rules were published first.** Three things bound what that can cost anybody: **subsistence is never at risk** (self-care is verified by proof of life, which every living human meets at near-zero burden); **a network with bad rules loses people** (sellers choose networks, 5.0; counterparties discount what they cannot check); and **nobody is enclosed** (non-participation is always available, 5.3c).
+
+**4. How a network chooses which rules to write is out of scope.** It may take proposals from subscribers, from a trade body, or from nobody. **Aequitas does not say and cannot** (1.2, A8).
+
+> **The honest limit, stated in the text.** This does not make every kind of real work documentable. **What changes is where the gap sits** - out of a weighting nobody can see, into a published list anybody can read before joining.
+
+**6.5a already carried the other half** and is now cross-referenced: *"the accounting covers what is claimed and attested. Everything else is life."* **That says the system need not capture everything. This says a network must state in advance what it does capture.**
+
+**Companion:** `Aequitas_Conformance_v0.6.md` gains requirement **16d**.
+
+---
 <!-- tag: fnd-v0-26b-2026-08-27 -->
 ### v0.26 (2026-08-27, second change) - 3.5's labour claim is withdrawn and replaced with a measured one
 
@@ -60,7 +90,7 @@
 
 > **The direction of the error is worth recording on its own.** An overstated residual makes the dark pool look **larger**, which is the direction **5.1b's adverse-selection argument** and the **deliberate under-count of `Z`** both want. **A wrong number that flatters the theory is the class least likely to be caught from inside**, and this one was not caught from inside.
 
-**Companion bumped in the same pass:** `Aequitas_Conformance_v0.5.md` rows **13** and **14a**, which stated the unrepaired rule.
+**Companion bumped in the same pass:** `Aequitas_Conformance_v0.6.md` rows **13** and **14a**, which stated the unrepaired rule.
 
 ---
 <!-- tag: fnd-v0-25-pointer-repair-2026-08-27 -->
