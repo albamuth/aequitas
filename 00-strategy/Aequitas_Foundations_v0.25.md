@@ -199,7 +199,7 @@ Rules evolve as **immutable core + open variance**: everything below the core ma
 
 **What may vary.** A trust network may run a different weighting model, a different self-care floor, a different privacy practice, a different verification rung. **It must publish what it runs, and anyone else must be able to re-compute its claims** (§5.3b, §6.4b).
 
-**What may not vary.** The axioms above, and the conformance requirements in [`Aequitas_Conformance_v0.3.md`](Aequitas_Conformance_v0.3.md).
+**What may not vary.** The axioms above, and the conformance requirements in [`Aequitas_Conformance_v0.4.md`](Aequitas_Conformance_v0.4.md).
 
 #### Which activities are always creditable is left to the network
 
@@ -290,7 +290,7 @@ Two thought experiments, both fully compatible with everything in this document:
 
 **This is not a way of avoiding hard questions.** Every item above is real and someone must answer it. **It is a statement about which document answers it** — and about the failure mode of writing a theory of cost that quietly becomes a theory of software, governance, and compliance because those questions arrived while nobody was drawing the line.
 
-> **The dial test is the standing screening question for anything proposed for these documents, and what it leaves behind is a set of conformance requirements, never an architecture** — [`Aequitas_Conformance_v0.3.md`](Aequitas_Conformance_v0.3.md). **What must be true, never how to build it.**
+> **The dial test is the standing screening question for anything proposed for these documents, and what it leaves behind is a set of conformance requirements, never an architecture** — [`Aequitas_Conformance_v0.4.md`](Aequitas_Conformance_v0.4.md). **What must be true, never how to build it.**
 
 ---
 
@@ -2009,7 +2009,7 @@ Those activities are **sleeping, eating, defecating, and keeping oneself clean.*
 
 > **The floor is therefore not only a welfare provision. It is the error tolerance of the whole accounting.**
 
-**None of this is a conformance requirement, and it must not be written as one.** Whether essentials are actually affordable in a given network depends on the value it sets for `F`, the value it sets for ρ, and what its economy can physically deliver — **so it is a result a network achieves, not a property an implementation has.** Setting the two dials so that it comes true is the network's job (§7.5.3). *(A conformance row saying otherwise existed from v0.18 to v0.24 and was deleted; see `Aequitas_Conformance_v0.3.md` §4.)*
+**None of this is a conformance requirement, and it must not be written as one.** Whether essentials are actually affordable in a given network depends on the value it sets for `F`, the value it sets for ρ, and what its economy can physically deliver — **so it is a result a network achieves, not a property an implementation has.** Setting the two dials so that it comes true is the network's job (§7.5.3). *(A conformance row saying otherwise existed from v0.18 to v0.24 and was deleted; see `Aequitas_Conformance_v0.4.md` §4.)*
 
 
 ---
@@ -2131,7 +2131,7 @@ A3 therefore does three separate defensive jobs: it forbids accumulation (§7.1)
 
 | What | Where | Why it moved |
 |---|---|---|
-| **The conformance requirements** — what must be true for an implementation to *be* Aequitas | [`Aequitas_Conformance_v0.3.md`](Aequitas_Conformance_v0.3.md) | It is written for implementers, and this document is written for anyone. |
+| **The conformance requirements** — what must be true for an implementation to *be* Aequitas | [`Aequitas_Conformance_v0.4.md`](Aequitas_Conformance_v0.4.md) | It is written for implementers, and this document is written for anyone. |
 | **Every open problem and every answered objection** | [`Aequitas_Objections_v0.23.md`](Aequitas_Objections_v0.23.md) | The register is the record. A ranked summary here only went stale. |
 | **How adoption plausibly starts** | [`Aequitas_Strategy_v0.6.md`](Aequitas_Strategy_v0.6.md) §5 | It is a reading of the historical record, not a statement of the system. |
 | **The version-by-version change history** | [`Aequitas_Foundations_CHANGELOG.md`](Aequitas_Foundations_CHANGELOG.md) | Already pointed at from the header. |
