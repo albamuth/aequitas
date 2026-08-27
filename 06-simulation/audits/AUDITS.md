@@ -9,7 +9,15 @@ Tracks **EventLog v0.7** ([`Aequitas_EventLog_v0.8.md`](../../99-archive/Aequita
 
 The EventLog spec defines **twelve integrity constraints** (IC-1 … IC-12) that must hold over any Aequitas event log. This module makes all twelve *runnable*: it builds one small, hand-verifiable synthetic log, runs each IC as pure computation, and — for each IC — injects a **deliberate single-point violation** to prove the check actually fires.
 
-The headline property (EventLog §7.1): **IC-1 … IC-9 need no trust model, no reputation, no authority — only the ability to recompute.** An unrecorded emission is not an enforcement problem; it is an arithmetic error the log itself reports.
+The headline property (EventLog §7.1): **IC-1 … IC-9 need no trust model, no reputation, no authority — only the ability to recompute.**
+
+> ### ⚠️ TWO LIMITS ON THAT SENTENCE, BOTH CONCEDED
+>
+> **1. It covers the verification step, not the specification step.** The constraints need no authority to *run*. **Somebody still fixed which constraints exist and which physical dimensions get recorded.** That is a schema, a schema is a choice, and a choice has an author. **"No trusted party" must never be allowed to borrow the credibility of "no authority anywhere."**
+>
+> **2. Recomputation proves consistency, never completeness.** This page previously said *"an unrecorded emission is not an enforcement problem; it is an arithmetic error the log itself reports."* **That is true of an UNDER-DECLARED emission on a RECORDED event. It is false of a process recorded nowhere.** A perfectly balanced log of a fictional economy passes every check.
+>
+> **Arithmetic over one log tests that log against itself.** Finding a hole needs a record made on a **separate path** — Foundations §5.1b's closure witness, and conformance requirement **14b**. *(Narrowed in EventLog v0.8 §7.1 and Objections **OA12**; this page was not updated with them until 2026-08-27.)*
 
 ```bash
 python arithmetic_audits.py            # build log, run all checks, print the report
