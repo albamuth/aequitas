@@ -43,4 +43,4 @@ Test any proposal against: *can a group with high service credit in one domain e
 
 ---
 *Status: contested — OP-1*
-*Source: `00-strategy/Aequitas_Foundations_v0.2.md` §6.2*
+*Source: `00-strategy/Aequitas_Foundations_v0.2.md` §4.5*

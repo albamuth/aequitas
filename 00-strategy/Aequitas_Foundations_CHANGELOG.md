@@ -3,6 +3,78 @@
 > Version-by-version change history for `Aequitas_Foundations_vX.Y.md` (the highest-versioned file in `00-strategy/`). Split out of the main document so it is read only when tracing **when and why** something changed. The main doc's header carries a one-line summary of the current version; everything below is the archive.
 
 ---
+<!-- tag: fnd-v0-28-2026-08-27 -->
+### v0.28 (2026-08-27) - RESTRUCTURE. Sections 4, 5 and 6 become one section 4; 7 becomes 5; 8 becomes 6
+
+**Author instruction.** *"Section 5 starts by saying 'this section describes work that a trust network does.' Section 4 is about verification, which is the job of a trust network. It lacks a preamble and just launches into a list of levels without context. Section 6 describes another duty: tracking and awarding pledges. Consolidate 4, 5 and 6 into a single section 4, and relabel 7 to 5. Make them a lot smaller - Foundations isn't the place for exhaustive evidence, examples, edge-cases and sim results."*
+
+**The reading was right and the evidence was in the section titles.** 5.0 announced the subject. **4 and 6 described the same subject and never said so.** Three sections, one subject, one of them announcing it. Plan: `S4_consolidation_PLAN_v0.1.md`.
+
+## THE OLD-TO-NEW SECTION MAP
+
+**Section numbers were quoted in public on 1f916.ai, which keeps them permanently.** Anyone following an old citation should land here.
+
+| Old | New | The subject |
+|---|---|---|
+| 4 | **4.3** | Checking a claim, on a ladder of four rungs |
+| 5.0 | **4.0** | What a trust network is |
+| 5.1 | **4.1** | One account per person; coverage without consent |
+| 5.1a, 5.1b, 5.1c, 5.1d | **4.4** | Estimating what a network cannot see |
+| 5.2 | **4.8** | Joining |
+| 5.3, 5.3a, 5.3b, 5.3d | **4.7** | Publishing the workings; privacy; disputes |
+| 5.3c | **4.8** | Federation and merging |
+| 5.4 | **4.8** | Entry, and no exit |
+| 5.5 | **4.8** | Trading across the money boundary |
+| 6, 6.1, 6.1b, 6.2, 6.2a, 6.2b, 6.5, 6.5a, 6.6 | **4.5** | Crediting work |
+| 6.3, 6.4, 6.4a, 6.4c, 6.4d | **4.6** | Carrying what people want made |
+| 6.4b | **4.2** | What counts as evidence, published per kind of work |
+| 7, 7.1 to 7.6 | **5, 5.1 to 5.6** | Consequences. **7.5.n became 5.5.n** |
+| 8 | **6** | Where the rest of the project lives |
+
+## What the new section 4 does that the old three did not
+
+**It says what it is about.** *"Everything in this section is work that a trust network does."* Then a table defining every term it uses, three facts that shape the rest, and **a map of the eight duties in the order a network performs them.**
+
+**It puts the evidence rule before the ladder.** The old 4 opened on four rungs with no statement of what was being checked. **Now 4.2 says what a network accepts as evidence, and 4.3 says how thoroughly it establishes that the evidence is real.** The rungs became *"how hard you check"*, which is what they always were.
+
+**The rungs are renamed in plain words** - people vouch, reputation and stake, instruments, continuous machine tallying - so the table reads without knowing this project's vocabulary.
+
+## The size cut
+
+| | Before | After |
+|---|---|---|
+| Old 4 + 5 + 6 | **133,029 bytes** | **new 4: about 59,000 bytes** |
+| The whole document | 248,740 | **about 180,000** |
+
+**The rule that governed every cut: every rule, principle and obligation stays in Foundations, stated in a full sentence. What left is the evidence for it** - second and third worked examples, simulation outputs, historical argument, and the record of what superseded versions said.
+
+**A reader of Foundations alone still learns what is true.** The wiki now carries why we believe it, and what it looks like worked out in full.
+
+## Where the detail went
+
+| Moved | To |
+|---|---|
+| The four-rung cost table, the 2,000-fold overhead warning, the balanced-lie tables, the measured threshold | `01-wiki/verification-ladder.md` (3,266 -> 9,909 bytes) |
+| The four alignment rows and the valley-wheat case; the capacity method for `Z` | `01-wiki/estimation-engine.md` (7,181 -> 10,539) |
+| The three landing states worked in full; the coverage percentage; the deleted-sacks table | `01-wiki/statistical-coverage.md` (4,733 -> 10,054) |
+| The barn-is-not-in-the-beef box; the capital waterfall; pre-Aequitas assets | `01-wiki/property-debit.md` (3,142 -> 12,270) |
+| The front-loading rule in full, its three instances, the media consequence | `01-wiki/education-as-credited-work.md` (2,436 -> 11,049) |
+| Pledge mechanics, the contingent reserve, the demand-lever argument with Braudel and the two worked examples | `01-wiki/pledge-and-signal.md` (6,311 -> 22,218) |
+| Privacy as a network dial, and its three consequences | **`01-wiki/privacy-is-a-network-choice.md`** - new |
+| Dispute resolution, the four classes, what correction looks like | **`01-wiki/dispute-resolution.md`** - new |
+| No exit, death, the erasure-law reading | **`01-wiki/permanence-and-death.md`** - new |
+
+**Nothing was deleted.** Every moved block was taken from v0.27 rather than paraphrased, and each carries a note saying where it came from and which Foundations section still holds the rule.
+
+## The jargon pass
+
+**Killed, or defined where it is first used:** *rung* now always says rung of what - *the floor* is defined in 4.0's terms table - *IC-7* is defined where it first appears - *monotonicity* is gone, replaced by *"a record always beats an estimate, and never the other way round"* - *closure witness* is gone, replaced by *"an outside physical total"* - *the residual* is now *"the leftover"* in prose - *front-loading* and *the waterfall* are stated as rules rather than named - *hand-off gates realization* is now *"for goods, the hand-off is the verification"*.
+
+**Also applied: one em-dash per sentence at most, no sentence with three or more clauses, and no paragraph where a list would do.**
+
+> **The risk this restructure carries, stated plainly.** The project's hardest standing rule is *read Foundations whole, and keep it in context*, and it exists because premises were repeatedly found unread. **Moving material to the wiki puts it where a whole-document read will not find it.** The cut rule is the guard: **the rule stays in Foundations, only its evidence leaves.** Where a chunk could not keep a rule in Foundations and still hit the size target, **the size target lost.**
+
+---
 <!-- tag: fnd-v0-27-2026-08-27 -->
 ### v0.27 (2026-08-27) - every kind of work a network credits has a published evidence rule
 

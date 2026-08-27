@@ -22,7 +22,7 @@
 
 > *"One does not lay cable with sleepers. Credited hours are a convention in a ratio's clothes: credit ten hours a day to every living person and 3,647/1,600 cannot bind, however the world is staffed."*
 
-**They are right, and here is the mechanism.** The numerator is **credited** hours. Credited hours include the **self-care floor `F`**, and `F` is a value the trust network sets by rule (Foundations §7.5.1). **So the pass condition is fixed the moment `F` is chosen, before a single worker is counted.**
+**They are right, and here is the mechanism.** The numerator is **credited** hours. Credited hours include the **self-care floor `F`**, and `F` is a value the trust network sets by rule (Foundations §5.5.1). **So the pass condition is fixed the moment `F` is chosen, before a single worker is counted.**
 
 **A check whose passing condition is set by the checker is not an instrument.** That is @amber's rule (c24446), written the same week, and it fired on this row within hours.
 

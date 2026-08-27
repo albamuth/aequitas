@@ -3,7 +3,7 @@
 > **Status:** ✅ **Approved 2026-08-24.** All three decisions taken — see §6. Implementation in progress per §7.
 > **Date:** 2026-08-24
 > **Trigger:** outside-critique finding **#3** (economist, deepseek) — [`07-outreach/critique/REPORT_v0.1.md`](../07-outreach/critique/REPORT_v0.1.md).
-> **One-line result:** *The §6.2b/OP-23 ruling stands. **A5 was the malformed part**, and repairing its wording removes the contradiction without touching the ruling.*
+> **One-line result:** *The §4.5/OP-23 ruling stands. **A5 was the malformed part**, and repairing its wording removes the contradiction without touching the ruling.*
 
 ---
 
@@ -11,7 +11,7 @@
 
 ### What the critic said
 
-§6.2b rules that a durable asset's creation-cost sits on the asset and **never** allocates to the co-products. So beef carries none of the barn. But A5 reads *"the **price** of anything is its true, current-best-estimate material cost."* If the barn is not in beef's debit-cost, **beef's price is not beef's cost**, and A5 fails.
+§4.5 rules that a durable asset's creation-cost sits on the asset and **never** allocates to the co-products. So beef carries none of the barn. But A5 reads *"the **price** of anything is its true, current-best-estimate material cost."* If the barn is not in beef's debit-cost, **beef's price is not beef's cost**, and A5 fails.
 
 Their numbers: barn **20,000 h**, 20-year life, **2,000 kg** beef/yr → 40,000 kg over the life → the barn is **0.5 h/kg** of "true cost" that Aequitas shows as **0**.
 
@@ -19,9 +19,9 @@ Their numbers: barn **20,000 h**, 20-year life, **2,000 kg** beef/yr → 40,000 
 
 **The critic's step is to say the beef *caused* the barn. It did not.** Under **A1**, cost attaches to whoever **acted** — Ellerman's responsibility imputation. The barn was caused by the people who built it and is carried by the people who hold it. **A thing cannot act, so a thing cannot cause a cost.**
 
-Charging the barn to the beef is the same move as charging the miner's tailings to the person who buys the ring — and **§3.2b already forbids that in one direction, §6.2a already forbids it in the other** (the non-cascade rule, stated in Foundations as *"cost never flows to whoever did not cause it"*). The capital case is the third face of one rule that is already written down twice.
+Charging the barn to the beef is the same move as charging the miner's tailings to the person who buys the ring — and **§3.2b already forbids that in one direction, §4.5 already forbids it in the other** (the non-cascade rule, stated in Foundations as *"cost never flows to whoever did not cause it"*). The capital case is the third face of one rule that is already written down twice.
 
-> **So the contradiction is real, and it points the other way.** A5's wording says a cost lands on the *thing*. A1, §3.2b and §6.2a say a cost lands on the *causer*. **Two axioms cannot both be right, and the one that is out of step is A5.**
+> **So the contradiction is real, and it points the other way.** A5's wording says a cost lands on the *thing*. A1, §3.2b and §4.5 say a cost lands on the *causer*. **Two axioms cannot both be right, and the one that is out of step is A5.**
 
 ### What was actually wrong with the wording
 
@@ -30,7 +30,7 @@ Three defects, in order of size:
 | # | Defect | Consequence |
 |---|---|---|
 | 1 | **It says "price."** Nothing in Aequitas has a price. Things have a **debit-cost**, and it is a dated reading. | Invites exactly this attack, and every reader who arrives from economics starts in the wrong frame. |
-| 2 | **It never says what counts as a cost of the thing.** "Its true material cost" is silent on whether a barn used to make beef is a cost *of beef*. | The capital boundary lives in §6.2a and was never lifted into the axiom, so the axiom reads as contradicting it. |
+| 2 | **It never says what counts as a cost of the thing.** "Its true material cost" is silent on whether a barn used to make beef is a cost *of beef*. | The capital boundary lives in §4.5 and was never lifted into the axiom, so the axiom reads as contradicting it. |
 | 3 | **"true" reads as final.** | Fights §3.3 and A6, which say every figure re-weighs when the science improves. |
 
 ### What I looked for and did not find
@@ -39,8 +39,8 @@ An adversarial pass on the repaired axiom. Four attacks, all closed by machinery
 
 | Attack | Closed by |
 |---|---|
-| **The capital launderer** — reclassify a used-up input as a durable asset to move its debit off the unit | **§6.2a's physical-fate test** + **IC-4 (fate closure)**. Does the thing survive the process? Audited, never declared. Named and closed in v0.5. |
-| **The borrowed barn** — A builds it, B uses it, so B's beef looks cheap | **§6.2b holding-time.** B holding it accrues B's share. And there is no rent to charge (§7.1). |
+| **The capital launderer** — reclassify a used-up input as a durable asset to move its debit off the unit | **§4.5's physical-fate test** + **IC-4 (fate closure)**. Does the thing survive the process? Audited, never declared. Named and closed in v0.5. |
+| **The borrowed barn** — A builds it, B uses it, so B's beef looks cheap | **§4.5 holding-time.** B holding it accrues B's share. And there is no rent to charge (§5.1). |
 | **Scarcity re-entering cost** — price the rare cut higher | *Strengthened.* The repaired A5 says cost is a record of physical inputs and outputs, so desirability has no way in. The tenderloin ruling (§3.4a, B9) gets a cleaner ground than it had. |
 | **A4 is being carved out** | No. **A4 says every cost lands on a ledger, not that it lands on the product's ledger.** GLOSSARY already words A4 that way; Foundations does not (see §5, flagged item). |
 
@@ -48,9 +48,9 @@ An adversarial pass on the repaired axiom. Four attacks, all closed by machinery
 
 **Two producers of the same good, one with a 20,000 h barn and one with a 2,000 h shed, publish the same per-kg debit-cost.** A buyer comparing debit-costs cannot tell them apart.
 
-This is not new — §6.2b already admits *"a per-unit debit-cost is not a full-lifecycle figure"* — but that one clause is too quiet to survive review, and **it is the half of the critic's point that is correct.**
+This is not new — §4.5 already admits *"a per-unit debit-cost is not a full-lifecycle figure"* — but that one clause is too quiet to survive review, and **it is the half of the critic's point that is correct.**
 
-**What disciplines the barn is the builder's own gate, not the price tag.** That reply has never been written down, which is why two models missed it. **This is the same shape as §7.2**, where pollution-debit was moved off the product onto the producer and the docs argue the producer-side penalty is *stronger* than a consumer-mediated one. The identical argument transfers, and §6.2b should carry it explicitly.
+**What disciplines the barn is the builder's own gate, not the price tag.** That reply has never been written down, which is why two models missed it. **This is the same shape as §5.2**, where pollution-debit was moved off the product onto the producer and the docs argue the producer-side penalty is *stronger* than a consumer-mediated one. The identical argument transfers, and §4.5 should carry it explicitly.
 
 ---
 
@@ -88,9 +88,9 @@ A co-op makes a cleaner. It sells **5,000,000 bottles** over 8 years at **0.20 h
 
 Two changes to the author's draft, both argued:
 
-**(i) Keep "no profit in exchange" inside the axiom.** The draft drops it. **It is the most-cited half of A5** — §7.1 (no surplus to appropriate), §3.3a (no profit to fund captured science), §5.5 (Aequitas costs, money prices), OA7/P4 (the employer is hollowed out), B8, OP-9. It is arguably derivable from A1 (a margin is not matter, so there is no field to write it in), but **making a dozen citations depend on a derivation the reader has to perform is how the first defect happened.** Say it.
+**(i) Keep "no profit in exchange" inside the axiom.** The draft drops it. **It is the most-cited half of A5** — §5.1 (no surplus to appropriate), §3.3a (no profit to fund captured science), §4.8 (Aequitas costs, money prices), OA7/P4 (the employer is hollowed out), B8, OP-9. It is arguably derivable from A1 (a margin is not matter, so there is no field to write it in), but **making a dozen citations depend on a derivation the reader has to perform is how the first defect happened.** Say it.
 
-**(ii) Anchor the boundary on *consumed vs survived*, not on "directly."** "Directly" is undefined and a reviewer will ask what it excludes. **"What was used up in making the thing"** is the test §6.2a already states, and it is auditable through IC-4. Lifting the existing test into the axiom is what actually removes the contradiction.
+**(ii) Anchor the boundary on *consumed vs survived*, not on "directly."** "Directly" is undefined and a reviewer will ask what it excludes. **"What was used up in making the thing"** is the test §4.5 already states, and it is auditable through IC-4. Lifting the existing test into the axiom is what actually removes the contradiction.
 
 Also: **debit, not "debt"** — the project's term.
 
@@ -102,7 +102,7 @@ Also: **debit, not "debt"** — the project's term.
 >
 > **Whoever takes a thing, or receives a service, takes on a debit equal to that figure. There is no profit in exchange — only debit discharged and debit acquired.**
 >
-> **The boundary is physical fate: what was used up making the thing is in its cost; what survived the process is not** (§6.2a). A durable asset holds its own creation-cost, carried by its holders (§6.2b), and that cost never enters the things the asset was used to make.
+> **The boundary is physical fate: what was used up making the thing is in its cost; what survived the process is not** (§4.5). A durable asset holds its own creation-cost, carried by its holders (§4.5), and that cost never enters the things the asset was used to make.
 >
 > **This is not an exemption from A4 (no externalities).** Every cost still lands on a ledger. It is **A1's imputation rule applied to cost**: a cost attaches to whoever caused it, and **a thing causes nothing** — only people act. Charging a buyer for the barn is the same error as charging them for the miner's tailings, which §3.2b already refuses.
 >
@@ -126,10 +126,10 @@ Also: **debit, not "debt"** — the project's term.
 
 | File | `[MODIFY]` | What |
 |---|---|---|
-| `00-strategy/Aequitas_Foundations_v0.22.md` | new version | **§1 A5 replaced** (§3 above). **§6.2b gains a boxed explainer** — *"Why the barn is not in the beef"* — carrying **both worked examples** (§2) and the producer-gate reply. **§7.1** reworded off "price ≡ cost." **§9** conformance gains one row: *a unit's debit-cost carries only what that unit consumed; a durable asset is never amortised into it* (A5, §6.2a, §6.2b). |
+| `00-strategy/Aequitas_Foundations_v0.22.md` | new version | **§1 A5 replaced** (§3 above). **§4.5 gains a boxed explainer** — *"Why the barn is not in the beef"* — carrying **both worked examples** (§2) and the producer-gate reply. **§5.1** reworded off "price ≡ cost." **§9** conformance gains one row: *a unit's debit-cost carries only what that unit consumed; a durable asset is never amortised into it* (A5, §4.5, §4.5). |
 | `00-strategy/Aequitas_Objections_v0.21.md` | new version | **B8 gains the A5 challenge and the reply** — B8 is the entry that declares OP-23 closed, so it is the entry that must now hold the defence. Status-board line updated. **Register the residue** (per-unit figure carries no capital signal) as a named, answered item rather than a silent trade-off. |
 | `00-strategy/Aequitas_Overview_v0.18.md` | new version | Line 234 — *"prices are simply costs… you cannot mark up a measurement"* keeps its punch, gains one plain-language sentence on what is **not** in the number, with the barn in words and one number. |
-| `00-strategy/OP-23_capital_and_pollution.md` | in place | New **§8 — the A5 challenge**, with the reply and both examples. **Plus a stale-text fix I found while reading it:** §2 step 1 still says pledges *"draw the creation-cost down first"* and that *"the pledger absorbs a share of the debit against their own debit-room."* **Foundations §6.2b says the opposite** — a pledge is a permanent **grant** of debit-room, the pledger's credit never moves, and the debit does not shrink (A1). Same family as report bug **#7**. |
+| `00-strategy/OP-23_capital_and_pollution.md` | in place | New **§8 — the A5 challenge**, with the reply and both examples. **Plus a stale-text fix I found while reading it:** §2 step 1 still says pledges *"draw the creation-cost down first"* and that *"the pledger absorbs a share of the debit against their own debit-room."* **Foundations §4.5 says the opposite** — a pledge is a permanent **grant** of debit-room, the pledger's credit never moves, and the debit does not shrink (A1). Same family as report bug **#7**. |
 | `00-strategy/GLOSSARY.md` | in place | A5 row: name and gloss. |
 | `01-wiki/cost-not-price.md` | `[NEW]` | Replaces `price-equals-cost.md`, which teaches the malformed maxim as *"Status: settled."* Old page → `99-archive/`. |
 
@@ -158,7 +158,7 @@ Three `_CHANGELOG.md` files (Foundations, Objections, Overview) · `NEXT.md` · 
 
 ## 5. What does **not** change — and one thing I am flagging
 
-**Unchanged.** The §6.2b holding-time waterfall. B8's closure of OP-23. §6.2a front-loading. §3.2b non-transfer. The conformance list's substance. **No mechanism moves. This is a wording repair to an axiom, and it makes the existing mechanisms consistent rather than altering any of them.**
+**Unchanged.** The §4.5 holding-time waterfall. B8's closure of OP-23. §4.5 front-loading. §3.2b non-transfer. The conformance list's substance. **No mechanism moves. This is a wording repair to an axiom, and it makes the existing mechanisms consistent rather than altering any of them.**
 
 > ### ✅ Also being repaired — **A4 has the same defect** *(approved, Q2)*
 >
@@ -166,9 +166,9 @@ Three `_CHANGELOG.md` files (Foundations, Objections, Overview) · `NEXT.md` · 
 >
 > **"Priced into it" is the same word and the same implication that broke A5** — that a cost rides the thing. GLOSSARY already states A4 correctly (*"Every cost lands on a ledger; nothing escapes"*); **Foundations does not.**
 >
-> A reviewer who accepts the new A5 will read A4 next and ask the identical question. **Recommend the same one-clause repair in the same pass:** *every consequence of an activity is accounted to whoever caused it — there is no "outside" of the accounting.* **Substance identical, and it is what §3.2b and §5.1c already do.**
+> A reviewer who accepts the new A5 will read A4 next and ask the identical question. **Recommend the same one-clause repair in the same pass:** *every consequence of an activity is accounted to whoever caused it — there is no "outside" of the accounting.* **Substance identical, and it is what §3.2b and §4.4 already do.**
 >
-> **✅ Approved 2026-08-24.** Folded in the same pass. **No mechanism moves** — §3.2b (pollution stays on its causer), §5.1c (the residual is held, not allocated) and §6.2a (no upstream regress) are all already doing exactly what the repaired wording says.
+> **✅ Approved 2026-08-24.** Folded in the same pass. **No mechanism moves** — §3.2b (pollution stays on its causer), §4.4 (the residual is held, not allocated) and §4.5 (no upstream regress) are all already doing exactly what the repaired wording says.
 
 ---
 
@@ -179,16 +179,16 @@ Three `_CHANGELOG.md` files (Foundations, Objections, Overview) · `NEXT.md` · 
 | Q | Question | **Ruling** |
 |---|---|---|
 | **Q1** | A5's name | ✅ **A5 (cost, not price)** |
-| **Q2** | Repair A4's *"priced into it"* in the same pass? | ✅ **Yes.** A4 becomes *accounted to whoever caused it*. Substance identical — it is what §3.2b and §5.1c already do, and it is how GLOSSARY already words A4. |
+| **Q2** | Repair A4's *"priced into it"* in the same pass? | ✅ **Yes.** A4 becomes *accounted to whoever caused it*. Substance identical — it is what §3.2b and §4.4 already do, and it is how GLOSSARY already words A4. |
 | **Q3** | The wiki page `price-equals-cost.md` | ✅ **Full rename and sweep.** New page `01-wiki/cost-not-price.md`; all **23** linking pages updated; the old page moves to `99-archive/`. Cleanest end state, and it matches *one concept per file*. |
 
-**Not asked, because they are mine to make:** the boxed explainer goes in Foundations §6.2b (house style, and CLAUDE.md requires the worked example beside the mechanism); both examples use the critic's own numbers so the reply is checkable against the attack.
+**Not asked, because they are mine to make:** the boxed explainer goes in Foundations §4.5 (house style, and CLAUDE.md requires the worked example beside the mechanism); both examples use the critic's own numbers so the reply is checkable against the attack.
 
 ---
 
 ## 7. Order of work, once approved
 
-1. Foundations v0.21 — A5, the §6.2b box, §7.1, §9. *(the argument)*
+1. Foundations v0.21 — A5, the §4.5 box, §5.1, §9. *(the argument)*
 2. Objections v0.20 — B8 reply + status board + the registered residue. *(the record)*
 3. OP-23 §8 + the stale-pledge fix. *(the full paper)*
 4. Overview v0.16 + GLOSSARY. *(the plain-language layer)*

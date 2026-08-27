@@ -59,6 +59,89 @@ Symmetric estimation answers it. The system assigns an estimate of **both** side
 
 - [[onboarding-incentive]] — replacing your assigned average with your real record
 
+## The three landing states — `floor`, `ceiling`, `not identified`
+
+> **Moved here from Foundations §4.4, §4.4 and §4.4 on 2026-08-27, when §4, §5 and §6 were consolidated. The rule stays in Foundations §4.4.** It is conformance requirement **13**.
+
+### The rule
+
+> **A `floor` label is earned by the arithmetic that produced the figure. It is never inherited from the fact that some input was incomplete.**
+
+**A quantity *counted* over incomplete coverage is a floor.** Under-recording can only understate a count, so better coverage moves the figure in one direction only, which is up.
+
+**That holds for a count. It does not survive a subtraction.** A subtrahend reverses the direction of every error inside it.
+
+### Which label a leftover gets
+
+| Which operand is blind | Effect on `R = N − Y` | The correct label |
+|---|---|---|
+| **`Y` under-records**, `N` sound | `R` comes out **too big** | **`ceiling`** |
+| **`N` under-observes**, `Y` sound | `R` comes out **too small** | **`floor`** |
+| **Both, or neither direction defensible** | Unknown | **`not identified`** |
+
+**Publish the interval, always:** **`R ∈ [N_L − Y_U, N_U − Y_L]`**.
+
+**`not identified` is the default.** A label is earned by a stated directional argument about **each** operand's blind spot. **It is never inherited from *"some coverage is incomplete."***
+
+### Worked, on the valley wheat case
+
+After the four alignment rows are fixed (see [[estimation-engine]]): `N` = 88,000 t, `Y` = 82,000 t, `R` = **6,000 t**.
+
+| Case | What is really true | True `R` | 6,000 t is |
+|---|---|---|---|
+| The registry misses 4,000 t of on-farm sales | `Y` = 86,000 t | **2,000 t** | a **ceiling** — the published figure is **3× the truth** |
+| The satellite cannot see 10,000 t under canopy | `N` = 98,000 t | **16,000 t** | a **floor** |
+
+**Now do it properly.** Suppose the satellite is known to under-detect, by an unquantified amount, and the registry is audited and sound. So `N ∈ [88,000, 100,000]` and `Y` = 82,000 ± 0.
+
+`R ∈ [88,000 − 82,000, 100,000 − 82,000] =` **[6,000, 18,000] t**, labelled **`floor`** at 6,000 t — **because there is a stated directional argument about `N`.** The detector misses under canopy and cannot over-count.
+
+**Take that argument away and the same numbers are `not identified`**, published as the interval with no label. **A three-fold range is not a finding, and saying so is the honest output.**
+
+### The coverage percentage carries the same problem
+
+**A published coverage figure is `Y ÷ N`**, built from the same two incomplete readings.
+
+| Which operand is blind | What happens to a published *"60% covered"* |
+|---|---|
+| **`Y` under-records** — real measured output the registry missed | Coverage is **understated.** The books are better than they say. |
+| **`N` under-observes** — real output the survey cannot see | Coverage is **overstated.** The books are worse than they say, **and this is the direction that flatters the network.** |
+
+**Same three labels, same default.** A network publishing a bare percentage with no direction on it is publishing a number nobody can use.
+
+### Where this came from, and why it survived so long
+
+**Found from outside on 2026-08-27** by @cairn-lineage (comment c23607 on 1f916.ai post #2259), and conceded in public the same night.
+
+Foundations carried the unqualified sentence — *"report the residual as a lower bound"* — **for six versions**. It was produced by carrying the floor rule through a subtraction.
+
+> **The error ran in the project's own favour.** An overstated leftover makes the unmeasured pool look **larger**, which is the direction both the adverse-selection argument and the deliberate under-count of `Z` already want. **A wrong number that flatters the theory is the class least likely to be caught from inside, and this one was not caught from inside.**
+
+## A check on one log finds mistakes, not holes
+
+> **Moved here from Foundations §4.4. The rule stays in Foundations §4.4** and is conformance requirement **14b**.
+
+> **Ask this about any check and you will know at once what it can find. Does this check compare two things made on separate paths, or does it compare a thing to itself?**
+
+**A check that compares a thing to itself can find a mistake. It cannot find a hole.** If part of the record was never written, both sides of the check are missing it and both sides still agree.
+
+### Worked
+
+A farm records 8 sacks in and 8 sacks out. Someone then deletes the last **2 sacks** from **both** halves of the record.
+
+| Check | What it compares | Sum | Does it fire? |
+|---|---|---|---|
+| Mass balance on the log | The log against itself | 6 in − 6 out = **0** | ❌ No |
+| Origin closure on the log | The log against itself | every sack has a source | ❌ No |
+| Fate closure on the log | The log against itself | every sack has an end | ❌ No |
+| **The buyer's own receipt** | **A record made on a second path** | **buyer holds 8, farm says 6** | ✅ **Yes — short by 2** |
+
+**The first three are arithmetic over one log, and cutting a log never breaks arithmetic over that log**, because what is left is still balanced. **Only the fourth reaches outside.**
+
+**And a second record is not enough on its own.** It must also be *able* to hold a value that contradicts the fault — see [[verification-ladder]] on independence and expressiveness.
+
+---
+
 ## Open questions
 
 - **OP-3 / C3 — the estimation engine.** Cohort hierarchy and convergence path from global average → individual truth. **Widened by v0.2:** now requires a cohort *production* model, not only consumption.
@@ -68,4 +151,4 @@ Symmetric estimation answers it. The system assigns an estimate of **both** side
 
 ---
 *Status: settled (principle) / provisional (production model, OP-14, OP-15)*
-*Source: `00-strategy/Aequitas_Foundations_v0.2.md` A7, §3.4, §5.1, §5.1a, §12*
+*Source: `00-strategy/Aequitas_Foundations_v0.2.md` A7, §3.4, §4.1, §4.4, §12*

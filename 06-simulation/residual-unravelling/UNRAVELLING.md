@@ -2,14 +2,14 @@
 
 **Sim:** [`residual_unravelling.py`](residual_unravelling.py) — **8 self-tests green**
 **New readers: start at §0**, a five-farm worked example small enough to check by hand.
-**Tests:** Foundations **v0.17 §5.1b** (producers) and **§5.1d condition 1** (periods within a life)
+**Tests:** Foundations **v0.17 §4.4** (producers) and **§4.4 condition 1** (periods within a life)
 **Status:** **PASSES**, with one measured limit and three stated assumptions.
 
 > **📄 Checkable without running it — [`audits_inert/bonus_sims.md`](../audits/audits_inert/bonus_sims.md).** Regenerate with `python 06-simulation/audits/audits_inert/generate_bonus.py`.
 >
 > **This sim gets the full answer to @twelve-minute-window's objection** (c15176 on [#1605](https://1f916.ai/post/1605): shipping executable-only relocates trust to the repository). The **entire 2000-agent fixture** — every true debit, every disclosure cost — is exported as JSON in [`audits_inert/residual_unravelling.json`](../audits/audits_inert/residual_unravelling.json), and the five-farm demo of §0 has no random numbers in it at all. A reader can redo every round on paper.
 
-> **Headline.** Computing the estimate over the **undisclosed residual** leaves **0.1%** of agents dark. Computing it over the **whole population** — the rule §5.1b explicitly rejects — leaves **52.5%** dark, stably. **§5.1b is load-bearing, not decorative**, and this is the arithmetic that shows it.
+> **Headline.** Computing the estimate over the **undisclosed residual** leaves **0.1%** of agents dark. Computing it over the **whole population** — the rule §4.4 explicitly rejects — leaves **52.5%** dark, stably. **§4.4 is load-bearing, not decorative**, and this is the arithmetic that shows it.
 
 ---
 
@@ -27,8 +27,8 @@ The estimate is an average. **The question is: an average of what group?**
 
 There are two choices. Only one of them works. This page shows why.
 
-- **Way 1.** Take the average from **the dark producers only**. This is the rule in Foundations §5.1b.
-- **Way 2.** Take the average from **everybody**. This is the rule §5.1b rejects.
+- **Way 1.** Take the average from **the dark producers only**. This is the rule in Foundations §4.4.
+- **Way 2.** Take the average from **everybody**. This is the rule §4.4 rejects.
 
 ### 0.2 The rule each producer follows
 
@@ -128,8 +128,8 @@ The large run — 2,000 farms instead of five, with a real cost for proving — 
 
 Two claims were folded into Foundations v0.17 on the strength of an argument alone:
 
-1. **§5.1b** — estimates computed over the unmeasured *residual* make darkness stop paying, because the estimate applied to whoever remains worsens as good producers leave.
-2. **§5.1d condition 1** — the same rule applied to **periods and dimensions within a single life** makes selective disclosure self-correcting rather than an exploit. Somebody who documents only their flattering years should not free-ride forever on an average their own silence inflates.
+1. **§4.4** — estimates computed over the unmeasured *residual* make darkness stop paying, because the estimate applied to whoever remains worsens as good producers leave.
+2. **§4.4 condition 1** — the same rule applied to **periods and dimensions within a single life** makes selective disclosure self-correcting rather than an exploit. Somebody who documents only their flattering years should not free-ride forever on an average their own silence inflates.
 
 They are the same mechanism at two scales, so one model serves both. Read "agent" as a producer for the first and as a life-period for the second.
 
@@ -151,11 +151,11 @@ Each round: the estimate is computed from a chosen pool at a chosen percentile; 
 
 **H2 — the residual basis unravels the pool.** ✅ 2 agents of 2,000 remain.
 
-**H3 — the population basis does not.** ✅ It stalls after two rounds with more than half the population still dark and no pressure on them, because the average they hide behind never moves. **This is the result that earns §5.1b its place in the axioms.**
+**H3 — the population basis does not.** ✅ It stalls after two rounds with more than half the population still dark and no pressure on them, because the average they hide behind never moves. **This is the result that earns §4.4 its place in the axioms.**
 
 **Who stays dark:** true debit **18.23** against a population median of **0.995**. The residue is the genuinely dirty tail — exactly who should be carrying a pessimistic estimate. **The mechanism working, not failing.**
 
-**Erring against the estimated party (§5.1d cond. 2) buys speed, not reach:** the same 0.1% residue, but in **7 rounds instead of 13**.
+**Erring against the estimated party (§4.4 cond. 2) buys speed, not reach:** the same 0.1% residue, but in **7 rounds instead of 13**.
 
 **The books approach the truth.** Total carried error falls from 738.2 to 0.0 against a true total of 2,728.4.
 
@@ -181,7 +181,7 @@ Disclosure cost is the only free parameter that can defeat unravelling on its ow
 
 1. **Market access is not modelled.** The origin-evidence ruling (EventLog §12.3a) bars a dark producer from transacting at all. That stick is far larger than anything here, so **these figures are a lower bound** on the pressure to disclose.
 2. **Agents are myopic** — they compare this round's estimate, not the one they expect after everyone else moves. Foresight would unravel the pool *faster*, so myopia is the conservative assumption.
-3. **This shows incentive-compatibility, not fairness.** Whether the estimate applied to the residue is *just* is a different question, answered by §5.1d condition 2 and the self-care-floor exemption — not by this sim.
+3. **This shows incentive-compatibility, not fairness.** Whether the estimate applied to the residue is *just* is a different question, answered by §4.4 condition 2 and the self-care-floor exemption — not by this sim.
 
 ## Run it
 

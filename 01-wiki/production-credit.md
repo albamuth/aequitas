@@ -42,4 +42,4 @@ The three must not be inter-convertible, or the system collapses to one currency
 
 ---
 *Status: provisional*
-*Source: `00-strategy/Aequitas_Foundations_v0.2.md` §6.1*
+*Source: `00-strategy/Aequitas_Foundations_v0.2.md` §4.5*

@@ -85,7 +85,7 @@ Source SHA-256 `9da1df1a9db5c4a48e6c3c6c49775ca6efce7f10cb4fc8d69952bb414e02b99b
 
 True debits: **Ana** 1, **Ben** 2, **Cal** 3, **Dee** 4, **Eve** 20. True total **30**. Disclosure costs nothing here, so a farm shows its records exactly when its true number is below the estimate.
 
-**Estimate taken from the dark farms only — the rule in §5.1b**
+**Estimate taken from the dark farms only — the rule in §4.4**
 
 | round | still dark | their true numbers | estimate | books say | who shows records |
 |---|---|---|---|---|---|
@@ -96,7 +96,7 @@ True debits: **Ana** 1, **Ben** 2, **Cal** 3, **Dee** 4, **Eve** 20. True total 
 
 Final books **30** against a truth of 30. **Error 0.** Still dark: Eve.
 
-**Estimate taken from all farms — the rule §5.1b rejects**
+**Estimate taken from all farms — the rule §4.4 rejects**
 
 | round | still dark | their true numbers | estimate | books say | who shows records |
 |---|---|---|---|---|---|

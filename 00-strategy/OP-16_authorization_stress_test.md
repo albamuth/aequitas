@@ -28,7 +28,7 @@ An apprentice plumber's single hour is simultaneously **enrichment** (learning t
 
 **🔴 But it has an axiom-level consequence the correction did not follow through, and it must be flagged.**
 
-Foundations **§6.3 states that "Enrichment is not convertible to time or material."** Under C1 and C2 that sentence is **not implementable**: you cannot firewall a category that has no accounting boundary, and enrichment *work* is time, credited as time, therefore convertible by construction. **OP-8** — "exactly where Enrichment must be firewalled" — is asking for a boundary that C2 says cannot exist.
+Foundations **§4.6 states that "Enrichment is not convertible to time or material."** Under C1 and C2 that sentence is **not implementable**: you cannot firewall a category that has no accounting boundary, and enrichment *work* is time, credited as time, therefore convertible by construction. **OP-8** — "exactly where Enrichment must be firewalled" — is asking for a boundary that C2 says cannot exist.
 
 The correction does not break the theory; **it fixes it, and §6 is simply mis-titled.** The consistent statement is:
 
@@ -36,7 +36,7 @@ The correction does not break the theory; **it fixes it, and §6 is simply mis-t
 
 Enrichment *work* credits as time like everything else. Enrichment *feedback* — likes, ratings, sell-outs — is a **signal**, and it is non-convertible for the sound reason that **it was never credit in the first place**, not because a firewall is holding it back. That is stronger, more universal, and needs no enforcement mechanism.
 
-**Actions:** retitle §6 from "The Three Credit Types" to feedback channels; rewrite §6.3's non-convertibility clause; **OP-8 dissolves in its current form** and is replaced by the much narrower question of whether signals can be *bought* with credit.
+**Actions:** retitle §6 from "The Three Credit Types" to feedback channels; rewrite §4.6's non-convertibility clause; **OP-8 dissolves in its current form** and is replaced by the much narrower question of whether signals can be *bought* with credit.
 
 ### C3 — P2 re-read
 
@@ -92,7 +92,7 @@ This is strictly better than the original:
 
 **What survives is much smaller.** Pledging power tracks **human hours spent**, so a heavily automated sector accumulates little of it despite enormous output. An automated food or energy sector would hold little sway over its own inputs. Worth a look — it may even be desirable, since it ties influence to participation rather than to capital — but it is a second-order effect, not a capture vector.
 
-**And OP-1 still gains from this.** Even without a separate service-credit denomination, *"pledging power accrues per hour worked, equally for everyone"* is a concrete, non-hand-wavy answer to how contribution becomes direction — and it is **not a voting scheme**, which is what made the three §6.2 candidates awkward. It is a fourth candidate and it is the strongest of the four.
+**And OP-1 still gains from this.** Even without a separate service-credit denomination, *"pledging power accrues per hour worked, equally for everyone"* is a concrete, non-hand-wavy answer to how contribution becomes direction — and it is **not a voting scheme**, which is what made the three §4.5 candidates awkward. It is a fourth candidate and it is the strongest of the four.
 
 ---
 
@@ -124,7 +124,7 @@ The divergence argument below is sound **and it only bites one of the two jobs t
 
 > **Does this commit debit? If yes, *k*=1. If no, *k* is unbounded.**
 
-Note what falls out: the unbacked signal **is** §6.3's enrichment feedback. Pledging and enrichment feedback are not two mechanisms — they are the two ends of one spectrum, and the axis is *whether debit moves*. That is consistent with C1/C2 and it is why §6 should be describing feedback channels rather than credit types.
+Note what falls out: the unbacked signal **is** §4.6's enrichment feedback. Pledging and enrichment feedback are not two mechanisms — they are the two ends of one spectrum, and the axis is *whether debit moves*. That is consistent with C1/C2 and it is why §6 should be describing feedback channels rather than credit types.
 
 **Open, and non-trivial:** if signals are free and unbounded, what stops signal inflation and vote-buying? Sybil resistance carries part of it (C6), but **whether signals may be purchased with credit is now the live form of OP-8** and it is the real firewall question.
 
@@ -143,7 +143,7 @@ Note what falls out: the unbacked signal **is** §6.3's enrichment feedback. Ple
 
 That is mostly desirable — it is an anti-overproduction mechanism, and overproduction is a real pathology of the current system. But it has a sharp edge: **nobody makes the thing nobody asked for**, and that is how most genuinely new things arrive. Combined with P1's authorization gate, the speculative innovator is squeezed from both sides.
 
-**This is where Enrichment must carry weight.** §6.3 grants debit-room retrospectively to makers people appreciate. That is the correct home for speculative work — and note it is the **dual** of P1: Enrichment is retrospective and voluntary, authorization is prospective and committed. **The system needs both halves, and only one is currently written down.**
+**This is where Enrichment must carry weight.** §4.6 grants debit-room retrospectively to makers people appreciate. That is the correct home for speculative work — and note it is the **dual** of P1: Enrichment is retrospective and voluntary, authorization is prospective and committed. **The system needs both halves, and only one is currently written down.**
 
 ---
 
@@ -159,7 +159,7 @@ Consequences, all of which should be stated:
 
 **⚠️ But "ratio not sum" is too simple as stated, and breaks in three places:**
 
-1. **It is brutal at the edges.** A newborn is all debit and no credit — infinite ratio. The retired, the sick, the disabled all degrade monotonically. These are exactly the people §7.5's basic-needs floor protects. **Ratio can only govern the discretionary layer; debit tolerance (OP-4) must sit underneath it.**
+1. **It is brutal at the edges.** A newborn is all debit and no credit — infinite ratio. The retired, the sick, the disabled all degrade monotonically. These are exactly the people §5.5's basic-needs floor protects. **Ratio can only govern the discretionary layer; debit tolerance (OP-4) must sit underneath it.**
 2. **It rewards asceticism over contribution.** A hermit who produces almost nothing and consumes almost nothing posts an excellent ratio. Under ratio-judgement, **withdrawal dominates productivity** — a direct inversion of fecundity. A pure-ratio metric is gamed by doing less of everything.
 3. **0/0 is undefined**, and the non-participant case hits it immediately.
 
@@ -218,14 +218,14 @@ Scarcity is what makes the signal mean anything. **P2 destroys the signal in ord
 | # | Action | Target |
 |---|---|---|
 | 1 | **Adopt P1 in the corrected form:** approval = pre-commitment to absorb debit, never a gate on credit. | Foundations v0.3, C5 |
-| 2 | ~~Denominate authorization in service credit.~~ **Withdrawn (C1).** Replaced by: *pledging power accrues per hour worked, equally for all* — **OP-1's fourth and strongest candidate**, and not a voting scheme. | §6.2 |
-| 3 | **Accept P2 by splitting it.** Pledges commit debit at ***k*=1**; signals commit nothing at ***k*=n***. One test: **does debit move?** | C5, §6.3 |
-| 3a | **🔴 Retitle §6 — "three feedback channels," not "three credit types."** There is one credit: time. Rewrite §6.3's non-convertibility clause: feedback is non-convertible because **it was never credit**, not because a firewall holds it. | **Foundations v0.3** |
+| 2 | ~~Denominate authorization in service credit.~~ **Withdrawn (C1).** Replaced by: *pledging power accrues per hour worked, equally for all* — **OP-1's fourth and strongest candidate**, and not a voting scheme. | §4.5 |
+| 3 | **Accept P2 by splitting it.** Pledges commit debit at ***k*=1**; signals commit nothing at ***k*=n***. One test: **does debit move?** | C5, §4.6 |
+| 3a | **🔴 Retitle §6 — "three feedback channels," not "three credit types."** There is one credit: time. Rewrite §4.6's non-convertibility clause: feedback is non-convertible because **it was never credit**, not because a firewall holds it. | **Foundations v0.3** |
 | 3b | **OP-8 dissolves in its current form.** Replaced by the narrower live question: **can signals be bought with credit?** | Register |
 | 4 | Specify an **expiry/reversion rule** for unspent pledging power. | C5 |
 | 5 | **Promote P4 into the Foundations:** aggregate debit exceeds credit permanently; this is the second law, and **A3 is why it is survivable.** | §7, next to W1 |
-| 6 | **Split the metric:** ratio = efficiency, absolute credit = contribution. Ratio governs the discretionary layer only; OP-4 sits underneath. | §7.5, OP-4 |
-| 7 | Note that **authorization and Enrichment are duals** — prospective/committed vs. retrospective/voluntary. Both needed. | §6.3, OP-6 |
+| 6 | **Split the metric:** ratio = efficiency, absolute credit = contribution. Ratio governs the discretionary layer only; OP-4 sits underneath. | §5.5, OP-4 |
+| 7 | Note that **authorization and Enrichment are duals** — prospective/committed vs. retrospective/voluntary. Both needed. | §4.6, OP-6 |
 | 8 | **OP-19 → largely resolved** by P1: surplus directs production. | Register |
 | 9 | **OP-9 / P5 → substantially answered.** A decentralized demand signal, with no IFB. **Flag for the academic paper — this is the reply to Mises on preference revelation.** | Register, doc 2 |
 | 10 | **OP-16 remains OPEN.** | Register |

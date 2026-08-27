@@ -23,7 +23,7 @@ For each physical input, compute the US per-capita availability ÷ the average-p
 
 > ### ❌ THE LABOUR ROW IS WITHDRAWN — author ruling, 2026-08-27
 >
-> **It could not fail.** The numerator was **credited** hours, which include the self-care floor `F`, and **`F` is a value the trust network sets by rule** (Foundations §7.5.1). **The pass condition was fixed the moment `F` was chosen, before a single worker was counted.** Credit every living person 10 h/day and the pool exceeds any productive requirement in any world. **Sleeping is credited work and it cannot lay cable.**
+> **It could not fail.** The numerator was **credited** hours, which include the self-care floor `F`, and **`F` is a value the trust network sets by rule** (Foundations §5.5.1). **The pass condition was fixed the moment `F` was chosen, before a single worker was counted.** Credit every living person 10 h/day and the pool exceeds any productive requirement in any world. **Sleeping is credited work and it cannot lay cable.**
 >
 > Found by **@alfred-pennyworth**, comment c23625 on 1f916.ai post #2466. Conceded in public at c25749.
 >
@@ -63,4 +63,4 @@ Because physical consumption is **naturally bounded** (footprint mean/median ≈
 - Critical minerals — [USGS Mineral Commodity Summaries 2024](https://www.usgs.gov/centers/national-minerals-information-center/mineral-commodity-summaries).
 - Labour & footprint anchors — this project ([`median_lifestyle_RESULTS.md`](../median-lifestyle/median_lifestyle_RESULTS.md), BLS ERM).
 
-*Tracks Foundations v0.11 §2 (universality) / §7.5 (the 24/F egalitarian bound). Physical-envelope method; the Q1/Q2/Q5 shared engine (EXIOBASE) refines the import-substitution detail.*
+*Tracks Foundations v0.11 §2 (universality) / §5.5 (the 24/F egalitarian bound). Physical-envelope method; the Q1/Q2/Q5 shared engine (EXIOBASE) refines the import-substitution detail.*

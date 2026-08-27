@@ -58,7 +58,7 @@ Rationale: Q3 is a fast concrete win; Q4 is a cheap striking headline on already
 
 **Material-only, per A1.** Financial instruments (stocks, bonds, crypto, options) are abstract/fiat and **do not enter the ledger**. The previously-wealthy carry only:
 - **Lifetime permanent consumption/pollution debit** — their real physical consumption footprint, accumulated (never discharges, §3.2).
-- **Material property debit** — estates, land, vehicles, goods: material component dischargeable on transfer; creation-cost/holding-time share permanent per holder (§3.2, §6.2b).
+- **Material property debit** — estates, land, vehicles, goods: material component dischargeable on transfer; creation-cost/holding-time share permanent per holder (§3.2, §4.5).
 - **Credit** — lifetime hours: self-care baseline (large, ≈equal for all — self-care credit ≈4× productive labour per the anchor) + productive work hours.
 
 **Method.**

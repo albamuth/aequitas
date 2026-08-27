@@ -59,13 +59,13 @@ Because the material split is by mass and `B` is in mass units, cost-per-kg = `�
 
 *(Pure mass is the **low-resolution estimator** — §3.4a: "mass is an estimator, correct where composition is uniform and a low-resolution reading where it is not." It flattens *all* co-products to equal per-kg material cost. The composition refinement — where lean vs fat genuinely differ — is carried by the **energy** dimension below, which is exactly the spec's "refined only by measured tissue composition (lean vs fat differ in deposition energy), never by yield.")*
 
-The rejected **Method 2** (yield/desirability weighting) is implemented alongside purely to show it is distinguishable: it inflates the tenderloin **20×**, which would ration the rare cut by *who can absorb the larger debit* — price-rationing by standing, the exact A5/§7.1 mechanism Aequitas removes. Scarcity is real and routes to the demand side (pledges) and decentralised distribution, never to cost.
+The rejected **Method 2** (yield/desirability weighting) is implemented alongside purely to show it is distinguishable: it inflates the tenderloin **20×**, which would ration the rare cut by *who can absorb the larger debit* — price-rationing by standing, the exact A5/§5.1 mechanism Aequitas removes. Scarcity is real and routes to the demand side (pledges) and decentralised distribution, never to cost.
 
 ### 3.4 Split-before-collapse (§3.2a)
 
 Materials and labour share an operator (OP-18), so collapse-then-solve equals solve-then-collapse exactly. Energy does **not** share it, so collapsing energy and materials *before* solving gives the wrong answer (test 4). This is the whole reason the rule is **divide per dimension, then collapse** — pinned as a passing/failing assertion, not a comment.
 
-### 3.5 Residual cohort rule `(N − Y) / Z` (§5.1b)
+### 3.5 Residual cohort rule `(N − Y) / Z` (§4.4)
 
 The estimator for an unmeasured ("dark") producer is the independently-known total minus measured output, over the count still dark. It equals the **average of the remaining dark producers**, so when the best producers instrument and leave the residual first, the estimate **falls** (test 5):
 
@@ -88,11 +88,11 @@ total debit per co-product: 0.7685  (invariant across all yields)
 labour credit: unchanged
 ```
 
-1. **Cost per kg scales as `1/yield`** — the bigger steer's beef is ~9% *cheaper per kg*, because the fixed input pool is spread over more tissue. That is the efficiency signal (A5/§7.1), recorded faithfully rather than washed into an average.
+1. **Cost per kg scales as `1/yield`** — the bigger steer's beef is ~9% *cheaper per kg*, because the fixed input pool is spread over more tissue. That is the efficiency signal (A5/§5.1), recorded faithfully rather than washed into an average.
 2. **Total debit routed to each co-product is invariant** — yield moves the per-kg figure, not the pool (fixed inputs, fixed physical split).
 3. **The farmer's labour credit is untouched** — they are credited their hours regardless; only the output's *debit-cost* moves.
 
-Averages (§5.1b) cover only **unmeasured** producers; a measured animal carries its real numbers. This needs **no new rule** — A6 already implies it. (The separate question — whether the extra 10% deposits as muscle or fat, shifting `Θ` itself — is the "fuzzy middle", Objections §C Test 3, and remains a real-data question.)
+Averages (§4.4) cover only **unmeasured** producers; a measured animal carries its real numbers. This needs **no new rule** — A6 already implies it. (The separate question — whether the extra 10% deposits as muscle or fat, shifting `Θ` itself — is the "fuzzy middle", Objections §C Test 3, and remains a real-data question.)
 
 ---
 
@@ -101,7 +101,7 @@ Averages (§5.1b) cover only **unmeasured** producers; a measured animal carries
 - **The economy is illustrative, not empirical.** Masses, energies, and labour hours are internally consistent but invented. The result being demonstrated is the *pipeline and the split rules*, not any beef number.
 - **`Θ` is given, not derived.** Same standing caveat as the recursion sim (Objections §C Test 3, the "fuzzy middle"): whether real biophysical split fractions behave well at small breed/feed differences is still owed, and is a real-data question.
 - **The collapse weights are placeholders and are the OP-10 problem.** They are surfaced explicitly rather than buried precisely so that C4 (re-weighting) and OP-10 governance attach to a visible object.
-- **Cohort `N` must be independently known.** The demo sets `N` = true total; in reality `N` comes from FAO/trade/satellite data and only exists for major commodities, and the dark count `Z` must be defensible (§5.1b's two conditions).
+- **Cohort `N` must be independently known.** The demo sets `N` = true total; in reality `N` comes from FAO/trade/satellite data and only exists for major commodities, and the dark count `Z` must be defensible (§4.4's two conditions).
 
 ---
 

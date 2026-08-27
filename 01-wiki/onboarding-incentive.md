@@ -47,4 +47,4 @@ The "try it" account: answer questions about yourself and watch your assigned de
 
 ---
 *Status: provisional*
-*Source: `00-strategy/Aequitas_Foundations_v0.2.md` §5.2, §11*
+*Source: `00-strategy/Aequitas_Foundations_v0.2.md` §4.8, §11*

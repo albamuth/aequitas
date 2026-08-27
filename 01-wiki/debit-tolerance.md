@@ -41,4 +41,4 @@ Second: the boundary between "essential" and "non-essential" is a live political
 
 ---
 *Status: provisional — OP-4*
-*Source: `00-strategy/Aequitas_Foundations_v0.2.md` §7.5*
+*Source: `00-strategy/Aequitas_Foundations_v0.2.md` §5.5*

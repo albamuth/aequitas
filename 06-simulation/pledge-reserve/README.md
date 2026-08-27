@@ -38,4 +38,4 @@ Needs `numpy`; the figures need `matplotlib`.
 
 ## The open piece
 
-**The causation claim is not settled.** Deciding whether *this* task caused *that* harm has no clean analogue in the rest of the system, and it routes to ordinary recourse rather than to an Aequitas mechanism. It is registered as a residue on Foundations §6.4c, not closed.
+**The causation claim is not settled.** Deciding whether *this* task caused *that* harm has no clean analogue in the rest of the system, and it routes to ordinary recourse rather than to an Aequitas mechanism. It is registered as a residue on Foundations §4.6, not closed.

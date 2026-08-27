@@ -60,7 +60,7 @@ This is the refinery being *harder* than the cattle case: part measurement, part
 - **Materials, labour, prices** — the DOE bandwidth study is *process energy only*, so crude mass, operating labour, and product prices remain representative. Materials/labour don't affect the energy headline; prices only scale the (already price-independent) physical result's contrast.
 
 **By design / structural:**
-- **Pollution excluded** — a fraction's transferable cost carries no pollution (§3.2b non-cascade = §6.2a closure). See the plan's §6a.
+- **Pollution excluded** — a fraction's transferable cost carries no pollution (§3.2b non-cascade = §4.5 closure). See the plan's §6a.
 - **Crude exogenous** — folded into direct inputs; upstream recursion already proven.
 - **Single representative refinery** — hydroskimming vs deep-conversion differ (the "fuzzy middle", §C Test 3). Per-refinery is the high-resolution version.
 - **Petcoke in volume** — conventionally mass/short-tons; kept in bbl-equivalent for a uniform basis.

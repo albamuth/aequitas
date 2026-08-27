@@ -32,10 +32,10 @@ The naïve boundary is temporal ("costs incurred during production"). That is wr
 A durable asset (building, plant, tooling) holds its own **creation-cost as property-debit on the asset itself** — property-debit legitimately attaches to objects (Foundations §3.2), so this is A1-clean.
 
 1. **Community pledges grant the holders debit-room to carry the creation-cost.** A pledge is *costly to the pledger* — an hour pledged is spent for good from a finite lifetime pledging-budget — but it **does not draw the creation-cost down**: the pledger's own credit never moves and is never earmarked, and nothing is subtracted from the asset (**A1** — nothing vanishes). To the receiving cooperative it acts as **virtual credit**, defraying the *bite* of the fixed cost. Pledges are simultaneously the **construction authorization** and the **demand brake** — a facility gets built at the scale the community will pledge for. *(Hospital: a 100k creation-cost with 50k pledged **still sits at 100k on the asset** — but 50k of pledge-granted debit-room means only 50k of it effectively restricts the holders.)*
-2. **The full creation-cost is holding-time-split among the asset's holders** — pledges cushion the bite, they do not shrink the debit. Each holder's permanent share = **their holding-duration ÷ total holding-duration over the asset's whole life.** Because pledges are **permanent and non-revocable** (Foundations §6.4), the granted room cannot evaporate under a holder, which is what lets a cooperative undertake capital-heavy essential work at all.
-3. **The basic-needs floor caps how hard any residual bites** (Foundations §7.5).
+2. **The full creation-cost is holding-time-split among the asset's holders** — pledges cushion the bite, they do not shrink the debit. Each holder's permanent share = **their holding-duration ÷ total holding-duration over the asset's whole life.** Because pledges are **permanent and non-revocable** (Foundations §4.6), the granted room cannot evaporate under a holder, which is what lets a cooperative undertake capital-heavy essential work at all.
+3. **The basic-needs floor caps how hard any residual bites** (Foundations §5.5).
 
-> **⚠️ Corrected 2026-08-24.** Steps 1 and 2 previously read *"pledges draw the creation-cost down first"*, *"the pledger absorbs a share of the debit against their own debit-room"*, and *"the **un-pledged residual** is holding-time-split."* **All three were superseded by Foundations §6.2b and this paper was never updated** — same family as the pledge-permanence contradiction found by outside review (report bug **#7**). The draw-down reading breaks **A1** (debit would vanish) and contradicts **§6.4** (a pledge does not move the pledger's credit).
+> **⚠️ Corrected 2026-08-24.** Steps 1 and 2 previously read *"pledges draw the creation-cost down first"*, *"the pledger absorbs a share of the debit against their own debit-room"*, and *"the **un-pledged residual** is holding-time-split."* **All three were superseded by Foundations §4.5 and this paper was never updated** — same family as the pledge-permanence contradiction found by outside review (report bug **#7**). The draw-down reading breaks **A1** (debit would vanish) and contradicts **§4.6** (a pledge does not move the pledger's credit).
 
 **Why holding-time-split, and why it beats an even split.** It has a *measurable* basis — holding-duration is a physical trace — so it is far closer to a measured allocation than a bare convention, and it passes the cooperative-game checklist an even split fails:
 
@@ -66,7 +66,7 @@ All wear, weathering and usage abrasion alike, accrues to the asset as property-
 
 **Why this is right under A1.** Ellerman's responsibility-imputation: only the miner *acted* to pollute; the buyer did not cause the mining. Charging the buyer would misattribute responsibility. This is also just Foundations §3.2's existing two-kinds-of-debit distinction taken to its conclusion — pollution/consumption debit is the *permanent* kind, so it stays on its causer; property debit is the *transferable* kind, so it rides the object.
 
-**Why the incentive survives.** §7.2 previously located the anti-pollution gradient on the *consumer* ("dirty products cost more"). Under this rule the penalty is **direct and on the producer**: a polluter carries permanent pollution-debt, a poor efficiency ratio, and restricted discretionary consumption — regardless of whether any consumer notices. That is *stronger* than a consumer-mediated signal, which is historically weak. And the consumer signal is **not lost**: §5.1b already requires goods to carry origin records, so a non-transferable **provenance/footprint record travels with the product**, letting buyers and pledgers still prefer low-pollution goods. Both channels operate; only the *debit* is pinned to the causer.
+**Why the incentive survives.** §5.2 previously located the anti-pollution gradient on the *consumer* ("dirty products cost more"). Under this rule the penalty is **direct and on the producer**: a polluter carries permanent pollution-debt, a poor efficiency ratio, and restricted discretionary consumption — regardless of whether any consumer notices. That is *stronger* than a consumer-mediated signal, which is historically weak. And the consumer signal is **not lost**: §4.4 already requires goods to carry origin records, so a non-transferable **provenance/footprint record travels with the product**, letting buyers and pledgers still prefer low-pollution goods. Both channels operate; only the *debit* is pinned to the causer.
 
 ---
 
@@ -113,7 +113,7 @@ The **equilibrium baseline** and the **ambient-stock measurement** are powerful 
 | **Capital / historical costs** | Undefined; regress risk | Front-loaded; boundary = capital vs. consumption; pre-Aequitas assets enter at estimate/zero |
 | **Idea #1** capital as investment | Parking-lot bet | Landed — pledges + holding-time-split |
 | **Idea #2** stock re-weighting | Sketch | Landed & unified with recycling; baseline defined |
-| **Pollution attribution** | §3.2 implied it rode the product | Permanent on causer; only property-debit transfers; §7.2 rewritten |
+| **Pollution attribution** | §3.2 implied it rode the product | Permanent on causer; only property-debit transfers; §5.2 rewritten |
 | **Recycling / end-of-life** | Unspecified | Trace-forward (material only) + product-as-waste + recycler credit |
 | Team even-split (this session's #2) | Proposed | Superseded by holding-time-split |
 
@@ -150,17 +150,17 @@ The critic put the two together:
 
 Under **A1**, cost attaches to whoever **acted** — Ellerman's responsibility imputation. The barn was caused by the people who built it and is carried by the people who hold it. **A thing cannot act, so a thing cannot cause a cost.**
 
-Charging the barn to the beef is the same move as charging the miner's tailings to whoever buys the ring. **§3.2 above already refuses that flow downstream. Foundations §6.2a already refuses it upstream** (the non-cascade / computational-closure rule). **Capital is the third face of one rule this project had already written down twice** — and A5, which located a cost on the *thing*, was the sentence out of step with all three.
+Charging the barn to the beef is the same move as charging the miner's tailings to whoever buys the ring. **§3.2 above already refuses that flow downstream. Foundations §4.5 already refuses it upstream** (the non-cascade / computational-closure rule). **Capital is the third face of one rule this project had already written down twice** — and A5, which located a cost on the *thing*, was the sentence out of step with all three.
 
 **Three defects in the old wording, in order of size:**
 
 | # | Defect | Consequence |
 |---|---|---|
 | 1 | **It said "price."** Nothing in Aequitas has a price; things carry a **debit-cost**, and it moves. | Puts every economist reader in the wrong frame on the first sentence, and invites exactly this attack. |
-| 2 | **It never said what counts as a cost *of the thing*.** | The capital-vs-consumption boundary lived in §1 of this paper and in Foundations §6.2a, and was never lifted into the axiom it appeared to contradict. |
+| 2 | **It never said what counts as a cost *of the thing*.** | The capital-vs-consumption boundary lived in §1 of this paper and in Foundations §4.5, and was never lifted into the axiom it appeared to contradict. |
 | 3 | **"True" reads as final.** | Fights §3.3 and A6, which re-weigh every figure when the science improves. |
 
-**A4 carried the same defect** — *"every consequence of an activity is **priced into** it"* — and was repaired in the same pass to **accounted to whoever caused it**. That is what §3.2 above, Foundations §5.1c and §6.2a already do; **A4 requires every cost to land on *a* ledger, never on the *product's* ledger.**
+**A4 carried the same defect** — *"every consequence of an activity is **priced into** it"* — and was repaired in the same pass to **accounted to whoever caused it**. That is what §3.2 above, Foundations §4.4 and §4.5 already do; **A4 requires every cost to land on *a* ledger, never on the *product's* ledger.**
 
 ### 8.3 Why the alternative is worse — the two worked cases
 
@@ -182,7 +182,7 @@ Push it onto the beef instead and 12.0 h/kg becomes 12.5 h/kg — a **4.2%** ris
 | Attack | Closed by |
 |---|---|
 | **Capital launderer** — reclassify a consumed input as a durable asset to move its debit off the unit | **§1's physical-fate test + IC-4 (fate closure).** Audited, never declared. Closed in v0.5; unchanged. |
-| **Borrowed barn** — A builds it, B uses it, so B's beef looks cheap | **§2 holding-time.** B's holding-time accrues B's share. And there is no rent to charge (Foundations §7.1). |
+| **Borrowed barn** — A builds it, B uses it, so B's beef looks cheap | **§2 holding-time.** B's holding-time accrues B's share. And there is no rent to charge (Foundations §5.1). |
 | **Scarcity re-entering cost** — price the rare cut higher | **Strengthened.** The repaired A5 says cost is a record of what was physically consumed, so desirability has no way in. The tenderloin ruling (Objections B9) gains a cleaner ground than it had. |
 | **"A4 is being carved out"** | **No.** A4 requires every cost to land on **a** ledger, not the **product's** ledger — which is now what A4 says. |
 

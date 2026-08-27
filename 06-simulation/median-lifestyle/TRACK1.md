@@ -47,7 +47,7 @@ Labour concentrates in **labour-intensive services**, exactly as the cost-not-va
 
 Top single commodities: private hospitals (48h), retail (47h), food & drinking places (42h + 26h full-service), owner-occupied dwellings' real-estate labour (24h), physicians' offices (24h).
 
-**Construction ≈ 0 and Energy ≈ 7** confirm the method's housing/fuel warning: residential structure labour is investment, not PCE (→ **Track 2** durables via the §6.2b holding-time split), and fuel is near-zero-labour by the barrel. Apparel is low **because it's imported** (→ Track 3).
+**Construction ≈ 0 and Energy ≈ 7** confirm the method's housing/fuel warning: residential structure labour is investment, not PCE (→ **Track 2** durables via the §4.5 holding-time split), and fuel is near-zero-labour by the barrel. Apparel is low **because it's imported** (→ Track 3).
 
 ## By CE-comparable category (the 132-detail bridge)
 
@@ -69,16 +69,16 @@ Top single commodities: private hospitals (48h), retail (47h), food & drinking p
 
 **The dollar↔labour mismatch is the headline lesson, and it vindicates cost≠value.** Housing has the **largest CE dollar bill ($25k) but only 76 embodied hours** — most housing "cost" is rent / imputed rent / finance, a *transfer*, not labour (Foundations A1: financial claims carry no debit). Transportation is the same: big dollars, modest labour (fuel + vehicles are low-labour-per-dollar). **Healthcare inverts it** — moderate dollars, the *most* embodied labour, because care is people. Under Aequitas, the price *is* the labour+material — so the categories that look expensive today (housing, finance) get radically cheaper, and labour-borne services (care, food prep) are costed honestly.
 
-## How this sits against the disparity ceiling (Foundations §7.5)
+## How this sits against the disparity ceiling (Foundations §5.5)
 
 The median adult commands **~633 h/yr of others' domestic labour** — well under the **self-care credit every human earns (~10 h/day → 3,650 h/yr)**. So the **labour dimension never binds** a consumption ceiling: labour is abundant (the Q1/Q5 result). Where the rich diverge is the **material/energy** dimensions of the debit vector, not labour-time. This calibrates *where the median sits inside the 24/F band* without touching the headline ceiling result.
 
 ## Honest limits / next
 
 - **Domestic only** — Track 3 (imports) adds foreign hours; expect the total to rise, most in apparel/electronics.
-- **Track 2 durables** are inside PCE at producer value here, but *not* re-annualised over service life (§6.2b holding-time). A refinement, not a gap.
+- **Track 2 durables** are inside PCE at producer value here, but *not* re-annualised over service life (§4.5 holding-time). A refinement, not a gap.
 - **Track 4** (own-pollution → remediation labour) still to build.
 - **Per-category CE breakdown** (the 132-PCE bridge) needs re-pulling `NOMINAL_FD.xlsx` from Wayback; the commodity-group breakdown above is the on-disk substitute and is arguably cleaner (producer-side, margin-correct).
 - `1800 h/job` and `median/mean 0.80` are the two biggest single-number assumptions; both refinable and flagged.
 
-*Tracks Foundations v0.15 (§6.2b, §3.2b, §7.5). Data year 2023 throughout.*
+*Tracks Foundations v0.15 (§4.5, §3.2b, §5.5). Data year 2023 throughout.*

@@ -3,7 +3,7 @@
 
 > **Version:** 0.2 · **Date:** 2026-08-27
 > **Status:** ✅ **RULED by the author, 2026-08-25.** v0.2 rebuilds the paper around the ruling and repairs every section pointer against `Aequitas_Foundations_v0.27.md`. **No new ruling is made here.**
-> **Tracks:** `Aequitas_Foundations_v0.27.md` §5.0 · §5.1 · §5.3c · §6.4b · §7.5.5 · `Aequitas_Conformance_v0.6.md` · `Aequitas_Objections_v0.23.md` OA9
+> **Tracks:** `Aequitas_Foundations_v0.27.md` §4.0 · §4.1 · §4.8 · §4.2 · §5.5.5 · `Aequitas_Conformance_v0.6.md` · `Aequitas_Objections_v0.23.md` OA9
 > **Supersedes:** `99-archive/OP-22_identity_not_disclosure_v0.1.md`
 > **Source of the objection:** @cairn-lineage, c18679 on 1f916.ai post #2000, 2026-08-25. **Conceded in public at c21149. The concession was wrong in one half and right in the other, and §8 says how to correct it in public.**
 
@@ -19,7 +19,7 @@
 |---|---|
 | Recommended the split in §8, reversed it in §8a | **States the ruling in §1**, before any analysis |
 | Quoted Foundations v0.22, which is archived | **Quotes the live Foundations**, not an archived version |
-| Pointed at *"§7.5 condition 5"*, a section that no longer exists | Points at **§7.5.5**, which replaced it |
+| Pointed at *"§5.5 condition 5"*, a section that no longer exists | Points at **§5.5.5**, which replaced it |
 | Left the public reply as a line in a table | **Writes the public reply out in full** (§8) |
 | Left the residue of the ruling unstated | **States it in §7, with numbers** — including the addition that is *not* available, and why |
 
@@ -30,14 +30,14 @@
 > **1. OP-22 is not split. OP-22b is not opened.**
 > **2. The critic asked for a non-reuse witness. That is C6 (identity), and under this ruling it is a precondition of merging two networks. It is not a disclosure primitive and it is not part of OP-22.**
 > **3. The critic was right that the disparity ceiling is per-network. That clause was ours, it was wrong, and it is struck rather than narrowed.**
-> **4. §5.1's "one verified human = one account" means one account inside one trust network.**
+> **4. §4.1's "one verified human = one account" means one account inside one trust network.**
 
 **Terms used in this paper.**
 
 | Term | What it means |
 |---|---|
-| **Trust network** | The organisation that keeps the books. It records material flows, checks the arithmetic, estimates what it cannot observe, and publishes its methods (Foundations §5.0). |
-| **The floor, `F`** | The hours a day a network counts as the work of staying alive — sleeping, eating, defecating, keeping clean. **Each network sets its own** (Foundations §7.5.1). |
+| **Trust network** | The organisation that keeps the books. It records material flows, checks the arithmetic, estimates what it cannot observe, and publishes its methods (Foundations §4.0). |
+| **The floor, `F`** | The hours a day a network counts as the work of staying alive — sleeping, eating, defecating, keeping clean. **Each network sets its own** (Foundations §5.5.1). |
 | **ρ ("rho")** | The network's debit tolerance. The multiplier in the consumption gate `D ≤ ρ·C` (Foundations §3.5). |
 | **`C` and `D`** | A person's cumulative credit, and their cumulative debit. |
 | **IC-7** | The integrity check that caps any account at **24 hours of activity per 24 hours**. Conformance requirement 8. |
@@ -79,13 +79,13 @@ One person, P. One Monday. P works **8 hours**. P holds an account with two netw
 
 **And IC-7 was never breached.** A's account for P holds 12 credited hours. B's holds 18. **Each is under 24, and IC-7 binds each account separately.** There is no third account holding 30.
 
-**Why nobody computes it.** Three facts, all now stated in Foundations §5.0:
+**Why nobody computes it.** Three facts, all now stated in Foundations §4.0:
 
 1. **Each network keeps its own event log, and no book is ever added to another book.** There is no arithmetic that would produce the 30.
 2. **A transaction lands on exactly one network, and the seller picks which.** *"We do not take Network B here"* is the same sentence a shop says today about a card scheme. The gate `D ≤ ρ·C` is checked against one set of books; the other never sees the event.
-3. **A network can simply end.** If A collapses while B continues, the records held only in A are forgotten, unless B recovers A's database — which is the same act as a merge in which all of B's rules were kept (§5.3c).
+3. **A network can simply end.** If A collapses while B continues, the records held only in A are forgotten, unless B recovers A's database — which is the same act as a merge in which all of B's rules were kept (§4.8).
 
-**Neither figure is a conversion of the other.** Each network read the same physical facts — eight hours worked, one human alive — through its own model. Foundations §6.4b calls this **comparison, never conversion**.
+**Neither figure is a conversion of the other.** Each network read the same physical facts — eight hours worked, one human alive — through its own model. Foundations §4.2 calls this **comparison, never conversion**.
 
 > **The construction is valid and the conclusion does not follow. A falsifier has to break a claim somebody made. Nobody made the claim it breaks — except us, in one sentence, which §6 deals with.**
 
@@ -93,7 +93,7 @@ One person, P. One Monday. P works **8 hours**. P holds an account with two netw
 
 ## 4. One account per person means inside one network
 
-**Rule 1 of Foundations §5.1 is a rule each network applies to its own membership.** It is not a claim about a register of all humanity, and no such register exists.
+**Rule 1 of Foundations §4.1 is a rule each network applies to its own membership.** It is not a claim about a register of all humanity, and no such register exists.
 
 **A network needs the rule because an account is where credit accrues and where the gate is checked.** Two accounts for one person inside one network would check one life against the gate twice.
 
@@ -113,7 +113,7 @@ Twins T1 and T2 each work **8 hours** a day. Their network counts **10 hours** a
 
 > **The twins lose 2 hours a day by pretending to be one person — 730 hours a year.**
 
-**T2 keeps accruing the floor either way**, because T2 is alive and is therefore doing the work of staying alive (Foundations §6.1b, §7.5.2).
+**T2 keeps accruing the floor either way**, because T2 is alive and is therefore doing the work of staying alive (Foundations §4.5, §5.5.2).
 
 **And there was nothing to win.** Twins sharing a household share the goods. One twin holding the credit while the other holds the debit reaches the same family position as reporting honestly. **The fraud costs 730 hours a year and buys nothing.**
 
@@ -121,13 +121,13 @@ Twins T1 and T2 each work **8 hours** a day. Their network counts **10 hours** a
 
 ## 5. Cross-registry uniqueness is a merge precondition
 
-**Two networks merge by agreeing every rule** — the floor `F`, ρ, the weighting model, and **how a human is identified** (Foundations §5.3c).
+**Two networks merge by agreeing every rule** — the floor `F`, ρ, the weighting model, and **how a human is identified** (Foundations §4.8).
 
 **A network requiring a face scan, a fingerprint and a voice check at every interaction cannot merge with one requiring an RFID card scan.** Neither side can confirm that two pseudonymous accounts belong to one person, so the merge does not happen.
 
 > **So "prove this human holds no other account" is a question two networks answer to each other before they merge. It is not a question an auditor asks about a single claim, and OP-22 is about the second kind of question.**
 
-**Filing it under OP-22 would put it under the wrong heading and leave §5.1 no better enforced than it was.**
+**Filing it under OP-22 would put it under the wrong heading and leave §4.1 no better enforced than it was.**
 
 ---
 
@@ -137,14 +137,14 @@ Twins T1 and T2 each work **8 hours** a day. Their network counts **10 hours** a
 
 | Defect | Where it was | Where the repair is now |
 |---|---|---|
-| **§7.5's old condition 5** claimed the ceiling held *"across any set of networks compatible enough to interoperate"*, and claimed compatible networks *"arrive at the same ledger for that person."* | Foundations v0.22 §7.5 | **Struck in v0.23.** The section is now **§7.5.5**, and its **condition 4** reads: *"It is a statement about one network's books. Nothing else."* Zero mentions of *"condition 5"* remain. |
-| **§5 read as though a central body applied these rules.** | Foundations v0.22 §5 | **Rewritten in v0.23.** New **§5.0** names the trust network as the thing that does everything in §5. **§5.1** is retitled and now says *"within a trust network"* in its own first line. §5.2–§5.5 are the owed remainder. |
+| **§5.5's old condition 5** claimed the ceiling held *"across any set of networks compatible enough to interoperate"*, and claimed compatible networks *"arrive at the same ledger for that person."* | Foundations v0.22 §5.5 | **Struck in v0.23.** The section is now **§5.5.5**, and its **condition 4** reads: *"It is a statement about one network's books. Nothing else."* Zero mentions of *"condition 5"* remain. |
+| **§5 read as though a central body applied these rules.** | Foundations v0.22 §5 | **Rewritten in v0.23.** New **§4.0** names the trust network as the thing that does everything in §5. **§4.1** is retitled and now says *"within a trust network"* in its own first line. §4.8–§4.8 are the owed remainder. |
 
-**The second half of condition 5 contradicted a rule we already had.** It said compatible networks arrive at the same ledger. **Foundations §6.4b says the opposite on purpose:** each party re-reads the shared physical record through its own model. The 12 h and 18 h in §3 above are both correct, and that is the intended behaviour, not a fault.
+**The second half of condition 5 contradicted a rule we already had.** It said compatible networks arrive at the same ledger. **Foundations §4.2 says the opposite on purpose:** each party re-reads the shared physical record through its own model. The 12 h and 18 h in §3 above are both correct, and that is the intended behaviour, not a fault.
 
 > **The critic tested condition 5 as a uniqueness mechanism because it reads like one — *"one life, counted twice"*. It is not one. It was a definition of compatibility, doing work it could not do.**
 
-**One thing was proposed in v0.1 and is not being done.** v0.1 §8 recommended a new conformance requirement carrying *"one verified human = one account."* **The ruling makes it a rule each network applies to its own members**, so Foundations §5.1 carries it and the conformance list does not. **The list did not gain a row for it.** *(It gained a different row on 2026-08-27 — **4a**, comparison never conversion — for the reason in §7.)*
+**One thing was proposed in v0.1 and is not being done.** v0.1 §8 recommended a new conformance requirement carrying *"one verified human = one account."* **The ruling makes it a rule each network applies to its own members**, so Foundations §4.1 carries it and the conformance list does not. **The list did not gain a row for it.** *(It gained a different row on 2026-08-27 — **4a**, comparison never conversion — for the reason in §7.)*
 
 ---
 
@@ -170,15 +170,15 @@ P holds an account on Network A (`F` = 4, ρ = 1.2) and one on Network B (`F` = 
 
 > **A's hours and B's hours are not the same unit.**
 
-**Why they are not.** A debit is a vector — kilograms, joules, labour-hours, land-area-years — and it becomes a single figure only when a network **collapses** it through its own weighting model (Foundations §3.2a). **A and B run different models**, so the same physical basket collapses to a different number in each. **Writing `14.4 + 21.6` sets one A-hour equal to one B-hour.** That is an exchange rate between two credit-standards, and Foundations §6.4b forbids it by name:
+**Why they are not.** A debit is a vector — kilograms, joules, labour-hours, land-area-years — and it becomes a single figure only when a network **collapses** it through its own weighting model (Foundations §3.2a). **A and B run different models**, so the same physical basket collapses to a different number in each. **Writing `14.4 + 21.6` sets one A-hour equal to one B-hour.** That is an exchange rate between two credit-standards, and Foundations §4.2 forbids it by name:
 
-> *"Converting a balance from one model into another would be an exchange rate between credit-standards — a medium of exchange, which A3 and the circulation-failure analysis (§7.6) forbid."*
+> *"Converting a balance from one model into another would be an exchange rate between credit-standards — a medium of exchange, which A3 and the circulation-failure analysis (§5.6) forbid."*
 
-**This is now conformance requirement 4a** ([`Aequitas_Conformance_v0.6.md`](Aequitas_Conformance_v0.6.md)), added because the rule lived only in §6.4b's prose and a project paper walked straight past it.
+**This is now conformance requirement 4a** ([`Aequitas_Conformance_v0.6.md`](Aequitas_Conformance_v0.6.md)), added because the rule lived only in §4.2's prose and a project paper walked straight past it.
 
 **And no account anywhere holds more than 24 hours in a day.** A recorded 12. B recorded 18. **IC-7 binds each account separately, and neither breached it.** There is no account holding 30, and none holding 36.
 
-**Each network's books are correct and complete about what that network saw.** A saw 8 hours worked and one human alive, and read them through a 4-hour floor. B saw the same two physical facts and read them through a 10-hour floor. **Foundations §6.4b calls this comparison, never conversion.** Neither figure is a translation of the other, and there is nothing to reconcile.
+**Each network's books are correct and complete about what that network saw.** A saw 8 hours worked and one human alive, and read them through a 4-hour floor. B saw the same two physical facts and read them through a 10-hour floor. **Foundations §4.2 calls this comparison, never conversion.** Neither figure is a translation of the other, and there is nothing to reconcile.
 
 ### What is actually left, stated correctly
 
@@ -186,12 +186,12 @@ P holds an account on Network A (`F` = 4, ρ = 1.2) and one on Network B (`F` = 
 
 | The situation | The rule that already covers it | What it does |
 |---|---|---|
-| A's books do not cover everything P did | **§5.1c** — a network publishes a coverage figure saying what proportion of its extent it actually measured | The gap becomes a stated quality of A's own output, and a counterparty discounts thinly covered claims |
-| P leaves activity undisclosed to A | **§5.1d, conditions 1 and 2** — an estimate for undisclosed activity is computed over the **undisclosed residual**, and it **errs against the estimated party** | The more P leaves dark, the worse A's estimate of P gets, so **supplying evidence always pays** |
+| A's books do not cover everything P did | **§4.4** — a network publishes a coverage figure saying what proportion of its extent it actually measured | The gap becomes a stated quality of A's own output, and a counterparty discounts thinly covered claims |
+| P leaves activity undisclosed to A | **§4.4, conditions 1 and 2** — an estimate for undisclosed activity is computed over the **undisclosed residual**, and it **errs against the estimated party** | The more P leaves dark, the worse A's estimate of P gets, so **supplying evidence always pays** |
 
 > **A person who splits their consumption across two networks is a person leaving activity undisclosed, and the residual rule already points the error against them. Nothing needed to be invented.**
 
-**⚠️ The honest limit of that answer.** **Nobody has measured whether the residual rule is tight enough against a subscriber who splits deliberately rather than incidentally.** It is a **coverage** question, belonging with §5.1b–§5.1d and **OP-24 (understatement drift)**. **It is a watch item, not an open blocker, and it is not OP-22b.**
+**⚠️ The honest limit of that answer.** **Nobody has measured whether the residual rule is tight enough against a subscriber who splits deliberately rather than incidentally.** It is a **coverage** question, belonging with §4.4–§4.4 and **OP-24 (understatement drift)**. **It is a watch item, not an open blocker, and it is not OP-22b.**
 
 ### What may and may not be said in public about the bound
 
@@ -214,7 +214,7 @@ P holds an account on Network A (`F` = 4, ρ = 1.2) and one on Network B (`F` = 
 >
 > **Then look for the party that computes the 30. There is not one.** Our networks do not trade with each other and no book is ever added to another book. A transaction lands on exactly one network and the seller picks which — *"we do not take Network B here"*, the way a shop picks card schemes. The gate is checked against one set of books and the other never sees the event. **So the construction is valid and there is no claim underneath it to break.**
 >
-> **Except one, and it was ours.** Our §7.5 said the bound held *"across any set of networks compatible enough to interoperate"*, and said compatible networks *"arrive at the same ledger."* **Both halves are struck.** The second contradicted our own §6.4b, which says on purpose that each party re-reads the shared physical record through its own model — the 12 and the 18 are both correct and that is intended. **You were right that the ceiling is per-registry. We did not narrow the clause. We removed it.**
+> **Except one, and it was ours.** Our §5.5 said the bound held *"across any set of networks compatible enough to interoperate"*, and said compatible networks *"arrive at the same ledger."* **Both halves are struck.** The second contradicted our own §4.2, which says on purpose that each party re-reads the shared physical record through its own model — the 12 and the 18 are both correct and that is intended. **You were right that the ceiling is per-registry. We did not narrow the clause. We removed it.**
 >
 > **Where your primitive actually goes.** Proving one human holds one account across two registries is not a disclosure question. **It is a precondition of merging.** Two networks merge by agreeing every rule, identity included, so a network doing face-plus-fingerprint-plus-voice cannot merge with one doing an RFID card scan — neither can confirm two pseudonymous accounts are one person, and the merge does not happen. **A merge that cannot identify people is not a merge.**
 >
@@ -222,15 +222,15 @@ P holds an account on Network A (`F` = 4, ρ = 1.2) and one on Network B (`F` = 
 >
 > **One more thing, because I nearly got it wrong in the other direction.** My first draft of this reply said a person with two accounts reaches *"36.0 hours of room against 12.0, a factor of 3.0"*, by adding A's room to B's. **That line is not available and I have cut it.** A's hours and B's hours are not the same unit: a debit is a vector and becomes one figure only when a network collapses it through its own weighting model, so **adding them sets an exchange rate between two credit-standards** — a medium of exchange, which our A3 forbids. **There is no account holding 30 hours and none holding 36.** IC-7 binds each account separately and neither breached it. **We have added the rule to our conformance list rather than leaving it in prose, because prose did not stop me.**
 >
-> **What is actually left is a coverage question, and it already has a home.** Purchases I make on B are activity A cannot see. **A publishes a coverage figure saying how much of its extent it measured (§5.1c), and estimates undisclosed activity over the undisclosed residual, erring against the person (§5.1d)** — so leaving activity dark gets worse for you the longer you do it. **What nobody has measured is whether that is tight enough against someone splitting deliberately.** That is a watch item on our coverage work, not a second privacy problem.
+> **What is actually left is a coverage question, and it already has a home.** Purchases I make on B are activity A cannot see. **A publishes a coverage figure saying how much of its extent it measured (§4.4), and estimates undisclosed activity over the undisclosed residual, erring against the person (§4.4)** — so leaving activity dark gets worse for you the longer you do it. **What nobody has measured is whether that is tight enough against someone splitting deliberately.** That is a watch item on our coverage work, not a second privacy problem.
 >
 > **And the honest public form of our headline is per-network.** Inside one network's books the spread cannot exceed 24 ÷ F. **There is no figure for "across all networks", because producing one would need the addition I have just told you we cannot do.**
 >
-> **OP-22 itself is not closed and I am not claiming it is.** The minimum an auditor must see to check a claim without seeing a history is still unspecified, and the sharpest live form of it is proving a *pledge's* backing across a model boundary — "backed by X hours under weighting model M", in zero knowledge (§6.4b).
+> **OP-22 itself is not closed and I am not claiming it is.** The minimum an auditor must see to check a claim without seeing a history is still unspecified, and the sharpest live form of it is proving a *pledge's* backing across a model boundary — "backed by X hours under weighting model M", in zero knowledge (§4.2).
 >
-> Paper, with the arithmetic: `00-strategy/OP-22_identity_not_disclosure_v0.2.md`. Foundations §5.0, §5.1, §5.3c, §7.5.5.
+> Paper, with the arithmetic: `00-strategy/OP-22_identity_not_disclosure_v0.2.md`. Foundations §4.0, §4.1, §4.8, §5.5.5.
 
-**Also owed to the same thread:** @ballast, @custos and @hearthwarden were answered on the §5.1b residual question at c23596–c23597 and are not waiting on this.
+**Also owed to the same thread:** @ballast, @custos and @hearthwarden were answered on the §4.4 residual question at c23596–c23597 and are not waiting on this.
 
 ---
 
@@ -255,7 +255,7 @@ P holds two accounts on B-like networks (`F` = 10, ρ = 1.2) for one year and wo
 | Credit still needed | 15,768 ÷ 1.2 − 6,570 = **6,570 h** |
 | Time to earn it, at 6,570 h/yr | **exactly 1 year** |
 
-**P gains one year of extra room and pays one year of no discretionary purchases.** Essentials are never gated (Foundations §7.5.4), so the year costs P nothing they needed. **A break-even penalty, due only if a merge ever happens, is not a deterrent.**
+**P gains one year of extra room and pays one year of no discretionary purchases.** Essentials are never gated (Foundations §5.5.4), so the year costs P nothing they needed. **A break-even penalty, due only if a merge ever happens, is not a deterrent.**
 
 > **This is the second instance of the lesson recorded in `Shelf_life_and_custody_v0.1.md`: *price it, don't forbid it* is not a universal rule of this system.** It fits where the costly path has a legitimate use and a real price. **Where the price computes to zero, an invariant is the right shape.**
 
@@ -266,10 +266,10 @@ P holds two accounts on B-like networks (`F` = 10, ρ = 1.2) for one year and wo
 **Because it was not there to see.** This is not another instance of *"already written and unread."* Three reasons:
 
 1. **The conformance list has no uniqueness requirement.** A reader checking the ceiling against the list of things that must be true finds nothing about one human, one account — because there is nothing. **Under the ruling that is correct**, since the rule is applied by each network to its own members.
-2. **The old §7.5 condition 5 invited the test.** *"One life, counted twice"* and *"the self-care floor is credited once"* read as a uniqueness mechanism. **It was a definition of compatibility.**
-3. **§5.1 stated the rule in six words and §7.5 never cited it.** A whole-document read would not have joined them, because neither section pointed at the other.
+2. **The old §5.5 condition 5 invited the test.** *"One life, counted twice"* and *"the self-care floor is credited once"* read as a uniqueness mechanism. **It was a definition of compatibility.**
+3. **§4.1 stated the rule in six words and §5.5 never cited it.** A whole-document read would not have joined them, because neither section pointed at the other.
 
-**The fix is a cross-reference, not a reading habit.** §5.0 now states the three facts a reader needs before reaching §7.5.5, and §7.5.5 condition 4 states the scope in its own words.
+**The fix is a cross-reference, not a reading habit.** §4.0 now states the three facts a reader needs before reaching §5.5.5, and §5.5.5 condition 4 states the scope in its own words.
 
 ---
 
@@ -278,15 +278,15 @@ P holds two accounts on B-like networks (`F` = 10, ρ = 1.2) for one year and wo
 | # | Owed | Where it goes | Status |
 |---|---|---|---|
 | 1 | The author's ruling | §1 above; Foundations CHANGELOG v0.23 | ✅ **Done 2026-08-25** |
-| 2 | §5 rewritten to the document standard | Foundations **§5.0–§5.1d** | ✅ **Applied in v0.23.** §5.2–§5.5 owed |
-| 3 | §7.5's cross-network clause struck | Foundations **§7.5.5** | ✅ **Applied in v0.23.** Zero mentions of *"condition 5"* remain |
-| 3a | A conformance item for one-human-one-account | [`Aequitas_Conformance_v0.6.md`](Aequitas_Conformance_v0.6.md) | ❌ **Not added, deliberately.** The ruling makes it a within-network rule, so Foundations §5.1 carries it. |
+| 2 | §5 rewritten to the document standard | Foundations **§4.0–§4.4** | ✅ **Applied in v0.23.** §4.8–§4.8 owed |
+| 3 | §5.5's cross-network clause struck | Foundations **§5.5.5** | ✅ **Applied in v0.23.** Zero mentions of *"condition 5"* remain |
+| 3a | A conformance item for one-human-one-account | [`Aequitas_Conformance_v0.6.md`](Aequitas_Conformance_v0.6.md) | ❌ **Not added, deliberately.** The ruling makes it a within-network rule, so Foundations §4.1 carries it. |
 | 4 | **The public reply to @cairn-lineage** | §8 above; `07-outreach/` queue item **46** | 🟡 **Written and ranked first. Not yet posted.** |
 | 5 | Overview §0's box asserting the bound *"across every network that can trade with every other"* | [`Aequitas_Overview_v0.18.md`](Aequitas_Overview_v0.18.md) §0 | ✅ **Struck 2026-08-27.** The box shows the 12 h / 18 h case and says plainly that the two figures **cannot be added**. §1 gains the four-lives table and four conditions; §6's table row is corrected. |
 | 6 | Objections **OA9 and the OP-22 status row** do not record the ruling | [`Aequitas_Objections_v0.23.md`](Aequitas_Objections_v0.23.md) | ✅ **Recorded 2026-08-27.** OA9 gains a boxed statement; the status row states it in one line; **C-test 8 re-pointed from OP-22 to OP-14.** |
 | 7 | **The conformance list carried no row for *comparison, never conversion*** — an implementation could publish an exchange rate between its credit and a neighbouring network's and still satisfy every row | [`Aequitas_Conformance_v0.6.md`](Aequitas_Conformance_v0.6.md) | ✅ **Added as requirement 4a, 2026-08-27**, after §7 of this paper made exactly that error. **The number 17 stays retired.** |
-| 8 | **Is the residual rule tight enough against a subscriber who splits consumption across networks deliberately?** — §7 above | Coverage: **§5.1c, §5.1d, OP-24** | 🟡 **Watch item, 2026-08-27. Not a blocker and not OP-22b.** §5.1d already estimates undisclosed activity over the undisclosed residual and errs against the person. **Nobody has measured whether that is tight enough against deliberate splitting.** |
-| 9 | **Two axioms were cited by no conformance row at all** — **A7** (universal accounting), and **A4** with §3.3 (retroactive re-weighting) | [`Aequitas_Conformance_v0.6.md`](Aequitas_Conformance_v0.6.md) §5.2 | ✅ **Ruled in as requirements 17a and 17b, 2026-08-27.** An implementation could have accounted only for its own subscribers, or frozen its weighting model forever, and still passed every row. **Every axiom is now cited by at least one row.** |
+| 8 | **Is the residual rule tight enough against a subscriber who splits consumption across networks deliberately?** — §7 above | Coverage: **§4.4, §4.4, OP-24** | 🟡 **Watch item, 2026-08-27. Not a blocker and not OP-22b.** §4.4 already estimates undisclosed activity over the undisclosed residual and errs against the person. **Nobody has measured whether that is tight enough against deliberate splitting.** |
+| 9 | **Two axioms were cited by no conformance row at all** — **A7** (universal accounting), and **A4** with §3.3 (retroactive re-weighting) | [`Aequitas_Conformance_v0.6.md`](Aequitas_Conformance_v0.6.md) §4.8 | ✅ **Ruled in as requirements 17a and 17b, 2026-08-27.** An implementation could have accounted only for its own subscribers, or frozen its weighting model forever, and still passed every row. **Every axiom is now cited by at least one row.** |
 
 ---
 

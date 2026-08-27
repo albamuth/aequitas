@@ -34,7 +34,7 @@ The median American (1,600 h/yr) sits **5.5× below** the lock line even at the 
 
 ## Why divesting doesn't save them (your exact scenario)
 
-Selling all their material property removes the *dischargeable material* component of property debit — but **not** their permanent consumption debit (§3.2, a lifetime of jets/yachts/estates never discharges), and it only slowly dilutes the holding-time creation-cost share (§6.2b). We modelled on consumption footprint *alone*, which is the most generous possible test. Property residue only makes the lock tighter. So: **yes — even fully divested, the ultra-consumer's lifetime is permanently locked.** The model just shows how thin that group is.
+Selling all their material property removes the *dischargeable material* component of property debit — but **not** their permanent consumption debit (§3.2, a lifetime of jets/yachts/estates never discharges), and it only slowly dilutes the holding-time creation-cost share (§4.5). We modelled on consumption footprint *alone*, which is the most generous possible test. Property residue only makes the lock tighter. So: **yes — even fully divested, the ultra-consumer's lifetime is permanently locked.** The model just shows how thin that group is.
 
 ## The A1 result: paper → material tail compression
 
@@ -49,7 +49,7 @@ This is the deep finding. Financial wealth isn't material, so it never enters th
 
 ## And most people *gain*
 
-**66% of Americans (73% worldwide) sit below the mean footprint.** Joining replaces their cohort-average *estimate* with their real, lower record (§5.2) — so for two-thirds of people, honest entry *opens* discretionary room. The lock is a ceiling on a thin elite, not a threat to ordinary people.
+**66% of Americans (73% worldwide) sit below the mean footprint.** Joining replaces their cohort-average *estimate* with their real, lower record (§4.8) — so for two-thirds of people, honest entry *opens* discretionary room. The lock is a ceiling on a thin elite, not a threat to ordinary people.
 
 ![% locked vs ρ](q4_fig1_locked_vs_rho.png)
 ![paper vs material tail](q4_fig2_compression.png)
@@ -61,7 +61,7 @@ This is the deep finding. Financial wealth isn't material, so it never enters th
 - **World results are indicative** — global footprint data is coarse; the US figures are firmer.
 - **ρ is exogenous** (local governance, §3.5/A8). We report the % *as a curve over ρ*, never a single number.
 - **The lock is a flow/rate test.** A fuller version would track accumulated lifetime debit vs remaining-life max credit (age-dependent); the rate test captures the essence — a consumption rate above ρ×max-earn-rate can never be recovered.
-- **"Locked" ≠ destitute.** It means zero discretionary consumption above the always-covered basic-needs floor (§7.5).
+- **"Locked" ≠ destitute.** It means zero discretionary consumption above the always-covered basic-needs floor (§5.5).
 
 ## Sources
 
@@ -70,4 +70,4 @@ This is the deep finding. Financial wealth isn't material, so it never enters th
 - Billionaire personal footprints (jets+yachts, excl. investments) — [Oxfam 2024](https://www.oxfam.org/en/press-releases/billionaires-emit-more-carbon-pollution-90-minutes-average-person-does-lifetime); [Oxfam superyachts & jets](https://www.oxfam.org.uk/get-involved/campaign-with-oxfam/the-environmental-impact-of-superyacht-and-private-jet-emissions/).
 - Wealth tail — SCF 2022 / Forbes, via [`disparity_ceiling_sim.py`](../disparity-ceiling/disparity_ceiling_sim.py).
 
-*Tracks Foundations v0.11 §3.5 / OP-4 / A1 / §5.2. Extends the disparity-ceiling result.*
+*Tracks Foundations v0.11 §3.5 / OP-4 / A1 / §4.8. Extends the disparity-ceiling result.*

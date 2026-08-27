@@ -1,12 +1,12 @@
 # OP-26 — The coverage gap: consistency is not completeness
 
-> **Status:** Working paper. **Both halves of the answer were already in Foundations** — §5.1b supplies the closure witness, §3.3 supplies the reason it never has to be final. This paper connects them to the audit layer, corrects one over-claim, asks for one schema field, and names one previously-unregistered exploit.
+> **Status:** Working paper. **Both halves of the answer were already in Foundations** — §4.4 supplies the closure witness, §3.3 supplies the reason it never has to be final. This paper connects them to the audit layer, corrects one over-claim, asks for one schema field, and names one previously-unregistered exploit.
 > **The shape of the answer:** a closure witness is neither an assertion nor a proof — **it is a citation.** Method, provenance, date, confidence, and an obligation to recompute every affected ledger when it improves. Science has no closure witnesses either; it has methods sections. See §9.
 > **Raised by:** [@cairn-lineage](https://1f916.ai/post/1581) (c14985) on 1f916.ai, 2026-08-22, in reply to post [#1605](https://1f916.ai/post/1605). Conceded on the board at c14987. Verbatim in `07-outreach/memory/objections.md`.
-> **FOLDED 2026-08-22** → Foundations **v0.17** (§3.3, §3.3a, §5.1a, §5.1b) · EventLog **v0.8** (§2.2, §4.1a, §7.1, §7.2a, §7.4, §8.1, §8.2a, §12.3) · Objections **v0.17** (OA12, status board, OP-24) · Overview **v0.13** (§7). **IC-13 and IC-14 were deliberately NOT folded** — they are registered as candidates in EventLog §12.3 pending a joint stress-test.
+> **FOLDED 2026-08-22** → Foundations **v0.17** (§3.3, §3.3a, §4.4, §4.4) · EventLog **v0.8** (§2.2, §4.1a, §5.1, §5.2a, §5.4, §8.1, §8.2a, §12.3) · Objections **v0.17** (OA12, status board, OP-24) · Overview **v0.13** (§7). **IC-13 and IC-14 were deliberately NOT folded** — they are registered as candidates in EventLog §12.3 pending a joint stress-test.
 > **Tracks:** EventLog v0.8 · Foundations v0.17 · Objections v0.17 OA12/OA3
 > **Touches:** OP-24 (understatement drift) · OP-22 (audit disclosure) · **C2 (trust network) — the current task**
-> *Section references to "EventLog v0.7 §7.1" below are historical — they quote the wording as it stood when the objection was raised.*
+> *Section references to "EventLog v0.7 §5.1" below are historical — they quote the wording as it stood when the objection was raised.*
 
 ---
 
@@ -22,7 +22,7 @@ The same objection had been raised independently the same evening by this projec
 
 ## 1. The over-claim, and its correction
 
-EventLog v0.7 §7.1 currently says:
+EventLog v0.7 §5.1 currently says:
 
 > **If a factory's declared outputs do not mass-balance its declared inputs, the missing mass went somewhere unrecorded — and the log itself says so.** Unrecorded emission stops being an enforcement problem and becomes an arithmetic error.
 
@@ -34,7 +34,7 @@ What they do not catch is a process that was **never recorded at all** and whose
 
 **Proposed replacement wording:**
 
-> An **under-declared** emission on a recorded event stops being an enforcement problem and becomes an arithmetic error: the inputs are on the books, the outputs are on the books, and the difference has nowhere to go. This is a statement about *recorded* processes. A process recorded nowhere is not an arithmetic error — it is a **coverage** question, and coverage is answered by §5.1b, not by IC-1…IC-9.
+> An **under-declared** emission on a recorded event stops being an enforcement problem and becomes an arithmetic error: the inputs are on the books, the outputs are on the books, and the difference has nowhere to go. This is a statement about *recorded* processes. A process recorded nowhere is not an arithmetic error — it is a **coverage** question, and coverage is answered by §4.4, not by IC-1…IC-9.
 
 ---
 
@@ -55,17 +55,17 @@ So an omission survives only if it is **disjoint from every recorded parcel**: i
 
 > **unrecorded extraction from a commons → off-ledger transformation → off-ledger consumption or release**
 
-That is not a hole in the audit. **It is a participation boundary** — a sub-economy that never entered. Aequitas has always known this exists; §5.1 names it directly (*"Participation is voluntary. Coverage is not."*).
+That is not a hole in the audit. **It is a participation boundary** — a sub-economy that never entered. Aequitas has always known this exists; §4.1 names it directly (*"Participation is voluntary. Coverage is not."*).
 
 **The correction to make, then, is not to the checks. It is to stop describing a participation boundary as if the checks covered it.**
 
 ---
 
-## 3. The closure witness already exists — §5.1b
+## 3. The closure witness already exists — §4.4
 
 cairn-lineage asked: *what is a closure witness that is not itself an authority assertion?*
 
-Foundations §5.1b answers it, and has since v0.9:
+Foundations §4.4 answers it, and has since v0.9:
 
 > **estimate = (N − Y) / Z** — *N* the independently-known total (FAO figures, trade data, **satellite survey**), *Y* the measured producers' recorded output, *Z* the count of unmeasured producers.
 
@@ -73,7 +73,7 @@ Foundations §5.1b answers it, and has since v0.9:
 
 **And §3.3 already reads exactly this kind of quantity.** Pollution debt is stock-dependent, floating with an **ambient-stock measurement** above a natural-remediation baseline. The instrument is already in the system — it has simply been used as a *weight input* and never as a *coverage statement*.
 
-**Generalisation proposed:** §5.1b is written for estimating dark *producers*. The same reconciliation applies to **any conserved dimension against any physical reservoir**:
+**Generalisation proposed:** §4.4 is written for estimating dark *producers*. The same reconciliation applies to **any conserved dimension against any physical reservoir**:
 
 | Flow type | Closure witness | Authority required |
 |---|---|---|
@@ -85,7 +85,7 @@ Foundations §5.1b answers it, and has since v0.9:
 
 ## 4. Why darkness does not simply win
 
-The obvious attack on any coverage regime: *everyone stays dark.* §5.1b already defeats it, and the mechanism deserves to be stated more loudly than it currently is.
+The obvious attack on any coverage regime: *everyone stays dark.* §4.4 already defeats it, and the mechanism deserves to be stated more loudly than it currently is.
 
 The estimate is computed **over the residual, not over the population.** So as good producers instrument themselves and leave the dark pool, *Y* rises, *Z* falls, and the estimate assigned to whoever remains **gets worse**. Adverse selection runs backwards:
 
@@ -93,9 +93,9 @@ The estimate is computed **over the residual, not over the population.** So as g
 
 Their goods still price — a participant who buys from a dark producer takes on the *estimated* debit, which is now the worst estimate in the system. The pressure is a market pressure, not an enforcement action. Nobody is compelled; the books simply become expensive to stay out of.
 
-**A new rule falls out of this, and it is usable.** §5.1b flags that *Z* is hard to count and that under-counting over-states each dark producer's share. That asymmetry is a feature, not a bug:
+**A new rule falls out of this, and it is usable.** §4.4 flags that *Z* is hard to count and that under-counting over-states each dark producer's share. That asymmetry is a feature, not a bug:
 
-> **The conservative-count rule.** When the count of dark actors is uncertain, **under-count it.** Under-counting makes each dark actor's estimated debit *higher*, which is the direction that provokes them to surface and prove otherwise (§5.1a realization). Over-counting dilutes the estimate and feeds **OP-24** understatement drift. **The error that is self-liquidating is the safe one.**
+> **The conservative-count rule.** When the count of dark actors is uncertain, **under-count it.** Under-counting makes each dark actor's estimated debit *higher*, which is the direction that provokes them to surface and prove otherwise (§4.4 realization). Over-counting dilutes the estimate and feeds **OP-24** understatement drift. **The error that is self-liquidating is the safe one.**
 
 ---
 
@@ -111,7 +111,7 @@ Our audits currently report *12/12 clean, 12/12 caught* with **no statement of t
 
 > **A debit computed over incomplete coverage is a floor, not a value.** Under-recording can only understate. So the recorded figure is a **lower bound** on the true one, and improved coverage moves it in one direction only — up.
 
-This sits cleanly beside the existing **monotonicity** rule in §5.1a (*records may only improve toward stronger basis and finer resolution; an observation may never be superseded by an estimate*). Monotonicity governs *basis*; the floor rule governs *extent*. They are the same discipline on two axes.
+This sits cleanly beside the existing **monotonicity** rule in §4.4 (*records may only improve toward stronger basis and finer resolution; an observation may never be superseded by an estimate*). Monotonicity governs *basis*; the floor rule governs *extent*. They are the same discipline on two axes.
 
 **Consequence worth noting:** the floor rule makes understatement structurally visible as *"this is a lower bound"* rather than invisible as *"this is the number."* It does not remove the incentive to understate — that is still **OP-24** — but it stops the understatement from being silent.
 
@@ -164,7 +164,7 @@ OP-24's core complaint is an incentive vacuum:
 
 That converts the audit of coverage from a public good nobody funds into a private interest everybody has. It does **not** fix OP-24's *constants* problem (a mis-set energetics coefficient still has no natural corrector except the rival sector). But it fixes the *extent* half, which was never separated out before.
 
-**Flagged, not claimed.** This depends on the residual actually being allocated to participants rather than written off, and Foundations §5.1 currently says non-participants *"can neither draw on nor be charged for their estimated position"* — which is about charging **them**, not about who carries the residual. **That question is unresolved and is the single most important thing to settle next.**
+**Flagged, not claimed.** This depends on the residual actually being allocated to participants rather than written off, and Foundations §4.1 currently says non-participants *"can neither draw on nor be charged for their estimated position"* — which is about charging **them**, not about who carries the residual. **That question is unresolved and is the single most important thing to settle next.**
 
 ---
 
@@ -229,9 +229,9 @@ If provenance is the answer, the records must carry provenance. Today an estimat
 
 **Two things fall out of this, and they are the reason it is worth doing.**
 
-**First: the provenance block and the extent block are the same object.** §5.1's extent rule asks a verdict to publish its domain, extent, and closure basis. A record's provenance answers exactly those questions about its inputs. **One schema addition serves both** — a verdict's extent is just the union of its records' extents. That is a strong signal the shape is right.
+**First: the provenance block and the extent block are the same object.** §4.1's extent rule asks a verdict to publish its domain, extent, and closure basis. A record's provenance answers exactly those questions about its inputs. **One schema addition serves both** — a verdict's extent is just the union of its records' extents. That is a strong signal the shape is right.
 
-**Second: a tally is work, so it belongs in the log as an event.** The pattern already exists — a genesis entry's `AgentRole` *"credits the **estimator** for the estimation work"*, and §5.1b already calls seeking data on non-participants *"credited trust-network work."* Generalise it:
+**Second: a tally is work, so it belongs in the log as an event.** The pattern already exists — a genesis entry's `AgentRole` *"credits the **estimator** for the estimation work"*, and §4.4 already calls seeking data on non-participants *"credited trust-network work."* Generalise it:
 
 > **A tally — a census, a survey, a satellite pass, a reservoir reading — is recorded as an ordinary event that credits whoever performed it.** `source_ref` then points *into the log*, the provenance chain is append-only, and the existing IC machinery audits it.
 
@@ -265,7 +265,7 @@ Without that sentence, dynamic ledgers imply retroactive liability, which nobody
 
 **(iii) Splitting a tally is how a fabrication gets caught — and it needs no test of the citation itself.**
 
-A tally covers an extent. Later, part of that extent gets measured directly. The estimate for the remainder is then `N − Y` over what is left — **which is §5.1b's residual rule, applied recursively at finer extent.** Resolution-splitting and the residual rule are the same operation; §5.1b simply performed it once.
+A tally covers an extent. Later, part of that extent gets measured directly. The estimate for the remainder is then `N − Y` over what is left — **which is §4.4's residual rule, applied recursively at finer extent.** Resolution-splitting and the residual rule are the same operation; §4.4 simply performed it once.
 
 The consequence for fraud is the useful part:
 
@@ -291,7 +291,7 @@ Since *Z* is an ordinary estimate with a method rather than a foundational unkno
 
 Two things survive the reframe and belong to the trust-network straw-man:
 
-1. **Who does the tallying work, and who pays for it.** §5.1b already says seeking data on non-participants is *"credited trust-network work"* — C2 has to say how that is funded and by whom.
+1. **Who does the tallying work, and who pays for it.** §4.4 already says seeking data on non-participants is *"credited trust-network work"* — C2 has to say how that is funded and by whom.
 2. **How a competing tally is adjudicated.** Two networks with different *Z* for the same region produce different ledgers. §3.3a's two-replication rule is a bar to clear, not a dispute procedure. **C2 owes the procedure.**
 
 Note that this is *smaller* than it looked an hour ago. The question is no longer "how do you know the unknowable" — it is the ordinary governance of an ordinary estimate.
@@ -302,10 +302,10 @@ Note that this is *smaller* than it looked an hour ago. The question is no longe
 
 | Doc | Change |
 |---|---|
-| `Aequitas_EventLog_v0.10.md` §7.1 | **Narrow the over-claim** (§1 above). Non-optional — the current wording is public in [#1605](https://1f916.ai/post/1605). |
+| `Aequitas_EventLog_v0.10.md` §5.1 | **Narrow the over-claim** (§1 above). Non-optional — the current wording is public in [#1605](https://1f916.ai/post/1605). |
 | `Aequitas_EventLog` §7 | Add **IC-13 genesis admissibility** (§6) — *after* a stress-test. |
-| `Aequitas_Foundations` §5.1b | Add the **conservative-count rule** and generalise the witness beyond production to any conserved dimension. |
-| `Aequitas_Foundations` §5.1a | Add the **floor rule** beside monotonicity — basis and extent are the same discipline on two axes. |
+| `Aequitas_Foundations` §4.4 | Add the **conservative-count rule** and generalise the witness beyond production to any conserved dimension. |
+| `Aequitas_Foundations` §4.4 | Add the **floor rule** beside monotonicity — basis and extent are the same discipline on two axes. |
 | `Aequitas_Foundations` §3.3 / §3.3a | State that **coverage estimates ride the retroactive-recomputation engine** like any other science (§9.2), and that **rival-sector audit extends to them** — the natural auditor of a dark-residual estimate is the *instrumented producer in the same market* (§9.3b). Extend the three supporting rules to coverage constants explicitly. |
 | `Aequitas_EventLog` §4 (honesty axes) | **`basis` is unchanged.** Add a **provenance block beside it** — `source_ref`, `method_ref`, `as_of`, `extent`, `uncertainty`, `supersedes` (§9.3c). Author's ruling, 2026-08-22. |
 | `Aequitas_EventLog` §2 (event kinds) | **A tally is an event.** A census, survey, satellite pass or reservoir reading is recorded like any other work and credits whoever performed it — the genesis-entry `AgentRole` pattern, generalised. Lets `source_ref` point into the log. |
@@ -321,6 +321,6 @@ Note that this is *smaller* than it looked an hour ago. The question is no longe
 
 ## 11. Provenance note
 
-This is the **third** time the answer to an imported problem was already implied by an axiom nobody had read closely enough — after A3 for the circulation-failure class and A2 for joint production. §5.1b had the closure witness since v0.9.
+This is the **third** time the answer to an imported problem was already implied by an axiom nobody had read closely enough — after A3 for the circulation-failure class and A2 for joint production. §4.4 had the closure witness since v0.9.
 
-**The lesson is now well enough evidenced to be a rule, and it already is one** (`CLAUDE.md`: *check the axioms before importing an outside solution*). What is new is the failure mode it reveals: **the axioms were right and the audit layer did not know it.** §5.1b lives in "Identity, Privacy, and Onboarding" and IC-1…IC-9 live in "Integrity constraints", and nothing connected them. The gap was organisational, not theoretical.
+**The lesson is now well enough evidenced to be a rule, and it already is one** (`CLAUDE.md`: *check the axioms before importing an outside solution*). What is new is the failure mode it reveals: **the axioms were right and the audit layer did not know it.** §4.4 lives in "Identity, Privacy, and Onboarding" and IC-1…IC-9 live in "Integrity constraints", and nothing connected them. The gap was organisational, not theoretical.

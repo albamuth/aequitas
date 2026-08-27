@@ -39,4 +39,4 @@ Discretionary consumption is gated by **D ≤ ρ·C** (OP-4 shape): you may cons
 - Static one-period clearing; no dynamics/expectations. A multi-period version is a later refinement.
 - "Wants" are a lognormal proxy; real preference heterogeneity is richer.
 
-*Tracks Foundations v0.15 (§3.5, §7.5, A8; IC-7). Anchored to `MEDIAN_LIFESTYLE_RESULT.md` and `Q6.md`.*
+*Tracks Foundations v0.15 (§3.5, §5.5, A8; IC-7). Anchored to `MEDIAN_LIFESTYLE_RESULT.md` and `Q6.md`.*

@@ -25,7 +25,7 @@ Competition does not disappear — it moves. Producers compete on **quality**, *
 
 > **Because the beef did not build the barn.** Under [[material-flow-value|A1]] only people act, so a cost attaches to whoever caused it — and **a thing causes nothing.** Charging a beef buyer for the barn is the same error as charging a ring buyer for the miner's tailings, which [[no-externalities|the non-transfer rule]] already refuses.
 
-**The numbers.** A 20,000-hour barn over 40,000 kg of beef would be **0.5 h/kg**. Aequitas shows **0.0**. The 20,000 hours sit on the farmer, and at ρ = 1.2 they need about **16,700 hours of credit** standing behind them — roughly **four and a half years** of one person's entire accrual. *That* is what stops a barn going up that nobody needs. Push it onto the beef instead and the cost leaves the one person who chose to build it and lands on ~40,000 buyers who did not. Full worked cases: Foundations §6.2b.
+**The numbers.** A 20,000-hour barn over 40,000 kg of beef would be **0.5 h/kg**. Aequitas shows **0.0**. The 20,000 hours sit on the farmer, and at ρ = 1.2 they need about **16,700 hours of credit** standing behind them — roughly **four and a half years** of one person's entire accrual. *That* is what stops a barn going up that nobody needs. Push it onto the beef instead and the cost leaves the one person who chose to build it and lands on ~40,000 buyers who did not. Full worked cases: Foundations §4.5.
 
 **Important framing point:** A5 does **not** abolish markets. It abolishes what [[markets-vs-antimarkets|DeLanda calls the antimarket]] — the price-*setting* firm large enough to impose prices from above rather than take them from below. Small-producer markets, which set price by cost anyway under real competition, survive intact. **Aequitas is pro-market and anti-capitalist, and this page is where that claim is grounded.**
 
@@ -75,4 +75,4 @@ The axiom read *"the **price** of anything is its true, current-best-estimate ma
 ---
 *Status: settled — wording repaired v0.21*
 *Supersedes `99-archive/price-equals-cost.md`*
-*Source: `00-strategy/Aequitas_Foundations_v0.27.md` A5, §6.2b, §7.1 · `00-strategy/A5_repair_PLAN_v0.1.md`*
+*Source: `00-strategy/Aequitas_Foundations_v0.27.md` A5, §4.5, §5.1 · `00-strategy/A5_repair_PLAN_v0.1.md`*

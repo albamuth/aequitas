@@ -50,4 +50,4 @@ Note the honest limitation: **A4 is a claim about the model, not about measureme
 
 ---
 *Status: settled (axiom) / provisional (the "measurement lag" framing above)*
-*Source: `00-strategy/Aequitas_Foundations_v0.2.md` A4, §7.2*
+*Source: `00-strategy/Aequitas_Foundations_v0.2.md` A4, §5.2*

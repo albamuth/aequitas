@@ -89,7 +89,7 @@ Aequitas is the same shape. It is a set of principles about how cost is counted.
 >
 > **Nor did anyone break the 24-hour rule.** Network A's account holds 12 hours. Network B's holds 18. **Each is under 24, and the rule applies to each account on its own.** There is no account anywhere holding 30.
 >
-> **What is left is an ordinary thing, not a hole.** If the person buys something through Network B, Network A cannot see it. **A network already publishes how much of its area it actually measured, and it estimates what a subscriber leaves undisclosed in a way that counts against them** — so leaving activity dark gets steadily worse for you (Foundations §5.1c and §5.1d). **What nobody has measured is whether that is tight enough against somebody splitting on purpose.** This project says so rather than assuming it.
+> **What is left is an ordinary thing, not a hole.** If the person buys something through Network B, Network A cannot see it. **A network already publishes how much of its area it actually measured, and it estimates what a subscriber leaves undisclosed in a way that counts against them** — so leaving activity dark gets steadily worse for you (Foundations §4.4 and §4.4). **What nobody has measured is whether that is tight enough against somebody splitting on purpose.** This project says so rather than assuming it.
 >
 > **Where this document does talk about something local, it means a physical thing being handed to a physical person somewhere** — the queue at a butcher's counter, or a village with one power station. **That is a fact about the object, not about the network.**
 

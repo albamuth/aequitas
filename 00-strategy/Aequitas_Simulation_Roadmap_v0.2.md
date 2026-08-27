@@ -33,21 +33,21 @@ These are the system. They are the same in every scenario, and a scenario that n
 - **Credit never transfers** (A3). Only debit moves, and only with the thing it attaches to.
 - Standing is **derived from an append-only event log**, never stored (A6).
 - **Debit is a vector** — mass, energy, labour-hours, land-area-years, water — collapsed only on demand, and **divided per dimension before collapsing** (§3.2a).
-- **Property debit** splits into dischargeable material and holding-time-permanent creation cost (§3.2, §6.2b). **Consumption and pollution debit is permanent and stays on the causer** (§3.2b).
-- The gate `D ≤ ρ·C` is a **ratio re-checked at each event**, evaluated at transaction time (§3.3, §7.5).
-- **Pledges** are permanent, backed 1:1 by lifetime earned credit (IC-8), with surplus becoming a non-spendable contingent reserve (§6.4c).
+- **Property debit** splits into dischargeable material and holding-time-permanent creation cost (§3.2, §4.5). **Consumption and pollution debit is permanent and stays on the causer** (§3.2b).
+- The gate `D ≤ ρ·C` is a **ratio re-checked at each event**, evaluated at transaction time (§3.3, §5.5).
+- **Pledges** are permanent, backed 1:1 by lifetime earned credit (IC-8), with surplus becoming a non-spendable contingent reserve (§4.6).
 - **Pollution weight floats with the ambient stock** above the natural-remediation baseline (§3.3).
 - **Retroactive re-weighting**: improve a constant, and every affected record recomputes (§3.3).
-- **Coverage** is estimated over the unmeasured residual, `(N − Y) / Z`, never over the whole population (§5.1b), and the leftover is charged to no account (§5.1c).
+- **Coverage** is estimated over the unmeasured residual, `(N − Y) / Z`, never over the whole population (§4.4), and the leftover is charged to no account (§4.4).
 
 ### 1b. The dials — set per scenario, and per network within a scenario
 
 | Dial | Range that matters | Where it comes from |
 |---|---|---|
 | **ρ** — the consumption gate multiplier | ~0.5 to ~3 | §3.5, A8 |
-| **`F`** — the self-care floor, in hours/day | 2 to 14 | §6.1b |
-| **Verification cost** per unit checked | 0 to >0.4 of a median unit's debit | §5.3a (b) |
-| **Privacy practice** | full transparency ↔ pseudo-privacy | §5.3a |
+| **`F`** — the self-care floor, in hours/day | 2 to 14 | §4.5 |
+| **Verification cost** per unit checked | 0 to >0.4 of a median unit's debit | §4.7 (b) |
+| **Privacy practice** | full transparency ↔ pseudo-privacy | §4.7 |
 | **Production efficiency** | the Q6 spread: US ↔ German/Japanese/Spanish | Q6 |
 | **Always-creditable activity set** | narrow ↔ generous | §10.1 |
 
@@ -63,10 +63,10 @@ These are the system. They are the same in every scenario, and a scenario that n
 | **Starting population** — how many begin inside | *Is there a critical number?* OP-27 argues this is probably the wrong variable. |
 | **Supplier-graph loop density** — what fraction of a participant's inputs and customers are also inside | **The variable OP-27 says actually matters.** WIR and Sardex survived by starting business-to-business inside dense input loops; Ithaca HOURS died with businesses holding scrip they could not spend, because their suppliers were outside. |
 | **Sector membership** — *which* industries start inside | *What are the critical starting industries?* Testable directly against loop density: same headcount, different graph. |
-| **Template conservatism** — how much dearer a templated good is than a real record | §5.1b says it must **err against the seller**, or onboarding properly never pays. **How much is the open question**, and it is the entry price for every dark good. |
+| **Template conservatism** — how much dearer a templated good is than a real record | §4.4 says it must **err against the seller**, or onboarding properly never pays. **How much is the open question**, and it is the entry price for every dark good. |
 | **Extractor policy** — agents who buy inside at cost and sell outside at market | OP-27 Exploit 1. The gate should shut them out in proportion to how hard they pull. **Measure how fast.** |
 
-**A scenario may run several networks with different dial settings**, trading or refusing to trade. That is how floor-shopping (OP-14), federation (§5.3c), and network competition get tested at all.
+**A scenario may run several networks with different dial settings**, trading or refusing to trade. That is how floor-shopping (OP-14), federation (§4.8), and network competition get tested at all.
 
 ### 1c. The world — plugged in per scenario
 
@@ -84,7 +84,7 @@ Whether to **join** a network · how much to **work** · what to **consume** · 
 
 ### 1e. What gets measured
 
-Disparity ratio · participation rate over time · coverage fraction · median lifestyle attained · ambient pollutant stock · aggregate debit against aggregate credit · the fraction locked out of discretionary consumption · **and every conformance assertion in §4 below.**
+Disparity ratio · participation rate over time · coverage fraction · median lifestyle attained · ambient pollutant stock · aggregate debit against aggregate credit · the fraction locked out of discretionary consumption · **and every conformance assertion in §4.3 below.**
 
 ---
 
@@ -153,11 +153,11 @@ The two, both already computed and both cheap to check:
 
 To show what "a scenario is a config" means concretely.
 
-**Adoption in one locality.** Population 50,000 · outside world = money economy · boundary open · join policy = compare estimated position under §5.1d against staying out · 240 periods · record participation rate over time. **The joining incentive is already computed and is the thing under test:** a person onboarding at forty arrives with roughly **146,000 hours** of estimated credit against roughly **55,000 hours** of estimated consumption. **Does that pull enough people, fast enough, to reach a working density?** *Validation targets exist and are unforgiving: WIR has run since 1934 with ~60,000 businesses, Sardex reached 4,000+, and Ithaca HOURS died when its founder left. A model that cannot produce all three outcomes from different settings is wrong.*
+**Adoption in one locality.** Population 50,000 · outside world = money economy · boundary open · join policy = compare estimated position under §4.4 against staying out · 240 periods · record participation rate over time. **The joining incentive is already computed and is the thing under test:** a person onboarding at forty arrives with roughly **146,000 hours** of estimated credit against roughly **55,000 hours** of estimated consumption. **Does that pull enough people, fast enough, to reach a working density?** *Validation targets exist and are unforgiving: WIR has run since 1934 with ~60,000 businesses, Sardex reached 4,000+, and Ithaca HOURS died when its founder left. A model that cannot produce all three outcomes from different settings is wrong.*
 
 **A pollutant discovered late.** Toy or MRIO economy · at period 120, add a pollutant with an ambient stock that has been accumulating unmeasured since period 0 · let §3.3 re-weight every affected record backwards · record how far ledgers move and whether the transaction-time rule holds. **Doubles as the first real test of component C4.**
 
-**Floors that differ.** Two networks, `F = 10 h` and `F = 4 h` · both trading · counterparty re-computation on (§6.4b) · record whether agents migrate to the low-floor network and whether the ceiling leaks past `24/F`. **This is OP-14 floor-shopping, and Foundations §7.5 condition 1 currently asserts the answer with no evidence behind it.**
+**Floors that differ.** Two networks, `F = 10 h` and `F = 4 h` · both trading · counterparty re-computation on (§4.2) · record whether agents migrate to the low-floor network and whether the ceiling leaks past `24/F`. **This is OP-14 floor-shopping, and Foundations §4.8 condition 1 currently asserts the answer with no evidence behind it.**
 
 ---
 

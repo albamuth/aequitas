@@ -77,7 +77,7 @@ This also answers the socialist-calculation critique pre-emptively: we don't arg
 > - **System work — most of it.** C3 (estimation engine), C4 (re-weighting), C5 (debit taxonomy), C8 (influence mechanics), C9 (debit-tolerance formula), C10 (cross-level trade), C12 (energetics registry). These are questions about how the economy behaves. They are the project.
 > - **Conformance-boundary work — a narrower job than the name suggests.** C1 (event log), C2 (verification), C6 (identity), C7 (privacy layer), C11 (arithmetic audits). **What is owed here is the requirement, not the design.** C11 is the clean example: *mass and energy must conserve across every recorded process* is the requirement, and it holds at both ends of every dial. The Python that checks it, and any field name it reads, are praxis.
 >
-> **C7 is the one to watch.** "Privacy layer" is an architecture name for something Foundations §5.3a already ruled a **network choice**. What this project owes on it is OP-22's answer — *what is the minimum an auditor must see to verify a claim without seeing a history* — which is a requirement. **The layer itself is not ours to build.**
+> **C7 is the one to watch.** "Privacy layer" is an architecture name for something Foundations §4.7 already ruled a **network choice**. What this project owes on it is OP-22's answer — *what is the minimum an auditor must see to verify a claim without seeing a history* — which is a requirement. **The layer itself is not ours to build.**
 
 | # | Component | Status | Blocking? |
 |---|---|---|---|
@@ -89,7 +89,7 @@ This also answers the socialist-calculation critique pre-emptively: we don't arg
 | C6 (identity) <!-- tag: str-c6 --> | **Identity / proof-of-personhood** — one human, one account | Not started. *Now also the defence against debit dumping.* | ⛔ Yes |
 | C7 (privacy layer) <!-- tag: str-c7 --> | **Privacy layer** + minimum audit disclosure set (OP-22 (audit disclosure)) | Not started | Yes |
 | C8 (influence mechanics) <!-- tag: str-c8 --> | **Influence mechanics** — OP-1 (service → influence), feedback aggregation (OP-6 (feedback mechanics)) | Partial | Partial |
-| C9 (debit-tolerance formula) <!-- tag: str-c9 --> | **Debit tolerance formula** (OP-4 (debit tolerance)) | Not started. ⬆⬆ *Now a **prerequisite of the disparity-ceiling proof** (2026-08-07): the consumption-ceiling formula IS the tolerance formula, so the ceiling cannot be stated while OP-4 is "just a knob." Also the error-tolerance of the whole accounting (§7.5).* | **Yes — for the disparity proof** |
+| C9 (debit-tolerance formula) <!-- tag: str-c9 --> | **Debit tolerance formula** (OP-4 (debit tolerance)) | Not started. ⬆⬆ *Now a **prerequisite of the disparity-ceiling proof** (2026-08-07): the consumption-ceiling formula IS the tolerance formula, so the ceiling cannot be stated while OP-4 is "just a knob." Also the error-tolerance of the whole accounting (§5.5).* | **Yes — for the disparity proof** |
 | C10 (cross-level trade) <!-- tag: str-c10 --> | **Cross-level trade** (OP-7 (cross-level trade)) | Not started | No — v2 |
 | C11 (arithmetic audits) <!-- tag: str-c11 --> | **Arithmetic audits** — IC-1…**IC-12 (boundary additivity)** as runnable checks | **✅ Closed** — `06-simulation/audits/arithmetic_audits.py`: 12/12 clean checks pass, 12/12 injected violations caught, incl. the projection-side IC-10…IC-12. | Done |
 | **C12 (energetics registry)** <!-- tag: str-c12 --> | **Process-energetics model registry** — the published per-process data the allocation rule computes from, plus replication and rival-audit rules | **New.** Created by resolving OP-17 (joint production); where **OP-24 (understatement drift)** lives | Yes, but after C3 |
@@ -174,7 +174,7 @@ This also answers the socialist-calculation critique pre-emptively: we don't arg
 | ~~**The allocation recursion does not converge**~~ | **Retired — the sim ran and passed.** Non-negative Neumann series, 100% convergent for `ρ(Ã) < 1`; Sraffa blocked by construction (`recursion_convergence.py`). |
 | ~~**OP-18 has no defensible convention**~~ | **Retired — closed by a declared convention** (labour rides the material split), axiom-scored and stress-tested. |
 | **The academic attack lands on preference revelation** (Mises/Hayek) | Largely answered: pledges + scarcity-as-debit. **Needs writing up, not inventing.** ⚠️ Guard against demand re-entering the *cost* side — the OP-17 session caught one such proposal. |
-| **Read as one more failed local currency** | Foundations §7.6 and §9 below: no medium of exchange, so no circulation failure; the overlay computes what money cannot. |
+| **Read as one more failed local currency** | Foundations §5.6 and §9 below: no medium of exchange, so no circulation failure; the overlay computes what money cannot. |
 | **Trust networks drift into issuer-pays capture** | Partly answered: a network concentrated in the sector it audits is captured by construction, and membership is public. **Full trust-network design deferred to C2 (verification / trust networks) by decision.** |
 | **Scope creep into philosophy** | `NEXT.md` parking lot. |
 | **🔴 Scope creep into data architecture** — the one that actually happened. An outreach channel that rewards runnable code pulled two nights into event-log integrity work while the top blocker was governance. | **Foundations §1.2 + §9.** The documents state what must be true, never how to build it. Apply the dial test before adding anything: *if a principle survives at both ends of a dial, the dial is not part of the principle.* Watch the outreach queue specifically — the venue's incentive is not the project's. |
@@ -193,7 +193,7 @@ This also answers the socialist-calculation critique pre-emptively: we don't arg
 - [ ] Wiki covering every core concept
 - [x] ~~An allocation convention for OP-17~~ — **better: a measurement, not a convention**
 - [x] ~~A declared labour-allocation convention for OP-18~~ — **done:** labour rides the material split, defended against the cooperative-game axioms (B9).
-- [ ] Every open problem in `Aequitas_Objections_v0.23.md` either solved, dissolved, or explicitly scoped as v2 — **the remaining live blockers are governance: OP-10, OP-24, and OP-16's tedium/indignity half (its hazard half is addressed by the contingent reserve, §6.4c).**
+- [ ] Every open problem in `Aequitas_Objections_v0.23.md` either solved, dissolved, or explicitly scoped as v2 — **the remaining live blockers are governance: OP-10, OP-24, and OP-16's tedium/indignity half (its hazard half is addressed by the contingent reserve, §4.6).**
 
 ---
 

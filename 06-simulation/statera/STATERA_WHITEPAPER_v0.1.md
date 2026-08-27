@@ -132,7 +132,7 @@ C_i \;=\; \sum_{e \,\in\, \text{log}_i,\; \text{kind}(e)\,\in\,\{\text{SELF\_CAR
 Two consequences.
 
 1. **The two parts always sum to `r_i · Δ` for any `F ≤ r_i`.** This is why the floor was silently doing nothing before 2026-08-23: moving `F` moved no number, because the population was always built around `F` = 10. `draw_population` now takes the floor as a parameter, so an agent genuinely sits at it. **A floor no agent sits at is not a floor.**
-2. **Self-care is flagged `essential`.** It is credited by proof-of-life to everyone alive, which is Foundations §6.1b (self-care is credited work) and §7.5 (the basic-needs floor). It is not a grant.
+2. **Self-care is flagged `essential`.** It is credited by proof-of-life to everyone alive, which is Foundations §4.5 (self-care is credited work) and §5.5 (the basic-needs floor). It is not a grant.
 
 ### Worked example
 
@@ -239,7 +239,7 @@ D_i \;\le\; \rho \cdot C_i
 Three properties.
 
 - **Credit is never spent by a purchase.** A purchase adds to `D`; it never decrements `C`. This is axiom A3 again, and it is what kills the "hoard for a lifetime, splurge in one lump" attack. A hoarder can only front-load their own `ρ·C`. Asserted by `test_credit_is_never_spent`.
-- **Essentials are never gated.** Foundations §7.5 restricts non-essentials only, because a gate on essentials falls hardest on the newborn, the old, the sick and the disabled — exactly who that section protects. Asserted by `test_essentials_are_never_gated` at ρ = 0.01.
+- **Essentials are never gated.** Foundations §5.5 restricts non-essentials only, because a gate on essentials falls hardest on the newborn, the old, the sick and the disabled — exactly who that section protects. Asserted by `test_essentials_are_never_gated` at ρ = 0.01.
 - **`ρ` is a dial the network sets, and Aequitas never sets.** Axiom A8 (no governing body).
 
 Each consumption event stores the `ρ` and the room that held when it happened. Foundations §3.3 calls this the transaction-time rule: **a later re-weight changes future room and never the validity of a completed act.**
@@ -328,7 +328,7 @@ A spread of 8.88 × 10⁻¹⁶ is floating-point noise and nothing else.
 | 12 h | **2.00×** | 2.00× | 24.0 h/day |
 | 14 h | **1.71×** | 1.71× | 24.0 h/day |
 
-**Below about a 6-hour floor, human endurance binds before the accounting does.** Reaching a 12× spread at `F` = 2 needs somebody working a 22-hour day, and nobody in this population manages it. Foundations §7.5 sets a first condition on the bound: *"the floor stays in a narrow band."* **That is a slightly weaker worry than it reads.**
+**Below about a 6-hour floor, human endurance binds before the accounting does.** Reaching a 12× spread at `F` = 2 needs somebody working a 22-hour day, and nobody in this population manages it. Foundations §5.5 sets a first condition on the bound: *"the floor stays in a narrow band."* **That is a slightly weaker worry than it reads.**
 
 > ⚠️ **The observed column depends on the sample size, and not in the direction you would guess.** Same seed (42), same code, different N, at `F` = 2 h:
 >
@@ -344,7 +344,7 @@ A spread of 8.88 × 10⁻¹⁶ is floating-point noise and nothing else.
 
 ## 9. The age term
 
-Foundations §7.5 claims that **age is the only spread beyond `24/F`**. It has an arithmetic form, and Statera can now check it, because credit accrues from birth.
+Foundations §5.5 claims that **age is the only spread beyond `24/F`**. It has an arithmetic form, and Statera can now check it, because credit accrues from birth.
 
 ```latex
 \frac{C_{\text{old, max}}}{C_{\text{young, floor}}}
@@ -367,7 +367,7 @@ A 60-year maximum worker against a 20-year subsistence person, at `F` = 10 h/day
 
 **Run output:** `[ok] age is the only spread beyond the bound: a 60-year max worker vs a 20-year floor person = 7.20x (= 3 x 24/F)`.
 
-The kernel agrees with the theory to the last digit. **If it had not, either the model or §7.5 would have been wrong, and both are results.**
+The kernel agrees with the theory to the last digit. **If it had not, either the model or §5.5 would have been wrong, and both are results.**
 
 ---
 
@@ -485,7 +485,7 @@ A 12 h/day worker, a 30-day period.
 
 ## 13. Pledge backing
 
-A pledge is a permanent grant of debit-room, backed one-for-one by lifetime earned credit. It is Foundations §6.4 (pledges and signals), and the constraint is IC-8 ([pledge backing](../../00-strategy/GLOSSARY.md#ic-8)).
+A pledge is a permanent grant of debit-room, backed one-for-one by lifetime earned credit. It is Foundations §4.6 (pledges and signals), and the constraint is IC-8 ([pledge backing](../../00-strategy/GLOSSARY.md#ic-8)).
 
 ```latex
 P_i \;=\; \sum_{\substack{e \,\in\, \text{log}_i \\ \text{kind}(e)=\text{PLEDGE}}} \!\!\!\! -h_e
@@ -493,7 +493,7 @@ P_i \;=\; \sum_{\substack{e \,\in\, \text{log}_i \\ \text{kind}(e)=\text{PLEDGE}
 P_i \;\le\; \sum_{\substack{e \,\in\, \text{log}_i \\ \text{kind}(e)\,\in\,\text{CREDITING}}} \!\!\!\! h_e
 ```
 
-**Note which sum sits on the right.** IC-8 is checked against *earned* credit, meaning the sum over crediting kinds only. It is not checked against the net credit projection. Foundations §6.4 explains why the cap must be exactly one-for-one: let it exceed and you get more permanent debit-room granted across the network than the grantors' credit can stand behind.
+**Note which sum sits on the right.** IC-8 is checked against *earned* credit, meaning the sum over crediting kinds only. It is not checked against the net credit projection. Foundations §4.6 explains why the cap must be exactly one-for-one: let it exceed and you get more permanent debit-room granted across the network than the grantors' credit can stand behind.
 
 ### Worked example
 
@@ -514,7 +514,7 @@ A person earns 12 hours in a day, then pledges.
 
 **This relation is in the theory and is not in `statera.py`.** It is stated here because the adoption programme in §2 runs on it, and because a reader should not have to guess which equations the kernel implements.
 
-Foundations §5.1b (the residual rule) estimates an unmeasured producer's output as the independently-known total, minus what measured producers actually recorded, divided among those who remain dark:
+Foundations §4.4 (the residual rule) estimates an unmeasured producer's output as the independently-known total, minus what measured producers actually recorded, divided among those who remain dark:
 
 ```latex
 \hat{y} \;=\; \frac{N - Y}{Z}
@@ -542,7 +542,7 @@ A region's independently-measured total is 1,000 units, spread across 100 dark a
 
 **The last twenty face nearly three times the first estimate, and none of them did anything.** They stayed while the well-documented left.
 
-**Nobody receives a bill.** Foundations §5.1c holds the residual unassigned: it is computed, published, and charged to no account until its causer onboards. **The pressure is a published number that gets worse the longer you wait.**
+**Nobody receives a bill.** Foundations §4.4 holds the residual unassigned: it is computed, published, and charged to no account until its causer onboards. **The pressure is a published number that gets worse the longer you wait.**
 
 **What is needed to build this:** a non-participant pool, a per-cohort join decision, a verification-cost dial, and generational time. Items 1–6 of [`Onboarding_the_wealthy_v0.1.md`](../../00-strategy/Onboarding_the_wealthy_v0.1.md) §8 name them all.
 
@@ -585,7 +585,7 @@ The 1,380 h/yr median-lifestyle figure comes from [`MEDIAN_LIFESTYLE_RESULT.md`]
 1. Input–output tables split physical impacts by dollars, which under-counts cheap heavy flows — waste, bulk materials, land.
 2. The basket has coverage gaps.
 
-That is Foundations §5.1a's floor rule and conformance requirement 13, and it means **there is one honest statement to make, not two competing ones.**
+That is Foundations §4.4's floor rule and conformance requirement 13, and it means **there is one honest statement to make, not two competing ones.**
 
 ### What the kernel actually uses
 
@@ -700,7 +700,7 @@ Both reproduction targets hit exactly. The full sweep table appears in §8; the 
 
 **Measured:** a person earns 12 h, pledges 5 h, and `proj.credit()` reads **7.0**. At `ρ` = 1.5 their consumption room falls by 7.5 hours.
 
-Foundations §6.4 says the opposite in three places:
+Foundations §4.6 says the opposite in three places:
 - *"a person's lifetime pledging-budget equals their lifetime earned credit, spent down once (pledging never diminishes credit itself)"*
 - *"The pledger's credit itself never moves and is never earmarked"*
 - The docstring of `pledge()` in `statera.py` itself: *"It does not move the pledger's credit."*
@@ -718,7 +718,7 @@ ConformanceError raised: Sec.3.3: an event was admitted with no room
 room_at column: [nan nan nan nan nan nan nan nan  5.  5.  5.  5. -15. -15. -15. -15.]
 ```
 
-**Nothing was admitted.** The discretionary request was clipped to zero, exactly as it should be. The check reads the recorded room and raises anyway. **This will stop any scenario where essential consumption exceeds `ρ·C`** — which is precisely the population Foundations §7.5 exists to protect.
+**Nothing was admitted.** The discretionary request was clipped to zero, exactly as it should be. The check reads the recorded room and raises anyway. **This will stop any scenario where essential consumption exceeds `ρ·C`** — which is precisely the population Foundations §5.5 exists to protect.
 
 ### 3. The re-weight half of the transaction-time check asserts nothing
 
@@ -753,9 +753,9 @@ _ = collapse(heavier, k.dials.weights)   # future room shrinks; history stands
 
 | Relation | Status |
 |---|---|
-| `(N − Y)/Z`, the residual rule | **Not in `statera.py`.** Stated in §14 from Foundations §5.1b. Implemented separately in [`residual_unravelling.py`](../residual-unravelling/residual_unravelling.py), which this paper did not audit. |
+| `(N − Y)/Z`, the residual rule | **Not in `statera.py`.** Stated in §14 from Foundations §4.4. Implemented separately in [`residual_unravelling.py`](../residual-unravelling/residual_unravelling.py), which this paper did not audit. |
 | Dollars-to-hours, `spend × intensity` | **Not in `statera.py`.** The kernel uses a single calibration constant (§15), not an intensity table. The method lives in [`median_lifestyle.py`](../median-lifestyle/archive/median_lifestyle.py) and its method note. |
-| The `~40%` verification-cost stall threshold | Quoted in Foundations §5.3a from [`residual_unravelling.py`](../residual-unravelling/residual_unravelling.py). Not reachable from Statera and not re-run here. |
+| The `~40%` verification-cost stall threshold | Quoted in Foundations §4.7 from [`residual_unravelling.py`](../residual-unravelling/residual_unravelling.py). Not reachable from Statera and not re-run here. |
 
 ---
 
@@ -794,7 +794,7 @@ _ = collapse(heavier, k.dials.weights)   # future room shrinks; history stands
 - **The economy is a toy.** One aggregate consumption good with a debit intensity. No sectors, no supply chains, no input-output structure, no pollutant stocks. The five exemplar chains in [`STATERA_PLAN_v0.2.md`](STATERA_PLAN_v0.2.md) §5 are design, not code.
 - **Mass and energy are weighted zero by default (§5).** Every current result is a labour-hours result.
 - **No behaviour layer.** Agents request and are gated. **Nobody joins, leaves, pledges, instruments, or cheats.** That is the whole adoption question in §2, and none of it is built.
-- **No money boundary.** There is no second economy to trade with, so Foundations §5.5 (parallel implementation) cannot be tested.
+- **No money boundary.** There is no second economy to trade with, so Foundations §4.8 (parallel implementation) cannot be tested.
 - **Nothing is ever re-weighted mid-run.** The shock that would make requirement 11 a real test does not exist yet.
 - **Everyone inside a cohort is identical.** The model cannot show inequality within a type. All spread it reports is spread between types and ages.
 - **Headcounts go fractional** as mortality thins a cohort. That is honest for a population model and is recorded as a limit rather than rounded away.
@@ -805,8 +805,8 @@ _ = collapse(heavier, k.dials.weights)   # future room shrinks; history stands
 - **`ρ*` = 1.20 is illustrative.** It depends on the weighting model, which is OP-10, exactly as [`RHO_SWEEP.md`](../disparity-ceiling/RHO_SWEEP.md) says. What Statera claims is that it reproduces the figure through different machinery.
 - **The observed spread depends on N and on the seed (§8).** The bound does not.
 - **The low-floor finding is a property of the population model** — 35% doing little paid work, the rest centred on about 6 hours with a 3-hour spread. A society with genuinely different working hours fills the bound differently.
-- **The disparity bound is conditional, and Foundations says so.** §7.5 lists five conditions, of which the sharpest is OP-22 ([minimum audit disclosure](../../00-strategy/GLOSSARY.md#op-22)) — proving a claim is backed without exposing the history behind it. **Statera assumes that guard is implementable. It does not model it.**
-- **Every cost figure the programme will produce is a floor, never a value** (§15). Two independent errors point the same way. Foundations §5.1a and conformance requirement 13 both require it to be said on the face of the result.
+- **The disparity bound is conditional, and Foundations says so.** §5.5 lists five conditions, of which the sharpest is OP-22 ([minimum audit disclosure](../../00-strategy/GLOSSARY.md#op-22)) — proving a claim is backed without exposing the history behind it. **Statera assumes that guard is implementable. It does not model it.**
+- **Every cost figure the programme will produce is a floor, never a value** (§15). Two independent errors point the same way. Foundations §4.4 and conformance requirement 13 both require it to be said on the face of the result.
 
 ---
 
@@ -816,7 +816,7 @@ _ = collapse(heavier, k.dials.weights)   # future room shrinks; history stands
 
 | Document | What it carries |
 |---|---|
-| [`Aequitas_Foundations_v0.19.md`](../../99-archive/Aequitas_Foundations_v0.19.md) | The theory. Axioms A1–A8 in §1; the debit vector in §3.2a; the transaction-time rule in §3.3; the residual rule in §5.1b; the self-care floor in §6.1b; pledges in §6.4; the basic-needs floor and the disparity bound in §7.5; the 17 conformance requirements in §9. |
+| [`Aequitas_Foundations_v0.19.md`](../../99-archive/Aequitas_Foundations_v0.19.md) | The theory. Axioms A1–A8 in §1; the debit vector in §3.2a; the transaction-time rule in §3.3; the residual rule in §4.4; the self-care floor in §4.5; pledges in §4.6; the basic-needs floor and the disparity bound in §5.5; the 17 conformance requirements in §9. |
 | [`GLOSSARY.md`](../../00-strategy/GLOSSARY.md) | Every acronym, and the research source index. Link to its anchors rather than to research files directly. |
 | [`Aequitas_Simulation_Roadmap_v0.2.md`](../../00-strategy/Aequitas_Simulation_Roadmap_v0.2.md) | The build order Statera implements steps 1–3 of. |
 | [`Onboarding_the_wealthy_v0.1.md`](../../00-strategy/Onboarding_the_wealthy_v0.1.md) | The adoption arithmetic and the six things a run needs. |

@@ -115,16 +115,16 @@ AgentRole {
 
 None needs a new primitive or a new field; all three are ordinary `Event`s used in a particular way, called out because IC-3 (origin closure), IC-9 (pledge discharge), the holding-time projection, and §4.1a provenance depend on recognising them.
 
-**Genesis entry.** An event admitting a pre-Aequitas object into the ledger (Foundations §6.2a). It has **no reservoir input and no parcel ancestry** — its output parcel is rooted here — and carries an estimated creation-cost (`basis: modelled`, low confidence, superseded later). It is the second valid terminus for IC-3 origin-closure. The `AgentRole` on it credits the **estimator** for the estimation work. It is a *choice*: an object with no genesis entry is simply outside Aequitas (no registered ownership).
+**Genesis entry.** An event admitting a pre-Aequitas object into the ledger (Foundations §4.5). It has **no reservoir input and no parcel ancestry** — its output parcel is rooted here — and carries an estimated creation-cost (`basis: modelled`, low confidence, superseded later). It is the second valid terminus for IC-3 origin-closure. The `AgentRole` on it credits the **estimator** for the estimation work. It is a *choice*: an object with no genesis entry is simply outside Aequitas (no registered ownership).
 
-**Deployment marker.** An event recording the instant a durable good **enters service** (a toaster ≈ its purchase, even if unboxed later). It starts the good's **creation-cost holding-time** (Foundations §6.2b) for the deploying holder. It is distinct from the hand-offs that realize credit (§7.3): a good may pass through several transit custodians — each realizing the prior holder's credit and adding transport-debt — **before** any deployment marker, and those custodians accrue no creation-cost holding-time share.
+**Deployment marker.** An event recording the instant a durable good **enters service** (a toaster ≈ its purchase, even if unboxed later). It starts the good's **creation-cost holding-time** (Foundations §4.5) for the deploying holder. It is distinct from the hand-offs that realize credit (§7.3): a good may pass through several transit custodians — each realizing the prior holder's credit and adding transport-debt — **before** any deployment marker, and those custodians accrue no creation-cost holding-time share.
 
 **Tally.** An event recording a **measurement of a domain rather than a transformation of it** — a census, a survey, a satellite pass, a port manifest, a reservoir stock reading. It moves no parcel and touches no custody. Its `outputs` are the measured figure and the `extent` it covers; its `AgentRole` **credits whoever performed the measurement**, exactly as a genesis entry credits its estimator.
 
 Three reasons it earns a name:
 
 - **It makes provenance internal.** An estimated record's `source_ref` (§4.1a) points at a tally event, so the citation chain lives inside the append-only log and is audited by the machinery already there, rather than living in prose beside it.
-- **It makes measuring the unmeasured *paid work*.** Foundations §5.1b already calls seeking data on non-participants *credited trust-network work*; the tally event is where that credit is actually recorded. This is what closes the fecundity loop for coverage concretely rather than rhetorically — **whoever improves the estimate of the dark is credited in the same ledger the estimate corrects.**
+- **It makes measuring the unmeasured *paid work*.** Foundations §4.4 already calls seeking data on non-participants *credited trust-network work*; the tally event is where that credit is actually recorded. This is what closes the fecundity loop for coverage concretely rather than rhetorically — **whoever improves the estimate of the dark is credited in the same ledger the estimate corrects.**
 - **It is what splits.** When part of a tally's extent later becomes directly measured, the remainder re-estimates over the smaller extent (§8.1), and the parts must reconcile against the parent (§7.2a).
 
 A tally whose source lies outside the system — an FAO figure, a national census — is recorded as a **declared external citation** instead of an in-log event. That is a trust boundary of exactly the same kind as a genesis entry, with exactly the same weakness; see §12.3.
@@ -296,7 +296,7 @@ Three reasons this cannot live inside the event:
 <!-- tag: evt-s5-1 -->
 ## 5.1 Pledges and signals
 
-Foundations §6.4 introduces the demand side. Both instruments are **records about the future**, so like attestations they point at things rather than living inside events.
+Foundations §4.6 introduces the demand side. Both instruments are **records about the future**, so like attestations they point at things rather than living inside events.
 
 ```
 Pledge {
@@ -316,7 +316,7 @@ Signal {
 }
 ```
 
-**The distinguishing property is structural, not a flag: a `Pledge` carries `hours` backed 1:1 by earned credit (IC-8 (pledge backing)); a `Signal` does not.** A pledge is a **permanent, non-revocable grant of debit-room** — a 1:1-backed pre-authorization of creditable work that confers *virtual credit* on its `target` at projection time, giving that target more room to carry a cost (Foundations §6.4, §6.2b). Three properties matter at the record level:
+**The distinguishing property is structural, not a flag: a `Pledge` carries `hours` backed 1:1 by earned credit (IC-8 (pledge backing)); a `Signal` does not.** A pledge is a **permanent, non-revocable grant of debit-room** — a 1:1-backed pre-authorization of creditable work that confers *virtual credit* on its `target` at projection time, giving that target more room to carry a cost (Foundations §4.6, §4.5). Three properties matter at the record level:
 
 - **It consumes no credit, but spends a finite budget.** The pledger's earned *credit* never moves and is never earmarked; what a pledge spends is *pledging-power* — a **lifetime budget equal 1:1 to earned credit, drawn down permanently** (IC-8). A pledged hour is gone from that budget for good.
 - **It is permanent.** There is no withdrawal; a receiver can rely on the granted room. The only way pledging-power leaves without funding work is the **burn** at `expires_at` (§5.1a) — and that too is a permanent loss to the pledger, never a return. A cooperative still cannot treat a pledge as a guaranteed sale (it is authorization + room, not a purchase), but it *can* count on the room not vanishing.
@@ -325,12 +325,12 @@ Signal {
 **The invariant is the `hours` backing, checked by IC-8.** A signal has no `hours` field and never touches a ledger.
 
 <!-- tag: evt-ic-8 -->
-**IC-8 — Pledge backing.** For any account, the sum of **all pledged hours it has ever made** (discharged, outstanding, and burned alike) may not exceed its **lifetime earned credit hours**. Pledging is a permanent draw on a finite budget, so the cap is cumulative, not a running "outstanding" total — the record-level form of "no fractional-reserve pledging" (Foundations §6.4).
+**IC-8 — Pledge backing.** For any account, the sum of **all pledged hours it has ever made** (discharged, outstanding, and burned alike) may not exceed its **lifetime earned credit hours**. Pledging is a permanent draw on a finite budget, so the cap is cumulative, not a running "outstanding" total — the record-level form of "no fractional-reserve pledging" (Foundations §4.6).
 
 <!-- tag: evt-ic-9 -->
 **IC-9 (pledge discharge) — Pledge discharge.** When the summoned work occurs, `discharged_by` is set to the event; the pledging-power was already spent at pledge time, so discharge merely records the grant as *used* (not *returned*). **If the work yields a held object**, that object's property-debit moves under the ordinary custody rule (IC-5) to **whoever accepts possession** — the pledge does not compel the pledger to receive it, and taking it is a separate custody act on the accepter's own debit-room (§5.2). **If it is a pure service or public good** (mowing a public verge), no property-debit moves. There is no retraction path.
 
-> **⚠️ A pledge is not a pre-commitment to take possession.** Custody is decided by physical possession (§5.2); there is no ledger-level obligation created by a pledge. A pledge confers *debit-room* on its target permanently (Foundations §6.4/§6.2b); it never binds the pledger to accept an object. Any earlier reading of a pledge as "the affirmative case of a custody-refusal right" is void — there is no such right.
+> **⚠️ A pledge is not a pre-commitment to take possession.** Custody is decided by physical possession (§5.2); there is no ledger-level obligation created by a pledge. A pledge confers *debit-room* on its target permanently (Foundations §4.6/§4.5); it never binds the pledger to accept an object. Any earlier reading of a pledge as "the affirmative case of a custody-refusal right" is void — there is no such right.
 
 **Signals need no integrity constraint**, because nothing is conserved. Their failure mode is *flooding*, not imbalance, and flooding is a projection-side problem (OP-6 (feedback mechanics)).
 
@@ -342,7 +342,7 @@ An undischarged pledge cannot linger forever, or the projection carries dead gra
 <!-- tag: evt-s5-1c -->
 ### 5.1c The contingent reserve
 
-When a task attracts **more pledged hours than it costs**, the surplus does not vanish and does not become consumable. It forms a **contingent reserve** attached to the task: earmarked, non-spendable debit-room that a projection activates **only against a verified future cost causally traceable to the task** (Foundations §6.4c). Record-level shape:
+When a task attracts **more pledged hours than it costs**, the surplus does not vanish and does not become consumable. It forms a **contingent reserve** attached to the task: earmarked, non-spendable debit-room that a projection activates **only against a verified future cost causally traceable to the task** (Foundations §4.6). Record-level shape:
 
 - **Activation is a claim event** carrying trace evidence; the projection honours it under the **physical-trace** test, or — for diffuse/latent harm with no individual trace — under the §5.1b cohort convention. An unfounded claim draws nothing.
 - **Overflow reverts to the causer.** A claim exceeding the remaining reserve is only covered up to the reserve; the residual task-caused debit lands on the doer/cooperative under IC-5 / §3.7, not on the pledgers.
@@ -366,7 +366,7 @@ Two consequences, and the second is the important one:
 1. **A rule that was being relied on does not exist.** The rejected v1 of the OP-17 (joint production) work assumed a butcher and a tanner would negotiate a carcass split because either could refuse custody. They cannot. That branch of the argument was discarded, and any future mechanism resting on refusal must be checked against this section.
 2. **Debit dumping has a physical defence rather than a ledger one.** You cannot move a parcel's debit without moving the parcel, and you cannot move the parcel without someone physically taking it. **The physical act is the consent step.** Combined with one-verified-human-one-account (C6 (identity)), which removes throwaway accounts, this closes the crude form of the attack.
 
-**What remains open:** coerced or deceptive transfers — someone induced to accept a high-debit object. That is a fraud problem handled by courts and social pressure (Foundations §5.3), not a schema problem. **C5 should state this rather than leave "custody acceptance" listed as unspecified work.**
+**What remains open:** coerced or deceptive transfers — someone induced to accept a high-debit object. That is a fraud problem handled by courts and social pressure (Foundations §4.7), not a schema problem. **C5 should state this rather than leave "custody acceptance" listed as unspecified work.**
 
 ---
 
@@ -411,7 +411,7 @@ Because the log is physical, it admits **conservation checks**. This is the sche
 **IC-2 (energy balance) — Energy balance.** Σ input energy = Σ output energy + declared dissipation. Same resolution rule.
 
 <!-- tag: evt-ic-3 -->
-**IC-3 (origin closure) — Origin closure (backward).** Every parcel traces backward to one of **two valid termini**: a **reservoir extraction**, or a **genesis entry** for a pre-Aequitas asset. **No parcel may appear without ancestry.** A genesis entry is an estimated record of an object that existed before the ledger began (§2.2); it is a legitimate root **but not a reservoir** — it does not draw from a commons and creates no consumption-debit, it merely admits an already-existing object at an estimated creation-cost (Foundations §6.2a).
+**IC-3 (origin closure) — Origin closure (backward).** Every parcel traces backward to one of **two valid termini**: a **reservoir extraction**, or a **genesis entry** for a pre-Aequitas asset. **No parcel may appear without ancestry.** A genesis entry is an estimated record of an object that existed before the ledger began (§2.2); it is a legitimate root **but not a reservoir** — it does not draw from a commons and creates no consumption-debit, it merely admits an already-existing object at an estimated creation-cost (Foundations §4.5).
 
 <!-- tag: evt-ic-4 -->
 **IC-4 (fate closure) — Fate closure (forward).** Every parcel is, at any instant, **held**, **consumed**, or **released** to a named reservoir. A parcel with none of these is **unaccounted**, and the log reports it as such.
@@ -434,9 +434,9 @@ IC-1 through IC-7 are **pure arithmetic on the log.** They require no social gra
 
 **If a factory's declared outputs do not mass-balance its declared inputs, the missing mass went somewhere unrecorded — and the log itself says so.** An **under-declared** emission stops being an enforcement problem and becomes an arithmetic error: the inputs are on the books, the outputs are on the books, and the difference has nowhere to go. That is [[no-externalities]] with teeth, and it is the single most compelling technical argument the project has.
 
-> **The limit of that claim, stated precisely.** It is a statement about **recorded** processes. Arithmetic over a set testifies to nothing outside the set, so a process recorded *nowhere* — one whose inputs came from an unrecorded source and whose outputs went to an unrecorded sink — is not an arithmetic error. **It is a coverage question, and coverage is answered by Foundations §5.1b, not by IC-1…IC-9.**
+> **The limit of that claim, stated precisely.** It is a statement about **recorded** processes. Arithmetic over a set testifies to nothing outside the set, so a process recorded *nowhere* — one whose inputs came from an unrecorded source and whose outputs went to an unrecorded sink — is not an arithmetic error. **It is a coverage question, and coverage is answered by Foundations §4.4, not by IC-1…IC-9.**
 >
-> The residual is narrower than it first appears. **IC-3, IC-4, IC-5 and IC-6 already force closure over everything the log touches**: delete a recorded event and its inputs lose their fate, its outputs lose their ancestry, its custody changes leave a gap. What survives is only a fully disjoint chain — *unrecorded extraction → off-ledger transformation → off-ledger sink* — which is a **participation boundary**, not a hole in the checks (Foundations §5.1: *participation is voluntary, coverage is not*).
+> The residual is narrower than it first appears. **IC-3, IC-4, IC-5 and IC-6 already force closure over everything the log touches**: delete a recorded event and its inputs lose their fate, its outputs lose their ancestry, its custody changes leave a gap. What survives is only a fully disjoint chain — *unrecorded extraction → off-ledger transformation → off-ledger sink* — which is a **participation boundary**, not a hole in the checks (Foundations §4.1: *participation is voluntary, coverage is not*).
 
 <!-- tag: evt-s7-1a -->
 ### 7.1a Co-product allocation is a projection rule, not a schema rule
@@ -490,7 +490,7 @@ A tally (§2.2) covers an extent. When part of that extent later becomes directl
 <!-- tag: evt-s7-2b -->
 ### 7.2b The subtraction has a precondition, and it is checkable from the provenance block
 
-`R = N − Y` is arithmetic only when the two figures describe the same thing. Foundations §5.1b now states this as the third condition on the residual rule. **It needs no new field.** Every estimated record already carries `extent`, `as_of` and `uncertainty` (§4.1a). What was missing was the rule that those fields must agree before the subtraction is performed.
+`R = N − Y` is arithmetic only when the two figures describe the same thing. Foundations §4.4 now states this as the third condition on the residual rule. **It needs no new field.** Every estimated record already carries `extent`, `as_of` and `uncertainty` (§4.1a). What was missing was the rule that those fields must agree before the subtraction is performed.
 
 > **Before computing `N − Y`, compare the two records' provenance blocks. All four must hold:**
 >
@@ -510,7 +510,7 @@ A tally (§2.2) covers an extent. When part of that extent later becomes directl
 <!-- tag: evt-s7-3 -->
 ### 7.3 Credit realization is a projection property, set by verification
 
-Foundations §6.4a rules that production credit **realizes on verification of the output**, and for a physical good the verifying event is the **hand-off** — a custody change (IC-5) in which the receiver, by accepting the parcel and its property-debit, attests the goods exist. This needs **no schema change**: a hand-off is already an ordinary custody-change event, and "realized?" is computed at projection time from whether such a verifying attestation exists — the same shape as A7 (universal accounting) realization (§8.2).
+Foundations §4.6 rules that production credit **realizes on verification of the output**, and for a physical good the verifying event is the **hand-off** — a custody change (IC-5) in which the receiver, by accepting the parcel and its property-debit, attests the goods exist. This needs **no schema change**: a hand-off is already an ordinary custody-change event, and "realized?" is computed at projection time from whether such a verifying attestation exists — the same shape as A7 (universal accounting) realization (§8.2).
 
 **One custody-change event does three things, all already representable:**
 
@@ -520,18 +520,18 @@ Foundations §6.4a rules that production credit **realizes on verification of th
 
 **Why this is safe against the obvious attacks:**
 
-- **Gatekeeper capture** — a maker's credit realizes at the *first* hand-off to *any* receiver, so no downstream buyer can withhold it; and because debit follows possession (§5.2), a hoarder's leverage inverts. *(Foundations §6.4a.)*
+- **Gatekeeper capture** — a maker's credit realizes at the *first* hand-off to *any* receiver, so no downstream buyer can withhold it; and because debit follows possession (§5.2), a hoarder's leverage inverts. *(Foundations §4.6.)*
 - **Count inflation** — a receiver eats the debit of exactly what they accept (§5.2), so IC-1 mass-balance plus self-interest pin the hand-off quantity; the maker cannot unilaterally over-claim. Same incentive as rival-sector audit (Foundations §3.3a).
 - **Wash-pledging / wash-trade** — see §12.1: real deployable work dominates it, so it is defused rather than merely mitigated.
 
-> **Note — realization ≠ deployment.** Realization is at first hand-off. The **deployment marker** (§2.2) is a *separate* event that starts an end-holder's creation-cost holding-time (Foundations §6.2b). Transit custodians realize the *prior* holder's credit and add transport-debt, but accrue **no** creation-cost holding-time share.
+> **Note — realization ≠ deployment.** Realization is at first hand-off. The **deployment marker** (§2.2) is a *separate* event that starts an end-holder's creation-cost holding-time (Foundations §4.5). Transit custodians realize the *prior* holder's credit and add transport-debt, but accrue **no** creation-cost holding-time share.
 
 ---
 
 <!-- tag: evt-s7-3a -->
 ### 7.3a Verification generalises by output type
 
-Foundations §6.4b: the hand-off is only the **goods** case of realization. The schema already carries the general form, because a verifying event is just an **Attestation** (§5) pointing at the work event — no new primitive:
+Foundations §4.2: the hand-off is only the **goods** case of realization. The schema already carries the general form, because a verifying event is just an **Attestation** (§5) pointing at the work event — no new primitive:
 
 | Output | Verifying record |
 |---|---|
@@ -589,15 +589,15 @@ A7 (universal accounting) requires records for flows nobody logged. These are **
 
 **Two disciplines govern the estimate itself.**
 
-> **The conservative-count rule.** When *Z* — the count of actors that remain dark — is uncertain, **under-count it.** Under-counting raises each dark actor's estimated share, which is the direction that provokes them to surface and prove otherwise (Foundations §5.1a realization). Over-counting dilutes the estimate and feeds OP-24 (understatement drift). **The self-liquidating error is the safe one.**
+> **The conservative-count rule.** When *Z* — the count of actors that remain dark — is uncertain, **under-count it.** Under-counting raises each dark actor's estimated share, which is the direction that provokes them to surface and prove otherwise (Foundations §4.4 realization). Over-counting dilutes the estimate and feeds OP-24 (understatement drift). **The self-liquidating error is the safe one.**
 
 > **The floor rule.** A quantity **counted** over incomplete coverage is a **floor, not a value**. Under-recording can only understate a count, so the recorded figure is a lower bound and improved coverage moves it in one direction only — up.
 
-> **⚠️ The floor rule applies to a count. It does not survive a subtraction.** `R = N − Y` is not a count, and a subtrahend reverses the direction of every error inside it. **If `Y` is under-recorded while `N` is sound, `R` comes out too big — a ceiling, not a floor.** A derived figure is stored as an **interval**, `R ∈ [N_L − Y_U, N_U − Y_L]`, and carries one of three labels: **`floor`**, **`ceiling`**, or **`not identified`**. **`not identified` is the default**, and a label is promoted onto a figure only by a stated directional argument about **each** operand's blind spot. See Foundations §5.1a and §5.1b.
+> **⚠️ The floor rule applies to a count. It does not survive a subtraction.** `R = N − Y` is not a count, and a subtrahend reverses the direction of every error inside it. **If `Y` is under-recorded while `N` is sound, `R` comes out too big — a ceiling, not a floor.** A derived figure is stored as an **interval**, `R ∈ [N_L − Y_U, N_U − Y_L]`, and carries one of three labels: **`floor`**, **`ceiling`**, or **`not identified`**. **`not identified` is the default**, and a label is promoted onto a figure only by a stated directional argument about **each** operand's blind spot. See Foundations §4.4 and §5.1b.
 >
 > **Worked, on §7.2a's own numbers.** `N` = 88,000 t, `Y` = 82,000 t, `R` = 6,000 t. **If the registry misses 4,000 t of on-farm sales, the true residual is 2,000 t and 6,000 t is a ceiling three times the truth. If the satellite cannot see 10,000 t under canopy, the true residual is 16,000 t and 6,000 t is a floor.** Same figure, opposite labels.
 >
-> *Repaired in v0.10. Through v0.9 this paragraph stated the floor rule unqualified, matching Foundations §5.1b's own defective sentence. Found by @cairn-lineage (c23607, 1f916.ai #2259) and conceded in public at c25746.*
+> *Repaired in v0.10. Through v0.9 this paragraph stated the floor rule unqualified, matching Foundations §4.4's own defective sentence. Found by @cairn-lineage (c23607, 1f916.ai #2259) and conceded in public at c25746.*
 
 The floor rule sits beside §8.2's monotonicity and is the same discipline on a second axis: **monotonicity governs *basis*, the floor rule governs *extent*.** Together they say a **counted** record may only ever get better, whether the improvement is in how it is known or in how much of the world it saw. **A derived record carries its interval instead.**
 
@@ -802,7 +802,7 @@ The DAG sum is the expensive operation and it is the whole of C4's feasibility q
 | **Constant capture** — publish energetics favourable to your sector | Rival-sector audit + two unaffiliated replications before re-weighting history (Foundations §3.3a). Unproven. | 🔴 **Open — OP-24 (understatement drift)** |
 | **Split before collapse violation** — an implementation that divides the scalar | §3.1 is a hard requirement; a conforming implementation is checkable by recomputing with a second weighting model and confirming the split is identical | ✅ Testable |
 
-> **⚠ Conservative weighting remains load-bearing and unspecified.** It now backs *four* things: granularity (§12), OP-20's closure (Foundations §6.6), instrument-shopping above, and the interim mass estimator for un-instrumented producers. **C4, early.**
+> **⚠ Conservative weighting remains load-bearing and unspecified.** It now backs *four* things: granularity (§12), OP-20's closure (Foundations §4.5), instrument-shopping above, and the interim mass estimator for un-instrumented producers. **C4, early.**
 
 ---
 
@@ -830,7 +830,7 @@ The DAG sum is the expensive operation and it is the whole of C4's feasibility q
 
 **Stress-test, 2026-08-22. Verdict: FAILS as integrity constraints.**
 
-**IC-13 refuses the ordinary case.** A non-participant makes something in 2041 and sells it into a network founded in 2040. Its true creation is **after** that epoch, so an honest genesis entry would be *blocked* — and that is the normal onboarding path (Foundations §5.2), not an attack. A constraint that refuses the common case to catch the rare one fails universality.
+**IC-13 refuses the ordinary case.** A non-participant makes something in 2041 and sells it into a network founded in 2040. Its true creation is **after** that epoch, so an honest genesis entry would be *blocked* — and that is the normal onboarding path (Foundations §4.8), not an attack. A constraint that refuses the common case to catch the rare one fails universality.
 
 **Epoch-shopping makes it toothless anyway.** Found a network today and *everything on Earth* predates its epoch. IC-13 is therefore satisfied trivially by the newest network, which is a fresh laundering licence per network — and networks are cheap to found. Worse, it **rewards founding networks and penalises joining one**, inverting the adoption incentive, and it stratifies goods by the age of the network that admitted them.
 
@@ -838,7 +838,7 @@ The DAG sum is the expensive operation and it is the whole of C4's feasibility q
 
 **Replacement for IC-13 — the author's ruling, 2026-08-22. A weighting rule, not a constraint, and the date disappears entirely.**
 
-> **A good created at any time, in order to be transacted in the system, must show its logistical origin-chain record, and the seller must be onboarded.** Where no record or evidence of origin exists, **the cost is estimated exactly as all dark production is estimated** (Foundations §5.1b).
+> **A good created at any time, in order to be transacted in the system, must show its logistical origin-chain record, and the seller must be onboarded.** Where no record or evidence of origin exists, **the cost is estimated exactly as all dark production is estimated** (Foundations §4.4).
 
 Two consequences do the work that a date test could not:
 
@@ -856,7 +856,7 @@ Two consequences do the work that a date test could not:
 
 ⚠️ **Owed: a sim** comparing stay-dark against onboard, for producers above and below the pool average, under §5.1b residual dynamics. The rule only holds if the estimate genuinely dominates for enough of the distribution, and the convergence speed is unmeasured.
 
-**Where it belongs on fold:** Foundations §6.2a (with the front-loading rule) and §5.1b (as the origin case of the residual rule); EventLog §2.2's genesis paragraph.
+**Where it belongs on fold:** Foundations §4.5 (with the front-loading rule) and §5.1b (as the origin case of the residual rule); EventLog §2.2's genesis paragraph.
 
 **Replacement for IC-14 — a mandatory field, not a constraint.**
 

@@ -71,8 +71,8 @@ The §3.4a instrument for a refinery is "cracking enthalpy / where the process s
 **v1 tracks materials, energy, labour only. No CO₂/pollution dimension.** Rationale (author's call, spec-faithful):
 
 - A fraction's per-unit **cost** carries **no pollution at all**, because pollution never transfers downstream (§3.2b). Two separate events, both off the cost: **refinery process CO₂** stays on the refinery org; **combustion CO₂** is debited to whoever burns the fuel later (the driver, not the receiver of delivered goods — §3.2b transport clause).
-- **Why this is load-bearing, not a simplification:** passing pollution to a non-causer breaks the accounting the same way inheriting historical costs back to the first human does — it never terminates (the §6.2a computational-closure argument). Pollution-non-transfer (§3.2b, Ellerman) and computational closure (§6.2a) are the *same principle*: cost never cascades to non-causers.
-- The per-fraction pollution *provenance record* (a buyer **signal**, §5.1b) is a separate object from **cost** and is out of scope for a cost test. Add CO₂ in a later pass if a signal demonstration is wanted.
+- **Why this is load-bearing, not a simplification:** passing pollution to a non-causer breaks the accounting the same way inheriting historical costs back to the first human does — it never terminates (the §4.5 computational-closure argument). Pollution-non-transfer (§3.2b, Ellerman) and computational closure (§4.5) are the *same principle*: cost never cascades to non-causers.
+- The per-fraction pollution *provenance record* (a buyer **signal**, §4.4) is a separate object from **cost** and is out of scope for a cost test. Add CO₂ in a later pass if a signal demonstration is wanted.
 
 ## 7. Not in this slice (deferred)
 

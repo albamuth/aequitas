@@ -73,6 +73,64 @@ For producers outside the system, use the finest-resolution data that exists —
 - [[event-record]] · [[statistical-coverage]] · [[material-flow-value]]
 - [[co-product-allocation]] — how a joint process's figures divide
 
+## Why the two numbers must match before you subtract
+
+> **Moved here from Foundations §4.4 on 2026-08-27, when §4, §5 and §6 were consolidated. The rule and its three conditions stay in Foundations §4.4. This page carries the worked case.** It is conformance requirement **14a**.
+
+**You may only subtract two numbers that measure the same thing.**
+
+`R = N − Y` looks like arithmetic. **It is not arithmetic until four things are true.**
+
+| Must match | The question it answers |
+|---|---|
+| **The quantity** | Do both numbers count the same stuff, in the same unit? |
+| **The boundary** | Do both numbers cover the same piece of the world? |
+| **The window** | Do both numbers cover the same stretch of time? |
+| **The error bounds** | Is the difference bigger than the doubt in the two numbers? |
+
+**If any one of these fails, `R` is not a leftover.** It is two different measurements pushed together, and the gap between them is an artefact of the mismatch.
+
+### The worked case
+
+A region reports its wheat.
+
+- **N** = 100,000 tonnes, from a satellite survey of the whole region, for the 2026 year.
+- **Y** = 82,000 tonnes, recorded by the farms inside the network.
+- **R = 100,000 − 82,000 = 18,000 tonnes**, said to be grown by farms nobody measured.
+
+**Now check the four rows.**
+
+| Check | What is actually true | Effect on R |
+|---|---|---|
+| Quantity | *N* is **harvested** grain. *Y* is grain **sold**. The farms kept 6,000 t for seed and feed. | R is **6,000 t too big** |
+| Boundary | The satellite covers the whole valley. The network's farms are in the **upper valley only**. | Not comparable at all |
+| Window | *N* is the **crop year**. *Y* is the **calendar year**. | Two months counted wrong |
+| Error bounds | The satellite figure is ±12%, which is **±12,000 t**. | R = 18,000 ± 12,000 |
+
+**Read the last row on its own.** The leftover is 18,000 tonnes and the doubt is 12,000 tonnes, so the true figure is somewhere between **6,000 and 30,000 tonnes**. **A five-fold range is not a finding.**
+
+**Now fix the four rows.** Use sold grain for both. Use the upper valley for both. Use the crop year for both. Use a survey with ±3% error.
+
+- **N** = 88,000 t ± 3,000
+- **Y** = 82,000 t
+- **R = 6,000 t ± 3,000**, so between 3,000 and 9,000 tonnes.
+
+**That is a leftover. It is smaller, it is honest, and it can be acted on.**
+
+> **Note what happened to the number.** The unchecked figure was 18,000 t and the checked one is 6,000 t. **Skipping this check made the unmeasured pool look three times larger than it is**, and every unmeasured producer's estimated share with it.
+
+**Where the check happens.** Both *N* and *Y* already carry the fields it needs. Extent, vintage and error bounds sit in the provenance block that every estimated record must have. **No new field was required.**
+
+## One method for `Z` that needs no headcount
+
+`Z ≥ (N − Y) ÷ capacity`, where **capacity** is the most one producer could physically make, bounded by hours in a day, by land, or by throughput.
+
+**Using that minimum assigns each unmeasured producer the most they plausibly could have made**, which is the conservative direction and the one that prompts them to come forward.
+
+> **This is a candidate method, not the method.** The capacity ceiling is itself a constant under Foundations §3.3a, though one bounded by physics rather than by opinion.
+
+---
+
 ## Consequences
 
 - [[onboarding-incentive]] — the "try it" account is a query against this engine

@@ -36,12 +36,12 @@ v0.1 was one accrual and one purchase. v0.2 is a run.
 
 | # | Question | Ruling |
 |---|---|---|
-| 1 | Do people age and die? | **Yes.** Born, aged one period at a time, dead on a mortality schedule. **Records stay after death**, as §5.4 (there is entry, and there is no exit) requires. |
+| 1 | Do people age and die? | **Yes.** Born, aged one period at a time, dead on a mortality schedule. **Records stay after death**, as §4.8 (there is entry, and there is no exit) requires. |
 | 2 | What does a person want each period? | **Consumer types from real demographic segments**, with dials for culture and locale. Not one average shopper. **Cohorts are fully customizable** — ship real preset mixes (US, European, South American) *and* let anyone invent theoretical ones, so a stranger can hunt for the unstable threshold. |
 | 3 | Who moves the gate dial `rho`? | **All three modes must be available**, chosen per scenario: fixed, a written rule, or solved each period. |
 | 4 | How is the log kept small enough? | **One exemplar consumer per cohort, plus a headcount.** If 30% of people are type A, the type-A exemplar is the basis for 30% of the population. |
 | 5 | Where do costs per unit come from? | **Exemplar chains, modelled in full** — **not only goods.** Services and everyday consumption too: medical treatment, entertainment, housing, transport, food. Each supplies the cost per unit that everyone else pays. |
-| 6 | How much of the shopping basket must be covered? | **Anything used by under 1% of people may be left out** — yachts, private jets. **Two conditions ride with it:** cut on physical size as well as headcount, and **publish the gap** so every figure reads as a floor (§5.1a). |
+| 6 | How much of the shopping basket must be covered? | **Anything used by under 1% of people may be left out** — yachts, private jets. **Two conditions ride with it:** cut on physical size as well as headcount, and **publish the gap** so every figure reads as a floor (§4.4). |
 
 **Nothing here contradicts an axiom.** Checked against A1–A8 and the 17 conformance requirements of §9. Where the design gives up accuracy, it is named in §8 below rather than hidden.
 
@@ -85,16 +85,16 @@ v0.1 was one accrual and one purchase. v0.2 is a run.
 - **Ageing.** The exemplar's age is `current period − birth period`. Nothing moves between cohorts.
 - **Work hours come from age**, not from a random draw. A child works ~0 h. A working-age adult works the type's hours. A retired person works ~0 h. **This replaces v0.1's "35% do little paid work" guess with something derived.**
 - **Wants come from age too**, read from the demographic table at `(type, age band)`.
-- **Death is weight decay.** Each period the cohort's headcount falls by its mortality rate. **The rows stay in the log forever** (§5.4). When the weight reaches zero the cohort stops accruing and is never removed.
+- **Death is weight decay.** Each period the cohort's headcount falls by its mortality rate. **The rows stay in the log forever** (§4.8). When the weight reaches zero the cohort stops accruing and is never removed.
 - **Birth is a new cohort** each period, sized by the birth rate, split across types by the type mix.
 
 ### What this makes testable for the first time
 
-Foundations §7.5 says **age is the only spread beyond `24/F`**. v0.1 could not check that, because everyone was the same age. Now credit accrues from birth, so the claim has an arithmetic form:
+Foundations §5.5 says **age is the only spread beyond `24/F`**. v0.1 could not check that, because everyone was the same age. Now credit accrues from birth, so the claim has an arithmetic form:
 
 > A 60-year maximum worker against a 20-year floor person should be **3 × 24/F**. At `F` = 10 h that is **7.2×**.
 
-**If the run does not produce 7.2×, either the model or §7.5 is wrong. Both are results.**
+**If the run does not produce 7.2×, either the model or §5.5 is wrong. Both are results.**
 
 ---
 
@@ -131,9 +131,9 @@ Foundations §7.5 says **age is the only spread beyond `24/F`**. v0.1 could not 
 | `modelled` | Derived from a survey through a stated method — a locale blend, a projected age structure | "EU average, HBS 2020, re-aged to 2040" |
 | `invented` | **A theoretical population nobody measured** | "Half Caregiver, half Explorer, no retirees" |
 
-> **🔒 An invented mix is reported as invented, every time it appears.** §5.1a monotonicity: **an observation may never be superseded by an estimate**, and a made-up population may never be quietly presented as a real one. **The screen carries the `basis` beside the result, not in a footnote.**
+> **🔒 An invented mix is reported as invented, every time it appears.** §4.4 monotonicity: **an observation may never be superseded by an estimate**, and a made-up population may never be quietly presented as a real one. **The screen carries the `basis` beside the result, not in a footnote.**
 
-**Ship three presets:** United States, Europe, South America. **Each records which survey each field came from**, because §5.3b and conformance requirement 16 require the estimating numbers and methods to be published so anyone can re-run them.
+**Ship three presets:** United States, Europe, South America. **Each records which survey each field came from**, because §4.7 and conformance requirement 16 require the estimating numbers and methods to be published so anyone can re-run them.
 
 ### 4b. The mix sweep — the capability the author actually asked for
 
@@ -210,11 +210,11 @@ From the [BLS Consumer Expenditure Survey 2023](https://www.bls.gov/news.release
 
 | Chain | Share | Mechanisms it tests that the kernel cannot express today |
 |---|---|---|
-| **Housing** | 32.9% | **§3.7** — a building carries a remediation debt for its bounded space. **§6.2b** — creation-cost splits by holding time. *Worked case already in Foundations: a 500,000-hour house held 10 years leaves ≈250,000 hours on the seller.* **§3.2** — property debit discharges on transfer. |
+| **Housing** | 32.9% | **§3.7** — a building carries a remediation debt for its bounded space. **§4.5** — creation-cost splits by holding time. *Worked case already in Foundations: a 500,000-hour house held 10 years leaves ≈250,000 hours on the seller.* **§3.2** — property debit discharges on transfer. |
 | **Transportation** | 17.0% | **§3.2b** — fuel and its pollution stay permanently on whoever made the journey and **cannot be shed by reselling the car.** The **real-time-dispatch rule** — an electric car's emissions follow the **contracted supply mix**, not the grid average. *The [refinery slice](../allocation-engine/REFINERY.md) becomes the upstream half of this chain, so that work is not wasted.* |
 | **Food** | 12.9% | **§3.4a joint production** — the canonical steer: beef, hide, tallow, bone, manure, methane, split by **where the feed energy physically went**. **§3.2b** — the farmer keeps the fertiliser runoff, not the shopper. |
-| **Healthcare** | 8.0% | **§6.2 front-loading** — **the doctor's education is not in the bill.** **§6.2b** — the hospital's cost sits on its staff by holding time, never on the patient. **§6.4b** — a service verifies by **client attestation**, not by a hand-off. **§7.5** — essential, so never gated. |
-| **Entertainment** | 4.7% | **§6.2a media** — the viewer pays **delivery only**: the projectionist's hours, the power, the bandwidth. **Not the film's production**, which pledgers front-loaded. **§6.3** — feedback is not credit and never converts to it. Closes the loop on **OP-21** (media reproduction). |
+| **Healthcare** | 8.0% | **§4.5 front-loading** — **the doctor's education is not in the bill.** **§4.5** — the hospital's cost sits on its staff by holding time, never on the patient. **§4.2** — a service verifies by **client attestation**, not by a hand-off. **§5.5** — essential, so never gated. |
+| **Entertainment** | 4.7% | **§4.5 media** — the viewer pays **delivery only**: the projectionist's hours, the power, the bandwidth. **Not the film's production**, which pledgers front-loaded. **§4.6** — feedback is not credit and never converts to it. Closes the loop on **OP-21** (media reproduction). |
 
 > **Every one of the five tests something the kernel currently cannot say anything about.** Three of them — healthcare, entertainment, and housing — test the **Front-Loading Rule**, which is the mechanism that dissolved OP-11, OP-5, OP-21 and OP-23 and has **never once been simulated.**
 
@@ -260,11 +260,11 @@ They cost the same when `2.0 + P = 3.2 + 0.2P`, so `0.8P = 1.2`, so **`P` = 1.5 
 
 #### Housing — and the author has re-derived Foundations' own split
 
-The proposed units are **labour per square foot to build** and **labour per square foot per year to maintain**. **Those are the two terms §3.2 and §6.2b already use, in measurable form:**
+The proposed units are **labour per square foot to build** and **labour per square foot per year to maintain**. **Those are the two terms §3.2 and §4.5 already use, in measurable form:**
 
 | The author's unit | What it already is |
 |---|---|
-| Labour per sq ft **to build** | The asset's **creation-cost** — holding-time-split, each holder's share **permanent** (§6.2b) |
+| Labour per sq ft **to build** | The asset's **creation-cost** — holding-time-split, each holder's share **permanent** (§4.5) |
 | Labour per sq ft **per year to maintain** | The **self-work identity** (§3.2) — while you hold it, repair earns credit equal to the debit it adds. **Net zero on labour, net cost on materials** |
 
 > ### ✅ And this cross-checks Foundations' own worked example — once its context is restored
@@ -310,7 +310,7 @@ The proposed units are **labour per square foot to build** and **labour per squa
 
 > **Drop a category only if it is under 1% of the population AND under 1% of every physical dimension** — hours, kilograms, and megajoules, each checked on its own. If it is 0.1% of people but 4% of energy, **keep it.**
 
-**2. Publish the gap and report a floor.** Foundations **§5.1a** and **conformance requirement 13**: *a quantity computed over incomplete coverage is published as a floor, with the gap named.*
+**2. Publish the gap and report a floor.** Foundations **§4.4** and **conformance requirement 13**: *a quantity computed over incomplete coverage is published as a floor, with the gap named.*
 
 > **So every cost figure this simulator produces is a lower bound, not a value**, and the screen must say so. This is not a caveat we are adding out of modesty. **It is a conformance requirement, and a simulator that breaks it is not simulating Aequitas.**
 
@@ -334,7 +334,7 @@ The proposed units are **labour per square foot to build** and **labour per squa
 | Mode | What it does | What it is for |
 |---|---|---|
 | **fixed** | Never moves unless a shock moves it. | The purest reading of A8 — Aequitas uses `rho` and never sets it. |
-| **rule** | A named function from a small published list, applied each period. `clear_capacity` nudges `rho` down when demand exceeds what we can make, up when it does not. **A slow adjuster, not an optimiser.** | Watching `rho` behave like a central bank rate (§7.5). **The rule is readable in the scenario file.** |
+| **rule** | A named function from a small published list, applied each period. `clear_capacity` nudges `rho` down when demand exceeds what we can make, up when it does not. **A slow adjuster, not an optimiser.** | Watching `rho` behave like a central bank rate (§5.5). **The rule is readable in the scenario file.** |
 | **solve** | Searches for the `rho` at which demand equals capacity, every period. | Finding the clearing rate, as [`rho_sweep.py`](../disparity-ceiling/rho_sweep.py) does today, but over time. |
 
 > ### 🔒 The no-look-ahead rule
@@ -423,9 +423,9 @@ Weights are applied only inside `collapse()`. So a shock of the form
 1. **How many consumer types.** Too few and the disparity figure is a step function; too many and the log grows back. **A number to find empirically at step 5, not to guess now.**
 2. **What a period is.** Monthly is assumed throughout (240 periods = 20 years), matching [`LAB_DESIGN_v0.1.md`](LAB_DESIGN_v0.1.md) §3. **Not yet tested against IC-7**, which is a per-24-hours rule and needs the period to carry its day count. **⚠️ And 20 years is not enough for one scenario we now have:** [`../../00-strategy/Onboarding_the_wealthy_v0.1.md`](../../00-strategy/Onboarding_the_wealthy_v0.1.md) works on a **70-to-170-year** timescale, because that is how long one year of billionaire-scale consumption takes to clear. **Generational runs need annual periods, or 2,000 monthly ones.** The period length must therefore be a scenario dial, not a constant.
 2b. **The adoption scenario is now specified and not yet scheduled.** The onboarding note §8 lists six things a run needs — a non-participant pool whose estimated share rises as others join, a published residual charged to nobody, a per-cohort join decision, a verification-cost dial to cross the ~40% stall threshold, a real wealth tail, and generational time. **Most of it is the outside-world plug, which LAB_DESIGN put in v2.** Decide whether that ruling still holds now that the scenario exists.
-3. **Whether pledges do anything over time.** IC-8 is checked, but nothing in v0.2 pledges. Pledges as a demand lever (§6.4) are a behaviour-layer question, which is roadmap step 3.
+3. **Whether pledges do anything over time.** IC-8 is checked, but nothing in v0.2 pledges. Pledges as a demand lever (§4.6) are a behaviour-layer question, which is roadmap step 3.
 4. **⚠️ We cannot yet apply the 1% cut, because we have no participation rates.** The Consumer Expenditure news release reports **mean spend per household**, never *"what share of households bought one at all."* The detailed CE tables carry a **percent-reporting** column for some items; whether it reaches yacht-level detail is unknown until we look. **Until that number exists, the 1% cut is a stated intention and not a working rule**, and the first version simply keeps everything in the five chains.
-5. **Whether entertainment needs a second chain.** A cinema ticket is delivery-only under §6.2a. **A pet is not** — and "pets, toys, hobbies" is $1,057 of the $3,635 entertainment line, the largest piece of it. A pet is ongoing material consumption, closer to food than to media. **Possibly two chains, not one.**
+5. **Whether entertainment needs a second chain.** A cinema ticket is delivery-only under §4.5. **A pet is not** — and "pets, toys, hobbies" is $1,057 of the $3,635 entertainment line, the largest piece of it. A pet is ongoing material consumption, closer to food than to media. **Possibly two chains, not one.**
 
 ---
 

@@ -11,7 +11,7 @@
 | Track | What | mean adult | median adult |
 |---|---:|---:|---:|
 | **1** | Consumption flows (all PCE, domestic, full supply chain) | **772** | **641** |
-| **2** | Housing construction + improvement (annualised, §6.2b) | **45** | ~45 |
+| **2** | Housing construction + improvement (annualised, §4.5) | **45** | ~45 |
 | **3** | Imports — foreign labour embodied **(EXIOBASE, measured)** | **785** | ~650 |
 | **4** | Own pollution → remediation labour *(fork: 6–29)* | **~18** | ~18 |
 | | **TOTAL — all tracks** | **~1,620** | **~1,350** |
@@ -51,7 +51,7 @@ Healthcare ~34 B · retail+wholesale ~34 B · food service ~22 B hrs dominate.
 
 ## Track 2 — housing construction (annualised) ✅ [`track2_housing.py`](track2_housing.py)
 
-**Method:** a home's construction labour was spent years ago, so it never shows in this year's PCE. Front-loaded + holding-time-split (§6.2b) → **annualise total build labour over the service life.** The ERM **Construction** total-multiplier (5.8 jobs/$M) already includes lumber/steel/concrete/windows/plumbing/electrical production labour as *indirect* requirements — so applied to **construction cost** (structure, excl land/finance) it *is* the bill-of-materials labour, via IO, no per-material rates invented.
+**Method:** a home's construction labour was spent years ago, so it never shows in this year's PCE. Front-loaded + holding-time-split (§4.5) → **annualise total build labour over the service life.** The ERM **Construction** total-multiplier (5.8 jobs/$M) already includes lumber/steel/concrete/windows/plumbing/electrical production labour as *indirect* requirements — so applied to **construction cost** (structure, excl land/finance) it *is* the bill-of-materials labour, via IO, no per-material rates invented.
 
 **No double-count with Track 1:** residential construction is *investment*, not PCE.
 

@@ -7,9 +7,9 @@
 
 ## The headline
 
-> **Computing the estimate over the undisclosed residual leaves 0.1% of agents dark. Computing it over the whole population — the rule Foundations §5.1b explicitly rejects — leaves 52.5% dark, stably.**
+> **Computing the estimate over the undisclosed residual leaves 0.1% of agents dark. Computing it over the whole population — the rule Foundations §4.4 explicitly rejects — leaves 52.5% dark, stably.**
 
-**§5.1b is load-bearing, not decorative,** and that pair of numbers is the whole demonstration.
+**§4.4 is load-bearing, not decorative,** and that pair of numbers is the whole demonstration.
 
 ## The mechanism, in numbers
 
@@ -31,7 +31,7 @@ No random numbers. Residual basis: estimate goes **3 → 4 → 12 → 20**, fina
 
 ## Erring against the estimated party buys speed, not reach
 
-Foundations §5.1d condition 2 says estimates should err against the estimated party. Turning that on gives the **same residue in 7 rounds instead of 13**. It is a speed dial, not a reach dial.
+Foundations §4.4 condition 2 says estimates should err against the estimated party. Turning that on gives the **same residue in 7 rounds instead of 13**. It is a speed dial, not a reach dial.
 
 ## ⚠️ The measured limit — a design constraint, not a reassurance
 
@@ -53,7 +53,7 @@ Foundations §5.1d condition 2 says estimates should err against the estimated p
 ## What would falsify this
 
 - A cost distribution where the residual-basis estimate does *not* rise monotonically.
-- A population where the population-basis control does as well as the residual basis. That would make §5.1b optional.
+- A population where the population-basis control does as well as the residual basis. That would make §4.4 optional.
 - A verification cost below 0.4 at which the pool still stabilises.
 
 ## Figures

@@ -31,7 +31,7 @@ Supply rises steadily with coverage, so there is a single crossing point rather 
 
 ## The unresolved piece
 
-**The causation claim.** Whether *this* task caused *that* harm is modelled here as a dial (trace strength) rather than answered. There is no analogue elsewhere in Aequitas to borrow from, and Foundations §5.3d routes it to ordinary recourse. **This sim shows the mechanism is sensitive to it, which is the useful part.**
+**The causation claim.** Whether *this* task caused *that* harm is modelled here as a dial (trace strength) rather than answered. There is no analogue elsewhere in Aequitas to borrow from, and Foundations §4.7 routes it to ordinary recourse. **This sim shows the mechanism is sensitive to it, which is the useful part.**
 
 ## Figures
 

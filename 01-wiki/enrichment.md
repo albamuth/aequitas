@@ -48,4 +48,4 @@ None of this is solved. Do not treat enrichment as settled.
 
 ---
 *Status: contested — OP-6, OP-8*
-*Source: `00-strategy/Aequitas_Foundations_v0.2.md` §6.3*
+*Source: `00-strategy/Aequitas_Foundations_v0.2.md` §4.6*

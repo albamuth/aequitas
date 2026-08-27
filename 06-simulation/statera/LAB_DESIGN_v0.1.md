@@ -10,7 +10,7 @@
 
 **A shippable simulator of an Aequitas economy that a human can open and run, with a clear screen and no installation.** The code goes on GitHub, and it becomes the thing the outreach agent asks strangers for help with.
 
-**The name.** *Aequitas Lab*, because Foundations §5.3c already calls trust networks **laboratories rather than banks**. Author's call; "Aequitas Simulator" also works and is duller.
+**The name.** *Aequitas Lab*, because Foundations §4.8 already calls trust networks **laboratories rather than banks**. Author's call; "Aequitas Simulator" also works and is duller.
 
 ---
 
@@ -67,7 +67,7 @@ The conformance requirements run as live checks, on screen, every period. **Gree
 │   N     5,000 ──│──│  over time      │  over time      │  │  ● A6    derived  │
 │   growth  0 % ──│──└─────────────────┴─────────────────┘  │  ● §3.2a split    │
 │                 │                                         │  ● §3.3  txn-time │
-│  World          │  ─── consumption gap, top vs floor ───  │  ● §7.5  floor    │
+│  World          │  ─── consumption gap, top vs floor ───  │  ● §5.5  floor    │
 │   outside money▾│   Aequitas  ▓▓▓ 2.4×  (at F=10 h)        │                   │
 │                 │   US money  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ 670×      │  ─────────────────│
 │  Shocks         │   (SCF 2022 + Forbes, material-only)    │  INSPECTOR        │
@@ -216,7 +216,7 @@ The author has ADHD and a long day is the normal case. **These are constraints, 
 
 ### Proceeding on these two unless the author says otherwise
 
-1. **Name: *Aequitas Lab*.** Foundations §5.3c already calls trust networks **laboratories rather than banks**, so the name is doing a small amount of real work. *Aequitas Simulator* remains available and is duller.
+1. **Name: *Aequitas Lab*.** Foundations §4.8 already calls trust networks **laboratories rather than banks**, so the name is doing a small amount of real work. *Aequitas Simulator* remains available and is duller.
 2. **Keep the static money-comparison bar in v1.** It is **real data** — SCF 2022 plus Forbes, material-only, the same distribution `q4_locked_ledgers.py` already uses — drawn beside the simulated result and **labelled on screen as a real distribution rather than a simulated one.** Simulating a money economy properly is v2 work, and dropping the bar entirely costs the one visual that lands in three seconds.
 
 ---

@@ -31,7 +31,7 @@ The LCA and Sraffian literatures both searched for a **carrier quantity** — a 
 
 Aequitas can say this and they cannot, for one structural reason: **it has a universal denominator and they do not.** A1 and A2 fix the terminal unit as human time, and §3.3 already recomputes physical weights as science improves. So the question "mass or energy?" — which is unanswerable as posed — never has to be asked. Whichever is measurable in the case at hand is used, because both reduce to the same thing.
 
-**This is the second time the project's own axioms already contained the answer to a problem imported from outside literature.** The first was A3 versus the circulation-failure class (Foundations §7.6). Worth recording as a working habit: **check the axioms before importing a solution.**
+**This is the second time the project's own axioms already contained the answer to a problem imported from outside literature.** The first was A3 versus the circulation-failure class (Foundations §5.6). Worth recording as a working habit: **check the axioms before importing a solution.**
 
 ---
 
@@ -178,7 +178,7 @@ Why this is the right shape for Aequitas:
 - **Decentralized.** No authority, no standards body, no appointed reviewer. It is an incentive, not an enforcement rule.
 - **Self-funding.** The replication is credited work paid for by a party with a real stake — it passes the fourth screening question ("does this need a Paul Glover?") without help.
 - **Two-sided.** It converts a one-way asymmetry into a market. Every constant has a party who benefits from it being lower and a party who benefits from it being higher.
-- **Already implied.** A5 removes profit *in exchange*; it does not remove **rivalry in efficiency**, which Foundations §7.1 explicitly preserves ("competition happens on quality, artfulness, and efficiency"). Rival-sector audit is that competition applied to the cost model itself.
+- **Already implied.** A5 removes profit *in exchange*; it does not remove **rivalry in efficiency**, which Foundations §5.1 explicitly preserves ("competition happens on quality, artfulness, and efficiency"). Rival-sector audit is that competition applied to the cost model itself.
 
 **Supporting rules:**
 1. **A constant must be replicated by two unaffiliated sources before it may re-weight history.** Retroactive re-weighting is powerful enough that a single-source constant should not trigger it.
@@ -200,7 +200,7 @@ The stress test charged the rule with being **regressive**: a producer without m
 
 **2. Nothing is irreversible.** Years later the number of cattle that left that farm will be known exactly, and every debit-cost that rested on a conservative weight recomputes — including on the ledgers of everyone who consumed the products. **This holds for all inaccuracy, not just allocation.** (Foundations §3.3.)
 
-**3. Transient harm is bounded by the basic-needs floor.** Debit binds hard, so a multi-year over-assignment corrected later would otherwise be a real injustice — the shape of the [Post Office Horizon scandal](https://en.wikipedia.org/wiki/British_Post_Office_scandal), where accounting output was treated as fact and corrected two decades on. **Foundations §7.5 caps the exposure:** enforcement restricts non-essentials only, and the efficiency ratio may never reach essentials. The harm is *"cannot buy discretionary goods for a period, then corrected"* — not destitution.
+**3. Transient harm is bounded by the basic-needs floor.** Debit binds hard, so a multi-year over-assignment corrected later would otherwise be a real injustice — the shape of the [Post Office Horizon scandal](https://en.wikipedia.org/wiki/British_Post_Office_scandal), where accounting output was treated as fact and corrected two decades on. **Foundations §5.5 caps the exposure:** enforcement restricts non-essentials only, and the efficiency ratio may never reach essentials. The harm is *"cannot buy discretionary goods for a period, then corrected"* — not destitution.
 
 **Estimating the un-instrumented.** For producers outside Aequitas, use the finest-resolution data that exists (the smallest region with published figures), per A7. **Seeking that data — interviewing the farmer, counting the herd — is credited trust-network work**, and the resulting estimate tables are independently re-testable by any other network.
 
@@ -208,7 +208,7 @@ The stress test charged the rule with being **regressive**: a producer without m
 >
 > **average = (N − Y) / Z**, where *N* is the independently-known global total, *Y* the output of measured producers, *Z* the count of dark producers.
 >
-> Computed over the whole population instead, this creates **adverse selection**: better-than-average producers instrument to prove it, worse-than-average stay dark and free-ride on an average their own absence inflates. Over the residual, the estimate worsens as good producers exit, and **darkness stops paying.** *(This generalises Foundations §5.1, which already excludes registered participants from the cohort debit average — the same discipline now applies to production.)*
+> Computed over the whole population instead, this creates **adverse selection**: better-than-average producers instrument to prove it, worse-than-average stay dark and free-ride on an average their own absence inflates. Over the residual, the estimate worsens as good producers exit, and **darkness stops paying.** *(This generalises Foundations §4.1, which already excludes registered participants from the cohort debit average — the same discipline now applies to production.)*
 >
 > **Two conditions:** it needs an independently known *N* (fine for cattle via FAO and trade data; not universal), and a defensible count *Z*. Under-counting *Z* over-states every dark producer's share.
 

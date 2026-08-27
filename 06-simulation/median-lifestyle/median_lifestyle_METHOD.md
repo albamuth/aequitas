@@ -12,7 +12,7 @@
 1. **Bottom-up, per category** — never a single blanket labour/dollar ratio.
 2. **Each category converts by its *best* route** — money→hours for flows, physical embodied-labour for durables, wage/margin for imports.
 3. **Measured supply chains, not assumed** — indirect labour comes from an input-output employment matrix, not a guess about where spending goes.
-4. **Carried-forward labour is counted** — durables annualised over service life (= Aequitas §6.2b holding-time share).
+4. **Carried-forward labour is counted** — durables annualised over service life (= Aequitas §4.5 holding-time share).
 5. **One year, stated** — pin the latest year where all sources coexist; disclose any extrapolation. No mixing 2025 hours with 2026 GDP.
 6. **Per median adult** — normalise CE Survey consumer-unit figures to one adult.
 
@@ -81,8 +81,8 @@
 ## What we expect to change vs v1
 
 - **Number goes up.** v1's ~470–750 h counted only *current-year* production labour and a blanket consumption share. Adding durables' carried-forward labour and full import labour should raise it — possibly substantially for housing.
-- **The disparity-ceiling logic is unaffected.** The 24/F ceiling argument (Foundations §7.5) does not depend on this number; this only calibrates *where the median sits* inside the band. So getting it right sharpens the comparison without risking the headline result.
+- **The disparity-ceiling logic is unaffected.** The 24/F ceiling argument (Foundations §5.5) does not depend on this number; this only calibrates *where the median sits* inside the band. So getting it right sharpens the comparison without risking the headline result.
 
 ---
 
-*Tracks Foundations v0.9 (§6.2b holding-time durables, §3.2b pollution stays with producer, §3.3 remediation baseline, §7.5 the 24/F ceiling). Companion scripts to be built on approval.*
+*Tracks Foundations v0.9 (§4.5 holding-time durables, §3.2b pollution stays with producer, §3.3 remediation baseline, §5.5 the 24/F ceiling). Companion scripts to be built on approval.*

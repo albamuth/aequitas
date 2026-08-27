@@ -37,7 +37,7 @@ The bound is `24/F`. It is exact at every floor tested:
 
 ## 3. Age is the only spread beyond the bound
 
-A 60-year worker against a 20-year floor person comes out at **exactly 7.20× = 3 × 24/F**. That is time lived, not class. Foundations §7.5 asserted this; the kernel now checks it.
+A 60-year worker against a 20-year floor person comes out at **exactly 7.20× = 3 × 24/F**. That is time lived, not class. Foundations §5.5 asserted this; the kernel now checks it.
 
 ## 4. The bound does not drift over time
 

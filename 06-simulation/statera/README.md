@@ -48,14 +48,14 @@
 
 | | |
 |---|---|
-| **An append-only event log** | Only ever added to. No delete, no truncate, no edit (§5.4) |
+| **An append-only event log** | Only ever added to. No delete, no truncate, no edit (§4.8) |
 | **A ledger derived on demand** | Never stored. A segment sum over the actor column. **200,000 agents and 600,000 events derive in about 10 ms** |
 | **Cohorts with headcounts** | One row speaks for many identical people. **At a headcount of 1 it is the v0.1 kernel exactly** — one code path, two settings |
 | **A time axis** | Periods of any length. Credit accrues, the gate is re-checked, every invariant is asserted **every period** |
-| **Ages, births and deaths** | Born, aged, dead on a schedule. **Records persist after death** (§5.4) |
+| **Ages, births and deaths** | Born, aged, dead on a schedule. **Records persist after death** (§4.8) |
 | **The debit vector** | Hours, kilograms, megajoules kept apart and collapsed only on demand (§3.2a) |
 | **The ratio gate** | `D ≤ ρ·C`, re-checked at every event, with ρ and the room recorded on the event |
-| **Essentials never gated** | §7.5. Verified behaviourally at ρ = 0.01 |
+| **Essentials never gated** | §5.5. Verified behaviourally at ρ = 0.01 |
 | **Shelf life** | Goods carry an expiry. Past it, custody cannot be handed on |
 | **Waste disposal as a service** | The material stays with whoever let it become waste; the processor is credited for the work |
 | **Five exemplar supply chains** | Housing, transport, food, healthcare, entertainment |
@@ -79,7 +79,7 @@ Ten periods, unbounded appetite, three floors:
 
 ### 2. Age is the only spread beyond the bound — now checked, not asserted
 
-**§7.5 has always claimed it.** A 60-year maximum worker against a 20-year subsistence person:
+**§5.5 has always claimed it.** A 60-year maximum worker against a 20-year subsistence person:
 
 ```
 525,600 h  ÷  73,000 h  =  7.20×  =  3 (the age ratio) × 2.40 (the rate bound)
@@ -142,8 +142,8 @@ a year of breathing records 365 kg in the log and costs 0 h
 | **A6** | ledger derived, never stored | cache disagreeing with the log |
 | **§3.2a** | divide per dimension, before collapsing | `divide()` on a collapsed figure |
 | **§3.3** | the gate is judged at transaction time; a re-weight changes only the future | an admission exceeding the room that existed |
-| **§7.5** | essentials never gated | ρ = 0.01 refuses discretionary, admits essentials |
-| **§5.4** | append-only | `EventLog` exposes no delete, truncate, or edit |
+| **§5.5** | essentials never gated | ρ = 0.01 refuses discretionary, admits essentials |
+| **§4.8** | append-only | `EventLog` exposes no delete, truncate, or edit |
 | **shelf life** | expired goods cannot be handed on | a log claiming an expired discharge |
 
 **A failure raises `ConformanceError` and stops the run.** Either the scenario is malformed or the theory has a hole — **both are results.** A simulator that cannot fail cannot teach.
@@ -153,9 +153,9 @@ a year of breathing records 365 kg in the log and costs 0 h
 ## Honest limits
 
 - **The economy is still a toy.** One aggregate consumption good with a debit intensity. **The five exemplar chains are built but their numbers are labelled placeholders** — calibration against real physical data is step 5 and is blocked on a download.
-- **Every published figure is a labour-hours-only gate.** The default weighting puts mass and energy at 0.0, so all of it is a **floor, never a value** (§5.1a, conformance requirement 13). Every scenario run prints this on its own face.
+- **Every published figure is a labour-hours-only gate.** The default weighting puts mass and energy at 0.0, so all of it is a **floor, never a value** (§4.4, conformance requirement 13). Every scenario run prints this on its own face.
 - **No behaviour layer.** Agents request and are gated. Nobody joins, leaves, pledges strategically, or cheats.
-- **No money side**, so §5.5 parallel implementation cannot be tested.
+- **No money side**, so §4.8 parallel implementation cannot be tested.
 - **12 of the 17 conformance requirements in §9 are expressible.** Up from 10 — requirement 2 (causer attribution) arrived with the chains, and requirement 13 (publish a floor) with the scenario runner. **Still out of reach: 6** (annotate, never delete — needs a contest event), **12** (basis, method, vintage, extent), **14, 15** (residual estimation and the unallocated leftover — both need dark producers), and **16** (published methods, which is a documentation duty rather than a runtime one).
 - **Zero spread inside a cohort.** All reported spread is between types and ages, never within one.
 - **The absolute numbers inherit their calibration.** ρ\* depends on OP-10 and is illustrative. **What is claimed here is that Statera reproduces them, not that they are settled.**
@@ -166,4 +166,4 @@ a year of breathing records 365 kg in the log and costs 0 h
 
 **Step 5 — consumer types from real demographic data.** Blocked on downloading the BLS Consumer Expenditure demographic tables. *Done when the population's mean want reproduces 1,380 h/yr and the locale dial reproduces the cross-country spread.*
 
-*Tracks Foundations v0.22: A1, A3, A6, A7; §3.2, §3.2a, §3.2b, §3.3, §3.4a, §3.6, §5.1a, §5.4, §6.1b, §6.2, §6.2a, §6.2b, §6.4, §6.4a, §7.5, §9; IC-1, IC-2, IC-3, IC-4, IC-7, IC-8.*
+*Tracks Foundations v0.22: A1, A3, A6, A7; §3.2, §3.2a, §3.2b, §3.3, §3.4a, §3.6, §4.4, §4.8, §4.5, §4.5, §4.5, §4.5, §4.6, §4.6, §5.5, §9; IC-1, IC-2, IC-3, IC-4, IC-7, IC-8.*

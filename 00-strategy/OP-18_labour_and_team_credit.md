@@ -44,7 +44,7 @@ So (α) is: *given a labour process with no per-product trace, how do we state e
 The author raised, and then rejected, a rival: **Method 2 — yield-weighting**, where a rare cut (tenderloin, ≈1% yield) costs ~5× a common one (hamburger, ≈5% yield) per pound, "to capture scarcity."
 
 **Rejected because scarcity is value, not cost.** A pound of each embodied the same feed, water, and growing-labour, so they *cost* the same (refined only by measured tissue composition — lean vs fat differ in deposition energy — never by desirability). Two decisive problems:
-1. **It re-imports price-rationing.** If tenderloin costs 5×, it flows to whoever can absorb the larger debit — rationing by economic standing, the exact mechanism A5/§7.1 removes.
+1. **It re-imports price-rationing.** If tenderloin costs 5×, it flows to whoever can absorb the larger debit — rationing by economic standing, the exact mechanism A5/§5.1 removes.
 2. **It manufactures a capture surface.** It needs sector-set scarcity-weights per cut; whoever sets them steers every price. Method 1 needs a standards body only to *define cut boundaries*, then weighs this cow's actual cuts.
 
 **Where the scarcity correctly goes** (the author's own "this is where the free market exists"): the **demand side** — pledges/signals set how many cattle are raised — and **decentralised local distribution** — the butcher's lottery, queue, or pledge-priority decides who gets the scarce cut. Irreducible scarcity (only ~10 lb of tenderloin per cow) is handled by a *distribution rule*, never by inflating cost. **USDA-as-service** (a standards body transformed from regulator to credited, trust-network-audited service) defines the cut categories — compatible with Method 1 and lighter than Method 2 would need.

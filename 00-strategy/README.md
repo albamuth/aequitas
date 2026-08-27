@@ -109,10 +109,10 @@ Most are closed. The status line at the top of each file says which.
 |---|---|
 | Local currencies fail because credit pools at sinks | **A3** — credit never moves, so it cannot pool |
 | How does a joint process divide its cost? | **A2** — the yardstick is time, so no carrier quantity is needed |
-| What proves a record covers the world? | **§5.1b** — the closure witness, written and never wired up |
-| Can a person hold their own records? | **§5.3** |
+| What proves a record covers the world? | **§4.4** — the closure witness, written and never wired up |
+| Can a person hold their own records? | **§4.7** |
 | Can the system collect less data? | **A7** — no. Universal accounting requires the records to be complete. |
-| Who carries the unrecorded gap? | **§5.1c** — nobody, until the causer joins |
-| Six critiques conceded in public in one week | **§5.1a, §5.1b, §5.1c, §3.3a, OP-24** |
+| Who carries the unrecorded gap? | **§4.4** — nobody, until the causer joins |
+| Six critiques conceded in public in one week | **§4.4, §4.4, §4.4, §3.3a, OP-24** |
 
 **You cannot know which section to search for until you have read them all.** That is the whole reason for the rule. The cost is about 200 KB and it is accepted.

@@ -39,4 +39,4 @@ The separation between *measuring* and *advising* must be specified. Linked dire
 
 ---
 *Status: settled (mechanism) / provisional (conflict-of-interest handling)*
-*Source: `00-strategy/Aequitas_Foundations_v0.2.md` §7.3*
+*Source: `00-strategy/Aequitas_Foundations_v0.2.md` §5.3*

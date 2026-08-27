@@ -2,24 +2,24 @@
 
 > **Status:** ✅ **CLOSED — see §13.** Information capture is scoped out with recorded reasons: the escape is non-participation and never closes; trust networks are **laboratories, not banks**; and a monopoly earned by better methods is not the monopoly capitalism produces. ❌ **§§2, 4a and 10 are RETRACTED — see §11.** The "verify, don't hold" principle was built on a false premise. **The trust network *is* the database**; holding the records is its function, not a failure mode. What survives: the **uniqueness ≠ identification** split (§3, ruled in §8), the **multi-network Sybil vector** (§9), and the retention-disclosure idea in the corrected form of a **publicity policy** (§11).
 > **Read §11 first.** Sections 1–10 are kept unedited because the reasoning error is instructive and the project does not delete superseded work.
-> **Answers:** Foundations §5.3a residue (a), sharpened by §5.3b · OP-22 · P4 / OP-10 (capture)
-> **Tracks:** Foundations v0.17 §4, §5.3, §5.3a, §5.3b · EventLog v0.8 §4.1a
+> **Answers:** Foundations §4.7 residue (a), sharpened by §4.7 · OP-22 · P4 / OP-10 (capture)
+> **Tracks:** Foundations v0.17 §4, §4.7, §4.7, §4.7 · EventLog v0.8 §4.1a
 
 ---
 
-## 1. The problem, as §5.3b left it
+## 1. The problem, as §4.7 left it
 
 A trust network publishes every estimating number, every method, and anonymised data on all its participants. After all that, **one advantage remains**:
 
 > **It holds the linkage** between the anonymised rows and the people.
 
-That linkage is the concentration to worry about. A network that keeps its members' lifetime back-traces (§5.1d) holds an information position comparable to the wealth position this project exists to dissolve. It can be coerced, breached, or can simply defect. **§3.3a's public-membership screen was written for *sector* capture and does nothing about this.** And "you may leave" is a weak exit when what you would leave behind is your life history.
+That linkage is the concentration to worry about. A network that keeps its members' lifetime back-traces (§4.4) holds an information position comparable to the wealth position this project exists to dissolve. It can be coerced, breached, or can simply defect. **§3.3a's public-membership screen was written for *sector* capture and does nothing about this.** And "you may leave" is a weak exit when what you would leave behind is your life history.
 
 > ❌ **RETRACTED — §§2, 4a and 10 below rest on a false premise. See §11.**
 
 ## 2. The axioms already answer most of it
 
-Per the project's own rule — *check the axioms before importing an outside solution* — §5.3 already says this, and has since it was written:
+Per the project's own rule — *check the axioms before importing an outside solution* — §4.7 already says this, and has since it was written:
 
 > Account holders keep a **private ledger with provable claims** — zero-knowledge proofs of balances and cost positions when transacting, **not history**.
 
@@ -32,16 +32,16 @@ Per the project's own rule — *check the axioms before importing an outside sol
 
 ### 2.1 It survives the back-trace
 
-§5.1d's lifetime reconstruction looks like it forces the network to hold a dossier. It does not.
+§4.4's lifetime reconstruction looks like it forces the network to hold a dossier. It does not.
 
-- The **estimate** is computed from a published algorithm over **public cohort data** (§5.3b). No personal data needed.
+- The **estimate** is computed from a published algorithm over **public cohort data** (§4.7). No personal data needed.
 - The person's **deviations** from that estimate — the hybrid car, the shorter commute — are proved, not surrendered. The network checks a proof that evidence supports a deviation. **It never needs the mileage records themselves.**
 
 The dossier is assembled **by the person, about the person, and stays with them.**
 
 ### 2.2 It survives cohort estimation
 
-§5.1b's residual rule needs *N* (an external total) and *Y* (the sum of disclosed figures). Market data is public by §5.3, so *Y* is an aggregate of already-public quantities. **Cohort estimation needs aggregates, not linkages.**
+§4.4's residual rule needs *N* (an external total) and *Y* (the sum of disclosed figures). Market data is public by §4.7, so *Y* is an aggregate of already-public quantities. **Cohort estimation needs aggregates, not linkages.**
 
 ## 3. The distinction that does the real work
 
@@ -58,13 +58,13 @@ Most of the fear collapses once two different linkages are separated, because on
 
 ## 4. The proposal — three parts
 
-**(a) State "verify, don't hold" as a principle in §5.3.** It is already implied; nothing says it.
+**(a) State "verify, don't hold" as a principle in §4.7.** It is already implied; nothing says it.
 
-**(b) Add a retention disclosure to §5.3b's publication set.**
+**(b) Add a retention disclosure to §4.7's publication set.**
 
 > **A network publishes what it retains** — which categories of data, for how long, and in what form — alongside its numbers and methods.
 
-This makes holding a **visible property of a network** rather than an invisible one. §5.3a's discount mechanism then acts on it exactly as it acts on opacity and thin coverage: **a network that hoards is a bigger target and a bigger liability, and its members can see that before they join.** *Price it, don't forbid it* — the fifth time that has been the answer.
+This makes holding a **visible property of a network** rather than an invisible one. §4.7's discount mechanism then acts on it exactly as it acts on opacity and thin coverage: **a network that hoards is a bigger target and a bigger liability, and its members can see that before they join.** *Price it, don't forbid it* — the fifth time that has been the answer.
 
 It also makes one strong claim checkable: **a network that holds nothing cannot be coerced into revealing anything.** "We cannot comply, because we do not have it" is only credible against a published retention set.
 
@@ -77,7 +77,7 @@ It also makes one strong claim checkable: **a network that holds nothing cannot 
 | **Universality** | ✅ | One principle, applied at every level, with the ladder accounting for what each level can do. No exception, no special case. |
 | **Decentralization** | ✅ | No authority enforces it. Retention is published; members and counterparties price it. |
 | **Fecundity** | ⚠️ | Minimal holding pays only if members prefer it and act on the disclosure. Networks compete on it, which is the mechanism — but it depends on members reading a retention disclosure, and most people do not read terms today. |
-| **Axioms** | ✅ | A6 (derived, not stored) is exactly this principle at the ledger level. A8 intact. Consistent with §5.3 as written. |
+| **Axioms** | ✅ | A6 (derived, not stored) is exactly this principle at the ledger level. A8 intact. Consistent with §4.7 as written. |
 
 **Who games this — three, honestly:**
 
@@ -95,8 +95,8 @@ It also makes one strong claim checkable: **a network that holds nothing cannot 
 
 ## 7. The ruling needed
 
-1. **Adopt "verify, don't hold" as a stated principle?** (§5.3)
-2. **Add retention disclosure to the publication set?** (§5.3b)
+1. **Adopt "verify, don't hold" as a stated principle?** (§4.7)
+2. **Add retention disclosure to the publication set?** (§4.7)
 3. **Is the uniqueness/identification split right** — does anything in the system genuinely need to know *which* human an account is, rather than that it is *one* human? If something does, this proposal is weaker than it looks and the answer must change.
 
 Question 3 is the one that could break it.
@@ -112,7 +112,7 @@ Question 3 is the one that could break it.
 >
 > **Aequitas is a system of ideas, not an entity, so it doesn't "know" anything.** It is a system implemented by the trust networks. What they need to know or not is up to them.
 
-**§7's question 3 was badly put and is withdrawn.** It asked whether *the system* needs to know which human an account is. **The system is not a knower.** Only a network knows anything, and §5.3a already settles that what a network knows is its own choice. The well-formed version is: *does anything break if no network identifies?* — and the answer is no.
+**§7's question 3 was badly put and is withdrawn.** It asked whether *the system* needs to know which human an account is. **The system is not a knower.** Only a network knows anything, and §4.7 already settles that what a network knows is its own choice. The well-formed version is: *does anything break if no network identifies?* — and the answer is no.
 
 **So the split in §3 stands, with the wording corrected:**
 
@@ -126,7 +126,7 @@ Question 3 is the one that could break it.
 
 Legitimate multi-network accounts create a Sybil vector that nobody had named, and it aims at the project's headline result.
 
-**The exploit.** Credit for *produced goods* is anchored physically: a parcel has one custody chain (IC-5) and can be handed off once, so the same output cannot be credited twice across networks without the duplication surfacing wherever the goods travel. **Self-care credit has no such anchor.** It is credited by proof-of-life (§6.1b, §7.5) and needs no output at all.
+**The exploit.** Credit for *produced goods* is anchored physically: a parcel has one custody chain (IC-5) and can be handed off once, so the same output cannot be credited twice across networks without the duplication surfacing wherever the goods travel. **Self-care credit has no such anchor.** It is credited by proof-of-life (§4.5, §5.5) and needs no output at all.
 
 > A person holding accounts on *k* networks can satisfy proof-of-life on each and accrue the self-care floor **k times**. Consumption room is gated per account, so their total room is **k × ρ·C** — and the disparity ceiling, `24/F`, is computed **per network**. Across *k* networks the effective ceiling is **k × 24/F**.
 
@@ -153,19 +153,19 @@ Everything a Level-2 network does reduces to these. For each: what must be **sho
 | # | What is verified | Shown to check it | Must be retained? |
 |---|---|---|---|
 | 1 | **Uniqueness** — this account is one human (A8/C6) | A proof of personhood | **Yes — a uniqueness token.** Not the biometric, not the identity. Enough to refuse a second enrolment of the same person. |
-| 2 | **Liveness** — this human is alive, for the self-care floor (§7.5) | A proof of life | **No** beyond "last checked at T". |
+| 2 | **Liveness** — this human is alive, for the self-care floor (§5.5) | A proof of life | **No** beyond "last checked at T". |
 | 3 | **Hours ≤ wall clock** (IC-7) | Claimed intervals in a window | **A per-person counter — see §10.3.** This is the hard one. |
 | 4 | **Event arithmetic** (IC-1, IC-2) | The event's own inputs and outputs | **No.** Mass and energy balance is arithmetic on what is in front of you. |
 | 5 | **Origin closure** (IC-3) | The parcel's ancestry chain | **No** — see §10.2. |
-| 6 | **Custody** (IC-5) — who holds this parcel now | A hand-off attested by both sides | **Yes — a current-holder pointer.** But this is *market data*, public by §5.3, not personal history. |
+| 6 | **Custody** (IC-5) — who holds this parcel now | A hand-off attested by both sides | **Yes — a current-holder pointer.** But this is *market data*, public by §4.7, not personal history. |
 | 7 | **The ratio gate** — `D ≤ ρ·C` at transaction time | A proof over the person's totals | **A commitment to those totals**, not the totals themselves — §10.3. |
-| 8 | **Provenance** of an estimate (§4.1a) | `method_ref` and the tally it cites | **No.** Both are already public by §5.3b. |
+| 8 | **Provenance** of an estimate (§4.1a) | `method_ref` and the tally it cites | **No.** Both are already public by §4.7. |
 
 ### 10.2 The chain travels with the parcel, not with the network
 
 Item 5 looks like it forces an archive: to walk a parcel back to a reservoir extraction or a genesis entry, you need the whole chain.
 
-**But §5.1b already says where the chain lives:** *"a good moving through the Aequitas economy **carries records of its origin**."*
+**But §4.4 already says where the chain lives:** *"a good moving through the Aequitas economy **carries records of its origin**."*
 
 **The record travels with the thing.** A buyer receives the chain along with the parcel — that is what makes the debit computable at hand-off and what lets them prefer the cleaner loaf (Overview §1). **The network checks a chain presented to it. It is not the chain's custodian.**
 
@@ -181,7 +181,7 @@ Items 3 and 7 cannot be done on presentation alone, and it is worth being exact 
 
 > **It is not. It needs an unforgeable per-person counter of hours claimed — not the claims.** A number that cannot be forked, with no content behind it. The same shape as double-spend prevention: you learn that a total was exceeded without learning what was spent on.
 
-**Item 7, the ratio gate.** Checking `D ≤ ρ·C` needs *C* and *D*. §5.3 already specifies the answer — the person proves the inequality against a commitment, and the network learns the verdict, not the totals.
+**Item 7, the ratio gate.** Checking `D ≤ ρ·C` needs *C* and *D*. §4.7 already specifies the answer — the person proves the inequality against a commitment, and the network learns the verdict, not the totals.
 
 **So the honest form of the principle is a distinction between state and content:**
 
@@ -211,7 +211,7 @@ Items 3 and 7 cannot be done on presentation alone, and it is worth being exact 
 
 **"Verify, don't hold" is wrong, and the error was in the premise, not the detail.** I imported a data-minimisation principle from privacy engineering — *hold as little as possible* — into a system whose foundational requirement is the opposite: **A7 (universal accounting) demands that the records exist and are complete.** A ledger derived from an append-only log (A6) requires the log, and **maintaining that log is what a trust network is for.**
 
-The distributed reading I built in §10 — chains travelling with parcels, events held only by their participants, the network as a stateless checker — is not the system. Goods *do* carry their provenance (§5.1b), and that is true and useful; **it does not follow that nobody keeps the database.** Both are true at once, and I treated the first as replacing the second.
+The distributed reading I built in §10 — chains travelling with parcels, events held only by their participants, the network as a stateless checker — is not the system. Goods *do* carry their provenance (§4.4), and that is true and useful; **it does not follow that nobody keeps the database.** Both are true at once, and I treated the first as replacing the second.
 
 **The state-versus-content distinction goes with it.** Content is not a liability to be avoided. **Content is the product.**
 
@@ -224,12 +224,12 @@ Records, comprehensively. At least these classes:
 | **Material flows** | every extraction, transformation, transport, emission |
 | **Transactions** | **every hand-off of a thing is a record** — custody changes, IC-5 |
 | **Services** | **each service given and received is a record** — no parcel moves, the record still exists |
-| **Pledges** | **each pledged credit is a record**, permanent and non-revocable (§6.4) |
+| **Pledges** | **each pledged credit is a record**, permanent and non-revocable (§4.6) |
 | **People** | accounts, uniqueness, liveness, hours |
 | **Workplaces** | the sites and institutions where events happen |
-| **World data** | pollution measurements, ambient stocks (§3.3), reservoir readings, the independently-known totals *N* of §5.1b |
+| **World data** | pollution measurements, ambient stocks (§3.3), reservoir readings, the independently-known totals *N* of §4.4 |
 
-**That last class is worth noticing.** A network holds not only its members' records but **measurements of the world** — which is what makes the coverage reconciliation of §5.1c computable at all. The database is not a registry of people; it is a description of a region's material life, of which people are one part.
+**That last class is worth noticing.** A network holds not only its members' records but **measurements of the world** — which is what makes the coverage reconciliation of §4.4 computable at all. The database is not a registry of people; it is a description of a region's material life, of which people are one part.
 
 ## 11.3 The dial is publicity, not retention
 
@@ -237,9 +237,9 @@ Records, comprehensively. At least these classes:
 
 **The real dial is the one the author has now named three times, and it is publicity.**
 
-> **How public each class of record is, is the network's own decision.** §5.3a said it for persons. §5.3b said it for institutions and businesses. It generalises: **a network sets a publicity policy per record class, and publishes that policy.**
+> **How public each class of record is, is the network's own decision.** §4.7 said it for persons. §4.7 said it for institutions and businesses. It generalises: **a network sets a publicity policy per record class, and publishes that policy.**
 
-This is the same dial as ρ and the floor `F`, and it lands where §5.3a already put it. **What §4b was reaching for survives in corrected form: not "declare what you keep" but "declare what you show."**
+This is the same dial as ρ and the floor `F`, and it lands where §4.7 already put it. **What §4b was reaching for survives in corrected form: not "declare what you keep" but "declare what you show."**
 
 ## 11.4 So what is left of information capture?
 
@@ -247,10 +247,10 @@ Restated correctly, and it is a smaller and more honest problem than either of m
 
 **The risk is not that a network holds records. It is a network that holds comprehensively *and* publishes little.** Holding is universal; opacity is the variable. Which means:
 
-- **The exposure is visible.** A network's publicity policy is published (§5.3b), so how much it discloses is a known property, and §5.3a's discount mechanism acts on it — a counterparty discounts what it cannot verify. **Priced, not forbidden.** Again.
+- **The exposure is visible.** A network's publicity policy is published (§4.7), so how much it discloses is a known property, and §4.7's discount mechanism acts on it — a counterparty discounts what it cannot verify. **Priced, not forbidden.** Again.
 - **The protection is horizontal, not architectural.** Aequitas does not reduce capture by making each database smaller. It reduces capture by **there being many networks, none of them global**, each holding its own region's life, none holding everyone's. **Decentralisation here means *many holders*, not *less held*.** That is consistent with A8 and with every other structure in the project, and I should have reached it first.
 
-  > ⚠️ **This protection has an expiry date, and §5.3c names it.** The expected trajectory is **convergence** — networks federate, then merge, toward a single network rather than permanent regional isolation. **A protection that depends on there being many networks weakens exactly as the ecosystem succeeds.**
+  > ⚠️ **This protection has an expiry date, and §4.8 names it.** The expected trajectory is **convergence** — networks federate, then merge, toward a single network rather than permanent regional isolation. **A protection that depends on there being many networks weakens exactly as the ecosystem succeeds.**
   >
   > The distinction that may save it: **what merges is the *method*, not necessarily the *custodian*.** Many holders can share one algorithm set the way many operators share one protocol — one accounting domain, many databases. **If that holds, this protection survives convergence. If convergence means one operator, it does not, and the end state of the design is the largest information concentration in the system.** Unresolved; registered against OP-10 and C2.
 - **⚠️ And the irreducible part, stated plainly.** Comprehensive records are a requirement, not a choice, so **the databases are comprehensive by design and the breach-and-coercion surface is real and permanent.** No mechanism proposed anywhere in this project removes it. What bounds it is scale — a network holds a region, not a world — and publicity, which removes the *differential* advantage of holding without removing the holding. **This is a genuine residual cost of the system and should be stated as one rather than argued away.**
@@ -288,11 +288,11 @@ So:
 - **Compatible networks produce one ledger for that person, seen from two places.** The self-care floor is credited **once**, because it is one life. **There is nothing to sum, and `k × 24/F` was arithmetic on two things that are the same thing.**
 - **Incompatible networks do not interoperate.** Goods and claims do not cross. Each holds a **partial** record of that person's material life.
 
-**What survives is not a breached bound but a coverage gap** — and that is machinery already built: §5.1c (the residual is held, not allocated) and EventLog §7.4 (a verdict declares its extent). An incompatible pair leaves two partial ledgers, each obliged to say it is partial.
+**What survives is not a breached bound but a coverage gap** — and that is machinery already built: §4.4 (the residual is held, not allocated) and EventLog §7.4 (a verdict declares its extent). An incompatible pair leaves two partial ledgers, each obliged to say it is partial.
 
 **Federation is therefore not a defence against an exploit. It is what interoperation means.**
 
-§9's finding still did real work — it exposed that condition 4 of the ceiling wrongly claimed IC-7 covered the multi-network case, and that correction stands. **The error was in what replaced it.** Both docs are now re-framed: Foundations §7.5 condition 5, `06-simulation/disparity-ceiling/DISPARITY_CEILING.md` §4 condition 5.
+§9's finding still did real work — it exposed that condition 4 of the ceiling wrongly claimed IC-7 covered the multi-network case, and that correction stands. **The error was in what replaced it.** Both docs are now re-framed: Foundations §5.5 condition 5, `06-simulation/disparity-ceiling/DISPARITY_CEILING.md` §4 condition 5.
 
 
 ---
@@ -318,8 +318,8 @@ So:
 3. **A monopoly earned by better methods is not the monopoly capitalism produces.** Capitalist monopolies come from exclusion and anti-market practice, **not** from serving people better. A single Aequitas network would arrive because its methods are the best ones. **That is good service.**
 4. **Data security and backups are a technology problem**, outside this project's scope.
 
-**The strongest form of point 3, and why it holds: methods are published (§5.3b) and replicable. The monopoly is over *which method is used*, never over *who may propose one*. No exclusion, no moat** — which is precisely what a capitalist monopoly has and this does not.
+**The strongest form of point 3, and why it holds: methods are published (§4.7) and replicable. The monopoly is over *which method is used*, never over *who may propose one*. No exclusion, no moat** — which is precisely what a capitalist monopoly has and this does not.
 
-> **⚠️ One watch item, not a defence.** A monopoly earned on merit can stop being meritorious and keep the position. **The guard is publication plus replication, not competition.** If §5.3b's publication requirement ever weakens, the merit argument weakens with it. **The two are load-bearing for each other.**
+> **⚠️ One watch item, not a defence.** A monopoly earned on merit can stop being meritorious and keep the position. **The guard is publication plus replication, not competition.** If §4.7's publication requirement ever weakens, the merit argument weakens with it. **The two are load-bearing for each other.**
 
 **Status of this paper: closed.** §§2/4a/10 retracted (§11), §9 re-framed (§12), and the underlying question scoped out here. **What it leaves behind that is still live:** the uniqueness ≠ identification split (§3, ruled §8), and the correction it forced to `DISPARITY_CEILING.md` condition 4.

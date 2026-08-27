@@ -3,7 +3,7 @@
 > **Version:** 0.1
 > **Date:** 2026-08-22
 > **Status:** First assembly. Every ruling here is settled and folded into Foundations v0.17; this document gathers them in one place because they were decided across a dozen separate sections. **One thing remains open and it is named in §11: OP-10 (weighting-model governance).**
-> **Depends on:** `Aequitas_Foundations_v0.27.md` §1.2, §3.3, §3.3a, §4, §5.1–§5.4 · `Aequitas_EventLog_v0.10.md`
+> **Depends on:** `Aequitas_Foundations_v0.27.md` §1.2, §3.3, §3.3a, §4, §4.1–§4.8 · `Aequitas_EventLog_v0.10.md`
 > **Companion:** `C2_information_capture.md` — the reasoning behind §6 below, including a retracted proposal kept on purpose.
 
 ---
@@ -24,7 +24,7 @@
 
 **A laboratory, not a bank.**
 
-> **Its goal is truth. Its motive is consensus rather than competition. A network whose methods let fraud through is *helped* by another network sharing the methods that catch it.** (Foundations §5.3c — federation.)
+> **Its goal is truth. Its motive is consensus rather than competition. A network whose methods let fraud through is *helped* by another network sharing the methods that catch it.** (Foundations §4.8 — federation.)
 
 **This does not rest on anyone being virtuous.** In an interoperating pair, a bad method in one contaminates the books of the other. **The neighbour's interest in helping is selfish.**
 
@@ -49,7 +49,7 @@ Everything a network does reduces to these. For each, what must be shown to chec
 | 7 | **The ratio gate** — `D ≤ ρ·C` at transaction time | The person's totals |
 | 8 | **Provenance** — that an estimate cites a real method and tally | `method_ref` and the tally it points at |
 
-**Items 4, 5 and 6 need no trust model at all.** IC-1 through IC-9 are pure arithmetic on the log — no reputation, no authority, only the ability to recompute (EventLog v0.8 §7.1). **Item 7's gate is evaluated at transaction time**, so a later correction changes future room and never the validity of a completed act (Foundations §3.3 — the transaction-time rule).
+**Items 4, 5 and 6 need no trust model at all.** IC-1 through IC-9 are pure arithmetic on the log — no reputation, no authority, only the ability to recompute (EventLog v0.8 §5.1). **Item 7's gate is evaluated at transaction time**, so a later correction changes future room and never the validity of a completed act (Foundations §3.3 — the transaction-time rule).
 
 ---
 
@@ -71,13 +71,13 @@ Everything a network does reduces to these. For each, what must be shown to chec
 
 **That last class is the one people miss.** A network holds not only its members' records but **measurements of the world**, which is what makes coverage reconciliation computable at all. **The database is not a registry of people. It is a description of a region's material life, of which people are one part.**
 
-*Data minimisation is not available to this system and never was.* A7 (universal accounting) requires the records to be complete; §3.3 recalculates history when science improves; and §5.1d reconstructs a person's position back to birth. **None of that runs over deleted records.**
+*Data minimisation is not available to this system and never was.* A7 (universal accounting) requires the records to be complete; §3.3 recalculates history when science improves; and §4.4 reconstructs a person's position back to birth. **None of that runs over deleted records.**
 
 ---
 
 ## 5. What a trust network publishes
 
-**To be trustworthy, a network publishes its estimating numbers, its methods, and anonymised data covering all of its participants.** Its books are in the light (Foundations §5.3b — what a network owes).
+**To be trustworthy, a network publishes its estimating numbers, its methods, and anonymised data covering all of its participants.** Its books are in the light (Foundations §4.7 — what a network owes).
 
 **Tallying is algorithmic**, and that is what makes the citation requirement enforceable. Against a human process, "cite your method" is an aspiration. **Against a published algorithm it is a version number**, and `method_ref` has something concrete to point at.
 
@@ -91,7 +91,7 @@ Everything a network does reduces to these. For each, what must be shown to chec
 
 ## 6. Privacy is the network's choice
 
-> **Each trust network sets its own privacy practice. Aequitas states the principles and does not dictate the implementation. Compatibility between networks is a matter for those networks to negotiate.** (Foundations §5.3a.)
+> **Each trust network sets its own privacy practice. Aequitas states the principles and does not dictate the implementation. Compatibility between networks is a matter for those networks to negotiate.** (Foundations §4.7.)
 
 **The working shape is the payment intermediary.** A card network facilitates a transaction in which neither party learns the other's private details. The intermediary knows both sides; the counterparties know a token and an outcome.
 
@@ -154,7 +154,7 @@ A trust network is the basis on which all accounting rests, so it cannot be paid
 
 > **A transaction never waits on a shared verdict.** Two parties can price the same thing differently and still trade. **"Comparison, never conversion" was always the dispute-resolution mechanism; it had simply never been named as one.**
 
-**Fraud is the one class needing a verdict — and science is not self-correcting about fraud either.** It answers with investigation by an institution. Aequitas answers the same way: **courts, small claims, contract law and ordinary social pressure continue to exist** (Foundations §5.3), and per §1.2 how an implementer engages them is praxis.
+**Fraud is the one class needing a verdict — and science is not self-correcting about fraud either.** It answers with investigation by an institution. Aequitas answers the same way: **courts, small claims, contract law and ordinary social pressure continue to exist** (Foundations §4.7), and per §1.2 how an implementer engages them is praxis.
 
 ---
 
@@ -218,7 +218,7 @@ Three smaller items:
 
 - **The pledge-reserve causation claim** — did *this* task cause *that* harm? Where a physical trace exists the trace decides. Where it does not, it is a contested finding of fact and routes to existing recourse, like fraud.
 - **The verification-cost threshold.** `06-simulation/residual-unravelling/residual_unravelling.py` measures where the estimate-the-residual rule stops working: **past roughly 40% of a median unit's debit, darkness becomes stable again.** Privacy-preserving verification costs more than open verification, so **cheap verification is a precondition of coverage, not a nice-to-have.**
-- **A merit monopoly can stop being meritorious.** Convergence toward a single network is expected (§5.3c). The guard is publication plus replication, not competition — so **if the publication requirement ever weakens, the argument that a merit monopoly is benign weakens with it.**
+- **A merit monopoly can stop being meritorious.** Convergence toward a single network is expected (§4.8). The guard is publication plus replication, not competition — so **if the publication requirement ever weakens, the argument that a merit monopoly is benign weakens with it.**
 
 ---
 

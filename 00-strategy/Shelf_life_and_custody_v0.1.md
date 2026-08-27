@@ -4,7 +4,7 @@
 > **Date:** 2026-08-23
 > **Raised and ruled by:** the author.
 > **Status:** 🟡 **Two parts confirmed as already-written. One is a new mechanism, built and tested as ruled.** A softer version I proposed was overturned by the author the same day — see §3. **One hole stays open (§4, row 2).**
-> **Reads against:** `Aequitas_Foundations_v0.27.md` §3.2, §3.2b, §3.6, §5.1a, §6.2a, §6.2b, A8 · built in `06-simulation/statera/statera.py` and `06-simulation/statera/chains.py`
+> **Reads against:** `Aequitas_Foundations_v0.27.md` §3.2, §3.2b, §3.6, §4.4, §4.5, §4.5, A8 · built in `06-simulation/statera/statera.py` and `06-simulation/statera/chains.py`
 
 ---
 
@@ -25,7 +25,7 @@
 | The ruling says | Where it already is |
 |---|---|
 | The custody chain ending is enough; no consumption event needed | **§3.6 rule 1, almost word for word:** *"If nobody will accept a worn-out asset, its last holder has consumed it and holds its end-of-life debit forever, **as if it were food**."* |
-| Single-use goods land whole on their user | **§6.2a's boundary test:** *"capital vs. consumption... told apart by physical fate: does the thing survive the process?"* A drill bit survives; the oil it burned does not |
+| Single-use goods land whole on their user | **§4.5's boundary test:** *"capital vs. consumption... told apart by physical fate: does the thing survive the process?"* A drill bit survives; the oil it burned does not |
 | A resale moves the debit | **§3.2.** Property debit follows possession |
 | Producer-side pollution does not move | **§3.2b.** It stays permanently on its causer, and no resale sheds it |
 
@@ -54,10 +54,10 @@
 | My argument | Why it fails |
 |---|---|
 | *"A hard block would forbid compost and animal feed."* | **Waste disposal is a service with a cost, not a hand-off of property.** §3.6 already credits recyclers *"for the work of reducing pollutants."* It has its own event shape and never needed the transfer path. |
-| *"A food bank might want day-old bread."* | **A food bank relying on gifted bread is a symptom of the exact scarcity Aequitas claims to remove.** §7.5 makes essential provision unconditional. **If somebody needs charity for bread, the system has failed** — and modelling that failure as a feature is backwards. |
+| *"A food bank might want day-old bread."* | **A food bank relying on gifted bread is a symptom of the exact scarcity Aequitas claims to remove.** §5.5 makes essential provision unconditional. **If somebody needs charity for bread, the system has failed** — and modelling that failure as a feature is backwards. |
 | *"A prohibition needs somebody at the door, and A8 forbids that somebody."* | **This confused a rule that forbids with an institution that enforces.** **IC-7 forbids a 25-hour day and no institution guards it.** The check *is* the enforcement, anybody can run it, and a log that breaks it is non-conformant for everyone who recomputes. **That is the A8-clean shape of a prohibition, and this is one.** |
 
-> **The correction worth keeping: "price it, don't forbid it" is not a universal rule of this system.** It applies where the costly path has a legitimate use — selling out for money (§5.5), choosing opacity (§5.3a). **Where there is no legitimate use, an invariant is the right shape**, and Aequitas already has several: IC-7, IC-8, IC-1 to IC-4. **I reached for the pattern instead of checking whether the case fitted it.**
+> **The correction worth keeping: "price it, don't forbid it" is not a universal rule of this system.** It applies where the costly path has a legitimate use — selling out for money (§4.8), choosing opacity (§4.7). **Where there is no legitimate use, an invariant is the right shape**, and Aequitas already has several: IC-7, IC-8, IC-1 to IC-4. **I reached for the pattern instead of checking whether the case fitted it.**
 
 **Built and tested.** `test_expired_goods_cannot_be_handed_on` — the hand-off is refused, the loaf stays on the shop, the buyer takes nothing. `test_disposal_is_a_service_not_a_handoff` — the eater keeps 1 kg of waste and pays 0.25 h for collection; the collector is credited 0.25 h. `test_recycling_moves_the_atoms_but_not_the_pollution` — §3.6 rule 3, where matter genuinely does move on. And `test_the_check_catches_a_forged_expired_discharge` — a log that *claims* an expired discharge is caught, so the recorder is not the only thing policing it.
 
@@ -80,8 +80,8 @@
 | Attack | Verdict |
 |---|---|
 | **Overstate the shelf life** so goods stay tradeable | **This is OP-24 (understatement drift) at the shelf, and it inherits OP-24's answer.** The receiver takes on the debit and eats it if the goods are unusable, so receivers learn. And the honest rival dater is materially harmed by dumped stale goods, so **the rival funds the correction** (§3.3a). |
-| **⚠️ Record no expiry at all**, so the goods never expire | **The real hole, and it is genuinely open.** Nothing forces a date, and the incentive is to omit one. **The answer is the buy side, not a rule:** accepting undated perishable goods means taking on debit for something that may already be waste, so **receivers demand dates**. That is §5.3a's shape — *opacity is priced* — and OP-14's, *comparison never conversion*. **Whether the demand is strong enough is empirical and should be simulated, not assumed.** |
-| **Backdate or relabel** | Caught. The log is append-only and a record is **annotated, never replaced** (§5.1a), so the original date persists and the relabel is visible and dated. |
+| **⚠️ Record no expiry at all**, so the goods never expire | **The real hole, and it is genuinely open.** Nothing forces a date, and the incentive is to omit one. **The answer is the buy side, not a rule:** accepting undated perishable goods means taking on debit for something that may already be waste, so **receivers demand dates**. That is §4.7's shape — *opacity is priced* — and OP-14's, *comparison never conversion*. **Whether the demand is strong enough is empirical and should be simulated, not assumed.** |
+| **Backdate or relabel** | Caught. The log is append-only and a record is **annotated, never replaced** (§4.4), so the original date persists and the relabel is visible and dated. |
 | **Dump goods just before expiry** on someone else | The receiver chose to accept, and **the date is in the log where they can read it.** Not an exploit; a thing to check before signing. |
 | **Let goods expire deliberately** | No gain. You keep the debit. |
 
@@ -103,8 +103,8 @@
 
 ## 6. What this does not settle
 
-1. **Who sets the date, and under what method.** It is a cost constant in everything but name, so it belongs to **OP-10 / OP-24** and should be published with its method and vintage (§5.3b), like every other estimating number.
+1. **Who sets the date, and under what method.** It is a cost constant in everything but name, so it belongs to **OP-10 / OP-24** and should be published with its method and vintage (§4.7), like every other estimating number.
 2. **Nothing compels a date to exist.** §4, row 2. **Registered.**
 3. **Whether receivers actually demand dates** is an adoption question and a good candidate for the simulator, which is now able to express it.
 
-> **Recommendation: fold rulings 1 and 2 as clarifications** — they are §3.6 and §6.2a restated, and §3.2 could usefully say plainly that no consumption event is required. **Hold ruling 3 for a stress test before folding**, because §3 above changed its mechanism and §4 leaves a hole open.
+> **Recommendation: fold rulings 1 and 2 as clarifications** — they are §3.6 and §4.5 restated, and §3.2 could usefully say plainly that no consumption event is required. **Hold ruling 3 for a stress test before folding**, because §3 above changed its mechanism and §4 leaves a hole open.

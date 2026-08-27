@@ -33,7 +33,7 @@ Conflating these was an internal contradiction before v0.7. They are not the sam
 | Component | What it is | On transfer |
 |---|---|---|
 | **Embodied material** | The atoms you hold | 🟢 **Dischargeable.** Rides the object to the new holder; you are clear of it entirely. *(Effect: used goods enter cheap — the new holder has put in no time yet.)* |
-| **Creation-cost / labour** | The hours that *made* the thing | 🔴 **Permanent per holder.** Holding-time split: your share = your holding-duration ÷ the asset's whole life. Dilutes as later holders accrue time, but **never zeroes**. Clock starts at **deployment**, not purchase; transit carriers accrue **none**. (§6.2b) |
+| **Creation-cost / labour** | The hours that *made* the thing | 🔴 **Permanent per holder.** Holding-time split: your share = your holding-duration ÷ the asset's whole life. Dilutes as later holders accrue time, but **never zeroes**. Clock starts at **deployment**, not purchase; transit carriers accrue **none**. (§4.5) |
 
 **Worked case.** Hold a 500,000-hour house for 10 years, then pass it on. Once the next holder has held it an equal span, ≈250,000 hours of *making* is still on your books — the holding-time share, permanent. The *material* left with the house; the *making* did not. You cannot escape it through a non-participant either: with no record of a hand-off, the ledger still shows you holding it, so you keep the whole weight.
 
@@ -43,7 +43,7 @@ Conflating these was an internal contradiction before v0.7. They are not the sam
 
 **Self-work identity** → [[self-work-identity]]. While you hold a thing, working on it earns credit exactly equal to the property-debit it adds → **net zero** (bar materials used up). This is *why* property is a burden, not an engine: no rent, no appreciation, nothing earned by mere holding. Repair your own roof and you are credited the hours *and* the house's debit rises by the same hours — net effect on you, zero.
 
-**Non-cascade** (§3.2b = §6.2a, one rule read in two directions). **Cost attaches only to the causer and never cascades:**
+**Non-cascade** (§3.2b = §4.5, one rule read in two directions). **Cost attaches only to the causer and never cascades:**
 - **not downstream** to a buyer — the miner keeps the tailings, not the person wearing the ring ([[no-externalities|Ellerman responsibility-imputation]]);
 - **not upstream** to the first human who ever built anything — an asset carries only the creation-cost knowable *within* Aequitas, and everything before genesis is out of scope (computational closure).
 
@@ -55,7 +55,7 @@ Either cascade breaks the books. This is the same constraint as the [[#The Front
 
 ## The Front-Loading Rule
 
-*A named consolidation of §6.2 / §6.2a / §6.2b and objections B3 / B8 — the second thing §3.2 needs to be legible. Where the taxonomy above says how a cost **behaves**, this says **when it is paid and by whom**, for the one class of cost that would otherwise never terminate.*
+*A named consolidation of §4.5 / §4.5 / §4.5 and objections B3 / B8 — the second thing §3.2 needs to be legible. Where the taxonomy above says how a cost **behaves**, this says **when it is paid and by whom**, for the one class of cost that would otherwise never terminate.*
 
 > ### 🔒 THE FRONT-LOADING RULE
 > **A large up-front cost with a diffuse benefit is carried when it is incurred, cushioned by the debit-room the people who pledged for it grant. It is never amortized downstream onto whoever happens to consume the result.**
@@ -76,11 +76,11 @@ Either cascade breaks the books. This is the same constraint as the [[#The Front
 
 **The boundary is capital vs. consumption — not time.** A cost flows to a unit only if it is *consumed* producing that unit. Told apart by **physical fate**: does the thing survive the process? A drill bit that survives is capital (front-loaded); the oil it burned is consumption (flows to the unit). Auditable via [[event-record|IC-4 fate closure]], not the producer's say-so — which closes the *consumption-launderer* who reclassifies a used-up input as capital.
 
-**Who actually carries front-loaded capital — the waterfall (§6.2b):**
+**Who actually carries front-loaded capital — the waterfall (§4.5):**
 
 1. **Community pledges grant the holders debit-room to carry it.** A [[pledge-and-signal|pledge]] does **not** draw the cost down: it is a *permanent grant of debit-room* — virtual credit conferred on the co-op, drawn from the pledger's finite lifetime pledging-budget; their credit itself never moves. It cushions the bite (and, being permanent, can be relied on rather than re-exposed by withdrawal), and doubles as the construction authorization *and* the demand brake — a facility is built at the scale the community will pledge for.
 2. **The full cost is holding-time split** among the asset's holders (share = holding-duration ÷ total holder-years over its life) — pledges cushion the bite, they don't shrink the debit (nothing vanishes, [[material-flow-value|A1]]). Holding-duration is a [[physical-trace-test|physical trace]], so this is measured, not invented — and it passes the cooperative-game checklist an even split fails (**dummy:** a new hire bears ≈0, killing the entry-toll that would scare people off staffing hospitals; **symmetry;** progressive; final only at disposal).
-3. **The [[debit-tolerance|basic-needs floor]] caps how hard any residual bites** (§7.5).
+3. **The [[debit-tolerance|basic-needs floor]] caps how hard any residual bites** (§5.5).
 
 *A 30-year veteran among ~200 staff over a 60-year hospital holds ≈0.25% of it — not a crushing slab. A solo owner of expensive private capital holds a large share, correctly: they alone used it.*
 
@@ -103,9 +103,9 @@ Either cascade breaks the books. This is the same constraint as the [[#The Front
 ## Open questions
 
 - [[protocol-governance|OP-10]] — who controls the collapse (weighting) model
-- C5 — consent/refusal on acquisition. *(Pledge reversion is **resolved**: pledges are permanent and non-revocable, and an unfulfilled pledge burns — nothing reverts. Foundations §6.4, [[pledge-and-signal]].)*
+- C5 — consent/refusal on acquisition. *(Pledge reversion is **resolved**: pledges are permanent and non-revocable, and an unfulfilled pledge burns — nothing reverts. Foundations §4.6, [[pledge-and-signal]].)*
 - OP-25 — illicit dumping (escaping end-of-life debit by abandonment)
 
 ---
-*Status: settled (tracks Foundations v0.20 §3.2, §3.2a, §3.2b, §6.2, §6.2a, §6.2b)*
+*Status: settled (tracks Foundations v0.20 §3.2, §3.2a, §3.2b, §4.5, §4.5, §4.5)*
 *Source: highest-versioned `00-strategy/Aequitas_Foundations_v*.md`; objections B3, B8 in the current `Aequitas_Objections_v*.md`*

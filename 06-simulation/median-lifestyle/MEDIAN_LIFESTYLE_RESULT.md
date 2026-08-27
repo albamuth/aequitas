@@ -8,7 +8,7 @@
 
 Against the **≈ 3,650 h/yr** every person earns just by being alive (self-care credit, ~10 h/day), **the median lifestyle commands only about ⅓ of one person's annual credit.** That is the **disparity-proof anchor**: the median sits far below the ceiling.
 
-> **⚠️ That comparison is valid for the disparity ceiling and INVALID as a staffing claim.** Self-care credit is a value the network sets by rule (Foundations §7.5.1), so *"1,380 is a third of 3,650"* cannot fail however the world is staffed. **Do not quote it as evidence that labour is abundant.** See [`../scenario-suite/Q1B_DEPLOYABLE_LABOUR.md`](../scenario-suite/Q1B_DEPLOYABLE_LABOUR.md).
+> **⚠️ That comparison is valid for the disparity ceiling and INVALID as a staffing claim.** Self-care credit is a value the network sets by rule (Foundations §5.5.1), so *"1,380 is a third of 3,650"* cannot fail however the world is staffed. **Do not quote it as evidence that labour is abundant.** See [`../scenario-suite/Q1B_DEPLOYABLE_LABOUR.md`](../scenario-suite/Q1B_DEPLOYABLE_LABOUR.md).
 
 ## The four tracks
 
@@ -16,7 +16,7 @@ Against the **≈ 3,650 h/yr** every person earns just by being alive (self-care
 |---|---|---|---|
 | **1** | Domestic embodied labour in consumption (BLS ERM × PCE) | ~633 | [`track1_embodied_hours.py`](track1_embodied_hours.py) |
 | **3** | Foreign labour in imports (EXIOBASE MRIO) | ~690 | [`track3_imports.py`](track3_imports.py) |
-| **2** | Housing structure, annualised (§6.2b holding-time) | ~31–61 | [`track2_durables.py`](track2_durables.py) |
+| **2** | Housing structure, annualised (§4.5 holding-time) | ~31–61 | [`track2_durables.py`](track2_durables.py) |
 | **4** | Own-pollution remediation labour (nature→DAC) | ~1–32 | [`track4_pollution.py`](track4_pollution.py) |
 | | **TOTAL** | **≈ 1,350–1,400** | |
 
@@ -32,7 +32,7 @@ Against the **≈ 3,650 h/yr** every person earns just by being alive (self-care
 
 4. **Own-pollution remediation is the cheap, reversible half.** ~1–32 h/yr. The expensive, near-*permanent* debit is the stock kind (Q3 microplastics, landfill) that no remediation retires — not this flow.
 
-5. ~~**Labour never binds.**~~ ❌ **WITHDRAWN 2026-08-27.** It compared 1,380 h against **self-care credit**, which is a value set by rule (Foundations §7.5.1), so the comparison could not fail. **The strict version is [`../scenario-suite/Q1B_DEPLOYABLE_LABOUR.md`](../scenario-suite/Q1B_DEPLOYABLE_LABOUR.md): deployable hours reach 0.43–0.87 of this 1,380 h at US production efficiency and never cross 1.0.** At peer efficiency they clear. **[`Q6.md`](Q6.md) said the same thing already** and was not read against Q1. The scarce factor is **production efficiency**; materials and energy still bind harder.
+5. ~~**Labour never binds.**~~ ❌ **WITHDRAWN 2026-08-27.** It compared 1,380 h against **self-care credit**, which is a value set by rule (Foundations §5.5.1), so the comparison could not fail. **The strict version is [`../scenario-suite/Q1B_DEPLOYABLE_LABOUR.md`](../scenario-suite/Q1B_DEPLOYABLE_LABOUR.md): deployable hours reach 0.43–0.87 of this 1,380 h at US production efficiency and never cross 1.0.** At peer efficiency they clear. **[`Q6.md`](Q6.md) said the same thing already** and was not read against Q1. The scarce factor is **production efficiency**; materials and energy still bind harder.
 
 ## Honest limits (all flagged in the track docs)
 

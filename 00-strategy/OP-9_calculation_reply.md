@@ -57,7 +57,7 @@ This is why Neurath's incommensurability point, which lost the historical debate
 
 Conceding the value point raises the obvious question the critique insists we answer: *if cost ignores what people want, how does Aequitas decide what gets made?* If the answer were "a committee decides," Hayek would be owed the whole argument.
 
-The answer is **pledges** (Foundations §6.4, Overview §6). A pledge is a person spending an hour of their *own earned credit* to call real, credited work into being — a pre-order, a commission, a crowdfund, choosing your GP. It is backed one-for-one by work already done (IC-8), so it cannot over-commit the economy.
+The answer is **pledges** (Foundations §4.6, Overview §6). A pledge is a person spending an hour of their *own earned credit* to call real, credited work into being — a pre-order, a commission, a crowdfund, choosing your GP. It is backed one-for-one by work already done (IC-8), so it cannot over-commit the economy.
 
 Three properties make this a genuine reply to the demand objection, not a dodge:
 
@@ -94,7 +94,7 @@ This gives Aequitas a principled way to ration a genuinely unique resource **wit
 So scarcity-as-debit is admitted **only in the form that dodges the objective function:**
 
 - **Federate it per-constraint.** Most scarcity constraints are *local* — this lake, this ore body, this plot — not global. A local constraint has a local, physical shadow cost (the measured cost of relieving *this* bottleneck) that needs no economy-wide objective function. This is the same "keep it local, keep it physical" discipline that governs the whole ledger.
-- **Route physically-scarce *outputs* to distribution, not to cost.** The prized tenderloin (≈1 % yield) costs the *same per pound* as hamburger, because it embodies the same feed and labour (Foundations §3.4a). Its scarcity is real and handled on the **demand side** — a butcher's lottery, queue, or pledge-priority (Foundations §7.5) — **never by inflating its cost**, which would ration it by who can absorb the larger debit: price-rationing by standing, the exact thing A5 removes.
+- **Route physically-scarce *outputs* to distribution, not to cost.** The prized tenderloin (≈1 % yield) costs the *same per pound* as hamburger, because it embodies the same feed and labour (Foundations §3.4a). Its scarcity is real and handled on the **demand side** — a butcher's lottery, queue, or pledge-priority (Foundations §5.5) — **never by inflating its cost**, which would ration it by who can absorb the larger debit: price-rationing by standing, the exact thing A5 removes.
 
 **Status of (d): the strongest available answer, with one unclosed edge.** Scarcity-as-debit rescues A5 and satisfies A4. Its clean form is per-constraint federation, which *plausibly* avoids the global objective function — but that "plausibly" is unproven, and where a constraint genuinely spans the whole economy, the objective-function problem is real and lives on as part of **OP-10**. This is honestly labelled, not hidden: OP-9's scarcity answer bottoms out in OP-10, and the two must be worked as one problem.
 
@@ -143,7 +143,7 @@ He calls that layer an **anti-market**. He also notes that inside a large firm *
 
 > **A pledge cannot be advertised into existence.**
 
-It is backed 1:1 by hours the pledger actually worked, it is spent once from a lifetime budget, and it is public (Foundations §5.3, §6.4). **A seller can raise desire. A seller cannot raise the hours in someone else's day.**
+It is backed 1:1 by hours the pledger actually worked, it is spent once from a lifetime budget, and it is public (Foundations §4.7, §4.6). **A seller can raise desire. A seller cannot raise the hours in someone else's day.**
 
 **And the lever is far less concentrated, which is measured rather than asserted:**
 
@@ -152,17 +152,17 @@ It is backed 1:1 by hours the pledger actually worked, it is spent once from a l
 | Money | Top-tail wealth ≈ **10⁶ ×** the median (SCF 2022 + Forbes) |
 | Aequitas | Pledging power bounded by **24 ÷ F ≈ 2.4 ×** at a 10-hour floor |
 
-**Every living person holds some**, because self-care credits everyone (Foundations §6.1b). Sources: `06-simulation/disparity-ceiling/DISPARITY_CEILING.md`, Foundations §7.5.
+**Every living person holds some**, because self-care credits everyone (Foundations §4.5). Sources: `06-simulation/disparity-ceiling/DISPARITY_CEILING.md`, Foundations §5.5.
 
 ### Worked examples
 
-Both are in **Foundations §6.4d** with the arithmetic: a **radicchio** request where **four 0.5-hour pledges** cover the ≈2 hours of work to put an extra box on a shelf; and an artist whose **5,000 likes** convert to **500 h** of pledged debit-room against a **300 h** need, with the 200 h surplus becoming a non-consumable reserve under §6.4c rather than a bonus.
+Both are in **Foundations §4.6** with the arithmetic: a **radicchio** request where **four 0.5-hour pledges** cover the ≈2 hours of work to put an extra box on a shelf; and an artist whose **5,000 likes** convert to **500 h** of pledged debit-room against a **300 h** need, with the 200 h surplus becoming a non-consumable reserve under §4.6 rather than a bonus.
 
 **One design finding recorded there:** a **flat rate per like breaks the budget discipline** (at 0.1 h a like, a person could give 54,500 likes a year before their budget bound). **The sound preset is a share of a budget**, which normalises itself.
 
 ### What move (e) does not do
 
-**It does not answer the last-unit question.** Two people, one radicchio. **Pledges decide how many are grown; they do not decide who gets the last one.** That is distribution, answered at the point of hand-over by a queue, a lottery, or pledge-priority (Foundations §7.5). **Move (e) attacks the premise that a price was doing that job honestly. It does not claim to do the job itself.**
+**It does not answer the last-unit question.** Two people, one radicchio. **Pledges decide how many are grown; they do not decide who gets the last one.** That is distribution, answered at the point of hand-over by a queue, a lottery, or pledge-priority (Foundations §5.5). **Move (e) attacks the premise that a price was doing that job honestly. It does not claim to do the job itself.**
 
 ---
 
@@ -193,7 +193,7 @@ Move (a) defeats **Mises**: cost ≠ value, so the "no rational valuation" argum
 
 ## 8. Cross-references
 
-- **Foundations v0.9:** §0 (cost ≠ value), §3.3 (retroactive re-weighting / tractability), §3.4a (scarcity is not cost), §4 (verification ladder), §6.4 (pledges), §7.5 (scarce-output distribution).
+- **Foundations v0.9:** §0 (cost ≠ value), §3.3 (retroactive re-weighting / tractability), §3.4a (scarcity is not cost), §4 (verification ladder), §4.6 (pledges), §5.5 (scarce-output distribution).
 - **Objections v0.10:** OA8 (OP-9 / P5 preference revelation), OA2 (OP-10 weighting governance — the objective-function residue), the objective-function screening question.
 - **Overview v0.7:** §0, §6 (pledges vs signals), §9 (the calculation objection, plain-language).
 - **Open problems this reply *depends on*:** **OP-10** (the objective-function edge of §5, the Hayek residue of §6) and **OP-22** (public-flows privacy, which the pledge-transparency story rests on).

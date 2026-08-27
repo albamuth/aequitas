@@ -37,4 +37,4 @@ Aequitas doesn't need it. Since [[cost-not-price]] means copying an idea costs o
 
 ---
 *Status: provisional*
-*Source: `00-strategy/Aequitas_Foundations_v0.2.md` §6.3*
+*Source: `00-strategy/Aequitas_Foundations_v0.2.md` §4.6*

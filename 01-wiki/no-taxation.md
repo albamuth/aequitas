@@ -25,7 +25,7 @@ Note this is *not* a libertarian claim. Aequitas keeps municipal government, pla
 
 The obvious question a skeptic asks: **who decides how many civil servants to credit?** "Credited directly for service" doesn't answer how much service is authorized. Without an allocation mechanism this becomes either unlimited (inflationary in real terms) or centrally decided (an authority, contra A8).
 
-This is [[service-credit]] / OP-1 again, and it means **§7.4's claim is currently downstream of the project's largest unsolved problem.** Don't present it as settled in public writing until OP-1 resolves.
+This is [[service-credit]] / OP-1 again, and it means **§5.4's claim is currently downstream of the project's largest unsolved problem.** Don't present it as settled in public writing until OP-1 resolves.
 
 ## Depends on
 
@@ -41,4 +41,4 @@ This is [[service-credit]] / OP-1 again, and it means **§7.4's claim is current
 
 ---
 *Status: provisional — depends on OP-1*
-*Source: `00-strategy/Aequitas_Foundations_v0.2.md` §7.4*
+*Source: `00-strategy/Aequitas_Foundations_v0.2.md` §5.4*

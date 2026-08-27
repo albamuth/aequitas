@@ -60,4 +60,4 @@ This closes the loop with Q1: **labour is abundant.** Q1 showed an autarkic US i
 - Housing deficit (1.13B in slums; up to 3.4B inadequately housed) — [UN-Habitat World Cities Report](https://unhabitat.org/world-cities-report-2026).
 - Wasteful/captured fraction — Q2, [`q2_capture.py`](q2_capture.py).
 
-*Tracks Foundations v0.11 §6 (pledges, not a planner) / §7.5. Closes the loop with Q1 (labour abundant) and Q2 (the captured pool).*
+*Tracks Foundations v0.11 §6 (pledges, not a planner) / §5.5. Closes the loop with Q1 (labour abundant) and Q2 (the captured pool).*

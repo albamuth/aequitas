@@ -17,14 +17,14 @@ The headline property (EventLog §7.1): **IC-1 … IC-9 need no trust model, no 
 >
 > **2. Recomputation proves consistency, never completeness.** This page previously said *"an unrecorded emission is not an enforcement problem; it is an arithmetic error the log itself reports."* **That is true of an UNDER-DECLARED emission on a RECORDED event. It is false of a process recorded nowhere.** A perfectly balanced log of a fictional economy passes every check.
 >
-> **Arithmetic over one log tests that log against itself.** Finding a hole needs a record made on a **separate path** — Foundations §5.1b's closure witness, and conformance requirement **14b**. *(Narrowed in EventLog v0.8 §7.1 and Objections **OA12**; this page was not updated with them until 2026-08-27.)*
+> **Arithmetic over one log tests that log against itself.** Finding a hole needs a record made on a **separate path** — Foundations §4.4's closure witness, and conformance requirement **14b**. *(Narrowed in EventLog v0.8 §5.1 and Objections **OA12**; this page was not updated with them until 2026-08-27.)*
 
 ```bash
 python arithmetic_audits.py            # build log, run all checks, print the report
 python arithmetic_audits.py --test     # self-tests only (pytest-free)
 ```
 
-**The verdict now declares its own extent (EventLog v0.8 §7.4).** `print_extent_block()` prints `(result, domain, extent, closure-basis)` beside the pass/fail lines, and for this scenario the closure basis is **NONE** — no reservoir reconciliation, no external counterparty, no independent total *N*, and two origin termini (`G1`, `G2`) that the log cannot re-derive from its own bytes. Five blind spots are named explicitly, the first being that a process recorded **nowhere** is invisible to every check here. **This was added because OP-26 punished exactly the claim this module used to make**: a bare `12/12` reads as completeness when it only ever meant consistency. Read the verdict as *12/12 over that extent, with no closure basis.*
+**The verdict now declares its own extent (EventLog v0.8 §5.4).** `print_extent_block()` prints `(result, domain, extent, closure-basis)` beside the pass/fail lines, and for this scenario the closure basis is **NONE** — no reservoir reconciliation, no external counterparty, no independent total *N*, and two origin termini (`G1`, `G2`) that the log cannot re-derive from its own bytes. Five blind spots are named explicitly, the first being that a process recorded **nowhere** is invisible to every check here. **This was added because OP-26 punished exactly the claim this module used to make**: a bare `12/12` reads as completeness when it only ever meant consistency. Read the verdict as *12/12 over that extent, with no closure basis.*
 
 **Status: 12/12 clean checks pass, 12/12 injected violations caught**, plus the two v0.4 projection properties demonstrated. Reuses (does **not** rebuild) the recursion sim's proven forward solver for IC-10's recursive layer.
 
@@ -65,7 +65,7 @@ A cheese-sandwich chain plus the awkward parts the spec cares about:
 
 - **13 events, 6 parcels, 6 accounts, 4 pledges** (one object-backed, one public-good, one outstanding, one burned). Every non-genesis event mass- and energy-balances; energy inputs are declared as dissipated heat.
 - **Joint production is in the sandwich.** Milling (grain → flour + bran) is the co-product case (EventLog §10.4). Its **mass** split (7:3) is read from the event's own outputs; its **energy** split (0.62:0.38) comes from the process-energetics model — *not* the mass ratio, because milling energy goes into size-reduction, not sieving.
-- **No event carries a split fraction.** There is no field for one (§9); the split is computed at projection time (§7.1a).
+- **No event carries a split fraction.** There is no field for one (§9); the split is computed at projection time (§5.1a).
 
 ---
 
@@ -94,11 +94,11 @@ A cheese-sandwich chain plus the awkward parts the spec cares about:
 
 This module was first built in the C11 session, then fell **behind the theory** when the credit-realization interview bumped the four core docs. The rework re-aligned it:
 
-1. **Data-first co-product split (§7.1a).** The split (`theta`) is no longer a stored field on the event. It is computed at projection time: **from the event's own measured output masses** where the dimension is metered, falling back to the published process-energetics model only for a dimension the event did not measure (here, energy). Because there is **no field for a split fraction (§9)**, a self-serving split has nowhere to live — so the projection-side violations (IC-10, IC-11) now live in the **energetics model**, the only place a chosen number exists.
+1. **Data-first co-product split (§5.1a).** The split (`theta`) is no longer a stored field on the event. It is computed at projection time: **from the event's own measured output masses** where the dimension is metered, falling back to the published process-energetics model only for a dimension the event did not measure (here, energy). Because there is **no field for a split fraction (§9)**, a self-serving split has nowhere to live — so the projection-side violations (IC-10, IC-11) now live in the **energetics model**, the only place a chosen number exists.
 
 2. **Genesis is a distinct origin-terminus, not a reservoir (§2.2, IC-3).** The two pre-Aequitas assets (tool, spare part) enter by a **genesis entry** — no reservoir input, no parcel ancestry — with the *estimator* credited for the estimation work. IC-1/IC-2 exempt genesis (it admits pre-existing mass); IC-3 accepts a genesis root as legitimate but distinct from a reservoir extraction.
 
-3. **A pledge is a permanent, non-revocable grant of debit-room, drawn 1:1 from the pledger's finite lifetime budget — not a promise to buy (§5.1, IC-9; Foundations v0.14).** It moves no debit by itself and cannot be withdrawn; an undischarged pledge that reaches expiry **burns** (its budget is lost, never returned). The scenario carries all cases: an **object-backed** pledge (the tool repair yields a held object, whose debit follows possession under IC-5 to whoever accepts it — here the pledger, but **not required** to be), a **public-good** pledge (mowing a verge — no held object, no property-debit moves), an **outstanding** (undischarged) pledge, and a **burned** pledge (reached expiry unspent — its budget is gone but, being a *permanent* spend, it **still counts** against IC-8). **IC-8 is cumulative**: the sum of *all* an account's pledges (discharged, outstanding, burned) may not exceed its *lifetime* earned credit. **IC-9 catches** a pledge discharged by an event occurring *after* it expired — it had already burned, so it cannot discharge.
+3. **A pledge is a permanent, non-revocable grant of debit-room, drawn 1:1 from the pledger's finite lifetime budget — not a promise to buy (§4.1, IC-9; Foundations v0.14).** It moves no debit by itself and cannot be withdrawn; an undischarged pledge that reaches expiry **burns** (its budget is lost, never returned). The scenario carries all cases: an **object-backed** pledge (the tool repair yields a held object, whose debit follows possession under IC-5 to whoever accepts it — here the pledger, but **not required** to be), a **public-good** pledge (mowing a verge — no held object, no property-debit moves), an **outstanding** (undischarged) pledge, and a **burned** pledge (reached expiry unspent — its budget is gone but, being a *permanent* spend, it **still counts** against IC-8). **IC-8 is cumulative**: the sum of *all* an account's pledges (discharged, outstanding, burned) may not exceed its *lifetime* earned credit. **IC-9 catches** a pledge discharged by an event occurring *after* it expired — it had already burned, so it cannot discharge.
 
 4. **Entity-record continuity, not a within-event id match (Q1).** Parcels are persistent records with a lifecycle; "survival" through an event is the record continuing (a transfer, or a debit-increasing repair keeps the same record), not a coincidence of the same id on both sides.
 
@@ -106,8 +106,8 @@ This module was first built in the C11 session, then fell **behind the theory** 
 
 ### Two new projection properties (demonstrated, not pass/fail ICs)
 
-- **Credit realization (§7.3).** Credit is always *recorded* (A7/IC-3 — unpledged wheat still has a grower), but it *realizes* only on **verification of the output**; for a physical good the verifying event is the **hand-off** (a receiver accepting custody attests the goods exist). Every producer in the clean chain realizes — each output is handed off or accepted by a distinct party. A maker who keeps their output with no hand-off is `UNREALIZED` (their credit simply is not counting yet — no rule is broken).
-- **Creation-cost holding-time (§2.2, Foundations §6.2b).** The clock starts at the **deployment marker**, so the genesis→deployment gap accrues no share, and a pre-deployment **transit custodian accrues nothing** — a carrier who held 1,000 toasters for two days did not make them.
+- **Credit realization (§5.3).** Credit is always *recorded* (A7/IC-3 — unpledged wheat still has a grower), but it *realizes* only on **verification of the output**; for a physical good the verifying event is the **hand-off** (a receiver accepting custody attests the goods exist). Every producer in the clean chain realizes — each output is handed off or accepted by a distinct party. A maker who keeps their output with no hand-off is `UNREALIZED` (their credit simply is not counting yet — no rule is broken).
+- **Creation-cost holding-time (§2.2, Foundations §4.5).** The clock starts at the **deployment marker**, so the genesis→deployment gap accrues no share, and a pre-deployment **transit custodian accrues nothing** — a carrier who held 1,000 toasters for two days did not make them.
 
 ---
 

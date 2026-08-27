@@ -73,9 +73,9 @@
 
 | Case | Where it goes |
 |---|---|
-| **Public education** | **Not a consumption category at all.** §6.2: training is **front-loaded credited work** — the student is credited for their time and pledgers underwrite the cost. **It appears on the credit side, not as something a household consumes.** Nothing to substitute |
-| **Roads and transport infrastructure** | **Inside the transport chain.** §7.4: *"infrastructure users carry proportional debit by usage."* A usage-proportional term on the transport categories, not a sixth chain |
-| **⬜ Policing, defence, public administration** | **Genuinely open. Parked.** §7.4 says civil servants are credited directly and there is nothing to collect — but *who carries the debit of a collectively-consumed service* is not settled anywhere. **Do not invent an answer to fit a simulator.** Registered as an open question |
+| **Public education** | **Not a consumption category at all.** §4.5: training is **front-loaded credited work** — the student is credited for their time and pledgers underwrite the cost. **It appears on the credit side, not as something a household consumes.** Nothing to substitute |
+| **Roads and transport infrastructure** | **Inside the transport chain.** §5.4: *"infrastructure users carry proportional debit by usage."* A usage-proportional term on the transport categories, not a sixth chain |
+| **⬜ Policing, defence, public administration** | **Genuinely open. Parked.** §5.4 says civil servants are credited directly and there is nothing to collect — but *who carries the debit of a collectively-consumed service* is not settled anywhere. **Do not invent an answer to fit a simulator.** Registered as an open question |
 
 ---
 
@@ -123,11 +123,11 @@ The Consumer Expenditure Survey records **what a household paid for out of its o
 
 | Split | What moves | Verdict |
 |---|---|---|
-| **New build vs existing stock** | **Probably the single biggest determinant of housing debit under Aequitas.** A new build carries full creation-cost; a 100-year-old house leaves the new holder a tiny holding-time share (§6.2b). **This is "used goods enter cheap," and nobody has ever simulated it.** | ✅ **Recommend take** |
+| **New build vs existing stock** | **Probably the single biggest determinant of housing debit under Aequitas.** A new build carries full creation-cost; a 100-year-old house leaves the new holder a tiny holding-time share (§4.5). **This is "used goods enter cheap," and nobody has ever simulated it.** | ✅ **Recommend take** |
 | **Floor area per person** | Multiplies creation-cost *and* energy directly. **US ~700 sq ft per person, Europe ~400, much of the world far less. The biggest single lever between locales.** | ✅ **Recommend take** |
 | **Heating fuel and climate zone** | Energy per sq ft varies enormously (EIA RECS). **And it is the case that tests §3.2b's real-time-dispatch rule** — electricity follows the consumer's *contracted supply mix*, not the grid average. | ✅ **Recommend take** |
 | **Detached vs multi-family** | Shared walls cut energy per unit sharply, and creation-cost per person falls. **But much of it is already captured by floor area per person.** | ⬜ **Ask** — take only if it moves separately |
-| **Own vs rent** | **I believe this dissolves.** §3.2 puts property debit on the *holder*, and a renter holds the dwelling — they occupy it. **Rent does not exist under Aequitas (§7.1).** Same physical building, same energy, same holding time. | ⬜ **Recommend: no split — but record it as tested-and-dissolved.** That is a publishable finding in itself |
+| **Own vs rent** | **I believe this dissolves.** §3.2 puts property debit on the *holder*, and a renter holds the dwelling — they occupy it. **Rent does not exist under Aequitas (§5.1).** Same physical building, same energy, same holding time. | ⬜ **Recommend: no split — but record it as tested-and-dissolved.** That is a publishable finding in itself |
 | **Remediation debt by site type** (§3.7) | Greenfield vs brownfield vs already-urban. | ❌ **Not v0.2.** §3.7 flags the "natural state baseline" as an *open theory question*. Modelling it would be inventing an answer |
 
 ---
@@ -137,7 +137,7 @@ The Consumer Expenditure Survey records **what a household paid for out of its o
 | Split | What moves | Verdict |
 |---|---|---|
 | **Mode: car / transit / walk-cycle / air** | Enormous per-passenger-km differences. **Air is the outlier by far.** | ✅ **Recommend take** |
-| **Purchase vs operation** | **Not really a subsector — it is the §6.2a capital/consumption boundary.** The car is capital, holding-time split; the fuel is consumption. **Mandatory anyway under IC-4 fate closure.** | ✅ **Take as a required field, not a category** |
+| **Purchase vs operation** | **Not really a subsector — it is the §4.5 capital/consumption boundary.** The car is capital, holding-time split; the fuel is consumption. **Mandatory anyway under IC-4 fate closure.** | ✅ **Take as a required field, not a category** |
 | **Powertrain: combustion / hybrid / electric** | Moves `energy_mj` and pollution hard — **and it is the cleanest test of the real-time-dispatch rule**, where an electric car's emissions follow the contracted supply mix. | ✅ **Recommend take** |
 | **Distance travelled per person per year** | Suburban vs urban, a 2–3× spread. | ⬜ **A cohort attribute, not a subsector** |
 
@@ -149,7 +149,7 @@ The Consumer Expenditure Survey records **what a household paid for out of its o
 |---|---|---|
 | **Insurance premium vs care delivered** | See the red finding above. **The premium is a financial instrument and vanishes under A1; the care does not.** | 🔴 **Question 1** |
 | **Preventive / acute / chronic / end-of-life** | Very different intensities **and very different age profiles.** **This is what makes the ageing cohort model earn its place** — healthcare is where age actually bites. | ⬜ **Ask** |
-| **Drugs / procedures / practitioner time** | Different dimensions entirely. **And drug development is a textbook Front-Loading Rule case (§6.2a)** — R&D front-loaded and pledged, never amortised onto the patient. | ⬜ **Ask** — high theory value |
+| **Drugs / procedures / practitioner time** | Different dimensions entirely. **And drug development is a textbook Front-Loading Rule case (§4.5)** — R&D front-loaded and pledged, never amortised onto the patient. | ⬜ **Ask** — high theory value |
 
 ---
 
@@ -157,8 +157,8 @@ The Consumer Expenditure Survey records **what a household paid for out of its o
 
 | Split | What moves | Verdict |
 |---|---|---|
-| **Pets, toys, hobbies ($1,057) vs fees and admissions ($951) vs supplies and equipment ($653)** | **These behave under completely different rules.** A cinema ticket is delivery-only (§6.2a). **A pet is ongoing material consumption — closer to food than to media.** | ✅ **Take. Effectively forced** |
-| **Physical media and devices vs streamed** | Devices are capital (§6.2b); streaming is bandwidth and power, real-time dispatched, so the consumer's under §3.2b. | ⬜ **Small share, clean test.** Ask |
+| **Pets, toys, hobbies ($1,057) vs fees and admissions ($951) vs supplies and equipment ($653)** | **These behave under completely different rules.** A cinema ticket is delivery-only (§4.5). **A pet is ongoing material consumption — closer to food than to media.** | ✅ **Take. Effectively forced** |
+| **Physical media and devices vs streamed** | Devices are capital (§4.5); streaming is bandwidth and power, real-time dispatched, so the consumer's under §3.2b. | ⬜ **Small share, clean test.** Ask |
 
 ---
 
@@ -166,7 +166,7 @@ The Consumer Expenditure Survey records **what a household paid for out of its o
 
 | Field | Why it is mandatory |
 |---|---|
-| **Durable vs consumable** | **IC-4 fate closure** and §6.2a's capital/consumption boundary. *"Does the thing survive the process?"* — a drill bit is capital, the oil it burned is consumption. **This is what closes the consumption-launderer**, so it cannot be optional |
+| **Durable vs consumable** | **IC-4 fate closure** and §4.5's capital/consumption boundary. *"Does the thing survive the process?"* — a drill bit is capital, the oil it burned is consumption. **This is what closes the consumption-launderer**, so it cannot be optional |
 
 ---
 
