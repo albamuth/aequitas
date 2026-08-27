@@ -3,7 +3,7 @@
 
 > **Version:** 0.6 · **Date:** 2026-08-27
 > **Audience: implementers.** Anyone building a trust network.
-> **Companion:** [`Aequitas_Foundations_v0.27.md`](Aequitas_Foundations_v0.27.md) — the system itself, and the argument for every row below. **Where the two differ, Foundations governs.**
+> **Companion:** [`Aequitas_Foundations_v0.28.md`](Aequitas_Foundations_v0.28.md) — the system itself, and the argument for every row below. **Where the two differ, Foundations governs.**
 > **Version history:** v0.1 (2026-08-25) extracted from Foundations §9. **v0.2 (2026-08-25) deleted requirement 17 by author ruling** — see §4. **v0.3 (2026-08-27) added requirement 4a**, *comparison, never conversion*, and recorded two gaps. **v0.4 (2026-08-27) ruled those gaps in as requirements 17a and 17b** — see §5. **v0.5 (2026-08-27) repaired rows 13 and 14a** after the subtraction defect found in Foundations §4.4 — see §5.3. **v0.6 (2026-08-27) adds requirement 16d**, the published evidence rule per kind of work — see §5.5. **The bare number 17 stays retired.**
 > **Where this came from:** it was **Foundations §9** from Foundations v0.18 to v0.23, and moved into its own document on 2026-08-25 by author ruling. **Foundations §9 also carried a restatement of §1.2**, which was cut as redundant rather than moved.
 

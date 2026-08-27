@@ -4,7 +4,7 @@
 > **Version:** 0.10
 > **Date:** 2026-08-27
 > **Status:** Working draft. The structure is settled; the taxonomies and the marked mechanisms are open.
-> **Depends on:** `Aequitas_Foundations_v0.27.md` A1–A8
+> **Depends on:** `Aequitas_Foundations_v0.28.md` A1–A8
 > **Version history & what each version superseded:** `00-strategy/Aequitas_EventLog_CHANGELOG.md`.
 > **Validates against:** the sandwich trace (§10)
 
