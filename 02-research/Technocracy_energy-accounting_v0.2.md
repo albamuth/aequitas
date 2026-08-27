@@ -60,4 +60,4 @@ That list should be *written up and defended*, not just assumed.
 
 ## Related
 
-- [[energy-accounting]] · [[protocol-governance]] · [[calculation-in-kind]] · [[non-fungibility]]
+- [energy-accounting](../01-wiki/energy-accounting.md) · [protocol-governance](../01-wiki/protocol-governance.md) · [calculation-in-kind](../01-wiki/calculation-in-kind.md) · [non-fungibility](../01-wiki/non-fungibility.md)

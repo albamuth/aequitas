@@ -20,21 +20,21 @@ What follows:
 
 This is what makes the ecosystem workable. Two ledgers using different weighting models will produce different absolute figures for the same event and *substantially the same relative positions*. Since Aequitas uses standing to determine what someone may hold and consume — never to price a transaction against a fixed unit — relative scale is sufficient.
 
-It also means a disagreement between ledgers is usually a disagreement about precision, not about facts, because the underlying [[event-record]] log is shared and its physical quantities are not model-dependent.
+It also means a disagreement between ledgers is usually a disagreement about precision, not about facts, because the underlying [event-record](event-record.md) log is shared and its physical quantities are not model-dependent.
 
 ## Why this is the right shape
 
-It is [[protocol-governance]] (A8) applied to infrastructure: capture of one implementation gets you one implementation. It is also the only honest response to the state of the data — the measurements genuinely are scattered across science, industry, and estimation, and pretending otherwise would build in a false authority.
+It is [protocol-governance](protocol-governance.md) (A8) applied to infrastructure: capture of one implementation gets you one implementation. It is also the only honest response to the state of the data — the measurements genuinely are scattered across science, industry, and estimation, and pretending otherwise would build in a false authority.
 
 ## Depends on
 
-- [[derived-ledger]] — the log is shared; the weighting and tallying are not
-- [[protocol-governance]]
+- [derived-ledger](derived-ledger.md) — the log is shared; the weighting and tallying are not
+- [protocol-governance](protocol-governance.md)
 
 ## Consequences
 
-- [[distributed-auditing]]
-- [[retroactive-reweighting]] — competing models are how weighting-model capture is resisted
+- [distributed-auditing](distributed-auditing.md)
+- [retroactive-reweighting](retroactive-reweighting.md) — competing models are how weighting-model capture is resisted
 
 ## Open questions
 

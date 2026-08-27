@@ -45,4 +45,4 @@ Dapprich's point that some limits can't be reduced to labour-time also directly 
 
 ## Related
 
-- [[price-equals-cost]] · [[no-externalities]] · [[calculation-in-kind]] · [[material-flow-value]] · [Neurath: calculation in kind](../00-strategy/GLOSSARY.md#src-neurath-calculation-in-kind) · [Cockshott & Cottrell: labour-time](../00-strategy/GLOSSARY.md#src-cockshott-cottrell-labour-time)
+- [price-equals-cost](../01-wiki/cost-not-price.md) · [no-externalities](../01-wiki/no-externalities.md) · [calculation-in-kind](../01-wiki/calculation-in-kind.md) · [material-flow-value](../01-wiki/material-flow-value.md) · [Neurath: calculation in kind](../00-strategy/GLOSSARY.md#src-neurath-calculation-in-kind) · [Cockshott & Cottrell: labour-time](../00-strategy/GLOSSARY.md#src-cockshott-cottrell-labour-time)

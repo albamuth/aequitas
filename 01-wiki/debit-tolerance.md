@@ -12,27 +12,27 @@ The basic-needs mechanism. Three parts:
 
 ## Why it works this way
 
-Without a floor, [[consumption-debit]] makes existence itself insolvent — a newborn is born owing oxygen. The tolerance is what makes permanent consumption debit survivable rather than cruel.
+Without a floor, [consumption-debit](consumption-debit.md) makes existence itself insolvent — a newborn is born owing oxygen. The tolerance is what makes permanent consumption debit survivable rather than cruel.
 
-Deriving it from *actual production under even distribution* rather than picking a number is the key move: it keeps the floor tied to physical reality ([[material-flow-value]]) instead of to a political decision, which would introduce exactly the authority A8 forbids.
+Deriving it from *actual production under even distribution* rather than picking a number is the key move: it keeps the floor tied to physical reality ([material-flow-value](material-flow-value.md)) instead of to a political decision, which would introduce exactly the authority A8 forbids.
 
 Crediting the provider unconditionally is equally important. It means the person in debt is never turned away, *and* the person helping them is never penalized for helping — which is where most welfare systems break.
 
 ## Who games this
 
-**Tolerance farming.** If tolerance is per-account and essentials always flow, the exploit is fake or marginal accounts harvesting the floor. This makes proof-of-personhood ([[verification-ladder]], C6) a hard requirement rather than a nice-to-have — one verified human, one account.
+**Tolerance farming.** If tolerance is per-account and essentials always flow, the exploit is fake or marginal accounts harvesting the floor. This makes proof-of-personhood ([verification-ladder](verification-ladder.md), C6) a hard requirement rather than a nice-to-have — one verified human, one account.
 
 Second: the boundary between "essential" and "non-essential" is a live political surface. Whoever draws it has power. That definition needs to be either physically grounded or locally variant under A8, not centrally decided.
 
 ## Depends on
 
-- [[consumption-debit]]
-- [[production-credit]]
-- [[statistical-coverage]]
+- [consumption-debit](consumption-debit.md)
+- [production-credit](production-credit.md)
+- [statistical-coverage](statistical-coverage.md)
 
 ## Consequences
 
-- [[no-taxation]] — no redistribution needed; the floor is structural
+- [no-taxation](no-taxation.md) — no redistribution needed; the floor is structural
 
 ## Open questions
 

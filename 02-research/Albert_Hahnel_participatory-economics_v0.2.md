@@ -47,4 +47,4 @@ Parecon rests on four pieces:
 
 ## Related
 
-- [[service-credit]] · [[price-equals-cost]] · [[calculation-in-kind]] · [[material-flow-value]] · [[debit-tolerance]] · [[coordinator-class]]
+- [service-credit](../01-wiki/service-credit.md) · [price-equals-cost](../01-wiki/cost-not-price.md) · [calculation-in-kind](../01-wiki/calculation-in-kind.md) · [material-flow-value](../01-wiki/material-flow-value.md) · [debit-tolerance](../01-wiki/debit-tolerance.md) · [[coordinator-class]]

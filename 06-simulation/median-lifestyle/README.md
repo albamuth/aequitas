@@ -41,9 +41,9 @@ Needs `numpy`, `openpyxl`, and `pymrio` for the import tracks.
 
 ## Data
 
-**The Bureau of Labor Statistics tables live in the shared [`../data/`](../data/) folder**, not in this project, because the Statera kernel will need them too. The scripts reach up one level to find them.
+**The Bureau of Labor Statistics tables live in the shared `../data/` folder**, not in this project, because the Statera kernel will need them too. **That folder is 288 MB and is not published; download the tables from [the BLS programme page](https://web.archive.org/web/2025/https://www.bls.gov/emp/data/input-output-matrix.htm) to reproduce this.** The scripts reach up one level to find them.
 
-> **⚠️ The Bureau of Labor Statistics withdrew the Employment Requirements matrices on 2026-02-06.** The copies in `../data/erm_full/` were recovered through the [Internet Archive](https://web.archive.org/) and are the only ones we have. **Do not delete them.**
+> **⚠️ The Bureau of Labor Statistics withdrew the Employment Requirements matrices on 2026-02-06.** The copies in `../data/erm_full/` were recovered through the **[Internet Archive](https://web.archive.org/web/2025/https://www.bls.gov/emp/data/input-output-matrix.htm)** and are the only ones we have. **Do not delete them.**
 
 The EXIOBASE table (`../data/exiobase/IOT_2022_pxp.zip`, 234 MB) takes one to three minutes to parse, so the two scripts that use it cache their answers in `track3_result.json` and `track6_country_result.json`. Those caches are checked in, and the self-tests read them.
 

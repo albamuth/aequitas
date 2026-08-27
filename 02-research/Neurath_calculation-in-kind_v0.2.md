@@ -37,7 +37,7 @@ Ranked by how dangerous each is to the project:
 
 1. **Whose want wins? — the weakest link.** Cost tells you what a thing *takes*. It does *not* tell you which of two people who both want the last one should get it. Aequitas's answer to this lives in two mechanisms: **pledges** (people put their earned credit behind the things they want made, which is how demand enters the system) and a **debit tolerance** (a personal allowance that guarantees everyone's basic needs before any luxury). A trained economist will attack right here first, so the reply has to be airtight. See the pledges mechanism in [Foundations §6.4 (pledges and signals)](../00-strategy/Aequitas_Foundations_v0.13.md#64-pledges-and-signals) and the guaranteed floor in [Foundations §7.5 (the basic-needs floor)](../00-strategy/Aequitas_Foundations_v0.13.md#75-the-basic-needs-floor).
 2. **Hayek's "unwritten knowledge" point is only partly answered.** Aequitas gathers its data *locally* — the person on the spot, the meter on the machine — rather than demanding one central authority collect everything, and that is a real reply. But a sensor records a *measurement*, not the situated gut-feel Hayek was pointing at. Aequitas's honest out is that it isn't a *plan* at all: it sets no targets, so it doesn't need to gather that tacit knowledge in the first place.
-3. **Can the sums actually be done at full scale?** Aequitas recomputes affected history whenever the understanding of a cost improves (the "fix it once the science catches up" rule, [[retroactive-reweighting]]). Mises's objection was about principle; this one is practical, and might bite harder. Cockshott & Cottrell suggest it's tractable, but it needs demonstrating.
+3. **Can the sums actually be done at full scale?** Aequitas recomputes affected history whenever the understanding of a cost improves (the "fix it once the science catches up" rule, [retroactive-reweighting](../01-wiki/retroactive-reweighting.md)). Mises's objection was about principle; this one is practical, and might bite harder. Cockshott & Cottrell suggest it's tractable, but it needs demonstrating.
 4. **Neurath's own scheme was centrally planned. Aequitas is not.** Do not let critics saddle Aequitas with Neurath's politics just because it borrows his method — say so plainly, because they will assume otherwise.
 
 ## To do
@@ -49,4 +49,4 @@ Ranked by how dangerous each is to the project:
 
 ## Related
 
-- [[calculation-in-kind]] · [[material-flow-value]] · [[price-equals-cost]] · [[energy-accounting]] · [Cockshott & Cottrell: labour-time](../00-strategy/GLOSSARY.md#src-cockshott-cottrell-labour-time)
+- [calculation-in-kind](../01-wiki/calculation-in-kind.md) · [material-flow-value](../01-wiki/material-flow-value.md) · [price-equals-cost](../01-wiki/cost-not-price.md) · [energy-accounting](../01-wiki/energy-accounting.md) · [Cockshott & Cottrell: labour-time](../00-strategy/GLOSSARY.md#src-cockshott-cottrell-labour-time)

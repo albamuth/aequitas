@@ -57,9 +57,9 @@ Four types. Nothing else exists in the log.
 
 **`Event`** — a bounded transformation of the world. The only record that is ever written.
 
-**`Parcel`** — a bounded quantity of stuff with an identity and a custody holder. Parcels are created, split, merged, and destroyed *by events*. Parcels carry [[property-debit]].
+**`Parcel`** — a bounded quantity of stuff with an identity and a custody holder. Parcels are created, split, merged, and destroyed *by events*. Parcels carry [property-debit](../01-wiki/property-debit.md).
 
-**`Reservoir`** — an unowned commons: an airshed, a watershed, an ore body, a soil column, a landfill, the biosphere. Reservoirs have no holder, so flows into them become permanent [[consumption-debit]] on the agent responsible.
+**`Reservoir`** — an unowned commons: an airshed, a watershed, an ore body, a soil column, a landfill, the biosphere. Reservoirs have no holder, so flows into them become permanent [consumption-debit](../01-wiki/consumption-debit.md) on the agent responsible.
 
 **`Account`** — one verified human, or an institution composed of them. Accounts hold parcels and act as agents.
 
@@ -138,11 +138,11 @@ A tally whose source lies outside the system — an FAO figure, a national censu
 
 An event says *0.070 kg of wheat, 1.4 MJ, 340 seconds of human presence, 0.035 kg CO₂ to airshed-EU-W*. It never says what any of that is worth.
 
-Cost is produced at **projection time** by applying the current weighting model to the log. This is A6 (derived, not stored) stated structurally, and it is what makes [[retroactive-reweighting]] mechanical rather than miraculous: improving the science changes the model, not the history. Nothing is rewritten; everything recomputes.
+Cost is produced at **projection time** by applying the current weighting model to the log. This is A6 (derived, not stored) stated structurally, and it is what makes [retroactive-reweighting](../01-wiki/retroactive-reweighting.md) mechanical rather than miraculous: improving the science changes the model, not the history. Nothing is rewritten; everything recomputes.
 
 Corollary: **the log is valid independently of any weighting model.** Two communities running different models read the same log and disagree about balances while agreeing entirely about facts. That is the decentralization criterion holding at the data layer.
 
-This is deliberate, not tolerated. There is no single authoritative Aequitas database and there will not be one — competing implementations, reconciliation between them, and possibly averaging services are the expected end state ([[ledger-ecosystem]]). **What must agree across implementations is the physical record; what may differ is the weighting.**
+This is deliberate, not tolerated. There is no single authoritative Aequitas database and there will not be one — competing implementations, reconciliation between them, and possibly averaging services are the expected end state ([ledger-ecosystem](../01-wiki/ledger-ecosystem.md)). **What must agree across implementations is the physical record; what may differ is the weighting.**
 
 <!-- tag: evt-s3-1 -->
 ### 3.1 Debit is a vector, and splits happen on the vector
@@ -191,11 +191,11 @@ Basis = recalled | testified | logged | instrumented | imaged | modelled | alloc
 
 Two things this ladder is designed to capture:
 
-**Word of mouth is a legitimate basis.** `recalled` is not a defect to be tolerated — it is the rung on which [[verification-ladder]] Level 1 actually runs. What distinguishes it is low confidence and easy supersession, not exclusion.
+**Word of mouth is a legitimate basis.** `recalled` is not a defect to be tolerated — it is the rung on which [verification-ladder](../01-wiki/verification-ladder.md) Level 1 actually runs. What distinguishes it is low confidence and easy supersession, not exclusion.
 
-**`imaged` behaves unlike every other basis.** A meter reading is a number someone recorded; the underlying reality is gone. An image is *re-interpretable later by better analysis*. Imagery is the only basis that gets **better retroactively without a new observation**, which makes it uniquely valuable to [[retroactive-reweighting]].
+**`imaged` behaves unlike every other basis.** A meter reading is a number someone recorded; the underlying reality is gone. An image is *re-interpretable later by better analysis*. Imagery is the only basis that gets **better retroactively without a new observation**, which makes it uniquely valuable to [retroactive-reweighting](../01-wiki/retroactive-reweighting.md).
 
-> **`allocated` carries a specific meaning.** It marks a quantity apportioned from a coarser parent — and where that parent is a **joint process**, the apportionment is now governed by [[co-product-allocation]]: the share is measured from where the process physically sent its inputs, not chosen from a menu. `allocated` therefore names *how the number was reached*, and the confidence attached to it should reflect the quality of the process-physics data used, not the quality of the parent measurement alone.
+> **`allocated` carries a specific meaning.** It marks a quantity apportioned from a coarser parent — and where that parent is a **joint process**, the apportionment is now governed by [co-product-allocation](../01-wiki/co-product-allocation.md): the share is measured from where the process physically sent its inputs, not chosen from a menu. `allocated` therefore names *how the number was reached*, and the confidence attached to it should reflect the quality of the process-physics data used, not the quality of the parent measurement alone.
 
 <!-- tag: evt-s4-1a -->
 ### 4.1a Provenance — the citation beside the axes
@@ -267,7 +267,7 @@ With them, any aggregation can report its own composition — *"this balance is 
 - **Confidence and resolution propagate downstream** through the parcel DAG. A product built from testified inputs cannot claim instrumented certainty about its footprint.
 - **Upgrading is ordinary.** A record improves by supersession (§8) as better evidence arrives.
 
-**Allocation instruments sit on the same ladder**. Splitting a carcass by mass is the Level 1 reading of the same rule whose Level 3 reading is calorimetry. The instrument differs by rung; the justification does not. This is why [[co-product-allocation]] required no new schema and no new ladder.
+**Allocation instruments sit on the same ladder**. Splitting a carcass by mass is the Level 1 reading of the same rule whose Level 3 reading is calorimetry. The instrument differs by rung; the justification does not. This is why [co-product-allocation](../01-wiki/co-product-allocation.md) required no new schema and no new ladder.
 
 ---
 
@@ -289,7 +289,7 @@ Three reasons this cannot live inside the event:
 
 1. Attestations arrive **later**, sometimes years later. An event with mutable attestation fields is not immutable.
 2. An event can accrue **unboundedly many**, including disputes.
-3. Different [[verification-ladder]] levels attach differently to the *same* event.
+3. Different [verification-ladder](../01-wiki/verification-ladder.md) levels attach differently to the *same* event.
 
 **Events are immutable. Attestations accrete.**
 
@@ -432,7 +432,7 @@ Because the log is physical, it admits **conservation checks**. This is the sche
 
 IC-1 through IC-7 are **pure arithmetic on the log.** They require no social graph, no reputation system, no authority, and no inspection — only the ability to recompute.
 
-**If a factory's declared outputs do not mass-balance its declared inputs, the missing mass went somewhere unrecorded — and the log itself says so.** An **under-declared** emission stops being an enforcement problem and becomes an arithmetic error: the inputs are on the books, the outputs are on the books, and the difference has nowhere to go. That is [[no-externalities]] with teeth, and it is the single most compelling technical argument the project has.
+**If a factory's declared outputs do not mass-balance its declared inputs, the missing mass went somewhere unrecorded — and the log itself says so.** An **under-declared** emission stops being an enforcement problem and becomes an arithmetic error: the inputs are on the books, the outputs are on the books, and the difference has nowhere to go. That is [no-externalities](../01-wiki/no-externalities.md) with teeth, and it is the single most compelling technical argument the project has.
 
 > **The limit of that claim, stated precisely.** It is a statement about **recorded** processes. Arithmetic over a set testifies to nothing outside the set, so a process recorded *nowhere* — one whose inputs came from an unrecorded source and whose outputs went to an unrecorded sink — is not an arithmetic error. **It is a coverage question, and coverage is answered by Foundations §4.4, not by IC-1…IC-9.**
 >
@@ -639,10 +639,10 @@ The schema has no field for: **price · wage · rate · profit · margin · inte
 
 | Absent | Axiom |
 |---|---|
-| price, margin, profit | A5 (cost, not price) — [[cost-not-price]] |
-| wage, rate, multiplier | A2 (time as measure) — [[time-as-yardstick]] |
-| currency, transferable credit | A3 (non-fungibility) — [[non-fungibility]] |
-| balance, account total | A6 (derived, not stored) — [[derived-ledger]] |
+| price, margin, profit | A5 (cost, not price) — [cost-not-price](../01-wiki/cost-not-price.md) |
+| wage, rate, multiplier | A2 (time as measure) — [time-as-yardstick](../01-wiki/time-as-yardstick.md) |
+| currency, transferable credit | A3 (non-fungibility) — [non-fungibility](../01-wiki/non-fungibility.md) |
+| balance, account total | A6 (derived, not stored) — [derived-ledger](../01-wiki/derived-ledger.md) |
 
 A future implementer wanting to reintroduce profit cannot do it by populating a field. They must fork the schema, and the fork is visible to everyone recomputing from the same log.
 

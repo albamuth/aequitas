@@ -77,4 +77,4 @@ A fifth option from the maths literature (the Aumann–Shapley method) is rigoro
 
 ## Related
 
-- [[co-product-allocation]] · [[physical-trace-test]] · [[material-flow-value]] · [[price-equals-cost]] · [[estimation-engine]] · [[event-record]] · [Ellerman: labour theory of property](../00-strategy/GLOSSARY.md#src-ellerman-labor-theory-of-property) · [Estimation-engine data sources](../00-strategy/GLOSSARY.md#src-estimation-engine-data-sources)
+- [co-product-allocation](../01-wiki/co-product-allocation.md) · [physical-trace-test](../01-wiki/physical-trace-test.md) · [material-flow-value](../01-wiki/material-flow-value.md) · [price-equals-cost](../01-wiki/cost-not-price.md) · [estimation-engine](../01-wiki/estimation-engine.md) · [event-record](../01-wiki/event-record.md) · [Ellerman: labour theory of property](../00-strategy/GLOSSARY.md#src-ellerman-labor-theory-of-property) · [Estimation-engine data sources](../00-strategy/GLOSSARY.md#src-estimation-engine-data-sources)

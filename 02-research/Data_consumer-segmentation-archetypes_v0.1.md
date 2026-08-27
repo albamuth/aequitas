@@ -138,4 +138,4 @@ Whatever the source, each cohort needs the same fields, so a real and an invente
 - [Estimation-engine data sources](../00-strategy/GLOSSARY.md#src-estimation-engine-data-sources) — the supply-chain tracing machinery
 - [Cross-country labour efficiency](../00-strategy/GLOSSARY.md#src-cross-country-labour-efficiency) — the Q6 result the locale dial must reproduce
 - [Veblen — conspicuous consumption](../00-strategy/GLOSSARY.md#src-veblen-conspicuous-consumption) — the one classical treatment of *why* consumption differs by group
-- [[statistical-coverage]] · [[estimation-engine]] · [[median-lifestyle]]
+- [statistical-coverage](../01-wiki/statistical-coverage.md) · [estimation-engine](../01-wiki/estimation-engine.md) · [[median-lifestyle]]

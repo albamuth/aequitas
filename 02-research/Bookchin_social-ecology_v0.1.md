@@ -36,4 +36,4 @@ Bears on: the positioning that Aequitas keeps municipal government and civil ser
 
 - [Saadia: Trekonomics](../00-strategy/GLOSSARY.md#src-saadia-trekonomics) — post-scarcity as an "organisational option"
 - [Albert & Hahnel: Participatory Economics](../00-strategy/GLOSSARY.md#src-participatory-economics) — the other directly-democratic non-market model
-- [[no-externalities]]
+- [no-externalities](../01-wiki/no-externalities.md)

@@ -169,4 +169,4 @@ CE 2023 against ERM 2023 is clean. Mixing years needs a price deflator — **and
 - [Estimation-engine data sources](../00-strategy/GLOSSARY.md#src-estimation-engine-data-sources) — the wider machinery and the price-split ruling
 - [Cross-country labour efficiency](../00-strategy/GLOSSARY.md#src-cross-country-labour-efficiency) — what the locale dial must reproduce
 - [Joint-production problem](../00-strategy/GLOSSARY.md#src-joint-production-allocation-problem) — why a sector figure still has to be split at the process
-- [[estimation-engine]] · [[median-lifestyle]] · [[retroactive-reweighting]] · [[price-equals-cost]]
+- [estimation-engine](../01-wiki/estimation-engine.md) · [[median-lifestyle]] · [retroactive-reweighting](../01-wiki/retroactive-reweighting.md) · [price-equals-cost](../01-wiki/cost-not-price.md)

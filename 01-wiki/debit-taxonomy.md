@@ -10,15 +10,15 @@
 
 ## The one thing to hold first: a debit is a vector
 
-A debit is **not one number.** It is a bundle of physical quantities — kilograms of a substance, joules, labour-hours, cubic metres of water, land-area-years — stored separately and collapsed into a single comparable figure only when someone needs to compare two things, using the current [[retroactive-reweighting|weighting model]].
+A debit is **not one number.** It is a bundle of physical quantities — kilograms of a substance, joules, labour-hours, cubic metres of water, land-area-years — stored separately and collapsed into a single comparable figure only when someone needs to compare two things, using the current [weighting model](retroactive-reweighting.md).
 
-> **The load-bearing rule (§3.2a): any division of a debit — across co-products, across a team, across holders — happens per-dimension, *before* collapsing.** Divide the collapsed number instead and whoever maintains the weighting model silently controls every allocation in history. Divide per dimension and the split is weighting-independent. This closed a side entrance to [[protocol-governance|OP-10]].
+> **The load-bearing rule (§3.2a): any division of a debit — across co-products, across a team, across holders — happens per-dimension, *before* collapsing.** Divide the collapsed number instead and whoever maintains the weighting model silently controls every allocation in history. Divide per dimension and the split is weighting-independent. This closed a side entrance to [OP-10](protocol-governance.md).
 
 ---
 
 ## The two kinds, and the behaviour that separates them
 
-| | **[[property-debit|Property debit]]** | **[[consumption-debit|Consumption / pollution debit]]** |
+| | **[Property debit](property-debit.md)** | **[Consumption / pollution debit](consumption-debit.md)** |
 |---|---|---|
 | **What it is** | The debit of a thing you currently hold | What you used up, emitted, or burned |
 | **Term type** | *Current-holdings* — a snapshot of what you hold now | *Permanent-history* — locked into the record forever |
@@ -41,15 +41,15 @@ Conflating these was an internal contradiction before v0.7. They are not the sam
 
 ## Two rules that cut across both branches
 
-**Self-work identity** → [[self-work-identity]]. While you hold a thing, working on it earns credit exactly equal to the property-debit it adds → **net zero** (bar materials used up). This is *why* property is a burden, not an engine: no rent, no appreciation, nothing earned by mere holding. Repair your own roof and you are credited the hours *and* the house's debit rises by the same hours — net effect on you, zero.
+**Self-work identity** → [self-work-identity](self-work-identity.md). While you hold a thing, working on it earns credit exactly equal to the property-debit it adds → **net zero** (bar materials used up). This is *why* property is a burden, not an engine: no rent, no appreciation, nothing earned by mere holding. Repair your own roof and you are credited the hours *and* the house's debit rises by the same hours — net effect on you, zero.
 
 **Non-cascade** (§3.2b = §4.5, one rule read in two directions). **Cost attaches only to the causer and never cascades:**
-- **not downstream** to a buyer — the miner keeps the tailings, not the person wearing the ring ([[no-externalities|Ellerman responsibility-imputation]]);
+- **not downstream** to a buyer — the miner keeps the tailings, not the person wearing the ring ([Ellerman responsibility-imputation](no-externalities.md));
 - **not upstream** to the first human who ever built anything — an asset carries only the creation-cost knowable *within* Aequitas, and everything before genesis is out of scope (computational closure).
 
 Either cascade breaks the books. This is the same constraint as the [[#The Front-Loading Rule|Front-Loading Rule]] below, seen from the ledger side.
 
-**End of life** → [[consumption-debit]]. Refuse to pass a worn-out thing on and you have *consumed* it: its property-debit becomes your permanent consumption debit, as if you had eaten it. A discarded object is itself a pollutant for as long as it sits (§3.6).
+**End of life** → [consumption-debit](consumption-debit.md). Refuse to pass a worn-out thing on and you have *consumed* it: its property-debit becomes your permanent consumption debit, as if you had eaten it. A discarded object is itself a pollutant for as long as it sits (§3.6).
 
 ---
 
@@ -64,23 +64,23 @@ Either cascade breaks the books. This is the same constraint as the [[#The Front
 
 | Case | Front-loaded cost | What the eventual recipient pays |
 |---|---|---|
-| **Education** ([[education-as-credited-work]]) | Teachers' time, facilities, materials | The professional's time, clinic materials, medicines — **not the education** |
+| **Education** ([education-as-credited-work](education-as-credited-work.md)) | Teachers' time, facilities, materials | The professional's time, clinic materials, medicines — **not the education** |
 | **Media / creative** | Years of crew time, sets, post-production | **Delivery only** — venue, projectionist, bandwidth, power |
 | **Research · infrastructure · tooling** | The build | Use, wear, and energy |
-| **Capital & overhead** ([[property-debit]]) | The plant, the barn, the machinery | Only what a unit *consumes* now — never a slice of the building |
+| **Capital & overhead** ([property-debit](property-debit.md)) | The plant, the barn, the machinery | Only what a unit *consumes* now — never a slice of the building |
 
 **Why downstream amortization is always wrong — two reasons:**
 
 1. **The window is arbitrary.** Amortizing a hospital into patient-bills means choosing *how many patients* — and every candidate window is a guess. That arbitrariness *was* OP-11 (training) and OP-21 (media). Front-loading **removes the division** rather than solving it.
 2. **Computational closure.** Chase a hospital's construction into each bill and you must chase the builder's costs, the steelmaker's, the engineers' schooling — **an infinite regress to the first human activity.** The sum never finishes. Front-loading is what makes the accounting *terminate*. *(This is the upstream face of non-cascade above.)*
 
-**The boundary is capital vs. consumption — not time.** A cost flows to a unit only if it is *consumed* producing that unit. Told apart by **physical fate**: does the thing survive the process? A drill bit that survives is capital (front-loaded); the oil it burned is consumption (flows to the unit). Auditable via [[event-record|IC-4 fate closure]], not the producer's say-so — which closes the *consumption-launderer* who reclassifies a used-up input as capital.
+**The boundary is capital vs. consumption — not time.** A cost flows to a unit only if it is *consumed* producing that unit. Told apart by **physical fate**: does the thing survive the process? A drill bit that survives is capital (front-loaded); the oil it burned is consumption (flows to the unit). Auditable via [IC-4 fate closure](event-record.md), not the producer's say-so — which closes the *consumption-launderer* who reclassifies a used-up input as capital.
 
 **Who actually carries front-loaded capital — the waterfall (§4.5):**
 
-1. **Community pledges grant the holders debit-room to carry it.** A [[pledge-and-signal|pledge]] does **not** draw the cost down: it is a *permanent grant of debit-room* — virtual credit conferred on the co-op, drawn from the pledger's finite lifetime pledging-budget; their credit itself never moves. It cushions the bite (and, being permanent, can be relied on rather than re-exposed by withdrawal), and doubles as the construction authorization *and* the demand brake — a facility is built at the scale the community will pledge for.
-2. **The full cost is holding-time split** among the asset's holders (share = holding-duration ÷ total holder-years over its life) — pledges cushion the bite, they don't shrink the debit (nothing vanishes, [[material-flow-value|A1]]). Holding-duration is a [[physical-trace-test|physical trace]], so this is measured, not invented — and it passes the cooperative-game checklist an even split fails (**dummy:** a new hire bears ≈0, killing the entry-toll that would scare people off staffing hospitals; **symmetry;** progressive; final only at disposal).
-3. **The [[debit-tolerance|basic-needs floor]] caps how hard any residual bites** (§5.5).
+1. **Community pledges grant the holders debit-room to carry it.** A [pledge](pledge-and-signal.md) does **not** draw the cost down: it is a *permanent grant of debit-room* — virtual credit conferred on the co-op, drawn from the pledger's finite lifetime pledging-budget; their credit itself never moves. It cushions the bite (and, being permanent, can be relied on rather than re-exposed by withdrawal), and doubles as the construction authorization *and* the demand brake — a facility is built at the scale the community will pledge for.
+2. **The full cost is holding-time split** among the asset's holders (share = holding-duration ÷ total holder-years over its life) — pledges cushion the bite, they don't shrink the debit (nothing vanishes, [A1](material-flow-value.md)). Holding-duration is a [physical trace](physical-trace-test.md), so this is measured, not invented — and it passes the cooperative-game checklist an even split fails (**dummy:** a new hire bears ≈0, killing the entry-toll that would scare people off staffing hospitals; **symmetry;** progressive; final only at disposal).
+3. **The [basic-needs floor](debit-tolerance.md) caps how hard any residual bites** (§5.5).
 
 *A 30-year veteran among ~200 staff over a 60-year hospital holds ≈0.25% of it — not a crushing slab. A solo owner of expensive private capital holds a large share, correctly: they alone used it.*
 
@@ -88,22 +88,22 @@ Either cascade breaks the books. This is the same constraint as the [[#The Front
 
 **⚠️ Honest residues.**
 - **Cold start.** Pledges follow reputation, so a first-time creator attracts none — the same wall unknown creators hit with capital today, lower (attention, not money) but real.
-- **A per-unit debit-cost is therefore not a full-lifecycle figure.** The capital footprint sits on the asset, not smeared across units. It is never *lost* (no [[no-externalities|A4]] breach) — just located honestly.
+- **A per-unit debit-cost is therefore not a full-lifecycle figure.** The capital footprint sits on the asset, not smeared across units. It is never *lost* (no [A4](no-externalities.md) breach) — just located honestly.
 
 ---
 
 ## Depends on
 
-- [[material-flow-value]] · [[non-fungibility]] · [[cost-not-price]]
+- [material-flow-value](material-flow-value.md) · [non-fungibility](non-fungibility.md) · [cost-not-price](cost-not-price.md)
 
 ## Consequences
 
-- [[self-work-identity]] · [[capitalism-cannot-function]] · [[no-externalities]] · [[no-taxation]]
+- [self-work-identity](self-work-identity.md) · [capitalism-cannot-function](capitalism-cannot-function.md) · [no-externalities](no-externalities.md) · [no-taxation](no-taxation.md)
 
 ## Open questions
 
-- [[protocol-governance|OP-10]] — who controls the collapse (weighting) model
-- C5 — consent/refusal on acquisition. *(Pledge reversion is **resolved**: pledges are permanent and non-revocable, and an unfulfilled pledge burns — nothing reverts. Foundations §4.6, [[pledge-and-signal]].)*
+- [OP-10](protocol-governance.md) — who controls the collapse (weighting) model
+- C5 — consent/refusal on acquisition. *(Pledge reversion is **resolved**: pledges are permanent and non-revocable, and an unfulfilled pledge burns — nothing reverts. Foundations §4.6, [pledge-and-signal](pledge-and-signal.md).)*
 - OP-25 — illicit dumping (escaping end-of-life debit by abandonment)
 
 ---

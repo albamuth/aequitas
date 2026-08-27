@@ -33,4 +33,4 @@ The gap between the energy to make *new* plastic and the energy to *recycle* it,
 
 ## Related
 
-- [Estimation-engine data sources](../00-strategy/GLOSSARY.md#src-estimation-engine-data-sources) · [[retroactive-reweighting]] · [[material-flow-value]]
+- [Estimation-engine data sources](../00-strategy/GLOSSARY.md#src-estimation-engine-data-sources) · [retroactive-reweighting](../01-wiki/retroactive-reweighting.md) · [material-flow-value](../01-wiki/material-flow-value.md)

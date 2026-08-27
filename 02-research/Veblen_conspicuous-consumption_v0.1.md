@@ -40,4 +40,4 @@ Bears on: consumption/pollution debit ([Foundations §3.2](../00-strategy/Aequit
 
 - [Technocracy: energy accounting](../00-strategy/GLOSSARY.md#src-technocracy-energy-accounting) — the movement Veblen's ideas seeded
 - [DeLanda: markets & antimarkets](../00-strategy/GLOSSARY.md#src-delanda-markets-antimarkets) — "business" as the antimarket layer
-- [[property-debit]]
+- [property-debit](../01-wiki/property-debit.md)

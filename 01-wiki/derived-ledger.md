@@ -16,7 +16,7 @@ The same record serves two purposes at once:
 
 Three things follow only from separating events from balances:
 
-- **[[retroactive-reweighting]] is possible at all.** If balances were stored, improving the science would require rewriting history. Because they're derived, improving the science is just recomputation.
+- **[retroactive-reweighting](retroactive-reweighting.md) is possible at all.** If balances were stored, improving the science would require rewriting history. Because they're derived, improving the science is just recomputation.
 - **Verification is decentralized.** Anyone can recompute from the log. There is nothing to trust, only something to check.
 - **No issuer.** A stored balance implies someone who may set it. A derived balance has no such role.
 
@@ -24,22 +24,22 @@ The event log is why Aequitas is **an accounting system, not a currency, token, 
 
 ## Depends on
 
-- [[material-flow-value]]
+- [material-flow-value](material-flow-value.md)
 
 ## Consequences
 
-- [[retroactive-reweighting]]
-- [[non-fungibility]]
-- [[verification-ladder]] — what puts events into the log in the first place
-- [[statistical-coverage]] — estimated events are just events with a wider error bar
+- [retroactive-reweighting](retroactive-reweighting.md)
+- [non-fungibility](non-fungibility.md)
+- [verification-ladder](verification-ladder.md) — what puts events into the log in the first place
+- [statistical-coverage](statistical-coverage.md) — estimated events are just events with a wider error bar
 
 ## The record itself
 
-- [[event-record]] — the four primitives, the single record shape, and the conservation checks. **C1 v0.1 drafted.**
+- [event-record](event-record.md) — the four primitives, the single record shape, and the conservation checks. **C1 v0.1 drafted.**
 
 ## Open questions
 
-- Amortization of training cost into skilled service ([[time-as-yardstick]]) — blocks full A2 implementation
+- Amortization of training cost into skilled service ([time-as-yardstick](time-as-yardstick.md)) — blocks full A2 implementation
 - Privacy: holders keep a private ledger with provable claims; disclosure is by zero-knowledge proof, not by history dump (C7)
 
 ---

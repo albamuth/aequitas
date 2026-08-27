@@ -1,6 +1,6 @@
 # Cost the Limit of Price
 
-> Josiah Warren's 1827 maxim — and the **only historical field test of [[cost-not-price]]**. It ran for three years, it worked commercially, and it broke on exactly the problem [[time-as-yardstick]] exists to solve.
+> Josiah Warren's 1827 maxim — and the **only historical field test of [cost-not-price](cost-not-price.md)**. It ran for three years, it worked commercially, and it broke on exactly the problem [time-as-yardstick](time-as-yardstick.md) exists to solve.
 
 ## What happened
 
@@ -18,14 +18,14 @@ Warren could not reconcile "labor for labor" with differences in **skill and dis
 
 That concession is fatal, and it is worth being blunt about why: **individual judgment is a judge.** The moment a rate is a matter of opinion, the system has an authority, and an authority is a capture point. Warren's experiment did not fail on logistics or on popularity — it failed on the same axiom Aequitas identifies as A2.
 
-**Aequitas's answer:** skill and hazard are never rate multipliers. They resolve as *material* costs — training resolves as the real time and materials of schooling flowing downstream into the recipient's debit; hard labor resolves as extra caloric intake; hazard resolves retroactively via [[retroactive-reweighting]]. No judgment, no judge.
+**Aequitas's answer:** skill and hazard are never rate multipliers. They resolve as *material* costs — training resolves as the real time and materials of schooling flowing downstream into the recipient's debit; hard labor resolves as extra caloric intake; hazard resolves retroactively via [retroactive-reweighting](retroactive-reweighting.md). No judgment, no judge.
 
 This is a strong, specific, historically grounded claim: **Aequitas closes a 199-year-old open problem in mutualist economics.** It belongs in the academic paper and probably in the whitepaper's opening.
 
 ## What else to take
 
 - The 4–7% overhead markup is an honest admission that *distribution is itself labor* — Aequitas handles this natively, but note that Warren had to bolt it on.
-- Time-metering the shopkeeper's own attention anticipates [[material-flow-value]]'s "record what is known" granularity.
+- Time-metering the shopkeeper's own attention anticipates [material-flow-value](material-flow-value.md)'s "record what is known" granularity.
 
 ## Sources
 
@@ -37,8 +37,8 @@ This is a strong, specific, historically grounded claim: **Aequitas closes a 199
 
 ## Related
 
-- [[mutualism]] — Proudhon reached the same doctrine independently, later
-- [[time-as-yardstick]] · [[cost-not-price]]
+- [mutualism](mutualism.md) — Proudhon reached the same doctrine independently, later
+- [time-as-yardstick](time-as-yardstick.md) · [cost-not-price](cost-not-price.md)
 
 ---
 *Status: reference — external history*

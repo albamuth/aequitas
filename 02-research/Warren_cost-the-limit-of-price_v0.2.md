@@ -19,7 +19,7 @@ That central idea is measuring everything in **time** — the hours a thing took
 **How the store ran**
 - The Cincinnati Time Store operated **18 May 1827 – May 1830**, at 5th & Elm, Cincinnati.
 - Goods were sold at what Warren himself had paid for them, plus a small markup covering the labour of fetching and stocking them: **7% at first, later cut to 4%.**
-- Customers paid with **labour notes** — written IOUs promising to do an equivalent amount of work in return. These are generally counted as the first alternative-currency labour notes, and the store as the first practical test of *mutualism* (the doctrine that people should trade equal amounts of labour, with no profit, rent, or interest — see [[mutualism]]).
+- Customers paid with **labour notes** — written IOUs promising to do an equivalent amount of work in return. These are generally counted as the first alternative-currency labour notes, and the store as the first practical test of *mutualism* (the doctrine that people should trade equal amounts of labour, with no profit, rent, or interest — see [mutualism](../01-wiki/mutualism.md)).
 - The unit of measure was blunt but concrete: **12 lb of corn ≈ 1 hour of labour.**
 - Warren's own time was charged using a **visible timer dial** on the counter — a long transaction cost the customer more, which sharply cut down idle chatting.
 - **It worked.** Contemporary accounts call it the most popular store in the city. Warren shut it *by choice* in 1830, judging the point proven, and went off to found experimental communities (Utopia, Ohio; Modern Times, New York).
@@ -39,7 +39,7 @@ That central idea is measuring everything in **time** — the hours a thing took
 - **A headline for any serious write-up:** Aequitas resolves a problem that has sat open in this tradition for nearly two centuries. The moment Warren fell back on "individual judgment," he put a *judge* into the system — and a judge is someone who can be captured, bribed, or simply be wrong. Aequitas removes that judge by turning skill and danger into *physical* costs instead of matters of opinion:
   - **Skill** becomes real schooling — the actual hours and materials of training, paid for up front by the people who wanted those skilled workers to exist, and never charged to the person who later uses the skill.
   - **Hard labour** becomes real extra food — a person doing heavy work eats more, and that extra food is a genuine, countable cost.
-  - **Danger** becomes real harm — if a job turns out to injure the people doing it, that harm is priced back into whatever the job produced, even years later, once the damage is understood. (This "correct the cost once the science catches up" mechanism is [[retroactive-reweighting]].)
+  - **Danger** becomes real harm — if a job turns out to injure the people doing it, that harm is priced back into whatever the job produced, even years later, once the damage is understood. (This "correct the cost once the science catches up" mechanism is [retroactive-reweighting](../01-wiki/retroactive-reweighting.md).)
 - **Proof that the mechanism can actually compete.** A store that priced at cost, with no profit, out-drew ordinary shops in 1827. That is a real answer to "nobody would take part in such a thing."
 - The 4–7% markup for stocking goods is a quiet admission that **moving and handling things is itself labour.** Aequitas counts that natively — transport is just more recorded work — whereas Warren had to bolt it on as an exception.
 - Warren's counter-top timer is a charming, concrete picture of *charging by however much time was actually spent* — a nice illustration for the popular text.
@@ -48,7 +48,7 @@ That central idea is measuring everything in **time** — the hours a thing took
 
 - **Warren's cost basis — subjective discomfort — is unusable.** "Toil and trouble" can't be measured and can't be checked, which is precisely why it collapsed into personal judgment. Aequitas's basis is the *physical flow* of materials and energy, which can be measured, and this must be drawn as a sharp break from Warren, not presented as a continuation of him.
 - **Scale was never tested.** One frontier storefront, using corn as its yardstick, tells us almost nothing about running a whole supply chain.
-- The labour notes were **transferable** — you could pass them on — which makes them a currency, and a currency can be hoarded and accumulated. Aequitas forbids exactly this: its credit records who did the work and can never change hands (see [[non-fungibility]]).
+- The labour notes were **transferable** — you could pass them on — which makes them a currency, and a currency can be hoarded and accumulated. Aequitas forbids exactly this: its credit records who did the work and can never change hands (see [non-fungibility](../01-wiki/non-fungibility.md)).
 - The communities Warren founded afterward (Utopia, Modern Times) had mixed-to-poor results. **Worth following up: their ways of failing are probably as instructive as the store's success.**
 
 ## To do
@@ -59,4 +59,4 @@ That central idea is measuring everything in **time** — the hours a thing took
 
 ## Related
 
-- [[cost-the-limit-of-price]] · [[time-as-yardstick]] · [[price-equals-cost]] · [[mutualism]]
+- [cost-the-limit-of-price](../01-wiki/cost-the-limit-of-price.md) · [time-as-yardstick](../01-wiki/time-as-yardstick.md) · [price-equals-cost](../01-wiki/cost-not-price.md) · [mutualism](../01-wiki/mutualism.md)

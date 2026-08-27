@@ -9,7 +9,7 @@ A new account starts at a global average and progressively resolves toward granu
 Two forces make joining attractive:
 
 1. **Your assigned debit usually falls.** Cohort averages are dragged up by the highest consumers; the median person sits below the mean.
-2. **Your estimated credit is unrealized until you join.** Under A7 (v0.2) credit is estimated for everyone and issuable **retroactively** — so a lifetime of real contribution is already in the books, waiting to be substantiated ([[statistical-coverage]]).
+2. **Your estimated credit is unrealized until you join.** Under A7 (v0.2) credit is estimated for everyone and issuable **retroactively** — so a lifetime of real contribution is already in the books, waiting to be substantiated ([statistical-coverage](statistical-coverage.md)).
 
 **The v0.2 amendment inverted this pitch.** It used to be *"you have been assigned a debt"* — a weak offer, and a false picture besides, since it recorded people's consumption while ignoring their production. It is now *"here is what you have contributed and what it cost; join and make it yours."*
 
@@ -21,7 +21,7 @@ Note the elegance: the same mechanism that makes coverage universal (assigning a
 
 ## Who games this
 
-**Selective disclosure.** If you supply only the facts that lower your assigned debit and withhold the ones that raise it, onboarding becomes a debit-laundering tool. The resolution process must be adversarial or attested, not self-reported — which links it straight back to [[verification-ladder]].
+**Selective disclosure.** If you supply only the facts that lower your assigned debit and withhold the ones that raise it, onboarding becomes a debit-laundering tool. The resolution process must be adversarial or attested, not self-reported — which links it straight back to [verification-ladder](verification-ladder.md).
 
 This is not a minor patch. A convergence process driven by voluntary self-report has a systematic downward bias, and at scale that bias *is* inflation by another name.
 
@@ -33,12 +33,12 @@ The "try it" account: answer questions about yourself and watch your assigned de
 
 ## Depends on
 
-- [[statistical-coverage]]
-- [[verification-ladder]]
+- [statistical-coverage](statistical-coverage.md)
+- [verification-ladder](verification-ladder.md)
 
 ## Consequences
 
-- [[debit-tolerance]] — what a new account can carry while it resolves
+- [debit-tolerance](debit-tolerance.md) — what a new account can carry while it resolves
 
 ## Open questions
 

@@ -2,7 +2,7 @@
 
 > **Status:** ✅ **Approved 2026-08-24.** All three decisions taken — see §6. Implementation in progress per §7.
 > **Date:** 2026-08-24
-> **Trigger:** outside-critique finding **#3** (economist, deepseek) — [`07-outreach/critique/REPORT_v0.1.md`](../07-outreach/critique/REPORT_v0.1.md).
+> **Trigger:** outside-critique finding **#3** (economist, deepseek) — the outside-critique report, **held locally and not published**.
 > **One-line result:** *The §4.5/OP-23 ruling stands. **A5 was the malformed part**, and repairing its wording removes the contradiction without touching the ruling.*
 
 ---
@@ -148,7 +148,7 @@ Also: **debit, not "debt"** — the project's term.
 
 ### Tier 3 — wiki
 
-**23 pages carry `[[price-equals-cost]]`** → `[[cost-not-price]]` (Q3: full sweep).
+**23 pages carry `[price-equals-cost](../01-wiki/cost-not-price.md)`** → `[cost-not-price](../01-wiki/cost-not-price.md)` (Q3: full sweep).
 
 ### Tier 4 — bookkeeping
 

@@ -10,7 +10,7 @@
 
 ## 0. Why this document exists
 
-Aequitas *is* calculation in kind — [[material-flow-value]] with modern instruments. The oldest and most cited proof that this cannot work is the **socialist-calculation argument**. Every economically literate reader brings it, and the external critique (2026-08-09) named writing it up as its single top priority. The good news, established across three research notes: **the answer already exists in the theory's own machinery.** This document assembles it in one place and marks the one piece that is genuinely still open.
+Aequitas *is* calculation in kind — [material-flow-value](../01-wiki/material-flow-value.md) with modern instruments. The oldest and most cited proof that this cannot work is the **socialist-calculation argument**. Every economically literate reader brings it, and the external critique (2026-08-09) named writing it up as its single top priority. The good news, established across three research notes: **the answer already exists in the theory's own machinery.** This document assembles it in one place and marks the one piece that is genuinely still open.
 
 The reply has **five** moves and one honest remainder:
 

@@ -55,7 +55,7 @@ Account holders keep a **private ledger with provable claims** — zero-knowledg
 
 ## Related
 
-- [[ledger-ecosystem]] · [[distributed-auditing]] · [[statistical-coverage]]
+- [ledger-ecosystem](ledger-ecosystem.md) · [distributed-auditing](distributed-auditing.md) · [statistical-coverage](statistical-coverage.md)
 
 ---
 *Status: provisional — the minimum disclosure set is OP-22 and is unsolved*

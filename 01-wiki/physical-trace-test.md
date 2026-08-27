@@ -5,7 +5,7 @@
 
 ## What it is
 
-A screening question applied to every division problem in Aequitas. It came out of resolving [[co-product-allocation]] and it is the most transferable result that work produced.
+A screening question applied to every division problem in Aequitas. It came out of resolving [co-product-allocation](co-product-allocation.md) and it is the most transferable result that work produced.
 
 The project's recurring difficulty has never been measuring totals. A refinery consumed *X* joules; a team of nine built the bridge. **Totals are physically well-defined. Splits are where every predecessor system died** — Warren's storefront, Sraffa's negative values, ISO 14044's fallback to price.
 
@@ -24,7 +24,7 @@ The register's earlier headline was *"the hard problem is division, not measurem
 
 **It tells you which of two completely different kinds of work you are facing**, and the two are easy to confuse.
 
-- **Where there is a trace**, refining converges. Better instruments get closer to a real number, [[retroactive-reweighting]] propagates the improvement backwards, and the answer improves forever. Treating this as a convention would be *dishonest in the other direction* — it would hide a measurable fact behind a chosen rule.
+- **Where there is a trace**, refining converges. Better instruments get closer to a real number, [retroactive-reweighting](retroactive-reweighting.md) propagates the improvement backwards, and the answer improves forever. Treating this as a convention would be *dishonest in the other direction* — it would hide a measurable fact behind a chosen rule.
 - **Where there is no trace**, refining converges on nothing. No instrument will ever help, because there is nothing to instrument. The only honest move is to name the convention in the axioms and defend the choice openly.
 
 > **A convention that is declared is not an ad-hoc rule. A convention that is disguised as a measurement is.**
@@ -47,16 +47,16 @@ Applied alongside the other screening questions, and earned the same way:
 
 > **Does this need an objective function?**
 
-Both allocation rules rejected for [[co-product-allocation]] — Aumann–Shapley marginal allocation and Kantorovich shadow prices — required one, and **whoever sets an objective function sets every number that derives from it.** It is a fast proxy for *"does this create a capture surface?"*, and it is why the adopted rule leaves [[protocol-governance]]'s largest hole no wider than it found it.
+Both allocation rules rejected for [co-product-allocation](co-product-allocation.md) — Aumann–Shapley marginal allocation and Kantorovich shadow prices — required one, and **whoever sets an objective function sets every number that derives from it.** It is a fast proxy for *"does this create a capture surface?"*, and it is why the adopted rule leaves [protocol-governance](protocol-governance.md)'s largest hole no wider than it found it.
 
 ## Depends on
 
-- [[material-flow-value]] · [[time-as-yardstick]]
+- [material-flow-value](material-flow-value.md) · [time-as-yardstick](time-as-yardstick.md)
 
 ## Consequences
 
-- [[co-product-allocation]] — the case that produced the test
-- [[protocol-governance]] — declared conventions are auditable; disguised ones are capture surfaces
+- [co-product-allocation](co-product-allocation.md) — the case that produced the test
+- [protocol-governance](protocol-governance.md) — declared conventions are auditable; disguised ones are capture surfaces
 
 ## Open questions
 

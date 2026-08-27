@@ -121,7 +121,7 @@ The **equilibrium baseline** and the **ambient-stock measurement** are powerful 
 
 ## 8. The A5 challenge — *"if the barn is not in the beef, price is not cost"*
 
-> **Raised:** 2026-08-24, outside-critique round, economist role, `deepseek/deepseek-v4-pro`. Finding **#3** of [`../07-outreach/critique/REPORT_v0.1.md`](../07-outreach/critique/REPORT_v0.1.md).
+> **Raised:** 2026-08-24, outside-critique round, economist role, `deepseek/deepseek-v4-pro`. Finding **#3** of the outside-critique report, **held locally and not published**.
 > **Verdict:** ✅ **The ruling holds. A5's wording was the broken part and has been repaired** (Foundations v0.21), together with the identical defect in **A4**. **No mechanism moved.**
 
 ### 8.1 The objection

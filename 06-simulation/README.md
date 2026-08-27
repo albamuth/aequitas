@@ -62,7 +62,7 @@ Each project's `RESULTS.md` carries the conditions, the limits, and what would f
 
 ### Two things stay at the top level
 
-**[`data/`](data/) is shared and stays here.** It holds the Bureau of Labor Statistics Employment Requirements matrices, the input-output tables, and the 234 MB [EXIOBASE](https://www.exiobase.eu/) multi-region table. `median-lifestyle/` uses them today and `statera/` will need the same tables at step 5, so duplicating them would be wrong and moving them into one project would be misleading. **Scripts reach up one level to find it.**
+**`data/` is shared and stays here. It is 288 MB and is deliberately not published**, so the links below go to the original sources instead. It holds the **[Bureau of Labor Statistics Employment Requirements matrices](https://web.archive.org/web/2025/https://www.bls.gov/emp/data/input-output-matrix.htm)**, the **[BLS input-output tables](https://web.archive.org/web/2025/https://www.bls.gov/emp/data/input-output-matrix.htm)**, and the 234 MB **[EXIOBASE](https://www.exiobase.eu/)** multi-region table. **Anyone can rebuild it from those three sources.** `median-lifestyle/` uses them today and `statera/` will need the same tables at step 5, so duplicating them would be wrong and moving them into one project would be misleading. **Scripts reach up one level to find it.**
 
 > **⚠️ The Bureau of Labor Statistics withdrew the Employment Requirements matrices on 2026-02-06.** The copies in `data/erm_full/` came back through the [Internet Archive](https://web.archive.org/) and are the only ones we have. **Do not delete them.**
 

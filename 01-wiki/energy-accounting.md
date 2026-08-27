@@ -17,22 +17,22 @@ Mechanism:
 
 | Technocracy | Aequitas |
 |---|---|
-| Value = energy expended | [[material-flow-value]] — matter *and* energy |
-| Non-transferable certificates | [[non-fungibility]] — goes further; credit isn't spendable at all |
-| Replace the price system | [[cost-not-price]] |
+| Value = energy expended | [material-flow-value](material-flow-value.md) — matter *and* energy |
+| Non-transferable certificates | [non-fungibility](non-fungibility.md) — goes further; credit isn't spendable at all |
+| Replace the price system | [cost-not-price](cost-not-price.md) |
 | Expiry to prevent hoarding | Not needed — nothing accumulates to hoard |
-| Rule by technical experts | **Explicitly rejected** — [[protocol-governance]] A8 |
+| Rule by technical experts | **Explicitly rejected** — [protocol-governance](protocol-governance.md) A8 |
 
 ## Why it failed, and what each failure teaches
 
 1. **It became an organization with a leader.** Factional splits, Scott's personal credibility problems, a badly received 1933 national radio address. The movement's fate tracked one man's reputation. → **This is precisely what A8 exists to prevent**, and it's the historical evidence for A8. Cite it.
-2. **Elitism.** Critics found it dismissive of democracy — rule by engineers. → Aequitas must be relentless that it changes the *economic* nature of institutions and keeps democratic ones intact. [[service-credit]]'s OP-1 is where this risk lives now.
-3. **Failed predictions.** It forecast imminent capitalist collapse; collapse didn't come, and credibility went with it. → **Never make Aequitas's case contingent on a crisis.** Adoption must be individually rational under normal conditions — which is exactly what [[onboarding-incentive]] is for.
-4. **One-dimensional value.** Energy alone cannot distinguish a joule spent curing someone from a joule spent burning a field. → Aequitas's multi-dimensional flows plus [[retroactive-reweighting]] address this, but it means Aequitas is *harder to compute*, not easier. Be honest about that trade.
+2. **Elitism.** Critics found it dismissive of democracy — rule by engineers. → Aequitas must be relentless that it changes the *economic* nature of institutions and keeps democratic ones intact. [service-credit](service-credit.md)'s OP-1 is where this risk lives now.
+3. **Failed predictions.** It forecast imminent capitalist collapse; collapse didn't come, and credibility went with it. → **Never make Aequitas's case contingent on a crisis.** Adoption must be individually rational under normal conditions — which is exactly what [onboarding-incentive](onboarding-incentive.md) is for.
+4. **One-dimensional value.** Energy alone cannot distinguish a joule spent curing someone from a joule spent burning a field. → Aequitas's multi-dimensional flows plus [retroactive-reweighting](retroactive-reweighting.md) address this, but it means Aequitas is *harder to compute*, not easier. Be honest about that trade.
 
 ## The uncomfortable question
 
-Technocracy had a simpler system, real popular attention, and organized funding, and it still died. **What does Aequitas have that it didn't?** The defensible answers: A8 (no capturable organization), the [[verification-ladder]] (it works at Level 1 with no infrastructure), [[onboarding-incentive]] (individually rational without collapse), and computers. That list should be written down and defended, not assumed.
+Technocracy had a simpler system, real popular attention, and organized funding, and it still died. **What does Aequitas have that it didn't?** The defensible answers: A8 (no capturable organization), the [verification-ladder](verification-ladder.md) (it works at Level 1 with no infrastructure), [onboarding-incentive](onboarding-incentive.md) (individually rational without collapse), and computers. That list should be written down and defended, not assumed.
 
 ## Sources
 
@@ -43,7 +43,7 @@ Technocracy had a simpler system, real popular attention, and organized funding,
 
 ## Related
 
-- [[calculation-in-kind]] — the intellectual parent
+- [calculation-in-kind](calculation-in-kind.md) — the intellectual parent
 
 ---
 *Status: reference — external history. Treat as a cautionary case, not a precedent.*

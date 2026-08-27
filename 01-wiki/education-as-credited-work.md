@@ -4,19 +4,19 @@
 
 ## What it is
 
-Learning enriches the individual and, indirectly, everyone the person later serves. Under [[material-flow-value]] it is activity like any other: people present, for intervals, consuming materials and energy, producing a change in the world.
+Learning enriches the individual and, indirectly, everyone the person later serves. Under [material-flow-value](material-flow-value.md) it is activity like any other: people present, for intervals, consuming materials and energy, producing a change in the world.
 
 So it is credited. Both sides of the room.
 
-Simultaneously, the **cost** of that schooling — the real time and materials it consumed — flows downstream into the services the graduate later provides ([[time-as-yardstick]]). Education is credited to the student *and* carried forward as a cost of what they later do.
+Simultaneously, the **cost** of that schooling — the real time and materials it consumed — flows downstream into the services the graduate later provides ([time-as-yardstick](time-as-yardstick.md)). Education is credited to the student *and* carried forward as a cost of what they later do.
 
 ## Why it works this way
 
-This is one of the clearest demonstrations of [[honest-advantage]]. Schooling is the largest unpaid contribution most people make in their lives; today it is a cost borne by the student and their family, discharged in the hope of future wages. Under Aequitas it is credited work from the first day.
+This is one of the clearest demonstrations of [honest-advantage](honest-advantage.md). Schooling is the largest unpaid contribution most people make in their lives; today it is a cost borne by the student and their family, discharged in the hope of future wages. Under Aequitas it is credited work from the first day.
 
 Crucially it requires **no special rule.** There is no "education exception" — attending school is materially real activity, accounted exactly like farm labor or manufacturing. That satisfies universality; a rule that had to carve out education would fail it.
 
-It is also how [[time-as-yardstick]] escapes the trap that sank [[cost-the-limit-of-price]]. Warren could not price skilled labor without a judge. Aequitas prices it by tracing what the skill actually cost to produce — and that requires education to be in the log in the first place.
+It is also how [time-as-yardstick](time-as-yardstick.md) escapes the trap that sank [cost-the-limit-of-price](cost-the-limit-of-price.md). Warren could not price skilled labor without a judge. Aequitas prices it by tracing what the skill actually cost to produce — and that requires education to be in the log in the first place.
 
 ## Open questions
 
@@ -26,11 +26,11 @@ It is also how [[time-as-yardstick]] escapes the trap that sank [[cost-the-limit
 
 ## Depends on
 
-- [[material-flow-value]] · [[time-as-yardstick]] · [[service-credit]]
+- [material-flow-value](material-flow-value.md) · [time-as-yardstick](time-as-yardstick.md) · [service-credit](service-credit.md)
 
 ## Consequences
 
-- [[honest-advantage]] · [[debit-tolerance]] — a child carries tolerance and now also earns
+- [honest-advantage](honest-advantage.md) · [debit-tolerance](debit-tolerance.md) — a child carries tolerance and now also earns
 
 
 ## The front-loading rule, in full

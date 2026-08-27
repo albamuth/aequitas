@@ -10,10 +10,10 @@ Taxation exists to do three jobs. Aequitas removes all three:
 |---|---|
 | **Fund public servants** | Civil servants are credited directly for [[service-credit\|service]]. There is no payroll to finance. |
 | **Fund infrastructure** | Infrastructure providers are credited; users carry proportional debit by usage. The road accounts for its own wear. |
-| **Correct externalities** (Pigouvian) | [[no-externalities]] — harm is already priced in. Nothing left to correct. |
-| **Redistribute** | [[debit-tolerance]] provides the floor structurally, not by transfer. |
+| **Correct externalities** (Pigouvian) | [no-externalities](no-externalities.md) — harm is already priced in. Nothing left to correct. |
+| **Redistribute** | [debit-tolerance](debit-tolerance.md) provides the floor structurally, not by transfer. |
 
-There is nothing to collect because there is no fungible thing that could be collected ([[non-fungibility]]).
+There is nothing to collect because there is no fungible thing that could be collected ([non-fungibility](non-fungibility.md)).
 
 ## Why it works this way
 
@@ -25,15 +25,15 @@ Note this is *not* a libertarian claim. Aequitas keeps municipal government, pla
 
 The obvious question a skeptic asks: **who decides how many civil servants to credit?** "Credited directly for service" doesn't answer how much service is authorized. Without an allocation mechanism this becomes either unlimited (inflationary in real terms) or centrally decided (an authority, contra A8).
 
-This is [[service-credit]] / OP-1 again, and it means **§5.4's claim is currently downstream of the project's largest unsolved problem.** Don't present it as settled in public writing until OP-1 resolves.
+This is [service-credit](service-credit.md) / OP-1 again, and it means **§5.4's claim is currently downstream of the project's largest unsolved problem.** Don't present it as settled in public writing until OP-1 resolves.
 
 ## Depends on
 
-- [[service-credit]] · [[no-externalities]] · [[debit-tolerance]] · [[non-fungibility]]
+- [service-credit](service-credit.md) · [no-externalities](no-externalities.md) · [debit-tolerance](debit-tolerance.md) · [non-fungibility](non-fungibility.md)
 
 ## Consequences
 
-- [[capitalism-cannot-function]]
+- [capitalism-cannot-function](capitalism-cannot-function.md)
 
 ## Open questions
 

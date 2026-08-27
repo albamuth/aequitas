@@ -1,6 +1,6 @@
 # Enrichment
 
-> ⚠️ **STALE — DO NOT LEARN THE SYSTEM FROM THIS PAGE.** It describes the pre-v0.3 *three credit types* model, which Foundations replaced. There is **one credit — time worked** — and production/service/enrichment are three *feedback channels*, not credit types, with no accounting boundary between them (Foundations §6). Non-convertibility now holds simply because feedback was never credit. This page is kept only until it is rewritten (queued in `NEXT.md`); read [[index]] and Foundations §6 instead.
+> ⚠️ **STALE — DO NOT LEARN THE SYSTEM FROM THIS PAGE.** It describes the pre-v0.3 *three credit types* model, which Foundations replaced. There is **one credit — time worked** — and production/service/enrichment are three *feedback channels*, not credit types, with no accounting boundary between them (Foundations §6). Non-convertibility now holds simply because feedback was never credit. This page is kept only until it is rewritten (queued in `NEXT.md`); read [index](index.md) and Foundations §6 instead.
 
 > A non-convertible social value signal for art, science, teaching, and discovery. Its function is to be **the channel by which people voluntarily direct their credit surplus.**
 
@@ -14,9 +14,9 @@ How it operates: a production company that makes a film many people appreciate i
 
 ## Why it works this way
 
-Aequitas needs an answer to "what should we collectively do more of?" that isn't a planner and isn't a market. [[production-credit]] answers *how much may I hold*; [[service-credit]] answers *who directs public effort*; enrichment answers *what is worth doing*.
+Aequitas needs an answer to "what should we collectively do more of?" that isn't a planner and isn't a market. [production-credit](production-credit.md) answers *how much may I hold*; [service-credit](service-credit.md) answers *who directs public effort*; enrichment answers *what is worth doing*.
 
-Making it non-convertible is not fastidiousness. If enrichment could be exchanged for production capacity or influence, it becomes a currency by the back door and [[non-fungibility]] fails — which is OP-8.
+Making it non-convertible is not fastidiousness. If enrichment could be exchanged for production capacity or influence, it becomes a currency by the back door and [non-fungibility](non-fungibility.md) fails — which is OP-8.
 
 ## Who games this
 
@@ -30,12 +30,12 @@ None of this is solved. Do not treat enrichment as settled.
 
 ## Depends on
 
-- [[non-fungibility]]
-- [[material-flow-value]]
+- [non-fungibility](non-fungibility.md)
+- [material-flow-value](material-flow-value.md)
 
 ## Consequences
 
-- [[meme-tracing]] — the same mechanism applied to idea attribution
+- [meme-tracing](meme-tracing.md) — the same mechanism applied to idea attribution
 
 ## Open questions
 
@@ -44,7 +44,7 @@ None of this is solved. Do not treat enrichment as settled.
 
 ## Prior art
 
-- [[post-scarcity]] — Saadia's Star Trek reading, where reputation and respect replace money as motivation, is the closest fictional treatment of this idea and worth reading critically
+- [post-scarcity](post-scarcity.md) — Saadia's Star Trek reading, where reputation and respect replace money as motivation, is the closest fictional treatment of this idea and worth reading critically
 
 ---
 *Status: contested — OP-6, OP-8*

@@ -16,12 +16,12 @@ These two are the modern answer to the old "you can't run an economy without mon
 
 - **Running an economy on labour-time can be made to work** — provided you add a method that lets what consumers actually want steer production — and it is now **technically feasible.** The heavy arithmetic (a giant grid of who-supplies-what to everyone else) runs in reasonable time on normal hardware using "sparse-matrix" methods — techniques that exploit the fact that most industries buy from only a few others, so the grid is mostly empty and can be solved quickly. This is the direct reply to the "it's too big to compute" version of the objection.
 - **How they handle demand.** They tag each consumer good with the price at which it just clears the shelves. Where that clearing price sits *above* what the good cost in labour, they make more of it; where it sits *below*, they make less. The gap between price and cost is the signal that steers production. Labour-time is the unit of account; the price-to-cost ratio is the feedback dial.
-- Their "labour tokens" don't circulate and are cancelled once spent — structurally similar to Aequitas's rule that credit can't be traded (see [[non-fungibility]]).
+- Their "labour tokens" don't circulate and are cancelled once spent — structurally similar to Aequitas's rule that credit can't be traded (see [non-fungibility](../01-wiki/non-fungibility.md)).
 - Their scheme is still **centrally computed**, even if not centrally *commanded* in the old Soviet sense.
 
 ## What we can use
 
-- **Cite them for feasibility.** This closes the "it's computationally impossible" objection: Mises argued it couldn't be done even in principle, and people who actually ran the numbers showed otherwise. Aequitas's habit of recomputing history when a cost estimate improves ([[retroactive-reweighting]]) needs exactly this defence and now has a citation for it. Aequitas already leans on this — see [Foundations §3.3](../00-strategy/Aequitas_Foundations_v0.13.md#33-retroactive-re-weighting).
+- **Cite them for feasibility.** This closes the "it's computationally impossible" objection: Mises argued it couldn't be done even in principle, and people who actually ran the numbers showed otherwise. Aequitas's habit of recomputing history when a cost estimate improves ([retroactive-reweighting](../01-wiki/retroactive-reweighting.md)) needs exactly this defence and now has a citation for it. Aequitas already leans on this — see [Foundations §3.3](../00-strategy/Aequitas_Foundations_v0.13.md#33-retroactive-re-weighting).
 - Their sparse-matrix approach is a concrete precedent for doing Aequitas's re-computation at scale.
 - The non-circulating labour token is prior art for Aequitas's "credit can't move" rule and worth citing as such — see [Foundations §A3](../00-strategy/Aequitas_Foundations_v0.13.md#a3-non-fungibility).
 
@@ -41,4 +41,4 @@ These two are the modern answer to the old "you can't run an economy without mon
 
 ## Related
 
-- [[calculation-in-kind]] · [[material-flow-value]] · [[price-equals-cost]] · [[non-fungibility]] · [[retroactive-reweighting]] · [Neurath: calculation in kind](../00-strategy/GLOSSARY.md#src-neurath-calculation-in-kind) · [Kantorovich: shadow prices](../00-strategy/GLOSSARY.md#src-kantorovich-shadow-prices) · [Joint-production problem](../00-strategy/GLOSSARY.md#src-joint-production-allocation-problem)
+- [calculation-in-kind](../01-wiki/calculation-in-kind.md) · [material-flow-value](../01-wiki/material-flow-value.md) · [price-equals-cost](../01-wiki/cost-not-price.md) · [non-fungibility](../01-wiki/non-fungibility.md) · [retroactive-reweighting](../01-wiki/retroactive-reweighting.md) · [Neurath: calculation in kind](../00-strategy/GLOSSARY.md#src-neurath-calculation-in-kind) · [Kantorovich: shadow prices](../00-strategy/GLOSSARY.md#src-kantorovich-shadow-prices) · [Joint-production problem](../00-strategy/GLOSSARY.md#src-joint-production-allocation-problem)

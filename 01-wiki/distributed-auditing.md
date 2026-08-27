@@ -4,7 +4,7 @@
 
 ## What it is
 
-Aequitas does not appoint verifiers. Because the log is public and recomputable ([[derived-ledger]]), anyone may audit anything, and the work of auditing is ordinary [[service-credit]] like any other.
+Aequitas does not appoint verifiers. Because the log is public and recomputable ([derived-ledger](derived-ledger.md)), anyone may audit anything, and the work of auditing is ordinary [service-credit](service-credit.md) like any other.
 
 Consequences of treating it as work rather than as enforcement:
 
@@ -17,7 +17,7 @@ Consequences of treating it as work rather than as enforcement:
 A large class of checks require no social graph, no reputation, and no judgement — only arithmetic on the log:
 
 - **Nobody can be credited with more than 24 hours of work in a 24-hour period.** Sum an account's agent-intervals across all events in any window; if it exceeds wall-clock, something is wrong. Pure computation, checkable by anyone, no authority involved.
-- Mass and energy must balance per event ([[event-record]] IC-1/IC-2).
+- Mass and energy must balance per event ([event-record](event-record.md) IC-1/IC-2).
 - Material must resolve to a holder, a transformation, or a named sink (IC-4).
 - A parcel cannot be consumed before it exists.
 
@@ -25,7 +25,7 @@ A large class of checks require no social graph, no reputation, and no judgement
 
 ## Why this is the right shape
 
-Designing a central fraud-detection apparatus would recreate the authority A8 forbids ([[protocol-governance]]) — and no security design is permanently unbreakable anyway. An ecosystem of competing auditors has no single point to capture and no single point to fool.
+Designing a central fraud-detection apparatus would recreate the authority A8 forbids ([protocol-governance](protocol-governance.md)) — and no security design is permanently unbreakable anyway. An ecosystem of competing auditors has no single point to capture and no single point to fool.
 
 It is also fecund: auditing generates credit, so the system funds its own verification as it grows.
 
@@ -38,19 +38,19 @@ Every issuer-pays arrangement in history has drifted the same way: [Arthur Ander
 **Two structural answers, neither requiring an authority:**
 
 1. **A network concentrated in the sector it audits is captured by construction.** In Aequitas everyone is both producer and consumer, so a **general-membership** network is dominated by the consuming side for any particular good and its incentives align automatically. Only *sector-specific* networks fail this way — and **membership composition is public in the log, so this is detectable rather than something anyone must police.**
-2. **[[rival-sector-audit]]** for the errors rule 1 creates. A consumer-dominated network is biased toward *understating* what its members consume, and nobody funds the correction of an error in their own favour. The rival sector does.
+2. **[rival-sector-audit](rival-sector-audit.md)** for the errors rule 1 creates. A consumer-dominated network is biased toward *understating* what its members consume, and nobody funds the correction of an error in their own favour. The rival sector does.
 
 **Read the two together. Neither is safe alone**, and the full shape of trust networks — funding, membership, competition, dispute handling — is deferred to C2.
 
 ## Depends on
 
-- [[derived-ledger]] · [[ledger-ecosystem]]
+- [derived-ledger](derived-ledger.md) · [ledger-ecosystem](ledger-ecosystem.md)
 
 ## Consequences
 
-- [[verification-ladder]] — Level 2 is an emergent market of trust networks, not a designed detector
-- [[rival-sector-audit]] — the fix for the bias this page's model introduces
-- [[co-product-allocation]] — the process-energetics constants trust networks commission
+- [verification-ladder](verification-ladder.md) — Level 2 is an emergent market of trust networks, not a designed detector
+- [rival-sector-audit](rival-sector-audit.md) — the fix for the bias this page's model introduces
+- [co-product-allocation](co-product-allocation.md) — the process-energetics constants trust networks commission
 
 ## Open questions
 

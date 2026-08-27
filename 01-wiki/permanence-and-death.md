@@ -51,7 +51,7 @@ A person's record **closes but persists**, and three things follow.
 
 ## Related
 
-- [[event-record]] · [[derived-ledger]] · [[retroactive-reweighting]]
+- [event-record](event-record.md) · [derived-ledger](derived-ledger.md) · [retroactive-reweighting](retroactive-reweighting.md)
 
 ---
 *Status: settled*

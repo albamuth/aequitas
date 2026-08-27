@@ -640,7 +640,7 @@ The barn stays on the farm operator; the fab stays on its cooperative; hide and 
 
 ### The 2026-08-24 re-attack — *"capital exclusion contradicts A5"* ✅ **HELD. The axiom's wording was repaired instead.**
 
-**Source:** outside-critique round, economist role, `deepseek/deepseek-v4-pro` — finding **#3** in [`07-outreach/critique/REPORT_v0.1.md`](../07-outreach/critique/REPORT_v0.1.md). **The first finding in months that reached an axiom**, and it was right that something was broken.
+**Source:** outside-critique round, economist role, `deepseek/deepseek-v4-pro` — finding **#3** in the outside-critique report, **held locally and not published**. **The first finding in months that reached an axiom**, and it was right that something was broken.
 
 > **The objection.** §4.5 rules that a durable asset's creation-cost never allocates to the co-products, so beef carries none of the barn. But A5 read *"the **price** of anything is its true, current-best-estimate material cost."* Barn 20,000 h ÷ 40,000 kg of beef over a 20-year life = **0.5 h/kg** of cost that Aequitas shows as **0**. **So beef's price is not beef's cost, and A5 fails.**
 

@@ -40,4 +40,4 @@ Bears on: [Foundations §3.7 (land is not owned; a building carries a remediatio
 ## Related
 
 - [Polanyi: The Great Transformation](../00-strategy/GLOSSARY.md#src-polanyi-great-transformation) — land as a "fictitious commodity"
-- [[property-debit]] · [[price-equals-cost]]
+- [property-debit](../01-wiki/property-debit.md) · [price-equals-cost](../01-wiki/cost-not-price.md)

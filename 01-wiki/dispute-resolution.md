@@ -84,7 +84,7 @@ Sorting them apart dissolves three of the four classes.
 
 ## Related
 
-- [[distributed-auditing]] · [[retroactive-reweighting]] · [[derived-ledger]]
+- [distributed-auditing](distributed-auditing.md) · [retroactive-reweighting](retroactive-reweighting.md) · [derived-ledger](derived-ledger.md)
 
 ---
 *Status: settled (the four classes) / provisional (causation in the pledge reserve)*

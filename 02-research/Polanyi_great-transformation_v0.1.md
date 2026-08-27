@@ -40,4 +40,4 @@ Bears on: land can't be owned ([Foundations §3.7](../00-strategy/Aequitas_Found
 
 - [Graeber: Debt](../00-strategy/GLOSSARY.md#src-graeber-debt) — the barter myth, extended
 - [Henry George: land & rent](../00-strategy/GLOSSARY.md#src-henry-george-land) — the land half, in detail
-- [[material-flow-value]] · [[time-as-yardstick]] · [[property-debit]]
+- [material-flow-value](../01-wiki/material-flow-value.md) · [time-as-yardstick](../01-wiki/time-as-yardstick.md) · [property-debit](../01-wiki/property-debit.md)

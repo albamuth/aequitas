@@ -34,7 +34,7 @@ Whenever the party being judged pays for the judging, the judgements drift in th
 
 ## What was adopted instead
 
-Two structural rules, neither needing an enforcer — see [[rival-sector-audit]] and [Foundations §3.3a](../00-strategy/Aequitas_Foundations_v0.13.md#33a-who-checks-the-science--rival-sector-audit):
+Two structural rules, neither needing an enforcer — see [rival-sector-audit](../01-wiki/rival-sector-audit.md) and [Foundations §3.3a](../00-strategy/Aequitas_Foundations_v0.13.md#33a-who-checks-the-science--rival-sector-audit):
 
 1. **A trust network made up mostly of the people it's supposed to be auditing is compromised by its own composition.** In Aequitas everyone is both a producer and a consumer, so a *general-membership* network is dominated, for any given product, by the people who *consume* it — whose interests point the right way automatically. And because **who belongs to a network is public**, this is something anyone can *check*, not a rule someone has to enforce.
 2. **Rival-sector auditing** — because rule 1 creates its own slant. A network of consumers wants the recorded cost of what they *buy* to read *low*, and nobody funds correcting an error in their own favour. But a *rival producer* does: if beef's cost is understated, plant-protein makers are directly harmed and will fund the correction. **Consumers police one direction; rivals police both.**
@@ -56,5 +56,5 @@ Two structural rules, neither needing an enforcer — see [[rival-sector-audit]]
 
 ## Related
 
-- [[distributed-auditing]] · [[rival-sector-audit]] · [[retroactive-reweighting]] · [[protocol-governance]]
+- [distributed-auditing](../01-wiki/distributed-auditing.md) · [rival-sector-audit](../01-wiki/rival-sector-audit.md) · [retroactive-reweighting](../01-wiki/retroactive-reweighting.md) · [protocol-governance](../01-wiki/protocol-governance.md)
 - [`00-strategy/OP-17_coproduct_allocation.md`](../00-strategy/OP-17_coproduct_allocation.md) §7

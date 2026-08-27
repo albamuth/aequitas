@@ -11,26 +11,26 @@ Consequences of the asymmetry:
 - **No lending at interest** — there is nothing to lend.
 - **No theft of credit** — a stolen record is meaningless; it names someone else.
 - **No speculation** — nothing has an exchange rate against anything.
-- **Debit does move**, but only attached to a thing. Hand over the car, hand over its accumulated debit ([[property-debit]]).
+- **Debit does move**, but only attached to a thing. Hand over the car, hand over its accumulated debit ([property-debit](property-debit.md)).
 
 ## Why it works this way
 
-Fungibility is what turns an accounting unit into a currency, and a currency into capital. The instant credits become interchangeable, they can be accumulated, lent, and rented — and [[capitalism-cannot-function]] stops being true.
+Fungibility is what turns an accounting unit into a currency, and a currency into capital. The instant credits become interchangeable, they can be accumulated, lent, and rented — and [capitalism-cannot-function](capitalism-cannot-function.md) stops being true.
 
-This is also why Aequitas is **not a token or a blockchain**. Both assume fungible transferable units. Aequitas is an accounting system over an [[derived-ledger|event log]].
+This is also why Aequitas is **not a token or a blockchain**. Both assume fungible transferable units. Aequitas is an accounting system over an [event log](derived-ledger.md).
 
-The firewall is load-bearing for [[enrichment]] especially: enrichment must never become convertible, or it becomes currency by the back door (OP-8).
+The firewall is load-bearing for [enrichment](enrichment.md) especially: enrichment must never become convertible, or it becomes currency by the back door (OP-8).
 
 ## Depends on
 
-- [[material-flow-value]]
-- [[derived-ledger]]
+- [material-flow-value](material-flow-value.md)
+- [derived-ledger](derived-ledger.md)
 
 ## Consequences
 
-- [[capitalism-cannot-function]]
-- [[property-debit]] — the one thing that *does* transfer
-- [[enrichment]] — non-convertibility is the same principle applied to social value
+- [capitalism-cannot-function](capitalism-cannot-function.md)
+- [property-debit](property-debit.md) — the one thing that *does* transfer
+- [enrichment](enrichment.md) — non-convertibility is the same principle applied to social value
 
 ## Open questions
 
@@ -38,7 +38,7 @@ The firewall is load-bearing for [[enrichment]] especially: enrichment must neve
 
 ## Contrast
 
-- [[energy-accounting]] — Technocracy's energy certificates *were* fungible and spendable, just non-transferable and expiring. Aequitas goes further: credit is not spendable at all.
+- [energy-accounting](energy-accounting.md) — Technocracy's energy certificates *were* fungible and spendable, just non-transferable and expiring. Aequitas goes further: credit is not spendable at all.
 
 ---
 *Status: settled*

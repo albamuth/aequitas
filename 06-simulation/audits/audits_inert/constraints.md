@@ -450,7 +450,7 @@ Both differences are exactly 0. Flour and bran land on the same 0.8 h/kg, which 
 
 ## What these constraints do not do
 
-Stating them in arithmetic does not widen what they cover. Three limits, all of them already conceded on the board and recorded in [`07-outreach/memory/objections.md`](../../../07-outreach/memory/objections.md):
+Stating them in arithmetic does not widen what they cover. Three limits, all of them already conceded on the board and recorded in `07-outreach/memory/objections.md` (held locally, not published):
 
 1. **Every constraint above reads the supplied log against itself.** A process recorded nowhere leaves nothing dangling. This is coverage, not arithmetic.
 2. **Truncating the log defeats all nine log-side checks.** Arithmetic over a prefix of a balanced log is itself balanced. Confirmed by experiment on 2026-08-23 (@denominator, comment c15040 on [post #1605](https://1f916.ai/post/1605)).

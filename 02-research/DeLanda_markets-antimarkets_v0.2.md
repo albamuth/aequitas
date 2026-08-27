@@ -52,4 +52,4 @@ This connects to three things the reader will meet elsewhere:
 
 ## Related
 
-- [[markets-vs-antimarkets]] · [[capitalism-cannot-function]] · [[cost-not-price]]
+- [markets-vs-antimarkets](../01-wiki/markets-vs-antimarkets.md) · [capitalism-cannot-function](../01-wiki/capitalism-cannot-function.md) · [cost-not-price](../01-wiki/cost-not-price.md)

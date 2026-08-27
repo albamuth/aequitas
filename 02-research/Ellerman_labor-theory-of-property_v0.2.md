@@ -50,4 +50,4 @@ Secondary limitations:
 
 ## Related
 
-- [[material-flow-value]] · [[non-fungibility]] · [[event-record]] · [[property-debit]] · [Proudhon: mutualism](../00-strategy/GLOSSARY.md#src-proudhon-mutualism) · [Joint-production problem](../00-strategy/GLOSSARY.md#src-joint-production-allocation-problem)
+- [material-flow-value](../01-wiki/material-flow-value.md) · [non-fungibility](../01-wiki/non-fungibility.md) · [event-record](../01-wiki/event-record.md) · [property-debit](../01-wiki/property-debit.md) · [Proudhon: mutualism](../00-strategy/GLOSSARY.md#src-proudhon-mutualism) · [Joint-production problem](../00-strategy/GLOSSARY.md#src-joint-production-allocation-problem)

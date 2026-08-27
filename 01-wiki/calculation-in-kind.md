@@ -10,22 +10,22 @@ This provoked Ludwig von Mises's "Economic Calculation in a Socialist Commonweal
 
 ## Why this is the central objection Aequitas must answer
 
-**Aequitas is calculation in kind.** [[material-flow-value]] is Neurath's position with a physical-flow value theory, and [[cost-not-price]] removes money prices exactly as Mises said could not be done. Any serious economist reading the whitepaper will reach for Mises within a page.
+**Aequitas is calculation in kind.** [material-flow-value](material-flow-value.md) is Neurath's position with a physical-flow value theory, and [cost-not-price](cost-not-price.md) removes money prices exactly as Mises said could not be done. Any serious economist reading the whitepaper will reach for Mises within a page.
 
 The answers Aequitas has, and their honest strength:
 
 | Objection | Aequitas response | Strength |
 |---|---|---|
 | No commensurable unit | Mass, energy, seconds — measurable identically everywhere | **Strong.** This is a real commensurating basis Neurath lacked. |
-| Calculation is intractable | [[derived-ledger]] + modern compute; Neurath had neither | **Strong on tractability, weak on scale.** See C4. |
-| Knowledge is dispersed (Hayek) | [[verification-ladder]] gathers locally, not centrally; [[statistical-coverage]] fills gaps | **Partial.** Hayek's point is about *tacit* knowledge, which sensors don't capture. |
-| Prices reveal preference | [[enrichment]] carries preference; [[debit-tolerance]] handles allocation | **Weakest link.** Not yet worked out. Attack here first. |
+| Calculation is intractable | [derived-ledger](derived-ledger.md) + modern compute; Neurath had neither | **Strong on tractability, weak on scale.** See C4. |
+| Knowledge is dispersed (Hayek) | [verification-ladder](verification-ladder.md) gathers locally, not centrally; [statistical-coverage](statistical-coverage.md) fills gaps | **Partial.** Hayek's point is about *tacit* knowledge, which sensors don't capture. |
+| Prices reveal preference | [enrichment](enrichment.md) carries preference; [debit-tolerance](debit-tolerance.md) handles allocation | **Weakest link.** Not yet worked out. Attack here first. |
 
 **The fourth row is where the theory is most exposed.** Cost tells you what something *takes*, not what anyone *wants*. Aequitas needs a defensible answer to how scarce goods are allocated when cost alone doesn't rank claimants — and it currently doesn't have one.
 
 ## What Neurath got that's still useful
 
-His **incommensurability** argument is the best available support for [[no-externalities]]: it's the case that monetizing ecological harm destroys information rather than capturing it.
+His **incommensurability** argument is the best available support for [no-externalities](no-externalities.md): it's the case that monetizing ecological harm destroys information rather than capturing it.
 
 ## Sources
 
@@ -37,8 +37,8 @@ His **incommensurability** argument is the best available support for [[no-exter
 
 ## Related
 
-- [[energy-accounting]] — the one-dimensional version, and how it failed
-- [[estimation-engine]] — where the tractability question actually gets answered
+- [energy-accounting](energy-accounting.md) — the one-dimensional version, and how it failed
+- [estimation-engine](estimation-engine.md) — where the tractability question actually gets answered
 - Cockshott & Cottrell, Lange — later entrants worth archiving
 
 ---

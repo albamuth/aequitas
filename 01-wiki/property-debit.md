@@ -2,7 +2,7 @@
 
 > The debit of a thing you currently hold. A *current-holdings* term that attaches to the object — but **it is not one quantity.** It has two components that behave differently on transfer, and conflating them was an internal contradiction until v0.7.
 
-See [[debit-taxonomy]] for the full picture and the schematic; this page is the property-debit branch of it.
+See [debit-taxonomy](debit-taxonomy.md) for the full picture and the schematic; this page is the property-debit branch of it.
 
 ## What it is — two components
 
@@ -13,9 +13,9 @@ See [[debit-taxonomy]] for the full picture and the schematic; this page is the 
 
 - Acquire an item → you take on its **material** in full, and begin accruing a **holding-time share** of its making.
 - Transfer it → the **material** leaves with the atoms; your **creation-cost share persists**, diluting as the new holder accumulates time. You can't escape it via a non-participant — no record of a hand-off means the ledger still shows *you* holding it.
-- Work done on the property **increases** the property's creation-cost, and therefore the holder's — see [[self-work-identity]].
+- Work done on the property **increases** the property's creation-cost, and therefore the holder's — see [self-work-identity](self-work-identity.md).
 
-Contrast with [[consumption-debit]], which is permanent and never discharges at all.
+Contrast with [consumption-debit](consumption-debit.md), which is permanent and never discharges at all.
 
 ## Why it works this way
 
@@ -23,9 +23,9 @@ This one distinction does an enormous amount of the theory's work. It makes **pr
 
 Under capitalism, holding an asset generates income (rent, appreciation, interest). Under Aequitas, holding an asset generates *debit*, and the only way to get rid of it is to give the asset to someone else — who then carries it. There is no position in which merely owning something pays.
 
-Combined with [[cost-not-price]], this is the whole of [[capitalism-cannot-function]]: no rent, no rental income, no speculation, no compounding capital. None of it is banned. There is simply no mechanism.
+Combined with [cost-not-price](cost-not-price.md), this is the whole of [capitalism-cannot-function](capitalism-cannot-function.md): no rent, no rental income, no speculation, no compounding capital. None of it is banned. There is simply no mechanism.
 
-See [[self-work-identity]] for the surprising and important corollary about improving your own property.
+See [self-work-identity](self-work-identity.md) for the surprising and important corollary about improving your own property.
 
 ## Who games this
 
@@ -33,13 +33,13 @@ See [[self-work-identity]] for the surprising and important corollary about impr
 
 ## Depends on
 
-- [[material-flow-value]]
-- [[cost-not-price]]
+- [material-flow-value](material-flow-value.md)
+- [cost-not-price](cost-not-price.md)
 
 ## Consequences
 
-- [[self-work-identity]]
-- [[capitalism-cannot-function]]
+- [self-work-identity](self-work-identity.md)
+- [capitalism-cannot-function](capitalism-cannot-function.md)
 
 ## Open questions
 
@@ -137,4 +137,4 @@ Front-loading says *when* a durable asset's cost falls due. This says *who carri
 
 ---
 *Status: settled (updated to the v0.7 two-component model)*
-*Source: `00-strategy/Aequitas_Foundations_v0.8.md` §3.2, §3.2b, §4.5 · master page: [[debit-taxonomy]]*
+*Source: `00-strategy/Aequitas_Foundations_v0.8.md` §3.2, §3.2b, §4.5 · master page: [debit-taxonomy](debit-taxonomy.md)*

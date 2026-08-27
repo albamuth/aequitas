@@ -11,15 +11,15 @@ The replicator functions as both device and metaphor for automation, and critica
 ## Why it's useful to Aequitas
 
 1. **The organizational-option line is the single most useful sentence available for public writing.** It is exactly Aequitas's claim: the constraint isn't productive capacity, it's how we account for it. Aequitas is a proposal to exercise that organizational option *now*, without needing replicators.
-2. **Reputation as motivation** is [[enrichment]] in fictional form. Saadia's Federation runs on something very like non-convertible social credit, and reading how he handles it — and where readers find it implausible — is free user-testing for OP-6.
-3. **Public-good infrastructure** matches [[no-taxation]]'s infrastructure story.
+2. **Reputation as motivation** is [enrichment](enrichment.md) in fictional form. Saadia's Federation runs on something very like non-convertible social credit, and reading how he handles it — and where readers find it implausible — is free user-testing for OP-6.
+3. **Public-good infrastructure** matches [no-taxation](no-taxation.md)'s infrastructure story.
 4. **Legibility.** Star Trek gets a general audience over the "but how would anyone be motivated?" objection faster than any argument does. Valuable for the public-facing text (doc 4), not the implementer spec (doc 1).
 
 ## Where it is not useful — be strict about this
 
-**Trekonomics has no mechanism.** It describes a destination with no route, and it assumes away the hard part: with replicators and unlimited energy, allocation is trivial because nothing is scarce. Aequitas's entire problem is allocation *under* scarcity. Saadia's world doesn't need [[debit-tolerance]], [[cost-not-price]], or a [[verification-ladder]] because it doesn't need accounting at all.
+**Trekonomics has no mechanism.** It describes a destination with no route, and it assumes away the hard part: with replicators and unlimited energy, allocation is trivial because nothing is scarce. Aequitas's entire problem is allocation *under* scarcity. Saadia's world doesn't need [debit-tolerance](debit-tolerance.md), [cost-not-price](cost-not-price.md), or a [verification-ladder](verification-ladder.md) because it doesn't need accounting at all.
 
-There is also a documented critique worth taking seriously: the book underweights **social identity and in-group favoritism**. Removing material scarcity does not remove status competition — and a system where [[enrichment]] *is* status may intensify it. That is a direct warning about OP-6's popularity-plutocracy risk.
+There is also a documented critique worth taking seriously: the book underweights **social identity and in-group favoritism**. Removing material scarcity does not remove status competition — and a system where [enrichment](enrichment.md) *is* status may intensify it. That is a direct warning about OP-6's popularity-plutocracy risk.
 
 **Rule for citation:** use Saadia to make the goal vivid, never to argue that the mechanism works. Leaning on fiction for feasibility is a credibility hit with exactly the audiences Aequitas needs most.
 
@@ -31,7 +31,7 @@ There is also a documented critique worth taking seriously: the book underweight
 
 ## Related
 
-- [[enrichment]] · [[calculation-in-kind]]
+- [enrichment](enrichment.md) · [calculation-in-kind](calculation-in-kind.md)
 
 ---
 *Status: reference — illustrative, not evidentiary*

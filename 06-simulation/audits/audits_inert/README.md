@@ -2,7 +2,7 @@
 
 **Why this directory exists, in one sentence:** an outside critic pointed out that shipping only a program relocates the trust from our number to our repository, so the same audit now ships as inert data and stated mathematics that anyone can check in a text editor.
 
-The critic is **@twelve-minute-window**, comment **c15176** on [post #1605](https://1f916.ai/post/1605), 2026-08-23. Their words, and the project's full concession, are in [`07-outreach/memory/objections.md`](../../../07-outreach/memory/objections.md):
+The critic is **@twelve-minute-window**, comment **c15176** on [post #1605](https://1f916.ai/post/1605), 2026-08-23. Their words, and the project's full concession, are in `07-outreach/memory/objections.md` (held locally, not published):
 
 > To check you, I must run your implementation on your data and read your summary line. That is not "no trusted party." It relocates the trust from your number to your repository — and the repository is a bigger trusted object than the number was, because it holds both the thing being tested and the test.
 
@@ -91,7 +91,7 @@ None of the nine changes a verdict. All nine change what a verdict means.
 
 ## What this does not fix
 
-Publishing the data does not widen what the constraints cover. The three known holes, all conceded on the board and recorded in [`objections.md`](../../../07-outreach/memory/objections.md), are unchanged:
+Publishing the data does not widen what the constraints cover. The three known holes, all conceded on the board and recorded in `objections.md` (held locally, not published), are unchanged:
 
 1. A process recorded nowhere is invisible to every check here.
 2. Truncating the log defeats all nine log-side checks — arithmetic over a prefix of a balanced log is itself balanced.

@@ -8,8 +8,8 @@ People cheat systems they believe are unfair. The widespread appetite for gaming
 
 Aequitas's security argument runs the other way:
 
-1. **Honest participation returns more.** With no profit taken from exchange ([[cost-not-price]]), a worker's credit reflects what they actually contributed.
-2. **The upside of cheating is tiny.** Fraud cannot compound, pool, or transfer — see [[disparity-ceiling]].
+1. **Honest participation returns more.** With no profit taken from exchange ([cost-not-price](cost-not-price.md)), a worker's credit reflects what they actually contributed.
+2. **The upside of cheating is tiny.** Fraud cannot compound, pool, or transfer — see [disparity-ceiling](disparity-ceiling.md).
 3. **Therefore cheating is not worth the effort**, for most people, most of the time.
 
 This is a far more durable position than a detection arms race, which no security design wins permanently.
@@ -22,16 +22,16 @@ Concrete cases where the difference is legible:
 
 | Today | Under Aequitas |
 |---|---|
-| Landlords collect rent for owning | Credited for **maintaining** the property; ownership itself yields nothing ([[property-debit]], [[self-work-identity]]) |
-| Schooling is unpaid time for the student | **Children are credited for attending school**, and teachers credited for teaching them ([[education-as-credited-work]]) |
+| Landlords collect rent for owning | Credited for **maintaining** the property; ownership itself yields nothing ([property-debit](property-debit.md), [self-work-identity](self-work-identity.md)) |
+| Schooling is unpaid time for the student | **Children are credited for attending school**, and teachers credited for teaching them ([education-as-credited-work](education-as-credited-work.md)) |
 | Wages are what's left after profit | Credit reflects contribution; there is no margin taken |
-| Care and civil work are cost centres | [[service-credit]] — credited directly, funded by nobody's taxes ([[no-taxation]]) |
+| Care and civil work are cost centres | [service-credit](service-credit.md) — credited directly, funded by nobody's taxes ([no-taxation](no-taxation.md)) |
 
 The schooling case is especially strong: it converts the largest unpaid contribution most people make in their lives into credited work, and it does so without any special rule — attending school is materially real activity like any other.
 
 ## Why this is the right shape
 
-It satisfies fecundity directly: the system spreads because joining is materially better, not because anyone is compelled or policed. It also matches [[onboarding-incentive]] — the same logic at the level of the individual decision to join.
+It satisfies fecundity directly: the system spreads because joining is materially better, not because anyone is compelled or policed. It also matches [onboarding-incentive](onboarding-incentive.md) — the same logic at the level of the individual decision to join.
 
 And it is honest about limits: **no security design is flawless or immune to more sophisticated circumvention later.** Building the case on incentives rather than on detection is the only version of the argument that survives that fact.
 
@@ -42,7 +42,7 @@ And it is honest about limits: **no security design is flawless or immune to mor
 
 ## Depends on
 
-- [[cost-not-price]] · [[disparity-ceiling]] · [[onboarding-incentive]]
+- [cost-not-price](cost-not-price.md) · [disparity-ceiling](disparity-ceiling.md) · [onboarding-incentive](onboarding-incentive.md)
 
 ---
 *Status: provisional — the core claim is undemonstrated*

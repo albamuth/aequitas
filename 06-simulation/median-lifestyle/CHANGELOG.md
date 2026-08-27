@@ -74,4 +74,4 @@ Journal entry: [`../../03-journal/2026-08-09.md`](../../03-journal/2026-08-09.md
 
 ### 2026-02-06 — the data source was withdrawn
 
-The Bureau of Labor Statistics withdrew the Employment Requirements matrices. The copies in [`../data/erm_full/`](../data/) were recovered through the [Internet Archive](https://web.archive.org/) and are the only ones we have. **Every track 1 figure depends on them.**
+The Bureau of Labor Statistics withdrew the Employment Requirements matrices. The copies in `../data/erm_full/` were recovered through the **[Internet Archive](https://web.archive.org/web/2025/https://www.bls.gov/emp/data/input-output-matrix.htm)** and are the only ones we have. **Every track 1 figure depends on them.**

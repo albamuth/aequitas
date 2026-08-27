@@ -25,13 +25,13 @@ It is also the fecundity engine on the technical side: each rung creates real de
 
 ## Level 2 is emergent, not designed
 
-Level 2 is **not a fraud detector to be specified in advance.** It is what [[distributed-auditing]] grows into: competing trust networks, staffed by people credited for the work of auditing, that participants choose between.
+Level 2 is **not a fraud detector to be specified in advance.** It is what [distributed-auditing](distributed-auditing.md) grows into: competing trust networks, staffed by people credited for the work of auditing, that participants choose between.
 
 Designing a central detection apparatus would recreate the authority A8 forbids, and no detector stays ahead of attackers permanently. The defensible position instead rests on three things:
 
 1. **Arithmetic audits need no trust model at all** — 24-hour limits, mass/energy balance, provenance closure. Cheap, universal, and they catch the easy fraud for free.
-2. **Auditing is credited work**, so verification capacity scales with adoption ([[distributed-auditing]]).
-3. **The payoff from undetected fraud is structurally tiny** ([[disparity-ceiling]]), so the arms race matters far less than it would in a currency system.
+2. **Auditing is credited work**, so verification capacity scales with adoption ([distributed-auditing](distributed-auditing.md)).
+3. **The payoff from undetected fraud is structurally tiny** ([disparity-ceiling](disparity-ceiling.md)), so the arms race matters far less than it would in a currency system.
 
 Prior art worth mining when the ecosystem question becomes concrete: EigenTrust, SybilGuard, proof-of-personhood (BrightID, Idena, World ID). See `02-research/`.
 
@@ -50,7 +50,7 @@ Prior art worth mining when the ecosystem question becomes concrete: EigenTrust,
 
 **Climbing the ladder buys cheaper checking, and you pay for it in tools.** A person must look at every item. A tool looks at every item by itself.
 
-**The setup price never lands on the goods.** Tools are paid for when bought and sit on the asset, shared among its holders by how long each held it. **A tool's cost is never divided into the things it measured.** See [[property-debit]].
+**The setup price never lands on the goods.** Tools are paid for when bought and sit on the asset, shared among its holders by how long each held it. **A tool's cost is never divided into the things it measured.** See [property-debit](property-debit.md).
 
 **And a check is often not an extra act.** For goods the basic check is free, because the hand-off *is* the check: the receiver, by taking the goods and their debit, attests the goods exist.
 
@@ -127,7 +127,7 @@ Now weigh the actual pile of grain in the actual barn:
 
 **The scale fired because it can say a number the records cannot argue with. It is expressive. The other records were only independent.**
 
-> **What defeats a balanced lie is physicality, not independence.** This is why the outside total used in [[statistical-coverage]] is a **physical** total and not a second set of books. **Matter does not agree to be counted twice.**
+> **What defeats a balanced lie is physicality, not independence.** This is why the outside total used in [statistical-coverage](statistical-coverage.md) is a **physical** total and not a second set of books. **Matter does not agree to be counted twice.**
 
 ### Where the trust went
 
@@ -141,16 +141,16 @@ Registered with **OP-22** (minimum audit disclosure) and **OP-10** (weighting go
 
 ## Depends on
 
-- [[derived-ledger]]
+- [derived-ledger](derived-ledger.md)
 
 ## Consequences
 
-- [[statistical-coverage]] — estimation is what fills the gaps verification can't reach
-- [[regulator-inversion]]
+- [statistical-coverage](statistical-coverage.md) — estimation is what fills the gaps verification can't reach
+- [regulator-inversion](regulator-inversion.md)
 
 ## Open questions
 
-- How competing trust networks reconcile — see [[ledger-ecosystem]]
+- How competing trust networks reconcile — see [ledger-ecosystem](ledger-ecosystem.md)
 - **OP-7 — cross-level trade fairness.** Deferred to v2.
 
 ---

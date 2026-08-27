@@ -4,9 +4,9 @@
 
 ## The problem it solves
 
-[[retroactive-reweighting]] makes cost constants extraordinarily powerful. Whoever publishes the energetics of a process sets every [[co-product-allocation]] split in that sector — **backwards through all of history.** That is a capture surface, and it needs an answer that is not a standards body.
+[retroactive-reweighting](retroactive-reweighting.md) makes cost constants extraordinarily powerful. Whoever publishes the energetics of a process sets every [co-product-allocation](co-product-allocation.md) split in that sector — **backwards through all of history.** That is a capture surface, and it needs an answer that is not a standards body.
 
-**One channel closes for free, and it is worth claiming.** There is no market-dominating corporation to fund a favourable result, because [[cost-not-price]] removes the profit that pays for captured science today. Labs are credited by trust networks for doing the work. **The Enron-shaped failure cannot operate the same way here.**
+**One channel closes for free, and it is worth claiming.** There is no market-dominating corporation to fund a favourable result, because [cost-not-price](cost-not-price.md) removes the profit that pays for captured science today. Labs are credited by trust networks for doing the work. **The Enron-shaped failure cannot operate the same way here.**
 
 **But the obvious fix introduces its mirror.** A general-membership trust network is dominated by the *consuming* side of any given good — everyone eats beef, few raise cattle. Its members therefore collectively benefit from beef's debit being **understated**. And the incentive to correct runs one way only:
 
@@ -15,7 +15,7 @@
 | Constant **overstates** debit | Every subscriber | Corrected |
 | Constant **understates** debit | Nobody — correcting it worsens every subscriber's ledger | **Nobody funds the replication** |
 
-**Result: systemic drift toward under-costing** — precisely how every carbon-accounting regime attempted so far has failed. What makes it insidious is that **no equation breaks.** [[material-flow-value]] tolerates it arithmetically; it simply erodes [[no-externalities]], quietly, forever.
+**Result: systemic drift toward under-costing** — precisely how every carbon-accounting regime attempted so far has failed. What makes it insidious is that **no equation breaks.** [material-flow-value](material-flow-value.md) tolerates it arithmetically; it simply erodes [no-externalities](no-externalities.md), quietly, forever.
 
 **Aggravating factor: replication cost is asymmetric.** Competing networks discipline *estimates* cheaply — re-interviewing a farmer costs little. They do not discipline *constants*: re-running calorimetry is expensive. So the competitive pressure that works everywhere else in the system is weakest exactly here.
 
@@ -34,8 +34,8 @@ Three supporting rules:
 ## Why it is the right shape for Aequitas
 
 - **Decentralized.** No authority, no standards body, no appointed reviewer. It is an incentive, not an enforcement rule.
-- **Self-funding.** The replication is credited work paid for by a party with a real stake — it passes *"does this need a Paul Glover?"* without help. See [[distributed-auditing]].
-- **Already implied by an axiom.** [[cost-not-price]] removes profit *in exchange* while explicitly preserving **competition on quality, artfulness and efficiency**. Rival-sector audit is that competition applied to the cost model itself.
+- **Self-funding.** The replication is credited work paid for by a party with a real stake — it passes *"does this need a Paul Glover?"* without help. See [distributed-auditing](distributed-auditing.md).
+- **Already implied by an axiom.** [cost-not-price](cost-not-price.md) removes profit *in exchange* while explicitly preserving **competition on quality, artfulness and efficiency**. Rival-sector audit is that competition applied to the cost model itself.
 
 ## Why the co-op form is not the fix
 
@@ -53,14 +53,14 @@ See `../00-strategy/GLOSSARY.md#src-auditor-independence`.
 
 ## Depends on
 
-- [[retroactive-reweighting]] — the thing that makes constants worth capturing
-- [[cost-not-price]] — closes the funding-bias channel, and supplies the rivalry
-- [[distributed-auditing]] — auditing is credited work
+- [retroactive-reweighting](retroactive-reweighting.md) — the thing that makes constants worth capturing
+- [cost-not-price](cost-not-price.md) — closes the funding-bias channel, and supplies the rivalry
+- [distributed-auditing](distributed-auditing.md) — auditing is credited work
 
 ## Consequences
 
-- [[co-product-allocation]] — the splits this protects
-- [[protocol-governance]] — a partial answer to the largest hole in A8
+- [co-product-allocation](co-product-allocation.md) — the splits this protects
+- [protocol-governance](protocol-governance.md) — a partial answer to the largest hole in A8
 
 ## Open questions
 

@@ -90,4 +90,4 @@ Aequitas's requirement that a system *sustain itself* is exactly the test Ithaca
 
 ## Related
 
-- [[non-fungibility]] · [[time-as-yardstick]] · [[price-equals-cost]] · [[enrichment]] · [[verification-ladder]] · [[debit-tolerance]] · [Warren: cost the limit of price](../00-strategy/GLOSSARY.md#src-warren-cost-the-limit-of-price) · [Proudhon: mutualism](../00-strategy/GLOSSARY.md#src-proudhon-mutualism)
+- [non-fungibility](../01-wiki/non-fungibility.md) · [time-as-yardstick](../01-wiki/time-as-yardstick.md) · [price-equals-cost](../01-wiki/cost-not-price.md) · [enrichment](../01-wiki/enrichment.md) · [verification-ladder](../01-wiki/verification-ladder.md) · [debit-tolerance](../01-wiki/debit-tolerance.md) · [Warren: cost the limit of price](../00-strategy/GLOSSARY.md#src-warren-cost-the-limit-of-price) · [Proudhon: mutualism](../00-strategy/GLOSSARY.md#src-proudhon-mutualism)

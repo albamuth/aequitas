@@ -36,4 +36,4 @@ Bears on: the debt argument (Overview §2); the "double coincidence of wants" ba
 
 - [Keynes: the General Theory](../00-strategy/GLOSSARY.md#src-keynes-general-theory) — the modern debt economy Graeber historicises
 - [Polanyi: The Great Transformation](../00-strategy/GLOSSARY.md#src-polanyi-great-transformation) — the shared attack on the barter origin myth
-- [[non-fungibility]] · [Local-currency field record](../00-strategy/GLOSSARY.md#src-local-currency-experiments)
+- [non-fungibility](../01-wiki/non-fungibility.md) · [Local-currency field record](../00-strategy/GLOSSARY.md#src-local-currency-experiments)

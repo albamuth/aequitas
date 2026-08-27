@@ -18,11 +18,11 @@ Two states, and the distinction carries the whole axiom:
 
 ## Why it works this way
 
-Universality requires the accounting to close. If a large population sits outside it, the flows they cause are unaccounted and [[no-externalities]] is false in practice.
+Universality requires the accounting to close. If a large population sits outside it, the flows they cause are unaccounted and [no-externalities](no-externalities.md) is false in practice.
 
-**Estimating only debit was factually wrong, not merely unfair.** A non-participant's production is real: under [[event-record]] origin closure, that wheat is a parcel with ancestry and an agent. Recording the consumption while omitting the production makes the global books describe a world where material appears from uncreditable sources.
+**Estimating only debit was factually wrong, not merely unfair.** A non-participant's production is real: under [event-record](event-record.md) origin closure, that wheat is a parcel with ancestry and an agent. Recording the consumption while omitting the production makes the global books describe a world where material appears from uncreditable sources.
 
-Excluding registered participants from the cohort baseline is a subtle but important detail — otherwise participants' real (usually lower) footprints would drag down the average assigned to non-participants, weakening [[onboarding-incentive]].
+Excluding registered participants from the cohort baseline is a subtle but important detail — otherwise participants' real (usually lower) footprints would drag down the average assigned to non-participants, weakening [onboarding-incentive](onboarding-incentive.md).
 
 ## The error asymmetry
 
@@ -52,12 +52,12 @@ Symmetric estimation answers it. The system assigns an estimate of **both** side
 
 ## Depends on
 
-- [[material-flow-value]]
-- [[verification-ladder]]
+- [material-flow-value](material-flow-value.md)
+- [verification-ladder](verification-ladder.md)
 
 ## Consequences
 
-- [[onboarding-incentive]] — replacing your assigned average with your real record
+- [onboarding-incentive](onboarding-incentive.md) — replacing your assigned average with your real record
 
 ## The three landing states — `floor`, `ceiling`, `not identified`
 
@@ -85,7 +85,7 @@ Symmetric estimation answers it. The system assigns an estimate of **both** side
 
 ### Worked, on the valley wheat case
 
-After the four alignment rows are fixed (see [[estimation-engine]]): `N` = 88,000 t, `Y` = 82,000 t, `R` = **6,000 t**.
+After the four alignment rows are fixed (see [estimation-engine](estimation-engine.md)): `N` = 88,000 t, `Y` = 82,000 t, `R` = **6,000 t**.
 
 | Case | What is really true | True `R` | 6,000 t is |
 |---|---|---|---|
@@ -138,7 +138,7 @@ A farm records 8 sacks in and 8 sacks out. Someone then deletes the last **2 sac
 
 **The first three are arithmetic over one log, and cutting a log never breaks arithmetic over that log**, because what is left is still balanced. **Only the fourth reaches outside.**
 
-**And a second record is not enough on its own.** It must also be *able* to hold a value that contradicts the fault — see [[verification-ladder]] on independence and expressiveness.
+**And a second record is not enough on its own.** It must also be *able* to hold a value that contradicts the fault — see [verification-ladder](verification-ladder.md) on independence and expressiveness.
 
 ---
 

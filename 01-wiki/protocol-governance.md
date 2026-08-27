@@ -13,7 +13,7 @@ Axiom **A8 (no governing body)**. Rules evolve as **immutable core + open varian
 
 ## Why it works this way
 
-Every previous attempt at an alternative economic order was destroyed or captured through its *organization*, not its theory. [[energy-accounting|Technocracy Inc.]] collapsed partly into the personality of Howard Scott. Cooperative currencies get captured by their issuing body. The theory is rarely what fails.
+Every previous attempt at an alternative economic order was destroyed or captured through its *organization*, not its theory. [Technocracy Inc.](energy-accounting.md) collapsed partly into the personality of Howard Scott. Cooperative currencies get captured by their issuing body. The theory is rarely what fails.
 
 Making the core unamendable means capture of any one body cannot alter the system — capturing the Aequitas Foundation gets you a website.
 
@@ -23,20 +23,20 @@ Open variance is also how the system stays empirical: competing implementations 
 
 **"Immutable" is a claim about intent, not physics.** Nothing technically prevents a dominant implementation from shipping a modified core and having everyone adopt it — this is exactly how software forks resolve in practice, by adoption weight rather than principle. Bitcoin's core rules are "immutable" and have changed.
 
-The real defense is that the core is *recomputable and checkable by anyone* from the [[derived-ledger|event log]] — a divergent implementation produces visibly different numbers from the same data. That is a stronger guarantee than declaring immutability, and it should be the way A8 is argued.
+The real defense is that the core is *recomputable and checkable by anyone* from the [event log](derived-ledger.md) — a divergent implementation produces visibly different numbers from the same data. That is a stronger guarantee than declaring immutability, and it should be the way A8 is argued.
 
-Second risk: [[service-credit]] converts to influence (OP-1). Whatever mechanism is chosen there is the most likely route by which governance authority regrows.
+Second risk: [service-credit](service-credit.md) converts to influence (OP-1). Whatever mechanism is chosen there is the most likely route by which governance authority regrows.
 
-Third: whoever controls the [[retroactive-reweighting]] weighting model controls every balance in the world, without touching the core rules at all. **This is the real capture surface and it is not yet defended.**
+Third: whoever controls the [retroactive-reweighting](retroactive-reweighting.md) weighting model controls every balance in the world, without touching the core rules at all. **This is the real capture surface and it is not yet defended.**
 
 ## Depends on
 
-- [[derived-ledger]]
+- [derived-ledger](derived-ledger.md)
 
 ## Consequences
 
-- [[service-credit]] — OP-1
-- [[regulator-inversion]]
+- [service-credit](service-credit.md) — OP-1
+- [regulator-inversion](regulator-inversion.md)
 
 ## Open questions
 

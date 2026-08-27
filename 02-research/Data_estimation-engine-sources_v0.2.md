@@ -104,7 +104,7 @@ This also delivers the first-pilot deployment almost for free: both "cost out a 
 
 ## 7. ⚠ The one clash with an Aequitas principle — splitting by price
 
-> **✅ RESOLVED 2026-08-01 for materials and energy** — see [`00-strategy/OP-17_coproduct_allocation.md`](../00-strategy/OP-17_coproduct_allocation.md) and [[co-product-allocation]]. Where a shared process's own physics can be measured, the split is a *measurement*, and splitting by price isn't just undesirable, it's *wrong*. So the US model **can't be used as a source of truth** — only as data, with its price-based splits flagged as "declared," not "measured." The conditions below still govern that use. **Not resolved for labour** — see §8 item 1.
+> **✅ RESOLVED 2026-08-01 for materials and energy** — see [`00-strategy/OP-17_coproduct_allocation.md`](../00-strategy/OP-17_coproduct_allocation.md) and [co-product-allocation](../01-wiki/co-product-allocation.md). Where a shared process's own physics can be measured, the split is a *measurement*, and splitting by price isn't just undesirable, it's *wrong*. So the US model **can't be used as a source of truth** — only as data, with its price-based splits flagged as "declared," not "measured." The conditions below still govern that use. **Not resolved for labour** — see §8 item 1.
 
 **This must be settled before any figure is published, and it's the most important thing in this note.**
 
@@ -130,13 +130,13 @@ For Aequitas that collides head-on with two core rules: that a price is just a c
 
 Researchers argued a generation ago that physical tables are the *right* tool for tracking land, materials, energy, and water, precisely because environmental pressure follows physical flow, not money. **That's the Aequitas position, stated in the mainstream literature decades ago** — strong support for the materials-not-money principle.
 
-**But physical tables cover far less ground than money-based ones.** Realistic plan: use money-based models now, labelled honestly, and migrate toward physical as coverage improves — which is exactly what the "recompute as the data improves" mechanism ([[retroactive-reweighting]]) is built to absorb.
+**But physical tables cover far less ground than money-based ones.** Realistic plan: use money-based models now, labelled honestly, and migrate toward physical as coverage improves — which is exactly what the "recompute as the data improves" mechanism ([retroactive-reweighting](../01-wiki/retroactive-reweighting.md)) is built to absorb.
 
 ---
 
 ## 8. What no existing source provides — genuine Aequitas research
 
-1. **🔴 Labour hours down to a single product.** EXIOBASE gives hours per *sector*. Pinning hours to a *specific product* needs a split — and unlike materials and energy, **labour leaves no physical trace pointing to one output**, so no instrument will ever supply it (see [[physical-trace-test]]). Price is the usual fallback, which reopens §7. This is the live "splitting a team's contribution" problem and it's what blocks the demonstration. It will end in a *declared convention*, not a measurement. See [Ellerman: labour theory of property](../00-strategy/GLOSSARY.md#src-ellerman-labor-theory-of-property).
+1. **🔴 Labour hours down to a single product.** EXIOBASE gives hours per *sector*. Pinning hours to a *specific product* needs a split — and unlike materials and energy, **labour leaves no physical trace pointing to one output**, so no instrument will ever supply it (see [physical-trace-test](../01-wiki/physical-trace-test.md)). Price is the usual fallback, which reopens §7. This is the live "splitting a team's contribution" problem and it's what blocks the demonstration. It will end in a *declared convention*, not a measurement. See [Ellerman: labour theory of property](../00-strategy/GLOSSARY.md#src-ellerman-labor-theory-of-property).
 2. ~~**Training cost buried in skilled work.**~~ **Dissolved.** Training is paid up front and settled when it happens, so nothing flows downstream and no dataset is needed. See [Foundations §6.2](../00-strategy/Aequitas_Foundations_v0.13.md#62-training-front-loaded).
 3. **Occupational-harm accounting.** Aequitas requires health harms to flow *backwards* into the products a dangerous job made. *Lead to check: the Social Hotspots Database and the "social life-cycle assessment" literature — verify they exist and assess coverage before relying on them.*
 4. **Household unpaid labour tied to consumption.** The time-use survey has the hours; nothing connects them to the goods they support.
@@ -156,4 +156,4 @@ Researchers argued a generation ago that physical tables are the *right* tool fo
 
 ## Related
 
-- [[estimation-engine]] · [[event-record]] · [[material-flow-value]] · [[price-equals-cost]] · [[statistical-coverage]] · [Joint-production problem](../00-strategy/GLOSSARY.md#src-joint-production-allocation-problem) · [Refinery process energy](../00-strategy/GLOSSARY.md#src-refinery-process-energy)
+- [estimation-engine](../01-wiki/estimation-engine.md) · [event-record](../01-wiki/event-record.md) · [material-flow-value](../01-wiki/material-flow-value.md) · [price-equals-cost](../01-wiki/cost-not-price.md) · [statistical-coverage](../01-wiki/statistical-coverage.md) · [Joint-production problem](../00-strategy/GLOSSARY.md#src-joint-production-allocation-problem) · [Refinery process energy](../00-strategy/GLOSSARY.md#src-refinery-process-energy)

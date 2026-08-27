@@ -1,6 +1,6 @@
 # Service Credit
 
-> ⚠️ **STALE — DO NOT LEARN THE SYSTEM FROM THIS PAGE.** It describes the pre-v0.3 *three credit types* model, which Foundations replaced. There is **one credit — time worked** — and production/service/enrichment are three *feedback channels*, not credit types, with no accounting boundary between them (Foundations §6). This page is kept only until it is rewritten (queued in `NEXT.md`); read [[index]] and Foundations §6 instead.
+> ⚠️ **STALE — DO NOT LEARN THE SYSTEM FROM THIS PAGE.** It describes the pre-v0.3 *three credit types* model, which Foundations replaced. There is **one credit — time worked** — and production/service/enrichment are three *feedback channels*, not credit types, with no accounting boundary between them (Foundations §6). This page is kept only until it is rewritten (queued in `NEXT.md`); read [index](index.md) and Foundations §6 instead.
 
 > Credit for labor that produces no object — care, teaching, medicine, civil service. It converts not to holdings but to **responsibility and influence**.
 
@@ -28,18 +28,18 @@ Test any proposal against: *can a group with high service credit in one domain e
 
 ## Depends on
 
-- [[time-as-yardstick]] — no rate-scaling applies here too; a doctor's hour is not worth more than an orderly's
-- [[material-flow-value]]
+- [time-as-yardstick](time-as-yardstick.md) — no rate-scaling applies here too; a doctor's hour is not worth more than an orderly's
+- [material-flow-value](material-flow-value.md)
 
 ## Consequences
 
-- [[protocol-governance]]
-- [[regulator-inversion]]
+- [protocol-governance](protocol-governance.md)
+- [regulator-inversion](regulator-inversion.md)
 
 ## Open questions
 
 - **OP-1 — service → influence.** Unsolved.
-- Essential provision is unconditional: a counselor is credited for service *regardless of the recipient's standing* ([[debit-tolerance]]).
+- Essential provision is unconditional: a counselor is credited for service *regardless of the recipient's standing* ([debit-tolerance](debit-tolerance.md)).
 
 ---
 *Status: contested — OP-1*

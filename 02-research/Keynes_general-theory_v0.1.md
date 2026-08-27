@@ -35,4 +35,4 @@ Bears on: the debt argument (Overview §2), and the rule that credit can never b
 ## Related
 
 - [Graeber: Debt](../00-strategy/GLOSSARY.md#src-graeber-debt) — debt's deeper history; the anthropological companion to this critique
-- [[non-fungibility]] · [[price-equals-cost]]
+- [non-fungibility](../01-wiki/non-fungibility.md) · [price-equals-cost](../01-wiki/cost-not-price.md)

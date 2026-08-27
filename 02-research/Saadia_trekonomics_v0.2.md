@@ -48,4 +48,4 @@ It bears mainly on the question of how *appreciation and recognition* work in Ae
 
 ## Related
 
-- [[post-scarcity]] · [[enrichment]] · [[calculation-in-kind]]
+- [post-scarcity](../01-wiki/post-scarcity.md) · [enrichment](../01-wiki/enrichment.md) · [calculation-in-kind](../01-wiki/calculation-in-kind.md)

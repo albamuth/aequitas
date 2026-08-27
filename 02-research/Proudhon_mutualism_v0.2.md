@@ -22,12 +22,12 @@ He matters just as much as a **cautionary tale**: his *remedy* was a new kind of
 - **Mutual credit:** people extend credit to one another **at no interest**, cutting out state money and banks, and with them the fees that financiers skim.
 - Capital, he said, is **"dead labour"** — work already done and paid for, producing nothing further on its own. Rent and interest are therefore income for no labour.
 - His attempt to build it, the **People's Bank** (Paris, 1849), collapsed within months; Proudhon was jailed for press offences around the same time.
-- Josiah Warren reached the same core doctrine independently, and earlier, in an actual shop — see [[cost-the-limit-of-price]].
+- Josiah Warren reached the same core doctrine independently, and earlier, in an actual shop — see [cost-the-limit-of-price](../01-wiki/cost-the-limit-of-price.md).
 
 ## What we can use
 
 - **The possession/property split is a direct forerunner of Aequitas's treatment of what you hold.** In Aequitas you hold and use things freely, but holding them puts a *burden* on your books, not an income — you carry a thing's material weight while it's yours, and it goes with the thing when you pass it on. This is the clean answer to the fear that Aequitas confiscates people's belongings: it doesn't. It just stops belongings from being an earning machine.
-- **"Capital is dead labour"** is a tight, quotable way of saying why Aequitas can't have lending-at-interest: there's nothing productive to rent out, because a record of past work can't be handed to anyone (see [[non-fungibility]]).
+- **"Capital is dead labour"** is a tight, quotable way of saying why Aequitas can't have lending-at-interest: there's nothing productive to rent out, because a record of past work can't be handed to anyone (see [non-fungibility](../01-wiki/non-fungibility.md)).
 - It gives the anti-rent position a **186-year pedigree.** Aequitas isn't a novelty — it's an old diagnosis with a genuinely new mechanism.
 - Proudhon and Warren arriving at the same rule *independently* is a fair argument that pricing-at-cost is something people keep *discovering*, not an arbitrary invention.
 
@@ -48,4 +48,4 @@ He matters just as much as a **cautionary tale**: his *remedy* was a new kind of
 
 ## Related
 
-- [[mutualism]] · [[cost-the-limit-of-price]] · [[property-debit]] · [[non-fungibility]]
+- [mutualism](../01-wiki/mutualism.md) · [cost-the-limit-of-price](../01-wiki/cost-the-limit-of-price.md) · [property-debit](../01-wiki/property-debit.md) · [non-fungibility](../01-wiki/non-fungibility.md)

@@ -4,13 +4,13 @@
 
 ## What it is
 
-Work on property raises that property's debit-cost ([[property-debit]]). The worker earns credit for the labor. When worker and holder are the same person, the two cancel exactly.
+Work on property raises that property's debit-cost ([property-debit](property-debit.md)). The worker earns credit for the labor. When worker and holder are the same person, the two cancel exactly.
 
 ```
 credit(labor)  −  Δdebit(property)  =  0     [materials & energy excluded]
 ```
 
-Materials and energy consumed in the work are *not* cancelled — they are real [[consumption-debit]].
+Materials and energy consumed in the work are *not* cancelled — they are real [consumption-debit](consumption-debit.md).
 
 ## Why it works this way
 
@@ -22,17 +22,17 @@ Note what it does *not* discourage: the homeowner still gets a better house. The
 
 ## Who games this
 
-- **Circular work.** Two neighbours agree to "improve" each other's houses, each earning credit and each raising the other's property debit. Net position across the pair is unchanged, but individually each shows credit earned. Whether this is a real exploit or a harmless accounting artifact depends on whether credit earned is what raises the debit ceiling — needs checking against [[production-credit]].
-- **Overstated improvement.** Requires [[verification-ladder]] to catch.
+- **Circular work.** Two neighbours agree to "improve" each other's houses, each earning credit and each raising the other's property debit. Net position across the pair is unchanged, but individually each shows credit earned. Whether this is a real exploit or a harmless accounting artifact depends on whether credit earned is what raises the debit ceiling — needs checking against [production-credit](production-credit.md).
+- **Overstated improvement.** Requires [verification-ladder](verification-ladder.md) to catch.
 
 ## Depends on
 
-- [[property-debit]]
-- [[cost-not-price]]
+- [property-debit](property-debit.md)
+- [cost-not-price](cost-not-price.md)
 
 ## Consequences
 
-- [[capitalism-cannot-function]]
+- [capitalism-cannot-function](capitalism-cannot-function.md)
 
 ---
 *Status: settled (the identity) / provisional (circular-work exploit unresolved)*
