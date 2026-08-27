@@ -3,6 +3,26 @@
 > Version-by-version change log for `Aequitas_Overview_vX.Y.md` (the highest-versioned file in `00-strategy/`). Split out of the main document so it is read only when tracing **when and why** something changed. The main doc's header carries a one-line summary of the current version. Superseded full versions live in `99-archive/`.
 
 ---
+<!-- tag: ovw-v0-18-2026-08-27 -->
+### v0.18 (2026-08-27) - the cross-network fairness claim is removed; 2.4x is restated as a wall nobody reaches
+
+**Catches the Overview up to Foundations v0.23-v0.25 and the OP-22 ruling of 2026-08-25.** This was the **last public place** the withdrawn cross-network claim still stood. Paper: `OP-22_identity_not_disclosure_v0.2.md`.
+
+**1. Section 0's trust-network box - the withdrawn claim is gone.** It said the roughly 2.4-times cap *"holds across every network that can trade with every other, not one town at a time."* **Struck.** The box now says the limit describes **one network's own books and nothing wider**, because books are never added together and a purchase is checked against one network's books only - the one the seller accepts.
+
+**Two worked examples replace the sentence.** One person, 8 hours worked on a Monday: **Network A at a 4-hour baseline records 12 credited hours, Network B at a 10-hour baseline records 18, and both are right.** Adding them gives **30 hours in a 24-hour day**, which the system forbids - **and nobody adds them.** And the honest residue is stated rather than buried: a person holding accounts with both networks reaches **36.0 hours of room against a floor-only person's 12.0 - three times, where Network B states 2.4.** No book is wrong. Whether that stays small has not been measured, and the text says so.
+
+**2. Section 0 also drops "two networks trade."** Networks **share methods and evidence** and often draw on the same outside sources; they do not trade with each other, and one network's books are never added to another's (Foundations 5.0).
+
+**3. Section 1 - 2.4x is now shown as a wall, with four whole lives.** The old text said the busiest contributor tops out at *"under three times"* and left it there. A new table gives the arithmetic at a 10-hour baseline over 80 years: **lives-only 292,000 h (1.00x) - a very hard working life, 12 h/day for 300 days a year from 20 to 70, 472,000 h (1.62x) - the maximum with childhood uncredited 608,820 h (2.09x) - the arithmetic maximum 700,800 h (2.40x).** **The figure to quote is about 1.6x, not 2.4x.**
+
+**4. Section 1's caveats go from two to four, as a table.** The old paragraph named the baseline and the verification problem. It now names all four conditions Foundations 7.5.5 carries: **the baseline's value** (the wall *is* 24 / baseline, so a 2-hour baseline states a 12-times wall) - **whether a child's learning time is credited** (2.40x if it is, **2.09x if it is not**, so the stated wall becomes one nobody can touch) - **that nobody manufactures fake hours** - and **that it is one network's books.**
+
+**5. Section 6's demand-lever table.** *"Bounded at about 2.4 times"* becomes **walled at 2.4 times inside one network's books, with a very hard working life reaching about 1.6 times.**
+
+> **Nothing was added to the theory and no mechanism moved.** Every change removes a claim the author withdrew on 2026-08-25 or states an existing number more honestly.
+
+---
 <!-- tag: ovw-v0-17-2026-08-24 -->
 ### v0.17 (2026-08-24) - section 6 answers "but a price already tells you what people want", and the size of a trust network is cleared up
 

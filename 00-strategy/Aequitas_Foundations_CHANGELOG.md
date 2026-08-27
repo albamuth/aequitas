@@ -3,6 +3,14 @@
 > Version-by-version change history for `Aequitas_Foundations_vX.Y.md` (the highest-versioned file in `00-strategy/`). Split out of the main document so it is read only when tracing **when and why** something changed. The main doc's header carries a one-line summary of the current version; everything below is the archive.
 
 ---
+<!-- tag: fnd-v0-25-pointer-repair-2026-08-27 -->
+### v0.25 - pointer repair, 2026-08-27 (no version bump, no text changed)
+
+**Two companion pointers were repaired in place and nothing else was touched.** `Aequitas_Objections_v0.22.md` became **v0.23** and `Aequitas_Overview_v0.17.md` became **v0.18** on 2026-08-27, so the header and body links in this document were dangling.
+
+**Recorded here rather than bumped to v0.26**, because a version whose only content is two link repairs is noise, and a dead link in the header is worse than the question of whether a link repair is an edit. **No rule, number, section or example moved.** The same repair was applied to `Aequitas_Strategy_v0.6.md`.
+
+---
 <!-- tag: fnd-v0-25-2026-08-25 -->
 ### v0.25 (2026-08-25) - conformance requirement 17 deleted: a conformance list states properties, never political outcomes
 

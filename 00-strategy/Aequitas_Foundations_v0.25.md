@@ -5,7 +5,7 @@
 > **Date:** 2026-08-25
 > **Status:** Working foundations. **Truncated at §8 by author ruling** — the OFCS comparison is gone, and the conformance list, the open problems and the adoption reading now live in their own documents (§8 below). **§5 and §7.5 were rewritten in substance earlier the same day**; §5.2–§5.5 are the owed remainder, and the companions (Overview, GLOSSARY) are bumped once it lands.
 > **Primary audience of the first paper:** technologists / implementers.
-> **Companion:** `00-strategy/Aequitas_Objections_v0.22.md` — the objections register. Read alongside §10.
+> **Companion:** `00-strategy/Aequitas_Objections_v0.23.md` — the objections register. Read alongside §10.
 > **Companion:** `00-strategy/Aequitas_EventLog_v0.9.md` — the C1 data model, which carries the §5.1b scope-alignment check as §7.2a.
 > **Version history & what each version superseded:** `00-strategy/Aequitas_Foundations_CHANGELOG.md`.
 
@@ -2132,7 +2132,7 @@ A3 therefore does three separate defensive jobs: it forbids accumulation (§7.1)
 | What | Where | Why it moved |
 |---|---|---|
 | **The conformance requirements** — what must be true for an implementation to *be* Aequitas | [`Aequitas_Conformance_v0.2.md`](Aequitas_Conformance_v0.2.md) | It is written for implementers, and this document is written for anyone. |
-| **Every open problem and every answered objection** | [`Aequitas_Objections_v0.22.md`](Aequitas_Objections_v0.22.md) | The register is the record. A ranked summary here only went stale. |
+| **Every open problem and every answered objection** | [`Aequitas_Objections_v0.23.md`](Aequitas_Objections_v0.23.md) | The register is the record. A ranked summary here only went stale. |
 | **How adoption plausibly starts** | [`Aequitas_Strategy_v0.6.md`](Aequitas_Strategy_v0.6.md) §5 | It is a reading of the historical record, not a statement of the system. |
 | **The version-by-version change history** | [`Aequitas_Foundations_CHANGELOG.md`](Aequitas_Foundations_CHANGELOG.md) | Already pointed at from the header. |
 

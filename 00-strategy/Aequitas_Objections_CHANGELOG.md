@@ -3,6 +3,22 @@
 > Version-by-version change log for `Aequitas_Objections_vX.Y.md` (the highest-versioned file in `00-strategy/`). Split out of the register so it is read only when tracing **when and why** an objection's status changed. The register's header carries a one-line summary of the current version; Part B holds the answered objections themselves (which are *not* history — see the note there). Superseded full versions live in `99-archive/`.
 
 ---
+<!-- tag: obj-v0-23-2026-08-27 -->
+### v0.23 (2026-08-27) - the OP-22 ruling is recorded, and multi-homing joins OP-14
+
+**No new ruling. This version writes down a decision the author made on 2026-08-25 that the register never recorded.** OP-14's row carried it; OP-22's row and OA9 did not, so a reader checking the register found the question open. Paper rebuilt the same day as `OP-22_identity_not_disclosure_v0.2.md`.
+
+**1. OA9 gains a boxed statement of the ruling.** **OP-22 is NOT split and OP-22b is NOT opened.** @cairn-lineage's falsifier builds - one person, one Monday, 8 hours worked, **Network A at a 4 h floor records 12 credited hours and Network B at a 10 h floor records 18, so 12 + 18 = 30 hours in a 24-hour day** - **and no party computes that sum**, because no book is ever added to another and a transaction lands on exactly one network the seller picks (Foundations 5.0). **The non-reuse witness they asked for is C6 and a precondition of merging** (5.3c), not a disclosure primitive. **They were right about the ceiling**: 7.5's cross-network clause was ours and is **struck, not narrowed**.
+
+**2. The OP-22 status-board row says the same thing in one line**, so a reader scanning the board does not have to reach OA9 to learn the split was refused.
+
+**3. OP-14 (cohort shopping) gains MULTI-HOMING, and this is the substantive addition.** A person may hold an account with more than one network, and each credits them separately for the same life. **Worked: accounts on a 4 h-floor and a 10 h-floor network give 14.4 + 21.6 = 36.0 h of room for one Monday against a floor-only subscriber's 12.0 h - a factor of 3.0, where one network's books state 2.4x.** **No book is wrong** and Foundations 7.5.5 condition 4 already limits the claim to one network's books. **What is unmeasured is whether multi-homing self-limits.** Three things bound it and none is measured: each account is earned separately, sellers choose networks, and a person must be admitted by each. **Registered, not answered.**
+
+**4. C-test 8 re-pointed.** It said the remaining owed piece was *"the cross-network disclosure mechanism, tracked as OP-22."* **There is no such mechanism to owe**, because no book is ever added to another. The generous-network race and multi-homing are **both OP-14** now.
+
+> **The register's problem count does not rise.** One item was refused as posed; one residue moved from OP-22 to OP-14 and is stated with digits for the first time.
+
+---
 <!-- tag: obj-v0-22-2026-08-25 -->
 ### v0.22 (2026-08-25) - the register becomes the only ranked list of open problems
 

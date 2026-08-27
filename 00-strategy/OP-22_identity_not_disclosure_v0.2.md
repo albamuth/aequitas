@@ -3,7 +3,7 @@
 
 > **Version:** 0.2 · **Date:** 2026-08-27
 > **Status:** ✅ **RULED by the author, 2026-08-25.** v0.2 rebuilds the paper around the ruling and repairs every section pointer against `Aequitas_Foundations_v0.25.md`. **No new ruling is made here.**
-> **Tracks:** `Aequitas_Foundations_v0.25.md` §5.0 · §5.1 · §5.3c · §6.4b · §7.5.5 · `Aequitas_Conformance_v0.2.md` · `Aequitas_Objections_v0.22.md` OA9
+> **Tracks:** `Aequitas_Foundations_v0.25.md` §5.0 · §5.1 · §5.3c · §6.4b · §7.5.5 · `Aequitas_Conformance_v0.2.md` · `Aequitas_Objections_v0.23.md` OA9
 > **Supersedes:** `99-archive/OP-22_identity_not_disclosure_v0.1.md`
 > **Source of the objection:** @cairn-lineage, c18679 on 1f916.ai post #2000, 2026-08-25. **Conceded in public at c21149. The concession was wrong in one half and right in the other, and §8 says how to correct it in public.**
 
@@ -257,9 +257,9 @@ P holds two accounts on B-like networks (`F` = 10, ρ = 1.2) for one year and wo
 | 3 | §7.5's cross-network clause struck | Foundations **§7.5.5** | ✅ **Applied in v0.23.** Zero mentions of *"condition 5"* remain |
 | 3a | A conformance item for one-human-one-account | `Aequitas_Conformance_v0.2.md` | ❌ **Not added, deliberately.** The ruling makes it a within-network rule, so Foundations §5.1 carries it. **The list stays at sixteen.** |
 | 4 | **The public reply to @cairn-lineage** | §8 above; `07-outreach/` queue item 44 | 🟡 **Written and unblocked. Not yet posted.** |
-| 5 | **Overview §0's box still says the bound holds *"across every network that can trade with every other"*** | `Aequitas_Overview_v0.17.md` line 82 | 🔴 **OWED, and it is publicly readable.** The agent links this file. **This is the last place the withdrawn claim is still published.** |
-| 6 | Objections **OA9 / the OP-22 status row** does not record the ruling | `Aequitas_Objections_v0.22.md` | 🟡 **Owed.** OP-14's row records it; OP-22's does not. |
-| 7 | **Is multi-homing self-limiting?** — §7 above, with the 36.0 h against 12.0 h arithmetic | **OP-14 (cohort shopping)** | 🔴 **Open. Registered, not answered.** Foundations §7.5.5's closing note flags it. |
+| 5 | Overview §0's box asserting the bound *"across every network that can trade with every other"* | [`Aequitas_Overview_v0.18.md`](Aequitas_Overview_v0.18.md) §0 | ✅ **Struck 2026-08-27.** The box now shows the 12 h / 18 h case and states the 3.0× residue. §1 gains the four-lives table and four conditions; §6's table row is corrected. |
+| 6 | Objections **OA9 and the OP-22 status row** do not record the ruling | [`Aequitas_Objections_v0.23.md`](Aequitas_Objections_v0.23.md) | ✅ **Recorded 2026-08-27.** OA9 gains a boxed statement; the status row states it in one line; **C-test 8 re-pointed from OP-22 to OP-14.** |
+| 7 | **Is multi-homing self-limiting?** — §7 above, with the 36.0 h against 12.0 h arithmetic | **OP-14 (cohort shopping)** | 🔴 **Open. Registered 2026-08-27, not answered.** It is now on OP-14's row in the register, in Overview §0 and §1, and in Foundations §7.5.5's closing note. |
 
 ---
 
