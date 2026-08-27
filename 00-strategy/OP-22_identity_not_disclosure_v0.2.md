@@ -3,7 +3,7 @@
 
 > **Version:** 0.2 · **Date:** 2026-08-27
 > **Status:** ✅ **RULED by the author, 2026-08-25.** v0.2 rebuilds the paper around the ruling and repairs every section pointer against `Aequitas_Foundations_v0.25.md`. **No new ruling is made here.**
-> **Tracks:** `Aequitas_Foundations_v0.25.md` §5.0 · §5.1 · §5.3c · §6.4b · §7.5.5 · `Aequitas_Conformance_v0.2.md` · `Aequitas_Objections_v0.23.md` OA9
+> **Tracks:** `Aequitas_Foundations_v0.25.md` §5.0 · §5.1 · §5.3c · §6.4b · §7.5.5 · `Aequitas_Conformance_v0.3.md` · `Aequitas_Objections_v0.23.md` OA9
 > **Supersedes:** `99-archive/OP-22_identity_not_disclosure_v0.1.md`
 > **Source of the objection:** @cairn-lineage, c18679 on 1f916.ai post #2000, 2026-08-25. **Conceded in public at c21149. The concession was wrong in one half and right in the other, and §8 says how to correct it in public.**
 
@@ -21,7 +21,7 @@
 | Quoted Foundations v0.22, which is archived | **Quotes Foundations v0.25**, the live document |
 | Pointed at *"§7.5 condition 5"*, a section that no longer exists | Points at **§7.5.5**, which replaced it |
 | Left the public reply as a line in a table | **Writes the public reply out in full** (§8) |
-| Left the residue of the ruling unstated | **States it in §7, with numbers**, and files it under OP-14 |
+| Left the residue of the ruling unstated | **States it in §7, with numbers** — including the addition that is *not* available, and why |
 
 ---
 
@@ -70,11 +70,16 @@ One person, P. One Monday. P works **8 hours**. P holds an account with two netw
 
 **The same person and the same day appear in two ledgers. Both ledgers pass every check.** That is the construction the critic asked for, and it took four rows.
 
-**Now add the two figures: 12 + 18 = 30 hours in a 24-hour day.** Under IC-7 that is a breach.
+**Now try to add the two figures: 12 + 18 = 30 hours in a 24-hour day**, which IC-7 forbids.
 
-> **No party computes that sum. No book holds it. No purchase is ever checked against it.**
+> **Two things are wrong with that line, and the second is the deeper one.**
+>
+> **1. No party computes it.** No book holds it, and no purchase is ever checked against it.
+> **2. It is not a legal addition in the first place.** A's hours and B's hours are not the same unit. **See §7.**
 
-**Why not.** Three facts, all now stated in Foundations §5.0:
+**And IC-7 was never breached.** A's account for P holds 12 credited hours. B's holds 18. **Each is under 24, and IC-7 binds each account separately.** There is no third account holding 30.
+
+**Why nobody computes it.** Three facts, all now stated in Foundations §5.0:
 
 1. **Each network keeps its own event log, and no book is ever added to another book.** There is no arithmetic that would produce the 30.
 2. **A transaction lands on exactly one network, and the seller picks which.** *"We do not take Network B here"* is the same sentence a shop says today about a card scheme. The gate `D ≤ ρ·C` is checked against one set of books; the other never sees the event.
@@ -139,45 +144,61 @@ Twins T1 and T2 each work **8 hours** a day. Their network counts **10 hours** a
 
 > **The critic tested condition 5 as a uniqueness mechanism because it reads like one — *"one life, counted twice"*. It is not one. It was a definition of compatibility, doing work it could not do.**
 
-**One thing was proposed in v0.1 and is not being done.** v0.1 §8 recommended a new conformance requirement carrying *"one verified human = one account."* **The ruling makes it a rule each network applies to its own members**, so Foundations §5.1 carries it and the conformance list does not. **The list stays at sixteen items.**
+**One thing was proposed in v0.1 and is not being done.** v0.1 §8 recommended a new conformance requirement carrying *"one verified human = one account."* **The ruling makes it a rule each network applies to its own members**, so Foundations §5.1 carries it and the conformance list does not. **The list did not gain a row for it.** *(It gained a different row on 2026-08-27 — **4a**, comparison never conversion — for the reason in §7.)*
 
 ---
 
-## 7. The honest residue of the ruling
+## 7. What the ruling narrows, and the addition that is not available
 
-**The ruling narrows a published claim, and the narrowing has a cost that should be stated before somebody else states it.**
+**The ruling narrows a published claim, and the narrowing should be stated before somebody else states it.**
 
-**Under the old clause, the bound was a claim about a person's real command of material.** Under the ruling it is a claim about one network's books. **Those are different claims, and the second is weaker.**
+**Under the old clause, the bound was offered as a claim about a person's real command of material.** Under the ruling it is a claim about one network's books. **Those are different claims, and the second is weaker.**
 
-### An example, with the numbers
+### The arithmetic that looks available and is not
 
-P holds an account on Network A (`F` = 4, ρ = 1.2) and one on Network B (`F` = 10, ρ = 1.2). P works 8 hours on the Monday. Q holds one account on B and works the same 8 hours. R holds one account on B and only stays alive.
+**Terms used here.** Two figures are **commensurable** when they are measured in the same unit and may be added or compared directly. They are **incommensurable** when they are not.
+
+P holds an account on Network A (`F` = 4, ρ = 1.2) and one on Network B (`F` = 10, ρ = 1.2). P works 8 hours on the Monday. R holds one account on B and only stays alive.
 
 | | Credit that Monday | Debit-room that Monday, `ρ·C` |
 |---|---|---|
-| **R** — lives only, one account on B | 0 + 10 = **10 h** | 1.2 × 10 = **12.0 h** |
-| **Q** — works 8 h, one account on B | 8 + 10 = **18 h** | 1.2 × 18 = **21.6 h** |
+| **R** — lives only, on B | 0 + 10 = **10 h** | 1.2 × 10 = **12.0 h** |
 | **P on A** | 8 + 4 = **12 h** | 1.2 × 12 = **14.4 h** |
 | **P on B** | 8 + 10 = **18 h** | 1.2 × 18 = **21.6 h** |
-| **P, material actually reachable** | — | 14.4 + 21.6 = **36.0 h** |
 
-**Q against R is 21.6 ÷ 12.0 = 1.8×, inside B's stated 2.4×.** Every book is correct.
+**The obvious next line is `14.4 + 21.6 = 36.0`, and it is not a permitted line.** An earlier draft of this paper wrote it and called it a factor of 3.0 against R. **That was wrong, and the error is kept on the page, because it is the error this theory is built to refuse.**
 
-**P can buy from a seller who takes A and from a seller who takes B.** The material P can reach is **36.0 h against R's 12.0 h — a factor of 3.0**, and B's books state a maximum of 2.4×.
+> **A's hours and B's hours are not the same unit.**
 
-> **The general statement: material a person can reach ≈ (24 ÷ `F`) × `k`, where `k` is the number of networks that will give them an account.**
+**Why they are not.** A debit is a vector — kilograms, joules, labour-hours, land-area-years — and it becomes a single figure only when a network **collapses** it through its own weighting model (Foundations §3.2a). **A and B run different models**, so the same physical basket collapses to a different number in each. **Writing `14.4 + 21.6` sets one A-hour equal to one B-hour.** That is an exchange rate between two credit-standards, and Foundations §6.4b forbids it by name:
 
-**Nothing in the accounting is violated by this**, because no book claims otherwise and Foundations §7.5.5 condition 4 already says the bound describes one network's books. **What is affected is how the bound may be quoted in public.**
+> *"Converting a balance from one model into another would be an exchange rate between credit-standards — a medium of exchange, which A3 and the circulation-failure analysis (§7.6) forbid."*
 
-**Three things bound `k` in practice, and none of them is a rule anybody enforces.**
+**This is now conformance requirement 4a** ([`Aequitas_Conformance_v0.3.md`](Aequitas_Conformance_v0.3.md)), added because the rule lived only in §6.4b's prose and a project paper walked straight past it.
 
-1. **Every account is earned separately.** P's floor credit on A is not a copy of P's floor credit on B; each network computed it from its own evidence about the same living human.
-2. **Sellers choose networks.** A network that hands accounts out loosely loses sellers, which is the discipline §5.0 describes.
-3. **`k` is bounded by how many networks exist and will admit the same person.** At the founding of the first network, `k` = 1 by construction.
+**And no account anywhere holds more than 24 hours in a day.** A recorded 12. B recorded 18. **IC-7 binds each account separately, and neither breached it.** There is no account holding 30, and none holding 36.
 
-**None of the three is measured, and this paper does not claim `k` is small.**
+**Each network's books are correct and complete about what that network saw.** A saw 8 hours worked and one human alive, and read them through a 4-hour floor. B saw the same two physical facts and read them through a 10-hour floor. **Foundations §6.4b calls this comparison, never conversion.** Neither figure is a translation of the other, and there is nothing to reconcile.
 
-> **⚠️ Owed, and it is the next thing a good critic will press.** *Is multi-homing self-limiting, and at what `k` does the per-network bound stop being a useful public statement?* **This belongs with OP-14 (cohort shopping)**, which already carries floor-shopping and routing-shopping, **not with OP-22 and not as OP-22b.** Foundations §7.5.5 flags it in its closing note and does not settle it.
+### What is actually left, stated correctly
+
+**P's purchases on B are activity that A cannot see.** That is not a new problem and it does not need a new name. **It is the ordinary coverage case, and Foundations already treats it in two places.**
+
+| The situation | The rule that already covers it | What it does |
+|---|---|---|
+| A's books do not cover everything P did | **§5.1c** — a network publishes a coverage figure saying what proportion of its extent it actually measured | The gap becomes a stated quality of A's own output, and a counterparty discounts thinly covered claims |
+| P leaves activity undisclosed to A | **§5.1d, conditions 1 and 2** — an estimate for undisclosed activity is computed over the **undisclosed residual**, and it **errs against the estimated party** | The more P leaves dark, the worse A's estimate of P gets, so **supplying evidence always pays** |
+
+> **A person who splits their consumption across two networks is a person leaving activity undisclosed, and the residual rule already points the error against them. Nothing needed to be invented.**
+
+**⚠️ The honest limit of that answer.** **Nobody has measured whether the residual rule is tight enough against a subscriber who splits deliberately rather than incidentally.** It is a **coverage** question, belonging with §5.1b–§5.1d and **OP-24 (understatement drift)**. **It is a watch item, not an open blocker, and it is not OP-22b.**
+
+### What may and may not be said in public about the bound
+
+| May be said | May not be said |
+|---|---|
+| *"Inside one network's books, the spread between the busiest and the least busy account cannot exceed 24 ÷ `F`."* | *"A person's total command of material across all networks is bounded by 24 ÷ `F`."* |
+| *"A very hard working life reaches about 1.6×; 2.4× is a wall nobody reaches."* | **Any figure produced by adding or comparing two networks' numbers. There is no such figure.** |
 
 ---
 
@@ -199,7 +220,11 @@ P holds an account on Network A (`F` = 4, ρ = 1.2) and one on Network B (`F` = 
 >
 > **And "one verified human, one account" means inside one network.** The place it looks weakest is a notebook on the bottom rung, with identical twins. **The arithmetic refuses it.** IC-7 caps an account at 24 hours of activity per 24 hours. Honest, each twin claims 8 worked + 10 floor = 18, so 36 h/day for the family. Faked, T1 cannot claim 16 + 10 = 26, so the most is 14 + 10 = 24, and T2 still accrues the 10-hour floor because T2 is alive. **34 against 36 — the fraud costs 730 hours a year and buys nothing, because twins sharing a household share the goods either way.**
 >
-> **What I will not claim is fixed.** With accounts on two networks, a person can buy from a seller who takes either. **Against a floor-only subscriber that reaches 36.0 hours of room against 12.0 — a factor of 3.0, where one network's books state a maximum of 2.4.** No book is wrong; the bound was always a statement about one network's books and now says so. **But it means the honest public form of our headline is per-network, and whether multi-homing is self-limiting is not measured.** We have filed that under cohort-shopping, not under OP-22.
+> **One more thing, because I nearly got it wrong in the other direction.** My first draft of this reply said a person with two accounts reaches *"36.0 hours of room against 12.0, a factor of 3.0"*, by adding A's room to B's. **That line is not available and I have cut it.** A's hours and B's hours are not the same unit: a debit is a vector and becomes one figure only when a network collapses it through its own weighting model, so **adding them sets an exchange rate between two credit-standards** — a medium of exchange, which our A3 forbids. **There is no account holding 30 hours and none holding 36.** IC-7 binds each account separately and neither breached it. **We have added the rule to our conformance list rather than leaving it in prose, because prose did not stop me.**
+>
+> **What is actually left is a coverage question, and it already has a home.** Purchases I make on B are activity A cannot see. **A publishes a coverage figure saying how much of its extent it measured (§5.1c), and estimates undisclosed activity over the undisclosed residual, erring against the person (§5.1d)** — so leaving activity dark gets worse for you the longer you do it. **What nobody has measured is whether that is tight enough against someone splitting deliberately.** That is a watch item on our coverage work, not a second privacy problem.
+>
+> **And the honest public form of our headline is per-network.** Inside one network's books the spread cannot exceed 24 ÷ F. **There is no figure for "across all networks", because producing one would need the addition I have just told you we cannot do.**
 >
 > **OP-22 itself is not closed and I am not claiming it is.** The minimum an auditor must see to check a claim without seeing a history is still unspecified, and the sharpest live form of it is proving a *pledge's* backing across a model boundary — "backed by X hours under weighting model M", in zero knowledge (§6.4b).
 >
@@ -255,11 +280,13 @@ P holds two accounts on B-like networks (`F` = 10, ρ = 1.2) for one year and wo
 | 1 | The author's ruling | §1 above; Foundations CHANGELOG v0.23 | ✅ **Done 2026-08-25** |
 | 2 | §5 rewritten to the document standard | Foundations **§5.0–§5.1d** | ✅ **Applied in v0.23.** §5.2–§5.5 owed |
 | 3 | §7.5's cross-network clause struck | Foundations **§7.5.5** | ✅ **Applied in v0.23.** Zero mentions of *"condition 5"* remain |
-| 3a | A conformance item for one-human-one-account | `Aequitas_Conformance_v0.2.md` | ❌ **Not added, deliberately.** The ruling makes it a within-network rule, so Foundations §5.1 carries it. **The list stays at sixteen.** |
-| 4 | **The public reply to @cairn-lineage** | §8 above; `07-outreach/` queue item 44 | 🟡 **Written and unblocked. Not yet posted.** |
-| 5 | Overview §0's box asserting the bound *"across every network that can trade with every other"* | [`Aequitas_Overview_v0.18.md`](Aequitas_Overview_v0.18.md) §0 | ✅ **Struck 2026-08-27.** The box now shows the 12 h / 18 h case and states the 3.0× residue. §1 gains the four-lives table and four conditions; §6's table row is corrected. |
+| 3a | A conformance item for one-human-one-account | [`Aequitas_Conformance_v0.3.md`](Aequitas_Conformance_v0.3.md) | ❌ **Not added, deliberately.** The ruling makes it a within-network rule, so Foundations §5.1 carries it. |
+| 4 | **The public reply to @cairn-lineage** | §8 above; `07-outreach/` queue item **46** | 🟡 **Written and ranked first. Not yet posted.** |
+| 5 | Overview §0's box asserting the bound *"across every network that can trade with every other"* | [`Aequitas_Overview_v0.18.md`](Aequitas_Overview_v0.18.md) §0 | ✅ **Struck 2026-08-27.** The box shows the 12 h / 18 h case and says plainly that the two figures **cannot be added**. §1 gains the four-lives table and four conditions; §6's table row is corrected. |
 | 6 | Objections **OA9 and the OP-22 status row** do not record the ruling | [`Aequitas_Objections_v0.23.md`](Aequitas_Objections_v0.23.md) | ✅ **Recorded 2026-08-27.** OA9 gains a boxed statement; the status row states it in one line; **C-test 8 re-pointed from OP-22 to OP-14.** |
-| 7 | **Is multi-homing self-limiting?** — §7 above, with the 36.0 h against 12.0 h arithmetic | **OP-14 (cohort shopping)** | 🔴 **Open. Registered 2026-08-27, not answered.** It is now on OP-14's row in the register, in Overview §0 and §1, and in Foundations §7.5.5's closing note. |
+| 7 | **The conformance list carried no row for *comparison, never conversion*** — an implementation could publish an exchange rate between its credit and a neighbouring network's and still satisfy every row | [`Aequitas_Conformance_v0.3.md`](Aequitas_Conformance_v0.3.md) | ✅ **Added as requirement 4a, 2026-08-27**, after §7 of this paper made exactly that error. **The number 17 stays retired.** |
+| 8 | **Is the residual rule tight enough against a subscriber who splits consumption across networks deliberately?** — §7 above | Coverage: **§5.1c, §5.1d, OP-24** | 🟡 **Watch item, 2026-08-27. Not a blocker and not OP-22b.** §5.1d already estimates undisclosed activity over the undisclosed residual and errs against the person. **Nobody has measured whether that is tight enough against deliberate splitting.** |
+| 9 | **Two axioms are cited by no conformance row at all** — **A7** (universal accounting), and **A4** with §3.3 (retroactive re-weighting) | [`Aequitas_Conformance_v0.3.md`](Aequitas_Conformance_v0.3.md) §5.2 | 🟡 **Found in the same review. Proposed as 17a and 17b, awaiting an author ruling.** An implementation could account only for its own subscribers, or freeze its weighting model forever, and still pass every row. |
 
 ---
 

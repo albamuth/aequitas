@@ -10,7 +10,13 @@
 
 **1. Section 0's trust-network box - the withdrawn claim is gone.** It said the roughly 2.4-times cap *"holds across every network that can trade with every other, not one town at a time."* **Struck.** The box now says the limit describes **one network's own books and nothing wider**, because books are never added together and a purchase is checked against one network's books only - the one the seller accepts.
 
-**Two worked examples replace the sentence.** One person, 8 hours worked on a Monday: **Network A at a 4-hour baseline records 12 credited hours, Network B at a 10-hour baseline records 18, and both are right.** Adding them gives **30 hours in a 24-hour day**, which the system forbids - **and nobody adds them.** And the honest residue is stated rather than buried: a person holding accounts with both networks reaches **36.0 hours of room against a floor-only person's 12.0 - three times, where Network B states 2.4.** No book is wrong. Whether that stays small has not been measured, and the text says so.
+**A worked example replaces the sentence.** One person, 8 hours worked on a Monday: **Network A at a 4-hour baseline records 12 credited hours, Network B at a 10-hour baseline records 18, and both are right.**
+
+**And the box says plainly that the two figures cannot be added.** An hour in A's books and an hour in B's books are not the same unit: a debit is a bundle of physical quantities that becomes one number only when a network squashes it down through **its own** weighting, and A and B weigh differently. **Adding them would set one A-hour equal to one B-hour - an exchange rate between two sets of books, which is a currency, and this system does not have one** (A3, Foundations 6.4b). **Nor was the 24-hour rule broken: 12 and 18 are each under 24, and the rule binds each account separately.**
+
+**What is left is stated as the ordinary thing it is.** Activity one network cannot see is a **coverage** matter: a network publishes how much of its area it measured (5.1c) and estimates undisclosed activity in a way that counts against the person (5.1d). **Whether that is tight enough against somebody splitting on purpose is unmeasured, and the text says so.**
+
+> **An earlier draft of this version, written the same day, published the addition as *"36.0 hours of room against 12.0 - three times."* The author refused it within the hour.** The refusal is why the box now explains the unit problem instead of quoting a ratio.
 
 **2. Section 0 also drops "two networks trade."** Networks **share methods and evidence** and often draw on the same outside sources; they do not trade with each other, and one network's books are never added to another's (Foundations 5.0).
 

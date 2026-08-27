@@ -12,11 +12,13 @@
 
 **2. The OP-22 status-board row says the same thing in one line**, so a reader scanning the board does not have to reach OA9 to learn the split was refused.
 
-**3. OP-14 (cohort shopping) gains MULTI-HOMING, and this is the substantive addition.** A person may hold an account with more than one network, and each credits them separately for the same life. **Worked: accounts on a 4 h-floor and a 10 h-floor network give 14.4 + 21.6 = 36.0 h of room for one Monday against a floor-only subscriber's 12.0 h - a factor of 3.0, where one network's books state 2.4x.** **No book is wrong** and Foundations 7.5.5 condition 4 already limits the claim to one network's books. **What is unmeasured is whether multi-homing self-limits.** Three things bound it and none is measured: each account is earned separately, sellers choose networks, and a person must be admitted by each. **Registered, not answered.**
+**3. A MULTI-HOMING claim was drafted for OP-14 and REFUSED by the author the same day. The refusal is recorded rather than the claim.** The draft said accounts on a 4 h-floor and a 10 h-floor network give *"14.4 + 21.6 = 36.0 h of room against a floor-only subscriber's 12.0 h, a factor of 3.0."* **That addition is not available.** A's hours and B's hours are collapsed through different weighting models, so summing them sets an **exchange rate between credit-standards** - which A3 and 6.4b forbid by name, and which is now carried as **conformance requirement 4a**. **IC-7 was never breached either: 12 and 18 are each under 24, and it binds each account separately.**
 
-**4. C-test 8 re-pointed.** It said the remaining owed piece was *"the cross-network disclosure mechanism, tracked as OP-22."* **There is no such mechanism to owe**, because no book is ever added to another. The generous-network race and multi-homing are **both OP-14** now.
+**What actually remains is a coverage question, not a disparity question.** Purchases on B are activity A cannot see. **5.1c publishes the coverage gap; 5.1d estimates undisclosed activity over the undisclosed residual and errs against the person**, so darkness gets worse the longer it lasts. **Watch item: nobody has measured whether that is tight enough against deliberate splitting.** It sits with the coverage work and **OP-24**, not on OP-14 and not as OP-22b.
 
-> **The register's problem count does not rise.** One item was refused as posed; one residue moved from OP-22 to OP-14 and is stated with digits for the first time.
+**4. C-test 8 re-pointed.** It said the remaining owed piece was *"the cross-network disclosure mechanism, tracked as OP-22."* **There is no such mechanism to owe**, because no book is ever added to another. **What is left there is the generous-network race, tracked as OP-14.**
+
+> **The register's problem count does not rise.** One item was refused as posed, and the residue people expected to find turned out to be an existing coverage question rather than a new problem.
 
 ---
 <!-- tag: obj-v0-22-2026-08-25 -->

@@ -108,7 +108,7 @@ The decomposition that does work:
 
 ## 3. The invariant set is the conformance list
 
-[`Aequitas_Conformance_v0.2.md`](../00-strategy/Aequitas_Conformance_v0.2.md) carries **16 requirements that must hold for an implementation to be Aequitas.** They were written for an implementer. **They are also exactly what the kernel should assert, every period, in every scenario.**
+[`Aequitas_Conformance_v0.3.md`](../00-strategy/Aequitas_Conformance_v0.3.md) carries **16 requirements that must hold for an implementation to be Aequitas.** They were written for an implementer. **They are also exactly what the kernel should assert, every period, in every scenario.**
 
 **So `arithmetic_audits.py` is not a side artifact. It is the engine's test harness**, and IC-1 … IC-12 become continuous assertions rather than a one-off audit.
 
