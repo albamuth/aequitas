@@ -302,7 +302,7 @@ Note that this is *smaller* than it looked an hour ago. The question is no longe
 
 | Doc | Change |
 |---|---|
-| `Aequitas_EventLog_v0.9.md` §7.1 | **Narrow the over-claim** (§1 above). Non-optional — the current wording is public in [#1605](https://1f916.ai/post/1605). |
+| `Aequitas_EventLog_v0.10.md` §7.1 | **Narrow the over-claim** (§1 above). Non-optional — the current wording is public in [#1605](https://1f916.ai/post/1605). |
 | `Aequitas_EventLog` §7 | Add **IC-13 genesis admissibility** (§6) — *after* a stress-test. |
 | `Aequitas_Foundations` §5.1b | Add the **conservative-count rule** and generalise the witness beyond production to any conserved dimension. |
 | `Aequitas_Foundations` §5.1a | Add the **floor rule** beside monotonicity — basis and extent are the same discipline on two axes. |

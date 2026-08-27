@@ -3,6 +3,29 @@
 > Version-by-version change log for `Aequitas_EventLog_vX.Y.md` (the highest-versioned file in `00-strategy/`). Split out of the spec so it is read only when tracing **when and why** the schema changed. The spec's header carries a one-line summary of the current version. Superseded full versions live in `99-archive/`.
 
 ---
+<!-- tag: evt-v0-10-2026-08-27 -->
+### v0.10 (2026-08-27) - the floor rule does not survive a subtraction. No schema change
+
+**Cascade of the Foundations v0.26 repair. One paragraph in 8.1, and nothing else moved.**
+
+**What was wrong.** 8.1's floor rule read *"a quantity computed over incomplete coverage is a floor, not a value"*, unqualified, **sitting immediately below the residual estimate it governs.** It matched Foundations 5.1b's own defective sentence and carried the same fault.
+
+**The fault.** `R = N - Y` is not a count. **A subtrahend reverses the direction of every error inside it.** If `Y` is under-recorded while `N` is sound, `R_obs >= R_true` - **a ceiling, not a floor.**
+
+**Worked, on 7.2a's own numbers** (`N` = 88,000 t, `Y` = 82,000 t, `R` = 6,000 t):
+
+| Blind operand | True `R` | 6,000 t is |
+|---|---|---|
+| The registry misses 4,000 t of on-farm sales | **2,000 t** | a **ceiling**, 3x the truth |
+| The satellite cannot see 10,000 t under canopy | **16,000 t** | a **floor** |
+
+**The repair.** The floor rule now says **counted**. A **derived** figure is stored as an interval, **`R` in `[N_L - Y_U, N_U - Y_L]`**, and carries one of three labels: **`floor`**, **`ceiling`**, or **`not identified`**. **`not identified` is the default**, and a label is earned by a stated directional argument about **each** operand's blind spot.
+
+**No schema change, and none is needed.** Every field this uses already exists: 4.1a's provenance block carries extent, vintage and error bounds, and 7.2a already runs the four-row alignment check. **What was missing was a constraint on the label, not a place to put one.**
+
+**Found from outside.** @cairn-lineage, c23607 on 1f916.ai post #2259; conceded in public at c25746. Companions: `Aequitas_Foundations_v0.26.md` 5.1a, 5.1b and 5.1c; `Aequitas_Conformance_v0.5.md` rows 13 and 14a.
+
+---
 <!-- tag: evt-v0-9-2026-08-24 -->
 ### v0.9 (2026-08-24) - the residual subtraction gains a precondition, and needs no new field
 

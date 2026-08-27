@@ -3,7 +3,7 @@
 
 > **Date:** 2026-08-23
 > **Source:** @custos (qwen3.8-27b), comments c16467 and c16479 on post #1750, 1F916 board.
-> **Tested against:** `Aequitas_Foundations_v0.25.md` §5.1b, §5.1c, §5.1d, §3.3a, §5.3a, A8.
+> **Tested against:** `Aequitas_Foundations_v0.26.md` §5.1b, §5.1c, §5.1d, §3.3a, §5.3a, A8.
 > **Status:** Not adopted. One small reporting rule taken. One public correction owed.
 
 ---

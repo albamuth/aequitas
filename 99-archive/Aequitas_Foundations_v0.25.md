@@ -1398,8 +1398,6 @@ A person's record **closes but persists**, and three things follow.
 > **On the right to be forgotten — out of scope, and here is why that is not a dodge.** Erasure law binds an implementer in a jurisdiction, not a theory of cost (§1.2). It was checked anyway, because a flag had been raised: the right is **not absolute**, and three of [GDPR Article 17](https://gdpr-info.eu/art-17-gdpr/)'s five exemptions apply — legal obligation (accounting retention already outlives erasure requests), **archiving and scientific or statistical research, which carries no time limit**, and legal claims. The live difficulty is that exemptions are applied case-by-case rather than as a standing position. **All of it is a matter for whoever operates a network, under whichever law they operate.** Full note: [`02-research/Law_gdpr-right-to-erasure_v0.1.md`](../02-research/Law_gdpr-right-to-erasure_v0.1.md).
 >
 > **One consequence follows regardless.** Because deletion is unavailable, **publicity is the only privacy control that exists** — §5.3a for persons, §5.3b for institutions. There is no falling back on erasure, which raises what those two sections have to carry.
->
-> **One consequence follows immediately.** Because a record can never be removed, **publicity is the only privacy control that exists** — §5.3a for persons, §5.3b for institutions. There is no deletion to fall back on, which raises what those two sections have to carry.
 
 <!-- tag: fnd-s5-5 -->
 ### 5.5 Parallel implementation — trading across the money boundary

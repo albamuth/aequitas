@@ -3,6 +3,37 @@
 > Version-by-version change history for `Aequitas_Foundations_vX.Y.md` (the highest-versioned file in `00-strategy/`). Split out of the main document so it is read only when tracing **when and why** something changed. The main doc's header carries a one-line summary of the current version; everything below is the archive.
 
 ---
+<!-- tag: fnd-v0-26-2026-08-27 -->
+### v0.26 (2026-08-27) - the floor rule does not survive a subtraction
+
+**Found from outside and conceded in public before it was ruled.** @cairn-lineage, comment c23607 on 1f916.ai post #2259; the outreach agent conceded at c25746 the same night. **The defective sentence was ours and had stood for six versions.**
+
+**The sentence, verbatim from v0.25 section 5.1b:** *"Report the residual as a lower bound, and state the boundary and window actually observed."* **Unqualified, and only true when the blindness is in `N`.**
+
+**The algebra.** `R = N - Y`. If `Y` is under-recorded while `N` is sound, then `Y_obs <= Y_true`, so `R_obs = N - Y_obs >= N - Y_true = R_true`. **The observed residual is an UPPER bound, not a floor.** The sentence was produced by carrying **5.1a's floor rule** - *a quantity computed over incomplete coverage is a floor, never a value* - through a subtraction. **A floor rule holds for a count. A subtrahend reverses it.**
+
+**Worked on the section's own published numbers** (`N` = 88,000 t, `Y` = 82,000 t, `R` = 6,000 t):
+
+| Blind operand | True value | True `R` | Published `R` | 6,000 t is |
+|---|---|---|---|---|
+| `Y` under-records by 4,000 | `Y` = 86,000 | **2,000 t** | 6,000 t | a **ceiling**, 3x the truth |
+| `N` under-observes by 10,000 | `N` = 98,000 | **16,000 t** | 6,000 t | a **floor** |
+
+**Same figure, same incompleteness, opposite labels.**
+
+**1. Section 5.1a gains the general rule, and a third landing state.** New subsection *"The floor rule applies to a count. It does not survive a subtraction."* **A `floor` label is earned by the arithmetic that produced the figure, never inherited from the fact that some input was incomplete.** A derived figure is published as an interval - **`R` in `[N_L - Y_U, N_U - Y_L]`** - and labelled **`floor`**, **`ceiling`**, or **`not identified`**. **`not identified` is the DEFAULT**, and it is new: the document previously had only *value* and *floor*. A label is promoted onto a figure by a stated directional argument about **each** operand's blind spot.
+
+**Fixed in 5.1a rather than only in 5.1b, because 5.1a is where the error came from.** The general form reaches every figure built from two incomplete readings.
+
+**2. Section 5.1b's fallback sentence is replaced.** It now says *"publish the interval and the boundary and window actually observed"*, with a boxed three-row table for which operand's blindness produces which label, and a second worked example: with `N` in `[88,000, 100,000]` and an audited `Y`, `R` in **[6,000, 18,000] t**, labelled `floor` **because there is a stated directional argument about `N`** - the detector misses under canopy and cannot over-count. **Remove that argument and the same numbers are `not identified`.**
+
+**3. Section 5.1c carries the same repair.** The published coverage figure is `Y / N`, built from the same two readings. **A blind `Y` understates coverage; a blind `N` overstates it - and overstating is the direction that flatters the network.** Same three labels, same default.
+
+> **The direction of the error is worth recording on its own.** An overstated residual makes the dark pool look **larger**, which is the direction **5.1b's adverse-selection argument** and the **deliberate under-count of `Z`** both want. **A wrong number that flatters the theory is the class least likely to be caught from inside**, and this one was not caught from inside.
+
+**Companion bumped in the same pass:** `Aequitas_Conformance_v0.5.md` rows **13** and **14a**, which stated the unrepaired rule.
+
+---
 <!-- tag: fnd-v0-25-pointer-repair-2026-08-27 -->
 ### v0.25 - pointer repair, 2026-08-27 (no version bump, no text changed)
 
@@ -58,7 +89,7 @@
 <!-- tag: fnd-v0-23-2026-08-25 -->
 ### v0.23 (2026-08-25) - section 5 and section 7.5 rewritten in substance; the cross-network ceiling claim is struck
 
-**Two author rulings on one day.** Companions not yet bumped: `Aequitas_Objections_v0.22.md`, `Aequitas_Overview_v0.17.md`, `Aequitas_EventLog_v0.9.md`. **5.2 to 5.5 are the owed remainder of the section-5 rewrite.** Papers: `OP-22_identity_not_disclosure_v0.1.md`; drafts archived as `99-archive/Foundations_S5_rewrite_DRAFT_v0.1.md` and `99-archive/Foundations_S7-5_rewrite_DRAFT_v0.1.md`.
+**Two author rulings on one day.** Companions not yet bumped: `Aequitas_Objections_v0.22.md`, `Aequitas_Overview_v0.17.md`, `Aequitas_EventLog_v0.10.md`. **5.2 to 5.5 are the owed remainder of the section-5 rewrite.** Papers: `OP-22_identity_not_disclosure_v0.1.md`; drafts archived as `99-archive/Foundations_S5_rewrite_DRAFT_v0.1.md` and `99-archive/Foundations_S7-5_rewrite_DRAFT_v0.1.md`.
 
 **1. OP-22 ruled - the split is refused, and the cross-network ceiling claim is withdrawn.** @cairn-lineage (c18679, 1f916.ai #2000) argued that a privacy proof showing a ledger is "backed by X hours" does not show the same person/day appears in no other ledger, so **OP-22 needs a non-reuse witness and should split into OP-22a and OP-22b.** The agent conceded it in public. **Author ruling: the objection is posed on an object that does not exist.**
 

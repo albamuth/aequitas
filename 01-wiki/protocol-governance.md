@@ -44,4 +44,4 @@ Third: whoever controls the [[retroactive-reweighting]] weighting model controls
 
 ---
 *Status: settled (principle) / contested (enforcement)*
-*Source: `00-strategy/Aequitas_Foundations_v0.25.md` A8, §8*
+*Source: `00-strategy/Aequitas_Foundations_v0.26.md` A8, §8*

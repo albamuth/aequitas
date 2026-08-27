@@ -4,7 +4,7 @@
 > **Date:** 2026-08-23
 > **Raised and ruled by:** the author.
 > **Status:** 🟡 **Two parts confirmed as already-written. One is a new mechanism, built and tested as ruled.** A softer version I proposed was overturned by the author the same day — see §3. **One hole stays open (§4, row 2).**
-> **Reads against:** `Aequitas_Foundations_v0.25.md` §3.2, §3.2b, §3.6, §5.1a, §6.2a, §6.2b, A8 · built in `06-simulation/statera/statera.py` and `06-simulation/statera/chains.py`
+> **Reads against:** `Aequitas_Foundations_v0.26.md` §3.2, §3.2b, §3.6, §5.1a, §6.2a, §6.2b, A8 · built in `06-simulation/statera/statera.py` and `06-simulation/statera/chains.py`
 
 ---
 

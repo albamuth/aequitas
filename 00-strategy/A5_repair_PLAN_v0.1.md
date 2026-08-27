@@ -144,7 +144,7 @@ Also: **debit, not "debt"** — the project's term.
 | `OP-9_calculation_reply.md` | 7 |
 | `OP-17_coproduct_allocation.md` | 3 |
 | `GLOSSARY.md` · `OP-27_parallel_implementation.md` | 2 each |
-| `OP-18` · `OP-23` · `OP-26` · `Aequitas_EventLog_v0.9.md` | 1 each |
+| `OP-18` · `OP-23` · `OP-26` · `Aequitas_EventLog_v0.10.md` | 1 each |
 
 ### Tier 3 — wiki
 
