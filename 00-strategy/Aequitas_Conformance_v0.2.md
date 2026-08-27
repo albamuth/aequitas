@@ -94,7 +94,7 @@ There was a row 17 saying so, from Foundations v0.18 to v0.23 and briefly here. 
 
 #### "One verified human = one account" is not here either
 
-Foundations §5.1 states it, and the **OP-22 ruling of 2026-08-25** makes it a rule each network applies to its own members rather than a requirement holding across networks — so it stays in §5.1 and is deliberately absent here. Record: [`OP-22_identity_not_disclosure_v0.1.md`](OP-22_identity_not_disclosure_v0.1.md) §10.
+Foundations §5.1 states it, and the **OP-22 ruling of 2026-08-25** makes it a rule each network applies to its own members rather than a requirement holding across networks — so it stays in §5.1 and is deliberately absent here. Record: [`OP-22_identity_not_disclosure_v0.2.md`](OP-22_identity_not_disclosure_v0.2.md) §11, row 3a.
 
 ---
 
