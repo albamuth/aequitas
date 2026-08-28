@@ -5,9 +5,8 @@
 > **Date:** 2026-08-27
 > **Status:** Working foundations. **Restructured on 2026-08-27**: the old §4, §5 and §6 all described work a trust network does, and only §5 said so. **They are now one section, §4. Consequences moved from §7 to §5, and the pointer table from §8 to §6.**
 > **Primary audience of the first paper:** technologists and implementers.
-> **Companion:** [`Aequitas_Conformance_v0.6.md`](Aequitas_Conformance_v0.6.md) — what must be true for an implementation to *be* Aequitas.
+> **Companion:** [`Aequitas_Conformance_v0.7.md`](Aequitas_Conformance_v0.7.md) — what must be true for an implementation to *be* Aequitas.
 > **Companion:** [`Aequitas_Objections_v0.23.md`](Aequitas_Objections_v0.23.md) — the objections register.
-> **Companion:** [`Aequitas_EventLog_v0.10.md`](Aequitas_EventLog_v0.10.md) — the data model.
 > **Version history is kept separately and is not published**, so this document carries only what is currently true.
 >
 > **⚠️ Section numbers changed in v0.28.** The old §4, §5 and §6 all described work a trust network does, and only §5 said so. **They are now one §4. Consequences moved from §7 to §5, and the pointer table from §8 to §6.** The section titles below say what each part covers; **the full old-to-new map is in the change history, which is held locally.**
@@ -147,7 +146,7 @@ Competition happens on **quality, artfulness, and efficiency**, never on margin.
 > 2. **It never said what counts as a cost *of the thing*.** The capital-vs-consumption boundary existed in §4.5 and was never lifted into the axiom, so the axiom read as contradicting it.
 > 3. **"True" reads as final**, which fights §3.3 and A6.
 >
-> **The critic's step is to assume the beef caused the barn.** Under A1 only people act, so a cost cannot attach to an output that did not cause it. **§3.2b forbids that flow downstream and §4.5 forbids it upstream; capital is the third face of one rule already written down twice.** A5, which located cost on the *thing*, was the sentence out of step. **No mechanism moved in this repair.** Full argument: `00-strategy/A5_repair_PLAN_v0.1.md`, register **B8**.
+> **The critic's step is to assume the beef caused the barn.** Under A1 only people act, so a cost cannot attach to an output that did not cause it. **§3.2b forbids that flow downstream and §4.5 forbids it upstream; capital is the third face of one rule already written down twice.** A5, which located cost on the *thing*, was the sentence out of step. **No mechanism moved in this repair.** Full argument: `99-archive/A5_repair_PLAN_v0.1.md`, register **B8**.
 
 <!-- tag: fnd-a6 -->
 ### A6 (derived, not stored)
@@ -179,7 +178,7 @@ Rules evolve as **immutable core + open variance**: everything below the core ma
 
 **What may vary.** A trust network may run a different weighting model, a different self-care floor, a different privacy practice, a different verification rung. **It must publish what it runs, and anyone else must be able to re-compute its claims** (§4.7, §4.2).
 
-**What may not vary.** The axioms above, and the conformance requirements in [`Aequitas_Conformance_v0.6.md`](Aequitas_Conformance_v0.6.md).
+**What may not vary.** The axioms above, and the conformance requirements in [`Aequitas_Conformance_v0.7.md`](Aequitas_Conformance_v0.7.md).
 
 #### Which activities are always creditable is left to the network
 
@@ -220,7 +219,7 @@ Some quantities the system needs are **not** physical facts. Where that is true,
 >
 > **A *"split of a joint process's debit across its co-products"* is not a free convention, and not a pure measurement either.** The process did physically divide the inputs, and that division is measurable — but reading it requires choosing an instrument, a period, and a sub-process boundary, and two honest choices can give different figures. **It is a choice that measurement constrains.** What Aequitas fixes is the obligations on that choice: measure at the facility for the period described, compute per dimension before collapsing, publish the method, and never let demand or yield enter. **The method itself belongs to the industry, under §1.2.** See §3.4a. *(Stated as a pure measurement until v0.21; corrected in v0.22 after outside review.)*
 >
-> **And *shared-overhead attribution to co-products* has nothing to attribute** — under §4.5 all capital and overhead accrues to the **asset**, never to the co-products (the barn stays on the operator; hide and beef carry only their own consumables). See `00-strategy/OP-17_coproduct_allocation.md` and `00-strategy/OP-23_capital_and_pollution.md`.
+> **And *shared-overhead attribution to co-products* has nothing to attribute** — under §4.5 all capital and overhead accrues to the **asset**, never to the co-products (the barn stays on the operator; hide and beef carry only their own consumables). See `00-strategy/open-problems/OP-17_coproduct_allocation.md` and `00-strategy/open-problems/OP-23_capital_and_pollution.md`.
 
 **The test that separates the two columns, and it is the useful output of the OP-17 (joint production) work:**
 
@@ -270,7 +269,7 @@ Two thought experiments, both fully compatible with everything in this document:
 
 **This is not a way of avoiding hard questions.** Every item above is real and someone must answer it. **It is a statement about which document answers it** — and about the failure mode of writing a theory of cost that quietly becomes a theory of software, governance, and compliance because those questions arrived while nobody was drawing the line.
 
-> **The dial test is the standing screening question for anything proposed for these documents, and what it leaves behind is a set of conformance requirements, never an architecture** — [`Aequitas_Conformance_v0.6.md`](Aequitas_Conformance_v0.6.md). **What must be true, never how to build it.**
+> **The dial test is the standing screening question for anything proposed for these documents, and what it leaves behind is a set of conformance requirements, never an architecture** — [`Aequitas_Conformance_v0.7.md`](Aequitas_Conformance_v0.7.md). **What must be true, never how to build it.**
 
 ---
 
@@ -325,7 +324,7 @@ One permanent, append-only **record of activity**: who did what, when, involving
 
 A debit is **not one number.** It is a bundle of physical quantities — kilograms of a substance, joules, labour-hours, cubic metres of water, land-area-years — stored separately in the log and combined into a single comparable figure only when someone needs to compare two things, via the current weighting model.
 
-This is A3 (non-fungibility) and A6 (derived, not stored) working together: the physical record is what implementations must agree on; the collapse is what they may differ about (EventLog §3).
+This is A3 (non-fungibility) and A6 (derived, not stored) working together: the physical record is what implementations must agree on; the collapse is what they may differ about.
 
 > **One rule follows immediately: any division of a debit — across co-products, across a team, across anything — is computed on the vector, per dimension, *before* collapsing.**
 >
@@ -461,7 +460,7 @@ Two consequences worth stating. **(1)** This is one mechanism, not two: atmosphe
 
 **Coverage estimates ride this engine too, and that is the whole answer to "how do you count what you cannot see."** How many producers, emitters, or people sit outside the records is not a number conjured from nothing — censuses, supply records, trade data and satellite survey already produce it, by methods that are published and improvable. **Aequitas does not prescribe how an authoritative total is made, and should not.** What it requires is what a citation requires: *where the data came from, and how it was tallied.* A tally with a stated method is not an authority assertion; it is a claim anyone can re-run, dispute, or better.
 
-So a coverage figure is a dated reading with a stated basis, exactly like every other estimate here — and when the science improves, **every affected ledger recalculates.** This costs nothing structurally, because the ledger is derived from the log and never stored (A6): recomputation is not a repair, it is how the system normally runs. And it means the fecundity loop closes for coverage as well: **improving the estimate of the dark is credited work, recorded as a tally event** (EventLog §2.2), *in the same ledger the estimate corrects*.
+So a coverage figure is a dated reading with a stated basis, exactly like every other estimate here — and when the science improves, **every affected ledger recalculates.** This costs nothing structurally, because the ledger is derived from the log and never stored (A6): recomputation is not a repair, it is how the system normally runs. And it means the fecundity loop closes for coverage as well: **improving the estimate of the dark is credited work — a measurement of a region is work like any other — recorded** *in the same ledger the estimate corrects*.
 
 > **The transaction-time rule.** Because figures move, the gate must not. **`D ≤ ρ·C` is evaluated at the moment of the transaction.** A later re-weight, re-split, or coverage revision changes **future** debit-room; it never retroactively invalidates a completed act.
 >
@@ -616,7 +615,7 @@ Two reasons:
 #### Four things that follow
 
 - **Waste outputs are co-products like any other.** Manure and methane take a share of the split. Nothing is left over, so there is no question of who absorbs an unwanted output.
-- **The process sets an output's cost share; its fate sets its ledger character.** Manure is pollution debit in a lagoon, a co-product in a biodigester, and a measured fertiliser offset when spread on a field. The record of what happened to it (EventLog IC-4, fate closure) already captures this.
+- **The process sets an output's cost share; its fate sets its ledger character.** Manure is pollution debit in a lagoon, a co-product in a biodigester, and a measured fertiliser offset when spread on a field. The record of what happened to it already captures this — everything the books track has a fate, which is conformance requirement 7.
 - **Labour has no per-product trace, so it is a declared convention.** The farmer's eight hours were spent on the animal, not on the hide. **The convention: labour divides in the same proportions as the process's measured material split.** It introduces no new basis and no new thing to game, and it changes nobody's credit — a worker is credited their own hours regardless (§4.5). It sets only how each co-product's debit-cost reads. *(OP-18(α), closed 2026-08-05.)*
 - **Negative cost shares do not arise.** Each share is a forward measurement of what physically went in, and a deposition cannot be negative. Nothing is inverted, so [Steedman's negative-value result](https://www.scienceopen.com/hosted-document?doi=10.13169/worlrevipoliecon.14.1.0063) does not transfer. Confirmed by simulation across 4,098 economies (`06-simulation/allocation-engine/RECURSION_RESULTS.md`). **Note the limit of that result: it proves no split produces a negative figure. It does not prove the split is unique.**
 
@@ -792,7 +791,7 @@ One person works **8 hours** on a Monday, and holds an account with each of two 
 
 **Where a network's records are partial it publishes a coverage figure saying so, and where a subscriber leaves activity undisclosed the network estimates it and errs against them** (§4.4). **The gap is measured and declared rather than hidden.**
 
-> **The hardest case for rule 1 is a pair of identical twins on the lowest rung of checking, deliberately engineering the confusion. The arithmetic refuses it.** IC-7 caps an account at 24 hours of activity in 24 hours, so two twins faking one account reach 34 hours a day against 36 hours honest. **They lose 730 hours a year and gain nothing**, because twins sharing a household share the goods either way. Worked in full, together with the cross-network case: [`OP-22_identity_not_disclosure_v0.2.md`](OP-22_identity_not_disclosure_v0.2.md).
+> **The hardest case for rule 1 is a pair of identical twins on the lowest rung of checking, deliberately engineering the confusion. The arithmetic refuses it.** IC-7 caps an account at 24 hours of activity in 24 hours, so two twins faking one account reach 34 hours a day against 36 hours honest. **They lose 730 hours a year and gain nothing**, because twins sharing a household share the goods either way. Worked in full, together with the cross-network case: [`OP-22_identity_not_disclosure_v0.2.md`](open-problems/OP-22_identity_not_disclosure_v0.2.md).
 
 ---
 
@@ -1261,7 +1260,7 @@ A median lifestyle commands about **1,380 hours** of other people's labour a yea
 
 **And the lever is far more evenly spread, which is measurable.** Money's top tail reaches about **10⁶ times** the median. **Pledging power cannot exceed 24 ÷ F**, which is about **2.4 times** at a ten-hour floor, **and that is an absolute maximum nobody reaches** (§5.5.5). **Every living person holds some.**
 
-**The full argument, with Braudel's two layers and the worked examples, is in [`OP-9_calculation_reply.md`](OP-9_calculation_reply.md) and [`../01-wiki/pledge-and-signal.md`](../01-wiki/pledge-and-signal.md).**
+**The full argument, with Braudel's two layers and the worked examples, is in [`OP-9_calculation_reply.md`](open-problems/OP-9_calculation_reply.md) and [`../01-wiki/pledge-and-signal.md`](../01-wiki/pledge-and-signal.md).**
 
 > **⚠️ What this does not answer.** **Two people, one radicchio. Pledges say how many get grown. They do not say who gets the last one.** That is a distribution question with a separate answer — a queue, a lottery, or pledge-priority, decided where the physical thing is handed over (§5.5). **Cost states what a thing took. Who receives a physically scarce output is a different question, and this document deliberately does not settle it.**
 
@@ -1445,7 +1444,7 @@ A median lifestyle commands about **1,380 hours** of other people's labour a yea
 
 **And extraction exhausts itself.** Buying inside takes on the debit; selling outside never discharges it. **So debit grows with every unit extracted while credit grows only with the extractor's own hours, capped at 24 a day. Their own gate shuts them out, and it shuts faster the harder they pull.**
 
-**The same holds for an organisation**, because an organisation's debit is at all times its members' debit, divided by hours worked. **Closing it and opening another moves nothing.** Full paper: [`OP-27_parallel_implementation.md`](OP-27_parallel_implementation.md).
+**The same holds for an organisation**, because an organisation's debit is at all times its members' debit, divided by hours worked. **Closing it and opening another moves nothing.** Full paper: [`OP-27_parallel_implementation.md`](open-problems/OP-27_parallel_implementation.md).
 
 > **⚠️ What stays open.** Whether a person can hide behind a **fake or borrowed membership list** — claiming hours for people who did not work them, or leaving their own name off. **That is a verification question rather than an accounting one.** The accounting has no hole here; the identity layer still has to do its job.
 
@@ -1587,7 +1586,7 @@ Those activities are **sleeping, eating, defecating, and keeping oneself clean.*
 
 > **The floor is therefore not only a welfare provision. It is the error tolerance of the whole accounting.**
 
-**None of this is a conformance requirement, and it must not be written as one.** Whether essentials are actually affordable in a given network depends on the value it sets for `F`, the value it sets for ρ, and what its economy can physically deliver — **so it is a result a network achieves, not a property an implementation has.** Setting the two dials so that it comes true is the network's job (§5.5.3). *(A conformance row saying otherwise existed from v0.18 to v0.24 and was deleted; see `Aequitas_Conformance_v0.6.md` §4.)*
+**None of this is a conformance requirement, and it must not be written as one.** Whether essentials are actually affordable in a given network depends on the value it sets for `F`, the value it sets for ρ, and what its economy can physically deliver — **so it is a result a network achieves, not a property an implementation has.** Setting the two dials so that it comes true is the network's job (§5.5.3). *(A conformance row saying otherwise existed from v0.18 to v0.24 and was deleted; see `Aequitas_Conformance_v0.7.md` §4.)*
 
 
 ---
@@ -1709,7 +1708,7 @@ A3 therefore does three separate defensive jobs: it forbids accumulation (§5.1)
 
 | What | Where | Why it moved |
 |---|---|---|
-| **The conformance requirements** — what must be true for an implementation to *be* Aequitas | [`Aequitas_Conformance_v0.6.md`](Aequitas_Conformance_v0.6.md) | It is written for implementers, and this document is written for anyone. |
+| **The conformance requirements** — what must be true for an implementation to *be* Aequitas | [`Aequitas_Conformance_v0.7.md`](Aequitas_Conformance_v0.7.md) | It is written for implementers, and this document is written for anyone. |
 | **Every open problem and every answered objection** | [`Aequitas_Objections_v0.23.md`](Aequitas_Objections_v0.23.md) | The register is the record. A ranked summary here only went stale. |
 | **How adoption plausibly starts** | [`Aequitas_Strategy_v0.6.md`](Aequitas_Strategy_v0.6.md) §5 | It is a reading of the historical record, not a statement of the system. |
 | **The version-by-version change history** | **Held locally and not published.** These documents carry what is currently true; the history is read only when tracing when and why something changed. |

@@ -3,8 +3,11 @@
 > **Version:** 0.1
 > **Date:** 2026-08-22
 > **Status:** First assembly. Every ruling here is settled and folded into Foundations v0.17; this document gathers them in one place because they were decided across a dozen separate sections. **One thing remains open and it is named in §11: OP-10 (weighting-model governance).**
-> **Depends on:** `Aequitas_Foundations_v0.28.md` §1.2, §3.3, §3.3a, §4, §4.1–§4.8 · `Aequitas_EventLog_v0.10.md`
+> **Depends on:** `Aequitas_Foundations_v0.28.md` §1.2, §3.3, §3.3a, §4, §4.1–§4.8 · `Aequitas_Conformance_v0.7.md`
 > **Companion:** `C2_information_capture.md` — the reasoning behind §6 below, including a retracted proposal kept on purpose.
+
+> **⚠️ The event-log paper was retired on 2026-08-28.** References to `EventLog §…` below are historical and no longer resolve. **The arithmetic constraints IC-1 to IC-12 are now conformance rows in [`Aequitas_Conformance_v0.7.md`](../Aequitas_Conformance_v0.7.md) §2**, which carries a label map; everything else it held is in Foundations. The archived paper is `99-archive/Aequitas_EventLog_v0.10.md`.
+
 
 ---
 
@@ -49,7 +52,7 @@ Everything a network does reduces to these. For each, what must be shown to chec
 | 7 | **The ratio gate** — `D ≤ ρ·C` at transaction time | The person's totals |
 | 8 | **Provenance** — that an estimate cites a real method and tally | `method_ref` and the tally it points at |
 
-**Items 4, 5 and 6 need no trust model at all.** IC-1 through IC-9 are pure arithmetic on the log — no reputation, no authority, only the ability to recompute (EventLog v0.8 §5.1). **Item 7's gate is evaluated at transaction time**, so a later correction changes future room and never the validity of a completed act (Foundations §3.3 — the transaction-time rule).
+**Items 4, 5 and 6 need no trust model at all.** IC-1 through IC-9 are pure arithmetic on the log — no reputation, no authority, only the ability to recompute (Foundations §4.3). **Item 7's gate is evaluated at transaction time**, so a later correction changes future room and never the validity of a completed act (Foundations §3.3 — the transaction-time rule).
 
 ---
 

@@ -68,7 +68,7 @@ Statera exists because nothing else in `06-simulation/` was the kernel. Every pr
 
 **A scenario earns its place by bearing on adoption.** A run that finds a population Aequitas cannot carry teaches more than a run that confirms a bound.
 
-Adoption is generational. [`Onboarding_the_wealthy_v0.1.md`](../../00-strategy/Onboarding_the_wealthy_v0.1.md) works on a **70-to-170-year** timescale, because that is how long one year of billionaire-scale consumption takes to clear against the human maximum accrual rate. **So the period length is a dial, not a constant** — see §12.
+Adoption is generational. [`Onboarding_the_wealthy_v0.1.md`](../../00-strategy/papers/Onboarding_the_wealthy_v0.1.md) works on a **70-to-170-year** timescale, because that is how long one year of billionaire-scale consumption takes to clear against the human maximum accrual rate. **So the period length is a dial, not a constant** — see §12.
 
 ---
 
@@ -81,7 +81,7 @@ Four objects, and nothing else.
 | **`EventLog`** | Append-only, columnar. Parallel numpy arrays, one per field. Offers no `delete`, `truncate`, `update`, `remove` or `edit` — asserted by `test_log_is_append_only`. |
 | **`Projection`** | The ledger, derived from the log by a segment-sum over the actor column. Cached, and the cache is re-checked against a from-scratch recompute every period. |
 | **`Kernel`** | Agents, dials, the time axis, the gate. |
-| **`Conformance`** | Seven checks from `Aequitas_Conformance_v0.6.md` (the conformance requirements), run at the end of every period. A failure raises and stops the run. |
+| **`Conformance`** | Seven checks from `Aequitas_Conformance_v0.7.md` (the conformance requirements), run at the end of every period. A failure raises and stops the run. |
 
 ### The event kinds
 
@@ -532,7 +532,7 @@ Foundations adds the **conservative-count rule**: when `Z` is uncertain, under-c
 
 ### Worked example — the adoption direction
 
-A region's independently-measured total is 1,000 units, spread across 100 dark actors. From [`Onboarding_the_wealthy_v0.1.md`](../../00-strategy/Onboarding_the_wealthy_v0.1.md) §4:
+A region's independently-measured total is 1,000 units, spread across 100 dark actors. From [`Onboarding_the_wealthy_v0.1.md`](../../00-strategy/papers/Onboarding_the_wealthy_v0.1.md) §4:
 
 | Participants | `Y` measured | `Z` still dark | `(N − Y)/Z` per dark actor |
 |---|---|---|---|
@@ -544,7 +544,7 @@ A region's independently-measured total is 1,000 units, spread across 100 dark a
 
 **Nobody receives a bill.** Foundations §4.4 holds the residual unassigned: it is computed, published, and charged to no account until its causer onboards. **The pressure is a published number that gets worse the longer you wait.**
 
-**What is needed to build this:** a non-participant pool, a per-cohort join decision, a verification-cost dial, and generational time. Items 1–6 of [`Onboarding_the_wealthy_v0.1.md`](../../00-strategy/Onboarding_the_wealthy_v0.1.md) §8 name them all.
+**What is needed to build this:** a non-participant pool, a per-cohort join decision, a verification-cost dial, and generational time. Items 1–6 of [`Onboarding_the_wealthy_v0.1.md`](../../00-strategy/papers/Onboarding_the_wealthy_v0.1.md) §8 name them all.
 
 ---
 
@@ -754,7 +754,7 @@ _ = collapse(heavier, k.dials.weights)   # future room shrinks; history stands
 | Relation | Status |
 |---|---|
 | `(N − Y)/Z`, the residual rule | **Not in `statera.py`.** Stated in §14 from Foundations §4.4. Implemented separately in [`residual_unravelling.py`](../residual-unravelling/residual_unravelling.py), which this paper did not audit. |
-| Dollars-to-hours, `spend × intensity` | **Not in `statera.py`.** The kernel uses a single calibration constant (§15), not an intensity table. The method lives in [`median_lifestyle.py`](../median-lifestyle/archive/median_lifestyle.py) and its method note. |
+| Dollars-to-hours, `spend × intensity` | **Not in `statera.py`.** The kernel uses a single calibration constant (§15), not an intensity table. The method lives in [`median_lifestyle.py`](../median-lifestyle/99-superseded/median_lifestyle.py) and its method note. |
 | The `~40%` verification-cost stall threshold | Quoted in Foundations §4.7 from [`residual_unravelling.py`](../residual-unravelling/residual_unravelling.py). Not reachable from Statera and not re-run here. |
 
 ---
@@ -763,7 +763,7 @@ _ = collapse(heavier, k.dials.weights)   # future room shrinks; history stands
 
 ### 19.1 The 17 conformance requirements — what Statera can and cannot check
 
-`Aequitas_Conformance_v0.6.md` lists 16 requirements that must hold for an implementation to be Aequitas. Statera asserts some as running invariants, satisfies some structurally without asserting them, and cannot express the rest.
+`Aequitas_Conformance_v0.7.md` lists 16 requirements that must hold for an implementation to be Aequitas. Statera asserts some as running invariants, satisfies some structurally without asserting them, and cannot express the rest.
 
 | # | Requirement | Status in Statera |
 |---|---|---|
@@ -819,7 +819,7 @@ _ = collapse(heavier, k.dials.weights)   # future room shrinks; history stands
 | `Aequitas_Foundations_v0.19.md` (superseded; held locally) | The theory. Axioms A1–A8 in §1; the debit vector in §3.2a; the transaction-time rule in §3.3; the residual rule in §4.4; the self-care floor in §4.5; pledges in §4.6; the basic-needs floor and the disparity bound in §5.5; the 17 conformance requirements in §9. |
 | [`GLOSSARY.md`](../../00-strategy/GLOSSARY.md) | Every acronym, and the research source index. Link to its anchors rather than to research files directly. |
 | [`Aequitas_Simulation_Roadmap_v0.2.md`](../../00-strategy/Aequitas_Simulation_Roadmap_v0.2.md) | The build order Statera implements steps 1–3 of. |
-| [`Onboarding_the_wealthy_v0.1.md`](../../00-strategy/Onboarding_the_wealthy_v0.1.md) | The adoption arithmetic and the six things a run needs. |
+| [`Onboarding_the_wealthy_v0.1.md`](../../00-strategy/papers/Onboarding_the_wealthy_v0.1.md) | The adoption arithmetic and the six things a run needs. |
 | [`STATERA_PLAN_v0.2.md`](STATERA_PLAN_v0.2.md) | The current design, five settled decisions, build order. |
 | [`SUBSECTOR_CANDIDATES_v0.1.md`](SUBSECTOR_CANDIDATES_v0.1.md) | The 27 categories, 5 modifiers, and the basket arithmetic. |
 | [`MEDIAN_LIFESTYLE_RESULT.md`](../median-lifestyle/MEDIAN_LIFESTYLE_RESULT.md) | The 1,380 h/yr anchor. |

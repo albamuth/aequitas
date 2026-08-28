@@ -97,7 +97,7 @@ So a wealthy person who genuinely **divests before joining** — sells the estat
 
 > **You can shed the property. You can never shed having consumed.** Decades of that lifestyle are permanent debit on the person who caused it, and §4.4 back-traces them to birth.
 
-**And Foundations already knew this.** [`q4_locked_ledgers.py`](../06-simulation/scenario-suite/q4_locked_ledgers.py), quoted in §5.5: *"even fully divesting material property does not save them (permanent consumption debit, §3.2)."*
+**And Foundations already knew this.** [`q4_locked_ledgers.py`](../../06-simulation/scenario-suite/q4_locked_ledgers.py), quoted in §5.5: *"even fully divesting material property does not save them (permanent consumption debit, §3.2)."*
 
 > **This is the sixth time in this project that the answer was already written down and unread.** The standing rule holds: **check the axioms before importing an outside solution**, and a grep would not have found this — §5.5's callout does not mention onboarding.
 
@@ -141,7 +141,7 @@ So a wealthy person who genuinely **divests before joining** — sells the estat
 
 **The ruling says the transition "may even stall out at a certain threshold." It does, and the number exists.**
 
-[`residual_unravelling.py`](../06-simulation/residual-unravelling/residual_unravelling.py), recorded in §4.7 residue (b):
+[`residual_unravelling.py`](../../06-simulation/residual-unravelling/residual_unravelling.py), recorded in §4.7 residue (b):
 
 > **Once verification costs more than roughly 40% of a median unit's debit, the residual rule stops unravelling the dark pool, and darkness becomes stable again.**
 
@@ -189,7 +189,7 @@ So a wealthy person who genuinely **divests before joining** — sells the estat
 2. **A published residual that charges nobody** (§4.4) — visible on screen, not on a ledger.
 3. **A join decision per cohort**, comparing the back-trace they would inherit against the credit they would realise.
 4. **A verification cost dial**, so the ~40% stall threshold can be crossed from both sides.
-5. **A wealth distribution with a real tail** — the SCF-2022 and Forbes material-only distribution already in [`q4_locked_ledgers.py`](../06-simulation/scenario-suite/q4_locked_ledgers.py). **And the 1% coverage cut must be OFF**, or the tail is invisible by construction.
+5. **A wealth distribution with a real tail** — the SCF-2022 and Forbes material-only distribution already in [`q4_locked_ledgers.py`](../../06-simulation/scenario-suite/q4_locked_ledgers.py). **And the 1% coverage cut must be OFF**, or the tail is invisible by construction.
 6. **Generational time.** Seventy to a hundred and seventy years is the timescale in §2, so a ten-period run cannot see this. **A two-hundred-year run at cohort scale can.**
 
 ---

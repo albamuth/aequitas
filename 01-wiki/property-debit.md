@@ -133,7 +133,7 @@ Front-loading says *when* a durable asset's cost falls due. This says *who carri
 
 > **Transit custodians do not accrue a creation-cost share**. A carrier holding 1,000 toasters for two days did not *make* them, so they take **no** holding-time share of the toasters' *creation-cost*. Transit adds only the carrier's own **transport-debt** (their labour + fuel, attributed to them, §3.2b), which becomes embodied cost in the goods. Creation-cost holding-time-split begins at **deployment/operation by an end-holder**, not during transit. This keeps the supply-chain hand-off model (§4.6) — where every carrier briefly holds the goods — from silently loading the making of the toaster onto the truck driver.
 
-**This closes OP-23 (shared overhead).** All capital and overhead accrues to the asset and its holders; **it never allocates to co-products.** The barn stays on the operator; hide and beef carry only their own consumables. The honest trade-off: a per-unit debit-cost is therefore *not* a full-lifecycle figure — the capital footprint is located on the asset, not smeared across units, and is never lost (no A4 breach). See `00-strategy/OP-23_capital_and_pollution.md`.
+**This closes OP-23 (shared overhead).** All capital and overhead accrues to the asset and its holders; **it never allocates to co-products.** The barn stays on the operator; hide and beef carry only their own consumables. The honest trade-off: a per-unit debit-cost is therefore *not* a full-lifecycle figure — the capital footprint is located on the asset, not smeared across units, and is never lost (no A4 breach). See `00-strategy/open-problems/OP-23_capital_and_pollution.md`.
 
 ---
 *Status: settled (updated to the v0.7 two-component model)*

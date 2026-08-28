@@ -1,6 +1,16 @@
 # 00-strategy — what is in here, and what to read first
 
-**This folder holds the theory.** Twenty-five files, about 800 KB. Nothing here is code, and nothing here is a plan for code.
+**This folder holds the theory.** Nothing here is code, and nothing here is a plan for code.
+
+**How it is laid out.**
+
+| Where | What is in it |
+|---|---|
+| Here, at the top | **The core documents** — `Aequitas_*.md`, each with a companion `_CHANGELOG.md` — plus `GLOSSARY.md` and this page |
+| [`open-problems/`](open-problems/) | **One paper per open problem.** The `OP-*` files |
+| [`papers/`](papers/) | **Settled working papers the core documents still cite by name** |
+
+**A finished plan is not a paper.** Once a plan's work has landed in the core documents, the plan goes to `../99-archive/`.
 
 **If you read one thing, read `Aequitas_Foundations_v*.md`, and read all of it.** The reason is at the bottom of this page and it is not a style preference.
 
@@ -13,7 +23,7 @@
 | **An agent starting a work session** | **Foundations, whole**, then `../NEXT.md` | ~200 KB. Budget for it. |
 | **A person new to the project** | `Aequitas_Overview_v*.md`, then `Aequitas_Strategy_v*.md` | ~85 KB |
 | **Answering an objection someone raised** | `Aequitas_Objections_v*.md` **first** | ~100 KB |
-| **Building an implementation** | Foundations **§9** (the conformance list), then `Aequitas_EventLog_v*.md` | ~80 KB |
+| **Building an implementation** | `Aequitas_Conformance_v*.md`, then the Foundations sections its rows point at | ~10 KB, plus what you follow |
 | **Stuck on an abbreviation** | `GLOSSARY.md` | look-up only |
 | **Tracing when something changed** | the matching `*_CHANGELOG.md` | look-up only |
 
@@ -28,9 +38,8 @@ These are versioned, and they move **in lockstep**. When one is bumped, every do
 | File | Holds | Size |
 |---|---|---|
 | **`Aequitas_Foundations_v*.md`** | **The system itself.** The eight axioms (§1), the ledger model (§3), verification (§4), identity and coverage (§5), credit and pledges (§6), and consequences (§7). **It ends at §8, which is a pointer table.** Truncated on 2026-08-25: the conformance list, the open problems and the adoption reading moved to the three files below. **Everything else in this folder is downstream of this file.** | ~190 KB |
-| **`Aequitas_Conformance_v*.md`** | **What must be true for an implementation to *be* Aequitas.** Sixteen numbered requirements, each pointing back at the section of Foundations that argues for it. **§4 records what is deliberately *not* a requirement, and why.** **Audience: implementers.** Not a schema, not a protocol, not a product. | ~8 KB |
+| **`Aequitas_Conformance_v*.md`** | **What must be true for an implementation to *be* Aequitas.** Numbered requirements, each pointing back at the section of Foundations that argues for it. **It also carries the arithmetic constraints IC-1 … IC-12.** **§4 records what is deliberately *not* a requirement, and why.** **Audience: implementers.** Not a schema, not a protocol, not a product. | ~8 KB |
 | **`Aequitas_Objections_v*.md`** | **The objections register.** Every serious attack on the theory, who made it, which axiom it hits, and its status. **Part B is the answered ones, and it is not an archive** — it is the argument sheet, and every item will be raised again by someone who has not read it. | ~100 KB |
-| **`Aequitas_EventLog_v*.md`** | **The data model (C1).** What a record contains, and the integrity constraints IC-1 … IC-12 that check it. Read this only when the question is about *what gets recorded*. | ~75 KB |
 | **`Aequitas_Overview_v*.md`** | **The plain-language version.** No economics background needed. Where it and Foundations differ, **Foundations wins.** | ~65 KB |
 | **`Aequitas_Strategy_v*.md`** | **The roadmap.** What is being built, in what order, and why. | ~21 KB |
 
@@ -42,13 +51,13 @@ Each core document has a companion `_CHANGELOG.md`. **All version history lives 
 
 The documents used to open with a wall of `Supersedes` and `Prior (v0.18)` blocks — history in the exact place a reader starts. That was moved out on 2026-08-24. **A core document now opens on its contents.**
 
-`Aequitas_Foundations_CHANGELOG.md` · `Aequitas_Objections_CHANGELOG.md` · `Aequitas_EventLog_CHANGELOG.md` · `Aequitas_Overview_CHANGELOG.md` · `Aequitas_Strategy_CHANGELOG.md`
+`Aequitas_Foundations_CHANGELOG.md` · `Aequitas_Objections_CHANGELOG.md` · `Aequitas_Conformance_CHANGELOG.md` · `Aequitas_Overview_CHANGELOG.md` · `Aequitas_Strategy_CHANGELOG.md`
 
 **Read a changelog only when you need to know *when* or *why* something changed.** Never read one to learn what the system currently says.
 
 ---
 
-## Working papers — one problem each
+## `open-problems/` — one paper per problem
 
 These are the long-form workings behind a ruling. **Each one is already summarised in Foundations and in the register.** Open a paper only when the summary is not enough.
 
@@ -64,18 +73,18 @@ Most are closed. The status line at the top of each file says which.
 | `OP-26_coverage_and_closure.md` | **Arithmetic over a record proves the record is consistent. It cannot prove the record covers the world.** The first objection raised from outside the project. | 🟠 Largely answered |
 | `OP-26_declare_dont_allocate_stress_test.md` | A proposal to declare the unrecorded gap rather than charge it to anyone. | ❌ Not adopted — it was already the rule |
 | `OP-27_parallel_implementation.md` | How does a person use Aequitas while everyone around them still uses money? | ✅ Ruled and tested |
-| `Onboarding_the_wealthy_v0.1.md` | What happens when a very rich person joins? | 🟡 Ruled, not yet tested |
-| `Shelf_life_and_custody_v0.1.md` | When does holding a thing stop being your responsibility? | 🟡 Two parts confirmed, one new |
 
 ---
 
-## The C2 papers — who actually runs this
+## `papers/` — settled working papers
 
 **C2 is the trust network**: the body that does the tallying, holds what is private, and publishes its methods. Aequitas states principles; a trust network is who executes them.
 
 | File | Holds |
 |---|---|
 | `C2_TrustNetworks_v0.1.md` | Every settled ruling about trust networks, gathered in one place. They were decided across a dozen scattered sections. |
+| `Onboarding_the_wealthy_v0.1.md` | What happens when a very rich person joins? 🟡 Ruled, not yet tested. |
+| `Shelf_life_and_custody_v0.1.md` | When does holding a thing stop being your responsibility? 🟡 Two parts confirmed, one new. |
 | `C2_information_capture.md` | Whoever tallies, holds. Does the network become the thing this project exists to dissolve? **Read §11 first** — sections 1–10 are kept unedited because the mistake in them is instructive. |
 
 ---

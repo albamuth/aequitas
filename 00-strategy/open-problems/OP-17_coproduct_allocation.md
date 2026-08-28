@@ -1,5 +1,8 @@
 # OP-17 — Co-Product Allocation: the process allocates itself
 
+> **⚠️ The event-log paper was retired on 2026-08-28.** References to `EventLog §…` below are historical and no longer resolve. **The arithmetic constraints IC-1 to IC-12 are now conformance rows in [`Aequitas_Conformance_v0.7.md`](../Aequitas_Conformance_v0.7.md) §2**, which carries a label map; everything else it held is in Foundations. The archived paper is `99-archive/Aequitas_EventLog_v0.10.md`.
+
+
 **Status:** ✅ **Resolved for the material/energy half. Two new problems spun out (OP-23, OP-24).**
 **Version:** v3 — 2026-08-01 (v1 and v2 superseded same day, unreleased; see §10)
 **Register:** `Aequitas_Objections_v0.5.md` — A1 / B7
@@ -56,7 +59,7 @@ Debit is stored as a **vector** of physical quantities and collapsed to a compar
 
 > **The split must be computed on each dimension separately, on the vector, before any collapse.**
 
-If the split were computed on the collapsed number, **whoever controls the weighting model would silently control every allocation in history** — OP-10, arriving through a side door. Splitting per-dimension makes the allocation **weighting-independent**: two communities running different weighting models compute the same split and disagree only about what it weighs, exactly as EventLog §3 requires of everything else.
+If the split were computed on the collapsed number, **whoever controls the weighting model would silently control every allocation in history** — OP-10, arriving through a side door. Splitting per-dimension makes the allocation **weighting-independent**: two communities running different weighting models compute the same split and disagree only about what it weighs, exactly as the record model requires of everything else.
 
 This is a hard requirement, not an optimisation.
 
@@ -86,7 +89,7 @@ Manure is the clean demonstration that a co-product's ledger character is not fi
 | **Field rotation / spreading** | Displaces synthetic fertiliser — the avoided production is **observed, not counterfactual**, so the offset is a measurement |
 | **Unmanaged runoff** | Pollution debit, on the holder, per A4 |
 
-**Same substance, four ledger positions, decided by observed fate — not by a rule about manure.** EventLog IC-4 (fate closure) already records this; no new machinery.
+**Same substance, four ledger positions, decided by observed fate — not by a rule about manure.** Conformance row 7 (everything has a fate) already records this; no new machinery.
 
 Generalised: **an output's cost share is set by the process; its ledger character is set by its fate.** The allocation literature conflates these two questions, which is part of why it goes in circles.
 

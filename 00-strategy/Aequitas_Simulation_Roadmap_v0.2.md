@@ -55,7 +55,7 @@ These are the system. They are the same in every scenario, and a scenario that n
 
 ### 1b-ii. Adoption dials — the parallel phase
 
-**Aequitas has to work for people who still use money, without excluding them.** [`OP-27_parallel_implementation.md`](OP-27_parallel_implementation.md) — **ruled and stress-tested 2026-08-23.** Both directions across the boundary are **deliberately costly**: a money-made good is dark until sold in and clears via a **pre-approved template**; selling out for money **keeps the debit and reads as a gift**, because A1 makes money invisible to the ledger. **The simulation has to express both, plus the template's conservatism as a dial.**
+**Aequitas has to work for people who still use money, without excluding them.** [`OP-27_parallel_implementation.md`](open-problems/OP-27_parallel_implementation.md) — **ruled and stress-tested 2026-08-23.** Both directions across the boundary are **deliberately costly**: a money-made good is dark until sold in and clears via a **pre-approved template**; selling out for money **keeps the debit and reads as a gift**, because A1 makes money invisible to the ledger. **The simulation has to express both, plus the template's conservatism as a dial.**
 
 | Dial | Why |
 |---|---|
@@ -108,7 +108,7 @@ The decomposition that does work:
 
 ## 3. The invariant set is the conformance list
 
-[`Aequitas_Conformance_v0.6.md`](../00-strategy/Aequitas_Conformance_v0.6.md) carries **16 requirements that must hold for an implementation to be Aequitas.** They were written for an implementer. **They are also exactly what the kernel should assert, every period, in every scenario.**
+[`Aequitas_Conformance_v0.7.md`](../00-strategy/Aequitas_Conformance_v0.7.md) carries **16 requirements that must hold for an implementation to be Aequitas.** They were written for an implementer. **They are also exactly what the kernel should assert, every period, in every scenario.**
 
 **So `arithmetic_audits.py` is not a side artifact. It is the engine's test harness**, and IC-1 … IC-12 become continuous assertions rather than a one-off audit.
 

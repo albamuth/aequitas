@@ -61,7 +61,7 @@ The US also sits **below the median** on material consumption per hour worked (1
 - **All figures are US-2023, one internally consistent year.** Tracks 3 and 6 use 2022 EXIOBASE, the latest available.
 - **Track 1's source is import-adjusted**, so its 612 hours is a domestic **lower bound** by construction. Track 3 supplies the rest.
 - **The bases differ between tracks.** Track 1 counts payroll hours; EXIOBASE counts all labour including the self-employed. The two are the same order, which is the check, not the same number.
-- **The v1 top-down estimate in [`archive/`](archive/) is not a result.** It assumed the labour allocation instead of measuring it. It is kept only as a sanity bracket, and the two methods do agree in magnitude.
+- **The v1 top-down estimate in [`99-superseded/`](99-superseded/) is not a result.** It assumed the labour allocation instead of measuring it. It is kept only as a sanity bracket, and the two methods do agree in magnitude.
 
 ## Figures
 
@@ -72,4 +72,4 @@ The US also sits **below the median** on material consumption per hour worked (1
 | `figC_foreign.png` | Which countries the offshore hours are in |
 | `figD_average.png` | Mean against median |
 
-Three older figures from the superseded v1 estimate are in [`archive/`](archive/).
+Three older figures from the superseded v1 estimate are in [`99-superseded/`](99-superseded/).

@@ -70,9 +70,9 @@ The axiom read *"the **price** of anything is its true, current-best-estimate ma
 
 ## Open questions
 
-- The socialist-calculation critique: if cost is not set by supply and demand, what allocates scarce goods? Aequitas's answer is [pledges](pledge-and-signal.md) plus local distribution, written up in `00-strategy/OP-9_calculation_reply.md`.
+- The socialist-calculation critique: if cost is not set by supply and demand, what allocates scarce goods? Aequitas's answer is [pledges](pledge-and-signal.md) plus local distribution, written up in `00-strategy/open-problems/OP-9_calculation_reply.md`.
 
 ---
 *Status: settled — wording repaired v0.21*
 *Supersedes `99-archive/price-equals-cost.md`*
-*Source: `00-strategy/Aequitas_Foundations_v0.28.md` A5, §4.5, §5.1 · `00-strategy/A5_repair_PLAN_v0.1.md`*
+*Source: `00-strategy/Aequitas_Foundations_v0.28.md` A5, §4.5, §5.1 · `99-archive/A5_repair_PLAN_v0.1.md`*

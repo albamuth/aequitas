@@ -52,7 +52,7 @@
 
 ## What the project did in response
 
-Most of the high- and medium-impact items were acted on: the prices reply was written ([`00-strategy/OP-9_calculation_reply.md`](../00-strategy/OP-9_calculation_reply.md)), the debit-categories diagram was drawn, the inequality cap was re-stated as conditional, and a plain-language glossary layer was begun. The trust-network model and the entropy grounding remain queued.
+Most of the high- and medium-impact items were acted on: the prices reply was written ([`00-strategy/open-problems/OP-9_calculation_reply.md`](../00-strategy/open-problems/OP-9_calculation_reply.md)), the debit-categories diagram was drawn, the inequality cap was re-stated as conditional, and a plain-language glossary layer was begun. The trust-network model and the entropy grounding remain queued.
 
 ## Related
 

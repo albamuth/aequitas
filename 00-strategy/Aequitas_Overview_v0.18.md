@@ -93,7 +93,7 @@ Aequitas is the same shape. It is a set of principles about how cost is counted.
 >
 > **Where this document does talk about something local, it means a physical thing being handed to a physical person somewhere** — the queue at a butcher's counter, or a village with one power station. **That is a fact about the object, not about the network.**
 
-*The detail is in `00-strategy/C2_TrustNetworks_v0.1.md`.*
+*The detail is in `00-strategy/papers/C2_TrustNetworks_v0.1.md`.*
 
 ---
 
@@ -570,7 +570,7 @@ It should. A century of alternative economies died, and pretending otherwise wou
 
 **The second flavour (Hayek): the knowledge is scattered and unwritten — no central calculator can gather it.** This one is sharper, and honesty requires only a partial claim. Part of it Aequitas answers: it gathers data *locally* — the person on the spot, the meter on the machine — never demanding one authority assemble everything. But the deeper point — that a lot of what people know is a gut feel that never gets written down — a ledger of physical flows genuinely doesn't capture, and shouldn't pretend to. The escape is that **Aequitas isn't a plan.** It sets no targets and optimises no grand objective; it just keeps the books under an ordinary decentralised market where the person on the spot still makes their own call. Hayek's objection is to central *planning*. Aequitas isn't one, so it doesn't have to solve his problem — only avoid recreating it.
 
-**And "it's too big to compute" has been tested and answered.** [Cockshott and Cottrell](https://en.wikipedia.org/wiki/Towards_a_New_Socialism) showed that calculation in physical units at national scale runs on ordinary hardware with sparse-matrix methods. People ran the arithmetic; it runs. *(The full, rigorous version of all of this — including how genuinely scarce things get rationed without profit — is `00-strategy/OP-9_calculation_reply.md`.)*
+**And "it's too big to compute" has been tested and answered.** [Cockshott and Cottrell](https://en.wikipedia.org/wiki/Towards_a_New_Socialism) showed that calculation in physical units at national scale runs on ordinary hardware with sparse-matrix methods. People ran the arithmetic; it runs. *(The full, rigorous version of all of this — including how genuinely scarce things get rationed without profit — is `00-strategy/open-problems/OP-9_calculation_reply.md`.)*
 
 <!-- tag: ovw-s9-parallel -->
 ### Can I use it while everyone else still uses money?

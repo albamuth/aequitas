@@ -12,7 +12,7 @@
 
 Dapprich is the most recent serious attempt to plan an economy in physical/optimisation terms, and he tackles the two problems Aequitas most needs answered: **how to price scarcity without profit**, and **how to let what people actually want steer production** without a market. He is the direct successor to Kantorovich (shadow prices) and Cockshott & Cottrell (computational planning), and he couples their machinery to a *consumer-feedback loop* — which is close in spirit to what Aequitas does with pledges.
 
-Bears on: pricing scarcity as a cost, not a profit (the "scarcity-as-debit" idea — see [Kantorovich](../00-strategy/GLOSSARY.md#src-kantorovich-shadow-prices)); the demand-side reply to the calculation critique ([`00-strategy/OP-9_calculation_reply.md`](../00-strategy/OP-9_calculation_reply.md)); and [Foundations §6.4 (pledges and signals)](../00-strategy/Aequitas_Foundations_v0.28.md).
+Bears on: pricing scarcity as a cost, not a profit (the "scarcity-as-debit" idea — see [Kantorovich](../00-strategy/GLOSSARY.md#src-kantorovich-shadow-prices)); the demand-side reply to the calculation critique ([`00-strategy/open-problems/OP-9_calculation_reply.md`](../00-strategy/open-problems/OP-9_calculation_reply.md)); and [Foundations §6.4 (pledges and signals)](../00-strategy/Aequitas_Foundations_v0.28.md).
 
 ## Key findings
 

@@ -56,7 +56,7 @@ The §3.4a instrument for a refinery is "cracking enthalpy / where the process s
 2. **Physical split is non-negative** — inherited from the Neumann-series result; assert `min(p) ≥ 0`.
 3. **Universality** — the physical split is independent of the price vector: perturb prices, physical θ unchanged (the §3.4a / B9 property that killed demand-contingent splitting).
 4. **Material divergence** — price vs physical per-fraction cost differ by more than a set threshold on at least the residual fractions; report the L1 divergence and the sign of the shift (heavy fractions up under physical).
-5. **Price allocation flagged `declared`, physical flagged `measured`** — the basis label rides the output (EventLog basis field; A5 keeps price as data, not truth).
+5. **Price allocation flagged `declared`, physical flagged `measured`** — the basis label rides the output (the record’s own basis label).
 
 ## 6. Risks / open
 

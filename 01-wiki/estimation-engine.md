@@ -138,4 +138,4 @@ A region reports its wheat.
 
 ---
 *Status: provisional — OP-3. **Blocked on OP-18.***
-*Source: `../00-strategy/GLOSSARY.md#src-estimation-engine-data-sources`; `00-strategy/OP-17_coproduct_allocation.md` §10*
+*Source: `../00-strategy/GLOSSARY.md#src-estimation-engine-data-sources`; `00-strategy/open-problems/OP-17_coproduct_allocation.md` §10*

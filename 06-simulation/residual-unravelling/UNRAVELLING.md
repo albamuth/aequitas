@@ -179,7 +179,7 @@ Disclosure cost is the only free parameter that can defeat unravelling on its ow
 
 ## Assumptions, stated
 
-1. **Market access is not modelled.** The origin-evidence ruling (EventLog §12.3a) bars a dark producer from transacting at all. That stick is far larger than anything here, so **these figures are a lower bound** on the pressure to disclose.
+1. **Market access is not modelled.** The origin-evidence ruling of 2026-08-22 (Foundations §4.8) bars a dark producer from transacting at all. That stick is far larger than anything here, so **these figures are a lower bound** on the pressure to disclose.
 2. **Agents are myopic** — they compare this round's estimate, not the one they expect after everyone else moves. Foresight would unravel the pool *faster*, so myopia is the conservative assumption.
 3. **This shows incentive-compatibility, not fairness.** Whether the estimate applied to the residue is *just* is a different question, answered by §4.4 condition 2 and the self-care-floor exemption — not by this sim.
 

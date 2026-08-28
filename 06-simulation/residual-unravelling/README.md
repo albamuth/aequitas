@@ -37,4 +37,4 @@ Pure Python — no `numpy`, no data files, nothing to download.
 
 ## What this bears on
 
-The verification-cost limit found here (see [`RESULTS.md`](RESULTS.md)) is the measured precondition behind the coverage argument in Foundations §4.4 and §4.4, and it feeds directly into OP-22 (minimum audit disclosure) and the trust-network work in `00-strategy/C2_TrustNetworks_v0.1.md`.
+The verification-cost limit found here (see [`RESULTS.md`](RESULTS.md)) is the measured precondition behind the coverage argument in Foundations §4.4 and §4.4, and it feeds directly into OP-22 (minimum audit disclosure) and the trust-network work in `00-strategy/papers/C2_TrustNetworks_v0.1.md`.

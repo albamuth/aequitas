@@ -106,4 +106,4 @@ Healthcare ~34 B · retail+wholesale ~34 B · food service ~22 B hrs dominate.
 - **§3.2b electricity revision** → stress-test + fold into Foundations (parked in NEXT.md).
 - **Open sub-decisions:** per-adult normalisation (equivalence scale vs single-person CU); mean→median ratio (0.83 placeholder → refine from CE microdata); carbon basis (nature vs DAC).
 - **Minor uncounted gap:** foreign content of *residential construction* (Track 2 domestic-only; Track 3 is consumption not investment). Small; noted.
-- **Next deliverable:** rewrite the layperson explainer ([`MEDIAN_LIFESTYLE.md`](archive/MEDIAN_LIFESTYLE.md)) from these rigorous numbers, with charts; then this anchors the ρ-sweep sim.
+- **Next deliverable:** rewrite the layperson explainer ([`MEDIAN_LIFESTYLE.md`](99-superseded/MEDIAN_LIFESTYLE.md)) from these rigorous numbers, with charts; then this anchors the ρ-sweep sim.

@@ -10,7 +10,7 @@
 
 ## 0. Why this document exists
 
-Aequitas *is* calculation in kind — [material-flow-value](../01-wiki/material-flow-value.md) with modern instruments. The oldest and most cited proof that this cannot work is the **socialist-calculation argument**. Every economically literate reader brings it, and the external critique (2026-08-09) named writing it up as its single top priority. The good news, established across three research notes: **the answer already exists in the theory's own machinery.** This document assembles it in one place and marks the one piece that is genuinely still open.
+Aequitas *is* calculation in kind — [material-flow-value](../../01-wiki/material-flow-value.md) with modern instruments. The oldest and most cited proof that this cannot work is the **socialist-calculation argument**. Every economically literate reader brings it, and the external critique (2026-08-09) named writing it up as its single top priority. The good news, established across three research notes: **the answer already exists in the theory's own machinery.** This document assembles it in one place and marks the one piece that is genuinely still open.
 
 The reply has **five** moves and one honest remainder:
 
@@ -49,7 +49,7 @@ So the classic refutation — *"there is no non-market way to value capital good
 
 **The trap to avoid, stated once and enforced everywhere.** The temptation is to sneak worth back in through the cost side — to say a prized thing "costs more" because people want it. That is A5 collapsing into a price theory, and the OP-17 session caught exactly this: a rule that split a steer's debit by *which cuts are sought-after* gave two identical steers in two towns different costs — a universality failure, "price allocation in costume" (Objections OA8, Foundations §3.4a). **Cost states what a thing took. Full stop. Every part of the demand story below lives on the demand side and is kept there by construction.**
 
-This is why Neurath's incommensurability point, which lost the historical debate, wins here: he lacked a genuine commensurating basis and lacked computers ([research note](GLOSSARY.md#src-neurath-calculation-in-kind)). Aequitas has both. Reopening the debate on those two specific grounds is legitimate, not crankery.
+This is why Neurath's incommensurability point, which lost the historical debate, wins here: he lacked a genuine commensurating basis and lacked computers ([research note](../GLOSSARY.md#src-neurath-calculation-in-kind)). Aequitas has both. Reopening the debate on those two specific grounds is legitimate, not crankery.
 
 ---
 
@@ -65,7 +65,7 @@ Three properties make this a genuine reply to the demand objection, not a dodge:
 2. **It is costly and therefore honest.** Because credit cannot be hoarded, lent, or manufactured (A3), a pledge reveals a *true* ranked priority — you cannot pledge for everything, so you pledge for what you most want to exist. Cheap **signals** (likes, reviews) carry the long tail of milder preferences (Overview §6). Costly instrument for the top priority, cheap instrument for the rest.
 3. **It does the job prices do, split in two.** A market price fuses two facts — *what a thing took* and *how much people want it* — into one number, which is exactly why the two can never be disentangled afterward and why demand contaminates cost (Cockshott's "value contamination" problem). Aequitas keeps them **separate by design:** cost (measured, public) says what a thing takes; pledges (public, credit-backed) say who wants it. Together they steer production; neither is polluted by the other.
 
-**Why Aequitas needs this more than Cockshott & Cottrell do, and where it gets the replacement.** Their planning model steers production by the *gap* between a market-clearing price and labour value — expand where price exceeds value, contract where it falls short ([research note](GLOSSARY.md#src-cockshott-cottrell-labour-time)). **A5 collapses that gap to zero by construction**, so Aequitas inherits their demand problem with one fewer instrument. **Pledges are the replacement instrument** — and arguably a cleaner one, because they are a direct expression of demand rather than a residual inferred from a price they had to compute anyway.
+**Why Aequitas needs this more than Cockshott & Cottrell do, and where it gets the replacement.** Their planning model steers production by the *gap* between a market-clearing price and labour value — expand where price exceeds value, contract where it falls short ([research note](../GLOSSARY.md#src-cockshott-cottrell-labour-time)). **A5 collapses that gap to zero by construction**, so Aequitas inherits their demand problem with one fewer instrument. **Pledges are the replacement instrument** — and arguably a cleaner one, because they are a direct expression of demand rather than a residual inferred from a price they had to compute anyway.
 
 ---
 
@@ -83,7 +83,7 @@ This is an empirical claim and it has been **empirically answered.** [Cockshott 
 
 The sophisticated fallback survives (a)–(c): *even granting cost ≠ value, you still need scarcity signals. When two people want the last lakeside plot, cost alone can't allocate it. That's what prices are for.* This is the Kantorovich point, and it is correct that scarcity is real and must be handled.
 
-**The reframe** ([research note](GLOSSARY.md#src-kantorovich-shadow-prices)): [Kantorovich](https://www.nobelprize.org/prizes/economic-sciences/1975/kantorovich/lecture/) showed even a socialist economy must use **valuations reflecting resource scarcity** to allocate efficiently — his *objectively determined valuations*, the dual of a linear program. Crucially, an ODV is **the cost of a binding constraint** — how much the objective improves given one more unit of the scarce resource — **not a margin a seller extracts.** Taking the last unit of a constrained resource imposes a real, physical burden on everyone else: the cost of the next-best substitute, or the cost of relieving the constraint.
+**The reframe** ([research note](../GLOSSARY.md#src-kantorovich-shadow-prices)): [Kantorovich](https://www.nobelprize.org/prizes/economic-sciences/1975/kantorovich/lecture/) showed even a socialist economy must use **valuations reflecting resource scarcity** to allocate efficiently — his *objectively determined valuations*, the dual of a linear program. Crucially, an ODV is **the cost of a binding constraint** — how much the objective improves given one more unit of the scarce resource — **not a margin a seller extracts.** Taking the last unit of a constrained resource imposes a real, physical burden on everyone else: the cost of the next-best substitute, or the cost of relieving the constraint.
 
 > **Recorded as a *debit* rather than skimmed as a *margin*, scarcity is compatible with A5 and arguably *required* by A4 (no externalities): a scarcity externality is an externality.**
 

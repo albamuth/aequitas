@@ -33,7 +33,7 @@ WHOLE POPULATION instead of the residual -- the rule 5.1b explicitly rejects. If
 darkness stops paying under both, the residual rule is not doing any work and 5.1b
 is decoration. It is not: see H3.
 
-WHAT THIS DOES NOT MODEL. Market access. The origin-evidence ruling (EventLog 12.3a)
+WHAT THIS DOES NOT MODEL. Market access. The origin-evidence ruling of 2026-08-22 (Foundations 4.8)
 says a producer cannot transact at all without onboarding, which swamps every incentive
 modelled here. That makes this sim a LOWER BOUND on the pressure to disclose: it asks
 whether the accounting alone suffices, deliberately ignoring the much larger stick.
@@ -272,7 +272,7 @@ def report() -> None:
     print("READ THIS BEFORE QUOTING THE NUMBERS")
     print(line)
     print("""
-  1. Market access is NOT modelled. The origin-evidence ruling (EventLog 12.3a) bars a
+  1. Market access is NOT modelled. The origin-evidence ruling of 2026-08-22 (Foundations 4.8) bars a
      dark producer from transacting at all. That stick is far larger than anything here,
      so these figures are a LOWER BOUND on the pressure to disclose.
   2. Agents are myopic -- they compare this round's estimate, not the estimate they

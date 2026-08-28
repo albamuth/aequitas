@@ -20,7 +20,7 @@
 | Replication before a result is accepted | §3.3a — **two unaffiliated replications** before a constant may re-weight history |
 | You can only dispute what you can inspect | §4.7 — networks publish numbers, methods and anonymised participant data |
 | No adjudicating body | **A8.** No central authority exists to appeal to |
-| Nothing is withdrawn; the rebuttal is appended | EventLog §8.2a **contest without replacement**, and §4.8 no erasure |
+| Nothing is withdrawn; the rebuttal is appended | **Contest without replacement** — a disputed record is annotated, a superseded one is added beside it (conformance row 6) — and §4.8, no erasure |
 | Dated records settle priority | An append-only log with intervals |
 
 #### Where the analogy breaks — and this is the part worth having

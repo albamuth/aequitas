@@ -26,7 +26,7 @@ v0.1 was one accrual and one purchase. v0.2 is a run.
 
 1. **A scenario earns its place by bearing on adoption.** A run that shows the ceiling holding for the twelfth time teaches nothing new. **A run that finds a population Aequitas cannot carry teaches a great deal.**
 2. **Failure is the product.** §4b's mix sweep must find failing mixes. §8's honest limits must be reported next to results. **A simulator that only produces good news is advocacy with a Python interpreter attached.**
-3. **Timescales get long.** Adoption is generational — see [`../../00-strategy/Onboarding_the_wealthy_v0.1.md`](../../00-strategy/Onboarding_the_wealthy_v0.1.md), where the arithmetic runs to 70–170 years. **The period length must be a dial.**
+3. **Timescales get long.** Adoption is generational — see [`../../00-strategy/papers/Onboarding_the_wealthy_v0.1.md`](../../00-strategy/papers/Onboarding_the_wealthy_v0.1.md), where the arithmetic runs to 70–170 years. **The period length must be a dial.**
 
 > **Parked, deliberately: marketing, education, and advocacy.** Aequitas will eventually need a phase that persuades people. **This is not it, and nothing in this programme should be built as if it were.**
 
@@ -348,7 +348,7 @@ The proposed units are **labour per square foot to build** and **labour per squa
 
 ## 7. What becomes checkable that was not
 
-`Aequitas_Conformance_v0.6.md` lists **17 conformance requirements**. v0.1 could express 10 of them. v0.2 adds three.
+`Aequitas_Conformance_v0.7.md` lists **17 conformance requirements**. v0.1 could express 10 of them. v0.2 adds three.
 
 | # | Requirement | v0.1 | v0.2 |
 |---|---|---|---|
@@ -421,7 +421,7 @@ Weights are applied only inside `collapse()`. So a shock of the form
 ## 11. Open, and not settled here
 
 1. **How many consumer types.** Too few and the disparity figure is a step function; too many and the log grows back. **A number to find empirically at step 5, not to guess now.**
-2. **What a period is.** Monthly is assumed throughout (240 periods = 20 years), matching [`LAB_DESIGN_v0.1.md`](LAB_DESIGN_v0.1.md) §3. **Not yet tested against IC-7**, which is a per-24-hours rule and needs the period to carry its day count. **⚠️ And 20 years is not enough for one scenario we now have:** [`../../00-strategy/Onboarding_the_wealthy_v0.1.md`](../../00-strategy/Onboarding_the_wealthy_v0.1.md) works on a **70-to-170-year** timescale, because that is how long one year of billionaire-scale consumption takes to clear. **Generational runs need annual periods, or 2,000 monthly ones.** The period length must therefore be a scenario dial, not a constant.
+2. **What a period is.** Monthly is assumed throughout (240 periods = 20 years), matching [`LAB_DESIGN_v0.1.md`](LAB_DESIGN_v0.1.md) §3. **Not yet tested against IC-7**, which is a per-24-hours rule and needs the period to carry its day count. **⚠️ And 20 years is not enough for one scenario we now have:** [`../../00-strategy/papers/Onboarding_the_wealthy_v0.1.md`](../../00-strategy/papers/Onboarding_the_wealthy_v0.1.md) works on a **70-to-170-year** timescale, because that is how long one year of billionaire-scale consumption takes to clear. **Generational runs need annual periods, or 2,000 monthly ones.** The period length must therefore be a scenario dial, not a constant.
 2b. **The adoption scenario is now specified and not yet scheduled.** The onboarding note §8 lists six things a run needs — a non-participant pool whose estimated share rises as others join, a published residual charged to nobody, a per-cohort join decision, a verification-cost dial to cross the ~40% stall threshold, a real wealth tail, and generational time. **Most of it is the outside-world plug, which LAB_DESIGN put in v2.** Decide whether that ruling still holds now that the scenario exists.
 3. **Whether pledges do anything over time.** IC-8 is checked, but nothing in v0.2 pledges. Pledges as a demand lever (§4.6) are a behaviour-layer question, which is roadmap step 3.
 4. **⚠️ We cannot yet apply the 1% cut, because we have no participation rates.** The Consumer Expenditure news release reports **mean spend per household**, never *"what share of households bought one at all."* The detailed CE tables carry a **percent-reporting** column for some items; whether it reaches yacht-level detail is unknown until we look. **Until that number exists, the 1% cut is a stated intention and not a working rule**, and the first version simply keeps everything in the five chains.

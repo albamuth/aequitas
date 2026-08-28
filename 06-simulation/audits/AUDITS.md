@@ -1,15 +1,15 @@
 # C11 — Arithmetic Audits (IC-1 … IC-12)
 
 Companion write-up for [`arithmetic_audits.py`](arithmetic_audits.py).
-Tracks **EventLog v0.7** (`Aequitas_EventLog_v0.8.md` (superseded; held locally)) and **Foundations v0.16** (`Aequitas_Foundations_v0.19.md` (superseded; held locally)).
+Tracks **`Aequitas_Conformance_v0.7.md`** and **Foundations v0.16** (`Aequitas_Foundations_v0.19.md` (superseded; held locally)).
 
 ---
 
 ## What it is
 
-The EventLog spec defines **twelve integrity constraints** (IC-1 … IC-12) that must hold over any Aequitas event log. This module makes all twelve *runnable*: it builds one small, hand-verifiable synthetic log, runs each IC as pure computation, and — for each IC — injects a **deliberate single-point violation** to prove the check actually fires.
+The conformance list defines **twelve integrity constraints** (IC-1 … IC-12) that must hold over any Aequitas event log. This module makes all twelve *runnable*: it builds one small, hand-verifiable synthetic log, runs each IC as pure computation, and — for each IC — injects a **deliberate single-point violation** to prove the check actually fires.
 
-The headline property (EventLog §7.1): **IC-1 … IC-9 need no trust model, no reputation, no authority — only the ability to recompute.**
+The headline property: **IC-1 … IC-9 need no trust model, no reputation, no authority — only the ability to recompute.**
 
 > ### ⚠️ TWO LIMITS ON THAT SENTENCE, BOTH CONCEDED
 >
@@ -17,14 +17,14 @@ The headline property (EventLog §7.1): **IC-1 … IC-9 need no trust model, no 
 >
 > **2. Recomputation proves consistency, never completeness.** This page previously said *"an unrecorded emission is not an enforcement problem; it is an arithmetic error the log itself reports."* **That is true of an UNDER-DECLARED emission on a RECORDED event. It is false of a process recorded nowhere.** A perfectly balanced log of a fictional economy passes every check.
 >
-> **Arithmetic over one log tests that log against itself.** Finding a hole needs a record made on a **separate path** — Foundations §4.4's closure witness, and conformance requirement **14b**. *(Narrowed in EventLog v0.8 §5.1 and Objections **OA12**; this page was not updated with them until 2026-08-27.)*
+> **Arithmetic over one log tests that log against itself.** Finding a hole needs a record made on a **separate path** — Foundations §4.4's closure witness, and conformance requirement **14b**. *(Narrowed in conformance §5.1 and Objections **OA12**; this page was not updated with them until 2026-08-27.)*
 
 ```bash
 python arithmetic_audits.py            # build log, run all checks, print the report
 python arithmetic_audits.py --test     # self-tests only (pytest-free)
 ```
 
-**The verdict now declares its own extent (EventLog v0.8 §5.4).** `print_extent_block()` prints `(result, domain, extent, closure-basis)` beside the pass/fail lines, and for this scenario the closure basis is **NONE** — no reservoir reconciliation, no external counterparty, no independent total *N*, and two origin termini (`G1`, `G2`) that the log cannot re-derive from its own bytes. Five blind spots are named explicitly, the first being that a process recorded **nowhere** is invisible to every check here. **This was added because OP-26 punished exactly the claim this module used to make**: a bare `12/12` reads as completeness when it only ever meant consistency. Read the verdict as *12/12 over that extent, with no closure basis.*
+**The verdict now declares its own extent (conformance row 16).** `print_extent_block()` prints `(result, domain, extent, closure-basis)` beside the pass/fail lines, and for this scenario the closure basis is **NONE** — no reservoir reconciliation, no external counterparty, no independent total *N*, and two origin termini (`G1`, `G2`) that the log cannot re-derive from its own bytes. Five blind spots are named explicitly, the first being that a process recorded **nowhere** is invisible to every check here. **This was added because OP-26 punished exactly the claim this module used to make**: a bare `12/12` reads as completeness when it only ever meant consistency. Read the verdict as *12/12 over that extent, with no closure basis.*
 
 **Status: 12/12 clean checks pass, 12/12 injected violations caught**, plus the two v0.4 projection properties demonstrated. Reuses (does **not** rebuild) the recursion sim's proven forward solver for IC-10's recursive layer.
 
@@ -64,7 +64,7 @@ A cheese-sandwich chain plus the awkward parts the spec cares about:
 ```
 
 - **13 events, 6 parcels, 6 accounts, 4 pledges** (one object-backed, one public-good, one outstanding, one burned). Every non-genesis event mass- and energy-balances; energy inputs are declared as dissipated heat.
-- **Joint production is in the sandwich.** Milling (grain → flour + bran) is the co-product case (EventLog §10.4). Its **mass** split (7:3) is read from the event's own outputs; its **energy** split (0.62:0.38) comes from the process-energetics model — *not* the mass ratio, because milling energy goes into size-reduction, not sieving.
+- **Joint production is in the sandwich.** Milling (grain → flour + bran) is the co-product case. Its **mass** split (7:3) is read from the event's own outputs; its **energy** split (0.62:0.38) comes from the process-energetics model — *not* the mass ratio, because milling energy goes into size-reduction, not sieving.
 - **No event carries a split fraction.** There is no field for one (§9); the split is computed at projection time (§5.1a).
 
 ---
@@ -117,4 +117,4 @@ This module was first built in the C11 session, then fell **behind the theory** 
 - It is cheap and trust-model-free: no social graph, no reputation, no authority.
 - It is the synthetic half of **C2** (material-superiority demonstration) and a second independent exercise of the recursion sim's solver.
 
-**Open / honest limits.** Numbers are illustrative but internally exact. The economy is a toy; the energetics model is a placeholder standing in for the real process-energetics registry (EventLog §13 item 10, where OP-24 lives). The `collapse`-to-scalar weighting model — OP-10, the top blocker — is deliberately *not* exercised here: every split is per-dimension, before any collapse (§3.1).
+**Open / honest limits.** Numbers are illustrative but internally exact. The economy is a toy; the energetics model is a placeholder standing in for the real process-energetics registry (the retired record model §13 item 10, where OP-24 lives). The `collapse`-to-scalar weighting model — OP-10, the top blocker — is deliberately *not* exercised here: every split is per-dimension, before any collapse (§3.1).

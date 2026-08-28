@@ -88,4 +88,4 @@ Where composition varies, mass is the **low-resolution reading**: recorded at lo
 
 ---
 *Status: settled (the rule) / unproven (recursion convergence)*
-*Source: `00-strategy/OP-17_coproduct_allocation.md`; `00-strategy/Aequitas_Foundations_v0.4.md` §3.4a*
+*Source: `00-strategy/open-problems/OP-17_coproduct_allocation.md`; `00-strategy/Aequitas_Foundations_v0.4.md` §3.4a*

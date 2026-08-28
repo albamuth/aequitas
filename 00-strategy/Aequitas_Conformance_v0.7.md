@@ -1,11 +1,11 @@
 <!-- tag: cnf-aequitas-conformance -->
 # Aequitas — Conformance Requirements
 
-> **Version:** 0.6 · **Date:** 2026-08-27
+> **Version:** 0.7 · **Date:** 2026-08-28
 > **Audience: implementers.** Anyone building a trust network.
 > **Companion:** [`Aequitas_Foundations_v0.28.md`](Aequitas_Foundations_v0.28.md) — the system itself, and the argument for every row below. **Where the two differ, Foundations governs.**
-> **Version history:** v0.1 (2026-08-25) extracted from Foundations §9. **v0.2 (2026-08-25) deleted requirement 17 by author ruling** — see §4. **v0.3 (2026-08-27) added requirement 4a**, *comparison, never conversion*, and recorded two gaps. **v0.4 (2026-08-27) ruled those gaps in as requirements 17a and 17b** — see §5. **v0.5 (2026-08-27) repaired rows 13 and 14a** after the subtraction defect found in Foundations §4.4 — see §5.3. **v0.6 (2026-08-27) adds requirement 16d**, the published evidence rule per kind of work — see §5.5. **The bare number 17 stays retired.**
-> **Where this came from:** it was **Foundations §9** from Foundations v0.18 to v0.23, and moved into its own document on 2026-08-25 by author ruling. **Foundations §9 also carried a restatement of §1.2**, which was cut as redundant rather than moved.
+> **Version history is kept separately and is not published**, so this document carries only what is currently true.
+> **Two numbers are retired and are never reused: the bare `17`, and `14c`.**
 
 ---
 
@@ -22,7 +22,7 @@ Aequitas is an economic system, not a data-architecture project. A schema, a sto
 
 **An implementation is Aequitas if, and only if, every row in §2 holds.** Each is stated as a requirement rather than a design.
 
-> **A requirement is a property an implementation *has*, never a result it must *achieve*.** §4 records the two things kept off this list on that ground, and why. **§5 records the three rows added on 2026-08-27, and the test each had to pass to get on.**
+> **A requirement is a property an implementation *has*, never a result it must *achieve*.** §4 records the two things kept off this list on that ground, and why. **§5 records the three rows added on 2026-08-27, and the test each had to pass to get on. §6 records the 2026-08-28 review, which took in the arithmetic constraints and deleted one row.**
 
 ---
 
@@ -30,6 +30,22 @@ Aequitas is an economic system, not a data-architecture project. A schema, a sto
 ## 2. What an implementation must satisfy
 
 An implementation is Aequitas if, and only if, all of the following hold. Each is stated as a requirement rather than a design.
+
+> ### The words rows 13 to 15 and 17a use
+>
+> **Coverage is the share of the real world's material flow that a network's records actually captured.** As a formula it is `Y ÷ N`.
+>
+> | Symbol | What it stands for |
+> |---|---|
+> | **`N`** | The **independently known total** for the extent being described — agricultural statistics, trade data, a satellite survey. Measured **outside** the ledger. |
+> | **`Y`** | What the network's **own subscribers recorded**. |
+> | **`Z`** | How many producers inside that extent are **still unmeasured**. |
+> | **`R`** | The **leftover**, `N − Y`. What was produced by people the network cannot see. |
+> | **extent** | The piece of the world a figure is about — a region, a sector, a population. **Never the set of subscribers** (row 17a). |
+>
+> **A worked example.** A valley grows wheat. A satellite survey puts the crop at **88,000 t** (`N`). The network's own farms recorded **82,000 t** (`Y`). So `R` is **6,000 t**, and coverage is `82,000 ÷ 88,000` = **93%**.
+>
+> **In plain words:** the network can see 93 of every 100 tonnes that valley grew. Six thousand tonnes were grown by people it holds no records for.
 
 | # | Requirement | From |
 |---|---|---|
@@ -41,28 +57,56 @@ An implementation is Aequitas if, and only if, all of the following hold. Each i
 | 3 | Labour is **never rate-scaled.** Differences between workers resolve as material costs. | A2 |
 | 4 | **Credit is never transferable** — not by gift, sale, loan, inheritance, or theft. Only debit moves, and only with the thing it attaches to. | A3 |
 | **4a** | **A position computed under one weighting model is never converted into another.** A network re-computes a claim from the shared physical record through its own model. **No exchange rate between credit-standards exists anywhere in the implementation, and two networks' figures are never added, netted, or compared as if they were one quantity.** | **A3, §4.2, §4.0, §5.6** |
-| 5 | Standing is **derived from an append-only record of events, never stored** as an authoritative balance. | A6 |
+| 5 | Standing is **derived from an append-only record of events, never stored** as an authoritative balance. **A record of what happened holds physical quantities only — never a weight, a cost, a price, or a value.** Cost is produced when the record is read, by applying the current weighting model to it. | A6, A5 |
 | 6 | **Records are never destroyed or edited.** A disputed record is annotated; a superseded one is added beside. | §4.4, §4.8 |
-| 7 | **Mass and energy conserve** across every recorded process, and every parcel has both an origin and a fate. | IC-1 … IC-4 |
-| 8 | **No account claims more than 24 hours of activity per 24 hours.** | IC-7 |
-| 9 | **Cumulative pledges never exceed lifetime earned credit**, 1:1. | IC-8, §4.6 |
+| 7 | **Mass and energy conserve across every recorded process**, within a stated tolerance and at one level of detail. **Everything the books track has both an origin and a fate** — it came from an extraction, or from an estimated entry for something that existed before the books did; and at any moment it is held, consumed, or released to a named place in the natural world. **A thing with neither an origin nor a fate is reported as unaccounted, never as absent.** Nothing is recorded as consumed before it exists or after it is gone. | A1, A4 · *IC-1, IC-2, IC-3, IC-4, IC-6* |
+| 7a | **A held thing has exactly one holder at any instant, and every change of holder is a recorded event.** This is what makes debit follow possession. | A1, §3.2, §3.2b · *IC-5* |
+| 8 | **No account claims more than 24 hours of activity per 24 hours.** | A2, §5.5.5 · *IC-7* |
+| 9 | **Cumulative pledges never exceed lifetime earned credit**, 1:1. **The pledging budget is spent when the pledge is made, not when the work happens, and there is no path that returns it.** | §4.6 · *IC-8, IC-9* |
 | 10 | A debit is a **vector**. Any division is computed **per dimension, before collapsing** to a single figure. | §3.2a |
 | 10a | A joint process's debit divides by **where the process physically sent its inputs**, measured at that facility for the period described, with a model used only where measurement is absent. The **method is published with its version**, so anyone can re-run it. **No split may depend on demand, desirability, or yield.** The method itself is the industry's to set, not this document's. | §3.4a, §1.2, §4.7 |
+| 10b | **No output's share of any dimension is negative.** A negative result is a measurement error or a badly drawn process boundary — never a thing containing less than nothing. | §3.4a · *IC-10* |
+| 10c | **Per dimension, the outputs' shares add up to exactly what the process took in.** Nothing is created or lost in a split. | §3.4a · *IC-11* |
+| 10d | **Splitting a process stage by stage gives the same answer as splitting it whole**, and a divided estimate's parts add up to the coarser figure they came from. **This is what makes a redrawn boundary show up as an arithmetic disagreement rather than an argument.** | §3.4a, §4.4 · *IC-12* |
 | 11 | The consumption gate is evaluated **at the moment of the transaction.** A later revision changes future room and never the validity of a completed act. | §3.3 |
-| 12 | Every estimate carries its **basis, method, vintage and extent**, and may be superseded only by a **stronger** basis, never a weaker one. | §3.3, §4.4 |
-| 13 | A quantity **counted** over incomplete coverage is published as a **floor**, with the gap named. **A quantity DERIVED from two incomplete readings is published as an interval and labelled `floor`, `ceiling` or `not identified`** — and **`not identified` is the default** until a stated directional argument exists for **each** operand's blind spot. **A `floor` label is never inherited from the fact that some input was incomplete.** | §4.4, §5.4 of EventLog |
-| 14 | Coverage is estimated over the **unmeasured residual**, never over the whole population. | §4.4, §4.4 |
+| 12 | Every estimate carries its **basis, method, vintage and extent**, and may be superseded only by a **stronger** basis, never a weaker one. **An observation may replace an estimate; an estimate may never replace an observation.** | §3.3, §4.4 |
+| 12a | **How sure a figure is, is stated separately from how it was known, and is attributed to whoever assessed it.** An unattributed confidence figure is an authority with no name. **Certainty is never read off the method** — a well-tested model can beat a badly calibrated meter. | A8, §4.4 |
+| 12b | **Precision about a group does not carry down to a member of it.** Dividing a figure from a coarser claim to a finer one **lowers** how sure the finer figure is. A perfectly metered factory-month says very little about any one item that left it. | §3.4, §4.4 |
+| 13 | A quantity **counted** over incomplete coverage is published as a **floor**, with the gap named. **A quantity DERIVED from two incomplete readings is published as an interval and labelled `floor`, `ceiling` or `not identified`** — and **`not identified` is the default** until a stated directional argument exists for **each** operand's blind spot. **A `floor` label is never inherited from the fact that some input was incomplete.** | §4.4 |
+| 14 | Coverage is estimated over the **unmeasured residual** `Z`, never over the whole population. **Where `Z` is uncertain it is under-counted**, which raises each unmeasured producer's estimated share — the direction that prompts them to come forward and prove otherwise. **The error that liquidates itself is the safe one.** | §4.4 |
 | 14a | Two figures are **subtracted only when they measure the same quantity, over the same boundary and window, within error bounds smaller than their difference.** Where they do not, the result is reported as an **interval** with the mismatch named — **`R ∈ [N_L − Y_U, N_U − Y_L]`** — never as a bare lower bound. | §4.4, §4.4 |
-| 14b | A check that establishes coverage **compares two records made on separate paths.** Arithmetic over a single log establishes consistency and never completeness. | §4.4, §4.3 |
-| 14c | Every verification rung is **published with its running cost**, so a counterparty can see what a claim's assurance cost to produce. | §4.3, §4.7 |
-| 15 | The coverage leftover is **computed, published, and charged to no account** until its causer onboards. | §4.4 |
-| 16 | **Every estimating number and every method the implementer uses is published**, so anyone can re-run it. | §4.7 |
+| 14b | **A coverage figure is warranted by a record made outside the ledger** — a counterparty's own record, a measured reservoir, or an independently known total `N`. **Arithmetic over the ledger alone establishes consistency and never completeness**, so a figure with no outside record behind it is published as `not identified`. | §4.4, §4.3 |
+| 15 | The coverage leftover `R` is **computed, published, and charged to no account** until its causer onboards. | §4.4 |
+| 16 | **Every estimating number and every method the implementer uses is published**, so anyone can re-run it. **Every published figure states the extent it covers**, so a bare pass is never a result. | §4.7, §4.3 |
 | 16a | **Every cost constant carries its method, its version, and its uncertainty interval**, and the implementer **states which constants it has not reviewed and how old each reading is.** | §3.3a, §4.4 |
 | 16b | **A constant may re-weight history only after two unaffiliated replications.** Review is triaged by **magnitude × concentration of beneficiary**, never magnitude alone. **Membership composition is public**, so a network concentrated in the sector it audits is detectable. | §3.3a |
 | 16c | **The implementer can show how it audits its cost constants.** *How* is its own design (§1.2); **having no answer is not conforming.** | §3.3a, §1.2 |
 | **16d** | **For every kind of work it credits, the implementer publishes what evidence that work requires**, before crediting any of it. **It credits no kind of work for which it has published no rule.** *Which* kinds it covers is its own choice (§1.2, A8); **having no published rule for something it credits is not conforming.** | **§4.2, §4.5, §4.7** |
 | **17a** | **Every human inside the extent the books claim to cover is in those books, subscriber or not**, with credit **and** debit estimated on both sides. **The extent is a region, a sector or a population — never the set of subscribers.** A non-participant can **neither draw on that position nor be charged for it.** A position becomes **realizable** — able to act on what a person may consume — only on a verified account whose estimates have been superseded by observation. | **A7, §4.1, §4.4, §4.4** |
 | **17b** | **When a cost constant, a joint split, or a coverage figure improves, every affected record in history recomputes.** A figure is a dated reading, never a verdict. **This changes future debit-room only, and never the validity of a completed act** (row 11). | **A4, A6, §3.3** |
+
+### The `IC-n` labels
+
+**Twelve of the rows above are arithmetic the ledger must never violate. They have been cited as `IC-1` to `IC-12` since 2026-07, and those labels stay valid here** so that older citations still resolve.
+
+| Label | What it is | Row |
+|---|---|---|
+| **IC-1** | Mass balance | 7 |
+| **IC-2** | Energy balance | 7 |
+| **IC-3** | Everything has an origin | 7 |
+| **IC-4** | Everything has a fate | 7 |
+| **IC-5** | One holder at a time | 7a |
+| **IC-6** | Nothing is used before it exists | 7 |
+| **IC-7** | **The 24-hour cap** | **8** |
+| **IC-8** | Pledges are backed 1:1 by earned credit | 9 |
+| **IC-9** | A spent pledge budget is never returned | 9 |
+| **IC-10** | No negative share | 10b |
+| **IC-11** | Shares add up to the input | 10c |
+| **IC-12** | Boundary additivity | 10d |
+
+**Two candidates were tested and rejected on 2026-08-22 and stay rejected.** *IC-13 (genesis admissibility)* refused the ordinary case of somebody joining, and was trivially satisfied by whichever network was founded most recently. *IC-14 (citation closure)* demanded *a* citation rather than a true one. **Both checked a self-asserted field against a constant, where every surviving constraint checks one recorded quantity against another.**
+
+---
 
 ## 3. What this list does not carry
 
@@ -74,6 +118,16 @@ An implementation is Aequitas if, and only if, all of the following hold. Each i
 | Privacy practice | A network choice (§5.3a) |
 | The values of ρ and the self-care floor `F` | Network dials (§3.5, §6.1b, A8) |
 | Corporate form, jurisdiction, compliance posture | The implementer (§1.2) |
+| **How a network schedules, staffs or samples its checking** | The implementer (§1.2) |
+| **What a verification rung costs to run** | **Already in the log.** Audit work is credited work, so the hours are events and a query returns them (§4.7). **A separate published cost figure is a summary table, and a summary table is database design.** |
+
+> ### The standing screen: assume the engineering works
+>
+> **Read every proposed row against this stipulation:**
+>
+> > **"Given a trust network with a secure database, 99.999% identity security, and practically unlimited storage capacity…"**
+>
+> **What survives the stipulation is an accounting rule and belongs here. What dissolves was an engineering complaint.** *"That would be too much data"* and *"you could not prove one person holds one account"* both dissolve. **Mass must still balance, and a pledge must still be backed 1:1.**
 
 ---
 
@@ -98,7 +152,7 @@ There was a row 17 saying so, from Foundations v0.18 to v0.23 and briefly here. 
 
 #### "One verified human = one account" is not here either
 
-Foundations §4.1 states it, and the **OP-22 ruling of 2026-08-25** makes it a rule each network applies to its own members rather than a requirement holding across networks — so it stays in §5.1 and is deliberately absent here. Record: [`OP-22_identity_not_disclosure_v0.2.md`](OP-22_identity_not_disclosure_v0.2.md) §11, row 3a.
+Foundations §4.1 states it, and the **OP-22 ruling of 2026-08-25** makes it a rule each network applies to its own members rather than a requirement holding across networks — so it stays in §5.1 and is deliberately absent here. Record: [`OP-22_identity_not_disclosure_v0.2.md`](open-problems/OP-22_identity_not_disclosure_v0.2.md) §11, row 3a.
 
 ---
 
@@ -270,4 +324,56 @@ A network publishes its rule for translation: **the text exists and the client c
 
 ---
 
-*End of v0.6.*
+---
+
+<!-- tag: cnf-s6 -->
+## 6. The 2026-08-28 review — the arithmetic came in, and one row went out
+
+**Why the review happened.** The event-log paper that carried the arithmetic constraints was retired by author ruling on 2026-08-28. **The constraints themselves are not database design — they are arithmetic the accounting requires**, so they moved here rather than going with it.
+
+### 6.1 What came in
+
+**Nine constraints had no row.** Three already did: IC-1 to IC-4 sat inside row 7, IC-7 was row 8, IC-8 was row 9.
+
+| Now | Was | Why it is an accounting rule and not an operations one |
+|---|---|---|
+| **7a** | IC-5 | **Debit follows possession** (§3.2b). If a thing can have two holders at once, or a holder can change with no record, the rule that makes property debit move has nothing to stand on. |
+| **10b** | IC-10 | **No output's share is negative.** This is the answer to [Steedman's negative-value result](https://www.scienceopen.com/hosted-document?doi=10.13169/worlrevipoliecon.14.1.0063). Without it, §3.4a's joint-production rule is not safe. |
+| **10c** | IC-11 | **Shares add up to the input.** A split that loses or invents material breaks A1. |
+| **10d** | IC-12 | **Boundary additivity.** §3.4a leaves the split method to the industry and relies on this to stop a producer redrawing the boundary until the answer flatters them. |
+| Folded into **7** | IC-6 | Nothing is used before it exists. It is one clause of origin-and-fate closure, not a rule on its own. |
+| Folded into **9** | IC-9 | A spent pledging budget is never returned. It is one clause of the 1:1 backing rule. |
+
+### 6.2 What went out — row 14c
+
+**Row 14c required a network to publish what each verification rung costs to run.**
+
+> ### AUTHOR RULING, 2026-08-28 — deleted
+>
+> **The cost is already in the log.** A network doing verification audits is **crediting people for doing those audits**, which is credited work like any other (§4.7 — *funding is recognition*). **Those hours are already events.** A query over the log returns every audit for a kind of item or a category of work.
+>
+> **The work of verification does not need its own data structure.** Requiring a second, separately-published cost figure asks a network to keep a summary table, and that is database design.
+
+**Nothing is lost from the theory.** Foundations §4.3 still carries the cost table, the worked farm example, and the warning that a large checking cost is a sign to audit the producer rather than a design to accommodate. **What is removed is the requirement that a network publish a separate figure for it.**
+
+**One citation moves with it.** The register credits @custos (c16467, c16479 on 1f916.ai #1750) with the cost column. **That credit stands** — the finding was real and it is in Foundations §4.3. It is no longer a conformance row.
+
+### 6.3 What was checked and kept
+
+**Rows 14, 14a and 14b were re-read against the stipulation in §3 and all three survive**, because none of them tells a network how to run.
+
+| Row | Why it is not operations |
+|---|---|
+| **14** | It decides **whose** estimated share is whose. Computed over the whole population instead of the leftover `Z`, the rule pays people to stay unmeasured. **That is an accounting outcome, not a workflow.** |
+| **14a** | It says when a subtraction is **valid arithmetic**. Two figures that measure different things, over different areas, over different periods, do not subtract. |
+| **14b** | It says what a coverage figure is **warranted by**. Reworded in this version from *"a check compares two records made on separate paths"* to a statement about the figure, so that it constrains the published number rather than the checking machinery. |
+
+**Row 16 absorbed the extent rule** — *every published figure states the extent it covers, so a bare pass is never a result.* **It was a separate rule in the retired paper and it is one clause here**, because it is the same obligation as publishing the method.
+
+### 6.4 What this does not change
+
+**No axiom moved. No mechanism changed. Nothing was added that was not already binding somewhere.** The arithmetic constraints have been cited by Foundations §5.5.5 and by the simulator since 2026-07. **This version gives them a home that outlives the paper they were written in.**
+
+---
+
+*End of v0.7.*

@@ -78,23 +78,23 @@ The fixed core. Do not re-litigate (see `CLAUDE.md`).
 
 ---
 
-## <a id="integrity-constraints"></a>Integrity Constraints (IC-1–IC-12) — EventLog
-IC-1…IC-9 check the log (pure arithmetic). IC-10…IC-12 check a projection against a weighting model.
+## <a id="integrity-constraints"></a>Integrity Constraints (IC-1–IC-12) — Conformance
+**Arithmetic the ledger must never violate.** IC-1…IC-9 check the record itself and are pure arithmetic. IC-10…IC-12 check a figure computed from it against a weighting model. **The `Source` column gives the conformance row each one is now stated in** (`Aequitas_Conformance_v0.7.md` §2).
 
 | Acronym | Title (1–3 words) | Constraint | Source |
 |---|---|---|---|
-| <a id="ic-1"></a>**IC-1** | mass balance | Σ input mass = Σ output mass. | EventLog §7 |
-| <a id="ic-2"></a>**IC-2** | energy balance | Σ input energy = Σ output + declared dissipation. | EventLog §7 |
-| <a id="ic-3"></a>**IC-3** | origin closure | Every parcel traces to a reservoir extraction or a genesis terminus. | EventLog §7 |
-| <a id="ic-4"></a>**IC-4** | fate closure | Every parcel is held, consumed, or released; else *unaccounted*. | EventLog §7 |
-| <a id="ic-5"></a>**IC-5** | custody continuity | One holder at any instant; every hand-off is an event. | EventLog §7 |
-| <a id="ic-6"></a>**IC-6** | interval sanity | No consuming a parcel before it exists or after it's destroyed. | EventLog §7 |
-| <a id="ic-7"></a>**IC-7** | 24-hour cap | Agent-time can't exceed wall-clock; ≤24h credited per 24h. | EventLog §7 |
-| <a id="ic-8"></a>**IC-8** | pledge backing | Outstanding pledged hours ≤ earned credit (no fractional reserve). | EventLog §7 |
-| <a id="ic-9"></a>**IC-9** | pledge discharge | On occurrence, a held object's debit follows possession to whoever accepts it (not necessarily the pledger); a pure service moves none. Pledges are **permanent and non-revocable** (§4.6); an unfulfilled pledge burns, it is not returned. | EventLog §7 |
-| <a id="ic-10"></a>**IC-10** | non-negative allocation | No output's share of any dimension is negative. | EventLog §7.2 |
-| <a id="ic-11"></a>**IC-11** | exhaustive allocation | Per dimension, shares sum to the recorded input total. | EventLog §7.2 |
-| <a id="ic-12"></a>**IC-12** | boundary additivity | Stage-by-stage split = whole-process split (anti-gerrymandering). | EventLog §7.2 |
+| <a id="ic-1"></a>**IC-1** | mass balance | Σ input mass = Σ output mass. | Conformance row 7 |
+| <a id="ic-2"></a>**IC-2** | energy balance | Σ input energy = Σ output + declared dissipation. | Conformance row 7 |
+| <a id="ic-3"></a>**IC-3** | origin closure | Every parcel traces to a reservoir extraction or a genesis terminus. | Conformance row 7 |
+| <a id="ic-4"></a>**IC-4** | fate closure | Every parcel is held, consumed, or released; else *unaccounted*. | Conformance row 7 |
+| <a id="ic-5"></a>**IC-5** | custody continuity | One holder at any instant; every hand-off is an event. | Conformance row 7a |
+| <a id="ic-6"></a>**IC-6** | interval sanity | No consuming a parcel before it exists or after it's destroyed. | Conformance row 7 |
+| <a id="ic-7"></a>**IC-7** | 24-hour cap | Agent-time can't exceed wall-clock; ≤24h credited per 24h. | Conformance row 8 |
+| <a id="ic-8"></a>**IC-8** | pledge backing | **Cumulative** pledged hours ≤ **lifetime** earned credit (no fractional reserve). The budget is spent at pledge time and never returned. | Conformance row 9 |
+| <a id="ic-9"></a>**IC-9** | pledge discharge | On occurrence, a held object's debit follows possession to whoever accepts it (not necessarily the pledger); a pure service moves none. Pledges are **permanent and non-revocable** (§4.6); an unfulfilled pledge burns, it is not returned. | Conformance row 9 |
+| <a id="ic-10"></a>**IC-10** | non-negative allocation | No output's share of any dimension is negative. | Conformance row 10b |
+| <a id="ic-11"></a>**IC-11** | exhaustive allocation | Per dimension, shares sum to the recorded input total. | Conformance row 10c |
+| <a id="ic-12"></a>**IC-12** | boundary additivity | Stage-by-stage split = whole-process split (anti-gerrymandering). | Conformance row 10d |
 
 ---
 
@@ -282,4 +282,4 @@ The vocabulary the economy simulator introduced. **Every row carries a hidden an
 - **On any fold:** if an OP/C/IC status or a doc version changes, update the row here — the in-text links don't need touching.
 - **Research terms:** when a new `02-research/` stub introduces a term of art, add a row to [Research & academic terms](#research-terms) with a verified external source (non-paywalled).
 - **When a new acronym is coined:** add its row here *before* using it in a body doc, and give it an `<a id>` anchor.
-- **Source-of-truth docs:** Foundations (axioms, §), EventLog (IC-#), Objections (OP-#, P#, analysis A#/B#), Strategy §3 (C#). Titles here are convenience labels — the source doc's own statement governs.
+- **Source-of-truth docs:** Foundations (axioms, §), Conformance (numbered rows, IC-#), Objections (OP-#, P#, analysis A#/B#), Strategy §3 (C#). Titles here are convenience labels — the source doc's own statement governs.

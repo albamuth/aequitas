@@ -93,4 +93,4 @@ The schema absorbed the project's most dangerous open problem **without a single
 
 ---
 *Status: provisional*
-*Source: `00-strategy/Aequitas_EventLog_v0.3.md` (C1 v0.3)*
+*Source: the event-log paper, retired 2026-08-28. Archived at `99-archive/Aequitas_EventLog_v0.10.md`; its arithmetic constraints are now conformance rows.*

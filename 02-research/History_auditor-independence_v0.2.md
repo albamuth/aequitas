@@ -57,4 +57,4 @@ Two structural rules, neither needing an enforcer — see [rival-sector-audit](.
 ## Related
 
 - [distributed-auditing](../01-wiki/distributed-auditing.md) · [rival-sector-audit](../01-wiki/rival-sector-audit.md) · [retroactive-reweighting](../01-wiki/retroactive-reweighting.md) · [protocol-governance](../01-wiki/protocol-governance.md)
-- [`00-strategy/OP-17_coproduct_allocation.md`](../00-strategy/OP-17_coproduct_allocation.md) §7
+- [`00-strategy/open-problems/OP-17_coproduct_allocation.md`](../00-strategy/open-problems/OP-17_coproduct_allocation.md) §7

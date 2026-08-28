@@ -45,7 +45,7 @@ Ranked by how dangerous each is to the project:
 - [ ] Find free-to-read versions of the two O'Neill papers.
 - [x] Separate note on **Cockshott & Cottrell** (computational planning, labour-time accounting) — done: [Cockshott & Cottrell: labour-time](../00-strategy/GLOSSARY.md#src-cockshott-cottrell-labour-time).
 - [ ] Separate note on **Lange–Lerner** "market socialism" and why Hayek rejected it.
-- [ ] **Draft the full "whose want wins" answer** as a standalone reply. *(Since done — see [`00-strategy/OP-9_calculation_reply.md`](../00-strategy/OP-9_calculation_reply.md), the project's formal reply to Mises and Hayek.)*
+- [ ] **Draft the full "whose want wins" answer** as a standalone reply. *(Since done — see [`00-strategy/open-problems/OP-9_calculation_reply.md`](../00-strategy/open-problems/OP-9_calculation_reply.md), the project's formal reply to Mises and Hayek.)*
 
 ## Related
 

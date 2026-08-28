@@ -5,6 +5,9 @@
 > **Answers:** Foundations §4.7 residue (a), sharpened by §4.7 · OP-22 · P4 / OP-10 (capture)
 > **Tracks:** Foundations v0.17 §4, §4.7, §4.7, §4.7 · EventLog v0.8 §4.1a
 
+> **⚠️ The event-log paper was retired on 2026-08-28.** References to `EventLog §…` below are historical and no longer resolve. **The arithmetic constraints IC-1 to IC-12 are now conformance rows in [`Aequitas_Conformance_v0.7.md`](../Aequitas_Conformance_v0.7.md) §2**, which carries a label map; everything else it held is in Foundations. The archived paper is `99-archive/Aequitas_EventLog_v0.10.md`.
+
+
 ---
 
 ## 1. The problem, as §4.7 left it
@@ -288,7 +291,7 @@ So:
 - **Compatible networks produce one ledger for that person, seen from two places.** The self-care floor is credited **once**, because it is one life. **There is nothing to sum, and `k × 24/F` was arithmetic on two things that are the same thing.**
 - **Incompatible networks do not interoperate.** Goods and claims do not cross. Each holds a **partial** record of that person's material life.
 
-**What survives is not a breached bound but a coverage gap** — and that is machinery already built: §4.4 (the residual is held, not allocated) and EventLog §7.4 (a verdict declares its extent). An incompatible pair leaves two partial ledgers, each obliged to say it is partial.
+**What survives is not a breached bound but a coverage gap** — and that is machinery already built: §4.4 (the residual is held, not allocated) and conformance row 16 (a published figure declares its extent). An incompatible pair leaves two partial ledgers, each obliged to say it is partial.
 
 **Federation is therefore not a defence against an exploit. It is what interoperation means.**
 

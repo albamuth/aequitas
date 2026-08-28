@@ -3,7 +3,7 @@
 
 > **Version:** 0.2 · **Date:** 2026-08-27
 > **Status:** ✅ **RULED by the author, 2026-08-25.** v0.2 rebuilds the paper around the ruling and repairs every section pointer against `Aequitas_Foundations_v0.28.md`. **No new ruling is made here.**
-> **Tracks:** `Aequitas_Foundations_v0.28.md` §4.0 · §4.1 · §4.8 · §4.2 · §5.5.5 · `Aequitas_Conformance_v0.6.md` · `Aequitas_Objections_v0.23.md` OA9
+> **Tracks:** `Aequitas_Foundations_v0.28.md` §4.0 · §4.1 · §4.8 · §4.2 · §5.5.5 · `Aequitas_Conformance_v0.7.md` · `Aequitas_Objections_v0.23.md` OA9
 > **Supersedes:** `99-archive/OP-22_identity_not_disclosure_v0.1.md`
 > **Source of the objection:** @cairn-lineage, c18679 on 1f916.ai post #2000, 2026-08-25. **Conceded in public at c21149. The concession was wrong in one half and right in the other, and §8 says how to correct it in public.**
 
@@ -174,7 +174,7 @@ P holds an account on Network A (`F` = 4, ρ = 1.2) and one on Network B (`F` = 
 
 > *"Converting a balance from one model into another would be an exchange rate between credit-standards — a medium of exchange, which A3 and the circulation-failure analysis (§5.6) forbid."*
 
-**This is now conformance requirement 4a** ([`Aequitas_Conformance_v0.6.md`](Aequitas_Conformance_v0.6.md)), added because the rule lived only in §4.2's prose and a project paper walked straight past it.
+**This is now conformance requirement 4a** ([`Aequitas_Conformance_v0.7.md`](../Aequitas_Conformance_v0.7.md)), added because the rule lived only in §4.2's prose and a project paper walked straight past it.
 
 **And no account anywhere holds more than 24 hours in a day.** A recorded 12. B recorded 18. **IC-7 binds each account separately, and neither breached it.** There is no account holding 30, and none holding 36.
 
@@ -228,7 +228,7 @@ P holds an account on Network A (`F` = 4, ρ = 1.2) and one on Network B (`F` = 
 >
 > **OP-22 itself is not closed and I am not claiming it is.** The minimum an auditor must see to check a claim without seeing a history is still unspecified, and the sharpest live form of it is proving a *pledge's* backing across a model boundary — "backed by X hours under weighting model M", in zero knowledge (§4.2).
 >
-> Paper, with the arithmetic: `00-strategy/OP-22_identity_not_disclosure_v0.2.md`. Foundations §4.0, §4.1, §4.8, §5.5.5.
+> Paper, with the arithmetic: `00-strategy/open-problems/OP-22_identity_not_disclosure_v0.2.md`. Foundations §4.0, §4.1, §4.8, §5.5.5.
 
 **Also owed to the same thread:** @ballast, @custos and @hearthwarden were answered on the §4.4 residual question at c23596–c23597 and are not waiting on this.
 
@@ -280,13 +280,13 @@ P holds two accounts on B-like networks (`F` = 10, ρ = 1.2) for one year and wo
 | 1 | The author's ruling | §1 above; Foundations CHANGELOG v0.23 | ✅ **Done 2026-08-25** |
 | 2 | §5 rewritten to the document standard | Foundations **§4.0–§4.4** | ✅ **Applied in v0.23.** §4.8–§4.8 owed |
 | 3 | §5.5's cross-network clause struck | Foundations **§5.5.5** | ✅ **Applied in v0.23.** Zero mentions of *"condition 5"* remain |
-| 3a | A conformance item for one-human-one-account | [`Aequitas_Conformance_v0.6.md`](Aequitas_Conformance_v0.6.md) | ❌ **Not added, deliberately.** The ruling makes it a within-network rule, so Foundations §4.1 carries it. |
+| 3a | A conformance item for one-human-one-account | [`Aequitas_Conformance_v0.7.md`](../Aequitas_Conformance_v0.7.md) | ❌ **Not added, deliberately.** The ruling makes it a within-network rule, so Foundations §4.1 carries it. |
 | 4 | **The public reply to @cairn-lineage** | §8 above; `07-outreach/` queue item **46** | 🟡 **Written and ranked first. Not yet posted.** |
-| 5 | Overview §0's box asserting the bound *"across every network that can trade with every other"* | [`Aequitas_Overview_v0.18.md`](Aequitas_Overview_v0.18.md) §0 | ✅ **Struck 2026-08-27.** The box shows the 12 h / 18 h case and says plainly that the two figures **cannot be added**. §1 gains the four-lives table and four conditions; §6's table row is corrected. |
-| 6 | Objections **OA9 and the OP-22 status row** do not record the ruling | [`Aequitas_Objections_v0.23.md`](Aequitas_Objections_v0.23.md) | ✅ **Recorded 2026-08-27.** OA9 gains a boxed statement; the status row states it in one line; **C-test 8 re-pointed from OP-22 to OP-14.** |
-| 7 | **The conformance list carried no row for *comparison, never conversion*** — an implementation could publish an exchange rate between its credit and a neighbouring network's and still satisfy every row | [`Aequitas_Conformance_v0.6.md`](Aequitas_Conformance_v0.6.md) | ✅ **Added as requirement 4a, 2026-08-27**, after §7 of this paper made exactly that error. **The number 17 stays retired.** |
+| 5 | Overview §0's box asserting the bound *"across every network that can trade with every other"* | [`Aequitas_Overview_v0.18.md`](../Aequitas_Overview_v0.18.md) §0 | ✅ **Struck 2026-08-27.** The box shows the 12 h / 18 h case and says plainly that the two figures **cannot be added**. §1 gains the four-lives table and four conditions; §6's table row is corrected. |
+| 6 | Objections **OA9 and the OP-22 status row** do not record the ruling | [`Aequitas_Objections_v0.23.md`](../Aequitas_Objections_v0.23.md) | ✅ **Recorded 2026-08-27.** OA9 gains a boxed statement; the status row states it in one line; **C-test 8 re-pointed from OP-22 to OP-14.** |
+| 7 | **The conformance list carried no row for *comparison, never conversion*** — an implementation could publish an exchange rate between its credit and a neighbouring network's and still satisfy every row | [`Aequitas_Conformance_v0.7.md`](../Aequitas_Conformance_v0.7.md) | ✅ **Added as requirement 4a, 2026-08-27**, after §7 of this paper made exactly that error. **The number 17 stays retired.** |
 | 8 | **Is the residual rule tight enough against a subscriber who splits consumption across networks deliberately?** — §7 above | Coverage: **§4.4, §4.4, OP-24** | 🟡 **Watch item, 2026-08-27. Not a blocker and not OP-22b.** §4.4 already estimates undisclosed activity over the undisclosed residual and errs against the person. **Nobody has measured whether that is tight enough against deliberate splitting.** |
-| 9 | **Two axioms were cited by no conformance row at all** — **A7** (universal accounting), and **A4** with §3.3 (retroactive re-weighting) | [`Aequitas_Conformance_v0.6.md`](Aequitas_Conformance_v0.6.md) §4.8 | ✅ **Ruled in as requirements 17a and 17b, 2026-08-27.** An implementation could have accounted only for its own subscribers, or frozen its weighting model forever, and still passed every row. **Every axiom is now cited by at least one row.** |
+| 9 | **Two axioms were cited by no conformance row at all** — **A7** (universal accounting), and **A4** with §3.3 (retroactive re-weighting) | [`Aequitas_Conformance_v0.7.md`](../Aequitas_Conformance_v0.7.md) §4.8 | ✅ **Ruled in as requirements 17a and 17b, 2026-08-27.** An implementation could have accounted only for its own subscribers, or frozen its weighting model forever, and still passed every row. **Every axiom is now cited by at least one row.** |
 
 ---
 

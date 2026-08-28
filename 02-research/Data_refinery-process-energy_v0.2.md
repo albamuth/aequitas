@@ -66,4 +66,4 @@ The two *distillation* steps (826 TBtu) simply heat the whole barrel to separate
 ## Related
 
 - [co-product-allocation](../01-wiki/co-product-allocation.md) · [physical-trace-test](../01-wiki/physical-trace-test.md) · [price-equals-cost](../01-wiki/cost-not-price.md) · [Joint-production problem](../00-strategy/GLOSSARY.md#src-joint-production-allocation-problem)
-- [`00-strategy/OP-17_coproduct_allocation.md`](../00-strategy/OP-17_coproduct_allocation.md)
+- [`00-strategy/open-problems/OP-17_coproduct_allocation.md`](../00-strategy/open-problems/OP-17_coproduct_allocation.md)

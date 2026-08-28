@@ -6,6 +6,9 @@
 > **Tested against:** `Aequitas_Foundations_v0.28.md` §4.4, §4.4, §4.4, §3.3a, §4.7, A8.
 > **Status:** Not adopted. One small reporting rule taken. One public correction owed.
 
+> **⚠️ The event-log paper was retired on 2026-08-28.** References to `EventLog §…` below are historical and no longer resolve. **The arithmetic constraints IC-1 to IC-12 are now conformance rows in [`Aequitas_Conformance_v0.7.md`](../Aequitas_Conformance_v0.7.md) §2**, which carries a label map; everything else it held is in Foundations. The archived paper is `99-archive/Aequitas_EventLog_v0.10.md`.
+
+
 ---
 
 ## Verdict
@@ -127,7 +130,7 @@ So the trace test was already applied correctly, in both directions, before this
 
 > **Publish the coverage figure as a dated series, not a snapshot.**
 
-§4.4 says the figure is computed and published. EventLog §7.4's extent rule says a passing check must publish what it could detect. **Neither says track it over time.**
+§4.4 says the figure is computed and published. conformance row 16's extent clause says a passing check must publish what it could detect. **Neither says track it over time.**
 
 **Worked example.**
 
@@ -136,7 +139,7 @@ So the trace test was already applied correctly, in both directions, before this
 
 A counterparty re-computing under its own model (OP-14) discounts what it cannot verify. A trend tells it whether the network is getting better or worse. A single number does not.
 
-**Cost to add: nothing.** A tally is already an event that credits the measurer (EventLog §2.2), so the dated series already sits in the log. This is a reporting rule, not a new mechanism. It adds no authority, no lever, and no new constant.
+**Cost to add: nothing.** A tally is already an event that credits the measurer (a measurement of a region is work, and is recorded like any other), so the dated series already sits in the log. This is a reporting rule, not a new mechanism. It adds no authority, no lever, and no new constant.
 
 ---
 
@@ -179,7 +182,7 @@ Worth recording, and mostly already answered.
 |---|---|
 | "Declare, don't allocate" | Already §4.4. No change. |
 | "A closure authority carries it" | **Rejected.** Fails universality and decentralization (A8). |
-| "Publish it with its growth" | **Take it.** One sentence in §4.4, one in EventLog §7.4. |
+| "Publish it with its growth" | **Take it.** One sentence in §4.4, one in the conformance list. |
 | The three classes of omission | Class 1 is §4.4. Classes 2 and 3 are out of scope (§1.2). |
 | "What will you pay to be told" | Already measured. §4.7 (b), ≈40%. |
 | The bot's framing of the question | **Public correction owed.** §6b of the brief updated. |

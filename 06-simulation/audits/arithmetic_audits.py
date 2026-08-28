@@ -1,7 +1,7 @@
 """
 C11 -- Arithmetic audits: IC-1 through IC-12 over a synthetic event log.
 
-The EventLog spec (Aequitas_EventLog_v0.6.md sec.7) defines twelve integrity
+The conformance list (Aequitas_Conformance_v0.7.md sec.2) defines twelve integrity
 constraints that must hold over any Aequitas event log. This module makes all
 twelve *runnable*: it builds one small, hand-verifiable synthetic event log
 (the milling/baking chain from the spec's sandwich trace, sec.10, plus two
@@ -33,7 +33,7 @@ FIVE MODELLING RULES THE LOG OBEYS (version history is in CHANGELOG.md):
   * Credit REALIZES on verification of the output; for a good the hand-off is
     the verification (sec.7.3). A deployment marker starts holding-time (sec.2.2).
 
-Two classes of check (EventLog sec.7.1 / sec.7.2):
+Two classes of check:
 
   IC-1 .. IC-9   LOG-SIDE.  Pure arithmetic on the recorded events. No trust
                 model, no weighting model, no external data. This is the schema's
@@ -92,14 +92,14 @@ def day(d: float, hour_of_day: float = 6.0) -> float:
 
 
 # ---------------------------------------------------------------------------
-# Primitives -- a minimal-but-complete rendering of the EventLog sec.2.1 schema.
+# Primitives -- a minimal-but-complete rendering of the record model this simulator runs on.
 # Only fields the ICs actually inspect are kept; basis/confidence/resolution/
 # signatures/taxonomy-versioning are the spec's concern, not the arithmetic's.
 # ---------------------------------------------------------------------------
 
 @dataclass
 class Flow:
-    """One side of a material/energy movement (EventLog sec.2.1 Flow).
+    """One side of a material/energy movement (Flow).
 
     endpoint_kind is "parcel" or "reservoir". A parcel flow carries `custody`
     (the holding account); a reservoir flow does not.
@@ -130,7 +130,7 @@ class AgentRole:
 
 @dataclass
 class Event:
-    """A bounded transformation of the world (EventLog sec.2.1 Event).
+    """A bounded transformation of the world (Event).
 
     There is deliberately NO `theta` field. A co-product split is never written
     (sec.9: no field for an allocation fraction); it is computed at projection
@@ -157,7 +157,7 @@ class Event:
 class Pledge:
     """A PERMANENT, non-revocable grant of debit-room: virtual credit the pledger
     puts *behind* creditable work, drawn 1:1 from their finite lifetime pledging-
-    budget (EventLog sec.5.1, Foundations v0.14 sec.6.4). It consumes no credit
+    budget (Foundations sec.4.6). It consumes no credit
     and moves no debit by itself; the pledging-power is spent for good at pledge
     time -- discharged when the summoned work occurs, or BURNED if it reaches
     expiry undischarged. There is no retraction."""
@@ -186,7 +186,7 @@ class Parcel:
 
 
 # ---------------------------------------------------------------------------
-# Two special events (EventLog sec.2.2). Neither adds a field: both are ordinary
+# Two special events. Neither adds a field: both are ordinary
 # Events, recognised by their process taxonomy so IC-1/IC-3 and the holding-time
 # projection can treat them correctly.
 # ---------------------------------------------------------------------------
@@ -286,7 +286,7 @@ class LogState:
     def parcel_status(self, parcel_id: str, at: float | None = None) -> str:
         """held | consumed | released | unaccounted, at instant `at` (IC-4).
 
-        Fate closure is only as good as the reservoir registry (EventLog sec.13
+        Fate closure is only as good as the reservoir registry (see the open-dependency note
         item 4): a parcel dropped into a reservoir that is NOT in the registry
         has gone to an un-named endpoint -- it is `unaccounted`, exactly what
         IC-4 exists to surface -- and so is a parcel with no creation record.
@@ -320,7 +320,7 @@ TOL = 1e-9
 
 
 def check_ic1_mass_balance(log: LogState, tol: float = TOL):
-    """Sigma input mass = Sigma output mass, per event (EventLog IC-1).
+    """Sigma input mass = Sigma output mass, per event (IC-1, conformance row 7).
 
     A genesis entry (sec.2.2) is exempt: it admits an already-existing object
     whose 'input' is the untracked pre-ledger past, exactly as a reservoir
@@ -461,7 +461,7 @@ def check_ic8_pledge_backing(log: LogState):
 
 
 def check_ic9_pledge_discharge(log: LogState):
-    """Pledge discharge (IC-9, Foundations v0.14 / EventLog v0.7). A pledge is a
+    """Pledge discharge (IC-9, conformance row 9). A pledge is a
     permanent grant of debit-room, not a promise to take an object:
 
       * A discharged pledge references a real event (the summoned work).
@@ -495,7 +495,7 @@ def check_ic9_pledge_discharge(log: LogState):
 
 DIMENSIONS = ("mass", "energy")
 
-# Published process-energetics model (EventLog sec.7.1a fallback). Keyed by
+# Published process-energetics model (the model-derived fallback for a split). Keyed by
 # process taxonomy, giving each output SUBSTANCE's share of a dimension the
 # event did not meter per output. Milling energy goes mostly into size-reduction
 # of the endosperm, and separating bran is largely sieving -- so the ENERGY
@@ -1041,7 +1041,7 @@ CHECKS = [
 
 
 def extent_block(log: LogState) -> dict:
-    """The extent rule (EventLog v0.8 sec.7.4): a verdict is
+    """The extent rule (conformance row 16): a verdict is
     (result, domain, extent, closure-basis) -- never a bare result.
 
     This exists because of OP-26. An earlier version of this module reported
@@ -1103,7 +1103,7 @@ def extent_block(log: LogState) -> dict:
             "recorded emissions against an independently measured ambient stock, so "
             "the coverage gap for reservoir-directed flows is UNMEASURED, not zero.",
             "Genesis termini cannot be re-derived from the log's own bytes. A genesis "
-            "entry is admitted on its estimate; see EventLog sec.12.3a.",
+            "entry is admitted on its estimate; see the origin-evidence ruling of 2026-08-22 (Foundations sec.4.8).",
             "No external counterparty attests any hand-off here. Every custody change "
             "is internal to this synthetic log.",
             "IC-10..IC-12 read a process-energetics model. They are arithmetic, but "
@@ -1115,7 +1115,7 @@ def extent_block(log: LogState) -> dict:
 def print_extent_block(log: LogState) -> None:
     blk = extent_block(log)
     print("\n" + "=" * 70)
-    print("EXTENT OF THIS VERDICT  (EventLog sec.7.4 -- the extent rule)")
+    print("EXTENT OF THIS VERDICT  (conformance row 16 -- the extent rule)")
     print("=" * 70)
     print("A passing check must publish what it was capable of detecting.\n")
 
@@ -1309,7 +1309,7 @@ def _tests() -> None:
     _d0, tshares = creation_cost_holding_time(transit, "P:t")
     assert "carrier" not in tshares and set(tshares) == {"owner"}
 
-    # -- extent rule (EventLog sec.7.4) ---------------------------------------
+    # -- extent rule (conformance row 16) ---------------------------------------
     _log = build_scenario()
     blk = extent_block(_log)
     assert set(blk) == {"domain", "extent", "closure_basis", "blind_spots"}, \

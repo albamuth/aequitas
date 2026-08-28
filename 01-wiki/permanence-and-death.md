@@ -32,7 +32,7 @@ This is not a rule imposed for tidiness. **It is what makes the rest of the syst
 
 §3.3 recalculates every affected ledger when the science improves. §4.4 reconstructs a life back to birth when someone onboards. **Neither is possible over records that were deleted.** A6 derives the ledger from an append-only log; **a log that can be truncated is not a log.** Permanence is the precondition of recomputation, and recomputation is the engine of fecundity.
 
-The same logic already governs corrections: a challenged record is **annotated, never removed** (EventLog §8.2a). **§4.8 is that rule applied to a whole person rather than a single entry.**
+The same logic already governs corrections: a challenged record is **annotated, never removed** (conformance row 6). **§4.8 is that rule applied to a whole person rather than a single entry.**
 
 #### Death
 

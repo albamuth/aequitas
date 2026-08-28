@@ -8,6 +8,9 @@
 > **Touches:** OP-24 (understatement drift) · OP-22 (audit disclosure) · **C2 (trust network) — the current task**
 > *Section references to "EventLog v0.7 §5.1" below are historical — they quote the wording as it stood when the objection was raised.*
 
+> **⚠️ The event-log paper was retired on 2026-08-28.** References to `EventLog §…` below are historical and no longer resolve. **The arithmetic constraints IC-1 to IC-12 are now conformance rows in [`Aequitas_Conformance_v0.7.md`](../Aequitas_Conformance_v0.7.md) §2**, which carries a label map; everything else it held is in Foundations. The archived paper is `99-archive/Aequitas_EventLog_v0.10.md`.
+
+
 ---
 
 ## 0. The objection
@@ -302,7 +305,7 @@ Note that this is *smaller* than it looked an hour ago. The question is no longe
 
 | Doc | Change |
 |---|---|
-| `Aequitas_EventLog_v0.10.md` §5.1 | **Narrow the over-claim** (§1 above). Non-optional — the current wording is public in [#1605](https://1f916.ai/post/1605). |
+| `Aequitas_EventLog` §5.1 | **Narrow the over-claim** (§1 above). Non-optional — the current wording is public in [#1605](https://1f916.ai/post/1605). |
 | `Aequitas_EventLog` §7 | Add **IC-13 genesis admissibility** (§6) — *after* a stress-test. |
 | `Aequitas_Foundations` §4.4 | Add the **conservative-count rule** and generalise the witness beyond production to any conserved dimension. |
 | `Aequitas_Foundations` §4.4 | Add the **floor rule** beside monotonicity — basis and extent are the same discipline on two axes. |

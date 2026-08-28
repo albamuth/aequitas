@@ -201,8 +201,8 @@ They tell their device. Under presets they set earlier, it pledges **0.5 h** tow
 
 That is a distribution question and it has a separate answer: a queue, a lottery, or pledge-priority, decided at the point of distribution (§5.5, §3.4a). **Cost states what a thing took. Who receives a physically scarce output is a different question, and this document deliberately does not settle it.**
 
-**Full statement of the reply, including the Mises and Hayek arguments:** `00-strategy/OP-9_calculation_reply.md`.
+**Full statement of the reply, including the Mises and Hayek arguments:** `00-strategy/open-problems/OP-9_calculation_reply.md`.
 
 ---
 *Status: settled (permanent grant of debit-room + contingent reserve, Foundations v0.14)*
-*Source: `00-strategy/Aequitas_Foundations_v0.19.md` §4.6, §4.6, §4.6, §4.5 · `00-strategy/Aequitas_EventLog_v0.8.md` §4.1, §4.4, IC-8/IC-9*
+*Source: `00-strategy/Aequitas_Foundations_v0.19.md` §4.6, §4.6, §4.6, §4.5 · IC-8 and IC-9, now conformance row 9*

@@ -61,4 +61,4 @@ The EXIOBASE table (`../data/exiobase/IOT_2022_pxp.zip`, 234 MB) takes one to th
 
 ## Superseded work
 
-[`archive/`](archive/) holds the **top-down v1 estimate** — `median_lifestyle.py`, `MEDIAN_LIFESTYLE.md` and three figures. It was rejected as unsound: it *assumes* the labour allocation rather than measuring it, misses labour carried forward in durables, and mixes data years. **It is kept as a rough sanity bracket, and the two methods do corroborate each other.** Never quote it as a result.
+[`99-superseded/`](99-superseded/) holds the **top-down v1 estimate** — `median_lifestyle.py`, `MEDIAN_LIFESTYLE.md` and three figures. It was rejected as unsound: it *assumes* the labour allocation rather than measuring it, misses labour carried forward in durables, and mixes data years. **It is kept as a rough sanity bracket, and the two methods do corroborate each other.** Never quote it as a result.

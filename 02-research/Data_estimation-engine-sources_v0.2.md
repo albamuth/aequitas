@@ -104,7 +104,7 @@ This also delivers the first-pilot deployment almost for free: both "cost out a 
 
 ## 7. ⚠ The one clash with an Aequitas principle — splitting by price
 
-> **✅ RESOLVED 2026-08-01 for materials and energy** — see [`00-strategy/OP-17_coproduct_allocation.md`](../00-strategy/OP-17_coproduct_allocation.md) and [co-product-allocation](../01-wiki/co-product-allocation.md). Where a shared process's own physics can be measured, the split is a *measurement*, and splitting by price isn't just undesirable, it's *wrong*. So the US model **can't be used as a source of truth** — only as data, with its price-based splits flagged as "declared," not "measured." The conditions below still govern that use. **Not resolved for labour** — see §8 item 1.
+> **✅ RESOLVED 2026-08-01 for materials and energy** — see [`00-strategy/open-problems/OP-17_coproduct_allocation.md`](../00-strategy/open-problems/OP-17_coproduct_allocation.md) and [co-product-allocation](../01-wiki/co-product-allocation.md). Where a shared process's own physics can be measured, the split is a *measurement*, and splitting by price isn't just undesirable, it's *wrong*. So the US model **can't be used as a source of truth** — only as data, with its price-based splits flagged as "declared," not "measured." The conditions below still govern that use. **Not resolved for labour** — see §8 item 1.
 
 **This must be settled before any figure is published, and it's the most important thing in this note.**
 
