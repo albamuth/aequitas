@@ -1,0 +1,227 @@
+==============================================================================
+THE STABLE BAND OF F AND rho -- Foundations Sec.5.5.3, owed with OP-4
+==============================================================================
+
+  Terms, before any number:
+    F      the FLOOR, hours a day credited for staying alive. A dial.
+    rho    the DEBIT TOLERANCE in the gate D <= rho*C. A dial.
+    E      hours of other people's labour a YEAR OF ESSENTIALS commands.
+           Exogenous. Nobody has measured it, so it is swept.
+    R_max  what the economy can physically deliver. Exogenous.
+
+  Population           60,000 people, seed 7
+  Median lifestyle     1,380 h/yr (measured)
+  kappa                13.797 debit-h per lifestyle-unit   FIXED at F = 10
+  R_max                56,446 lifestyle-units   FIXED (= 0.85 x unconstrained wants)
+
+------------------------------------------------------------------------------
+HOW WIDE -- the largest essentials basket each floor can carry
+------------------------------------------------------------------------------
+  E_max(F) = 365 * F * rho*(F).  Above it the band is empty and the
+  network fails whatever rho it sets.
+
+ F h/day   rho*(F)   E_max h/yr   x median lifestyle   % held back at rho*
+     1.0      4.00        1,460                 1.06                 43.0%  FLOOR (rho grid ends here)
+     1.5      4.00        2,190                 1.59                 36.7%  FLOOR (rho grid ends here)
+     2.0      3.70        2,701                 1.96                 33.3%
+     2.5      3.20        2,920                 2.12                 34.0%
+     3.0      2.85        3,121                 2.26                 34.2%
+     3.5      2.55        3,258                 2.36                 35.0%
+     4.0      2.35        3,431                 2.49                 34.6%
+     4.5      2.15        3,531                 2.56                 35.2%
+     5.0      2.00        3,650                 2.64                 35.2%
+     5.5      1.85        3,714                 2.69                 36.1%
+     6.0      1.75        3,832                 2.78                 35.7%
+     6.5      1.65        3,915                 2.84                 35.9%
+     7.0      1.55        3,960                 2.87                 36.6%
+     7.5      1.50        4,106                 2.98                 35.2%
+     8.0      1.40        4,088                 2.96                 36.8%
+     8.5      1.35        4,188                 3.04                 36.2%
+     9.0      1.30        4,270                 3.09                 35.8%
+     9.5      1.25        4,334                 3.14                 35.7%
+    10.0      1.20        4,380                 3.17                 35.8%
+    10.5      1.15        4,407                 3.19                 36.1%
+    11.0      1.10        4,416                 3.20                 36.8%
+    11.5      1.05        4,407                 3.19                 37.7%
+    12.0      1.00        4,380                 3.17                 38.8%
+    12.5      1.00        4,562                 3.31                 36.2%
+    13.0      0.95        4,508                 3.27                 37.8%
+    13.5      0.95        4,681                 3.39                 35.5%
+    14.0      0.90        4,599                 3.33                 37.3%
+
+  Rows marked FLOOR ran off the top of the swept rho range, so their
+  figure is a lower bound and not a value (conformance row 13).
+
+  The tightest floor is F = 2 h, carrying E_max = 2,701 h/yr = 1.96 x a median lifestyle.
+
+  In plain words: even the worst floor in this sweep carries an
+  essentials basket larger than a whole median lifestyle. Essentials
+  are a PART of a median lifestyle, so no floor in the swept range
+  fails on affordability. The band does not close.
+
+------------------------------------------------------------------------------
+WHAT THE PRODUCTION METHOD DOES TO THE BAND
+------------------------------------------------------------------------------
+  The physical envelope B is FIXED -- same energy, same materials.
+  What changes is the debit each unit of the SAME real standard costs.
+  Source: 06-simulation/median-lifestyle/Q6.md (EXIOBASE, measured).
+
+  NOTE ON THE ANCHOR. 'One median lifestyle' = 1,380 h/yr = one median
+  AMERICAN lifestyle. Q6 measured the US as the inefficient outlier:
+  Germany, Japan and Spain reach a comparable-or-better standard, and
+  longer lives, on about two thirds of the embodied labour.
+
+                    method  debit/unit  real capacity  rho*(F=10)  % held back
+                 US method       13.80         56,446        1.20        35.8%
+ German or Japanese method        8.83         88,196        4.00         0.0%  NEVER BINDS (rho grid ends here)
+            Spanish method        7.59        102,629        4.00         0.0%  NEVER BINDS (rho grid ends here)
+
+  Unconstrained wants total 66,407 real units.
+
+  READ THE CAPACITY COLUMN AGAINST THAT NUMBER, and the result is not
+  the one this table was built expecting.
+
+  Under the US method the same physical envelope delivers LESS than
+  people want, so the gate rations and about a third are held back.
+  Under the German, Japanese or Spanish method the SAME envelope
+  delivers MORE than everyone wants -- so the gate never binds at any
+  rho in the swept range, and nobody is held back at all.
+
+  In plain words: the band has an upper edge only because the US
+  method is wasteful. Fix the method and there is nothing left to
+  ration. Foundations Sec.5.5.3 calls that the intended end state,
+  not a failure -- 'where the economy can actually deliver that much,
+  this is abundance'.
+
+  What one median AMERICAN lifestyle costs, by the method used to make it:
+
+                    method     h/yr of other labour   vs the US method
+                 US method                    1,380              100%
+ German or Japanese method                      883               64%
+            Spanish method                      759               55%
+
+  The ledger charges the method, not the person. Two people living the
+  same material life carry different debit if one is supplied by a
+  wasteful chain -- which is A4 and A5 doing their work with no
+  mandate, no ban, and nobody's consumption forbidden.
+
+------------------------------------------------------------------------------
+E = 414 h/yr   (30% of a median lifestyle)
+------------------------------------------------------------------------------
+ F h/day   rho low  rho high    width  % held back  note
+     1.0      1.15      4.00     2.85  91.5->43.0   
+     1.5      0.80      4.00     3.20  97.2->36.7   
+     2.0      0.60      3.70     3.10  99.1->33.3   
+     2.5      0.50      3.20     2.70  99.6->34.0   
+     3.0      0.40      2.85     2.45  99.9->34.2   
+     3.5      0.35      2.55     2.20  99.9->35.0   
+     4.0      0.30      2.35     2.05 100.0->34.6   
+     4.5      0.30      2.15     1.85  99.9->35.2   
+     5.0      0.25      2.00     1.75 100.0->35.2   
+     5.5      0.25      1.85     1.60 100.0->36.1   
+     6.0      0.20      1.75     1.55 100.0->35.7   
+     6.5      0.20      1.65     1.45 100.0->35.9   
+     7.0      0.20      1.55     1.35 100.0->36.6   
+     7.5      0.20      1.50     1.30 100.0->35.2   
+     8.0      0.20      1.40     1.20 100.0->36.8   
+     8.5      0.20      1.35     1.15 100.0->36.2   
+     9.0      0.20      1.30     1.10 100.0->35.8   
+     9.5      0.20      1.25     1.05 100.0->35.7   
+    10.0      0.20      1.20     1.00 100.0->35.8   
+    10.5      0.20      1.15     0.95 100.0->36.1   
+    11.0      0.20      1.10     0.90  99.9->36.8   
+    11.5      0.20      1.05     0.85  99.9->37.7   
+    12.0      0.20      1.00     0.80  99.9->38.8   
+    12.5      0.20      1.00     0.80  99.9->36.2   
+    13.0      0.20      0.95     0.75  99.9->37.8   
+    13.5      0.20      0.95     0.75  99.9->35.5   
+    14.0      0.20      0.90     0.70  99.8->37.3   
+
+  floors with a band   27 of 27
+  widest band          F = 1.5 h, rho in [0.80, 4.00], width 3.20
+  narrowest open band  F = 14 h, width 0.70
+
+------------------------------------------------------------------------------
+E = 690 h/yr   (50% of a median lifestyle)
+------------------------------------------------------------------------------
+ F h/day   rho low  rho high    width  % held back  note
+     1.0      1.90      4.00     2.10  73.0->43.0   
+     1.5      1.30      4.00     2.70  85.9->36.7   
+     2.0      0.95      3.70     2.75  93.3->33.3   
+     2.5      0.80      3.20     2.40  95.7->34.0   
+     3.0      0.65      2.85     2.20  97.8->34.2   
+     3.5      0.55      2.55     2.00  98.8->35.0   
+     4.0      0.50      2.35     1.85  99.1->34.6   
+     4.5      0.45      2.15     1.70  99.4->35.2   
+     5.0      0.40      2.00     1.60  99.6->35.2   
+     5.5      0.35      1.85     1.50  99.8->36.1   
+     6.0      0.35      1.75     1.40  99.7->35.7   
+     6.5      0.30      1.65     1.35  99.9->35.9   
+     7.0      0.30      1.55     1.25  99.8->36.6   
+     7.5      0.30      1.50     1.20  99.8->35.2   
+     8.0      0.25      1.40     1.15  99.9->36.8   
+     8.5      0.25      1.35     1.10  99.9->36.2   
+     9.0      0.25      1.30     1.05  99.9->35.8   
+     9.5      0.20      1.25     1.05 100.0->35.7   
+    10.0      0.20      1.20     1.00 100.0->35.8   
+    10.5      0.20      1.15     0.95 100.0->36.1   
+    11.0      0.20      1.10     0.90  99.9->36.8   
+    11.5      0.20      1.05     0.85  99.9->37.7   
+    12.0      0.20      1.00     0.80  99.9->38.8   
+    12.5      0.20      1.00     0.80  99.9->36.2   
+    13.0      0.20      0.95     0.75  99.9->37.8   
+    13.5      0.20      0.95     0.75  99.9->35.5   
+    14.0      0.20      0.90     0.70  99.8->37.3   
+
+  floors with a band   27 of 27
+  widest band          F = 2 h, rho in [0.95, 3.70], width 2.75
+  narrowest open band  F = 14 h, width 0.70
+
+------------------------------------------------------------------------------
+E = 966 h/yr   (70% of a median lifestyle)
+------------------------------------------------------------------------------
+ F h/day   rho low  rho high    width  % held back  note
+     1.0      2.65      4.00     1.35  58.6->43.0   
+     1.5      1.80      4.00     2.20  72.2->36.7   
+     2.0      1.35      3.70     2.35  82.2->33.3   
+     2.5      1.10      3.20     2.10  87.7->34.0   
+     3.0      0.90      2.85     1.95  92.1->34.2   
+     3.5      0.80      2.55     1.75  93.8->35.0   
+     4.0      0.70      2.35     1.65  95.5->34.6   
+     4.5      0.60      2.15     1.55  97.1->35.2   
+     5.0      0.55      2.00     1.45  97.7->35.2   
+     5.5      0.50      1.85     1.35  98.2->36.1   
+     6.0      0.45      1.75     1.30  98.7->35.7   
+     6.5      0.45      1.65     1.20  98.4->35.9   
+     7.0      0.40      1.55     1.15  99.0->36.6   
+     7.5      0.40      1.50     1.10  98.8->35.2   
+     8.0      0.35      1.40     1.05  99.3->36.8   
+     8.5      0.35      1.35     1.00  99.2->36.2   
+     9.0      0.30      1.30     1.00  99.6->35.8   
+     9.5      0.30      1.25     0.95  99.5->35.7   
+    10.0      0.30      1.20     0.90  99.4->35.8   
+    10.5      0.30      1.15     0.85  99.3->36.1   
+    11.0      0.25      1.10     0.85  99.7->36.8   
+    11.5      0.25      1.05     0.80  99.7->37.7   
+    12.0      0.25      1.00     0.75  99.6->38.8   
+    12.5      0.25      1.00     0.75  99.5->36.2   
+    13.0      0.25      0.95     0.70  99.4->37.8   
+    13.5      0.20      0.95     0.75  99.9->35.5   
+    14.0      0.20      0.90     0.70  99.8->37.3   
+
+  floors with a band   27 of 27
+  widest band          F = 2 h, rho in [1.35, 3.70], width 2.35
+  narrowest open band  F = 13 h, width 0.70
+
+==============================================================================
+HOW TO READ THIS, in plain words
+==============================================================================
+  Each row is one choice of floor. The two rho columns are the lowest
+  and highest debit tolerance that BOTH keep essentials affordable AND
+  leave the ledger still rationing. A width of 0 means no rho works at
+  that floor, and the network fails whatever it sets.
+
+  '% held back' is the share of people the gate holds below what they
+  wanted, at the low and high edge of the band. It is a description,
+  not a test -- no threshold on it is used anywhere above.
+

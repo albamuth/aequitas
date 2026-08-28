@@ -1,8 +1,8 @@
 <!-- tag: fnd-aequitas-foundations-and-long-term -->
 # Aequitas — Foundations & Long-Term Strategy
 
-> **Version:** 0.28
-> **Date:** 2026-08-27
+> **Version:** 0.29
+> **Date:** 2026-08-28
 > **Status:** Working foundations. **Restructured on 2026-08-27**: the old §4, §5 and §6 all described work a trust network does, and only §5 said so. **They are now one section, §4. Consequences moved from §7 to §5, and the pointer table from §8 to §6.**
 > **Primary audience of the first paper:** technologists and implementers.
 > **Companion:** [`Aequitas_Conformance_v0.7.md`](Aequitas_Conformance_v0.7.md) — what must be true for an implementation to *be* Aequitas.
@@ -1564,11 +1564,43 @@ Those activities are **sleeping, eating, defecating, and keeping oneself clean.*
 
 > **The gate then stops binding on almost everybody.** `D ≤ ρ·C` still holds, but it is not the thing deciding who gets what. **Where the economy can actually deliver that much, this is abundance and it is the intended end state** (§3.5, Q6). **Where it cannot, physical shortage is decided at the point of distribution instead — by a queue or a lottery** (§3.4a, §4.6) — **and the accounting has stopped doing the work it was set up to do.**
 
-##### What the project owes here
+##### The band, measured
 
-**Aequitas does not set `F` and must not** (A8). **What this project owes is a demonstration that a stable value exists** — that for a given economy there is a band of `F` and ρ inside which essentials are affordable and the ledger still rations what is genuinely short.
+**Aequitas does not set `F` and must not** (A8). **What this project owed was a demonstration that a workable value exists** — that for a given economy there is a band of `F` and ρ inside which essentials are affordable and the ledger still rations what is genuinely short. **It was run on 2026-08-28.**
 
-> **⚠️ Owed: a simulation showing the stable band, and its width.** Registered with **OP-4 (debit tolerance)**, which already holds the floor's magnitude and the ceiling's denominator. **Nothing in this section claims the band has been found.**
+> **The band exists at every floor from 1 to 14 hours a day, and it never closes. What binds it is capacity, not affordability.**
+
+**How wide.** The band is `ρ ∈ [ E/(365·F) , ρ*(F) ]`, where `E` is what a year of essentials commands and `ρ*(F)` is the tolerance above which the ledger stops rationing. So the largest essentials basket a floor can carry is `E_max = 365 · F · ρ*(F)`.
+
+| `F` | ρ*(`F`) | `E_max` | As a multiple of a median **American** lifestyle |
+|---|---|---|---|
+| **2 h/day** | 3.70 | 2,701 h/yr | **1.96×** — the tightest floor measured |
+| 10 h/day | 1.20 | 4,380 h/yr | 3.17× |
+| 14 h/day | 0.90 | 4,599 h/yr | 3.33× |
+
+**In plain words: even the tightest floor carries an essentials basket costing almost twice a whole median American lifestyle. Essentials are a part of that lifestyle, not double it, so no floor in this range fails on affordability.** The band's width in ρ falls as the floor rises — about 3.2 at a 1.5-hour floor, 0.70 at a 14-hour floor.
+
+##### And the upper edge is an artefact of the American production method
+
+> **⚠️ The 1,380 h/yr anchor is a median *American* lifestyle, and that is not a neutral choice.** `06-simulation/median-lifestyle/Q6.md` measures the US as the labour- and carbon-inefficient outlier: **Germany, Japan and Spain reach a comparable-or-better material standard, and longer lives, on about two thirds of the embodied labour.**
+
+**Hold the physical envelope fixed — the same energy, the same materials — and change only how much debit a unit of the same real standard costs.**
+
+| Production method | Debit-hours per unit | Real living the same envelope delivers | Share held back by the gate |
+|---|---|---|---|
+| **US** | 13.80 | **56,446** | **35.8%** |
+| German or Japanese | 8.83 | **88,196** | **0.0%** |
+| Spanish | 7.59 | **102,629** | **0.0%** |
+
+**People want 66,407 units in total. Read the middle column against that.**
+
+> **Under the American method the envelope delivers less than people want, so the gate rations and about a third are held back. Under the German, Japanese or Spanish method the same envelope delivers more than everyone wants, the gate never binds, and nobody is held back at all.**
+
+**In plain words: the band needs an upper edge only while the method is wasteful. Change the method and there is nothing left to ration.** §5.5.3 already named that outcome as the intended one rather than a defect.
+
+**And the same measurement gives the mechanism that moves people toward it, with no mandate and nothing forbidden.** One median American lifestyle costs **1,380 hours** of other people's labour by the American method, **883** by the German or Japanese, and **759** by the Spanish. **Two people can live the same material life and carry different debit, because one is supplied by a wasteful chain.** The gate `D ≤ ρ·C` then reaches further for whoever is supplied by the efficient one. **That is A4 and A5 producing a pull toward the sustainable method out of the arithmetic, rather than a rule anyone enforces.**
+
+> **⚠️ What is measured and what is not.** The two zero rows are **floors, not values** (conformance row 13): the gate does not bind anywhere below ρ = 4.0, which is where the swept range ended. Nobody looked above it. **And ρ\*'s absolute values inherit the weighting model and an illustrative capacity figure — the shape is the result, the numbers are dated readings.** Full method, the three things it does not show, and five self-tests that can each fail: `06-simulation/stable-band/RESULTS.md`. Registered with **OP-4 (debit tolerance)**.
 
 ---
 
@@ -1675,7 +1707,7 @@ Those activities are **sleeping, eating, defecating, and keeping oneself clean.*
 - **Efficiency, not extra labour, is what reaches abundance.** The same population is mildly short under the wasteful US production method and reaches everyone's full desired standard under German, Japanese or Spanish efficiency (Q6). **The binding constraint is physical throughput** (§3.5).
 - **The ceiling is fraud-invariant.** IC-7 bounds every account, honest or not, so the most a fraudster reaches is `ρ·24` — the honest maximum. **Fraud fills the band and cannot create an outlier beyond it.**
 
-> **What the simulations have not yet done, and it is now the more important of the two:** find the **stable band of `F` and ρ** described in §5.5.3. The existing runs take `F` as given. **Owed, with OP-4.**
+> **The stable band described in §5.5.3 was found on 2026-08-28** and is reported there. `06-simulation/stable-band/`, 60,000 people, every cell driven through the kernel's own gate and all eight conformance checks. **The band never closes, capacity binds rather than affordability, and the upper edge turns out to be an artefact of the American production method.**
 
 ---
 
@@ -1715,4 +1747,4 @@ A3 therefore does three separate defensive jobs: it forbids accumulation (§5.1)
 
 ---
 
-*End of v0.28 — restructure in progress.*
+*End of v0.29.*

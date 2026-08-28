@@ -16,8 +16,8 @@ This essay supplies the historical backing for one of the project's core claims:
 That distinction is the answer to a question Aequitas will be asked constantly: *"So you want to abolish markets?"* No. Aequitas keeps ordinary buying and selling. What it dissolves are the entities that were never really in the market in the first place — the ones large enough to rig it.
 
 This connects to three things the reader will meet elsewhere:
-- **Price equals cost.** In Aequitas a price is not a number someone chooses in order to make a profit; it is simply a statement of what a thing physically took to make. See [Foundations A5 (cost, not price)](../00-strategy/Aequitas_Foundations_v0.28.md#a5-cost-not-price).
-- **Why capitalism can't operate inside the system.** Because there is no profit to skim and nothing to hoard, the machinery of accumulation has nothing to grab. See [Foundations §7.1 (Capitalism cannot function)](../00-strategy/Aequitas_Foundations_v0.28.md#71-capitalism-cannot-function).
+- **Price equals cost.** In Aequitas a price is not a number someone chooses in order to make a profit; it is simply a statement of what a thing physically took to make. See [Foundations A5 (cost, not price)](../00-strategy/Aequitas_Foundations_v0.29.md#a5-cost-not-price).
+- **Why capitalism can't operate inside the system.** Because there is no profit to skim and nothing to hoard, the machinery of accumulation has nothing to grab. See [Foundations §7.1 (Capitalism cannot function)](../00-strategy/Aequitas_Foundations_v0.29.md#71-capitalism-cannot-function).
 - **The whole public framing** of what Aequitas is *against* — captured concentration, not commerce.
 
 ## Key findings

@@ -19,6 +19,7 @@ Every command below is run **from inside that project's folder**. Every project 
 | **[`scenario-suite/`](scenario-suite/README.md)** | Five societal questions: autarky, captured labour, plastic, who is locked out, wasteful-to-essential reallocation. | `python q1_autarky.py --test`<br>(one script per question) | ✅ Answers stand. **Machinery superseded** by `statera/`. |
 | **[`residual-unravelling/`](residual-unravelling/README.md)** | Does staying unmeasured stop paying? Tests the rule that cohort estimates are computed over the residual, never the population. | `python residual_unravelling.py --test` | ✅ Passes, with one measured limit. |
 | **[`pledge-reserve/`](pledge-reserve/README.md)** | Why would anyone take the hazardous job in a system with no wage premium? | `python pledge_reserve.py --test` | ✅ Built. Answers the hazard half of the onerousness gap. |
+| **[`stable-band/`](stable-band/README.md)** | Is there a band of the floor `F` and the tolerance ρ inside which essentials stay affordable **and** the ledger still rations? | `python stable_band.py --test` | ✅ **Done 2026-08-28.** Answers the simulation Foundations §5.5.3 says it owes. |
 
 ## The headline numbers, in one place
 
@@ -28,6 +29,7 @@ Every command below is run **from inside that project's folder**. Every project 
 | **≈ 1,380 h/yr** | What a median US adult's yearly consumption costs in human labour — about **one third** of the 3,650 h/yr everyone earns just by being alive. | median-lifestyle |
 | **ρ\* = 1.20** | The consumption gate that clears the market. The median then gets 0.92× a full lifestyle; 35% are held below their wants. | disparity-ceiling |
 | **709 vs 1,283 h** | Spain against the US, for a comparable material life — and Spaniards live nearly six years longer. | median-lifestyle |
+| **the band never closes** | A workable pair of `F` and ρ exists at every floor from 1 to 14 h/day. **Capacity binds, not affordability** — even the tightest floor carries an essentials basket costing almost twice a median lifestyle. | stable-band |
 | **0.1% vs 52.5%** | How much stays unmeasured under the residual rule, against the population rule the axioms reject. | residual-unravelling |
 | **~95%** | Share of economies where the rival value/price allocation goes negative. The physical allocation never does. | allocation-engine |
 | **12 of 12** | Integrity constraints that pass clean and catch their injected violation. | audits |

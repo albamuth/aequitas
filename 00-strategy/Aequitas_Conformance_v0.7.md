@@ -3,7 +3,7 @@
 
 > **Version:** 0.7 · **Date:** 2026-08-28
 > **Audience: implementers.** Anyone building a trust network.
-> **Companion:** [`Aequitas_Foundations_v0.28.md`](Aequitas_Foundations_v0.28.md) — the system itself, and the argument for every row below. **Where the two differ, Foundations governs.**
+> **Companion:** [`Aequitas_Foundations_v0.29.md`](Aequitas_Foundations_v0.29.md) — the system itself, and the argument for every row below. **Where the two differ, Foundations governs.**
 > **Version history is kept separately and is not published**, so this document carries only what is currently true.
 > **Two numbers are retired and are never reused: the bare `17`, and `14c`.**
 
