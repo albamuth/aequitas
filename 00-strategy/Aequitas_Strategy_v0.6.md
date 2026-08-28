@@ -3,7 +3,7 @@
 
 > **Version:** 0.6 · **Date:** 2026-08-25
 > **Target:** A statement of the system, tested against scenarios, in ~3 months — with a conformance list an implementer can build against.
-> **Companion docs:** `Aequitas_Foundations_v0.32.md` (axioms), `Aequitas_Objections_v0.24.md` (register), `Aequitas_Conformance_v0.8.md` (what an implementation must satisfy), `../NEXT.md` (task queue)
+> **Companion docs:** `Aequitas_Foundations_v0.33.md` (axioms), `Aequitas_Objections_v0.24.md` (register), `Aequitas_Conformance_v0.8.md` (what an implementation must satisfy), `../NEXT.md` (task queue)
 > **Version history & what each version superseded:** `00-strategy/Aequitas_Strategy_CHANGELOG.md`.
 
 ---
@@ -36,9 +36,9 @@ Not a manifesto. Not a pitch. **And not an architecture.**
 > - **The system.** What Aequitas is, what must hold, and what follows. Every claim that sounds impossible ships with a simulation that demonstrates it (§2).
 > - **The conformance list.** The things that must be true for an implementation to *be* Aequitas — conservation holds, the ledger is derived and never stored, credit never transfers, coverage is published with its extent, and so on. **[`Aequitas_Conformance_v0.8.md`](Aequitas_Conformance_v0.8.md) carries the current list**, moved out of `Aequitas_Conformance_v0.8.md` on 2026-08-25.
 
-**What is deliberately not the goal.** A data model, a storage design, a transport protocol, a choice of cryptography, a privacy practice. **Foundations §1.2 rules all of these praxis**, and they belong to whoever implements. An earlier version of this section named three of them as deliverables, which is how this project spent nights on record-integrity work while its top blocker was governance.
+**What is deliberately not the goal.** A data model, a storage design, a transport protocol, a choice of cryptography, a privacy practice. **Foundations §2.6 rules all of these praxis**, and they belong to whoever implements. An earlier version of this section named three of them as deliverables, which is how this project spent nights on record-integrity work while its top blocker was governance.
 
-> **The screening question, from Foundations §1.2: if a principle survives at both ends of a dial, the dial is not part of the principle.** Apply it before adding anything to the roadmap.
+> **The screening question, from Foundations §2.6: if a principle survives at both ends of a dial, the dial is not part of the principle.** Apply it before adding anything to the roadmap.
 
 **Why this first:** the theory is only real if someone could implement it. Stating what must hold forces every hand-wave into a decision, and it does so **without** committing the project to design work that is not its own. Academic, civic, and public documents come later and are *easier* once the system is stated — they can cite it.
 
@@ -57,7 +57,7 @@ The whitepaper's credibility rests on claims that sound impossible. Several now 
 
 **Each claim ships with a Python simulation that demonstrates it.** This is what separates Aequitas from every other utopian economic proposal — *ours has results.*
 
-> **And the sims are what this project builds.** *(Author ruling, 2026-08-23.)* §1 says the deliverable is the system. **The code that serves it is a simulator of an economy — one or several — never a trust-network database.** A simulation is not a dial under the §1.2 test; **it is the instrument that tells you whether a principle survives one.**
+> **And the sims are what this project builds.** *(Author ruling, 2026-08-23.)* §1 says the deliverable is the system. **The code that serves it is a simulator of an economy — one or several — never a trust-network database.** A simulation is not a dial under the §2.6 test; **it is the instrument that tells you whether a principle survives one.**
 >
 > Earlier drafts of this section called the sims *"figures and appendices in the whitepaper, not a separate deliverable."* That undersold them. **They are the only way an axiom gets tested before someone bets a society on it**, and they are what the outreach agent should be asking strangers to run, extend, and attack.
 >
@@ -107,7 +107,7 @@ This also answers the socialist-calculation critique pre-emptively: we don't arg
 ### Phase 1 — Core mechanisms
 *The theory lives or dies here. **Mostly cleared.***
 
-- **C1 (event-log schema): Event log schema.** ❌ **Retired 2026-08-28.** The record model was never asked for and it read as a specification, which contradicts §1.2 and the simulator ruling of 2026-08-23. **The arithmetic it carried — IC-1 to IC-12 — is now in `Aequitas_Conformance_v0.8.md`.** A trust network writes its own schema.
+- **C1 (event-log schema): Event log schema.** ❌ **Retired 2026-08-28.** The record model was never asked for and it read as a specification, which contradicts §2.6 and the simulator ruling of 2026-08-23. **The arithmetic it carried — IC-1 to IC-12 — is now in `Aequitas_Conformance_v0.8.md`.** A trust network writes its own schema.
 - **OP-17 (joint production): co-product allocation.** ✅ **Done** — the process allocates itself (Foundations §3.4a).
 - **Recursion convergence sim.** ✅ **Done — PASS** (`recursion_convergence.py`). Validated the OP-17 answer; doubles as the first piece of C11.
 - **OP-18 (labour & team credit): labour allocation across co-products and teams.** ✅ **Closed** — a declared convention (labour rides the material split), axiom-scored against the Aumann–Shapley checklist and stress-tested.
@@ -177,10 +177,10 @@ This also answers the socialist-calculation critique pre-emptively: we don't arg
 | **Read as one more failed local currency** | Foundations §5.6 and §9 below: no medium of exchange, so no circulation failure; the overlay computes what money cannot. |
 | **Trust networks drift into issuer-pays capture** | Partly answered: a network concentrated in the sector it audits is captured by construction, and membership is public. **Full trust-network design deferred to C2 (verification / trust networks) by decision.** |
 | **Scope creep into philosophy** | `NEXT.md` parking lot. |
-| **🔴 Scope creep into data architecture** — the one that actually happened. An outreach channel that rewards runnable code pulled two nights into event-log integrity work while the top blocker was governance. | **Foundations §1.2 + §9.** The documents state what must be true, never how to build it. Apply the dial test before adding anything: *if a principle survives at both ends of a dial, the dial is not part of the principle.* Watch the outreach queue specifically — the venue's incentive is not the project's. |
+| **🔴 Scope creep into data architecture** — the one that actually happened. An outreach channel that rewards runnable code pulled two nights into event-log integrity work while the top blocker was governance. | **Foundations §2.6 + §9.** The documents state what must be true, never how to build it. Apply the dial test before adding anything: *if a principle survives at both ends of a dial, the dial is not part of the principle.* Watch the outreach queue specifically — the venue's incentive is not the project's. |
 | **Perfection paralysis** | Ship v0.x drafts. Version, don't polish. |
 | **Solo bandwidth** | Sims and drafts are Claude-executable. User's scarce attention goes to decisions, not production. |
-| ~~**OP-17 has no honest answer**~~ | **Retired.** It had one, and it was better than the fallback: a §1.1 row was *deleted* rather than filled in. |
+| ~~**OP-17 has no honest answer**~~ | **Retired.** It had one, and it was better than the fallback: a §2.5 row was *deleted* rather than filled in. |
 
 ---
 
@@ -202,7 +202,7 @@ This also answers the socialist-calculation critique pre-emptively: we don't arg
 <!-- tag: str-s9 -->
 ## 9. First Foothold — how adoption plausibly starts
 
-> **Scope note, and it governs the whole section.** This is a reading of the historical record on how a system like this gets a foothold. **It is not a deliverable of this work.** Under Foundations §1.2, building a demonstration is praxis a project **may** choose to take on; nothing here is owed, and no result in Foundations waits on it. What follows is evidence about adoption, offered to whoever decides to try.
+> **Scope note, and it governs the whole section.** This is a reading of the historical record on how a system like this gets a foothold. **It is not a deliverable of this work.** Under Foundations §2.6, building a demonstration is praxis a project **may** choose to take on; nothing here is owed, and no result in Foundations waits on it. What follows is evidence about adoption, offered to whoever decides to try.
 
 **Full-cost accounting as a parallel overlay on existing commerce.** No adoption, no permission, no legal change — it computes and publishes truth alongside money.
 

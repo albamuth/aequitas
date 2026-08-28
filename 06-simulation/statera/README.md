@@ -9,7 +9,7 @@
 >
 > **Next step: step 5 of the plan — consumer types from real data.** Blocked on a download: the **[Bureau of Labor Statistics Consumer Expenditure demographic tables](https://www.bls.gov/cex/)** are not in `../data/`, only the single US average.
 
-**The name.** A *statera* is the balance-scale the goddess Aequitas is shown holding on Roman coinage. **It is an instrument** — a thing you measure a theory with, never the theory itself (Foundations §1.2, the scope section).
+**The name.** A *statera* is the balance-scale the goddess Aequitas is shown holding on Roman coinage. **It is an instrument** — a thing you measure a theory with, never the theory itself (Foundations §2.6, the scope section).
 
 | File | Lines | Tests | Run it |
 |---|---|---|---|

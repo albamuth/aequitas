@@ -414,7 +414,7 @@ Weights are applied only inside `collapse()`. So a shock of the form
 | **BLS tables are withdrawn again** | Expect it. Archive every file to `02-research/` on download, with a citation stub, on the day it is fetched. |
 | **The cohorts are too coarse to see the low-floor result** | Named in §8. Test it directly: run the same scenario at `weight = 1.0` with 200,000 agents over ten periods and compare. |
 | **`rho` mode `solve` becomes the default by habit** | The scenario file must state the mode explicitly. **No default.** An absent `rho.mode` is an error. |
-| **The time axis pulls the project back into data architecture** | §1.2 again. This is an instrument for testing the theory. The moment a scenario needs a schema decision rather than an economics decision, stop and re-read the scope ruling. |
+| **The time axis pulls the project back into data architecture** | §2.6 again. This is an instrument for testing the theory. The moment a scenario needs a schema decision rather than an economics decision, stop and re-read the scope ruling. |
 
 ---
 

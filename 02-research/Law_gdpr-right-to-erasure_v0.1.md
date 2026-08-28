@@ -3,7 +3,7 @@
 **Retrieved:** 2026-08-22
 **Why it matters:** Foundations §5.4 says records of a person are never destroyed, and a flag was raised that this collides with erasure law. **This stub checks that flag. The collision is real but much narrower than the flag implied.**
 
-> **Scope note, added after Foundations §1.2 was written.** Erasure law is **praxis, not foundations**. It binds an implementer in a jurisdiction, not a theory of cost — capitalism carries no data-protection chapter; banks do. **This stub is reference material for whoever operates a trust network, not an open problem against the theory.** It stays here because it is useful, and it was worth checking a flag rather than leaving it standing on a guess.
+> **Scope note, added after Foundations §2.6 was written.** Erasure law is **praxis, not foundations**. It binds an implementer in a jurisdiction, not a theory of cost — capitalism carries no data-protection chapter; banks do. **This stub is reference material for whoever operates a trust network, not an open problem against the theory.** It stays here because it is useful, and it was worth checking a flag rather than leaving it standing on a guess.
 
 **Primary sources**
 - [GDPR Article 17 — Right to erasure ("right to be forgotten")](https://gdpr-info.eu/art-17-gdpr/)

@@ -3,7 +3,7 @@
 > **Version:** 0.1
 > **Date:** 2026-08-22
 > **Status:** First assembly. Every ruling here is settled and folded into Foundations v0.17; this document gathers them in one place because they were decided across a dozen separate sections. **One thing remains open and it is named in §11: OP-10 (weighting-model governance).**
-> **Depends on:** `Aequitas_Foundations_v0.32.md` §1.2, §3.3, §3.3a, §4, §4.1–§4.8 · `Aequitas_Conformance_v0.8.md`
+> **Depends on:** `Aequitas_Foundations_v0.33.md` §2.6, §3.3, §3.3a, §4, §4.1–§4.8 · `Aequitas_Conformance_v0.8.md`
 > **Companion:** `C2_information_capture.md` — the reasoning behind §6 below, including a retracted proposal kept on purpose.
 
 > **⚠️ The event-log paper was retired on 2026-08-28.** References to `EventLog §…` below are historical and no longer resolve. **The arithmetic constraints IC-1 to IC-12 are now conformance rows in [`Aequitas_Conformance_v0.8.md`](../Aequitas_Conformance_v0.8.md) §2**, which carries a label map; everything else it held is in Foundations. The archived paper is `99-archive/Aequitas_EventLog_v0.10.md`.
@@ -13,7 +13,7 @@
 
 ## 1. Why this document exists
 
-**Aequitas is a system in the sense that capitalism is a system** (Foundations §1.2 — the scope boundary). It is not an organisation, a protocol, a piece of software, or a body anyone joins. It is a set of principles about how cost is accounted for.
+**Aequitas is a system in the sense that capitalism is a system** (Foundations §2.6 — the scope boundary). It is not an organisation, a protocol, a piece of software, or a body anyone joins. It is a set of principles about how cost is accounted for.
 
 **Principles do not keep books. Somebody has to.**
 
@@ -157,7 +157,7 @@ A trust network is the basis on which all accounting rests, so it cannot be paid
 
 > **A transaction never waits on a shared verdict.** Two parties can price the same thing differently and still trade. **"Comparison, never conversion" was always the dispute-resolution mechanism; it had simply never been named as one.**
 
-**Fraud is the one class needing a verdict — and science is not self-correcting about fraud either.** It answers with investigation by an institution. Aequitas answers the same way: **courts, small claims, contract law and ordinary social pressure continue to exist** (Foundations §4.7), and per §1.2 how an implementer engages them is praxis.
+**Fraud is the one class needing a verdict — and science is not self-correcting about fraud either.** It answers with investigation by an institution. Aequitas answers the same way: **courts, small claims, contract law and ordinary social pressure continue to exist** (Foundations §4.7), and per §2.6 how an implementer engages them is praxis.
 
 ---
 

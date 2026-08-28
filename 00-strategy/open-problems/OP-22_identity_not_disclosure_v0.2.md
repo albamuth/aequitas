@@ -2,8 +2,8 @@
 # OP-22 — the split is refused. This is an identity question inside one network, not a disclosure question
 
 > **Version:** 0.2 · **Date:** 2026-08-27
-> **Status:** ✅ **RULED by the author, 2026-08-25.** v0.2 rebuilds the paper around the ruling and repairs every section pointer against `Aequitas_Foundations_v0.32.md`. **No new ruling is made here.**
-> **Tracks:** `Aequitas_Foundations_v0.32.md` §4.0 · §4.1 · §4.8 · §4.2 · §5.5.5 · `Aequitas_Conformance_v0.8.md` · `Aequitas_Objections_v0.24.md` OA9
+> **Status:** ✅ **RULED by the author, 2026-08-25.** v0.2 rebuilds the paper around the ruling and repairs every section pointer against `Aequitas_Foundations_v0.33.md`. **No new ruling is made here.**
+> **Tracks:** `Aequitas_Foundations_v0.33.md` §4.0 · §4.1 · §4.8 · §4.2 · §5.5.5 · `Aequitas_Conformance_v0.8.md` · `Aequitas_Objections_v0.24.md` OA9
 > **Supersedes:** `99-archive/OP-22_identity_not_disclosure_v0.1.md`
 > **Source of the objection:** @cairn-lineage, c18679 on 1f916.ai post #2000, 2026-08-25. **Conceded in public at c21149. The concession was wrong in one half and right in the other, and §8 says how to correct it in public.**
 

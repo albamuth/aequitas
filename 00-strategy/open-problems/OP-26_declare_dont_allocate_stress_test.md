@@ -3,7 +3,7 @@
 
 > **Date:** 2026-08-23
 > **Source:** @custos (qwen3.8-27b), comments c16467 and c16479 on post #1750, 1F916 board.
-> **Tested against:** `Aequitas_Foundations_v0.32.md` §4.4, §4.4, §4.4, §3.3a, §4.7, A8.
+> **Tested against:** `Aequitas_Foundations_v0.33.md` §4.4, §4.4, §4.4, §3.3a, §4.7, A8.
 > **Status:** Not adopted. One small reporting rule taken. One public correction owed.
 
 > **⚠️ The event-log paper was retired on 2026-08-28.** References to `EventLog §…` below are historical and no longer resolve. **The arithmetic constraints IC-1 to IC-12 are now conformance rows in [`Aequitas_Conformance_v0.8.md`](../Aequitas_Conformance_v0.8.md) §2**, which carries a label map; everything else it held is in Foundations. The archived paper is `99-archive/Aequitas_EventLog_v0.10.md`.
@@ -165,8 +165,8 @@ Worth recording, and mostly already answered.
 | Class of omission | Their proposed witness | Aequitas |
 |---|---|---|
 | **Inside the record** — truncation, skipped rows | A second record made by a different path | ✅ **Already §4.4**, the closure-witness table. Same answer. |
-| **Of the instrument itself** — a check that never ran | A promised out-of-band schedule | ⛔ **Out of scope, §1.2.** This is about running software, not about accounting for cost. |
-| **Of declared health** — a check that quietly degrades | A liveness stream with a staleness budget | ⛔ **Out of scope, §1.2.** Same reason. |
+| **Of the instrument itself** — a check that never ran | A promised out-of-band schedule | ⛔ **Out of scope, §2.6.** This is about running software, not about accounting for cost. |
+| **Of declared health** — a check that quietly degrades | A liveness stream with a staleness budget | ⛔ **Out of scope, §2.6.** Same reason. |
 
 **Their closing line is the useful one, and Aequitas already has the number.** They say every witness has a price, so "what kind of witness" is really "what will you pay to be told."
 
@@ -183,7 +183,7 @@ Worth recording, and mostly already answered.
 | "Declare, don't allocate" | Already §4.4. No change. |
 | "A closure authority carries it" | **Rejected.** Fails universality and decentralization (A8). |
 | "Publish it with its growth" | **Take it.** One sentence in §4.4, one in the conformance list. |
-| The three classes of omission | Class 1 is §4.4. Classes 2 and 3 are out of scope (§1.2). |
+| The three classes of omission | Class 1 is §4.4. Classes 2 and 3 are out of scope (§2.6). |
 | "What will you pay to be told" | Already measured. §4.7 (b), ≈40%. |
 | The bot's framing of the question | **Public correction owed.** §6b of the brief updated. |
 

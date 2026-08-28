@@ -1,7 +1,7 @@
 <!-- tag: fnd-aequitas-foundations-and-long-term -->
 # Aequitas — Foundations & Long-Term Strategy
 
-> **Version:** 0.32
+> **Version:** 0.33
 > **Date:** 2026-08-28
 > **Status:** Working foundations.
 > **Primary audience of the first paper:** technologists and implementers.
@@ -37,13 +37,13 @@
   - [A6 (derived, not stored)](#a6-derived-not-stored)
   - [A7 (universal accounting)](#a7-universal-accounting)
   - [A8 (no governing body)](#a8-no-governing-body)
-  - [1.1 Named conventions](#11-named-conventions)
-  - [1.2 What Aequitas is, and what is therefore out of scope](#12-what-aequitas-is-and-what-is-therefore-out-of-scope)
 - [2. What the axioms imply](#2-what-the-axioms-imply)
   - [2.1 The three criteria, and why they are the test](#21-the-three-criteria-and-why-they-are-the-test)
   - [2.2 Debit](#22-debit)
   - [2.3 Credit](#23-credit)
   - [2.4 Transactions and sales](#24-transactions-and-sales)
+  - [2.5 Measurement and convention](#25-measurement-and-convention)
+  - [2.6 What this document answers, and what it does not](#26-what-this-document-answers-and-what-it-does-not)
 - [3. The Ledger Model](#3-the-ledger-model)
   - [3.0 What a ledger is](#30-what-a-ledger-is)
   - [3.1 Structure — an event log, not a balance](#31-structure-an-event-log-not-a-balance)
@@ -183,97 +183,25 @@ These are the immutable core. Nothing in Aequitas may contradict them, and nothi
 
 **Everything below them may differ from one trust network to the next. A network must publish what it runs, so that anybody else can re-compute its claims.**
 
-*Where this is worked out: §1.2 for which settings vary · §2.3 for which activities a network may credit, and the boundary it may not cross · §4.0 for what a trust network is and how big one may be · §4.7 for what a network owes.*
-
-<!-- tag: fnd-s1-1 -->
-### 1.1 Named conventions
-
-Some quantities the system needs are **not** physical facts. Where that is true, it is stated here rather than hidden in an implementation detail. **A convention that is declared is not an ad-hoc rule; a convention that is disguised as a measurement is.**
-
-| Quantity | Status | Why it is not a measurement |
-|---|---|---|
-| **Split of a team's credit across its members** | ✅ **Not a convention — dissolved (A2)** | Credit is *time worked* (§4.5), so each member is credited **their own hours** — the "welder caused 40% of the bridge" number is never needed. Credit is not a share of output. **OP-18's team-credit half was a mis-statement; A2 already answers it.** *(A residual remains — apportioning a jointly-*caused debit* across a team — but that is a debit-attribution question, minor, sibling to OP-25 (illicit dumping).)* |
-| **Split of *labour* across co-products** | ✅ **Convention with a measurable basis — rides the material split** | One labour process yields several products (farmer's hours → beef + hide); the hours leave no per-product trace, so a convention is required (physical-trace test). The declared convention: **labour rides the same physical split §3.4a already measures for the process's materials** (mass/deposition for cattle, cracking-energy for a refinery). Adds *no new lever* — it piggybacks on the rival-audited material θ. Changes no one's credit; it is a debit-side cost figure only. **OP-18(α) — closed 2026-08-05.** |
-| **Split of an asset's residual creation-cost across its holders** | ✅ **Convention with a measurable basis — holding-time** | Apportioning a fixed creation-cost is a choice, but **holding-duration is a physical trace**, so the convention is measured, not invented: share = holder's holding-time ÷ total holding-time over the asset's life (§4.5). Respects the dummy and symmetry axioms an even split fails. |
-
-> **Two rows are absent, for two different reasons.**
->
-> **A *"split of a joint process's debit across its co-products"* is not a free convention, and not a pure measurement either.** The process did physically divide the inputs, and that division is measurable — but reading it requires choosing an instrument, a period, and a sub-process boundary, and two honest choices can give different figures. **It is a choice that measurement constrains.** What Aequitas fixes is the obligations on that choice: measure at the facility for the period described, compute per dimension before collapsing, publish the method, and never let demand or yield enter. **The method itself belongs to the industry, under §1.2.** See §3.4a.
->
-> **And *shared-overhead attribution to co-products* has nothing to attribute** — under §4.5 all capital and overhead accrues to the **asset**, never to the co-products (the barn stays on the operator; hide and beef carry only their own consumables). See `00-strategy/open-problems/OP-17_coproduct_allocation.md` and `00-strategy/open-problems/OP-23_capital_and_pollution.md`.
-
-**The test that separates the two columns, and it is the useful output of the OP-17 (joint production) work:**
-
-> **Did the thing being divided leave a physical trace?**
-> **Where it did — measure.** Feed energy, cracking enthalpy, and a turbine's heat/power trade-off are facts about a process.
-> **Where it did not — declare a convention and say so.** Labour hours and shared overhead leave no trace to an individual output, and no instrument will ever find one.
-
-**The project's hard problem is division, not measurement** — but v0.4 narrows that: it is division **of the untraceable**. See the objections register §0.
-
----
-
-<!-- tag: fnd-s1-2 -->
-### 1.2 What Aequitas is, and what is therefore out of scope
-
-**Aequitas is a system in the sense that capitalism is a system.** It is not an organisation, a protocol, a piece of software, or a body that anyone joins. **It is a set of principles about how cost is accounted for.**
-
-> **Cost accounting is the principle. Records and data collection are praxis, executed by implementers.**
-
-**And it is deliberately narrow in what it asks society to change.** Municipal government, planning bodies, courts and the civil service are kept. **Only their economic nature changes** — they stop being funded by extraction and are credited for the work they do. **The target is oligarchic capture, not administration that works.**
-
-Trust networks operate in the real world and must deal with governments, courts, statutes and regulators. **That is their problem, not this document's.** How an implementer stays lawful where it operates is up to that implementer. Capitalism does not carry a data-protection chapter; banks do.
-
-#### The test for what belongs here
-
-> **If a principle survives at both ends of a dial, the dial is not part of the principle.**
-
-Two thought experiments, both fully compatible with everything in this document:
-
-- **A machine-governed society with zero transparency**, where only the machines know the ledgers and no human ever reads one.
-- **A techno-anarchist society with total transparency and no privacy at all**, every record public to everyone.
-
-**The accounting is identical in both.** Conservation still holds, the integrity constraints still recompute, the residual rule still runs, the disparity ceiling still binds. **Nothing in this document changes.**
-
-**So human-facing transparency is not a foundational question.** It is the §4.7 dial, and §4.7 is right to leave it to the network. The same reasoning applies to storage technology, jurisdiction, corporate form, and compliance posture.
-
-#### Which settings actually vary from one network to the next
-
-**A8 says everything below the axioms may differ between networks, provided the network publishes what it runs. These are the settings that do differ.**
-
-| The setting | Where it is described |
-|---|---|
-| **The weighting model** — what a kilogram, a joule or a tonne of CO₂ costs in hours | §3.3, §3.3a |
-| **The floor, `F`** — how many hours a day count as the work of staying alive | §5.5.1 |
-| **The debit tolerance, ρ** — the multiplier in the consumption gate | §3.0, §5.5.3 |
-| **The privacy practice** — how much anyone can see | §4.7 |
-| **The verification rung** — how hard the network checks a claim | §4.3 |
-| **The list of always-creditable activities** — inside the boundary §2.3 fixes | §2.3 |
-| **The size of the network** | §4.0 |
-
-**A network must publish what it runs, and anyone else must be able to re-compute its claims** (§4.2, §4.7). **Publishing is the condition on the variance, not an extra courtesy.**
-
-#### What this rules out of scope, explicitly
-
-| Out of scope | Where it belongs |
-|---|---|
-| Data-protection and erasure law | The implementer, under its own jurisdiction. Research: `02-research/Law_gdpr-right-to-erasure_v0.1.md` |
-| Data security, backups, key management | A technology problem (§4.8) |
-| Corporate or legal form of a trust network | The implementer |
-| Which cryptography, which database, which protocol | The implementer |
-| Whether the ecosystem converges to one network | A prediction, not a design input (§4.8) |
-| **How a cost constant gets audited** — who replicates, what triggers a review, how a contested constant is handled while contested | The implementer (§3.3a). **The requirement that it be answered is not out of scope**; the five properties in §3.3a are conformance items 16a–16c. |
-| **Which instrument reads a joint process's split**, and over what period | The industry (§3.4a). Same shape: the obligations are fixed here, the method is not. |
-
-**This is not a way of avoiding hard questions.** Every item above is real and someone must answer it. **It is a statement about which document answers it** — and about the failure mode of writing a theory of cost that quietly becomes a theory of software, governance, and compliance because those questions arrived while nobody was drawing the line.
-
-> **The dial test is the standing screening question for anything proposed for these documents, and what it leaves behind is a set of conformance requirements, never an architecture** — [`Aequitas_Conformance_v0.8.md`](Aequitas_Conformance_v0.8.md). **What must be true, never how to build it.**
+*Where this is worked out: §2.6 for which settings vary · §2.3 for which activities a network may credit, and the boundary it may not cross · §4.0 for what a trust network is and how big one may be · §4.7 for what a network owes.*
 
 ---
 
 <!-- tag: fnd-s2 -->
 ## 2. What the axioms imply
 
-**§1 says what cost is and where it attaches. This section defines the four words the rest of the document is built out of** — *criterion*, *debit*, *credit*, and *transaction* — **and states the test every rule here has to pass.** Nothing after this section restates them.
+**§1 says what cost is and where it attaches. This section is everything a reader has to know before the machinery starts.**
+
+| | |
+|---|---|
+| **2.1** | The three criteria every rule here is tested against, and why a system built on axioms needs them |
+| **2.2** | **Debit** |
+| **2.3** | **Credit** |
+| **2.4** | **Transactions and sales** |
+| **2.5** | How to tell a measurement from a convention, and the three conventions this system declares |
+| **2.6** | What this document answers, and what it deliberately leaves to somebody else |
+
+**Nothing after this section restates them.**
 
 <!-- tag: fnd-s2-1 -->
 ### 2.1 The three criteria, and why they are the test
@@ -310,7 +238,7 @@ Two thought experiments, both fully compatible with everything in this document:
 
 | Criterion | How Aequitas satisfies it |
 |---|---|
-| **Universality** | One mechanism only — material flow accounting. No exceptions for professions, nations, or classes. Units (mass, energy, seconds) are measurable identically anywhere in the universe. Coverage extends to non-participants by statistical estimation **on both sides of the ledger** (A7 (universal accounting)). Where a genuine convention is required, §1.1 names it rather than concealing it. |
+| **Universality** | One mechanism only — material flow accounting. No exceptions for professions, nations, or classes. Units (mass, energy, seconds) are measurable identically anywhere in the universe. Coverage extends to non-participants by statistical estimation **on both sides of the ledger** (A7 (universal accounting)). Where a genuine convention is required, §2.5 names it rather than concealing it. |
 | **Decentralization** | No issuer, no central bank, no authoritative institution. Anyone may verify any claim from the event log. The verification ladder (§4.3) begins with peer attestation, which requires no infrastructure and therefore no permission. Governance is core-immutable with competing open variance. **Cost constants are the weakest point of this criterion, and §3.3a says so rather than claiming otherwise** — the auditing practice is a network's own design, held to five published properties (conformance 16a–16c), and no network has yet demonstrated a working one. |
 | **Fecundity** | The verification ladder *pulls* technological development (§4.3). Retroactive re-weighting (§3.3) creates permanent demand for better science. Regulators invert into services businesses want (§5.3). Onboarding is individually rational (§4.8). Pledges give surplus a purpose (§4.6). **Every co-product allocation is an open scientific question that better instruments improve (§3.4a).** |
 
@@ -407,7 +335,7 @@ A baker sells a loaf. Three things were recorded while it was made.
 
 **This is a threshold, not a filing system.** An activity qualifies if it is **at least one** of the three. **Which one it is, is never recorded, and it never changes the figure.**
 
-**An hour that is all three is still one hour.** An apprentice plumber's single hour turns copper into working plumbing, fixes a customer's pipes, and teaches them a trade. **That is production, a service, and enrichment, in the same hour. It credits as one hour.** Splitting it would need a convention nobody can measure (§1.1), and there is no reason to want one.
+**An hour that is all three is still one hour.** An apprentice plumber's single hour turns copper into working plumbing, fixes a customer's pipes, and teaches them a trade. **That is production, a service, and enrichment, in the same hour. It credits as one hour.** Splitting it would need a convention nobody can measure (§2.5), and there is no reason to want one.
 
 > **The three categories decide whether an hour is creditable. They never decide how much it credits.** No rule in this system may credit production at one rate and enrichment at another, or divide a single hour between them (§4.5).
 
@@ -471,6 +399,111 @@ A shop holds a bicycle. Its record carries **18 kg** of steel and aluminium, **4
 | The shop's collection fuel | 3 h | **0 h.** The shop burned it, so the shop keeps it |
 
 **So a second-hand bicycle starts cheap for a new owner and grows heavier the longer they hold it.** No margin was taken, no money is visible to the books at all (§4.8), and the only thing that moved was an object and what it carries.
+
+<!-- tag: fnd-s2-5 -->
+### 2.5 Measurement and convention
+
+**Some numbers this system needs are facts about the world. Others are choices. The two must never be confused, and the way to tell them apart is one question.**
+
+> **Did the thing being divided leave a physical trace?**
+>
+> **Where it did — measure it.** Feed energy, the heat needed to crack crude oil, and a turbine's trade-off between heat and power are facts about a process.
+>
+> **Where it did not — declare a convention and say so.** Labour hours and shared overhead leave no trace pointing at any one output, and no instrument will ever find one.
+
+**A convention that is declared is not an ad-hoc rule. A convention disguised as a measurement is.** That is the whole reason this section exists: **every choice the system makes is named here rather than buried in an implementation.**
+
+#### The three conventions this system declares
+
+| The quantity | What it is | The rule |
+|---|---|---|
+| **A team's credit, split across its members** | **Not a convention at all.** It dissolves | Credit is time worked (§2.3), so **each member is credited their own hours.** Nobody ever needs a figure saying the welder caused 40% of the bridge, because credit was never a share of the output |
+| **One process's labour, split across its several outputs** | **A convention, on a measurable basis** | **The labour divides in the same proportions as the process's measured material split** (§3.4a). It introduces no new basis and nothing new to game |
+| **A durable asset's creation-cost, split across its holders** | **A convention, on a measurable basis** | **Holding time is a physical trace, so the split is measured rather than invented:** your share is your holding time divided by the total holding time over the asset's whole life (§4.5) |
+
+##### An example, with the numbers
+
+A farmer spends **8 hours** on one steer. The animal yields beef, hide, tallow and bone. **The 8 hours left no trace saying which output they went to** — the farmer did not spend two hours "on the hide."
+
+**So the hours ride the material split, which was measured.**
+
+| Output | Measured share of the feed | Hours it carries |
+|---|---|---|
+| Beef | 78% | 6.24 h |
+| Tallow | 9% | 0.72 h |
+| Hide | 7% | 0.56 h |
+| Bone | 6% | 0.48 h |
+| **Total** | **100%** | **8.00 h** |
+
+> **The farmer is credited 8 hours whatever the split says.** The convention decides only **what each output's debit-cost reads**, never anybody's credit.
+
+#### Two quantities that look like they belong here and do not
+
+**Splitting one process's debit across its several outputs is not a free convention, and not a pure measurement either.** The process really did divide the inputs, and that division is measurable. **But reading it means choosing an instrument, a period, and a boundary, and two honest choices can give different figures.**
+
+> **It is a choice that measurement constrains.** What this document fixes is the obligations on the choice: measure at the facility, for the period described, per dimension before collapsing, publish the method, and never let demand or yield enter. **The method itself belongs to the industry** (§2.6). Worked in full in §3.4a.
+
+**And splitting shared overhead across outputs has nothing to split.** Under §4.5 **all capital and overhead accrues to the asset**, never to the outputs. The barn stays with the farm's operators; the hide and the beef carry only what they themselves consumed. See [`OP-17_coproduct_allocation.md`](open-problems/OP-17_coproduct_allocation.md) and [`OP-23_capital_and_pollution.md`](open-problems/OP-23_capital_and_pollution.md).
+
+> **The project's hard problem is division, and specifically division of what left no trace.** See the objections register, §0.
+
+<!-- tag: fnd-s2-6 -->
+### 2.6 What this document answers, and what it does not
+
+**Aequitas is a system in the sense that capitalism is a system.** It is not an organisation, a protocol, a piece of software, or a body that anyone joins. **It is a set of principles about how cost is accounted for.**
+
+> **Cost accounting is the principle. Records and data collection are praxis, carried out by implementers.**
+
+**And it is deliberately narrow in what it asks society to change.** Municipal government, planning bodies, courts and the civil service are kept. **Only their economic nature changes** — they stop being funded by extraction and are credited for the work they do. **The target is oligarchic capture, not administration that works.**
+
+Trust networks operate in the real world and must deal with governments, courts, statutes and regulators. **That is their problem, not this document's.** How an implementer stays lawful where it operates is up to that implementer. **Capitalism does not carry a data-protection chapter. Banks do.**
+
+#### The test for what belongs here
+
+> **If a principle survives at both ends of a dial, the dial is not part of the principle.**
+
+**Two thought experiments, both fully compatible with everything in this document.**
+
+- **A machine-governed society with no transparency at all**, where only the machines read the ledgers and no human ever does.
+- **A society with total transparency and no privacy at all**, every record public to everyone.
+
+**The accounting is identical in both.** Conservation still holds, the integrity checks still recompute, the leftover rule still runs, the disparity ceiling still binds. **Nothing in this document changes.**
+
+**So how much people can see is not a foundational question.** It is a dial, and §4.7 is right to leave it to the network. **The same reasoning applies to storage technology, jurisdiction, corporate form, and how an implementer handles the law.**
+
+#### Which settings vary from one network to the next
+
+**A8 says everything below the axioms may differ between networks, provided the network publishes what it runs. These are the settings that do differ.**
+
+| The setting | Where it is described |
+|---|---|
+| **The weighting model** — what a kilogram, a joule or a tonne of CO₂ costs in hours | §3.3, §3.3a |
+| **The floor, `F`** — how many hours a day count as the work of staying alive | §5.5.1 |
+| **The debit tolerance, ρ** — the multiplier in the consumption gate | §3.0, §5.5.3 |
+| **The privacy practice** — how much anyone can see | §4.7 |
+| **The verification rung** — how hard the network checks a claim | §4.3 |
+| **The list of always-creditable activities** — inside the boundary §2.3 fixes | §2.3 |
+| **The size of the network** | §4.0 |
+
+**A network must publish what it runs, and anyone else must be able to re-compute its claims** (§4.2, §4.7). **Publishing is the condition on the variance, not an extra courtesy.**
+
+#### What is out of scope, explicitly
+
+| Out of scope | Whose question it is |
+|---|---|
+| Data-protection and erasure law | The implementer, under its own jurisdiction. Research: [`Law_gdpr-right-to-erasure_v0.1.md`](../02-research/Law_gdpr-right-to-erasure_v0.1.md) |
+| Data security, backups, key management | A technology problem (§4.8) |
+| The corporate or legal form of a trust network | The implementer |
+| Which cryptography, which database, which protocol | The implementer |
+| Whether the ecosystem converges to one network | A prediction, not a design input (§4.8) |
+| **How a cost constant gets audited** — who replicates, what triggers a review, how a contested constant is handled while it is contested | The implementer (§3.3a). **That it must be answered is not out of scope**; the five properties in §3.3a are conformance items 16a–16c |
+| **Which instrument reads a joint process's split**, and over what period | The industry (§3.4a). Same shape: the obligations are fixed here, the method is not |
+
+**This is not a way of avoiding hard questions.** Every item above is real and somebody must answer it. **It is a statement about which document answers it.**
+
+**And it guards against a specific failure.** A theory of cost quietly becomes a theory of software, governance and compliance, because those questions arrive while nobody is drawing the line.
+
+> **The dial test is the standing screening question for anything proposed for these documents. What it leaves behind is a set of conformance requirements, never an architecture** — [`Aequitas_Conformance_v0.8.md`](Aequitas_Conformance_v0.8.md). **What must be true, never how to build it.**
 
 ---
 
@@ -684,7 +717,7 @@ Ten people each work **2,000 hours** in a year for one co-operative. The co-oper
 | **A durable asset's creation-cost** — a hospital building, a plant, tooling | **§4.5**, split by *holding time*, so a new hire bears about zero | §4.5 exists to stop an entry toll on capital-heavy essential work. **That is property debit on an asset. This section is about consumption and operating debit**, which §3.2 already makes permanent on its causer. Different debit, different rule, no conflict. |
 | **A member's own credit** | **A3 (non-fungibility)** | Credit never moves, in either direction. Members are credited their own hours whatever the organisation does. **This section divides debit only.** |
 
-> **Stated honestly: this is a declared convention, not a measurement** (§1.1). Hours worked leave no trace pointing at any particular debit the organisation took on. **Hours are chosen because they add no new lever** — they are already recorded for credit, already capped at 24 a day by IC-7, and already the basis §5.1 and §4.6 use. **A different basis, such as an equal split or a seniority weighting, would be a new thing to game.**
+> **Stated honestly: this is a declared convention, not a measurement** (§2.5). Hours worked leave no trace pointing at any particular debit the organisation took on. **Hours are chosen because they add no new lever** — they are already recorded for credit, already capped at 24 a day by IC-7, and already the basis §5.1 and §4.6 use. **A different basis, such as an equal split or a seniority weighting, would be a new thing to game.**
 >
 > **This convention may also close the residue §3.4a leaves open** — apportioning a jointly-*caused* debit across a team. The two questions have the same shape and now have the same answer. **Not claimed as closed until it is checked against §3.4a's case directly.**
 
@@ -757,7 +790,7 @@ So a coverage figure is a dated reading with a stated basis, exactly like every 
 
 #### Whose problem it is
 
-**A network cannot operate without answering this**, and no two networks will answer it the same way. That is the §1.2 test: **state what must be true, never how to build it.** The same ruling was made for split methods (§3.4a) and for privacy practice (§4.7).
+**A network cannot operate without answering this**, and no two networks will answer it the same way. That is the §2.6 test: **state what must be true, never how to build it.** The same ruling was made for split methods (§3.4a) and for privacy practice (§4.7).
 
 > **Auditing cost constants is one of the problems a trust network exists to solve.** How it does so — who replicates, how replication is commissioned, what triggers a review, how a contested constant is handled while it is contested — is the network's design, published and checkable like everything else it does.
 
@@ -794,7 +827,7 @@ So a coverage figure is a dated reading with a stated basis, exactly like every 
 
 **⚠️ Allocation is only partly a resolution problem.** Dividing **physical inputs** is largely a resolution problem: the process did divide them, and better instruments read that division more finely (§3.4a). *Largely, not entirely* — better instruments narrow the range but do not pick the instrument, the period, or the sub-process boundary, and those choices are the industry's to make (§3.4a). What is **not** resolvable at all is dividing quantities the process **never physically divided**: labour hours across co-products, shared overhead, and joint responsibility across a team.
 
-> **The distinguishing test is whether the divided thing left a physical trace.** Where it did, measure. Where it did not, declare a convention (§1.1) and say so.
+> **The distinguishing test is whether the divided thing left a physical trace.** Where it did, measure. Where it did not, declare a convention (§2.5) and say so.
 
 <!-- tag: fnd-s3-4a -->
 ### 3.4a Joint production — dividing one process's debit among several outputs
@@ -835,7 +868,7 @@ Some processes produce several things at once from one pool of inputs. A steer e
 | The **method must be published**, with its version, so anyone can re-run it (§4.7) | The method itself |
 | It may **never depend on demand, desirability, or yield** (see below) | — |
 
-**Why the method cannot be fixed here.** Determining how a process divides its inputs requires knowing that process. Oat milling has many stages — curing, cleaning, dehusking, aspiration, kilning, cutting — and a batch cleaned on Monday may be split across several dehusking runs on different days. **No single model fits every industrial process, and a document that tried to write one would be wrong in most industries and unfalsifiable in the rest.** This is the same scope rule §1.2 applies everywhere else: **state what must be true, never how to build it.** The people competent to set a milling method are millers; the people competent to check it are other millers.
+**Why the method cannot be fixed here.** Determining how a process divides its inputs requires knowing that process. Oat milling has many stages — curing, cleaning, dehusking, aspiration, kilning, cutting — and a batch cleaned on Monday may be split across several dehusking runs on different days. **No single model fits every industrial process, and a document that tried to write one would be wrong in most industries and unfalsifiable in the rest.** This is the same scope rule §2.6 applies everywhere else: **state what must be true, never how to build it.** The people competent to set a milling method are millers; the people competent to check it are other millers.
 
 **So the split is a choice that measurement constrains, not a number read straight off nature.** Two honest methods can give different figures. What stops that becoming a free hand is the four obligations above, plus the audit below.
 
@@ -952,7 +985,7 @@ Two things persist regardless of remediation: the structure's **construction and
 <!-- tag: fnd-s4-0 -->
 ### 4.0 What a trust network is, and what this section covers
 
-**Aequitas is a set of principles about how cost is counted. It is not an organisation, it has no members, and it cannot do anything** (§1.2). It is a system in the same sense that capitalism is a system. Banks and firms carry out capitalism. **Trust networks carry out Aequitas.**
+**Aequitas is a set of principles about how cost is counted. It is not an organisation, it has no members, and it cannot do anything** (§2.6). It is a system in the same sense that capitalism is a system. Banks and firms carry out capitalism. **Trust networks carry out Aequitas.**
 
 **Everything in this section is work that a trust network does.** Where a rule reaches across two networks, the text says so.
 
@@ -960,7 +993,7 @@ Two things persist regardless of remediation: the structure's **construction and
 >
 > **A8 is about who may change the rules. It is not about how big anyone is.**
 >
-> A trust network may cover one valley, one trade, one country, several continents, or the world. **Nothing in these documents fixes the size of a network, and nothing should.** Size is one more dial under §1.2, and the accounting is identical at both ends of it.
+> A trust network may cover one valley, one trade, one country, several continents, or the world. **Nothing in these documents fixes the size of a network, and nothing should.** Size is one more dial under §2.6, and the accounting is identical at both ends of it.
 >
 > **One place in this document depends on that.** §4.8 expects networks to **federate and merge toward a single network over time**, rather than settling into separate regional systems.
 >
@@ -1120,7 +1153,7 @@ A network publishes its rule for translation work: **the translated text exists,
 
 **§4.5 states the other half of this:** the accounting covers what is claimed and attested, and everything else is life. **That says the system need not capture everything. This says a network must state in advance what it does capture.**
 
-**How a network decides which rules to write is its own business.** It may take proposals from its subscribers, from a trade body, or from nobody at all. **Aequitas does not say, and cannot** (§1.2, A8).
+**How a network decides which rules to write is its own business.** It may take proposals from its subscribers, from a trade body, or from nobody at all. **Aequitas does not say, and cannot** (§2.6, A8).
 
 ---
 
@@ -2061,4 +2094,4 @@ A3 therefore does three separate defensive jobs: it forbids accumulation (§5.1)
 
 ---
 
-*End of v0.32.*
+*End of v0.33.*

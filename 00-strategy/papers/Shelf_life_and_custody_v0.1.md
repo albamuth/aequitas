@@ -4,7 +4,7 @@
 > **Date:** 2026-08-23
 > **Raised and ruled by:** the author.
 > **Status:** 🟡 **Two parts confirmed as already-written. One is a new mechanism, built and tested as ruled.** A softer version I proposed was overturned by the author the same day — see §3. **One hole stays open (§4, row 2).**
-> **Reads against:** `Aequitas_Foundations_v0.32.md` §3.2, §3.2b, §3.6, §4.4, §4.5, §4.5, A8 · built in `06-simulation/statera/statera.py` and `06-simulation/statera/chains.py`
+> **Reads against:** `Aequitas_Foundations_v0.33.md` §3.2, §3.2b, §3.6, §4.4, §4.5, §4.5, A8 · built in `06-simulation/statera/statera.py` and `06-simulation/statera/chains.py`
 
 ---
 
@@ -97,7 +97,7 @@
 | **Who games this?** | ⚠️ Named in §4. **One genuinely open hole — nothing compels a date to be recorded.** |
 | **Paul Glover?** | ✅ Nothing depends on an enthusiast. |
 | **Objective function?** | ✅ None. Nothing is maximised. |
-| **Physical trace** | ✅ **Spoilage is measurable, so measure it.** The exact date is a convention with a measurable basis — the same status as §3.3's natural-remediation baseline — and should be declared as one under §1.1 rather than presented as a hard fact. |
+| **Physical trace** | ✅ **Spoilage is measurable, so measure it.** The exact date is a convention with a measurable basis — the same status as §3.3's natural-remediation baseline — and should be declared as one under §2.5 rather than presented as a hard fact. |
 
 ---
 

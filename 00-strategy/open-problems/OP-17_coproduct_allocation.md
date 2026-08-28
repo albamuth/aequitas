@@ -7,7 +7,7 @@
 **Version:** v3 — 2026-08-01 (v1 and v2 superseded same day, unreleased; see §10)
 **Register:** `Aequitas_Objections_v0.5.md` — A1 / B7
 **Research:** `GLOSSARY.md#src-joint-production-allocation-problem` · `GLOSSARY.md#src-auditor-independence`
-**Amends:** Foundations §1.1 (row 1 **deleted**), §3.3, §3.4 (**narrowed**), §4, §10 · EventLog §7 (IC-10, IC-11, IC-12), §13
+**Amends:** Foundations §2.5 (row 1 **deleted**), §3.3, §3.4 (**narrowed**), §4, §10 · EventLog §7 (IC-10, IC-11, IC-12), §13
 **Stress-tested:** 2026-08-01, verdict *passes with changes* — changes applied in this version.
 
 ---
@@ -127,12 +127,12 @@ The extraction-condensing curve is directly metered. Mass is inapplicable, and t
 
 The farmer's eight hours were spent on *the animal*, not on the hide. Splitting those hours by tissue-deposition energetics assumes labour was expended in proportion to metabolic energy, which is an assumption, not a measurement — the same unjustified proportional inheritance §6 flags for overhead, applied to the input the whole system is denominated in.
 
-**So OP-17 resolves the material and energy half only. The labour half is genuinely joint, and it belongs to OP-18** — where Ellerman's argument already says joint responsibility is non-decomposable, and where hours-worked remains a *declared convention* in Foundations §1.1.
+**So OP-17 resolves the material and energy half only. The labour half is genuinely joint, and it belongs to OP-18** — where Ellerman's argument already says joint responsibility is non-decomposable, and where hours-worked remains a *declared convention* in Foundations §2.5.
 
 > **🔴 Consequence, and it changes the roadmap: C3 is no longer blocked on OP-17. It is blocked on OP-18.**
 > C3 needs per-product **labour hours** — that is precisely the layer EXIOBASE carries and almost nobody else collects, and it is the layer this rule cannot split. The critical path moves.
 
-This is stated rather than papered over because papering over it is exactly what §1.1 exists to prevent.
+This is stated rather than papered over because papering over it is exactly what §2.5 exists to prevent.
 
 ---
 
@@ -234,7 +234,7 @@ The stress test charged the rule with being **regressive**: a producer without m
 
 **USEEIO allocates by price. It is definitively unusable as a source of truth**, though still usable as data.
 
-- Price-derived sector splits must be flagged **`declared` basis, never `measured`.** Best available, honestly labelled — §1.1's discipline applied to imported data.
+- Price-derived sector splits must be flagged **`declared` basis, never `measured`.** Best available, honestly labelled — §2.5's discipline applied to imported data.
 - **EXIOBASE's physical layers remain sound.** Its embodied-labour-hours layer is now doubly important, because §5 hands the labour split to OP-18 and EXIOBASE is where that data lives.
 - **Highest-value first targets: livestock and refining** — published process energetics, large sectors, and the sharpest contrast with price allocation.
 

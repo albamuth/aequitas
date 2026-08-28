@@ -48,7 +48,7 @@ Sorting them apart dissolves three of the four classes.
 
 **Fraud is the class that needs an actual finding of fact**, and the analogy holds here too: **science is not purely self-correcting about fraud either.** Replication catches error; it does not catch a fabricated dataset that replicates because it was designed to. Science answers with **investigation and retraction, by an institution** — a university integrity office, a funder, a journal.
 
-**Aequitas answers the same way, and §4.7 already said so:** *courts, small claims, contract law, and ordinary social pressure continue to exist and continue to handle fraud between people.* Per **§1.2**, how an implementer engages them is praxis, not foundations.
+**Aequitas answers the same way, and §4.7 already said so:** *courts, small claims, contract law, and ordinary social pressure continue to exist and continue to handle fraud between people.* Per **§2.6**, how an implementer engages them is praxis, not foundations.
 
 **What the accounting contributes is upstream of that.** IC-1…IC-9 make a fabricated record *arithmetically expensive* — a lie must balance mass, balance energy, close origin, close fate, and survive a counterparty's recomputation. **The remaining fraud is the fraud that is internally consistent, which is exactly OP-26's coverage question, answered by measurement against the world rather than by adjudication.**
 

@@ -75,4 +75,4 @@ The axiom read *"the **price** of anything is its true, current-best-estimate ma
 ---
 *Status: settled — wording repaired v0.21*
 *Supersedes `99-archive/price-equals-cost.md`*
-*Source: `00-strategy/Aequitas_Foundations_v0.32.md` A5, §4.5, §5.1 · `99-archive/A5_repair_PLAN_v0.1.md`*
+*Source: `00-strategy/Aequitas_Foundations_v0.33.md` A5, §4.5, §5.1 · `99-archive/A5_repair_PLAN_v0.1.md`*

@@ -1,9 +1,9 @@
 # OP-18 — Labour & team credit (resolution note)
 
-> **Status:** ✅ **CLOSED 2026-08-05 as the C3 blocker.** Foundations → v0.6 (§1.1, §3.4a, §10, §12); Objections → v0.7 (B9, status board, §0). Opened and closed same day.
+> **Status:** ✅ **CLOSED 2026-08-05 as the C3 blocker.** Foundations → v0.6 (§2.5, §3.4a, §10, §12); Objections → v0.7 (B9, status board, §0). Opened and closed same day.
 > **Resolution:** (β) team-credit **dissolves** under A2 (credit = own hours). (α) labour-across-co-products = **declared convention: labour rides the process's material split**; co-product cost is **embodied input, never scarcity** (Method 2 yield-weighting rejected as price-rationing). Residue: jointly-caused debit across a team — minor, parked (sibling to OP-25).
 > **Attacks:** A1's attribution claim, A2, C1's agent field. **Blocks:** C3 (needs per-product labour hours).
-> **Sources:** [Ellerman](http://et.worldeconomicsassociation.org/files/WEA-ET-5-1-Ellerman.pdf) · `GLOSSARY.md#src-ellerman-labor-theory-of-property` · Foundations §1.1, §3.4a, §6.
+> **Sources:** [Ellerman](http://et.worldeconomicsassociation.org/files/WEA-ET-5-1-Ellerman.pdf) · `GLOSSARY.md#src-ellerman-labor-theory-of-property` · Foundations §2.5, §3.4a, §6.
 > **Companion:** the recursion sim (`06-simulation/allocation-engine/RECURSION_RESULTS.md`) cleared the *materials/energy* split; this is the *labour* layer it explicitly did not touch.
 
 ---
@@ -55,4 +55,4 @@ Apportioning a **jointly-caused debit** (team pollution or later-discovered harm
 
 ---
 
-*Closed. Foundations v0.6 §1.1/§3.4a/§10/§12; Objections v0.7 B9. C3 unblocked → next.*
+*Closed. Foundations v0.6 §2.5/§3.4a/§10/§12; Objections v0.7 B9. C3 unblocked → next.*

@@ -49,7 +49,7 @@ A *statera* is the balance-scale the goddess Aequitas holds on Roman coinage. Th
 | A way to test whether a mechanism in the theory survives contact with a population | A first version of Aequitas |
 | A thing that can fail, and reports failure as a result | A demonstration, a product, or a protocol |
 
-The distinction comes from Foundations §1.2 — the scope section, which rules that Aequitas is a set of principles about how cost is accounted for, and that software, storage and protocol are the implementer's business. **A simulation kernel that starts being treated as a prototype ledger has breached that scope.**
+The distinction comes from Foundations §2.6 — the scope section, which rules that Aequitas is a set of principles about how cost is accounted for, and that software, storage and protocol are the implementer's business. **A simulation kernel that starts being treated as a prototype ledger has breached that scope.**
 
 Statera exists because nothing else in `06-simulation/` was the kernel. Every prior script wrote its own credit accrual, its own gate, and its own agents. That is why each answers one question and none of them join up.
 

@@ -13,7 +13,7 @@
 
 This isn't theory — it's about **making the idea land with ordinary readers.** It's the most widely-read popular book about an economy without money, and it gets a general audience past the reflex objection — *"but what would make anyone work?"* — faster than any argument. It's useful for the public-facing writing, **not** for the technical spec.
 
-It bears mainly on the question of how *appreciation and recognition* work in Aequitas without curdling into a popularity contest — the system's open problem about how a maker's reputation is registered and whether it can be bought. See [Foundations §6.3 (feedback channels)](../00-strategy/Aequitas_Foundations_v0.32.md) and the open problem in [Foundations §10](../00-strategy/Aequitas_Foundations_v0.32.md).
+It bears mainly on the question of how *appreciation and recognition* work in Aequitas without curdling into a popularity contest — the system's open problem about how a maker's reputation is registered and whether it can be bought. See [Foundations §6.3 (feedback channels)](../00-strategy/Aequitas_Foundations_v0.33.md) and the open problem in [Foundations §10](../00-strategy/Aequitas_Foundations_v0.33.md).
 
 ## Key findings
 
@@ -28,7 +28,7 @@ It bears mainly on the question of how *appreciation and recognition* work in Ae
 
 - **"An organisational option" is the single most useful borrowed sentence for public writing.** It *is* Aequitas's own claim: what limits us isn't our ability to produce, it's how we keep the books. Aequitas takes that option *now*, without needing replicators.
 - **Reputation-as-motivation is Aequitas's recognition channel in fictional form.** Wherever readers find Saadia's version unconvincing is free user-testing for Aequitas's own worry — that recognition could harden into a popularity-driven aristocracy.
-- **Publicly-owned infrastructure** matches Aequitas's account of how roads and utilities get provided without taxes — the people who use them carry a share of their cost by using them, and the civil servants who run them are credited for their work directly. See [Foundations §7.4 (taxation is unnecessary)](../00-strategy/Aequitas_Foundations_v0.32.md).
+- **Publicly-owned infrastructure** matches Aequitas's account of how roads and utilities get provided without taxes — the people who use them carry a share of their cost by using them, and the civil servants who run them are credited for their work directly. See [Foundations §7.4 (taxation is unnecessary)](../00-strategy/Aequitas_Foundations_v0.33.md).
 - The psychological criticism is **a direct warning:** removing material scarcity does not remove status competition, and a system where recognition itself *is* the status prize might actually intensify it.
 
 ## What it gets wrong / limitations

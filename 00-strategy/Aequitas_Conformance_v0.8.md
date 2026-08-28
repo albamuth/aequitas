@@ -3,7 +3,7 @@
 
 > **Version:** 0.8 · **Date:** 2026-08-28
 > **Audience: implementers.** Anyone building a trust network.
-> **Companion:** [`Aequitas_Foundations_v0.32.md`](Aequitas_Foundations_v0.32.md) — the system itself, and the argument for every row below. **Where the two differ, Foundations governs.**
+> **Companion:** [`Aequitas_Foundations_v0.33.md`](Aequitas_Foundations_v0.33.md) — the system itself, and the argument for every row below. **Where the two differ, Foundations governs.**
 > **Version history is kept separately and is not published**, so this document carries only what is currently true.
 > **Two numbers are retired and are never reused: the bare `17`, and `14c`.**
 
@@ -14,7 +14,7 @@
 
 > **These documents state what must be true. They never state how to build it.**
 
-Aequitas is an economic system, not a data-architecture project. A schema, a storage design, a transport protocol and a choice of cryptography are praxis, and they belong to whoever implements (Foundations §1.2).
+Aequitas is an economic system, not a data-architecture project. A schema, a storage design, a transport protocol and a choice of cryptography are praxis, and they belong to whoever implements (Foundations §2.6).
 
 **But an implementer is a real audience with a real need. Someone building a trust network has to know which system they are implementing.** That need is met by a list of things that must hold — never by an architecture.
 
@@ -65,7 +65,7 @@ An implementation is Aequitas if, and only if, all of the following hold. Each i
 | 8 | **No account claims more than 24 hours of activity per 24 hours.** | A2, §5.5.5 · *IC-7* |
 | 9 | **Cumulative pledges never exceed lifetime earned credit**, 1:1. **The pledging budget is spent when the pledge is made, not when the work happens, and there is no path that returns it.** | §4.6 · *IC-8, IC-9* |
 | 10 | A debit is a **vector**. Any division is computed **per dimension, before collapsing** to a single figure. | §3.2a |
-| 10a | A joint process's debit divides by **where the process physically sent its inputs**, measured at that facility for the period described, with a model used only where measurement is absent. The **method is published with its version**, so anyone can re-run it. **No split may depend on demand, desirability, or yield.** The method itself is the industry's to set, not this document's. | §3.4a, §1.2, §4.7 |
+| 10a | A joint process's debit divides by **where the process physically sent its inputs**, measured at that facility for the period described, with a model used only where measurement is absent. The **method is published with its version**, so anyone can re-run it. **No split may depend on demand, desirability, or yield.** The method itself is the industry's to set, not this document's. | §3.4a, §2.6, §4.7 |
 | 10b | **No output's share of any dimension is negative.** A negative result is a measurement error or a badly drawn process boundary — never a thing containing less than nothing. | §3.4a · *IC-10* |
 | 10c | **Per dimension, the outputs' shares add up to exactly what the process took in.** Nothing is created or lost in a split. | §3.4a · *IC-11* |
 | 10d | **Splitting a process stage by stage gives the same answer as splitting it whole**, and a divided estimate's parts add up to the coarser figure they came from. **This is what makes a redrawn boundary show up as an arithmetic disagreement rather than an argument.** | §3.4a, §4.4 · *IC-12* |
@@ -81,8 +81,8 @@ An implementation is Aequitas if, and only if, all of the following hold. Each i
 | 16 | **Every estimating number and every method the implementer uses is published**, so anyone can re-run it. **Every published figure states the extent it covers**, so a bare pass is never a result. | §4.7, §4.3 |
 | 16a | **Every cost constant carries its method, its version, and its uncertainty interval**, and the implementer **states which constants it has not reviewed and how old each reading is.** | §3.3a, §4.4 |
 | 16b | **A constant may re-weight history only after two unaffiliated replications.** Review is triaged by **magnitude × concentration of beneficiary**, never magnitude alone. **Membership composition is public**, so a network concentrated in the sector it audits is detectable. | §3.3a |
-| 16c | **The implementer can show how it audits its cost constants.** *How* is its own design (§1.2); **having no answer is not conforming.** | §3.3a, §1.2 |
-| **16d** | **For every kind of work it credits, the implementer publishes what evidence that work requires**, before crediting any of it. **It credits no kind of work for which it has published no rule.** *Which* kinds it covers is its own choice (§1.2, A8); **having no published rule for something it credits is not conforming.** | **§4.2, §4.5, §4.7** |
+| 16c | **The implementer can show how it audits its cost constants.** *How* is its own design (§2.6); **having no answer is not conforming.** | §3.3a, §2.6 |
+| **16d** | **For every kind of work it credits, the implementer publishes what evidence that work requires**, before crediting any of it. **It credits no kind of work for which it has published no rule.** *Which* kinds it covers is its own choice (§2.6, A8); **having no published rule for something it credits is not conforming.** | **§4.2, §4.5, §4.7** |
 | **17a** | **Every human inside the extent the books claim to cover is in those books, subscriber or not**, with credit **and** debit estimated on both sides. **The extent is a region, a sector or a population — never the set of subscribers.** A non-participant can **neither draw on that position nor be charged for it.** A position becomes **realizable** — able to act on what a person may consume — only on a verified account whose estimates have been superseded by observation. | **A7, §4.1, §4.4, §4.4** |
 | **17b** | **When a cost constant, a joint split, or a coverage figure improves, every affected record in history recomputes.** A figure is a dated reading, never a verdict. **This changes future debit-room only, and never the validity of a completed act** (row 11). | **A4, A6, §3.3** |
 
@@ -114,12 +114,12 @@ An implementation is Aequitas if, and only if, all of the following hold. Each i
 | Not here | Where it belongs |
 |---|---|
 | Field names, record shapes, schema versions | The implementer |
-| Storage, indexing, backups, key management | The implementer (§1.2) |
-| Transport protocol and choice of cryptography | The implementer (§1.2) |
+| Storage, indexing, backups, key management | The implementer (§2.6) |
+| Transport protocol and choice of cryptography | The implementer (§2.6) |
 | Privacy practice | A network choice (§5.3a) |
 | The values of ρ and the self-care floor `F` | Network dials (§3.5, §6.1b, A8) |
-| Corporate form, jurisdiction, compliance posture | The implementer (§1.2) |
-| **How a network schedules, staffs or samples its checking** | The implementer (§1.2) |
+| Corporate form, jurisdiction, compliance posture | The implementer (§2.6) |
+| **How a network schedules, staffs or samples its checking** | The implementer (§2.6) |
 | **What a verification rung costs to run** | **Already in the log.** Audit work is credited work, so the hours are events and a query returns them (§4.7). **A separate published cost figure is a summary table, and a summary table is database design.** |
 
 > ### The standing screen: assume the engineering works
@@ -240,7 +240,7 @@ A network covers one valley. A satellite survey puts the valley's wheat at **88,
 
 **The §4 have-versus-achieve test.** A book either covers non-participants or it does not. A system either recomputes history or it does not. **Neither asks anyone to succeed at anything** — 17a does not require the estimate to be accurate, and 17b does not require the science to be right.
 
-**The §1 dial test.** Both survive at both ends of every dial: the machine-governed society with zero transparency and the fully transparent one both cover non-participants and both recompute (Foundations §1.2).
+**The §1 dial test.** Both survive at both ends of every dial: the machine-governed society with zero transparency and the fully transparent one both cover non-participants and both recompute (Foundations §2.6).
 
 #### A8 still needs no row
 

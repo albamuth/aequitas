@@ -200,7 +200,7 @@ The author has ADHD and a long day is the normal case. **These are constraints, 
 |---|---|
 | **Pyodide is slow or will not load the kernel** | Phase 3 is one chart and finds out in a day, before any UI exists. |
 | **The GUI grows a rule of its own** | The hard rule in Decision 1, plus a test: **the browser and the CLI must produce identical numbers from the same scenario file.** If they ever diverge, the GUI has grown a rule. |
-| **This turns into a product** | §1.2. It is an instrument for testing a theory. **It is not a first version of Aequitas**, and the moment it is treated as one, the scope ruling has been breached again. |
+| **This turns into a product** | §2.6. It is an instrument for testing a theory. **It is not a first version of Aequitas**, and the moment it is treated as one, the scope ruling has been breached again. |
 | **Scenario sprawl** | A scenario earns its place by naming which axiom, mechanism, or open problem it could falsify. One that cannot fail interestingly is a demo. |
 | **The 15 MB first load loses readers** | A real loading state that says what is happening, aggressive caching, and a static screenshot in the README for people who will not wait. |
 

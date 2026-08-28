@@ -5,7 +5,7 @@
 > **Date:** 2026-08-23
 > **Status:** Author ruling, 2026-08-23.
 > **Supersedes:** `99-archive/Aequitas_Simulation_Roadmap_v0.1.md`. v0.1 read the author's eight examples as a list of eight deliverables and proposed a build order through them. **That was the wrong shape.** The author's correction: *"the goal would be simulators that could test any of those conditions, and thousands more."* **The deliverable is a configurable engine; a scenario is a configuration, not a script.** This version is rebuilt around that: what the engine must be able to express, how it decomposes, what the existing scripts become, and the discipline that stops it turning into a framework nobody uses.
-> **Companions:** `Aequitas_Foundations_v0.32.md` §1.2/§9 (scope, conformance list), `Aequitas_Strategy_v0.6.md` §2, `06-simulation/scenario-suite/scenario_suite_METHOD.md`.
+> **Companions:** `Aequitas_Foundations_v0.33.md` §2.6/§9 (scope, conformance list), `Aequitas_Strategy_v0.6.md` §2, `06-simulation/scenario-suite/scenario_suite_METHOD.md`.
 
 ---
 
@@ -15,7 +15,7 @@
 >
 > **The code to build is a simulator of an economy — not a trust-network database, and not a set of one-off scripts.** It must be able to test any starting condition anyone thinks of, including thousands nobody has thought of yet.
 
-**A simulator is in scope for the same reason a schema is not.** Apply §1.2's dial test — *if a principle survives at both ends of a dial, the dial is not part of the principle*. A simulation is not a dial. **It is the instrument that tells you whether a principle survives one.**
+**A simulator is in scope for the same reason a schema is not.** Apply §2.6's dial test — *if a principle survives at both ends of a dial, the dial is not part of the principle*. A simulation is not a dial. **It is the instrument that tells you whether a principle survives one.**
 
 **The eight scenarios the author named are examples, not a backlog.** They are useful as a *coverage test on the engine's design*: if the engine can express all eight without special-casing any of them, it can probably express the ones nobody has named. **If it needs an exception for one, the design is wrong** — the same universality test applied to a mechanism (§2 of Foundations).
 
@@ -173,6 +173,6 @@ That last one is the most valuable request available, and it is free to answer. 
 
 ## 8. Still not in scope
 
-- **A trust-network database.** Not ours (§1.2).
-- **A production implementation.** The simulator is an instrument for testing a theory. **It is not a first version of the system**, and the moment it starts being treated as one, §1.2 has been breached again.
+- **A trust-network database.** Not ours (§2.6).
+- **A production implementation.** The simulator is an instrument for testing a theory. **It is not a first version of the system**, and the moment it starts being treated as one, §2.6 has been breached again.
 - **Any scenario whose result turns on a design choice rather than a principle.** Apply the dial test before adding it.

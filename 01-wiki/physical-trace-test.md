@@ -64,4 +64,4 @@ Both allocation rules rejected for [co-product-allocation](co-product-allocation
 
 ---
 *Status: settled*
-*Source: `00-strategy/Aequitas_Foundations_v0.4.md` §1.1, §3.4; `Aequitas_Objections_v0.5.md` §0*
+*Source: `00-strategy/Aequitas_Foundations_v0.4.md` §2.5, §3.4; `Aequitas_Objections_v0.5.md` §0*
