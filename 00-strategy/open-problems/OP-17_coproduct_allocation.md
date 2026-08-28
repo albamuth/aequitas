@@ -1,4 +1,16 @@
-# OP-17 — Co-Product Allocation: the process allocates itself
+# OP-17 — Co-Product Allocation
+
+<!-- struck-ok: this box quotes both withdrawn wordings in order to withdraw them -->
+> ## ⚠️ TWO CLAIMS IN THIS PAPER WERE LATER WITHDRAWN. READ THIS FIRST.
+>
+> **This paper is kept as the record of how OP-17 was worked. Its result stands. Two of its wordings do not.**
+>
+> | This paper says | What is true now |
+> |---|---|
+> | **"The process allocates itself"** — this paper's original title, and its claim that the split is a measurement rather than a convention | **Overstated.** The process did physically divide the inputs, and that division is measurable — but reading it means choosing an instrument, a period and a boundary, and **two honest choices can give different figures.** It is **a choice that measurement constrains.** Aequitas fixes four obligations on that choice and leaves the method to the industry. **Foundations §3.4a** |
+> | **§7.1's "rival-sector audit" is the fix for constant capture** | **Withdrawn 2026-08-24.** Funding a replication costs real hours and the benefit is shared with every rival, while getting your own constant set generously is cheap and private. **The equilibrium is mutual understatement, not mutual policing** — and it fails hardest on the ambient-stock constants, which have no rival at all. Rival-sector audit is **one pressure, not a mechanism.** **Foundations §3.3a**, open problem **OP-24** |
+>
+> **The mechanism the paper establishes did not change.** What changed is the strength of the claim made for it.
 
 > **⚠️ The event-log paper was retired on 2026-08-28.** References to `EventLog §…` below are historical and no longer resolve. **The arithmetic constraints IC-1 to IC-12 are now conformance rows in [`Aequitas_Conformance_v0.8.md`](../Aequitas_Conformance_v0.8.md) §2**, which carries a label map; everything else it held is in Foundations. The archived paper is `99-archive/Aequitas_EventLog_v0.10.md`.
 
@@ -170,8 +182,11 @@ The stress test found a capture surface the rule does not close by itself, and t
 
 **Result: systemic drift toward under-costing** — which is precisely how every carbon-accounting regime to date has failed. Foundations §3.5 tolerates it arithmetically (no global balance is required), but it **erodes A4 progressively**, and A4 is not optional.
 
-### 7.1 The fix — rival-sector audit
+### 7.1 The proposed fix — rival-sector audit ⛔ **WITHDRAWN 2026-08-24**
 
+> **⛔ What follows was this paper's answer and it does not hold.** It is kept because the reasoning is worth reading and because the objection it answers is still open. **See the box at the top of this paper, Foundations §3.3a, and OP-24.**
+
+<!-- struck-ok: kept as the withdrawn proposal, marked as withdrawn immediately above -->
 > **The natural auditor of a cost constant is the rival sector, not the consumer.**
 
 If beef's energetics are understated, plant-protein producers are **materially harmed** and will fund the replication. Consumers police neither direction; rivals police both.

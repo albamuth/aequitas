@@ -108,7 +108,7 @@ This also answers the socialist-calculation critique pre-emptively: we don't arg
 *The theory lives or dies here. **Mostly cleared.***
 
 - **C1 (event-log schema): Event log schema.** ❌ **Retired 2026-08-28.** The record model was never asked for and it read as a specification, which contradicts §2.6 and the simulator ruling of 2026-08-23. **The arithmetic it carried — IC-1 to IC-12 — is now in `Aequitas_Conformance_v0.8.md`.** A trust network writes its own schema.
-- **OP-17 (joint production): co-product allocation.** ✅ **Done** — the process allocates itself (Foundations §3.4a).
+- **OP-17 (joint production): co-product allocation.** ✅ **Done** — a joint process's debit divides by **where the process physically sent its inputs**, measured at that facility for that period. **It is a choice that measurement constrains, not a number read straight off nature**, and Aequitas fixes the obligations rather than the method (Foundations §3.4a).
 - **Recursion convergence sim.** ✅ **Done — PASS** (`recursion_convergence.py`). Validated the OP-17 answer; doubles as the first piece of C11.
 - **OP-18 (labour & team credit): labour allocation across co-products and teams.** ✅ **Closed** — a declared convention (labour rides the material split), axiom-scored against the Aumann–Shapley checklist and stress-tested.
 - **C11: arithmetic audits.** ✅ **Closed** — IC-1…IC-12 runnable, all violations caught.

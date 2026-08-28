@@ -116,7 +116,7 @@ Series is non-contiguous (early merges left gaps at OP-2/12/13). Status taxonomy
 | <a id="op-14"></a>**OP-14** | cohort shopping | Joiners self-identify into a favourable cohort / floor. | Open |
 | <a id="op-15"></a>**OP-15** | ghost harvesting | Estimated credit accrues to non-joiners and the dead. | Open |
 | <a id="op-16"></a>**OP-16** | onerousness gap | Tedium/indignity have no material signature. | 🔴 Underweight, unsolved *(re-rated 2026-08-09)* |
-| <a id="op-17"></a>**OP-17** | joint production | Allocating a joint process's debit across co-products. | ✅ Closed — the process allocates itself (B7) |
+| <a id="op-17"></a>**OP-17** | joint production | Allocating a joint process's debit across co-products. | ✅ Closed — the split follows **where the process physically sent its inputs**; measurement constrains the choice without determining it (B7) |
 | <a id="op-18"></a>**OP-18** | labour & team credit | Responsibility/labour split across co-products and teams. | ✅ Closed (B9) |
 | <a id="op-19"></a>**OP-19** | saturated producer | What surplus production is for. | ✅ Resolved by pledges (B5) |
 | <a id="op-20"></a>**OP-20** | unobservable work | Crediting work that leaves no trace. | ✅ Closed (IC-7 + conservative weighting) |

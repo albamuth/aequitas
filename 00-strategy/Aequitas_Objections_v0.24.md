@@ -216,6 +216,7 @@ Retroactive re-weighting (§3.3) makes cost constants extraordinarily powerful: 
 
 From v0.5 to v0.21 this register offered **rival-sector audit** as the fix:
 
+<!-- struck-ok: quoting the withdrawn claim in order to explain why it was withdrawn -->
 > *"The natural auditor of a cost constant is the rival sector, not the consumer. If beef's energetics are understated, plant-protein producers are materially harmed and will fund the replication."*
 
 **The author's assessment: it is a weak mechanism.** Two objections, and the second is the one that sinks it.

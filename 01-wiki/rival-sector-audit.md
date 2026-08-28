@@ -1,6 +1,23 @@
 # Rival-Sector Audit
 
-> **The natural auditor of a cost constant is the rival sector, not the consumer.** Consumers police neither direction of error; rivals police both.
+<!-- struck-ok: this box quotes the withdrawn proposal in order to withdraw it -->
+> ## ⛔ WITHDRAWN AS A MECHANISM, 2026-08-24
+>
+> **This page describes a proposal that does not work. It is kept because the reasoning is worth reading and because the problem it was answering is still open.**
+>
+> **The proposal was:** *the natural auditor of a cost constant is the rival sector, not the consumer.* If beef's energetics are understated, plant-protein producers are harmed and will fund the replication.
+> <!-- struck-ok: stating the withdrawn proposal in order to withdraw it -->
+>
+> **Two objections, and the second sinks it.**
+>
+> 1. **Rivals are often absent.** A good with no substitute has no rival, and **a constant cutting across every sector equally has no rival by construction.**
+> 2. **A rival's best move is not to fund your correction.** Funding a replication costs real hours and the benefit is **shared with every other producer in the rival sector**. Getting their own constant set generously is cheaper and the benefit is private. **So the equilibrium is mutual understatement, not mutual policing.**
+>
+> **And it failed hardest where the stakes are highest.** The **ambient-stock and baseline constants** are the largest levers in the weighting model, and **they have no rival at all** — everyone benefits from a high pollution baseline and a low stock reading.
+>
+> **What is true now.** Rival-sector audit is **one pressure among several, not a mechanism.** How a trust network audits its cost constants is a network-design problem held to five published requirements — [Foundations §3.3a](../00-strategy/Aequitas_Foundations_v0.33.md), open problem **OP-24 (understatement drift)**.
+>
+> **One narrow case survives**, and it is worth knowing: **coverage** has two parties with a private interest in getting it right — the instrumented producer, harmed when undocumented produce prices too cheaply, and the dark producer, who cannot transact until they onboard. **The audit of *extent* has interested parties. The audit of *weight* does not.**
 
 ## The problem it solves
 
@@ -35,7 +52,7 @@ Three supporting rules:
 
 - **Decentralized.** No authority, no standards body, no appointed reviewer. It is an incentive, not an enforcement rule.
 - **Self-funding.** The replication is credited work paid for by a party with a real stake — it passes *"does this need a Paul Glover?"* without help. See [distributed-auditing](distributed-auditing.md).
-- **Already implied by an axiom.** [cost-not-price](cost-not-price.md) removes profit *in exchange* while explicitly preserving **competition on quality, artfulness and efficiency**. Rival-sector audit is that competition applied to the cost model itself.
+- **Already implied by an axiom.** [cost-not-price](cost-not-price.md) removes profit *in exchange* while explicitly preserving **competition on quality, artfulness and efficiency** (Foundations §5.1). Rival-sector audit is that competition applied to the cost model itself.
 
 ## Why the co-op form is not the fix
 
@@ -69,5 +86,5 @@ See `../00-strategy/GLOSSARY.md#src-auditor-independence`.
 - Does rival-sector auditing produce its own arms race — two sectors funding duelling constants with no convergence?
 
 ---
-*Status: proposed, unproven*
+*Status: **WITHDRAWN as a mechanism, 2026-08-24.** Kept as the record of a proposal that does not hold. See the box at the top. The problem it answered is open — **OP-24**.*
 *Source: `00-strategy/Aequitas_Foundations_v0.4.md` §3.3a; `Aequitas_Objections_v0.9.md` OA3, OA10*
