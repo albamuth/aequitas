@@ -30,16 +30,16 @@ Whenever the party being judged pays for the judging, the judgements drift in th
 
 > **The conflict is about direction, not profit.** Making Arthur Andersen a co-op *owned by its clients* would have been worse than the arrangement Enron actually paid for, not better. Removing the profit motive leaves the go-easy motive completely intact.
 
-**What Aequitas genuinely does remove, and should claim:** there's no profit-rich giant corporation able to fund convenient science, because Aequitas removes profit from exchange in the first place ([Foundations §A5](../00-strategy/Aequitas_Foundations_v0.13.md#a5-price--cost)). **The funding channel for corruption closes. The directional pull does not.**
+**What Aequitas genuinely does remove, and should claim:** there's no profit-rich giant corporation able to fund convenient science, because Aequitas removes profit from exchange in the first place ([Foundations §A5](../00-strategy/Aequitas_Foundations_v0.28.md)). **The funding channel for corruption closes. The directional pull does not.**
 
 ## What was adopted instead
 
-Two structural rules, neither needing an enforcer — see [rival-sector-audit](../01-wiki/rival-sector-audit.md) and [Foundations §3.3a](../00-strategy/Aequitas_Foundations_v0.13.md#33a-who-checks-the-science--rival-sector-audit):
+Two structural rules, neither needing an enforcer — see [rival-sector-audit](../01-wiki/rival-sector-audit.md) and [Foundations §3.3a](../00-strategy/Aequitas_Foundations_v0.28.md):
 
 1. **A trust network made up mostly of the people it's supposed to be auditing is compromised by its own composition.** In Aequitas everyone is both a producer and a consumer, so a *general-membership* network is dominated, for any given product, by the people who *consume* it — whose interests point the right way automatically. And because **who belongs to a network is public**, this is something anyone can *check*, not a rule someone has to enforce.
 2. **Rival-sector auditing** — because rule 1 creates its own slant. A network of consumers wants the recorded cost of what they *buy* to read *low*, and nobody funds correcting an error in their own favour. But a *rival producer* does: if beef's cost is understated, plant-protein makers are directly harmed and will fund the correction. **Consumers police one direction; rivals police both.**
 
-**Read the two rules together — neither is safe alone.** This is the project's open "understatement drift" problem: errors that make something look *cheaper* than it is have nobody obviously funding their correction. See [Foundations §10](../00-strategy/Aequitas_Foundations_v0.13.md#10-open-problems).
+**Read the two rules together — neither is safe alone.** This is the project's open "understatement drift" problem: errors that make something look *cheaper* than it is have nobody obviously funding their correction. See [Foundations §10](../00-strategy/Aequitas_Foundations_v0.28.md).
 
 ## What this source does *not* settle
 

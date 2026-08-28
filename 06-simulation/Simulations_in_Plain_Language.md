@@ -36,7 +36,7 @@ Now, the four simulations.
 
 ## Simulation 1 — the self-eating economy
 
-**Files:** [`recursion_convergence.py`](allocation-engine/recursion_convergence.py), write-up [`RESULTS.md`](allocation-engine/RECURSION_RESULTS.md), **raw data [`results.csv`](allocation-engine/results.csv) (5,224 rows).**
+**Files:** [`recursion_convergence.py`](allocation-engine/recursion_convergence.py), write-up [`RESULTS.md`](allocation-engine/RECURSION_RESULTS.md), **raw data `results.csv` (generated when you run it, not committed) (5,224 rows).**
 
 ### The question it's actually asking
 
@@ -92,7 +92,7 @@ Our code reproduced pymrio's own footprint numbers **to fourteen decimal places*
 
 ## Simulation 3 — the pretend cow (this is the honest one)
 
-**File:** [`estimation_engine.py`](allocation-engine/estimation_engine.py), write-up [`ESTIMATION.md`](allocation-engine/ESTIMATION.md), table [`estimation_debit_vectors.csv`](allocation-engine/estimation_debit_vectors.csv).
+**File:** [`estimation_engine.py`](allocation-engine/estimation_engine.py), write-up [`ESTIMATION.md`](allocation-engine/ESTIMATION.md), table `estimation_debit_vectors.csv` (generated when you run it, not committed).
 
 I want to be very direct about this one, because it's the one most vulnerable to your suspicion.
 
@@ -116,7 +116,7 @@ One part *does* rise above pure tautology: it shows the rule is **self-consisten
 
 ## Simulation 4 — the real refinery
 
-**File:** [`refinery_slice.py`](allocation-engine/refinery_slice.py), write-up [`REFINERY.md`](allocation-engine/REFINERY.md), table [`refinery_allocation.csv`](allocation-engine/refinery_allocation.csv), data sources [`../00-strategy/GLOSSARY.md#src-refinery-process-energy`](../00-strategy/GLOSSARY.md#src-refinery-process-energy).
+**File:** [`refinery_slice.py`](allocation-engine/refinery_slice.py), write-up [`REFINERY.md`](allocation-engine/REFINERY.md), table `refinery_allocation.csv` (generated when you run it, not committed), data sources [`../00-strategy/GLOSSARY.md#src-refinery-process-energy`](../00-strategy/GLOSSARY.md#src-refinery-process-energy).
 
 This is the one that uses **real government data** and produces a finding that isn't baked in from the start.
 
@@ -186,7 +186,7 @@ Everything is inspectable. From this folder:
   python refinery_slice.py
   ```
 
-- **The cattle and refinery result tables** are saved as [`estimation_debit_vectors.csv`](allocation-engine/estimation_debit_vectors.csv) and [`refinery_allocation.csv`](allocation-engine/refinery_allocation.csv) — open them in a spreadsheet and the arithmetic is checkable by hand (e.g. petcoke's energy share = coking energy 51.3 + distillation share 39.3 = 90.6, out of 2,162 total = 4.2%).
+- **The cattle and refinery result tables** are saved as `estimation_debit_vectors.csv` (generated when you run it, not committed) and `refinery_allocation.csv` (generated when you run it, not committed) — open them in a spreadsheet and the arithmetic is checkable by hand (e.g. petcoke's energy share = coking energy 51.3 + distillation share 39.3 = 90.6, out of 2,162 total = 4.2%).
 
 - **The real refinery energy numbers** (U.S. DOE, 2010) are transcribed in [`../00-strategy/GLOSSARY.md#src-refinery-process-energy`](../00-strategy/GLOSSARY.md#src-refinery-process-energy), with links to the original reports.
 
