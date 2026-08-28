@@ -12,7 +12,7 @@
 
 Polanyi supplies the best-established academic argument that **land, labour, and money are not really commodities** — and Aequitas independently reaches the same three conclusions, one axiom at a time. This is a strong, citable ally: a respected economic historian saying, eighty years ago, that treating these three things as ordinary goods for sale "subordinates the substance of society itself to the laws of the market."
 
-Bears on: land can't be owned ([Foundations §3.7](../00-strategy/Aequitas_Foundations_v0.30.md#37-land-is-not-owned-a-building-carries-a-remediation-debt)); labour is time spent, never rate-scaled or priced as a commodity ([Foundations §A2](../00-strategy/Aequitas_Foundations_v0.30.md#a2-time-as-measure)); and money-wealth is not material and carries no cost ([Foundations §A1](../00-strategy/Aequitas_Foundations_v0.30.md#a1-materialism-of-cost)).
+Bears on: land can't be owned ([Foundations §3.7](../00-strategy/Aequitas_Foundations_v0.31.md#37-land-is-not-owned-a-building-carries-a-remediation-debt)); labour is time spent, never rate-scaled or priced as a commodity ([Foundations §A2](../00-strategy/Aequitas_Foundations_v0.31.md#a2-time-as-measure)); and money-wealth is not material and carries no cost ([Foundations §A1](../00-strategy/Aequitas_Foundations_v0.31.md#a1-materialism-of-cost)).
 
 ## Key findings
 
@@ -23,9 +23,9 @@ Bears on: land can't be owned ([Foundations §3.7](../00-strategy/Aequitas_Found
 ## What we can use
 
 - **Polanyi is external corroboration for three separate Aequitas rules at once.** Aequitas reaches "land, labour, money aren't commodities" not as one grand claim but as three consequences of its axioms:
-  - **Land** — you can't own it; a building instead carries a debt to restore the patch of Earth it occupies. See [Foundations §3.7](../00-strategy/Aequitas_Foundations_v0.30.md#37-land-is-not-owned-a-building-carries-a-remediation-debt).
-  - **Labour** — credit counts *time spent*, the same for everyone's hour; it is never rate-scaled or sold. See [Foundations §A2](../00-strategy/Aequitas_Foundations_v0.30.md#a2-time-as-measure).
-  - **Money** — Aequitas counts only *material* things; a share, a bond, a token is a paper claim, not matter or energy, so it carries no cost at all. See [Foundations §A1](../00-strategy/Aequitas_Foundations_v0.30.md#a1-materialism-of-cost).
+  - **Land** — you can't own it; a building instead carries a debt to restore the patch of Earth it occupies. See [Foundations §3.7](../00-strategy/Aequitas_Foundations_v0.31.md#37-land-is-not-owned-a-building-carries-a-remediation-debt).
+  - **Labour** — credit counts *time spent*, the same for everyone's hour; it is never rate-scaled or sold. See [Foundations §A2](../00-strategy/Aequitas_Foundations_v0.31.md#a2-time-as-measure).
+  - **Money** — Aequitas counts only *material* things; a share, a bond, a token is a paper claim, not matter or energy, so it carries no cost at all. See [Foundations §A1](../00-strategy/Aequitas_Foundations_v0.31.md#a1-materialism-of-cost).
   That a mainstream historian names exactly these three, on independent grounds, is a gift to the academic write-up.
 - **"Embeddedness" reframes the whole project positively.** Aequitas isn't tearing the economy out of society — it's the opposite of the "great transformation," putting economic accounting back inside physical and social reality rather than letting an abstract market float above it.
 - **The barter-myth point** is shared with Graeber (see [Graeber: Debt](../00-strategy/GLOSSARY.md#src-graeber-debt)) and undercuts the standard origin story that props up money's necessity.

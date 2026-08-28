@@ -1,10 +1,10 @@
 <!-- tag: ovw-aequitas-overview -->
 # Aequitas — Overview
 
-> **Version:** 0.19
+> **Version:** 0.20
 > **Date:** 2026-08-28
 > **Audience:** everyone. No economics background assumed, none required.
-> **Rigorous version:** `00-strategy/Aequitas_Foundations_v0.30.md`. This document is the plain-language companion; where they differ, the Foundations govern.
+> **Rigorous version:** `00-strategy/Aequitas_Foundations_v0.31.md`. This document is the plain-language companion; where they differ, the Foundations govern.
 > **Version history & what each version superseded:** `00-strategy/Aequitas_Overview_CHANGELOG.md`.
 
 *Aequitas* (genitive *aequitatis*) is the Latin word for fairness, evenness, symmetry — the quality of things being level with one another.
@@ -135,9 +135,9 @@ Two kinds of debit behave differently, and the difference matters:
 
 **So a thing carries its whole story, but not everyone's debt.** Buying the sandwich, you take on its *material* and the fact that you ate it — not the farmer's pollution and not the trucker's fuel. What you *do* receive is the full record of where it came from, so you can prefer the cleaner loaf before you buy. **The debt sits with whoever caused each harm; only the story travels with the bread.** This turns out to be a stronger arrangement than making the shopper pay for the farm's runoff — more on why in §4.
 
-![The debit taxonomy at a glance: a debit splits into property debit (the material you hold, which travels with the thing; and the making-hours, which stay partly with you — see §2) and consumption/pollution debit (permanent, on whoever caused it). Two rules cut across both: working on your own things nets to zero, and cost never passes to someone who didn't cause it.](../01-wiki/assets/debit-taxonomy.svg)
+![The debit taxonomy at a glance. A debit splits into property debit and consumption or pollution debit. Property debit has three parts: the material you hold, which travels with the thing; the making-hours, which stay partly with you even after you pass it on; and latent pollution, which is what the thing will emit when used, and which rides the object until somebody uses it. Consumption and pollution debit is permanent and sits on whoever caused it. Two rules cut across everything: working on your own things nets to zero, and cost never passes to someone who did not cause it.](../01-wiki/assets/debit-taxonomy.svg)
 
-*The whole taxonomy on one page. It shows a little more than this section does — the "making" hours of a thing stay partly with you even after you pass it on, which §2 comes back to — but the two big ideas are here: what travels and what stays, and who is on the hook.*
+*The whole taxonomy on one page. It shows a little more than this section does — the "making" hours of a thing stay partly with you even after you pass it on, which §2 comes back to — but the big ideas are here: what travels, what stays, what waits until you use it, and who is on the hook.*
 
 **A consequence worth sitting with.** Suppose you spend a weekend repairing your own roof. You earn credit for the hours — real work, really done. But the repair also raises the house's debit by exactly those hours, and you are holding the house. **Net effect on you: zero**, apart from the materials you actually consumed.
 
@@ -670,6 +670,6 @@ What was deliberately dropped:
 
 ---
 
-*For the rigorous statement of everything above, with the arguments and the open problems in full: `00-strategy/Aequitas_Foundations_v0.30.md`.*
+*For the rigorous statement of everything above, with the arguments and the open problems in full: `00-strategy/Aequitas_Foundations_v0.31.md`.*
 
-*End of v0.19.*
+*End of v0.20.*

@@ -1,8 +1,8 @@
 <!-- tag: obj-aequitas-objections-register -->
 # Aequitas — Objections Register
 
-> **Version:** 0.23 · **Date:** 2026-08-27
-> **Tracks:** `Aequitas_Foundations_v0.30.md` · `Aequitas_Conformance_v0.8.md` · `OP-22_identity_not_disclosure_v0.2.md` · `OP-27_parallel_implementation.md` · `OP-26_coverage_and_closure.md` · `OP-18_labour_and_team_credit.md` · `OP-23_capital_and_pollution.md` · `OP-17_coproduct_allocation.md` · `06-simulation/allocation-engine/RECURSION_RESULTS.md` · `06-simulation/disparity-ceiling/DISPARITY_CEILING.md` · `06-simulation/pledge-reserve/pledge_reserve.py` · `06-simulation/scenario-suite/scenario_suite_METHOD.md`
+> **Version:** 0.24 · **Date:** 2026-08-28
+> **Tracks:** `Aequitas_Foundations_v0.31.md` · `Aequitas_Conformance_v0.8.md` · `OP-22_identity_not_disclosure_v0.2.md` · `OP-27_parallel_implementation.md` · `OP-26_coverage_and_closure.md` · `OP-18_labour_and_team_credit.md` · `OP-23_capital_and_pollution.md` · `OP-17_coproduct_allocation.md` · `06-simulation/allocation-engine/RECURSION_RESULTS.md` · `06-simulation/disparity-ceiling/DISPARITY_CEILING.md` · `06-simulation/pledge-reserve/pledge_reserve.py` · `06-simulation/scenario-suite/scenario_suite_METHOD.md`
 > **Version history & what each version superseded:** `00-strategy/Aequitas_Objections_CHANGELOG.md`.
 > **Purpose:** one place holding every serious objection to the theory, its source, the axiom it attacks, and its status.
 
@@ -44,6 +44,7 @@
   - [B9 — OP-18. Labour & team credit](#b9--op-18-labour--team-credit--closed-as-the-c3-blocker--team-credit-dissolves-labour-rides-the-material-split)
   - [B10 — Credit realization & the supply-chain hand-off model](#b10--credit-realization--the-supply-chain-hand-off-model--passes-with-changes)
   - [B12 — §3.2b electricity attribution (the real-time-dispatch principle)](#b12--32b-electricity-attribution-the-real-time-dispatch-principle--passes-with-changes)
+  - [B14 — §3.2b latent pollution: a thing carries what it will emit](#b14--32b-latent-pollution-a-thing-carries-what-it-will-emit--passes-with-two-items)
   - [B11 — Self-care as credited work & the definition of work](#b11--self-care-as-credited-work--the-definition-of-work--passes-instance-of-op-10op-22)
   - [B1 — P7. "Nothing else is value"](#b1--p7-nothing-else-is-value--fixed)
   - [B2 — W1. A3 defeats the sink problem](#b2--w1-a3-defeats-the-sink-problem--claimed)
@@ -744,11 +745,61 @@ The barn stays on the farm operator; the fab stays on its cooperative; hide and 
 
 **Verdict: PASSES WITH CHANGES.** The core insight is consistency-improving, but the *raw* form ("all generation pollution to the consumer, physical marginal unit") failed the exploit hunt:
 
-1. **The dirty generator (offloader).** On a *pooled* grid the consumer cannot physically choose their source, so dumping the grid-average on them removes the pollution debit from the **only party that chooses the fuel** — weakening decarbonisation. → **Fix adopted: attribute by the consumer's *contracted supply mix* (provenance, §4.4), not the marginal unit.** A clean generator can then offer lower-debit power and win contracts; the consumer still conserves. This also resolves the marginal-vs-average question (neither — it's the contracted mix). No-choice contexts use the local supply average + §4.6 pledges / §3.3 retroactive cleanup.
+1. **The dirty generator (offloader).** On a *pooled* grid the consumer cannot physically choose their source, so dumping the grid-average on them removes the pollution debit from the **only party that chooses the fuel** — weakening decarbonisation. → **The fix adopted in 2026 was the consumer's *contracted supply mix*. ⛔ THAT FIX IS WITHDRAWN — see the amendment box above.** A supply agreement is a paper claim and A1 forbids one deciding a physical record. **The exploit is now answered by the three routes named in the box** — the generator's own capital and process debit, pledges toward clean generation, and §3.3 retroactive re-weighting. The marginal-vs-average question is still resolved, but by **the measured mix over the periods drawn**, not by a contract.
 2. **The grid-factor understater (estimator-gamer).** All consumers benefit from a low grid emission factor → **OP-24 (understatement drift)**; policed by rival clean-energy audit (§3.3a). Not new.
 3. **Justification contradiction (now resolved).** "You bear the marginal turbine" (physical) and "you choose green tariffs" (contractual) conflicted; contracted-provenance attribution keeps the second and drops the first.
 
 **Axioms.** No conflict — Ellerman-motivated (A1: only the actor pollutes; the plant is a tool), and every emission stays internal (A4). **⚠️ Open universality edge:** real-time-vs-batch is a *spectrum* (grid storage, on-demand services); the mid-line criterion is registered open, not closed.
+
+<!-- tag: obj-b14 -->
+## B14 — §3.2b latent pollution: a thing carries what it will emit ✅ **PASSES WITH TWO ITEMS**
+
+**Shipped:** Foundations v0.30 §3.2b, wiki `debit-taxonomy.md`, Overview v0.19 §1 and §4. **Source:** author ruling, 2026-08-28, during the §2 restructure.
+
+### The rule
+
+> **A thing that will pollute when it is used carries that future pollution as part of its debit, in physical units, and it moves with the thing.**
+
+**It changes when the debit is recorded, not who ends up with it.** §3.2b already said the combustion emission falls on whoever burns the fuel. **What was missing is that a combustion is mostly not an event the books ever see, while a purchase always is.**
+
+**Worked.** 40 litres of petrol at about 2.31 kg CO₂ per litre. The log stores **40 litres**. At an illustrative 0.05 h per kg the ledger reads **4.62 hours**; halve the cost of remediation and it reads **2.31 hours**; sell the fuel on and it reads **0 hours on the seller**. The refinery's own process emissions are **0 hours on the buyer, ever**.
+
+### Why it does not breach A1 (materialism of cost)
+
+**Ellerman's imputation rule says a cost attaches to whoever acted.** Until the fuel burns, **nobody has acted and no emission exists.** So the quantity is not yet anybody's consumption debit — **it rides the object exactly as embodied material does**, and it becomes permanent consumption debit on whoever uses it. **No cost was moved to a non-causer at any point.**
+
+### Exploit hunt
+
+| Attack | What happens |
+|---|---|
+| **Never-use.** Buy fuel, hold it forever, so nobody ever carries the emission | **Correct behaviour.** No fuel burned means no CO₂ released, and the books say so. Meanwhile the holder carries 40 litres of material debit the whole time, so **stockpiling is not free** |
+| **Pour it away.** Buy fuel and dump it to escape the use-debit | Not a use. **§3.6 rule 1**: the last holder has consumed it. Escaping the record at all is **OP-25 (illicit dumping)**, unchanged and not made worse |
+| **Ping-pong resale.** A sells to B, B sells back to A, repeatedly | **Nothing accumulates and nothing vanishes.** The litres move whole, once, each time. This is how property debit already behaves |
+| **Understate the emission factor.** Publish a low CO₂-per-litre figure so fuel leaves the gate light | **OP-24 (understatement drift)**, unchanged. Not a new surface — the factor is a cost constant like any other (§3.3a) |
+
+### 🟡 Item 1 — the double-count risk against §3.6, and it is real
+
+**A plastic bottle's landfill burden can be described twice.** §3.6 rule 2 says a discarded object is itself a pollutant borne by its **final holder**. Latent pollution says the object **carries** what it will do. **For a plastic bottle those are the same quantity seen from two ends.**
+
+> **The resolution: they are one quantity governed by two rules, and it is recorded once.** Latent pollution is the **carry** rule — how the quantity travels while the object is held. §3.6 is the **terminus** rule — where it lands when the chain stops. **An implementation that charges both has counted one physical fact twice.**
+
+**Owed:** say this in Foundations §3.6 explicitly. **Until then, an implementer reading §3.2b and §3.6 in sequence could reasonably double it.** Flagged rather than assumed harmless.
+
+### 🟡 Item 2 — the wording of A5 (cost, not price) needs one sentence
+
+**A5 says a thing's cost is *"the current best estimate of what was materially consumed to make it,"* and that nothing enters it that the thing did not consume.** **Latent pollution is not part of making.** It is something the thing will *cause*, not something it consumed.
+
+> **The two do not collide, because they answer different questions.** A5 governs **a thing's cost** — what it took to produce. §3.2b line 3 governs **what a holder carries while holding it.** A litre of petrol's creation cost and the CO₂ it will release are two separate lines on the debit vector (§3.2a), and neither is inside the other.
+
+**Owed:** one sentence in §3.2b saying so. **A critic reading A5 alone will otherwise report this as an axiom breach**, and they will be reading carefully rather than badly.
+
+### Verdict
+
+**PASSES.** No axiom moved, no mechanism changed, and the arithmetic is unaffected. **It is a recording rule, and its real gain is that it makes §3.2b's use-side half observable** — a purchase is an event; a combustion is not. **Two wording items are owed and both are named above.**
+
+**Note also what it demonstrates.** This is the clearest case in the documents for why a debit is stored as a bundle of physical quantities (§3.2a). **A system that stored *4.62 hours* instead of *40 litres* could not re-read itself when the science improved.**
+
+---
 
 <!-- tag: obj-b11 -->
 ## B11 — Self-care as credited work & the definition of work ✅ **PASSES (instance of OP-10/OP-22)**
@@ -770,6 +821,32 @@ The barn stays on the farm operator; the fab stays on its cooperative; hide and 
 - Cohort-shopping on the floor/routing → **OP-14 (cohort shopping)**. Feedback-as-verification → guarded, **OP-8**. Debit-tolerance / the disparity denominator → **OP-4 (debit tolerance)**.
 
 **The honest headline.** The cluster's apparent new capture surface is the *old* one (OP-10 governance / OP-22 disclosure) at **universal scale** — not a new hole. The stress-test's value was distinguishing "new break" from "existing open problem wearing a new hat." Note also the conceptual gain banked: **time, not effort, is the accounting substance** — the disparity ceiling is a *consequence of the unit of account* (time is equally distributed and non-transferable, A3 (non-fungibility)), bounded by `24 h ÷ the network's floor`, not a policed rule.
+
+### 🆕 2026-08-28 — the definition of work now has an outer boundary, and it closes exploit 1 partway
+
+**Shipped:** Foundations v0.30 §2.3, Conformance v0.8 row **3a**. **Source:** author ruling, three parts, 2026-08-28.
+
+> **A trust network may credit an activity only if that activity is at least one of production, a service, or enrichment.**
+
+**Three rulings made it, and the second is the one a reader will get wrong.**
+
+| | The ruling |
+|---|---|
+| **1** | **It is a gate, not a boundary.** The categories decide **whether** an hour is creditable. They never decide **how much**, and they never split an hour. Foundations §4.5's *"no rule may use them as an accounting boundary"* stands unchanged |
+| **2** | **At least one is enough, and which one is never recorded.** Sleep is a service performed on your own body, **or** enrichment of your own brain. **Both readings credit the same one hour and the books never ask which** |
+| **3** | An hour that is all three is still one hour — the apprentice plumber |
+
+**What it does to exploit 1 above (generous-network arbitrage).** The old answer was entirely counterparty re-computation: a stingy network re-weights a generous one's self-care down through its own model, so generosity cannot be exported. **That still carries most of the load. What 3a adds is an outer wall on the *list* rather than on the *hours*.**
+
+> **A network can no longer declare *"loyalty to this network"* creditable.** Loyalty is not production, not a service, and not enrichment. **Before 3a an implementation could have published an evidence rule for it under conformance 16d, credited it at one hour per hour under row 3, and passed every row.**
+
+### ⚠️ The honest limit, and it should be stated rather than claimed away
+
+**Enrichment is broad.** *"Work whose benefit flows from all of humanity to at least one person, in ways not readily measured in material"* will stretch to cover a great deal, and a network determined to credit something worthless can argue its way in.
+
+**So 3a is a weak filter, not a tight one.** It catches the plain cases — crediting loyalty, crediting holding an asset, crediting being popular — **and those are exactly the cases that turn a trust network into an issuer.** The rest of the defence is unchanged and structural: competing networks, ratio-based evaluation (Foundations §3.5), and public membership composition (Foundations §3.3a, conformance row 16).
+
+**This does not close A8's always-creditable capture surface**, and nothing here claims it does. **It narrows the candidate set and leaves every choice inside it where A8 put it — with the network, in public, competing.** Still an instance of **OP-10 (weighting governance)**.
 
 ---
 
@@ -910,4 +987,4 @@ The version-by-version change log (former §E) now lives in a separate file, rea
 
 ---
 
-*End of v0.22.*
+*End of v0.24.*

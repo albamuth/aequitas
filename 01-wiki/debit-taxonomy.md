@@ -45,9 +45,7 @@ A debit is **not one number.** It is a bundle of physical quantities — kilogra
 
 **This is the clearest case in the theory for why a debit is stored as a vector.** A system that had stored *4.62 hours* instead of *40 litres* could not have re-read itself when the science improved.
 
-**⚠️ The diagram at the top of this page does not show this branch.** It predates the rule and is owed a redraw.
-
-### Property debit has two components that behave differently
+### Property debit has three components that behave differently
 
 They are not the same quantity and they do not move together:
 
@@ -55,6 +53,7 @@ They are not the same quantity and they do not move together:
 |---|---|---|
 | **Embodied material** | The atoms you hold | 🟢 **Dischargeable.** Rides the object to the new holder; you are clear of it entirely. *(Effect: used goods enter cheap — the new holder has put in no time yet.)* |
 | **Creation-cost / labour** | The hours that *made* the thing | 🔴 **Permanent per holder.** Holding-time split: your share = your holding-duration ÷ the asset's whole life. Dilutes as later holders accrue time, but **never zeroes**. Clock starts at **deployment**, not purchase; transit carriers accrue **none**. (§4.5) |
+| **Latent pollution** | What the thing **will** emit when it is used | 🟡 **Rides the object, then locks.** Nobody has caused an emission yet, so it moves with the thing at every hand-off. **On use it converts into ordinary consumption debit, permanently, on whoever used it.** Recorded in litres or kilograms, never in hours. (§3.2b) |
 
 **Worked case.** Hold a 500,000-hour house for 10 years, then pass it on. Once the next holder has held it an equal span, ≈250,000 hours of *making* is still on your books — the holding-time share, permanent. The *material* left with the house; the *making* did not. You cannot escape it through a non-participant either: with no record of a hand-off, the ledger still shows you holding it, so you keep the whole weight.
 

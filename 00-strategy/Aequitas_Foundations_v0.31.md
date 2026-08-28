@@ -1,12 +1,12 @@
 <!-- tag: fnd-aequitas-foundations-and-long-term -->
 # Aequitas — Foundations & Long-Term Strategy
 
-> **Version:** 0.30
+> **Version:** 0.31
 > **Date:** 2026-08-28
 > **Status:** Working foundations.
 > **Primary audience of the first paper:** technologists and implementers.
 > **Companion:** [`Aequitas_Conformance_v0.8.md`](Aequitas_Conformance_v0.8.md) — what must be true for an implementation to *be* Aequitas.
-> **Companion:** [`Aequitas_Objections_v0.23.md`](Aequitas_Objections_v0.23.md) — the objections register.
+> **Companion:** [`Aequitas_Objections_v0.24.md`](Aequitas_Objections_v0.24.md) — the objections register.
 > **Version history is kept separately and is not published**, so this document carries only what is currently true.
 
 ### How to read this document
@@ -295,7 +295,19 @@ Two thought experiments, both fully compatible with everything in this document:
 | **Decentralization** | Can a stranger check a claim without asking anybody's permission? | Somebody has to be trusted, and whoever that is becomes the thing to capture |
 | **Fecundity** | Does the system pay for its own upkeep and reward its own improvement? | It works while an enthusiast runs it, and stops when they leave |
 
-**These are adapted from the philosophy of science**, where a comparable set is used to judge whether a theory is worth working on: wide **scope**, **independent testability**, and **fruitfulness**. *(The specific source is not recorded and this citation is unverified. Flagged for the research archive rather than guessed at.)*
+**These are adapted from the philosophy of science.** The nearest published set is the **criteria of adequacy** of [Theodore Schick and Lewis Vaughn](https://en.wikipedia.org/wiki/Theodore_Schick), in *How to Think About Weird Things* (1994), which judges a hypothesis on five things: **testability, fruitfulness, scope, simplicity, and conservatism.**
+
+**Aequitas takes three of the five and renames them.**
+
+| Schick and Vaughn | Here | What the rename does |
+|---|---|---|
+| **Scope** — how much diverse phenomena it covers | **Universality** | Sharpened from *"covers a lot"* to *"covers everything, with no exception"* |
+| **Testability** | **Decentralization** | Narrowed to *who* may test it. A claim anyone can re-run without permission |
+| **Fruitfulness** — it predicts new phenomena | **Fecundity** | Widened from prediction to upkeep. **A mechanism must pay its own maintainer from inside the system** |
+
+**Two are deliberately dropped.** *Simplicity* is not claimed — the accounting is not simple. **And *conservatism*, which asks how well a hypothesis fits established belief, is the one criterion this project cannot use**, because the whole proposal is that established belief about cost is wrong.
+
+> **⚠️ This attribution is the nearest match, not a confirmed source.** The three criteria entered this project through the Open Fair Credit Standard, and which book they came from was not recorded at the time. Research stub: [`../02-research/Schick_Vaughn_criteria-of-adequacy_v0.1.md`](../02-research/Schick_Vaughn_criteria-of-adequacy_v0.1.md).
 
 **Every mechanism proposed for these documents is tested against all three before it is accepted.** The table below is that test applied to Aequitas as a whole.
 
@@ -451,7 +463,7 @@ One permanent, append-only **record of activity**: who did what, when, involving
 <!-- tag: fnd-s3-2 -->
 ### 3.2 The two kinds of debit — and the two components of property debit
 
-![The debit taxonomy: DEBIT as a vector splits into property debit (embodied-material, dischargeable; and creation-cost/labour, holding-time-permanent) and consumption/pollution debit (never discharged, stays on the causer); two cross-cutting rules — self-work identity and non-cascade.](../01-wiki/assets/debit-taxonomy.svg)
+![The debit taxonomy: DEBIT as a vector splits into property debit and consumption/pollution debit. Property debit has three components — embodied material, which is dischargeable on transfer; creation-cost or labour, which is holding-time-split and permanent per holder; and latent pollution, which rides the object until it is used and then becomes permanent on the user. Consumption and pollution debit is never discharged and stays on the causer. Two rules cut across every branch: the self-work identity and non-cascade.](../01-wiki/assets/debit-taxonomy.svg)
 
 *Schematic of this section (§3.2 + §3.2a/b), embedded from the wiki master page `01-wiki/debit-taxonomy.md`. The prose below is authoritative; the diagram is the map.*
 
@@ -512,6 +524,12 @@ Someone buys **40 litres** of petrol. Burning a litre releases about **2.31 kg**
 | **If the buyer sells the 40 litres on** | the litres move to the new holder | **0 hours on the seller** |
 
 **The stored quantity never changed. Only the weighting did.** This is §3.2a working: a debit is a bundle of physical quantities, converted into a single figure only when somebody asks. **A system that stored 4.62 hours instead of 40 litres could not re-read itself when the science improved.**
+
+> **Two things line 3 is not, and a careful reader will ask about both.**
+>
+> **It is not part of the thing's cost, so A5 (cost, not price) is unaffected.** A5 governs what a thing **cost to make**. Line 3 governs what a **holder carries while holding it**. A litre of petrol's creation cost and the CO₂ its burning will release are **two separate lines on the debit vector** (§3.2a), and neither is inside the other. **Nothing was added to the petrol's cost figure.**
+>
+> **It is not a second charge on top of §3.6.** For an object whose pollution *is* its disposal — a plastic bottle rather than a litre of fuel — line 3 and §3.6 describe **one quantity, recorded once.** Line 3 is the **carry** rule, saying how it travels while the object is held. §3.6 is the **terminus** rule, saying where it lands when nobody will take the object on. **An implementation that charges both has counted one physical fact twice.**
 
 **Why this is right under A1 (materialism of cost).** Ellerman's responsibility-imputation: only the miner *acted* to pollute; the buyer did not cause the mining. Charging the buyer would misattribute responsibility. This is simply the two-kinds distinction above taken to its conclusion — the *permanent* kind stays with its causer; the *transferable* kind rides the object.
 
@@ -837,7 +855,7 @@ An object's life does not end when it stops being useful. Three rules govern wha
 - Maintain what you hold — a cooperative is better off servicing its equipment than running it to failure.
 - Pledge toward remediation and recycling — because doing so *lightens your own* accumulated pollution-debt (§3.3).
 
-**2. A discarded product is itself a pollutant.** A non-functional object sitting in the environment is a pollution-debt for as long as it persists, borne by its final holder, weighted by the stock rule (§3.3). A plastic bottle in a landfill raises the remediation cost of plastic; recycling or atomizing it discharges that debt and lowers every future unit's burden. A compostable object generates none of this, because nature remediates it unaided (§3.3 baseline).
+**2. A discarded product is itself a pollutant.** A non-functional object sitting in the environment is a pollution-debt for as long as it persists, borne by its final holder, weighted by the stock rule (§3.3). **This is the same quantity §3.2b's third line already had riding the object, arriving at the end of its journey. It is recorded once, not twice.** A plastic bottle in a landfill raises the remediation cost of plastic; recycling or atomizing it discharges that debt and lowers every future unit's burden. A compostable object generates none of this, because nature remediates it unaided (§3.3 baseline).
 
 **3. Recycling traces material forward — but not prior pollution.** The **material** of a recycled object carries its accumulated *property*-debit onward (the atoms physically carried forward, §3.4a). It does **not** carry prior producers' *process-pollution*, because under §3.2b that pollution never transferred — it stayed permanently on each producer. So recycled steel is cleanly lower-burden than virgin: it never carried the miner's tailings, and using it commissions no new extraction. **Recyclers are credited** for the work of reducing pollutants; the recycled output re-enters as a low-cost co-input (§3.4a).
 
@@ -1918,8 +1936,8 @@ A3 therefore does three separate defensive jobs: it forbids accumulation (§5.1)
 | What it is | Where |
 |---|---|
 | **The conformance requirements** — what must be true for an implementation to *be* Aequitas, written for implementers | [`Aequitas_Conformance_v0.8.md`](Aequitas_Conformance_v0.8.md) |
-| **The objections register** — every open problem and every answered objection, with its status | [`Aequitas_Objections_v0.23.md`](Aequitas_Objections_v0.23.md) |
-| **The plain-language companion**, assuming no economics background | [`Aequitas_Overview_v0.19.md`](Aequitas_Overview_v0.19.md) |
+| **The objections register** — every open problem and every answered objection, with its status | [`Aequitas_Objections_v0.24.md`](Aequitas_Objections_v0.24.md) |
+| **The plain-language companion**, assuming no economics background | [`Aequitas_Overview_v0.20.md`](Aequitas_Overview_v0.20.md) |
 | **How adoption plausibly starts** — a reading of the historical record, not a statement of the system | [`Aequitas_Strategy_v0.6.md`](Aequitas_Strategy_v0.6.md) §5 |
 | **The simulation programme** — what is being tested and in what order | [`Aequitas_Simulation_Roadmap_v0.2.md`](Aequitas_Simulation_Roadmap_v0.2.md) |
 | **One paper per open problem** | [`open-problems/`](open-problems/) |
@@ -1942,4 +1960,4 @@ A3 therefore does three separate defensive jobs: it forbids accumulation (§5.1)
 
 ---
 
-*End of v0.30.*
+*End of v0.31.*

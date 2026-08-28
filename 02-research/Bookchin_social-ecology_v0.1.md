@@ -12,7 +12,7 @@
 
 Bookchin matters for two of Aequitas's least-discussed commitments: that ecological harm is at root a *social* problem, and that Aequitas **keeps functioning local government** rather than abolishing it. He's the strongest ally for "change the economy, not the municipality," and a warning about where a purely ecological framing can go wrong.
 
-Bears on: the positioning that Aequitas keeps municipal government and civil service, changing only their economic nature (see [Foundations §8 (deliberate divergences)](../00-strategy/Aequitas_Foundations_v0.30.md) and the "target is oligarchic capture, not administration" framing in Overview §9); and the "every consequence is on the books" principle ([Foundations §A4](../00-strategy/Aequitas_Foundations_v0.30.md#a4-no-externalities)).
+Bears on: the positioning that Aequitas keeps municipal government and civil service, changing only their economic nature (see [Foundations §8 (deliberate divergences)](../00-strategy/Aequitas_Foundations_v0.31.md) and the "target is oligarchic capture, not administration" framing in Overview §9); and the "every consequence is on the books" principle ([Foundations §A4](../00-strategy/Aequitas_Foundations_v0.31.md#a4-no-externalities)).
 
 ## Key findings
 
@@ -22,14 +22,14 @@ Bears on: the positioning that Aequitas keeps municipal government and civil ser
 
 ## What we can use
 
-- **Bookchin is the clearest voice for keeping the municipality.** Aequitas is deliberately *less* institutionally radical than its predecessors: it doesn't propose abolishing town government, planning departments, courts, or the civil service — those largely work. It changes only their *economic* nature (they stop being funded by extraction and start being credited for the work they do). Bookchin's confederated, directly-democratic municipality is the friendliest existing home for that stance. See [Foundations §8](../00-strategy/Aequitas_Foundations_v0.30.md).
-- **"Ecology is a social problem" aligns with 'there is no outside.'** Aequitas's refusal to let any cost escape the books ([Foundations §A4](../00-strategy/Aequitas_Foundations_v0.30.md#a4-no-externalities)) is a mechanical version of Bookchin's claim that ecological harm is inseparable from the social arrangements that produce it — the polluter is out of pocket at the source, no regulator required.
+- **Bookchin is the clearest voice for keeping the municipality.** Aequitas is deliberately *less* institutionally radical than its predecessors: it doesn't propose abolishing town government, planning departments, courts, or the civil service — those largely work. It changes only their *economic* nature (they stop being funded by extraction and start being credited for the work they do). Bookchin's confederated, directly-democratic municipality is the friendliest existing home for that stance. See [Foundations §8](../00-strategy/Aequitas_Foundations_v0.31.md).
+- **"Ecology is a social problem" aligns with 'there is no outside.'** Aequitas's refusal to let any cost escape the books ([Foundations §A4](../00-strategy/Aequitas_Foundations_v0.31.md#a4-no-externalities)) is a mechanical version of Bookchin's claim that ecological harm is inseparable from the social arrangements that produce it — the polluter is out of pocket at the source, no regulator required.
 - **Post-scarcity, grounded.** Bookchin's "technology could free us if we drop grow-or-die" is close to Aequitas's simulation finding that labour is abundant and the binding constraints are materials and energy — and to Saadia's "organisational option" framing (see [Saadia: Trekonomics](../00-strategy/GLOSSARY.md#src-saadia-trekonomics)).
 
 ## What it gets wrong / limitations — from Aequitas's angle
 
 - **Bookchin gives politics, not accounting.** Libertarian municipalism is a way of *governing*; it says almost nothing about how to *keep the books* on material flows. Aequitas is the accounting layer his assemblies would need and he never built. The two are complementary, not competing.
-- **"Confederation solves coordination" is asserted, not shown.** How independent municipalities trade and settle across boundaries is exactly the interoperability problem Aequitas flags as open (different networks with different settings need an agreed way to trade). Bookchin waves at confederation; Aequitas has to specify it. See [Foundations §10](../00-strategy/Aequitas_Foundations_v0.30.md).
+- **"Confederation solves coordination" is asserted, not shown.** How independent municipalities trade and settle across boundaries is exactly the interoperability problem Aequitas flags as open (different networks with different settings need an agreed way to trade). Bookchin waves at confederation; Aequitas has to specify it. See [Foundations §10](../00-strategy/Aequitas_Foundations_v0.31.md).
 - **Anti-statism can over-reach.** Bookchin's tradition sometimes wants to dissolve institutions Aequitas deliberately *keeps*. Aequitas's line is narrower and, it argues, more defensible: target oligarchic capture, not administration.
 
 ## Related
