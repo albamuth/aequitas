@@ -110,7 +110,7 @@ This also delivers §11's MVP almost as a by-product: (a) product debit-costing 
 
 ## 7. ⚠ The axiom problem — monetary allocation
 
-> **✅ RESOLVED 2026-08-01 for materials and energy — see `00-strategy/OP-17_coproduct_allocation.md` and [[co-product-allocation]].**
+> **✅ RESOLVED 2026-08-01 for materials and energy — see `00-strategy/OP-17_coproduct_allocation.md` and [co-product-allocation](../../01-wiki/co-product-allocation.md).**
 > Where a joint process's own physics is measurable, the split is a **measurement**, and price allocation is not merely undesirable but *wrong*. **USEEIO is therefore unusable as a source of truth**, though still usable as data with its splits flagged `declared` basis rather than `measured`. The conditions below still govern that use, so they are retained.
 > **Not resolved for labour** — see §8 item 1, which is now OP-18 and blocks C3.
 
@@ -118,14 +118,14 @@ This also delivers §11's MVP almost as a by-product: (a) product debit-costing 
 
 EEIO models are **monetary**. They record inter-sector transactions in dollars and use price as the allocation key for distributing physical impacts. As the IO literature states plainly, this is *"the current practice of using monetary units as a proxy for physical units to represent flows of physical materials."*
 
-For Aequitas that is a direct collision with [[price-equals-cost]] (A5) and [[material-flow-value]] (A1). **We would be using price to compute the very quantity we claim price should be replaced by.** An economist will spot this immediately, and if we haven't addressed it first, it discredits the number.
+For Aequitas that is a direct collision with [price-equals-cost](../../01-wiki/cost-not-price.md) (A5) and [material-flow-value](../../01-wiki/material-flow-value.md) (A1). **We would be using price to compute the very quantity we claim price should be replaced by.** An economist will spot this immediately, and if we haven't addressed it first, it discredits the number.
 
 ### Why it is nonetheless acceptable — with conditions
 
 The collision is smaller than it looks, provided we are strict:
 
 - Price here is a **measurement expedient**, not a value claim. We are estimating physical flows from the best available proxy, exactly as §11's MVP describes — computing true cost as a parallel overlay on existing commerce.
-- **The C1 schema already handles this honestly.** Such figures are `basis: modelled`, `resolution: class_period`, with `method_ref` naming the IO model and an explicit confidence. They are *not* dressed as measurements, and they are visibly supersedable by physical data ([[event-record]] §8).
+- **The C1 schema already handles this honestly.** Such figures are `basis: modelled`, `resolution: class_period`, with `method_ref` naming the IO model and an explicit confidence. They are *not* dressed as measurements, and they are visibly supersedable by physical data ([event-record](../../01-wiki/event-record.md) §8).
 - Monetary allocation is known to distort in a *specific* direction: it under-weights cheap, heavy, low-value flows (waste, bulk materials, land) and over-weights expensive light ones. That bias is documented and can be stated.
 
 **Condition: every published figure derived this way must be labelled as monetary-allocated, and the direction of its known bias stated.** No exceptions.
@@ -142,7 +142,7 @@ Hubacek & Giljum argued PIOTs are more appropriate for direct and indirect resou
 
 Hybrid approaches exist (PIMO; the Waste Input-Output filter-matrix method for deriving physical flows from MRIO), which is likely the pragmatic middle path.
 
-**PIOT coverage is far patchier than monetary IO.** Realistic sequence: monetary EEIO now, labelled honestly; migrate toward physical as coverage improves. Which is exactly what [[retroactive-reweighting]] is designed to absorb.
+**PIOT coverage is far patchier than monetary IO.** Realistic sequence: monetary EEIO now, labelled honestly; migrate toward physical as coverage improves. Which is exactly what [retroactive-reweighting](../../01-wiki/retroactive-reweighting.md) is designed to absorb.
 
 ---
 
@@ -150,7 +150,7 @@ Hybrid approaches exist (PIMO; the Waste Input-Output filter-matrix method for d
 
 Gaps no existing source fills, i.e. genuine Aequitas research:
 
-1. **🔴 Labor hours at product resolution.** EXIOBASE gives sector-level hours. Attributing hours to a specific product requires allocation — **and unlike materials and energy, labour leaves no physical trace to any one output**, so no instrument will ever supply it ([[physical-trace-test]]). Price is the usual key, which reopens §7. **This is now OP-18 and it is what blocks C3.** It will end in a *declared convention*, not a measurement.
+1. **🔴 Labor hours at product resolution.** EXIOBASE gives sector-level hours. Attributing hours to a specific product requires allocation — **and unlike materials and energy, labour leaves no physical trace to any one output**, so no instrument will ever supply it ([physical-trace-test](../../01-wiki/physical-trace-test.md)). Price is the usual key, which reopens §7. **This is now OP-18 and it is what blocks C3.** It will end in a *declared convention*, not a measurement.
 2. ~~**Training cost embodied in skilled service.**~~ **Dissolved.** Training is front-loaded and discharged when incurred, so nothing flows downstream and no dataset is needed. *(Foundations §6.2.)*
 3. **Hazard and occupational-harm accounting.** A2 requires health harms to flow retroactively into products. *Lead to check: the Social Hotspots Database (SHDB) and the Social LCA (S-LCA) literature — verify these exist and assess coverage before relying on them.*
 4. **Household unpaid labor attributed to consumption.** ATUS has the hours; nothing connects them to the goods they service.
@@ -171,4 +171,4 @@ Gaps no existing source fills, i.e. genuine Aequitas research:
 
 ## Related
 
-- [[estimation-engine]] · [[event-record]] · [[material-flow-value]] · [[price-equals-cost]] · [[statistical-coverage]] · [[honest-advantage]]
+- [estimation-engine](../../01-wiki/estimation-engine.md) · [event-record](../../01-wiki/event-record.md) · [material-flow-value](../../01-wiki/material-flow-value.md) · [price-equals-cost](../../01-wiki/cost-not-price.md) · [statistical-coverage](../../01-wiki/statistical-coverage.md) · [honest-advantage](../../01-wiki/honest-advantage.md)

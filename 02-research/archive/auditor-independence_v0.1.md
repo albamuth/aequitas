@@ -10,7 +10,7 @@
 
 **It was used to kill a claim the project was about to rely on**, which is the most valuable thing a source can do.
 
-The trust-network model ([[distributed-auditing]]) rested on: *networks compete on accuracy, because accuracy benefits their subscribers.* The record says otherwise, repeatedly and expensively.
+The trust-network model ([distributed-auditing](../../01-wiki/distributed-auditing.md)) rested on: *networks compete on accuracy, because accuracy benefits their subscribers.* The record says otherwise, repeatedly and expensively.
 
 ## The finding
 
@@ -33,7 +33,7 @@ Whenever the party being assessed pays for the assessment, assessments drift fav
 
 ## What was adopted instead
 
-Two structural rules, neither requiring an authority — see [[rival-sector-audit]] and Foundations §3.3a:
+Two structural rules, neither requiring an authority — see [rival-sector-audit](../../01-wiki/rival-sector-audit.md) and Foundations §3.3a:
 
 1. **A trust network concentrated in the sector it audits is captured by construction.** In Aequitas everyone is both producer and consumer, so a *general-membership* network is dominated by the consuming side for any given good and its incentives align automatically. **Membership composition is public in the log**, so this is a detectable screening property rather than a rule anyone must enforce.
 2. **Rival-sector audit**, because rule 1 creates its own bias: a consumer-dominated network wants the debit of what its members consume to read *low*, and nobody funds the correction of an error in their own favour. **The rival sector does.**
@@ -55,6 +55,6 @@ Two structural rules, neither requiring an authority — see [[rival-sector-audi
 
 ## Related
 
-- [[distributed-auditing]] · [[rival-sector-audit]] · [[retroactive-reweighting]] · [[protocol-governance]]
+- [distributed-auditing](../../01-wiki/distributed-auditing.md) · [rival-sector-audit](../../01-wiki/rival-sector-audit.md) · [retroactive-reweighting](../../01-wiki/retroactive-reweighting.md) · [protocol-governance](../../01-wiki/protocol-governance.md)
 - Register: `00-strategy/Aequitas_Objections_v0.9.md` — **OA3 (OP-24)**, **OA10** *(analysis sections; renamed from A# 2026-08-09)*
 - `00-strategy/OP-17_coproduct_allocation.md` §7

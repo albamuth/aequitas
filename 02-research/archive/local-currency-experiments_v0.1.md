@@ -93,6 +93,6 @@ Criterion 3 (fecundity) is precisely the test Ithaca failed: it did not encourag
 
 ## Related
 
-- [[non-fungibility]] · [[time-as-yardstick]] · [[price-equals-cost]] · [[enrichment]] · [[verification-ladder]] · [[debit-tolerance]]
+- [non-fungibility](../../01-wiki/non-fungibility.md) · [time-as-yardstick](../../01-wiki/time-as-yardstick.md) · [price-equals-cost](../../01-wiki/cost-not-price.md) · [enrichment](../../01-wiki/enrichment.md) · [verification-ladder](../../01-wiki/verification-ladder.md) · [debit-tolerance](../../01-wiki/debit-tolerance.md)
 - `02-research/warren-cost-the-limit-of-price.md` · `02-research/proudhon-mutualism.md` — the doctrinal ancestors of Class 1
 - Register: `00-strategy/Aequitas_Objections_v0.1.md` — **OP-16**, **OP-19**, OP-6, OP-11

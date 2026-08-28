@@ -10,7 +10,7 @@
 
 ## Why this matters to Aequitas
 
-Aequitas's direct ancestor on the diagnosis: rent, interest, and profit as **extraction** rather than payment for labor. Bears on [[price-equals-cost]] (A5), [[property-debit]] (§3.2), and [[capitalism-cannot-function]] (§7.1). Equally important as a **negative** result — his remedy was monetary, and it failed the way monetary remedies do.
+Aequitas's direct ancestor on the diagnosis: rent, interest, and profit as **extraction** rather than payment for labor. Bears on [price-equals-cost](../../01-wiki/cost-not-price.md) (A5), [property-debit](../../01-wiki/property-debit.md) (§3.2), and [capitalism-cannot-function](../../01-wiki/capitalism-cannot-function.md) (§7.1). Equally important as a **negative** result — his remedy was monetary, and it failed the way monetary remedies do.
 
 ## Key findings
 
@@ -19,20 +19,20 @@ Aequitas's direct ancestor on the diagnosis: rent, interest, and profit as **ext
 - **Mutual credit:** participants extend credit to one another **without interest**, replacing state currency and bank intermediation, thereby eliminating the rent extracted by financial intermediaries.
 - Capital is **"dead labor"** — already paid, essentially unproductive. Rent and interest are income categories that are not payment for labor.
 - Attempted implementation: the **Banque du Peuple**, Paris 1849. It failed within months; Proudhon was imprisoned for press offences during the period.
-- Josiah Warren reached the same core doctrine independently and earlier in practice — see [[cost-the-limit-of-price]].
+- Josiah Warren reached the same core doctrine independently and earlier in practice — see [cost-the-limit-of-price](../../01-wiki/cost-the-limit-of-price.md).
 
 ## What we can use
 
-- **The possession/property distinction is a direct precursor to [[property-debit]]:** hold and use freely, but holding yields burden rather than income. Useful for explaining that Aequitas is not confiscatory.
-- **"Capital is dead labor"** is a compact, quotable statement of why [[non-fungibility]] forbids lending — there is nothing productive to rent out.
+- **The possession/property distinction is a direct precursor to [property-debit](../../01-wiki/property-debit.md):** hold and use freely, but holding yields burden rather than income. Useful for explaining that Aequitas is not confiscatory.
+- **"Capital is dead labor"** is a compact, quotable statement of why [non-fungibility](../../01-wiki/non-fungibility.md) forbids lending — there is nothing productive to rent out.
 - Establishes a 186-year intellectual pedigree for the anti-rent position. Aequitas is not a novelty; it is an old diagnosis with a new mechanism.
 - Proudhon and Warren converging independently is a decent argument that cost-based pricing is a discovered rather than invented principle.
 
 ## What it gets wrong / limitations
 
-- **The remedy is a currency.** Mutual credit is fungible, transferable, and lendable — so it can be accumulated and concentrated, and the concentration dynamic Proudhon diagnosed reappears inside his own solution. [[non-fungibility]] (A3) is Aequitas's answer and the sharpest divergence from the whole mutualist tradition. **This is the key thing to say when asked "isn't this just mutualism?"**
-- **Labor-time as value basis** drags the skill/effort problem back in, the same one that sank Warren. [[time-as-yardstick]] (A2) exists to escape it.
-- No treatment of **externalities or ecological cost** — the labor theory has no place to put pollution. [[no-externalities]] has no Proudhonian ancestor; look to [[calculation-in-kind]] instead.
+- **The remedy is a currency.** Mutual credit is fungible, transferable, and lendable — so it can be accumulated and concentrated, and the concentration dynamic Proudhon diagnosed reappears inside his own solution. [non-fungibility](../../01-wiki/non-fungibility.md) (A3) is Aequitas's answer and the sharpest divergence from the whole mutualist tradition. **This is the key thing to say when asked "isn't this just mutualism?"**
+- **Labor-time as value basis** drags the skill/effort problem back in, the same one that sank Warren. [time-as-yardstick](../../01-wiki/time-as-yardstick.md) (A2) exists to escape it.
+- No treatment of **externalities or ecological cost** — the labor theory has no place to put pollution. [no-externalities](../../01-wiki/no-externalities.md) has no Proudhonian ancestor; look to [calculation-in-kind](../../01-wiki/calculation-in-kind.md) instead.
 - The Banque du Peuple failed on clearing and scale, not on principle. **Follow up: get the actual post-mortem** — it is likely to predict the same failure modes for any Aequitas clearing design.
 - Proudhon holds well-documented antisemitic and misogynist views. **Cite the economics; do not lionise the man.** Anticipate this in any public writing that names him.
 
@@ -45,4 +45,4 @@ Aequitas's direct ancestor on the diagnosis: rent, interest, and profit as **ext
 
 ## Related
 
-- [[mutualism]] · [[cost-the-limit-of-price]] · [[property-debit]] · [[non-fungibility]]
+- [mutualism](../../01-wiki/mutualism.md) · [cost-the-limit-of-price](../../01-wiki/cost-the-limit-of-price.md) · [property-debit](../../01-wiki/property-debit.md) · [non-fungibility](../../01-wiki/non-fungibility.md)

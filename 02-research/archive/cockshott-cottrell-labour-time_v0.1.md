@@ -15,7 +15,7 @@ They are the **modern entrants in the socialist calculation debate**, flagged as
 
 - **Labour-time calculation is defensible as a rational procedure** when supplemented by algorithms that let consumer choice guide allocation — and it is now **technically feasible**. Sparse-matrix methods over a national input-output structure run in reasonable time on ordinary hardware. This is the direct answer to the "computationally impossible" version of the Mises objection.
 - **The demand-side algorithm.** Consumer goods are marked at a market-clearing price. Where the clearing price sits **above** labour value, expand production; where it sits **below**, contract it. The gap between price and value is the signal that steers production. Labour value is the accounting unit; the price/value ratio is the feedback loop.
-- Labour tokens are non-circulating and extinguished on use — structurally similar to Aequitas's [[non-fungibility]] (A3).
+- Labour tokens are non-circulating and extinguished on use — structurally similar to Aequitas's [non-fungibility](../../01-wiki/non-fungibility.md) (A3).
 - Their scheme remains **centrally computed**, though not centrally commanded in the Soviet sense.
 
 ## What we can use
@@ -40,6 +40,6 @@ They are the **modern entrants in the socialist calculation debate**, flagged as
 
 ## Related
 
-- [[calculation-in-kind]] · [[material-flow-value]] · [[price-equals-cost]] · [[non-fungibility]] · [[retroactive-reweighting]]
+- [calculation-in-kind](../../01-wiki/calculation-in-kind.md) · [material-flow-value](../../01-wiki/material-flow-value.md) · [price-equals-cost](../../01-wiki/cost-not-price.md) · [non-fungibility](../../01-wiki/non-fungibility.md) · [retroactive-reweighting](../../01-wiki/retroactive-reweighting.md)
 - `02-research/neurath-calculation-in-kind.md` · `02-research/kantorovich-shadow-prices.md`
 - Register: `00-strategy/Aequitas_Objections_v0.1.md` — **P5**

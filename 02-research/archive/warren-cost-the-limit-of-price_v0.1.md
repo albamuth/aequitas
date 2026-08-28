@@ -9,7 +9,7 @@
 
 ## Why this matters to Aequitas
 
-**This is the most important item in the research archive.** It is the only real-world field test of [[price-equals-cost]] (A5), it ran for three years, it succeeded commercially — and it broke on precisely the problem [[time-as-yardstick]] (A2) exists to solve. Bears on A2, A5, and the academic paper's central claim.
+**This is the most important item in the research archive.** It is the only real-world field test of [price-equals-cost](../../01-wiki/cost-not-price.md) (A5), it ran for three years, it succeeded commercially — and it broke on precisely the problem [time-as-yardstick](../../01-wiki/time-as-yardstick.md) (A2) exists to solve. Bears on A2, A5, and the academic paper's central claim.
 
 ## Key findings
 
@@ -33,7 +33,7 @@
 
 ## What we can use
 
-- **The headline claim for the academic paper:** Aequitas resolves a 199-year-old open problem in mutualist economics. Warren's concession to "individual judgment" reintroduces a judge, and a judge is a capture point. A2 removes it by resolving skill and hazard as *material* costs — training as real schooling time and materials, hard labor as caloric intake, hazard retroactively via [[retroactive-reweighting]].
+- **The headline claim for the academic paper:** Aequitas resolves a 199-year-old open problem in mutualist economics. Warren's concession to "individual judgment" reintroduces a judge, and a judge is a capture point. A2 removes it by resolving skill and hazard as *material* costs — training as real schooling time and materials, hard labor as caloric intake, hazard retroactively via [retroactive-reweighting](../../01-wiki/retroactive-reweighting.md).
 - **Proof the mechanism is commercially viable.** A cost-priced store outcompeted conventional retail in 1827. Useful against "nobody would participate."
 - The 4–7% distribution markup is a documented admission that **logistics is itself labor** — Aequitas handles this natively; note that Warren had to bolt it on.
 - Warren's timer dial is a charming, concrete illustration of opportunistic granularity for the public text.
@@ -42,7 +42,7 @@
 
 - **Subjective disutility as the cost basis is unusable.** "Toil and trouble" is unmeasurable and unfalsifiable — exactly why it collapsed into individual judgment. Aequitas's material-flow basis must be sharply distinguished from Warren's, not presented as continuous with it.
 - **Scale untested.** A single storefront in a frontier city with corn as numéraire proves very little about a supply chain.
-- Labor notes were **transferable** — a currency. Fails [[non-fungibility]] and reintroduces accumulation.
+- Labor notes were **transferable** — a currency. Fails [non-fungibility](../../01-wiki/non-fungibility.md) and reintroduces accumulation.
 - The colonies that followed (Utopia, Modern Times) had mixed-to-poor outcomes. **Follow up: their failure modes are probably as instructive as the store's success.**
 
 ## To do
@@ -53,4 +53,4 @@
 
 ## Related
 
-- [[cost-the-limit-of-price]] · [[time-as-yardstick]] · [[price-equals-cost]] · [[mutualism]]
+- [cost-the-limit-of-price](../../01-wiki/cost-the-limit-of-price.md) · [time-as-yardstick](../../01-wiki/time-as-yardstick.md) · [price-equals-cost](../../01-wiki/cost-not-price.md) · [mutualism](../../01-wiki/mutualism.md)

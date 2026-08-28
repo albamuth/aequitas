@@ -10,7 +10,7 @@
 
 ## Why this matters to Aequitas
 
-Supplies the historical argument for the project's core positioning: **capitalism and the market are not the same thing.** Bears on [[price-equals-cost]] (A5), [[capitalism-cannot-function]] (§7.1), and the whole public framing of what Aequitas is against. It is the answer to "so you want to abolish markets?" — no, we want to abolish the entities that were never in the market.
+Supplies the historical argument for the project's core positioning: **capitalism and the market are not the same thing.** Bears on [price-equals-cost](../../01-wiki/cost-not-price.md) (A5), [capitalism-cannot-function](../../01-wiki/capitalism-cannot-function.md) (§7.1), and the whole public framing of what Aequitas is against. It is the answer to "so you want to abolish markets?" — no, we want to abolish the entities that were never in the market.
 
 ## Key findings
 
@@ -44,4 +44,4 @@ Supplies the historical argument for the project's core positioning: **capitalis
 
 ## Related
 
-- [[markets-vs-antimarkets]] · [[capitalism-cannot-function]] · [[price-equals-cost]]
+- [markets-vs-antimarkets](../../01-wiki/markets-vs-antimarkets.md) · [capitalism-cannot-function](../../01-wiki/capitalism-cannot-function.md) · [price-equals-cost](../../01-wiki/cost-not-price.md)

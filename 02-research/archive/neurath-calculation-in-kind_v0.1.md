@@ -9,7 +9,7 @@
 
 ## Why this matters to Aequitas
 
-**This is the objection the whole project must survive.** Aequitas *is* calculation in kind — [[material-flow-value]] with modern instrumentation. Mises's argument is that this is impossible in principle. The academic paper (doc 2 in the roadmap) cannot ship without answering it. Bears on A1, A5, A6, C3, C4.
+**This is the objection the whole project must survive.** Aequitas *is* calculation in kind — [material-flow-value](../../01-wiki/material-flow-value.md) with modern instrumentation. Mises's argument is that this is impossible in principle. The academic paper (doc 2 in the roadmap) cannot ship without answering it. Bears on A1, A5, A6, C3, C4.
 
 ## Key findings
 
@@ -21,7 +21,7 @@
 
 ## What we can use
 
-- **Neurath's incommensurability argument is the best available academic support for [[no-externalities]]** — a serious, citable case that monetizing ecological harm loses information. Use it in the academic paper.
+- **Neurath's incommensurability argument is the best available academic support for [no-externalities](../../01-wiki/no-externalities.md)** — a serious, citable case that monetizing ecological harm loses information. Use it in the academic paper.
 - Aequitas has two things Neurath demonstrably lacked: **a genuine commensurating basis** (mass, energy, seconds are measurable identically everywhere) and **computers**. The debate was conducted with neither. That is a legitimate and specific reason to reopen it.
 - The literature is a ready-made map of every objection. Cockshott & Cottrell (*Towards a New Socialism*) are the modern computational-planning entrants — **archive them next.**
 
@@ -29,9 +29,9 @@
 
 Ranked by how dangerous each is to the project:
 
-1. **Preference revelation — the weakest link.** Cost tells you what a thing *takes*; it does not rank claimants who both want it. Aequitas's answers ([[enrichment]] for direction, [[debit-tolerance]] for floor) are not yet worked out. **A competent economist will attack here first, and right now there is no defence written down.** This deserves its own open problem.
-2. **Hayek's tacit-knowledge point is only partly answered.** The [[verification-ladder]] gathers data locally rather than centrally, which is a real response — but sensors capture measurements, not the situated judgment Hayek meant.
-3. **Tractability at scale.** [[retroactive-reweighting]] means recomputing all history whenever the model updates. Mises's objection was in-principle; the scale objection is empirical and might bite harder. See C4.
+1. **Preference revelation — the weakest link.** Cost tells you what a thing *takes*; it does not rank claimants who both want it. Aequitas's answers ([enrichment](../../01-wiki/enrichment.md) for direction, [debit-tolerance](../../01-wiki/debit-tolerance.md) for floor) are not yet worked out. **A competent economist will attack here first, and right now there is no defence written down.** This deserves its own open problem.
+2. **Hayek's tacit-knowledge point is only partly answered.** The [verification-ladder](../../01-wiki/verification-ladder.md) gathers data locally rather than centrally, which is a real response — but sensors capture measurements, not the situated judgment Hayek meant.
+3. **Tractability at scale.** [retroactive-reweighting](../../01-wiki/retroactive-reweighting.md) means recomputing all history whenever the model updates. Mises's objection was in-principle; the scale objection is empirical and might bite harder. See C4.
 4. Neurath's own scheme was **centrally planned**, which Aequitas is not. Do not inherit his politics along with his method — say so explicitly, since critics will assume otherwise.
 
 ## To do
@@ -43,4 +43,4 @@ Ranked by how dangerous each is to the project:
 
 ## Related
 
-- [[calculation-in-kind]] · [[material-flow-value]] · [[price-equals-cost]] · [[energy-accounting]]
+- [calculation-in-kind](../../01-wiki/calculation-in-kind.md) · [material-flow-value](../../01-wiki/material-flow-value.md) · [price-equals-cost](../../01-wiki/cost-not-price.md) · [energy-accounting](../../01-wiki/energy-accounting.md)

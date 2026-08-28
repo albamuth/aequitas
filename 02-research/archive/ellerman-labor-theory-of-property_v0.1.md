@@ -49,6 +49,6 @@ Secondary limitations:
 
 ## Related
 
-- [[material-flow-value]] · [[non-fungibility]] · [[event-record]] · [[property-debit]]
+- [material-flow-value](../../01-wiki/material-flow-value.md) · [non-fungibility](../../01-wiki/non-fungibility.md) · [event-record](../../01-wiki/event-record.md) · [property-debit](../../01-wiki/property-debit.md)
 - `02-research/proudhon-mutualism.md` · `02-research/joint-production-allocation-problem.md`
 - Register: `00-strategy/Aequitas_Objections_v0.1.md` — **P6**

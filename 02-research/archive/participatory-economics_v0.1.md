@@ -44,5 +44,5 @@ Parecon is the **closest living competitor**: a fully specified, non-market, non
 
 ## Related
 
-- [[service-credit]] · [[price-equals-cost]] · [[calculation-in-kind]] · [[material-flow-value]] · [[debit-tolerance]]
+- [service-credit](../../01-wiki/service-credit.md) · [price-equals-cost](../../01-wiki/cost-not-price.md) · [calculation-in-kind](../../01-wiki/calculation-in-kind.md) · [material-flow-value](../../01-wiki/material-flow-value.md) · [debit-tolerance](../../01-wiki/debit-tolerance.md)
 - Register: `00-strategy/Aequitas_Objections_v0.1.md` — P4, OP-16, P8

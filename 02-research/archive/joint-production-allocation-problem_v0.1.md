@@ -76,7 +76,7 @@ Practitioners hit step 3 constantly. Mass, energy, and exergy allocation give **
 
 ## Related
 
-- [[co-product-allocation]] · [[physical-trace-test]] · [[material-flow-value]] · [[price-equals-cost]] · [[estimation-engine]] · [[event-record]]
+- [co-product-allocation](../../01-wiki/co-product-allocation.md) · [physical-trace-test](../../01-wiki/physical-trace-test.md) · [material-flow-value](../../01-wiki/material-flow-value.md) · [price-equals-cost](../../01-wiki/cost-not-price.md) · [estimation-engine](../../01-wiki/estimation-engine.md) · [event-record](../../01-wiki/event-record.md)
 - `00-strategy/OP-17_coproduct_allocation.md` — the resolution
 - `02-research/estimation-engine-data-sources.md` — where the price-allocation collision was first flagged
 - Register: `00-strategy/Aequitas_Objections_v0.5.md` — **B7** (answered), **A1/A4** (what did not move)

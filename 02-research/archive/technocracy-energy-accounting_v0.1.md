@@ -29,21 +29,21 @@
 
 ## What we can use
 
-- **Historical evidence for A8 ([[protocol-governance]]).** Technocracy's fate tracked one man's reputation. Aequitas's rule that no organization may hold authority over the core is not abstract caution — this is the case study. **Cite it directly in the whitepaper's governance section.**
-- **Historical evidence for [[onboarding-incentive]].** Never make the case contingent on crisis. Technocracy bet on collapse and lost. Aequitas's adoption argument must work under normal conditions, individually, today.
-- **Non-transferability has been tried** and is not an exotic idea — useful precedent for [[non-fungibility]], though Aequitas goes considerably further.
+- **Historical evidence for A8 ([protocol-governance](../../01-wiki/protocol-governance.md)).** Technocracy's fate tracked one man's reputation. Aequitas's rule that no organization may hold authority over the core is not abstract caution — this is the case study. **Cite it directly in the whitepaper's governance section.**
+- **Historical evidence for [onboarding-incentive](../../01-wiki/onboarding-incentive.md).** Never make the case contingent on crisis. Technocracy bet on collapse and lost. Aequitas's adoption argument must work under normal conditions, individually, today.
+- **Non-transferability has been tried** and is not an exotic idea — useful precedent for [non-fungibility](../../01-wiki/non-fungibility.md), though Aequitas goes considerably further.
 - Net energy analysis / EROI is live, respectable methodology with real datasets. **Potentially directly usable for debit-costing.** Worth its own note.
 
 ## What it gets wrong / limitations
 
-- **One-dimensional value.** Energy alone cannot distinguish a joule spent curing someone from a joule spent burning a field. Aequitas's multi-dimensional flows plus [[retroactive-reweighting]] address this — at the cost of being *harder* to compute, not easier. Be honest about that trade rather than claiming strict improvement.
-- **Certificates were spendable**, i.e. a currency in all but name. Expiry is a patch for hoarding, not a structural fix. [[non-fungibility]] removes the need for the patch.
-- **Technocratic governance is the exact failure Aequitas must avoid.** [[service-credit]] / OP-1 is where this risk lives now: any mechanism converting expertise into authority risks recreating the Technate.
+- **One-dimensional value.** Energy alone cannot distinguish a joule spent curing someone from a joule spent burning a field. Aequitas's multi-dimensional flows plus [retroactive-reweighting](../../01-wiki/retroactive-reweighting.md) address this — at the cost of being *harder* to compute, not easier. Be honest about that trade rather than claiming strict improvement.
+- **Certificates were spendable**, i.e. a currency in all but name. Expiry is a patch for hoarding, not a structural fix. [non-fungibility](../../01-wiki/non-fungibility.md) removes the need for the patch.
+- **Technocratic governance is the exact failure Aequitas must avoid.** [service-credit](../../01-wiki/service-credit.md) / OP-1 is where this risk lives now: any mechanism converting expertise into authority risks recreating the Technate.
 - The Mises Institute source is hostile and should be read as such; the 2024 *Management & Organizational History* article is the better scholarly source.
 
 ## The question this note exists to force
 
-Technocracy had a **simpler** system, real popular attention, and organized funding — and still died. What does Aequitas have that it didn't? Defensible answers: A8 (no capturable organization), the [[verification-ladder]] (works at Level 1 with zero infrastructure), [[onboarding-incentive]] (rational without a crisis), and computers. **That list should be written up and defended, not assumed.**
+Technocracy had a **simpler** system, real popular attention, and organized funding — and still died. What does Aequitas have that it didn't? Defensible answers: A8 (no capturable organization), the [verification-ladder](../../01-wiki/verification-ladder.md) (works at Level 1 with zero infrastructure), [onboarding-incentive](../../01-wiki/onboarding-incentive.md) (rational without a crisis), and computers. **That list should be written up and defended, not assumed.**
 
 ## To do
 
@@ -53,4 +53,4 @@ Technocracy had a **simpler** system, real popular attention, and organized fund
 
 ## Related
 
-- [[energy-accounting]] · [[protocol-governance]] · [[calculation-in-kind]] · [[non-fungibility]]
+- [energy-accounting](../../01-wiki/energy-accounting.md) · [protocol-governance](../../01-wiki/protocol-governance.md) · [calculation-in-kind](../../01-wiki/calculation-in-kind.md) · [non-fungibility](../../01-wiki/non-fungibility.md)

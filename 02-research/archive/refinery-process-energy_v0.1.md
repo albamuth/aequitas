@@ -62,4 +62,4 @@ The refinery slice needs the §3.4a physical θ — **where the process physical
 
 - `00-strategy/OP-17_coproduct_allocation.md` · `02-research/joint-production-allocation-problem.md` (line 74 closed)
 - `06-simulation/allocation-engine/refinery_slice_PLAN.md` · `06-simulation/allocation-engine/refinery_slice.py`
-- [[co-product-allocation]] · [[physical-trace-test]] · [[price-equals-cost]]
+- [co-product-allocation](../../01-wiki/co-product-allocation.md) · [physical-trace-test](../../01-wiki/physical-trace-test.md) · [price-equals-cost](../../01-wiki/cost-not-price.md)

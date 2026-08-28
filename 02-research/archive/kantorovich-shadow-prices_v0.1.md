@@ -44,6 +44,6 @@ Dapprich's point about constraints irreducible to labour time is also directly s
 
 ## Related
 
-- [[price-equals-cost]] · [[no-externalities]] · [[calculation-in-kind]] · [[material-flow-value]]
+- [price-equals-cost](../../01-wiki/cost-not-price.md) · [no-externalities](../../01-wiki/no-externalities.md) · [calculation-in-kind](../../01-wiki/calculation-in-kind.md) · [material-flow-value](../../01-wiki/material-flow-value.md)
 - `02-research/neurath-calculation-in-kind.md` · `02-research/cockshott-cottrell-labour-time.md`
 - Register: `00-strategy/Aequitas_Objections_v0.1.md` — **OP-9**, OP-10
