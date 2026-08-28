@@ -1,7 +1,7 @@
 # Residual unravelling — does staying dark stop paying?
 
 > **Status:** ✅ Built and green, 8 self-tests. **Passes**, with one measured limit and three stated assumptions.
-> **Results:** [`RESULTS.md`](RESULTS.md) · **Full write-up:** [`UNRAVELLING.md`](UNRAVELLING.md) · **Change history:** [`CHANGELOG.md`](CHANGELOG.md)
+> **Results:** [`RESULTS.md`](RESULTS.md) · **Full write-up:** [`UNRAVELLING.md`](UNRAVELLING.md) · **Change history:** `CHANGELOG.md`
 
 ## The question
 

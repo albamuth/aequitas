@@ -234,7 +234,7 @@ This also answers the socialist-calculation critique pre-emptively: we don't arg
 <!-- tag: str-changelog-pointer -->
 ## Change history
 
-The version-by-version change log now lives in a separate file, read only when needed: **[`Aequitas_Strategy_CHANGELOG.md`](Aequitas_Strategy_CHANGELOG.md)**.
+The version-by-version change log now lives in a separate file, read only when needed: **`Aequitas_Strategy_CHANGELOG.md`**.
 
 ---
 

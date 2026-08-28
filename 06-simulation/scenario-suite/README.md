@@ -1,7 +1,7 @@
 # Scenario suite — five societal-scale questions
 
 > **Status:** ✅ All five built and green, 2026-08-10. Historical: these are one-off scripts, superseded as *machinery* by the [Statera kernel](../statera/), but their **answers still stand**.
-> **Results:** [`RESULTS.md`](RESULTS.md) · **Method and design rules:** [`scenario_suite_METHOD.md`](scenario_suite_METHOD.md) · **Change history:** [`CHANGELOG.md`](CHANGELOG.md)
+> **Results:** [`RESULTS.md`](RESULTS.md) · **Method and design rules:** [`scenario_suite_METHOD.md`](scenario_suite_METHOD.md) · **Change history:** `CHANGELOG.md`
 
 ## What this is
 

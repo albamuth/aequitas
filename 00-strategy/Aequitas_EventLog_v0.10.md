@@ -894,7 +894,7 @@ Items 1–4 are ordinary standards work. **Items 6, 7, 9, 10 and 11 are theory w
 <!-- tag: evt-changelog-pointer -->
 ## Change history
 
-The version-by-version change log (former §14) now lives in a separate file, read only when needed: **[`Aequitas_EventLog_CHANGELOG.md`](Aequitas_EventLog_CHANGELOG.md)**.
+The version-by-version change log (former §14) now lives in a separate file, read only when needed: **`Aequitas_EventLog_CHANGELOG.md`**.
 
 ---
 

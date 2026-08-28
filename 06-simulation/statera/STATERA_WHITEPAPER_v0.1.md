@@ -6,7 +6,7 @@
 > **Describes:** [`statera.py`](statera.py), 1,185 lines, 22 self-tests.
 > **Tracks:** [`../../00-strategy/Aequitas_Foundations_v0.19.md`](../../99-archive/Aequitas_Foundations_v0.19.md).
 > **Run:** `python statera.py --test` · `python statera.py --demo`
-> **Change history:** [`STATERA_CHANGELOG.md`](CHANGELOG.md). No version notes appear in this document's body.
+> **Change history:** `STATERA_CHANGELOG.md`. No version notes appear in this document's body.
 
 **Every number in this paper was read off a run made on 2026-08-23, not copied from another document.** Where a run and a document disagree, §9 says so and gives both.
 
@@ -740,14 +740,14 @@ _ = collapse(heavier, k.dials.weights)   # future room shrinks; history stands
 | Document says | The code is |
 |---|---|
 | [`STATERA.md`](README.md): *"12 self-tests green"*, one period only, `kernel.py` | 22 self-tests, a full time axis with births and deaths, `statera.py` |
-| [`STATERA_CHANGELOG.md`](CHANGELOG.md): *"793 lines. 12 self-tests"* | **1,185 lines. 22 self-tests.** |
+| `STATERA_CHANGELOG.md`: *"793 lines. 12 self-tests"* | **1,185 lines. 22 self-tests.** |
 | [`STATERA.md`](README.md) footer: *"Tracks Foundations v0.18"* | Header of the same file says v0.19 |
 
 **Every link in the three Statera documents points at `kernel.py`, `KERNEL.md`, `KERNEL_CHANGELOG.md` and `KERNEL_PLAN_v0.2.md`.** None of those files exists. The rename to `statera.py` / `STATERA*.md` happened on 2026-08-23 and the internal links were not cascaded. [`Data_consumer-segmentation-archetypes_v0.1.md`](../../02-research/Data_consumer-segmentation-archetypes_v0.1.md) carries the same stale path.
 
 ### 6. The low-floor narrative is quoted at one sample size
 
-[`STATERA.md`](README.md) and [`STATERA_CHANGELOG.md`](CHANGELOG.md) both say *"reaching 12× needs somebody working a 22-hour day and the most anyone manages is 21.5."* That is the N = 50,000 draw, and it reproduces exactly. **At N = 200,000 the same code gives a top worker of 20.4 h/day and an observed spread of 10.22×.** The finding survives; the specific digits do not travel. Table in §8.
+[`STATERA.md`](README.md) and `STATERA_CHANGELOG.md` both say *"reaching 12× needs somebody working a 22-hour day and the most anyone manages is 21.5."* That is the N = 50,000 draw, and it reproduces exactly. **At N = 200,000 the same code gives a top worker of 20.4 h/day and an observed spread of 10.22×.** The finding survives; the specific digits do not travel. Table in §8.
 
 ### Equations I could not verify against the code
 

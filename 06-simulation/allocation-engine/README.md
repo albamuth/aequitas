@@ -1,7 +1,7 @@
 # Allocation engine — turning a physical economy into per-product costs
 
 > **Status:** ✅ All four pieces built and green. Components C3 and OP-3; answers Objections §C tests 1 and 4.
-> **Results:** [`RESULTS.md`](RESULTS.md) · **Change history:** [`CHANGELOG.md`](CHANGELOG.md)
+> **Results:** [`RESULTS.md`](RESULTS.md) · **Change history:** `CHANGELOG.md`
 
 ## What this is
 

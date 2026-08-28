@@ -906,7 +906,7 @@ Named so they are not silently skipped. ~~**Test 1 is the sharpest surviving tec
 <!-- tag: obj-changelog-pointer -->
 ## Change history
 
-The version-by-version change log (former §E) now lives in a separate file, read only when needed: **[`Aequitas_Objections_CHANGELOG.md`](Aequitas_Objections_CHANGELOG.md)**.
+The version-by-version change log (former §E) now lives in a separate file, read only when needed: **`Aequitas_Objections_CHANGELOG.md`**.
 
 ---
 

@@ -1,7 +1,7 @@
 # Pledge reserve — why anyone would take the nasty job
 
 > **Status:** ✅ Built and green, 5 self-tests. Answers the **hazard half** of OP-16 (the onerousness gap). The tedium half is still open.
-> **Results:** [`RESULTS.md`](RESULTS.md) · **Full write-up:** [`PLEDGE_RESERVE.md`](PLEDGE_RESERVE.md) · **Change history:** [`CHANGELOG.md`](CHANGELOG.md)
+> **Results:** [`RESULTS.md`](RESULTS.md) · **Full write-up:** [`PLEDGE_RESERVE.md`](PLEDGE_RESERVE.md) · **Change history:** `CHANGELOG.md`
 
 ## The question
 

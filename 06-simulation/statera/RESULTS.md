@@ -1,7 +1,7 @@
 # Statera — results
 
 > **Read this instead of re-running.** Everything below came out of `python statera.py --test` and `python chains.py --test`. Last verified 2026-08-24.
-> Deeper detail: [`README.md`](README.md) (what the kernel does) · [`CHANGELOG.md`](CHANGELOG.md) (how it got here) · [`STATERA_WHITEPAPER_v0.1.md`](STATERA_WHITEPAPER_v0.1.md) (every equation with its derivation).
+> Deeper detail: [`README.md`](README.md) (what the kernel does) · `CHANGELOG.md` (how it got here) · [`STATERA_WHITEPAPER_v0.1.md`](STATERA_WHITEPAPER_v0.1.md) (every equation with its derivation).
 
 ---
 

@@ -1,7 +1,7 @@
 # Arithmetic audits — the twelve integrity constraints, made runnable
 
 > **Status:** ✅ **Closed and green.** Component C11, finished 2026-08-07, extended 2026-08-22.
-> **Results:** [`RESULTS.md`](RESULTS.md) · **Full write-up:** [`AUDITS.md`](AUDITS.md) · **Change history:** [`CHANGELOG.md`](CHANGELOG.md)
+> **Results:** [`RESULTS.md`](RESULTS.md) · **Full write-up:** [`AUDITS.md`](AUDITS.md) · **Change history:** `CHANGELOG.md`
 
 ## What this is
 

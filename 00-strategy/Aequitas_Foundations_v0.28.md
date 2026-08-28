@@ -8,9 +8,9 @@
 > **Companion:** [`Aequitas_Conformance_v0.6.md`](Aequitas_Conformance_v0.6.md) — what must be true for an implementation to *be* Aequitas.
 > **Companion:** [`Aequitas_Objections_v0.23.md`](Aequitas_Objections_v0.23.md) — the objections register.
 > **Companion:** [`Aequitas_EventLog_v0.10.md`](Aequitas_EventLog_v0.10.md) — the data model.
-> **Version history, and an old-to-new section map:** [`Aequitas_Foundations_CHANGELOG.md`](Aequitas_Foundations_CHANGELOG.md).
+> **Version history is kept separately and is not published**, so this document carries only what is currently true.
 >
-> **⚠️ If you are following a citation to §5.1b, §6.4b, §7.5 or any other old number, the map in the CHANGELOG will place it.** Section numbers changed in this version and the old ones were quoted in public.
+> **⚠️ Section numbers changed in v0.28.** The old §4, §5 and §6 all described work a trust network does, and only §5 said so. **They are now one §4. Consequences moved from §7 to §5, and the pointer table from §8 to §6.** The section titles below say what each part covers; **the full old-to-new map is in the change history, which is held locally.**
 
 ---
 
@@ -1712,7 +1712,7 @@ A3 therefore does three separate defensive jobs: it forbids accumulation (§5.1)
 | **The conformance requirements** — what must be true for an implementation to *be* Aequitas | [`Aequitas_Conformance_v0.6.md`](Aequitas_Conformance_v0.6.md) | It is written for implementers, and this document is written for anyone. |
 | **Every open problem and every answered objection** | [`Aequitas_Objections_v0.23.md`](Aequitas_Objections_v0.23.md) | The register is the record. A ranked summary here only went stale. |
 | **How adoption plausibly starts** | [`Aequitas_Strategy_v0.6.md`](Aequitas_Strategy_v0.6.md) §5 | It is a reading of the historical record, not a statement of the system. |
-| **The version-by-version change history** | [`Aequitas_Foundations_CHANGELOG.md`](Aequitas_Foundations_CHANGELOG.md) | Already pointed at from the header. |
+| **The version-by-version change history** | **Held locally and not published.** These documents carry what is currently true; the history is read only when tracing when and why something changed. |
 
 ---
 
