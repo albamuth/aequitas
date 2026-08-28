@@ -3,7 +3,7 @@
 
 > **Version:** 0.8 · **Date:** 2026-08-28
 > **Audience: implementers.** Anyone building a trust network.
-> **Companion:** [`Aequitas_Foundations_v0.31.md`](Aequitas_Foundations_v0.31.md) — the system itself, and the argument for every row below. **Where the two differ, Foundations governs.**
+> **Companion:** [`Aequitas_Foundations_v0.32.md`](Aequitas_Foundations_v0.32.md) — the system itself, and the argument for every row below. **Where the two differ, Foundations governs.**
 > **Version history is kept separately and is not published**, so this document carries only what is currently true.
 > **Two numbers are retired and are never reused: the bare `17`, and `14c`.**
 
@@ -61,7 +61,7 @@ An implementation is Aequitas if, and only if, all of the following hold. Each i
 | 5 | Standing is **derived from an append-only record of events, never stored** as an authoritative balance. **A record of what happened holds physical quantities only — never a weight, a cost, a price, or a value.** Cost is produced when the record is read, by applying the current weighting model to it. | A6, A5 |
 | 6 | **Records are never destroyed or edited.** A disputed record is annotated; a superseded one is added beside. | §4.4, §4.8 |
 | 7 | **Mass and energy conserve across every recorded process**, within a stated tolerance and at one level of detail. **Everything the books track has both an origin and a fate** — it came from an extraction, or from an estimated entry for something that existed before the books did; and at any moment it is held, consumed, or released to a named place in the natural world. **A thing with neither an origin nor a fate is reported as unaccounted, never as absent.** Nothing is recorded as consumed before it exists or after it is gone. | A1, A4 · *IC-1, IC-2, IC-3, IC-4, IC-6* |
-| 7a | **A held thing has exactly one holder at any instant, and every change of holder is a recorded event.** This is what makes debit follow possession. | A1, §3.2, §3.2b · *IC-5* |
+| 7a | **A held thing has exactly one holder at any instant, and every change of holder is a recorded event.** This is what makes debit follow possession. | **A5**, A1, §3.2, §3.2b · *IC-5* |
 | 8 | **No account claims more than 24 hours of activity per 24 hours.** | A2, §5.5.5 · *IC-7* |
 | 9 | **Cumulative pledges never exceed lifetime earned credit**, 1:1. **The pledging budget is spent when the pledge is made, not when the work happens, and there is no path that returns it.** | §4.6 · *IC-8, IC-9* |
 | 10 | A debit is a **vector**. Any division is computed **per dimension, before collapsing** to a single figure. | §3.2a |

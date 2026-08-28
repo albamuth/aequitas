@@ -181,7 +181,7 @@ Why this is the right shape for Aequitas:
 - **Decentralized.** No authority, no standards body, no appointed reviewer. It is an incentive, not an enforcement rule.
 - **Self-funding.** The replication is credited work paid for by a party with a real stake — it passes the fourth screening question ("does this need a Paul Glover?") without help.
 - **Two-sided.** It converts a one-way asymmetry into a market. Every constant has a party who benefits from it being lower and a party who benefits from it being higher.
-- **Already implied.** A5 removes profit *in exchange*; it does not remove **rivalry in efficiency**, which Foundations §5.1 explicitly preserves ("competition happens on quality, artfulness, and efficiency"). Rival-sector audit is that competition applied to the cost model itself.
+- **Already implied.** A5 removes profit *in exchange*; it does not remove **rivalry in efficiency**, which Foundations §5.1 explicitly preserves ("producers compete on quality, artfulness, and efficiency"). Rival-sector audit is that competition applied to the cost model itself.
 
 **Supporting rules:**
 1. **A constant must be replicated by two unaffiliated sources before it may re-weight history.** Retroactive re-weighting is powerful enough that a single-source constant should not trigger it.

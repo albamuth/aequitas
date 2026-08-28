@@ -44,4 +44,4 @@ Third: whoever controls the [retroactive-reweighting](retroactive-reweighting.md
 
 ---
 *Status: settled (principle) / contested (enforcement)*
-*Source: `00-strategy/Aequitas_Foundations_v0.31.md` A8, §8*
+*Source: `00-strategy/Aequitas_Foundations_v0.32.md` A8, §8*

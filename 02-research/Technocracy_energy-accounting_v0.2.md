@@ -12,7 +12,7 @@
 
 **This is the closest thing in history to Aequitas, and it died.** Technocracy proposed scrapping money and running the economy on *energy* instead — measuring everything in units of energy, and handing out non-tradeable coupons that expired. Aequitas has to be able to say, precisely, what it does differently and why that difference is the one that matters.
 
-It bears on: measuring cost as physical flow ([Foundations §A1](../00-strategy/Aequitas_Foundations_v0.31.md#a1-materialism-of-cost)); the rule that a record of your work can never be traded away ([Foundations §A3 (non-fungibility)](../00-strategy/Aequitas_Foundations_v0.31.md#a3-non-fungibility)); the rule that no organisation owns the system's core ([Foundations §A8 (no governing body)](../00-strategy/Aequitas_Foundations_v0.31.md#a8-no-governing-body)); and the entire question of how a system like this ever gets adopted.
+It bears on: measuring cost as physical flow ([Foundations §A1](../00-strategy/Aequitas_Foundations_v0.32.md#a1-materialism-of-cost)); the rule that a record of your work can never be traded away ([Foundations §A3 (non-fungibility)](../00-strategy/Aequitas_Foundations_v0.32.md#a3-non-fungibility)); the rule that no organisation owns the system's core ([Foundations §A8 (no governing body)](../00-strategy/Aequitas_Foundations_v0.32.md#a8-no-governing-body)); and the entire question of how a system like this ever gets adopted.
 
 ## Key findings
 
@@ -39,7 +39,7 @@ It bears on: measuring cost as physical flow ([Foundations §A1](../00-strategy/
 
 - **One number can't carry everything.** Energy alone can't tell a joule spent healing someone from a joule spent torching a field. Aequitas tracks *several* physical dimensions at once (energy, materials, water, land, harm) and corrects them as understanding improves — which makes it *harder* to compute, not easier. Be honest about that trade rather than claiming a clean improvement.
 - **Their certificates were spendable** — a currency in all but name. Making them expire is a patch against hoarding, not a real fix. Aequitas removes the need for the patch entirely: its credit is a record of *who did what*, and there is simply nothing to hand over or hoard.
-- **Rule-by-experts is the exact trap Aequitas must avoid.** The danger lives on in the open question of how contribution turns into *influence* — any mechanism that converts expertise into authority risks rebuilding the Technate. (This is tracked as the project's open problem on turning contribution into say — see [Foundations §10 (open problems)](../00-strategy/Aequitas_Foundations_v0.31.md).)
+- **Rule-by-experts is the exact trap Aequitas must avoid.** The danger lives on in the open question of how contribution turns into *influence* — any mechanism that converts expertise into authority risks rebuilding the Technate. (This is tracked as the project's open problem on turning contribution into say — see [Foundations §10 (open problems)](../00-strategy/Aequitas_Foundations_v0.32.md).)
 - The Mises Institute source is openly hostile and should be read that way; the 2024 *Management & Organizational History* article is the better scholarly account.
 
 ## The question this note exists to force

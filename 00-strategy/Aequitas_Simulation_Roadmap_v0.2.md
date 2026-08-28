@@ -5,7 +5,7 @@
 > **Date:** 2026-08-23
 > **Status:** Author ruling, 2026-08-23.
 > **Supersedes:** `99-archive/Aequitas_Simulation_Roadmap_v0.1.md`. v0.1 read the author's eight examples as a list of eight deliverables and proposed a build order through them. **That was the wrong shape.** The author's correction: *"the goal would be simulators that could test any of those conditions, and thousands more."* **The deliverable is a configurable engine; a scenario is a configuration, not a script.** This version is rebuilt around that: what the engine must be able to express, how it decomposes, what the existing scripts become, and the discipline that stops it turning into a framework nobody uses.
-> **Companions:** `Aequitas_Foundations_v0.31.md` §1.2/§9 (scope, conformance list), `Aequitas_Strategy_v0.6.md` §2, `06-simulation/scenario-suite/scenario_suite_METHOD.md`.
+> **Companions:** `Aequitas_Foundations_v0.32.md` §1.2/§9 (scope, conformance list), `Aequitas_Strategy_v0.6.md` §2, `06-simulation/scenario-suite/scenario_suite_METHOD.md`.
 
 ---
 

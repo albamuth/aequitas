@@ -1,7 +1,7 @@
 <!-- tag: fnd-aequitas-foundations-and-long-term -->
 # Aequitas — Foundations & Long-Term Strategy
 
-> **Version:** 0.31
+> **Version:** 0.32
 > **Date:** 2026-08-28
 > **Status:** Working foundations.
 > **Primary audience of the first paper:** technologists and implementers.
@@ -101,110 +101,89 @@ Everything downstream — no capitalism, no rent, no taxation, no externalities,
 
 These are the immutable core. Nothing in Aequitas may contradict them, and nothing that varies below them may amend them (A8).
 
+> **Each axiom below is a definition and nothing else.** What follows from it, why it holds, and what it rules out are in §2 onward, and each axiom says where to look. **An axiom that argues for itself is doing another section's job.**
+
 <!-- tag: fnd-a1 -->
 ### A1 (materialism of cost)
 
-**Every credit and debit is a record of a real material or energy flow — there is no abstract, issued, or fiat quantity anywhere in the system.**
+**Every debit is a record of a real material or energy flow. Every credit is a record of time a person spent.**
 
-Down to the oxygen a human inhales and the CO₂ they exhale.
+**No abstract, issued, or fiat quantity exists anywhere in the system.**
 
-*Grounding for attribution.* Flows are attributed to whoever caused them, on the juridical principle of **responsibility imputation** — impute responsibility in accordance with who was in fact responsible. This is [David Ellerman's labour theory of property](http://et.worldeconomicsassociation.org/files/WEA-ET-5-1-Ellerman.pdf), and it is deliberately preferred to any labour theory of *value*: it is a theory of imputation, it inherits none of the transformation or negative-value problems, and it appeals to a principle its opponents already accept everywhere else. Only humans act; tools and capital do not. Responsibility therefore imputes to people, never to machinery or its owners.
+**A flow is attributed to whoever caused it. Only people act, so responsibility attaches to people, and never to a tool, a machine, or whoever owns one.**
 
-> **Corollary — financial instruments carry no debit**. Stocks, bonds, currencies, crypto-tokens, options, and other financial claims are exactly the "abstract, issued, or fiat quantity" A1 excludes: they are not matter or energy. **They therefore never appear on any ledger.** What *is* accounted is the **material** they are claims *upon* — a factory, land, a building — and that material's debit sits on whoever physically **holds or operates** it (embodied-material dischargeable on transfer; creation-cost holding-time-split, §3.2/§4.5), never on the paper. This is not a loophole for hidden wealth: owning a factory through shares does not move its material debit to *nobody* — it stays on the factory's operators, by holding time. The consequence is measured in the scenario suite: entering the previously-wealthy **material-only** collapses the observed inequality tail by ~three orders of magnitude versus their paper net worth (§5.5, `06-simulation/scenario-suite/q4_locked_ledgers.py`), because financial wealth was never material and physical consumption is bounded by time.
+*Where this is worked out: §2.2 for what a debit is and the grounding for attribution · §2.3 for what a credit is · §3.1 for why stocks, bonds and currencies never appear.*
 
 <!-- tag: fnd-a2 -->
 ### A2 (time as measure)
 
-**Time is only a yardstick for summarizing flows, never a substance with value — so labour is never rate-scaled, and differences between workers resolve as material costs, never as a multiplier.**
+**Time is a yardstick for summarising flows. It is not itself a substance with value.**
 
-Time is a convenient universal yardstick for summarizing flows — a local second is a local second, measurable identically everywhere. But an hour is not *itself* value. Differences between workers resolve as *material* differences, never as a multiplier:
+**Labour is never rate-scaled. One hour credits as one hour, whoever worked it.**
 
-- **Hard labor** → extra caloric intake is recorded as real food-production cost.
-- **Hazardous labor** → health harms discovered later are retroactively injected as debit into the products and services that caused them.
-- **Skilled labor** → **training is credited work in its own right, and its cost is discharged at the time of training.** Nothing flows downstream. See §4.5.
+**Differences between workers — exertion, hazard, and skill — are recorded as material costs, never as a multiplier on time.**
 
-> **A2 is also the reason the co-product allocation problem has an answer (§3.4a).** Because every physical quantity in the ledger — a kilogram, a joule, a tonne of CO₂ — is a proxy for hours to produce or to mitigate, **the system never has to choose between mass and energy as *the* unit of account.** The universal is the denominator, not the carrier. This is a stronger consequence of A2 than was recognised when it was written.
+*Where this is worked out: §2.3, with each of the three differences shown · §3.4a for why the unit of account never has to be chosen.*
 
 <!-- tag: fnd-a3 -->
 ### A3 (non-fungibility)
 
-**Every credit and debit is a unique, non-exchangeable record of a specific event — credits can never be transferred, traded, gambled, lent, or stolen; only debit moves, and only by transferring the thing it is attached to.**
+**Every credit and every debit is a unique record of one specific event.**
 
-A3 is not a design preference. Under A1 it is a **consequence**: credit records who was responsible, responsibility is a fact about a person, and facts about people do not change hands. It also does three defensive jobs at once — see §5.6.
+**A credit can never be transferred, traded, gambled, lent, or stolen.**
+
+**Only debit moves, and it moves only by transferring the thing it is attached to.**
+
+*Where this is worked out: §2.3 for why this follows from A1 rather than being a design choice · §5.6 for the three separate jobs it does.*
 
 <!-- tag: fnd-a4 -->
 ### A4 (no externalities)
 
-**Every consequence of an activity is accounted to whoever caused it, including consequences discovered decades later — there is no "outside" of the accounting.**
+**Every consequence of an activity is accounted to whoever caused it, including a consequence discovered decades later.**
 
-> **What this does not say.** **A4 requires every cost to land on *a* ledger. It never requires a cost to land on the ledger of the thing that was made.** §3.2b keeps pollution permanently on its causer rather than on the goods; §4.4 holds an unattributed leftover on nobody at all; §4.5 refuses to let a cost run backwards into the history of its inputs. **All three satisfy A4.**
+**There is no "outside" of the accounting.**
+
+*Where this is worked out: §2.2 for what A4 does not require · §3.3 for consequences found later · §4.4 for what a network cannot see.*
 
 <!-- tag: fnd-a5 -->
 ### A5 (cost, not price)
 
+**Possession decides who carries the debit that rides a thing. Taking a thing is taking on that debit; handing it on moves whatever moves with it.**
+
 **A thing's cost is the current best estimate of what was materially consumed to make it. Nothing is added to that figure, and nothing enters it that the thing did not consume.**
 
-**Whoever takes a thing, or receives a service, takes on a debit equal to that figure. There is no profit in exchange — only debit discharged and debit acquired.**
+**There is no profit in exchange. There is only debit acquired and debit discharged.**
 
-Competition happens on **quality, artfulness, and efficiency**, never on margin.
-
-**The boundary is physical fate: what was used up making the thing is in its cost; what survived the process is not** (§4.5). A durable asset holds its own creation-cost, carried by its holders (§4.5), and **that cost never enters the things the asset was used to make.**
-
-**This is not an exemption from A4 (no externalities).** Every cost still lands on a ledger. It is **A1 (materialism of cost)'s imputation rule applied to cost**: a cost attaches to whoever caused it, and **a thing causes nothing** — only people act. Charging a beef buyer for the barn is the same error as charging a ring buyer for the miner's tailings, which §3.2b already refuses. **Worked numbers: §4.5.**
-
-**The estimate is never final.** Better measurement re-weighs it, and every record made under it, automatically (A6 (derived, not stored), §3.3). **A cost is a dated reading, not a verdict.**
+*Where this is worked out: §2.2 for how A5 and A1 divide the work · §2.4 for what a hand-off does · §3.2 for which parts of a debit move and which stay · §4.5 for why a barn is not in the beef · §5.1 for what competition is left.*
 
 <!-- tag: fnd-a6 -->
 ### A6 (derived, not stored)
 
-**Balances are never authoritative — the event log is; any account's standing is a pure function of its events times the current scientific cost-weighting model.**
+**An account's standing is never stored. It is computed from the event log whenever anyone asks, by applying the current weighting model to the events.**
 
-Improve the science, and all history re-weighs automatically (§3.3).
+**The log is authoritative. A balance is not.**
+
+*Where this is worked out: §3.0 for what a standing is · §3.1 for the log · §3.3 for what happens when the science improves.*
 
 <!-- tag: fnd-a7 -->
 ### A7 (universal accounting)
 
-**Every human is accounted for whether or not they participate, with credit and debit estimated symmetrically for everyone (§4.1) — but a position becomes realizable only on a verified account.**
+**Every human is in the books, whether or not they take part. Credit and debit are estimated for everyone.**
 
-- **Accounted** — every human carries an estimated credit *and* debit position. A factual claim about material flows, not a claim on or by the person.
-- **Realizable** — an estimated position acts on a person's debit ceiling only once they hold a **verified account** and their estimates have been superseded by observed, attested records.
+**An estimated position becomes usable only when the person holds a verified account and observed records have replaced the estimates.**
 
-Non-participants are fully represented in the books and can draw nothing from them. **Participation is the act of converting an estimate into a record.**
-
-**Corollary — credit is issuable retroactively.** When a person joins, their prior real contributions enter the record at the dates they occurred.
-
-> **Design constraint — estimation error is not symmetric.** Over-estimating debit consumes nothing. Over-estimating credit inflates real consumption ceilings on the basis of guessed production. Symmetric in *form*, asymmetric in *consequence* — which is why realization is gated on observation.
+*Where this is worked out: §4.1 for what an estimate is and is not · §4.4 for how a network estimates what it cannot see, and for a life rebuilt back to birth.*
 
 <!-- tag: fnd-a8 -->
 ### A8 (no governing body)
 
-**No organization that grows up around Aequitas may acquire authority over its core rules — governance is a protocol property, not an institution.**
+**No organisation may acquire authority over the core rules. Governance is a property of the rules themselves, not of any institution.**
 
-Rules evolve as **immutable core + open variance**: everything below the core may differ from one trust network to the next, and those differences compete in public.
+**The axioms above may not vary, and neither may the conformance requirements** — [`Aequitas_Conformance_v0.8.md`](Aequitas_Conformance_v0.8.md).
 
-**What may vary.** A trust network may run a different weighting model, a different self-care floor, a different privacy practice, a different verification rung. **It must publish what it runs, and anyone else must be able to re-compute its claims** (§4.7, §4.2).
+**Everything below them may differ from one trust network to the next. A network must publish what it runs, so that anybody else can re-compute its claims.**
 
-**What may not vary.** The axioms above, and the conformance requirements in [`Aequitas_Conformance_v0.8.md`](Aequitas_Conformance_v0.8.md).
-
-#### Which activities are always creditable is left to the network
-
-Which activities are **always** creditable — childcare, schooling and whose schooling, subsistence farming, untrained medical assistance — is **not settled by this document, and should not be.** It is exactly the kind of question open variance leaves to networks competing in public.
-
-**But name the risk: the set of always-credited activities is a capture surface.** A network that can declare an activity creditable can issue credit. **The defence is structural rather than procedural.** Competing networks, plus ratio-based evaluation (§3.5): a network that credits worthless activity produces members with poor efficiency ratios, and other networks stop trading with it. **This is OP-10 (weighting governance) wearing different clothes and should be worked with it.**
-
-**A second structural defence, from §3.3a.** A trust network's membership composition is public, and **a network concentrated in the sector it audits is captured by construction.** That makes capture *detectable from the log* rather than something anyone must police. It is a screening property, and it applies to always-creditable activity lists as much as to cost constants.
-
-> ### 📦 A TRUST NETWORK HAS NO SET SIZE
->
-> **A8 is about who may change the rules. It is not about how big anyone is.**
->
-> A trust network may cover one valley, one trade, one country, several continents, or the world. **Nothing in these documents fixes the size of a network, and nothing should.** Size is one more dial under §1.2, and the accounting is identical at both ends of it.
->
-> **One place in this document depends on that.** §4.8 expects networks to **federate and merge toward a single network over time**, rather than settling into separate regional systems.
->
-> **The `24 ÷ F` bound is not a second example of it.** That bound describes **one network's own books** and says nothing about any wider set of networks, because networks do not trade with each other and no book is ever added to another (§4.0, §5.5.5).
->
-> **Where this document does mean somewhere geographic**, it is describing a *physical* thing handed to a *physical* person: a butcher's queue for a scarce cut (§3.4a, §5.5), or a village served by one generator (§3.2b). **A scarce object has to be given out somewhere. That is a fact about the object, not about the network.**
+*Where this is worked out: §1.2 for which settings vary · §2.3 for which activities a network may credit, and the boundary it may not cross · §4.0 for what a trust network is and how big one may be · §4.7 for what a network owes.*
 
 <!-- tag: fnd-s1-1 -->
 ### 1.1 Named conventions
@@ -256,6 +235,22 @@ Two thought experiments, both fully compatible with everything in this document:
 **The accounting is identical in both.** Conservation still holds, the integrity constraints still recompute, the residual rule still runs, the disparity ceiling still binds. **Nothing in this document changes.**
 
 **So human-facing transparency is not a foundational question.** It is the §4.7 dial, and §4.7 is right to leave it to the network. The same reasoning applies to storage technology, jurisdiction, corporate form, and compliance posture.
+
+#### Which settings actually vary from one network to the next
+
+**A8 says everything below the axioms may differ between networks, provided the network publishes what it runs. These are the settings that do differ.**
+
+| The setting | Where it is described |
+|---|---|
+| **The weighting model** — what a kilogram, a joule or a tonne of CO₂ costs in hours | §3.3, §3.3a |
+| **The floor, `F`** — how many hours a day count as the work of staying alive | §5.5.1 |
+| **The debit tolerance, ρ** — the multiplier in the consumption gate | §3.0, §5.5.3 |
+| **The privacy practice** — how much anyone can see | §4.7 |
+| **The verification rung** — how hard the network checks a claim | §4.3 |
+| **The list of always-creditable activities** — inside the boundary §2.3 fixes | §2.3 |
+| **The size of the network** | §4.0 |
+
+**A network must publish what it runs, and anyone else must be able to re-compute its claims** (§4.2, §4.7). **Publishing is the condition on the variance, not an extra courtesy.**
 
 #### What this rules out of scope, explicitly
 
@@ -331,6 +326,16 @@ Ithaca HOURS died when its founder relocated; he himself said every local curren
 
 **It is not a bill, and nobody collects it.** No account is ever settled and there is nothing to pay.
 
+**"Matter or energy" means all of it, with nothing too small to record** — down to the oxygen a human breathes in and the carbon dioxide they breathe out.
+
+#### Who a flow is attributed to, and why
+
+**A1 says a flow attaches to whoever caused it. The reason is a principle courts already use everywhere else: impute responsibility to whoever was in fact responsible.**
+
+**This is [David Ellerman's labour theory of property](http://et.worldeconomicsassociation.org/files/WEA-ET-5-1-Ellerman.pdf), and it is chosen deliberately over any labour theory of *value*.** A theory of value tries to say what things are worth. **A theory of imputation only says who did what**, so it inherits none of the problems that sank the value theories, and it argues from a principle its opponents already accept.
+
+> **Only people act. A tool does not, a machine does not, and neither does whoever owns one.** So responsibility attaches to people, and never to machinery or to its owner.
+
 **A debit is stored as a bundle of physical quantities rather than as one number** — kilograms of a substance, joules, labour-hours, cubic metres of water, land-area-years. **It becomes a single comparable figure only when somebody needs to compare two things**, and the conversion happens at that moment, using whatever the current science says a unit of each takes to make or to clean up. §3.2a states the rule that follows; §3.3 states what happens when the science improves.
 
 **There are two kinds, and they behave differently when a thing changes hands.**
@@ -341,6 +346,17 @@ Ithaca HOURS died when its founder relocated; he himself said every local curren
 | **Consumption and pollution debit** | What you used up, burned, or released | **It never moves.** It stays on whoever caused it, permanently |
 
 **§3.2 works both rows through in full.**
+
+#### A1 and A5 answer two different questions, and that is what the two rows are
+
+**A reader meeting both axioms will ask which one decides who holds a debit. They both do, for different debits.**
+
+| The question | The axiom that answers it | The example |
+|---|---|---|
+| **Who is responsible for a flow they caused?** | **A1.** Responsibility is a fact about a person | The miner keeps the tailings. The driver keeps the tailpipe |
+| **Who carries the debit that rides an object?** | **A5.** Possession decides it | Whoever is holding the ring carries its gold |
+
+> **A pollution debit follows the causer and never the object** (§3.2b). **A property debit follows the object, and therefore follows possession** (§3.2). **The two never compete for the same debit.**
 
 ##### An example, with the numbers
 
@@ -354,12 +370,30 @@ A baker sells a loaf. Three things were recorded while it was made.
 
 **Nothing was added to any of those three figures, and no total was struck.** The buyer took a loaf carrying 0.8 kg and a small share of 0.2 hours. The 0.3 kg of CO₂ stayed where it was.
 
+#### Two things a debit is not
+
+> **A debit is never final.** Better measurement re-weighs it, and re-weighs every record made under the old figure, automatically (A6, §3.3). **A cost is a dated reading, not a verdict.**
+
+> **And A4 does not require a cost to land on the made thing.** **A4 requires every cost to land on *a* ledger. It says nothing about whose.** §3.2b keeps pollution permanently on its causer rather than on the goods. §4.4 holds an unattributed leftover on nobody at all. §4.5 refuses to let a cost run backwards into the history of its inputs. **All three satisfy A4.**
+
 <!-- tag: fnd-s2-3 -->
 ### 2.3 Credit
 
 > **A credit is a record that a person spent an hour of their life on work. It is a true statement about the past, so it belongs to one person and never moves.**
 
-**Everyone earns at the same rate.** There is no multiplier for a profession, a rank, a skill or a hazard (A2). Real differences between workers land as **material** costs — a labourer eats more, a dangerous process injects the harm it caused back into what it made — and never as a larger number for the same hour.
+**A credit belongs to one person and never moves, and that follows from A1 rather than being a design choice.** A credit records **who was responsible**. Responsibility is a fact about a person. **Facts about people do not change hands**, so there is nothing coherent to transfer (A3).
+
+#### Everyone earns at the same rate
+
+**There is no multiplier for a profession, a rank, a skill, or a hazard** (A2). **Real differences between workers are real, and every one of them lands as a material cost instead.**
+
+| The difference | Where it lands |
+|---|---|
+| **Hard work** | The extra food a labourer eats is recorded as **real food-production cost** |
+| **Dangerous work** | A harm discovered later is injected back as debit into the products and services made by the process that caused it (§3.3) |
+| **Skilled work** | **Training is credited work in its own right, and its cost is settled at the time of training.** Nothing is charged to whoever uses the skill later (§4.5) |
+
+**None of the three is a larger number for the same hour.**
 
 #### What counts as work
 
@@ -376,6 +410,26 @@ A baker sells a loaf. Three things were recorded while it was made.
 **An hour that is all three is still one hour.** An apprentice plumber's single hour turns copper into working plumbing, fixes a customer's pipes, and teaches them a trade. **That is production, a service, and enrichment, in the same hour. It credits as one hour.** Splitting it would need a convention nobody can measure (§1.1), and there is no reason to want one.
 
 > **The three categories decide whether an hour is creditable. They never decide how much it credits.** No rule in this system may credit production at one rate and enrichment at another, or divide a single hour between them (§4.5).
+
+#### The gate is the boundary. What sits inside it is the network's choice
+
+**Which activities a network *always* credits — childcare, schooling and whose schooling, subsistence farming, untrained medical assistance — is not settled by this document and should not be.** It is exactly the kind of question A8 leaves to networks competing in public.
+
+> **The three categories are the outer wall, and they do not vary. The list of always-credited activities sits inside that wall, and it does.**
+
+**Name the risk plainly: the list is a capture surface.** A network that can declare an activity creditable can issue credit. **The gate narrows what a network may declare. It does not close the question.**
+
+**A network cannot declare loyalty to itself creditable**, because loyalty is not production, not a service, and not enrichment. **It can still stretch *enrichment* a long way**, and nothing here stops it.
+
+**Three defences carry the rest, and all three are structural rather than procedural.**
+
+| | |
+|---|---|
+| **Competing networks and ratio-based evaluation** (§3.5) | A network that credits worthless activity produces members with poor efficiency ratios, and other networks stop trading with it |
+| **Public membership composition** (§3.3a) | A network concentrated in the sector it audits is captured by construction, and **that is visible from the log** rather than something anyone must police |
+| **The published evidence rule** (§4.2) | A network credits no kind of work for which it has published no rule, and the rule is readable before anyone joins |
+
+**This is OP-10 (weighting governance) wearing different clothes and should be worked with it.**
 
 #### Why enrichment is named separately
 
@@ -459,6 +513,20 @@ Two people, both aged 40, in a network with a floor of 10 hours a day and ρ = 1
 ### 3.1 Structure — an event log, not a balance
 
 One permanent, append-only **record of activity**: who did what, when, involving which materials and energy. An account's displayed standing is a **continuously recomputed projection** of that log.
+
+#### What never goes in the log: financial instruments
+
+> **Stocks, bonds, currencies, crypto-tokens, options and other financial claims never appear on any ledger.** They are exactly the abstract, issued quantity A1 excludes, because they are not matter and not energy.
+
+**What is recorded is the *material* the claim is a claim upon** — a factory, a building, a piece of land. **That material's debit sits on whoever physically holds or operates it** (§3.2: the embodied material discharges on transfer, the making-hours split by holding time, §4.5). **It never sits on the paper.**
+
+**This is not a way of hiding wealth.** Owning a factory through shares does not move its material debit to nobody. **It stays on the people who operate the factory, divided by how long each has been there.**
+
+##### An example, with the numbers
+
+**The effect was measured.** Entering the previously wealthy into the books **material-only** collapses the observed inequality tail by **about three orders of magnitude** against their paper net worth — money wealth reaches roughly **10⁶ ×** the median, while material consumption reaches roughly **670 ×** (§5.5, `06-simulation/scenario-suite/q4_locked_ledgers.py`).
+
+**The reason is not a rule. It is that consuming physically takes time, and nobody has more than 24 hours in a day.**
 
 <!-- tag: fnd-s3-2 -->
 ### 3.2 The two kinds of debit — and the two components of property debit
@@ -745,6 +813,8 @@ Some processes produce several things at once from one pool of inputs. A steer e
 
 **This is not a rule about the outputs.** It does not ask what an output weighs, what it is worth, or whether anyone wants it. It asks what the process did.
 
+> **A2 is why this problem has an answer at all, and it is worth seeing why.** Every other attempt at this had to pick **one** unit of account and then defend it: split by mass, and energy-heavy outputs read as free; split by energy, and heavy outputs read as free. **A2 removes the choice.** Because every physical quantity in the ledger — a kilogram, a joule, a tonne of CO₂ — is a stand-in for the hours it takes to produce or to clean up, **the system never has to name one of them as *the* unit.** The universal is the denominator, not the carrier.
+
 #### How the split is actually produced, in order
 
 1. **Read what the facility meters, for the period in question.** Masses in and out, energy used, labour hours. Where a plant meters separate production lines — cutting separately from tanning, grinding separately from sieving — **that metered routing is the split.** Nothing needs to be inferred.
@@ -886,6 +956,18 @@ Two things persist regardless of remediation: the structure's **construction and
 
 **Everything in this section is work that a trust network does.** Where a rule reaches across two networks, the text says so.
 
+> ### 📦 A TRUST NETWORK HAS NO SET SIZE
+>
+> **A8 is about who may change the rules. It is not about how big anyone is.**
+>
+> A trust network may cover one valley, one trade, one country, several continents, or the world. **Nothing in these documents fixes the size of a network, and nothing should.** Size is one more dial under §1.2, and the accounting is identical at both ends of it.
+>
+> **One place in this document depends on that.** §4.8 expects networks to **federate and merge toward a single network over time**, rather than settling into separate regional systems.
+>
+> **The `24 ÷ F` bound is not a second example of it.** That bound describes **one network's own books** and says nothing about any wider set of networks, because networks do not trade with each other and no book is ever added to another (§4.0, §5.5.5).
+>
+> **Where this document does mean somewhere geographic**, it is describing a *physical* thing handed to a *physical* person: a butcher's queue for a scarce cut (§3.4a, §5.5), or a village served by one generator (§3.2b). **A scarce object has to be given out somewhere. That is a fact about the object, not about the network.**
+
 #### The words this section uses
 
 | Term | What it means |
@@ -940,6 +1022,15 @@ Two things persist regardless of remediation: the structure's **construction and
 | **Credit** | A production model for their occupation, region and known activity, computed while **excluding** measured producers (§4.4). |
 
 > **A non-participant can neither draw on their estimated position nor be charged for it.** The estimate is a statement about material flows in the world. It is not a claim on the person, and the person has no claim from it.
+
+#### Two words A7 uses, and the difference between them decides everything
+
+| | What it means |
+|---|---|
+| **Accounted** | Every human carries an estimated credit **and** debit position. **This is a factual claim about material flows in the world.** It is not a claim on the person, and not a claim the person holds |
+| **Realizable** | An estimated position starts acting on what a person may consume **only once two things are true**: they hold a verified account, and observed, attested records have replaced the estimates |
+
+> **Everyone is accounted. Only subscribers are realizable. Participation is the act of turning an estimate into a record.**
 
 #### One person may hold an account with more than one network
 
@@ -1237,6 +1328,10 @@ A median lifestyle commands about **1,380 hours** of other people's labour a yea
 1. **An estimate for an undisclosed period is computed over the undisclosed leftover, not over the whole population.** This is the rule above, applied to periods inside one life. Without it, a person who documents only their flattering years free-rides forever on an average their own silence inflates. **Selective disclosure is expected and is not an exploit, provided this holds.**
 2. **An estimate errs against the estimated party, on both sides.** Debit is estimated at the unfavourable end and credit at the conservative end, so **supplying evidence always pays**, whichever way the truth lies.
 
+> **Why the two sides are not treated alike, and it is not a preference.** **Over-estimating somebody's debit consumes nothing** — it costs them room they were not using. **Over-estimating their credit hands out real consumption room on the strength of a guess about production.** The two errors are the same shape and have opposite consequences, **which is why a position only starts acting on what a person may consume once observation has replaced the estimate** (A7).
+
+> **Credit is issuable backwards, and this is where that happens.** When a person joins, their earlier real contributions enter the record **at the dates they occurred**, not at the date they joined.
+
 > **Subsistence is exempt and must stay exempt.** The floor is not an estimate. **It is credit for hours that were really spent, attested by proof of life** (§4.2). **So condition 2 never reaches subsistence, and a person who cannot document a life is not thereby impoverished by this rule.**
 
 **Two rules this looks like it breaks, and does not.** A non-participant is never charged for an estimated position, and **nothing is charged until they join, which is voluntary**. And §3.3's rule that a revision never invalidates a completed act still holds, because **acts before joining were never gated by any network**, so no permission is being withdrawn.
@@ -1310,6 +1405,8 @@ A median lifestyle commands about **1,380 hours** of other people's labour a yea
 | **What beef actually carries from the barn** | **0.0** |
 
 **The beef did not build the barn.** Under A1 only people act, so a cost attaches to the people who caused it, and **a thing causes nothing.** The 20,000 hours sit on the barn's holders.
+
+> **This is not an exemption from A4 (no externalities), and the objection is worth answering here rather than leaving it.** Every hour still lands on a ledger. **A4 requires that; it never required the ledger to be the product's** (§2.2). **Charging a beef buyer for the barn is the same error as charging a ring buyer for the miner's tailings**, which §3.2b already refuses. One rule, two directions.
 
 **And that is not light.** At ρ = 1.2, carrying 20,000 hours of debit needs **16,667 hours of credit** standing behind it, against the roughly 3,650 hours a year a person accrues from staying alive. **The barn eats 4.6 years of one person's entire credit accrual, which is why nobody builds a barn they do not need.**
 
@@ -1630,7 +1727,11 @@ A median lifestyle commands about **1,380 hours** of other people's labour a yea
 
 **The exploitative employer is structurally hollowed out**. The wage-extraction employer has no mechanism to exist: credit is non-transferable, so there are **no wages** to pay (A3 (non-fungibility)); a thing's figure is what it consumed and nothing may be added, so there is **no surplus to appropriate** (A5 (cost, not price)); and a team's debit is shared **by hours worked, not by rank** (§4.5), so a supervisor **cannot dump risk or cost onto subordinates**. Workers are credited by the *system* for their hours, not paid by a boss. **What survives is coordination** — organizing a process, directing what gets made, controlling access to desirable projects — and that residual power is real: it is the **coordinator-class problem (P4 (coordinator class))**, the live blocker, not the extractive employer this system already forecloses.
 
-**What survives, and is load-bearing: competition on efficiency.** A5 removes margin, not rivalry. §3.3a leans on this directly — rival sectors auditing each other's cost constants is the only thing standing between the weighting model and systemic under-costing.
+**What survives is competition, and the system depends on it.** A5 removes margin, not rivalry.
+
+> **Producers compete on quality, artfulness, and efficiency. They never compete on margin, because there is no margin to compete on.**
+
+**Doing the same thing with fewer hours, less material and less waste is the whole of the contest.** §3.3a leans on this directly, and says plainly why the lean is weaker than it looks: rival sectors auditing each other's cost constants is one pressure among several rather than a mechanism, and systemic under-costing is still open (**OP-24**).
 
 <!-- tag: fnd-s5-2 -->
 ### 5.2 Exploitation and pollution self-penalize
@@ -1902,7 +2003,7 @@ Those activities are **sleeping, eating, defecating, and keeping oneself clean.*
 
 #### 5.5.8 The real-distribution comparison
 
-`06-simulation/scenario-suite/q4_locked_ledgers.py` applies the bound to real US and world distributions under the **material-only** rule (A1's corollary), asking what fraction of people would sit past a permanent lockout — non-essential consumption held at the floor for life because their sustained footprint exceeds `ρ · 24 h/day`, the most any human can earn.
+`06-simulation/scenario-suite/q4_locked_ledgers.py` applies the bound to real US and world distributions under the **material-only** rule (A1, and the financial-instruments rule in §3.1), asking what fraction of people would sit past a permanent lockout — non-essential consumption held at the floor for life because their sustained footprint exceeds `ρ · 24 h/day`, the most any human can earn.
 
 - **Stripping the financial layer collapses the top of the distribution by about 1,000×.** Money wealth reaches ~10⁶× the median, but material **consumption** only ~670× (Oxfam billionaire personal footprints), because consuming physically takes bounded time. **The spread the bound has to cap is far smaller than the monetary one.**
 - **Only a thin slice is locked.** Material-only, about **0.1–2%** of Americans are permanently locked, ρ-dependent, around 0.5% at ρ = 1.5. **These are the ultra-consumers, not the merely rich**, and fully divesting material property does not save them, because consumption debit is permanent (§3.2). **Meanwhile about two-thirds sit below their cohort average and would gain room by joining** (§4.8).
@@ -1960,4 +2061,4 @@ A3 therefore does three separate defensive jobs: it forbids accumulation (§5.1)
 
 ---
 
-*End of v0.31.*
+*End of v0.32.*

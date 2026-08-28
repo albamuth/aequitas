@@ -4,7 +4,7 @@
 > **Date:** 2026-08-23
 > **Raised by:** the author. **Ruled by the author the same day.**
 > **Status:** 🟢 **Ruled and stress-tested. Passes.** One capture surface named and routed; one residual flagged.
-> **Reads against:** `Aequitas_Foundations_v0.31.md` A1, A2, A3, A5, A7, §3.2, §3.2b, §3.6, §4.1, §4.4, §4.8, §4.6, §5.5, §11 
+> **Reads against:** `Aequitas_Foundations_v0.32.md` A1, A2, A3, A5, A7, §3.2, §3.2b, §3.6, §4.1, §4.4, §4.8, §4.6, §5.5, §11 
 > **Supersedes the open version of this paper**, which argued §3.2 and §3.2b contradict each other at the boundary. **They do not. The objection is answered in §3 below.**
 
 > **⚠️ The event-log paper was retired on 2026-08-28.** References to `EventLog §…` below are historical and no longer resolve. **The arithmetic constraints IC-1 to IC-12 are now conformance rows in [`Aequitas_Conformance_v0.8.md`](../Aequitas_Conformance_v0.8.md) §2**, which carries a label map; everything else it held is in Foundations. The archived paper is `99-archive/Aequitas_EventLog_v0.10.md`.
@@ -36,7 +36,7 @@ Both halves fall out of axioms that were already written.
 
 | The ruling says | Which is already | Where |
 |---|---|---|
-| The network does not acknowledge the money | **A1's corollary, word for word.** Financial instruments are not matter or energy, so they *"never appear on any ledger."* | A1 |
+| The network does not acknowledge the money | **A1's financial-instruments rule (Foundations §3.1), word for word.** Financial instruments are not matter or energy, so they *"never appear on any ledger."* | A1 |
 | A good with no origin records is estimated | **§12.3a, already settled 2026-08-22.** No records ⇒ cost estimated exactly as all dark production is. | EventLog §12.3a |
 | The template is that estimate, pre-computed | **§4.4's estimation rule, cached** so a transaction need not wait for a reconstruction. | §4.4 |
 | Handing a good outside keeps its debit on you | **§3.2, unchanged.** *"There is no exit through a non-participant."* | §3.2 |

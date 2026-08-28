@@ -2,7 +2,7 @@
 # Aequitas — Objections Register
 
 > **Version:** 0.24 · **Date:** 2026-08-28
-> **Tracks:** `Aequitas_Foundations_v0.31.md` · `Aequitas_Conformance_v0.8.md` · `OP-22_identity_not_disclosure_v0.2.md` · `OP-27_parallel_implementation.md` · `OP-26_coverage_and_closure.md` · `OP-18_labour_and_team_credit.md` · `OP-23_capital_and_pollution.md` · `OP-17_coproduct_allocation.md` · `06-simulation/allocation-engine/RECURSION_RESULTS.md` · `06-simulation/disparity-ceiling/DISPARITY_CEILING.md` · `06-simulation/pledge-reserve/pledge_reserve.py` · `06-simulation/scenario-suite/scenario_suite_METHOD.md`
+> **Tracks:** `Aequitas_Foundations_v0.32.md` · `Aequitas_Conformance_v0.8.md` · `OP-22_identity_not_disclosure_v0.2.md` · `OP-27_parallel_implementation.md` · `OP-26_coverage_and_closure.md` · `OP-18_labour_and_team_credit.md` · `OP-23_capital_and_pollution.md` · `OP-17_coproduct_allocation.md` · `06-simulation/allocation-engine/RECURSION_RESULTS.md` · `06-simulation/disparity-ceiling/DISPARITY_CEILING.md` · `06-simulation/pledge-reserve/pledge_reserve.py` · `06-simulation/scenario-suite/scenario_suite_METHOD.md`
 > **Version history & what each version superseded:** `00-strategy/Aequitas_Objections_CHANGELOG.md`.
 > **Purpose:** one place holding every serious objection to the theory, its source, the axiom it attacks, and its status.
 
@@ -521,7 +521,7 @@ A second wave of critique arrived on 1f916.ai against posts #1605, #1750 and #15
 
 **The ruling.** Both directions are deliberately costly and neither is forbidden. **Into Aequitas:** a money-made good is dark until sold in, and clears at the hand-off by full onboarding *or* a **pre-approved published template**; the maker spent money and receives none. **Out of Aequitas:** permitted, **the debit stays with the seller**, and the network treats it as a **gift** and does not acknowledge the money at all.
 
-**Nothing new was invented, which is the sign it holds.** Money's invisibility is **A1's corollary**; the dark estimate is **§4.4**; the retained debit is **§3.2**; the gift is **§4.8**; the fate closes as **§3.6** already closes it. **The only new object is the template, and it is a cache rather than a mechanism** — carrying two inherited rules: it **errs against the seller** (§4.4's conservative-count rule) and it is **published with method and vintage** (§4.7).
+**Nothing new was invented, which is the sign it holds.** Money's invisibility is **A1 plus the financial-instruments rule, Foundations §3.1**; the dark estimate is **§4.4**; the retained debit is **§3.2**; the gift is **§4.8**; the fate closes as **§3.6** already closes it. **The only new object is the template, and it is a cache rather than a mechanism** — carrying two inherited rules: it **errs against the seller** (§4.4's conservative-count rule) and it is **published with method and vintage** (§4.7).
 
 **Stress test — what survived.**
 
@@ -732,7 +732,7 @@ The barn stays on the farm operator; the fab stays on its cooperative; hide and 
 > | **Was** (v0.10–v0.21) | The consumer's **contracted supply mix** — the generator they bought from. |
 > | **Now** (Foundations v0.22) | **The grid's actual measured fuel mix over the half-hourly periods the consumer drew power**, from the meter record and the grid operator's own published output record. |
 >
-> **Why.** A supply agreement is a paper claim, not matter or energy. **A1's corollary says paper claims never appear on any ledger**, so letting one decide a physical CO₂ record was an A1 breach that nobody had spotted. **A record of CO₂ must come from a measurement of CO₂.**
+> **Why.** A supply agreement is a paper claim, not matter or energy. **A1's financial-instruments rule (Foundations §3.1) says paper claims never appear on any ledger**, so letting one decide a physical CO₂ record was an A1 breach that nobody had spotted. **A record of CO₂ must come from a measurement of CO₂.**
 >
 > **What it costs:** exploit 1 below (the dirty generator) was answered by contracts, and now is not. **The generator's incentive to decarbonise moves to three routes that already exist** — their own capital and process debit (§4.5), pledges toward clean generation (§4.6), and §3.3 retroactive re-weighting, under which cleaning the grid lightens every past consumer's record.
 >

@@ -10,7 +10,7 @@
 
 ## Why this matters to Aequitas
 
-Aequitas's whole idea of attribution rests on one phrase: costs are pinned to *"the people who caused the movement"* of material and energy ([Foundations §A1](../00-strategy/Aequitas_Foundations_v0.31.md#a1-materialism-of-cost)). That phrase carries an enormous amount of weight and currently has no deeper justification behind it. **Ellerman supplies exactly that justification — and, in the same move, shows its hardest limit.** He is both the best philosophical ally the project has and the source of one of its live open problems (splitting blame within a team).
+Aequitas's whole idea of attribution rests on one phrase: costs are pinned to *"the people who caused the movement"* of material and energy ([Foundations §A1](../00-strategy/Aequitas_Foundations_v0.32.md#a1-materialism-of-cost)). That phrase carries an enormous amount of weight and currently has no deeper justification behind it. **Ellerman supplies exactly that justification — and, in the same move, shows its hardest limit.** He is both the best philosophical ally the project has and the source of one of its live open problems (splitting blame within a team).
 
 ## Key findings
 
@@ -23,8 +23,8 @@ Aequitas's whole idea of attribution rests on one phrase: costs are pinned to *"
 ## What we can use
 
 1. **Adopt Ellerman as the grounding for attribution, in place of Marx.** This is much better positioning: it's a *legal-responsibility* argument, not a theory of value, so it doesn't drag in the century of technical problems and hostility attached to Marx's value theory. It's also harder to dismiss — it appeals to a principle its opponents already accept everywhere else.
-2. **It reaches Aequitas's anti-capitalist conclusion by a second, independent route.** Aequitas already gets "no income from merely owning capital" from its price-equals-cost rule ([Foundations §7.1](../00-strategy/Aequitas_Foundations_v0.31.md)); Ellerman gets there from responsibility. Two independent roads to the same conclusion make a far stronger case than one.
-3. **It grounds the "credit can't be transferred" rule directly.** Credit records who was *responsible*, responsibility is a fact about a specific person, and a fact about a person can't be handed to anyone else. So non-transferability ([Foundations §A3](../00-strategy/Aequitas_Foundations_v0.31.md#a3-non-fungibility)) stops being a design *choice* and becomes a *consequence* — a real gain.
+2. **It reaches Aequitas's anti-capitalist conclusion by a second, independent route.** Aequitas already gets "no income from merely owning capital" from its price-equals-cost rule ([Foundations §7.1](../00-strategy/Aequitas_Foundations_v0.32.md)); Ellerman gets there from responsibility. Two independent roads to the same conclusion make a far stronger case than one.
+3. **It grounds the "credit can't be transferred" rule directly.** Credit records who was *responsible*, responsibility is a fact about a specific person, and a fact about a person can't be handed to anyone else. So non-transferability ([Foundations §A3](../00-strategy/Aequitas_Foundations_v0.32.md#a3-non-fungibility)) stops being a design *choice* and becomes a *consequence* — a real gain.
 4. It gives the clean reply to "why do the machine's owners get nothing?" — because machines don't act, and responsibility belongs only to those who do.
 
 ## Where Aequitas is exposed
@@ -33,9 +33,9 @@ Aequitas's whole idea of attribution rests on one phrase: costs are pinned to *"
 
 But Aequitas needs *some* number for every collaborative event in its records.
 
-This is the same shape as the problem one level up — when a single *process* makes several products, how do you split its cost? (See [Joint-production problem](../00-strategy/GLOSSARY.md#src-joint-production-allocation-problem).) There, Aequitas has a physical answer: it measures where the process actually sent its inputs. Here there's no physical trace to measure — a team's *effort* doesn't leave one. So this stays a genuinely open problem: splitting *blame* within a team (the *credit* half is settled — everyone is simply credited their own hours). See [Foundations §10](../00-strategy/Aequitas_Foundations_v0.31.md).
+This is the same shape as the problem one level up — when a single *process* makes several products, how do you split its cost? (See [Joint-production problem](../00-strategy/GLOSSARY.md#src-joint-production-allocation-problem).) There, Aequitas has a physical answer: it measures where the process actually sent its inputs. Here there's no physical trace to measure — a team's *effort* doesn't leave one. So this stays a genuinely open problem: splitting *blame* within a team (the *credit* half is settled — everyone is simply credited their own hours). See [Foundations §10](../00-strategy/Aequitas_Foundations_v0.32.md).
 
-The direct upshot: **"hours worked" is a chosen convention, not a measurement.** It may well be the *right* convention — it's simple, universal, and hard to game in non-obvious ways — but it should be labelled honestly as a convention rather than dressed up as a physical fact. Aequitas already does this: the split of a joint job by hours is declared a *named convention*, not a measurement (see [Foundations §1.1 (named conventions)](../00-strategy/Aequitas_Foundations_v0.31.md#11-named-conventions)).
+The direct upshot: **"hours worked" is a chosen convention, not a measurement.** It may well be the *right* convention — it's simple, universal, and hard to game in non-obvious ways — but it should be labelled honestly as a convention rather than dressed up as a physical fact. Aequitas already does this: the split of a joint job by hours is declared a *named convention*, not a measurement (see [Foundations §1.1 (named conventions)](../00-strategy/Aequitas_Foundations_v0.32.md#11-named-conventions)).
 
 Secondary limitations:
 - Ellerman's own conclusion is **worker cooperatives** — a specific institutional recipe. Aequitas should take his *principle* and leave his institution, exactly as it takes Neurath's method while leaving Neurath's central planning.
