@@ -4,7 +4,7 @@
 
 > **Version:** 0.1 · **Date:** 2026-08-23
 > **Describes:** [`statera.py`](statera.py), 1,185 lines, 22 self-tests.
-> **Tracks:** [`../../00-strategy/Aequitas_Foundations_v0.19.md`](../../99-archive/Aequitas_Foundations_v0.19.md).
+> **Tracks:** `../../00-strategy/Aequitas_Foundations_v0.19.md` (superseded; held locally).
 > **Run:** `python statera.py --test` · `python statera.py --demo`
 > **Change history:** `STATERA_CHANGELOG.md`. No version notes appear in this document's body.
 
@@ -816,7 +816,7 @@ _ = collapse(heavier, k.dials.weights)   # future room shrinks; history stands
 
 | Document | What it carries |
 |---|---|
-| [`Aequitas_Foundations_v0.19.md`](../../99-archive/Aequitas_Foundations_v0.19.md) | The theory. Axioms A1–A8 in §1; the debit vector in §3.2a; the transaction-time rule in §3.3; the residual rule in §4.4; the self-care floor in §4.5; pledges in §4.6; the basic-needs floor and the disparity bound in §5.5; the 17 conformance requirements in §9. |
+| `Aequitas_Foundations_v0.19.md` (superseded; held locally) | The theory. Axioms A1–A8 in §1; the debit vector in §3.2a; the transaction-time rule in §3.3; the residual rule in §4.4; the self-care floor in §4.5; pledges in §4.6; the basic-needs floor and the disparity bound in §5.5; the 17 conformance requirements in §9. |
 | [`GLOSSARY.md`](../../00-strategy/GLOSSARY.md) | Every acronym, and the research source index. Link to its anchors rather than to research files directly. |
 | [`Aequitas_Simulation_Roadmap_v0.2.md`](../../00-strategy/Aequitas_Simulation_Roadmap_v0.2.md) | The build order Statera implements steps 1–3 of. |
 | [`Onboarding_the_wealthy_v0.1.md`](../../00-strategy/Onboarding_the_wealthy_v0.1.md) | The adoption arithmetic and the six things a run needs. |

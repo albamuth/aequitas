@@ -1,7 +1,7 @@
 # C11 — Arithmetic Audits (IC-1 … IC-12)
 
 Companion write-up for [`arithmetic_audits.py`](arithmetic_audits.py).
-Tracks **EventLog v0.7** ([`Aequitas_EventLog_v0.8.md`](../../99-archive/Aequitas_EventLog_v0.8.md)) and **Foundations v0.16** ([`Aequitas_Foundations_v0.19.md`](../../99-archive/Aequitas_Foundations_v0.19.md)).
+Tracks **EventLog v0.7** (`Aequitas_EventLog_v0.8.md` (superseded; held locally)) and **Foundations v0.16** (`Aequitas_Foundations_v0.19.md` (superseded; held locally)).
 
 ---
 

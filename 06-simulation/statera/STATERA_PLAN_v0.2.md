@@ -4,7 +4,7 @@
 > **Author sign-off required before step 1.**
 > **Parent:** [`../../00-strategy/Aequitas_Simulation_Roadmap_v0.2.md`](../../00-strategy/Aequitas_Simulation_Roadmap_v0.2.md) — this is **step 2**, and **Phase 1** of [`LAB_DESIGN_v0.1.md`](LAB_DESIGN_v0.1.md).
 > **Built on:** [`statera.py`](statera.py) v0.1, [`STATERA.md`](README.md), `STATERA_CHANGELOG.md`.
-> **Tracks:** [`../../00-strategy/Aequitas_Foundations_v0.19.md`](../../99-archive/Aequitas_Foundations_v0.19.md).
+> **Tracks:** `../../00-strategy/Aequitas_Foundations_v0.19.md` (superseded; held locally).
 
 ---
 

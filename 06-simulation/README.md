@@ -81,7 +81,7 @@ Each project's `RESULTS.md` carries the conditions, the limits, and what would f
 | Check a number before quoting it | that project's `RESULTS.md` |
 | Check a claim **without running our code** | [`audits/audits_inert/`](audits/audits_inert/README.md) |
 | Know what the whole programme is for | [`../00-strategy/Aequitas_Simulation_Roadmap_v0.2.md`](../00-strategy/Aequitas_Simulation_Roadmap_v0.2.md) |
-| Know what happens next | [`../NEXT.md`](../NEXT.md) |
+| Know what happens next | `../NEXT.md` (held locally) |
 
 ## What this code is, and is not
 

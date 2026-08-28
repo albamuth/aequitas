@@ -1,6 +1,6 @@
 # Research stub — Plastic LCA energy & cleanup cost
 
-> Retrieved 2026-08-10. Feeds Q3 of the scenario suite ([`06-simulation/scenario-suite/plastic_debt.py`](../06-simulation/scenario-suite/plastic_debt.py), [`PLASTIC.md`](../06-simulation/scenario-suite/PLASTIC.md)).
+> Retrieved 2026-08-10. Feeds Q3 of the scenario suite ([`06-simulation/scenario-suite/plastic_debt.py`](../../06-simulation/scenario-suite/plastic_debt.py), [`PLASTIC.md`](../../06-simulation/scenario-suite/PLASTIC.md)).
 > **Why it matters:** supplies the real anchors for the labour debt of plastic (§3.3 stock rule / §3.6 recycling). The virgin-vs-recycled energy gap and the GPGP cleanup cost drive the headline "ocean cleanup ≈ 70× production, microplastic unbounded."
 
 ## Sources
