@@ -79,7 +79,7 @@ The fixed core. Do not re-litigate (see `CLAUDE.md`).
 ---
 
 ## <a id="integrity-constraints"></a>Integrity Constraints (IC-1–IC-12) — Conformance
-**Arithmetic the ledger must never violate.** IC-1…IC-9 check the record itself and are pure arithmetic. IC-10…IC-12 check a figure computed from it against a weighting model. **The `Source` column gives the conformance row each one is now stated in** (`Aequitas_Conformance_v0.7.md` §2).
+**Arithmetic the ledger must never violate.** IC-1…IC-9 check the record itself and are pure arithmetic. IC-10…IC-12 check a figure computed from it against a weighting model. **The `Source` column gives the conformance row each one is now stated in** (`Aequitas_Conformance_v0.8.md` §2).
 
 | Acronym | Title (1–3 words) | Constraint | Source |
 |---|---|---|---|

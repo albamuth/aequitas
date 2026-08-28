@@ -13,9 +13,9 @@
 **This is the objection the whole project has to survive.** A century ago people argued about whether you could run an economy by counting *physical things* — tonnes of coal, hours of work, litres of water — instead of money. Aequitas is exactly that: an economy run on counted physical flows rather than prices. The most famous critic, Ludwig von Mises, argued this is not merely hard but *impossible in principle*. No serious write-up of Aequitas can go out without a reply to him.
 
 This bears on several of the system's foundations:
-- **Everything is measured as material and energy flow, not money** — see [Foundations §A1 (materialism of cost)](../00-strategy/Aequitas_Foundations_v0.29.md#a1-materialism-of-cost).
-- **A price is just a cost, with no profit** — see [Foundations §A5 (price ≡ cost)](../00-strategy/Aequitas_Foundations_v0.29.md).
-- **Balances are computed fresh from a record of events, not stored as an editable number** — see [Foundations §A6 (derived, not stored)](../00-strategy/Aequitas_Foundations_v0.29.md#a6-derived-not-stored).
+- **Everything is measured as material and energy flow, not money** — see [Foundations §A1 (materialism of cost)](../00-strategy/Aequitas_Foundations_v0.30.md#a1-materialism-of-cost).
+- **A price is just a cost, with no profit** — see [Foundations §A5 (price ≡ cost)](../00-strategy/Aequitas_Foundations_v0.30.md).
+- **Balances are computed fresh from a record of events, not stored as an editable number** — see [Foundations §A6 (derived, not stored)](../00-strategy/Aequitas_Foundations_v0.30.md#a6-derived-not-stored).
 
 ## Key findings
 
@@ -27,7 +27,7 @@ This bears on several of the system's foundations:
 
 ## What we can use
 
-- **Neurath's argument is the best citable support for Aequitas's "no externalities" principle** — the idea that every consequence, including pollution, is part of a thing's real cost and can't be shoved off the books. (See [Foundations §A4 (no externalities)](../00-strategy/Aequitas_Foundations_v0.29.md#a4-no-externalities).) Neurath gives a serious, respectable case that putting a money price on ecological harm loses real information.
+- **Neurath's argument is the best citable support for Aequitas's "no externalities" principle** — the idea that every consequence, including pollution, is part of a thing's real cost and can't be shoved off the books. (See [Foundations §A4 (no externalities)](../00-strategy/Aequitas_Foundations_v0.30.md#a4-no-externalities).) Neurath gives a serious, respectable case that putting a money price on ecological harm loses real information.
 - Aequitas has two things Neurath plainly did not: **a genuine common yardstick** (mass, energy, and seconds measure the same everywhere on Earth) and **computers**. The original debate had neither. That is a specific, legitimate reason to reopen a question people think is settled.
 - The academic literature is a ready-made checklist of every objection to expect. Cockshott & Cottrell (*Towards a New Socialism*) are the modern entrants who showed the sums are computationally feasible — **archive them next** (now done: see [Cockshott & Cottrell: labour-time](../00-strategy/GLOSSARY.md#src-cockshott-cottrell-labour-time)).
 
@@ -35,7 +35,7 @@ This bears on several of the system's foundations:
 
 Ranked by how dangerous each is to the project:
 
-1. **Whose want wins? — the weakest link.** Cost tells you what a thing *takes*. It does *not* tell you which of two people who both want the last one should get it. Aequitas's answer to this lives in two mechanisms: **pledges** (people put their earned credit behind the things they want made, which is how demand enters the system) and a **debit tolerance** (a personal allowance that guarantees everyone's basic needs before any luxury). A trained economist will attack right here first, so the reply has to be airtight. See the pledges mechanism in [Foundations §6.4 (pledges and signals)](../00-strategy/Aequitas_Foundations_v0.29.md) and the guaranteed floor in [Foundations §7.5 (the basic-needs floor)](../00-strategy/Aequitas_Foundations_v0.29.md).
+1. **Whose want wins? — the weakest link.** Cost tells you what a thing *takes*. It does *not* tell you which of two people who both want the last one should get it. Aequitas's answer to this lives in two mechanisms: **pledges** (people put their earned credit behind the things they want made, which is how demand enters the system) and a **debit tolerance** (a personal allowance that guarantees everyone's basic needs before any luxury). A trained economist will attack right here first, so the reply has to be airtight. See the pledges mechanism in [Foundations §6.4 (pledges and signals)](../00-strategy/Aequitas_Foundations_v0.30.md) and the guaranteed floor in [Foundations §7.5 (the basic-needs floor)](../00-strategy/Aequitas_Foundations_v0.30.md).
 2. **Hayek's "unwritten knowledge" point is only partly answered.** Aequitas gathers its data *locally* — the person on the spot, the meter on the machine — rather than demanding one central authority collect everything, and that is a real reply. But a sensor records a *measurement*, not the situated gut-feel Hayek was pointing at. Aequitas's honest out is that it isn't a *plan* at all: it sets no targets, so it doesn't need to gather that tacit knowledge in the first place.
 3. **Can the sums actually be done at full scale?** Aequitas recomputes affected history whenever the understanding of a cost improves (the "fix it once the science catches up" rule, [retroactive-reweighting](../01-wiki/retroactive-reweighting.md)). Mises's objection was about principle; this one is practical, and might bite harder. Cockshott & Cottrell suggest it's tractable, but it needs demonstrating.
 4. **Neurath's own scheme was centrally planned. Aequitas is not.** Do not let critics saddle Aequitas with Neurath's politics just because it borrows his method — say so plainly, because they will assume otherwise.

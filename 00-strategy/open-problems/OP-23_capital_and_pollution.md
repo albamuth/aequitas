@@ -198,4 +198,20 @@ Push it onto the beef instead and 12.0 h/kg becomes 12.5 h/kg — a **4.2%** ris
 
 ---
 
+## 9. Why property debit has two components — the record of the repair
+
+*Moved here from Foundations §3.2 on 2026-08-28. The rule itself stays in Foundations; this is the account of the contradiction it resolved, which does not belong in a body paragraph.*
+
+**The contradiction.** Foundations §3.2, as written in v0.5, said property debit *"releases entirely on transfer."* Foundations §4.5 said creation-cost is holding-time-permanent. **Both cannot be true of one quantity.**
+
+**The resolution, and it is the rule Foundations now states:**
+
+> **The material transfers with the atoms. The making is holding-time-split, and each holder's share is permanent.**
+
+**This is consistent with A1 (materialism of cost)** — both components attach to the object — **but only one of them leaves when the object does.**
+
+**Worked, with the numbers.** A house costs 500,000 hours to build. Someone holds it for ten years, then transfers it. **Once the next holder has held it for an equal span, roughly 250,000 hours remain on the seller's ledger** — their holding-time share, permanent. The atoms are entirely the new holder's from the moment of transfer.
+
+---
+
 *End of OP-23 resolution note.*

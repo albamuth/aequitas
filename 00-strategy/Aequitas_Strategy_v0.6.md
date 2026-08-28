@@ -3,7 +3,7 @@
 
 > **Version:** 0.6 · **Date:** 2026-08-25
 > **Target:** A statement of the system, tested against scenarios, in ~3 months — with a conformance list an implementer can build against.
-> **Companion docs:** `Aequitas_Foundations_v0.29.md` (axioms), `Aequitas_Objections_v0.23.md` (register), `Aequitas_Conformance_v0.7.md` (what an implementation must satisfy), `../NEXT.md` (task queue)
+> **Companion docs:** `Aequitas_Foundations_v0.30.md` (axioms), `Aequitas_Objections_v0.23.md` (register), `Aequitas_Conformance_v0.8.md` (what an implementation must satisfy), `../NEXT.md` (task queue)
 > **Version history & what each version superseded:** `00-strategy/Aequitas_Strategy_CHANGELOG.md`.
 
 ---
@@ -34,7 +34,7 @@ Not a manifesto. Not a pitch. **And not an architecture.**
 > **Two halves, and the second one is small.**
 >
 > - **The system.** What Aequitas is, what must hold, and what follows. Every claim that sounds impossible ships with a simulation that demonstrates it (§2).
-> - **The conformance list.** The things that must be true for an implementation to *be* Aequitas — conservation holds, the ledger is derived and never stored, credit never transfers, coverage is published with its extent, and so on. **[`Aequitas_Conformance_v0.7.md`](Aequitas_Conformance_v0.7.md) carries the current list**, moved out of `Aequitas_Conformance_v0.7.md` on 2026-08-25.
+> - **The conformance list.** The things that must be true for an implementation to *be* Aequitas — conservation holds, the ledger is derived and never stored, credit never transfers, coverage is published with its extent, and so on. **[`Aequitas_Conformance_v0.8.md`](Aequitas_Conformance_v0.8.md) carries the current list**, moved out of `Aequitas_Conformance_v0.8.md` on 2026-08-25.
 
 **What is deliberately not the goal.** A data model, a storage design, a transport protocol, a choice of cryptography, a privacy practice. **Foundations §1.2 rules all of these praxis**, and they belong to whoever implements. An earlier version of this section named three of them as deliverables, which is how this project spent nights on record-integrity work while its top blocker was governance.
 
@@ -107,7 +107,7 @@ This also answers the socialist-calculation critique pre-emptively: we don't arg
 ### Phase 1 — Core mechanisms
 *The theory lives or dies here. **Mostly cleared.***
 
-- **C1 (event-log schema): Event log schema.** ❌ **Retired 2026-08-28.** The record model was never asked for and it read as a specification, which contradicts §1.2 and the simulator ruling of 2026-08-23. **The arithmetic it carried — IC-1 to IC-12 — is now in `Aequitas_Conformance_v0.7.md`.** A trust network writes its own schema.
+- **C1 (event-log schema): Event log schema.** ❌ **Retired 2026-08-28.** The record model was never asked for and it read as a specification, which contradicts §1.2 and the simulator ruling of 2026-08-23. **The arithmetic it carried — IC-1 to IC-12 — is now in `Aequitas_Conformance_v0.8.md`.** A trust network writes its own schema.
 - **OP-17 (joint production): co-product allocation.** ✅ **Done** — the process allocates itself (Foundations §3.4a).
 - **Recursion convergence sim.** ✅ **Done — PASS** (`recursion_convergence.py`). Validated the OP-17 answer; doubles as the first piece of C11.
 - **OP-18 (labour & team credit): labour allocation across co-products and teams.** ✅ **Closed** — a declared convention (labour rides the material split), axiom-scored against the Aumann–Shapley checklist and stress-tested.
@@ -187,7 +187,7 @@ This also answers the socialist-calculation critique pre-emptively: we don't arg
 <!-- tag: str-s8 -->
 ## 8. What "done" looks like at 3 months
 
-- [ ] `Aequitas_System_v1.0.md` — the system stated and tested, plus the conformance list ([`Aequitas_Conformance_v0.7.md`](Aequitas_Conformance_v0.7.md)). *Renamed from `Aequitas_Protocol_v1.0.md` on 2026-08-23: "protocol" named the deliverable after the smaller half of it.*
+- [ ] `Aequitas_System_v1.0.md` — the system stated and tested, plus the conformance list ([`Aequitas_Conformance_v0.8.md`](Aequitas_Conformance_v0.8.md)). *Renamed from `Aequitas_Protocol_v1.0.md` on 2026-08-23: "protocol" named the deliverable after the smaller half of it.*
 - [x] ~~3+ Python simulations backing its central claims, **including allocation-recursion convergence**~~ — **done and exceeded:** recursion convergence, the disparity-ceiling sim, the five-sim scenario suite, and the median-lifestyle anchor all ship.
 - [ ] 4+ worked use cases, each encodable in the schema, **at least one with joint production**
 - [ ] Wiki covering every core concept
@@ -222,12 +222,12 @@ This also answers the socialist-calculation critique pre-emptively: we don't arg
 ### The document programme
 
 1. **Foundations** — the system itself: axioms, mechanisms, and what follows from them. **Audience: anyone.**
-2. **Conformance requirements** — [`Aequitas_Conformance_v0.7.md`](Aequitas_Conformance_v0.7.md), precise enough to check an implementation against. **Audience: implementers.** Not a schema, not a protocol, not a product.
+2. **Conformance requirements** — [`Aequitas_Conformance_v0.8.md`](Aequitas_Conformance_v0.8.md), precise enough to check an implementation against. **Audience: implementers.** Not a schema, not a protocol, not a product.
 3. **Academic paper** — engages Marx / Hayek / Ostrom; must answer the socialist-calculation critique head-on. Lead with: theory of *cost* not value; Ellerman on attribution; Cockshott & Cottrell on tractability; pledges as a decentralized answer to preference revelation. **Add: joint production solved by process physics rather than by convention (Foundations §3.4a) — this is the reply to Sraffa/Steedman and to ISO 14044 simultaneously.**
 4. **Civic reformer brief** — municipalities, co-ops, transition communities.
 5. **Public-facing text.**
 
-> **Moved here on 2026-08-25 by author ruling.** This was Foundations §11 and the tail of `Aequitas_Conformance_v0.7.md`. **Neither states what the system is, so neither belonged in Foundations.** Nothing was cut.
+> **Moved here on 2026-08-25 by author ruling.** This was Foundations §11 and the tail of `Aequitas_Conformance_v0.8.md`. **Neither states what the system is, so neither belonged in Foundations.** Nothing was cut.
 
 ---
 

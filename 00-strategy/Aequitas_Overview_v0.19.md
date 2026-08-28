@@ -1,10 +1,10 @@
 <!-- tag: ovw-aequitas-overview -->
 # Aequitas — Overview
 
-> **Version:** 0.18
-> **Date:** 2026-08-27
+> **Version:** 0.19
+> **Date:** 2026-08-28
 > **Audience:** everyone. No economics background assumed, none required.
-> **Rigorous version:** `00-strategy/Aequitas_Foundations_v0.29.md`. This document is the plain-language companion; where they differ, the Foundations govern.
+> **Rigorous version:** `00-strategy/Aequitas_Foundations_v0.30.md`. This document is the plain-language companion; where they differ, the Foundations govern.
 > **Version history & what each version superseded:** `00-strategy/Aequitas_Overview_CHANGELOG.md`.
 
 *Aequitas* (genitive *aequitatis*) is the Latin word for fairness, evenness, symmetry — the quality of things being level with one another.
@@ -18,6 +18,7 @@
   - [And who actually does this?](#and-who-actually-does-this)
 - [1 — Problem: Inequality](#1--problem-inequality)
 - [2 — Problem: Debt](#2--problem-debt)
+  - [But what counts as work at all?](#but-what-counts-as-work-at-all)
 - [3 — Problem: Gambling and Rent](#3--problem-gambling-and-rent)
 - [4 — Problem: Externalities](#4--problem-externalities)
 - [5 — Problem: Intellectual Property](#5--problem-intellectual-property)
@@ -130,6 +131,8 @@ Two kinds of debit behave differently, and the difference matters:
 - **Property debit** — the embodied *material* you are holding — is *dischargeable*. You carry a house's material debit while you hold the house; hand it on, and it goes with it. You are not punished for owning, but you cannot pile things up for free either.
 - **Consumption and pollution debit** is *permanent*, and it stays with **whoever caused it** — it never travels with the object. You ate the sandwich; that is yours for good. But the fertiliser the farmer let run off stays on the *farmer's* record, and the fuel the trucker burned stays on the *trucker's*. You didn't cause those. They did.
 
+**One thing that trips people up:** a thing you have not used yet, like a can of petrol, hasn't polluted anything, so nobody has caused anything. **It carries what it *will* do, and that travels with the can until somebody burns it** (§4).
+
 **So a thing carries its whole story, but not everyone's debt.** Buying the sandwich, you take on its *material* and the fact that you ate it — not the farmer's pollution and not the trucker's fuel. What you *do* receive is the full record of where it came from, so you can prefer the cleaner loaf before you buy. **The debt sits with whoever caused each harm; only the story travels with the bread.** This turns out to be a stronger arrangement than making the shopper pay for the farm's runoff — more on why in §4.
 
 ![The debit taxonomy at a glance: a debit splits into property debit (the material you hold, which travels with the thing; and the making-hours, which stay partly with you — see §2) and consumption/pollution debit (permanent, on whoever caused it). Two rules cut across both: working on your own things nets to zero, and cost never passes to someone who didn't cause it.](../01-wiki/assets/debit-taxonomy.svg)
@@ -196,7 +199,24 @@ An economy that needs a constant supply of *new* debt to generate demand is an e
 
 > **And "work" means time *spent*, not effort.** This is the one mental shift Aequitas asks of you. Credit counts the hours of your life you put in — not how hard you strained. Two people who spend an hour on the same task are credited the same, whether one breezed through it and the other found it gruelling; a real difference in effort, if it matters, shows up as a *material* cost (the harder worker eats more; a dangerous job's harm gets priced in) — never as a bigger number for the same hour. Once you see credit as *time spent*, something surprising follows: **looking after yourself is work.** Sleeping, eating, resting, keeping yourself going is time spent maintaining a living human — exactly as looking after a child is, and history refused to count *that* only because nobody was paid for it. So everyone earns a baseline simply by staying alive. That baseline is not a hand-out bolted onto the system; it is the real work of being alive, finally counted — and it is where the floor under everyone (§1) actually comes from.
 
-Three things follow.
+<!-- tag: ovw-what-counts-as-work -->
+### But what counts as work at all?
+
+**Something is work if it is at least one of three things.**
+
+| | What it means | An example |
+|---|---|---|
+| **Production** | Matter or energy is turned into something | Milling wheat into flour |
+| **A service** | Something is done for a person or a body | Setting a broken arm |
+| **Enrichment** | Knowledge, skill or culture reaches somebody | Teaching a child to read |
+
+**One is enough, and nobody records which one.** An apprentice plumber's single hour is all three at once — copper becomes plumbing, a customer's pipes work, and a trade gets learned. **It still counts as one hour.** The three names decide *whether* an hour counts, never *how much* it counts for.
+
+**This is why looking after yourself counts.** Eating, washing and sleeping are things done for a body, and it does not matter that the body is your own. **Sleep you could also call enrichment — you are maintaining your own brain — and it makes no difference, because either way it is one of the three.** The medical consensus is that adults need [7 or more hours a night](https://aasm.org/aasm-and-srs-publish-new-sleep-duration-consensus-statement/), and 6 or fewer is not enough to stay healthy and safe. **A community that counts 8 hours of sleep plus roughly 2 hours of eating, washing and other upkeep gets a baseline of 10 hours a day.**
+
+**And it is why some things do not count.** A community cannot decide that being loyal to it is work. **Loyalty is not production, not a service, and not enrichment**, so there is nothing to credit. That is a real limit on what any bookkeeper can invent.
+
+Four things follow.
 
 **1. Everyone's hour counts the same.**
 
@@ -230,7 +250,15 @@ Your credit is a fact about you. It cannot be given, sold, lent, taxed, gambled,
 
 **A debt crisis requires a creditor who must be made whole.** Here there are none. The mechanism that turns a bad year into a spiral simply has no part to attach to.
 
-**3. The books never balance — and they must not.**
+**3. Your record is two numbers, and they never cancel each other.**
+
+**Your credit is every hour of your life that got counted as work. Your debit is everything your consumption is currently reckoned to have taken from the world.** They sit side by side. **Nothing is subtracted, nothing is spent, and there is no third number.**
+
+**Both only ever go up.** Buying something adds to your debit and takes nothing off your credit, because credit is not a thing you hand over. **So the two are compared as a ratio — is your debit within some multiple of your credit? — never as a balance you could run down to zero.** A ledger here is a way of looking at what one person consumed beside what they did, and that is all it is.
+
+**And neither number is stored anywhere.** Both are worked out fresh from the record of what happened, every time anyone looks. That is why a better measurement can change everybody's figures, backwards (§4).
+
+**4. The books never balance — and they must not.**
 
 Total debit will always exceed total credit, everywhere, permanently. Every real process wastes something; energy dissipates; matter degrades.
 
@@ -307,7 +335,17 @@ Three consequences follow immediately.
 
 **Harmful production penalises the producer, directly.** A factory that pollutes carries the cost of cleaning it up — permanently, on its own record, whether or not any customer ever notices. Exploitative labour carries the cost of the harm it does, borne by whoever imposed it. This is stronger than the usual hope that shoppers will choose the greener product (they mostly don't): the polluter is out of pocket at the source. And because every product still carries its origin record, a buyer who *does* care can see the difference and steer toward the cleaner maker on top of that. **The incentive gradient reverses, with nobody enforcing anything, and it does not wait on anyone noticing.**
 
-**The pollution from your electricity is *yours*.** There's one case worth spelling out because it surprises people. Most pollution stays with the producer who caused it — the miner keeps the mine's, the factory keeps the factory's, and buying the product doesn't move it to you. But **electricity is different, because it can't be stored**: the power is generated the *instant* you draw it, so flipping your switch is what commands a generator to burn the fuel. That makes the generation pollution *yours* — the same way your car's tailpipe is yours, not the carmaker's. You carry the emissions of **the supply you signed up for**, so buying from a cleaner provider genuinely lowers your own record and pushes generators to compete on being clean. (This lines up electricity with how driving and home heating already work — it isn't a special case, it's the same "whoever burns it, owns it" rule.)
+**Pollution from *making* a thing stays with the maker. Pollution from *using* it is yours.** That is the whole rule, and it settles cases that look hard.
+
+- The miner keeps the mine's pollution. Buying the ring doesn't move it to you.
+- The refinery keeps the refinery's. Buying the petrol doesn't move that to you either.
+- **But burning the petrol is you.** The CO₂ from the tailpipe is the driver's, not the carmaker's.
+
+**And the thing you bought carries what it *will* do when you use it.** Buy 40 litres of petrol and your record gains **40 litres** — stored as litres, not as a number of hours. Whenever anyone looks at your record, those litres are converted using today's best figure for what cleaning up that carbon takes. **Find a cheaper way to capture carbon and the same 40 litres weighs less, backwards, for everyone.** And if you sell the fuel to somebody else, it goes with the fuel.
+
+**The pollution from your electricity is yours too, and for the same reason.** Electricity **can't be stored**: it is generated the *instant* you draw it, so flipping your switch is what makes a generator burn fuel now. **You carry the emissions of the grid's actual fuel mix at the times you actually drew power** — measured from your meter and the grid operator's own published mix, both of which already exist. Draw at peak on a gas-heavy evening and you carry more; shift the same washing to 2am and you carry less, with no reduction in how much power you used.
+
+> **Note what that rules out. Your emissions cannot be decided by which supplier you signed a contract with.** A contract is a piece of paper, and this system never lets paper decide a physical record. **A record of CO₂ has to come from a measurement of CO₂.** The generator's reason to clean up is elsewhere: they carry the cost of building and running the plant, communities pledge for clean generation, and cleaning the grid retroactively lightens every past customer's record.
 
 **Regulators become something businesses want.** An environmental agency's job stops being punishment and becomes advice: *here is how to lower your debit.* Every hour they save you is an hour off your product's cost. Enforcement quietly turns into consulting.
 
@@ -632,6 +670,6 @@ What was deliberately dropped:
 
 ---
 
-*For the rigorous statement of everything above, with the arguments and the open problems in full: `00-strategy/Aequitas_Foundations_v0.29.md`.*
+*For the rigorous statement of everything above, with the arguments and the open problems in full: `00-strategy/Aequitas_Foundations_v0.30.md`.*
 
-*End of v0.17.*
+*End of v0.19.*

@@ -1,9 +1,9 @@
 <!-- tag: cnf-aequitas-conformance -->
 # Aequitas — Conformance Requirements
 
-> **Version:** 0.7 · **Date:** 2026-08-28
+> **Version:** 0.8 · **Date:** 2026-08-28
 > **Audience: implementers.** Anyone building a trust network.
-> **Companion:** [`Aequitas_Foundations_v0.29.md`](Aequitas_Foundations_v0.29.md) — the system itself, and the argument for every row below. **Where the two differ, Foundations governs.**
+> **Companion:** [`Aequitas_Foundations_v0.30.md`](Aequitas_Foundations_v0.30.md) — the system itself, and the argument for every row below. **Where the two differ, Foundations governs.**
 > **Version history is kept separately and is not published**, so this document carries only what is currently true.
 > **Two numbers are retired and are never reused: the bare `17`, and `14c`.**
 
@@ -55,6 +55,7 @@ An implementation is Aequitas if, and only if, all of the following hold. Each i
 | 2b | **Nothing is added to a cost figure.** There is no margin, fee, or spread anywhere in the accounting. | A5 |
 | 2c | **No account that is not a verified human is a final holder of debit.** An organisation's debit is at all times its members' debit, divided by hours worked for it. **Closing an organisation moves nothing and clears nothing.** | A1, §3.2c |
 | 3 | Labour is **never rate-scaled.** Differences between workers resolve as material costs. | A2 |
+| **3a** | **Every activity the implementation credits is at least one of production, a service, or enrichment.** An activity that is none of the three is not creditable, whatever the network has declared. **Which of the three it is, is never recorded and never changes the figure**, and an hour that is more than one of them is credited once and never divided. | **§2.3, §4.5** |
 | 4 | **Credit is never transferable** — not by gift, sale, loan, inheritance, or theft. Only debit moves, and only with the thing it attaches to. | A3 |
 | **4a** | **A position computed under one weighting model is never converted into another.** A network re-computes a claim from the shared physical record through its own model. **No exchange rate between credit-standards exists anywhere in the implementation, and two networks' figures are never added, netted, or compared as if they were one quantity.** | **A3, §4.2, §4.0, §5.6** |
 | 5 | Standing is **derived from an append-only record of events, never stored** as an authoritative balance. **A record of what happened holds physical quantities only — never a weight, a cost, a price, or a value.** Cost is produced when the record is read, by applying the current weighting model to it. | A6, A5 |
@@ -376,4 +377,31 @@ A network publishes its rule for translation: **the text exists and the client c
 
 ---
 
-*End of v0.7.*
+<!-- tag: cnf-s7 -->
+## 7. The 2026-08-28 restructure — requirement 3a
+
+> **Author ruling, 2026-08-28: 3a is a requirement.** Confirmed on the same day it was drafted.
+
+### 7.1 The gap it closes
+
+**Foundations §2.3 now states a gate: a trust network may credit an activity only if that activity is at least one of production, a service, or enrichment.** Nothing in this list required it.
+
+> **What an implementation could have done and still passed every row.** Declared *"loyalty to this network"* creditable, published an evidence rule for it under **16d**, credited it at one hour per hour under **3**, and satisfied every other row. **16d requires a published rule. It never required the thing being credited to be work.**
+
+**A8 already names the always-creditable list as a capture surface** and leaves *which* activities a network credits to the network. **Row 3a does not touch that.** It fixes the outer boundary and leaves every choice inside it where A8 put it.
+
+### 7.2 What the row is not
+
+**It is not a rate rule, and it must never be read as one.** Foundations §4.5 forbids using the three categories as an accounting boundary, and row 3a repeats that in its own text: **the category is never recorded, never changes the figure, and an hour that is more than one of them is credited once.**
+
+**An apprentice plumber's hour is production, a service and enrichment at the same time. It credits as one hour.**
+
+### 7.3 The honest limit
+
+**Enrichment is broad, and this row is a weak filter rather than a tight one.** A network determined to credit something worthless can argue it is enrichment. **What the row rules out is the plain case** — crediting loyalty, crediting holding an asset, crediting being popular — **and those are the cases that turn a network into an issuer.**
+
+**The rest of the defence is structural and already written**: competing networks, ratio-based evaluation (Foundations §3.5), and public membership composition (row 16, Foundations §3.3a). **Row 3a is one more screen, not the answer.**
+
+---
+
+*End of v0.8.*

@@ -26,9 +26,30 @@ A debit is **not one number.** It is a bundle of physical quantities — kilogra
 | **On transfer** | See the split below | Never moves. Provenance travels; the debit doesn't |
 | **Weight** | Fixed by what was made | **Floats** with ambient stock (§3.3) — more pollution out there ⇒ every past unit re-weights up |
 
-### Property debit has two components that behave differently *(the v0.7 refinement)*
+### The third case the table above does not show: a thing that has not been used yet
 
-Conflating these was an internal contradiction before v0.7. They are not the same quantity and they do not move together:
+**A can of petrol has polluted nothing.** Nobody has caused an emission, so there is no consumption debit to attach to anybody. **But burning it will emit, and the accounting has to hold that somewhere.**
+
+> **A thing that will pollute when it is used carries that future pollution as part of its debit, in physical units, and it moves with the thing** (§3.2b).
+
+**It is recorded at the hand-off rather than at the moment of use, because a purchase is an event the books see and a combustion mostly is not.** Sell the fuel on and it goes with the fuel. Burn it and it becomes ordinary consumption debit on the burner, permanently.
+
+**Worked, with the numbers.** 40 litres of petrol, at about 2.31 kg of CO₂ a litre.
+
+| | Stored in the log | Read off the ledger |
+|---|---|---|
+| At the hand-off | **40 litres** | 92.4 kg, at 0.05 h/kg → **4.62 h** |
+| After a better capture method halves remediation | **still 40 litres** | **2.31 h** |
+| Sold on to somebody else | the litres move | **0 h on the seller** |
+| The refinery's own process emissions | on the refinery's log | **0 h on the buyer, ever** |
+
+**This is the clearest case in the theory for why a debit is stored as a vector.** A system that had stored *4.62 hours* instead of *40 litres* could not have re-read itself when the science improved.
+
+**⚠️ The diagram at the top of this page does not show this branch.** It predates the rule and is owed a redraw.
+
+### Property debit has two components that behave differently
+
+They are not the same quantity and they do not move together:
 
 | Component | What it is | On transfer |
 |---|---|---|
