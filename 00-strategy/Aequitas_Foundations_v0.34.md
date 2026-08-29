@@ -7,7 +7,7 @@
 > **Status:** Working foundations.
 > **Primary audience of the first paper:** technologists and implementers.
 > **Companion:** [`Aequitas_Conformance_v0.10.md`](Aequitas_Conformance_v0.10.md) — what must be true for an implementation to *be* Aequitas.
-> **Companion:** [`Aequitas_Objections_v0.24.md`](Aequitas_Objections_v0.24.md) — the objections register.
+> **Companion:** [`Aequitas_Objections_v0.25.md`](Aequitas_Objections_v0.25.md) — the objections register.
 > **Version history is kept separately and is not published**, so this document carries only what is currently true.
 >
 > **This version corrects three things in §4.4 and changes no mechanism.** The section described a non-participant as being *charged*, which §4.1 and §4.4 both forbid. It used one word, *unmeasured*, for two different states — a person outside the network, and an output that is not in the books — so it could not describe a subscriber who grows food they never record. And it did not say that choosing not to record output is legitimate, which left five ordinary cases looking like evasion.
@@ -2105,7 +2105,7 @@ A3 therefore does three separate defensive jobs: it forbids accumulation (§5.1)
 | What it is | Where |
 |---|---|
 | **The conformance requirements** — what must be true for an implementation to *be* Aequitas, written for implementers | [`Aequitas_Conformance_v0.10.md`](Aequitas_Conformance_v0.10.md) |
-| **The objections register** — every open problem and every answered objection, with its status | [`Aequitas_Objections_v0.24.md`](Aequitas_Objections_v0.24.md) |
+| **The objections register** — every open problem and every answered objection, with its status | [`Aequitas_Objections_v0.25.md`](Aequitas_Objections_v0.25.md) |
 | **The plain-language companion**, assuming no economics background | [`Aequitas_Overview_v0.21.md`](Aequitas_Overview_v0.21.md) |
 | **How adoption plausibly starts** — a reading of the historical record, not a statement of the system | [`Aequitas_Strategy_v0.6.md`](Aequitas_Strategy_v0.6.md) §5 |
 | **The simulation programme** — what is being tested and in what order | [`Aequitas_Simulation_Roadmap_v0.2.md`](Aequitas_Simulation_Roadmap_v0.2.md) |

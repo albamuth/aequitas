@@ -799,7 +799,7 @@ example. **What was dropped:** the explanation prose between them.
 | What it is | Where |
 |---|---|
 | **The conformance requirements** — what must be true for an implementation to *be* Aequitas, written for implementers | [`Aequitas_Conformance_v0.10.md`](Aequitas_Conformance_v0.10.md) |
-| **The objections register** — every open problem and every answered objection, with its status | [`Aequitas_Objections_v0.24.md`](Aequitas_Objections_v0.24.md) |
+| **The objections register** — every open problem and every answered objection, with its status | [`Aequitas_Objections_v0.25.md`](Aequitas_Objections_v0.25.md) |
 | **The plain-language companion**, assuming no economics background | [`Aequitas_Overview_v0.21.md`](Aequitas_Overview_v0.21.md) |
 | **How adoption plausibly starts** — a reading of the historical record, not a statement of the system | [`Aequitas_Strategy_v0.6.md`](Aequitas_Strategy_v0.6.md) §5 |
 | **The simulation programme** — what is being tested and in what order | [`Aequitas_Simulation_Roadmap_v0.2.md`](Aequitas_Simulation_Roadmap_v0.2.md) |

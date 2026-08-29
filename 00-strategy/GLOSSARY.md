@@ -125,6 +125,7 @@ Series is non-contiguous (early merges left gaps at OP-2/12/13). Status taxonomy
 | <a id="op-23"></a>**OP-23** | shared overhead | Attributing capital/overhead across co-products. | ✅ Closed — accrues to the asset (B8) |
 | <a id="op-24"></a>**OP-24** | understatement drift | Cost errors that favour subscribers have no funder. | 🔴 Fix proposed (rival-audit), unproven |
 | <a id="op-25"></a>**OP-25** | illicit dumping | Abandonment/end-of-life attribution. | 🔽 New, minor (Level-2) |
+| <a id="op-28"></a>**OP-28** | residual denominator | What `(N − Y)` is divided by. A headcount where §2.5 requires a measurement. | 🟠 Open — candidate repair unmeasured |
 
 ---
 
