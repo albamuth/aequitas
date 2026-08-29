@@ -10,8 +10,7 @@
 > **Regenerate with:** `python bin/distill.py`
 
 > **Source:** [`Aequitas_Foundations_v0.33.md`](Aequitas_Foundations_v0.33.md) · **version 0.33**
-> **Generated:** 2026-08-28
-> **Size:** 96,189 bytes, from 201,017 — **48% of the source**
+> **Size:** 96,161 bytes, from 201,017 — **48% of the source**
 
 **What was kept:** every heading, every rule, every table, and the stated result of every worked
 example. **What was dropped:** the explanation prose between them.
