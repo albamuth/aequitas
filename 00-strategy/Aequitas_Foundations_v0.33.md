@@ -5,7 +5,7 @@
 > **Date:** 2026-08-28
 > **Status:** Working foundations.
 > **Primary audience of the first paper:** technologists and implementers.
-> **Companion:** [`Aequitas_Conformance_v0.8.md`](Aequitas_Conformance_v0.8.md) — what must be true for an implementation to *be* Aequitas.
+> **Companion:** [`Aequitas_Conformance_v0.9.md`](Aequitas_Conformance_v0.9.md) — what must be true for an implementation to *be* Aequitas.
 > **Companion:** [`Aequitas_Objections_v0.24.md`](Aequitas_Objections_v0.24.md) — the objections register.
 > **Version history is kept separately and is not published**, so this document carries only what is currently true.
 
@@ -179,7 +179,7 @@ These are the immutable core. Nothing in Aequitas may contradict them, and nothi
 
 **No organisation may acquire authority over the core rules. Governance is a property of the rules themselves, not of any institution.**
 
-**The axioms above may not vary, and neither may the conformance requirements** — [`Aequitas_Conformance_v0.8.md`](Aequitas_Conformance_v0.8.md).
+**The axioms above may not vary, and neither may the conformance requirements** — [`Aequitas_Conformance_v0.9.md`](Aequitas_Conformance_v0.9.md).
 
 **Everything below them may differ from one trust network to the next. A network must publish what it runs, so that anybody else can re-compute its claims.**
 
@@ -503,7 +503,7 @@ Trust networks operate in the real world and must deal with governments, courts,
 
 **And it guards against a specific failure.** A theory of cost quietly becomes a theory of software, governance and compliance, because those questions arrive while nobody is drawing the line.
 
-> **The dial test is the standing screening question for anything proposed for these documents. What it leaves behind is a set of conformance requirements, never an architecture** — [`Aequitas_Conformance_v0.8.md`](Aequitas_Conformance_v0.8.md). **What must be true, never how to build it.**
+> **The dial test is the standing screening question for anything proposed for these documents. What it leaves behind is a set of conformance requirements, never an architecture** — [`Aequitas_Conformance_v0.9.md`](Aequitas_Conformance_v0.9.md). **What must be true, never how to build it.**
 
 ---
 
@@ -2069,7 +2069,7 @@ A3 therefore does three separate defensive jobs: it forbids accumulation (§5.1)
 
 | What it is | Where |
 |---|---|
-| **The conformance requirements** — what must be true for an implementation to *be* Aequitas, written for implementers | [`Aequitas_Conformance_v0.8.md`](Aequitas_Conformance_v0.8.md) |
+| **The conformance requirements** — what must be true for an implementation to *be* Aequitas, written for implementers | [`Aequitas_Conformance_v0.9.md`](Aequitas_Conformance_v0.9.md) |
 | **The objections register** — every open problem and every answered objection, with its status | [`Aequitas_Objections_v0.24.md`](Aequitas_Objections_v0.24.md) |
 | **The plain-language companion**, assuming no economics background | [`Aequitas_Overview_v0.20.md`](Aequitas_Overview_v0.20.md) |
 | **How adoption plausibly starts** — a reading of the historical record, not a statement of the system | [`Aequitas_Strategy_v0.6.md`](Aequitas_Strategy_v0.6.md) §5 |

@@ -7,7 +7,7 @@
 > **Reads against:** `Aequitas_Foundations_v0.33.md` A1, A2, A3, A5, A7, §3.2, §3.2b, §3.6, §4.1, §4.4, §4.8, §4.6, §5.5, §11 
 > **Supersedes the open version of this paper**, which argued §3.2 and §3.2b contradict each other at the boundary. **They do not. The objection is answered in §3 below.**
 
-> **⚠️ The event-log paper was retired on 2026-08-28.** References to `EventLog §…` below are historical and no longer resolve. **The arithmetic constraints IC-1 to IC-12 are now conformance rows in [`Aequitas_Conformance_v0.8.md`](../Aequitas_Conformance_v0.8.md) §2**, which carries a label map; everything else it held is in Foundations. The archived paper is `99-archive/Aequitas_EventLog_v0.10.md`.
+> **⚠️ The event-log paper was retired on 2026-08-28.** References to `EventLog §…` below are historical and no longer resolve. **The arithmetic constraints IC-1 to IC-12 are now conformance rows in [`Aequitas_Conformance_v0.9.md`](../Aequitas_Conformance_v0.9.md) §2**, which carries a label map; everything else it held is in Foundations. The archived paper is `99-archive/Aequitas_EventLog_v0.10.md`.
 
 
 ---
