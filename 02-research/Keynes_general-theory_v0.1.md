@@ -12,7 +12,7 @@
 
 Keynes is the reason the modern economy runs on debt — and Aequitas's chapter on debt (Overview §2) is, in effect, a reply to the world Keynes built. His argument was that a market economy can get stuck below full employment because there isn't enough *spending*, and that the cure is to prop up demand — often with borrowing. That worked, and it left us in a world that needs a constant supply of new debt just to stand still. Aequitas's claim is that it removes the machinery that turns debt into a crisis in the first place.
 
-Bears on: the debt argument (Overview §2), and the rule that credit can never be transferred, so there is no creditor to be made whole — see [Foundations §A3 (non-fungibility)](../00-strategy/Aequitas_Foundations_v0.33.md#a3-non-fungibility).
+Bears on: the debt argument (Overview §2), and the rule that credit can never be transferred, so there is no creditor to be made whole — see [Foundations §A3 (non-fungibility)](../00-strategy/Aequitas_Foundations_v0.34.md#a3-non-fungibility).
 
 ## Key findings
 
@@ -23,8 +23,8 @@ Bears on: the debt argument (Overview §2), and the rule that credit can never b
 ## What we can use
 
 - **Keynes names the disease Aequitas claims to cure.** An economy that needs *new* debt to generate demand is permanently one disruption from a seizure — exactly the fragility Overview §2 opens with. Keynes's own framework is the mainstream admission that demand can chronically fall short.
-- **Aequitas removes the part that turns a bad year into a spiral.** A debt crisis needs a *creditor who must be made whole*. In Aequitas credit is only a record of who did what and can never change hands, so nobody is ever owed — the mechanism that cascades has nothing to attach to. See [Foundations §A3](../00-strategy/Aequitas_Foundations_v0.33.md#a3-non-fungibility) and the "books never balance" logic in [Foundations §3.5](../00-strategy/Aequitas_Foundations_v0.33.md).
-- **Aequitas's demand side is pledges, not borrowing.** Where Keynes stimulates demand by injecting money/debt, Aequitas surfaces demand directly — people put their earned credit behind what they want made (see [Foundations §6.4](../00-strategy/Aequitas_Foundations_v0.33.md)). No new debt is manufactured to make people spend.
+- **Aequitas removes the part that turns a bad year into a spiral.** A debt crisis needs a *creditor who must be made whole*. In Aequitas credit is only a record of who did what and can never change hands, so nobody is ever owed — the mechanism that cascades has nothing to attach to. See [Foundations §A3](../00-strategy/Aequitas_Foundations_v0.34.md#a3-non-fungibility) and the "books never balance" logic in [Foundations §3.5](../00-strategy/Aequitas_Foundations_v0.34.md).
+- **Aequitas's demand side is pledges, not borrowing.** Where Keynes stimulates demand by injecting money/debt, Aequitas surfaces demand directly — people put their earned credit behind what they want made (see [Foundations §6.4](../00-strategy/Aequitas_Foundations_v0.34.md)). No new debt is manufactured to make people spend.
 
 ## What it gets wrong / limitations — from Aequitas's angle
 

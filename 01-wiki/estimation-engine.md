@@ -61,6 +61,19 @@ For producers outside the system, use the finest-resolution data that exists —
 >
 > Needs an independently known *N* (fine for major commodities, not universal) and a defensible count *Z*.
 
+### Two states, not one — corrected 2026-08-29, Foundations v0.34
+
+**A producer can be missing from the books in two unrelated ways, and calling both of them "unmeasured" hides one of them.**
+
+| Term | What it means |
+|---|---|
+| **Unsubscribed** | The **person** holds no account with this network |
+| **Unrecorded** | The **output** is not in this network's books |
+
+**They are independent, and most subscribers will have unrecorded output** — a household vegetable garden the drone survey saw and the ledger did not, food given away, produce held back for the ordinary money economy, the same crop listed with two networks so it finds a buyer. **None of that is evasion**, and the discipline needs nothing added: produce you do not enter into the network cannot be sold on the network.
+
+> **And nobody outside is charged anything.** The leftover is debit on no account. An unflattering estimate sits there until the producer joins and replaces it with a record.
+
 ## Other gaps, unblocking
 
 - ~~**Training cost embodied in skilled service**~~ — **dissolved.** Training is front-loaded, so nothing flows downstream and no dataset is needed

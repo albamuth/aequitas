@@ -1,10 +1,11 @@
 <!-- tag: ovw-aequitas-overview -->
 # Aequitas — Overview
 
-> **Version:** 0.20
-> **Date:** 2026-08-28
+> **Version:** 0.21
+> **Date:** 2026-08-29
+> **Supersedes:** `99-archive/Aequitas_Overview_v0.20.md`
 > **Audience:** everyone. No economics background assumed, none required.
-> **Rigorous version:** `00-strategy/Aequitas_Foundations_v0.33.md`. This document is the plain-language companion; where they differ, the Foundations govern.
+> **Rigorous version:** `00-strategy/Aequitas_Foundations_v0.34.md`. This document is the plain-language companion; where they differ, the Foundations govern.
 > **Version history & what each version superseded:** `00-strategy/Aequitas_Overview_CHANGELOG.md`.
 
 *Aequitas* (genitive *aequitatis*) is the Latin word for fairness, evenness, symmetry — the quality of things being level with one another.
@@ -558,7 +559,11 @@ So that half is answered a different way, and it is the ordinary way: **measure 
 
 Two things follow, and they are the point.
 
-**The estimate for whoever stays outside gets worse as everyone else joins.** The figure is shared out across the ones still unmeasured, so as good producers instrument themselves and leave that pool, the guess applied to those remaining rises. **Staying dark stops paying, and stops paying more the longer it lasts.** Nobody is compelled; the books simply become expensive to stay out of.
+**The estimate for whoever stays outside gets worse as everyone else joins.** The figure is shared out across the ones still unmeasured, so as good producers instrument themselves and leave that pool, the guess applied to those remaining rises.
+
+> **Nobody outside is charged anything, and this is worth being exact about.** The estimate is a statement about material flows in the world, not a bill. **It does nothing at all until the person joins** — and then it is their opening position, which they replace with real records. **So what gets worse is the position you would inherit, not a debt accumulating against you.** Nobody is compelled, and nobody is billed.
+
+**And staying out of the books is not the same as hiding.** A subscriber can have output that is not in the books — food grown for their own household, work given away, produce kept back for the ordinary money economy, the same crop offered to two networks so it finds a buyer. **None of that is evasion, and the system does not try to capture it.** The discipline is simply that **produce you do not enter into the network cannot be sold on the network.**
 
 **And no number here is ever final.** A tally is a citation, not a verdict — it says who measured, how, over what area, and as of when. When somebody measures better, **every affected record recalculates**, backwards, because balances are derived rather than stored. A wrong figure is never deleted or quietly edited; a note is attached to it and a better record is added beside it. That is how science handles a mistake, and it is the only method that does not need an authority standing at the door deciding what may be written down.
 
@@ -670,6 +675,6 @@ What was deliberately dropped:
 
 ---
 
-*For the rigorous statement of everything above, with the arguments and the open problems in full: `00-strategy/Aequitas_Foundations_v0.33.md`.*
+*For the rigorous statement of everything above, with the arguments and the open problems in full: `00-strategy/Aequitas_Foundations_v0.34.md`.*
 
 *End of v0.20.*

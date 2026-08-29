@@ -12,7 +12,7 @@
 
 Veblen supplies two things at once: a name for the kind of consumption Aequitas's permanent-consumption-debit is designed to expose, and the intellectual seed of the Technocracy movement (see [Technocracy: energy accounting](../00-strategy/GLOSSARY.md#src-technocracy-energy-accounting)) — the nearest historical relative Aequitas has to define itself against. He's a bridge node: he connects the critique of *display-wealth* to the idea of running production for use rather than profit.
 
-Bears on: consumption/pollution debit ([Foundations §3.2](../00-strategy/Aequitas_Foundations_v0.33.md)) and the claim that capitalism can't operate inside the system ([Foundations §7.1](../00-strategy/Aequitas_Foundations_v0.33.md)).
+Bears on: consumption/pollution debit ([Foundations §3.2](../00-strategy/Aequitas_Foundations_v0.34.md)) and the claim that capitalism can't operate inside the system ([Foundations §7.1](../00-strategy/Aequitas_Foundations_v0.34.md)).
 
 ## Key findings
 
@@ -22,9 +22,9 @@ Bears on: consumption/pollution debit ([Foundations §3.2](../00-strategy/Aequit
 
 ## What we can use
 
-- **"Conspicuous consumption" names what Aequitas's ledger makes visible.** In Aequitas, consumption and pollution debit is *permanent* and sits on whoever caused it. Wasteful display consumption isn't hidden behind a price tag — it shows up, forever, as a heavy record. Where Veblen could only *describe* the sociology of waste, Aequitas *accounts* for it. See [Foundations §3.2](../00-strategy/Aequitas_Foundations_v0.33.md).
-- **The industry/business split prefigures Aequitas's core positioning.** Veblen's "business" — the pecuniary layer that restricts output to make money — is close to Braudel's *antimarket* (see [DeLanda: markets & antimarkets](../00-strategy/GLOSSARY.md#src-delanda-markets-antimarkets)) and to what Aequitas removes: the profit-in-exchange layer, leaving the making-things layer intact. See [Foundations §7.1](../00-strategy/Aequitas_Foundations_v0.33.md).
-- **He is the honest lineage of Technocracy** — which lets Aequitas locate itself precisely: it shares Veblen's respect for physical production over pecuniary manipulation, but *rejects* the Technocratic conclusion (rule by engineers), which is exactly the capture Aequitas's "no organisation owns the core" rule guards against. See [Technocracy: energy accounting](../00-strategy/GLOSSARY.md#src-technocracy-energy-accounting) and [Foundations §A8](../00-strategy/Aequitas_Foundations_v0.33.md#a8-no-governing-body).
+- **"Conspicuous consumption" names what Aequitas's ledger makes visible.** In Aequitas, consumption and pollution debit is *permanent* and sits on whoever caused it. Wasteful display consumption isn't hidden behind a price tag — it shows up, forever, as a heavy record. Where Veblen could only *describe* the sociology of waste, Aequitas *accounts* for it. See [Foundations §3.2](../00-strategy/Aequitas_Foundations_v0.34.md).
+- **The industry/business split prefigures Aequitas's core positioning.** Veblen's "business" — the pecuniary layer that restricts output to make money — is close to Braudel's *antimarket* (see [DeLanda: markets & antimarkets](../00-strategy/GLOSSARY.md#src-delanda-markets-antimarkets)) and to what Aequitas removes: the profit-in-exchange layer, leaving the making-things layer intact. See [Foundations §7.1](../00-strategy/Aequitas_Foundations_v0.34.md).
+- **He is the honest lineage of Technocracy** — which lets Aequitas locate itself precisely: it shares Veblen's respect for physical production over pecuniary manipulation, but *rejects* the Technocratic conclusion (rule by engineers), which is exactly the capture Aequitas's "no organisation owns the core" rule guards against. See [Technocracy: energy accounting](../00-strategy/GLOSSARY.md#src-technocracy-energy-accounting) and [Foundations §A8](../00-strategy/Aequitas_Foundations_v0.34.md#a8-no-governing-body).
 
 ## What it gets wrong / limitations — from Aequitas's angle
 

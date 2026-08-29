@@ -3,7 +3,7 @@
 
 > **Version:** 0.6 · **Date:** 2026-08-25
 > **Target:** A statement of the system, tested against scenarios, in ~3 months — with a conformance list an implementer can build against.
-> **Companion docs:** `Aequitas_Foundations_v0.33.md` (axioms), `Aequitas_Objections_v0.24.md` (register), `Aequitas_Conformance_v0.10.md` (what an implementation must satisfy), `../NEXT.md` (task queue)
+> **Companion docs:** `Aequitas_Foundations_v0.34.md` (axioms), `Aequitas_Objections_v0.24.md` (register), `Aequitas_Conformance_v0.10.md` (what an implementation must satisfy), `../NEXT.md` (task queue)
 > **Version history & what each version superseded:** `00-strategy/Aequitas_Strategy_CHANGELOG.md`.
 
 ---

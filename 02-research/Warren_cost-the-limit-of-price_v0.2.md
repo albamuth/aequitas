@@ -12,7 +12,7 @@
 
 **This is probably the single most important item in the research archive.** Warren's store is the only time anyone actually ran a shop on the rule Aequitas is built on — *a thing's price should be what it cost to make, with no profit added.* It ran for three years, it made money, and then it broke on the exact problem Aequitas's central idea exists to fix.
 
-That central idea is measuring everything in **time** — the hours a thing took — as the one yardstick that means the same thing everywhere. See [Foundations §A2 (time as measure)](../00-strategy/Aequitas_Foundations_v0.33.md#a2-time-as-measure). And the "price is just cost, no profit" rule is [Foundations §A5 (price ≡ cost)](../00-strategy/Aequitas_Foundations_v0.33.md). Warren tested both, a century and a half early, and hit the wall that Aequitas claims to get past.
+That central idea is measuring everything in **time** — the hours a thing took — as the one yardstick that means the same thing everywhere. See [Foundations §A2 (time as measure)](../00-strategy/Aequitas_Foundations_v0.34.md#a2-time-as-measure). And the "price is just cost, no profit" rule is [Foundations §A5 (price ≡ cost)](../00-strategy/Aequitas_Foundations_v0.34.md). Warren tested both, a century and a half early, and hit the wall that Aequitas claims to get past.
 
 ## Key findings
 

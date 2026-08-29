@@ -1,16 +1,16 @@
-<!-- generated-from: Aequitas_Foundations_v0.33.md -->
+<!-- generated-from: Aequitas_Foundations_v0.34.md -->
 # Aequitas — Foundations, distilled
 
 > ## ⚠️ THIS FILE IS GENERATED. DO NOT EDIT IT.
 >
-> **Every edit belongs in [`Aequitas_Foundations_v0.33.md`](Aequitas_Foundations_v0.33.md), which is the document this was made from.**
+> **Every edit belongs in [`Aequitas_Foundations_v0.34.md`](Aequitas_Foundations_v0.34.md), which is the document this was made from.**
 > An edit made here is lost the next time anyone runs the generator, and while it survives it is a
 > second version of a rule — which is the failure this file exists to avoid.
 >
 > **Regenerate with:** `python bin/distill.py`
 
-> **Source:** [`Aequitas_Foundations_v0.33.md`](Aequitas_Foundations_v0.33.md) · **version 0.33**
-> **Size:** 96,165 bytes, from 201,025 — **48% of the source**
+> **Source:** [`Aequitas_Foundations_v0.34.md`](Aequitas_Foundations_v0.34.md) · **version 0.34**
+> **Size:** 98,230 bytes, from 204,649 — **48% of the source**
 
 **What was kept:** every heading, every rule, every table, and the stated result of every worked
 example. **What was dropped:** the explanation prose between them.
@@ -530,7 +530,23 @@ example. **What was dropped:** the explanation prose between them.
 > **N** is the independently known total for the whole area being described, such as agricultural statistics, trade data, or a satellite survey.
 > **Y** is what the measured producers actually recorded.
 > **Z** is the number of producers still unmeasured.
+   > **Nobody outside the network is charged anything, and this condition must not be read as though they were.** The leftover is debit on no account, stated in full below, and §4.1 says a non-participant can neither draw on an estimated position nor be charged for it. **What an unflattering estimate does is sit there, unflattering, until the producer joins and replaces it with a record.** The estimate errs against whoever it describes on both sides, so supplying evidence always pays.
 > **Condition 3 is not a formality. On the project's own worked case, skipping it made the unmeasured pool look three times larger than it was**, and every unmeasured producer's estimated share with it. The full case is in [`../01-wiki/estimation-engine.md`](../01-wiki/estimation-engine.md). It is conformance requirement 14a.
+#### Two different states, and one word was doing both jobs
+| Term | What it means | Who it describes |
+|---|---|---|
+| **Unsubscribed** | The **person** holds no account with this network | A farmer who has never joined |
+| **Unrecorded** | The **output** is not in this network's books | A subscriber's vegetable garden, which the drone survey saw and the ledger did not |
+> **The two are independent. A subscriber can have unrecorded output, and most will.**
+#### Choosing not to record output is legitimate, and the discipline already exists
+| The case | What is happening |
+|---|---|
+| **Subsistence** | A farmer feeds themselves and their farmworkers from part of the harvest, and records none of it (§3.2) |
+| **Gifts** | Handing a thing to somebody outside the system is not an event, so no record is made (§2.4, rule 3) |
+| **Barter** | No hand-off is recorded on this network, so this network never sees it |
+| **Output held back for the money market** | **During adoption this is the common case.** A producer keeps most of their output for the ordinary currency economy and puts a slice on a trust network (§4.8) |
+| **The same output offered on two networks** | A producer lists produce with two networks so it has a better chance of finding a buyer. **A transaction lands on exactly one network and the seller picks which** (§4.0, fact 2) |
+> **The discipline needs nothing added to it: produce you do not enter into the network cannot be sold on the network.** Withholding output is withholding it from your own buyers, and that is the whole of the cost.
 #### A figure built from two incomplete readings needs a label, and the label must be earned
 > **⚠️ That holds for a count. It does not survive a subtraction.**
 ##### An example, with the numbers
@@ -784,7 +800,7 @@ example. **What was dropped:** the explanation prose between them.
 |---|---|
 | **The conformance requirements** — what must be true for an implementation to *be* Aequitas, written for implementers | [`Aequitas_Conformance_v0.10.md`](Aequitas_Conformance_v0.10.md) |
 | **The objections register** — every open problem and every answered objection, with its status | [`Aequitas_Objections_v0.24.md`](Aequitas_Objections_v0.24.md) |
-| **The plain-language companion**, assuming no economics background | [`Aequitas_Overview_v0.20.md`](Aequitas_Overview_v0.20.md) |
+| **The plain-language companion**, assuming no economics background | [`Aequitas_Overview_v0.21.md`](Aequitas_Overview_v0.21.md) |
 | **How adoption plausibly starts** — a reading of the historical record, not a statement of the system | [`Aequitas_Strategy_v0.6.md`](Aequitas_Strategy_v0.6.md) §5 |
 | **The simulation programme** — what is being tested and in what order | [`Aequitas_Simulation_Roadmap_v0.2.md`](Aequitas_Simulation_Roadmap_v0.2.md) |
 | **One paper per open problem** | [`open-problems/`](open-problems/) |

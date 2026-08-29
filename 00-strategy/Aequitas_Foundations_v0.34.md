@@ -1,13 +1,16 @@
 <!-- tag: fnd-aequitas-foundations-and-long-term -->
 # Aequitas — Foundations & Long-Term Strategy
 
-> **Version:** 0.33
-> **Date:** 2026-08-28
+> **Version:** 0.34
+> **Date:** 2026-08-29
+> **Supersedes:** [`../99-archive/Aequitas_Foundations_v0.33.md`](../99-archive/Aequitas_Foundations_v0.33.md)
 > **Status:** Working foundations.
 > **Primary audience of the first paper:** technologists and implementers.
 > **Companion:** [`Aequitas_Conformance_v0.10.md`](Aequitas_Conformance_v0.10.md) — what must be true for an implementation to *be* Aequitas.
 > **Companion:** [`Aequitas_Objections_v0.24.md`](Aequitas_Objections_v0.24.md) — the objections register.
 > **Version history is kept separately and is not published**, so this document carries only what is currently true.
+>
+> **This version corrects three things in §4.4 and changes no mechanism.** The section described a non-participant as being *charged*, which §4.1 and §4.4 both forbid. It used one word, *unmeasured*, for two different states — a person outside the network, and an output that is not in the books — so it could not describe a subscriber who grows food they never record. And it did not say that choosing not to record output is legitimate, which left five ordinary cases looking like evasion.
 
 ### How to read this document
 
@@ -1262,14 +1265,46 @@ An attacker invents **2.0 kg** of a good arriving from nowhere, and **2.0 kg** o
 **Three conditions, and the rule does not work without all three.**
 
 1. **An independently known `N` must exist.** It does for major commodities, and it does not for everything.
-2. **The count `Z` must be defensible**, and where it is uncertain a network **under-counts** it. Under-counting raises each unmeasured producer's estimated share, which is the direction that prompts them to come forward and prove otherwise. **The error that liquidates itself is the safe one, because nobody complains about being charged too little.**
+2. **The count `Z` must be defensible**, and where it is uncertain a network **under-counts** it. Under-counting raises each unmeasured producer's estimated share, which is the direction that makes joining worth doing.
+   > **Nobody outside the network is charged anything, and this condition must not be read as though they were.** The leftover is debit on no account, stated in full below, and §4.1 says a non-participant can neither draw on an estimated position nor be charged for it. **What an unflattering estimate does is sit there, unflattering, until the producer joins and replaces it with a record.** The estimate errs against whoever it describes on both sides, so supplying evidence always pays.
 3. **`N` and `Y` must measure the same quantity, over the same piece of the world, over the same stretch of time, with error bounds smaller than the difference between them.** Fail any one and the gap between them is an artefact of the mismatch rather than a real leftover.
 
 > **Condition 3 is not a formality. On the project's own worked case, skipping it made the unmeasured pool look three times larger than it was**, and every unmeasured producer's estimated share with it. The full case is in [`../01-wiki/estimation-engine.md`](../01-wiki/estimation-engine.md). It is conformance requirement 14a.
 
 **The estimate is continuous, not a single event.** As part of an area becomes measured, `Y` rises, `Z` falls, and the estimate shrinks to what remains. **The parts must reconcile against the coarser figure they came from.** This is also what catches a fabricated total, because a fabricator does not control which part gets measured next.
 
-**"Unmeasured" means outside the network, not low-technology inside it.** Subscribing carries a transparency requirement, so a good moving through the accounting carries records of where it came from. **Gathering data on non-participants, and helping a producer bring their supply chain into the record, are both credited work.**
+#### Two different states, and one word was doing both jobs
+
+**A producer can be missing from the books in two unrelated ways, and a rule that calls both of them "unmeasured" cannot describe either properly.**
+
+| Term | What it means | Who it describes |
+|---|---|---|
+| **Unsubscribed** | The **person** holds no account with this network | A farmer who has never joined |
+| **Unrecorded** | The **output** is not in this network's books | A subscriber's vegetable garden, which the drone survey saw and the ledger did not |
+
+> **The two are independent. A subscriber can have unrecorded output, and most will.**
+
+**This is §4.5 stated from the other end** — *the accounting covers what is claimed and attested, and everything else is life* — and §3.2's subsistence corollary already works one case of it through: growing food and eating it yourself nets to zero on labour and costs what it consumed.
+
+**Subscribing carries a transparency requirement for what moves through the accounting**, so a good that passes through a hand-off carries records of where it came from. **It does not require a subscriber to record everything they do.** §4.2 is why: a network credits no kind of work for which it has published no evidence rule, so there are kinds of activity a subscriber could not record here even if they wanted to.
+
+#### Choosing not to record output is legitimate, and the discipline already exists
+
+**None of the following is evasion, and none of them needs a rule to stop it.**
+
+| The case | What is happening |
+|---|---|
+| **Subsistence** | A farmer feeds themselves and their farmworkers from part of the harvest, and records none of it (§3.2) |
+| **Gifts** | Handing a thing to somebody outside the system is not an event, so no record is made (§2.4, rule 3) |
+| **Barter** | No hand-off is recorded on this network, so this network never sees it |
+| **Output held back for the money market** | **During adoption this is the common case.** A producer keeps most of their output for the ordinary currency economy and puts a slice on a trust network (§4.8) |
+| **The same output offered on two networks** | A producer lists produce with two networks so it has a better chance of finding a buyer. **A transaction lands on exactly one network and the seller picks which** (§4.0, fact 2) |
+
+> **The discipline needs nothing added to it: produce you do not enter into the network cannot be sold on the network.** Withholding output is withholding it from your own buyers, and that is the whole of the cost.
+
+**So a network does not need to capture everything, and should not try.** §4.5 says the same thing about work nobody can observe, and says why attempting it would be *futile and grotesque*. **What the network owes is not total capture. It is an honest statement of how much it did capture**, which is the coverage figure below.
+
+**Gathering data on non-participants, and helping a producer bring their supply chain into the record, are both credited work.**
 
 #### A figure built from two incomplete readings needs a label, and the label must be earned
 
@@ -2071,7 +2106,7 @@ A3 therefore does three separate defensive jobs: it forbids accumulation (§5.1)
 |---|---|
 | **The conformance requirements** — what must be true for an implementation to *be* Aequitas, written for implementers | [`Aequitas_Conformance_v0.10.md`](Aequitas_Conformance_v0.10.md) |
 | **The objections register** — every open problem and every answered objection, with its status | [`Aequitas_Objections_v0.24.md`](Aequitas_Objections_v0.24.md) |
-| **The plain-language companion**, assuming no economics background | [`Aequitas_Overview_v0.20.md`](Aequitas_Overview_v0.20.md) |
+| **The plain-language companion**, assuming no economics background | [`Aequitas_Overview_v0.21.md`](Aequitas_Overview_v0.21.md) |
 | **How adoption plausibly starts** — a reading of the historical record, not a statement of the system | [`Aequitas_Strategy_v0.6.md`](Aequitas_Strategy_v0.6.md) §5 |
 | **The simulation programme** — what is being tested and in what order | [`Aequitas_Simulation_Roadmap_v0.2.md`](Aequitas_Simulation_Roadmap_v0.2.md) |
 | **One paper per open problem** | [`open-problems/`](open-problems/) |
