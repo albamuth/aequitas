@@ -81,7 +81,7 @@ Four objects, and nothing else.
 | **`EventLog`** | Append-only, columnar. Parallel numpy arrays, one per field. Offers no `delete`, `truncate`, `update`, `remove` or `edit` — asserted by `test_log_is_append_only`. |
 | **`Projection`** | The ledger, derived from the log by a segment-sum over the actor column. Cached, and the cache is re-checked against a from-scratch recompute every period. |
 | **`Kernel`** | Agents, dials, the time axis, the gate. |
-| **`Conformance`** | Seven checks from `Aequitas_Conformance_v0.9.md` (the conformance requirements), run at the end of every period. A failure raises and stops the run. |
+| **`Conformance`** | Seven checks from `Aequitas_Conformance_v0.10.md` (the conformance requirements), run at the end of every period. A failure raises and stops the run. |
 
 ### The event kinds
 
@@ -763,7 +763,7 @@ _ = collapse(heavier, k.dials.weights)   # future room shrinks; history stands
 
 ### 19.1 The 17 conformance requirements — what Statera can and cannot check
 
-`Aequitas_Conformance_v0.9.md` lists 16 requirements that must hold for an implementation to be Aequitas. Statera asserts some as running invariants, satisfies some structurally without asserting them, and cannot express the rest.
+`Aequitas_Conformance_v0.10.md` lists 16 requirements that must hold for an implementation to be Aequitas. Statera asserts some as running invariants, satisfies some structurally without asserting them, and cannot express the rest.
 
 | # | Requirement | Status in Statera |
 |---|---|---|

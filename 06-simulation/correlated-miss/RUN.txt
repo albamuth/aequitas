@@ -1,0 +1,152 @@
+==============================================================================
+CORRELATED MISS -- how far does R = N - Y move?
+==============================================================================
+
+  Terms, before any number:
+    N        the outside total. A satellite survey of the extent.
+    Y        what the network's own subscribers recorded.
+    R_obs    the published leftover, N - Y.
+    R_true   what producers the network cannot see actually made.
+    rho      how correlated the two blind spots are, 0 to 1.
+    half     the producer size at which an instrument sees 50%.
+
+  Producers        40,000, seed 23
+  Median output    40 t/yr, lognormal, sigma 1.10
+
+------------------------------------------------------------------------------
+PART 1 -- THE CASE THE DOCUMENTS ASSUME
+------------------------------------------------------------------------------
+
+  A perfect N and a blind Y. The satellite sees everything; the
+  network sees its own members. This is the picture behind the
+  88,000 / 82,000 / 6,000 example in the conformance list.
+
+   Y half-size   R_obs      R_true     error    label in hindsight
+            10      100954     100954         0    exact
+            20      258329     258329         0    exact
+            30      415545     415545         0    exact
+            50      694054     694054         0    exact
+
+  R_obs is EXACT here, not a bound. When N is complete, N - Y is
+  precisely what the network could not see, by construction.
+
+------------------------------------------------------------------------------
+PART 2 -- N GETS A BLIND SPOT OF ITS OWN, UNCORRELATED (rho = 0)
+------------------------------------------------------------------------------
+
+  Now the satellite misses small plots too, but misses DIFFERENT
+  ones from the network. Y half-size fixed at 30 t.
+
+   N half   R_obs      R_true     error     as % of R_true   label
+        5      382646     415545    -32899             -7.9   floor
+       10      315590     415545    -99955            -24.1   floor
+       15      235690     415545   -179855            -43.3   floor
+       20      154071     415545   -261474            -62.9   floor
+       25       71941     415545   -343604            -82.7   floor
+       30       -6286     415545   -421831           -101.5   floor
+
+  Every row is labelled `floor`: the published leftover is SMALLER
+  than the truth, so the true dark output is above it. A smaller
+  leftover means the network claims better coverage than it has,
+  so this is the flattering direction -- and it is the direction
+  Foundations 4.4 already warns about in its own worked table.
+
+  The last row is the one to look at. At N half = 30, matching Y,
+  R_obs goes NEGATIVE. A leftover cannot be negative -- it is an
+  amount of output. This is the ONE case the arithmetic catches by
+  itself, and it catches it only when the shared blind spot is
+  large enough to push the subtraction past zero.
+
+------------------------------------------------------------------------------
+PART 3 -- THE CORRELATION SWEEP, WHICH IS THE QUESTION
+------------------------------------------------------------------------------
+
+  Both instruments are size-biased in the same direction. rho says
+  how far they miss THE SAME producers. N half-size 15 t, Y 30 t.
+
+  R_true moves with rho, so read the COVERAGE columns rather than
+  the error: they are the decision-relevant quantity and they are
+  comparable across rows.
+
+   rho    R_obs      R_true    coverage published   real   overstated by
+   0.00      235690     415545               91.4%   85.7%           5.7 pts
+   0.25      217580     330932               92.2%   88.6%           3.6 pts
+   0.50      209997     314069               92.5%   89.2%           3.3 pts
+   0.75      217488     331470               92.2%   88.6%           3.6 pts
+   0.90      233272     369660               91.6%   87.3%           4.3 pts
+   1.00      240107     422414               91.2%   85.5%           5.7 pts
+
+  The published coverage overstates the real coverage at every
+  value of rho, including zero. Correlation makes it worse; it is
+  not what causes it. What causes it is that N has a blind spot at
+  all, and the documents assume it does not.
+
+------------------------------------------------------------------------------
+PART 4 -- THE WORST CASE: ONE BLIND SPOT, SHARED COMPLETELY
+------------------------------------------------------------------------------
+
+  The satellite and the network have the SAME detector and the SAME
+  latent draw. Whoever one misses, the other misses.
+
+   half   R_obs   R_true      error      coverage published   real
+     10       0   103074    -103074               100.0%   96.5%
+     20       0   264744    -264744               100.0%   90.9%
+     30       0   422414    -422414               100.0%   85.5%
+     50       0   712014    -712014               100.0%   75.5%
+
+  R_obs is ZERO at every row, and the published coverage is 100%.
+  The real coverage is far lower. A leftover computed between two
+  instruments that share a blind spot reports NO LEFTOVER AT ALL.
+
+==============================================================================
+WHAT THIS FOUND
+==============================================================================
+
+  1. @cairn-lineage IS RIGHT, AND THE DIRECTION IS THE FLATTERING ONE.
+     Whenever N has a blind spot of its own, R_obs comes out BELOW
+     the truth. In row 13's vocabulary that is a `floor` -- the true
+     dark output is above the published figure. A smaller leftover
+     means the network claims better coverage than it has, so the
+     error runs in the direction nobody inside is motivated to
+     report. Their sentence was that N - Y is not a lower bound on
+     what the network missed; measured, it is not.
+
+  2. AT FULL CORRELATION THE LEFTOVER READS ZERO.
+     Two instruments with one blind spot compute N - Y = 0 and
+     publish 100% coverage over an extent they have not covered.
+     The arithmetic cannot see its own hole, because the hole was
+     subtracted from both sides.
+
+  3. ROW 14a's INTERVAL DOES NOT EXPRESS THIS, AND CANNOT.
+     14a asks whether N and Y measure the same quantity, over the
+     same extent, over the same window, with error bounds smaller
+     than their difference. A correlated miss passes ALL FOUR: same
+     quantity, same extent, same window -- and the difference is
+     zero, so no error bound is smaller than it. The interval
+     R in [N_L - Y_U, N_U - Y_L] is built from the two blind spots
+     stated SEPARATELY, and a shared blind spot is not two.
+
+  4. WHAT DOES CATCH IT IS ROW 13's DEFAULT, AND ONLY IF IT IS OBEYED.
+     `not identified` is the default label until a stated directional
+     argument exists for EACH operand's blind spot. A network that
+     cannot say which way its satellite is blind has no such
+     argument, so the figure is `not identified` and no `floor`
+     label may be attached. THE RULE ALREADY REFUSES THE CLAIM.
+     What it does not do is tell anyone the figure is worthless.
+
+  5. ONE CASE THE ARITHMETIC DOES CATCH: A NEGATIVE LEFTOVER.
+     When the satellite is as blind as the network, N - Y goes
+     below zero -- measured at -6,286 t in part 2. A leftover is an
+     amount of output and cannot be negative, so this is a hard
+     signal that the subtraction is invalid. It is the only
+     self-announcing failure here, and it fires only once the
+     shared blind spot is large enough to push past zero. Below
+     that, the same defect is present and silent.
+
+  6. THE TEST THAT WOULD FIND IT IS NOT ARITHMETIC.
+     Compare the two instruments' SIZE PROFILES, not their totals.
+     If both fall off at the same producer size, the leftover
+     between them is uninformative however wide its interval is.
+     That is a comparison of methods, not of numbers, and nothing
+     in the conformance list asks for it.
+

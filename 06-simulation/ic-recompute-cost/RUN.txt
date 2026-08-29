@@ -1,0 +1,116 @@
+==============================================================================
+IC-1 to IC-9 -- WHAT A FULL RECOMPUTATION COSTS
+==============================================================================
+
+  The question, from the Futurist lens on 2026-08-22:
+  'Any stranger can recompute the verdict' is only decentralizing
+  if any stranger can AFFORD to. Nobody had measured it.
+
+  Accounts in the synthetic network   1,000,000
+  Distinct materials tracked          64
+  Events generated and checked per chunk  2,000,000
+  numpy 2.5.1 on win32
+
+  Timed: IC-1 to IC-9, the constraints that check the RECORD.
+  Excluded: IC-10 to IC-12, which check a figure computed THROUGH a
+  weighting model, so their cost belongs to the model.
+
+------------------------------------------------------------------------------
+MEASURED
+------------------------------------------------------------------------------
+
+   events        generate   8 stream    IC-5 sort   all nine    rate/s
+   1,000,000        0.0 s      0.1 s       0.0 s      0.1 s  9,894,348
+   10,000,000       0.4 s      0.8 s       0.2 s      1.0 s  10,447,915
+   100,000,000      4.0 s      7.9 s       1.9 s      9.8 s  10,250,328
+
+  'generate' is this program inventing a log. A real network reads
+  one instead. It is reported separately so it is not mistaken for
+  the cost of checking.
+
+------------------------------------------------------------------------------
+EXTRAPOLATED, AT THE MEASURED RATE
+------------------------------------------------------------------------------
+
+   Fastest measured rate for ALL NINE: 10,447,915 events/s.
+   For the eight streaming checks alone: 12,699,404 events/s.
+
+   events         time to re-check the whole log
+   1,000,000      0.1 s
+   100,000,000    9.6 s
+   1,000,000,000  1.6 min
+   10,000,000,000  16.0 min
+
+   These are single-core, single-machine figures with no
+   parallelism and no indexing. They are an upper bound on cost,
+   not an estimate of what an implementation would achieve.
+
+------------------------------------------------------------------------------
+MEMORY -- AND WHY IT DOES NOT GROW WITH THE LOG
+------------------------------------------------------------------------------
+
+   EIGHT constraints stream: each carries a fixed-size accumulator
+   and the log is never held whole. IC-5 is reported separately
+   below, because it does not.
+
+   accounts     state held by the eight streaming checks
+   10,000       117.7 KB
+   1,000,000    11.4 MB
+   10,000,000   114.4 MB
+   100,000,000  1.1 GB
+
+   Peak streaming memory is a property of the ACCOUNT COUNT and
+   never of the event count. A 10^9-event log checked against
+   1,000,000 accounts holds 11.4 MB for the eight.
+
+   IC-5 IS THE EXCEPTION, AND IT IS THE ANSWER'S OTHER HALF.
+   It is the only constraint that compares one event to ANOTHER
+   EVENT, so it needs the log ordered by parcel. Measured here by
+   keeping the (parcel, day) pairs and sorting once:
+
+   events         IC-5 memory at 8 bytes per event
+   1,000,000      7.6 MB
+   100,000,000    762.9 MB
+   1,000,000,000  7.5 GB
+
+   A real network does not do it this way. It keeps the log
+   indexed by parcel as it is written, which turns IC-5 back into
+   a scan. That is an implementation choice and conformance 3
+   leaves it there. What is NOT optional is that IC-5 needs an
+   ordering the other eight do not.
+
+==============================================================================
+WHAT THIS FOUND
+==============================================================================
+
+   1. THE CHECK IS LINEAR IN EVENTS. MEMORY SPLITS IN TWO.
+      Eight of the nine constraints are running accumulators:
+      doubling the log doubles the time and changes their memory
+      not at all. IC-5 is not one of them -- it sorts -- and the
+      table above keeps the two apart. The rate stays flat across
+      two orders of magnitude either way.
+
+   2. A STRANGER CAN AFFORD IT.
+      At the measured rate a 10^9-event log re-checks in 1.6 min,
+      of which the eight streaming checks are 78.7 s and IC-5's
+      ordering is the rest.
+      One core of an ordinary machine. The eight hold 11.4 MB;
+      IC-5 held 762.9 MB here because this program keeps the pairs
+      rather than reading an ordered log.
+      The Futurist lens asked whether 'any stranger can recompute
+      the verdict' survives contact with scale. On this measurement
+      it does.
+
+   3. WHAT THIS DOES NOT SHOW, AND IT IS THE EXPENSIVE HALF.
+      IC-1 to IC-9 check the RECORD. They do not apply a weighting
+      model, and Foundations 3.3 says a better constant re-weighs
+      every affected record in history. THAT pass reads the same log
+      and multiplies through a model, and its cost is not measured
+      here. Nobody should quote this number for that job.
+
+   4. AND IT DOES NOT SHOW THE COST OF GETTING THE LOG.
+      A stranger re-checking a network's arithmetic must first
+      obtain the log. At the volumes above that is a transfer
+      problem, and conformance 3 puts it with the implementer.
+      Cheap to CHECK is not the same as cheap to OBTAIN.
+

@@ -1,7 +1,7 @@
 <!-- tag: cnf-aequitas-conformance -->
 # Aequitas — Conformance Requirements
 
-> **Version:** 0.9 · **Date:** 2026-08-28
+> **Version:** 0.10 · **Date:** 2026-08-29
 > **Audience: implementers.** Anyone building a trust network.
 > **Companion:** [`Aequitas_Foundations_v0.33.md`](Aequitas_Foundations_v0.33.md) — the system itself, and the argument behind every row below. **Where the two differ, Foundations governs.**
 > **Version history is kept separately and is not published**, so this document carries only what is currently true.
@@ -41,7 +41,7 @@ Worked: *"records are never deleted"* is something you can read off an implement
 <!-- tag: cnf-s2 -->
 ## 2. What an implementation must satisfy
 
-**All thirty-six rows below must hold.** They are grouped so a reader can find one without already knowing its number. **The numbers themselves have not changed and never will** — other documents cite them.
+**All thirty-seven rows below must hold.** They are grouped so a reader can find one without already knowing its number. **The numbers themselves have not changed and never will** — other documents cite them.
 
 ### The words this list uses
 
@@ -198,8 +198,22 @@ Worked: *"records are never deleted"* is something you can read off an implement
 | 12 | **Every estimate says four things about itself: what it is based on, what method produced it, when it was made, and what extent it covers.** It may be replaced only by something with a **stronger** basis, never a weaker one. **An observation may replace an estimate. An estimate may never replace an observation.** | §3.3, §4.4 |
 | 12a | **How sure a figure is, is stated separately from how it was arrived at, and carries the name of whoever assessed it.** A confidence figure with nobody's name on it is an authority nobody can question. **How sure a figure is, is never read off its method** — a well-tested model can beat a badly calibrated meter. | A8, §4.4 |
 | 12b | **Being precise about a group does not make you precise about a member of it.** Taking a figure from a coarse claim down to a fine one **lowers** how sure the fine figure is. A perfectly metered factory-month says very little about any one item that left the factory. | §3.4, §4.4 |
+| 12c | **Every record names the evidence it came from, and that name is stored with the record.** It names **which published evidence rule the record satisfied** (row 16d), not free text. **A record whose only backing is the claimant's own word says so**, and is a record of an assertion rather than of an observation. **This does not gate recording** — the event is logged either way; the pointer says what stands behind it. | A1, §4.2, §4.4 |
 | 13 | **A quantity counted over incomplete coverage is published as a `floor`** — the true number can only be higher — **with the gap named.** **A quantity worked out by combining two incomplete readings is published as a range, labelled `floor`, `ceiling`, or `not identified`.** **`not identified` is what such a figure gets** until somebody states an argument about the blind spot in **each** input. **A `floor` label is never inherited just because an input was incomplete.** | §4.4 |
 | 14a | **Two figures are subtracted only when they measure the same quantity, over the same extent, over the same stretch of time, and their error bars are smaller than the difference between them.** Where that does not hold, the answer is published as a **range** — `R ∈ [N_L − Y_U, N_U − Y_L]` — with the mismatch named, and never as a single bound. | §4.4 |
+
+#### Row 12c, worked
+
+**A network publishes two evidence rules: translation needs the text plus a client confirmation; unwitnessed thinking-time is recorded on the claimant's word alone.**
+
+| The record | What it points at | What it is |
+|---|---|---|
+| 20 h of translation, text delivered, client confirmed | **rule TRANS-2** | a record of an **observation** |
+| 20 h of thinking, no text, no witness | **rule SELF-1** | a record of an **assertion** |
+
+**Both are in the log. Neither was refused at the door.** The difference is that a stranger reading the second one **knows what stands behind it without being told**, and a network weighting it near zero (Foundations §4.5) is applying a published rule rather than a private judgement.
+
+> **What this rules out: a record that is silent about its own backing.** Without the pointer, the two rows above are the same twenty hours, and the only party who knows the difference is the network.
 
 #### Rows 13 and 14a, worked
 
@@ -355,11 +369,11 @@ Foundations §4.1 states it, and the **OP-22 ruling of 2026-08-25** makes it a r
 ---
 
 <!-- tag: cnf-s5 -->
-## 5. Why five of these rows exist
+## 5. Why six of these rows exist
 
-**Most rows restate something Foundations argues at length, and the *From* column points at the argument.** Five rows need a note here, because what they rule out is not obvious from reading them.
+**Most rows restate something Foundations argues at length, and the *From* column points at the argument.** Six rows need a note here, because what they rule out is not obvious from reading them.
 
-> **The finding underneath the first four: a rule that lives only in prose does not bind.** Foundations §4.2's sentence about exchange rates was in front of the reader who broke it. **This list is not a summary of Foundations. It is the part of Foundations that has to survive contact with somebody in a hurry.**
+> **The finding underneath the first five: a rule that lives only in prose does not bind.** Foundations §4.2's sentence about exchange rates was in front of the reader who broke it. **This list is not a summary of Foundations. It is the part of Foundations that has to survive contact with somebody in a hurry.**
 
 ### 4a — what an implementation could have done without it
 
@@ -387,6 +401,18 @@ Foundations §4.1 states it, and the **OP-22 ruling of 2026-08-25** makes it a r
 
 **Three things bound what it costs a person.** Self-care is verified by proof of life, which every living human meets at almost no cost (Foundations §4.2). Sellers choose which networks they accept (§4.0), so bad rules lose a network its members. And non-participation is always available (§4.8).
 
+### 12c — what an implementation could have done without it
+
+**Record everything and say nothing about why any of it was believed.**
+
+**The gap was one word in row 16.** It requires every estimating number and method the network **uses** to be published. **A record is not an estimating number**, and nothing anywhere required a record to carry a pointer to its own evidence. Row 12 covers **estimates** only. Row 16d says what evidence a **kind of work** needs, in advance, but never ties an individual record back to the rule it satisfied.
+
+> **So an implementation could hold a twenty-hour record backed by a client confirmation and a twenty-hour record backed by nothing, store them identically, and conform.** The only party able to tell them apart is the network.
+
+**It is not a new burden.** Row 16d already makes the network publish the rule before it credits anything, so the rule the record satisfied is a value the network already had. **12c requires it to be written down.**
+
+**And it does not gate recording.** Foundations §4.6 says the work is always recorded and §4.4 says a falsehood is made permanent and traceable rather than prevented at the door. **12c adds a field, never a refusal.**
+
 ### 3a — what an implementation could have done without it
 
 **Declared *"loyalty to this network"* creditable**, published an evidence rule for it under 16d, credited it at one hour per hour under row 3, and satisfied every other row. **16d requires a published rule. It never required the thing being credited to be work.**
@@ -397,4 +423,4 @@ Foundations §4.1 states it, and the **OP-22 ruling of 2026-08-25** makes it a r
 
 ---
 
-*End of v0.9.*
+*End of v0.10.*

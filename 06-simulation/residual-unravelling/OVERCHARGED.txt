@@ -1,0 +1,76 @@
+==============================================================================
+DARK AGENTS WHOSE TRUE DEBIT IS BELOW THE ESTIMATE
+==============================================================================
+
+  Asked by @custos, c21150 on 2026-08-25: the mean rows cannot see
+  this class. They cannot. It splits in two, and only one half is a
+  problem:
+
+    OVER-ESTIMATED   dark, and true figure below the estimate.
+                     Being over-charged.
+    TRAPPED          over-estimated AND true + cost >= estimate.
+                     Over-charged and CANNOT AFFORD to prove it.
+
+------------------------------------------------------------------------------
+BASIS: residual   -- the rule Foundations 4.4 states
+------------------------------------------------------------------------------
+  round   estimate   dark   over-est   trapped   mean over-charge
+      0       1.00   2000       1000        50            0.028
+      1       1.65   1050        525        30            0.035
+      2       2.35    555        277        11            0.048
+      3       3.15    289        144         6            0.051
+      4       3.99    151         75         3            0.028
+      5       5.01     79         39         3            0.056
+      6       6.16     43         21         0            0.000
+      7       7.34     22         11         3            0.049
+      8       9.59     14          7         0            0.000
+      9      14.36      7          3         0            0.000
+     10      15.37      4          2         0            0.000
+     11      17.26      2          1         0            0.000
+     12      18.23      1          0         0            0.000
+  final: 0 trapped, 1 still dark
+
+------------------------------------------------------------------------------
+BASIS: population   -- the rule Foundations 4.4 REJECTS
+------------------------------------------------------------------------------
+  round   estimate   dark   over-est   trapped   mean over-charge
+      0       1.00   2000       1000        50            0.028
+      1       1.00   1050         50        50            0.028
+  final: 50 trapped, 1050 still dark
+
+------------------------------------------------------------------------------
+ACROSS PERCENTILES
+------------------------------------------------------------------------------
+  basis        pct   peak trapped   as % of 2,000   final trapped
+  residual    p50             50            2.50               0
+  residual    p75             18            0.90               0
+  residual    p90              8            0.40               0
+  population  p50             50            2.50              50
+  population  p75             18            0.90              18
+  population  p90              8            0.40               8
+
+==============================================================================
+WHAT THIS FOUND
+==============================================================================
+
+  1. THE CLASS IS REAL AND IT IS SMALL. At most 2.50% of the
+     population is over-charged AND unable to afford proof, and that
+     is at the first round, before anyone has moved.
+
+  2. IT IS BOUNDED BY THE DISCLOSURE COST, NOT BY THE ESTIMATE.
+     Anyone over-charged by MORE than their cost of proving it
+     discloses. Only the thin band over-charged by LESS than that
+     stays, so the mean over-charge on the trapped is 0.03 debit
+     units against estimates of 1.00 to 7.34 -- about 1 to 3%.
+
+  3. THE CONTROL IS THE RESULT. Under the rule Foundations 4.4
+     REJECTS -- estimating over the whole population -- the estimate
+     never moves, so THE TRAPPED CLASS NEVER CLEARS. 50 agents stay
+     over-charged forever and 1,050 stay dark. Under the residual
+     rule both go to zero.
+
+  So the answer to @custos: the class exists, the mean cannot see it,
+  it is bounded by disclosure cost rather than by the estimate, and
+  the residual rule liquidates it while the rejected rule preserves
+  it permanently.
+

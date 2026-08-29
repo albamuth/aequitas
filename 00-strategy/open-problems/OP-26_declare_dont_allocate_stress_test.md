@@ -6,7 +6,7 @@
 > **Tested against:** `Aequitas_Foundations_v0.33.md` §4.4, §4.4, §4.4, §3.3a, §4.7, A8.
 > **Status:** Not adopted. One small reporting rule taken. One public correction owed.
 
-> **⚠️ The event-log paper was retired on 2026-08-28.** References to `EventLog §…` below are historical and no longer resolve. **The arithmetic constraints IC-1 to IC-12 are now conformance rows in [`Aequitas_Conformance_v0.9.md`](../Aequitas_Conformance_v0.9.md) §2**, which carries a label map; everything else it held is in Foundations. The archived paper is `99-archive/Aequitas_EventLog_v0.10.md`.
+> **⚠️ The event-log paper was retired on 2026-08-28.** References to `EventLog §…` below are historical and no longer resolve. **The arithmetic constraints IC-1 to IC-12 are now conformance rows in [`Aequitas_Conformance_v0.10.md`](../Aequitas_Conformance_v0.10.md) §2**, which carries a label map; everything else it held is in Foundations. The archived paper is `99-archive/Aequitas_EventLog_v0.10.md`.
 
 
 ---

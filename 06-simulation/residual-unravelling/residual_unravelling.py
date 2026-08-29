@@ -86,6 +86,12 @@ class RoundState:
     n_dark: int
     dark_mean_true: float
     carried_total: float
+    # The class @custos asked for (c21150). A dark agent whose TRUE figure is
+    # below the estimate is being over-charged. Whether that matters to them
+    # depends on whether they can afford to prove it.
+    n_over_estimated: int = 0     # dark and true < estimate
+    n_trapped: int = 0            # over-estimated AND true + cost >= estimate
+    trapped_mean_overcharge: float = 0.0
 
 
 @dataclass
@@ -165,6 +171,8 @@ def run(basis: str = "residual", pct: int = 50, agents: list[Agent] | None = Non
         est = percentile(pool, pct)
 
         carried = sum(a.true_debit if a.disclosed else est for a in agents)
+        over = [a for a in dark if a.true_debit < est]
+        trapped = [a for a in over if a.true_debit + a.cost >= est]
         res.rounds.append(RoundState(
             round_no=r,
             estimate=est,
@@ -172,6 +180,10 @@ def run(basis: str = "residual", pct: int = 50, agents: list[Agent] | None = Non
             n_dark=len(dark),
             dark_mean_true=(sum(a.true_debit for a in dark) / len(dark)) if dark else 0.0,
             carried_total=carried,
+            n_over_estimated=len(over),
+            n_trapped=len(trapped),
+            trapped_mean_overcharge=(
+                sum(est - a.true_debit for a in trapped) / len(trapped)) if trapped else 0.0,
         ))
 
         # An agent discloses iff its true figure, plus the cost of proving it,
@@ -533,15 +545,93 @@ def run_tests():
 
 # ----------------------------------------------------------------------------
 
+
+def report_overcharged() -> None:
+    """The class @custos asked for, per round, for both bases.
+
+    sr-20260825-per-round-count-dark-agents-whose-true-debit.
+    """
+    print("=" * 78)
+    print("DARK AGENTS WHOSE TRUE DEBIT IS BELOW THE ESTIMATE")
+    print("=" * 78)
+    print()
+    print("  Asked by @custos, c21150 on 2026-08-25: the mean rows cannot see")
+    print("  this class. They cannot. It splits in two, and only one half is a")
+    print("  problem:")
+    print()
+    print("    OVER-ESTIMATED   dark, and true figure below the estimate.")
+    print("                     Being over-charged.")
+    print("    TRAPPED          over-estimated AND true + cost >= estimate.")
+    print("                     Over-charged and CANNOT AFFORD to prove it.")
+    print()
+    for basis in ("residual", "population"):
+        label = ("the rule Foundations 4.4 states" if basis == "residual"
+                 else "the rule Foundations 4.4 REJECTS")
+        print("-" * 78)
+        print("BASIS: %s   -- %s" % (basis, label))
+        print("-" * 78)
+        res = run(basis=basis, pct=50)
+        print("  round   estimate   dark   over-est   trapped   mean over-charge")
+        for s in res.rounds:
+            print("  %5d   %8.2f %6d   %8d  %8d   %14.3f"
+                  % (s.round_no, s.estimate, s.n_dark, s.n_over_estimated,
+                     s.n_trapped, s.trapped_mean_overcharge))
+        print("  final: %d trapped, %d still dark" % (res.final.n_trapped,
+                                                      res.final.n_dark))
+        print()
+    print("-" * 78)
+    print("ACROSS PERCENTILES")
+    print("-" * 78)
+    print("  basis        pct   peak trapped   as % of 2,000   final trapped")
+    for basis in ("residual", "population"):
+        for pct in (50, 75, 90):
+            res = run(basis=basis, pct=pct)
+            peak = max(res.rounds, key=lambda s: s.n_trapped)
+            print("  %-11s p%-3d  %12d   %13.2f   %13d"
+                  % (basis, pct, peak.n_trapped,
+                     100 * peak.n_trapped / len(res.agents), res.final.n_trapped))
+    print()
+    print("=" * 78)
+    print("WHAT THIS FOUND")
+    print("=" * 78)
+    print()
+    print("  1. THE CLASS IS REAL AND IT IS SMALL. At most 2.50% of the")
+    print("     population is over-charged AND unable to afford proof, and that")
+    print("     is at the first round, before anyone has moved.")
+    print()
+    print("  2. IT IS BOUNDED BY THE DISCLOSURE COST, NOT BY THE ESTIMATE.")
+    print("     Anyone over-charged by MORE than their cost of proving it")
+    print("     discloses. Only the thin band over-charged by LESS than that")
+    print("     stays, so the mean over-charge on the trapped is 0.03 debit")
+    print("     units against estimates of 1.00 to 7.34 -- about 1 to 3%.")
+    print()
+    print("  3. THE CONTROL IS THE RESULT. Under the rule Foundations 4.4")
+    print("     REJECTS -- estimating over the whole population -- the estimate")
+    print("     never moves, so THE TRAPPED CLASS NEVER CLEARS. 50 agents stay")
+    print("     over-charged forever and 1,050 stay dark. Under the residual")
+    print("     rule both go to zero.")
+    print()
+    print("  So the answer to @custos: the class exists, the mean cannot see it,")
+    print("  it is bounded by disclosure cost rather than by the estimate, and")
+    print("  the residual rule liquidates it while the rejected rule preserves")
+    print("  it permanently.")
+    print()
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--test", action="store_true")
     ap.add_argument("--sweep-cost", action="store_true")
+    ap.add_argument("--overcharged", action="store_true",
+                    help="dark agents whose true debit is below the estimate")
     ap.add_argument("--demo", action="store_true",
                     help="five-farm worked example, checkable by hand")
     args = ap.parse_args()
     if args.test:
         run_tests()
+        return 0
+    if args.overcharged:
+        report_overcharged()
         return 0
     if args.demo:
         print_demo()
