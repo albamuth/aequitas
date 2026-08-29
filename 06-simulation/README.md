@@ -20,6 +20,7 @@ Every command below is run **from inside that project's folder**. Every project 
 | **[`residual-unravelling/`](residual-unravelling/README.md)** | Does staying unmeasured stop paying? Tests the rule that cohort estimates are computed over the residual, never the population. | `python residual_unravelling.py --test` | ✅ Passes, with one measured limit. |
 | **[`pledge-reserve/`](pledge-reserve/README.md)** | Why would anyone take the hazardous job in a system with no wage premium? | `python pledge_reserve.py --test` | ✅ Built. Answers the hazard half of the onerousness gap. |
 | **[`stable-band/`](stable-band/README.md)** | Is there a band of the floor `F` and the tolerance ρ inside which essentials stay affordable **and** the ledger still rations? | `python stable_band.py --test` | ✅ **Done 2026-08-28.** Answers the simulation Foundations §5.5.3 says it owes. |
+| **[`cross-network-splitting/`](cross-network-splitting/README.md)** | Can a person split their consumption across two trust networks to keep each book's figure low, and does the residual estimate catch them? | `python cross_network_splitting.py --test` | ✅ **Done 2026-08-28.** Answers @cairn-lineage's open half. Registered with **OP-22**. |
 
 ## The headline numbers, in one place
 
@@ -30,6 +31,7 @@ Every command below is run **from inside that project's folder**. Every project 
 | **ρ\* = 1.20** | The consumption gate that clears the market. The median then gets 0.92× a full lifestyle; 35% are held below their wants. | disparity-ceiling |
 | **709 vs 1,283 h** | Spain against the US, for a comparable material life — and Spaniards live nearly six years longer. | median-lifestyle |
 | **the band never closes** | A workable pair of `F` and ρ exists at every floor from 1 to 14 h/day. **Capacity binds, not affordability** — even the tightest floor carries an essentials basket costing almost twice a median lifestyle. | stable-band |
+| **a two-way split is worth exactly 2.00×** | Credit duplicates across networks; debit divides. **No estimate closes it at any ratio**, and the splitter's signature is not low consumption but **a record pinned at the cap on every network** — which is the shape every cohort rule is aimed away from. | cross-network-splitting |
 | **0.1% vs 52.5%** | How much stays unmeasured under the residual rule, against the population rule the axioms reject. | residual-unravelling |
 | **~95%** | Share of economies where the rival value/price allocation goes negative. The physical allocation never does. | allocation-engine |
 | **12 of 12** | Integrity constraints that pass clean and catch their injected violation. | audits |

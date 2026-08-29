@@ -1,0 +1,227 @@
+==============================================================================
+CROSS-NETWORK SPLITTING -- is the residual estimate tight against it?
+==============================================================================
+
+  Terms, before any number:
+    k          how many networks one person holds an account with
+    rho        the debit tolerance in the gate D <= rho*C.  1.20 here
+    F          the floor, hours a day credited for staying alive.  10
+    escape     what a splitter carried, as a multiple of the cap
+               ONE network's books would have allowed them
+    coverage   Y / N -- the share of the extent's real consumption
+               this network's records captured
+
+  Population        20,000 people, seed 11
+  Median lifestyle  1,380 debit-h/yr (measured)
+  Floor credit      3,650 h/yr
+  Subscribes to no network   20% of the extent
+
+------------------------------------------------------------------------------
+PART 1 -- WHAT THE SPLIT IS WORTH BEFORE ANY ESTIMATE
+------------------------------------------------------------------------------
+
+  Credit is recorded on EVERY network the person holds an account
+  with -- each sees the same 24-hour day and credits its own floor.
+  Debit lands on ONE network per transaction, chosen by the seller.
+  So the gate is checked against a divided debit and a whole credit.
+
+   k networks   share each sees   escape factor
+        1              1.00           1.00x
+        2              0.50           2.00x
+        3              0.33           3.00x
+        4              0.25           4.00x
+        5              0.20           5.00x
+       10              0.10          10.00x
+
+  An uneven split is worse for the attacker, because the network
+  with the LARGEST share is the one whose gate binds first:
+
+   split          escape factor
+   0.50 / 0.50        2.00x
+   0.60 / 0.40        1.67x
+   0.70 / 0.30        1.43x
+   0.80 / 0.20        1.25x
+   0.90 / 0.10        1.11x
+   1.00 / 0.00        1.00x
+
+  So k = 2 and an even split is the whole attack, and it is worth
+  exactly 2.00x. Nothing subtler helps.
+
+------------------------------------------------------------------------------
+PART 2 -- HOW LARGE AN ESTIMATE HAS TO BE TO CLOSE THE GAP
+------------------------------------------------------------------------------
+
+  A network closes the gap when its estimate of a subscriber's
+  undisclosed activity is (k-1)/k of that subscriber's own cap.
+
+   k    estimate needed, as a share of rho*C    in hours at rho*C = 5,580 h
+   2              0.50                        2,790 h
+   3              0.67                        3,720 h
+   4              0.75                        4,185 h
+   5              0.80                        4,464 h
+
+  Read the k = 2 row as the finding it is: to stop a two-way split,
+  a network must charge every splitter an estimated HALF of their
+  entire allowance, on no evidence that they split at all.
+
+------------------------------------------------------------------------------
+PART 3 -- THREE ESTIMATORS, MEASURED ON A POPULATION
+------------------------------------------------------------------------------
+
+  Each rule uses ONE network's own records and its own cohort model.
+  None reads the other book -- that would breach conformance 4a.
+
+  splitters = 1% of subscribers
+   rule                              coverage   escape   caught   wrongly    burden
+   R0  dark pool only                   74.8%    2.00x       0%        0%     0.00
+   R1  every subscriber shares it       74.8%    2.00x     100%      100%     0.08
+   R2  cohort shortfall top-up          74.8%    2.00x       0%       50%     0.08
+   R3  flag an account at its cap       74.8%    2.00x     100%        1%     0.50
+
+  splitters = 5% of subscribers
+   rule                              coverage   escape   caught   wrongly    burden
+   R0  dark pool only                   69.8%    2.00x       0%        0%     0.00
+   R1  every subscriber shares it       69.8%    2.00x     100%      100%     0.11
+   R2  cohort shortfall top-up          69.8%    2.00x       0%       50%     0.08
+   R3  flag an account at its cap       69.8%    2.00x     100%        1%     0.50
+
+  splitters = 20% of subscribers
+   rule                              coverage   escape   caught   wrongly    burden
+   R0  dark pool only                   59.4%    2.00x       0%        0%     0.00
+   R1  every subscriber shares it       59.4%    2.00x     100%      100%     0.23
+   R2  cohort shortfall top-up          59.4%    2.00x       0%       50%     0.08
+   R3  flag an account at its cap       59.4%    2.00x     100%        1%     0.50
+
+  splitters = 50% of subscribers
+   rule                              coverage   escape   caught   wrongly    burden
+   R0  dark pool only                   51.9%    2.00x       0%        0%     0.00
+   R1  every subscriber shares it       51.9%    2.00x     100%      100%     0.47
+   R2  cohort shortfall top-up          51.9%    2.00x       0%       50%     0.08
+   R3  flag an account at its cap       51.9%    2.00x     100%        1%     0.50
+
+  caught    share of splitters this network's gate now refuses
+  wrongly   share of FULLY DISCLOSING single-network members who are
+            charged for activity they never hid
+  burden    what that wrong charge costs them, as a share of their cap
+
+------------------------------------------------------------------------------
+PART 4 -- THE SPLIT RATIO, WITH THE ATTACKER PLAYING BEST
+------------------------------------------------------------------------------
+
+  At each ratio the attacker consumes the most the WORST-placed
+  network will still clear:  d_max = (rho*C - est) / s,  where s is
+  the largest share any one network sees. The escape factor is that
+  against rho*C. A ratio of 1.00 is not a split and must read 1.00x.
+
+   split ratio      R0        R1        R2        R3
+   0.50 / 0.50      2.00x    1.78x    2.00x    1.00x
+   0.60 / 0.40      1.67x    1.51x    1.67x    0.83x
+   0.70 / 0.30      1.43x    1.31x    1.43x    0.71x
+   0.80 / 0.20      1.25x    1.15x    1.25x    0.62x
+   0.90 / 0.10      1.11x    1.03x    1.11x    0.56x
+   1.00 / 0.00      1.00x    0.93x    1.00x    0.50x
+
+  Every rule tracks 1/s almost exactly, which is the no-estimate
+  line. None of them bends it.
+
+------------------------------------------------------------------------------
+PART 5 -- THE ONE BOUND THAT IS REAL, AND IT IS NOT AN ESTIMATE
+------------------------------------------------------------------------------
+
+  Foundations 4.0, fact 2: a transaction lands on the network THE
+  SELLER accepts. So a buyer cannot route a purchase to network B
+  unless a seller of that thing is on network B.
+
+  The attacker's reachable split is therefore capped by the share of
+  their sellers who are on the second network.
+
+   sellers also on network B    best split reachable    escape factor
+                      2%              0.02           1.02x
+                      5%              0.05           1.05x
+                     10%              0.10           1.11x
+                     25%              0.25           1.33x
+                     50%              0.50           2.00x
+
+  Worked, k = 2. A person whose sellers are 5% on network B can put
+  5% of their purchases there. Their worst network still sees 95%,
+  so they gain 1.05x, not 2.00x. **The 2.00x figure assumes half of
+  every seller they use accepts the second network.**
+
+  This bound is structural and needs no estimate, no detection and
+  no new rule. It is also nobody's design -- it holds only while
+  seller bases stay unevenly split, and it weakens as networks even
+  out. It is a fact about an early ecosystem, not a defence.
+
+==============================================================================
+WHAT THIS FOUND
+==============================================================================
+
+  1. THE GAP IS REAL AND IT IS EXACTLY 1/s, WORTH k AT AN EVEN SPLIT.
+     Credit duplicates across networks; debit divides. Two accounts
+     evenly split buy 2.00x the intended allowance. An uneven split
+     is strictly worse for the attacker, so there is nothing subtler
+     to look for.
+
+  2. THE RESIDUAL ESTIMATE AS WRITTEN CLOSES NONE OF IT.
+     Foundations 4.4 divides the residual over UNMEASURED PRODUCERS.
+     A splitter is measured -- the network holds a real record of
+     their half -- and 'a record always beats an estimate' then stops
+     the network overriding its own record. The rule that protects an
+     honest subscriber from a bad guess is the rule a splitter hides
+     behind.
+
+  3. THE SPLITTER'S SIGNATURE IS NOT LOW CONSUMPTION, AND EVERY
+     COHORT RULE IS AIMED AT THE WRONG SHAPE.
+     This is the finding the first run got backwards. A splitter
+     records rho*C on EACH network -- their books show a HEAVY
+     consumer sitting exactly at their limit, well ABOVE the cohort
+     median. R2 tops up whoever records BELOW their cohort, so it
+     fires on nobody who splits and on half of everybody who is
+     simply frugal. Measured: 0% of splitters caught, 50% of fully
+     disclosing members charged.
+
+  4. THE ONLY RULE THAT CATCHES THEM CATCHES EVERYBODY.
+     R1 spreads the residual over every subscriber. It refuses 100%
+     of splitters and charges 100% of honest single-network members,
+     at 8 to 47% of their whole allowance depending on how many
+     people split. That is a levy on the disclosing, and it is not
+     available.
+
+     R3's 1% wrong-charge rate is flattering and must not be quoted
+     on its own: in this population the gate barely binds, so few
+     honest members sit near their cap. Foundations 5.5.3 measures a
+     third of people held back under the American production method.
+     There, R3 fires on a third of the honest.
+
+  5. R3 SHOWS WHY 'FLAG WHOEVER SITS AT THEIR CAP' IS NOT THE ANSWER
+     EITHER. Sitting at your cap is what the gate is FOR. A rule that
+     treats the cap as evidence of hiding punishes exactly the people
+     using their allowance as intended.
+
+  6. WHAT DOES SEE IT IS COVERAGE, AND ONLY IN AGGREGATE.
+     Routing away lowers a network's Y and therefore its published
+     Y/N -- from 74.8% down to 51.9% as splitters go from 1% to 50%
+     of subscribers. The system notices. The individual is not
+     caught. Coverage is a property of a network's output and was
+     never a per-person instrument.
+
+  7. THE ONE REAL BOUND IS THE SELLER, AND IT IS TEMPORARY.
+     A buyer can only route to a network their seller accepts. At 5%
+     of sellers on the second network the attack is worth 1.05x, not
+     2.00x. That bound is not a mechanism -- it is a fact about an
+     ecosystem where seller bases are unevenly split, and it fades as
+     networks even out.
+
+  ANSWER TO THE QUESTION AS ASKED. There is no split ratio at which
+  the residual estimate stops closing the gap, because it never
+  closes it at any ratio. The estimate is aimed at producers nobody
+  measured. A splitter is measured, twice, by two books that may
+  never be compared (conformance 4a).
+
+  WHAT WOULD CLOSE IT, AND WHY IT IS NOT PROPOSED HERE. The only
+  witness that separates a splitter from a frugal person is PHYSICAL
+  -- what is in their home, what their meter drew. That is the
+  reservoir witness of 4.4 pointed at a person, and it is exactly
+  what 4.7 keeps private. Registered, not solved. It belongs with
+  OP-22 (minimum audit disclosure), not with OP-24.
+
