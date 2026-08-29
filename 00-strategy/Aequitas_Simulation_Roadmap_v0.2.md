@@ -49,7 +49,7 @@ These are the system. They are the same in every scenario, and a scenario that n
 | **Verification cost** per unit checked | 0 to >0.4 of a median unit's debit | §4.7 (b) |
 | **Privacy practice** | full transparency ↔ pseudo-privacy | §4.7 |
 | **Production efficiency** | the Q6 spread: US ↔ German/Japanese/Spanish | Q6 |
-| **Always-creditable activity set** | narrow ↔ generous | §10.1 |
+| **Always-creditable activity set** | narrow ↔ generous | §2.3 |
 
 > **⚠️ `F` must be a real dial, and on 2026-08-23 it was not.** The kernel had a `floor_h` setting that changed no number in the run, because the population was always built around `F` = 10 — credit is `min(r,f) + max(r−f,0) = r` for any `f ≤ r`. The floor appeared only in the divisor when reporting a ceiling, **dividing by a floor agent who was not in the simulation. A floor that no agent sits at is not a floor.** Fixed; guarded by a test that asserts the bound moves *and* that somebody sits at the floor. **Every report of a disparity figure must name the floor it assumed** — `24/F` is 2.40× at 10 h, 6.00× at 4 h, 1.71× at 14 h.
 
@@ -139,7 +139,7 @@ The two, both already computed and both cheap to check:
 
 | Step | What | Done when |
 |---|---|---|
-| **1** | **The kernel**, with a toy economy and one period. Agents, event log, debit vector, credit accrual, the gate, the §9 assertions. | It reproduces **2.40× at a 10-hour floor** and **ρ* ≈ 1.20**, and the floor sweep tracks `24/F`. |
+| **1** | **The kernel**, with a toy economy and one period. Agents, event log, debit vector, credit accrual, the gate, the §5.5 assertions. | It reproduces **2.40× at a 10-hour floor** and **ρ* ≈ 1.20**, and the floor sweep tracks `24/F`. |
 | **2** | **Periods.** Everything re-evaluated per period, credit accruing, stocks drawing down, the gate re-checked. | A ten-period run holds the invariants and the bound stays at `24/F` for whatever floor the scenario set. |
 | **3** | **The scenario config layer.** Dials, shocks-at-period-*t*, and a recorder. | Any of the author's eight is expressible as a config file **with no new code**. |
 | **4** | **The outside world plug.** Money economy, gift economy, second network with different dials, and a boundary agents cross. | Adoption and floor-shopping are both runnable. |

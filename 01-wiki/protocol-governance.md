@@ -6,7 +6,7 @@
 
 Axiom **A8 (no governing body)**. Rules evolve as **immutable core + open variance**: everything below the core may differ from one trust network to the next, and those differences compete in public.
 
-- **Core** — the axioms and the §9 conformance requirements. Not amendable by any body, including one calling itself the Aequitas Foundation.
+- **Core** — the axioms and the conformance requirements. Not amendable by any body, including one calling itself the Aequitas Foundation.
 - **Open variance** — everything else: the weighting model, the self-care floor, the privacy practice, the verification rung. **A network must publish what it runs, and anyone must be able to re-compute its claims.**
 
 > **A8 is about who may change the rules. It says nothing about size.** A trust network may cover one valley, one trade, one country, or the world. *(Renamed in Foundations v0.21→v0.22: the axiom was called "local governance", and outside reviewers kept reading "local" as "small and geographic". The word was doing two jobs, so it was removed.)*

@@ -116,8 +116,8 @@ An implementation is Aequitas if, and only if, all of the following hold. Each i
 | Field names, record shapes, schema versions | The implementer |
 | Storage, indexing, backups, key management | The implementer (§2.6) |
 | Transport protocol and choice of cryptography | The implementer (§2.6) |
-| Privacy practice | A network choice (§5.3a) |
-| The values of ρ and the self-care floor `F` | Network dials (§3.5, §6.1b, A8) |
+| Privacy practice | A network choice (§4.7) |
+| The values of ρ and the self-care floor `F` | Network dials (§3.5, §5.5.3, A8) |
 | Corporate form, jurisdiction, compliance posture | The implementer (§2.6) |
 | **How a network schedules, staffs or samples its checking** | The implementer (§2.6) |
 | **What a verification rung costs to run** | **Already in the log.** Audit work is credited work, so the hours are events and a query returns them (§4.7). **A separate published cost figure is a summary table, and a summary table is database design.** |
@@ -164,13 +164,13 @@ Foundations §4.1 states it, and the **OP-22 ruling of 2026-08-25** makes it a r
 
 **Three rows came out of it: 4a, 17a and 17b.** All three state rules Foundations already carried in prose. **None is new theory.**
 
-> **The finding underneath all three: a rule that lives only in prose does not bind.** §6.4b's sentence about exchange rates was in front of the reader who broke it. **The conformance list is not a summary of Foundations — it is the part of Foundations that has to survive contact with somebody in a hurry.**
+> **The finding underneath all three: a rule that lives only in prose does not bind.** §4.2's sentence about exchange rates was in front of the reader who broke it. **The conformance list is not a summary of Foundations — it is the part of Foundations that has to survive contact with somebody in a hurry.**
 
 ### 5.1 Requirement 4a — comparison, never conversion
 
 **The rule already existed.** Foundations §4.2 states it, and gives the reason:
 
-> *"Converting a balance from one model into another would be an exchange rate between credit-standards — a medium of exchange, which A3 and the circulation-failure analysis (§7.6) forbid."*
+> *"Converting a balance from one model into another would be an exchange rate between credit-standards — a medium of exchange, which A3 and the circulation-failure analysis (§5.6) forbid."*
 
 **It was not on this list, and that omission is why the error was publishable.** An implementation could satisfy every one of the sixteen rows as they stood and still publish a conversion table between its own credit and a neighbouring network's. **That creates a medium of exchange** — the single failure mode Foundations §5.6 claims Aequitas is structurally immune to, and the substantive reason it must never be described as a currency.
 
@@ -211,7 +211,7 @@ One person works **8 hours** on a Monday and holds an account with two networks.
 
 **The drafted wording said *"within the extent the implementation's books claim to cover."*** Read alone, that is gameable: **a network could declare its extent to be its own membership**, and the requirement would be satisfied by covering nobody but subscribers.
 
-**So the row now says the extent is a region, a sector or a population, never the set of subscribers.** That is not a new rule. **§5.1b measures a residual as `N − Y`, where `N` is an independently known total for a whole extent** — agricultural statistics, trade data, a satellite survey — **and §5.1c publishes coverage as *"these books cover 60% of this region's measured output."*** **Both already define extent against the world rather than against membership.** The row states what those two sections already assume.
+**So the row now says the extent is a region, a sector or a population, never the set of subscribers.** That is not a new rule. **§4.4 measures a residual as `N − Y`, where `N` is an independently known total for a whole extent** — agricultural statistics, trade data, a satellite survey — **and it publishes coverage as *"these books cover 60% of this region's measured output."*** **Both figures already define extent against the world rather than against membership.** The row states what that section already assumes.
 
 ##### An example, with the numbers
 
@@ -254,7 +254,7 @@ Its variance half is in §3 — ρ, `F` and privacy are network dials. Its *"any
 
 **This section said, in v0.3 and v0.4, that rows 13 and 14a were *ahead of an open ruling* and must move when Foundations §4.4 was repaired. It was repaired on 2026-08-27 and they have moved.**
 
-**The defect.** §5.1b said *"report the residual as a lower bound"*, unqualified. **`R = N − Y`, and if `Y` is under-recorded while `N` is sound, `R_obs ≥ R_true` — an upper bound.** The sentence came from carrying §5.1a's floor rule through a subtraction. **A floor rule holds for a count; a subtrahend reverses it.** Found by @cairn-lineage (c23607 on 1f916.ai #2259) and conceded in public at c25746.
+**The defect.** §4.4 said *"report the residual as a lower bound"*, unqualified. **`R = N − Y`, and if `Y` is under-recorded while `N` is sound, `R_obs ≥ R_true` — an upper bound.** The sentence came from carrying §4.4's floor rule through a subtraction. **A floor rule holds for a count; a subtrahend reverses it.** Found by @cairn-lineage (c23607 on 1f916.ai #2259) and conceded in public at c25746.
 
 **Worked on the published numbers** — `N` = 88,000 t, `Y` = 82,000 t, `R` = 6,000 t:
 
@@ -280,7 +280,7 @@ Its variance half is in §3 — ρ, `F` and privacy are network dials. Its *"any
 |---|---|
 | **2c** divides an organisation's debit among its members, but **4** says credit never moves | §3.2c divides **debit only.** Members are credited their own hours whatever the organisation does. |
 | **7** requires mass and energy to conserve, but §3.5 says the books never balance | **Different quantities.** Conservation is per process, on matter and energy. §3.5 is about aggregate debit exceeding aggregate credit, which is the second law appearing in the ledger. |
-| **2a** keeps the barn out of the beef, but **10a** divides a joint process's debit among its outputs | **Different debits.** Capital accrues to the asset (§6.2b); a joint split divides the **consumables** the process physically sent into each output (§3.4a). |
+| **2a** keeps the barn out of the beef, but **10a** divides a joint process's debit among its outputs | **Different debits.** Capital accrues to the asset (§4.5); a joint split divides the **consumables** the process physically sent into each output (§3.4a). |
 
 ---
 
@@ -318,8 +318,8 @@ A network publishes its rule for translation: **the text exists and the client c
 | | |
 |---|---|
 | **Subsistence is never at risk** | Self-care is verified by proof of life, which every living human meets at near-zero burden (Foundations §4.2). |
-| **Bad rules lose people** | Sellers choose which networks they accept (§5.0), and counterparties discount credit they cannot check. |
-| **Nobody is enclosed** | Non-participation is always available (§5.3c). |
+| **Bad rules lose people** | Sellers choose which networks they accept (§4.0), and counterparties discount credit they cannot check. |
+| **Nobody is enclosed** | Non-participation is always available (§4.8). |
 
 > **Foundations §4.5 already carried the other half**: *"the accounting covers what is claimed and attested. Everything else is life."* **That says the system need not capture everything. 16d says a network must state in advance what it does capture.**
 

@@ -177,7 +177,7 @@ This also answers the socialist-calculation critique pre-emptively: we don't arg
 | **Read as one more failed local currency** | Foundations §5.6 and §9 below: no medium of exchange, so no circulation failure; the overlay computes what money cannot. |
 | **Trust networks drift into issuer-pays capture** | Partly answered: a network concentrated in the sector it audits is captured by construction, and membership is public. **Full trust-network design deferred to C2 (verification / trust networks) by decision.** |
 | **Scope creep into philosophy** | `NEXT.md` parking lot. |
-| **🔴 Scope creep into data architecture** — the one that actually happened. An outreach channel that rewards runnable code pulled two nights into event-log integrity work while the top blocker was governance. | **Foundations §2.6 + §9.** The documents state what must be true, never how to build it. Apply the dial test before adding anything: *if a principle survives at both ends of a dial, the dial is not part of the principle.* Watch the outreach queue specifically — the venue's incentive is not the project's. |
+| **🔴 Scope creep into data architecture** — the one that actually happened. An outreach channel that rewards runnable code pulled two nights into event-log integrity work while the top blocker was governance. | **Foundations §2.6 + §6.** The documents state what must be true, never how to build it. Apply the dial test before adding anything: *if a principle survives at both ends of a dial, the dial is not part of the principle.* Watch the outreach queue specifically — the venue's incentive is not the project's. |
 | **Perfection paralysis** | Ship v0.x drafts. Version, don't polish. |
 | **Solo bandwidth** | Sims and drafts are Claude-executable. User's scarce attention goes to decisions, not production. |
 | ~~**OP-17 has no honest answer**~~ | **Retired.** It had one, and it was better than the fallback: a §2.5 row was *deleted* rather than filled in. |
@@ -227,7 +227,7 @@ This also answers the socialist-calculation critique pre-emptively: we don't arg
 4. **Civic reformer brief** — municipalities, co-ops, transition communities.
 5. **Public-facing text.**
 
-> **Moved here on 2026-08-25 by author ruling.** This was Foundations §11 and the tail of `Aequitas_Conformance_v0.8.md`. **Neither states what the system is, so neither belonged in Foundations.** Nothing was cut.
+> **Moved here on 2026-08-25 by author ruling.** This was Foundations v0.23 §11 and the tail of `Aequitas_Conformance_v0.8.md`. **Neither states what the system is, so neither belonged in Foundations.** Nothing was cut.
 
 ---
 
