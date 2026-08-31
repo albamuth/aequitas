@@ -1,0 +1,231 @@
+==============================================================================
+PRODUCER-SIDE CROSS-NETWORK SPLITTING
+==============================================================================
+
+  One region, one window, 4,000 producers.
+  20% are registered with no network at all.
+  A multi-homing producer is registered with BOTH networks and routes
+  50% of its output through each.
+
+  Terms
+    N   the outside physical total for the region -- a survey, a harvest
+        figure. Foundations 4.4 condition 1 requires it to exist.
+    Y   what one network's own measured producers recorded.
+    Z   that network's count of producers it has NOT measured.
+    R   the leftover, N - Y. Charged to nobody (4.4).
+  The estimate a joining producer inherits is R / Z.
+
+------------------------------------------------------------------------------
+1. THE ESTIMATE ERROR, AS MULTI-HOMING RISES FROM 1% TO 50%
+------------------------------------------------------------------------------
+
+  Network A's own books. `true` is what the producers A cannot see at all
+  actually made, on average. `est` is what A's arithmetic assigns to each
+  of them.
+
+  multi-homing   Z_A     R_A (t)     est (t)    true (t)   est/true
+  ------------  -----  ----------  ----------  ----------  --------
+        1%       2380     142,169        59.7        59.2      1.01x
+        5%       2300     143,800        62.5        59.9      1.04x
+       10%       2200     145,585        66.2        60.9      1.09x
+       20%       2000     146,573        73.3        60.9      1.20x
+       30%       1800     147,336        81.9        61.4      1.33x
+       40%       1600     140,662        87.9        57.9      1.52x
+       50%       1400     144,869       103.5        59.8      1.73x
+
+  In plain words: at 1% multi-homing the estimate is about right. At 50% it
+  charges a producer who never joined anything 1.73 times what
+  that producer actually made -- and none of the difference is theirs.
+
+  The error runs in ONE direction, and it is the direction that makes joining
+  look worse for the honest dark producer than the truth warrants.
+
+------------------------------------------------------------------------------
+2. THE TWO COVERAGE FIGURES, AND THE WEDGE BETWEEN THEM
+------------------------------------------------------------------------------
+
+  A network can publish either of these and call it coverage:
+    output coverage     Y / N          -- the share of the region's output
+    producer coverage   |reg| / n      -- the share of the region's producers
+
+  With nobody multi-homing they move together. Multi-homing drives them apart,
+  and the producer figure is the flattering one.
+
+  multi-homing   producer cov   output cov     wedge
+  ------------  -------------  ------------  --------
+        1%            40.5%         40.3%      +0.2%
+        5%            42.5%         39.8%      +2.7%
+       10%            45.0%         39.8%      +5.2%
+       20%            50.0%         39.7%     +10.3%
+       30%            55.0%         39.5%     +15.5%
+       40%            60.0%         40.8%     +19.2%
+       50%            65.0%         39.8%     +25.2%
+
+  In plain words: at 50% multi-homing network A knows
+  65% of the region's producers and holds
+  40% of its output. A network quoting the first figure
+  reports itself 25% better
+  covered than it is.
+
+  Foundations 4.4 already requires the OUTPUT figure and already labels it
+  `not identified` by default. This measures what the other figure would cost
+  if anyone published it instead. It is the flattering-direction rule with a
+  number on it.
+
+------------------------------------------------------------------------------
+3. IT DOES NOT CONVERGE -- ONBOARDING EVERYONE MAKES IT WORSE
+------------------------------------------------------------------------------
+
+  OP-28's claim is that the estimate never converges: complete the onboarding
+  and the leftover is still positive while Z falls to zero.
+
+  Onboarding here means every producer in the region joins network A. Some of
+  them also hold an account with B and keep routing half their output there.
+  Multi-homing is held at 30% throughout.
+
+  onboarding    Z_A     R_A (t)     est (t)
+  -----------  ------  ----------  -----------
+        40%     1800     141,918       78.8
+        54%     1360     115,434       84.9
+        71%      850      84,790       99.8
+        88%      352      56,594      160.8
+        95%      150      44,523      296.8
+       100%        0      35,484        inf
+
+  In plain words: the arithmetic reaches R / 0 with 35,484 tonnes
+  still in the leftover. Every producer in the region is on A's books, so A
+  has nobody left to assign it to, and coverage sticks at
+  85% with no way to say whose the rest is.
+
+  The leftover at that point is exactly the multi-homers' B-slice
+  (35,484 t, matching to 0.0e+00). OP-28 is
+  confirmed on the producer side, with digits.
+
+------------------------------------------------------------------------------
+4. IS AN EVENT-GRANULAR SUPERSESSION RULE COMPUTABLE FROM ONE BOOK?
+------------------------------------------------------------------------------
+
+  The rule asked for: keep a registered producer in Z for exactly the slice
+  this network did not see. Four candidates, and the test is not whether the
+  rule works -- it is whether a network can RUN it without reading the other
+  book (Foundations 4.2, conformance 4a).
+
+  rule  what it does                              one book?   est (t)
+  ----  ---------------------------------------  ----------  --------
+  S0    registered producers leave Z                   YES      78.8
+  S1    needs to know who multi-homes                  NO       47.3
+  S2    needs a declared capacity per producer         NO       59.1
+  S3    publishes R and divides by nothing             YES       n/a
+
+  true average for the producers A cannot see: 59.2 t
+
+  S1 needs A to know which of its own members also hold an account with B.
+  S2 needs a declared capacity per producer -- hectares, vessel-days -- which
+  is a new disclosure and not a field any book holds today.
+
+  So the two rules that would fix the number are the two a network cannot run,
+  and the two it can run are the status quo and refusing to divide at all.
+
+------------------------------------------------------------------------------
+5. THE DECISIVE TEST -- TWO WORLDS, ONE SET OF BOOKS
+------------------------------------------------------------------------------
+
+  WORLD 1   400 of A's members route half their output through B.
+  WORLD 2   nobody multi-homes. A's members record everything they make, and
+            the dark producers simply made more.
+
+  What network A can observe, in both worlds:
+
+                        world 1         world 2      identical?
+  -------------------  ------------  ------------  ------------
+  Y_A  recorded            49,531.90     49,531.90           YES
+  |registered|                 1,000         1,000           YES
+  N    outside total      120,424.84    120,424.84           YES
+  n    producer count          2,000         2,000           YES
+  Z_A                          1,000         1,000           YES
+  R_A  leftover            70,892.93     70,892.93           YES
+
+  What is actually true, and differs:
+
+  true mean output of a producer A cannot see
+      world 1       58.4 t
+      world 2       70.9 t      a factor of 1.21
+
+  In plain words: A's books are the same to the last decimal place and the
+  truth behind them is not. No rule computed from those six numbers can tell
+  the two worlds apart, because the six numbers are equal. The agent's public
+  argument at c30278 -- that no witness inside one network can populate the
+  missing state -- holds.
+
+------------------------------------------------------------------------------
+6. WHAT WOULD SEE IT, AND WHAT IT COSTS
+------------------------------------------------------------------------------
+
+  S2 -- capacity-bounded -- is the only candidate that recovers the number,
+  and it needs a declared extent. Two ways that extent can be wrong, and they
+  do NOT behave the same.
+
+  (a) HONEST ERROR, unbiased. A producer's declared hectares are noisy.
+
+  capacity noise   est (t)   true (t)   est/true
+  --------------  --------  ---------  ---------
+          0%          59.1       59.2       1.00x
+         10%          58.4       59.2       0.99x
+         25%          57.6       59.2       0.97x
+         50%          57.0       59.2       0.96x
+
+  In plain words: unbiased noise barely moves it. The correction is a SUM over
+  many producers, so errors in both directions cancel. That is more robust
+  than expected, and it is worth saying that the expectation was wrong.
+
+  (b) DELIBERATE UNDER-DECLARATION. Declaring less capacity makes a producer
+      look fully recorded, which keeps them out of Z. This is the direction
+      that pays, so it is the one that has to be measured.
+
+  declared as   est (t)   true (t)   est/true   what it does
+  -----------  --------  ---------  ---------  --------------
+        100%         59.1       59.2       1.00x   honest
+         90%         60.8       59.2       1.03x   partly defeats it
+         75%         64.5       59.2       1.09x   partly defeats it
+         50%         78.8       59.2       1.33x   back to status quo
+         25%         78.8       59.2       1.33x   back to status quo
+
+  In plain words: the repair works against honest error and is defeated by the
+  lie it invites. Declaring a quarter of your real capacity takes the estimate
+  from 59.1 t back toward the status-quo 78.8 t,
+  against a truth of 59.2 t.
+
+  OP-28 says both cheat directions are already constrained -- under-declaring
+  extent is supposed to dangle against the same survey that produces N. THAT
+  IS AN ARGUMENT, NOT A MEASUREMENT, and it is not modelled here. This run
+  measures what the rule does if nothing checks the declaration.
+
+  So the honest reading is narrow: a declared extent repairs the denominator
+  only to the extent that the declaration is itself audited. It moves the
+  problem from the Z count to the extent register.
+
+------------------------------------------------------------------------------
+7. ROBUSTNESS -- LEGITIMATE UNRECORDED OUTPUT
+------------------------------------------------------------------------------
+
+  Foundations 4.4 names five legitimate reasons a registered producer records
+  less than they make: subsistence, gifts, barter, output held back for the
+  money economy, and the same crop offered to two networks. The last of those
+  IS multi-homing. The others look identical in the books.
+
+  holdback   multi-homing   est/true
+  --------  -------------  ---------
+       0%            0%         1.00x
+       0%           30%         1.33x
+      10%            0%         1.07x
+      10%           30%         1.42x
+      20%            0%         1.14x
+      20%           30%         1.51x
+
+  In plain words: ordinary legitimate holdback inflates the estimate the same
+  way multi-homing does, and a book cannot tell them apart either. So this is
+  not a fraud finding. It is a measurement of what the Z denominator counts.
+
+==============================================================================
+Written up in RESULTS.md. Run `--test` for the self-tests.
+==============================================================================
