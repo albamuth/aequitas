@@ -1,0 +1,162 @@
+==============================================================================
+RESIDUAL ATTRIBUTION -- THREE HEURISTICS AGAINST HOLDING
+==============================================================================
+
+  One region, one window, 4,000 producers, seen from ONE network.
+
+    2,000  single-homed subscribers -- record everything. TRULY COMPLETE
+    1,200  multi-homed subscribers  -- record half here, half elsewhere.
+           LOCALLY COMPLETE-LOOKING BUT GLOBALLY PARTIAL
+      800  registered nowhere -- cannot be charged at all (4.1)
+
+  Terms
+    N   the outside physical total               241,107 t
+    Y   what this network recorded               155,871 t
+    R   the leftover, N - Y                       85,236 t
+
+------------------------------------------------------------------------------
+1. THE RESIDUAL IS TWO DIFFERENT THINGS, AND ONE OF THEM IS UNCHARGEABLE
+------------------------------------------------------------------------------
+
+  part of R                                  tonnes    share of R
+  ---------------------------------------  ---------  ----------
+  R_hidden  subscribers' unrecorded output     36,397      42.7%
+  R_dark    output of producers outside        48,839      57.3%
+  ---------------------------------------  ---------  ----------
+  R         total                              85,236     100.0%
+
+  Only R_hidden was caused by anybody this network may charge. R_dark belongs
+  to producers outside the network, and Foundations 4.1 says a non-participant
+  can neither draw on an estimated position nor be charged for it.
+
+  In plain words: 57% of the leftover cannot be correctly
+  assigned to any subscriber, by any rule, however clever. That is a FLOOR on
+  the error of every allocating rule, and it is not a tuning problem.
+
+------------------------------------------------------------------------------
+2. WHAT EACH RULE CHARGES, AND TO WHOM
+------------------------------------------------------------------------------
+
+  `bound`  correctly matched to somebody who really did hold that much back
+  `over`   charged to somebody who did not cause it
+  `under`  really held back, and charged to nobody
+
+  rule          bound (t)    over (t)   under (t)   over/bound   corr
+  -----------  ----------  ----------  ----------  -----------  ------
+  R0 hold               0           0      36,397          n/a   0.000
+  R1 spread        26,339      58,898      10,058         2.24   0.000
+  R2 top-up        19,903      65,333      16,494         3.28  -0.109
+  R3 shape         17,086      68,151      19,312         3.99   0.019
+
+  In plain words: every allocating rule buys `bound` by paying `over`, and the
+  exchange rate is the column that matters. R0 buys nothing and pays nothing.
+
+  Read the `corr` column, because it is the whole answer. It is the
+  correlation between what a rule charges a subscriber and what that
+  subscriber actually held back. A witness would score near 1.
+
+    R1 +0.000   R2 -0.109   R3 +0.019
+
+  None of the three carries information about who hid anything, and R2 is
+  NEGATIVELY correlated -- it is worse than charging at random. These are
+  allocation heuristics, exactly as cairn-lineage classified them, and the
+  correlation is the instrument argument in one number.
+
+------------------------------------------------------------------------------
+3. WHO GETS CHARGED, BY KIND OF PRODUCER
+------------------------------------------------------------------------------
+
+  Mean charge per producer, in tonnes. `truth` is what that kind really held
+  back. A rule that worked would match the truth column.
+
+  rule           single    multi     dark
+  -----------  --------  -------  -------
+  R0 hold           0.0      0.0      0.0
+  R1 spread        26.6     26.6      0.0
+  R2 top-up        32.7     16.6      0.0
+  R3 shape         14.4     47.0      0.0
+  truth             0.0     30.3      0.0
+
+  Read the `single` column. A single-homer held back NOTHING -- their truth is
+  0.0 t. R1 charges them 26.6 t, R2 charges them
+  32.7 t, R3 charges them 14.4 t.
+
+  🔴 And R2 is pointed BACKWARDS. It charges in proportion to what a subscriber
+  already recorded, and the producer hiding half their output recorded LESS
+  here -- so R2 charges the hider 16.6 t and the honest
+  producer 32.7 t. The rule bills the wrong one harder.
+
+  R3 is the only one pointed the right way (47.0 t against
+  14.4 t), and it still charges an honest producer
+  14.4 t on no evidence at all.
+
+------------------------------------------------------------------------------
+4. HOW MANY PEOPLE WHO HID NOTHING GET A BILL
+------------------------------------------------------------------------------
+
+  rule         innocents charged   of innocents    tonnes charged to them
+  -----------  -----------------  --------------  -----------------------
+  R0 hold                      0           0.0%                       0
+  R1 spread                2,000         100.0%                  53,273
+  R2 top-up                2,000         100.0%                  65,333
+  R3 shape                   671          33.6%                  28,885
+
+  In plain words: this is the collective-punishment argument Foundations 4.4
+  already makes, with a count attached. The ethical objection and the
+  instrument objection point the same way, which is why the section can now
+  lead with the checkable one.
+
+------------------------------------------------------------------------------
+5. DOES ANY RULE IMPROVE AS THE HIDING GETS WORSE?
+------------------------------------------------------------------------------
+
+  If a heuristic were a witness, more hidden output should make it better at
+  finding the hiders. Sweep the multi-homing share and watch `over/bound`.
+
+  multi-homing   R1 over/bound   R2 over/bound   R3 over/bound
+  ------------  --------------  --------------  --------------
+        5%              16.07           30.91           14.36
+       10%               7.74           14.06            7.88
+       20%               3.60            5.79            4.83
+       30%               2.24            3.28            3.99
+       40%               1.59            2.01            3.70
+       50%               1.21            1.21            3.78
+
+  In plain words: the ratios fall because there is simply more hidden output
+  to hit by ACCIDENT, not because any rule got better at telling who hid it.
+
+  The proof is in the ranking. R1 spreads the residual EVENLY and carries zero
+  information by construction -- and at 40% and 50% multi-homing it has the
+  BEST exchange rate of the three, beating the rule that tries to be clever.
+  R3 plateaus around 3.7 and never improves.
+
+  A rule that spreads a total cannot become a witness by spreading a larger
+  total. It can only get luckier.
+
+------------------------------------------------------------------------------
+6. THE ONE THING THAT DOES BIND THE RESIDUAL TO A PRINCIPAL
+------------------------------------------------------------------------------
+
+  Foundations 4.4: the leftover is held unassigned, and when an unmeasured
+  producer joins, their share is traced back from records that already exist
+  and assigned to them, because they are the party who caused it.
+
+  Onboard the dark producers and watch what leaves the unchargeable pile.
+
+  dark share   R_dark (t)   R_hidden (t)   uncharge-able share of R
+  ----------  -----------  -------------  -------------------------
+       20%       48,839         36,397                     57.3%
+       15%       35,348         37,400                     48.6%
+       10%       23,570         37,303                     38.7%
+        5%       12,354         36,829                     25.1%
+        0%            0         36,393                      0.0%
+
+  In plain words: joining is what moves mass out of the uncharge-able pile,
+  and no heuristic does. This is the instrument form of the argument the
+  section already made ethically: a residual proves that activity is missing
+  and never proves whose, so the only thing that binds it is a witness -- and
+  the witness is the producer arriving with their own records.
+
+==============================================================================
+Written up in RESULTS.md. Run `--test` for the self-tests.
+==============================================================================
