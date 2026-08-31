@@ -1,9 +1,10 @@
 <!-- tag: str-aequitas-overall-strategy -->
 # Aequitas — Overall Strategy
 
-> **Version:** 0.6 · **Date:** 2026-08-25
+> **Version:** 0.7 · **Date:** 2026-08-31
+> **Supersedes:** `99-archive/Aequitas_Strategy_v0.6.md`
 > **Target:** A statement of the system, tested against scenarios, in ~3 months — with a conformance list an implementer can build against.
-> **Companion docs:** `Aequitas_Foundations_v0.34.md` (axioms), `Aequitas_Objections_v0.25.md` (register), `Aequitas_Conformance_v0.10.md` (what an implementation must satisfy), `../NEXT.md` (task queue)
+> **Companion docs:** `Aequitas_Foundations_v0.35.md` (axioms), `Aequitas_Objections_v0.26.md` (register), `Aequitas_Conformance_v0.10.md` (what an implementation must satisfy), `../NEXT.md` (task queue)
 > **Version history & what each version superseded:** `00-strategy/Aequitas_Strategy_CHANGELOG.md`.
 
 ---
@@ -50,7 +51,7 @@ Not a manifesto. Not a pitch. **And not an architecture.**
 The whitepaper's credibility rests on claims that sound impossible. Several now **ship with a passing simulation**; the rest are the remaining sim budget:
 
 - ✅ **"Joint production allocation converges."** Recursion-convergence sim (`06-simulation/allocation-engine/recursion_convergence.py`, 5,224-run sweep) — **PASS**: the allocation is a non-negative Neumann series, 100% convergent for `ρ(Ã) < 1`, zero negative shares across 4,098 economies, while the rival value/price arm goes negative in ~95%. **Sraffa/Steedman blocked by construction.**
-- ✅ **"Fraud undetected at rate *r* still cannot produce observed wealth distributions."** *(the disparity ceiling)* — `disparity_ceiling_sim.py` (N = 200,000): the `24/F` ceiling is exact, ρ-independent, and **fraud-invariant**, vs money's 10⁴–10⁶× tail. Still conditional on OP-22.
+- ✅ **"Fraud undetected at rate *r* still cannot produce observed wealth distributions."** *(the disparity ceiling)* — `disparity_ceiling_sim.py` (N = 200,000): **inside one network's books** the `24/F` ceiling is exact, ρ-independent, and does not move under fraud, vs money's 10⁴–10⁶× tail. **It bounds what fraud is worth and does not detect fraud**, because the arithmetic never reads the accounts (Foundations §5.5.7). **The old "conditional on OP-22" clause is withdrawn** — the cross-network claim it qualified was struck on 2026-08-25, and the ceiling is a statement about one set of books (§5.5.5 condition 4).
 - ✅ **Societal-scale feasibility** — the five-sim scenario suite (`scenario_suite_METHOD.md`): labour is abundant, materials/energy bind.
 - ◻ "Estimation converges from global average to individual truth." — C3 in progress on real EXIOBASE data.
 - ◻ "Price ≡ cost is stable and doesn't require a planner." / "A demand signal arises from pledges alone." — owed.
@@ -123,7 +124,7 @@ This also answers the socialist-calculation critique pre-emptively: we don't arg
 - **C12 (energetics registry): process-energetics registry** and the rival-sector audit rules. **OP-24 (understatement drift) sim** — at what rival density does understatement drift stop being arrested?
 - **C5–C7:** transfer rules and pledge reversion; identity; privacy incl. OP-22's disclosure set.
 - **C8 (influence mechanics):** Resolve OP-1 (service → influence) enough to specify.
-- **Disparity-ceiling proof — ✅ largely done, coupled to OP-4 (debit tolerance) / C9 (debit-tolerance formula).** The strongest defensive result the project holds, now with a simulation behind it (`disparity_ceiling_sim.py`, `q4_locked_ledgers.py`): the between-people accrual ceiling is **`24 h ÷ floor` ≈ 2.4×**, exact, ρ-independent, and fraud-invariant, versus money's 10⁴–10⁶× tail; material-only, only ~0.1–2% sit past a permanent lockout. **OP-4's shape is settled** (per-person locally-set tolerance floor + personal efficiency ratio on the discretionary layer only — no global ratio). **Still owed:** the generous-network cohort-shopping race, and the whole result stays **conditional on OP-22**. *Watch, as before: no objective function tuning the tolerance, or it re-opens OP-10.*
+- **Disparity-ceiling proof — ✅ largely done, coupled to OP-4 (debit tolerance) / C9 (debit-tolerance formula).** The strongest defensive result the project holds, now with a simulation behind it (`disparity_ceiling_sim.py`, `q4_locked_ledgers.py`): **inside one network's books** the between-people accrual ceiling is **`24 h ÷ floor` ≈ 2.4×**, exact and ρ-independent, versus money's 10⁴–10⁶× tail; material-only, only ~0.1–2% sit past a permanent lockout. **A very hard working life reaches about 1.6×; 2.4× is a wall nobody gets to.** **OP-4's shape is settled** (per-person locally-set tolerance floor + personal efficiency ratio on the discretionary layer only — no global ratio). **Still owed:** the generous-network cohort-shopping race, tracked as OP-14. **The result is no longer stated as conditional on OP-22** — that clause qualified a cross-network claim struck on 2026-08-25. OP-22 still gates proving a *pledge's* backing across a model boundary, which is a different question. *Watch, as before: no objective function tuning the tolerance, or it re-opens OP-10.*
 - **Use cases as validation.** Sandwich ✅ (which turned out to contain a joint process — milling → flour + bran), plus homeowner, doctor, film studio. **Add an explicit joint-production case.**
 
 <!-- tag: str-phase-3-write-and-harden -->
@@ -193,7 +194,7 @@ This also answers the socialist-calculation critique pre-emptively: we don't arg
 - [ ] Wiki covering every core concept
 - [x] ~~An allocation convention for OP-17~~ — **better: a measurement, not a convention**
 - [x] ~~A declared labour-allocation convention for OP-18~~ — **done:** labour rides the material split, defended against the cooperative-game axioms (B9).
-- [ ] Every open problem in `Aequitas_Objections_v0.25.md` either solved, dissolved, or explicitly scoped as v2 — **the remaining live blockers are governance: OP-10, OP-24, and OP-16's tedium/indignity half (its hazard half is addressed by the contingent reserve, §4.6).**
+- [ ] Every open problem in `Aequitas_Objections_v0.26.md` either solved, dissolved, or explicitly scoped as v2 — **the remaining live blockers are governance: OP-10, OP-24, and OP-16's tedium/indignity half (its hazard half is addressed by the contingent reserve, §4.6).**
 
 ---
 

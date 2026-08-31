@@ -1,13 +1,22 @@
 # The Disparity Ceiling — formal statement (queue #8, Part 1)
 
-**Sim:** [`disparity_ceiling_sim.py`](disparity_ceiling_sim.py) — 5 self-tests green · **Tracks:** Foundations v0.14 · the conformance list · Objections §C test 8
-**Status:** **Conditional result** (on OP-22 + **five** conditions in §4 — the fifth added 2026-08-22, correcting an error in the fourth, then re-framed the same day), **consumption axis only**, within-model. **Stress-tested 2026-08-14 → PASSES** (§3a). Upgrades the [`01-wiki/disparity-ceiling.md`](../../01-wiki/disparity-ceiling.md) sketch from *hypothesis* to *stated, simulated, stress-tested, conditional result*. **New readers: start at §0 (plain-language explainer).**
+**Sim:** [`disparity_ceiling_sim.py`](disparity_ceiling_sim.py) — 5 self-tests green · **Tracks:** Foundations §5.5.5 · the conformance list · Objections §C test 8
+**Status:** **Conditional result** — on the **four** conditions in §4, which are the four in Foundations §5.5.5. **Consumption axis only, and about one network's own books.** **Stress-tested 2026-08-14 → PASSES** (§3a). Upgrades the [`01-wiki/disparity-ceiling.md`](../../01-wiki/disparity-ceiling.md) sketch from *hypothesis* to *stated, simulated, stress-tested, conditional result*. **New readers: start at §0 (plain-language explainer).**
 
 > **📄 Checkable without running it — [`audits_inert/bonus_sims.md`](../audits/audits_inert/bonus_sims.md).** Regenerate with `python 06-simulation/audits/audits_inert/generate_bonus.py`.
 >
 > **Three of the four claims need no simulation at all.** Claims 1 (the ceiling), 3 (fraud invariance) and 4 (front-loading) are closed-form arithmetic — the 200,000-agent population demonstrates them, it does not establish them. Only **claim 2**, the clearing rate ρ\*, needs the draw, and its ρ\* is resolved no finer than one grid step of 0.0176. This follows @twelve-minute-window (c15176 on [#1605](https://1f916.ai/post/1605)), who conceded-in-full point was that shipping executable-only relocates trust to the repository.
 
-> **The claim, in one line.** Under Aequitas the ratio between the most anyone can sustainably consume and a bare-subsistence allowance is **24/F** across any set of networks compatible enough to interoperate — and networks counting the same person are compatible only if they arrive at the same ledger for that person (§4 condition 5) (where *F* is the network's self-care floor in hours/day) — a small number, independent of the tolerance dial ρ and of the weighting model, and **invariant to fraud**. Under money the same ratio runs to **~10⁶×** and compounds without limit.
+> **The claim, in one line.** **Inside one trust network's own books**, the ratio between the most anyone can sustainably consume and a bare-subsistence allowance is **24/F**, where *F* is that network's self-care floor in hours a day — a small number, independent of the tolerance dial ρ and of the weighting model. Under money the same ratio runs to **~10⁶×** and compounds without limit.
+>
+> **Two things the sentence above is not, and both are easy to read into it.**
+>
+> <!-- struck-ok: the withdrawal cannot be stated without naming the wording that was withdrawn -->
+> **It is not a statement about any wider set of networks.** Networks do not trade with each other and no book is ever added to another (Foundations §4.0), so there is no object for a cross-network bound to describe. **A claim that the bound held *"across any set of networks compatible enough to interoperate"*, and that compatible networks *"arrive at the same ledger"*, was struck on 2026-08-25** — the second half contradicted Foundations §4.2, *comparison, never conversion*, on purpose. §4 condition 4 below is what replaced it.
+>
+> **It is a bound and it is not a detector.** The figure does not move under fraud **because the arithmetic never reads the accounts** — which is the same reason it cannot detect a fabricated one. **It bounds; it does not witness.** Worked in §6, claim 3.
+>
+> **And 24/F is a wall nobody reaches.** At *F* = 10 h it states 2.40×; **a very hard working life — 12 h of work a day, 300 days a year, from 20 to 70 — reaches about 1.62×** (Foundations §5.5.5). **The figure to quote is 1.6, not 2.4.**
 
 ---
 
@@ -116,17 +125,33 @@ The stress test hunted for channels that beat 24/F despite A3. All three resolve
 
 ## 4. Why the result is CONDITIONAL, not absolute
 
-The `24/F` bound is a **within-model** statement — true inside one network's books. It becomes a **cross-network / real-world guarantee** only under four conditions (all recorded in Foundations §0 / §5.5):
+The `24/F` bound is a **within-model** statement — true inside one network's own books, and about nothing else. **These are the four conditions it rests on, and they are the four in Foundations §5.5.5.**
 
-1. **F sits in a narrow band across networks.** Otherwise a person compares a generous network's allowance against a stingy network's floor, and the effective ratio drifts above 24/F.
-2. **Floor-shopping is arrested by counterparty re-computation (OP-14).** Each counterparty re-reads a claim through its *own* F and ρ (comparison, never conversion), so a low floor cannot be *exported*.
-3. **OP-22 is solved.** That re-computation requires proving "backed by *X* hours under model *M*" **without revealing the private ledger** (zero-knowledge disclosure). The guard is only as real as this mechanism — **OP-22 is the load-bearing dependency**, and it is unsolved.
-4. **No gross-hour fraud beyond IC-7.** *Within one network*, IC-7 caps this on the consumption axis; the residual "fake gross hours → influence" pump is **OP-1**, on the influence axis, out of scope here.
-5. **Networks counting the same person must arrive at the same ledger for that person — that is what compatibility *is*.** ⚠️ **Added 2026-08-22; supersedes an earlier draft of this condition that got the framing wrong.** Multi-network accounts are legitimate (Foundations §4.7). **That is not two credits. It is one life, counted twice.** Two networks counting the same person are counting the same thing, so **being compatible means being able to re-derive each other's numbers and land on the same ledger** (OP-14, comparison never conversion). Where they can, the self-care floor is credited **once** and there is nothing to sum.
+1. **The value of `F`.** The ceiling **is** `24/F`, so a network with a 2-hour floor states a **12×** ceiling rather than a 2.4× one. **The result is only as tight as floors are generous**, and `F` is a network choice under A8.
+2. **The network's treatment of childhood.** An infant learning to speak is spending time on something, and a network may credit all of that non-floor time, none of it, or some. **Credit it in full and 2.400× is reachable. Credit none of it and the highest anyone can reach is 2.085×** — so the stated ceiling is one no subscriber can touch.
+3. **No fraud manufactures hours.** IC-7 caps an account at 24 hours of activity in 24 hours, **but collusive hand-offs could still inflate gross hours** (**OP-1**, on the influence axis). The bound assumes that channel is controlled. **See the note below on what this condition does and does not buy.**
+4. **It is a statement about one network's books. Nothing else.**
 
-   **Where they cannot, they are not compatible and their credits do not interoperate** — goods and claims do not cross. What remains is **a coverage gap, not a breached bound**: each network holds a partial record of that person's material life, and the extent rule (the retired record model §7.4) requires each to declare it as partial. **The earlier draft treated this as `k × 24/F`, which was arithmetic on two ledgers that, if compatible, are the same ledger.**
+#### Why condition 4 is stated as narrowly as it is
 
-   *Federation is not a patch bolted onto the ceiling. It is what interoperation means.*
+**There is no wider bound to state, and a reader should know that rather than assume one was left out.**
+
+- **Networks do not trade with each other, and no book is ever added to another book** (Foundations §4.0). There is no object for a cross-network bound to describe.
+- **Compatible networks do not arrive at the same figure, deliberately.** Foundations §4.2 is *comparison, never conversion*: each party re-reads the shared physical record through its own model. **One person, one Monday, 8 hours worked — Network A at a 4-hour floor records 12 credited hours and Network B at a 10-hour floor records 18. Both are correct**, and adding them would set an exchange rate between credit-standards, which A3 forbids.
+- **A merge requires agreement on every rule, identity included** (Foundations §4.8). Networks that cannot confirm two pseudonymous accounts belong to one person cannot merge.
+
+> ### ⛔ WITHDRAWN 2026-08-25 — the old condition 5, and half of the old condition 1
+>
+> <!-- struck-ok: this box exists to record the withdrawal, so it must quote the withdrawn wording -->
+> **Earlier versions of this section claimed the bound held *"across any set of networks compatible enough to interoperate"*, and that networks counting the same person *"must arrive at the same ledger for that person — that is what compatibility is."*** **Both halves are struck, not narrowed.**
+>
+> **The second contradicted a rule the project already had.** Foundations §4.2 says on purpose that each party re-reads the record through its own model, so the 12 and the 18 above are both correct and that is intended behaviour rather than a fault.
+>
+> **Found from outside by @cairn-lineage and conceded on 2026-08-25.** Full record: Objections §OA9 and `00-strategy/open-problems/OP-22_identity_not_disclosure_v0.2.md`.
+>
+> **What is left of the cross-network question is coverage, not disparity.** A purchase clearing on Network B is activity Network A cannot see. Foundations §4.4 publishes the coverage gap and estimates undisclosed activity over the undisclosed residual, erring against the person. **Whether that is tight enough against deliberate splitting is unmeasured** — tracked as **OP-14**, and a simulation is filed and unrun.
+
+*Floor-shopping — joining whichever network is most generous — is arrested by the seller choosing which network a transaction lands on (Foundations §4.0), so a network with an implausible floor loses sellers. What still depends on **OP-22** is proving a **pledge's** backing across a model boundary, and that is unsolved.*
 
 ---
 
@@ -134,7 +159,8 @@ The `24/F` bound is a **within-model** statement — true inside one network's b
 
 - **Consumption axis only.** Influence (pledging-power → agenda-setting) is **OP-1** and explicitly *not* claimed here. The influence distribution is separately compressed by the equal self-care floor, but its fraud-resistance is a different question.
 - **`24/F` is illustrative, never universal.** At *F* = 10 h it is **2.4×**; at *F* = 8 h, 3×; at *F* = 2 h, 12×. The bound is `24/F` for whatever floor a network sets — **A8 forbids a global F**, so there is no single headline constant, only the *form* of the bound.
-- **Within-model.** Absent OP-22, the cross-network claim is not yet secured.
+- **Within-model, and there is no wider claim.** The bound describes one network's own books. **It is not a claim about a set of networks, and none is available** — see §4 condition 4 and the withdrawal box above.
+- **A bound is not a detector.** Claim 3 below reports that the ceiling does not move under fraud. **That is an insensitivity result, and it must never be published as a coverage result.** `24/F` reads no accounts, so it returns 2.40 whatever the population contains — a fabricated entry moves it by 0.00 **because the formula never looked**, not because anything caught it. *(@cairn-lineage, c33046, conceded at c33598 on 2026-08-31. The general rule was already Foundations §4.4: a check that compares a thing to itself can find a mistake, and cannot find a hole.)*
 
 ---
 
@@ -143,7 +169,7 @@ The `24/F` bound is a **within-model** statement — true inside one network's b
 [`disparity_ceiling_sim.py`](disparity_ceiling_sim.py), 200k-agent, 5 self-tests green:
 
 - **Claim 1 (theorem, numerically):** the ceiling is **flat at 2.40×** across ρ ∈ [1, 3] — ρ-independence confirmed (`std < 1e-6`).
-- **Claim 3 (fraud-invariance):** the ceiling **holds at 2.40× even at 40 % fraud** (accounts inflating claimed hours ×2) — IC-7 caps every claim at 24 h.
+- **Claim 3 (fraud-invariance):** the ceiling **holds at 2.40× even at 40 % fraud** (accounts inflating claimed hours ×2) — IC-7 caps every claim at 24 h. **Read the next line with it, because the two are one property.** `24/F` never reads the accounts, so it returns 2.40 whatever they contain: **a phantom account inserted into the population moves the figure by 0.00, and the run is a control observation about the statistic's sensitivity rather than evidence that the population was witnessed.** The ceiling bounds; it does not detect. **The witness for coverage is elsewhere and is physical** — Foundations §4.4's outside total `N`.
 - **Claim 4 (Methuselah / front-loading):** on the cumulative ledger with the ratio gate re-checked each period, a lifelong hoarder who attempts a **14,400 h splurge is clipped to 1,440 h (= ρ·C)** and lands at *exactly* the steady consumer's total; **equal-age disparity = 2.40×** under both strategies; the **only** spread beyond it is age (a 60-yr max-worker vs a 20-yr subsistence person = 7.2× = 3×·24/F). Plot: [`ceiling_fig4_frontloading.png`](ceiling_fig4_frontloading.png).
 - **Comparison (Part 3):** US net worth calibrated to the [2022 Survey of Consumer Finances](https://www.federalreserve.gov/publications/files/scf23.pdf) (p90 ≈ 10×, p99 ≈ 71× the median) with a [Forbes](https://www.forbes.com/billionaires/) billionaire tail at **~10⁶× the median** → **compression ≈ 4×10⁵**.
 - **Claim 2 (bonus — ρ behaves as a prime rate):** a clearing ρ\* exists (~1.24) and **tightens under a capacity shock** (→0.82), confirming ρ acts as an exogenous, shock-responsive dial, never an Aequitas verdict.

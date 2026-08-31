@@ -1,11 +1,11 @@
 <!-- tag: ovw-aequitas-overview -->
 # Aequitas — Overview
 
-> **Version:** 0.21
-> **Date:** 2026-08-29
-> **Supersedes:** `99-archive/Aequitas_Overview_v0.20.md`
+> **Version:** 0.22
+> **Date:** 2026-08-31
+> **Supersedes:** `99-archive/Aequitas_Overview_v0.21.md`
 > **Audience:** everyone. No economics background assumed, none required.
-> **Rigorous version:** `00-strategy/Aequitas_Foundations_v0.34.md`. This document is the plain-language companion; where they differ, the Foundations govern.
+> **Rigorous version:** `00-strategy/Aequitas_Foundations_v0.35.md`. This document is the plain-language companion; where they differ, the Foundations govern.
 > **Version history & what each version superseded:** `00-strategy/Aequitas_Overview_CHANGELOG.md`.
 
 *Aequitas* (genitive *aequitatis*) is the Latin word for fairness, evenness, symmetry — the quality of things being level with one another.
@@ -168,6 +168,14 @@ That identity is the whole of §7 in one line. **Property cannot be an engine, b
 | **How generous the community sets the baseline** | The wall **is** 24 ÷ baseline. A 2-hour baseline states a 12-times wall, not a 2.4-times one. **The result is only as tight as baselines are generous** (§10). |
 | **Whether the community credits a child's learning time** | Credit it and 2.4 is reachable. Credit none of it and the highest anyone can reach is **2.09** — so the stated wall is one nobody can touch. |
 | **That nobody manufactures fake hours** | The wall holds by arithmetic for honest and dishonest accounts alike, but people trading fake hand-offs between them could still inflate the totals. **Controlling that is a separate open problem.** |
+
+> **And one thing the wall is not, because it is easy to read it as more than it is.**
+>
+> **The wall does not move when people cheat. That sounds like a security feature, and half of it is.** No amount of faked hours produces somebody beyond 2.4 times, because a day still has 24 hours in it.
+>
+> **The other half is the same fact seen from the other side: the wall cannot tell you that anybody cheated.** The sum `24 ÷ 10` never looks at a single account, so it answers 2.4 whether the books are honest, half invented, or entirely invented. **Add a completely made-up person and the answer is still 2.4 — because the sum never looked, not because anything caught them.**
+>
+> **So it is a limit on what cheating is worth, and it is not a way of finding cheating.** Finding it is a different job, done by a different tool: **measure the world from outside and compare** (§7). *(This was pointed out to us from outside, and we agreed. We had been publishing the first half without the second.)*
 | **That it is one network's books** | **Not a statement about anything wider**, and there is no wider figure to give. Two networks' numbers are read through different weightings, so **they cannot be added or compared.** See the box in §0. |
 
 **And one thing genuinely unsolved sits underneath it:** confirming that someone's hours are *real* without prying open their whole private record (§8). **So the honest version is: inside one network's books, with sane baselines and that verification problem solved, the gap is capped in a way money never is.** Still a different universe — just a *conditional* result, not yet a theorem.
@@ -563,6 +571,10 @@ Two things follow, and they are the point.
 
 > **Nobody outside is charged anything, and this is worth being exact about.** The estimate is a statement about material flows in the world, not a bill. **It does nothing at all until the person joins** — and then it is their opening position, which they replace with real records. **So what gets worse is the position you would inherit, not a debt accumulating against you.** Nobody is compelled, and nobody is billed.
 
+**And the gap is never handed to somebody else to carry.** The forty tonnes sit against nobody's name until the farms who grew them join and claim them.
+
+> **The reason is one sentence: a gap proves that something is missing; it never proves whose.** Subtracting one measurement from another tells you the difference exists. **It cannot tell you which farm the difference came from**, so any rule that shares it out among the farms you happen to know about is a guess dressed up as a finding. *(An outside critic put it that way to us, and it is a better reason than the one we had been giving.)*
+
 **And staying out of the books is not the same as hiding.** A subscriber can have output that is not in the books — food grown for their own household, work given away, produce kept back for the ordinary money economy, the same crop offered to two networks so it finds a buyer. **None of that is evasion, and the system does not try to capture it.** The discipline is simply that **produce you do not enter into the network cannot be sold on the network.**
 
 **And no number here is ever final.** A tally is a citation, not a verdict — it says who measured, how, over what area, and as of when. When somebody measures better, **every affected record recalculates**, backwards, because balances are derived rather than stored. A wrong figure is never deleted or quietly edited; a note is attached to it and a better record is added beside it. That is how science handles a mistake, and it is the only method that does not need an authority standing at the door deciding what may be written down.
@@ -675,6 +687,6 @@ What was deliberately dropped:
 
 ---
 
-*For the rigorous statement of everything above, with the arguments and the open problems in full: `00-strategy/Aequitas_Foundations_v0.34.md`.*
+*For the rigorous statement of everything above, with the arguments and the open problems in full: `00-strategy/Aequitas_Foundations_v0.35.md`.*
 
-*End of v0.20.*
+*End of v0.22.*

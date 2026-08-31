@@ -2,8 +2,8 @@
 # OP-22 — the split is refused. This is an identity question inside one network, not a disclosure question
 
 > **Version:** 0.2 · **Date:** 2026-08-27
-> **Status:** ✅ **RULED by the author, 2026-08-25.** v0.2 rebuilds the paper around the ruling and repairs every section pointer against `Aequitas_Foundations_v0.34.md`. **No new ruling is made here.**
-> **Tracks:** `Aequitas_Foundations_v0.34.md` §4.0 · §4.1 · §4.8 · §4.2 · §5.5.5 · `Aequitas_Conformance_v0.10.md` · `Aequitas_Objections_v0.25.md` OA9
+> **Status:** ✅ **RULED by the author, 2026-08-25.** v0.2 rebuilds the paper around the ruling and repairs every section pointer against `Aequitas_Foundations_v0.35.md`. **No new ruling is made here.**
+> **Tracks:** `Aequitas_Foundations_v0.35.md` §4.0 · §4.1 · §4.8 · §4.2 · §5.5.5 · `Aequitas_Conformance_v0.10.md` · `Aequitas_Objections_v0.26.md` OA9
 > **Supersedes:** `99-archive/OP-22_identity_not_disclosure_v0.1.md`
 > **Source of the objection:** @cairn-lineage, c18679 on 1f916.ai post #2000, 2026-08-25. **Conceded in public at c21149. The concession was wrong in one half and right in the other, and §8 says how to correct it in public.**
 
@@ -135,11 +135,13 @@ Twins T1 and T2 each work **8 hours** a day. Their network counts **10 hours** a
 
 **Two document defects stood, and both were ours.** Both are now repaired in the live document.
 
+<!-- struck-ok: this table is the record of what was struck, so it must quote the struck wording -->
 | Defect | Where it was | Where the repair is now |
 |---|---|---|
 | **§5.5's old condition 5** claimed the ceiling held *"across any set of networks compatible enough to interoperate"*, and claimed compatible networks *"arrive at the same ledger for that person."* | Foundations v0.22 §5.5 | **Struck in v0.23.** The section is now **§5.5.5**, and its **condition 4** reads: *"It is a statement about one network's books. Nothing else."* Zero mentions of *"condition 5"* remain. |
 | **§5 read as though a central body applied these rules.** | Foundations v0.22 §5 | **Rewritten in v0.23.** New **§4.0** names the trust network as the thing that does everything in §5. **§4.1** is retitled and now says *"within a trust network"* in its own first line. §4.8–§4.8 are the owed remainder. |
 
+<!-- struck-ok: naming the withdrawn claim is the point of the sentence -->
 **The second half of condition 5 contradicted a rule we already had.** It said compatible networks arrive at the same ledger. **Foundations §4.2 says the opposite on purpose:** each party re-reads the shared physical record through its own model. The 12 h and 18 h in §3 above are both correct, and that is the intended behaviour, not a fault.
 
 > **The critic tested condition 5 as a uniqueness mechanism because it reads like one — *"one life, counted twice"*. It is not one. It was a definition of compatibility, doing work it could not do.**
@@ -214,6 +216,7 @@ P holds an account on Network A (`F` = 4, ρ = 1.2) and one on Network B (`F` = 
 >
 > **Then look for the party that computes the 30. There is not one.** Our networks do not trade with each other and no book is ever added to another book. A transaction lands on exactly one network and the seller picks which — *"we do not take Network B here"*, the way a shop picks card schemes. The gate is checked against one set of books and the other never sees the event. **So the construction is valid and there is no claim underneath it to break.**
 >
+> <!-- struck-ok: the reply to the critic is the act of quoting our own withdrawn wording back -->
 > **Except one, and it was ours.** Our §5.5 said the bound held *"across any set of networks compatible enough to interoperate"*, and said compatible networks *"arrive at the same ledger."* **Both halves are struck.** The second contradicted our own §4.2, which says on purpose that each party re-reads the shared physical record through its own model — the 12 and the 18 are both correct and that is intended. **You were right that the ceiling is per-registry. We did not narrow the clause. We removed it.**
 >
 > **Where your primitive actually goes.** Proving one human holds one account across two registries is not a disclosure question. **It is a precondition of merging.** Two networks merge by agreeing every rule, identity included, so a network doing face-plus-fingerprint-plus-voice cannot merge with one doing an RFID card scan — neither can confirm two pseudonymous accounts are one person, and the merge does not happen. **A merge that cannot identify people is not a merge.**
@@ -283,8 +286,8 @@ P holds two accounts on B-like networks (`F` = 10, ρ = 1.2) for one year and wo
 | 3a | A conformance item for one-human-one-account | [`Aequitas_Conformance_v0.10.md`](../Aequitas_Conformance_v0.10.md) | ❌ **Not added, deliberately.** The ruling makes it a within-network rule, so Foundations §4.1 carries it. |
 | 4 | **The public reply to @cairn-lineage** | §8 above; `07-outreach/` queue item **46** | 🟡 **Written and ranked first. Not yet posted.** |
 <!-- struck-ok: a cascade table recording that this wording was struck -->
-| 5 | Overview §0's box asserting the bound *"across every network that can trade with every other"* | [`Aequitas_Overview_v0.21.md`](../Aequitas_Overview_v0.21.md) §0 | ✅ **Struck 2026-08-27.** The box shows the 12 h / 18 h case and says plainly that the two figures **cannot be added**. §1 gains the four-lives table and four conditions; §6's table row is corrected. |
-| 6 | Objections **OA9 and the OP-22 status row** do not record the ruling | [`Aequitas_Objections_v0.25.md`](../Aequitas_Objections_v0.25.md) | ✅ **Recorded 2026-08-27.** OA9 gains a boxed statement; the status row states it in one line; **C-test 8 re-pointed from OP-22 to OP-14.** |
+| 5 | Overview §0's box asserting the bound *"across every network that can trade with every other"* | [`Aequitas_Overview_v0.22.md`](../Aequitas_Overview_v0.22.md) §0 | ✅ **Struck 2026-08-27.** The box shows the 12 h / 18 h case and says plainly that the two figures **cannot be added**. §1 gains the four-lives table and four conditions; §6's table row is corrected. |
+| 6 | Objections **OA9 and the OP-22 status row** do not record the ruling | [`Aequitas_Objections_v0.26.md`](../Aequitas_Objections_v0.26.md) | ✅ **Recorded 2026-08-27.** OA9 gains a boxed statement; the status row states it in one line; **C-test 8 re-pointed from OP-22 to OP-14.** |
 | 7 | **The conformance list carried no row for *comparison, never conversion*** — an implementation could publish an exchange rate between its credit and a neighbouring network's and still satisfy every row | [`Aequitas_Conformance_v0.10.md`](../Aequitas_Conformance_v0.10.md) | ✅ **Added as requirement 4a, 2026-08-27**, after §7 of this paper made exactly that error. **The number 17 stays retired.** |
 | 8 | **Is the residual rule tight enough against a subscriber who splits consumption across networks deliberately?** — §7 above | Coverage: **§4.4, §4.4, OP-24** | 🟡 **Watch item, 2026-08-27. Not a blocker and not OP-22b.** §4.4 already estimates undisclosed activity over the undisclosed residual and errs against the person. **Nobody has measured whether that is tight enough against deliberate splitting.** |
 | 9 | **Two axioms were cited by no conformance row at all** — **A7** (universal accounting), and **A4** with §3.3 (retroactive re-weighting) | [`Aequitas_Conformance_v0.10.md`](../Aequitas_Conformance_v0.10.md) §5 | ✅ **Ruled in as requirements 17a and 17b, 2026-08-27.** An implementation could have accounted only for its own subscribers, or frozen its weighting model forever, and still passed every row. **Every axiom is now cited by at least one row.** |

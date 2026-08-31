@@ -1,16 +1,16 @@
-<!-- generated-from: Aequitas_Foundations_v0.34.md -->
+<!-- generated-from: Aequitas_Foundations_v0.35.md -->
 # Aequitas — Foundations, distilled
 
 > ## ⚠️ THIS FILE IS GENERATED. DO NOT EDIT IT.
 >
-> **Every edit belongs in [`Aequitas_Foundations_v0.34.md`](Aequitas_Foundations_v0.34.md), which is the document this was made from.**
+> **Every edit belongs in [`Aequitas_Foundations_v0.35.md`](Aequitas_Foundations_v0.35.md), which is the document this was made from.**
 > An edit made here is lost the next time anyone runs the generator, and while it survives it is a
 > second version of a rule — which is the failure this file exists to avoid.
 >
 > **Regenerate with:** `python bin/distill.py`
 
-> **Source:** [`Aequitas_Foundations_v0.34.md`](Aequitas_Foundations_v0.34.md) · **version 0.34**
-> **Size:** 98,230 bytes, from 204,649 — **48% of the source**
+> **Source:** [`Aequitas_Foundations_v0.35.md`](Aequitas_Foundations_v0.35.md) · **version 0.35**
+> **Size:** 101,794 bytes, from 209,653 — **49% of the source**
 
 **What was kept:** every heading, every rule, every table, and the stated result of every worked
 example. **What was dropped:** the explanation prose between them.
@@ -515,6 +515,11 @@ example. **What was dropped:** the explanation prose between them.
 >
 > **Independence.** The fault that hit the first record did not reach the second, because the two were made on different paths.
 > **Expressiveness.** The second record is *able* to hold a value that contradicts the fault.
+> **Test expressiveness first, and independence second.** The two cost different amounts to establish. **Expressiveness is a property of one record on its own** — can this instrument ever emit a value that contradicts the first? You answer it by reading the instrument. **Independence is a claim about the relationship between two records**, and establishing it means tracing how each was made and showing the same fault could not reach both. That is testimony, and it is dear.
+>
+> **So run the cheap test first, because a record that fails it cannot be rescued by any amount of independence.** The example below fails on expressiveness and never on independence, and that is the ordinary case rather than a special one.
+>
+> *(Supplied by @Bishop, c27926, arriving at this section's instrument-trust limit independently. The example was already ours; the ordering was not.)*
 ##### An example, with the numbers
 **Then weigh the actual pile in the actual barn. The records say 2.0 kg and the scale says 0.0 kg, so the check fires.**
 > **What defeats a balanced lie is physicality, not independence. Matter does not agree to be counted twice.**
@@ -564,6 +569,14 @@ example. **What was dropped:** the explanation prose between them.
 | **`not identified`** | **The default.** Either blind spot has no defensible direction, so the interval is published and neither label is. |
 > **A `floor` label is earned by the arithmetic that produced the figure. It is never inherited from the fact that some input was incomplete.**
 **`not identified` is where every derived figure starts.** A label is promoted onto it by an argument. **The same rule governs the coverage percentage below, and every future figure of the same shape.**
+#### Why the label always wants to be wrong in the same direction
+> **Whoever computes a figure of this shape benefits from a particular one of its two labels. The error is therefore not random, and it will not be caught by whoever made it.**
+| The figure | What it is | Which error flatters the publisher |
+|---|---|---|
+| `R = N − Y` | The leftover — output the books did not see | **Overstating it.** A larger dark pool makes the network's own coverage argument look stronger |
+| `Y ÷ N` | The coverage figure | **Overstating it.** The books look better covered than they are |
+| Remaining compliance from a self-register | A count of failures the register-keeper writes about themselves | **Overstating it.** The keeper is the party a large remainder flatters |
+| `24 ÷ F` reported as fraud-invariant | An arithmetic bound reported after a fraud run | **Reading it as detection.** Robustness reads better than blindness (§5.5.7) |
 #### Why the outside total has to be a physical measurement
 > **Ask this about any check and you will know at once what it can find. Does this check compare two things made on separate paths, or does it compare a thing to itself?**
 | Flow | What sees a gap in it |
@@ -573,6 +586,11 @@ example. **What was dropped:** the explanation prose between them.
 | A chain with no recorded connection to anything | **`(N − Y) ÷ Z`.** Nothing is shared, so only an independent total can see it. |
 #### The leftover is charged to nobody
 > **The leftover is computed, published, and left unassigned. It is debit on no account. When an unmeasured producer joins, their share is traced back from records that already exist and assigned to them, because they are the party who caused it. Until they join they cannot transact inside the network at all.**
+> **The reason, in one line: a residual proves that activity is missing; it does not prove whose.**
+>
+> **Conservation arithmetic establishes that `N` exceeds `Y`. It cannot say which producer the difference belongs to.** Any rule that spreads the difference across the producers a network happens to know about is an allocation heuristic, and **a heuristic is not a witness.** Joining is the witness: it supplies the records that bind a share to a principal.
+>
+> *(Supplied by @cairn-lineage, c30285, 2026-08-30, reached from a partition argument with no access to this document. **It is a better ground than the one this section used to give.** The ethical argument below — that spreading the leftover would be collective punishment — is one a critic can decline. **The instrument argument is one anybody can check.** Both are kept, and this one is stated first.)*
 > **⚠️ The coverage figure is `Y ÷ N`, so it carries the subtraction problem in its own form.** A blind `Y` understates coverage, so the books are better than they say. **A blind `N` overstates it, so the books are worse than they say — and that is the direction which flatters the network.** **The same three labels apply, and `not identified` is the default.** A network publishing a bare percentage with no direction on it is publishing a number nobody can use.
 #### When a person joins, their position is reconstructed back to their birth
 > **The reconstruction runs on both sides. The debit and the credit are both rebuilt.**
@@ -784,6 +802,11 @@ example. **What was dropped:** the explanation prose between them.
 #### 5.5.6 Why hoarding does not beat the bound
 #### 5.5.7 What the simulations found
 > **Formally stated, simulated, and stress-tested.** The formal statement and a plain-language explainer are in `06-simulation/disparity-ceiling/DISPARITY_CEILING.md`. The adversarial pass of 2026-08-14 answered all three attacks — **Methuselah** (§5.5.6 above), **dynasty and household** (a household is a co-op; its dwelling debit splits per occupant by dwelling time, children included, so the bound is per person and inheritance dilutes it, §4.5), and **collector** (holdings raise your own debit, so a hoard bounds itself).
+  > **`24 ÷ F` reads no accounts.** At `F` = 10 it returns 2.40 whatever the population contains, so *"still 2.40× at 40% fraud"* means **the arithmetic never looked** — not that anything caught the fraud. **Insert a fabricated account and the figure moves by 0.00, for the same reason.**
+  >
+  > **So the run is a control observation about the statistic's sensitivity, and never evidence that the population was witnessed.** It bounds; it does not witness. **A reproducible detector can still reproducibly certify only the world it was shown.**
+  >
+  > **This is §4.4 applied to the project's own headline** — *a check that compares a thing to itself can find a mistake, and cannot find a hole.* **The witness for coverage is a different instrument and it is physical: the outside total `N`** (§4.4). *(Found from outside by @cairn-lineage; conceded 2026-08-31.)*
 > **The stable band described in §5.5.3 was found on 2026-08-28** and is reported there. `06-simulation/stable-band/`, 60,000 people, every cell driven through the kernel's own gate and all eight conformance checks. **The band never closes, capacity binds rather than affordability, and the upper edge turns out to be an artefact of the American production method.**
 #### 5.5.8 The real-distribution comparison
 ### 5.6 Why the alternative-economy graveyard does not apply
@@ -799,9 +822,9 @@ example. **What was dropped:** the explanation prose between them.
 | What it is | Where |
 |---|---|
 | **The conformance requirements** — what must be true for an implementation to *be* Aequitas, written for implementers | [`Aequitas_Conformance_v0.10.md`](Aequitas_Conformance_v0.10.md) |
-| **The objections register** — every open problem and every answered objection, with its status | [`Aequitas_Objections_v0.25.md`](Aequitas_Objections_v0.25.md) |
-| **The plain-language companion**, assuming no economics background | [`Aequitas_Overview_v0.21.md`](Aequitas_Overview_v0.21.md) |
-| **How adoption plausibly starts** — a reading of the historical record, not a statement of the system | [`Aequitas_Strategy_v0.6.md`](Aequitas_Strategy_v0.6.md) §5 |
+| **The objections register** — every open problem and every answered objection, with its status | [`Aequitas_Objections_v0.26.md`](Aequitas_Objections_v0.26.md) |
+| **The plain-language companion**, assuming no economics background | [`Aequitas_Overview_v0.22.md`](Aequitas_Overview_v0.22.md) |
+| **How adoption plausibly starts** — a reading of the historical record, not a statement of the system | [`Aequitas_Strategy_v0.7.md`](Aequitas_Strategy_v0.7.md) §5 |
 | **The simulation programme** — what is being tested and in what order | [`Aequitas_Simulation_Roadmap_v0.2.md`](Aequitas_Simulation_Roadmap_v0.2.md) |
 | **One paper per open problem** | [`open-problems/`](open-problems/) |
 | **Settled working papers these documents still cite by name** | [`papers/`](papers/) |

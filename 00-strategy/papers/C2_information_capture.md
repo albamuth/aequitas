@@ -278,12 +278,31 @@ The project's own rule says *check the axioms before importing an outside soluti
 
 ## 12. CORRECTION to §9 — compatibility means one ledger
 
+> ### ⛔ THIS SECTION WAS ITSELF WITHDRAWN ON 2026-08-25. READ THIS BOX FIRST.
+>
+> **§12 replaced one wrong framing with another, and the replacement was struck three days later.**
+>
+> <!-- struck-ok: the withdrawal cannot be explained without quoting the withdrawn wording -->
+> **What is struck:** that networks *"cannot be compatible unless they can arrive at the same ledger for a single person"*, and that compatibility *"is the ability to re-derive each other's numbers and land on the same ledger."*
+>
+> **Why.** **Foundations §4.2 says the opposite on purpose** — *comparison, never conversion*. Each party re-reads the shared physical record through **its own** weighting model, and **is expected to get a different number.** One person, one Monday, 8 hours worked: a network with a 4-hour floor records **12** credited hours, one with a 10-hour floor records **18**, **and both are correct** (Foundations §4.1). Adding them would set an exchange rate between credit-standards, which **A3** forbids.
+>
+> **What replaced it.** Foundations **§5.5.5 condition 4**: *"It is a statement about one network's books. Nothing else."* **There is no cross-network bound, and none is available**, because networks do not trade with each other and no book is ever added to another (§4.0).
+>
+> **What survives from §9 and from §12.** §9's catch stands — the old condition 4 wrongly claimed IC-7 covered the multi-network case. And §12's closing conclusion stands: **what is left across networks is a coverage gap, not a breached bound.** It is only the definition of compatibility that is gone.
+>
+> **Found from outside by @cairn-lineage; conceded 2026-08-25.** Record: Objections §OA9 and [`../open-problems/OP-22_identity_not_disclosure_v0.2.md`](../open-problems/OP-22_identity_not_disclosure_v0.2.md) — *"We did not narrow the clause. We removed it."*
+>
+> **The section below is kept unedited as the dated record of what was believed on 2026-08-22.** Nothing in it is current.
+
 *Same day. §9 framed multi-network accounts as a Sybil vector reaching `k × 24/F`. **The framing was wrong.***
 
 **Author's correction:**
 
+> <!-- struck-ok: kept unedited as the dated record of 2026-08-22; withdrawn by the box at the head of this section -->
 > A person can hold an account on two networks, but those networks are counting the same thing. **The networks cannot be compatible unless they can arrive at the same ledger for a single person.**
 
+<!-- struck-ok: kept unedited as the dated record of 2026-08-22; withdrawn by the box at the head of this section -->
 **Two networks counting the same person are counting the same thing.** Compatibility is not a property bolted on afterwards — **it is the ability to re-derive each other's numbers and land on the same ledger** (OP-14, comparison never conversion).
 
 So:

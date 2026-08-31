@@ -1,8 +1,12 @@
 # Disparity Ceiling
 
-> **Result (conditional):** the maximum sustainable **consumption** disparity under Aequitas is **`24 / F`** — the length of a day divided by the network's self-care floor *F* (hours/day) — independent of the tolerance dial ρ and of the weighting model, and **invariant to fraud**. At *F* = 10 h that is **2.4×**. Under money the same ratio runs to **~10⁶×** and compounds without limit.
+> **Result (conditional):** **inside one trust network's own books**, the maximum sustainable **consumption** disparity is **`24 / F`** — the length of a day divided by that network's self-care floor *F* (hours/day) — independent of the tolerance dial ρ and of the weighting model. At *F* = 10 h that is **2.4×**. Under money the same ratio runs to **~10⁶×** and compounds without limit.
 
-This is the **strongest defensive result the project holds**, because it makes fraud-resistance a *structural* property rather than a policing problem: the question stops being "can we catch all cheating?" and becomes "how much does undetected cheating actually get you?" — which has a stable answer.
+**Two limits belong in the same breath as the number.**
+
+**It is a wall nobody reaches.** 2.4× needs 24 credited hours every day from birth to death. **A very hard working life — 12 hours of work a day, 300 days a year, from 20 to 70 — reaches about 1.62×** ([[basic-needs-floor|§5.5.5]]). **Quote 1.6, not 2.4.**
+
+**It bounds; it does not witness.** The bound does not move under fraud **because the arithmetic never reads the accounts** — `24/F` returns 2.40 whatever the population contains. **That is robustness for the bound and blindness for the detector, and one sentence cannot claim both.** Coverage is established by a different and physical instrument: the outside total `N` of [[statistical-coverage|§4.4]]. *(Found from outside by @cairn-lineage, c33046, conceded 2026-08-31. The general rule was already ours — a check that compares a thing to itself can find a mistake, and cannot find a hole.)*
 
 **Formal statement + plain-language explainer:** [`06-simulation/disparity-ceiling/DISPARITY_CEILING.md`](../06-simulation/disparity-ceiling/DISPARITY_CEILING.md). **Simulation** (7 self-tests green): [`06-simulation/disparity-ceiling/disparity_ceiling_sim.py`](../06-simulation/disparity-ceiling/disparity_ceiling_sim.py).
 
@@ -36,15 +40,20 @@ So there is nothing to "bank and blow." A lifelong hoarder who consumes nothing 
 
 ## Why it matters
 
-1. **It reframes security.** "How much does undetected cheating get you?" — answer: never past 24/F. Fraud fills the band (IC-7 caps everyone at 24 h), it can't create an outlier beyond it.
+1. **It bounds what cheating is worth, and it does not detect cheating.** "How much does undetected cheating get you?" — answer: never past 24/F, because IC-7 caps everyone at 24 h. **Fraud fills the band and cannot create an outlier beyond it. It also leaves the figure completely unchanged, so the figure can never tell you the fraud happened.** Both halves are the same property, and the second must be said whenever the first is.
 2. **It is the honest reply to "your system can be gamed."** Yes — and money can be gamed far more profitably and entirely legally (real data: money's richest-to-median runs to ~10⁶×).
 3. **It rests on axioms, not enforcement.** The bound is arithmetic on IC-7, the floor, and A3 — no institution sets it.
 
 ## Conditional, not absolute
 
 - **Consumption axis only.** Influence (pledging-power → agenda-setting) is [[service-to-influence|OP-1]], a separate question.
-- **Cross-network guarantee depends on [[weighting-governance|OP-22]]** — proving a claim's backing without exposing the private ledger — plus a narrow-band floor. Within one network the bound is exact; across networks it needs the disclosure mechanism.
-- **`2.4×` is illustrative.** The real result is the *form* `24/F` — [A8](protocol-governance.md) forbids a global floor, so there is no single headline constant.
+- **One network's books, and there is no wider figure.** Networks do not trade with each other and no book is ever added to another, so **there is no object for a cross-network bound to describe.**
+
+  > <!-- struck-ok: this note exists to record the withdrawal, so it must quote the withdrawn wording -->
+  > **⛔ Struck 2026-08-25.** This page used to say a *"cross-network guarantee"* was available once OP-22 was solved, and the core documents used to claim the bound held *"across any set of networks compatible enough to interoperate"* with compatible networks *"arriving at the same ledger."* **All of that is removed, not narrowed.** Foundations §4.2 says the opposite on purpose — *comparison, never conversion*: one person, one Monday, 8 hours worked reads as **12** credited hours on a 4-hour-floor network and **18** on a 10-hour-floor one, **and both are correct.** Record: Objections §OA9. **What survives across networks is a coverage question, not a disparity one.**
+
+- **`2.4×` is illustrative.** The real result is the *form* `24/F` — [A8](protocol-governance.md) forbids a global floor, so there is no single headline constant. **A 2-hour floor states a 12× ceiling.**
+- **Two more dials sit on the number.** Whether the network credits a child's learning time (2.400× if it does, **2.085×** if it does not), and whether collusive hand-offs can manufacture gross hours ([[service-to-influence|OP-1]], assumed controlled).
 
 ## Depends on
 

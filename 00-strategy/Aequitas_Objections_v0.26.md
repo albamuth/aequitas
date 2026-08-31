@@ -1,9 +1,9 @@
 <!-- tag: obj-aequitas-objections-register -->
 # Aequitas — Objections Register
 
-> **Version:** 0.25 · **Date:** 2026-08-29
-> **Supersedes:** `99-archive/Aequitas_Objections_v0.24.md`
-> **Tracks:** `Aequitas_Foundations_v0.34.md` · `Aequitas_Conformance_v0.10.md` · `OP-22_identity_not_disclosure_v0.2.md` · `OP-27_parallel_implementation.md` · `OP-28_dark_production_and_the_residual_denominator.md` · `OP-26_coverage_and_closure.md` · `OP-18_labour_and_team_credit.md` · `OP-23_capital_and_pollution.md` · `OP-17_coproduct_allocation.md` · `06-simulation/allocation-engine/RECURSION_RESULTS.md` · `06-simulation/disparity-ceiling/DISPARITY_CEILING.md` · `06-simulation/pledge-reserve/pledge_reserve.py` · `06-simulation/scenario-suite/scenario_suite_METHOD.md`
+> **Version:** 0.26 · **Date:** 2026-08-31
+> **Supersedes:** `99-archive/Aequitas_Objections_v0.25.md`
+> **Tracks:** `Aequitas_Foundations_v0.35.md` · `Aequitas_Conformance_v0.10.md` · `OP-22_identity_not_disclosure_v0.2.md` · `OP-27_parallel_implementation.md` · `OP-28_dark_production_and_the_residual_denominator.md` · `OP-26_coverage_and_closure.md` · `OP-18_labour_and_team_credit.md` · `OP-23_capital_and_pollution.md` · `OP-17_coproduct_allocation.md` · `06-simulation/allocation-engine/RECURSION_RESULTS.md` · `06-simulation/disparity-ceiling/DISPARITY_CEILING.md` · `06-simulation/pledge-reserve/pledge_reserve.py` · `06-simulation/scenario-suite/scenario_suite_METHOD.md`
 > **Version history & what each version superseded:** `00-strategy/Aequitas_Objections_CHANGELOG.md`.
 > **Purpose:** one place holding every serious objection to the theory, its source, the axiom it attacks, and its status.
 
@@ -96,6 +96,25 @@
 ---
 
 <!-- tag: obj-s0 -->
+## 0a. A publishing rule, added 2026-08-31
+
+**Three of this register's own figures, and one of Foundations', were found wrong in the direction that flattered whoever published them. All four were found from outside.**
+
+> **An insensitivity result must never be published as a coverage result, and a figure of the form "one reading minus another" must carry the label its arithmetic earns rather than the label its author prefers.**
+
+| The figure | The flattering reading | What is true |
+|---|---|---|
+| `R = N − Y`, the leftover | A large dark pool strengthens the coverage argument | Subtraction reverses the direction of every error inside it. **Foundations §4.4**, the three-label rule |
+| `Y ÷ N`, the coverage figure | The books look better covered than they are | Same rule, applied to a quotient. `not identified` by default |
+| Remaining compliance from a self-register | The keeper is flattered by a large remainder | A self-written check over two self-written records has no expressive range |
+| `24 ÷ F` reported as **fraud-invariant** | Robustness reads as detection | **The formula never reads the accounts.** It bounds; it does not witness — **Foundations §5.5.7** |
+
+**In plain words: the error is not random, and it will not be caught by whoever made it.**
+
+**This is OP-24's one-way pressure applied to *extent* rather than to *weight*** (§OA3, Foundations §3.3a). **It is a publishing discipline, not a new mechanism, and it closes nothing.** Folded to Foundations §4.4 and §5.5.7 in v0.35.
+
+---
+
 ## 0. The headline finding
 
 **Aequitas's hard problem is division of the untraceable.**
@@ -386,6 +405,7 @@ Cost says what a thing takes. It does not rank two people who both want the last
 >
 > **The non-reuse witness they asked for is C6 (identity), and it is a merge precondition.** Two networks merge by agreeing every rule, identity included, so face-plus-fingerprint-plus-voice cannot merge with an RFID card scan (§4.8). **It is not a disclosure primitive and it is not part of OP-22.**
 >
+> <!-- struck-ok: the register records what was struck, so it must quote the struck wording -->
 > **They were right about the ceiling, and that half was ours.** §5.5's old condition 5 claimed the bound held *"across any set of networks compatible enough to interoperate"* and that compatible networks *"arrive at the same ledger."* **Both are struck, not narrowed** (Foundations v0.23). §4.2 contradicted the second on purpose — *comparison, never conversion*.
 >
 > **⚠️ And one thing may NOT be said, because a draft of the paper said it and the author refused it on 2026-08-27.** A person with accounts on a 4 h-floor and a 10 h-floor network does **not** reach *"36.0 h of room against 12.0, a factor of 3.0."* **That line adds A's hours to B's, and the two are collapsed through different weighting models**, so the sum sets an exchange rate between credit-standards — **A3**, **§4.2**, now **conformance 4a**. **IC-7 was never breached: 12 and 18 are each under 24, and it binds each account separately.** **What is actually left is a coverage question** — activity one network cannot see — covered by §4.4's published coverage figure and §4.4's residual estimate, which errs against the person. **Watch item, not a blocker: is that tight enough against deliberate splitting? Unmeasured.**
@@ -990,4 +1010,4 @@ The version-by-version change log (former §E) now lives in a separate file, rea
 
 ---
 
-*End of v0.24.*
+*End of v0.26.*
