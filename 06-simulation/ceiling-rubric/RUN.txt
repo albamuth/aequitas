@@ -1,0 +1,152 @@
+==============================================================================
+SCORING THE DISPARITY-CEILING SIMULATOR ON A DETECTION RUBRIC
+==============================================================================
+
+------------------------------------------------------------------------------
+0. PRE-REGISTRATION -- FROZEN BEFORE ANY OUTPUT BELOW
+------------------------------------------------------------------------------
+
+  hash  4f849c55aa173f0a
+
+  artifact under test   06-simulation/disparity-ceiling/disparity_ceiling_sim.py
+  statistic             max(claimed credit rate) / F, as claim3_fraud() computes it
+  population            disparity_ceiling_sim.draw_population(), unmodified
+  inclusion rule        every drawn agent is in scope. No agent is filtered on any outcome, before or after the statistic is computed.
+  n                     200,000
+  F                     10.0 h/day
+  rho                   1.5   (cancels in the statistic)
+  RNG                   numpy PCG64 via default_rng, seeds declared per challenge
+  clean seeds           [11, 22, 33, 44, 55, 66, 77, 88, 99, 111]
+  challenge seeds       [101, 202, 303, 404, 505]
+  fires if              the statistic moves by more than 0.005x
+
+  No agent is filtered on any outcome. The boundary above was written before
+  the numbers below were computed, and the hash is over that declaration.
+
+------------------------------------------------------------------------------
+LEG 1 -- DOES IT FIRE ON A KNOWN OMISSION, AND ON A KNOWN CHEATER?
+------------------------------------------------------------------------------
+
+  Six challenges, each with a known ground truth. `clean` is the statistic on
+  the untouched population; `after` is the statistic once the challenge is
+  injected. Averaged over the five declared challenge seeds.
+
+  challenge                kind              clean    after     delta   fires?
+  ----------------------  ----------------  -------  -------  --------  ------
+  C1 phantom insertion    coverage            2.400    2.400    +0.000      no
+  C2 in-scope omission    coverage            2.400    2.400    +0.000      no
+  C2b targeted omission   coverage            2.400    2.247    -0.153     YES
+  C3 hour inflation       cheating            2.400    2.400    +0.000      no
+  C4 collusive hand-off   cheating            2.400    2.400    +0.000      no
+  C5 ceiling breach       positive control    2.400    3.000    +0.600     YES
+
+  2 of 6 challenges fire.
+
+  Nothing that ADDS or INFLATES moves it at all -- not a phantom account, not a
+  random fifth of the population deleted, not 40% of the books inflated, not
+  collusive hand-offs. Every one of those reads +0.000.
+
+  🔴 ONE-SIDED EXPRESSIVENESS, and it was not what this run expected to find.
+  Deleting the top percentile DOES move the statistic, by -0.153. It is a
+  maximum, so it can always be pushed DOWN by removing the extreme accounts and
+  can NEVER be pushed UP, because IC-7 caps the top at 24 h/day.
+
+  So its range is not a single point. It is a half-line pointing the wrong way.
+  Every fraud that PAYS pushes upward, and the statistic is blind to all of
+  them. The only thing it can see is a deletion that makes the books look
+  BETTER -- which nobody has an incentive to do, and which on real books there
+  is no baseline to notice against.
+
+  The remaining fire is the positive control: an account credited at 30 h/day,
+  which breaks IC-7 directly and is therefore outside what the artifact can
+  ever produce.
+
+  LEG 1 FAILS.
+
+------------------------------------------------------------------------------
+LEG 2 -- DOES IT STAY QUIET ON A CLEAN CASE?
+------------------------------------------------------------------------------
+
+  Ten clean seeds, no challenge injected.
+
+  mean 2.400000   min 2.400000   max 2.400000   spread 0.00e+00
+
+  LEG 2 PASSES. The statistic is identical on every clean seed.
+
+  🔴 And the pass is worth nothing, which is the finding rather than a caveat.
+  A statistic that never moves passes specificity by construction. Leg 2 can
+  only be informative for an instrument that leg 1 has already shown can move.
+  Read alone, this row looks like precision. It is silence.
+
+------------------------------------------------------------------------------
+LEG 3 -- WHAT WITNESSES THAT THE TESTED POPULATION IS COMPLETE?
+------------------------------------------------------------------------------
+
+  On real books the answer exists and Foundations §4.4 names it: the outside
+  physical total N -- a measurement made on a separate path, reaching
+  producers the network has never heard of.
+
+  On a generated population there is no outside. Delete a fifth of the draw
+  and the only "total" available is recomputed from the draw itself:
+
+      total before deletion        2,837,767
+      total after deletion         2,272,607
+
+  Both are computed from the same object. Neither is a witness to the other.
+
+  LEG 3 IS UNAVAILABLE -- not failed, unavailable. There is no experiment on a
+  generator that could supply it, so this leg cannot be scored here at all.
+
+  In plain words: this is Foundations §4.4's own rule arriving on the project's
+  own headline -- a check that compares a thing to itself can find a mistake,
+  and it cannot find a hole.
+
+------------------------------------------------------------------------------
+THE SCORE, AND WHAT IT IS A SCORE OF
+------------------------------------------------------------------------------
+
+  leg 1  sensitivity   FAIL         fires only on the positive control
+  leg 2  specificity   PASS         and the pass is free, so it carries nothing
+  leg 3  coverage      UNAVAILABLE  a generator has no outside
+
+  1 of 3, and the one it passes is the one that costs nothing to pass.
+
+  🔴 THE CATEGORY ERROR THAT PRODUCED THE PROBLEM
+
+  Two different objects were being reported as one result.
+
+    24/F         CLOSED-FORM ARITHMETIC. It reads no accounts. It is not a
+                 detector and it cannot be scored on a detection rubric.
+                 It is not wrong -- it is a bound, and it holds.
+    max(c)/F     A STATISTIC OVER THE DRAWN POPULATION. It does read accounts.
+                 This is the number the fraud row published.
+
+  The statistic is SATURATED AT THE TOP. It sits at exactly 2.400 on
+  a clean population, because IC-7 caps every account at 24 h/day and 200,000
+  agents are enough that somebody is always at the cap.
+
+  Its expressiveness is ONE-SIDED. It can fall, if the extreme accounts are
+  removed. It can never rise, because the cap forbids it.
+
+  So it cannot express the failure it was being read as evidence about. That
+  is Foundations §4.3's rule, and §4.3 now says to test it FIRST:
+
+      EXPRESSIVENESS is a property of one record on its own -- can this
+      instrument ever emit a value that contradicts the claim?
+
+  Answer: not in the direction that matters. Every fraud that pays pushes the
+  maximum up, and up is the direction the instrument cannot go.
+
+  WHAT SURVIVES, STATED PLAINLY
+
+    The bound 24/F is unaffected. It is arithmetic on IC-7 and the floor, and
+    no challenge here touches it.
+
+    What does not survive is reporting the fraud row as corroboration. The row
+    is a control observation about the statistic's sensitivity, exactly as
+    cairn-lineage said at c33046. Foundations v0.35 §5.5.7 now says so, and
+    this run is the measurement behind that sentence.
+
+==============================================================================
+Written up in RESULTS.md. Run `--test` for the self-tests.
+==============================================================================
