@@ -1,210 +1,218 @@
-# The Simulations, in Plain Language — a skeptical tour
+# The simulations, in plain language
 
-> **Who this is for:** anyone who wants to know what the code in this folder actually did, whether the results mean anything, and where to look to check the math — *without* needing a background in economics or linear algebra.
-> **The spirit of it:** you asked the right question — *did we just generate the answer we wanted to see?* This document takes that suspicion seriously and walks through each simulation asking exactly that. Some come out looking solid. One is honestly just a worked example. Let's find out which is which.
-> **Where the files are:** [`README.md`](README.md) — one folder per project, with the run commands and the current status of each.
-
----
-
-## Start here: the worry worth having
-
-There is a failure mode that haunts any project like this. You believe something ("physical cost accounting is better than price accounting"), you write a program, and — surprise — the program agrees with you. But of course it does: *you wrote it.* A simulation that can only ever confirm the thing you built it to confirm has told you nothing. It's a mirror, not a microscope.
-
-So the honest question isn't "did the simulations pass?" It's: **for each one, could it have failed? And if it couldn't have, then passing means nothing.**
-
-Let's go through them with that knife out. There are four.
-
-Two of them, I think, survive the knife. One is real but limited. And one is — I'll say it plainly — a worked example with made-up numbers that proves our arithmetic is self-consistent and *nothing whatsoever about the real world.* Knowing which is which is the whole point.
+> **One page, fifteen projects.** Each entry says what the code is for, the arithmetic it runs, one worked example with real digits, what it found, and **which part of the theory it tests**.
+>
+> **This is the tour. [`README.md`](README.md) is the index**, and every project's own `RESULTS.md` carries the conditions and the caveats. **No number here should be quoted without them.**
 
 ---
 
-## The problem sitting underneath everything
+## The words every entry uses
 
-Before the simulations make sense, here's the problem they're all circling.
+| Term | What it means |
+|---|---|
+| **`F`** | **The floor.** Hours a day a trust network credits for the work of staying alive. A dial the network sets. At `F` = 10 that is 3,650 h a year |
+| **ρ** ("rho") | **The debit tolerance.** The multiplier in the consumption gate `D ≤ ρ·C` |
+| **`C`, `D`** | A person's cumulative **credit** (hours the books recorded as work) and **debit** (what their consumption is reckoned to cost) |
+| **IC-7** | The check that caps any account at **24 hours of activity in 24 hours** |
+| **`N`, `Y`, `Z`** | An outside physical total for a region · what a network's own producers recorded · the count of producers it has **not** measured |
+| **`R`** | The leftover, `N − Y`. **Charged to nobody** |
 
-Imagine a cow. You spend money, feed, water, and labour raising it. Out the other end come several different things at once: steak, hamburger, leather (from the hide), tallow (fat), bone, manure. **One process, many products.** Now: how much of the cost of raising the cow does the *leather* owe? How much does the *steak* owe?
-
-There's no obvious answer, and that's not a failure of imagination — it's a genuinely hard, roughly century-old problem. Economists call it [**joint production**](https://en.wikipedia.org/wiki/Joint_product). Accountants call it the [**cost allocation**](https://en.wikipedia.org/wiki/Cost_allocation) problem. Environmental scientists hit the exact same wall and call it the [**allocation problem in life-cycle assessment**](https://en.wikipedia.org/wiki/Life-cycle_assessment).
-
-You could split the cost by **weight** (the heavy bits owe more). Or by **energy content**. Or by **price** (the valuable bits owe more). Each rule gives a *completely different* answer, and — this is the punchline the literature keeps arriving at — none of them is obviously "the truth." The valuable-bits-owe-more rule (splitting by price) is what standard economic accounting actually does, mostly because nothing else is available.
-
-Aequitas's bet is that there *is* a physical truth here: **split the cost by where the process physically sent its inputs** — measure where the feed-energy actually went in the cow, where the crude actually went in the refinery. The simulations are attempts to check whether that bet holds together.
-
-Now, the four simulations.
-
----
-
-## Simulation 1 — the self-eating economy
-
-**Files:** [`recursion_convergence.py`](allocation-engine/recursion_convergence.py), write-up [`RESULTS.md`](allocation-engine/RECURSION_RESULTS.md), **raw data `results.csv` (generated when you run it, not committed) (5,224 rows).**
-
-### The question it's actually asking
-
-Here's a wrinkle that makes cost accounting genuinely tricky. **The economy feeds itself.** You need steel to build the machines that make steel. You need electricity to run the pumps that pump the oil that fuels the power plant that makes the electricity. So the cost of steel depends on the cost of steel. It's a circular definition.
-
-Circular definitions can do one of two things. They can **settle** — like echoes in a canyon, each bounce fainter than the last, until they die away to a definite total. Or they can **blow up** — like a microphone held too close to its own speaker, the squeal feeding itself louder and louder to infinity. Which one does Aequitas's cost calculation do?
-
-And there's a second, sharper worry. When mathematicians tried to do this kind of self-referential cost calculation the *old* way (using money-values and a bit of algebra that involves "dividing" by the production process), they discovered something absurd: sometimes the math says a product contains a **negative amount of cost.** A barrel of oil that took *less than zero* effort to make. That's not a rounding error; it's a famous, real result from the 1970s ([Ian Steedman](https://en.wikipedia.org/wiki/Ian_Steedman), building on [Piero Sraffa](https://en.wikipedia.org/wiki/Piero_Sraffa)'s [*Production of Commodities by Means of Commodities*](https://en.wikipedia.org/wiki/Production_of_Commodities_by_Means_of_Commodities)), and it was a genuine embarrassment for that whole school of economics. **Does Aequitas's way of splitting costs fall into the same trap?**
-
-### What the simulation did
-
-It built 5,224 pretend economies — different sizes, different amounts of "self-feeding," different degrees of joint production — and for each one it ran the cost calculation and asked: (1) did it settle or blow up? (2) did any product come out with negative cost?
-
-It also ran the *old* money-value method on the same economies, as a control, to see whether that one produced the negative-cost absurdity.
-
-### What it found — and why it isn't wish-fulfillment
-
-- Every economy that was "productive" (produced more than it consumed) **settled to a definite answer. 100% of them** — 4,098 out of 4,098.
-- **Not one** produced a negative cost. (The most negative number anywhere was 0.0000000000000029 — that's a floating-point rounding speck, i.e. zero.)
-- The old money-value method, on the *same* economies, produced negative or nonsensical costs **94.6% of the time.**
-
-Now — why is this *not* just the mirror-trap? Because the result isn't something the simulation "discovered." It's a **mathematical theorem you can look up.** Aequitas's cost split, written out, is what's called a [**Neumann series**](https://en.wikipedia.org/wiki/Neumann_series) of a [non-negative matrix](https://en.wikipedia.org/wiki/Nonnegative_matrix) — and there's a classical theorem ([Perron–Frobenius](https://en.wikipedia.org/wiki/Perron%E2%80%93Frobenius_theorem), and the same math [Wassily Leontief](https://en.wikipedia.org/wiki/Wassily_Leontief) built [input–output economics](https://en.wikipedia.org/wiki/Input%E2%80%93output_model) on) guaranteeing that such a series settles to a unique, non-negative answer whenever the economy is productive. The condition for "productive" even has a name: the [**spectral radius**](https://en.wikipedia.org/wiki/Spectral_radius) being less than 1.
-
-The reason Aequitas dodges the negative-cost trap is almost embarrassingly simple: the old method **divides by** the production process (matrix inversion), and dividing can flip signs. Aequitas only ever **multiplies and adds** non-negative quantities, and you cannot add positive things and get a negative. That's it. The simulation isn't *proving* this — it's *confirming* that a known theorem behaves as advertised across thousands of cases. A simulation confirming a theorem is about as trustworthy as simulations get.
-
-**Could it have failed?** Yes — if the theorem didn't apply (e.g. if the "split fractions" could be negative, or if productive economies could still blow up). It didn't. And I re-checked the raw `results.csv` by hand while writing this: the 4,098 / 0-negatives / 94.6% numbers are all really in the data, not just in the write-up.
-
-### The one honest caveat
-
-The theorem assumes the split fractions (where the process sent its inputs) are **real, measurable, non-negative numbers.** The simulation *assumes* those exist and are given; it does **not** prove you can actually measure them for a real cow or a real refinery. So this result proves: *if* you can physically measure the split, *then* the accounting is mathematically well-behaved and never absurd. Whether you *can* measure the split is a different question — that's what Simulation 4 starts to probe with real data.
+**A median US lifestyle commands about 1,380 hours of other people's labour a year.** That figure is measured, not assumed, and half the entries below lean on it.
 
 ---
 
-## Simulation 2 — checking our homework against the standard tool
+# A. The kernel
 
-**File:** [`exiobase_loader.py`](allocation-engine/exiobase_loader.py) (described in [`ESTIMATION.md`](allocation-engine/ESTIMATION.md) §5).
+### 1. `statera/` — one engine the other scenarios run on
 
-### The question
-
-Fine, the method is internally sound. But does our *code* actually compute standard economics correctly, or did we make a mistake somewhere? The cleanest way to check: take a real, widely-used academic dataset and tool, feed the same data through our code, and see if we get the same answer.
-
-The tool is [**pymrio**](https://github.com/IndEcol/pymrio), an open-source library economists use to analyse [**EXIOBASE**](https://www.exiobase.eu/), a large real-world database of how every industry's output flows into every other industry (the "environmentally-extended input–output" tables — the same [input–output](https://en.wikipedia.org/wiki/Input%E2%80%93output_model) idea from Simulation 1, but with real data and pollution/energy figures attached).
-
-### What it found
-
-Our code reproduced pymrio's own footprint numbers **to fourteen decimal places** (the difference was 0.000000000000057 — machine rounding). 
-
-**Why this matters, and why it's genuinely reassuring:** pymrio is external. We didn't write it, we can't fudge it, and thousands of researchers rely on it. Matching it exactly means our engine is not doing anything weird or broken — it's doing textbook economics correctly. This is the "check your new calculator against a trusted one" test, and we passed it.
-
-**The catch, which we flag loudly:** matching the standard tool means that *on this particular data, we did nothing new.* EXIOBASE has already split its joint production the old way (essentially by price), so feeding it through our engine can only ever reproduce the old answer. To show Aequitas does something *different*, we need data where the physical split hasn't already been thrown away. That's Simulation 4.
+**Tests:** the whole accounting — an append-only event log, the debit vector, credit accrual, the gate, the conformance checks.
+**Maths:** every position is recomputed from the log; nothing is stored. The gate is `D ≤ ρ·C`, re-checked per event.
+**Worked:** re-derive four numbers the older scripts published, through different machinery. Disparity at `F` = 10 → **2.4000×** (spread 8.88 × 10⁻¹⁶) against a published 2.40×; clearing rate **1.20** against 1.20; median gets **0.92×** a full lifestyle; **35%** held below their wants.
+**Result:** all four reproduce exactly. **A change in them would be a bug, not a finding.**
+**Points at:** Foundations §3.1 (the log), §3.0 (the gate).
 
 ---
 
-## Simulation 3 — the pretend cow (this is the honest one)
+# B. What the theory claims about people
 
-**File:** [`estimation_engine.py`](allocation-engine/estimation_engine.py), write-up [`ESTIMATION.md`](allocation-engine/ESTIMATION.md), table `estimation_debit_vectors.csv` (generated when you run it, not committed).
+### 2. `disparity-ceiling/` — how far apart can two people get?
 
-I want to be very direct about this one, because it's the one most vulnerable to your suspicion.
+**Tests:** the bound `24 ÷ F`.
+**Maths:** the most anyone can be credited is 24 h/day (IC-7); the least is `F`. Consumption is `ρ·c`, so the ratio is `(ρ·24)/(ρ·F)`. **ρ cancels.**
+**Worked:** at `F` = 10 → `24 ÷ 10` = **2.40×**. A very hard working life — 12 h of work a day, 300 days a year, ages 20 to 70 — reaches **1.62×**. Money's top tail runs to about **10⁶×**.
+**Result:** the bound is exact and does not move with ρ or with the weighting model. **Quote 1.6, not 2.4: 2.4 is a wall nobody reaches.**
+**Limit:** it is a statement about **one network's own books** and nothing wider. **And it bounds; it does not witness** — see entry 15.
+**Points at:** Foundations §5.5.5, §5.5.7.
 
-### What it is
+### 3. `median-lifestyle/` — what does a normal life actually cost?
 
-It's a made-up economy — twelve products, a cattle process, a tannery — with **invented numbers.** Not estimated, not sourced: invented, to be plausible and illustrative. It then checks a handful of things: that the cost splits add up correctly, that labour is handled by the "rides the material split" rule, and — the headline — that a pound of tenderloin and a pound of hamburger come out costing **the same**, even though tenderloin is rare and expensive.
+**Tests:** whether human hours are the binding constraint.
+**Maths:** add four tracks — domestic embodied labour, housing annualised, labour embodied in imports, and remediating your own pollution.
+**Worked:** 612 + 45 + imports (≈47% of the total) + ≈18 → **≈ 1,350–1,400 h/yr**, against the **3,650 h/yr** everyone earns by being alive.
+**Result:** **a median lifestyle costs about one third of one person's annual credit.** Cross-country: the US spends **50–80% more labour and 2.5–4× the carbon** than Germany, Sweden, France, Japan or Spain for a comparable life and shorter lifespans.
+**Limit:** at US production efficiency the deployable hours **do not** close — 0.43 to 0.87 of what is needed. Abundance comes from the method, not from more hours.
+**Points at:** Foundations §3.5.
 
-### What it does and does not prove
+### 4. `stable-band/` — is there a workable pair of dials?
 
-Here's the thing you should hold onto: **the tenderloin-equals-hamburger result is not a discovery. It's arithmetic falling out of a choice we made.** We *decided* to split the cost by weight (a pound is a pound), so of course a pound of one costs the same as a pound of the other. If we'd split by price, the tenderloin would come out more expensive. The simulation didn't find that physical cost ignores scarcity; it *implements a rule that ignores scarcity* and then confirms the rule does what the rule says.
+**Tests:** whether a network can set `F` and ρ so essentials stay affordable **and** the ledger still rations.
+**Maths:** the band is `ρ ∈ [ E/(365·F) , ρ*(F) ]`, where `E` is what a year of essentials commands. The largest basket a floor can carry is `E_max = 365 · F · ρ*(F)`.
+**Worked:** at the tightest floor measured, `F` = 2 and ρ\* = 3.70 → `365 × 2 × 3.70` = **2,701 h/yr**, which is **1.96×** a whole median American lifestyle.
+**Result:** **the band exists at every floor from 1 to 14 h/day and never closes.** Essentials are a part of a median lifestyle, not double it, so no floor in range fails on affordability. **What binds is capacity, not affordability.**
+**Points at:** Foundations §5.5.3.
 
-Is that worthless? No — but it's important to be exact about what it's worth. It's a **worked example**, like a physics problem that says "assume a frictionless cow." It proves that our *code correctly implements our own rules* — that the spec and the software agree, that nothing contradicts itself, that the accounting conserves (nothing created or destroyed). That's a real and necessary check on the *software*. But it is **not evidence about real cattle**, and it would be dishonest to present it as such. The numbers are ours; the world didn't supply them.
+### 5. `pledge-reserve/` — who takes the dangerous job with no danger pay?
 
-Think of it as the difference between "our recipe is internally consistent" and "our cake tastes good." Simulation 3 checks the recipe. Only real data checks the cake.
-
-### Where it's genuinely interesting anyway
-
-One part *does* rise above pure tautology: it shows the rule is **self-consistent across a whole connected economy** (the cattle feed comes from grain, which needs electricity, which needs fuel, in a loop), and that every product's cost stays positive and finite — which is Simulation 1's theorem showing up again in a concrete case. And it lets you *see* the mechanism working, which is worth something for understanding. But as evidence that Aequitas is *right about the world*, this simulation contributes essentially nothing, and you were correct to smell that.
-
----
-
-## Simulation 4 — the real refinery
-
-**File:** [`refinery_slice.py`](allocation-engine/refinery_slice.py), write-up [`REFINERY.md`](allocation-engine/REFINERY.md), table `refinery_allocation.csv` (generated when you run it, not committed), data sources [`../00-strategy/GLOSSARY.md#src-refinery-process-energy`](../00-strategy/GLOSSARY.md#src-refinery-process-energy).
-
-This is the one that uses **real government data** and produces a finding that isn't baked in from the start.
-
-### The setup
-
-An [oil refinery](https://en.wikipedia.org/wiki/Oil_refinery) is the joint-production problem in its purest form: one stream of crude oil goes in, and out come gasoline, diesel, jet fuel, [petroleum coke](https://en.wikipedia.org/wiki/Petroleum_coke) ("petcoke"), fuel oil, asphalt, and more — all at once. How much of the refinery's energy does each product "owe"?
-
-The standard answer (what economic databases use) is: **split by revenue** — the valuable products owe more. Aequitas's answer is: **split by the energy each product's processing actually consumed.** Do these disagree? And if so, who's right?
-
-To answer, we needed real numbers for how much energy each refining step uses. Those come from the **U.S. Department of Energy's 2015 Petroleum Refining Bandwidth Study** — actual measured energy consumption, process by process, for the whole U.S. refining sector in 2010. (An amusing side-note: the tool we first used to read the DOE report claimed the PDF was "corrupted." It wasn't — the automated reader just choked on it. The real text was fine, and the numbers are in [`../00-strategy/GLOSSARY.md#src-refinery-process-energy`](../00-strategy/GLOSSARY.md#src-refinery-process-energy) for anyone to check.)
-
-### The finding
-
-Split by revenue vs. split by real energy give **materially different answers**, and the most striking case is **petcoke**:
-
-| product | costs this much under **energy** | costs this much under **price** | ratio |
-|---|--:|--:|--:|
-| **petcoke** | 0.33 (MMBtu/barrel) | 0.06 | **5.7× more** |
-| LPG | 0.39 | 0.15 | 2.6× more |
-| gasoline | 0.44 | 0.40 | about the same |
-| diesel | 0.31 | 0.43 | 0.7× (less) |
-| fuel oil | 0.14 | 0.25 | 0.6× (less) |
-
-**Read petcoke's row slowly, because it's the whole point.** Petcoke is a cheap leftover — it sells for almost nothing. So price-based accounting treats it as if it cost almost nothing to make. But petcoke comes out of the [coker](https://en.wikipedia.org/wiki/Delayed_coker), one of the most energy-hungry units in the refinery. It really did soak up a lot of energy. Aequitas's physical accounting says petcoke costs about **5.7 times more** than its price implies. Price accounting was, in effect, *hiding* petcoke's real footprint by pointing at its cheap sticker.
-
-### Is *this* one wish-fulfillment?
-
-Partly real, partly modelled — and it's important to separate the two:
-
-- **The direction of the finding is grounded in facts we didn't choose.** Petcoke is cheap: real market fact. Coking is energy-intensive: real DOE measurement. Put those two undeniable facts together and petcoke *must* come out under-costed by price accounting. That conclusion isn't something we dialled in; it falls out of external data.
-- **The exact number (5.7×) depends on modelling choices we did make** — chiefly, our assumption about *which* products each refinery unit's energy should be credited to (the "routing"). We used standard refinery-flow knowledge for that, and flagged it as the one piece still to be pinned down against a published source. So trust the **direction and rough size** of the gap; don't treat "5.7×" as a precise measurement yet.
-
-Notice this simulation *could* have failed: if physical and price accounting had agreed, there'd be no story and Aequitas would offer nothing new here. They didn't agree — and the disagreement points exactly where the theory predicted (cheap-but-costly byproducts are where price accounting lies most).
-
-There's also a nice built-in honesty check in the code: we shocked all the prices by a random factor and confirmed the physical answer **didn't budge at all.** That matters, because it proves the physical split genuinely doesn't sneak a look at prices — it's measuring something else.
+**Tests:** whether over-pledging can staff hazardous work without a wage premium.
+**Maths:** pledges beyond a task's cost become an earmarked reserve that pays only against verified task-caused harm. Sweep the coverage fraction `c`.
+**Worked:** supply rises steadily with coverage and crosses at **`c*` = 0.83** — the job staffs once the reserve pre-funds about 83% of the expected future harm.
+**Result:** it clears. **And a full shield doubles the damage** — harm 500 under a complete shield against 250 under a partial buffer.
+**Limit:** the integrity rests on the **physical-trace test**, not on catching fraud. Padded claims leave 0% uncovered; a weak causal trace leaves **20%** uncovered.
+**Points at:** Foundations §4.6.
 
 ---
 
-## The blunt scorecard
+# C. Does the arithmetic hold?
 
-| Simulation | What it really is | Does it survive "could it have failed?" | Trust it as… |
-|---|---|---|---|
-| **1. Self-eating economy** | Numerical confirmation of a classical math theorem | **Yes** — and re-checked against the raw 5,224-row data | A solid result: the accounting never blows up and never goes negative, *if* the physical split is measurable |
-| **2. EXIOBASE match** | External sanity-check vs. a standard academic tool | **Yes** — matched to 14 decimals | Proof our code does textbook economics correctly (but does nothing *new* on that data) |
-| **3. Pretend cow** | Worked example with invented numbers | **No** — it can only confirm our own rules | Evidence the *software matches the spec*. **Not** evidence about the real world |
-| **4. Real refinery** | Real DOE energy data + some modelling | **Yes** for the direction; the exact size is model-dependent | A real, grounded finding: price accounting hides the cost of cheap-but-energy-hungry byproducts |
+### 6. `allocation-engine/` — does splitting one process's cost terminate?
 
-The short version: **two solid, one external check, one honest illustration.** The thing you were worried about — a result generated purely as wish-fulfillment — describes Simulation 3 fairly, and we've labelled it as such. It does *not* describe 1, 2, or 4, each of which had a real chance to fail and either didn't (1, 2) or produced a finding driven by outside data (4).
+**Tests:** the joint-production rule, and whether it inherits the classical negative-value result.
+**Maths:** per-unit cost solves `p = c + Ãp` with `Ã, c ≥ 0`. Aequitas divides **by** the make-matrix and never inverts it, so the solution is a non-negative series.
+**Worked:** a hand-computed 2×2 economy converges in **11 iterations**, gap 3.7 × 10⁻¹². On Steedman's own counterexample the value allocation gives **v = [−1, 2]** and the physical allocation gives **p = [0.324, 0.235]**.
+**Result:** **100% convergence and zero negative shares across 4,098 productive economies.** The rival value/price allocation goes negative or non-invertible in about **95%** of the same ones.
+**Limit:** it proves no split is negative. **It does not prove the split is unique.**
+**Points at:** Foundations §3.4a, §2.5.
 
----
+### 7. `audits/` — do the integrity checks actually catch anything?
 
-## How to check any of this yourself
+**Tests:** the twelve conformance constraints, made runnable.
+**Maths:** recompute each check over a clean log, then inject one deliberate single-point violation per check.
+**Worked:** 13 events, 12 checks, 12 injected violations, **12 catches**.
+**Result:** all twelve pass clean and all twelve fire. **IC-1 to IC-9 need nothing but the ability to recompute** — no trust model, no authority, no outside data.
+**Limit:** the report prints its own extent, and it says **closure basis: NONE on every axis.** Nothing here is checked against an independently measured physical total.
+**Points at:** the conformance list; Foundations §4.3.
 
-Everything is inspectable. From this folder:
+### 8. `ic-recompute-cost/` — can a stranger afford to check?
 
-- **The self-eating economy's full data** — 5,224 rows, one per test economy:
-  ```bash
-  # open results.csv in any spreadsheet; columns rho, min_p, converged, value_min_v
-  ```
-  The claim "no productive economy ever went negative" is the `min_p` column: filter `rho < 1` and check none is below zero.
-
-- **Re-run everything from scratch** (each prints its own checks first, then results):
-  ```bash
-  python recursion_convergence.py --test
-  python estimation_engine.py
-  python exiobase_loader.py
-  python refinery_slice.py
-  ```
-
-- **The cattle and refinery result tables** are saved as `estimation_debit_vectors.csv` (generated when you run it, not committed) and `refinery_allocation.csv` (generated when you run it, not committed) — open them in a spreadsheet and the arithmetic is checkable by hand (e.g. petcoke's energy share = coking energy 51.3 + distillation share 39.3 = 90.6, out of 2,162 total = 4.2%).
-
-- **The real refinery energy numbers** (U.S. DOE, 2010) are transcribed in [`../00-strategy/GLOSSARY.md#src-refinery-process-energy`](../00-strategy/GLOSSARY.md#src-refinery-process-energy), with links to the original reports.
+**Tests:** *"any stranger can recompute the verdict"* — which only decentralises anything if a stranger can pay for it.
+**Maths:** scale a synthetic log to 10⁶, 10⁸ and 10⁹ events; time a full pass of IC-1 to IC-9 on one core.
+**Worked:** 1,000,000 accounts, 64 materials, one core, no parallelism. At **10⁸ events** all nine checks take **9.8 s** — **10.2 million events a second**, holding 11.4 MB. At **10⁹ events**, **about 1.6 minutes**.
+**Result:** a stranger can afford it. **And eight of the nine checks stream; IC-5 does not** — it compares one event to another, so it needs the log ordered by parcel.
+**Points at:** Foundations §4.7, §3.1.
 
 ---
 
-## A short reading list (for grounding)
+# D. What the books cannot see
 
-If you want to understand the ideas underneath, roughly in order of usefulness:
+### 9. `residual-unravelling/` — does staying unmeasured stop paying?
 
-- [**Joint product**](https://en.wikipedia.org/wiki/Joint_product) — the core problem: one process, many outputs, how to split the cost.
-- [**Cost allocation**](https://en.wikipedia.org/wiki/Cost_allocation) — the accountant's version of the same problem.
-- [**Input–output model**](https://en.wikipedia.org/wiki/Input%E2%80%93output_model) and [**Wassily Leontief**](https://en.wikipedia.org/wiki/Wassily_Leontief) — how economists handle an economy that feeds itself. This is the mathematical backbone of Simulations 1 and 2.
-- [**Production of Commodities by Means of Commodities**](https://en.wikipedia.org/wiki/Production_of_Commodities_by_Means_of_Commodities) ([Piero Sraffa](https://en.wikipedia.org/wiki/Piero_Sraffa)) and [**Ian Steedman**](https://en.wikipedia.org/wiki/Ian_Steedman) — where the "negative cost" embarrassment comes from, and why avoiding it matters.
-- [**Neumann series**](https://en.wikipedia.org/wiki/Neumann_series), [**Perron–Frobenius theorem**](https://en.wikipedia.org/wiki/Perron%E2%80%93Frobenius_theorem), [**spectral radius**](https://en.wikipedia.org/wiki/Spectral_radius) — the actual theorems behind "it settles and stays positive." Heavier going, but this is *why* Simulation 1 isn't wishful thinking.
-- [**Life-cycle assessment**](https://en.wikipedia.org/wiki/Life-cycle_assessment) — where the same allocation problem shows up in environmental science, and where "split by price" is openly acknowledged as a last resort.
-- [**Oil refinery**](https://en.wikipedia.org/wiki/Oil_refinery) and [**petroleum coke**](https://en.wikipedia.org/wiki/Petroleum_coke) — for Simulation 4.
-- [**Externality**](https://en.wikipedia.org/wiki/Externality) — the broader reason any of this matters: costs that fall on people who didn't cause them.
+**Tests:** §4.4's rule that an estimate is computed over the **undisclosed leftover**, never over the whole population.
+**Maths:** each round, estimate `R ÷ Z`; producers better than the estimate join and leave the pool, so the estimate rises for whoever remains.
+**Worked:** the estimate applied to the undisclosed starts at **0.995** and ends at **18.23**, which is exactly the true median debit of whoever is still dark.
+**Result:** **0.1% stay dark under the residual rule. 52.5% stay dark, stably, under the population rule the axioms reject.** §4.4 is load-bearing.
+**Limit:** unravelling collapses once verification costs more than about **40%** of a median unit's debit, which makes cheap verification a precondition.
+**Points at:** Foundations §4.4.
+
+### 10. `correlated-miss/` — what if both instruments are blind in the same place?
+
+**Tests:** whether the leftover `R = N − Y` is a lower bound when `N` and `Y` miss the same producers.
+**Maths:** vary the correlation between the two blind spots and compare the published `R` against the true one.
+**Worked:** **at full correlation the two instruments compute `N − Y = 0` and the network publishes 100% coverage over an extent it has not covered.**
+**Result:** the error runs in the **flattering** direction at every level tested. **The published interval cannot express a shared blind spot**, because it is built from two blind spots stated separately — and a shared blind spot is not two.
+**What refuses it:** the `not identified` default, and only if it is obeyed.
+**Points at:** Foundations §4.4.
+
+### 11. `cross-network-splitting/` — can a buyer split across two networks?
+
+**Tests:** the consumption gate when one person holds two accounts.
+**Maths:** credit is recorded on **both** networks (both see the same 24-hour day); debit lands on **one** per transaction, chosen by the seller. So the gate is checked against a divided debit and a whole credit.
+**Worked:** with two networks and an even split, each sees half the debit → the escape factor is `1 ÷ 0.5` = **2.00×**. A 90/10 split is worth only **1.11×**.
+**Result:** **no estimate closes it, at any ratio.** And the splitter does not look frugal — they sit **at the cap on every network**, which is the opposite shape every cohort rule looks for.
+**What does see it:** the network's own coverage figure, falling from **74.8% to 51.9%** as splitters go from 1% to 50%. **The system notices; the individual is not caught.**
+**Points at:** Foundations §4.1, §4.0.
+
+### 12. `producer-side-splitting/` — and what does that do to the denominator?
+
+**Tests:** `Z`, when a producer routes output through two networks and both remove them from it.
+**Maths:** the hidden slice stays in the numerator `R`; the producer leaves the denominator `Z`. **Numerator up, denominator down.**
+**Worked:** at 50% multi-homing, `R ÷ Z` charges a producer who joined nothing **1.73×** what they actually made. At 1% it is 1.01×.
+**Result:** **it does not converge.** Onboard every producer in the region and the arithmetic reaches **`R ÷ 0`** with 35,484 t still unassigned and coverage stuck at 85%.
+**The decisive test:** two constructed worlds give one network **identical** `Y`, `|registered|`, `N`, `n`, `Z` and `R` — to the last decimal — with truths **21% apart**. **No supersession rule computed from one book can separate them.**
+**Points at:** Foundations §4.4, §4.2; **OP-28**.
+
+### 13. `residual-attribution/` — should the leftover be shared out at all?
+
+**Tests:** three proposed rules for assigning `R` to people, against holding it unassigned.
+**Maths:** score each rule by what it binds correctly, what it charges to somebody who hid nothing, and **its correlation with the truth**.
+**Worked:** correlation between charge and true hidden output — **R1 spread +0.000 · R2 top-up −0.109 · R3 shape +0.019.** A witness would score near 1.
+**Result:** **none of the three is a witness, and R2 is inverted** — it charges in proportion to what was recorded, and the hider recorded less, so it bills the hider **16.6 t** and the honest producer **32.7 t**.
+**A floor nobody can tune:** **57%** of the leftover belongs to producers outside the network, whom §4.1 forbids charging. Every allocating rule mis-charges at least that much.
+**Points at:** Foundations §4.4, §4.1.
 
 ---
 
-*If any single claim in the technical write-ups (`RESULTS.md`, `ESTIMATION.md`, `REFINERY.md`) doesn't match what you find in the CSVs, that's a bug worth surfacing — the data files are the authority, not the prose.*
+# E. What the numbers do to a society
+
+### 14. `scenario-suite/` — five questions at national scale
+
+**Tests:** whether the accounting produces sane answers on real distributions.
+**Points at:** Foundations §3.5, §5.5.8, §3.6.
+
+| | The question | The finding |
+|---|---|---|
+| **Q1** | An America that traded with nobody | Not short of labour, land, water or food. **Energy binds** — 0.19 of what a median standard needs at the current build, against land at 1.10 and water at 5.22 |
+| **Q2** | Labour captured or spent on enforcement | **About 185–396 hours per adult per year**, a combined **36%** — de-duplicated, not summed |
+| **Q3** | What plastic costs in hours | Ocean cleanup ≈ **950 h/tonne** — roughly **70×** the labour to make it new. **Microplastic has no figure, and that is the finding** |
+| **Q4** | Who is already locked out | Strip out paper wealth and only **0.1–2%** of Americans are permanently locked out — **the ultra-consumers, not the merely rich.** Money wealth reaches ~10⁶× the median; material consumption only ~**670×** |
+| **Q5** | Moving labour from wasteful to essential | The freed labour — **1.1 to 2.4 trillion hours a year** — closes the global health-worker shortage **50 to 100 times over** |
+
+---
+
+# F. Checking our own instruments
+
+### 15. `ceiling-rubric/` — is our headline statistic a detector?
+
+**Tests:** the row reporting that the ceiling does not move under fraud, scored as a detector rather than read as reassurance.
+**Maths:** freeze the population rule and hash it **before** computing anything. Then inject six challenges with known ground truth and ask whether the statistic moves.
+**Worked:** phantom accounts **+0.000** · a random fifth deleted **+0.000** · 40% of books inflated **+0.000** · collusive hand-offs **+0.000** · the top percentile deleted **−0.153** · an account credited at 30 h/day **+0.600**.
+**Result:** **1 of 3 legs.** Sensitivity fails. Specificity passes **because the statistic never moves**, so the pass carries nothing. Coverage cannot be scored at all — a generated population has no outside.
+**The finding:** its expressiveness is **one-sided**. A maximum can be pushed **down** by deletion and never **up**, because IC-7 caps the top. **Every fraud that pays pushes up, and up is where it cannot go.**
+**What survives:** **the bound `24 ÷ F` is untouched.** What fails is reading the fraud row as corroboration of it. **It bounds; it does not witness.**
+**Points at:** Foundations §5.5.7, §4.3.
+
+---
+
+## The scorecard
+
+| Verdict | Projects |
+|---|---|
+| **Closed, and the claim holds** | allocation-engine · audits · ic-recompute-cost · pledge-reserve · statera |
+| **Closed, and the claim is narrower than it was** | disparity-ceiling · median-lifestyle · stable-band · scenario-suite |
+| **Found a real defect in our own work** | correlated-miss · residual-unravelling · ceiling-rubric |
+| **Confirmed an open problem with digits** | cross-network-splitting · producer-side-splitting · residual-attribution |
+
+**Five of the fifteen came from outside critics**, and four of those found something the documents had wrong.
+
+---
+
+## What none of this shows
+
+**1. Constructed digits are not measured ones.** Every project says which of its numbers are measured and which are illustrative. **The median-lifestyle anchor and the scenario suite are built on published statistics. Most of the rest run on synthetic populations**, where the shape is the result and the magnitudes are not.
+
+**2. A simulation has no outside.** Entry 15 is the general form: a generated population cannot supply a witness that it is complete, because the generator is the thing being checked. **On real books that witness exists and it is `N`.**
+
+**3. Nothing here has run in a real economy**, because no trust network exists yet.
+
+## Running any of it
+
+Every project takes the same two commands, from inside its own folder:
+
+```bash
+python <the_script>.py --test
+```
+
+```bash
+python <the_script>.py
+```
+
+**Every project's self-tests are written to be able to fail**, and several have — the failures are recorded in each `CHANGELOG.md` rather than tidied away.
