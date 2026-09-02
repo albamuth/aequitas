@@ -1,6 +1,16 @@
 # OP-28 — Dark production, and what the residual denominator counts
 
-> **Status:** Open. **A candidate repair exists and has not been measured.** Two of the three findings that produced this paper were folded on the day it was written; the third is what remains open and is the whole of the problem.
+> ### ▶ 2026-09-02 — the producer side is ruled and folded. Read this before the body.
+>
+> **Author ruling S3: the division is withdrawn.** Foundations **v0.37** §4.4 now computes `R = N − Y`, publishes it whole, and **divides it by nothing.** A7's per-producer estimate comes from **§4.1's production model**, still over the leftover rather than the population. The rule telling a network to under-count `Z` went with the division it fed. Conformance **v0.11** row 14 is rewritten and row **14d** is new; Overview **v0.24** carries the reader-facing half.
+>
+> **What decided it:** `06-simulation/producer-side-splitting/`, run 2026-08-31, 11 self-tests. **Two worlds whose truths differ by 1.21× hand one network identical books** — same `N`, `Y`, `Z`, `R` — so no rule computed from those books separates them. The two rules that get the number right need the other network's book, which a network does not have.
+>
+> **What is still open, and it is now the whole of OP-28:** the **extent register**. A production model distributed by measured extent is this paper's own candidate repair, and **honest noise barely moves it (0.96× at 50% noise) while a producer declaring half their real extent returns it to 1.33×** — exactly where the withdrawn rule sat. §6's claim that the survey behind `N` catches that is **an argument nobody has tested.** Owed: the survey-check model. **Until it runs, conformance 14d requires the register to be published as unaudited.**
+>
+> **The body below is left as written, and its numbered sections are a record of what was folded when.**
+
+> **Status:** Open — **the extent register only.** The denominator question is answered. **A candidate repair exists and has not been measured.**
 > **The shape of the problem:** Foundations §4.4 divides an unattributed leftover by `Z`, **a count of unmeasured producers**. §2.5 requires a measurement wherever the thing being divided left a physical trace. **Land left a trace. A headcount did not.** So the section applies a convention where its own rule demands a measurement.
 > **Raised by:** the author, 2026-08-29, while correcting an assistant's reading of the multi-homing-producer case.
 > **PARTLY FOLDED 2026-08-29** → Foundations **v0.34** (§4.4 — the *charged* wording, the unsubscribed/unrecorded split, and the five legitimate cases of unrecorded output) · Overview **v0.21** (§ on estimating the unmeasured) · `01-wiki/estimation-engine.md`. **The denominator change is NOT folded.**
@@ -18,8 +28,9 @@
 
 ---
 
-## 1. What §4.4 does today
+## 1. What §4.4 did before 2026-09-02
 
+<!-- struck-ok: the withdrawn rule is quoted so the paper can say what was withdrawn -->
 > **estimate = (N − Y) ÷ Z**
 >
 > **N** — the independently known total for the area, from agricultural statistics, trade data, or a satellite survey.

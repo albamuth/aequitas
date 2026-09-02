@@ -12,7 +12,7 @@
 
 Dapprich is the most recent serious attempt to plan an economy in physical/optimisation terms, and he tackles the two problems Aequitas most needs answered: **how to price scarcity without profit**, and **how to let what people actually want steer production** without a market. He is the direct successor to Kantorovich (shadow prices) and Cockshott & Cottrell (computational planning), and he couples their machinery to a *consumer-feedback loop* — which is close in spirit to what Aequitas does with pledges.
 
-Bears on: pricing scarcity as a cost, not a profit (the "scarcity-as-debit" idea — see [Kantorovich](../00-strategy/GLOSSARY.md#src-kantorovich-shadow-prices)); the demand-side reply to the calculation critique ([`00-strategy/open-problems/OP-9_calculation_reply.md`](../00-strategy/open-problems/OP-9_calculation_reply.md)); and [Foundations §6.4 (pledges and signals)](../00-strategy/Aequitas_Foundations_v0.35.md).
+Bears on: pricing scarcity as a cost, not a profit (the "scarcity-as-debit" idea — see [Kantorovich](../00-strategy/GLOSSARY.md#src-kantorovich-shadow-prices)); the demand-side reply to the calculation critique ([`00-strategy/open-problems/OP-9_calculation_reply.md`](../00-strategy/open-problems/OP-9_calculation_reply.md)); and [Foundations §6.4 (pledges and signals)](../00-strategy/Aequitas_Foundations_v0.37.md).
 
 ## Key findings
 
@@ -24,12 +24,12 @@ Bears on: pricing scarcity as a cost, not a profit (the "scarcity-as-debit" idea
 ## What we can use
 
 - **Live prior art for Aequitas's two hardest open edges.** Dapprich is working the same two problems Aequitas flags — pricing scarcity honestly, and surfacing demand without a market — and has a *running* model. His scarcity-values are the strongest external template for Aequitas's "scarcity is a real cost, recorded as debit" idea. See [Kantorovich](../00-strategy/GLOSSARY.md#src-kantorovich-shadow-prices).
-- **His consumer-feedback loop is a check on Aequitas's pledges.** Where Dapprich feeds back consumer *uptake* into the plan, Aequitas surfaces demand as *pledges* — people putting earned credit behind what they want made. Comparing the two is a way to stress-test whether pledges really do the job a feedback loop does. See [Foundations §6.4](../00-strategy/Aequitas_Foundations_v0.35.md).
+- **His consumer-feedback loop is a check on Aequitas's pledges.** Where Dapprich feeds back consumer *uptake* into the plan, Aequitas surfaces demand as *pledges* — people putting earned credit behind what they want made. Comparing the two is a way to stress-test whether pledges really do the job a feedback loop does. See [Foundations §6.4](../00-strategy/Aequitas_Foundations_v0.37.md).
 - **Latest entry in the lineage Aequitas descends from.** Neurath → Kantorovich → Cockshott & Cottrell → Dapprich is the material/optimisation planning tradition; citing Dapprich shows the tradition is alive and computational, not a historical curiosity.
 
 ## What it gets wrong / limitations — from Aequitas's angle
 
-- **It still needs a central optimiser with a stated objective.** Dapprich's scarcity-values only exist relative to an optimisation, and someone must set what is being maximised — which is exactly the "who controls the cost model" capture surface Aequitas worries about most. See [Foundations §10](../00-strategy/Aequitas_Foundations_v0.35.md). Aequitas would need a decentralised, per-bottleneck version.
+- **It still needs a central optimiser with a stated objective.** Dapprich's scarcity-values only exist relative to an optimisation, and someone must set what is being maximised — which is exactly the "who controls the cost model" capture surface Aequitas worries about most. See [Foundations §10](../00-strategy/Aequitas_Foundations_v0.37.md). Aequitas would need a decentralised, per-bottleneck version.
 - **It is a plan; Aequitas is not.** Dapprich optimises a whole economy toward chosen targets. Aequitas sets no targets and runs no grand optimisation — it keeps the books under an ordinary decentralised market where the person on the spot decides. This is the deep difference, and it's what lets Aequitas sidestep Hayek's objection to central planning.
 - **Simulation, not deployment.** Like its predecessors, it's demonstrated in a model, not run in a real economy.
 

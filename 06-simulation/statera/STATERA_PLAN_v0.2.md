@@ -348,7 +348,7 @@ The proposed units are **labour per square foot to build** and **labour per squa
 
 ## 7. What becomes checkable that was not
 
-`Aequitas_Conformance_v0.10.md` lists **17 conformance requirements**. v0.1 could express 10 of them. v0.2 adds three.
+`Aequitas_Conformance_v0.11.md` lists **17 conformance requirements**. v0.1 could express 10 of them. v0.2 adds three.
 
 | # | Requirement | v0.1 | v0.2 |
 |---|---|---|---|

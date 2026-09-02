@@ -1,11 +1,12 @@
 <!-- tag: cnf-aequitas-conformance -->
 # Aequitas — Conformance Requirements
 
-> **Version:** 0.10 · **Date:** 2026-08-29
+> **Version:** 0.11 · **Date:** 2026-09-02
 > **Audience: implementers.** Anyone building a trust network.
-> **Companion:** [`Aequitas_Foundations_v0.35.md`](Aequitas_Foundations_v0.35.md) — the system itself, and the argument behind every row below. **Where the two differ, Foundations governs.**
+> **Companion:** [`Aequitas_Foundations_v0.37.md`](Aequitas_Foundations_v0.37.md) — the system itself, and the argument behind every row below. **Where the two differ, Foundations governs.**
 > **Version history is kept separately and is not published**, so this document carries only what is currently true.
 > **Two row numbers are retired and are never reused: the bare `17`, and `14c`.**
+> **Row 14 no longer requires a per-head slice of the leftover, and no longer tells a network to under-count the producers it cannot see. New row 14d requires an extent register to be published as unaudited.**
 
 ---
 
@@ -232,7 +233,8 @@ Worked: *"records are never deleted"* is something you can read off an implement
 
 | # | Requirement | From |
 |---|---|---|
-| 14 | **An unmeasured producer's estimated share is worked out over the producers still unmeasured, never over everybody.** Where the count of unmeasured producers `Z` is uncertain, the network **counts too few of them**, which raises each one's estimated share — the direction that makes them come forward and prove otherwise. **The error that fixes itself is the safe one to make.** | §4.4 |
+| 14 | **An unmeasured producer's estimated share is worked out over the producers still unmeasured, never over everybody**, and it comes from a production model for their occupation, region and known activity. **The leftover `R` is never divided by a count of producers.** Two worlds with different truths hand one network identical books, so no per-head figure computed from those books can describe either. | §4.4, §4.1 |
+| 14d | **Where a network works an estimate out over a measured extent** — hectares, vessel-days, throughput — **it publishes that extent register as unaudited.** Honest error in an extent reading barely moves the estimate. **A producer who deliberately declares half their real extent returns it to the accuracy of the rule this replaced.** Whether the survey behind `N` catches that has been argued and never tested. | §4.4, **OP-28** |
 | 14b | **A coverage figure rests on a measurement that reaches past the network's own membership** — a physical stock somebody went and measured, or an independently known total `N` for the whole extent. **Adding up subscribers' own records proves the books are *consistent*.** **It can never prove they are complete**, because a producer nobody recorded is missing from both sides of every internal sum and every sum still balances. **A coverage figure with nothing behind it that reaches non-subscribers is published as `not identified`.** | §4.4, §4.3, A7 |
 | 15 | **The leftover `R` is computed, published, and charged to no account** until the person who caused it joins. | §4.4 |
 | 17a | **Every human inside the extent the books claim to cover is in those books, subscriber or not**, with credit **and** debit estimated on both sides. **The extent is a region, a sector or a population — never the set of subscribers.** A non-participant can **neither draw on that position nor be charged for it.** A position starts acting on what a person may consume **only** once they hold a verified account and observations have replaced the estimates. | A7, §4.1, §4.4 |
@@ -253,19 +255,31 @@ Worked: *"records are never deleted"* is something you can read off an implement
 
 > **One witness in Foundations §4.4 does not appear in this row, and the omission is deliberate.** A **counterparty's own record** catches a hand-off one side failed to write down, because a hand-off has two sides. **It cannot establish coverage**, because a counterparty inside the network is itself a subscriber. **It is a check on flows between accounts, not a measurement of an extent.**
 
-#### Row 14, worked
+#### Rows 14 and 14d, worked
 
-**Twenty unmeasured farms are left, and the leftover is 6,000 t.**
+**Twenty unmeasured farms are left. The leftover is 6,000 t, and the same survey measured their land at 5,000 hectares.**
 
 | | |
 |---|---|
-| Estimate per unmeasured farm, `R ÷ Z` = 6,000 ÷ 20 | **300 t each** |
-| **Now five of the twenty install scales and record 1,000 t between them** | |
-| New leftover | 6,000 − 1,000 = **5,000 t** |
-| New count of unmeasured farms | **15** |
-| New estimate per unmeasured farm | 5,000 ÷ 15 = **333 t each** |
+| The leftover's rate over measured extent, 6,000 ÷ 5,000 ha | **1.2 t/ha** |
+| A 600-hectare farm's estimate | **720 t** |
+| A 100-hectare farm's estimate | **120 t** |
+| **What the withdrawn per-head rule gave each of them** | **300 t** |
 
-**The five that came forward were better than the estimate assumed, so the fifteen who stayed hidden now carry more.** Staying unmeasured gets worse the longer it lasts, and nobody had to enforce anything.
+**Both methods add to 6,000 t across the twenty. Only one of them describes a farm.**
+
+**Now watch the pool as producers leave it. Five of the twenty install scales. They hold 1,000 hectares and record 1,000 t.**
+
+| | |
+|---|---|
+| New leftover | 6,000 − 1,000 = **5,000 t** |
+| Extent still unmeasured | 5,000 − 1,000 = **4,000 ha** |
+| **New rate** | 5,000 ÷ 4,000 = **1.25 t/ha** |
+| The 600-hectare farm's estimate now | **750 t**, up from 720 |
+
+**The five that came forward produced less per hectare than the pool assumed, so the fifteen who stayed carry more.** Staying unmeasured gets worse the longer it lasts, and nobody had to enforce anything.
+
+> **⚠️ Row 14d is why the right-hand figures are not settled.** The 5,000-hectare reading is a declaration a network holds and nobody has shown how to audit. **A farm declaring 300 hectares instead of 600 halves its own estimate and pushes the difference onto its neighbours**, and the arithmetic above cannot see it.
 
 ---
 

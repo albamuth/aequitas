@@ -6,8 +6,8 @@
 **Feeds:** the plastic-pollution scenario ([`06-simulation/scenario-suite/plastic_debt.py`](../06-simulation/scenario-suite/plastic_debt.py) and [`PLASTIC.md`](../06-simulation/scenario-suite/PLASTIC.md)).
 
 **Why it matters.** This note supplies the real-world numbers behind Aequitas's treatment of plastic as a lasting debt. Two Aequitas rules are in play:
-- **A pollutant costs more the more of it is already out there** — because the more there is, the more work it takes to deal with. See [Foundations §3.5](../00-strategy/Aequitas_Foundations_v0.35.md).
-- **Recycled material is cheaper because it never carried the original mining/drilling pollution** — that stayed with whoever first extracted it. See [Foundations §3.6](../00-strategy/Aequitas_Foundations_v0.35.md#36-end-of-life-recycling-and-product-as-pollution).
+- **A pollutant costs more the more of it is already out there** — because the more there is, the more work it takes to deal with. See [Foundations §3.5](../00-strategy/Aequitas_Foundations_v0.37.md).
+- **Recycled material is cheaper because it never carried the original mining/drilling pollution** — that stayed with whoever first extracted it. See [Foundations §3.6](../00-strategy/Aequitas_Foundations_v0.37.md#36-end-of-life-recycling-and-product-as-pollution).
 
 The gap between the energy to make *new* plastic and the energy to *recycle* it, plus the cost of cleaning plastic out of the ocean, drive the headline finding: **cleaning plastic out of the ocean takes roughly 70 times the work of making it new, and microplastic can't be cleaned up at scale at all — so its debt is effectively permanent.**
 

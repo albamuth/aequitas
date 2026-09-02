@@ -1,16 +1,16 @@
-<!-- generated-from: Aequitas_Foundations_v0.35.md -->
+<!-- generated-from: Aequitas_Foundations_v0.37.md -->
 # Aequitas — Foundations, distilled
 
 > ## ⚠️ THIS FILE IS GENERATED. DO NOT EDIT IT.
 >
-> **Every edit belongs in [`Aequitas_Foundations_v0.35.md`](Aequitas_Foundations_v0.35.md), which is the document this was made from.**
+> **Every edit belongs in [`Aequitas_Foundations_v0.37.md`](Aequitas_Foundations_v0.37.md), which is the document this was made from.**
 > An edit made here is lost the next time anyone runs the generator, and while it survives it is a
 > second version of a rule — which is the failure this file exists to avoid.
 >
 > **Regenerate with:** `python bin/distill.py`
 
-> **Source:** [`Aequitas_Foundations_v0.35.md`](Aequitas_Foundations_v0.35.md) · **version 0.35**
-> **Size:** 101,794 bytes, from 209,653 — **49% of the source**
+> **Source:** [`Aequitas_Foundations_v0.37.md`](Aequitas_Foundations_v0.37.md) · **version 0.37**
+> **Size:** 106,792 bytes, from 216,545 — **49% of the source**
 
 **What was kept:** every heading, every rule, every table, and the stated result of every worked
 example. **What was dropped:** the explanation prose between them.
@@ -142,6 +142,23 @@ example. **What was dropped:** the explanation prose between them.
 #### Two things a debit is not
 > **A debit is never final.** Better measurement re-weighs it, and re-weighs every record made under the old figure, automatically (A6, §3.3). **A cost is a dated reading, not a verdict.**
 > **And A4 does not require a cost to land on the made thing.** **A4 requires every cost to land on *a* ledger. It says nothing about whose.** §3.2b keeps pollution permanently on its causer rather than on the goods. §4.4 holds an unattributed leftover on nobody at all. §4.5 refuses to let a cost run backwards into the history of its inputs. **All three satisfy A4.**
+#### Why a pollutant's weight is the work of cleaning it up
+> **A pollutant's debit reads as the work of putting the world back: removing the substance, and repairing what it damaged while it sat there.**
+| The candidate | What it is | Why it is not used |
+|---|---|---|
+| **What the harm was worth to whoever suffered it** | A judgement about a person's loss | It is a value, and this system measures cost and never value (§0). **Two people harmed identically report different figures, and no instrument settles which is right** |
+| **What someone would pay to avoid it** | A price | **A5 (cost, not price) leaves no price anywhere in the system to read.** The number does not exist here |
+| **What removing it takes** | Hours, materials and energy in a remediation process | **A measurement. Anyone holding the same instrument computes the same figure** |
+##### An example, with the numbers
+| The method | The figure it gives | Who can re-compute it |
+|---|---|---|
+| Ask what the harm was worth | No single answer. Each respondent gives their own | **Nobody** |
+| Read a carbon price off a market | About **€70** on the [EU Emissions Trading System](https://en.wikipedia.org/wiki/European_Union_Emissions_Trading_System), and a few dollars for some voluntary credits, on the same day | **Nobody**, and it is different tomorrow |
+| **Measure what removal takes** | **50 hours**, at the 0.05 h/kg figure §3.2b uses | **Anyone with the same equipment** |
+**The ledger stores 1 tonne, not 50 hours** (§3.2a). The conversion happens when somebody asks. **Halve what capture costs and the same stored tonne reads 25 hours, backwards through every record that ever held one** (§3.3).
+**Two limits, and neither is hidden elsewhere.**
+**The repair half is far harder to read than the removal half.** What it takes to remove a tonne of a gas is a process with a measurable cost. What it takes to repair what that tonne did while resident is a much weaker reading, and it is the larger of the two. **Both are cost constants and §3.3a governs both**, including the drift toward under-costing that section registers as OP-24 (understatement drift).
+**And the figure is not a statement about how bad the harm was.** It says what the accounting can read. **The accounting has a way to read a clean-up and has no way to read a harm**, so it reads the clean-up and says which one it read.
 ### 2.3 Credit
 > **A credit is a record that a person spent an hour of their life on work. It is a true statement about the past, so it belongs to one person and never moves.**
 #### Everyone earns at the same rate
@@ -225,7 +242,7 @@ example. **What was dropped:** the explanation prose between them.
 | Whether the ecosystem converges to one network | A prediction, not a design input (§4.8) |
 | **How a cost constant gets audited** — who replicates, what triggers a review, how a contested constant is handled while it is contested | The implementer (§3.3a). **That it must be answered is not out of scope**; the five properties in §3.3a are conformance items 16a–16c |
 | **Which instrument reads a joint process's split**, and over what period | The industry (§3.4a). Same shape: the obligations are fixed here, the method is not |
-> **The dial test is the standing screening question for anything proposed for these documents. What it leaves behind is a set of conformance requirements, never an architecture** — [`Aequitas_Conformance_v0.10.md`](Aequitas_Conformance_v0.10.md). **What must be true, never how to build it.**
+> **The dial test is the standing screening question for anything proposed for these documents. What it leaves behind is a set of conformance requirements, never an architecture** — [`Aequitas_Conformance_v0.11.md`](Aequitas_Conformance_v0.11.md). **What must be true, never how to build it.**
 ## 3. The Ledger Model
 ### 3.0 What a ledger is
 > **A person's ledger is two numbers, side by side.**
@@ -529,14 +546,36 @@ example. **What was dropped:** the explanation prose between them.
 #### A record always beats an estimate, and never the other way round
 > **A record replaces an estimate. An estimate may never replace a record.**
 #### Records are annotated, never deleted
-#### What an unmeasured producer is assumed to have produced
-> **estimate = (N − Y) ÷ Z**
+#### How much of a region's output the books did not see
+> **R = N − Y**
 >
 > **N** is the independently known total for the whole area being described, such as agricultural statistics, trade data, or a satellite survey.
 > **Y** is what the measured producers actually recorded.
-> **Z** is the number of producers still unmeasured.
-   > **Nobody outside the network is charged anything, and this condition must not be read as though they were.** The leftover is debit on no account, stated in full below, and §4.1 says a non-participant can neither draw on an estimated position nor be charged for it. **What an unflattering estimate does is sit there, unflattering, until the producer joins and replaces it with a record.** The estimate errs against whoever it describes on both sides, so supplying evidence always pays.
-> **Condition 3 is not a formality. On the project's own worked case, skipping it made the unmeasured pool look three times larger than it was**, and every unmeasured producer's estimated share with it. The full case is in [`../01-wiki/estimation-engine.md`](../01-wiki/estimation-engine.md). It is conformance requirement 14a.
+> **`R` is the leftover. It is computed, published whole, and divided by nothing.**
+> **Condition 2 is not a formality. On the project's own worked case, skipping it made the unmeasured pool look three times larger than it was.** The full case is in [`../01-wiki/estimation-engine.md`](../01-wiki/estimation-engine.md). It is conformance requirement 14a.
+#### The leftover is never divided by a count of producers
+> **`R` is not shared out across the producers a network happens to know are missing. There is no per-head slice, and no network may report one.**
+#### A7 still puts every producer in the books, and §4.1 is where that estimate comes from
+> **One property carries over unchanged, and the estimate breaks without it. The model is computed over the leftover, never over the whole population.**
+##### An example, with the numbers
+**A valley of 100 farms. Eighty subscribe and record 82,000 t between them. A satellite survey puts the valley at 88,000 t.** The same survey measured the twenty unsubscribed farms' land: **5,000 hectares between them, unevenly held.**
+| | |
+|---|---|
+| `N`, the valley total | **88,000 t** |
+| `Y`, what the eighty recorded | **82,000 t** |
+| **`R`, published whole** | **6,000 t** |
+| The leftover's rate over measured extent, 6,000 ÷ 5,000 | **1.2 t/ha** |
+| An unsubscribed farm | Its measured land | The withdrawn per-head slice | §4.1's production model |
+|---|---|---|---|
+| The largest | 600 ha | 6,000 ÷ 20 = **300 t** | 600 × 1.2 = **720 t** |
+| The smallest | 100 ha | **300 t** | 100 × 1.2 = **120 t** |
+| The other eighteen | 4,300 ha between them | **300 t each** | **5,160 t** between them |
+| **Total** | **5,000 ha** | **6,000 t** | **6,000 t** |
+**Both columns add to the same 6,000 t. Only one of them describes a farm.** The withdrawn rule gave a 100-hectare farm and a 600-hectare farm the same figure.
+> **⚠️ And the right-hand column is not settled either. Say so rather than trading one unaudited number for another.** A production model distributed by measured extent is the candidate repair registered as **OP-28 (residual denominator)**, and the run of 2026-08-31 measured where it fails. **Honest noise in the extent readings barely moves it** — a factor of 0.96 at 50% noise, because errors cancel across many producers. **A producer who deliberately declares half their real land defeats it**, returning the estimate to 1.33× the truth, which is exactly where the withdrawn rule sat.
+>
+> **The counter-argument is that the survey producing `N` also catches an under-declared extent. That is an argument and not a measurement, and nobody has run it.** Until somebody does, **a network's extent register is an unaudited lever and a network must publish it as one.**
+**What a joining producer gets, because withdrawing a number raises the question.** They get the production model's figure for every period they leave undisclosed, and they replace it with records for every period they document. **That is the same machinery as the lifetime reconstruction below, and it needed no per-head slice to work.**
 #### Two different states, and one word was doing both jobs
 | Term | What it means | Who it describes |
 |---|---|---|
@@ -577,13 +616,14 @@ example. **What was dropped:** the explanation prose between them.
 | `Y ÷ N` | The coverage figure | **Overstating it.** The books look better covered than they are |
 | Remaining compliance from a self-register | A count of failures the register-keeper writes about themselves | **Overstating it.** The keeper is the party a large remainder flatters |
 | `24 ÷ F` reported as fraud-invariant | An arithmetic bound reported after a fraud run | **Reading it as detection.** Robustness reads better than blindness (§5.5.7) |
+> **That paragraph used to name a second thing pushing the same way — a rule telling a network to under-count the producers it could not see, so each one's estimated share came out higher.** That rule went with the per-head slice it fed, and nothing replaces it. **The lean it created is gone; the flattering direction it leaned toward is not**, which is why the label rule above stands on its own.
 #### Why the outside total has to be a physical measurement
 > **Ask this about any check and you will know at once what it can find. Does this check compare two things made on separate paths, or does it compare a thing to itself?**
 | Flow | What sees a gap in it |
 |---|---|
 | One account to another | **The counterparty.** A hand-off has two sides, so a one-sided omission dangles on the other party's record. |
 | An account to the commons | **The reservoir.** Measured depletion or accumulation, minus the sum of recorded flows. |
-| A chain with no recorded connection to anything | **`(N − Y) ÷ Z`.** Nothing is shared, so only an independent total can see it. |
+| A chain with no recorded connection to anything | **`R = N − Y`.** Nothing is shared, so only an independent total can see that anything is missing. |
 #### The leftover is charged to nobody
 > **The leftover is computed, published, and left unassigned. It is debit on no account. When an unmeasured producer joins, their share is traced back from records that already exist and assigned to them, because they are the party who caused it. Until they join they cannot transact inside the network at all.**
 > **The reason, in one line: a residual proves that activity is missing; it does not prove whose.**
@@ -821,9 +861,9 @@ example. **What was dropped:** the explanation prose between them.
 ### The companion documents
 | What it is | Where |
 |---|---|
-| **The conformance requirements** — what must be true for an implementation to *be* Aequitas, written for implementers | [`Aequitas_Conformance_v0.10.md`](Aequitas_Conformance_v0.10.md) |
-| **The objections register** — every open problem and every answered objection, with its status | [`Aequitas_Objections_v0.26.md`](Aequitas_Objections_v0.26.md) |
-| **The plain-language companion**, assuming no economics background | [`Aequitas_Overview_v0.22.md`](Aequitas_Overview_v0.22.md) |
+| **The conformance requirements** — what must be true for an implementation to *be* Aequitas, written for implementers | [`Aequitas_Conformance_v0.11.md`](Aequitas_Conformance_v0.11.md) |
+| **The objections register** — every open problem and every answered objection, with its status | [`Aequitas_Objections_v0.27.md`](Aequitas_Objections_v0.27.md) |
+| **The plain-language companion**, assuming no economics background | [`Aequitas_Overview_v0.24.md`](Aequitas_Overview_v0.24.md) |
 | **How adoption plausibly starts** — a reading of the historical record, not a statement of the system | [`Aequitas_Strategy_v0.7.md`](Aequitas_Strategy_v0.7.md) §5 |
 | **The simulation programme** — what is being tested and in what order | [`Aequitas_Simulation_Roadmap_v0.2.md`](Aequitas_Simulation_Roadmap_v0.2.md) |
 | **One paper per open problem** | [`open-problems/`](open-problems/) |

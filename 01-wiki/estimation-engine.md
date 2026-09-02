@@ -55,11 +55,19 @@ That collides directly with [cost-not-price](cost-not-price.md) and [material-fl
 For producers outside the system, use the finest-resolution data that exists — the smallest region with published figures ([statistical-coverage](statistical-coverage.md)). Seeking that data, and helping producers bring their supply chain into the record, is **credited trust-network work** ([distributed-auditing](distributed-auditing.md)).
 
 > **The residual rule: cohort averages cover only the unmeasured.**
-> **estimate = (N − Y) / Z** — the independently-known total, minus what measured producers actually produced, divided among those still dark.
+> **R = N − Y** — the independently-known total, minus what measured producers actually recorded. **`R` is published whole and divided by nothing.**
 >
 > Averaged over the *whole* population instead, this creates adverse selection: good producers instrument to prove they are good, bad ones stay dark and free-ride on an average their own absence inflates. Over the residual, the estimate worsens as good producers exit — **so darkness stops paying.**
 >
-> Needs an independently known *N* (fine for major commodities, not universal) and a defensible count *Z*.
+> Needs an independently known *N* (fine for major commodities, not universal), and *N* and *Y* must measure the same quantity over the same extent and period.
+
+> **⚠️ Corrected 2026-09-02, Foundations v0.37 — the residual is no longer divided by a head count.**
+>
+> **This page used to read `estimate = (N − Y) / Z`, with *Z* a count of the producers still dark.** Author ruling S3 withdrew it. `06-simulation/producer-side-splitting/` put two worlds whose truths differ by **1.21×** in front of one network and handed it **identical books** — same *N*, *Y*, *Z*, *R* — so no per-head figure computed from those books describes either world.
+>
+> **And a head count is the wrong kind of quantity** ([physical-trace-test](physical-trace-test.md)): a region's unseen output left a trace — hectares, vessel-days, throughput — and a count of producers left none. Dividing by the count says a 100-hectare farm and a 600-hectare farm produced the same amount.
+>
+> **Where a per-producer figure is needed, it comes from the production model** Foundations §4.1 already names, still computed over the residual rather than the population. **That model is itself unaudited where it rides a declared extent** — honest noise barely moves it, and a producer declaring half their real extent returns it to 1.33× the truth. **Conformance row 14d requires the extent register to be published as unaudited.** Open half of **OP-28**.
 
 ### Two states, not one — corrected 2026-08-29, Foundations v0.34
 

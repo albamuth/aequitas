@@ -1,11 +1,11 @@
 <!-- tag: ovw-aequitas-overview -->
 # Aequitas — Overview
 
-> **Version:** 0.22
-> **Date:** 2026-08-31
-> **Supersedes:** `99-archive/Aequitas_Overview_v0.21.md`
+> **Version:** 0.24
+> **Date:** 2026-09-02
+> **Supersedes:** `99-archive/Aequitas_Overview_v0.23.md`
 > **Audience:** everyone. No economics background assumed, none required.
-> **Rigorous version:** `00-strategy/Aequitas_Foundations_v0.35.md`. This document is the plain-language companion; where they differ, the Foundations govern.
+> **Rigorous version:** `00-strategy/Aequitas_Foundations_v0.37.md`. This document is the plain-language companion; where they differ, the Foundations govern.
 > **Version history & what each version superseded:** `00-strategy/Aequitas_Overview_CHANGELOG.md`.
 
 *Aequitas* (genitive *aequitatis*) is the Latin word for fairness, evenness, symmetry — the quality of things being level with one another.
@@ -335,6 +335,10 @@ The same property means **there is no price at all — only a cost.** The number
 
 An externality is a cost you cause and someone else absorbs: the smoke, the runoff, the depleted aquifer, the worker's ruined back, the wrapper in the ocean. Every economy in history has had them, because they are not a mistake — **they are a competitive advantage.** The producer who dumps outsells the one who cleans up.
 
+**It is worth saying plainly why this is worth fixing, because the rest of this section is machinery.** The person breathing the smoke did not choose the smoke. The family drinking from the aquifer did not choose to have it drained. **A harm you did not cause and cannot avoid is a limit on your life that somebody else put there.** That is what an externality is underneath the economics: one person's choice quietly narrowing another person's options.
+
+> **That is the reason. It is not a rule, and the difference matters.** Nothing in Aequitas orders anybody to clean anything up. There is no authority to give such an order, and no way to measure whether a life has been un-narrowed. **What the system does instead is make cleaning up worth doing.** A pollutant's cost is the work of removing it. Remove some, and the record of everyone who ever emitted it gets lighter — which is the rest of this section. **The reason is moral; the mechanism is arithmetic.** Keeping those two apart is what lets the system work without anybody in charge.
+
 <!-- tag: ovw-solution-there-is-no-outside -->
 ### Solution: There is no outside
 
@@ -567,7 +571,13 @@ So that half is answered a different way, and it is the ordinary way: **measure 
 
 Two things follow, and they are the point.
 
-**The estimate for whoever stays outside gets worse as everyone else joins.** The figure is shared out across the ones still unmeasured, so as good producers instrument themselves and leave that pool, the guess applied to those remaining rises.
+**The estimate for whoever stays outside gets worse as everyone else joins.** The guess for someone still outside is worked out from the pool of what nobody has measured — never from an average over everybody — so as good producers instrument themselves and leave that pool, the guess applied to whoever remains rises.
+
+> **The forty tonnes are never simply divided by the number of farms missing, and the reason has digits behind it.** A valley of 100 farms: eighty subscribe and record 82,000 tonnes, a satellite says 88,000, so 6,000 tonnes are unaccounted for. **Split by head count, each of the twenty missing farms is credited with 300 tonnes — a 100-hectare farm and a 600-hectare farm alike.** No instrument ever said that. **The same satellite measured their land**, so the estimate is worked out from the land: 6,000 ÷ 5,000 hectares is 1.2 tonnes a hectare, which makes the big farm 720 tonnes and the small one 120. **Both methods add to 6,000. Only one of them describes a farm.**
+>
+> **A simulation is what settled it.** Two different worlds were put in front of one network, and both handed it identical books to the last decimal — while the truth behind them differed by a fifth. **No sum you can do on those books tells the two worlds apart.**
+>
+> **And the land method is not settled either, which the documents now say out loud.** Honest errors in measuring land barely move the answer. **A producer who deliberately declares half the land they farm defeats it.** Whether the survey catches that has been argued and never tested, so **a network has to publish its land register as something nobody has audited.**
 
 > **Nobody outside is charged anything, and this is worth being exact about.** The estimate is a statement about material flows in the world, not a bill. **It does nothing at all until the person joins** — and then it is their opening position, which they replace with real records. **So what gets worse is the position you would inherit, not a debt accumulating against you.** Nobody is compelled, and nobody is billed.
 
@@ -687,6 +697,6 @@ What was deliberately dropped:
 
 ---
 
-*For the rigorous statement of everything above, with the arguments and the open problems in full: `00-strategy/Aequitas_Foundations_v0.35.md`.*
+*For the rigorous statement of everything above, with the arguments and the open problems in full: `00-strategy/Aequitas_Foundations_v0.37.md`.*
 
 *End of v0.22.*

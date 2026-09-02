@@ -19,6 +19,14 @@ Two directions:
 
 It is also what makes [no-externalities](no-externalities.md) an honest claim rather than a boast. A4 doesn't assert we've measured everything; it asserts that anything later measured propagates backwards.
 
+### Why mitigation cost, and not the harm's worth
+
+**A pollutant's weight is the work of putting the world back — removing the substance, and repairing what it did while it sat there.** Not what the harm was worth to whoever suffered it, and not a market carbon price.
+
+**Only one of the three is readable here.** A harm's worth is a value, and Aequitas measures cost and never value. A carbon price is a price, and [cost-not-price](cost-not-price.md) leaves none in the system. **What removing a tonne takes is a measurement, and anyone with the same equipment computes the same figure.** This is the [physical-trace-test](physical-trace-test.md) applied to a pollutant: a tonne in the air left a trace, and a sense of loss did not.
+
+**The honest limit: the repair half is a far weaker reading than the removal half, and it is the larger of the two.** Both are cost constants, both are governed by [rival-sector-audit](rival-sector-audit.md) and the requirements above, and both inherit OP-24. Full statement: Foundations §2.2.
+
 ## Who games this
 
 The obvious exploit: **capture the weighting model.** If one body decides what a tonne of CO₂ costs to remediate, that body silently controls every balance in the world. **This is the single largest centralization risk in Aequitas (OP-10) and it is not solved.** Candidate defences — competing weighting models under open variance (A8), forced publication of methodology, recomputation by any party from the same log — are asserted and still unspecified.

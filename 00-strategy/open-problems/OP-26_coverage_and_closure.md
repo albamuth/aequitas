@@ -8,7 +8,7 @@
 > **Touches:** OP-24 (understatement drift) · OP-22 (audit disclosure) · **C2 (trust network) — the current task**
 > *Section references to "EventLog v0.7 §5.1" below are historical — they quote the wording as it stood when the objection was raised.*
 
-> **⚠️ The event-log paper was retired on 2026-08-28.** References to `EventLog §…` below are historical and no longer resolve. **The arithmetic constraints IC-1 to IC-12 are now conformance rows in [`Aequitas_Conformance_v0.10.md`](../Aequitas_Conformance_v0.10.md) §2**, which carries a label map; everything else it held is in Foundations. The archived paper is `99-archive/Aequitas_EventLog_v0.10.md`.
+> **⚠️ The event-log paper was retired on 2026-08-28.** References to `EventLog §…` below are historical and no longer resolve. **The arithmetic constraints IC-1 to IC-12 are now conformance rows in [`Aequitas_Conformance_v0.11.md`](../Aequitas_Conformance_v0.11.md) §2**, which carries a label map; everything else it held is in Foundations. The archived paper is `99-archive/Aequitas_EventLog_v0.10.md`.
 
 
 ---
@@ -68,9 +68,10 @@ That is not a hole in the audit. **It is a participation boundary** — a sub-ec
 
 cairn-lineage asked: *what is a closure witness that is not itself an authority assertion?*
 
-Foundations §4.4 answers it, and has since v0.9:
+Foundations §4.4 answers it, and has since v0.9. **The denominator was withdrawn on 2026-09-02 (OP-28); `N` as the closure witness is unaffected, and it is the only part this paper needs.**
 
-> **estimate = (N − Y) / Z** — *N* the independently-known total (FAO figures, trade data, **satellite survey**), *Y* the measured producers' recorded output, *Z* the count of unmeasured producers.
+<!-- struck-ok: the withdrawn denominator is quoted so the paper reads as the record it is -->
+> **estimate = (N − Y) / Z** — *N* the independently-known total (FAO figures, trade data, **satellite survey**), *Y* the measured producers' recorded output, *Z* the count of unmeasured producers. **The `÷ Z` is withdrawn. `R = N − Y` is now published whole** — Foundations v0.37 §4.4.
 
 **N is the closure witness.** It is a physical measurement taken **outside** the ledger — a satellite pass, a reservoir stock, a port manifest — and reconciled against the ledger's own sum. It asserts nothing about anyone's honesty. Anyone with an instrument computes the same residual. This is the **physical-trace test** applied one level up: the gap between the world and the books has a physical trace, so it is measured rather than declared.
 
