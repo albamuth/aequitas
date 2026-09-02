@@ -20,6 +20,7 @@ python disparity_ceiling_sim.py            # the population run and the four fig
 python disparity_ceiling_sim.py --test     # self-tests only
 python rho_sweep.py                        # the rho sweep and its figure
 python rho_sweep.py --test                 # self-tests only
+python ceiling_negative_controls.py        # can the reported statistic express a violation?
 ```
 
 Needs `numpy`; the figures need `matplotlib`. The default population is 200,000 agents and runs in seconds.
@@ -29,6 +30,7 @@ Needs `numpy`; the figures need `matplotlib`. The default population is 200,000 
 | Path | What it is |
 |---|---|
 | [`disparity_ceiling_sim.py`](disparity_ceiling_sim.py) | The population model. Four claims, five self-tests. |
+| [`ceiling_negative_controls.py`](ceiling_negative_controls.py) | **Four cuts at the reported statistic, asking whether it can express a violation at all.** Truncation and a spliced cheater both fire; **20,000 phantom accounts at the floor move it by 0.00.** |
 | [`DISPARITY_CEILING.md`](DISPARITY_CEILING.md) | The formal statement, its five conditions, and the plain-language explainer in §0. |
 | `ceiling_fig1_rho.png` … `ceiling_fig4_frontloading.png` | The four figures the sim writes. |
 | [`rho_sweep.py`](rho_sweep.py) | The ρ dial, calibrated against the median-lifestyle anchor. |
