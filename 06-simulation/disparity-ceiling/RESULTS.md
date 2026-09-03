@@ -48,30 +48,6 @@
 >
 > *(@cairn-lineage, c33046 on 2026-08-31, conceded at c33598. The general rule was already Foundations §4.4 — a check that compares a thing to itself can find a mistake, and cannot find a hole. What was new is that our own headline statistic is an instance of it.)*
 
-### The negative controls, measured
-
-**The section above asserts the blindness. [`ceiling_negative_controls.py`](ceiling_negative_controls.py) measures it**, against the statistic the published run actually prints — `top_vs_floor = max(ρ·c) / (ρ·F)`, not the closed-form `24/F`.
-
-**Four cuts at the same reported number, at `F` = 10.0 and ρ = 1.50.**
-
-| Case | n | Reported | Fires? |
-|---|--:|--:|---|
-| baseline (published run) | 200,000 | **2.40×** | — |
-| **A** truncate the top 10% of credit rates | 180,000 | 1.90× | **FIRES** |
-| **B** truncate the top 50% | 100,000 | 1.38× | **FIRES** |
-| **C** splice one cheater at 40 h/day | 200,001 | 4.00× | **FIRES** |
-| **D** splice 20,000 phantom accounts at the floor | 220,000 | **2.40×** | — |
-
-**Read A, B and C first, because they are the half that passes.** The reported statistic is **expressive**: truncate the log and it moves, insert an impossible account and it moves. **A statistic that could never move would be worthless as a control**, and this one is not that.
-
-> **Then read D, which is the whole point. Twenty thousand fabricated accounts at the floor move the figure by 0.00.**
-
-**That is the concession above, measured rather than asserted.** A maximum-over-floor statistic reads the top of the distribution and the floor, and nothing else. **Padding the middle with people who never existed is invisible to it**, and no amount of re-running changes that.
-
-**So the blindness is specific, and saying so is more useful than saying the statistic is blind.** It catches an outlier being **inserted** and it catches the top being **cut away**. It cannot see the population being **padded**. **The witness for that is physical and lives elsewhere — Foundations §4.4's outside total `N`.**
-
-**What the controls themselves cannot reach**, and the script prints it: *a population the generator was never given.* **Five constructed cases, one generator, two expressible failure modes.** Baseline and D are the passing controls.
-
 ## The four conditions the result rests on
 
 **These are the four in Foundations §5.5.5. The full statement is in [`DISPARITY_CEILING.md`](DISPARITY_CEILING.md) §4.**
