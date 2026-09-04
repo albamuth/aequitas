@@ -1,11 +1,12 @@
 <!-- tag: cnf-aequitas-conformance -->
 # Aequitas — Conformance Requirements
 
-> **Version:** 0.12 · **Date:** 2026-09-03
+> **Version:** 0.13 · **Date:** 2026-09-04
 > **Audience: implementers.** Anyone building a trust network.
-> **Companion:** [`Aequitas_Foundations_v0.38.md`](Aequitas_Foundations_v0.38.md) — the system itself, and the argument behind every row below. **Where the two differ, Foundations governs.**
+> **Companion:** [`Aequitas_Foundations_v0.39.md`](Aequitas_Foundations_v0.39.md) — the system itself, and the argument behind every row below. **Where the two differ, Foundations governs.**
 > **Version history is kept separately and is not published**, so this document carries only what is currently true.
 > **Two row numbers are retired and are never reused: the bare `17`, and `14c`.**
+> **Row 15 now names the object it waits for. The leftover is held *explicitly unassigned* until an attribution witness binds a share of it to a named principal**, which is the state A4 gained on 2026-09-04. A producer joining supplies a witness; conservation arithmetic never does.
 > **Row 14 no longer requires a per-head slice of the leftover, and no longer tells a network to under-count the producers it cannot see. New row 14d requires an extent register to be published as unaudited.**
 > **Row 10a no longer divides a joint process's debit at all. Every co-product carries the whole process cost against its own output mass, so there is no method to publish and no basis, routing or boundary to choose. Rows 10c and 10d are repaired to match** — outputs no longer sum to their input, their **union** does, and a coarser reading is now a **ceiling** rather than an equal. **New row 10e requires a ledger walk to be a union over identified parcels rather than a sum**, which is what stops the books inflating once the division is gone.
 
@@ -241,7 +242,7 @@ Worked: *"records are never deleted"* is something you can read off an implement
 | 14 | **An unmeasured producer's estimated share is worked out over the producers still unmeasured, never over everybody**, and it comes from a production model for their occupation, region and known activity. **The leftover `R` is never divided by a count of producers.** Two worlds with different truths hand one network identical books, so no per-head figure computed from those books can describe either. | §4.4, §4.1 |
 | 14d | **Where a network works an estimate out over a measured extent** — hectares, vessel-days, throughput — **it publishes that extent register as unaudited.** Honest error in an extent reading barely moves the estimate. **A producer who deliberately declares half their real extent returns it to the accuracy of the rule this replaced.** Whether the survey behind `N` catches that has been argued and never tested. | §4.4, **OP-28** |
 | 14b | **A coverage figure rests on a measurement that reaches past the network's own membership** — a physical stock somebody went and measured, or an independently known total `N` for the whole extent. **Adding up subscribers' own records proves the books are *consistent*.** **It can never prove they are complete**, because a producer nobody recorded is missing from both sides of every internal sum and every sum still balances. **A coverage figure with nothing behind it that reaches non-subscribers is published as `not identified`.** | §4.4, §4.3, A7 |
-| 15 | **The leftover `R` is computed, published, and charged to no account** until the person who caused it joins. | §4.4 |
+| 15 | **The leftover `R` is computed, published, and held explicitly unassigned** until an **attribution witness** binds a share of it to a named principal. **An attribution witness is a record that names a causer**; a producer joining supplies one, and conservation arithmetic never does. **The unassigned state is what A4 states for unresolved causation, not an exception to it.** | A4, §4.4 |
 | 17a | **Every human inside the extent the books claim to cover is in those books, subscriber or not**, with credit **and** debit estimated on both sides. **The extent is a region, a sector or a population — never the set of subscribers.** A non-participant can **neither draw on that position nor be charged for it.** A position starts acting on what a person may consume **only** once they hold a verified account and observations have replaced the estimates. | A7, §4.1, §4.4 |
 
 #### Row 14b, worked — why evidence quality is not the same as reach
@@ -442,4 +443,4 @@ Foundations §4.1 states it, and the **OP-22 ruling of 2026-08-25** makes it a r
 
 ---
 
-*End of v0.10.*
+*End of v0.13.*

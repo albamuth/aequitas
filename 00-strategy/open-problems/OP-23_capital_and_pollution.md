@@ -5,6 +5,11 @@
 > **Method:** design interview → stress-test (capital front-loading) → stress-test (the full capital-debit waterfall) → adopted with changes.
 > **One-line result:** *Historical costs do not cascade downstream; durable capital is front-loaded and holding-time-split; pollution is permanent on its causer and never transfers.*
 
+> **⚠️ Note, 2026-09-04. §8 below quotes a wording of A4 that has since been withdrawn.**
+> <!-- struck-ok: a dated note naming the withdrawn wording it is warning about -->
+> **§8 says A4 requires every cost to land on *a* ledger.** That is true of the barn and false of the coverage residual, which lands on **no** ledger at all. **A4 now asks coverage and attribution separately**, and where causation is unresolved the consequence is held explicitly unassigned until an attribution witness exists — Foundations v0.39 A4, §2.2, §4.4.
+> **This paper's ruling is unaffected**, because the attribution half is what carried it. Found by @cairn-lineage; see Objections **B15**. **The text below is left as the record of what was folded when.**
+
 ---
 
 ## 0. The problem
@@ -160,6 +165,7 @@ Charging the barn to the beef is the same move as charging the miner's tailings 
 | 2 | **It never said what counts as a cost *of the thing*.** | The capital-vs-consumption boundary lived in §1 of this paper and in Foundations §4.5, and was never lifted into the axiom it appeared to contradict. |
 | 3 | **"True" reads as final.** | Fights §3.3 and A6, which re-weigh every figure when the science improves. |
 
+<!-- struck-ok: the record of the v0.21 repair; the wording it quotes was itself withdrawn on 2026-09-04, see the note at the top -->
 **A4 carried the same defect** — *"every consequence of an activity is **priced into** it"* — and was repaired in the same pass to **accounted to whoever caused it**. That is what §3.2 above, Foundations §4.4 and §4.5 already do; **A4 requires every cost to land on *a* ledger, never on the *product's* ledger.**
 
 ### 8.3 Why the alternative is worse — the two worked cases
@@ -184,7 +190,7 @@ Push it onto the beef instead and 12.0 h/kg becomes 12.5 h/kg — a **4.2%** ris
 | **Capital launderer** — reclassify a consumed input as a durable asset to move its debit off the unit | **§1's physical-fate test + IC-4 (fate closure).** Audited, never declared. Closed in v0.5; unchanged. |
 | **Borrowed barn** — A builds it, B uses it, so B's beef looks cheap | **§2 holding-time.** B's holding-time accrues B's share. And there is no rent to charge (Foundations §5.1). |
 | **Scarcity re-entering cost** — price the rare cut higher | **Strengthened.** The repaired A5 says cost is a record of what was physically consumed, so desirability has no way in. The tenderloin ruling (Objections B9) gains a cleaner ground than it had. |
-| **"A4 is being carved out"** | **No.** A4 requires every cost to land on **a** ledger, not the **product's** ledger — which is now what A4 says. |
+| **"A4 is being carved out"** | **No.** A4 requires every cost to land on **a** ledger, not the **product's** ledger — which is now what A4 says. <!-- struck-ok: the 2026-08-24 record; that wording was withdrawn 2026-09-04, see the note at the top --> |
 
 ### 8.5 The residue, stated rather than buried
 

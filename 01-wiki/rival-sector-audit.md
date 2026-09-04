@@ -15,7 +15,7 @@
 >
 > **And it failed hardest where the stakes are highest.** The **ambient-stock and baseline constants** are the largest levers in the weighting model, and **they have no rival at all** — everyone benefits from a high pollution baseline and a low stock reading.
 >
-> **What is true now.** Rival-sector audit is **one pressure among several, not a mechanism.** How a trust network audits its cost constants is a network-design problem held to five published requirements — [Foundations §3.3a](../00-strategy/Aequitas_Foundations_v0.38.md), open problem **OP-24 (understatement drift)**.
+> **What is true now.** Rival-sector audit is **one pressure among several, not a mechanism.** How a trust network audits its cost constants is a network-design problem held to five published requirements — [Foundations §3.3a](../00-strategy/Aequitas_Foundations_v0.39.md), open problem **OP-24 (understatement drift)**.
 >
 > **One narrow case survives**, and it is worth knowing: **coverage** has two parties with a private interest in getting it right — the instrumented producer, harmed when undocumented produce prices too cheaply, and the dark producer, who cannot transact until they onboard. **The audit of *extent* has interested parties. The audit of *weight* does not.**
 

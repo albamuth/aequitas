@@ -3,10 +3,10 @@
 > **Version:** 0.1
 > **Date:** 2026-08-22
 > **Status:** First assembly. Every ruling here is settled and folded into Foundations v0.17; this document gathers them in one place because they were decided across a dozen separate sections. **One thing remains open and it is named in §11: OP-10 (weighting-model governance).**
-> **Depends on:** `Aequitas_Foundations_v0.38.md` §2.6, §3.3, §3.3a, §4, §4.1–§4.8 · `Aequitas_Conformance_v0.12.md`
+> **Depends on:** `Aequitas_Foundations_v0.39.md` §2.6, §3.3, §3.3a, §4, §4.1–§4.8 · `Aequitas_Conformance_v0.13.md`
 > **Companion:** `C2_information_capture.md` — the reasoning behind §6 below, including a retracted proposal kept on purpose.
 
-> **⚠️ The event-log paper was retired on 2026-08-28.** References to `EventLog §…` below are historical and no longer resolve. **The arithmetic constraints IC-1 to IC-12 are now conformance rows in [`Aequitas_Conformance_v0.12.md`](../Aequitas_Conformance_v0.12.md) §2**, which carries a label map; everything else it held is in Foundations. The archived paper is `99-archive/Aequitas_EventLog_v0.10.md`.
+> **⚠️ The event-log paper was retired on 2026-08-28.** References to `EventLog §…` below are historical and no longer resolve. **The arithmetic constraints IC-1 to IC-12 are now conformance rows in [`Aequitas_Conformance_v0.13.md`](../Aequitas_Conformance_v0.13.md) §2**, which carries a label map; everything else it held is in Foundations. The archived paper is `99-archive/Aequitas_EventLog_v0.10.md`.
 
 
 ---

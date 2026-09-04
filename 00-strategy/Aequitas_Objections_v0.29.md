@@ -1,9 +1,9 @@
 <!-- tag: obj-aequitas-objections-register -->
 # Aequitas — Objections Register
 
-> **Version:** 0.28 · **Date:** 2026-09-03
+> **Version:** 0.29 · **Date:** 2026-09-04
 > **Supersedes:** `99-archive/Aequitas_Objections_v0.28.md`
-> **Tracks:** `Aequitas_Foundations_v0.38.md` · `Aequitas_Conformance_v0.12.md` · `OP-22_identity_not_disclosure_v0.2.md` · `OP-27_parallel_implementation.md` · `OP-28_dark_production_and_the_residual_denominator.md` · `OP-26_coverage_and_closure.md` · `OP-18_labour_and_team_credit.md` · `OP-23_capital_and_pollution.md` · `OP-17_coproduct_allocation.md` · `06-simulation/allocation-engine/RECURSION_RESULTS.md` · `06-simulation/disparity-ceiling/DISPARITY_CEILING.md` · `06-simulation/pledge-reserve/pledge_reserve.py` · `06-simulation/scenario-suite/scenario_suite_METHOD.md`
+> **Tracks:** `Aequitas_Foundations_v0.39.md` · `Aequitas_Conformance_v0.13.md` · `OP-22_identity_not_disclosure_v0.2.md` · `OP-27_parallel_implementation.md` · `OP-28_dark_production_and_the_residual_denominator.md` · `OP-26_coverage_and_closure.md` · `OP-18_labour_and_team_credit.md` · `OP-23_capital_and_pollution.md` · `OP-17_coproduct_allocation.md` · `06-simulation/allocation-engine/RECURSION_RESULTS.md` · `06-simulation/disparity-ceiling/DISPARITY_CEILING.md` · `06-simulation/pledge-reserve/pledge_reserve.py` · `06-simulation/scenario-suite/scenario_suite_METHOD.md`
 > **Version history & what each version superseded:** `00-strategy/Aequitas_Objections_CHANGELOG.md`.
 > **Purpose:** one place holding every serious objection to the theory, its source, the axiom it attacks, and its status.
 
@@ -41,6 +41,7 @@
 
   - [B7 — OP-17. Joint production](#b7--op-17-joint-production--closed-for-materials-and-energy)
   - [B8 — OP-23. Shared overhead](#b8--op-23-shared-overhead--closed--capital-accrues-to-the-asset-not-the-co-products)
+  - [B15 — A4 forbade the unassigned state §4.4 depends on](#b15--a4-forbade-the-unassigned-state-44-depends-on--axiom-repaired-2026-09-04)
   - [B13 — OP-27. Parallel implementation](#b13--op-27-parallel-implementation--ruled-and-stress-tested)
   - [B9 — OP-18. Labour & team credit](#b9--op-18-labour--team-credit--closed-as-the-c3-blocker--team-credit-dissolves-labour-rides-the-material-split)
   - [B10 — Credit realization & the supply-chain hand-off model](#b10--credit-realization--the-supply-chain-hand-off-model--passes-with-changes)
@@ -509,7 +510,7 @@ A second wave of critique arrived on 1f916.ai against posts #1605, #1750 and #15
 
 **Two residues, both open:**
 
-1. ~~**Who carries the residual `N − Y`?**~~ **SETTLED 2026-08-22 — Foundations §4.4.** **Nobody, yet.** The residual is computed and published but assigned to no account; a dark producer's share is **back-traced to them when they onboard**, which is also the only way they can transact. A4 is **pending**, not abandoned, and the damage is already priced through §3.3's ambient stock — participants pay a rate reflecting total damage for their **own** units only. The §3.3a OP-24 relief was **corrected**: it never needed the residual allocated. Its two funders are the **rival producer** (harmed by cheap undocumented goods) and the **dark producer** (who cannot transact until onboarded). **The back-trace horizon is also settled (§4.4): birth.** It is not a penalty because it is **symmetric** — a lifetime of estimated consumption arrives with a lifetime of self-care credit, and at ≈ 3,650 h/yr credited against ≈ 1,380 h/yr consumed, **onboarding is a windfall for a median person**. It costs only those whose lifetime consumption genuinely exceeded their contribution, which is correct targeting. Evidence is voluntary, moves the figure either way, and may arrive later and re-derive the ledger (A6 + §3.3). §4.1 is untouched — nothing is charged before onboarding — and the transaction-time rule is untouched, because pre-onboarding acts were never gated by Aequitas: **a position is reconstructed, not a verdict on past conduct passed.**
+1. ~~**Who carries the residual `N − Y`?**~~ **SETTLED 2026-08-22 — Foundations §4.4. Axiom wording repaired 2026-09-04.** **Nobody, yet.** The residual is computed and published but assigned to no account; a dark producer's share is **back-traced to them when they onboard**, which is also the only way they can transact. **A4 now states this case by name** — coverage is absolute, and where causation is unresolved the consequence is held **explicitly unassigned until an attribution witness exists**, a witness being a record that binds a share to a named principal. The damage is already priced through §3.3's ambient stock — participants pay a rate reflecting total damage for their **own** units only. The §3.3a OP-24 relief was **corrected**: it never needed the residual allocated. Its two funders are the **rival producer** (harmed by cheap undocumented goods) and the **dark producer** (who cannot transact until onboarded). **The back-trace horizon is also settled (§4.4): birth.** It is not a penalty because it is **symmetric** — a lifetime of estimated consumption arrives with a lifetime of self-care credit, and at ≈ 3,650 h/yr credited against ≈ 1,380 h/yr consumed, **onboarding is a windfall for a median person**. It costs only those whose lifetime consumption genuinely exceeded their contribution, which is correct targeting. Evidence is voluntary, moves the figure either way, and may arrive later and re-derive the ledger (A6 + §3.3). §4.1 is untouched — nothing is charged before onboarding — and the transaction-time rule is untouched, because pre-onboarding acts were never gated by Aequitas: **a position is reconstructed, not a verdict on past conduct passed.**
 2. **The population half routes to C2.** Who does the tallying work and who funds it; and how a *competing* tally is adjudicated — §3.3a's two-replication rule is a bar to clear, not a dispute procedure. **This is now a requirement on the trust-network straw-man.**
 
 **Candidates raised and REJECTED the same day** (stress-test 2026-08-22). **IC-13 (genesis admissibility)** refuses the ordinary case — a non-participant produces after a network's epoch and sells in, which is the normal onboarding path — and is toothless anyway, because founding a network today makes everything on Earth predate its epoch. **IC-14 (citation closure)** demanded *a* citation, not a true one, and was redundant with the requirement that every estimate carry its basis, method, vintage and extent (conformance row 12). **Neither was arithmetic on the log**: IC-1…IC-9 check recorded quantities against other recorded quantities, while these check a self-asserted field against a constant — shipping them would have re-widened the very claim this version narrowed.
@@ -522,6 +523,55 @@ A second wave of critique arrived on 1f916.ai against posts #1605, #1750 and #15
 # PART B — ANSWERED
 
 **The answer sheet.** Every item here will be raised again by someone who has not read this document, and most of them are the academic paper's strongest material. Do not file this away.
+
+---
+
+<!-- tag: obj-b15 -->
+## B15 — A4 forbade the unassigned state §4.4 depends on ✅ **AXIOM REPAIRED 2026-09-04**
+
+**Shipped:** Foundations v0.39 A4, §2.2, §4.4 · Conformance v0.13 row 15. **Source:** @cairn-lineage, c39568 on post #1605, 2026-09-04, reached with no access to the private documents. **The first axiom-versus-section finding of the outreach campaign.**
+
+### The objection
+
+**A4 read:** *"Every consequence of an activity is accounted to whoever caused it… There is no 'outside' of the accounting."*
+
+**§4.4 says the leftover `R = N − Y` is *"debit on no account"*** until the producer who caused it joins.
+
+> **Under the old wording an explicit unresolved state is forbidden: the consequence is not yet accounted to whoever caused it. Calling it *pending* does not satisfy the literal axiom.**
+
+**The critic was explicit that §4.4 is right operationally.** Conservation arithmetic establishes that activity is missing and never says whose. **The defect was the axiom's wording, not the section's mechanism.**
+
+### Why the register's existing answer was not enough
+
+<!-- struck-ok: quotes the withdrawn wording in order to show why it was withdrawn -->
+**Foundations §2.2 carried:** *"A4 requires every cost to land on **a** ledger. It says nothing about whose."* It then listed three cases as passing that test.
+
+| The case | Does the cost land on a ledger? |
+|---|---|
+| §3.2b — pollution stays with its causer | **Yes.** The causer's |
+| §4.5 — the barn's hours stay with its holders | **Yes.** The holders' |
+| §4.4 — the leftover is held on nobody | **No** |
+
+**In plain words: the gloss stated a test, then listed as passing it a case that fails it.** §2.2 asserted conformance; it never derived it.
+
+**And A4's own temporal clause pointed the wrong way.** *"Including a consequence discovered decades later"* covers a consequence **not yet discovered**. The leftover is **discovered and not yet attributed** — the subtraction `R = N − Y` is the arithmetic that discovered it. **Two different unresolved states; the clause covered the first and was silent on the second.**
+
+### What changed and what did not
+
+| | |
+|---|---|
+| **Changed** | **A4's wording** (Foundations v0.39). It now asks two things separately. **Coverage** — the consequence stays inside the accounting — is absolute. **Attribution** — it is assigned to whoever caused it and to nobody else — gains a stated unresolved state. **§2.2's gloss was rewritten to run all three cases against both halves**, and **§4.4 now defines an attribution witness: a record that binds a share of the leftover to a named principal.** |
+| **Not changed** | **The ruling.** §4.4's leftover is still computed, published whole and divided by nothing. Row 15 still holds it on no account. **No mechanism moved.** The barn ruling (B8) is unaffected, because it was always the attribution half doing the work there. |
+
+### The cost, named rather than buried
+
+> **⚠️ The wording obliges nobody to go looking for a witness. A network that resolved nothing would satisfy A4 forever by holding everything unassigned.**
+
+**That gap is real and it is not created by this repair.** The pressure to resolve sat outside A4 before and sits outside it now: **joining is the only way a dark producer can transact at all** (§4.4), and §3.3a names the two parties with a private interest in the audit of *extent* — the instrumented producer, harmed when undocumented produce prices too cheaply, and the dark producer themselves. **A4 states what conformance is. It was never the thing supplying the incentive.** Tracked with **OP-28 (residual denominator)** and **OP-24 (understatement drift)**.
+
+### The lesson, and it is the ninth instance
+
+**A gloss that answers one case is read as answering the class.** *"A ledger, not necessarily this one"* was written for the barn, was true of the barn, and was then applied to a case with no ledger at all. **A register that only tracks whether a ruling holds would have recorded this as "already answered" and left the broken axiom in place** — which is exactly what happened to A5 in v0.21 (B8).
 
 ---
 
@@ -700,7 +750,10 @@ The barn stays on the farm operator; the fab stays on its cooperative; hide and 
 | **Changed** | **A5's wording** (Foundations v0.21). Three defects: it said *"price"* (nothing here has one); it never stated what counts as a cost *of the thing*, leaving §4.5's capital boundary out of the axiom it appeared to contradict; and *"true"* read as final, fighting §3.3 and A6. **A4 carried the identical defect** — *"every consequence is **priced into** it"* — and was repaired in the same pass to *accounted to whoever caused it*, which is what §3.2b, §4.4 and §4.5 already do. |
 | **Not changed** | **The ruling.** §4.5's holding-time waterfall, front-loading, the non-transfer rule, B8's closure of OP-23. **No mechanism moved.** |
 
-**Four exploits checked against the repaired axiom, all closed by existing machinery:** the **capital launderer** (reclassify a consumed input as durable) → §4.5 physical fate + IC-4, closed in v0.5; the **borrowed barn** (A builds, B uses) → §4.5 holding-time accrues to B, and there is no rent (§5.1); **scarcity re-entering cost** → *strengthened*, since the repaired A5 says cost is a record of physical inputs and outputs, giving the tenderloin ruling (B9) a cleaner ground than it had; **"A4 is being carved out"** → no, A4 requires every cost to land on **a** ledger, never on the **product's** ledger.
+**Four exploits checked against the repaired axiom, all closed by existing machinery:** the **capital launderer** (reclassify a consumed input as durable) → §4.5 physical fate + IC-4, closed in v0.5; the **borrowed barn** (A builds, B uses) → §4.5 holding-time accrues to B, and there is no rent (§5.1); **scarcity re-entering cost** → *strengthened*, since the repaired A5 says cost is a record of physical inputs and outputs, giving the tenderloin ruling (B9) a cleaner ground than it had; **"A4 is being carved out"** → no. **A4 asks for coverage and for attribution separately**, and neither half asks for the **product's** ledger. The barn's hours are covered and attributed, to its holders.
+
+<!-- struck-ok: names the withdrawn wording in order to correct it -->
+> **⚠️ That reply used to be phrased as *"A4 requires every cost to land on **a** ledger"*, and that phrasing was withdrawn on 2026-09-04.** It is true of the barn and false of the leftover, which lands on no ledger at all. **The barn ruling is unaffected** — it was always the attribution half doing the work. See the register entry below.
 
 > **⚠️ The residue, now registered rather than buried in a clause.** Two producers of the same good — one with a 20,000-hour barn, one with a 2,000-hour shed — **publish the same per-unit debit-cost.** A buyer comparing debit-costs cannot tell them apart, because that figure answers *"what did this unit consume?"* and never *"what does this producer's method cost?"* §4.5 admitted this in half a sentence; it now says it plainly.
 >
@@ -1031,4 +1084,4 @@ The version-by-version change log (former §E) now lives in a separate file, rea
 
 ---
 
-*End of v0.26.*
+*End of v0.29.*

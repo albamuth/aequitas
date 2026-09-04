@@ -1,16 +1,16 @@
 <!-- tag: fnd-aequitas-foundations-and-long-term -->
 # Aequitas — Foundations & Long-Term Strategy
 
-> **Version:** 0.38
-> **Date:** 2026-09-03
-> **Supersedes:** [`../99-archive/Aequitas_Foundations_v0.37.md`](../99-archive/Aequitas_Foundations_v0.37.md)
+> **Version:** 0.39
+> **Date:** 2026-09-04
+> **Supersedes:** [`../99-archive/Aequitas_Foundations_v0.38.md`](../99-archive/Aequitas_Foundations_v0.38.md)
 > **Status:** Working foundations.
 > **Primary audience of the first paper:** technologists and implementers.
-> **Companion:** [`Aequitas_Conformance_v0.12.md`](Aequitas_Conformance_v0.12.md) — what must be true for an implementation to *be* Aequitas.
-> **Companion:** [`Aequitas_Objections_v0.28.md`](Aequitas_Objections_v0.28.md) — the objections register.
+> **Companion:** [`Aequitas_Conformance_v0.13.md`](Aequitas_Conformance_v0.13.md) — what must be true for an implementation to *be* Aequitas.
+> **Companion:** [`Aequitas_Objections_v0.29.md`](Aequitas_Objections_v0.29.md) — the objections register.
 > **Version history is kept separately and is not published**, so this document carries only what is currently true.
 >
-> **This version withdraws a mechanism. §3.4a no longer divides a joint process's cost among its outputs.** A sweep of 36 honest methods, every one satisfying the four obligations this document used to impose, moved one fraction's figure by **6.31×** — and the layer that carried the spread was the one the rule called a measurement. **A joint process's cost is now not divided at all. Every co-product carries the whole cost of the process it came through, read against its own output mass.** The declared basis, the routing model and the sub-process boundary went with the division they fed. **§2.5 gains the move that replaces them: where a thing left no trace, refusing to divide is available and is not a convention.** The ban on cost following **yield** is withdrawn with it, because output mass is physical and a scale reads it; the ban on cost following **demand or desirability** stands, because neither can be weighed. **And the rule that makes this arithmetic sound is A3, stated for the first time as a computation: a ledger walk is a union over identified parcels, never a sum.**
+> **This version repairs an axiom. A4 now asks two things where it used to ask one.** **Coverage** — the consequence stays inside the accounting — is absolute. **Attribution** — it is assigned to whoever caused it and to nobody else — gains a stated unresolved state: **where causation is not yet resolved, the consequence is held explicitly unassigned until an attribution witness exists.** The old single clause forbade the very state §4.4 depends on, because the leftover `R = N − Y` is debit on no account, and §2.2's gloss stated a test — *a cost lands on **a** ledger* — that its own third example failed. **§2.2 now runs all three cases against both halves, and §4.4 defines an attribution witness: a record that binds a share of the leftover to a named principal.** Joining supplies one; conservation arithmetic does not. **No mechanism moved. The axiom now states what §4.4 already did.**
 
 ### How to read this document
 
@@ -142,11 +142,13 @@ These are the immutable core. Nothing in Aequitas may contradict them, and nothi
 <!-- tag: fnd-a4 -->
 ### A4 (no externalities)
 
-**Every consequence of an activity is accounted to whoever caused it, including a consequence discovered decades later.**
+**Every consequence of an activity remains inside the accounting. There is no "outside".**
 
-**There is no "outside" of the accounting.**
+**A consequence is assigned to whoever caused it and to nobody else, including a consequence discovered decades later.**
 
-*Where this is worked out: §2.2 for what A4 does not require · §3.3 for consequences found later · §4.4 for what a network cannot see.*
+**Where causation is not yet resolved, the consequence is recorded and held explicitly unassigned, until an attribution witness exists.**
+
+*Where this is worked out: §2.2 for the two things A4 asks and what it does not require · §3.3 for consequences found later · §4.4 for what a network cannot see, and for what an attribution witness is.*
 
 <!-- tag: fnd-a5 -->
 ### A5 (cost, not price)
@@ -182,7 +184,7 @@ These are the immutable core. Nothing in Aequitas may contradict them, and nothi
 
 **No organisation may acquire authority over the core rules. Governance is a property of the rules themselves, not of any institution.**
 
-**The axioms above may not vary, and neither may the conformance requirements** — [`Aequitas_Conformance_v0.12.md`](Aequitas_Conformance_v0.12.md).
+**The axioms above may not vary, and neither may the conformance requirements** — [`Aequitas_Conformance_v0.13.md`](Aequitas_Conformance_v0.13.md).
 
 **Everything below them may differ from one trust network to the next. A network must publish what it runs, so that anybody else can re-compute its claims.**
 
@@ -305,7 +307,26 @@ A baker sells a loaf. Three things were recorded while it was made.
 
 > **A debit is never final.** Better measurement re-weighs it, and re-weighs every record made under the old figure, automatically (A6, §3.3). **A cost is a dated reading, not a verdict.**
 
-> **And A4 does not require a cost to land on the made thing.** **A4 requires every cost to land on *a* ledger. It says nothing about whose.** §3.2b keeps pollution permanently on its causer rather than on the goods. §4.4 holds an unattributed leftover on nobody at all. §4.5 refuses to let a cost run backwards into the history of its inputs. **All three satisfy A4.**
+> **And A4 does not require a cost to land on the made thing.**
+
+**A4 asks two separate things, and running them together misreads every case below.**
+
+| | What it requires |
+|---|---|
+| **Coverage** | The consequence stays inside the accounting. It is computed and recorded. **Absolute, with no exception** |
+| **Attribution** | It is assigned to whoever caused it and to nobody else. **Where the causer is not yet resolved, it is held explicitly unassigned** |
+
+**Three cases, run against both.**
+
+| The case | Coverage | Attribution |
+|---|---|---|
+| **§3.2b** — pollution stays with its causer, never with the goods | Inside | **The causer's ledger** |
+| **§4.5** — a barn's hours stay with its holders, never with the beef | Inside | **The holders' ledgers** |
+| **§4.4** — the leftover `R` is debit on no account | Inside. It is computed and published whole | **Not yet resolved, so held explicitly unassigned** |
+
+**In plain words: the first two are attributed and the third is not yet, and A4's third line names the third case rather than excusing it.** All three conform. **Nothing in A4 requires the ledger to be the product's.**
+
+> *(The third row used to be reported as satisfying a single test — that a cost lands on **a** ledger — which the leftover does not do, because it lands on none. Found by @cairn-lineage, c39568, 2026-09-04, and conceded in public. **The mechanism did not move; the axiom's wording did.**)*
 
 #### Why a pollutant's weight is the work of cleaning it up
 
@@ -538,7 +559,7 @@ Trust networks operate in the real world and must deal with governments, courts,
 
 **And it guards against a specific failure.** A theory of cost quietly becomes a theory of software, governance and compliance, because those questions arrive while nobody is drawing the line.
 
-> **The dial test is the standing screening question for anything proposed for these documents. What it leaves behind is a set of conformance requirements, never an architecture** — [`Aequitas_Conformance_v0.12.md`](Aequitas_Conformance_v0.12.md). **What must be true, never how to build it.**
+> **The dial test is the standing screening question for anything proposed for these documents. What it leaves behind is a set of conformance requirements, never an architecture** — [`Aequitas_Conformance_v0.13.md`](Aequitas_Conformance_v0.13.md). **What must be true, never how to build it.**
 
 ---
 
@@ -1543,7 +1564,23 @@ Published figures: `N` = 88,000 t, `Y` = 82,000 t, so `R` = **6,000 t**.
 >
 > *(Supplied by @cairn-lineage, c30285, 2026-08-30, reached from a partition argument with no access to this document. **It is a better ground than the one this section used to give.** The ethical argument below — that spreading the leftover would be collective punishment — is one a critic can decline. **The instrument argument is one anybody can check.** Both are kept, and this one is stated first.)*
 
-**This respects A4 rather than dodging it.** A4 requires every cost to be accounted to whoever caused it. **Here the cost is pending rather than written off**, held as a computable claim waiting for a claimant. Assigning it to subscribers who did not cause it would contradict §3.2 and would be collective punishment.
+#### This is A4's third line, not an exception to it
+
+> **An attribution witness is a record that binds a share of the leftover to a named principal.**
+
+**A4 assigns a consequence to whoever caused it and to nobody else, and states that where causation is unresolved the consequence is held explicitly unassigned until an attribution witness exists.** The leftover is that case, by name.
+
+**What is and is not a witness:**
+
+| | Is it a witness? |
+|---|---|
+| **A producer joins**, and their share is traced back from records that already exist | **Yes.** It names a principal |
+| **Conservation arithmetic**, `R = N − Y` | **No.** It establishes that activity is missing and never says whose |
+| **A heuristic** spreading `R` across the producers a network happens to know about | **No.** Two worlds differing by a factor of 1.21 hand one network identical books |
+
+**In plain words: the leftover is covered and unattributed, which is a state A4 states rather than a gap A4 tolerates.** Assigning it to subscribers who did not cause it would contradict §3.2 and would be collective punishment.
+
+> **⚠️ What the wording does not do.** It obliges nobody to go looking for the witness. **A network that resolved nothing would satisfy A4 forever by holding everything unassigned.** The pressure to resolve sits outside the axiom and always did: **joining is the only way a dark producer can transact at all** (below), and §3.3a names the two parties with a private interest in the audit of extent — the instrumented producer, harmed when undocumented produce prices too cheaply, and the dark producer themselves. **A4 states what conformance is. It was never the thing creating the incentive.**
 
 **Nothing extra has to be built for the trace back.** Both records already exist for other reasons: the ambient-stock measurement of regional pollution (§3.3), and the independently known total above.
 
@@ -2291,8 +2328,8 @@ A3 therefore does three separate defensive jobs: it forbids accumulation (§5.1)
 
 | What it is | Where |
 |---|---|
-| **The conformance requirements** — what must be true for an implementation to *be* Aequitas, written for implementers | [`Aequitas_Conformance_v0.12.md`](Aequitas_Conformance_v0.12.md) |
-| **The objections register** — every open problem and every answered objection, with its status | [`Aequitas_Objections_v0.28.md`](Aequitas_Objections_v0.28.md) |
+| **The conformance requirements** — what must be true for an implementation to *be* Aequitas, written for implementers | [`Aequitas_Conformance_v0.13.md`](Aequitas_Conformance_v0.13.md) |
+| **The objections register** — every open problem and every answered objection, with its status | [`Aequitas_Objections_v0.29.md`](Aequitas_Objections_v0.29.md) |
 | **The plain-language companion**, assuming no economics background | [`Aequitas_Overview_v0.25.md`](Aequitas_Overview_v0.25.md) |
 | **How adoption plausibly starts** — a reading of the historical record, not a statement of the system | [`Aequitas_Strategy_v0.8.md`](Aequitas_Strategy_v0.8.md) §5 |
 | **The simulation programme** — what is being tested and in what order | [`Aequitas_Simulation_Roadmap_v0.2.md`](Aequitas_Simulation_Roadmap_v0.2.md) |
@@ -2316,4 +2353,4 @@ A3 therefore does three separate defensive jobs: it forbids accumulation (§5.1)
 
 ---
 
-*End of v0.38.*
+*End of v0.39.*

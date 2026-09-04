@@ -51,7 +51,7 @@ The fixed core. Do not re-litigate (see `CLAUDE.md`).
 | <a id="a1"></a>**A1** | materialism of cost | Cost **is** material/energy flow. | Foundations §1 |
 | <a id="a2"></a>**A2** | time as measure | Time is a yardstick, not the substance; labour never rate-scaled *(amended v0.3)*. | Foundations §1 |
 | <a id="a3"></a>**A3** | non-fungibility | Credit is non-transferable; no medium of exchange. | Foundations §1 |
-| <a id="a4"></a>**A4** | no externalities | Every cost is accounted to whoever caused it; nothing escapes. **On *a* ledger — never necessarily the product's.** *(Eroded by OP-24 — see note.)* | Foundations §1 |
+| <a id="a4"></a>**A4** | no externalities | Two things, stated separately. **Coverage:** every consequence stays inside the accounting; nothing escapes. **Attribution:** it is assigned to whoever caused it and to nobody else — **never necessarily the product's ledger** — and where causation is unresolved it is held **explicitly unassigned** until an attribution witness exists. *(Eroded by OP-24 — see note.)* | Foundations §1 |
 | <a id="a5"></a>**A5** | **cost, not price** | A thing's cost is what was **consumed** to make it. Nothing is added (no margin, no profit in exchange) and nothing enters that the thing did not consume — so a durable asset is **never amortised into what it made** (§4.5). The figure is a dated estimate, not a verdict. *(Renamed in Foundations v0.21; it read "price ≡ cost", which contradicted §4.5. See Objections B8.)* | Foundations §1 |
 | <a id="a6"></a>**A6** | derived, not stored | The ledger is computed from the event log on demand. | Foundations §1 |
 | <a id="a7"></a>**A7** | universal accounting | Work is recorded universally; credit *realized* voluntarily *(amended v0.2)*. | Foundations §1 |
@@ -79,7 +79,7 @@ The fixed core. Do not re-litigate (see `CLAUDE.md`).
 ---
 
 ## <a id="integrity-constraints"></a>Integrity Constraints (IC-1–IC-12) — Conformance
-**Arithmetic the ledger must never violate.** IC-1…IC-9 check the record itself and are pure arithmetic. IC-10…IC-12 check a figure computed from it against a weighting model. **The `Source` column gives the conformance row each one is now stated in** (`Aequitas_Conformance_v0.12.md` §2).
+**Arithmetic the ledger must never violate.** IC-1…IC-9 check the record itself and are pure arithmetic. IC-10…IC-12 check a figure computed from it against a weighting model. **The `Source` column gives the conformance row each one is now stated in** (`Aequitas_Conformance_v0.13.md` §2).
 
 | Acronym | Title (1–3 words) | Constraint | Source |
 |---|---|---|---|

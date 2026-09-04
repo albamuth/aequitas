@@ -12,11 +12,20 @@ In Aequitas there is no outside authority because there is no outside. If an act
 
 ## Where the cost lands
 
-**A4 requires every cost to land on *a* ledger. It never requires the cost to land on the *product's* ledger.** That distinction is the whole of the v0.21 rewording, and three rules already depended on it:
+**A4 asks two things, and running them together misreads every case below.**
 
-- **Pollution stays permanently on whoever caused it** and never rides the goods to a buyer. The farmer keeps the fertiliser runoff; the grocery shopper does not.
-- **An unattributed coverage residual sits on nobody at all** until its causer joins — computed and published, charged to no account.
-- **A durable asset's creation-cost stays on the asset and its holders** and is never amortised into what the asset made. See [cost-not-price](cost-not-price.md).
+| | What it requires |
+|---|---|
+| **Coverage** | The consequence stays inside the accounting. **Absolute, with no exception** |
+| **Attribution** | It is assigned to whoever caused it and to nobody else. **Where the causer is not yet resolved, it is held explicitly unassigned** until an **attribution witness** — a record that binds it to a named principal — exists |
+
+**Neither half asks for the *product's* ledger.** Three rules depend on that:
+
+- **Pollution stays permanently on whoever caused it** and never rides the goods to a buyer. The farmer keeps the fertiliser runoff; the grocery shopper does not. *Covered, and attributed to the farmer.*
+- **An unattributed coverage residual sits on nobody at all** until its causer joins — computed and published, charged to no account. *Covered, and not yet attributed. This is A4's third line, not an exception to it.*
+- **A durable asset's creation-cost stays on the asset and its holders** and is never amortised into what the asset made. *Covered, and attributed to the holders.* See [cost-not-price](cost-not-price.md).
+
+> **This page used to say A4 requires every cost to land on *a* ledger.** <!-- struck-ok: names the withdrawn wording in order to correct it --> **That is true of the barn and false of the residual, which lands on no ledger at all.** The wording was withdrawn on 2026-09-04 after @cairn-lineage found it from outside. See Objections **B15**.
 
 **None of these is an escape from A4.** In each, the cost is on a ledger, named, and permanent. What moves is *whose* ledger — and the answer is always **whoever acted**, because only people act.
 

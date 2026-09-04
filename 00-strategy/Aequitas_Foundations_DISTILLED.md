@@ -1,16 +1,16 @@
-<!-- generated-from: Aequitas_Foundations_v0.38.md -->
+<!-- generated-from: Aequitas_Foundations_v0.39.md -->
 # Aequitas — Foundations, distilled
 
 > ## ⚠️ THIS FILE IS GENERATED. DO NOT EDIT IT.
 >
-> **Every edit belongs in [`Aequitas_Foundations_v0.38.md`](Aequitas_Foundations_v0.38.md), which is the document this was made from.**
+> **Every edit belongs in [`Aequitas_Foundations_v0.39.md`](Aequitas_Foundations_v0.39.md), which is the document this was made from.**
 > An edit made here is lost the next time anyone runs the generator, and while it survives it is a
 > second version of a rule — which is the failure this file exists to avoid.
 >
 > **Regenerate with:** `python bin/distill.py`
 
-> **Source:** [`Aequitas_Foundations_v0.38.md`](Aequitas_Foundations_v0.38.md) · **version 0.38**
-> **Size:** 110,811 bytes, from 221,227 — **50% of the source**
+> **Source:** [`Aequitas_Foundations_v0.39.md`](Aequitas_Foundations_v0.39.md) · **version 0.39**
+> **Size:** 112,733 bytes, from 223,750 — **50% of the source**
 
 **What was kept:** every heading, every rule, every table, and the stated result of every worked
 example. **What was dropped:** the explanation prose between them.
@@ -141,7 +141,17 @@ example. **What was dropped:** the explanation prose between them.
 **Nothing was added to any of those three figures, and no total was struck.** The buyer took a loaf carrying 0.8 kg and a small share of 0.2 hours. The 0.3 kg of CO₂ stayed where it was.
 #### Two things a debit is not
 > **A debit is never final.** Better measurement re-weighs it, and re-weighs every record made under the old figure, automatically (A6, §3.3). **A cost is a dated reading, not a verdict.**
-> **And A4 does not require a cost to land on the made thing.** **A4 requires every cost to land on *a* ledger. It says nothing about whose.** §3.2b keeps pollution permanently on its causer rather than on the goods. §4.4 holds an unattributed leftover on nobody at all. §4.5 refuses to let a cost run backwards into the history of its inputs. **All three satisfy A4.**
+> **And A4 does not require a cost to land on the made thing.**
+| | What it requires |
+|---|---|
+| **Coverage** | The consequence stays inside the accounting. It is computed and recorded. **Absolute, with no exception** |
+| **Attribution** | It is assigned to whoever caused it and to nobody else. **Where the causer is not yet resolved, it is held explicitly unassigned** |
+| The case | Coverage | Attribution |
+|---|---|---|
+| **§3.2b** — pollution stays with its causer, never with the goods | Inside | **The causer's ledger** |
+| **§4.5** — a barn's hours stay with its holders, never with the beef | Inside | **The holders' ledgers** |
+| **§4.4** — the leftover `R` is debit on no account | Inside. It is computed and published whole | **Not yet resolved, so held explicitly unassigned** |
+> *(The third row used to be reported as satisfying a single test — that a cost lands on **a** ledger — which the leftover does not do, because it lands on none. Found by @cairn-lineage, c39568, 2026-09-04, and conceded in public. **The mechanism did not move; the axiom's wording did.**)*
 #### Why a pollutant's weight is the work of cleaning it up
 > **A pollutant's debit reads as the work of putting the world back: removing the substance, and repairing what it damaged while it sat there.**
 | The candidate | What it is | Why it is not used |
@@ -242,7 +252,7 @@ example. **What was dropped:** the explanation prose between them.
 | Whether the ecosystem converges to one network | A prediction, not a design input (§4.8) |
 | **How a cost constant gets audited** — who replicates, what triggers a review, how a contested constant is handled while it is contested | The implementer (§3.3a). **That it must be answered is not out of scope**; the five properties in §3.3a are conformance items 16a–16c |
 | **How finely a process chain is resolved** — which steps a facility reads separately | The industry (§3.4a). **The rule is fixed here and needs no method**; resolution only ever moves a figure downward, so nothing has to be policed |
-> **The dial test is the standing screening question for anything proposed for these documents. What it leaves behind is a set of conformance requirements, never an architecture** — [`Aequitas_Conformance_v0.12.md`](Aequitas_Conformance_v0.12.md). **What must be true, never how to build it.**
+> **The dial test is the standing screening question for anything proposed for these documents. What it leaves behind is a set of conformance requirements, never an architecture** — [`Aequitas_Conformance_v0.13.md`](Aequitas_Conformance_v0.13.md). **What must be true, never how to build it.**
 ## 3. The Ledger Model
 ### 3.0 What a ledger is
 > **A person's ledger is two numbers, side by side.**
@@ -669,6 +679,14 @@ example. **What was dropped:** the explanation prose between them.
 > **Conservation arithmetic establishes that `N` exceeds `Y`. It cannot say which producer the difference belongs to.** Any rule that spreads the difference across the producers a network happens to know about is an allocation heuristic, and **a heuristic is not a witness.** Joining is the witness: it supplies the records that bind a share to a principal.
 >
 > *(Supplied by @cairn-lineage, c30285, 2026-08-30, reached from a partition argument with no access to this document. **It is a better ground than the one this section used to give.** The ethical argument below — that spreading the leftover would be collective punishment — is one a critic can decline. **The instrument argument is one anybody can check.** Both are kept, and this one is stated first.)*
+#### This is A4's third line, not an exception to it
+> **An attribution witness is a record that binds a share of the leftover to a named principal.**
+| | Is it a witness? |
+|---|---|
+| **A producer joins**, and their share is traced back from records that already exist | **Yes.** It names a principal |
+| **Conservation arithmetic**, `R = N − Y` | **No.** It establishes that activity is missing and never says whose |
+| **A heuristic** spreading `R` across the producers a network happens to know about | **No.** Two worlds differing by a factor of 1.21 hand one network identical books |
+> **⚠️ What the wording does not do.** It obliges nobody to go looking for the witness. **A network that resolved nothing would satisfy A4 forever by holding everything unassigned.** The pressure to resolve sits outside the axiom and always did: **joining is the only way a dark producer can transact at all** (below), and §3.3a names the two parties with a private interest in the audit of extent — the instrumented producer, harmed when undocumented produce prices too cheaply, and the dark producer themselves. **A4 states what conformance is. It was never the thing creating the incentive.**
 > **⚠️ The coverage figure is `Y ÷ N`, so it carries the subtraction problem in its own form.** A blind `Y` understates coverage, so the books are better than they say. **A blind `N` overstates it, so the books are worse than they say — and that is the direction which flatters the network.** **The same three labels apply, and `not identified` is the default.** A network publishing a bare percentage with no direction on it is publishing a number nobody can use.
 #### When a person joins, their position is reconstructed back to their birth
 > **The reconstruction runs on both sides. The debit and the credit are both rebuilt.**
@@ -899,8 +917,8 @@ example. **What was dropped:** the explanation prose between them.
 ### The companion documents
 | What it is | Where |
 |---|---|
-| **The conformance requirements** — what must be true for an implementation to *be* Aequitas, written for implementers | [`Aequitas_Conformance_v0.12.md`](Aequitas_Conformance_v0.12.md) |
-| **The objections register** — every open problem and every answered objection, with its status | [`Aequitas_Objections_v0.28.md`](Aequitas_Objections_v0.28.md) |
+| **The conformance requirements** — what must be true for an implementation to *be* Aequitas, written for implementers | [`Aequitas_Conformance_v0.13.md`](Aequitas_Conformance_v0.13.md) |
+| **The objections register** — every open problem and every answered objection, with its status | [`Aequitas_Objections_v0.29.md`](Aequitas_Objections_v0.29.md) |
 | **The plain-language companion**, assuming no economics background | [`Aequitas_Overview_v0.25.md`](Aequitas_Overview_v0.25.md) |
 | **How adoption plausibly starts** — a reading of the historical record, not a statement of the system | [`Aequitas_Strategy_v0.8.md`](Aequitas_Strategy_v0.8.md) §5 |
 | **The simulation programme** — what is being tested and in what order | [`Aequitas_Simulation_Roadmap_v0.2.md`](Aequitas_Simulation_Roadmap_v0.2.md) |
