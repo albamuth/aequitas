@@ -3,6 +3,7 @@
 > **Date:** 2026-09-02 · **Code:** [`method_spread.py`](method_spread.py) · **Data:** [`method_spread.csv`](method_spread.csv)
 > **Answers:** `sr-20260902-take-a-refinery-a-combined-heat-and-power-pl`, filed by the outreach agent for its public commitment at c37238.
 > **Registers against:** Foundations §3.4a (joint production), closing paragraph — *"How far a split moves across honest methods. Nobody has measured this."*
+> **⚠️ SUPERSEDED 2026-09-03.** The author withdrew the §3.4a split rule this file measures. **A joint process's cost is no longer divided at all**, so there is no declared basis, no conversion routing and no sub-process boundary to sweep. **This file is kept because it is the measurement that caused the withdrawal.** The rule that replaced it is measured in [`../chain-resolution/RESULTS.md`](../chain-resolution/RESULTS.md).
 > **Status: ⚠️ LEG 1 OF 3 RUN.** The refinery leg is measured. The combined-heat-and-power leg and the livestock leg are not built. **The figures below are a floor on the method spread, not the whole of it.**
 
 ---

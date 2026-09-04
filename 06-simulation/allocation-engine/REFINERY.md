@@ -69,4 +69,4 @@ This is the refinery being *harder* than the cattle case: part measurement, part
 
 - **Close the routing gap:** retrieve Argonne 2011 (69026) / Han et al. ES&T for a *published* per-product process-energy allocation, replacing the modelled conversion routing. Then every energy number is sourced.
 - **Materials/labour/prices** from EIA/BLS for a full real vector.
-- **This is the academic paper's Sraffa/ISO reply in concrete form** (`Aequitas_Conformance_v0.11.md`): process-physics allocation gives a different, universality-satisfying answer where price allocation is arbitrary — now on real DOE energy data.
+- **This is the academic paper's Sraffa/ISO reply in concrete form** (`Aequitas_Conformance_v0.12.md`): process-physics allocation gives a different, universality-satisfying answer where price allocation is arbitrary — now on real DOE energy data.

@@ -1,5 +1,24 @@
 # OP-17 — Co-Product Allocation
 
+<!-- struck-ok: this box quotes the withdrawn rule in order to withdraw it -->
+> ## 🔴 2026-09-03 — THE MECHANISM THIS PAPER ARGUES FOR IS WITHDRAWN ENTIRELY.
+>
+> **The paper is kept as the record of how OP-17 was worked, and OP-17 is still closed. It is closed by a different rule.**
+>
+> **What happened.** `06-simulation/method-spread/` swept **36 methods that all satisfied Foundations §3.4a's four obligations**, on real DOE refinery energies. **They came out 6.31× apart on LPG.** The lever was the modelled conversion routing, not the declared convention — **the layer the rule called a measurement.**
+>
+> **The ruling.**
+>
+> > **A joint process's cost is not divided. Every co-product carries the whole cost of the process it came through, read against its own output mass.**
+>
+> **So the whole apparatus below — the split, the four obligations, the instrument-per-process table, and the labour convention OP-18(α) — is withdrawn.** What replaces it needs only **which steps a product passed through**, a binary fact off a flow sheet.
+>
+> **The books do not inflate, and A3 is why:** a debit is a unique record of one specific event, so **a ledger walk is a union over identified parcels, never a sum** (conformance 10e).
+>
+> **Current statement: Foundations §3.4a and §2.5. Measured: `06-simulation/chain-resolution/RESULTS.md`.**
+>
+> **Everything below this box describes the superseded mechanism.** It is a record of what was folded when, not a statement of the system.
+
 <!-- struck-ok: this box quotes both withdrawn wordings in order to withdraw them -->
 > ## ⚠️ TWO CLAIMS IN THIS PAPER WERE LATER WITHDRAWN. READ THIS FIRST.
 >
@@ -12,7 +31,7 @@
 >
 > **The mechanism the paper establishes did not change.** What changed is the strength of the claim made for it.
 
-> **⚠️ The event-log paper was retired on 2026-08-28.** References to `EventLog §…` below are historical and no longer resolve. **The arithmetic constraints IC-1 to IC-12 are now conformance rows in [`Aequitas_Conformance_v0.11.md`](../Aequitas_Conformance_v0.11.md) §2**, which carries a label map; everything else it held is in Foundations. The archived paper is `99-archive/Aequitas_EventLog_v0.10.md`.
+> **⚠️ The event-log paper was retired on 2026-08-28.** References to `EventLog §…` below are historical and no longer resolve. **The arithmetic constraints IC-1 to IC-12 are now conformance rows in [`Aequitas_Conformance_v0.12.md`](../Aequitas_Conformance_v0.12.md) §2**, which carries a label map; everything else it held is in Foundations. The archived paper is `99-archive/Aequitas_EventLog_v0.10.md`.
 
 
 **Status:** ✅ **Resolved for the material/energy half. Two new problems spun out (OP-23, OP-24).**

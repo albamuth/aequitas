@@ -1,16 +1,16 @@
 <!-- tag: fnd-aequitas-foundations-and-long-term -->
 # Aequitas — Foundations & Long-Term Strategy
 
-> **Version:** 0.37
-> **Date:** 2026-09-02
-> **Supersedes:** [`../99-archive/Aequitas_Foundations_v0.36.md`](../99-archive/Aequitas_Foundations_v0.36.md)
+> **Version:** 0.38
+> **Date:** 2026-09-03
+> **Supersedes:** [`../99-archive/Aequitas_Foundations_v0.37.md`](../99-archive/Aequitas_Foundations_v0.37.md)
 > **Status:** Working foundations.
 > **Primary audience of the first paper:** technologists and implementers.
-> **Companion:** [`Aequitas_Conformance_v0.11.md`](Aequitas_Conformance_v0.11.md) — what must be true for an implementation to *be* Aequitas.
-> **Companion:** [`Aequitas_Objections_v0.27.md`](Aequitas_Objections_v0.27.md) — the objections register.
+> **Companion:** [`Aequitas_Conformance_v0.12.md`](Aequitas_Conformance_v0.12.md) — what must be true for an implementation to *be* Aequitas.
+> **Companion:** [`Aequitas_Objections_v0.28.md`](Aequitas_Objections_v0.28.md) — the objections register.
 > **Version history is kept separately and is not published**, so this document carries only what is currently true.
 >
-> **This version withdraws a mechanism. §4.4 no longer divides the leftover by a count of producers.** A simulation put two worlds with different truths in front of one network and gave it identical books, so no rule computed from those books could separate them. **The leftover `R = N − Y` is now computed, published whole, and divided by nothing**, and the per-producer estimate A7 requires comes from §4.1's production model, as it always could. **The rule telling a network to under-count the producers it cannot see went with the division it fed.**
+> **This version withdraws a mechanism. §3.4a no longer divides a joint process's cost among its outputs.** A sweep of 36 honest methods, every one satisfying the four obligations this document used to impose, moved one fraction's figure by **6.31×** — and the layer that carried the spread was the one the rule called a measurement. **A joint process's cost is now not divided at all. Every co-product carries the whole cost of the process it came through, read against its own output mass.** The declared basis, the routing model and the sub-process boundary went with the division they fed. **§2.5 gains the move that replaces them: where a thing left no trace, refusing to divide is available and is not a convention.** The ban on cost following **yield** is withdrawn with it, because output mass is physical and a scale reads it; the ban on cost following **demand or desirability** stands, because neither can be weighed. **And the rule that makes this arithmetic sound is A3, stated for the first time as a computation: a ledger walk is a union over identified parcels, never a sum.**
 
 ### How to read this document
 
@@ -182,7 +182,7 @@ These are the immutable core. Nothing in Aequitas may contradict them, and nothi
 
 **No organisation may acquire authority over the core rules. Governance is a property of the rules themselves, not of any institution.**
 
-**The axioms above may not vary, and neither may the conformance requirements** — [`Aequitas_Conformance_v0.11.md`](Aequitas_Conformance_v0.11.md).
+**The axioms above may not vary, and neither may the conformance requirements** — [`Aequitas_Conformance_v0.12.md`](Aequitas_Conformance_v0.12.md).
 
 **Everything below them may differ from one trust network to the next. A network must publish what it runs, so that anybody else can re-compute its claims.**
 
@@ -243,7 +243,7 @@ These are the immutable core. Nothing in Aequitas may contradict them, and nothi
 |---|---|
 | **Universality** | One mechanism only — material flow accounting. No exceptions for professions, nations, or classes. Units (mass, energy, seconds) are measurable identically anywhere in the universe. Coverage extends to non-participants by statistical estimation **on both sides of the ledger** (A7 (universal accounting)). Where a genuine convention is required, §2.5 names it rather than concealing it. |
 | **Decentralization** | No issuer, no central bank, no authoritative institution. Anyone may verify any claim from the event log. The verification ladder (§4.3) begins with peer attestation, which requires no infrastructure and therefore no permission. Governance is core-immutable with competing open variance. **Cost constants are the weakest point of this criterion, and §3.3a says so rather than claiming otherwise** — the auditing practice is a network's own design, held to five published properties (conformance 16a–16c), and no network has yet demonstrated a working one. |
-| **Fecundity** | The verification ladder *pulls* technological development (§4.3). Retroactive re-weighting (§3.3) creates permanent demand for better science. Regulators invert into services businesses want (§5.3). Onboarding is individually rational (§4.8). Pledges give surplus a purpose (§4.6). **Every co-product allocation is an open scientific question that better instruments improve (§3.4a).** |
+| **Fecundity** | The verification ladder *pulls* technological development (§4.3). Retroactive re-weighting (§3.3) creates permanent demand for better science. Regulators invert into services businesses want (§5.3). Onboarding is individually rational (§4.8). Pledges give surplus a purpose (§4.6). **Reading a process chain more finely lowers a co-product's figure, so better instruments pay the producer who buys them (§3.4a).** |
 
 **Fourth screening question — "does this need a Paul Glover?"**
 Ithaca HOURS died when its founder relocated; he himself said every local currency needs a full-time networker to promote, facilitate, and troubleshoot. A mechanism that depends on an enthusiast is a mechanism with an expiry date. **Every proposed mechanism must pay its own maintainer from inside the system** — as auditing-as-credited-work does. **Cost-constant auditing is the case that does *not* clearly pass this test**, which is why §3.3a states it as an unsolved network-design problem rather than a mechanism. Apply alongside universality, decentralization, and *who games this?*
@@ -444,41 +444,41 @@ A shop holds a bicycle. Its record carries **18 kg** of steel and aluminium, **4
 >
 > **Where it did — measure it.** Feed energy, the heat needed to crack crude oil, and a turbine's trade-off between heat and power are facts about a process.
 >
-> **Where it did not — declare a convention and say so.** Labour hours and shared overhead leave no trace pointing at any one output, and no instrument will ever find one.
+> **Where it did not — declare a convention and say so.** A convention is a choice the system makes and names. Holding time and hours worked are used this way.
+>
+> **Or refuse to divide.** Where nothing was divided in the world, the system need not divide it in the books either. **This is not a third kind of convention, because nothing is chosen.**
 
 **A convention that is declared is not an ad-hoc rule. A convention disguised as a measurement is.** That is the whole reason this section exists: **every choice the system makes is named here rather than buried in an implementation.**
+
+**The third move is the strongest of the three and should be tried first.** §3.4a is the case: a joint process's energy was not spent partly on one output and partly on another, **it was spent entirely on both**, so there is no fraction to find and no convention needed to stand in for one. **A convention is what you declare when a division is genuinely required. It is not what you declare to avoid noticing that one is not.**
 
 #### The three conventions this system declares
 
 | The quantity | What it is | The rule |
 |---|---|---|
 | **A team's credit, split across its members** | **Not a convention at all.** It dissolves | Credit is time worked (§2.3), so **each member is credited their own hours.** Nobody ever needs a figure saying the welder caused 40% of the bridge, because credit was never a share of the output |
-| **One process's labour, split across its several outputs** | **A convention, on a measurable basis** | **The labour divides in the same proportions as the process's measured material split** (§3.4a). It introduces no new basis and nothing new to game |
+| **One process's cost, split across its several outputs** | **Not a convention either. It is refused** | **Nothing is split.** Every co-product carries the whole process cost against its own output mass (§3.4a). The energy was not spent partly on one output — it was spent entirely on both |
+| **An organisation's debit, across its members** | **A convention, on a measurable basis** | **Hours worked**, which are already recorded for credit and already capped at 24 a day by IC-7, so the basis adds no new lever (§3.2c) |
 | **A durable asset's creation-cost, split across its holders** | **A convention, on a measurable basis** | **Holding time is a physical trace, so the split is measured rather than invented:** your share is your holding time divided by the total holding time over the asset's whole life (§4.5) |
 
 ##### An example, with the numbers
 
-A farmer spends **8 hours** on one steer. The animal yields beef, hide, tallow and bone. **The 8 hours left no trace saying which output they went to** — the farmer did not spend two hours "on the hide."
+A farmer spends **8 hours** on one steer. The animal yields **250 kg of beef and 40 kg of hide**, among other things. **The 8 hours left no trace saying which output they went to** — the farmer did not spend two hours "on the hide."
 
-**So the hours ride the material split, which was measured.**
+**And they did not need to.** The 8 hours were spent on the whole animal, so every output carries all 8 against its own mass.
 
-| Output | Measured share of the feed | Hours it carries |
-|---|---|---|
-| Beef | 78% | 6.24 h |
-| Tallow | 9% | 0.72 h |
-| Hide | 7% | 0.56 h |
-| Bone | 6% | 0.48 h |
-| **Total** | **100%** | **8.00 h** |
+| Output | Mass | Hours it carries per kg |
+|---|--:|--:|
+| Beef | 250 kg | 8 ÷ 250 = **0.032 h/kg** |
+| Hide | 40 kg | 8 ÷ 40 = **0.200 h/kg** |
 
-> **The farmer is credited 8 hours whatever the split says.** The convention decides only **what each output's debit-cost reads**, never anybody's credit.
+> **The farmer is credited 8 hours either way.** This decides only **what each output's debit-cost reads**, never anybody's credit.
 
-#### Two quantities that look like they belong here and do not
+**Read this beside §3.4a**, which says why reading the chain more finely lowers the hide's figure and leaves the beef's alone.
 
-**Splitting one process's debit across its several outputs is not a free convention, and not a pure measurement either.** The process really did divide the inputs, and that division is measurable. **But reading it means choosing an instrument, a period, and a boundary, and two honest choices can give different figures.**
+#### One quantity that looks like it belongs here and does not
 
-> **It is a choice that measurement constrains.** What this document fixes is the obligations on the choice: measure at the facility, for the period described, per dimension before collapsing, publish the method, and never let demand or yield enter. **The method itself belongs to the industry** (§2.6). Worked in full in §3.4a.
-
-**And splitting shared overhead across outputs has nothing to split.** Under §4.5 **all capital and overhead accrues to the asset**, never to the outputs. The barn stays with the farm's operators; the hide and the beef carry only what they themselves consumed. See [`OP-17_coproduct_allocation.md`](open-problems/OP-17_coproduct_allocation.md) and [`OP-23_capital_and_pollution.md`](open-problems/OP-23_capital_and_pollution.md).
+**Splitting shared overhead across outputs has nothing to split.** Under §4.5 **all capital and overhead accrues to the asset**, never to the outputs. The barn stays with the farm's operators; the hide and the beef carry only what they themselves consumed. See [`OP-17_coproduct_allocation.md`](open-problems/OP-17_coproduct_allocation.md) and [`OP-23_capital_and_pollution.md`](open-problems/OP-23_capital_and_pollution.md).
 
 > **The project's hard problem is division, and specifically division of what left no trace.** See the objections register, §0.
 
@@ -532,13 +532,13 @@ Trust networks operate in the real world and must deal with governments, courts,
 | Which cryptography, which database, which protocol | The implementer |
 | Whether the ecosystem converges to one network | A prediction, not a design input (§4.8) |
 | **How a cost constant gets audited** — who replicates, what triggers a review, how a contested constant is handled while it is contested | The implementer (§3.3a). **That it must be answered is not out of scope**; the five properties in §3.3a are conformance items 16a–16c |
-| **Which instrument reads a joint process's split**, and over what period | The industry (§3.4a). Same shape: the obligations are fixed here, the method is not |
+| **How finely a process chain is resolved** — which steps a facility reads separately | The industry (§3.4a). **The rule is fixed here and needs no method**; resolution only ever moves a figure downward, so nothing has to be policed |
 
 **This is not a way of avoiding hard questions.** Every item above is real and somebody must answer it. **It is a statement about which document answers it.**
 
 **And it guards against a specific failure.** A theory of cost quietly becomes a theory of software, governance and compliance, because those questions arrive while nobody is drawing the line.
 
-> **The dial test is the standing screening question for anything proposed for these documents. What it leaves behind is a set of conformance requirements, never an architecture** — [`Aequitas_Conformance_v0.11.md`](Aequitas_Conformance_v0.11.md). **What must be true, never how to build it.**
+> **The dial test is the standing screening question for anything proposed for these documents. What it leaves behind is a set of conformance requirements, never an architecture** — [`Aequitas_Conformance_v0.12.md`](Aequitas_Conformance_v0.12.md). **What must be true, never how to build it.**
 
 ---
 
@@ -825,7 +825,7 @@ So a coverage figure is a dated reading with a stated basis, exactly like every 
 
 #### Whose problem it is
 
-**A network cannot operate without answering this**, and no two networks will answer it the same way. That is the §2.6 test: **state what must be true, never how to build it.** The same ruling was made for split methods (§3.4a) and for privacy practice (§4.7).
+**A network cannot operate without answering this**, and no two networks will answer it the same way. That is the §2.6 test: **state what must be true, never how to build it.** The same ruling was made for privacy practice (§4.7).
 
 > **Auditing cost constants is one of the problems a trust network exists to solve.** How it does so — who replicates, how replication is commissioned, what triggers a review, how a contested constant is handled while it is contested — is the network's design, published and checkable like everything else it does.
 
@@ -860,9 +860,11 @@ So a coverage figure is a dated reading with a stated basis, exactly like every 
 
 **Resolution.** Record what is known; estimate the rest from averages; refine forever. If someone commutes daily, estimate from cohort averages; learn which car they drive and it sharpens. All of it revisable.
 
-**⚠️ Allocation is only partly a resolution problem.** Dividing **physical inputs** is largely a resolution problem: the process did divide them, and better instruments read that division more finely (§3.4a). *Largely, not entirely* — better instruments narrow the range but do not pick the instrument, the period, or the sub-process boundary, and those choices are the industry's to make (§3.4a). What is **not** resolvable at all is dividing quantities the process **never physically divided**: labour hours across co-products, shared overhead, and joint responsibility across a team.
+**⚠️ Allocation is a resolution problem, and only in one direction.** A joint process's cost is not divided at all (§3.4a). What resolution changes is **which steps a co-product is charged for**, and a finer reading can only ever charge it less. **So better instruments improve a figure without anybody choosing anything.**
 
-> **The distinguishing test is whether the divided thing left a physical trace.** Where it did, measure. Where it did not, declare a convention (§2.5) and say so.
+**What is genuinely not resolvable is dividing a quantity the process never divided at all**: shared overhead, which §4.5 puts on the asset, and joint responsibility across a team, which §3.2c divides by hours worked.
+
+> **The distinguishing test is whether the divided thing left a physical trace.** Where it did, measure. Where it did not, **first ask whether it has to be divided at all** — and if it does, declare a convention (§2.5) and say so.
 
 <!-- tag: fnd-s3-4a -->
 ### 3.4a Joint production — dividing one process's debit among several outputs
@@ -875,73 +877,141 @@ Some processes produce several things at once from one pool of inputs. A steer e
 
 #### The rule
 
-> **A joint process's debit divides according to where the process physically sent its inputs, measured at that facility, over the period being described.**
+> **A joint process's cost is not divided. Every co-product carries the whole cost of the process it came through, read against its own output mass.**
 
-**What "where the inputs went" means.** Feed eaten by a steer is deposited as muscle, fat, hide, and bone, in proportions that can be measured. Heat applied in a refinery breaks specific bonds to make specific fractions, and the energy required for each is measurable. Fuel in a heat-and-power plant splits between heat and electricity along a relationship the turbine's own performance curve describes.
+**Terms used here.** A **co-product** is one of several useful things one process makes at once. **Output mass** is what a scale reads at the fence. A step's **passage** is whether a product went through it — a binary fact off the plant's own flow sheet, never a share.
 
-**This is not a rule about the outputs.** It does not ask what an output weighs, what it is worth, or whether anyone wants it. It asks what the process did.
+**Why there is nothing to divide.** The energy a refinery burns is not spent partly on the petrol and partly on the asphalt. **It is spent entirely on both.** Take the asphalt away and making the petrol still costs the same energy. **So no fraction of that energy belongs to the petrol, and any number claiming to be that fraction was invented.**
 
-> **A2 is why this problem has an answer at all, and it is worth seeing why.** Every other attempt at this had to pick **one** unit of account and then defend it: split by mass, and energy-heavy outputs read as free; split by energy, and heavy outputs read as free. **A2 removes the choice.** Because every physical quantity in the ledger — a kilogram, a joule, a tonne of CO₂ — is a stand-in for the hours it takes to produce or to clean up, **the system never has to name one of them as *the* unit.** The universal is the denominator, not the carrier.
+##### An example, with the numbers
 
-#### How the split is actually produced, in order
-
-1. **Read what the facility meters, for the period in question.** Masses in and out, energy used, labour hours. Where a plant meters separate production lines — cutting separately from tanning, grinding separately from sieving — **that metered routing is the split.** Nothing needs to be inferred.
-2. **Where metering is coarse, use a physical model to bridge the gap.** If a plant records only total energy plus output masses, the mass split is a low-resolution reading, and a model of the process physics estimates the rest. The model is a fallback, not the primary source.
-3. **Replace the model whenever finer measurement becomes available.** Better data always supersedes a model (§3.3 — every affected record recalculates when the science improves).
-
-**Match the period to the output.** Compute the split from data covering the same stretch of time as the output it describes. Do not use a standing table from last year. A longer window forces you to assign costs to goods that were sitting in storage while conditions changed.
-
-#### What Aequitas fixes here, and what it does not
-
-> **Aequitas fixes the obligations. It does not fix the method, and it cannot.**
-
-| Aequitas fixes | Left to the industry |
+| | |
 |---|---|
-| The split must describe **where the process physically sent its inputs** | Which instrument reads that, in this industry |
-| It must come from **measurement at that facility, for that period**, before any model | What counts as a workable period for this process |
-| It must be **computed per dimension before collapsing** to one figure (§3.2a) | Where the sensible sub-process boundaries are |
-| The **method must be published**, with its version, so anyone can re-run it (§4.7) | The method itself |
-| It may **never depend on demand, desirability, or yield** (see below) | — |
+| **In** | 500 kg materials · **100 MJ** energy · **10 h** labour |
+| **Out** | 100 kg co-product A · 300 kg co-product B · 50 kg pollutants · 50 kg inert waste |
 
-**Why the method cannot be fixed here.** Determining how a process divides its inputs requires knowing that process. Oat milling has many stages — curing, cleaning, dehusking, aspiration, kilning, cutting — and a batch cleaned on Monday may be split across several dehusking runs on different days. **No single model fits every industrial process, and a document that tried to write one would be wrong in most industries and unfalsifiable in the rest.** This is the same scope rule §2.6 applies everywhere else: **state what must be true, never how to build it.** The people competent to set a milling method are millers; the people competent to check it are other millers.
+| | Energy | Labour |
+|---|--:|--:|
+| **Co-product A**, 100 kg | 100 ÷ 100 = **1.000 MJ/kg** | 10 ÷ 100 = **0.100 h/kg** |
+| **Co-product B**, 300 kg | 100 ÷ 300 = **0.333 MJ/kg** | 10 ÷ 300 = **0.033 h/kg** |
+| **Pollutants**, 50 kg | the remediation cost, **on the producer, permanently** (§3.2b) | — |
 
-**So the split is a choice that measurement constrains, not a number read straight off nature.** Two honest methods can give different figures. What stops that becoming a free hand is the four obligations above, plus the audit below.
+**The producer ends level.** They hold the process's whole cost and discharge it to each buyer as each co-product is handed on. **The pollution debit does not move.**
 
-#### What stops a producer choosing a flattering method
+> **A2 is why this problem has an answer at all.** Every other attempt had to pick **one** unit of account and defend it: split by mass and energy-heavy outputs read as free; split by energy and heavy outputs read as free. **A2 removes the choice**, because every physical quantity in the ledger is a stand-in for the hours it takes to produce or clean up. **The universal is the denominator, not the carrier.** Here it goes further: with no split to compute, no basis has to be named at all.
 
-**There is no profit motive, because there is no margin to protect (A5).** There *is* a weaker motive, and it must be named: **understating your own debit improves your debit-to-credit ratio and makes your goods lighter for whoever takes them.** That is the standing open problem **OP-24 (understatement drift)**.
+#### Why the previous rule was withdrawn
 
-**Consumers of a good benefit from that good being under-costed, so they will not fund a correction.** A competing producer is at least *harmed* by it, which is better than nobody — but **§3.3a explains why that is a weak pressure rather than a mechanism**, and treats constant-auditing as an open network-design problem. **What this section fixes is the precondition: the method must be published, because nobody can challenge arithmetic they cannot see.**
+<!-- struck-ok: this sentence exists to say the rule was withdrawn -->
+**Until v0.38 this section divided the cost by where the process physically sent its inputs, under four published obligations.** `06-simulation/method-spread/` swept **36 methods that all satisfied all four**, on real DOE refinery process energies.
 
-**And the claim is auditable against records that already exist.** A mill claiming a figure for its flour can be asked for its power bills, its intake weights, its output weights, and its account of which power went to milling rather than to lighting and offices. The claim must reconcile with those records, within a stated margin of error.
+| Lever | Widest fraction | Max ÷ min |
+|---|---|--:|
+| The declared basis — volume against mass | asphalt | **1.29×** |
+| The sub-process boundary | residual fuel | **1.47×** |
+| **The conversion routing** | LPG | **6.31×** |
 
-#### One thing the split may never do
+**In plain words: the layer the rule called a declared convention barely moved the answer, and the layer it called a measurement moved it by more than six times.** The energy each unit burns is metered. **Which products that unit's energy is assigned to is not, and none of the four obligations required anyone to say so.**
 
-> **Cost may not follow demand, desirability, or yield.**
+**The withdrawn rule's own closing test said a wide result routes method choice to OP-10 (weighting governance), the top blocking problem.** Withdrawing the division removes the lever instead of governing it.
 
-**A worked case.** A steer yields roughly 1% of its carcass as tenderloin and roughly 5% as material for hamburger. Tenderloin is scarce and sought-after; hamburger is neither.
+#### What this rule needs, and what the withdrawn one needed
 
-**A pound of each costs the same**, because a pound of each embodies the same feed, water, and growing labour — adjusted only by *measured* tissue composition, since lean and fat differ in the energy required to deposit them. **It is not adjusted by yield or by desirability.**
+| | The withdrawn rule | This rule |
+|---|---|---|
+| **Cost of the process** | metered | metered |
+| **Output masses** | weighed | weighed |
+| **Which products passed through which step** | needed, and **what share of each step's energy each took** | needed, **binary only** |
+| **A declared basis for untraceable heat** | required | **none** |
+| **A routing model** | required | **none** |
+| **A sub-process boundary choice** | required | **none, it is resolution — see below** |
 
-Two reasons:
+#### Reading a chain more finely changes the figures one way only
 
-1. **Two identical steers in two towns would otherwise carry different splits**, because the towns want different cuts. The same physical process would produce two different cost figures. That fails universality (§2).
-2. **It would ration the scarce cut by who can absorb the larger debit**, which is rationing by standing — the exact mechanism A5 (cost, not price) and §5.1 remove.
+**A process can be read as one opaque block, or as a chain of steps. Both describe the same thing, and the total labour, energy and pollutants are identical, because they are inputs.** What changes is which steps a product is charged for.
 
-**The scarcity is real, and it is handled elsewhere.** How many cattle are raised is answered by pledges and signals (§4.6, §4.6). Who gets the scarce cut is answered at the point of distribution — a butcher's queue, a lottery, or pledge-priority (§5.5). **Cost states what a thing took. Who receives a physically scarce output is a separate question, and this document deliberately does not settle it.** *("At the point of distribution" is geographic because a physical cut of meat is handed to a physical person somewhere. It is not a claim that trust networks are small — see A8.)*
+> **A coarse reading is a ceiling on a fine reading of the same chain.** A product carries the cost of the steps it passed through, divided by its own mass. **Those steps are a subset of all the steps, and the mass is the same either way, so the coarse figure can never be lower.** Equality holds only for a product that passes through the whole chain.
+
+##### An example, with the numbers
+
+**One 600 kg steer. 20 hours of labour and 500 MJ across seven steps** — kill, hide removal, blood and organs, hooves and head, dry-aging, butchering, packaging. *(Illustrative digits.)*
+
+| Co-product | read as one block, MJ/kg | read as seven steps, MJ/kg |
+|---|--:|--:|
+| hide, 40 kg — leaves at step 2 | 12.50 | **2.00** |
+| organs, 60 kg — step 3 | 8.33 | **2.00** |
+| hooves and head, 30 kg — step 4 | 16.67 | **4.67** |
+| **packaged beef, 250 kg — step 7** | **2.00** | **2.00** |
+
+**In plain words: reading the chain finely lowers the figure for anything that leaves early, and leaves the figure for the thing that goes all the way through unchanged.** The hide never entered the dry-aging room, and dry-aging is 300 of the 500 MJ.
+
+**Three things follow.** **A coarse reading errs against the producer**, never for them, which is the direction §4.4's label rule asks for. **A producer wanting a lower figure has to buy more measurement**, so the incentive points at better instruments. **And resolution is not a lever to police**, because a finer reading is simply a truer description of what the product consumed.
+
+**Confirmed on 1,152 product-resolution pairs across two cases, with no exception:** `06-simulation/chain-resolution/RESULTS.md`.
+
+#### The arithmetic only works because a debit is a record, not an amount
+
+**A reader will object that two co-products each carrying the whole process cost puts twice the cost into the books. They do not, and A3 (non-fungibility) is why.**
+
+> **A debit is a pointer at an identified parcel, not a quantity.** Co-product A's 100 MJ and co-product B's 100 MJ **point at the same 100 MJ** — one supplier, one delivery window, one record.
+
+> **So a ledger walk is a union over identified parcels, never a sum. A parcel reached by two paths is counted once.**
+
+**This is not new; it is A3 stated as a computation for the first time.** §3.2b already says a plastic bottle's pollution is *"one quantity, recorded once"*, §3.6 says the same, and §4.3 says *"matter does not agree to be counted twice."* **The rule behind those three had never been written down**, because the withdrawn division made it unnecessary: shares summed to 1, so each parcel was reached fractionally exactly once.
+
+##### An example, with the numbers
+
+**One buyer takes both co-products from the worked example above.** A's record says 100 MJ, parcel `E-8841`. B's record says 100 MJ, parcel `E-8841`. **The buyer's `D` gains 100 MJ.** One parcel, named twice.
+
+**Two different buyers taking one each carry 100 MJ apiece, and neither ledger is wrong.** §3.5 already rules out adding them: *sums are not meaningful; two separate numbers are.*
+
+> **⚠️ Get this wrong and the books inflate, measurably.** Across 128 readings of one refinery, the union returns the chain total every time; **a naive sum returns 111 different answers and overstates by up to 7.00×.** Carried as conformance requirement 10b.
+
+#### What stops a producer understating
+
+**There is no profit motive, because there is no margin to protect (A5).** There *is* a weaker motive: **understating your own debit improves your debit-to-credit ratio and makes your goods lighter for whoever takes them.** That is **OP-24 (understatement drift)**, and it is unchanged.
+
+**What this rule removes is the room to do it honestly.** The withdrawn rule let a producer choose a routing model and a boundary, publish both, and satisfy every obligation. **Here there is no model to choose.** What is left to misstate is a **passage** — claiming a product left before work it really consumed — and that is a false record, caught by the integrity checks (conformance row 7) rather than by an allocation rule.
+
+**And the claim is auditable against records that already exist.** A mill can be asked for its power bills, its intake weights and its output weights. The claim must reconcile with those, within a stated margin of error.
+
+#### One thing the cost may never do
+
+> **Cost may not follow demand or desirability.**
+
+**A worked case.** A steer yields roughly 1% of its carcass as tenderloin and roughly 5% as material for hamburger. Tenderloin is sought-after; hamburger is not.
+
+**Neither figure moves because of that.** The cost each carries is the whole process's cost against its own mass, and **nothing in that arithmetic reads what anyone wants.**
+
+Two reasons the ban stands:
+
+1. **Two identical steers in two towns would otherwise carry different costs**, because the towns want different cuts. The same physical process would produce two different figures. That fails universality (§2.1).
+2. **It would ration the scarce cut by who can absorb the larger debit**, which is rationing by standing — the mechanism A5 (cost, not price) and §5.1 remove.
+
+##### Why **yield** is not in that ban, and used to be
+
+**Until v0.38 this rule also forbade cost following yield, and said a pound of tenderloin costs the same as a pound of hamburger. That is withdrawn.** Under this rule the smaller output reads dearer per kilogram, because the same whole process stands behind less of it.
+
+> **The three words were not the same kind of thing. Demand and desirability are not physical and nobody can weigh them. Output mass is physical and a scale reads it.**
+
+**This rule never asks what anyone wants. It asks only what came out.** Reason 1 above is satisfied — the same animal gives the same figures in every town, because no town appears in the arithmetic. **Reason 2 is answered where it always was: who receives a physically scarce output is a distribution question**, settled by a queue, a lottery, or pledge-priority (§5.5, §4.6), and **cost is not the instrument that settles it.**
+
+**The scarcity is real and is handled elsewhere.** How many cattle are raised is answered by pledges and signals (§4.6). *("At the point of distribution" is geographic because a physical cut of meat is handed to a physical person somewhere. It is not a claim that trust networks are small — see A8.)*
 
 #### Four things that follow
 
-- **Waste outputs are co-products like any other.** Manure and methane take a share of the split. Nothing is left over, so there is no question of who absorbs an unwanted output.
-- **The process sets an output's cost share; its fate sets its ledger character.** Manure is pollution debit in a lagoon, a co-product in a biodigester, and a measured fertiliser offset when spread on a field. The record of what happened to it already captures this — everything the books track has a fate, which is conformance requirement 7.
-- **Labour has no per-product trace, so it is a declared convention.** The farmer's eight hours were spent on the animal, not on the hide. **The convention: labour divides in the same proportions as the process's measured material split.** It introduces no new basis and no new thing to game, and it changes nobody's credit — a worker is credited their own hours regardless (§4.5). It sets only how each co-product's debit-cost reads. *(OP-18(α), closed 2026-08-05.)*
-- **Negative cost shares do not arise.** Each share is a forward measurement of what physically went in, and a deposition cannot be negative. Nothing is inverted, so [Steedman's negative-value result](https://www.scienceopen.com/hosted-document?doi=10.13169/worlrevipoliecon.14.1.0063) does not transfer. Confirmed by simulation across 4,098 economies (`06-simulation/allocation-engine/RECURSION_RESULTS.md`). **Note the limit of that result: it proves no split produces a negative figure. It does not prove the split is unique.**
+- **Waste outputs are co-products like any other.** Manure and methane carry the process cost against their own mass, like everything else. **A step no product passed through reaches no product** and stays with the producer (§3.2b).
+- **The process sets an output's cost; its fate sets its ledger character.** Manure is pollution debit in a lagoon, a co-product in a biodigester, and a measured fertiliser offset when spread on a field. The record of what happened to it already captures this — everything the books track has a fate, which is conformance requirement 7.
+- **Labour needs no convention any more.** The farmer's hours are the process's hours, and every co-product carries them against its own mass, exactly as the energy does. **The declared convention that labour rides the material split is withdrawn with the split it rode.** Nobody's credit is affected either way — a worker is credited their own hours regardless (§4.5).
+- **Negative cost shares do not arise.** Nothing is inverted and nothing is subtracted, so [Steedman's negative-value result](https://www.scienceopen.com/hosted-document?doi=10.13169/worlrevipoliecon.14.1.0063) does not transfer. The earlier simulation across 4,098 economies confirmed it for the withdrawn division (`06-simulation/allocation-engine/RECURSION_RESULTS.md`); **the result survives a fortiori here, because no division is performed at all.**
 
 #### What remains open
 
-**Apportioning a jointly-*caused* debit across a team.** When a team process causes pollution, or a harm discovered later, dividing responsibility among the members is a convention with no physical trace behind it. Minor and non-blocking; tracked alongside **OP-25 (illicit dumping)**.
+**Apportioning a jointly-*caused* debit across a team.** When a team process causes pollution, or a harm discovered later, dividing responsibility among the members is a convention with no physical trace behind it. **§3.2c's hours convention is the candidate answer and has not been checked against this case directly.** Minor and non-blocking; tracked alongside **OP-25 (illicit dumping)**.
 
-**How far a split moves across honest methods.** Nobody has measured this. The test: take a refinery, a heat-and-power plant, and a livestock case, and compute the split under every defensible instrument and period. **If the range is narrow, the obligations above are enough. If it is wide, method choice is a large lever and belongs with OP-10 (weighting governance).** Owed; see the Objections register, §C.
+**Whether a producer can declare a false passage.** Claiming a co-product left the chain before work it really consumed would lower its figure. **That is a verification question rather than an accounting one**, and conformance row 7's closure checks are what answer it. Not measured.
+
+**Whether the calibrated figures move.** The **1,380 h/yr** median-lifestyle anchor (§3.5) and the **ρ\* ≈ 1.2** clearing rate (§5.5.7) were computed under the withdrawn division. **They are owed a recomputation, and the direction they move is not known in advance.**
 
 <!-- tag: fnd-s3-5 -->
 ### 3.5 The books never balance — and must not
@@ -2221,10 +2291,10 @@ A3 therefore does three separate defensive jobs: it forbids accumulation (§5.1)
 
 | What it is | Where |
 |---|---|
-| **The conformance requirements** — what must be true for an implementation to *be* Aequitas, written for implementers | [`Aequitas_Conformance_v0.11.md`](Aequitas_Conformance_v0.11.md) |
-| **The objections register** — every open problem and every answered objection, with its status | [`Aequitas_Objections_v0.27.md`](Aequitas_Objections_v0.27.md) |
-| **The plain-language companion**, assuming no economics background | [`Aequitas_Overview_v0.24.md`](Aequitas_Overview_v0.24.md) |
-| **How adoption plausibly starts** — a reading of the historical record, not a statement of the system | [`Aequitas_Strategy_v0.7.md`](Aequitas_Strategy_v0.7.md) §5 |
+| **The conformance requirements** — what must be true for an implementation to *be* Aequitas, written for implementers | [`Aequitas_Conformance_v0.12.md`](Aequitas_Conformance_v0.12.md) |
+| **The objections register** — every open problem and every answered objection, with its status | [`Aequitas_Objections_v0.28.md`](Aequitas_Objections_v0.28.md) |
+| **The plain-language companion**, assuming no economics background | [`Aequitas_Overview_v0.25.md`](Aequitas_Overview_v0.25.md) |
+| **How adoption plausibly starts** — a reading of the historical record, not a statement of the system | [`Aequitas_Strategy_v0.8.md`](Aequitas_Strategy_v0.8.md) §5 |
 | **The simulation programme** — what is being tested and in what order | [`Aequitas_Simulation_Roadmap_v0.2.md`](Aequitas_Simulation_Roadmap_v0.2.md) |
 | **One paper per open problem** | [`open-problems/`](open-problems/) |
 | **Settled working papers these documents still cite by name** | [`papers/`](papers/) |
@@ -2246,4 +2316,4 @@ A3 therefore does three separate defensive jobs: it forbids accumulation (§5.1)
 
 ---
 
-*End of v0.35.*
+*End of v0.38.*

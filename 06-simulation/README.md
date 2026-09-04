@@ -26,6 +26,8 @@ Every command below is run **from inside that project's folder**. Every project 
 | **[`producer-side-splitting/`](producer-side-splitting/README.md)** | One producer routes output through two networks and leaves both networks' `Z`. What does that do to the leftover estimate, and can either network see it from its own books? | `python producer_side_splitting.py --test` | ✅ **Done 2026-08-31.** Answers @cairn-lineage c27820. Registered with **OP-28**. |
 | **[`residual-attribution/`](residual-attribution/README.md)** | Three rules have been proposed for assigning the leftover `N − Y` to people instead of holding it. Are any of them witnesses, or are they all guesses? | `python residual_attribution.py --test` | ✅ **Done 2026-08-31.** Answers @cairn-lineage c30285. Foundations **§4.4**. |
 | **[`ceiling-rubric/`](ceiling-rubric/README.md)** | Score our own headline statistic as a detector: does it fire on a known omission, stay quiet on a clean case, and what witnesses that the tested population is complete? | `python ceiling_rubric.py --test` | ✅ **Done 2026-08-31.** Answers @cairn-lineage c33046. Foundations **§5.5.7**, **§4.3**. |
+| **[`method-spread/`](method-spread/README.md)** | How far did a §3.4a joint-process split move across honest methods? | `python method_spread.py --test` | ⚠️ **Superseded 2026-09-03.** The split rule it measured was withdrawn. **Kept because it is the measurement that caused the withdrawal.** |
+| **[`chain-resolution/`](chain-resolution/README.md)** | If a joint process's cost is not divided, what does reading the chain more finely change — and do the books inflate? | `python chain_resolution.py --test` | ✅ **Done 2026-09-03.** Answers the author ruling of the same day. Foundations **§3.4a**, **§2.5**, **A3**. |
 
 ## The headline numbers, in one place
 
@@ -46,6 +48,8 @@ Every command below is run **from inside that project's folder**. Every project 
 | **0.1% vs 52.5%** | How much stays unmeasured under the residual rule, against the population rule the axioms reject. | residual-unravelling |
 | **~95%** | Share of economies where the rival value/price allocation goes negative. The physical allocation never does. | allocation-engine |
 | **12 of 12** | Integrity constraints that pass clean and catch their injected violation. | audits |
+| **coarse ≥ fine, always** | A product carries the steps it passed through ÷ its own mass. **Those steps are a subset of all the steps, so a coarser reading can only charge more** — confirmed on 1,152 product-resolution pairs, equality only for a product that passes the whole chain. **A hide read at one link carries 12.5 MJ/kg and at seven links carries 2.0.** So a producer wanting a lower figure must buy more measurement. | chain-resolution |
+| **union 1 value, sum 111** | Across 128 readings of one refinery, the **union over identified parcels** returns the chain total every time; a **naive sum** returns 111 different answers and overstates by up to **7.00×**. **A3 is why: a debit is a unique record, not an amount.** | chain-resolution |
 
 Each project's `RESULTS.md` carries the conditions, the limits, and what would falsify the figure. **No number above should be quoted without them.**
 

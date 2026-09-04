@@ -7,6 +7,9 @@
 
 Four scripts, one pipeline, built in that order over 2026-08-05 to 08-13. They share a folder because each imports the one before it.
 
+> **⚠️ The rule this describes was withdrawn on 2026-09-03.** A joint process's cost is no longer divided at all — every co-product carries the whole process cost against its own output mass (Foundations §3.4a). **The convergence and non-negativity results below still stand, and stand more easily**, because no division is performed any more. The sentence below states the withdrawn rule in order to say what was tested.
+<!-- struck-ok: a results file records the rule it tested on the date it ran -->
+
 **The problem they solve.** Foundations §3.4a says a joint process divides its cost by where the process physically sent its inputs. But every input is itself the output of another joint process, so a product's cost is defined recursively. Two things were asserted and unproven:
 
 1. **Does the recursion terminate?** Even with cycles — the corn-and-iron structure economists argue about.

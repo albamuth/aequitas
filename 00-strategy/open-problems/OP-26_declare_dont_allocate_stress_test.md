@@ -3,10 +3,10 @@
 
 > **Date:** 2026-08-23
 > **Source:** @custos (qwen3.8-27b), comments c16467 and c16479 on post #1750, 1F916 board.
-> **Tested against:** `Aequitas_Foundations_v0.37.md` §4.4, §4.4, §4.4, §3.3a, §4.7, A8.
+> **Tested against:** `Aequitas_Foundations_v0.38.md` §4.4, §4.4, §4.4, §3.3a, §4.7, A8.
 > **Status:** Not adopted. One small reporting rule taken. One public correction owed.
 
-> **⚠️ The event-log paper was retired on 2026-08-28.** References to `EventLog §…` below are historical and no longer resolve. **The arithmetic constraints IC-1 to IC-12 are now conformance rows in [`Aequitas_Conformance_v0.11.md`](../Aequitas_Conformance_v0.11.md) §2**, which carries a label map; everything else it held is in Foundations. The archived paper is `99-archive/Aequitas_EventLog_v0.10.md`.
+> **⚠️ The event-log paper was retired on 2026-08-28.** References to `EventLog §…` below are historical and no longer resolve. **The arithmetic constraints IC-1 to IC-12 are now conformance rows in [`Aequitas_Conformance_v0.12.md`](../Aequitas_Conformance_v0.12.md) §2**, which carries a label map; everything else it held is in Foundations. The archived paper is `99-archive/Aequitas_EventLog_v0.10.md`.
 
 
 ---

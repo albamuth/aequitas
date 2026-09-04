@@ -8,6 +8,9 @@
 
 ## 1. The question, precisely
 
+> **⚠️ The rule this describes was withdrawn on 2026-09-03.** A joint process's cost is no longer divided at all — every co-product carries the whole process cost against its own output mass (Foundations §3.4a). **The convergence and non-negativity results below still stand, and stand more easily**, because no division is performed any more. The sentence below states the withdrawn rule in order to say what was tested.
+<!-- struck-ok: a results file records the rule it tested on the date it ran -->
+
 Foundations §3.4a: *a joint process's debit divides according to where the process physically sent its inputs.* But **every input is itself the output of another joint process**, so a product's per-unit debit is defined in terms of other products' per-unit debits — a **recursive** definition. Two things are asserted and unproven for a whole economy:
 
 1. **Termination / convergence.** Does the recursion have a fixed point, and does iteration reach it? (Trivially true for one isolated process; unproven once processes feed each other, possibly in cycles — the Sraffa corn-iron structure.)

@@ -1,11 +1,11 @@
 <!-- tag: ovw-aequitas-overview -->
 # Aequitas — Overview
 
-> **Version:** 0.24
-> **Date:** 2026-09-02
-> **Supersedes:** `99-archive/Aequitas_Overview_v0.23.md`
+> **Version:** 0.25
+> **Date:** 2026-09-03
+> **Supersedes:** `99-archive/Aequitas_Overview_v0.25.md`
 > **Audience:** everyone. No economics background assumed, none required.
-> **Rigorous version:** `00-strategy/Aequitas_Foundations_v0.37.md`. This document is the plain-language companion; where they differ, the Foundations govern.
+> **Rigorous version:** `00-strategy/Aequitas_Foundations_v0.38.md`. This document is the plain-language companion; where they differ, the Foundations govern.
 > **Version history & what each version superseded:** `00-strategy/Aequitas_Overview_CHANGELOG.md`.
 
 *Aequitas* (genitive *aequitatis*) is the Latin word for fairness, evenness, symmetry — the quality of things being level with one another.
@@ -373,9 +373,15 @@ This means **the system permanently pays for better measurement of reality**, fo
 
 **And the cost of a pollutant rises and falls with how much of it is already out there.** A substance only counts as pollution once there is more of it than the world clears on its own — steel that rusts away as fast as it is made, or carbon the planet reabsorbs at the rate we emit it, is just part of the cycle and costs nothing. Above that line, the more of it in the air or the ground, the more work it takes to deal with, so **every record of it grows heavier together.** The flip side is the good part: when the world cleans some up, *everyone's* past share of it gets lighter, backwards through history. **Cleaning up the commons pays back the people who fund it** — which is, for once, a reason to fund it.
 
-**When one process makes several things, the process itself says how the cost divides.** A steer yields beef, hide, tallow, bone, manure, and methane from one pool of feed and effort. For a century, people tried to split such costs by *choosing a rule* — by weight, by energy, by price — and every rule that worked in one industry was nonsense in the next.
+**When one process makes several things, the cost is not divided at all.** A steer yields beef, hide, tallow, bone, manure and methane from one pool of feed and effort. For a century people tried to split such costs by *choosing a rule* — by weight, by energy, by price — and every rule that worked in one industry was nonsense in the next.
 
-Aequitas doesn't choose. **It measures where the animal's own biology sent the feed.** The instrument changes with the process — tissue chemistry for livestock, cracking energy for a refinery, the heat-and-power trade-off for a turbine — but the question is always the same one, and it always has a physical answer. A hide's share does not go up because leather came into fashion.
+**Aequitas doesn't choose, because it doesn't split.** The feed and the effort were not spent partly on the beef and partly on the hide. **Take the hide away and raising the animal costs exactly the same.** So each thing that comes out carries the whole cost of raising the animal, measured against how much of that thing there is. **There is no rule to pick and nothing left to argue about.**
+
+**A quick example.** Say the animal took 8 hours of work, and yields 250 kg of beef and 40 kg of hide. **The beef carries 8 ÷ 250, about 0.03 hours a kilo. The hide carries 8 ÷ 40, about 0.20 hours a kilo.** Both point at the same 8 hours — and if one person bought both, they'd carry 8 hours, not 16. **The record is one record, however many things point at it.**
+
+**Two fair questions, answered.** *Doesn't that make the small output look expensive?* Yes — there's less of it, and the same whole animal stands behind it. **What never moves the number is what anyone wants**: a hide's cost does not go up because leather came into fashion. *And doesn't it double the books?* No. Both figures name the same 8 hours, and naming a thing twice does not make two of it.
+
+**One more good property.** If a butcher can show *when* each thing left — the hide comes off early, the steak goes through everything — **then the hide stops being charged for the work done after it left.** Better records make things cheaper, never dearer. **So there's nothing to police: a producer who wants a lower figure has to measure more carefully, which is exactly what you'd want them to do.**
 
 **And the barn is nobody's share of the hide.** The buildings, the tools, the machinery — the *capital* a business runs on — never get sliced up and dribbled into each product either. They are handled the same way a hospital is (§2): carried by the people who run the place, cushioned by pledges made up front. A wafer is not charged a fraction of the factory that made it. This closes a question that quietly defeats ordinary cost accounting — *how much of the fab belongs in one chip?* — by answering: none of it. The fab belongs to the people who run the fab.
 
@@ -697,6 +703,6 @@ What was deliberately dropped:
 
 ---
 
-*For the rigorous statement of everything above, with the arguments and the open problems in full: `00-strategy/Aequitas_Foundations_v0.37.md`.*
+*For the rigorous statement of everything above, with the arguments and the open problems in full: `00-strategy/Aequitas_Foundations_v0.38.md`.*
 
 *End of v0.22.*

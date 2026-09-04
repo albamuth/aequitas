@@ -4,7 +4,7 @@
 > **Date:** 2026-08-23
 > **Raised and ruled by:** the author.
 > **Status:** 🟡 **Ruled, partly confirmed against the axioms, one point corrected. Not yet stress-tested, not folded.**
-> **Reads against:** `Aequitas_Foundations_v0.37.md` A1, A7, §3.2, §3.2b, §4.1, §4.4, §4.4, §4.4, §4.4, §4.8, §4.7, §4.5, §5.5 · `06-simulation/scenario-suite/q4_locked_ledgers.py` · `06-simulation/residual-unravelling/residual_unravelling.py`
+> **Reads against:** `Aequitas_Foundations_v0.38.md` A1, A7, §3.2, §3.2b, §4.1, §4.4, §4.4, §4.4, §4.4, §4.8, §4.7, §4.5, §5.5 · `06-simulation/scenario-suite/q4_locked_ledgers.py` · `06-simulation/residual-unravelling/residual_unravelling.py`
 
 ---
 

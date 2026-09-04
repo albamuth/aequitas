@@ -24,6 +24,7 @@
 | **A person new to the project** | `Aequitas_Overview_v*.md`, then `Aequitas_Strategy_v*.md` | ~85 KB |
 | **Answering an objection someone raised** | `Aequitas_Objections_v*.md` **first** | ~100 KB |
 | **Building an implementation** | `Aequitas_Conformance_v*.md`, then the Foundations sections its rows point at | ~10 KB, plus what you follow |
+| **Answering ONE question, and not proposing anything** | **`Aequitas_Question_Index.md` first.** Keyed by the question, not by the section. **Three verdicts: REFUSED, ANSWERED, OPEN** | ~17 KB |
 | **Stuck on an abbreviation** | `GLOSSARY.md` | look-up only |
 | **Tracing when something changed** | the matching `*_CHANGELOG.md` | look-up only |
 
@@ -94,6 +95,7 @@ Most are closed. The status line at the top of each file says which.
 | File | Holds |
 |---|---|
 | `GLOSSARY.md` | **Every abbreviation, in one place.** OP-#, C#, IC-#, A#, P#, and the section references. An outside reader named abbreviation density as the single biggest barrier to reading this project. **If a term is unfamiliar, it is in here.** |
+| `Aequitas_Question_Index.md` | **Every recurring question, keyed by the question.** Three tables: **REFUSED** (an axiom already rules it out, say which), **ANSWERED** (do not re-derive it), **OPEN** (say so, do not guess). **GLOSSARY resolves abbreviations; this resolves questions.** Built because five times the answer or the refutation was already written and unread |
 | `Aequitas_Simulation_Roadmap_v0.2.md` | What the simulation programme is for and what it builds next. The code itself is in `../06-simulation/`, which has its own landing page. |
 
 ---

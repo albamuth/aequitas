@@ -79,7 +79,7 @@ The fixed core. Do not re-litigate (see `CLAUDE.md`).
 ---
 
 ## <a id="integrity-constraints"></a>Integrity Constraints (IC-1–IC-12) — Conformance
-**Arithmetic the ledger must never violate.** IC-1…IC-9 check the record itself and are pure arithmetic. IC-10…IC-12 check a figure computed from it against a weighting model. **The `Source` column gives the conformance row each one is now stated in** (`Aequitas_Conformance_v0.11.md` §2).
+**Arithmetic the ledger must never violate.** IC-1…IC-9 check the record itself and are pure arithmetic. IC-10…IC-12 check a figure computed from it against a weighting model. **The `Source` column gives the conformance row each one is now stated in** (`Aequitas_Conformance_v0.12.md` §2).
 
 | Acronym | Title (1–3 words) | Constraint | Source |
 |---|---|---|---|
@@ -116,8 +116,8 @@ Series is non-contiguous (early merges left gaps at OP-2/12/13). Status taxonomy
 | <a id="op-14"></a>**OP-14** | cohort shopping | Joiners self-identify into a favourable cohort / floor. | Open |
 | <a id="op-15"></a>**OP-15** | ghost harvesting | Estimated credit accrues to non-joiners and the dead. | Open |
 | <a id="op-16"></a>**OP-16** | onerousness gap | Tedium/indignity have no material signature. | 🔴 Underweight, unsolved *(re-rated 2026-08-09)* |
-| <a id="op-17"></a>**OP-17** | joint production | Allocating a joint process's debit across co-products. | ✅ Closed — the split follows **where the process physically sent its inputs**; measurement constrains the choice without determining it (B7) |
-| <a id="op-18"></a>**OP-18** | labour & team credit | Responsibility/labour split across co-products and teams. | ✅ Closed (B9) |
+| <a id="op-17"></a>**OP-17** | joint production | Allocating a joint process's debit across co-products. | ✅ Closed — **re-closed 2026-09-03 by removing the division.** Every co-product carries the **whole** process cost against its own output mass. The earlier split rule was withdrawn after 36 honest methods measured 6.31× apart (B7) |
+| <a id="op-18"></a>**OP-18** | labour & team credit | Responsibility/labour split across co-products and teams. | ✅ Closed (B9). **The co-product half dissolved 2026-09-03**: labour is not split across outputs either, so the OP-18(α) convention is withdrawn. **The team half stands** |
 | <a id="op-19"></a>**OP-19** | saturated producer | What surplus production is for. | ✅ Resolved by pledges (B5) |
 | <a id="op-20"></a>**OP-20** | unobservable work | Crediting work that leaves no trace. | ✅ Closed (IC-7 + conservative weighting) |
 | <a id="op-21"></a>**OP-21** | media reproduction | Charging for infinitely-copyable media. | ✅ Dissolved (B3, front-loading) |
@@ -189,7 +189,7 @@ The "in our research" links point to the **source index** just below — the sin
 | <a id="src-dapprich-optimal-planning"></a>**Dapprich — optimal planning** | Latest computational planner: scarcity shadow-values + a consumer-feedback loop — the live cousin of Aequitas's pledges. | [Dapprich_optimal-planning_v0.1](../02-research/Dapprich_optimal-planning_v0.1.md) |
 | <a id="src-local-currency-experiments"></a>**Local-currency field record** | A century of Ithaca / Wörgl / WIR: three ways alt-money dies. Aequitas is structurally immune to the circulation death. | [History_local-currency-experiments_v0.2](../02-research/History_local-currency-experiments_v0.2.md) |
 | <a id="src-auditor-independence"></a>**Auditor independence** | Issuer-pays conflict (Enron, credit ratings) killed the "networks compete on accuracy" claim; rival-sector audit adopted instead. | [History_auditor-independence_v0.2](../02-research/History_auditor-independence_v0.2.md) |
-| <a id="src-joint-production-allocation-problem"></a>**Joint-production problem** | When one process makes several things: Sraffa's negative values, solved by measuring where the process physically sent its inputs. | [Problem_joint-production-allocation_v0.2](../02-research/Problem_joint-production-allocation_v0.2.md) |
+| <a id="src-joint-production-allocation-problem"></a>**Joint-production problem** | When one process makes several things: Sraffa's negative values, dissolved by not dividing the cost at all. | [Problem_joint-production-allocation_v0.2](../02-research/Problem_joint-production-allocation_v0.2.md) |
 | <a id="src-estimation-engine-data-sources"></a>**Estimation-engine data sources** | The datasets and models (input–output, EEIO, EXIOBASE, US surveys) for computing a thing's true cost — and the price-allocation clash and its fix. | [Data_estimation-engine-sources_v0.2](../02-research/Data_estimation-engine-sources_v0.2.md) |
 | <a id="src-refinery-process-energy"></a>**Refinery process energy** | Real US energy tables splitting a refinery fuel-by-fuel — the worked joint-production example. | [Data_refinery-process-energy_v0.2](../02-research/Data_refinery-process-energy_v0.2.md) |
 | <a id="src-plastic-lca-and-cleanup-cost"></a>**Plastic LCA & cleanup** | Energy to make vs. recycle plastic, plus ocean-cleanup cost; anchors the permanent-pollution-debt result. | [Data_plastic-lca-cleanup_v0.2](../02-research/Data_plastic-lca-cleanup_v0.2.md) |

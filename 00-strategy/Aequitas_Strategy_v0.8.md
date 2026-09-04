@@ -1,10 +1,10 @@
 <!-- tag: str-aequitas-overall-strategy -->
 # Aequitas — Overall Strategy
 
-> **Version:** 0.7 · **Date:** 2026-08-31
-> **Supersedes:** `99-archive/Aequitas_Strategy_v0.6.md`
+> **Version:** 0.8 · **Date:** 2026-09-03
+> **Supersedes:** `99-archive/Aequitas_Strategy_v0.8.md`
 > **Target:** A statement of the system, tested against scenarios, in ~3 months — with a conformance list an implementer can build against.
-> **Companion docs:** `Aequitas_Foundations_v0.37.md` (axioms), `Aequitas_Objections_v0.27.md` (register), `Aequitas_Conformance_v0.11.md` (what an implementation must satisfy), `../NEXT.md` (task queue)
+> **Companion docs:** `Aequitas_Foundations_v0.38.md` (axioms), `Aequitas_Objections_v0.28.md` (register), `Aequitas_Conformance_v0.12.md` (what an implementation must satisfy), `../NEXT.md` (task queue)
 > **Version history & what each version superseded:** `00-strategy/Aequitas_Strategy_CHANGELOG.md`.
 
 ---
@@ -35,7 +35,7 @@ Not a manifesto. Not a pitch. **And not an architecture.**
 > **Two halves, and the second one is small.**
 >
 > - **The system.** What Aequitas is, what must hold, and what follows. Every claim that sounds impossible ships with a simulation that demonstrates it (§2).
-> - **The conformance list.** The things that must be true for an implementation to *be* Aequitas — conservation holds, the ledger is derived and never stored, credit never transfers, coverage is published with its extent, and so on. **[`Aequitas_Conformance_v0.11.md`](Aequitas_Conformance_v0.11.md) carries the current list**, moved out of `Aequitas_Conformance_v0.11.md` on 2026-08-25.
+> - **The conformance list.** The things that must be true for an implementation to *be* Aequitas — conservation holds, the ledger is derived and never stored, credit never transfers, coverage is published with its extent, and so on. **[`Aequitas_Conformance_v0.12.md`](Aequitas_Conformance_v0.12.md) carries the current list**, moved out of `Aequitas_Conformance_v0.12.md` on 2026-08-25.
 
 **What is deliberately not the goal.** A data model, a storage design, a transport protocol, a choice of cryptography, a privacy practice. **Foundations §2.6 rules all of these praxis**, and they belong to whoever implements. An earlier version of this section named three of them as deliverables, which is how this project spent nights on record-integrity work while its top blocker was governance.
 
@@ -93,7 +93,7 @@ This also answers the socialist-calculation critique pre-emptively: we don't arg
 | C9 (debit-tolerance formula) <!-- tag: str-c9 --> | **Debit tolerance formula** (OP-4 (debit tolerance)) | Not started. ⬆⬆ *Now a **prerequisite of the disparity-ceiling proof** (2026-08-07): the consumption-ceiling formula IS the tolerance formula, so the ceiling cannot be stated while OP-4 is "just a knob." Also the error-tolerance of the whole accounting (§5.5).* | **Yes — for the disparity proof** |
 | C10 (cross-level trade) <!-- tag: str-c10 --> | **Cross-level trade** (OP-7 (cross-level trade)) | Not started | No — v2 |
 | C11 (arithmetic audits) <!-- tag: str-c11 --> | **Arithmetic audits** — IC-1…**IC-12 (boundary additivity)** as runnable checks | **✅ Closed** — `06-simulation/audits/arithmetic_audits.py`: 12/12 clean checks pass, 12/12 injected violations caught, incl. the projection-side IC-10…IC-12. | Done |
-| **C12 (energetics registry)** <!-- tag: str-c12 --> | **Process-energetics model registry** — the published per-process data the allocation rule computes from, plus replication and rival-audit rules | **New.** Created by resolving OP-17 (joint production); where **OP-24 (understatement drift)** lives | Yes, but after C3 |
+| **C12 (energetics registry)** <!-- tag: str-c12 --> | **Process-energetics model registry** — the published per-process data the weighting model computes from, plus replication and rival-audit rules | **Narrowed 2026-09-03.** It no longer carries an allocation rule, because there is no allocation (Foundations §3.4a). It still carries the cost constants, and **OP-24 (understatement drift)** still lives here | Yes, but after C3 |
 
 **Critical path: C1 ✅ → C3 (in progress) → C4.**
 
@@ -108,8 +108,8 @@ This also answers the socialist-calculation critique pre-emptively: we don't arg
 ### Phase 1 — Core mechanisms
 *The theory lives or dies here. **Mostly cleared.***
 
-- **C1 (event-log schema): Event log schema.** ❌ **Retired 2026-08-28.** The record model was never asked for and it read as a specification, which contradicts §2.6 and the simulator ruling of 2026-08-23. **The arithmetic it carried — IC-1 to IC-12 — is now in `Aequitas_Conformance_v0.11.md`.** A trust network writes its own schema.
-- **OP-17 (joint production): co-product allocation.** ✅ **Done** — a joint process's debit divides by **where the process physically sent its inputs**, measured at that facility for that period. **It is a choice that measurement constrains, not a number read straight off nature**, and Aequitas fixes the obligations rather than the method (Foundations §3.4a).
+- **C1 (event-log schema): Event log schema.** ❌ **Retired 2026-08-28.** The record model was never asked for and it read as a specification, which contradicts §2.6 and the simulator ruling of 2026-08-23. **The arithmetic it carried — IC-1 to IC-12 — is now in `Aequitas_Conformance_v0.12.md`.** A trust network writes its own schema.
+- **OP-17 (joint production): co-product allocation.** ✅ **Done, re-closed 2026-09-03 on a different mechanism** — **a joint process's cost is not divided at all.** Every co-product carries the whole process cost against its own output mass, so there is no method for Aequitas to fix or leave open (Foundations §3.4a). **The earlier split rule was withdrawn after a 36-method sweep found honest methods 6.31× apart.**
 - **Recursion convergence sim.** ✅ **Done — PASS** (`recursion_convergence.py`). Validated the OP-17 answer; doubles as the first piece of C11.
 - **OP-18 (labour & team credit): labour allocation across co-products and teams.** ✅ **Closed** — a declared convention (labour rides the material split), axiom-scored against the Aumann–Shapley checklist and stress-tested.
 - **C11: arithmetic audits.** ✅ **Closed** — IC-1…IC-12 runnable, all violations caught.
@@ -188,13 +188,13 @@ This also answers the socialist-calculation critique pre-emptively: we don't arg
 <!-- tag: str-s8 -->
 ## 8. What "done" looks like at 3 months
 
-- [ ] `Aequitas_System_v1.0.md` — the system stated and tested, plus the conformance list ([`Aequitas_Conformance_v0.11.md`](Aequitas_Conformance_v0.11.md)). *Renamed from `Aequitas_Protocol_v1.0.md` on 2026-08-23: "protocol" named the deliverable after the smaller half of it.*
+- [ ] `Aequitas_System_v1.0.md` — the system stated and tested, plus the conformance list ([`Aequitas_Conformance_v0.12.md`](Aequitas_Conformance_v0.12.md)). *Renamed from `Aequitas_Protocol_v1.0.md` on 2026-08-23: "protocol" named the deliverable after the smaller half of it.*
 - [x] ~~3+ Python simulations backing its central claims, **including allocation-recursion convergence**~~ — **done and exceeded:** recursion convergence, the disparity-ceiling sim, the five-sim scenario suite, and the median-lifestyle anchor all ship.
 - [ ] 4+ worked use cases, each encodable in the schema, **at least one with joint production**
 - [ ] Wiki covering every core concept
 - [x] ~~An allocation convention for OP-17~~ — **better: a measurement, not a convention**
 - [x] ~~A declared labour-allocation convention for OP-18~~ — **done:** labour rides the material split, defended against the cooperative-game axioms (B9).
-- [ ] Every open problem in `Aequitas_Objections_v0.27.md` either solved, dissolved, or explicitly scoped as v2 — **the remaining live blockers are governance: OP-10, OP-24, and OP-16's tedium/indignity half (its hazard half is addressed by the contingent reserve, §4.6).**
+- [ ] Every open problem in `Aequitas_Objections_v0.28.md` either solved, dissolved, or explicitly scoped as v2 — **the remaining live blockers are governance: OP-10, OP-24, and OP-16's tedium/indignity half (its hazard half is addressed by the contingent reserve, §4.6).**
 
 ---
 
@@ -223,12 +223,12 @@ This also answers the socialist-calculation critique pre-emptively: we don't arg
 ### The document programme
 
 1. **Foundations** — the system itself: axioms, mechanisms, and what follows from them. **Audience: anyone.**
-2. **Conformance requirements** — [`Aequitas_Conformance_v0.11.md`](Aequitas_Conformance_v0.11.md), precise enough to check an implementation against. **Audience: implementers.** Not a schema, not a protocol, not a product.
-3. **Academic paper** — engages Marx / Hayek / Ostrom; must answer the socialist-calculation critique head-on. Lead with: theory of *cost* not value; Ellerman on attribution; Cockshott & Cottrell on tractability; pledges as a decentralized answer to preference revelation. **Add: joint production solved by process physics rather than by convention (Foundations §3.4a) — this is the reply to Sraffa/Steedman and to ISO 14044 simultaneously.**
+2. **Conformance requirements** — [`Aequitas_Conformance_v0.12.md`](Aequitas_Conformance_v0.12.md), precise enough to check an implementation against. **Audience: implementers.** Not a schema, not a protocol, not a product.
+3. **Academic paper** — engages Marx / Hayek / Ostrom; must answer the socialist-calculation critique head-on. Lead with: theory of *cost* not value; Ellerman on attribution; Cockshott & Cottrell on tractability; pledges as a decentralized answer to preference revelation. **Add: joint production dissolved rather than allocated (Foundations §3.4a) — no split is computed at all, which is the reply to Sraffa/Steedman and to ISO 14044 simultaneously, and it needs no carrier quantity to defend.**
 4. **Civic reformer brief** — municipalities, co-ops, transition communities.
 5. **Public-facing text.**
 
-> **Moved here on 2026-08-25 by author ruling.** This was Foundations v0.23 §11 and the tail of `Aequitas_Conformance_v0.11.md`. **Neither states what the system is, so neither belonged in Foundations.** Nothing was cut.
+> **Moved here on 2026-08-25 by author ruling.** This was Foundations v0.23 §11 and the tail of `Aequitas_Conformance_v0.12.md`. **Neither states what the system is, so neither belonged in Foundations.** Nothing was cut.
 
 ---
 

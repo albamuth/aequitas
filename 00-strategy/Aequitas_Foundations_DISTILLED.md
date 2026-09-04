@@ -1,16 +1,16 @@
-<!-- generated-from: Aequitas_Foundations_v0.37.md -->
+<!-- generated-from: Aequitas_Foundations_v0.38.md -->
 # Aequitas — Foundations, distilled
 
 > ## ⚠️ THIS FILE IS GENERATED. DO NOT EDIT IT.
 >
-> **Every edit belongs in [`Aequitas_Foundations_v0.37.md`](Aequitas_Foundations_v0.37.md), which is the document this was made from.**
+> **Every edit belongs in [`Aequitas_Foundations_v0.38.md`](Aequitas_Foundations_v0.38.md), which is the document this was made from.**
 > An edit made here is lost the next time anyone runs the generator, and while it survives it is a
 > second version of a rule — which is the failure this file exists to avoid.
 >
 > **Regenerate with:** `python bin/distill.py`
 
-> **Source:** [`Aequitas_Foundations_v0.37.md`](Aequitas_Foundations_v0.37.md) · **version 0.37**
-> **Size:** 106,792 bytes, from 216,545 — **49% of the source**
+> **Source:** [`Aequitas_Foundations_v0.38.md`](Aequitas_Foundations_v0.38.md) · **version 0.38**
+> **Size:** 110,811 bytes, from 221,227 — **50% of the source**
 
 **What was kept:** every heading, every rule, every table, and the stated result of every worked
 example. **What was dropped:** the explanation prose between them.
@@ -117,7 +117,7 @@ example. **What was dropped:** the explanation prose between them.
 |---|---|
 | **Universality** | One mechanism only — material flow accounting. No exceptions for professions, nations, or classes. Units (mass, energy, seconds) are measurable identically anywhere in the universe. Coverage extends to non-participants by statistical estimation **on both sides of the ledger** (A7 (universal accounting)). Where a genuine convention is required, §2.5 names it rather than concealing it. |
 | **Decentralization** | No issuer, no central bank, no authoritative institution. Anyone may verify any claim from the event log. The verification ladder (§4.3) begins with peer attestation, which requires no infrastructure and therefore no permission. Governance is core-immutable with competing open variance. **Cost constants are the weakest point of this criterion, and §3.3a says so rather than claiming otherwise** — the auditing practice is a network's own design, held to five published properties (conformance 16a–16c), and no network has yet demonstrated a working one. |
-| **Fecundity** | The verification ladder *pulls* technological development (§4.3). Retroactive re-weighting (§3.3) creates permanent demand for better science. Regulators invert into services businesses want (§5.3). Onboarding is individually rational (§4.8). Pledges give surplus a purpose (§4.6). **Every co-product allocation is an open scientific question that better instruments improve (§3.4a).** |
+| **Fecundity** | The verification ladder *pulls* technological development (§4.3). Retroactive re-weighting (§3.3) creates permanent demand for better science. Regulators invert into services businesses want (§5.3). Onboarding is individually rational (§4.8). Pledges give surplus a purpose (§4.6). **Reading a process chain more finely lowers a co-product's figure, so better instruments pay the producer who buys them (§3.4a).** |
 ### 2.2 Debit
 > **A debit is a record that matter or energy was taken from the world, together with a statement of who is holding the consequence.**
 #### Who a flow is attributed to, and why
@@ -198,25 +198,25 @@ example. **What was dropped:** the explanation prose between them.
 >
 > **Where it did — measure it.** Feed energy, the heat needed to crack crude oil, and a turbine's trade-off between heat and power are facts about a process.
 >
-> **Where it did not — declare a convention and say so.** Labour hours and shared overhead leave no trace pointing at any one output, and no instrument will ever find one.
+> **Where it did not — declare a convention and say so.** A convention is a choice the system makes and names. Holding time and hours worked are used this way.
+>
+> **Or refuse to divide.** Where nothing was divided in the world, the system need not divide it in the books either. **This is not a third kind of convention, because nothing is chosen.**
 #### The three conventions this system declares
 | The quantity | What it is | The rule |
 |---|---|---|
 | **A team's credit, split across its members** | **Not a convention at all.** It dissolves | Credit is time worked (§2.3), so **each member is credited their own hours.** Nobody ever needs a figure saying the welder caused 40% of the bridge, because credit was never a share of the output |
-| **One process's labour, split across its several outputs** | **A convention, on a measurable basis** | **The labour divides in the same proportions as the process's measured material split** (§3.4a). It introduces no new basis and nothing new to game |
+| **One process's cost, split across its several outputs** | **Not a convention either. It is refused** | **Nothing is split.** Every co-product carries the whole process cost against its own output mass (§3.4a). The energy was not spent partly on one output — it was spent entirely on both |
+| **An organisation's debit, across its members** | **A convention, on a measurable basis** | **Hours worked**, which are already recorded for credit and already capped at 24 a day by IC-7, so the basis adds no new lever (§3.2c) |
 | **A durable asset's creation-cost, split across its holders** | **A convention, on a measurable basis** | **Holding time is a physical trace, so the split is measured rather than invented:** your share is your holding time divided by the total holding time over the asset's whole life (§4.5) |
 ##### An example, with the numbers
-**So the hours ride the material split, which was measured.**
-| Output | Measured share of the feed | Hours it carries |
-|---|---|---|
-| Beef | 78% | 6.24 h |
-| Tallow | 9% | 0.72 h |
-| Hide | 7% | 0.56 h |
-| Bone | 6% | 0.48 h |
-| **Total** | **100%** | **8.00 h** |
-> **The farmer is credited 8 hours whatever the split says.** The convention decides only **what each output's debit-cost reads**, never anybody's credit.
-#### Two quantities that look like they belong here and do not
-> **It is a choice that measurement constrains.** What this document fixes is the obligations on the choice: measure at the facility, for the period described, per dimension before collapsing, publish the method, and never let demand or yield enter. **The method itself belongs to the industry** (§2.6). Worked in full in §3.4a.
+**And they did not need to.** The 8 hours were spent on the whole animal, so every output carries all 8 against its own mass.
+| Output | Mass | Hours it carries per kg |
+|---|--:|--:|
+| Beef | 250 kg | 8 ÷ 250 = **0.032 h/kg** |
+| Hide | 40 kg | 8 ÷ 40 = **0.200 h/kg** |
+> **The farmer is credited 8 hours either way.** This decides only **what each output's debit-cost reads**, never anybody's credit.
+**Read this beside §3.4a**, which says why reading the chain more finely lowers the hide's figure and leaves the beef's alone.
+#### One quantity that looks like it belongs here and does not
 > **The project's hard problem is division, and specifically division of what left no trace.** See the objections register, §0.
 ### 2.6 What this document answers, and what it does not
 > **Cost accounting is the principle. Records and data collection are praxis, carried out by implementers.**
@@ -241,8 +241,8 @@ example. **What was dropped:** the explanation prose between them.
 | Which cryptography, which database, which protocol | The implementer |
 | Whether the ecosystem converges to one network | A prediction, not a design input (§4.8) |
 | **How a cost constant gets audited** — who replicates, what triggers a review, how a contested constant is handled while it is contested | The implementer (§3.3a). **That it must be answered is not out of scope**; the five properties in §3.3a are conformance items 16a–16c |
-| **Which instrument reads a joint process's split**, and over what period | The industry (§3.4a). Same shape: the obligations are fixed here, the method is not |
-> **The dial test is the standing screening question for anything proposed for these documents. What it leaves behind is a set of conformance requirements, never an architecture** — [`Aequitas_Conformance_v0.11.md`](Aequitas_Conformance_v0.11.md). **What must be true, never how to build it.**
+| **How finely a process chain is resolved** — which steps a facility reads separately | The industry (§3.4a). **The rule is fixed here and needs no method**; resolution only ever moves a figure downward, so nothing has to be policed |
+> **The dial test is the standing screening question for anything proposed for these documents. What it leaves behind is a set of conformance requirements, never an architecture** — [`Aequitas_Conformance_v0.12.md`](Aequitas_Conformance_v0.12.md). **What must be true, never how to build it.**
 ## 3. The Ledger Model
 ### 3.0 What a ledger is
 > **A person's ledger is two numbers, side by side.**
@@ -377,25 +377,63 @@ example. **What was dropped:** the explanation prose between them.
 #### What is not scoped out
 > **So a network that cannot show how it audits its constants is not conforming. It is not free to have no answer.**
 ### 3.4 Resolution is opportunistic
-> **The distinguishing test is whether the divided thing left a physical trace.** Where it did, measure. Where it did not, declare a convention (§2.5) and say so.
+> **The distinguishing test is whether the divided thing left a physical trace.** Where it did, measure. Where it did not, **first ask whether it has to be divided at all** — and if it does, declare a convention (§2.5) and say so.
 ### 3.4a Joint production — dividing one process's debit among several outputs
 #### What the problem is
 #### The rule
-> **A joint process's debit divides according to where the process physically sent its inputs, measured at that facility, over the period being described.**
-> **A2 is why this problem has an answer at all, and it is worth seeing why.** Every other attempt at this had to pick **one** unit of account and then defend it: split by mass, and energy-heavy outputs read as free; split by energy, and heavy outputs read as free. **A2 removes the choice.** Because every physical quantity in the ledger — a kilogram, a joule, a tonne of CO₂ — is a stand-in for the hours it takes to produce or to clean up, **the system never has to name one of them as *the* unit.** The universal is the denominator, not the carrier.
-#### How the split is actually produced, in order
-#### What Aequitas fixes here, and what it does not
-> **Aequitas fixes the obligations. It does not fix the method, and it cannot.**
-| Aequitas fixes | Left to the industry |
+> **A joint process's cost is not divided. Every co-product carries the whole cost of the process it came through, read against its own output mass.**
+##### An example, with the numbers
+| | |
 |---|---|
-| The split must describe **where the process physically sent its inputs** | Which instrument reads that, in this industry |
-| It must come from **measurement at that facility, for that period**, before any model | What counts as a workable period for this process |
-| It must be **computed per dimension before collapsing** to one figure (§3.2a) | Where the sensible sub-process boundaries are |
-| The **method must be published**, with its version, so anyone can re-run it (§4.7) | The method itself |
-| It may **never depend on demand, desirability, or yield** (see below) | — |
-#### What stops a producer choosing a flattering method
-#### One thing the split may never do
-> **Cost may not follow demand, desirability, or yield.**
+| **In** | 500 kg materials · **100 MJ** energy · **10 h** labour |
+| **Out** | 100 kg co-product A · 300 kg co-product B · 50 kg pollutants · 50 kg inert waste |
+| | Energy | Labour |
+|---|--:|--:|
+| **Co-product A**, 100 kg | 100 ÷ 100 = **1.000 MJ/kg** | 10 ÷ 100 = **0.100 h/kg** |
+| **Co-product B**, 300 kg | 100 ÷ 300 = **0.333 MJ/kg** | 10 ÷ 300 = **0.033 h/kg** |
+| **Pollutants**, 50 kg | the remediation cost, **on the producer, permanently** (§3.2b) | — |
+**The producer ends level.** They hold the process's whole cost and discharge it to each buyer as each co-product is handed on. **The pollution debit does not move.**
+> **A2 is why this problem has an answer at all.** Every other attempt had to pick **one** unit of account and defend it: split by mass and energy-heavy outputs read as free; split by energy and heavy outputs read as free. **A2 removes the choice**, because every physical quantity in the ledger is a stand-in for the hours it takes to produce or clean up. **The universal is the denominator, not the carrier.** Here it goes further: with no split to compute, no basis has to be named at all.
+#### Why the previous rule was withdrawn
+| Lever | Widest fraction | Max ÷ min |
+|---|---|--:|
+| The declared basis — volume against mass | asphalt | **1.29×** |
+| The sub-process boundary | residual fuel | **1.47×** |
+| **The conversion routing** | LPG | **6.31×** |
+#### What this rule needs, and what the withdrawn one needed
+| | The withdrawn rule | This rule |
+|---|---|---|
+| **Cost of the process** | metered | metered |
+| **Output masses** | weighed | weighed |
+| **Which products passed through which step** | needed, and **what share of each step's energy each took** | needed, **binary only** |
+| **A declared basis for untraceable heat** | required | **none** |
+| **A routing model** | required | **none** |
+| **A sub-process boundary choice** | required | **none, it is resolution — see below** |
+#### Reading a chain more finely changes the figures one way only
+> **A coarse reading is a ceiling on a fine reading of the same chain.** A product carries the cost of the steps it passed through, divided by its own mass. **Those steps are a subset of all the steps, and the mass is the same either way, so the coarse figure can never be lower.** Equality holds only for a product that passes through the whole chain.
+##### An example, with the numbers
+**One 600 kg steer. 20 hours of labour and 500 MJ across seven steps** — kill, hide removal, blood and organs, hooves and head, dry-aging, butchering, packaging. *(Illustrative digits.)*
+| Co-product | read as one block, MJ/kg | read as seven steps, MJ/kg |
+|---|--:|--:|
+| hide, 40 kg — leaves at step 2 | 12.50 | **2.00** |
+| organs, 60 kg — step 3 | 8.33 | **2.00** |
+| hooves and head, 30 kg — step 4 | 16.67 | **4.67** |
+| **packaged beef, 250 kg — step 7** | **2.00** | **2.00** |
+**In plain words: reading the chain finely lowers the figure for anything that leaves early, and leaves the figure for the thing that goes all the way through unchanged.** The hide never entered the dry-aging room, and dry-aging is 300 of the 500 MJ.
+**Three things follow.** **A coarse reading errs against the producer**, never for them, which is the direction §4.4's label rule asks for. **A producer wanting a lower figure has to buy more measurement**, so the incentive points at better instruments. **And resolution is not a lever to police**, because a finer reading is simply a truer description of what the product consumed.
+**Confirmed on 1,152 product-resolution pairs across two cases, with no exception:** `06-simulation/chain-resolution/RESULTS.md`.
+#### The arithmetic only works because a debit is a record, not an amount
+> **A debit is a pointer at an identified parcel, not a quantity.** Co-product A's 100 MJ and co-product B's 100 MJ **point at the same 100 MJ** — one supplier, one delivery window, one record.
+> **So a ledger walk is a union over identified parcels, never a sum. A parcel reached by two paths is counted once.**
+##### An example, with the numbers
+**One buyer takes both co-products from the worked example above.** A's record says 100 MJ, parcel `E-8841`. B's record says 100 MJ, parcel `E-8841`. **The buyer's `D` gains 100 MJ.** One parcel, named twice.
+**Two different buyers taking one each carry 100 MJ apiece, and neither ledger is wrong.** §3.5 already rules out adding them: *sums are not meaningful; two separate numbers are.*
+> **⚠️ Get this wrong and the books inflate, measurably.** Across 128 readings of one refinery, the union returns the chain total every time; **a naive sum returns 111 different answers and overstates by up to 7.00×.** Carried as conformance requirement 10b.
+#### What stops a producer understating
+#### One thing the cost may never do
+> **Cost may not follow demand or desirability.**
+##### Why **yield** is not in that ban, and used to be
+> **The three words were not the same kind of thing. Demand and desirability are not physical and nobody can weigh them. Output mass is physical and a scale reads it.**
 #### Four things that follow
 #### What remains open
 ### 3.5 The books never balance — and must not
@@ -861,10 +899,10 @@ example. **What was dropped:** the explanation prose between them.
 ### The companion documents
 | What it is | Where |
 |---|---|
-| **The conformance requirements** — what must be true for an implementation to *be* Aequitas, written for implementers | [`Aequitas_Conformance_v0.11.md`](Aequitas_Conformance_v0.11.md) |
-| **The objections register** — every open problem and every answered objection, with its status | [`Aequitas_Objections_v0.27.md`](Aequitas_Objections_v0.27.md) |
-| **The plain-language companion**, assuming no economics background | [`Aequitas_Overview_v0.24.md`](Aequitas_Overview_v0.24.md) |
-| **How adoption plausibly starts** — a reading of the historical record, not a statement of the system | [`Aequitas_Strategy_v0.7.md`](Aequitas_Strategy_v0.7.md) §5 |
+| **The conformance requirements** — what must be true for an implementation to *be* Aequitas, written for implementers | [`Aequitas_Conformance_v0.12.md`](Aequitas_Conformance_v0.12.md) |
+| **The objections register** — every open problem and every answered objection, with its status | [`Aequitas_Objections_v0.28.md`](Aequitas_Objections_v0.28.md) |
+| **The plain-language companion**, assuming no economics background | [`Aequitas_Overview_v0.25.md`](Aequitas_Overview_v0.25.md) |
+| **How adoption plausibly starts** — a reading of the historical record, not a statement of the system | [`Aequitas_Strategy_v0.8.md`](Aequitas_Strategy_v0.8.md) §5 |
 | **The simulation programme** — what is being tested and in what order | [`Aequitas_Simulation_Roadmap_v0.2.md`](Aequitas_Simulation_Roadmap_v0.2.md) |
 | **One paper per open problem** | [`open-problems/`](open-problems/) |
 | **Settled working papers these documents still cite by name** | [`papers/`](papers/) |

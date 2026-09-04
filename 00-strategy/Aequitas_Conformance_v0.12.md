@@ -1,12 +1,13 @@
 <!-- tag: cnf-aequitas-conformance -->
 # Aequitas — Conformance Requirements
 
-> **Version:** 0.11 · **Date:** 2026-09-02
+> **Version:** 0.12 · **Date:** 2026-09-03
 > **Audience: implementers.** Anyone building a trust network.
-> **Companion:** [`Aequitas_Foundations_v0.37.md`](Aequitas_Foundations_v0.37.md) — the system itself, and the argument behind every row below. **Where the two differ, Foundations governs.**
+> **Companion:** [`Aequitas_Foundations_v0.38.md`](Aequitas_Foundations_v0.38.md) — the system itself, and the argument behind every row below. **Where the two differ, Foundations governs.**
 > **Version history is kept separately and is not published**, so this document carries only what is currently true.
 > **Two row numbers are retired and are never reused: the bare `17`, and `14c`.**
 > **Row 14 no longer requires a per-head slice of the leftover, and no longer tells a network to under-count the producers it cannot see. New row 14d requires an extent register to be published as unaudited.**
+> **Row 10a no longer divides a joint process's debit at all. Every co-product carries the whole process cost against its own output mass, so there is no method to publish and no basis, routing or boundary to choose. Rows 10c and 10d are repaired to match** — outputs no longer sum to their input, their **union** does, and a coarser reading is now a **ceiling** rather than an equal. **New row 10e requires a ledger walk to be a union over identified parcels rather than a sum**, which is what stops the books inflating once the division is gone.
 
 ---
 
@@ -157,10 +158,11 @@ Worked: *"records are never deleted"* is something you can read off an implement
 | 8 | **No account claims more than 24 hours of activity in 24 hours.** | A2, §5.5.5 · *IC-7* |
 | 9 | **A person's pledges never exceed the credit they have earned in their life, one hour for one hour.** The budget is spent **when the pledge is made**, not when the work happens, **and there is no path that gives it back.** | §4.6 · *IC-8, IC-9* |
 | 10 | **A debit is a list of physical quantities, not one number.** Any division — across co-products, across a team, across anything — **is computed on each quantity separately, before they are combined into one figure.** | §3.2a |
-| 10a | **A joint process's debit divides by where the process physically sent its inputs**, measured at that facility, for the period being described. A model is used **only** where measurement is missing. **The method is published with its version number**, so anyone can re-run it. **A split may never depend on demand, desirability, or yield.** Which method suits an industry is that industry's to settle, not this document's. | §3.4a, §2.6, §4.7 |
-| 10b | **No output's share of any quantity is negative.** A negative result is a measurement error or a badly drawn process boundary — never a thing containing less than nothing. | §3.4a · *IC-10* |
-| 10c | **For each quantity, the outputs' shares add up to exactly what went into the process.** Nothing is created or lost in a split. | §3.4a · *IC-11* |
-| 10d | **Splitting a process stage by stage gives the same answer as splitting it whole**, and a divided estimate's parts add up to the coarser figure they came from. **This is what makes a redrawn boundary show up as an arithmetic disagreement rather than an argument.** | §3.4a, §4.4 · *IC-12* |
+| 10a | **A joint process's cost is not divided among its outputs.** Every co-product carries the **whole** cost of the process it came through, read against its **own output mass**. **What must be recorded is which steps each product passed through — a binary fact, never a share.** A cost may still never depend on **demand or desirability**; it may depend on output mass, because a scale reads one. | §3.4a, §2.5 |
+| 10b | **No quantity a product carries is negative.** A product's cost is a total of the steps it passed through, and a step cannot consume less than nothing. A negative result is a measurement error or a badly drawn process boundary. | §3.4a · *IC-10* |
+| 10c | **The union of what every output carries is exactly what went into the process** — no more and no less. **Their naive total is not**, and must never be reported as one: a parcel two products both passed through belongs to one record, not two. | §3.4a, §3.5 · *IC-11* |
+| 10d | **Reading a process at a coarser level of detail never lowers what any output carries, and the parts of a finer reading reconcile against the coarser figure they came from.** Equality holds only for an output that passed through every step. **This is what makes a redrawn boundary show up as an arithmetic disagreement rather than an argument.** | §3.4a, §4.4 · *IC-12* |
+| 10e | **A ledger walk is a union over identified parcels, never a sum.** A parcel reached by two paths is counted **once**, because a debit is a unique record of one specific event and not an amount. **An implementation that sums instead overstates a real refinery's energy by up to 7.00× and returns a different answer at every level of detail.** | **A3**, §3.4a, §3.2b |
 
 #### Row 9, worked
 
@@ -176,19 +178,22 @@ Worked: *"records are never deleted"* is something you can read off an implement
 
 **One pledged hour remains against the mowing, and the resident's remaining budget is still 2 hours.** The mower's credit was created by the work, not taken from the pledger. **Spending the budget is permanent, which is what makes pledging a real sacrifice.**
 
-#### Rows 10 and 10a, worked
+#### Rows 10a, 10c, 10d and 10e, worked
 
-**A farmer spends 8 hours on one steer. The animal yields beef, hide, tallow and bone.** The hours left no physical trace saying which output they went to, so they follow the material split, which was measured.
+**A process consumes 100 MJ and yields 100 kg of co-product A and 300 kg of co-product B.** The 100 MJ was not spent partly on A and partly on B. **It was spent entirely on both**, so neither carries a share of it.
 
-| Output | Measured share of the feed | Hours it carries |
-|---|---|---|
-| Beef | 78% | 6.24 h |
-| Tallow | 9% | 0.72 h |
-| Hide | 7% | 0.56 h |
-| Bone | 6% | 0.48 h |
-| **Total** | **100%** | **8.00 h** |
+| | What it carries | Per kg |
+|---|--:|--:|
+| **Co-product A**, 100 kg | **100 MJ** | 1.000 MJ/kg |
+| **Co-product B**, 300 kg | **100 MJ** | 0.333 MJ/kg |
+| **Their naive total** | 200 MJ | **never reported — row 10c** |
+| **Their union** | **100 MJ** | **= what went in. Row 10c satisfied** |
 
-**The farmer is credited 8 hours whatever the split says** (row 3). The split decides only what each output's debit-cost reads.
+**One buyer taking both carries 100 MJ, not 200** (row 10e), because both records name the same parcel.
+
+**Now read the same process as several steps instead of one block.** A product that left before a step did not consume it, so its figure falls; a product that passed through everything does not move. **Row 10d requires exactly that direction and forbids the other.**
+
+**The farmer is credited 8 hours however this reads** (row 3). None of it touches anybody's credit.
 
 ---
 
@@ -333,9 +338,9 @@ Worked: *"records are never deleted"* is something you can read off an implement
 | **IC-7** | **The 24-hour cap** | **8** |
 | **IC-8** | Pledges are backed one-for-one by earned credit | 9 |
 | **IC-9** | A spent pledge budget is never returned | 9 |
-| **IC-10** | No negative share | 10b |
-| **IC-11** | Shares add up to what went in | 10c |
-| **IC-12** | Boundary additivity | 10d |
+| **IC-10** | No negative quantity carried | 10b |
+| **IC-11** | The union equals what went in | 10c |
+| **IC-12** | Boundary monotonicity | 10d |
 
 **Two more were proposed, tested, and rejected on 2026-08-22.** *IC-13 (genesis admissibility)* refused the ordinary case of somebody joining, and was satisfied trivially by whichever network was founded most recently. *IC-14 (citation closure)* demanded **a** citation rather than a **true** one. **Both checked a self-asserted field against a constant, where every surviving constraint checks one recorded quantity against another.**
 

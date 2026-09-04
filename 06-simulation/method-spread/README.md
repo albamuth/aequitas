@@ -6,6 +6,7 @@ Foundations §3.4a fixes four obligations on how a joint process's debit divides
 
 | | |
 |---|---|
+| **Superseded** | ⚠️ **2026-09-03.** The §3.4a split rule this measures was withdrawn. **Kept because it is the measurement that caused the withdrawal.** See [`../chain-resolution/`](../chain-resolution/README.md) |
 | **Status** | ⚠️ **Leg 1 of 3 run** — the refinery. CHP and livestock are not built |
 | **Result** | **WIDE.** Five of seven fractions move by more than the declared threshold. **The modelled conversion routing carries the spread (6.31×); the declared convention is nearly inert (1.29×)** |
 | **Answers** | `sr-20260902-take-a-refinery-a-combined-heat-and-power-pl` |
