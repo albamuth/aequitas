@@ -1,10 +1,12 @@
 <!-- tag: str-aequitas-overall-strategy -->
 # Aequitas — Overall Strategy
 
-> **Version:** 0.8 · **Date:** 2026-09-03
+> **Version:** 0.9 · **Date:** 2026-09-04
 > **Supersedes:** `99-archive/Aequitas_Strategy_v0.8.md`
+> <!-- struck-ok: names the withdrawn convention in order to record that it was withdrawn -->
+> **This version stops reporting a rule Foundations withdrew on 2026-09-03.** Five places said OP-18 closed by a *declared convention — labour rides the material split*, and one said OP-17 split a joint process by measurement. **Neither is true.** A joint process's cost is not divided at all; every co-product carries the whole process cost against its own output mass, and **labour needs no convention** (Foundations §3.4a). **Both problems are still closed, and both closed the other way: by removing a division rather than by governing one.**
 > **Target:** A statement of the system, tested against scenarios, in ~3 months — with a conformance list an implementer can build against.
-> **Companion docs:** `Aequitas_Foundations_v0.39.md` (axioms), `Aequitas_Objections_v0.29.md` (register), `Aequitas_Conformance_v0.13.md` (what an implementation must satisfy), `../NEXT.md` (task queue)
+> **Companion docs:** `Aequitas_Foundations_v0.40.md` (axioms), `Aequitas_Objections_v0.31.md` (register), `Aequitas_Conformance_v0.13.md` (what an implementation must satisfy), `../NEXT.md` (task queue)
 > **Version history & what each version superseded:** `00-strategy/Aequitas_Strategy_CHANGELOG.md`.
 
 ---
@@ -84,7 +86,7 @@ This also answers the socialist-calculation critique pre-emptively: we don't arg
 |---|---|---|---|
 | C1 (event-log schema) <!-- tag: str-c1 --> | **Event log data model** | **✅ v0.3** — absorbed the allocation rule with no schema change | Done |
 | C2 (verification / trust networks) <!-- tag: str-c2 --> | **Verification protocol** — all 4 levels | L2 is an emergent trust market. **Now also carries the trust-network shape question (register OA10 (auditor independence)).** | Partial |
-| C3 (estimation engine) <!-- tag: str-c3 --> | **Estimation engine** — global avg → cohort → individual (OP-3 (estimation convergence)) | **In progress.** OP-18 closed (labour rides the material split, §3.4a), so C3 is unblocked; synthetic slice + test-MRIO loader built and the real EXIOBASE dataset is on disk. | In progress |
+| C3 (estimation engine) <!-- tag: str-c3 --> | **Estimation engine** — global avg → cohort → individual (OP-3 (estimation convergence)) | **In progress.** OP-18 closed — **labour needs no convention, because a joint process's cost is not divided at all** (§3.4a) — so C3 is unblocked; synthetic slice + test-MRIO loader built and the real EXIOBASE dataset is on disk. | In progress |
 | C4 (re-weighting) <!-- tag: str-c4 --> | **Re-weighting mechanism** + conservative weighting (load-bearing four times over) | Not started | ⛔ Yes |
 | C5 (debit taxonomy) <!-- tag: str-c5 --> | **Debit taxonomy + transfer rules** — property vs consumption, self-work identity, **pledge discharge and reversion** | Custody **settled: possession decides** (Foundations §3.2b, conformance row 7a); the pledge is **settled as a permanent grant of debit-room** (Foundations v0.14); **reversion resolved — pledges are permanent and unspent ones burn, so nothing reverts.** | ✅ Reversion closed; transfer-rule detail remains |
 | C6 (identity) <!-- tag: str-c6 --> | **Identity / proof-of-personhood** — one human, one account | Not started. *Now also the defence against debit dumping.* | ⛔ Yes |
@@ -97,7 +99,7 @@ This also answers the socialist-calculation critique pre-emptively: we don't arg
 
 **Critical path: C1 ✅ → C3 (in progress) → C4.**
 
-**The allocation problems that used to sit on the critical path are closed.** OP-17 split a joint process's materials and energy by measurement; OP-18 closed the labour half by *declared convention* (labour rides the material split, §3.4a) rather than an unfound measurement; the recursion-convergence sim confirmed the whole thing terminates. What is left on the build path is **C3 (estimation engine, in progress on real data) → C4 (re-weighting)**. The genuinely *unsolved* work is no longer measurement but **governance**: OP-10 (who controls the weighting model — the top blocker), OP-24 (understatement drift), and OP-16 (onerousness). Those are the risk-first targets now (§6).
+**The allocation problems that used to sit on the critical path are closed, and since 2026-09-03 they are closed by removing the division rather than by governing it.** **A joint process's cost is not divided.** Every co-product carries the whole process cost against its own output mass, so OP-17 needs no basis, no routing model and no boundary choice, and **OP-18's labour half needs no convention** (§3.4a). The recursion-convergence result still holds, *a fortiori*, because no division is performed at all. What is left on the build path is **C3 (estimation engine, in progress on real data) → C4 (re-weighting)**. The genuinely *unsolved* work is no longer measurement but **governance**: OP-10 (who controls the weighting model — the top blocker), OP-24 (understatement drift), and OP-16 (onerousness). Those are the risk-first targets now (§6).
 
 ---
 
@@ -111,7 +113,7 @@ This also answers the socialist-calculation critique pre-emptively: we don't arg
 - **C1 (event-log schema): Event log schema.** ❌ **Retired 2026-08-28.** The record model was never asked for and it read as a specification, which contradicts §2.6 and the simulator ruling of 2026-08-23. **The arithmetic it carried — IC-1 to IC-12 — is now in `Aequitas_Conformance_v0.13.md`.** A trust network writes its own schema.
 - **OP-17 (joint production): co-product allocation.** ✅ **Done, re-closed 2026-09-03 on a different mechanism** — **a joint process's cost is not divided at all.** Every co-product carries the whole process cost against its own output mass, so there is no method for Aequitas to fix or leave open (Foundations §3.4a). **The earlier split rule was withdrawn after a 36-method sweep found honest methods 6.31× apart.**
 - **Recursion convergence sim.** ✅ **Done — PASS** (`recursion_convergence.py`). Validated the OP-17 answer; doubles as the first piece of C11.
-- **OP-18 (labour & team credit): labour allocation across co-products and teams.** ✅ **Closed** — a declared convention (labour rides the material split), axiom-scored against the Aumann–Shapley checklist and stress-tested.
+- **OP-18 (labour & team credit): labour allocation across co-products and teams.** ✅ **Closed**, and **re-grounded 2026-09-04**: there is no convention, because there is no division. Every co-product carries all of the process's hours against its own mass. **The Aumann–Shapley axiom score went with the split it scored** — outputs no longer sum to their input, their **union** does (conformance 10c, 10e).
 - **C11: arithmetic audits.** ✅ **Closed** — IC-1…IC-12 runnable, all violations caught.
 - **C3 (estimation engine): Estimation engine.** ◻ **In progress.** Cohort hierarchy on the **residual rule** (N − Y)/Z, both sides of the ledger; synthetic + test-MRIO built, now extending to real EXIOBASE data. **This is the remaining Phase-1 item.**
 
@@ -173,7 +175,7 @@ This also answers the socialist-calculation critique pre-emptively: we don't arg
 | **🔴 Understatement drift (OP-24 (understatement drift))** — costs quietly bias low and nothing corrects them | Rival-sector audit (Foundations §3.3a). **Unproven.** Sim owed. Note this erodes **A4 (no externalities)** without breaking any equation, which is what makes it insidious. |
 | **🔴 The onerousness gap (OP-16 (onerousness gap))** — tedium/indignity have no material signature, and nothing allocates labour to the boring necessary jobs | Half answered by A2 (exertion/hazard/skill resolve materially). Leading candidate for the rest: hour-ceiling differentiation (pay the premium in time off, not rate). All candidates speculative; check first how much is simply unmeasured hazard. |
 | ~~**The allocation recursion does not converge**~~ | **Retired — the sim ran and passed.** Non-negative Neumann series, 100% convergent for `ρ(Ã) < 1`; Sraffa blocked by construction (`recursion_convergence.py`). |
-| ~~**OP-18 has no defensible convention**~~ | **Retired — closed by a declared convention** (labour rides the material split), axiom-scored and stress-tested. |
+| ~~**OP-18 has no defensible convention**~~ | **Retired — and not by finding one.** The division the convention would have governed was removed instead (§3.4a). **A risk about choosing a convention does not survive there being nothing to choose.** |
 | **The academic attack lands on preference revelation** (Mises/Hayek) | Largely answered: pledges + scarcity-as-debit. **Needs writing up, not inventing.** ⚠️ Guard against demand re-entering the *cost* side — the OP-17 session caught one such proposal. |
 | **Read as one more failed local currency** | Foundations §5.6 and §9 below: no medium of exchange, so no circulation failure; the overlay computes what money cannot. |
 | **Trust networks drift into issuer-pays capture** | Partly answered: a network concentrated in the sector it audits is captured by construction, and membership is public. **Full trust-network design deferred to C2 (verification / trust networks) by decision.** |
@@ -193,8 +195,8 @@ This also answers the socialist-calculation critique pre-emptively: we don't arg
 - [ ] 4+ worked use cases, each encodable in the schema, **at least one with joint production**
 - [ ] Wiki covering every core concept
 - [x] ~~An allocation convention for OP-17~~ — **better: a measurement, not a convention**
-- [x] ~~A declared labour-allocation convention for OP-18~~ — **done:** labour rides the material split, defended against the cooperative-game axioms (B9).
-- [ ] Every open problem in `Aequitas_Objections_v0.29.md` either solved, dissolved, or explicitly scoped as v2 — **the remaining live blockers are governance: OP-10, OP-24, and OP-16's tedium/indignity half (its hazard half is addressed by the contingent reserve, §4.6).**
+- [x] ~~A declared labour-allocation convention for OP-18~~ — **retired, not delivered.** The division it would have governed was removed on 2026-09-03, so no convention is owed (§3.4a, B9).
+- [ ] Every open problem in `Aequitas_Objections_v0.31.md` either solved, dissolved, or explicitly scoped as v2 — **the remaining live blockers are governance: OP-10, OP-24, and OP-16's tedium/indignity half (its hazard half is addressed by the contingent reserve, §4.6).**
 
 ---
 
@@ -239,4 +241,4 @@ The version-by-version change log now lives in a separate file, read only when n
 
 ---
 
-*End of v0.6.*
+*End of v0.9.*

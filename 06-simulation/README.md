@@ -29,6 +29,25 @@ Every command below is run **from inside that project's folder**. Every project 
 | **[`method-spread/`](method-spread/README.md)** | How far did a §3.4a joint-process split move across honest methods? | `python method_spread.py --test` | ⚠️ **Superseded 2026-09-03.** The split rule it measured was withdrawn. **Kept because it is the measurement that caused the withdrawal.** |
 | **[`chain-resolution/`](chain-resolution/README.md)** | If a joint process's cost is not divided, what does reading the chain more finely change — and do the books inflate? | `python chain_resolution.py --test` | ✅ **Done 2026-09-03.** Answers the author ruling of the same day. Foundations **§3.4a**, **§2.5**, **A3**. |
 
+---
+
+## Open questions we are handing to outsiders — [`sim-briefs/`](sim-briefs/README.md)
+
+**Six simulations nobody has run, written up so a stranger can evaluate the method and reproduce the result without asking us for anything.**
+
+> **Each brief states our prediction and the number that would refute us, both fixed before anybody runs it.** The reason is a rule a critic gave this project: **a check whose passing condition is set by the checker is not an instrument, and it fails toward flattery.**
+
+| Brief | The question, short |
+|---|---|
+| [SB-01](sim-briefs/SB-01_ceiling-challenge.md) | Can anything push the credit-disparity statistic **up** without breaking the 24-hour cap? |
+| [SB-02](sim-briefs/SB-02_rho-star-rubric.md) | Is the clearing rate **ρ\*** an instrument, or is it blind like `24 ÷ F` turned out to be? |
+| [SB-03](sim-briefs/SB-03_reweighting-cost.md) | What does a **full re-weighting** of a billion-event log cost in time and memory? **Needs a machine, not a theory** |
+| [SB-04](sim-briefs/SB-04_honest-label.md) | Does labelling a figure **metered** or **modelled** pay, or does it hand rivals a target? |
+| [SB-05](sim-briefs/SB-05_parcel-identity.md) | What happens to the books when a flow sheet **cannot tell one parcel from two**? |
+| [SB-06](sim-briefs/SB-06_resolution-tax.md) | How much dearer does a small producer's product read **because they cannot afford instruments**? |
+
+**In plain words: these are the questions where our own answer would not be worth much, because we would be marking our own work.** [`sim-briefs/README.md`](sim-briefs/README.md) says what a brief contains and why.
+
 ## The headline numbers, in one place
 
 | Number | What it is | Project |

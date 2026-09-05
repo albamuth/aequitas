@@ -1,9 +1,9 @@
 <!-- tag: obj-aequitas-objections-register -->
 # Aequitas — Objections Register
 
-> **Version:** 0.29 · **Date:** 2026-09-04
-> **Supersedes:** `99-archive/Aequitas_Objections_v0.28.md`
-> **Tracks:** `Aequitas_Foundations_v0.39.md` · `Aequitas_Conformance_v0.13.md` · `OP-22_identity_not_disclosure_v0.2.md` · `OP-27_parallel_implementation.md` · `OP-28_dark_production_and_the_residual_denominator.md` · `OP-26_coverage_and_closure.md` · `OP-18_labour_and_team_credit.md` · `OP-23_capital_and_pollution.md` · `OP-17_coproduct_allocation.md` · `06-simulation/allocation-engine/RECURSION_RESULTS.md` · `06-simulation/disparity-ceiling/DISPARITY_CEILING.md` · `06-simulation/pledge-reserve/pledge_reserve.py` · `06-simulation/scenario-suite/scenario_suite_METHOD.md`
+> **Version:** 0.31 · **Date:** 2026-09-04
+> **Supersedes:** `99-archive/Aequitas_Objections_v0.30.md`
+> **Tracks:** `Aequitas_Foundations_v0.40.md` · `Aequitas_Conformance_v0.13.md` · `OP-22_identity_not_disclosure_v0.2.md` · `OP-27_parallel_implementation.md` · `OP-28_dark_production_and_the_residual_denominator.md` · `OP-26_coverage_and_closure.md` · `OP-18_labour_and_team_credit.md` · `OP-23_capital_and_pollution.md` · `OP-17_coproduct_allocation.md` · `06-simulation/allocation-engine/RECURSION_RESULTS.md` · `06-simulation/disparity-ceiling/DISPARITY_CEILING.md` · `06-simulation/pledge-reserve/pledge_reserve.py` · `06-simulation/scenario-suite/scenario_suite_METHOD.md`
 > **Version history & what each version superseded:** `00-strategy/Aequitas_Objections_CHANGELOG.md`.
 > **Purpose:** one place holding every serious objection to the theory, its source, the axiom it attacks, and its status.
 
@@ -41,9 +41,10 @@
 
   - [B7 — OP-17. Joint production](#b7--op-17-joint-production--closed-for-materials-and-energy)
   - [B8 — OP-23. Shared overhead](#b8--op-23-shared-overhead--closed--capital-accrues-to-the-asset-not-the-co-products)
+  - [B16 — The floor rested on an inference the gate did not license](#b16--the-floor-rested-on-an-inference-the-gate-did-not-license--the-argument-is-deleted-not-repaired-2026-09-04)
   - [B15 — A4 forbade the unassigned state §4.4 depends on](#b15--a4-forbade-the-unassigned-state-44-depends-on--axiom-repaired-2026-09-04)
   - [B13 — OP-27. Parallel implementation](#b13--op-27-parallel-implementation--ruled-and-stress-tested)
-  - [B9 — OP-18. Labour & team credit](#b9--op-18-labour--team-credit--closed-as-the-c3-blocker--team-credit-dissolves-labour-rides-the-material-split)
+  - [B9 — OP-18. Labour & team credit](#b9--op-18-labour--team-credit--closed-as-the-c3-blocker--team-credit-dissolves-and-labour-needs-no-convention)
   - [B10 — Credit realization & the supply-chain hand-off model](#b10--credit-realization--the-supply-chain-hand-off-model--passes-with-changes)
   - [B12 — §3.2b electricity attribution (the real-time-dispatch principle)](#b12--32b-electricity-attribution-the-real-time-dispatch-principle--passes-with-changes)
   - [B14 — §3.2b latent pollution: a thing carries what it will emit](#b14--32b-latent-pollution-a-thing-carries-what-it-will-emit--passes-with-two-items)
@@ -86,7 +87,7 @@
 | 🔽 | **OP-15 (ghost harvesting) — Ghost harvesting** | *Folded from Foundations v0.23 §10.* Stated, not worked. |
 | 🔽 | **OP-7 (cross-level trade) — Cross-level trade** | *Folded from Foundations v0.23 §10.* Stated, not worked. §4's design rule requires a Level 1 region and a Level 3 region to be able to trade. |
 | ⏸ | **OP-2 — Anti-collusion at Level 2** | *Folded from Foundations v0.23 §10.* **Deprioritized.** Level 2 is an emergent market of trust networks; revisit once the system is stated. |
-| ✅ | **OP-18 (labour & team credit) — Responsibility is not divisible** | **CLOSED in v0.7** as the C3 (estimation engine) blocker — team-credit dissolves under A2; labour rides the material split; cost ≠ scarcity. See **B9**. |
+| ✅ | **OP-18 (labour & team credit) — Responsibility is not divisible** | **CLOSED in v0.7** as the C3 (estimation engine) blocker, and **re-grounded 2026-09-04**: team-credit dissolves under A2, and **labour needs no convention at all** — every co-product carries all of the process's hours against its own mass. Cost may not follow **demand or desirability**. See **B9**. |
 | ✅ | **OP-23 (shared overhead) — Shared-overhead attribution** | **CLOSED in v0.6** — capital and overhead never allocate to co-products. **Re-attacked 2026-08-24 from outside** (*"capital exclusion contradicts A5"*) and **HELD.** The critic's step is to assume the beef caused the barn; under **A1** only people act, so **a thing causes nothing** — and §3.2b already refuses that flow downstream, §4.5 upstream. **What was actually broken was A5's wording**, which located a cost on the *thing*; it is repaired in Foundations **v0.21**, along with the identical defect in **A4** (*"priced into it"*). **No mechanism moved.** One residue registered: a per-unit debit-cost carries no capital signal, and the discipline runs through the builder's own gate — **the §5.2 argument, transferred.** See **B8**. |
 | ✅ | **OP-17 (joint production) — Joint production allocation** | **CLOSED** for the material/energy half — see **B7**. |
 | ✅ | **P7 (theory of value) — "theory of value"** · **W1 — A3 defeats sinks** · **P9 (local-currency read)** · **S1** · **Ellerman** | **Fixed / claimed / adopted.** |
@@ -125,11 +126,14 @@ The v0.4 statement was *"division, not measurement,"* and it was too broad. OP-1
 > **The test that separates the two cases — and it is the most transferable result the project has produced:**
 > **Did the thing being divided leave a physical trace?**
 > **Trace → measure.** Feed energy, cracking enthalpy, a turbine's heat/power curve.
-> **No trace → declare a convention and say so.** Labour hours across co-products; shared overhead; joint responsibility across a team.
+> **No trace → first ask whether it has to be divided at all.** Where nothing was divided in the world, refusing to divide is available and is not a convention (Foundations §2.5, third move).
+> **If it genuinely must be divided → declare a convention and say so.** An organisation's debit across its members; a durable asset's creation-cost across its holders; joint responsibility across a team.
 
-**What remains genuinely indivisible is now vanishingly small.** After v0.7, of the two OP-18 (labour & team credit) scales: **labour across co-products** is closed — it gets a *declared convention* (rides the material split, §3.4a/§2.5), which is exactly what the physical-trace test prescribes for a no-trace quantity. **Responsibility across a team** dissolved for *credit* (A2 (time as measure): own hours) and survives only as the apportionment of a jointly-*caused debit* (team pollution/harm) — minor, non-blocking, sibling to OP-25 (illicit dumping). **The untraceable residue is no longer a blocker anywhere.**
+**What remains genuinely indivisible is now vanishingly small.** Of the two OP-18 (labour & team credit) scales: **labour across co-products** is closed, and **since 2026-09-03 it is closed by the third move rather than by a convention** — nothing is divided, so every co-product carries all of the process's hours against its own mass, exactly as the energy does (§3.4a). **Responsibility across a team** dissolved for *credit* (A2 (time as measure): own hours) and survives only as the apportionment of a jointly-*caused debit* (team pollution/harm) — minor, non-blocking, sibling to OP-25 (illicit dumping). **The untraceable residue is no longer a blocker anywhere.**
 
-> **A refinement of the headline, v0.7:** "no trace → declare a convention" is not a failure mode — it is a *result*. The win is (a) knowing when you are in that case, and (b) choosing the convention that adds no new capture surface. Labour riding the material split does exactly that: it introduces no basis of its own, so whoever games the split gains nothing they could not already gain by gaming the material θ — which rival-sector audit already polices.
+> **A refinement of the headline:** *"no trace → declare a convention"* is not a failure mode — it is a *result*. The win is (a) knowing when you are in that case, and (b) **asking first whether a division is required at all.**
+>
+> **This paragraph used to argue that labour riding the material split was the model case, because it introduced no basis of its own.** <!-- struck-ok: names the withdrawn convention in order to correct it --> **That reasoning was right about conventions and wrong about this one, and the case it praised is gone.** The 2026-09-03 sweep found the split it rode was **6.31×** wide across 36 honest methods, and **the best convention is the one you do not have to declare.** §2.5 now states that third move first, and §3.4a is its worked case.
 
 > **Overhead was the third, and v0.6 removed it — not by splitting it, but by declining to allocate it at all.** Capital and overhead accrue to the **asset** as property-debit and never flow to the co-products (Foundations §4.5). The barn is not divided between hide and beef; it stays on the operator. **A division problem dissolved by relocating the thing being divided** — the fourth consecutive closure of that shape.
 >
@@ -171,7 +175,9 @@ Source: `GLOSSARY.md#src-local-currency-experiments`. Ithaca HOURS, Burlington B
 **Sources:** [Ellerman](http://et.worldeconomicsassociation.org/files/WEA-ET-5-1-Ellerman.pdf) · `GLOSSARY.md#src-ellerman-labor-theory-of-property`
 **Status:** ✅ **CLOSED 2026-08-05 as the C3 (estimation engine) blocker — moved to Part B (B9).** The statement below is kept as the record of the problem; the resolution is in B9. Resolution note: `00-strategy/open-problems/OP-18_labour_and_team_credit.md`.
 
-> **Resolution in one line:** the "credit a team member separately" half was a **mis-statement** — under A2, credit is *own hours worked*, and no output-decomposition is needed (B9). The genuine residue, **labour across co-products**, gets a **declared convention: labour rides the process's material split** (§3.4a); co-product cost is embodied input, **never scarcity** (the tenderloin case). Only the apportionment of a jointly-*caused debit* across a team survives, and it is minor and non-blocking.
+> **Resolution in one line:** the "credit a team member separately" half was a **mis-statement** — under A2, credit is *own hours worked*, and no output-decomposition is needed (B9). The genuine residue, **labour across co-products**, needs **no convention at all**: a joint process's cost is not divided, so every co-product carries all of the process's hours against its own mass (§3.4a). **Cost may not follow demand or desirability.** Only the apportionment of a jointly-*caused debit* across a team survives, and it is minor and non-blocking.
+>
+> *(Until 2026-09-03 this line read that labour gets a declared convention riding the process's material split.* <!-- struck-ok: names the withdrawn convention in order to correct it --> *It went with the split it rode.)*
 
 Ellerman is explicit that de facto responsibility for a joint product is **joint and non-decomposable**. The whole team is responsible for the whole output. There is no factual measure saying the welder caused 40% of the bridge — and Aequitas needs exactly that number to credit nine people separately.
 
@@ -526,6 +532,58 @@ A second wave of critique arrived on 1f916.ai against posts #1605, #1750 and #15
 
 ---
 
+<!-- tag: obj-b16 -->
+## B16 — The floor rested on an inference the gate did not license ✅ **THE ARGUMENT IS DELETED, NOT REPAIRED, 2026-09-04**
+
+**Shipped:** Foundations v0.40 §2.3, §5.5.1, §5.5.2 · Overview v0.26 §2. **Source:** **@amber, c40261 on post #1605, 2026-09-04**, running ask #1 against §2.3. **They returned two findings. One is refuted; one stands and is folded here.**
+
+### The finding that stands
+
+<!-- struck-ok: quotes the withdrawn wording in order to show why it was withdrawn -->
+§2.3 read: *"Maintaining a living human body is work when it is done for somebody else. **It is therefore the same work when the body is your own.**"*
+
+> **"It is therefore" carries an inference the gate does not license.** A service was defined as *"something is done for a person or a body"* and enrichment as *"knowledge, skill or culture reaches somebody."* **Both are written as one party acting for another.**
+
+**And the two readings were not a fallback.** §2.3 offered sleep as either a service on your own body **or** enrichment of your own brain. **Both need the same reflexive extension. It was one unfounded step, taken twice.**
+
+**What it was load-bearing for.** `F` sets the disparity ceiling `24 ÷ F` (§5.5.5), both bounds of the stable band (§5.5.3), and every person's pledging power (§4.6).
+
+### The ruling: the argument was never needed
+
+> **AUTHOR RULING, 2026-09-04. A network publishes what it recognises as work, and time spent on recognised work is credited. If a network recognises the activities of self-continuance as work, it credits the time spent on them. That is the same rule that governs every other activity, and there is no second rule.**
+
+**Proof of life is the whole of the verification** — a verified living human has demonstrably maintained itself (§4.2).
+
+**So §2.3 was arguing a case it only had to state.** The passage is deleted and replaced with the recognition rule. **Nothing is derived from the relationship between an actor and a beneficiary, because nothing ever needed to be.**
+
+### Two wording defects went with it
+
+| | |
+|---|---|
+| **The service row said *"a person or a body"*** | **That meant an organisation, not a torso.** §3.2c defines an organisation as *"a business, a co-operative, an institution, a public body."* **The ambiguity is what made the confusion possible.** The row now reads *"a person, an organisation, or oneself"* |
+| **§5.5.2's step 2 ran through the same unfounded step** | It now runs through §4.2 and A8: a network publishes what it recognises, and self-continuance is something it may recognise |
+
+### What did not change, and the numbers say so
+
+**No figure moved.** The gate says what a network **may** recognise; the published evidence rule (§4.2) decides what it **does**; the floor is a named list with named durations (§5.5.1); and **IC-7 caps any account at 24 hours of activity in 24 hours.**
+
+| At `F` = 10 h/day | Hours recorded |
+|---|--:|
+| Sleeps 8, eats 1, washes 1, works 8 | 10 + 8 = **18** |
+| Claims all 24 hours as self-continuance | **24**, capped by IC-7 |
+
+**In plain words: naming *oneself* in the service row moved neither number.** The day was already 24 hours long.
+
+**And §5.5.2's heading survives.** The floor is still not an allowance: **the hours were really spent**, and credit for hours not spent would be the abstract issued quantity A1 forbids. **What a network chooses is which activities it recognises. What no network chooses is that recognised time credits one hour for one hour** — A2 settled that.
+
+### The finding that is refuted, and the half of it that is not
+
+**amber also wrote that the three-category gate *"is not among A1–A8, and it is not in what A8 declares invariant."*** **First half correct, second half wrong: the gate is conformance row 3a**, and A8's second clause — *"neither may the conformance requirements"* — carries its invariance. They had declared their own scope as one section against §1 and had not walked the conformance list.
+
+> **⚠️ But the surviving half is real and had not been written down anywhere.** A1 defines a credit as a record of time and **leaves *work* undefined**; the gate does that definitional work, **so the central term of the credit side is defined in the conformance list rather than in the axioms.** A stranger who reads only the eight paragraphs — which is exactly what ask #1 tells them to do — cannot tell what counts as work. **Registered here rather than fixed**, because moving a definition into §1 is an axiom change and nobody has asked for one.
+
+---
+
 <!-- tag: obj-b15 -->
 ## B15 — A4 forbade the unassigned state §4.4 depends on ✅ **AXIOM REPAIRED 2026-09-04**
 
@@ -766,9 +824,22 @@ The barn stays on the farm operator; the fab stays on its cooperative; hide and 
 ---
 
 <!-- tag: obj-b9 -->
-## B9 — OP-18. Labour & team credit ✅ **CLOSED as the C3 blocker — team-credit dissolves, labour rides the material split**
+## B9 — OP-18. Labour & team credit ✅ **CLOSED as the C3 blocker — team-credit dissolves, and labour needs no convention**
 
-**Shipped:** Foundations v0.6 §2.5 (labour-across-co-products row filled; team-credit row marked dissolved), §3.4a (labour convention + the cost-not-scarcity rule), §10.
+> ### ⚠️ TWO PARTS OF THIS ENTRY WERE WITHDRAWN ON 2026-09-03, AND THE ENTRY WAS NOT UPDATED UNTIL 2026-09-04
+>
+> **OP-18 is still closed. Both of the things it closed *with* are gone.**
+>
+> <!-- struck-ok: this box exists to name the two withdrawn rules -->
+> **1. The labour convention (α) — *labour rides the process's material split*.** The split it rode was withdrawn when 36 honest methods came out **6.31×** apart, so the convention went with it. **Labour now needs no convention at all: every co-product carries all of the process's hours against its own mass, exactly as the energy does** (§3.4a).
+>
+> **2. The tenderloin claim — *a pound of tenderloin and a pound of hamburger cost the same*.** **Withdrawn in the same ruling.** The ban was narrowed to **demand and desirability**, and **yield came out of it**, because output mass is physical and a scale reads it while desirability is not and nobody can weigh it. **A smaller output now reads dearer per kilogram**, because the same whole process stands behind less of it.
+>
+> **What survives, and it is the part that mattered: cost may not follow demand or desirability.** The universality argument below is unchanged — two identical steers in two towns still give the same figures, because no town appears in the arithmetic. **And who receives a physically scarce cut is still a distribution question, not a cost question.**
+>
+> **Nobody's credit was ever affected, in either version.** A worker is credited their own hours regardless (§4.5).
+
+**Shipped:** Foundations v0.6 §2.5, §3.4a, §10. **Superseded by Foundations v0.38 §3.4a**, which removed the division these rows depended on.
 **Full argument:** `00-strategy/open-problems/OP-18_labour_and_team_credit.md`
 **Method:** opened → separated into two sub-problems → one dissolved against A2 (time as measure), the other resolved by the physical-trace test with the split basis chosen by the author, then axiom-scored and stress-tested.
 
@@ -778,13 +849,23 @@ The barn stays on the farm operator; the fab stays on its cooperative; hide and 
 
 > **(β) Team credit dissolves under A2.** Credit is *time worked* (§6). Each member is credited **their own hours** — the "40% of the bridge" number is never required. Credit was never a share of output; the objection conflated *credit-for-hours* with *share-of-responsibility*. The axiom already answered it. *(Residue: apportioning a jointly-caused debit — team pollution/harm — across members. Minor, non-blocking, sibling to OP-25 (illicit dumping).)*
 >
-> **(α) Labour across co-products gets a declared convention: it rides the process's material split.** No trace exists, so the physical-trace test *mandates* a convention — this is the first OP to close by declaring one rather than removing a division. The discipline: pick the convention that adds **no new capture surface.** Labour riding the already-measured, rival-audited material θ (mass/deposition for cattle, cracking-energy for a refinery) introduces no basis of its own and **changes no one's credit** — it only sets how each co-product's *debit-cost* reads.
+> **(α) Labour across co-products needs no convention.** **A joint process's cost is not divided at all**, so there is no share to find and nothing to declare. **Every co-product carries all of the process's hours against its own mass, exactly as the energy does** (§3.4a). It **changes no one's credit** — it only sets how each co-product's *debit-cost* reads.
+>
+> > *(This read: labour gets a declared convention riding the process's material split, and OP-18 was called the first problem to close by declaring a convention rather than removing a division.* <!-- struck-ok: names the withdrawn convention in order to correct it --> *It closed the other way in the end. §2.5's third move — refusing to divide — is what actually carried it.)*
 
-**The load-bearing sub-decision — cost ≠ scarcity** *(the tenderloin case)*. A pound of tenderloin (≈1% yield) and a pound of hamburger (≈5% yield) **cost the same**, because each embodies the same feed, water, and growing-labour — refined only by *measured* tissue composition, never by yield or desirability. Weighting the rare cut as *more costly* is scarcity smuggled into cost, and it would ration that cut by **who can absorb the larger debit** — price-rationing by standing, the exact mechanism A5/§5.1 removes. **The scarcity is real and routed elsewhere:** to pledges/signals (how many cattle) and to decentralised local distribution (the butcher's lottery/queue/pledge-priority, §5.5). *Cost states what a thing took; who gets a scarce output is a distribution question, deliberately outside any central authority.* Method 2 (yield-weighting) was raised and rejected on exactly this ground.
+**The load-bearing sub-decision — cost may not follow demand or desirability** *(the tenderloin case)*. **Weighting a rare cut as more costly *because people want it* is scarcity smuggled into cost**, and it would ration that cut by **who can absorb the larger debit** — price-rationing by standing, the exact mechanism A5 and §5.1 remove. **Two reasons it stands:** two identical steers in two towns would otherwise carry different costs, because the towns want different cuts, which fails universality; and rationing by standing is what this system exists to remove. **The scarcity is real and routed elsewhere:** to pledges and signals (how many cattle), and to distribution where the physical cut is handed over — a queue, a lottery, or pledge-priority (§5.5, §4.6).
 
-**Axiom score (labour-rides-material-split).** Efficiency ✅ (shares sum to total), Symmetry ✅, **Dummy ✅** (manure ≈ 0 mass → ≈ 0 labour — the axiom that killed OP-23's even-split), Additivity ✅. **Exploit:** it amplifies the reward for faking the material split — but that is the existing rival-sector-audit target (§3.3a), no new mechanism.
+> **⚠️ What this paragraph used to say, and it is withdrawn.** <!-- struck-ok: this box exists to name the withdrawn claim --> It read that *a pound of tenderloin and a pound of hamburger cost the same*, and that cost may never follow **yield**. **The 2026-09-03 ruling narrowed the ban to demand and desirability and took yield out of it.**
+>
+> **The three words were never the same kind of thing. Demand and desirability are not physical and nobody can weigh them. Output mass is physical and a scale reads it.**
+>
+> **Worked, with the numbers.** A farmer spends **8 hours** on one steer yielding **250 kg of beef and 40 kg of hide**. Beef reads `8 ÷ 250 =` **0.032 h/kg**; hide reads `8 ÷ 40 =` **0.200 h/kg**. **The smaller output reads dearer, because the same whole process stands behind less of it** — and no town, and nobody's preference, appears anywhere in that arithmetic.
 
-**Universality is the win over Method 2.** Two identical cows in two towns get the **same** split, because nothing is demand-contingent — precisely the failure that "price allocation in costume" would introduce.
+**The axiom score is retired with the rule it scored.** <!-- struck-ok: names the withdrawn scoring in order to retire it --> It read *Efficiency ✅ (shares sum to total)*, and **outputs no longer sum to their input — their union does** (conformance 10c, 10e). **A score of a division is meaningless once there is no division.**
+
+**What is left to misstate, and it is not an allocation choice.** There is no model to pick, so the only thing a producer can falsify is a **passage** — claiming a co-product left the chain before work it really consumed. **That is a false record, caught by the integrity checks (conformance row 7), not by an allocation rule.** The understatement incentive itself is unchanged and is **OP-24**.
+
+**Universality is the win.** Two identical steers in two towns give the **same** figures, because nothing in the arithmetic is demand-contingent — precisely the failure that *"price allocation in costume"* would introduce. **That argument is untouched by the withdrawal**, because it never depended on how the cost was divided, only on what may not enter it.
 
 ---
 
@@ -930,7 +1011,7 @@ The barn stays on the farm operator; the fab stays on its cooperative; hide and 
 | | The ruling |
 |---|---|
 | **1** | **It is a gate, not a boundary.** The categories decide **whether** an hour is creditable. They never decide **how much**, and they never split an hour. Foundations §4.5's *"no rule may use them as an accounting boundary"* stands unchanged |
-| **2** | **At least one is enough, and which one is never recorded.** Sleep is a service performed on your own body, **or** enrichment of your own brain. **Both readings credit the same one hour and the books never ask which** |
+| **2** | **At least one is enough, and which one is never recorded.** An hour that is more than one of them credits once. **Which category an hour falls into is never written down and never changes the figure** |
 | **3** | An hour that is all three is still one hour — the apprentice plumber |
 
 **What it does to exploit 1 above (generous-network arbitrage).** The old answer was entirely counterparty re-computation: a stingy network re-weights a generous one's self-care down through its own model, so generosity cannot be exported. **That still carries most of the load. What 3a adds is an outer wall on the *list* rather than on the *hours*.**
@@ -1084,4 +1165,4 @@ The version-by-version change log (former §E) now lives in a separate file, rea
 
 ---
 
-*End of v0.29.*
+*End of v0.31.*

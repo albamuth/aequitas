@@ -49,6 +49,7 @@ leather      kg        2.1594     7.6261    2.3832      4.9238
 
 All vectors finite and `≥ 0` (test 1). The `collapsed` column applies an explicit weighting model (`materials:1, energy:0.05, labour:1`) — **the OP-10 object, kept external by design**, because whoever sets those weights moves every balance.
 
+<!-- struck-ok: names the withdrawn convention in order to record that it was withdrawn -->
 ### 3.2 OP-18 — labour rides the material split
 
 `Θ['labour']` is not a copy of the material split; it **is the same object**. Consequently the assembled operator `Ã` for labour is *bit-identical* to the material operator (test 2: `gap == 0.0`). Labour introduces **no new split basis and therefore no new capture surface** — it inherits the rival-audited material `Θ`, exactly the v0.6 claim. Energy, having its own `Θ`, gets a different operator — which is why the dimensions must be solved separately.

@@ -1,11 +1,11 @@
 <!-- tag: ovw-aequitas-overview -->
 # Aequitas — Overview
 
-> **Version:** 0.25
-> **Date:** 2026-09-03
+> **Version:** 0.26
+> **Date:** 2026-09-04
 > **Supersedes:** `99-archive/Aequitas_Overview_v0.25.md`
 > **Audience:** everyone. No economics background assumed, none required.
-> **Rigorous version:** `00-strategy/Aequitas_Foundations_v0.39.md`. This document is the plain-language companion; where they differ, the Foundations govern.
+> **Rigorous version:** `00-strategy/Aequitas_Foundations_v0.40.md`. This document is the plain-language companion; where they differ, the Foundations govern.
 > **Version history & what each version superseded:** `00-strategy/Aequitas_Overview_CHANGELOG.md`.
 
 *Aequitas* (genitive *aequitatis*) is the Latin word for fairness, evenness, symmetry — the quality of things being level with one another.
@@ -216,12 +216,18 @@ An economy that needs a constant supply of *new* debt to generate demand is an e
 | | What it means | An example |
 |---|---|---|
 | **Production** | Matter or energy is turned into something | Milling wheat into flour |
-| **A service** | Something is done for a person or a body | Setting a broken arm |
+| **A service** | Something is done for a person, an organisation, or yourself | Setting a broken arm |
 | **Enrichment** | Knowledge, skill or culture reaches somebody | Teaching a child to read |
 
 **One is enough, and nobody records which one.** An apprentice plumber's single hour is all three at once — copper becomes plumbing, a customer's pipes work, and a trade gets learned. **It still counts as one hour.** The three names decide *whether* an hour counts, never *how much* it counts for.
 
-**This is why looking after yourself counts.** Eating, washing and sleeping are things done for a body, and it does not matter that the body is your own. **Sleep you could also call enrichment — you are maintaining your own brain — and it makes no difference, because either way it is one of the three.** The medical consensus is that adults need [7 or more hours a night](https://aasm.org/aasm-and-srs-publish-new-sleep-duration-consensus-statement/), and 6 or fewer is not enough to stay healthy and safe. **A community that counts 8 hours of sleep plus roughly 2 hours of eating, washing and other upkeep gets a baseline of 10 hours a day.**
+**This is why looking after yourself can count, and it is the ordinary rule rather than a special one.** A community writes down what it treats as work. **If it treats sleeping, eating and washing as work, then the hours you spend on them are credited — exactly like any other hours it recognises.** If it does not, they are not. **The list is the community's to write.**
+
+**How is it checked? You are still here.** A living, verified person plainly did the maintaining, and confirming that costs almost nothing.
+
+The medical consensus is that adults need [7 or more hours a night](https://aasm.org/aasm-and-srs-publish-new-sleep-duration-consensus-statement/), and 6 or fewer is not enough to stay healthy and safe. **A community that counts 8 hours of sleep plus roughly 2 hours of eating, washing and other upkeep gets a baseline of 10 hours a day.**
+
+> **Two things this does not mean.** Passing the three-way test is not the same as being credited: **a community credits no kind of work it has not written a rule for.** And nobody gets extra hours out of it — **no account may record more than 24 hours of activity in a day**, so a person sleeping 8, eating 1, washing 1 and working 8 records **18 hours**, and no reading of the three names makes that number larger.
 
 **And it is why some things do not count.** A community cannot decide that being loyal to it is work. **Loyalty is not production, not a service, and not enrichment**, so there is nothing to credit. That is a real limit on what any bookkeeper can invent.
 
@@ -703,6 +709,6 @@ What was deliberately dropped:
 
 ---
 
-*For the rigorous statement of everything above, with the arguments and the open problems in full: `00-strategy/Aequitas_Foundations_v0.39.md`.*
+*For the rigorous statement of everything above, with the arguments and the open problems in full: `00-strategy/Aequitas_Foundations_v0.40.md`.*
 
-*End of v0.22.*
+*End of v0.26.*

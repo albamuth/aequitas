@@ -3,7 +3,7 @@
 
 > **Version:** 0.13 · **Date:** 2026-09-04
 > **Audience: implementers.** Anyone building a trust network.
-> **Companion:** [`Aequitas_Foundations_v0.39.md`](Aequitas_Foundations_v0.39.md) — the system itself, and the argument behind every row below. **Where the two differ, Foundations governs.**
+> **Companion:** [`Aequitas_Foundations_v0.40.md`](Aequitas_Foundations_v0.40.md) — the system itself, and the argument behind every row below. **Where the two differ, Foundations governs.**
 > **Version history is kept separately and is not published**, so this document carries only what is currently true.
 > **Two row numbers are retired and are never reused: the bare `17`, and `14c`.**
 > **Row 15 now names the object it waits for. The leftover is held *explicitly unassigned* until an attribution witness binds a share of it to a named principal**, which is the state A4 gained on 2026-09-04. A producer joining supplies a witness; conservation arithmetic never does.

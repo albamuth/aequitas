@@ -35,6 +35,7 @@ The EXIOBASE loader reproduced standard EEIO footprints — but a monetary IOT h
 3. **Universality** (the important one) — the physical split is **exactly price-independent**: shock every price ×3.7 and the physical per-barrel debit does not move at all. This is the §3.4a / B9 property that killed demand-contingent splitting — *demand cannot enter cost*.
 4. **Material divergence** — L1 distance 47.4; petcoke under-costed by price; gasoline energy share > volume share.
 5. **Gasoline energy anchor** — 56%, inside the DOE ~62% ballpark, validating the two-channel construction against a real published number.
+<!-- struck-ok: names the withdrawn convention in order to record that it was withdrawn -->
 6. **OP-18** — labour rides the material split exactly (constant hr/kg across fractions).
 
 ## 4. The two-channel energy split (physical-trace test *inside* the refinery)

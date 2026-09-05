@@ -3,6 +3,13 @@
 > **Read this instead of re-running.** From the four `--test` runs, last verified 2026-08-24.
 > This is the summary layer. The three original write-ups are kept in full beside it: [`RECURSION_RESULTS.md`](RECURSION_RESULTS.md), [`ESTIMATION.md`](ESTIMATION.md), [`REFINERY.md`](REFINERY.md).
 
+
+> **⚠️ Note, 2026-09-04. This project implemented an allocation rule that no longer exists.**
+> <!-- struck-ok: names the withdrawn convention in order to record that it was withdrawn -->
+> **It splits a joint process's cost, and makes labour ride the material split.** Foundations withdrew the division entirely on 2026-09-03: **a joint process's cost is not divided, and every co-product carries the whole process cost against its own output mass** (§3.4a).
+> **What replaced it:** [`../method-spread/`](../method-spread/), which measured the spread that retired the rule (**6.31×** across 36 honest methods), and [`../chain-resolution/`](../chain-resolution/), which measures the rule that took its place.
+> **What survives from here:** the recursion-convergence result — the cost recursion terminates and no share goes negative — which holds *a fortiori* now that no division is performed at all. **Read the figures below as a dated record of a run, not as current doctrine.**
+
 ---
 
 ## 1. The recursion converges, and every share is non-negative
@@ -31,6 +38,7 @@ The rejected alternative — weighting by yield or price — is implemented alon
 
 Two more results from the same run:
 
+<!-- struck-ok: names the withdrawn convention in order to record that it was withdrawn -->
 - **Labour rides the material split.** Labour has no per-product physical trace, so it reuses the material dimension's split. The code makes this an identity rather than a comment, and a test asserts the resulting operators are bit-identical.
 - **Split before you collapse.** Shared-operation dimensions commute; energy does not. So the division has to happen per dimension, before collapsing — which is Foundations §3.2a, checked rather than assumed.
 - **The residual estimate worsens as good producers leave.** The dark estimate falls 23.3 → 10.0 in this fixture as producers instrument. Studied properly in [`../residual-unravelling/`](../residual-unravelling/).
@@ -55,7 +63,7 @@ The refinery is the first case where joint production is real and the answer is 
 
 > **Physical and price allocations diverge by up to about 6× on the same fraction slate.** Gasoline takes **55% of the energy** against **47% of the volume**. Petroleum coke is systematically under-costed by price.
 
-Six faithfulness gates pass, including: the physical split is **price-independent**, so demand cannot enter cost; and labour rides the material split at a constant 0.001471 hours per kilogram across every fraction.
+Six faithfulness gates pass, including: the physical split is **price-independent**, so demand cannot enter cost; and labour rides the material split at a constant 0.001471 hours per kilogram across every fraction. <!-- struck-ok: names the withdrawn convention in order to record that it was withdrawn -->
 
 The energy dimension uses real per-process energies from the [U.S. Department of Energy's 2015 Petroleum Refining Bandwidth Study](https://www.energy.gov/eere/amo/articles/bandwidth-study-us-petroleum-refining) (Table 4-2, nine processes, 2,163 trillion British thermal units per year). Materials, labour and prices are still representative and are flagged as such in the script.
 

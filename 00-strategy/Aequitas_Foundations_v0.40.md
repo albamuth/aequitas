@@ -1,16 +1,18 @@
 <!-- tag: fnd-aequitas-foundations-and-long-term -->
 # Aequitas — Foundations & Long-Term Strategy
 
-> **Version:** 0.39
+> **Version:** 0.40
 > **Date:** 2026-09-04
-> **Supersedes:** [`../99-archive/Aequitas_Foundations_v0.38.md`](../99-archive/Aequitas_Foundations_v0.38.md)
+> **Supersedes:** [`../99-archive/Aequitas_Foundations_v0.39.md`](../99-archive/Aequitas_Foundations_v0.39.md)
 > **Status:** Working foundations.
 > **Primary audience of the first paper:** technologists and implementers.
 > **Companion:** [`Aequitas_Conformance_v0.13.md`](Aequitas_Conformance_v0.13.md) — what must be true for an implementation to *be* Aequitas.
-> **Companion:** [`Aequitas_Objections_v0.29.md`](Aequitas_Objections_v0.29.md) — the objections register.
+> **Companion:** [`Aequitas_Objections_v0.31.md`](Aequitas_Objections_v0.31.md) — the objections register.
 > **Version history is kept separately and is not published**, so this document carries only what is currently true.
 >
-> **This version repairs an axiom. A4 now asks two things where it used to ask one.** **Coverage** — the consequence stays inside the accounting — is absolute. **Attribution** — it is assigned to whoever caused it and to nobody else — gains a stated unresolved state: **where causation is not yet resolved, the consequence is held explicitly unassigned until an attribution witness exists.** The old single clause forbade the very state §4.4 depends on, because the leftover `R = N − Y` is debit on no account, and §2.2's gloss stated a test — *a cost lands on **a** ledger* — that its own third example failed. **§2.2 now runs all three cases against both halves, and §4.4 defines an attribution witness: a record that binds a share of the leftover to a named principal.** Joining supplies one; conservation arithmetic does not. **No mechanism moved. The axiom now states what §4.4 already did.**
+> **This version removes an argument §2.3 never needed. Keeping yourself alive is credited by the ordinary rule and by nothing else: a network publishes what it recognises as work, and time spent on recognised work is credited.** §2.3 used to argue the case instead — *maintaining a body is work when done for somebody else, **therefore** the same work when the body is your own* — and **@amber showed the inference was not licensed**, because the three categories are written as one party acting for another. **The argument is deleted rather than repaired.** Two wording defects went with it: the service row's *"a person or **a body**"* meant an organisation and not a torso, and it now names **oneself** explicitly; and §5.5.2's derivation ran through the same unfounded step and now runs through §4.2 and A8. **No number moved** — the gate says what a network *may* recognise, the published evidence rule decides what it *does*, and IC-7 already caps the day at 24 hours.
+>
+> **The version before this repaired an axiom. A4 asks two things where it used to ask one.** **Coverage** — the consequence stays inside the accounting — is absolute. **Attribution** — it is assigned to whoever caused it and to nobody else — gains a stated unresolved state: **where causation is not yet resolved, the consequence is held explicitly unassigned until an attribution witness exists.** The old single clause forbade the very state §4.4 depends on, because the leftover `R = N − Y` is debit on no account, and §2.2's gloss stated a test — *a cost lands on **a** ledger* — that its own third example failed. **§2.2 now runs all three cases against both halves, and §4.4 defines an attribution witness: a record that binds a share of the leftover to a named principal.** Joining supplies one; conservation arithmetic does not. **No mechanism moved. The axiom now states what §4.4 already did.**
 
 ### How to read this document
 
@@ -386,7 +388,7 @@ Someone releases **1 tonne of CO₂**. Three ways to put a number on it. *(All t
 | | What it means | An example |
 |---|---|---|
 | **Production** | Matter or energy is turned into something | Milling wheat into flour |
-| **A service** | Something is done for a person or a body, often with nothing to hand over | Setting a broken arm |
+| **A service** | Something is done for a person, an organisation, or oneself, often with nothing to hand over | Setting a broken arm |
 | **Enrichment** | Knowledge, skill or culture reaches somebody | Teaching a child to read |
 
 **This is a threshold, not a filing system.** An activity qualifies if it is **at least one** of the three. **Which one it is, is never recorded, and it never changes the figure.**
@@ -419,13 +421,41 @@ Someone releases **1 tonne of CO₂**. Three ways to put a number on it. *(All t
 
 **To give grounds for crediting work no economy has ever credited.** Going to school is work, and today the student or their parents pay for it, which is the relationship inverted. Teaching your own child is work. Caring for a relative is work. **None of it is paid today, and all of it passes the threshold.** §4.5 states what follows.
 
-#### Keeping yourself alive passes the threshold
+#### Keeping yourself alive is work a network may recognise
 
-**Maintaining a living human body is work when it is done for somebody else. It is therefore the same work when the body is your own.**
+**One rule covers this, and it is the same rule that covers every other activity.**
 
-**Sleeping, eating, washing and using a toilet all qualify.** Sleep can be read as a service performed on your own body, or as enrichment of your own brain. **Both readings credit the same one hour**, and the system never asks which, because the category is never recorded.
+> **A network publishes what it recognises as work. Time spent on recognised work is credited, at one hour for one hour** (§4.2).
+
+**Self-continuance — sleeping, eating, washing, and other bodily upkeep — is an activity a network may recognise.** Where a network recognises it, those hours credit like any other recognised hours. **Where it does not, they do not.** Which activities a network recognises, and how many hours it counts for each, is that network's own choice (§5.5.1, A8).
+
+**The evidence is proof of life.** A verified living human has demonstrably maintained itself. **It is the strongest evidence in this system and costs almost nothing to check** (§4.2).
 
 **That some of the maintenance is passive does not matter**, because the measure is time and not effort (§0).
+
+##### What passing the gate does not license
+
+**Passing the gate is not the same as being credited, and the gate was never the thing deciding the floor.**
+
+| The screen | What it does |
+|---|---|
+| **The gate** (the three categories above) | Says what a network **may** recognise. It is a wall, not a list |
+| **The published evidence rule** (§4.2) | **A network credits no kind of work for which it has published no rule.** This is what actually decides |
+| **The floor's own list** (§5.5.1) | Named activities with named durations, not a tally of a person's day |
+| **IC-7** | **No account may claim more than 24 hours of activity in 24 hours** |
+
+###### An example, with the numbers
+
+**A network with `F` = 10 h/day**, counting 8 hours of sleep, 1 of eating, 0.5 of washing and 0.5 of other upkeep.
+
+| | Hours recorded that day |
+|---|--:|
+| Someone who sleeps 8, eats 1, washes 1, and works 8 | 10 + 8 = **18** |
+| Someone who claims all 24 hours as self-continuance | **24**, capped by IC-7 — and credited only for the activities the network published a rule for |
+
+**In plain words: naming *oneself* in the service row moved neither figure.** The day was already 24 hours long, and the floor was already a published list.
+
+> *(§2.3 used to argue this instead of stating it — *"maintaining a body is work when it is done for somebody else, therefore the same work when the body is your own"* — and **@amber, c40261, 2026-09-04, showed the inference was not licensed.** They were right, and the argument was never needed. **The word *body* in the service row meant an organisation, not a torso**, which is what made the confusion possible.)*
 
 **This is where the basic-needs floor comes from, and it is not a grant.** Credit for no time worked would be exactly the abstract, issued quantity A1 forbids, so a floor could never have been written as an allowance. **Every living human really does spend those hours, and they credit at the ordinary rate.** How many hours a network counts, and the evidence behind that number, is §5.5.1. What the floor then does to an economy is §5.5.
 
@@ -1011,6 +1041,7 @@ Two reasons the ban stands:
 
 ##### Why **yield** is not in that ban, and used to be
 
+<!-- struck-ok: names the withdrawn convention in order to record that it was withdrawn -->
 **Until v0.38 this rule also forbade cost following yield, and said a pound of tenderloin costs the same as a pound of hamburger. That is withdrawn.** Under this rule the smaller output reads dearer per kilogram, because the same whole process stands behind less of it.
 
 > **The three words were not the same kind of thing. Demand and desirability are not physical and nobody can weigh them. Output mass is physical and a scale reads it.**
@@ -1023,6 +1054,7 @@ Two reasons the ban stands:
 
 - **Waste outputs are co-products like any other.** Manure and methane carry the process cost against their own mass, like everything else. **A step no product passed through reaches no product** and stays with the producer (§3.2b).
 - **The process sets an output's cost; its fate sets its ledger character.** Manure is pollution debit in a lagoon, a co-product in a biodigester, and a measured fertiliser offset when spread on a field. The record of what happened to it already captures this — everything the books track has a fate, which is conformance requirement 7.
+<!-- struck-ok: names the withdrawn convention in order to record that it was withdrawn -->
 - **Labour needs no convention any more.** The farmer's hours are the process's hours, and every co-product carries them against its own mass, exactly as the energy does. **The declared convention that labour rides the material split is withdrawn with the split it rode.** Nobody's credit is affected either way — a worker is credited their own hours regardless (§4.5).
 - **Negative cost shares do not arise.** Nothing is inverted and nothing is subtracted, so [Steedman's negative-value result](https://www.scienceopen.com/hosted-document?doi=10.13169/worlrevipoliecon.14.1.0063) does not transfer. The earlier simulation across 4,098 economies confirmed it for the withdrawn division (`06-simulation/allocation-engine/RECURSION_RESULTS.md`); **the result survives a fortiori here, because no division is performed at all.**
 
@@ -1644,7 +1676,7 @@ A median lifestyle commands about **1,380 hours** of other people's labour a yea
 
 #### The floor is where self-care credit lands
 
-**§2.3 derives it: maintaining your own living body is the same work as maintaining somebody else's, so it credits at the ordinary rate.** This section is what a network does with that.
+**§2.3 states it: self-continuance is an activity a network may recognise as work, and time spent on recognised work credits at the ordinary rate.** This section is what a network does with that.
 
 **It is verified by proof of life** (§4.2), which is the strongest evidence there is and costs almost nothing to check.
 
@@ -2065,12 +2097,12 @@ Those activities are **sleeping, eating, defecating, and keeping oneself clean.*
 
 ##### A worked floor, with the numbers
 
-| Activity | Hours a day | Why it qualifies (§2.3) |
+| Activity | Hours a day | What it is (§2.3) |
 |---|---|---|
-| Sleep | **8.0** | A service performed on your own body, or enrichment of your own brain. Either reading credits the same hour |
-| Eating and preparing food | **1.0** | A service on your own body |
-| Washing and grooming | **0.5** | A service on your own body |
-| Using a toilet, dressing, other bodily upkeep | **0.5** | A service on your own body |
+| Sleep | **8.0** | Self-continuance. **This network recognises it**, and the hours credit like any other recognised hours |
+| Eating and preparing food | **1.0** | Self-continuance |
+| Washing and grooming | **0.5** | Self-continuance |
+| Using a toilet, dressing, other bodily upkeep | **0.5** | Self-continuance |
 | **`F`** | **10.0 h/day** | = **3,650 hours a year** |
 
 **That is the value used throughout §5.5**, and it is one defensible setting rather than the right one. **A network taking the low end of the sleep evidence lands at `F` = 9 h/day and 3,285 hours a year. A network counting only sleep lands at 8 h/day and 2,920 hours.** Each is a published choice, and §5.5.3 gives the band inside which any of them works.
@@ -2084,8 +2116,8 @@ Those activities are **sleeping, eating, defecating, and keeping oneself clean.*
 | Step | The rule | Where |
 |---|---|---|
 | 1 | **Credit is a record that a person spent time on work.** Not effort, not output — time spent. | **A2** (time as measure), §2.3 |
-| 2 | **Maintaining a living human body is work.** Doing it for somebody else is work, so doing it for your own body is the same work. | §2.3 |
-| 3 | Therefore **a living human accrues credit for the hours spent maintaining themselves.** | §2.3 |
+| 2 | **A network publishes what it recognises as work, and self-continuance is an activity it may recognise.** | §2.3, §4.2, **A8** |
+| 3 | Therefore, in a network that recognises it, **a living human accrues credit for the hours spent maintaining themselves.** | §2.3 |
 | 4 | **Every human is in the books whether they participate or not**, and a verified living person demonstrably did that maintaining. | **A7**, §4.2 (proof of life) |
 
 > **A person who does nothing else is still doing that work, and the books record it because it happened.**
@@ -2100,7 +2132,7 @@ Those activities are **sleeping, eating, defecating, and keeping oneself clean.*
 | *"a safety net"*, *"the dole"*, *"an entitlement"* | All three describe a claim on other people. **Credit is a record of the holder's own time and is a claim on nobody** (A3). |
 | *"the system supports people who cannot work"* | **Everyone alive is working, by this definition.** The floor does not distinguish between the busy and the idle, because keeping yourself alive takes the same hours either way. |
 
-**The praxis varies. The derivation does not.** A network chooses which activities count and how many hours each takes. **No network chooses whether staying alive is work, because A2 already decided that.**
+**The praxis varies. The derivation does not.** A network chooses which activities it recognises and how many hours each takes. **What no network chooses is the rule underneath: time spent on work a network recognises credits at one hour for one hour, because A2 already decided that.**
 
 ---
 
@@ -2329,9 +2361,9 @@ A3 therefore does three separate defensive jobs: it forbids accumulation (§5.1)
 | What it is | Where |
 |---|---|
 | **The conformance requirements** — what must be true for an implementation to *be* Aequitas, written for implementers | [`Aequitas_Conformance_v0.13.md`](Aequitas_Conformance_v0.13.md) |
-| **The objections register** — every open problem and every answered objection, with its status | [`Aequitas_Objections_v0.29.md`](Aequitas_Objections_v0.29.md) |
-| **The plain-language companion**, assuming no economics background | [`Aequitas_Overview_v0.25.md`](Aequitas_Overview_v0.25.md) |
-| **How adoption plausibly starts** — a reading of the historical record, not a statement of the system | [`Aequitas_Strategy_v0.8.md`](Aequitas_Strategy_v0.8.md) §5 |
+| **The objections register** — every open problem and every answered objection, with its status | [`Aequitas_Objections_v0.31.md`](Aequitas_Objections_v0.31.md) |
+| **The plain-language companion**, assuming no economics background | [`Aequitas_Overview_v0.26.md`](Aequitas_Overview_v0.26.md) |
+| **How adoption plausibly starts** — a reading of the historical record, not a statement of the system | [`Aequitas_Strategy_v0.9.md`](Aequitas_Strategy_v0.9.md) §5 |
 | **The simulation programme** — what is being tested and in what order | [`Aequitas_Simulation_Roadmap_v0.2.md`](Aequitas_Simulation_Roadmap_v0.2.md) |
 | **One paper per open problem** | [`open-problems/`](open-problems/) |
 | **Settled working papers these documents still cite by name** | [`papers/`](papers/) |
@@ -2353,4 +2385,4 @@ A3 therefore does three separate defensive jobs: it forbids accumulation (§5.1)
 
 ---
 
-*End of v0.39.*
+*End of v0.40.*

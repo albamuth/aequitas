@@ -1,6 +1,13 @@
 # OP-18 — Labour & team credit (resolution note)
 
+> **⚠️ Note, 2026-09-04. The convention this paper resolved (α) with was withdrawn on 2026-09-03, and OP-18 stays closed.**
+> <!-- struck-ok: names the withdrawn convention in order to record that it was withdrawn -->
+> **This paper resolves (α) with a declared convention: *labour rides the process's material split*.** The split it rode was withdrawn when 36 honest methods came out **6.31×** apart (`06-simulation/method-spread/`). **Labour now needs no convention at all: every co-product carries all of the process's hours against its own mass, exactly as the energy does** — Foundations v0.40 §3.4a, Objections **B9**.
+> **The tenderloin claim below went with it.** Cost may not follow **demand or desirability**; **yield came out of the ban**, so a smaller output reads dearer per kilogram.
+> **(β) is untouched** — team credit still dissolves under A2. **The text below is left as the record of what was folded when.**
+
 > **Status:** ✅ **CLOSED 2026-08-05 as the C3 blocker.** Foundations → v0.6 (§2.5, §3.4a, §10, §12); Objections → v0.7 (B9, status board, §0). Opened and closed same day.
+> <!-- struck-ok: names the withdrawn convention in order to record that it was withdrawn -->
 > **Resolution:** (β) team-credit **dissolves** under A2 (credit = own hours). (α) labour-across-co-products = **declared convention: labour rides the process's material split**; co-product cost is **embodied input, never scarcity** (Method 2 yield-weighting rejected as price-rationing). Residue: jointly-caused debit across a team — minor, parked (sibling to OP-25).
 > **Attacks:** A1's attribution claim, A2, C1's agent field. **Blocks:** C3 (needs per-product labour hours).
 > **Sources:** [Ellerman](http://et.worldeconomicsassociation.org/files/WEA-ET-5-1-Ellerman.pdf) · `GLOSSARY.md#src-ellerman-labor-theory-of-property` · Foundations §2.5, §3.4a, §6.
@@ -31,6 +38,7 @@ Key clarification that lowers the stakes: the farmer's 8 hours are **credited to
 
 So (α) is: *given a labour process with no per-product trace, how do we state each co-product's labour-cost?* Per the physical-trace test, **no trace → declare a convention.** The remaining work is to choose and justify it (or dissolve it).
 
+<!-- struck-ok: names the withdrawn convention in order to record that it was withdrawn -->
 ## 4. The resolution — labour rides the material split (author's decision, 2026-08-05)
 
 **Dissolve was rejected by the author:** co-products **must** carry labour, alongside material and energy. (They do *not* carry capital — that rides the team + pledgers, OP-23 — nor pollution — that stays with the causing team, §3.2b.) So (α) is **convention-first**, and the convention is:

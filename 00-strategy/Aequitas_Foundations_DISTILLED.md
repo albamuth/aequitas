@@ -1,16 +1,16 @@
-<!-- generated-from: Aequitas_Foundations_v0.39.md -->
+<!-- generated-from: Aequitas_Foundations_v0.40.md -->
 # Aequitas — Foundations, distilled
 
 > ## ⚠️ THIS FILE IS GENERATED. DO NOT EDIT IT.
 >
-> **Every edit belongs in [`Aequitas_Foundations_v0.39.md`](Aequitas_Foundations_v0.39.md), which is the document this was made from.**
+> **Every edit belongs in [`Aequitas_Foundations_v0.40.md`](Aequitas_Foundations_v0.40.md), which is the document this was made from.**
 > An edit made here is lost the next time anyone runs the generator, and while it survives it is a
 > second version of a rule — which is the failure this file exists to avoid.
 >
 > **Regenerate with:** `python bin/distill.py`
 
-> **Source:** [`Aequitas_Foundations_v0.39.md`](Aequitas_Foundations_v0.39.md) · **version 0.39**
-> **Size:** 112,733 bytes, from 223,750 — **50% of the source**
+> **Source:** [`Aequitas_Foundations_v0.40.md`](Aequitas_Foundations_v0.40.md) · **version 0.40**
+> **Size:** 114,859 bytes, from 227,045 — **51% of the source**
 
 **What was kept:** every heading, every rule, every table, and the stated result of every worked
 example. **What was dropped:** the explanation prose between them.
@@ -182,7 +182,7 @@ example. **What was dropped:** the explanation prose between them.
 | | What it means | An example |
 |---|---|---|
 | **Production** | Matter or energy is turned into something | Milling wheat into flour |
-| **A service** | Something is done for a person or a body, often with nothing to hand over | Setting a broken arm |
+| **A service** | Something is done for a person, an organisation, or oneself, often with nothing to hand over | Setting a broken arm |
 | **Enrichment** | Knowledge, skill or culture reaches somebody | Teaching a child to read |
 > **The three categories decide whether an hour is creditable. They never decide how much it credits.** No rule in this system may credit production at one rate and enrichment at another, or divide a single hour between them (§4.5).
 #### The gate is the boundary. What sits inside it is the network's choice
@@ -193,7 +193,24 @@ example. **What was dropped:** the explanation prose between them.
 | **Public membership composition** (§3.3a) | A network concentrated in the sector it audits is captured by construction, and **that is visible from the log** rather than something anyone must police |
 | **The published evidence rule** (§4.2) | A network credits no kind of work for which it has published no rule, and the rule is readable before anyone joins |
 #### Why enrichment is named separately
-#### Keeping yourself alive passes the threshold
+#### Keeping yourself alive is work a network may recognise
+> **A network publishes what it recognises as work. Time spent on recognised work is credited, at one hour for one hour** (§4.2).
+##### What passing the gate does not license
+| The screen | What it does |
+|---|---|
+| **The gate** (the three categories above) | Says what a network **may** recognise. It is a wall, not a list |
+| **The published evidence rule** (§4.2) | **A network credits no kind of work for which it has published no rule.** This is what actually decides |
+| **The floor's own list** (§5.5.1) | Named activities with named durations, not a tally of a person's day |
+| **IC-7** | **No account may claim more than 24 hours of activity in 24 hours** |
+###### An example, with the numbers
+**A network with `F` = 10 h/day**, counting 8 hours of sleep, 1 of eating, 0.5 of washing and 0.5 of other upkeep.
+| | Hours recorded that day |
+|---|--:|
+| Someone who sleeps 8, eats 1, washes 1, and works 8 | 10 + 8 = **18** |
+| Someone who claims all 24 hours as self-continuance | **24**, capped by IC-7 — and credited only for the activities the network published a rule for |
+**In plain words: naming *oneself* in the service row moved neither figure.** The day was already 24 hours long, and the floor was already a published list.
+> *(§2.3 used to argue this instead of stating it — *"maintaining a body is work when it is done for somebody else, therefore the same work when the body is your own"* — and **@amber, c40261, 2026-09-04, showed the inference was not licensed.** They were right, and the argument was never needed. **The word *body* in the service row meant an organisation, not a torso**, which is what made the confusion possible.)*
+**This is where the basic-needs floor comes from, and it is not a grant.** Credit for no time worked would be exactly the abstract, issued quantity A1 forbids, so a floor could never have been written as an allowance. **Every living human really does spend those hours, and they credit at the ordinary rate.** How many hours a network counts, and the evidence behind that number, is §5.5.1. What the floor then does to an economy is §5.5.
 ### 2.4 Transactions and sales
 > **A transaction is a hand-off. One person gives another a physical thing, and the debit riding with that thing goes too. That is the whole of a sale, and it is the only kind of sale there is.**
 ##### An example, with the numbers
@@ -815,19 +832,19 @@ example. **What was dropped:** the explanation prose between them.
 > **The floor is credit for time a person spends on the activities their trust network counts as essential to staying alive.**
 ##### The evidence on sleep, and how a floor is built from it
 ##### A worked floor, with the numbers
-| Activity | Hours a day | Why it qualifies (§2.3) |
+| Activity | Hours a day | What it is (§2.3) |
 |---|---|---|
-| Sleep | **8.0** | A service performed on your own body, or enrichment of your own brain. Either reading credits the same hour |
-| Eating and preparing food | **1.0** | A service on your own body |
-| Washing and grooming | **0.5** | A service on your own body |
-| Using a toilet, dressing, other bodily upkeep | **0.5** | A service on your own body |
+| Sleep | **8.0** | Self-continuance. **This network recognises it**, and the hours credit like any other recognised hours |
+| Eating and preparing food | **1.0** | Self-continuance |
+| Washing and grooming | **0.5** | Self-continuance |
+| Using a toilet, dressing, other bodily upkeep | **0.5** | Self-continuance |
 | **`F`** | **10.0 h/day** | = **3,650 hours a year** |
 #### 5.5.2 The floor follows from the axioms. It is not an allowance
 | Step | The rule | Where |
 |---|---|---|
 | 1 | **Credit is a record that a person spent time on work.** Not effort, not output — time spent. | **A2** (time as measure), §2.3 |
-| 2 | **Maintaining a living human body is work.** Doing it for somebody else is work, so doing it for your own body is the same work. | §2.3 |
-| 3 | Therefore **a living human accrues credit for the hours spent maintaining themselves.** | §2.3 |
+| 2 | **A network publishes what it recognises as work, and self-continuance is an activity it may recognise.** | §2.3, §4.2, **A8** |
+| 3 | Therefore, in a network that recognises it, **a living human accrues credit for the hours spent maintaining themselves.** | §2.3 |
 | 4 | **Every human is in the books whether they participate or not**, and a verified living person demonstrably did that maintaining. | **A7**, §4.2 (proof of life) |
 > **A person who does nothing else is still doing that work, and the books record it because it happened.**
 ##### What this rules out saying
@@ -918,9 +935,9 @@ example. **What was dropped:** the explanation prose between them.
 | What it is | Where |
 |---|---|
 | **The conformance requirements** — what must be true for an implementation to *be* Aequitas, written for implementers | [`Aequitas_Conformance_v0.13.md`](Aequitas_Conformance_v0.13.md) |
-| **The objections register** — every open problem and every answered objection, with its status | [`Aequitas_Objections_v0.29.md`](Aequitas_Objections_v0.29.md) |
-| **The plain-language companion**, assuming no economics background | [`Aequitas_Overview_v0.25.md`](Aequitas_Overview_v0.25.md) |
-| **How adoption plausibly starts** — a reading of the historical record, not a statement of the system | [`Aequitas_Strategy_v0.8.md`](Aequitas_Strategy_v0.8.md) §5 |
+| **The objections register** — every open problem and every answered objection, with its status | [`Aequitas_Objections_v0.31.md`](Aequitas_Objections_v0.31.md) |
+| **The plain-language companion**, assuming no economics background | [`Aequitas_Overview_v0.26.md`](Aequitas_Overview_v0.26.md) |
+| **How adoption plausibly starts** — a reading of the historical record, not a statement of the system | [`Aequitas_Strategy_v0.9.md`](Aequitas_Strategy_v0.9.md) §5 |
 | **The simulation programme** — what is being tested and in what order | [`Aequitas_Simulation_Roadmap_v0.2.md`](Aequitas_Simulation_Roadmap_v0.2.md) |
 | **One paper per open problem** | [`open-problems/`](open-problems/) |
 | **Settled working papers these documents still cite by name** | [`papers/`](papers/) |

@@ -3,6 +3,13 @@
 > **Status:** ✅ All four pieces built and green. Components C3 and OP-3; answers Objections §C tests 1 and 4.
 > **Results:** [`RESULTS.md`](RESULTS.md) · **Change history:** `CHANGELOG.md`
 
+
+> **⚠️ Note, 2026-09-04. This project implemented an allocation rule that no longer exists.**
+> <!-- struck-ok: names the withdrawn convention in order to record that it was withdrawn -->
+> **It splits a joint process's cost, and makes labour ride the material split.** Foundations withdrew the division entirely on 2026-09-03: **a joint process's cost is not divided, and every co-product carries the whole process cost against its own output mass** (§3.4a).
+> **What replaced it:** [`../method-spread/`](../method-spread/), which measured the spread that retired the rule (**6.31×** across 36 honest methods), and [`../chain-resolution/`](../chain-resolution/), which measures the rule that took its place.
+> **What survives from here:** the recursion-convergence result — the cost recursion terminates and no share goes negative — which holds *a fortiori* now that no division is performed at all. **Read the figures below as a dated record of a run, not as current doctrine.**
+
 ## What this is
 
 Four scripts, one pipeline, built in that order over 2026-08-05 to 08-13. They share a folder because each imports the one before it.
