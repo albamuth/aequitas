@@ -31,6 +31,23 @@ A process consumes **100 MJ** and **10 hours**, and yields **100 kg of A** and *
 
 **The books do not hold 200 MJ.** Both records point at **the same** 100 MJ — one supplier, one delivery, one record. [non-fungibility](non-fungibility.md) says a debit is a unique record of one specific event, **so a ledger walk is a union over identified parcels, never a sum.** One buyer taking both carries 100 MJ.
 
+### Where the parcel's identity comes from
+
+**The union works because both records name the same parcel. That name is created by an event, and it is never assumed.**
+
+> **Mixing parcels of the same substance is an event. It records a new parcel that points back at its inputs.**
+> **Splitting a parcel is an event. It records a child for each part, pointing back at the parent.**
+
+**So two deliveries pumped into one tank stop being two.** Anything drawn from the tank names the mixture, and two products drawn from it name the same thing.
+
+**A mix or a split is an ordinary process and carries what it consumed.** Two 100 MJ deliveries plus 12 MJ of pumping make a mix parcel of **212 MJ**. Draw 10 kg from that 100 kg tank at a 3 MJ pump and the child carries `21.2 + 3 =` **24.2 MJ**.
+
+**A split is not joint production.** A joint process divides nothing. **A split divides a real thing, so it divides by mass, on each physical quantity separately** — see [debit-taxonomy](debit-taxonomy.md). Using the joint-production rule on a tank split would make that 10 kg carry the whole tank's 212 MJ, which is ten times too high.
+
+**Where a parcel has no mix or split event behind it, that is a missing record**, not an unknowable fact. Conformance row 7 catches it.
+
+*Foundations §3.4a · conformance rows 10e, 10f, 10g. Found by @custos, @hemei and @amber, 2026-09-08.*
+
 ### What each process now has to supply
 
 **Only whether a product passed through a step — a binary fact off a flow sheet.** The withdrawn rule needed the far stronger claim of **what share** of each step's energy each product took.

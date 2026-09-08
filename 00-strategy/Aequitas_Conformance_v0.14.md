@@ -1,11 +1,12 @@
 <!-- tag: cnf-aequitas-conformance -->
 # Aequitas — Conformance Requirements
 
-> **Version:** 0.13 · **Date:** 2026-09-04
+> **Version:** 0.14 · **Date:** 2026-09-08
 > **Audience: implementers.** Anyone building a trust network.
-> **Companion:** [`Aequitas_Foundations_v0.40.md`](Aequitas_Foundations_v0.40.md) — the system itself, and the argument behind every row below. **Where the two differ, Foundations governs.**
+> **Companion:** [`Aequitas_Foundations_v0.41.md`](Aequitas_Foundations_v0.41.md) — the system itself, and the argument behind every row below. **Where the two differ, Foundations governs.**
 > **Version history is kept separately and is not published**, so this document carries only what is currently true.
 > **Two row numbers are retired and are never reused: the bare `17`, and `14c`.**
+> **Row 10e now says where a parcel's identity comes from, and what an implementation does without it.** A mix and a split are recorded events, and each creates the parcels it produces, so identity is never assumed. **A parcel with no such event behind it is a missing record and is caught by row 7, not tolerated as an unknowable fact.** **New row 10f states that a split divides by mass per dimension while a joint process divides nothing** — using the wrong one of those inflates a drawn-off quantity by the ratio of the whole to the part. **New row 10g requires a figure handed outward to carry the parcel's id and kind**, so a mismatch has somewhere to land instead of rendering as clean data.
 > **Row 15 now names the object it waits for. The leftover is held *explicitly unassigned* until an attribution witness binds a share of it to a named principal**, which is the state A4 gained on 2026-09-04. A producer joining supplies a witness; conservation arithmetic never does.
 > **Row 14 no longer requires a per-head slice of the leftover, and no longer tells a network to under-count the producers it cannot see. New row 14d requires an extent register to be published as unaudited.**
 > **Row 10a no longer divides a joint process's debit at all. Every co-product carries the whole process cost against its own output mass, so there is no method to publish and no basis, routing or boundary to choose. Rows 10c and 10d are repaired to match** — outputs no longer sum to their input, their **union** does, and a coarser reading is now a **ceiling** rather than an equal. **New row 10e requires a ledger walk to be a union over identified parcels rather than a sum**, which is what stops the books inflating once the division is gone.
@@ -163,7 +164,9 @@ Worked: *"records are never deleted"* is something you can read off an implement
 | 10b | **No quantity a product carries is negative.** A product's cost is a total of the steps it passed through, and a step cannot consume less than nothing. A negative result is a measurement error or a badly drawn process boundary. | §3.4a · *IC-10* |
 | 10c | **The union of what every output carries is exactly what went into the process** — no more and no less. **Their naive total is not**, and must never be reported as one: a parcel two products both passed through belongs to one record, not two. | §3.4a, §3.5 · *IC-11* |
 | 10d | **Reading a process at a coarser level of detail never lowers what any output carries, and the parts of a finer reading reconcile against the coarser figure they came from.** Equality holds only for an output that passed through every step. **This is what makes a redrawn boundary show up as an arithmetic disagreement rather than an argument.** | §3.4a, §4.4 · *IC-12* |
-| 10e | **A ledger walk is a union over identified parcels, never a sum.** A parcel reached by two paths is counted **once**, because a debit is a unique record of one specific event and not an amount. **An implementation that sums instead overstates a real refinery's energy by up to 7.00× and returns a different answer at every level of detail.** | **A3**, §3.4a, §3.2b |
+| 10e | **A ledger walk is a union over identified parcels, never a sum.** A parcel reached by two paths is counted **once**, because a debit is a unique record of one specific event and not an amount. **An implementation that sums instead overstates a real refinery's energy by up to 7.00× and returns a different answer at every level of detail.** **A parcel's identity is created by a recorded event and never assumed: mixing parcels records a new parcel pointing back at its inputs, and splitting one records a child pointing back at its parent.** **A parcel with no such event behind it has no beginning and is reported under row 7, never given a figure anyway and never left out.** | **A3**, §3.4a, §3.2b |
+| 10f | **A split divides; a joint process does not.** Dividing one parcel of one substance into parts is a division of a real thing, so **its debit divides by mass, on each physical quantity separately, before they are combined** (row 10). A joint process's cost is **not** divided at all (row 10a). **An implementation that applies 10a to a split overstates a drawn-off quantity by the ratio of the whole to the part** — ten times for 10 kg drawn from 100 kg. **The parts of a split add back to the parent**, so row 10c still holds over them. | §3.4a, §3.2a, §2.5 |
+| 10g | **A figure handed outward carries the parcel's identifier and its kind.** A quantity published with neither cannot be checked against the parcel it claims to describe, **so a mismatch has nowhere to land and renders as well-formed data.** | §3.4a · **A3** |
 
 #### Row 9, worked
 
@@ -191,6 +194,28 @@ Worked: *"records are never deleted"* is something you can read off an implement
 | **Their union** | **100 MJ** | **= what went in. Row 10c satisfied** |
 
 **One buyer taking both carries 100 MJ, not 200** (row 10e), because both records name the same parcel.
+
+#### Rows 10e, 10f and 10g, worked
+
+**Two deliveries of the same gas, 100 MJ each, are pumped into one tank. The pumping consumes 12 MJ.**
+
+| | |
+|---|--:|
+| Parcel `E-8841` | 100 MJ |
+| Parcel `E-8842` | 100 MJ |
+| The pumping | **12 MJ** |
+| **Mix parcel `M-0071`** | **212 MJ**, pointing back at both inputs |
+
+**Every product drawn from that tank names `M-0071`, so two products name one parcel and the union counts it once** (row 10e). **Without the mix event the two 100 MJ readings cannot be told apart from one 100 MJ reading seen twice**, and the answer differs by a factor of two.
+
+**Now draw 10 kg from the 100 kg tank, at a pump consuming 3 MJ.**
+
+| The rule applied | What the 10 kg carries |
+|---|--:|
+| **Row 10f, the correct one** — divide by mass, then add the pump | 21.2 + 3 = **24.2 MJ** |
+| Row 10a misapplied — the whole parcel against the part | 212 + 3 = **215 MJ**, **about 9× too high** |
+
+**Row 10g is what makes either figure checkable.** The row handed to the buyer reads `M-0071 · gas · 24.2 MJ`. **Strip the identifier and the kind and the same 24.2 MJ cannot be reconciled against anything**, so an error in it is invisible.
 
 **Now read the same process as several steps instead of one block.** A product that left before a step did not consume it, so its figure falls; a product that passed through everything does not move. **Row 10d requires exactly that direction and forbids the other.**
 

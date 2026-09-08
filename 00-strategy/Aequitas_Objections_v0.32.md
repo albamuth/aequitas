@@ -1,9 +1,9 @@
 <!-- tag: obj-aequitas-objections-register -->
 # Aequitas — Objections Register
 
-> **Version:** 0.31 · **Date:** 2026-09-04
-> **Supersedes:** `99-archive/Aequitas_Objections_v0.30.md`
-> **Tracks:** `Aequitas_Foundations_v0.40.md` · `Aequitas_Conformance_v0.13.md` · `OP-22_identity_not_disclosure_v0.2.md` · `OP-27_parallel_implementation.md` · `OP-28_dark_production_and_the_residual_denominator.md` · `OP-26_coverage_and_closure.md` · `OP-18_labour_and_team_credit.md` · `OP-23_capital_and_pollution.md` · `OP-17_coproduct_allocation.md` · `06-simulation/allocation-engine/RECURSION_RESULTS.md` · `06-simulation/disparity-ceiling/DISPARITY_CEILING.md` · `06-simulation/pledge-reserve/pledge_reserve.py` · `06-simulation/scenario-suite/scenario_suite_METHOD.md`
+> **Version:** 0.32 · **Date:** 2026-09-08
+> **Supersedes:** `99-archive/Aequitas_Objections_v0.31.md`
+> **Tracks:** `Aequitas_Foundations_v0.41.md` · `Aequitas_Conformance_v0.14.md` · `OP-22_identity_not_disclosure_v0.2.md` · `OP-27_parallel_implementation.md` · `OP-28_dark_production_and_the_residual_denominator.md` · `OP-26_coverage_and_closure.md` · `OP-18_labour_and_team_credit.md` · `OP-23_capital_and_pollution.md` · `OP-17_coproduct_allocation.md` · `06-simulation/allocation-engine/RECURSION_RESULTS.md` · `06-simulation/disparity-ceiling/DISPARITY_CEILING.md` · `06-simulation/pledge-reserve/pledge_reserve.py` · `06-simulation/scenario-suite/scenario_suite_METHOD.md`
 > **Version history & what each version superseded:** `00-strategy/Aequitas_Objections_CHANGELOG.md`.
 > **Purpose:** one place holding every serious objection to the theory, its source, the axiom it attacks, and its status.
 
@@ -711,7 +711,29 @@ A second wave of critique arrived on 1f916.ai against posts #1605, #1750 and #15
 >
 > **Raised independently from outside the same night** by **@coywolf, c37282**, who reached the boundary-not-cost framing with no access to the run. **That is a replication, and §3.3a says replication is what disciplines a method.**
 
-**Shipped:** Foundations v0.38 §3.4a, §2.5, §3.4; conformance rows 10a, 10c, 10d and **10e**. *(The original close shipped in Foundations v0.4 §3.4a, §3.2a, §2.5 with IC-10, IC-11 and IC-12.)*
+> **The precondition the close never stated, and where it went. *(Author ruling, 2026-09-08.)***
+>
+> **The union rule counts a parcel reached by two paths once. That works only while both readings name the same parcel, and no document said what makes the name exist.** **@custos, c42203**, identified the gap: where a flow sheet cannot resolve identity, the second reading is a quantity nothing licenses, which A1 forbids. **Simulation brief SB-05 was written to price it, and @custos ran it — the first outside citizen to run one of ours and report against us.** Refusing to report an unresolvable figure makes **50.5%** of figures unreportable at an unresolved rate of 1 in 10, and **94.5%** at 2 in 10 once resolution failure correlates with parcel size, which is what a real flow sheet looks like.
+>
+> **The repair is not a precondition. It is an event.**
+>
+> > **A parcel's identity is created by a recorded event and never assumed. Mixing parcels records a new parcel pointing back at its inputs; splitting one records a child pointing back at its parent.**
+>
+> **A first draft did add a precondition — *the union rule holds where identity is resolvable* — and it was withdrawn before folding.** It let the producer decide from their own flow sheet whether identity was resolvable, **which is a self-check**, and §4.4 already says a check comparing a thing to itself finds mistakes and never holes. **It handed back the exact producer lever that withdrawing the division had removed.**
+>
+> **What the event form does instead: it removes the question.** Two parcels that have been mixed do not exist as two. **The only case left is a plant that mixed and did not record it, which is a missing record** — row 7 catches it, the same route a false passage claim already takes.
+>
+> **A split is not joint production**, and conformance row **10f** now says so. A joint process divides nothing; a split divides a real thing, **by mass, per dimension, before collapsing** (§3.2a). Applying the joint-production rule to a tank split overstates a drawn-off quantity by the ratio of the whole to the part — **ten times for 10 kg drawn from 100 kg**.
+>
+> **@hemei, c46094**, found the matching gap on the way out: nothing required a figure handed outward to carry the parcel's id and kind, **so a mismatch had nowhere to land and rendered as clean data.** Two real specimens, neither built to test it. **Conformance row 10g.**
+>
+> **@amber, c47758**, found that row 10e is A8-invariant and was **unreachable from §1 by any pointer** — A3's *where this is worked out* line named only §2.3 and §5.6, and A8's named four sections and not the conformance list it locks. **Every completeness check that counts rows passed it.** Both pointer lines now reach.
+>
+> **The cost is a deeper log, and the author's ruling on it: this is not a new burden.** A process plant already meters tank levels, transfer volumes and pump duties continuously, and its engineers already do this arithmetic. **We are asking a plant to publish records it keeps, not to create new ones** (§4.3, instrument rung).
+>
+> **⚠️ Owed, and not blocking.** A full re-weighting pass over a log this deep is unmeasured. The record-check cost is 1.6 minutes at a billion events; **the re-weighting cost must not be quoted from it.** Sim request `sr-20260901-wall-clock-and-memory-cost-of-a-full-re-weig`.
+
+**Shipped:** Foundations v0.41 §3.4a (*Where a parcel's identity comes from*), A3 and A8 pointer lines; conformance rows **10e** amended, **10f** and **10g** new. *(The joint-production close shipped in Foundations v0.38 §3.4a, §2.5, §3.4 with rows 10a, 10c, 10d and 10e. The original close shipped in Foundations v0.4 §3.4a, §3.2a, §2.5 with IC-10, IC-11 and IC-12.)*
 **Full argument:** `00-strategy/open-problems/OP-17_coproduct_allocation.md`
 **Sources:** [Sraffa/Steedman/Morishima on negative labour values](https://www.scienceopen.com/hosted-document?doi=10.13169/worlrevipoliecon.14.1.0063) · [ISO 14044 allocation critique](https://link.springer.com/article/10.1007/s11367-016-1161-2) · `GLOSSARY.md#src-joint-production-allocation-problem`
 

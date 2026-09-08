@@ -1,16 +1,16 @@
-<!-- generated-from: Aequitas_Foundations_v0.40.md -->
+<!-- generated-from: Aequitas_Foundations_v0.41.md -->
 # Aequitas — Foundations, distilled
 
 > ## ⚠️ THIS FILE IS GENERATED. DO NOT EDIT IT.
 >
-> **Every edit belongs in [`Aequitas_Foundations_v0.40.md`](Aequitas_Foundations_v0.40.md), which is the document this was made from.**
+> **Every edit belongs in [`Aequitas_Foundations_v0.41.md`](Aequitas_Foundations_v0.41.md), which is the document this was made from.**
 > An edit made here is lost the next time anyone runs the generator, and while it survives it is a
 > second version of a rule — which is the failure this file exists to avoid.
 >
 > **Regenerate with:** `python bin/distill.py`
 
-> **Source:** [`Aequitas_Foundations_v0.40.md`](Aequitas_Foundations_v0.40.md) · **version 0.40**
-> **Size:** 114,859 bytes, from 227,045 — **51% of the source**
+> **Source:** [`Aequitas_Foundations_v0.41.md`](Aequitas_Foundations_v0.41.md) · **version 0.41**
+> **Size:** 118,018 bytes, from 234,015 — **50% of the source**
 
 **What was kept:** every heading, every rule, every table, and the stated result of every worked
 example. **What was dropped:** the explanation prose between them.
@@ -269,7 +269,7 @@ example. **What was dropped:** the explanation prose between them.
 | Whether the ecosystem converges to one network | A prediction, not a design input (§4.8) |
 | **How a cost constant gets audited** — who replicates, what triggers a review, how a contested constant is handled while it is contested | The implementer (§3.3a). **That it must be answered is not out of scope**; the five properties in §3.3a are conformance items 16a–16c |
 | **How finely a process chain is resolved** — which steps a facility reads separately | The industry (§3.4a). **The rule is fixed here and needs no method**; resolution only ever moves a figure downward, so nothing has to be policed |
-> **The dial test is the standing screening question for anything proposed for these documents. What it leaves behind is a set of conformance requirements, never an architecture** — [`Aequitas_Conformance_v0.13.md`](Aequitas_Conformance_v0.13.md). **What must be true, never how to build it.**
+> **The dial test is the standing screening question for anything proposed for these documents. What it leaves behind is a set of conformance requirements, never an architecture** — [`Aequitas_Conformance_v0.14.md`](Aequitas_Conformance_v0.14.md). **What must be true, never how to build it.**
 ## 3. The Ledger Model
 ### 3.0 What a ledger is
 > **A person's ledger is two numbers, side by side.**
@@ -436,6 +436,7 @@ example. **What was dropped:** the explanation prose between them.
 | **A declared basis for untraceable heat** | required | **none** |
 | **A routing model** | required | **none** |
 | **A sub-process boundary choice** | required | **none, it is resolution — see below** |
+| **A named identity for every parcel** | assumed, and never stated | **created by the mix and split events — see below** |
 #### Reading a chain more finely changes the figures one way only
 > **A coarse reading is a ceiling on a fine reading of the same chain.** A product carries the cost of the steps it passed through, divided by its own mass. **Those steps are a subset of all the steps, and the mass is the same either way, so the coarse figure can never be lower.** Equality holds only for a product that passes through the whole chain.
 ##### An example, with the numbers
@@ -456,6 +457,40 @@ example. **What was dropped:** the explanation prose between them.
 **One buyer takes both co-products from the worked example above.** A's record says 100 MJ, parcel `E-8841`. B's record says 100 MJ, parcel `E-8841`. **The buyer's `D` gains 100 MJ.** One parcel, named twice.
 **Two different buyers taking one each carry 100 MJ apiece, and neither ledger is wrong.** §3.5 already rules out adding them: *sums are not meaningful; two separate numbers are.*
 > **⚠️ Get this wrong and the books inflate, measurably.** Across 128 readings of one refinery, the union returns the chain total every time; **a naive sum returns 111 different answers and overstates by up to 7.00×.** Carried as conformance requirement 10b.
+#### Where a parcel's identity comes from
+> **A parcel's identity is created by an event and is never assumed.**
+>
+> **A mix is an event. It creates a new parcel, and the new parcel points back at every parcel that went into it.**
+> **A split is an event. It creates a child parcel for each part, and every child points back at its parent.**
+##### An example, with the numbers
+**Two deliveries of the same gas arrive on the same day from the same supplier, 100 MJ each.** Without the mix event, a reader cannot tell one delivery read twice from two deliveries — and the difference between those two answers is a factor of two.
+| | |
+|---|--:|
+| Parcel `E-8841` | 100 MJ |
+| Parcel `E-8842` | 100 MJ |
+| Pumping both into one tank consumes | **12 MJ** |
+| **Mix parcel `M-0071` carries** | **212 MJ** |
+**Both products of the process now name `M-0071`.** A buyer taking both carries 212 MJ, once.
+**Now draw 10 kg out of that 100 kg tank, at a pump consuming 3 MJ.**
+| | |
+|---|--:|
+| `M-0071`'s share for 10 kg of 100 kg | 21.2 MJ |
+| The drawing-off | **3 MJ** |
+| **The child parcel carries** | **24.2 MJ** |
+**A mix or a split that consumes nothing adds nothing.** The ordinary rule returns zero, so no exception is written for it.
+**And the pollution from running those pumps does not ride the parcel.** It stays on whoever ran them, permanently (§3.2b, line 1). The energy consumed and the pollution released are two separate lines on the debit vector (§3.2a), and neither is inside the other.
+##### A split is not joint production, and the two divide differently
+| | **Joint production** | **A split** |
+|---|---|---|
+| The case | One process, **different** outputs — petrol and asphalt | One parcel, **the same** substance, in parts — a tank into drums |
+| Was anything divided? | **No.** The energy was spent entirely on both | **Yes.** The parcel was physically divided |
+| The rule | **Nothing is divided.** Every output carries the whole process cost against its own mass, and a ledger walk unions them | **The parcel's debit vector divides by mass, per dimension, before collapsing** (§3.2a) |
+| Why | There is no fraction to find (§2.5) | **Mass is a physical trace, so the split is measured rather than declared** (§2.5) |
+##### What is left when identity is still not resolvable
+> **That is a missing record, not an unknowable fact.**
+##### The records this needs already exist
+> **So this asks a plant to publish records it already keeps. It does not ask it to create new ones.**
+> **⚠️ The honest cost, unmeasured.** Every mix and every split is now an event, so the log is much larger and the chain of parcels behind a figure is much deeper. **A union walk is one pass over that chain and stays cheap.** What is not measured is a full **re-weighting** pass (§3.3) over a log of that size. **The record-check cost was measured at 1.6 minutes for a billion events; the re-weighting cost was not, and must not be quoted from that figure.** Registered as owed.
 #### What stops a producer understating
 #### One thing the cost may never do
 > **Cost may not follow demand or desirability.**
@@ -934,8 +969,8 @@ example. **What was dropped:** the explanation prose between them.
 ### The companion documents
 | What it is | Where |
 |---|---|
-| **The conformance requirements** — what must be true for an implementation to *be* Aequitas, written for implementers | [`Aequitas_Conformance_v0.13.md`](Aequitas_Conformance_v0.13.md) |
-| **The objections register** — every open problem and every answered objection, with its status | [`Aequitas_Objections_v0.31.md`](Aequitas_Objections_v0.31.md) |
+| **The conformance requirements** — what must be true for an implementation to *be* Aequitas, written for implementers | [`Aequitas_Conformance_v0.14.md`](Aequitas_Conformance_v0.14.md) |
+| **The objections register** — every open problem and every answered objection, with its status | [`Aequitas_Objections_v0.32.md`](Aequitas_Objections_v0.32.md) |
 | **The plain-language companion**, assuming no economics background | [`Aequitas_Overview_v0.26.md`](Aequitas_Overview_v0.26.md) |
 | **How adoption plausibly starts** — a reading of the historical record, not a statement of the system | [`Aequitas_Strategy_v0.9.md`](Aequitas_Strategy_v0.9.md) §5 |
 | **The simulation programme** — what is being tested and in what order | [`Aequitas_Simulation_Roadmap_v0.2.md`](Aequitas_Simulation_Roadmap_v0.2.md) |
@@ -951,4 +986,4 @@ example. **What was dropped:** the explanation prose between them.
 | [`../05-marketing/`](../05-marketing/) | Public-facing material |
 | [`../06-simulation/`](../06-simulation/) | Every simulation, one folder each, with its own README and results. **Where the numbers quoted in §3.5 and §5.5 were produced** |
 | [`../07-outreach/`](../07-outreach/) | The outreach agent that puts these arguments in front of outside critics |
-| [`../99-archive/`](../99-archive/) | Superseded versions and finished plans. **Nothing in it is current** |
+| `99-archive/` | Superseded versions and finished plans. **Held locally and not published, so there is no link to follow. Nothing in it is current** |

@@ -87,10 +87,20 @@ Carried as **conformance rows 10c and 10e**. Measured across 128 readings of one
 
 ## 7. Declared in advance
 
+> **⚠️ Resolved 2026-09-08. This section is kept as the record of what was declared, and both of its arms are now closed.**
+>
+> **The P3 arm was crossed.** @custos ran the sweep (c47620) and measured **0.505 unreportable at `u` = 0.1**, half the `u` this section named. **The consequence stated below is therefore due, and it was folded** — but **not in the form written here.**
+>
+> **The P1 arm could never have fired.** P1 unions the parcels it resolves and the naive sum unions none, **so P1 is at or below the naive sum at every `u`, structurally.** And 7.00× is a worst-*parcel* anchor while the measured 2.490× is a worst-*trial* ratio, so the two were never in the same unit. **This is Foundations §3.5's own rule failing inside our brief: a check whose passing condition is set by the checker is not an instrument.** Rewriting this section with a threshold both arms of which can fail is sim request `sr-20260908-rewrite-sb-05-section-7-with-a-refutation-th`.
+>
+> **What was folded is not the precondition below.** That draft was withdrawn at stress-test: it let a producer decide from their own flow sheet whether identity was resolvable, which is a self-check. **The fold instead makes identity something an event creates** — a mix records a new parcel pointing back at its inputs, a split records a child pointing back at its parent. **Foundations v0.41 §3.4a, conformance rows 10e, 10f and 10g.**
+
+
 | | |
 |---|---|
 | **Our prior** | **P1 (assume distinct) overstates roughly linearly in `u`** and stays well under the naive sum's 7.00× at every `u` ≤ 0.5. **P2 understates and is the one a producer would choose.** **P3 makes a large share of figures unreportable at modest `u`** — we guess more than a quarter by `u` = 0.2, which would make the honest policy impractical |
 | **Refutation threshold** | **If P1's overstatement at any `u` ≤ 0.5 exceeds the naive sum's 7.00×**, the union rule is not an improvement under unresolved identity and conformance 10e must say so. **And if P3 makes more than half of figures unreportable at `u` = 0.2**, the label rule cannot be the answer here |
+<!-- struck-ok: this row records the withdrawn wording that was declared in advance; the box above says it was withdrawn -->
 | **What we do if either is crossed** | **§3.4a gains a precondition it does not currently state**: the union rule holds *where parcel identity is resolvable*, and conformance 10e says what an implementation does when it is not. **@custos's A1 point would then be conceded in full** — an unresolvable second reading is a fiat quantity, and A1 forbids those |
 
 **We think @custos is right that the precondition is unstated. What we do not know is how much it costs.** That is what this brief buys.

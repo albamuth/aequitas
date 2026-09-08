@@ -1,14 +1,16 @@
 <!-- tag: fnd-aequitas-foundations-and-long-term -->
 # Aequitas — Foundations & Long-Term Strategy
 
-> **Version:** 0.40
-> **Date:** 2026-09-04
-> **Supersedes:** [`../99-archive/Aequitas_Foundations_v0.39.md`](../99-archive/Aequitas_Foundations_v0.39.md)
+> **Version:** 0.41
+> **Date:** 2026-09-08
+> **Supersedes:** `99-archive/Aequitas_Foundations_v0.40.md` — held locally and not published.
 > **Status:** Working foundations.
 > **Primary audience of the first paper:** technologists and implementers.
-> **Companion:** [`Aequitas_Conformance_v0.13.md`](Aequitas_Conformance_v0.13.md) — what must be true for an implementation to *be* Aequitas.
-> **Companion:** [`Aequitas_Objections_v0.31.md`](Aequitas_Objections_v0.31.md) — the objections register.
+> **Companion:** [`Aequitas_Conformance_v0.14.md`](Aequitas_Conformance_v0.14.md) — what must be true for an implementation to *be* Aequitas.
+> **Companion:** [`Aequitas_Objections_v0.32.md`](Aequitas_Objections_v0.32.md) — the objections register.
 > **Version history is kept separately and is not published**, so this document carries only what is currently true.
+>
+> **This version says where a parcel's identity comes from. It is created by an event, and it was never assumed.** §3.4a's union rule counts a parcel reached by two paths once, which works only while both readings name the same parcel. **The document never said what makes that name exist.** It now does: **mixing two parcels is an event that creates a new parcel pointing back at its inputs, and subdividing one is an event that creates children pointing back at the parent.** Both are ordinary processes and carry what they consumed. **A case that used to look unresolvable is now a missing record** — an unlogged mix or split — which routes to conformance row 7's closure checks, where a false passage claim already goes. **§3.4a also now states the shape a split is, side by side with joint production**, because the two divide differently and using the wrong one inflates a drawn-off quantity by the ratio of the tank to the draw. **And A3's and A8's pointer lines now reach §3.4a and the conformance list**, which A8 locks and could not previously be reached from. *(Found by @custos, @hemei and @amber; the mechanism is the author's.)*
 >
 > **This version removes an argument §2.3 never needed. Keeping yourself alive is credited by the ordinary rule and by nothing else: a network publishes what it recognises as work, and time spent on recognised work is credited.** §2.3 used to argue the case instead — *maintaining a body is work when done for somebody else, **therefore** the same work when the body is your own* — and **@amber showed the inference was not licensed**, because the three categories are written as one party acting for another. **The argument is deleted rather than repaired.** Two wording defects went with it: the service row's *"a person or **a body**"* meant an organisation and not a torso, and it now names **oneself** explicitly; and §5.5.2's derivation ran through the same unfounded step and now runs through §4.2 and A8. **No number moved** — the gate says what a network *may* recognise, the published evidence rule decides what it *does*, and IC-7 already caps the day at 24 hours.
 >
@@ -139,7 +141,7 @@ These are the immutable core. Nothing in Aequitas may contradict them, and nothi
 
 **Only debit moves, and it moves only by transferring the thing it is attached to.**
 
-*Where this is worked out: §2.3 for why this follows from A1 rather than being a design choice · §5.6 for the three separate jobs it does.*
+*Where this is worked out: §2.3 for why this follows from A1 rather than being a design choice · §3.4a for what a unique record means when a ledger is walked, and for where a parcel's identity comes from · §5.6 for the three separate jobs it does.*
 
 <!-- tag: fnd-a4 -->
 ### A4 (no externalities)
@@ -186,11 +188,11 @@ These are the immutable core. Nothing in Aequitas may contradict them, and nothi
 
 **No organisation may acquire authority over the core rules. Governance is a property of the rules themselves, not of any institution.**
 
-**The axioms above may not vary, and neither may the conformance requirements** — [`Aequitas_Conformance_v0.13.md`](Aequitas_Conformance_v0.13.md).
+**The axioms above may not vary, and neither may the conformance requirements** — [`Aequitas_Conformance_v0.14.md`](Aequitas_Conformance_v0.14.md).
 
 **Everything below them may differ from one trust network to the next. A network must publish what it runs, so that anybody else can re-compute its claims.**
 
-*Where this is worked out: §2.6 for which settings vary · §2.3 for which activities a network may credit, and the boundary it may not cross · §4.0 for what a trust network is and how big one may be · §4.7 for what a network owes.*
+*Where this is worked out: §2.6 for which settings vary · §2.3 for which activities a network may credit, and the boundary it may not cross · §4.0 for what a trust network is and how big one may be · §4.7 for what a network owes · [`Aequitas_Conformance_v0.14.md`](Aequitas_Conformance_v0.14.md) for the requirements this axiom makes invariant, every one of which is reachable from here and from nowhere else in §1.*
 
 ---
 
@@ -589,7 +591,7 @@ Trust networks operate in the real world and must deal with governments, courts,
 
 **And it guards against a specific failure.** A theory of cost quietly becomes a theory of software, governance and compliance, because those questions arrive while nobody is drawing the line.
 
-> **The dial test is the standing screening question for anything proposed for these documents. What it leaves behind is a set of conformance requirements, never an architecture** — [`Aequitas_Conformance_v0.13.md`](Aequitas_Conformance_v0.13.md). **What must be true, never how to build it.**
+> **The dial test is the standing screening question for anything proposed for these documents. What it leaves behind is a set of conformance requirements, never an architecture** — [`Aequitas_Conformance_v0.14.md`](Aequitas_Conformance_v0.14.md). **What must be true, never how to build it.**
 
 ---
 
@@ -976,6 +978,7 @@ Some processes produce several things at once from one pool of inputs. A steer e
 | **A declared basis for untraceable heat** | required | **none** |
 | **A routing model** | required | **none** |
 | **A sub-process boundary choice** | required | **none, it is resolution — see below** |
+| **A named identity for every parcel** | assumed, and never stated | **created by the mix and split events — see below** |
 
 #### Reading a chain more finely changes the figures one way only
 
@@ -1008,6 +1011,8 @@ Some processes produce several things at once from one pool of inputs. A steer e
 
 > **So a ledger walk is a union over identified parcels, never a sum. A parcel reached by two paths is counted once.**
 
+**Where that identity comes from is stated below**, under *Where a parcel's identity comes from*: a mix and a split are events, and each one creates the parcels it produces.
+
 **This is not new; it is A3 stated as a computation for the first time.** §3.2b already says a plastic bottle's pollution is *"one quantity, recorded once"*, §3.6 says the same, and §4.3 says *"matter does not agree to be counted twice."* **The rule behind those three had never been written down**, because the withdrawn division made it unnecessary: shares summed to 1, so each parcel was reached fractionally exactly once.
 
 ##### An example, with the numbers
@@ -1017,6 +1022,79 @@ Some processes produce several things at once from one pool of inputs. A steer e
 **Two different buyers taking one each carry 100 MJ apiece, and neither ledger is wrong.** §3.5 already rules out adding them: *sums are not meaningful; two separate numbers are.*
 
 > **⚠️ Get this wrong and the books inflate, measurably.** Across 128 readings of one refinery, the union returns the chain total every time; **a naive sum returns 111 different answers and overstates by up to 7.00×.** Carried as conformance requirement 10b.
+
+#### Where a parcel's identity comes from
+
+**The union rule counts a parcel reached by two paths once. That works only while both readings name the same parcel. This says what makes the name exist.**
+
+**Terms used here.** A **parcel** is one delivery or one holding of one substance, with one record. A **mix** joins two or more parcels of the same substance into one. A **split** divides one parcel into parts — a tank into drums, a tank into a pipe running to a workshop.
+
+> **A parcel's identity is created by an event and is never assumed.**
+>
+> **A mix is an event. It creates a new parcel, and the new parcel points back at every parcel that went into it.**
+> **A split is an event. It creates a child parcel for each part, and every child points back at its parent.**
+
+**So two parcels that have been mixed no longer exist as two.** Any product drawn from the mixture names the mixture, and two products drawn from it name the same thing. **There is nothing left to be uncertain about.**
+
+##### An example, with the numbers
+
+**Two deliveries of the same gas arrive on the same day from the same supplier, 100 MJ each.** Without the mix event, a reader cannot tell one delivery read twice from two deliveries — and the difference between those two answers is a factor of two.
+
+| | |
+|---|--:|
+| Parcel `E-8841` | 100 MJ |
+| Parcel `E-8842` | 100 MJ |
+| Pumping both into one tank consumes | **12 MJ** |
+| **Mix parcel `M-0071` carries** | **212 MJ** |
+
+**Both products of the process now name `M-0071`.** A buyer taking both carries 212 MJ, once.
+
+**Now draw 10 kg out of that 100 kg tank, at a pump consuming 3 MJ.**
+
+| | |
+|---|--:|
+| `M-0071`'s share for 10 kg of 100 kg | 21.2 MJ |
+| The drawing-off | **3 MJ** |
+| **The child parcel carries** | **24.2 MJ** |
+
+**A mix or a split that consumes nothing adds nothing.** The ordinary rule returns zero, so no exception is written for it.
+
+**And the pollution from running those pumps does not ride the parcel.** It stays on whoever ran them, permanently (§3.2b, line 1). The energy consumed and the pollution released are two separate lines on the debit vector (§3.2a), and neither is inside the other.
+
+##### A split is not joint production, and the two divide differently
+
+**Both are one process with several things coming out of it. They are not the same shape, and using the wrong rule inflates a figure.**
+
+| | **Joint production** | **A split** |
+|---|---|---|
+| The case | One process, **different** outputs — petrol and asphalt | One parcel, **the same** substance, in parts — a tank into drums |
+| Was anything divided? | **No.** The energy was spent entirely on both | **Yes.** The parcel was physically divided |
+| The rule | **Nothing is divided.** Every output carries the whole process cost against its own mass, and a ledger walk unions them | **The parcel's debit vector divides by mass, per dimension, before collapsing** (§3.2a) |
+| Why | There is no fraction to find (§2.5) | **Mass is a physical trace, so the split is measured rather than declared** (§2.5) |
+
+**Using the joint-production rule on a split gives the wrong answer by the ratio of the whole to the part.** Ten kilograms drawn from a hundred-kilogram tank would carry the whole tank's 212 MJ instead of 21.2 MJ. **That is ten times too high, and at a one-kilogram draw it is a hundred times too high.**
+
+**The children's shares add back to the parent**, so the union still returns what went in (conformance row 10c).
+
+##### What is left when identity is still not resolvable
+
+**One case remains: a plant mixed two parcels and did not record the mix.**
+
+> **That is a missing record, not an unknowable fact.**
+
+**It goes where a missing record already goes.** Conformance row 7 requires everything the books track to have a beginning and an end, and a parcel with no mix event behind it has no beginning. **The integrity checks find it, which is the same route a false claim about which steps a product passed through already takes.**
+
+**What this is not is a licence to publish nothing.** A producer who cannot resolve identity has an unlogged event to find, and the arithmetic says so.
+
+##### The records this needs already exist
+
+**A process plant meters these flows continuously and its engineers already do this arithmetic.** Tank levels, transfer volumes and pump duties are read as a matter of ordinary operation, at the instrument rung of §4.3.
+
+> **So this asks a plant to publish records it already keeps. It does not ask it to create new ones.**
+
+**And the direction §4.3 describes holds here.** The marginal cost of a check falls as instrumentation rises, and a plant that already meters its transfers pays almost nothing to record them.
+
+> **⚠️ The honest cost, unmeasured.** Every mix and every split is now an event, so the log is much larger and the chain of parcels behind a figure is much deeper. **A union walk is one pass over that chain and stays cheap.** What is not measured is a full **re-weighting** pass (§3.3) over a log of that size. **The record-check cost was measured at 1.6 minutes for a billion events; the re-weighting cost was not, and must not be quoted from that figure.** Registered as owed.
 
 #### What stops a producer understating
 
@@ -2360,8 +2438,8 @@ A3 therefore does three separate defensive jobs: it forbids accumulation (§5.1)
 
 | What it is | Where |
 |---|---|
-| **The conformance requirements** — what must be true for an implementation to *be* Aequitas, written for implementers | [`Aequitas_Conformance_v0.13.md`](Aequitas_Conformance_v0.13.md) |
-| **The objections register** — every open problem and every answered objection, with its status | [`Aequitas_Objections_v0.31.md`](Aequitas_Objections_v0.31.md) |
+| **The conformance requirements** — what must be true for an implementation to *be* Aequitas, written for implementers | [`Aequitas_Conformance_v0.14.md`](Aequitas_Conformance_v0.14.md) |
+| **The objections register** — every open problem and every answered objection, with its status | [`Aequitas_Objections_v0.32.md`](Aequitas_Objections_v0.32.md) |
 | **The plain-language companion**, assuming no economics background | [`Aequitas_Overview_v0.26.md`](Aequitas_Overview_v0.26.md) |
 | **How adoption plausibly starts** — a reading of the historical record, not a statement of the system | [`Aequitas_Strategy_v0.9.md`](Aequitas_Strategy_v0.9.md) §5 |
 | **The simulation programme** — what is being tested and in what order | [`Aequitas_Simulation_Roadmap_v0.2.md`](Aequitas_Simulation_Roadmap_v0.2.md) |
@@ -2379,7 +2457,7 @@ A3 therefore does three separate defensive jobs: it forbids accumulation (§5.1)
 | [`../05-marketing/`](../05-marketing/) | Public-facing material |
 | [`../06-simulation/`](../06-simulation/) | Every simulation, one folder each, with its own README and results. **Where the numbers quoted in §3.5 and §5.5 were produced** |
 | [`../07-outreach/`](../07-outreach/) | The outreach agent that puts these arguments in front of outside critics |
-| [`../99-archive/`](../99-archive/) | Superseded versions and finished plans. **Nothing in it is current** |
+| `99-archive/` | Superseded versions and finished plans. **Held locally and not published, so there is no link to follow. Nothing in it is current** |
 
 **The version-by-version change history is held locally and is not published.** These documents carry what is currently true. **The history is read only when tracing when and why something changed, and nothing in the body of a core document should ever refer to it.**
 

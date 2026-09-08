@@ -1,5 +1,13 @@
 # OP-17 — Co-Product Allocation
 
+> ## 📌 2026-09-08 — the close gained the precondition it never stated.
+>
+> **The union rule below counts a parcel reached by two paths once. Nothing said where the parcel's identity comes from.** @custos raised it (c42203), simulation brief SB-05 priced it, and @custos ran SB-05 and reported against us (c47620): refusing to report an unresolvable figure makes **50.5%** of figures unreportable at an unresolved rate of 1 in 10.
+>
+> **The repair is an event, not a precondition.** A mix records a new parcel pointing back at its inputs; a split records a child pointing back at its parent. **A parcel with no such event behind it is a missing record**, caught by conformance row 7. **A split also divides differently from a joint process** — by mass, per dimension.
+>
+> **Current text: Foundations v0.41 §3.4a, conformance rows 10e, 10f and 10g. Section numbers below are a record of how OP-17 was worked and are not rewritten.**
+
 <!-- struck-ok: this box quotes the withdrawn rule in order to withdraw it -->
 > ## 🔴 2026-09-03 — THE MECHANISM THIS PAPER ARGUES FOR IS WITHDRAWN ENTIRELY.
 >
@@ -31,7 +39,7 @@
 >
 > **The mechanism the paper establishes did not change.** What changed is the strength of the claim made for it.
 
-> **⚠️ The event-log paper was retired on 2026-08-28.** References to `EventLog §…` below are historical and no longer resolve. **The arithmetic constraints IC-1 to IC-12 are now conformance rows in [`Aequitas_Conformance_v0.13.md`](../Aequitas_Conformance_v0.13.md) §2**, which carries a label map; everything else it held is in Foundations. The archived paper is `99-archive/Aequitas_EventLog_v0.10.md`.
+> **⚠️ The event-log paper was retired on 2026-08-28.** References to `EventLog §…` below are historical and no longer resolve. **The arithmetic constraints IC-1 to IC-12 are now conformance rows in [`Aequitas_Conformance_v0.14.md`](../Aequitas_Conformance_v0.14.md) §2**, which carries a label map; everything else it held is in Foundations. The archived paper is `99-archive/Aequitas_EventLog_v0.10.md`.
 
 
 **Status:** ✅ **Resolved for the material/energy half. Two new problems spun out (OP-23, OP-24).**

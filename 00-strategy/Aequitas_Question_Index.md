@@ -42,6 +42,7 @@
 | **Set a global value for ρ, `F`, or the privacy practice** | **A8** | **No organisation may acquire authority over the core rules.** These are network dials, published and competed on |
 | **Make a joint process's cost depend on what people want, or on which cut is desirable** | §3.4a | Two identical steers in two towns would carry different figures. **Fails universality, and it is price allocation in costume.** *(**Yield** left this ban on 2026-09-03: output mass is physical and a scale reads it — see §2)* |
 | **Divide a joint process's cost among its outputs at all** | §3.4a · §2.5 | **36 methods that all satisfied the four obligations came out 6.31× apart.** The division was withdrawn rather than governed. **Where nothing was divided in the world, refuse to divide it in the books** |
+| **Assume a parcel's identity, or treat an unresolvable one as unknowable** | conformance 10e, 10f, 10g | **Identity is created by an event.** A mix records a new parcel pointing back at its inputs; a split records a child pointing back at its parent. **A parcel with no such event has no beginning and is reported under row 7.** And a **split** divides by mass per dimension, while a joint process divides nothing |
 | **Add up what several co-products carry, to get the process total** | **A3** · conformance 10e | **A debit is a unique record, not an amount.** A parcel reached by two paths is counted **once**. Summing overstates a real refinery by **7.00×** and gives a different answer at every level of detail |
 | **Amortise a barn, a hospital or a machine into the price of each unit it made** | §4.5 | **The beef did not build the barn.** Charging onward never terminates — it chases the builder, the steelmaker, the doctors' education, back to the first human activity |
 | **Charge the buyer for the pollution of making the thing** | §3.2b | **Only the miner acted to pollute.** Pollution from *making* stays with the maker permanently; pollution from *using* belongs to the user |
@@ -140,7 +141,7 @@
 | If you are | Read |
 |---|---|
 | Answering one question | **This file.** If it is not here, §5 |
-| Proposing a new mechanism | **[`Aequitas_Foundations_v0.40.md`](Aequitas_Foundations_v0.40.md) whole**, then §2.1's three criteria |
-| Implementing | [`Aequitas_Conformance_v0.13.md`](Aequitas_Conformance_v0.13.md) — what must be true, never how to build it |
-| Checking whether an objection is new | [`Aequitas_Objections_v0.31.md`](Aequitas_Objections_v0.31.md) |
+| Proposing a new mechanism | **[`Aequitas_Foundations_v0.41.md`](Aequitas_Foundations_v0.41.md) whole**, then §2.1's three criteria |
+| Implementing | [`Aequitas_Conformance_v0.14.md`](Aequitas_Conformance_v0.14.md) — what must be true, never how to build it |
+| Checking whether an objection is new | [`Aequitas_Objections_v0.32.md`](Aequitas_Objections_v0.32.md) |
 | Checking the arithmetic without running code | [`../06-simulation/audits/audits_inert/constraints.md`](../06-simulation/audits/audits_inert/constraints.md) — IC-1 to IC-12 as mathematics |
