@@ -67,7 +67,9 @@ All wear, weathering and usage abrasion alike, accrues to the asset as property-
 
 - The farmer keeps the pollution-debt of the fertilizer runoff — **not** the person who buys the groceries.
 - The gold mine is indebted by the mining process — **not** the owner of the jewelry.
-- Transport fuel and its pollution stay on whoever caused the journey (the factory for inbound logistics, the consumer for final delivery), permanently, and cannot be shed by reselling the item.
+- Transport fuel and its pollution stay on **whoever held the fuel parcel and burned it**, permanently once burned, and cannot be shed by reselling the item the journey carried. **Handing on the *unburned fuel* is the only thing that sheds it** (Foundations v0.42 §3.2b).
+  <!-- struck-ok: records the wording this paper carried before the 2026-09-09 ruling -->
+  - *Superseded 2026-09-09.* This paper previously read *"whoever caused the journey (the factory for inbound logistics, the consumer for final delivery)"*. **A customer receiving a delivery never held the fuel**, so no rule reaches them.
 
 **Why this is right under A1.** Ellerman's responsibility-imputation: only the miner *acted* to pollute; the buyer did not cause the mining. Charging the buyer would misattribute responsibility. This is also just Foundations §3.2's existing two-kinds-of-debit distinction taken to its conclusion — pollution/consumption debit is the *permanent* kind, so it stays on its causer; property debit is the *transferable* kind, so it rides the object.
 

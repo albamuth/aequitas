@@ -100,7 +100,7 @@ Where composition varies, mass is the **low-resolution reading**: recorded at lo
 ## What it does not solve
 
 <!-- struck-ok: names the withdrawn convention in order to record that it was withdrawn -->
-**Labour is no longer one of these.** The farmer's hours are the process's hours, and every co-product carries all of them against its own mass, exactly as the energy does. **The OP-18(α) convention — labour rides the material split — is withdrawn with the split it rode.** The *team* half of OP-18 stands: dividing a jointly-caused harm among the people who caused it is still a convention, and [§3.2c's hours basis](physical-trace-test.md) is the candidate answer.
+**Labour is no longer one of these.** The farmer's hours are the process's hours, and every co-product carries all of them against its own mass, exactly as the energy does. **The OP-18(α) convention — labour rides the material split — is withdrawn with the split it rode.** The *team* half of OP-18 is **closed as of 2026-09-09**: dividing a jointly-caused debit among the people who caused it is still a declared convention, and [§3.2c's hours basis](physical-trace-test.md) **is the answer**, checked against a metered delivery tailpipe.
 
 **Shared overhead.** The barn shelters the whole animal. **All capital and overhead accrues to the asset**, never to the outputs, so there is nothing to inherit. OP-23.
 

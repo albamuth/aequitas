@@ -1,11 +1,11 @@
 <!-- tag: ovw-aequitas-overview -->
 # Aequitas — Overview
 
-> **Version:** 0.26
-> **Date:** 2026-09-04
-> **Supersedes:** `99-archive/Aequitas_Overview_v0.25.md`
+> **Version:** 0.27
+> **Date:** 2026-09-09
+> **Supersedes:** `99-archive/Aequitas_Overview_v0.27.md`
 > **Audience:** everyone. No economics background assumed, none required.
-> **Rigorous version:** `00-strategy/Aequitas_Foundations_v0.41.md`. This document is the plain-language companion; where they differ, the Foundations govern.
+> **Rigorous version:** `00-strategy/Aequitas_Foundations_v0.43.md`. This document is the plain-language companion; where they differ, the Foundations govern.
 > **Version history & what each version superseded:** `00-strategy/Aequitas_Overview_CHANGELOG.md`.
 
 *Aequitas* (genitive *aequitatis*) is the Latin word for fairness, evenness, symmetry — the quality of things being level with one another.
@@ -362,9 +362,13 @@ Three consequences follow immediately.
 
 **And the thing you bought carries what it *will* do when you use it.** Buy 40 litres of petrol and your record gains **40 litres** — stored as litres, not as a number of hours. Whenever anyone looks at your record, those litres are converted using today's best figure for what cleaning up that carbon takes. **Find a cheaper way to capture carbon and the same 40 litres weighs less, backwards, for everyone.** And if you sell the fuel to somebody else, it goes with the fuel.
 
-**The pollution from your electricity is yours too, and for the same reason.** Electricity **can't be stored**: it is generated the *instant* you draw it, so flipping your switch is what makes a generator burn fuel now. **You carry the emissions of the grid's actual fuel mix at the times you actually drew power** — measured from your meter and the grid operator's own published mix, both of which already exist. Draw at peak on a gas-heavy evening and you carry more; shift the same washing to 2am and you carry less, with no reduction in how much power you used.
+**Your electricity is different, and it is the same rule.** **You never held the fuel.** The power company bought the gas, kept it, and burned it, so **the emissions are the company's**, shared out among the people who work there by the hours each worked. **Your electricity bill in this system is labour**: how many engineer-hours per kilowatt-hour delivered, how many driver-hours brought the coal in. **That is a very small number, and the company's emissions are a very large one.**
 
-> **Note what that rules out. Your emissions cannot be decided by which supplier you signed a contract with.** A contract is a piece of paper, and this system never lets paper decide a physical record. **A record of CO₂ has to come from a measurement of CO₂.** The generator's reason to clean up is elsewhere: they carry the cost of building and running the plant, communities pledge for clean generation, and cleaning the grid retroactively lightens every past customer's record.
+**That is the point, not an oversight.** A power company today puts the cost of its smoke onto everybody else. **Here it cannot, so it carries it** — which makes a coal plant almost impossible to staff and a wind farm easy. Nobody has to ban anything.
+
+> **One thing you lose, and we will not pretend otherwise.** Shifting your washing to 2am no longer makes your own record lighter. **The reason to clean the grid now sits entirely with the company and with the people who pledge for clean generation**, rather than partly with you.
+
+> **Note what that rules out. No emission is decided by which supplier anyone signed a contract with.** A contract is a piece of paper, and this system never lets paper decide a physical record. **A record of CO₂ has to come from a measurement of CO₂.**
 
 **Regulators become something businesses want.** An environmental agency's job stops being punishment and becomes advice: *here is how to lower your debit.* Every hour they save you is an hour off your product's cost. Enforcement quietly turns into consulting.
 
@@ -709,6 +713,6 @@ What was deliberately dropped:
 
 ---
 
-*For the rigorous statement of everything above, with the arguments and the open problems in full: `00-strategy/Aequitas_Foundations_v0.41.md`.*
+*For the rigorous statement of everything above, with the arguments and the open problems in full: `00-strategy/Aequitas_Foundations_v0.43.md`.*
 
 *End of v0.26.*

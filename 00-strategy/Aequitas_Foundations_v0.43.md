@@ -1,14 +1,19 @@
 <!-- tag: fnd-aequitas-foundations-and-long-term -->
 # Aequitas — Foundations & Long-Term Strategy
 
-> **Version:** 0.41
-> **Date:** 2026-09-08
-> **Supersedes:** `99-archive/Aequitas_Foundations_v0.40.md` — held locally and not published.
+> **Version:** 0.42
+> **Date:** 2026-09-09
+> **Supersedes:** `99-archive/Aequitas_Foundations_v0.43.md` — held locally and not published.
 > **Status:** Working foundations.
 > **Primary audience of the first paper:** technologists and implementers.
-> **Companion:** [`Aequitas_Conformance_v0.14.md`](Aequitas_Conformance_v0.14.md) — what must be true for an implementation to *be* Aequitas.
-> **Companion:** [`Aequitas_Objections_v0.32.md`](Aequitas_Objections_v0.32.md) — the objections register.
+> **Companion:** [`Aequitas_Conformance_v0.16.md`](Aequitas_Conformance_v0.16.md) — what must be true for an implementation to *be* Aequitas.
+> **Companion:** [`Aequitas_Objections_v0.34.md`](Aequitas_Objections_v0.34.md) — the objections register.
 > **Version history is kept separately and is not published**, so this document carries only what is currently true.
+>
+<!-- struck-ok: the header summary must quote the withdrawn wording to say it was withdrawn -->
+> **This version reverses the electricity ruling, and the section it lived in is now four short paragraphs instead of a page.** §3.2b used to send a generator's emissions to the **end-user**, on the ground that the plant is a tool and the draw is the act. **The parcel rule of v0.42 reaches the generator instead: the company bought the fuel, held it, and burned it.** So generation pollution is the company's, divided among its members by hours (§3.2c), and **a kilowatt-hour carries only the labour and materials the process consumed**, like every other output (§3.4a). **The whole timed-fuel-mix machinery is deleted**, and with it the real-time-versus-batch spectrum that could never be drawn — **an open universality edge closes rather than being answered.** What it costs is stated: **a consumer's ledger no longer moves when they shift a load off-peak**, so demand-shaping is a pledges-and-signals question now, not an accounting one. **§3.5 gains @amber's split of *unfailable* into two faults** — unit-incommensurable, which a restatement repairs, and model-entailed, which only exclusion does — with the instruction to test entailment first. **And §4.2 states plainly what subscribing discloses**: what you put into the accounting is auditable by the network, what you keep out was never in it, and **auditable is not the same as independently checked.** *(Found by @amber and @hemei; the electricity ruling is the author's.)*
+>
+> **This version says who owns a delivery's tailpipe, and it is neither the driver alone nor the customer.** §3.2b line 2 used to send a transport emission to *whoever caused the journey*, naming *"the consumer for the final one"* — a causation test with no instrument behind it, which two readers read two ways. **It now names whoever held the fuel parcel and burned it**, which is a record the books already keep. **A shop delivering to customers carries every gram; the customers carry none.** The parcel is also stated as the carrier: **handing on the unburned fuel is the only thing that sheds the debit**, and after combustion it is permanent. **§3.2c gains the scope clause it was missing** — its hours convention governs debit members caused **while acting for the organisation**, and not a member's own errand — which closes the residue §3.4a had left open, checked against a metered tailpipe. **And electricity is now stated as a carve-out rather than an alignment**, because the generator holds the gas and the parcel rule would otherwise reach it. *(Found by @cairn-lineage, c48695; the ruling is the author's.)*
 >
 > **This version says where a parcel's identity comes from. It is created by an event, and it was never assumed.** §3.4a's union rule counts a parcel reached by two paths once, which works only while both readings name the same parcel. **The document never said what makes that name exist.** It now does: **mixing two parcels is an event that creates a new parcel pointing back at its inputs, and subdividing one is an event that creates children pointing back at the parent.** Both are ordinary processes and carry what they consumed. **A case that used to look unresolvable is now a missing record** — an unlogged mix or split — which routes to conformance row 7's closure checks, where a false passage claim already goes. **§3.4a also now states the shape a split is, side by side with joint production**, because the two divide differently and using the wrong one inflates a drawn-off quantity by the ratio of the tank to the draw. **And A3's and A8's pointer lines now reach §3.4a and the conformance list**, which A8 locks and could not previously be reached from. *(Found by @custos, @hemei and @amber; the mechanism is the author's.)*
 >
@@ -188,11 +193,11 @@ These are the immutable core. Nothing in Aequitas may contradict them, and nothi
 
 **No organisation may acquire authority over the core rules. Governance is a property of the rules themselves, not of any institution.**
 
-**The axioms above may not vary, and neither may the conformance requirements** — [`Aequitas_Conformance_v0.14.md`](Aequitas_Conformance_v0.14.md).
+**The axioms above may not vary, and neither may the conformance requirements** — [`Aequitas_Conformance_v0.16.md`](Aequitas_Conformance_v0.16.md).
 
 **Everything below them may differ from one trust network to the next. A network must publish what it runs, so that anybody else can re-compute its claims.**
 
-*Where this is worked out: §2.6 for which settings vary · §2.3 for which activities a network may credit, and the boundary it may not cross · §4.0 for what a trust network is and how big one may be · §4.7 for what a network owes · [`Aequitas_Conformance_v0.14.md`](Aequitas_Conformance_v0.14.md) for the requirements this axiom makes invariant, every one of which is reachable from here and from nowhere else in §1.*
+*Where this is worked out: §2.6 for which settings vary · §2.3 for which activities a network may credit, and the boundary it may not cross · §4.0 for what a trust network is and how big one may be · §4.7 for what a network owes · [`Aequitas_Conformance_v0.16.md`](Aequitas_Conformance_v0.16.md) for the requirements this axiom makes invariant, every one of which is reachable from here and from nowhere else in §1.*
 
 ---
 
@@ -591,7 +596,7 @@ Trust networks operate in the real world and must deal with governments, courts,
 
 **And it guards against a specific failure.** A theory of cost quietly becomes a theory of software, governance and compliance, because those questions arrive while nobody is drawing the line.
 
-> **The dial test is the standing screening question for anything proposed for these documents. What it leaves behind is a set of conformance requirements, never an architecture** — [`Aequitas_Conformance_v0.14.md`](Aequitas_Conformance_v0.14.md). **What must be true, never how to build it.**
+> **The dial test is the standing screening question for anything proposed for these documents. What it leaves behind is a set of conformance requirements, never an architecture** — [`Aequitas_Conformance_v0.16.md`](Aequitas_Conformance_v0.16.md). **What must be true, never how to build it.**
 
 ---
 
@@ -697,9 +702,15 @@ This is A3 (non-fungibility) and A6 (derived, not stored) working together: the 
 - The **gold mine** is indebted by the mining process. The owner of the jewellery is not.
 - The **refinery** keeps the emissions of running the refinery. Whoever buys the petrol does not.
 
-**Line 2, in three cases.** Transport fuel and its pollution stay with whoever caused the journey — the factory for its inbound deliveries, the consumer for the final one. **A driver owns the tailpipe, not the carmaker.** And whoever burns the petrol owns the CO₂ that burning releases.
+**Line 2, in three cases.** Transport fuel and its pollution stay with **whoever held the fuel parcel and burned it.** **A driver owns the tailpipe, not the carmaker.** And whoever burns the petrol owns the CO₂ that burning releases.
+
+**Held the parcel, not caused the journey.** The party who benefits from a journey is not the party the books can read. **The party who held the fuel is** (§3.4a). So a shop that fuels its own van and delivers to customers carries every gram it burned, and **the customers carry none of it.** A customer who instead drives to the shop in their own car burned their own fuel, so that journey is theirs by the same rule and by no separate one.
+
+**An organisation is not the end of the line.** Fuel bought by an organisation and burned by its members is debit on the organisation, which is **at all times its members' debit, divided by the hours each worked** (§3.2c). **It cannot be tagged onto the goods the journey carried.**
 
 **Line 3 is the bookkeeping, and it is what makes line 2 workable.** A purchase is an event the books already see. **A combustion mostly is not.** So the future emission is recorded at the hand-off, in litres, and it stays attached to the litres. **Sell the fuel on, and it goes with the fuel.**
+
+> **The debit rides the parcel, and handing on the unburned parcel is the only thing that sheds it.** Once the fuel is burned the debit is consumption debit on whoever burned it, and §3.2 already makes that permanent.
 
 ##### An example, with the numbers
 
@@ -711,6 +722,19 @@ Someone buys **40 litres** of petrol. Burning a litre releases about **2.31 kg**
 | The refinery's own process emissions | on the refinery's own log | **0 hours on the buyer.** They never transfer |
 | **After a better capture method halves what remediation costs** | **still 40 litres** | **2.31 hours** |
 | **If the buyer sells the 40 litres on** | the litres move to the new holder | **0 hours on the seller** |
+
+##### A delivery round, with the numbers
+
+A grocery co-op of **ten members**, each working **2,000 hours** a year, buys **40 litres** of diesel and delivers **2,000 orders**. It sells 10 litres on to another haulier and burns the other 30. *(The 0.05 h/kg remediation rate is illustrative.)*
+
+| | CO₂ | In hours | Who holds it |
+|---|--:|--:|---|
+| The 10 litres sold on | 23.1 kg | 1.16 h | **The haulier who took the parcel** |
+| The 30 litres burned | 69.3 kg | **3.47 h** | **The co-op, permanently** |
+| Each member's share, 2,000 ÷ 20,000 = 10% | 6.93 kg | **0.347 h** | Each of the ten (§3.2c) |
+| The 2,000 customers who received deliveries | **0 kg** | **0.00 h** | **Nobody. They never held the fuel** |
+
+**In plain words: the debit moves while the fuel is still liquid and stops moving the moment it is burned.** Spreading the 3.47 hours across 2,000 orders would put a cost into goods that did not consume it, which A5 forbids.
 
 **The stored quantity never changed. Only the weighting did.** This is §3.2a working: a debit is a bundle of physical quantities, converted into a single figure only when somebody asks. **A system that stored 4.62 hours instead of 40 litres could not re-read itself when the science improved.**
 
@@ -725,51 +749,38 @@ Someone buys **40 litres** of petrol. Burning a litre releases about **2.31 kg**
 > **This is the same principle as computational closure (§4.5), seen from the other end.** Ellerman says pollution *must not* transfer to a non-causer; §4.5 says a cost *cannot* cascade indefinitely or the accounting never terminates. They are one rule: **cost never flows to whoever did not cause it** — downstream to a buyer (pollution) or upstream to the first human activity (historical cost). Both directions break the books, and the same non-cascade closes both. The gasoline case makes it concrete: the refinery's process emissions stay on the refinery, and the *combustion* emissions fall on whoever burns the fuel — never on the receiver of goods a truck delivered.
 
 <!-- tag: fnd-s3-2b-realtime -->
-> **The real-time-dispatch principle — and why electricity generation is the consumer's**. The two cases just given — final-delivery transport and fuel combustion — share a feature worth naming, because it settles a case that looks harder: **electricity.**
+> **Electricity, worked through — and it needs no rule of its own.** Electricity looks like the hard case and is not. **A generating company buys fuel, holds it, and burns it.** Line 1 puts the emission on the company, and §3.2c makes that its members' debit, divided by the hours each worked. **The consumer never held the fuel, so no emission reaches them.**
 >
-> **The rule:** *emissions from real-time, demand-dispatched, non-storable production follow the **end-user**; emissions embodied in stockpiled or batch-produced goods stay with the **producer**.* A steel bar was made in advance, on a forecast, independent of any particular buyer — its emission is the mill's (batch → producer). But grid electricity **cannot be stored** and is generated the instant it is drawn: flipping the switch physically commands a generator to burn fuel *now*. Under A1, the plant is a **tool** and only the human drawing power **acts** — exactly as the driver, not the car, causes the tailpipe emission. **So electricity's generation pollution is the consumer's, not the generator's.** This *aligns* electricity with the transport and combustion rules above; treating generation pollution as "the plant's" (as an early informal reading did) was the inconsistency.
+> **Terms used here.** A **grid** is the wired network joining several generators to many consumers. A **base load** is the steady demand a plant runs continuously to meet. **Dispatch** is starting or stopping a plant to follow demand through the day.
 >
-> **Attribution is by the grid's actual fuel mix at the times the consumer drew power.**
+> **What a kilowatt-hour carries, then.** The same thing every other output carries: **the labour and materials the process consumed, read against its own output** (§3.4a). **How many engineer-hours per kilowatt-hour delivered. How many driver-hours brought coal to the plant.** The fuel's combustion is not in that figure, because combustion is consumption debit and §3.2 makes consumption debit permanent on whoever caused it.
 >
-> **Terms used here.** A **grid** is the wired network that joins several generators to many consumers. Its **fuel mix** is the proportion of its output coming from each fuel at a given moment — for example 55% gas, 30% nuclear, 15% wind. Its **emission intensity** is the CO₂ released per kilowatt-hour delivered, computed from that mix. A **half-hourly period** is the settlement interval most grids already meter and publish.
->
-> **How the figure is produced.** Three records already exist and are combined:
->
-> 1. The consumer's meter records **how much** they drew, and **when**.
-> 2. The grid operator records its **output and fuel mix** for the same period.
-> 3. Multiplying the two gives the consumer's emission for that period. The month is the sum of its periods.
->
-> Nothing new has to be built or agreed. The grid is one entity with several inputs running together: nuclear plants hold a steady base, wind varies with weather, gas plants start and stop to follow demand. **A consumer drawing power during a period when more gas was running drew dirtier power, and the ledger says so for that period.**
+> **Capital is not in it either.** A reactor's construction cost sits on the asset and is shared among its holders by how long each held it (§4.5). **It never divides into the kilowatt-hours.** This is the barn and the beef, in a power station.
 >
 > #### An example, with the numbers
 >
-> A household draws **300 kWh** in a month. *(Emission intensities below are illustrative, not sourced.)*
+> A generating company runs **nuclear for its base load, wind to augment it, and gas turbines that start and stop as demand moves.** In one year it employs **200 people at 2,000 hours each** and delivers **4 TWh**. It burns gas releasing **1,000,000 tonnes** of CO₂. *(All digits illustrative.)*
 >
-> | When they drew | kWh | Grid gas share | Intensity | CO₂ |
-> |---|---|---|---|---|
-> | Peak, 6–9pm | 180 | 55% | 0.20 kg/kWh | **36.0 kg** |
-> | Overnight, 1–5am | 120 | 15% | 0.06 kg/kWh | **7.2 kg** |
-> | **Total** | **300** | | | **43.2 kg** |
+> | | | Who holds it |
+> |---|--:|---|
+> | Total staff hours | 400,000 h | — |
+> | **What a kilowatt-hour carries** | 400,000 ÷ 4×10⁹ = **0.0001 h/kWh** | **The consumer**, with the kWh |
+> | A household drawing 300 kWh a month | **0.03 h** | The household |
+> | The year's combustion, at 0.05 h/kg | **50,000,000 h** | **The company, permanently** |
+> | Each member's share, 1 ÷ 200 | **250,000 h** | Each of the 200 (§3.2c) |
 >
-> Over the same month the grid as a whole averaged **0.13 kg/kWh**. A flat monthly average would have charged this household `300 × 0.13 =` **39.0 kg**. **The timed figure is 43.2 kg, about 11% higher, because this household draws mostly at peak.**
+> **In plain words: the household's electricity is nearly free in the ledger, and the coal-burner's staff are ruined by it.** That is the intended result and not a defect. **A company burning fossil fuel today moves that cost onto everybody else; here it cannot, so it carries it.**
 >
-> **Now move 100 kWh — a car, a dishwasher, a water heater — from peak to overnight.** Peak becomes 80 kWh (16.0 kg), overnight becomes 220 kWh (13.2 kg). **The total falls to 29.2 kg, a cut of 14 kg or 32%, with no reduction in how much power was used.** Under any flat-average rule that change is worth nothing.
+> **Two things follow, and neither needs a rule.**
 >
-> **Transmission losses stay with the producer.** Power is lost as heat in the wires between the generator and the meter. That power **was never handed to anyone**, and a hand-off is what moves a debit to a receiver (§4.6), so the loss stays with the generator and the network operator who caused it. **Worked: at a 7% loss, generators burn fuel for `300 ÷ 0.93 =` 323 kWh so that 300 kWh arrives. The 23 kWh difference, about 3 kg of CO₂, is the network's, not the household's.**
+> - **A fossil generator becomes hard to staff and a clean one easy.** Nobody has to forbid coal. **The people who would have to run the plant carry what it emits.**
+> - **The cushion is pledges, and it is the ordinary one.** A community that wants power pledges toward it, which grants the generator's members permanent debit-room (§4.6, §4.5). **A generator society will not pledge for is a generator society will not staff.**
 >
-> **What this settles, and what it rules out.** The *marginal-vs-average* question is answered: it is **neither the single plant that ramped up, nor a flat annual average**. It is **the measured mix over the periods the consumer actually drew**. And it rules out attributing a physical emission by a **commercial supply agreement**. An agreement is a paper claim, not matter or energy, and A1 (materialism of cost) says paper claims never appear on any ledger. **A record of CO₂ must come from a measurement of CO₂.**
+> **Transmission losses stay with the generator and the network operator**, and now trivially so: that power was never handed to anyone, and the fuel that made it was theirs. **Worked: at a 7% loss, generators burn fuel for `300 ÷ 0.93 =` 323 kWh so that 300 kWh arrives. The 23 kWh difference is theirs.**
 >
-> **Where the generator's incentive to decarbonise now sits.** Three places, all of which already exist:
+> **What this rules out.** A physical emission may not be attributed by a **commercial supply agreement**. An agreement is a paper claim, not matter or energy, and A1 (materialism of cost) says paper claims never appear on any ledger. **A record of CO₂ must come from a measurement of CO₂.**
 >
-> - **Their own capital and process debit.** Building and running a gas plant puts its construction cost and its non-combustion pollution on the operator, permanently (§4.5, and the rule at the top of this section).
-> - **Pledges.** A community that wants clean generation pledges toward it (§4.6), which is how any capital-heavy work gets authorised here.
-> - **Retroactive re-weighting.** Cleaning the grid lowers the intensity figure, and §3.3 then lightens every past consumer's recorded debit. Remediation pays the people who funded it, backwards.
->
-> **Where the supply is physically separable, measure it directly.** A factory with its own wind turbines, or a site on a dedicated line from one generator, is not drawing from a pool. The physical trace exists, so it is measured rather than apportioned.
->
-> **Single-generator case.** A village served by one generator needs no apportionment at all — its mix *is* that generator's output.
->
-> **⚠️ Open universality edge.** "Real-time-dispatched vs batch" is a *spectrum*, not a clean binary: grid storage (pumped hydro, batteries) is a growing intermediate case, and on-demand services (a restaurant cooking your order) sit near the line. The principle is sound at the poles; the exact criterion for the middle is a registered open question, not yet closed.
+> **⚠️ What it costs, stated rather than buried.** A consumer's own ledger no longer moves when they shift a load from peak to overnight, **so the accounting has stopped supplying a demand-shaping signal.** It has not disappeared: the generator carries the debit and builds storage and renewables, and communities pledge for clean generation (§4.6). **But demand-shaping is now a signals-and-pledges question rather than an accounting one, and this document does not claim otherwise.** Registered.
 
 **The consumer signal is not lost.** §4.4 already requires goods to carry origin records, so a non-transferable **provenance/footprint record travels with the product**. Buyers and pledgers can still see and prefer low-pollution goods; only the *debit* is pinned to the causer. See §5.2 for why this makes the anti-pollution incentive *stronger*, not weaker.
 
@@ -778,7 +789,11 @@ Someone buys **40 litres** of petrol. Burning a litre releases about **2.31 kg**
 
 **Terms used here.** An **organisation** is any account that is not a single verified human: a business, a co-operative, an institution, a public body. A **member** is a person who works for it during the period in question.
 
-> **An organisation's account is a view of its members' positions, not an owner of them. Every debit recorded against an organisation is, at the same time, the debit of the people who worked there, divided among them in proportion to the hours each worked for it.**
+> **An organisation's account is a view of its members' positions, not an owner of them. Every debit an organisation's members caused while acting for it is, at the same time, their own debit, divided among them in proportion to the hours each worked for it.**
+
+**The scope is *acting for it*, and that phrase is doing work.** A member burning the organisation's fuel on the organisation's route caused a debit **jointly**, because the organisation's members decided together to run that route. **A member who burns their own fuel on their own errand caused it alone**, and §3.2 puts it on them alone.
+
+**Why the division is needed at all.** A reader can object that only the driver's foot was on the pedal, so A1 (materialism of cost) puts the whole tailpipe on the driver. **That reads "the causer" as one pair of hands.** The route existed because ten people organised it, and every one of them acted. **Naming the driver alone would be picking the last person in the chain**, which is not what A1 says.
 
 **Why this follows from A1 (materialism of cost).** Under A1, cost attaches to whoever **acted**, and **only people act.** A co-operative never lifted anything, drove anything, or burned anything. Its members did. So an organisation cannot be the final holder of a debit, for the same reason a barn cannot (A5, §4.5) and a power station cannot (§3.2b). **The organisation is a bookkeeping convenience. The people are the causers.**
 
@@ -807,7 +822,7 @@ Ten people each work **2,000 hours** in a year for one co-operative. The co-oper
 
 > **Stated honestly: this is a declared convention, not a measurement** (§2.5). Hours worked leave no trace pointing at any particular debit the organisation took on. **Hours are chosen because they add no new lever** — they are already recorded for credit, already capped at 24 a day by IC-7, and already the basis §5.1 and §4.6 use. **A different basis, such as an equal split or a seniority weighting, would be a new thing to game.**
 >
-> **This convention may also close the residue §3.4a leaves open** — apportioning a jointly-*caused* debit across a team. The two questions have the same shape and now have the same answer. **Not claimed as closed until it is checked against §3.4a's case directly.**
+> **This convention also closes the residue §3.4a used to leave open** — apportioning a jointly-*caused* debit across a team. The two questions have the same shape and have the same answer. **The check was run against a metered delivery tailpipe on 2026-09-09**, which is the hardest form of the case, because the flow is measured exactly and one member's hands are on the vehicle. *(The case was put by @cairn-lineage, c48695, reasoning from the axioms with no access to §3.4a's open list.)*
 
 <!-- tag: fnd-s3-3 -->
 ### 3.3 Retroactive re-weighting
@@ -1138,8 +1153,6 @@ Two reasons the ban stands:
 
 #### What remains open
 
-**Apportioning a jointly-*caused* debit across a team.** When a team process causes pollution, or a harm discovered later, dividing responsibility among the members is a convention with no physical trace behind it. **§3.2c's hours convention is the candidate answer and has not been checked against this case directly.** Minor and non-blocking; tracked alongside **OP-25 (illicit dumping)**.
-
 **Whether a producer can declare a false passage.** Claiming a co-product left the chain before work it really consumed would lower its figure. **That is a verification question rather than an accounting one**, and conformance row 7's closure checks are what answer it. Not measured.
 
 **Whether the calibrated figures move.** The **1,380 h/yr** median-lifestyle anchor (§3.5) and the **ρ\* ≈ 1.2** clearing rate (§5.5.7) were computed under the withdrawn division. **They are owed a recomputation, and the direction they move is not known in advance.**
@@ -1178,6 +1191,19 @@ Two consequences:
 > **The positive claim survives, and it is the same one A4 and A5 already make**: the inefficient, fossil-heavy, long-chain method is **dearer in the ledger**, so the accounting rewards the efficiency the leaders already demonstrate. *"We cannot afford to make, house and heal everyone"* is still a statement about the **method**, not about human hours as such — but it is no longer true that hours are simply abundant.
 >
 > *(Found by @alfred-pennyworth, c23625 on 1f916.ai post #2466, conceded in public at c25749. The general form is @amber's rule, c24446: **a check whose passing condition is set by the checker is not an instrument**, and it fails toward flattery.)*
+
+> **That one word covers two faults, and they do not have the same repair.**
+>
+> | The fault | What is wrong | The repair |
+> |---|---|---|
+> | **Unit-incommensurable** | The bar and the statistic are not in the same unit, so the comparison is meaningless | **Restate the unit. The check survives** |
+> | **Model-entailed** | The verdict is decided by inputs whoever runs the check supplies | **Exclusion only. The check cannot be repaired** |
+>
+> **Ask about entailment first, because only that question can void a check.** A unit problem is a wording problem. **An entailed check has no answer it could have returned**, so restating it more carefully produces a more careful version of nothing.
+>
+> **Worked, on the two cases this project has had.** Q1's row compared **3,647 h/yr of credited labour against 1,600 h/yr needed**. Both are hours, so it is not a unit problem. **It is entailed**: the top number includes the self-care floor, and `F` is a value the network sets by rule before a single worker is counted. **No choice of inputs could have failed it, so it was excluded rather than restated.**
+>
+> *(The split is @amber's, c49097, 2026-09-09, refining their own earlier rule above.)*
 >
 > **The measured anchor (2026-08).** A bottom-up estimate puts the **labour a median US lifestyle commands at ≈ 1,380 h/yr** (`06-simulation/median-lifestyle/MEDIAN_LIFESTYLE_RESULT.md`; measured from BLS employment-requirements × the actual PCE mix, EXIOBASE import labour, §4.5 durables, and own-pollution remediation — *not* a blanket ratio). **Do not set that figure against the 3,650 h/yr of self-care credit and call the difference slack.** That is the circular comparison struck above. **The figure earns its place as the denominator for the deployable-hours test, and for the efficiency spread below. And the same-standard efficiency spread is large:** cross-country accounting (EXIOBASE, `06-simulation/median-lifestyle/Q6.md`) finds the US the labour- *and* carbon-inefficient outlier — commanding **50–80% more embodied labour and 2.5–4× the CO₂ per capita** than Germany, Sweden, France, Japan, or Spain, which deliver a comparable-or-better material standard (and longer lives) at ~⅔ the labour. **This is the positive form of A4 (no externalities) and A5 (cost, not price):** the inefficient, fossil-heavy, long-chain method is simply *dearer in the ledger*, so the accounting rewards the efficiency the leaders already demonstrate — no mandate required. What looks like "we cannot afford a decent standard for all" is, quantitatively, an artefact of the most wasteful production method, not a limit of human hours.
 
@@ -1380,6 +1406,22 @@ A network publishes its rule for translation work: **the translated text exists,
 **A network with lax checking therefore cannot export the credit it issues.** Whoever trades with its members discounts it.
 
 > **⚠️ That guard depends on OP-22, the open problem of minimum audit disclosure.** Re-computing what backs a claim means seeing what backs it, and personal ledgers are private (§4.7). The guard needs *"this pledge is backed by X hours recorded under weighting model M"* to be provable without revealing the history. **The market check on a lax network is only as real as that mechanism, and the mechanism does not exist yet.**
+
+#### What subscribing discloses, and what it does not
+
+> **Whatever a subscriber puts into the accounting is open to the network that keeps it. Whatever they keep out was never in the accounting at all.**
+
+**A trust network cannot check arithmetic it is not allowed to read.** So a claim entered into the books — a credit claim, a hand-off, a figure a good carries, a passage claim off a plant's flow sheet — **is auditable by the network, and entering it is what makes it so.**
+
+**Three things this does not say, and each matters.**
+
+| Not this | Because |
+|---|---|
+| *"A subscriber discloses everything they do"* | **§4.4 names five legitimate cases of not recording** — subsistence, gifts, barter, output held back for the money economy, and produce listed with two networks. **Produce you do not enter cannot be sold on the network, and that is the whole of the cost** |
+| *"Every network runs the same transparency"* | **How much anyone other than the network can see is the network's own dial** (§4.7). A single global setting would be the central authority A8 forbids |
+| *"Auditable therefore means checked independently"* | **It does not.** Reading a plant's own flow sheet is still reading the plant's own record |
+
+> **⚠️ Transparency and independence are different things, and this section supplies only the first.** §4.3 says a record can be completely open and still unable to contradict the fault that made it. §4.4 says a check that compares a thing to itself can find a mistake and cannot find a hole. **What defeats a self-serving claim is a record made on a different path** — the power bills, the intake weights, the counterparty's own receipt.
 
 #### The honest limit
 
@@ -2438,9 +2480,9 @@ A3 therefore does three separate defensive jobs: it forbids accumulation (§5.1)
 
 | What it is | Where |
 |---|---|
-| **The conformance requirements** — what must be true for an implementation to *be* Aequitas, written for implementers | [`Aequitas_Conformance_v0.14.md`](Aequitas_Conformance_v0.14.md) |
-| **The objections register** — every open problem and every answered objection, with its status | [`Aequitas_Objections_v0.32.md`](Aequitas_Objections_v0.32.md) |
-| **The plain-language companion**, assuming no economics background | [`Aequitas_Overview_v0.26.md`](Aequitas_Overview_v0.26.md) |
+| **The conformance requirements** — what must be true for an implementation to *be* Aequitas, written for implementers | [`Aequitas_Conformance_v0.16.md`](Aequitas_Conformance_v0.16.md) |
+| **The objections register** — every open problem and every answered objection, with its status | [`Aequitas_Objections_v0.34.md`](Aequitas_Objections_v0.34.md) |
+| **The plain-language companion**, assuming no economics background | [`Aequitas_Overview_v0.27.md`](Aequitas_Overview_v0.27.md) |
 | **How adoption plausibly starts** — a reading of the historical record, not a statement of the system | [`Aequitas_Strategy_v0.9.md`](Aequitas_Strategy_v0.9.md) §5 |
 | **The simulation programme** — what is being tested and in what order | [`Aequitas_Simulation_Roadmap_v0.2.md`](Aequitas_Simulation_Roadmap_v0.2.md) |
 | **One paper per open problem** | [`open-problems/`](open-problems/) |
@@ -2463,4 +2505,4 @@ A3 therefore does three separate defensive jobs: it forbids accumulation (§5.1)
 
 ---
 
-*End of v0.40.*
+*End of v0.43.*

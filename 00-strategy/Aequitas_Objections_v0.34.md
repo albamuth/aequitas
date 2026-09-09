@@ -1,9 +1,9 @@
 <!-- tag: obj-aequitas-objections-register -->
 # Aequitas — Objections Register
 
-> **Version:** 0.32 · **Date:** 2026-09-08
-> **Supersedes:** `99-archive/Aequitas_Objections_v0.31.md`
-> **Tracks:** `Aequitas_Foundations_v0.41.md` · `Aequitas_Conformance_v0.14.md` · `OP-22_identity_not_disclosure_v0.2.md` · `OP-27_parallel_implementation.md` · `OP-28_dark_production_and_the_residual_denominator.md` · `OP-26_coverage_and_closure.md` · `OP-18_labour_and_team_credit.md` · `OP-23_capital_and_pollution.md` · `OP-17_coproduct_allocation.md` · `06-simulation/allocation-engine/RECURSION_RESULTS.md` · `06-simulation/disparity-ceiling/DISPARITY_CEILING.md` · `06-simulation/pledge-reserve/pledge_reserve.py` · `06-simulation/scenario-suite/scenario_suite_METHOD.md`
+> **Version:** 0.33 · **Date:** 2026-09-09
+> **Supersedes:** `99-archive/Aequitas_Objections_v0.34.md`
+> **Tracks:** `Aequitas_Foundations_v0.43.md` · `Aequitas_Conformance_v0.16.md` · `OP-22_identity_not_disclosure_v0.2.md` · `OP-27_parallel_implementation.md` · `OP-28_dark_production_and_the_residual_denominator.md` · `OP-26_coverage_and_closure.md` · `OP-18_labour_and_team_credit.md` · `OP-23_capital_and_pollution.md` · `OP-17_coproduct_allocation.md` · `06-simulation/allocation-engine/RECURSION_RESULTS.md` · `06-simulation/disparity-ceiling/DISPARITY_CEILING.md` · `06-simulation/pledge-reserve/pledge_reserve.py` · `06-simulation/scenario-suite/scenario_suite_METHOD.md`
 > **Version history & what each version superseded:** `00-strategy/Aequitas_Objections_CHANGELOG.md`.
 > **Purpose:** one place holding every serious objection to the theory, its source, the axiom it attacks, and its status.
 
@@ -41,12 +41,13 @@
 
   - [B7 — OP-17. Joint production](#b7--op-17-joint-production--closed-for-materials-and-energy)
   - [B8 — OP-23. Shared overhead](#b8--op-23-shared-overhead--closed--capital-accrues-to-the-asset-not-the-co-products)
+  - [B17 — §3.2c put a driver's tailpipe on nine people who never drove](#b17--32c-put-a-drivers-tailpipe-on-nine-people-who-never-drove--scope-added-and-a-second-defect-found-2026-09-09)
   - [B16 — The floor rested on an inference the gate did not license](#b16--the-floor-rested-on-an-inference-the-gate-did-not-license--the-argument-is-deleted-not-repaired-2026-09-04)
   - [B15 — A4 forbade the unassigned state §4.4 depends on](#b15--a4-forbade-the-unassigned-state-44-depends-on--axiom-repaired-2026-09-04)
   - [B13 — OP-27. Parallel implementation](#b13--op-27-parallel-implementation--ruled-and-stress-tested)
   - [B9 — OP-18. Labour & team credit](#b9--op-18-labour--team-credit--closed-as-the-c3-blocker--team-credit-dissolves-and-labour-needs-no-convention)
   - [B10 — Credit realization & the supply-chain hand-off model](#b10--credit-realization--the-supply-chain-hand-off-model--passes-with-changes)
-  - [B12 — §3.2b electricity attribution (the real-time-dispatch principle)](#b12--32b-electricity-attribution-the-real-time-dispatch-principle--passes-with-changes)
+  - [B12 — §3.2b electricity attribution](#b12--32b-electricity-attribution--reversed-2026-09-09-the-principle-is-withdrawn-and-the-section-is-shorter-for-it)
   - [B14 — §3.2b latent pollution: a thing carries what it will emit](#b14--32b-latent-pollution-a-thing-carries-what-it-will-emit--passes-with-two-items)
   - [B11 — Self-care as credited work & the definition of work](#b11--self-care-as-credited-work--the-definition-of-work--passes-instance-of-op-10op-22)
   - [B1 — P7. "Nothing else is value"](#b1--p7-nothing-else-is-value--fixed)
@@ -533,6 +534,64 @@ A second wave of critique arrived on 1f916.ai against posts #1605, #1750 and #15
 ---
 
 <!-- tag: obj-b16 -->
+## B17 — §3.2c put a driver's tailpipe on nine people who never drove ✅ **SCOPE ADDED, AND A SECOND DEFECT FOUND, 2026-09-09**
+
+**Shipped:** Foundations v0.42 §3.2b, §3.2c, §3.4a. **Source:** **@cairn-lineage, c48695 on post #4381, 2026-09-09**, answering recruiting ask 1. **The first outside answer to that ask which names a section against an axiom, and it lands.**
+
+### The finding
+
+> *"§3.2c says every debit recorded against an organisation is simultaneously the debit of the people who worked there… Ten members work equal hours; one driver causes 100 units of tailpipe debit. A1/A4/§3.2 put that debit on the driver. §3.2c's general rule puts 10 on each member."*
+
+**The outreach agent ran the falsifier both ways and could not save the document.** The branch that nearly worked — §3.2b line 2 and A1 attribute at the moment of the flow, so the tailpipe is arguably never *recorded against the organisation* — **fails on §3.2c's own reconciling sentence**, which says consumption and operating debit is *"already made permanent on its causer"* by §3.2. **If §3.2 already pinned it, dividing by hours takes it off.** Conceded in public at c50007, with no repair invented.
+
+### What was actually wrong: two sections disagreed about their own confidence
+
+**§3.4a's *What remains open* already scoped the hours convention to jointly-*caused* debit and said the scope had not been checked. §3.2c stated the rule with no scope at all.**
+
+> **@cairn-lineage reached the narrower scope from the axioms alone, with no access to §3.4a's open list. Under §3.3a that is a replication**, which is the thing that actually disciplines a method. **Credited as such.**
+
+### The ruling — author, 2026-09-09
+
+| | |
+|---|---|
+| **Who caused it** | **The organisation whose members ran the route**, not the driver alone. Naming the driver reads *"the causer"* as one pair of hands, and the route existed because the members organised it |
+| **How it divides** | **§3.2c's hours convention**, which is now scoped to debit caused **while acting for the organisation** |
+| **§3.4a's residue** | **Closed.** Checked against a metered delivery tailpipe, which is the hardest form of the case |
+| **Can it enter the goods?** | **No.** §3.2b line 1, §2.4's bicycle example, §4.5's carrier rule and A5 all refuse it |
+| **How it is shed** | **Only by handing on the unburned fuel.** After combustion it is permanent |
+
+#### Worked, with the numbers
+
+A grocery co-op of **ten members**, each on **2,000 hours** a year, buys **40 litres**, sells **10** on, burns **30**, and delivers **2,000 orders**. At 2.31 kg CO₂ per litre and an illustrative 0.05 h/kg:
+
+| | Hours | Who holds it |
+|---|--:|---|
+| The 10 litres sold on | 1.16 | The haulier who took the parcel |
+| The 30 litres burned | **3.47** | The co-op, permanently |
+| Each member's 10% share | **0.347** | Each of the ten |
+| The 2,000 customers | **0.00** | **Nobody. They never held the fuel** |
+
+### The second defect, which the ruling exposed
+
+**The author's first ruling had a second half and withdrew it the same day** — that the delivery debit enters the product's figure and the organisation chooses how to spread it. **Checking that half against the document found a defect nobody had reported.**
+
+<!-- struck-ok: quotes the withdrawn wording in order to show why it was withdrawn -->
+§3.2b line 2 read: *"Transport fuel and its pollution stay with **whoever caused the journey — the factory for its inbound deliveries, the consumer for the final one**."*
+
+> **A causation test with no instrument behind it.** Two readers read the same clause two ways, and the two answers differed by the whole figure. **A customer receiving a delivery never held the fuel and never burned it, so no rule reaches them.**
+
+**Replaced by *whoever held the fuel parcel and burned it***, which is a record the books already keep (§3.4a). **§2.5's physical-trace test picks it.** A customer collecting goods in their own car burned their own fuel, so that journey is theirs by the same rule and not a separate one.
+
+### One knock-on, stated rather than buried
+
+**The electricity block used to justify itself by saying it *aligned* with §3.2b's transport rule. That justification went**, because the generator holds the gas parcel. **It was first rewritten as a carve-out, and the author withdrew the carve-out the same day** — see **B12**, reversed 2026-09-09. **Generation pollution now stays with the generating company**, and the real-time-versus-batch spectrum closes because nothing sits on it.
+
+### The process failure worth recording
+
+**§3.4a's *What remains open* is in the file the agent read whole, and it found the repair only after conceding.** A *what remains open* list the agent does not consult before conceding is a list it is not using.
+
+---
+
 ## B16 — The floor rested on an inference the gate did not license ✅ **THE ARGUMENT IS DELETED, NOT REPAIRED, 2026-09-04**
 
 **Shipped:** Foundations v0.40 §2.3, §5.5.1, §5.5.2 · Overview v0.26 §2. **Source:** **@amber, c40261 on post #1605, 2026-09-04**, running ask #1 against §2.3. **They returned two findings. One is refuted; one stands and is folded here.**
@@ -919,12 +978,38 @@ The barn stays on the farm operator; the fab stays on its cooperative; hide and 
 ---
 
 <!-- tag: obj-b11 -->
-## B12 — §3.2b electricity attribution (the real-time-dispatch principle) ✅ **PASSES WITH CHANGES**
+## B12 — §3.2b electricity attribution ✅ **REVERSED 2026-09-09. THE PRINCIPLE IS WITHDRAWN, AND THE SECTION IS SHORTER FOR IT**
+
+> ### 🔴 REVERSED 2026-09-09 — read this before anything below it
+>
+> **The real-time-dispatch principle is withdrawn.** Everything under the older amendment box below describes a rule the documents no longer carry, and it is kept because a reader tracing why should be able to.
+>
+> | | |
+> |---|---|
+> | **Was** (v0.10 – v0.42) | **Generation pollution follows the end-user**, computed from the grid's measured fuel mix over the half-hourly periods the consumer drew power |
+> | **Now** (Foundations v0.43) | **Generation pollution stays with the generating company**, which is at every moment its members' debit divided by hours worked (§3.2c). **A kilowatt-hour carries only the labour and materials the process consumed** (§3.4a) |
+>
+> **Why it reversed.** v0.42's ruling on transport put a fuel's pollution on **whoever held the parcel and burned it** (§3.2b line 2). **A generating company buys the fuel, holds it, and burns it.** The parcel rule reaches it, and the carve-out had to be justified separately or dropped. **The author dropped it.**
+>
+> **What it deletes.** The half-hourly fuel-mix method, the grid emission-intensity figure, the 300 kWh worked example and its 32% peak-shift result, the single-generator and separable-supply cases, and the transmission-loss paragraph, which is now redundant because all generation emissions are the company's. **A page becomes four paragraphs.**
+>
+> **What it closes.** The **open universality edge** — that real-time-versus-batch is a spectrum with grid storage in the middle and no criterion for it. **There is no spectrum left, because there is no carve-out.** This is an edge closed by removal rather than by an answer.
+>
+> **What it costs, and the author ruled it acceptable.** A consumer's own ledger no longer moves when they shift a load off-peak, **so the accounting supplies no demand-shaping signal.** The generator carries the debit and builds storage; communities pledge for clean generation (§4.6). **Demand-shaping is a signals question now, not an accounting one. Registered, not solved.**
+>
+> **And the objection this raises was put to the author and ruled on.** A national grid's emissions divided among a few hundred thousand utility workers shuts every one of their gates. **The author's ruling: that is the intended result.** *"The power company is externalizing costs onto the rest of humanity, because they are currently allowed to pollute as much as they want."* **The cushion is the ordinary one — pledges grant permanent debit-room (§4.5, §4.6) — and a generator society will not pledge for is a generator society will not staff.**
+>
+> **A second objection dissolved on inspection.** A household's electricity debit falls by roughly two orders of magnitude, which looks like the gate ceasing to ration the scarcest physical thing. **§3.4a already answers it: cost may not follow demand or desirability, and who receives a physically scarce output is settled at distribution by a queue, a lottery or pledge-priority** (§4.6, §5.5). **A cheap kilowatt-hour reading is the tenderloin result, not a hole.**
+
+### The record of the withdrawn rule
+
+<!-- struck-ok: the rest of this entry states the rule that was withdrawn, in order to record that it was withdrawn -->
 
 **Shipped:** Foundations v0.10 §3.2b + §12; Overview v0.8 §4. **Source:** stress-test (`stress-test` skill), surfaced during Track 4 of the median-lifestyle calc, `03-journal/2026-08-10.md` / `2026-08-09.md`.
 
 > ### ⚠️ AMENDED 2026-08-24 — the attribution basis is reversed. Read this first.
 >
+<!-- struck-ok: records the rule B12 carried before it was reversed on 2026-09-09 -->
 > **The real-time-dispatch principle below still stands: electricity's generation pollution is the consumer's.** What changed is **how the consumer's figure is computed.**
 >
 > | | |
@@ -941,6 +1026,7 @@ The barn stays on the farm operator; the fab stays on its cooperative; hide and 
 > **Also ruled:** **transmission losses stay with the producer and the network operator.** That power was never handed to a receiver, and a hand-off is what moves a debit (§4.6). At a 7% loss on a 300 kWh delivery, the ~23 kWh burned in the wires — about 3 kg CO₂ — is the network's.
 >
 
+<!-- struck-ok: records the rule B12 carried before it was reversed on 2026-09-09 -->
 **The ruling.** Emissions from **real-time, demand-dispatched, non-storable** production follow the **end-user**; batch/stockpiled production stays with the producer. So electricity **generation** pollution is the consumer's (the plant is a tool under A1; the draw is the act) — aligning it with §3.2b's existing final-delivery-transport and personal-combustion rules.
 
 **Verdict: PASSES WITH CHANGES.** The core insight is consistency-improving, but the *raw* form ("all generation pollution to the consumer, physical marginal unit") failed the exploit hunt:

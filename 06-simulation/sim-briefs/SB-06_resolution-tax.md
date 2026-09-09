@@ -1,7 +1,7 @@
 # SB-06 — How much dearer does a small producer's product read because they cannot afford instruments?
 
 > **Request:** `sr-20260905-sweep-producers-of-one-good-by-scale-and-by-` · filed 2026-09-05, from **@coywolf** at c40752 on post 3551.
-> **Status:** open. **Nobody has run this. No figures exist.**
+> **Status:** open, and §7 was rewritten on 2026-09-09 by author ruling. **Nobody has run this. No figures exist.**
 
 ---
 
@@ -89,13 +89,57 @@
 
 ## 7. Declared in advance
 
-| | |
-|---|---|
-| **Our prior** | **The spread is driven by the skew of `E_s`, not by `S` itself.** A long chain of equal steps should produce a modest spread; a short chain with one dominant step should produce a large one. **We expect the median producer to sit much closer to the best than the worst does**, so the burden falls on a tail rather than on half the field |
-| **Refutation threshold** | **If more than a third of producers publish figures above 2× the best-instrumented producer's, the §4.8 offset is not enough** and *"a producer wanting a lower figure has to buy more measurement"* is a charge on scale rather than an incentive |
-| **What we do if it is crossed** | **§3.4a's three "things that follow" get a fourth, stating the cost.** §4.8's watch item is promoted to a named open problem with a measured size. **And the honest framing changes**: erring against the producer is no longer simply *"the direction §4.4's label rule asks for"* — it is that, **and** a scale-dependent charge |
+> **Rewritten 2026-09-09, by author ruling.** The previous threshold read: *"if more than a third of producers publish figures above 2x the best-instrumented producer's."* **The agent blocked its own post rather than ship it**, because that share is decided by three things the **runner** supplies and this brief never pinned: the scale distribution, the resolution each producer can afford, and the shape of `E_s` along the chain. **Section 10 admits on its own page that a uniform sweep "will report no problem and will be wrong."** A brief that states an unconditional bar on one page and says the verdict is generator-determined on another has written a check that cannot lose. **Found by the agent's own drafting council; the general form is @amber's, c49097.**
 
-**We do not have a defence ready if this comes back badly, and that is the reason to run it.** §4.8's offset — helping someone join is credited work — **reduces the cost of joining. It does nothing about the cost of instruments after you have joined.**
+### The two faults, and which one this was
+
+| The fault | What is wrong | The repair |
+|---|---|---|
+| **Unit-incommensurable** | The bar and the statistic are not in the same unit | **Restate the unit. The check survives** |
+| **Model-entailed** | The verdict is decided by inputs whoever runs the check supplies | **Exclusion only. The check cannot be repaired** |
+
+**This was model-entailed, so the old threshold is excluded rather than restated.** *(Foundations §3.5 carries the general rule.)*
+
+### The replacement: one generator, two spreads, and an outside bar
+
+> **Measure the spread that resolution causes, and compare it against the spread that real physical efficiency causes. Both are ratios of debit-hours per kilogram of the same physical good. Both come off the same generator. The bar is a measurement nobody in this project chose.**
+
+**Terms.**
+
+- **The resolution spread, `R_res`** — the ratio between the figure the worst-instrumented producer publishes and the figure the best-instrumented one publishes, **for a physically identical process**. This is the quantity the brief was always about.
+- **The efficiency spread, `R_eff`** — the ratio between the debit-hours a wasteful real production method commands and the hours an efficient one commands, **for the same real material standard**.
+- **`E_s` skew** — how unevenly the chain's energy sits across its steps. A flat chain has every step equal; the steer chain puts 300 of 500 MJ in one step.
+
+**The bar is external and already measured.** `06-simulation/median-lifestyle/Q6.md` reads, from EXIOBASE, the labour a median lifestyle commands under different national production methods: **1,380 h/yr by the American method, 883 by the German or Japanese, 759 by the Spanish.**
+
+> **`R_eff` = 1,380 / 759 = 1.82x.**
+
+**Nobody running this brief chooses that number.** It is a published cross-country accounting figure, and it is the same kind of quantity as `R_res` — debit-hours per unit of the same real output.
+
+### The threshold
+
+> **Report `R_res / R_eff`, swept across `E_s` skew and chain length `S`.**
+>
+> **`R_res` < 1.82x** — **the resolution tax is smaller than the spread real production methods already produce.** §3.4a's three consequences stand as written, and §4.8's watch item stays a watch item.
+> **`R_res` >= 1.82x** — **an accounting artefact is doing more to a producer's figure than the physical difference between the world's best and worst production methods.** That is not a tolerable artefact.
+
+**And report the crossing point, which is a result either way:** **at what `E_s` skew, and at what chain length, does `R_res` first reach 1.82x?**
+
+### Why this one can lose
+
+| Test | Answer |
+|---|---|
+| **Are the bar and the statistic in the same unit?** | **Yes.** Both are ratios of debit-hours per unit of the same physical output |
+| **Can the runner's inputs decide the verdict?** | **No.** The runner sweeps `E_s` skew and `S`. **The bar comes from outside the model** |
+| **Is there a configuration where each outcome comes back?** | **Yes.** A flat chain returns `R_res` near 1.0 and passes. **The steer chain's own published digits return 12.50 / 2.00 = 6.25x for the hide, which fails by a wide margin** |
+
+> **That last row is why this brief is worth running.** §3.4a's own worked example, taken at face value, is already over the bar. **The question the sweep answers is how much of the real world looks like the steer chain and how much looks flat.**
+
+### What we do if it is crossed
+
+**§3.4a's three "things that follow" get a fourth, stating the cost with its measured size.** §4.8's watch item is promoted to a named open problem. **And the framing changes**: erring against the producer is no longer simply *"the direction §4.4's label rule asks for"* — it is that, **and** a scale-dependent charge, larger than the spread between national production methods.
+
+**We do not have a defence ready if this comes back badly, and that is the reason to run it.** §4.8's offset — helping someone join is credited work — **reduces the cost of joining. It does nothing about the cost of instruments afterwards.**
 
 ## 8. Self-tests, each able to fail
 
@@ -108,6 +152,7 @@
 ## 9. Out of scope
 
 - **Whether §3.4a is right.** The ceiling result is measured and this brief assumes it. **This is about who pays for it.**
+- **Real physical efficiency differences are now IN scope**, as the denominator `R_eff`. **They were ruled out of scope until 2026-09-09, and that is what left `R_res` with nothing to be measured against.** They enter as a fixed published figure, never as a swept parameter.
 - **The cost of joining a network.** §4.8's offset covers that. **This is the recurring cost of instruments afterwards.**
 - **Cross-network comparison.** One network's books, per §4.0.
 
@@ -115,4 +160,5 @@
 
 - **Sweeping `S` with uniform `E_s` only.** The steer case is heavily skewed and that is where the effect lives. **A uniform-only sweep will report no problem and will be wrong.**
 - **Letting the physical process vary with scale.** Then you are measuring real efficiency differences, not the resolution tax. **`E_s` must be identical for every producer.**
-- **Reporting the worst-case spread alone.** The worst case is one producer. **The share above 2× is the number that says how many people it hits.**
+- **Reporting the worst-case spread alone.** The worst case is one producer. **Report the distribution of `R_res` as well as its maximum**, so a reader can see whether the tax lands on a tail or on half the field.
+- **Sweeping the bar.** `R_eff` = 1.82× is a published measurement and is **held fixed**. Sweeping it re-creates the fault this brief was rewritten to remove.
