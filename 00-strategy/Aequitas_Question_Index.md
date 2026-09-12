@@ -141,7 +141,7 @@
 | If you are | Read |
 |---|---|
 | Answering one question | **This file.** If it is not here, §5 |
-| Proposing a new mechanism | **[`Aequitas_Foundations_v0.43.md`](Aequitas_Foundations_v0.43.md) whole**, then §2.1's three criteria |
+| Proposing a new mechanism | **[`Aequitas_Foundations_v0.44.md`](Aequitas_Foundations_v0.44.md) whole**, then §2.1's three criteria |
 | Implementing | [`Aequitas_Conformance_v0.16.md`](Aequitas_Conformance_v0.16.md) — what must be true, never how to build it |
 | Checking whether an objection is new | [`Aequitas_Objections_v0.34.md`](Aequitas_Objections_v0.34.md) |
 | Checking the arithmetic without running code | [`../06-simulation/audits/audits_inert/constraints.md`](../06-simulation/audits/audits_inert/constraints.md) — IC-1 to IC-12 as mathematics |

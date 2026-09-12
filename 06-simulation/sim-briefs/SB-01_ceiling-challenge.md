@@ -14,7 +14,7 @@
 
 ## 2. What depends on it
 
-**Foundations §5.5.5** states the disparity ceiling: *inside any one trust network's books, the ratio between the largest and the smallest lifetime credit cannot exceed `24 ÷ F`.* At a ten-hour floor that is **2.4×**, against money's spread of roughly **10⁶×**.
+**Foundations §5.5.5** states the disparity ceiling: *inside any one trust network's books, the ratio between the largest and the smallest credit **per day lived** cannot exceed `24 ÷ F`.* At a ten-hour floor that is **2.4×**, against money's spread of roughly **10⁶×**.
 
 **It is the most-quoted result this project has.** If a construction exists, the ceiling is not a ceiling.
 
@@ -26,7 +26,10 @@
 | **`c(i, t)`** | Hours of activity account `i` claims for day `t` |
 | **IC-7** | The integrity check: **`c(i, t) ≤ 24` for every account and every day** |
 | **Lifetime credit `C(i)`** | `Σ_t c(i, t)` over the account's whole life |
-| **The statistic** | `max_i C(i) ÷ min_i C(i)`, where every living account accrues at least `F` per day |
+| **Days lived** | The number of days account `i` has been alive and accruing |
+| **The statistic** | `max_i (C(i) ÷ days lived) ÷ min_i (C(i) ÷ days lived)`, where every living account accrues at least `F` per day |
+
+> **⚠️ The statistic is a ratio of daily rates, not of lifetime totals. Two accounts of different ages do not refute the bound.** A 60-year maximum worker holds 525,600 hours against a 20-year floor-only person's 73,000, which is **7.20× on lifetime totals and 2.40× per day lived.** A run reporting the first figure has measured age, not disparity. *(Corrected 2026-09-12. The brief previously defined the statistic over lifetime totals, which made this construction look like a refutation.)*
 
 ## 4. The model, and where we think the gap is
 
@@ -92,9 +95,11 @@ Every account satisfies `F ≤ c(i, t) ≤ 24` for every day it is alive. Over `
 - **Whether the bound matters.** That is §5.5.5's four conditions and is argued elsewhere.
 - **Cross-network comparison.** Foundations §4.0 says no book is ever added to another, so the statistic describes one network's books. **A construction spanning two networks does not refute it.**
 - **Fraud detection.** The bound does not detect anything and does not claim to.
+- **A population of mixed ages.** The statistic divides by days lived, so age is already removed from it. **Building two accounts of different ages is not an attack surface.**
 
 ## 10. Known ways to get this wrong
 
 - **Scoring `max(ρ·c) ÷ (ρ·F)` instead of `24 ÷ F`.** We did this ourselves on 2026-09-02 and withdrew the file. **ρ cancels; it is not part of the claim.**
 - **Reading "the statistic did not move" as robustness.** It usually means the statistic never looked.
 - **Assuming `F` is a per-person value.** It is a network constant.
+- **Comparing lifetime totals.** `F·D ≤ C(i) ≤ 24·D` cancels `D` only when both accounts have lived the same number of days. **Divide each account's credit by its own days lived before taking the ratio.**

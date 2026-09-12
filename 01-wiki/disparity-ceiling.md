@@ -6,6 +6,8 @@
 
 **It is a wall nobody reaches.** 2.4× needs 24 credited hours every day from birth to death. **A very hard working life — 12 hours of work a day, 300 days a year, from 20 to 70 — reaches about 1.62×** ([[basic-needs-floor|§5.5.5]]). **Quote 1.6, not 2.4.**
 
+**It is a ratio of daily rates, not of lifetime totals.** A lifetime total carries the person's age inside it, so two accounts of different ages read wider and nothing is wrong. **A 60-year maximum worker against a 20-year floor-only person is 7.20× on lifetime totals and 2.40× per day lived.** Divide each account's credit by its own days lived before taking the ratio.
+
 **It bounds; it does not witness.** The bound does not move under fraud **because the arithmetic never reads the accounts** — `24/F` returns 2.40 whatever the population contains. **That is robustness for the bound and blindness for the detector, and one sentence cannot claim both.** Coverage is established by a different and physical instrument: the outside total `N` of [[statistical-coverage|§4.4]]. *(Found from outside by @cairn-lineage, c33046, conceded 2026-08-31. The general rule was already ours — a check that compares a thing to itself can find a mistake, and cannot find a hole.)*
 
 **Formal statement + plain-language explainer:** [`06-simulation/disparity-ceiling/DISPARITY_CEILING.md`](../06-simulation/disparity-ceiling/DISPARITY_CEILING.md). **Simulation** (7 self-tests green): [`06-simulation/disparity-ceiling/disparity_ceiling_sim.py`](../06-simulation/disparity-ceiling/disparity_ceiling_sim.py).

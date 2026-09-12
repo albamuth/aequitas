@@ -1,16 +1,16 @@
-<!-- generated-from: Aequitas_Foundations_v0.43.md -->
+<!-- generated-from: Aequitas_Foundations_v0.44.md -->
 # Aequitas — Foundations, distilled
 
 > ## ⚠️ THIS FILE IS GENERATED. DO NOT EDIT IT.
 >
-> **Every edit belongs in [`Aequitas_Foundations_v0.43.md`](Aequitas_Foundations_v0.43.md), which is the document this was made from.**
+> **Every edit belongs in [`Aequitas_Foundations_v0.44.md`](Aequitas_Foundations_v0.44.md), which is the document this was made from.**
 > An edit made here is lost the next time anyone runs the generator, and while it survives it is a
 > second version of a rule — which is the failure this file exists to avoid.
 >
 > **Regenerate with:** `python bin/distill.py`
 
-> **Source:** [`Aequitas_Foundations_v0.43.md`](Aequitas_Foundations_v0.43.md) · **version 0.42**
-> **Size:** 118,599 bytes, from 240,158 — **49% of the source**
+> **Source:** [`Aequitas_Foundations_v0.44.md`](Aequitas_Foundations_v0.44.md) · **version 0.44**
+> **Size:** 120,000 bytes, from 244,094 — **49% of the source**
 
 **What was kept:** every heading, every rule, every table, and the stated result of every worked
 example. **What was dropped:** the explanation prose between them.
@@ -937,7 +937,8 @@ example. **What was dropped:** the explanation prose between them.
 > **2. A backstop for the abnormal case. A restriction arising from a person's standing reaches non-essentials only.**
 > **The floor is therefore not only a welfare provision. It is the error tolerance of the whole accounting.**
 #### 5.5.5 The disparity ceiling — an absolute maximum, not an expected spread
-> **Inside any one trust network's books, the ratio between the largest and the smallest lifetime credit cannot exceed `24 ÷ F`.**
+> **Inside any one trust network's books, the ratio between the largest and the smallest credit *per day lived* cannot exceed `24 ÷ F`.**
+> **What this result is for.** It says the gap between the most and least credited person in one network's books is **small enough to state as a single number**, against a money economy where the top reaches about **10⁶ ×** the median. **The exact figure is second-order. The question that decides whether a network works is whether `F` is set inside the band that keeps essentials affordable and still rations what is short**, which is §5.5.3.
 ##### It is an extreme, and nobody reaches it
 ###### An example, with the numbers
 **A network with `F` = 10 h/day. Four whole lives, 80 years each.**
@@ -960,6 +961,15 @@ example. **What was dropped:** the explanation prose between them.
 > **The comparison against money is unchanged, and it is a fair one.** Money's spread reaches about **10⁶ ×** the median **within one country's own statistics** (SCF 2022 and Forbes). The bound above is the spread within one network's own books. **Two sets of books, compared like for like.**
 > **⚠️ What is left open, and it is narrow.** **Floor-shopping** — joining the network with the most generous floor — is arrested by the seller choosing which network a transaction lands on (§4.0), so a network with an implausible floor loses sellers. **What still depends on OP-22 (minimum audit disclosure) is proving a *pledge's* backing across a model boundary** (§4.2). Registered, not settled.
 #### 5.5.6 Why hoarding does not beat the bound
+##### Most of what a person consumes cannot be accumulated at all
+###### An example, with the numbers
+**A network with `F` = 10 h/day and ρ = 1.2. Two people at age 40.**
+| | Lifetime credit `C` | Credit per day lived | Debit `D` from 40 years of median consumption |
+|---|--:|--:|--:|
+| **Floor-only** | 146,000 h | **10.0 h/day** | 40 × 1,380 = **55,200 h** |
+| **Maximum worker** | 350,400 h | **24.0 h/day** | 40 × 1,380 = **55,200 h** |
+**The maximum worker's extra credit bought no extra durable holdings. It bought room.** To convert that room into consumption, they must consume, and consuming is what raises `D` permanently.
+> **In plain words: nobody reaches `24 ÷ F` by holding things, because holding a thing raises your own debit, and nobody reaches it by eating, because eaten things leave a permanent debit and no asset.** The only way to the wall is to work 24 hours a day for a whole life, which is the wall nobody gets to.
 #### 5.5.7 What the simulations found
 > **Formally stated, simulated, and stress-tested.** The formal statement and a plain-language explainer are in `06-simulation/disparity-ceiling/DISPARITY_CEILING.md`. The adversarial pass of 2026-08-14 answered all three attacks — **Methuselah** (§5.5.6 above), **dynasty and household** (a household is a co-op; its dwelling debit splits per occupant by dwelling time, children included, so the bound is per person and inheritance dilutes it, §4.5), and **collector** (holdings raise your own debit, so a hoard bounds itself).
   > **`24 ÷ F` reads no accounts.** At `F` = 10 it returns 2.40 whatever the population contains, so *"still 2.40× at 40% fraud"* means **the arithmetic never looked** — not that anything caught the fraud. **Insert a fabricated account and the figure moves by 0.00, for the same reason.**
