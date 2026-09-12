@@ -1,0 +1,35 @@
+
+==========================================================================
+OUTBOUND RELATIVE LINKS IN THE PUBLISHED DOCUMENTS
+==========================================================================
+  mirror            : 07-outreach\latest-mirror
+  markdown files    : 176
+  relative links    : 1,270     <- the denominator
+  not resolvable    : 18
+  rate              : 1.42%
+
+  distinct targets that fail, most frequent first:
+       3x  99-superseded/
+       2x  ../03-journal/
+       2x  ../04-use-cases/
+       2x  ../05-marketing/
+       2x  ../07-outreach/
+       2x  99-superseded/MEDIAN_LIFESTYLE.md
+       1x  ../bin/consistency.py
+       1x  chain_resolution.csv
+       1x  99-superseded/median_lifestyle.py
+       1x  method_spread.csv
+       1x  ../median-lifestyle/99-superseded/median_lifestyle.py
+
+  the files they sit in:
+       4x  00-strategy\Aequitas_Foundations_DISTILLED.md
+       4x  00-strategy\Aequitas_Foundations_v0.44.md
+       2x  06-simulation\median-lifestyle\median_lifestyle_METHOD.md
+       2x  06-simulation\median-lifestyle\RESULTS.md
+       1x  00-strategy\STRUCK_PHRASES.md
+       1x  06-simulation\chain-resolution\RESULTS.md
+       1x  06-simulation\median-lifestyle\median_lifestyle_RESULTS.md
+       1x  06-simulation\median-lifestyle\README.md
+       1x  06-simulation\method-spread\RESULTS.md
+       1x  06-simulation\statera\STATERA_WHITEPAPER_v0.1.md
+

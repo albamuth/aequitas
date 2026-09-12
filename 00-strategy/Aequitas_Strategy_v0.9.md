@@ -6,7 +6,7 @@
 > <!-- struck-ok: names the withdrawn convention in order to record that it was withdrawn -->
 > **This version stops reporting a rule Foundations withdrew on 2026-09-03.** Five places said OP-18 closed by a *declared convention — labour rides the material split*, and one said OP-17 split a joint process by measurement. **Neither is true.** A joint process's cost is not divided at all; every co-product carries the whole process cost against its own output mass, and **labour needs no convention** (Foundations §3.4a). **Both problems are still closed, and both closed the other way: by removing a division rather than by governing one.**
 > **Target:** A statement of the system, tested against scenarios, in ~3 months — with a conformance list an implementer can build against.
-> **Companion docs:** `Aequitas_Foundations_v0.44.md` (axioms), `Aequitas_Objections_v0.34.md` (register), `Aequitas_Conformance_v0.16.md` (what an implementation must satisfy), `../NEXT.md` (task queue)
+> **Companion docs:** `Aequitas_Foundations_v0.45.md` (axioms), `Aequitas_Objections_v0.34.md` (register), `Aequitas_Conformance_v0.16.md` (what an implementation must satisfy), `../NEXT.md` (task queue)
 > **Version history & what each version superseded:** `00-strategy/Aequitas_Strategy_CHANGELOG.md`.
 
 ---
@@ -56,7 +56,7 @@ The whitepaper's credibility rests on claims that sound impossible. Several now 
 - ✅ **"Fraud undetected at rate *r* still cannot produce observed wealth distributions."** *(the disparity ceiling)* — `disparity_ceiling_sim.py` (N = 200,000): **inside one network's books** the `24/F` ceiling is exact, ρ-independent, and does not move under fraud, vs money's 10⁴–10⁶× tail. **It bounds what fraud is worth and does not detect fraud**, because the arithmetic never reads the accounts (Foundations §5.5.7). **The old "conditional on OP-22" clause is withdrawn** — the cross-network claim it qualified was struck on 2026-08-25, and the ceiling is a statement about one set of books (§5.5.5 condition 4).
 - ✅ **Societal-scale feasibility** — the five-sim scenario suite (`scenario_suite_METHOD.md`): labour is abundant, materials/energy bind.
 - ◻ "Estimation converges from global average to individual truth." — C3 in progress on real EXIOBASE data.
-- ◻ "Price ≡ cost is stable and doesn't require a planner." / "A demand signal arises from pledges alone." — owed.
+- ◻ "Price ≡ cost is stable and doesn't require a planner." / "A demand signal arises from pledges alone." — not yet tested.
 
 **Each claim ships with a Python simulation that demonstrates it.** This is what separates Aequitas from every other utopian economic proposal — *ours has results.*
 
@@ -78,7 +78,7 @@ This also answers the socialist-calculation critique pre-emptively: we don't arg
 > **Read this table through §1's split, because the components are not all the same kind of thing.**
 >
 > - **System work — most of it.** C3 (estimation engine), C4 (re-weighting), C5 (debit taxonomy), C8 (influence mechanics), C9 (debit-tolerance formula), C10 (cross-level trade), C12 (energetics registry). These are questions about how the economy behaves. They are the project.
-> - **Conformance-boundary work — a narrower job than the name suggests.** C1 (event log), C2 (verification), C6 (identity), C7 (privacy layer), C11 (arithmetic audits). **What is owed here is the requirement, not the design.** C11 is the clean example: *mass and energy must conserve across every recorded process* is the requirement, and it holds at both ends of every dial. The Python that checks it, and any field name it reads, are praxis.
+> - **Conformance-boundary work — a narrower job than the name suggests.** C1 (event log), C2 (verification), C6 (identity), C7 (privacy layer), C11 (arithmetic audits). **What has to be written here is the requirement, not the design.** C11 is the clean example: *mass and energy must conserve across every recorded process* is the requirement, and it holds at both ends of every dial. The Python that checks it, and any field name it reads, are praxis.
 >
 > **C7 is the one to watch.** "Privacy layer" is an architecture name for something Foundations §4.7 already ruled a **network choice**. What this project owes on it is OP-22's answer — *what is the minimum an auditor must see to verify a claim without seeing a history* — which is a requirement. **The layer itself is not ours to build.**
 
@@ -126,7 +126,7 @@ This also answers the socialist-calculation critique pre-emptively: we don't arg
 - **C12 (energetics registry): process-energetics registry** and the rival-sector audit rules. **OP-24 (understatement drift) sim** — at what rival density does understatement drift stop being arrested?
 - **C5–C7:** transfer rules and pledge reversion; identity; privacy incl. OP-22's disclosure set.
 - **C8 (influence mechanics):** Resolve OP-1 (service → influence) enough to specify.
-- **Disparity-ceiling proof — ✅ largely done, coupled to OP-4 (debit tolerance) / C9 (debit-tolerance formula).** The strongest defensive result the project holds, now with a simulation behind it (`disparity_ceiling_sim.py`, `q4_locked_ledgers.py`): **inside one network's books** the between-people accrual ceiling is **`24 h ÷ floor` ≈ 2.4×**, exact and ρ-independent, versus money's 10⁴–10⁶× tail; material-only, only ~0.1–2% sit past a permanent lockout. **A very hard working life reaches about 1.6×; 2.4× is a wall nobody gets to.** **OP-4's shape is settled** (per-person locally-set tolerance floor + personal efficiency ratio on the discretionary layer only — no global ratio). **Still owed:** the generous-network cohort-shopping race, tracked as OP-14. **The result is no longer stated as conditional on OP-22** — that clause qualified a cross-network claim struck on 2026-08-25. OP-22 still gates proving a *pledge's* backing across a model boundary, which is a different question. *Watch, as before: no objective function tuning the tolerance, or it re-opens OP-10.*
+- **Disparity-ceiling proof — ✅ largely done, coupled to OP-4 (debit tolerance) / C9 (debit-tolerance formula).** The strongest defensive result the project holds, now with a simulation behind it (`disparity_ceiling_sim.py`, `q4_locked_ledgers.py`): **inside one network's books** the between-people accrual ceiling is **`24 h ÷ floor` ≈ 2.4×**, exact and ρ-independent, versus money's 10⁴–10⁶× tail; material-only, only ~0.1–2% sit past a permanent lockout. **A very hard working life reaches about 1.6×; 2.4× is a wall nobody gets to.** **OP-4's shape is settled** (per-person locally-set tolerance floor + personal efficiency ratio on the discretionary layer only — no global ratio). **Still not run:** the generous-network cohort-shopping race, tracked as OP-14. **The result is no longer stated as conditional on OP-22** — that clause qualified a cross-network claim struck on 2026-08-25. OP-22 still gates proving a *pledge's* backing across a model boundary, which is a different question. *Watch, as before: no objective function tuning the tolerance, or it re-opens OP-10.*
 - **Use cases as validation.** Sandwich ✅ (which turned out to contain a joint process — milling → flour + bran), plus homeowner, doctor, film studio. **Add an explicit joint-production case.**
 
 <!-- tag: str-phase-3-write-and-harden -->
@@ -172,7 +172,7 @@ This also answers the socialist-calculation critique pre-emptively: we don't arg
 | Risk | Mitigation |
 |---|---|
 | **🔴 Weighting-model governance (OP-10 (weighting governance))** — whoever sets the cost model controls every balance in history without touching a rule | The **top blocker.** Partial answers: split-before-collapse (§3.2a), rival-sector audit for constants (§3.3a). The general problem is open; the answer is competing open variance under A8, still unspecified. Work it with OP-24 and Foundations A8's always-creditable-activity ruling — three problems, one capture surface. |
-| **🔴 Understatement drift (OP-24 (understatement drift))** — costs quietly bias low and nothing corrects them | Rival-sector audit (Foundations §3.3a). **Unproven.** Sim owed. Note this erodes **A4 (no externalities)** without breaking any equation, which is what makes it insidious. |
+| **🔴 Understatement drift (OP-24 (understatement drift))** — costs quietly bias low and nothing corrects them | Rival-sector audit (Foundations §3.3a). **Unproven.** The simulation has not been run. Note this erodes **A4 (no externalities)** without breaking any equation, which is what makes it insidious. |
 | **🔴 The onerousness gap (OP-16 (onerousness gap))** — tedium/indignity have no material signature, and nothing allocates labour to the boring necessary jobs | Half answered by A2 (exertion/hazard/skill resolve materially). Leading candidate for the rest: hour-ceiling differentiation (pay the premium in time off, not rate). All candidates speculative; check first how much is simply unmeasured hazard. |
 | ~~**The allocation recursion does not converge**~~ | **Retired — the sim ran and passed.** Non-negative Neumann series, 100% convergent for `ρ(Ã) < 1`; Sraffa blocked by construction (`recursion_convergence.py`). |
 | ~~**OP-18 has no defensible convention**~~ | **Retired — and not by finding one.** The division the convention would have governed was removed instead (§3.4a). **A risk about choosing a convention does not survive there being nothing to choose.** |
@@ -205,7 +205,7 @@ This also answers the socialist-calculation critique pre-emptively: we don't arg
 <!-- tag: str-s9 -->
 ## 9. First Foothold — how adoption plausibly starts
 
-> **Scope note, and it governs the whole section.** This is a reading of the historical record on how a system like this gets a foothold. **It is not a deliverable of this work.** Under Foundations §2.6, building a demonstration is praxis a project **may** choose to take on; nothing here is owed, and no result in Foundations waits on it. What follows is evidence about adoption, offered to whoever decides to try.
+> **Scope note, and it governs the whole section.** This is a reading of the historical record on how a system like this gets a foothold. **It is not a deliverable of this work.** Under Foundations §2.6, building a demonstration is praxis a project **may** choose to take on; nothing here is required, and no result in Foundations waits on it. What follows is evidence about adoption, offered to whoever decides to try.
 
 **Full-cost accounting as a parallel overlay on existing commerce.** No adoption, no permission, no legal change — it computes and publishes truth alongside money.
 

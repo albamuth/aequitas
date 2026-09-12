@@ -16,7 +16,7 @@
 
 **Foundations §5.5.3** builds the whole stable band on ρ\*: `E_max = 365 · F · ρ*(F)`, and every row of that table.
 
-> **On 2026-08-31 the other headline claim in the same file was found to be blind.** `24 ÷ F` reads no accounts — Foundations §5.5.7 now says so, conceded in public. **The rubric run that found it scored only that statistic, and named ρ\* as owed in its own "what this does not show" section.**
+> **On 2026-08-31 the other headline claim in the same file was found to be blind.** `24 ÷ F` reads no accounts — Foundations §5.5.7 now says so, conceded in public. **The rubric run that found it scored only that statistic, and named ρ\* as unmeasured in its own "what this does not show" section.**
 
 **ρ\* is the one claim in that file that genuinely varies with the draw. That makes it the one that could be an instrument — and the one nobody has checked.**
 

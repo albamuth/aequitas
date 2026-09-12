@@ -3,7 +3,7 @@
 
 > **Version:** 0.16 · **Date:** 2026-09-09
 > **Audience: implementers.** Anyone building a trust network.
-> **Companion:** [`Aequitas_Foundations_v0.44.md`](Aequitas_Foundations_v0.44.md) — the system itself, and the argument behind every row below. **Where the two differ, Foundations governs.**
+> **Companion:** [`Aequitas_Foundations_v0.45.md`](Aequitas_Foundations_v0.45.md) — the system itself, and the argument behind every row below. **Where the two differ, Foundations governs.**
 > **Version history is kept separately and is not published**, so this document carries only what is currently true.
 > **Two row numbers are retired and are never reused: the bare `17`, and `14c`.**
 > **New row 10h gives a passage claim a keeper and a scope.** §3.4a's whole published rule for a passage was *"a binary fact off the plant's own flow sheet"*, and **no row owned it.** The claim is now published by the producer, and must reconcile against records made on a different path — energy bills, intake weights, output weights. **New row 4b states what subscribing discloses**: what a subscriber enters into the accounting is auditable by the network, and what they keep out was never in it. **Neither row claims a self-made record becomes independent by being readable.**

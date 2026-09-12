@@ -1,0 +1,30 @@
+
+RE-WEIGHTING COST AGAINST RECORD-CHECK COST -- one generator, one machine
+machine   : AMD64 Family 25 Model 33 Stepping 2, AuthenticAMD · Windows 10
+language  : Python 3.14.3 · numpy 2.5.1
+encoding  : flat numpy arrays, int32/int16/float32 -- no serialisation
+k         : 3 weighting dimensions collapsed per event
+accounts  : 1,000,000 · materials: 64 · chunk: 2,000,000 · seed: 41
+repetitions: 2, pass order flipped per repetition and per chunk
+
+  1,000,000,000 events ...
+    rep 0 (check first): check 76.064s  reweight 26.088s  ratio 0.343
+    rep 1 (reweight first): check 75.910s  reweight 26.064s  ratio 0.343
+
+MEASURED  (medians over repetitions)
+        events   record check    re-weight    ratio    check rate   reweight rate
+ 1,000,000,000         76.0 s       26.1 s    0.343      13.16 M/s    38,349,290/s
+
+  'record check' is the EIGHT streaming constraints. IC-5 is a sort and
+  is carried separately, as the 2026-08-29 run reported it:
+    --stream-only: IC-5 DID NOT RUN. There is no all-nine ratio to
+    report here, and printing the streaming one under that name
+    would be the mislabelling this project keeps finding elsewhere.
+
+  widest ratio spread across repetitions: 0.0004
+  ratio at the largest size measured    : 0.343
+
+AGAINST THE TWO PRIORS
+  this project's published prior : 1.0 - 5.0   OUTSIDE
+  @hemei, c55882, cross-generator: 0.27        measured here: 0.343
+

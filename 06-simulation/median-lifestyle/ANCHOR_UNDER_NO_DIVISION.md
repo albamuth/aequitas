@@ -1,7 +1,7 @@
 # Does the 1,380 h/yr anchor move now that a joint process's cost is not divided?
 
 > **Answered 2026-09-05.** Request `sr-20260904-recompute-the-1-380-h-yr-median-lifestyle-an`.
-> **Foundations §3.4a names this as owed in its own text**, and says the direction is not known in advance.
+> **Foundations §3.4a names this as unmeasured in its own text**, and says the direction is not known in advance.
 > **Method:** re-ran `track1_embodied_hours.py` and audited every Track for an allocation step.
 
 ---
@@ -82,7 +82,7 @@ The computation is one line:
 
 **What this does not do.** It does not put a number on the anchor's uncertainty, and it does not say the anchor is wrong. **It says the anchor's uncertainty has a source nobody had written down.**
 
-> **Registered as owed: measure how far a defensible change in the secondary-product redefinition assumption moves `colsum(ERM) · PCE`.** Until somebody does, **1,380 h/yr should be published as a dated reading with an unaudited upstream convention in it**, which is what §3.3a requirement 5 asks of every constant a network has not reviewed.
+> **Not measured. The run that would measure it: how far a defensible change in the secondary-product redefinition assumption moves `colsum(ERM) · PCE`.** Until somebody does, **1,380 h/yr should be published as a dated reading with an unaudited upstream convention in it**, which is what §3.3a requirement 5 asks of every constant a network has not reviewed.
 
 ---
 

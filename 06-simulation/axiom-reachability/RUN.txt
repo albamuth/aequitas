@@ -1,0 +1,17 @@
+
+==========================================================================
+REACHABILITY FROM THE EIGHT AXIOMS
+==========================================================================
+  Foundations : Aequitas_Foundations_v0.44.md
+  Conformance : Aequitas_Conformance_v0.16.md
+
+  axioms carrying a pointer line : 8/8   ['A1', 'A2', 'A3', 'A4', 'A5', 'A6', 'A7', 'A8']
+  sections reached               : 40/49
+  conformance rows reached       : 10/44
+
+  ROWS NO PATH FROM AN AXIOM REACHES (34):
+    1  2  2a  2b  2c  2d  3  3a  4  4b  5  6  7a  9  10  10a  10d  10e  10f  10g  10h  11  12  12a  12b  12c  14  14d  15  16  16b  16d  17a  17b
+
+  sections no path reaches (9):
+    3.4  3.7  4  5  5.4  5.5.2  5.5.4  5.5.8  6
+

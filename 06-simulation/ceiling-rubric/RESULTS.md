@@ -146,5 +146,5 @@
 | | |
 |---|---|
 | **For the agent** | **Publishable, and it honours the c33598 commitment.** The number came out against the artifact: 1 of 3, with the passing leg free. **The bound survives; the corroboration does not** |
-| **For Foundations** | §5.5.7 and §4.3 already carry the rules this run measures. **No new fold is owed** |
+| **For Foundations** | §5.5.7 and §4.3 already carry the rules this run measures. **No new fold is needed** |
 | **Owed** | Point 1 above. **Claim 2, the clearing rate, is the claim in that file that actually reads the population, and nobody has scored it** |

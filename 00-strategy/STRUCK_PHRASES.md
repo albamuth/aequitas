@@ -38,6 +38,11 @@ That is not a hypothetical. **It happened three times in a single day, 2026-08-2
 
 | Struck phrase | Struck on | Why | What is true instead |
 |---|---|---|---|
+| `the re-weighting cost was not` | 2026-09-12 | **It has been measured, twice, on two machines.** The sentence was true when written and stopped a record-check figure being borrowed for a pass nobody had timed | **A re-weighting pass costs about a third of a record-check pass** — 26 s against about 100 s at 10⁹ events, single core, no disk. The ratio is 0.35 against the eight streaming checks and 0.27 against all nine — Foundations §3.4a |
+| `registered as owed` | 2026-09-12 | **A to-do marker dressed as a defined term.** It was never defined — not in `GLOSSARY.md`, not in §2, not on first use — and no ruling introduced it. It also collides with the accounting vocabulary: §2.2 says a debit *"is not a bill, and nobody collects it"*, so *owed* means one thing in the theory and another in the marker | Say what is actually true and who would fix it: **"This has not been measured. Measuring it means &lt;the run&gt;."** — Foundations §3.4a |
+| `test still owed` | 2026-09-12 | Same marker, second wording | **"The test that would settle it has not been run:"** followed by the test |
+| `is owed a recomputation` | 2026-09-12 | Same marker, third wording | **"Has not been recomputed under this rule, and the direction it would move is not known in advance."** |
+| `sim owed` | 2026-09-12 | Same marker, fourth wording | **"The simulation has not been run."** |
 | `the supply you signed up for` | 2026-08-24 | A commercial supply agreement is a paper claim, and A1 forbids a paper claim deciding a physical record | A consumer carries **the grid's actual measured fuel mix over the periods they drew power** — Foundations §3.2b |
 | `attribute by the consumer's contracted supply mix` | 2026-08-24 | Same ruling, second wording | As above — Foundations §3.2b, Objections B12 |
 | `the labour dimension has enormous slack` | 2026-08-28 | Credited hours include the floor, and the floor is a value the network sets by rule, so the comparison cannot fail | Compare **deployable** hours, not credited ones — Foundations §3.5 |

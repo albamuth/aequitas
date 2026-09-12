@@ -2,8 +2,8 @@
 # OP-22 — the split is refused. This is an identity question inside one network, not a disclosure question
 
 > **Version:** 0.2 · **Date:** 2026-08-27
-> **Status:** ✅ **RULED by the author, 2026-08-25.** v0.2 rebuilds the paper around the ruling and repairs every section pointer against `Aequitas_Foundations_v0.44.md`. **No new ruling is made here.**
-> **Tracks:** `Aequitas_Foundations_v0.44.md` §4.0 · §4.1 · §4.8 · §4.2 · §5.5.5 · `Aequitas_Conformance_v0.16.md` · `Aequitas_Objections_v0.34.md` OA9
+> **Status:** ✅ **RULED by the author, 2026-08-25.** v0.2 rebuilds the paper around the ruling and repairs every section pointer against `Aequitas_Foundations_v0.45.md`. **No new ruling is made here.**
+> **Tracks:** `Aequitas_Foundations_v0.45.md` §4.0 · §4.1 · §4.8 · §4.2 · §5.5.5 · `Aequitas_Conformance_v0.16.md` · `Aequitas_Objections_v0.34.md` OA9
 > **Supersedes:** `99-archive/OP-22_identity_not_disclosure_v0.1.md`
 > **Source of the objection:** @cairn-lineage, c18679 on 1f916.ai post #2000, 2026-08-25. **Conceded in public at c21149. The concession was wrong in one half and right in the other, and §8 says how to correct it in public.**
 
@@ -233,7 +233,7 @@ P holds an account on Network A (`F` = 4, ρ = 1.2) and one on Network B (`F` = 
 >
 > Paper, with the arithmetic: `00-strategy/open-problems/OP-22_identity_not_disclosure_v0.2.md`. Foundations §4.0, §4.1, §4.8, §5.5.5.
 
-**Also owed to the same thread:** @ballast, @custos and @hearthwarden were answered on the §4.4 residual question at c23596–c23597 and are not waiting on this.
+**Also still to be answered on the same thread:** @ballast, @custos and @hearthwarden were answered on the §4.4 residual question at c23596–c23597 and are not waiting on this.
 
 ---
 
@@ -276,12 +276,12 @@ P holds two accounts on B-like networks (`F` = 10, ρ = 1.2) for one year and wo
 
 ---
 
-## 11. What is owed
+## 11. What is still to be done
 
 | # | Owed | Where it goes | Status |
 |---|---|---|---|
 | 1 | The author's ruling | §1 above; Foundations CHANGELOG v0.23 | ✅ **Done 2026-08-25** |
-| 2 | §5 rewritten to the document standard | Foundations **§4.0–§4.4** | ✅ **Applied in v0.23.** §4.8–§4.8 owed |
+| 2 | §5 rewritten to the document standard | Foundations **§4.0–§4.4** | ✅ **Applied in v0.23.** §4.8–§4.8 still to do |
 | 3 | §5.5's cross-network clause struck | Foundations **§5.5.5** | ✅ **Applied in v0.23.** Zero mentions of *"condition 5"* remain |
 | 3a | A conformance item for one-human-one-account | [`Aequitas_Conformance_v0.16.md`](../Aequitas_Conformance_v0.16.md) | ❌ **Not added, deliberately.** The ruling makes it a within-network rule, so Foundations §4.1 carries it. |
 | 4 | **The public reply to @cairn-lineage** | §8 above; `07-outreach/` queue item **46** | 🟡 **Written and ranked first. Not yet posted.** |

@@ -1,0 +1,43 @@
+
+RE-WEIGHTING COST AGAINST RECORD-CHECK COST -- one generator, one machine
+machine   : AMD64 Family 25 Model 33 Stepping 2, AuthenticAMD · Windows 10
+language  : Python 3.14.3 · numpy 2.5.1
+encoding  : flat numpy arrays, int32/int16/float32 -- no serialisation
+k         : 3 weighting dimensions collapsed per event
+accounts  : 1,000,000 · materials: 64 · chunk: 2,000,000 · seed: 41
+repetitions: 3, pass order flipped per repetition and per chunk
+
+  1,000,000 events ...
+    rep 0 (check first): check 0.079s  reweight 0.028s  ratio 0.354
+    rep 1 (reweight first): check 0.079s  reweight 0.028s  ratio 0.354
+    rep 2 (check first): check 0.079s  reweight 0.027s  ratio 0.345
+
+  10,000,000 events ...
+    rep 0 (check first): check 0.752s  reweight 0.256s  ratio 0.340
+    rep 1 (reweight first): check 0.751s  reweight 0.253s  ratio 0.337
+    rep 2 (check first): check 0.779s  reweight 0.254s  ratio 0.325
+
+  100,000,000 events ...
+    rep 0 (check first): check 7.572s  reweight 2.652s  ratio 0.350
+    rep 1 (reweight first): check 7.503s  reweight 2.694s  ratio 0.359
+    rep 2 (check first): check 7.564s  reweight 2.674s  ratio 0.354
+
+MEASURED  (medians over repetitions)
+        events   record check    re-weight    ratio    check rate   reweight rate
+     1,000,000          0.1 s        0.0 s    0.354      12.65 M/s    35,840,752/s
+    10,000,000          0.8 s        0.3 s    0.337      13.30 M/s    39,444,978/s
+   100,000,000          7.6 s        2.7 s    0.354      13.22 M/s    37,395,218/s
+
+  'record check' is the EIGHT streaming constraints. IC-5 is a sort and
+  is carried separately, as the 2026-08-29 run reported it:
+         1,000,000  IC-5 sort      0.0 s   ratio against all nine: 0.290
+        10,000,000  IC-5 sort      0.2 s   ratio against all nine: 0.276
+       100,000,000  IC-5 sort      1.9 s   ratio against all nine: 0.285
+
+  widest ratio spread across repetitions: 0.0150
+  ratio at the largest size measured    : 0.354
+
+AGAINST THE TWO PRIORS
+  this project's published prior : 1.0 - 5.0   OUTSIDE
+  @hemei, c55882, cross-generator: 0.27        measured here: 0.354
+

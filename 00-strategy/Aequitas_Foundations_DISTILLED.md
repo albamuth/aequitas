@@ -1,16 +1,16 @@
-<!-- generated-from: Aequitas_Foundations_v0.44.md -->
+<!-- generated-from: Aequitas_Foundations_v0.45.md -->
 # Aequitas — Foundations, distilled
 
 > ## ⚠️ THIS FILE IS GENERATED. DO NOT EDIT IT.
 >
-> **Every edit belongs in [`Aequitas_Foundations_v0.44.md`](Aequitas_Foundations_v0.44.md), which is the document this was made from.**
+> **Every edit belongs in [`Aequitas_Foundations_v0.45.md`](Aequitas_Foundations_v0.45.md), which is the document this was made from.**
 > An edit made here is lost the next time anyone runs the generator, and while it survives it is a
 > second version of a rule — which is the failure this file exists to avoid.
 >
 > **Regenerate with:** `python bin/distill.py`
 
-> **Source:** [`Aequitas_Foundations_v0.44.md`](Aequitas_Foundations_v0.44.md) · **version 0.44**
-> **Size:** 120,000 bytes, from 244,094 — **49% of the source**
+> **Source:** [`Aequitas_Foundations_v0.45.md`](Aequitas_Foundations_v0.45.md) · **version 0.45**
+> **Size:** 121,774 bytes, from 247,022 — **49% of the source**
 
 **What was kept:** every heading, every rule, every table, and the stated result of every worked
 example. **What was dropped:** the explanation prose between them.
@@ -482,7 +482,21 @@ example. **What was dropped:** the explanation prose between them.
 > **That is a missing record, not an unknowable fact.**
 ##### The records this needs already exist
 > **So this asks a plant to publish records it already keeps. It does not ask it to create new ones.**
-> **⚠️ The honest cost, unmeasured.** Every mix and every split is now an event, so the log is much larger and the chain of parcels behind a figure is much deeper. **A union walk is one pass over that chain and stays cheap.** What is not measured is a full **re-weighting** pass (§3.3) over a log of that size. **The record-check cost was measured at 1.6 minutes for a billion events; the re-weighting cost was not, and must not be quoted from that figure.** Registered as owed.
+> **⚠️ The honest cost, measured.** Every mix and every split is now an event, so the log is much larger and the chain of parcels behind a figure is much deeper. **A union walk is one pass over that chain and stays cheap.** The other pass a big log has to carry is a full **re-weighting** (§3.3), and it is now measured.
+>
+> **A re-weighting pass costs about a third of a record-check pass.** On one ordinary machine, single core, no disk, a billion-event log re-checks in about **100 seconds** and re-weights in about **26**. Memory is **11.4 MB** for the checks and **7.6 MB** for the re-weight, both flat in the length of the log.
+>
+> **Three things the figure depends on, and a reader should have all three before quoting it.**
+>
+> | | |
+> |---|---|
+> | **Which record check** | The nine integrity constraints include IC-5, which is a **sort** and about a fifth of the pass. **Against the eight streaming checks the ratio is 0.35; against all nine it is 0.27** |
+> | **`k`** | The number of weighting dimensions collapsed per event. **`k` = 3 in the run.** The re-weighting cost is linear in it |
+> | **The machine** | **Two machines measured, and one is 4.5× the other.** Both absolute rates move together, so the ratio travels further than the seconds do — but a ratio measured on one machine is a reading, not a constant |
+>
+> **What is still not measured: disk.** Both passes read memory. **A real log is stored, both passes read the same bytes, and shared I/O would push the ratio toward 1.0** by an amount nobody has measured.
+>
+> *(First measured from outside by **@hemei**, citizen #700, who ran the published brief end to end on hardware this project does not control and returned 0.27 — against a published prior of 1× to 5×, which was wrong and on the wrong side of 1.0. **They flagged their own caveat, that no single log served both passes, before anyone else could.** The single-generator run that confirms them is `06-simulation/ic-recompute-cost/REWEIGHT_RATIO_RESULTS.md`, and it found their caveat did not matter: the gap between 0.27 and 0.35 is IC-5's sort, not the generator. **The requirement to report both absolute rates beside any ratio is @bounded-curiosity's**, from the objection that portable is not invariant.)*
 #### What stops a producer understating
 #### One thing the cost may never do
 > **Cost may not follow demand or desirability.**

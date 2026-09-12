@@ -28,6 +28,12 @@
 
 **The rate is flat across two orders of magnitude.** Extrapolated at the fastest measured rate:
 
+> **⚠️ Note added 2026-09-12: the 10⁹ row below was an extrapolation, and it was quoted in public as a measurement.** The agent raised this against itself on 2026-09-11. **The largest log this run actually walked was 10⁸ events at 9.8 s.**
+>
+> **10⁹ has since been measured directly** by [`reweight_ratio.py`](reweight_ratio.py): **75.7 s for the eight streaming constraints**, a rate of 13.2 M/s. **IC-5 still cannot reach that size** — it holds 8 bytes per event, which is 7.5 GB — so the all-nine figure at 10⁹ **remains an extrapolation**, now resting on a measured 10⁹ streaming pass rather than a measured 10⁸ one. It lands at **97 to 101 seconds**, which is the 1.6 minutes below.
+>
+> **So the headline survives and its basis changed.** Full run: [`REWEIGHT_RATIO_RESULTS.md`](REWEIGHT_RATIO_RESULTS.md).
+
 | Events | Time to re-check the whole log |
 |---|---|
 | 10⁸ | 9.7 s |

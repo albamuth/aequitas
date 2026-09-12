@@ -1,16 +1,18 @@
 <!-- tag: fnd-aequitas-foundations-and-long-term -->
 # Aequitas — Foundations & Long-Term Strategy
 
-> **Version:** 0.44
+> **Version:** 0.45
 > **Date:** 2026-09-12
-> **Supersedes:** `99-archive/Aequitas_Foundations_v0.43.md` — held locally and not published.
+> **Supersedes:** `99-archive/Aequitas_Foundations_v0.44.md` — held locally and not published.
 > **Status:** Working foundations.
 > **Primary audience of the first paper:** technologists and implementers.
 > **Companion:** [`Aequitas_Conformance_v0.16.md`](Aequitas_Conformance_v0.16.md) — what must be true for an implementation to *be* Aequitas.
 > **Companion:** [`Aequitas_Objections_v0.34.md`](Aequitas_Objections_v0.34.md) — the objections register.
 > **Version history is kept separately and is not published**, so this document carries only what is currently true.
 >
-> **This version states the disparity ceiling as a ratio of daily rates instead of lifetime totals.** §5.5.5 used to bound *"the largest and the smallest **lifetime** credit"*, and a lifetime total carries the person's age inside it. **The bound `F·D ≤ C ≤ 24·D` cancels days lived only when two accounts have lived the same number of days**, so two accounts of different ages read 7.20× against a stated bound of 2.40× with no rule broken. §5.5.6 already said *"at equal age"* in the next section; the condition was simply not where a reader looks for it. **The statistic is now credit per day lived, and the age condition disappears rather than becoming a fifth one.** No arithmetic moved: the same two accounts read 24.0 and 10.0 hours a day. **§5.5.5 also now says what the result is for** — the gap in one network's books is small enough to state as one number, and **the question that decides whether a network works is whether `F` sits in §5.5.3's band**, not what the exact ratio is. **§5.5.6 gains the reason nobody reaches the wall by consuming**: food, fuel and heat are used up when used, so their debit is permanent and buys no holding. `06-simulation/sim-briefs/SB-01` carried the same lifetime form and is corrected with it. *(Found by the outreach agent's own drafting council, 2026-09-12, and published at #4977 before the ruling.)*
+> **This version replaces a sentence saying a cost was unmeasured with the measurement.** §3.4a said the re-weighting pass had never been timed and must not be quoted from the record-check figure. **It has now been timed twice, on two machines.** A re-weighting pass costs about **a third** of a record-check pass: a billion-event log re-checks in about **100 seconds** and re-weights in about **26**, single core and with no disk. **The project's published prior of 1× to 5× was wrong, and on the wrong side of 1.0.** Three things the figure depends on are stated with it — which record check (IC-5 is a sort and about a fifth of the pass, so the ratio reads 0.35 against eight checks and 0.27 against nine), the number of weighting dimensions `k`, and the machine. **What is still not measured is disk**, and shared I/O on a stored log would push the ratio toward 1.0 by an unknown amount. *(Measured from outside first by @hemei, who ran the published brief on hardware this project does not control; the requirement to print both absolute rates beside any ratio is @bounded-curiosity's.)*
+>
+> **Before that, the disparity ceiling was restated as a ratio of daily rates instead of lifetime totals.** §5.5.5 used to bound *"the largest and the smallest **lifetime** credit"*, and a lifetime total carries the person's age inside it. **The bound `F·D ≤ C ≤ 24·D` cancels days lived only when two accounts have lived the same number of days**, so two accounts of different ages read 7.20× against a stated bound of 2.40× with no rule broken. §5.5.6 already said *"at equal age"* in the next section; the condition was simply not where a reader looks for it. **The statistic is now credit per day lived, and the age condition disappears rather than becoming a fifth one.** No arithmetic moved: the same two accounts read 24.0 and 10.0 hours a day. **§5.5.5 also now says what the result is for** — the gap in one network's books is small enough to state as one number, and **the question that decides whether a network works is whether `F` sits in §5.5.3's band**, not what the exact ratio is. **§5.5.6 gains the reason nobody reaches the wall by consuming**: food, fuel and heat are used up when used, so their debit is permanent and buys no holding. `06-simulation/sim-briefs/SB-01` carried the same lifetime form and is corrected with it. *(Found by the outreach agent's own drafting council, 2026-09-12, and published at #4977 before the ruling.)*
 >
 <!-- struck-ok: the header summary must quote the withdrawn wording to say it was withdrawn -->
 > **The version before this reverses the electricity ruling, and the section it lived in is now four short paragraphs instead of a page.** §3.2b used to send a generator's emissions to the **end-user**, on the ground that the plant is a tool and the draw is the act. **The parcel rule of v0.42 reaches the generator instead: the company bought the fuel, held it, and burned it.** So generation pollution is the company's, divided among its members by hours (§3.2c), and **a kilowatt-hour carries only the labour and materials the process consumed**, like every other output (§3.4a). **The whole timed-fuel-mix machinery is deleted**, and with it the real-time-versus-batch spectrum that could never be drawn — **an open universality edge closes rather than being answered.** What it costs is stated: **a consumer's ledger no longer moves when they shift a load off-peak**, so demand-shaping is a pledges-and-signals question now, not an accounting one. **§3.5 gains @amber's split of *unfailable* into two faults** — unit-incommensurable, which a restatement repairs, and model-entailed, which only exclusion does — with the instruction to test entailment first. **And §4.2 states plainly what subscribing discloses**: what you put into the accounting is auditable by the network, what you keep out was never in it, and **auditable is not the same as independently checked.** *(Found by @amber and @hemei; the electricity ruling is the author's.)*
@@ -923,7 +925,7 @@ So a coverage figure is a dated reading with a stated basis, exactly like every 
 
 > **So a network that cannot show how it audits its constants is not conforming. It is not free to have no answer.**
 
-**⚠️ And say the honest part plainly: no network has yet demonstrated a working answer, because no network yet exists.** The five requirements above are what a design will be judged against. **They are not evidence that the problem is solved.** Test still owed: simulate a population of networks under these incentives and find the conditions under which drift stops being arrested (Objections §C, item 2).
+**⚠️ And say the honest part plainly: no network has yet demonstrated a working answer, because no network yet exists.** The five requirements above are what a design will be judged against. **They are not evidence that the problem is solved.** **The test that would settle it has not been run:** simulate a population of networks under these incentives and find the conditions under which drift stops being arrested (Objections §C, item 2).
 
 <!-- tag: fnd-s3-4 -->
 ### 3.4 Resolution is opportunistic
@@ -1111,7 +1113,21 @@ Some processes produce several things at once from one pool of inputs. A steer e
 
 **And the direction §4.3 describes holds here.** The marginal cost of a check falls as instrumentation rises, and a plant that already meters its transfers pays almost nothing to record them.
 
-> **⚠️ The honest cost, unmeasured.** Every mix and every split is now an event, so the log is much larger and the chain of parcels behind a figure is much deeper. **A union walk is one pass over that chain and stays cheap.** What is not measured is a full **re-weighting** pass (§3.3) over a log of that size. **The record-check cost was measured at 1.6 minutes for a billion events; the re-weighting cost was not, and must not be quoted from that figure.** Registered as owed.
+> **⚠️ The honest cost, measured.** Every mix and every split is now an event, so the log is much larger and the chain of parcels behind a figure is much deeper. **A union walk is one pass over that chain and stays cheap.** The other pass a big log has to carry is a full **re-weighting** (§3.3), and it is now measured.
+>
+> **A re-weighting pass costs about a third of a record-check pass.** On one ordinary machine, single core, no disk, a billion-event log re-checks in about **100 seconds** and re-weights in about **26**. Memory is **11.4 MB** for the checks and **7.6 MB** for the re-weight, both flat in the length of the log.
+>
+> **Three things the figure depends on, and a reader should have all three before quoting it.**
+>
+> | | |
+> |---|---|
+> | **Which record check** | The nine integrity constraints include IC-5, which is a **sort** and about a fifth of the pass. **Against the eight streaming checks the ratio is 0.35; against all nine it is 0.27** |
+> | **`k`** | The number of weighting dimensions collapsed per event. **`k` = 3 in the run.** The re-weighting cost is linear in it |
+> | **The machine** | **Two machines measured, and one is 4.5× the other.** Both absolute rates move together, so the ratio travels further than the seconds do — but a ratio measured on one machine is a reading, not a constant |
+>
+> **What is still not measured: disk.** Both passes read memory. **A real log is stored, both passes read the same bytes, and shared I/O would push the ratio toward 1.0** by an amount nobody has measured.
+>
+> *(First measured from outside by **@hemei**, citizen #700, who ran the published brief end to end on hardware this project does not control and returned 0.27 — against a published prior of 1× to 5×, which was wrong and on the wrong side of 1.0. **They flagged their own caveat, that no single log served both passes, before anyone else could.** The single-generator run that confirms them is `06-simulation/ic-recompute-cost/REWEIGHT_RATIO_RESULTS.md`, and it found their caveat did not matter: the gap between 0.27 and 0.35 is IC-5's sort, not the generator. **The requirement to report both absolute rates beside any ratio is @bounded-curiosity's**, from the objection that portable is not invariant.)*
 
 #### What stops a producer understating
 
@@ -1157,7 +1173,7 @@ Two reasons the ban stands:
 
 **Whether a producer can declare a false passage.** Claiming a co-product left the chain before work it really consumed would lower its figure. **That is a verification question rather than an accounting one**, and conformance row 7's closure checks are what answer it. Not measured.
 
-**Whether the calibrated figures move.** The **1,380 h/yr** median-lifestyle anchor (§3.5) and the **ρ\* ≈ 1.2** clearing rate (§5.5.7) were computed under the withdrawn division. **They are owed a recomputation, and the direction they move is not known in advance.**
+**Whether the calibrated figures move.** The **1,380 h/yr** median-lifestyle anchor (§3.5) and the **ρ\* ≈ 1.2** clearing rate (§5.5.7) were computed under the withdrawn division. **Neither has been recomputed under this rule, and the direction they would move is not known in advance.**
 
 <!-- tag: fnd-s3-5 -->
 ### 3.5 The books never balance — and must not
@@ -2297,7 +2313,7 @@ Those activities are **sleeping, eating, defecating, and keeping oneself clean.*
 
 ##### The band, measured
 
-**Aequitas does not set `F` and must not** (A8). **What this project owed was a demonstration that a workable value exists** — that for a given economy there is a band of `F` and ρ inside which essentials are affordable and the ledger still rations what is genuinely short. **It was run on 2026-08-28.**
+**Aequitas does not set `F` and must not** (A8). **What this project had not shown was that a workable value exists** — that for a given economy there is a band of `F` and ρ inside which essentials are affordable and the ledger still rations what is genuinely short. **It was run on 2026-08-28.**
 
 > **The band exists at every floor from 1 to 14 hours a day, and it never closes. What binds it is capacity, not affordability.**
 
@@ -2530,4 +2546,4 @@ A3 therefore does three separate defensive jobs: it forbids accumulation (§5.1)
 
 ---
 
-*End of v0.44.*
+*End of v0.45.*

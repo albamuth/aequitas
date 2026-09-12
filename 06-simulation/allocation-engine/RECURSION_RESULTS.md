@@ -101,7 +101,7 @@ Two goods, two joint processes, `B = [[6,3],[1,12]]`, `A = [[5,0],[0,10]]`, `l =
 ## 5. Honest caveats
 
 - **Base case = one producing process per product.** Rivals (a product made by several processes) are handled as a production-weighted average, exercised in the square-joint arm; the log's per-unit provenance makes each *unit* single-process, so this is faithful, not a simplification of the accounting.
-- **`Θ` is a given parameter, not derived.** That is the whole point of §3.4a — the process's physics supplies `Θ`; the sim's job was the recursion, not the instrument. Whether real biophysical `Θ` behaves well at small breed/feed differences is a *separate* owed test (Objections §C Test 3, the "fuzzy middle").
+- **`Θ` is a given parameter, not derived.** That is the whole point of §3.4a — the process's physics supplies `Θ`; the sim's job was the recursion, not the instrument. Whether real biophysical `Θ` behaves well at small breed/feed differences is a *separate* test that has not been run (Objections §C Test 3, the "fuzzy middle").
 - **Near-critical economies have astronomically large `p`.** As `ρ → 1`, `p` blows up like `1/(1−ρ)` — the Leontief-inverse singularity. This is **correct**: an economy that barely reproduces itself embeds near-infinite labour per unit. It is why the raw absolute solver-gap looked large (`p` itself ~10²⁰); the *relative* gap stayed at 10⁻¹⁰.
 - **The value arm's negatives are partly driven by near-singular random `(B − A)`.** Even discounting the extreme cases, the qualitative claim — physical allocation is structurally sign-safe, price allocation is not — holds by construction, not just empirically.
 

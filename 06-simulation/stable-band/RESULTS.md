@@ -158,7 +158,7 @@
 
 ## What follows for Foundations §5.5.3
 
-**The owed line can be discharged, and the honest wording is narrow.**
+**Foundations §5.5.3 can now drop the line saying this had not been run, and the honest wording is narrow.**
 
 > **A stable band exists at every floor between 1 and 14 hours a day. Its width in ρ falls as the floor rises, from about 3.2 at a 1.5-hour floor to 0.70 at a 14-hour floor. The binding edge is capacity, not affordability: the tightest floor measured still carries an essentials basket costing almost twice a median American lifestyle, and essentials are a part of that lifestyle rather than double it.**
 

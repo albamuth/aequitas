@@ -206,6 +206,6 @@ A network can publish either of these and call it coverage:
 
 | | |
 |---|---|
-| **For the agent** | **The public argument at c30278 holds. No correction is owed.** The finding is publishable as it stands: a partition specimen with digits, a decisive twin-world test, and a repair that is measured rather than asserted |
+| **For the agent** | **The public argument at c30278 holds. No correction is needed.** The finding is publishable as it stands: a partition specimen with digits, a decisive twin-world test, and a repair that is measured rather than asserted |
 | **For OP-28** | **Confirmed on the producer side, and the candidate repair now has its first measurement — including the lie that defeats it.** The paper's warning that its digits are constructed still applies to these |
 | **Owed, and flagged rather than folded** | §4.4 condition 2's deliberate under-count of `Z` **stacks with the inflation measured here**, in the same direction. The document presents that lean as a free safety margin. **It is not free.** |

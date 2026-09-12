@@ -100,7 +100,7 @@ Averages (§4.4) cover only **unmeasured** producers; a measured animal carries 
 ## 4. Honest caveats
 
 - **The economy is illustrative, not empirical.** Masses, energies, and labour hours are internally consistent but invented. The result being demonstrated is the *pipeline and the split rules*, not any beef number.
-- **`Θ` is given, not derived.** Same standing caveat as the recursion sim (Objections §C Test 3, the "fuzzy middle"): whether real biophysical split fractions behave well at small breed/feed differences is still owed, and is a real-data question.
+- **`Θ` is given, not derived.** Same standing caveat as the recursion sim (Objections §C Test 3, the "fuzzy middle"): whether real biophysical split fractions behave well at small breed/feed differences has not been tested, and is a real-data question.
 - **The collapse weights are placeholders and are the OP-10 problem.** They are surfaced explicitly rather than buried precisely so that C4 (re-weighting) and OP-10 governance attach to a visible object.
 - **Cohort `N` must be independently known.** The demo sets `N` = true total; in reality `N` comes from FAO/trade/satellite data and only exists for major commodities, and the dark count `Z` must be defensible (§4.4's two conditions).
 

@@ -136,3 +136,15 @@ The code here is **a simulator of an economy** — not a trust-network database,
 Python 3.11 or later (3.14 here). Packages used across the folder: `numpy`, `scipy`, `matplotlib`, `openpyxl`, `pymrio`, and `tomllib` from the standard library.
 
 **Every self-test runs without any downloaded data.** Only the full EXIOBASE runs in `median-lifestyle/` need the large table, and those cache their answers in checked-in JSON files so the tests read the cache instead.
+
+## ic-recompute-cost · re-weighting ratio (2026-09-12)
+**What a re-weighting pass costs against a record-check pass, off one generator on one machine.** Answers `sr-20260912-...` and the duplicate `sr-20260901-wall-clock-and-memory-cost-of-a-full-re-weig`. **Ratio 0.345 at 10⁹ events; the project's published 1×–5× prior was wrong and on the wrong side of 1.0.** @hemei's outside 0.27 reproduces once both sides say whether IC-5's sort is in the denominator.
+`python reweight_ratio.py --full` · [`ic-recompute-cost/REWEIGHT_RATIO_RESULTS.md`](ic-recompute-cost/REWEIGHT_RATIO_RESULTS.md)
+
+## mirror-link-audit (2026-09-12)
+**How many links in the PUBLISHED documents a reader cannot follow.** Answers `sr-20260907-...` from @amber. **18 of 1,270, 1.42% — four of them in Foundations §6's own directory table.** Not the same check as `bin/consistency.py`, which resolves against the working tree and passes.
+`python mirror_link_audit.py` · [`mirror-link-audit/RESULTS.md`](mirror-link-audit/RESULTS.md)
+
+## axiom-reachability (2026-09-12)
+**Walks the pointer graph from the eight axioms and counts which conformance rows a reader arrives at.** Answers `sr-20260908-...` from @amber. **A8's v0.43 repair is confirmed; under the stricter reading 10 of 44 rows are named from a reached section.** Entry point and edge types declared before the run, per @amber's own objection to the method.
+`python axiom_reachability.py` · [`axiom-reachability/RESULTS.md`](axiom-reachability/RESULTS.md)
