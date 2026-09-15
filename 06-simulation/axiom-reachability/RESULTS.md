@@ -22,7 +22,7 @@
 
 **A8's pointer line now reads:**
 
-> *"[`Aequitas_Conformance_v0.16.md`](...) for the requirements this axiom makes invariant, **every one of which is reachable from here and from nowhere else in §1**."*
+> *"[`Aequitas_Conformance_v0.17.md`](...) for the requirements this axiom makes invariant, **every one of which is reachable from here and from nowhere else in §1**."*
 
 | | v0.42, when @amber looked | v0.44, measured today |
 |---|---|---|

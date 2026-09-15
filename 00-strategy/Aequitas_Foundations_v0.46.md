@@ -1,16 +1,19 @@
 <!-- tag: fnd-aequitas-foundations-and-long-term -->
 # Aequitas — Foundations & Long-Term Strategy
 
-> **Version:** 0.45
-> **Date:** 2026-09-12
-> **Supersedes:** `99-archive/Aequitas_Foundations_v0.44.md` — held locally and not published.
+> **Version:** 0.46
+> **Date:** 2026-09-15
+> **Supersedes:** `99-archive/Aequitas_Foundations_v0.46.md` — held locally and not published.
 > **Status:** Working foundations.
 > **Primary audience of the first paper:** technologists and implementers.
-> **Companion:** [`Aequitas_Conformance_v0.16.md`](Aequitas_Conformance_v0.16.md) — what must be true for an implementation to *be* Aequitas.
+> **Companion:** [`Aequitas_Conformance_v0.17.md`](Aequitas_Conformance_v0.17.md) — what must be true for an implementation to *be* Aequitas.
 > **Companion:** [`Aequitas_Objections_v0.34.md`](Aequitas_Objections_v0.34.md) — the objections register.
 > **Version history is kept separately and is not published**, so this document carries only what is currently true.
 >
-> **This version replaces a sentence saying a cost was unmeasured with the measurement.** §3.4a said the re-weighting pass had never been timed and must not be quoted from the record-check figure. **It has now been timed twice, on two machines.** A re-weighting pass costs about **a third** of a record-check pass: a billion-event log re-checks in about **100 seconds** and re-weights in about **26**, single core and with no disk. **The project's published prior of 1× to 5× was wrong, and on the wrong side of 1.0.** Three things the figure depends on are stated with it — which record check (IC-5 is a sort and about a fifth of the pass, so the ratio reads 0.35 against eight checks and 0.27 against nine), the number of weighting dimensions `k`, and the machine. **What is still not measured is disk**, and shared I/O on a stored log would push the ratio toward 1.0 by an unknown amount. *(Measured from outside first by @hemei, who ran the published brief on hardware this project does not control; the requirement to print both absolute rates beside any ratio is @bounded-curiosity's.)*
+<!-- struck-ok: the header summary must quote the withdrawn wording to say it was withdrawn -->
+> **This version says that how long you have lived is a record, and it says what storing a log costs.** §4.4 rebuilds a joining person's whole life, and each declared year opens `ρ·F·365` hours of consumption room while adding about 1,380 hours of debit. **Below `ρ·F` = 3.78 hours a day those two swap over, and a filer gains about 650 hours of room for every year of their own life they delete** — inside the band §5.5.3 calls workable. **§4.4 gains a third condition: the declared span is a record like any other, and where it is unevidenced it is estimated back to the earliest date the evidence allows.** That wording names a date rather than a direction, because which direction runs against the filer flips with the network's own floor. **The disparity ceiling is untouched**, since a removed day takes at most 24 hours with it. **And §3.4a's *"shared I/O would push the ratio toward 1.0 by an amount nobody has measured"* is replaced by the amount: +0.084 on one outside stack, disk 0.192–0.219 against memory 0.114–0.129, outside both spreads. The delta is settled and the level is not**, because that run used two logs with two byte spellings. *(The span exploit is the outreach agent's drafting council, from @coywolf's question; the disk arm is @hemei's; both rulings are the author's.)*
+>
+> **The version before this replaced a sentence saying a cost was unmeasured with the measurement.** §3.4a said the re-weighting pass had never been timed and must not be quoted from the record-check figure. **It has now been timed twice, on two machines.** A re-weighting pass costs about **a third** of a record-check pass: a billion-event log re-checks in about **100 seconds** and re-weights in about **26**, single core and with no disk. **The project's published prior of 1× to 5× was wrong, and on the wrong side of 1.0.** Three things the figure depends on are stated with it — which record check (IC-5 is a sort and about a fifth of the pass, so the ratio reads 0.35 against eight checks and 0.27 against nine), the number of weighting dimensions `k`, and the machine. **What that version could not state was disk**, which this one does. *(Measured from outside first by @hemei, who ran the published brief on hardware this project does not control; the requirement to print both absolute rates beside any ratio is @bounded-curiosity's.)*
 >
 > **Before that, the disparity ceiling was restated as a ratio of daily rates instead of lifetime totals.** §5.5.5 used to bound *"the largest and the smallest **lifetime** credit"*, and a lifetime total carries the person's age inside it. **The bound `F·D ≤ C ≤ 24·D` cancels days lived only when two accounts have lived the same number of days**, so two accounts of different ages read 7.20× against a stated bound of 2.40× with no rule broken. §5.5.6 already said *"at equal age"* in the next section; the condition was simply not where a reader looks for it. **The statistic is now credit per day lived, and the age condition disappears rather than becoming a fifth one.** No arithmetic moved: the same two accounts read 24.0 and 10.0 hours a day. **§5.5.5 also now says what the result is for** — the gap in one network's books is small enough to state as one number, and **the question that decides whether a network works is whether `F` sits in §5.5.3's band**, not what the exact ratio is. **§5.5.6 gains the reason nobody reaches the wall by consuming**: food, fuel and heat are used up when used, so their debit is permanent and buys no holding. `06-simulation/sim-briefs/SB-01` carried the same lifetime form and is corrected with it. *(Found by the outreach agent's own drafting council, 2026-09-12, and published at #4977 before the ruling.)*
 >
@@ -197,11 +200,11 @@ These are the immutable core. Nothing in Aequitas may contradict them, and nothi
 
 **No organisation may acquire authority over the core rules. Governance is a property of the rules themselves, not of any institution.**
 
-**The axioms above may not vary, and neither may the conformance requirements** — [`Aequitas_Conformance_v0.16.md`](Aequitas_Conformance_v0.16.md).
+**The axioms above may not vary, and neither may the conformance requirements** — [`Aequitas_Conformance_v0.17.md`](Aequitas_Conformance_v0.17.md).
 
 **Everything below them may differ from one trust network to the next. A network must publish what it runs, so that anybody else can re-compute its claims.**
 
-*Where this is worked out: §2.6 for which settings vary · §2.3 for which activities a network may credit, and the boundary it may not cross · §4.0 for what a trust network is and how big one may be · §4.7 for what a network owes · [`Aequitas_Conformance_v0.16.md`](Aequitas_Conformance_v0.16.md) for the requirements this axiom makes invariant, every one of which is reachable from here and from nowhere else in §1.*
+*Where this is worked out: §2.6 for which settings vary · §2.3 for which activities a network may credit, and the boundary it may not cross · §4.0 for what a trust network is and how big one may be · §4.7 for what a network owes · [`Aequitas_Conformance_v0.17.md`](Aequitas_Conformance_v0.17.md) for the requirements this axiom makes invariant, every one of which is reachable from here and from nowhere else in §1.*
 
 ---
 
@@ -600,7 +603,7 @@ Trust networks operate in the real world and must deal with governments, courts,
 
 **And it guards against a specific failure.** A theory of cost quietly becomes a theory of software, governance and compliance, because those questions arrive while nobody is drawing the line.
 
-> **The dial test is the standing screening question for anything proposed for these documents. What it leaves behind is a set of conformance requirements, never an architecture** — [`Aequitas_Conformance_v0.16.md`](Aequitas_Conformance_v0.16.md). **What must be true, never how to build it.**
+> **The dial test is the standing screening question for anything proposed for these documents. What it leaves behind is a set of conformance requirements, never an architecture** — [`Aequitas_Conformance_v0.17.md`](Aequitas_Conformance_v0.17.md). **What must be true, never how to build it.**
 
 ---
 
@@ -1125,7 +1128,23 @@ Some processes produce several things at once from one pool of inputs. A steer e
 > | **`k`** | The number of weighting dimensions collapsed per event. **`k` = 3 in the run.** The re-weighting cost is linear in it |
 > | **The machine** | **Two machines measured, and one is 4.5× the other.** Both absolute rates move together, so the ratio travels further than the seconds do — but a ratio measured on one machine is a reading, not a constant |
 >
-> **What is still not measured: disk.** Both passes read memory. **A real log is stored, both passes read the same bytes, and shared I/O would push the ratio toward 1.0** by an amount nobody has measured.
+> **Disk has now been measured once, from outside, and it moves the ratio.** Both of the passes above read memory. A real log is stored, and both passes then read the same bytes.
+>
+> **Terms used here.** The **delta** is the disk ratio minus the memory ratio, measured on the same stack. A **spread** is the standard deviation across the run's own repeats. A **stack** is one machine, one generator, one log format.
+>
+> | At 10⁸ events, nine checks | Ratio | Its spread |
+> |---|--:|--:|
+> | Memory | **0.114 – 0.129** | **± 0.015** |
+> | Disk | **0.192 – 0.219** | **± 0.026** |
+> | **Delta** | **+0.084** | **outside both spreads** |
+>
+> **In plain words: storing the log raises the re-weighting pass from about an eighth of a record-check pass to about a fifth.** Shared I/O does push the ratio toward 1.0, and on this stack it pushes it by about 0.08.
+>
+> **⚠️ The delta is settled. The level is not, and the two must not be quoted together.** The memory arm above reads 0.114–0.129 at 10⁸ events against the 0.27 this section publishes at 10⁹ — **about a factor of two, and that gap is not a length effect.** The outside run used **two logs with two byte spellings**: 34 bytes an event for the record check, 28 for the re-weighting. **One log served both read paths, and no log served both passes**, so the level of the ratio is read across generators and the delta is not.
+>
+> **What would settle it is one run and it has been requested:** one generator, one byte spelling, one machine, disk and memory, 10⁸ and 10⁹, eight checks and nine. **Until that runs, 0.27 is a reading on one stack rather than this system's figure.**
+>
+> *(The disk arm is **@hemei**'s, citizen #700, run from their own seat inside a day of the arm being pre-registered, with the stack string attached to every number. **They flagged the two-log caveat themselves.** The pre-registration they ran against was defective — all three of its registered outcomes were stated over the delta and none over the level, so none of them could have caught a factor of two. That defect is the outreach agent's and was published as such.)*
 >
 > *(First measured from outside by **@hemei**, citizen #700, who ran the published brief end to end on hardware this project does not control and returned 0.27 — against a published prior of 1× to 5×, which was wrong and on the wrong side of 1.0. **They flagged their own caveat, that no single log served both passes, before anyone else could.** The single-generator run that confirms them is `06-simulation/ic-recompute-cost/REWEIGHT_RATIO_RESULTS.md`, and it found their caveat did not matter: the gap between 0.27 and 0.35 is IC-5's sort, not the generator. **The requirement to report both absolute rates beside any ratio is @bounded-curiosity's**, from the objection that portable is not invariant.)*
 
@@ -1780,10 +1799,33 @@ A median lifestyle commands about **1,380 hours** of other people's labour a yea
 
 **Details may arrive years later and the position re-derives.** No new machinery is needed, because a position is computed from the log and never stored (A6).
 
-**Two conditions, and without either this breaks.**
+**Three conditions, and without any one of them this breaks.**
 
 1. **An estimate for an undisclosed period is computed over the undisclosed leftover, not over the whole population.** This is the rule above, applied to periods inside one life. Without it, a person who documents only their flattering years free-rides forever on an average their own silence inflates. **Selective disclosure is expected and is not an exploit, provided this holds.**
 2. **An estimate errs against the estimated party, on both sides.** Debit is estimated at the unfavourable end and credit at the conservative end, so **supplying evidence always pays**, whichever way the truth lies.
+
+3. **The declared span is itself a record, and is estimated to the earliest date the evidence allows.** A **declared span** is how long the person says they have lived, and it decides how many years the reconstruction rebuilds. **It is not exempt from the rule at the head of this section: an assertion is not evidence.** Where the span is not evidenced, it is estimated back to the earliest date the available evidence permits, and a later record supersedes that estimate like any other.
+
+##### Why condition 3 names a date rather than a direction
+
+**Conditions 1 and 2 both err *against* the party, and condition 3 cannot be written that way, because which direction is against them changes with the network's own settings.**
+
+**Each declared year does two things at once.** It opens `ρ·F·365` hours of consumption room, and it adds a year of consumption to the debit — about **1,380 hours** at the median lifestyle this document uses (§3.5).
+
+**Worked at two conforming settings.**
+
+| The network | Room a year opens, `ρ·F·365` | Debit a year adds | An honest year is worth |
+|---|--:|--:|--:|
+| `F` = 10 h/day, ρ = 1.2 | 4,380 h | 1,380 h | **+3,000 h** |
+| `F` = 2 h/day, ρ = 1.0 | 730 h | 1,380 h | **−650 h** |
+
+**Break-even is `ρ·F` = 1,380 ÷ 365 = 3.78 hours a day.** Above it a longer span pays and nobody shortens one. **Below it a filer gains 650 hours of room for every year of their own life they delete** — and **§5.5.3 states that the workable band never closes between `F` = 1 and `F` = 14**, so a network at `F` = 2 is conforming.
+
+> **In plain words: "err against the party" has no fixed meaning here, because the same act helps a filer in one conforming network and harms them in another.** *The earliest date the evidence allows* is the same instrument on both sides of 3.78, which is why condition 3 names it.
+
+**What this does not touch is the disparity ceiling.** Deleting a year removes days from the denominator **and the credit for those days from the numerator**, and IC-7 caps a removed day at 24 hours. **So `24 ÷ F` holds under a shortened span** (§5.5.5), and the exposure is to the consumption gate `D ≤ ρ·C` alone.
+
+*(Reached by the outreach agent's own drafting council on 2026-09-14 from **@coywolf**'s question at c58595 — *"what does an honest span buy the filer that a shortened one doesn't?"* — and answered in public before the ruling.)*
 
 > **Why the two sides are not treated alike, and it is not a preference.** **Over-estimating somebody's debit consumes nothing** — it costs them room they were not using. **Over-estimating their credit hands out real consumption room on the strength of a guess about production.** The two errors are the same shape and have opposite consequences, **which is why a position only starts acting on what a person may consume once observation has replaced the estimate** (A7).
 
@@ -2521,7 +2563,7 @@ A3 therefore does three separate defensive jobs: it forbids accumulation (§5.1)
 
 | What it is | Where |
 |---|---|
-| **The conformance requirements** — what must be true for an implementation to *be* Aequitas, written for implementers | [`Aequitas_Conformance_v0.16.md`](Aequitas_Conformance_v0.16.md) |
+| **The conformance requirements** — what must be true for an implementation to *be* Aequitas, written for implementers | [`Aequitas_Conformance_v0.17.md`](Aequitas_Conformance_v0.17.md) |
 | **The objections register** — every open problem and every answered objection, with its status | [`Aequitas_Objections_v0.34.md`](Aequitas_Objections_v0.34.md) |
 | **The plain-language companion**, assuming no economics background | [`Aequitas_Overview_v0.27.md`](Aequitas_Overview_v0.27.md) |
 | **How adoption plausibly starts** — a reading of the historical record, not a statement of the system | [`Aequitas_Strategy_v0.9.md`](Aequitas_Strategy_v0.9.md) §5 |

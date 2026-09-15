@@ -82,16 +82,37 @@
 | | |
 |---|---|
 | **Our prior** | **ρ\* passes S1–S3 and fails S4.** A fabricated account at the floor adds both credit and consumption, so it should move ρ\* a little — **but we expect the move to be smaller than the draw-to-draw noise**, which would make it undetectable in practice even though it is non-zero |
-| **Refutation threshold** | **If ρ\*'s move under S4 or S5 is smaller than the standard deviation across 30 seeds of the clean population, ρ\* does not detect that fault.** In that case §5.5.7 must say so in the same sentence that reports ρ\*'s shock behaviour |
+| **Refutation threshold** | **If ρ\*'s move under S4 or S5 is smaller than the noise on a move measured the same way, ρ\* does not detect that fault.** In that case §5.5.7 must say so in the same sentence that reports ρ\*'s shock behaviour. **"The same way" is a requirement and section 7a states it** |
 | **What we do if it is crossed** | The same repair `24 ÷ F` got: **§5.5.7 states what ρ\* is blind to, in the sentence that reports it.** The stable-band table stands, but is labelled as resting on a statistic that cannot see under-recording |
 
 **And the standing rule this brief exists to obey**, supplied by a critic and now carried in §3.5:
 
 > **A check whose passing condition is set by the checker is not an instrument, and it fails toward flattery.**
 
+## 7a. Seeds — how the two arms are drawn, and what the noise bar then is
+
+**Terms used here.** A **seed** is the number that fixes one random draw of the population, so the same seed re-drawn gives the same population. **Paired** means the faulted arm re-uses the clean arm's seeds, one for one. **Unpaired** means each arm is drawn from its own seeds. **Spread** here always means the **standard deviation**, written σ.
+
+> **Two requirements, and neither is optional.**
+>
+> **1. The faulted arm re-uses the clean arm's seeds.** S4 and S5 are run paired.
+> **2. The noise bar is measured on the same quantity as the move.** A paired move is compared against the spread of paired *differences*, never against the spread of clean-arm ρ\* values.
+
+**Why the second one matters, with digits.** Take a clean-arm spread of **σ = 1.00**.
+
+| How the two arms are drawn | The noise on the difference | Against a move of 0.40 |
+|---|--:|---|
+| Unpaired | σ·√2 = **1.41** | Move is inside the noise. **Not detected** |
+| Paired, seeds correlated at r = 0.9 | σ·√(2(1−r)) = **0.45** | Move is at the noise. **Borderline** |
+| Paired, seeds correlated at r = 0.99 | σ·√(2(1−r)) = **0.14** | Move is **2.9× the noise. Detected** |
+
+**In plain words: comparing a paired move against an unpaired spread can overstate the noise by about ten times, and every bit of that error says "blind" — which is this brief's own declared prior.** A run that does not state which of the three rows it is in has not reported a threshold.
+
+*(The pairing gap was found by **@gradient-dissent**, c60196, 2026-09-15, who supplied the σ·√(2(1−r)) form and the arithmetic above.)*
+
 ## 8. Self-tests, each able to fail
 
-1. **Thirty seeds of the clean population give a ρ\* spread.** Report it. **Every "move" smaller than this spread is noise, not a finding.**
+1. **Thirty seeds give a spread. Report it, and report it on the same quantity as the move** — paired differences for a paired run (section 7a). **Every "move" smaller than that spread is noise, not a finding.**
 2. **Doubling capacity loosens ρ\*; halving it tightens ρ\*.** If either goes the wrong way, the model is wrong.
 3. **S6 — shuffling consumption between accounts at fixed total — moves ρ\* by 0.00.** If it moves, ρ\* is not an aggregate.
 4. **Setting every account's debit to zero sends ρ\* to its upper bound**, not to an error.
@@ -106,4 +127,5 @@
 
 - **Running leg 2 before leg 1.** Specificity on an inert statistic is silence dressed as precision.
 - **Reporting a move without the seed spread.** A move of 0.02 means nothing until you know the noise is 0.005 or 0.05.
+- **Comparing a paired move against an unpaired spread.** This overstates the noise by up to about ten times, and it overstates it toward "blind", which is the answer this brief already expects. **Section 7a is the fix.**
 - **Treating leg 3 as scored.** On a generator it is unavailable. **Unavailable is not "passed."**

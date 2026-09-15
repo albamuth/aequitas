@@ -1,11 +1,12 @@
 <!-- tag: cnf-aequitas-conformance -->
 # Aequitas — Conformance Requirements
 
-> **Version:** 0.16 · **Date:** 2026-09-09
+> **Version:** 0.17 · **Date:** 2026-09-15
 > **Audience: implementers.** Anyone building a trust network.
-> **Companion:** [`Aequitas_Foundations_v0.45.md`](Aequitas_Foundations_v0.45.md) — the system itself, and the argument behind every row below. **Where the two differ, Foundations governs.**
+> **Companion:** [`Aequitas_Foundations_v0.46.md`](Aequitas_Foundations_v0.46.md) — the system itself, and the argument behind every row below. **Where the two differ, Foundations governs.**
 > **Version history is kept separately and is not published**, so this document carries only what is currently true.
 > **Two row numbers are retired and are never reused: the bare `17`, and `14c`.**
+> **New row 14e makes a joining person's declared span a record rather than an assertion.** §4.4 rebuilds a whole life, and each declared year opens `ρ·F·365` hours of consumption room while adding about 1,380 hours of debit. **Below `ρ·F` = 3.78 hours a day those swap over and a filer gains by deleting a year of their own life**, inside the band §5.5.3 calls workable. **The row names a date — the earliest the evidence allows — rather than a direction**, because which direction runs against the filer flips with the network's own floor.
 > **New row 10h gives a passage claim a keeper and a scope.** §3.4a's whole published rule for a passage was *"a binary fact off the plant's own flow sheet"*, and **no row owned it.** The claim is now published by the producer, and must reconcile against records made on a different path — energy bills, intake weights, output weights. **New row 4b states what subscribing discloses**: what a subscriber enters into the accounting is auditable by the network, and what they keep out was never in it. **Neither row claims a self-made record becomes independent by being readable.**
 > **Row 2c now carries the scope it was missing.** It governs debit an organisation's members caused **while acting for it**, not a member's own errand. **New row 2d states that a transport emission follows whoever held the fuel parcel and burned it**, and that it may never be tagged onto the goods the journey carried.
 > **Row 10e now says where a parcel's identity comes from, and what an implementation does without it.** A mix and a split are recorded events, and each creates the parcels it produces, so identity is never assumed. **A parcel with no such event behind it is a missing record and is caught by row 7, not tolerated as an unknowable fact.** **New row 10f states that a split divides by mass per dimension while a joint process divides nothing** — using the wrong one of those inflates a drawn-off quantity by the ratio of the whole to the part. **New row 10g requires a figure handed outward to carry the parcel's id and kind**, so a mismatch has somewhere to land instead of rendering as clean data.
@@ -47,7 +48,7 @@ Worked: *"records are never deleted"* is something you can read off an implement
 <!-- tag: cnf-s2 -->
 ## 2. What an implementation must satisfy
 
-**All thirty-seven rows below must hold.** They are grouped so a reader can find one without already knowing its number. **The numbers themselves have not changed and never will** — other documents cite them.
+**All thirty-eight rows below must hold.** They are grouped so a reader can find one without already knowing its number. **The numbers themselves have not changed and never will** — other documents cite them.
 
 ### The words this list uses
 
@@ -270,6 +271,7 @@ Worked: *"records are never deleted"* is something you can read off an implement
 | # | Requirement | From |
 |---|---|---|
 | 14 | **An unmeasured producer's estimated share is worked out over the producers still unmeasured, never over everybody**, and it comes from a production model for their occupation, region and known activity. **The leftover `R` is never divided by a count of producers.** Two worlds with different truths hand one network identical books, so no per-head figure computed from those books can describe either. | §4.4, §4.1 |
+| 14e | **A joining person's declared span is a record, and where it is unevidenced the network estimates it back to the earliest date the evidence allows.** A **declared span** is how long the person says they have lived, and it sets how many years the reconstruction rebuilds. **It is not exempt from the rule that an assertion is not evidence.** The estimate names a date and not a direction, because each declared year opens `ρ·F·365` hours of room while adding about a year of consumption: **above `ρ·F` = 3.78 h/day a longer span pays the filer, and below it a shorter one does.** Both settings are inside the workable band. | §4.4, §5.5.3 |
 | 14d | **Where a network works an estimate out over a measured extent** — hectares, vessel-days, throughput — **it publishes that extent register as unaudited.** Honest error in an extent reading barely moves the estimate. **A producer who deliberately declares half their real extent returns it to the accuracy of the rule this replaced.** Whether the survey behind `N` catches that has been argued and never tested. | §4.4, **OP-28** |
 | 14b | **A coverage figure rests on a measurement that reaches past the network's own membership** — a physical stock somebody went and measured, or an independently known total `N` for the whole extent. **Adding up subscribers' own records proves the books are *consistent*.** **It can never prove they are complete**, because a producer nobody recorded is missing from both sides of every internal sum and every sum still balances. **A coverage figure with nothing behind it that reaches non-subscribers is published as `not identified`.** | §4.4, §4.3, A7 |
 | 15 | **The leftover `R` is computed, published, and held explicitly unassigned** until an **attribution witness** binds a share of it to a named principal. **An attribution witness is a record that names a causer**; a producer joining supplies one, and conservation arithmetic never does. **The unassigned state is what A4 states for unresolved causation, not an exception to it.** | A4, §4.4 |

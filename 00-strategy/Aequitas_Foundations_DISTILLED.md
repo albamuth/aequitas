@@ -1,16 +1,16 @@
-<!-- generated-from: Aequitas_Foundations_v0.45.md -->
+<!-- generated-from: Aequitas_Foundations_v0.46.md -->
 # Aequitas — Foundations, distilled
 
 > ## ⚠️ THIS FILE IS GENERATED. DO NOT EDIT IT.
 >
-> **Every edit belongs in [`Aequitas_Foundations_v0.45.md`](Aequitas_Foundations_v0.45.md), which is the document this was made from.**
+> **Every edit belongs in [`Aequitas_Foundations_v0.46.md`](Aequitas_Foundations_v0.46.md), which is the document this was made from.**
 > An edit made here is lost the next time anyone runs the generator, and while it survives it is a
 > second version of a rule — which is the failure this file exists to avoid.
 >
 > **Regenerate with:** `python bin/distill.py`
 
-> **Source:** [`Aequitas_Foundations_v0.45.md`](Aequitas_Foundations_v0.45.md) · **version 0.45**
-> **Size:** 121,774 bytes, from 247,022 — **49% of the source**
+> **Source:** [`Aequitas_Foundations_v0.46.md`](Aequitas_Foundations_v0.46.md) · **version 0.46**
+> **Size:** 123,930 bytes, from 252,738 — **49% of the source**
 
 **What was kept:** every heading, every rule, every table, and the stated result of every worked
 example. **What was dropped:** the explanation prose between them.
@@ -269,7 +269,7 @@ example. **What was dropped:** the explanation prose between them.
 | Whether the ecosystem converges to one network | A prediction, not a design input (§4.8) |
 | **How a cost constant gets audited** — who replicates, what triggers a review, how a contested constant is handled while it is contested | The implementer (§3.3a). **That it must be answered is not out of scope**; the five properties in §3.3a are conformance items 16a–16c |
 | **How finely a process chain is resolved** — which steps a facility reads separately | The industry (§3.4a). **The rule is fixed here and needs no method**; resolution only ever moves a figure downward, so nothing has to be policed |
-> **The dial test is the standing screening question for anything proposed for these documents. What it leaves behind is a set of conformance requirements, never an architecture** — [`Aequitas_Conformance_v0.16.md`](Aequitas_Conformance_v0.16.md). **What must be true, never how to build it.**
+> **The dial test is the standing screening question for anything proposed for these documents. What it leaves behind is a set of conformance requirements, never an architecture** — [`Aequitas_Conformance_v0.17.md`](Aequitas_Conformance_v0.17.md). **What must be true, never how to build it.**
 ## 3. The Ledger Model
 ### 3.0 What a ledger is
 > **A person's ledger is two numbers, side by side.**
@@ -494,7 +494,23 @@ example. **What was dropped:** the explanation prose between them.
 > | **`k`** | The number of weighting dimensions collapsed per event. **`k` = 3 in the run.** The re-weighting cost is linear in it |
 > | **The machine** | **Two machines measured, and one is 4.5× the other.** Both absolute rates move together, so the ratio travels further than the seconds do — but a ratio measured on one machine is a reading, not a constant |
 >
-> **What is still not measured: disk.** Both passes read memory. **A real log is stored, both passes read the same bytes, and shared I/O would push the ratio toward 1.0** by an amount nobody has measured.
+> **Disk has now been measured once, from outside, and it moves the ratio.** Both of the passes above read memory. A real log is stored, and both passes then read the same bytes.
+>
+> **Terms used here.** The **delta** is the disk ratio minus the memory ratio, measured on the same stack. A **spread** is the standard deviation across the run's own repeats. A **stack** is one machine, one generator, one log format.
+>
+> | At 10⁸ events, nine checks | Ratio | Its spread |
+> |---|--:|--:|
+> | Memory | **0.114 – 0.129** | **± 0.015** |
+> | Disk | **0.192 – 0.219** | **± 0.026** |
+> | **Delta** | **+0.084** | **outside both spreads** |
+>
+> **In plain words: storing the log raises the re-weighting pass from about an eighth of a record-check pass to about a fifth.** Shared I/O does push the ratio toward 1.0, and on this stack it pushes it by about 0.08.
+>
+> **⚠️ The delta is settled. The level is not, and the two must not be quoted together.** The memory arm above reads 0.114–0.129 at 10⁸ events against the 0.27 this section publishes at 10⁹ — **about a factor of two, and that gap is not a length effect.** The outside run used **two logs with two byte spellings**: 34 bytes an event for the record check, 28 for the re-weighting. **One log served both read paths, and no log served both passes**, so the level of the ratio is read across generators and the delta is not.
+>
+> **What would settle it is one run and it has been requested:** one generator, one byte spelling, one machine, disk and memory, 10⁸ and 10⁹, eight checks and nine. **Until that runs, 0.27 is a reading on one stack rather than this system's figure.**
+>
+> *(The disk arm is **@hemei**'s, citizen #700, run from their own seat inside a day of the arm being pre-registered, with the stack string attached to every number. **They flagged the two-log caveat themselves.** The pre-registration they ran against was defective — all three of its registered outcomes were stated over the delta and none over the level, so none of them could have caught a factor of two. That defect is the outreach agent's and was published as such.)*
 >
 > *(First measured from outside by **@hemei**, citizen #700, who ran the published brief end to end on hardware this project does not control and returned 0.27 — against a published prior of 1× to 5×, which was wrong and on the wrong side of 1.0. **They flagged their own caveat, that no single log served both passes, before anyone else could.** The single-generator run that confirms them is `06-simulation/ic-recompute-cost/REWEIGHT_RATIO_RESULTS.md`, and it found their caveat did not matter: the gap between 0.27 and 0.35 is IC-5's sort, not the generator. **The requirement to report both absolute rates beside any ratio is @bounded-curiosity's**, from the objection that portable is not invariant.)*
 #### What stops a producer understating
@@ -773,11 +789,16 @@ example. **What was dropped:** the explanation prose between them.
 > **Joining is a windfall for a median person, and that is the adoption incentive computed rather than asserted** (§4.8). **The people for whom a full reconstruction is costly are those whose lifetime consumption genuinely exceeded their lifetime contribution.**
 **The estimate is the default, and evidence is voluntary.** A person supplies whatever narrows it — where they were born, how long they lived in each place, which jobs they held, how far they commuted, which vehicles they owned — and accepts the estimate for every period they leave undisclosed. **Nothing is compulsory, and evidence moves the figure in either direction, which is why people supply it.**
 **Details may arrive years later and the position re-derives.** No new machinery is needed, because a position is computed from the log and never stored (A6).
-**Two conditions, and without either this breaks.**
+**Three conditions, and without any one of them this breaks.**
+##### Why condition 3 names a date rather than a direction
+| The network | Room a year opens, `ρ·F·365` | Debit a year adds | An honest year is worth |
+|---|--:|--:|--:|
+| `F` = 10 h/day, ρ = 1.2 | 4,380 h | 1,380 h | **+3,000 h** |
+| `F` = 2 h/day, ρ = 1.0 | 730 h | 1,380 h | **−650 h** |
+> **In plain words: "err against the party" has no fixed meaning here, because the same act helps a filer in one conforming network and harms them in another.** *The earliest date the evidence allows* is the same instrument on both sides of 3.78, which is why condition 3 names it.
 > **Why the two sides are not treated alike, and it is not a preference.** **Over-estimating somebody's debit consumes nothing** — it costs them room they were not using. **Over-estimating their credit hands out real consumption room on the strength of a guess about production.** The two errors are the same shape and have opposite consequences, **which is why a position only starts acting on what a person may consume once observation has replaced the estimate** (A7).
 > **Credit is issuable backwards, and this is where that happens.** When a person joins, their earlier real contributions enter the record **at the dates they occurred**, not at the date they joined.
 > **Subsistence is exempt and must stay exempt.** The floor is not an estimate. **It is credit for hours that were really spent, attested by proof of life** (§4.2). **So condition 2 never reaches subsistence, and a person who cannot document a life is not thereby impoverished by this rule.**
-**Two rules this looks like it breaks, and does not.** A non-participant is never charged for an estimated position, and **nothing is charged until they join, which is voluntary**. And §3.3's rule that a revision never invalidates a completed act still holds, because **acts before joining were never gated by any network**, so no permission is being withdrawn.
 > **⚠️ This raises the stakes on OP-22, the open problem of minimum audit disclosure, and it is the strongest objection to the reconstruction.** A whole-life record is a dossier: birthplace, every residence, employment history, commuting distance, vehicles owned. **Disclosure is voluntary, but the incentive runs toward disclosing**, so the arrangement puts steady pressure on people to assemble exactly the record a surveillance state would want. §4.7's split of public market data from private personal ledgers now has to hold across a lifetime. **Registered, not solved.**
 ### 4.5 It credits work
 > **There is one credit. It is time spent by a person, recorded as material flow. Everyone earns at the same rate, and therefore influences at the same rate.**
@@ -1005,7 +1026,7 @@ example. **What was dropped:** the explanation prose between them.
 ### The companion documents
 | What it is | Where |
 |---|---|
-| **The conformance requirements** — what must be true for an implementation to *be* Aequitas, written for implementers | [`Aequitas_Conformance_v0.16.md`](Aequitas_Conformance_v0.16.md) |
+| **The conformance requirements** — what must be true for an implementation to *be* Aequitas, written for implementers | [`Aequitas_Conformance_v0.17.md`](Aequitas_Conformance_v0.17.md) |
 | **The objections register** — every open problem and every answered objection, with its status | [`Aequitas_Objections_v0.34.md`](Aequitas_Objections_v0.34.md) |
 | **The plain-language companion**, assuming no economics background | [`Aequitas_Overview_v0.27.md`](Aequitas_Overview_v0.27.md) |
 | **How adoption plausibly starts** — a reading of the historical record, not a statement of the system | [`Aequitas_Strategy_v0.9.md`](Aequitas_Strategy_v0.9.md) §5 |

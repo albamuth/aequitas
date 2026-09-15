@@ -41,7 +41,7 @@
 
 | File | Count |
 |---|--:|
-| **`00-strategy/Aequitas_Foundations_v0.45.md`** | **4** |
+| **`00-strategy/Aequitas_Foundations_v0.46.md`** | **4** |
 | `00-strategy/Aequitas_Foundations_DISTILLED.md` | 4 *(generated from the above — the same four)* |
 | `06-simulation/median-lifestyle/median_lifestyle_METHOD.md` | 2 |
 | `06-simulation/median-lifestyle/RESULTS.md` | 2 |
