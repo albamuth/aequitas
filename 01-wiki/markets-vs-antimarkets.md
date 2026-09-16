@@ -1,5 +1,8 @@
 # Markets vs Antimarkets
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > Manuel DeLanda's argument, drawn from Fernand Braudel: **capitalism and the market are different entities**, and capitalism has always been the *anti*-market.
 
 ## The claim

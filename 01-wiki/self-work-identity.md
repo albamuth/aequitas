@@ -1,5 +1,8 @@
 # The Self-Work Identity
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > A homeowner who repairs their own house earns credit for the labor exactly equal to the increase in the property's debit — **net zero**, excluding materials and energy actually consumed.
 
 ## What it is
@@ -36,4 +39,4 @@ Note what it does *not* discourage: the homeowner still gets a better house. The
 
 ---
 *Status: settled (the identity) / provisional (circular-work exploit unresolved)*
-*Source: `00-strategy/Aequitas_Foundations_v0.2.md` §3.2*
+*Source: `00-strategy/Aequitas_Foundations.md` §3.2*

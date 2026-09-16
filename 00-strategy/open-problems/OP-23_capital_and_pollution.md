@@ -1,5 +1,8 @@
 # OP-23 — Capital, Historical Costs, and the Non-Transfer of Pollution
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > **Status:** Resolved 2026-08-04. Closes **OP-23** (shared-overhead attribution). **Re-attacked from outside 2026-08-24 and held — see §8.**
 > **Feeds:** Foundations v0.4 → v0.5, Objections v0.5 → v0.6. **§8 feeds Foundations v0.21 (A4 + A5 repaired) and Objections v0.20 (B8).**
 > **Method:** design interview → stress-test (capital front-loading) → stress-test (the full capital-debit waterfall) → adopted with changes.

@@ -1,5 +1,8 @@
 # Onboarding Incentive
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > Joining Aequitas is the act of **replacing an assigned cohort estimate with your real record** — and because most people's true footprint is below their cohort average while their contribution is already described and waiting, joining is individually rational.
 
 ## What it is
@@ -47,4 +50,4 @@ The "try it" account: answer questions about yourself and watch your assigned de
 
 ---
 *Status: provisional*
-*Source: `00-strategy/Aequitas_Foundations_v0.2.md` §4.8, §11*
+*Source: `00-strategy/Aequitas_Foundations.md` §4.4 (the lifetime reconstruction), §4.8 (joining)*

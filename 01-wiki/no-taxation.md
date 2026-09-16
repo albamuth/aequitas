@@ -1,5 +1,8 @@
 # No Taxation
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > Taxation is unnecessary — not abolished, but left with nothing to collect and nothing to fund.
 
 ## What it is
@@ -41,4 +44,4 @@ This is [service-credit](service-credit.md) / OP-1 again, and it means **§5.4's
 
 ---
 *Status: provisional — depends on OP-1*
-*Source: `00-strategy/Aequitas_Foundations_v0.2.md` §5.4*
+*Source: `00-strategy/Aequitas_Foundations.md` §5.4*

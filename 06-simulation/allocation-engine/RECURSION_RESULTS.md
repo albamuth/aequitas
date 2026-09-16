@@ -1,5 +1,8 @@
 # Results — Recursion convergence of the §3.4a allocation
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > **Date:** 2026-08-05
 > **Code:** [`recursion_convergence.py`](recursion_convergence.py) · **Spec:** [`recursion_convergence_SPEC.md`](recursion_convergence_SPEC.md)
 > **Data:** `results.csv` (5,224 runs) · **Figures:** `results_*.png`

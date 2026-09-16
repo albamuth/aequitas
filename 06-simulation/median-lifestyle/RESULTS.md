@@ -1,5 +1,8 @@
 # Median lifestyle — results
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > **Read this instead of re-running.** From the track `--test` runs, last verified 2026-08-24.
 > This is the summary layer. The originals are kept in full beside it: [`MEDIAN_LIFESTYLE_RESULT.md`](MEDIAN_LIFESTYLE_RESULT.md) (the assembly), [`TRACK1.md`](TRACK1.md), [`TRACK3.md`](TRACK3.md), [`TRACK4.md`](TRACK4.md), [`Q6.md`](Q6.md), and the running log [`median_lifestyle_RESULTS.md`](median_lifestyle_RESULTS.md).
 

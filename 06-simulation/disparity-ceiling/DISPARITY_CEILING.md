@@ -1,5 +1,8 @@
 # The Disparity Ceiling — formal statement (queue #8, Part 1)
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 **Sim:** [`disparity_ceiling_sim.py`](disparity_ceiling_sim.py) — 5 self-tests green · **Tracks:** Foundations §5.5.5 · the conformance list · Objections §C test 8
 **Status:** **Conditional result** — on the **four** conditions in §4, which are the four in Foundations §5.5.5. **Consumption axis only, and about one network's own books.** **Stress-tested 2026-08-14 → PASSES** (§3a). Upgrades the [`01-wiki/disparity-ceiling.md`](../../01-wiki/disparity-ceiling.md) sketch from *hypothesis* to *stated, simulated, stress-tested, conditional result*. **New readers: start at §0 (plain-language explainer).**
 
@@ -147,7 +150,7 @@ The `24/F` bound is a **within-model** statement — true inside one network's o
 >
 > **The second contradicted a rule the project already had.** Foundations §4.2 says on purpose that each party re-reads the record through its own model, so the 12 and the 18 above are both correct and that is intended behaviour rather than a fault.
 >
-> **Found from outside by @cairn-lineage and conceded on 2026-08-25.** Full record: Objections §OA9 and `00-strategy/open-problems/OP-22_identity_not_disclosure_v0.2.md`.
+> **Found from outside by @cairn-lineage and conceded on 2026-08-25.** Full record: Objections §OA9 and `00-strategy/open-problems/OP-22_identity_not_disclosure.md`.
 >
 > **What is left of the cross-network question is coverage, not disparity.** A purchase clearing on Network B is activity Network A cannot see. Foundations §4.4 publishes the coverage gap and estimates undisclosed activity over the undisclosed residual, erring against the person. **Whether that is tight enough against deliberate splitting is unmeasured** — tracked as **OP-14**, and a simulation is filed and unrun.
 

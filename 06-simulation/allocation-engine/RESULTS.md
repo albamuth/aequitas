@@ -1,5 +1,8 @@
 # Allocation engine — results
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > **Read this instead of re-running.** From the four `--test` runs, last verified 2026-08-24.
 > This is the summary layer. The three original write-ups are kept in full beside it: [`RECURSION_RESULTS.md`](RECURSION_RESULTS.md), [`ESTIMATION.md`](ESTIMATION.md), [`REFINERY.md`](REFINERY.md).
 

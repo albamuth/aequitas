@@ -1,5 +1,8 @@
 # Refinery slice — plan (SUT / physical-split vs price allocation)
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > **Status:** PLANNED, not built. **θ-basis decision LOCKED 2026-08-06 → option (A), metered process energy.** Ready to build.
 > **Answers:** Objections §C **Test 4** ("refinery re-derivation — process-physics vs USEEIO price allocation; a materially different answer is the most publishable early result") and Foundations **§11(a)** (the MVP's first publishable target).
 > **Reuses:** `estimation_engine.py` (`MultiDimEconomy`, per-dimension solve) and `recursion_convergence.py` (forward solver). No new solver.

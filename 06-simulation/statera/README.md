@@ -4,8 +4,8 @@
 > **Status: live. This is the current work** — the kernel every future scenario runs on.
 > **Results:** [`RESULTS.md`](RESULTS.md) — the headline numbers, so you need not re-run.
 > **Change history:** `CHANGELOG.md`, which carries a plain-language account of what the kernel can and cannot do.
-> **Design and build order:** [`STATERA_PLAN_v0.2.md`](STATERA_PLAN_v0.2.md) · **Reference paper:** [`STATERA_WHITEPAPER_v0.1.md`](STATERA_WHITEPAPER_v0.1.md)
-> **Also here:** [`LAB_DESIGN_v0.1.md`](LAB_DESIGN_v0.1.md) (the shippable front end, awaiting sign-off) · [`SUBSECTOR_CANDIDATES_v0.1.md`](SUBSECTOR_CANDIDATES_v0.1.md) (every consumption split considered, with its magnitude).
+> **Design and build order:** [`STATERA_PLAN.md`](STATERA_PLAN.md) · **Reference paper:** [`STATERA_WHITEPAPER.md`](STATERA_WHITEPAPER.md)
+> **Also here:** [`LAB_DESIGN.md`](LAB_DESIGN.md) (the shippable front end, awaiting sign-off) · [`SUBSECTOR_CANDIDATES.md`](SUBSECTOR_CANDIDATES.md) (every consumption split considered, with its magnitude).
 >
 > **Next step: step 5 of the plan — consumer types from real data.** Blocked on a download: the **[Bureau of Labor Statistics Consumer Expenditure demographic tables](https://www.bls.gov/cex/)** are not in `../data/`, only the single US average.
 

@@ -1,5 +1,8 @@
 # Debit Taxonomy
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > The master map of §3.2: **what kind of debit a thing carries, and how each kind behaves when the thing changes hands.** This is the engine room of the theory — most of what makes Aequitas different from money is a consequence of these distinctions. The reviewer (2026-08-09) flagged §3.2 as load-bearing but text-only; this is the visual.
 
 ![[debit-taxonomy.svg]]

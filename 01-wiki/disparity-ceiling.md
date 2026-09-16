@@ -1,5 +1,8 @@
 # Disparity Ceiling
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > **Result (conditional):** **inside one trust network's own books**, the maximum sustainable **consumption** disparity is **`24 / F`** — the length of a day divided by that network's self-care floor *F* (hours/day) — independent of the tolerance dial ρ and of the weighting model. At *F* = 10 h that is **2.4×**. Under money the same ratio runs to **~10⁶×** and compounds without limit.
 
 **Two limits belong in the same breath as the number.**
@@ -67,4 +70,4 @@ So there is nothing to "bank and blow." A lifelong hoarder who consumes nothing 
 
 ---
 *Status: conditional result (consumption axis; conditional on OP-22 + narrow-band floor). Formally stated, simulated (7 tests), and stress-tested → PASSES 2026-08-14. Folded into Foundations v0.15 §5.5 / Objections v0.16 §C test 8.*
-*Source: design session 2026-07-31 · formal statement `06-simulation/disparity-ceiling/DISPARITY_CEILING.md`*
+*Source: `00-strategy/Aequitas_Foundations.md` §5.5.5 (the ceiling and its four conditions), §5.5.6 (why hoarding does not beat it) · design session 2026-07-31 · formal statement `06-simulation/disparity-ceiling/DISPARITY_CEILING.md`*

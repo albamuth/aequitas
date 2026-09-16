@@ -1,5 +1,8 @@
 # Scenario suite — results
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > **Read this instead of re-running.** From the five `--test` runs, last verified 2026-08-24.
 > This is the summary layer. Each question keeps its own plain-language companion beside it — [`Q1_AUTARKY.md`](Q1_AUTARKY.md), [`Q2_CAPTURE.md`](Q2_CAPTURE.md), [`PLASTIC.md`](PLASTIC.md), [`Q4_LOCKED.md`](Q4_LOCKED.md), [`Q5_REALLOCATION.md`](Q5_REALLOCATION.md) — and those carry the caveats.
 

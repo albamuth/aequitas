@@ -1,5 +1,8 @@
 # Expected verdicts — `arithmetic_audits.py`
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 **Generated file. Do not hand-edit.** Regenerate with:
 
 ```

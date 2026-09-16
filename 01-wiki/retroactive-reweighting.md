@@ -1,5 +1,8 @@
 # Retroactive Re-weighting
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > When science improves, every affected ledger in history recalculates. Events are permanent; their *weight* floats with the current cost of mitigation.
 
 ## What it is
@@ -63,4 +66,4 @@ The obvious exploit: **capture the weighting model.** If one body decides what a
 
 ---
 *Status: settled (principle) / contested (governance of the model)*
-*Source: `00-strategy/Aequitas_Foundations_v0.4.md` §3.3, §3.3a*
+*Source: `00-strategy/Aequitas_Foundations.md` §3.3, §3.3a*

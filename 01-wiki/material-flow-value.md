@@ -1,5 +1,8 @@
 # Material Flow Value
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > Every credit and every debit in Aequitas is a record of matter or energy moving through the world, attributable to the people who caused the movement. Nothing else is value.
 
 ## What it is
@@ -39,4 +42,4 @@ Without A1 the system has an issuer, and with an issuer it has an oligarchy.
 
 ---
 *Status: settled*
-*Source: `00-strategy/Aequitas_Foundations_v0.2.md` §0, A1*
+*Source: `00-strategy/Aequitas_Foundations.md` §0, A1*

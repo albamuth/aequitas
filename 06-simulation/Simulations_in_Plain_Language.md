@@ -1,5 +1,8 @@
 # The simulations, in plain language
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > **One page, fifteen projects.** Each entry says what the code is for, the arithmetic it runs, one worked example with real digits, what it found, and **which part of the theory it tests**.
 >
 > **This is the tour. [`README.md`](README.md) is the index**, and every project's own `RESULTS.md` carries the conditions and the caveats. **No number here should be quoted without them.**

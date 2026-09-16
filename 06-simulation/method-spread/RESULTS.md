@@ -1,5 +1,8 @@
 # Method spread — how far a §3.4a split moves across honest methods
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > **Date:** 2026-09-02 · **Code:** [`method_spread.py`](method_spread.py) · **Data:** [`method_spread.csv`](method_spread.csv)
 > **Answers:** `sr-20260902-take-a-refinery-a-combined-heat-and-power-pl`, filed by the outreach agent for its public commitment at c37238.
 > **Registers against:** Foundations §3.4a (joint production), closing paragraph — *"How far a split moves across honest methods. Nobody has measured this."*

@@ -1,5 +1,8 @@
 # Who Is Already Past the Ledger? — Q4 (plain-language companion)
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > Companion to [`q4_locked_ledgers.py`](q4_locked_ledgers.py). Second sim of the [scenario suite](scenario_suite_METHOD.md).
 > **Question:** if everyone were entered honestly into Aequitas, what fraction already sit past the point of a *permanent* ledger lockout?
 

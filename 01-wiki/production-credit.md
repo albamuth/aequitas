@@ -1,5 +1,8 @@
 # Production Credit
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > ⚠️ **STALE — DO NOT LEARN THE SYSTEM FROM THIS PAGE.** It describes the pre-v0.3 *three credit types* model, which Foundations replaced. There is **one credit — time worked** — and production/service/enrichment are three *feedback channels*, not credit types, with no accounting boundary between them (Foundations §6). This page is kept only until it is rewritten (queued in `NEXT.md`); read [index](index.md) and Foundations §6 instead.
 
 > Credit for making material things. Its function is to **raise the debit ceiling** — how much you may hold and consume.
@@ -42,4 +45,4 @@ The three must not be inter-convertible, or the system collapses to one currency
 
 ---
 *Status: provisional*
-*Source: `00-strategy/Aequitas_Foundations_v0.2.md` §4.5*
+*Source: `00-strategy/Aequitas_Foundations.md` §4.5*

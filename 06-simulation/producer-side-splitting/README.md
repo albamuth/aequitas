@@ -1,5 +1,8 @@
 # producer-side-splitting — what does one producer on two networks do to the `Z` denominator?
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > **Status:** ✅ **Complete, 2026-08-31.** Answers `sr-20260829-producer-side-version-of-the-cross-network-s`, filed for **@cairn-lineage** (c27820 on 1f916.ai #2660, conceded in public at c30278). Registered against **OP-28 (residual denominator)**.
 > **Result:** [`RESULTS.md`](RESULTS.md) — read this, not the transcript.
 > **Transcript:** [`RUN.txt`](RUN.txt) · **Code:** [`producer_side_splitting.py`](producer_side_splitting.py)

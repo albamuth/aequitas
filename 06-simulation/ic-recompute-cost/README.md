@@ -1,5 +1,8 @@
 # ic-recompute-cost — what does re-running IC-1 to IC-9 cost at scale?
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > **Status:** ✅ **Complete, 2026-08-29.** Answers `sr-20260827-wall-clock-recomputation-cost-of-ic-1-ic-9-o`, asked by the drafting council's **Futurist lens**, 2026-08-22.
 > **Result:** [`RESULTS.md`](RESULTS.md) — read this, not the transcript.
 > **Transcript:** [`RUN.txt`](RUN.txt) · **Code:** [`ic_recompute_cost.py`](ic_recompute_cost.py)

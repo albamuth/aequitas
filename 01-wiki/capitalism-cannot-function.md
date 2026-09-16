@@ -1,5 +1,8 @@
 # Capitalism Cannot Function
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > Under Aequitas there is no rent, no rental income, no property speculation, and no compounding capital — **not banned by rule, but structurally impossible.**
 
 ## The derivation
@@ -44,4 +47,4 @@ It converts the project's biggest political liability into an asset. "Anti-capit
 
 ---
 *Status: settled*
-*Source: `00-strategy/Aequitas_Foundations_v0.2.md` §5.1*
+*Source: `00-strategy/Aequitas_Foundations.md` §5.1*

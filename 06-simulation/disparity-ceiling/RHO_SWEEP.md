@@ -1,5 +1,8 @@
 # ρ-sweep — the prime-rate dial, calibrated to the median lifestyle
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 **Script:** [`rho_sweep.py`](rho_sweep.py) · 5 self-tests green · plot `rho_sweep_fig.png`. Builds on [`disparity_ceiling_sim.py`](disparity_ceiling_sim.py) (which proves the 24/F ceiling) and calibrates the *absolute* level ρ to the Tracks 1–4 median-lifestyle anchor (~1,380 h/yr) and the Q6 efficiency finding.
 
 ## What ρ is

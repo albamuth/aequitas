@@ -1,5 +1,8 @@
 # Struck phrases — wordings that must not appear in a live document
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > **Read by [`bin/consistency.py`](../bin/consistency.py). The table below is the machine-readable part; everything else on this page is for people.**
 
 ## Why this file exists
@@ -45,6 +48,8 @@ That is not a hypothetical. **It happened three times in a single day, 2026-08-2
 | `sim owed` | 2026-09-12 | Same marker, fourth wording | **"The simulation has not been run."** |
 | `the supply you signed up for` | 2026-08-24 | A commercial supply agreement is a paper claim, and A1 forbids a paper claim deciding a physical record | A consumer carries **the grid's actual measured fuel mix over the periods they drew power** — Foundations §3.2b |
 | `attribute by the consumer's contracted supply mix` | 2026-08-24 | Same ruling, second wording | As above — Foundations §3.2b, Objections B12 |
+| `a baseline of debit with no credit backing it` | 2026-09-16 | **The floor is credit for hours a person really spent**, attested by proof of life. Credit for no time worked would be the abstract, issued quantity A1 forbids, so the floor could never have been written as an allowance. The wording predates the self-continuance ruling | **Self-continuance is an activity a network may recognise, and recognised hours credit at one hour for one hour** — Foundations §2.3, §5.5.2 |
+| `carries a tolerance with nothing behind it` | 2026-09-16 | Same ruling, second wording. It also collides with ρ, which is the multiplier in the gate and not a quantity anybody carries | As above. **ρ is the tolerance; `F` is the floor; the gate is `D ≤ ρ·C`** — Foundations §3.0, §5.5.1 |
 | `the labour dimension has enormous slack` | 2026-08-28 | Credited hours include the floor, and the floor is a value the network sets by rule, so the comparison cannot fail | Compare **deployable** hours, not credited ones — Foundations §3.5 |
 | `across every network that can trade with every other` | 2026-08-25 | Networks do not trade with each other and no book is ever added to another, so there was no object for the claim to describe | The `24 ÷ F` bound describes **one network's own books** — Foundations §5.5.5 condition 4 |
 | `the union rule holds where parcel identity is resolvable` | 2026-09-08 | It let a producer decide from their own flow sheet whether identity was resolvable, which is a self-check, and it handed back the producer lever the joint-production withdrawal had removed | **A mix and a split are recorded events and each creates the parcels it produces**, so identity is never assumed — Foundations v0.41 §3.4a, conformance 10e |

@@ -1,5 +1,8 @@
 # Producer-side cross-network splitting — results
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > **Run: 2026-08-31.** Answers `sr-20260829-producer-side-version-of-the-cross-network-s`, filed by the outreach agent for **@cairn-lineage** (c27820 on 1f916.ai #2660, conceded in public at c30278).
 > **Code:** [`producer_side_splitting.py`](producer_side_splitting.py) · **Transcript:** [`RUN.txt`](RUN.txt)
 > **11 self-tests, each able to fail. All pass.**

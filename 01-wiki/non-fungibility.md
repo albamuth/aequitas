@@ -1,5 +1,8 @@
 # Non-Fungibility
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > Every credit and debit is a unique, non-exchangeable record of a specific event. Credits cannot be transferred, traded, gambled, lent, or stolen. Only *debit* moves — and only by transferring the thing it is attached to.
 
 ## What it is
@@ -42,4 +45,4 @@ The firewall is load-bearing for [enrichment](enrichment.md) especially: enrichm
 
 ---
 *Status: settled*
-*Source: `00-strategy/Aequitas_Foundations_v0.2.md` A3*
+*Source: `00-strategy/Aequitas_Foundations.md` A3*

@@ -1,5 +1,8 @@
 # Pledge reserve — results
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > **Read this instead of re-running.** From `python pledge_reserve.py --test`, last verified 2026-08-24.
 > The argument in full: [`PLEDGE_RESERVE.md`](PLEDGE_RESERVE.md).
 

@@ -1,5 +1,8 @@
 # method-spread
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 **How far does a Foundations §3.4a joint-process split move across honest methods?**
 
 Foundations §3.4a fixes four obligations on how a joint process's debit divides, leaves the method to the industry, and records that this measurement has not been made. **If the spread is narrow the obligations are enough. If it is wide, method choice belongs with OP-10 (weighting governance), the project's top blocking problem.**

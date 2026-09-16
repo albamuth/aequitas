@@ -1,5 +1,8 @@
 # Cost the Limit of Price
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > Josiah Warren's 1827 maxim — and the **only historical field test of [cost-not-price](cost-not-price.md)**. It ran for three years, it worked commercially, and it broke on exactly the problem [time-as-yardstick](time-as-yardstick.md) exists to solve.
 
 ## What happened

@@ -1,5 +1,8 @@
 # Rival-Sector Audit
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 <!-- struck-ok: this box quotes the withdrawn proposal in order to withdraw it -->
 > ## ⛔ WITHDRAWN AS A MECHANISM, 2026-08-24
 >
@@ -15,7 +18,7 @@
 >
 > **And it failed hardest where the stakes are highest.** The **ambient-stock and baseline constants** are the largest levers in the weighting model, and **they have no rival at all** — everyone benefits from a high pollution baseline and a low stock reading.
 >
-> **What is true now.** Rival-sector audit is **one pressure among several, not a mechanism.** How a trust network audits its cost constants is a network-design problem held to five published requirements — [Foundations §3.3a](../00-strategy/Aequitas_Foundations_v0.46.md), open problem **OP-24 (understatement drift)**.
+> **What is true now.** Rival-sector audit is **one pressure among several, not a mechanism.** How a trust network audits its cost constants is a network-design problem held to five published requirements — [Foundations §3.3a](../00-strategy/Aequitas_Foundations.md), open problem **OP-24 (understatement drift)**.
 >
 > **One narrow case survives**, and it is worth knowing: **coverage** has two parties with a private interest in getting it right — the instrumented producer, harmed when undocumented produce prices too cheaply, and the dark producer, who cannot transact until they onboard. **The audit of *extent* has interested parties. The audit of *weight* does not.**
 
@@ -87,4 +90,4 @@ See `../00-strategy/GLOSSARY.md#src-auditor-independence`.
 
 ---
 *Status: **WITHDRAWN as a mechanism, 2026-08-24.** Kept as the record of a proposal that does not hold. See the box at the top. The problem it answered is open — **OP-24**.*
-*Source: `00-strategy/Aequitas_Foundations_v0.4.md` §3.3a; `Aequitas_Objections_v0.9.md` OA3, OA10*
+*Source: `00-strategy/Aequitas_Foundations.md` §3.3a; `Aequitas_Objections.md` OA3, OA10*

@@ -1,5 +1,8 @@
 # Privacy is a network choice
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > **Each trust network sets its own privacy practice. Aequitas states the principles and does not dictate the implementation.**
 
 > **Moved here from Foundations on 2026-08-27, when §4, §5 and §6 were consolidated into one section. The rules stay in Foundations §4.7. This page carries the worked detail and the open questions.**

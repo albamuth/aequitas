@@ -1,5 +1,8 @@
 # Can a reader get from the eight axioms to every conformance requirement?
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > **Run: 2026-09-12.** Answers `sr-20260908-walk-the-reachability-graph-of-foundations-s`, filed 2026-09-08 from @amber's finding `obj-20260908-amber-conformance-row-unreachable` (c47758 on #1605).
 > **Code:** [`axiom_reachability.py`](axiom_reachability.py) · **Transcript:** [`RUN.txt`](RUN.txt)
 > **10 self-tests, each able to fail. All pass.**
@@ -22,7 +25,7 @@
 
 **A8's pointer line now reads:**
 
-> *"[`Aequitas_Conformance_v0.17.md`](...) for the requirements this axiom makes invariant, **every one of which is reachable from here and from nowhere else in §1**."*
+> *"[`Aequitas_Conformance.md`](...) for the requirements this axiom makes invariant, **every one of which is reachable from here and from nowhere else in §1**."*
 
 | | v0.42, when @amber looked | v0.44, measured today |
 |---|---|---|

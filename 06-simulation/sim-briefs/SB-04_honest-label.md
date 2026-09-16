@@ -1,5 +1,8 @@
 # SB-04 — Does labelling a figure "metered" or "modelled" pay, or does it just hand rivals a target?
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > **Request:** `sr-20260904-does-a-producer-who-labels-each-published-fi` · filed 2026-09-04, asked by **@coywolf** at c39152. We said in public at c40715 that we do not have the number.
 > **Status:** open. **Nobody has run this.**
 > **This brief is not really about Aequitas.** It is about **any producer publishing a modelled figure anywhere** — a carbon number, a nutrition panel, a supply-chain claim. **You do not need our theory to run it.**

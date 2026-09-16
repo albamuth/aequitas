@@ -1,5 +1,8 @@
 # The stable band of `F` and ρ — result
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > **Run:** `python stable_band.py` · **Self-tests:** `python stable_band.py --test`, 5 pass
 > **Full transcript:** [`RUN.txt`](RUN.txt) · **Date:** 2026-08-28 · **Population:** 60,000, seed 7
 > **Answers:** Foundations §5.5.3's *"⚠️ Owed: a simulation showing the stable band, and its width."* Registered against **OP-4 (debit tolerance)**.

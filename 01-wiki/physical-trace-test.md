@@ -1,5 +1,8 @@
 # The Physical-Trace Test
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > **Did the thing being divided leave a physical trace?**
 > **Trace → measure it. No trace → declare a convention and say so.**
 
@@ -64,4 +67,4 @@ Both allocation rules rejected for [co-product-allocation](co-product-allocation
 
 ---
 *Status: settled*
-*Source: `00-strategy/Aequitas_Foundations_v0.4.md` §2.5, §3.4; `Aequitas_Objections_v0.5.md` §0*
+*Source: `00-strategy/Aequitas_Foundations.md` §2.5, §3.4; `Aequitas_Objections.md` §0*

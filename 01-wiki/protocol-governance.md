@@ -1,5 +1,8 @@
 # Protocol Governance
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > Governance is a property of the protocol, not of any institution. No organization that grows up around Aequitas may acquire authority over its core rules.
 
 ## What it is
@@ -44,4 +47,4 @@ Third: whoever controls the [retroactive-reweighting](retroactive-reweighting.md
 
 ---
 *Status: settled (principle) / contested (enforcement)*
-*Source: `00-strategy/Aequitas_Foundations_v0.46.md` A8, §8*
+*Source: `00-strategy/Aequitas_Foundations.md` A8, §2.6 (which settings vary)*

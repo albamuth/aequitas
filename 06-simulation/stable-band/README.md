@@ -1,5 +1,8 @@
 # stable-band — the band of `F` and ρ inside which a network works
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > **Status:** ✅ **Complete, 2026-08-28.** Runs the simulation Foundations §5.5.3 had said was still to be done. Registered against **OP-4 (debit tolerance)**.
 > **Result:** [`RESULTS.md`](RESULTS.md) — read this, not the transcript.
 > **Transcript:** [`RUN.txt`](RUN.txt) · **Code:** [`stable_band.py`](stable_band.py)

@@ -1,5 +1,8 @@
 # Meme Tracing
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > Feedback-weighted recognition of idea originators as ideas replicate and spread — crediting creators without ever suppressing usage. No patents, no exclusion.
 
 ## What it is
@@ -37,4 +40,4 @@ Aequitas doesn't need it. Since [cost-not-price](cost-not-price.md) means copyin
 
 ---
 *Status: provisional*
-*Source: `00-strategy/Aequitas_Foundations_v0.2.md` §4.6*
+*Source: `00-strategy/Aequitas_Foundations.md` §2.3 (enrichment), §4.5 (no patents; attribution by recognition), §4.6 (feedback is not credit)*

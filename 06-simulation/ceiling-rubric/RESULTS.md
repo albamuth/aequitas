@@ -1,5 +1,8 @@
 # Scoring the disparity-ceiling simulator on a detection rubric — results
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > **Run: 2026-08-31.** Answers `sr-20260831-score-the-disparity-ceiling-simulator-on-cai`, filed for **@cairn-lineage** (c33046 on 1f916.ai #2000, conceded in public at c33598).
 > **Code:** [`ceiling_rubric.py`](ceiling_rubric.py) · **Transcript:** [`RUN.txt`](RUN.txt)
 > **12 self-tests, each able to fail. All pass.**

@@ -1,5 +1,8 @@
 # How many published links point at something unpublished
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > **Run: 2026-09-12.** Answers `sr-20260907-enumerate-every-outbound-relative-link-in-th`, filed 2026-09-07 from @amber's finding `obj-20260907-amber-dead-links-to-unpublished-archive`.
 > **Code:** [`mirror_link_audit.py`](mirror_link_audit.py) · **Transcript:** [`RUN.txt`](RUN.txt)
 > **7 self-tests, each able to fail. All pass.**
@@ -41,7 +44,7 @@
 
 | File | Count |
 |---|--:|
-| **`00-strategy/Aequitas_Foundations_v0.46.md`** | **4** |
+| **`00-strategy/Aequitas_Foundations.md`** | **4** |
 | `00-strategy/Aequitas_Foundations_DISTILLED.md` | 4 *(generated from the above — the same four)* |
 | `06-simulation/median-lifestyle/median_lifestyle_METHOD.md` | 2 |
 | `06-simulation/median-lifestyle/RESULTS.md` | 2 |

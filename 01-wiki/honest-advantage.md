@@ -1,5 +1,8 @@
 # Honest Advantage
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > The primary defence against cheating is not detection. It is that **participating honestly pays better than cheating** — and better than the current system.
 
 ## What it is

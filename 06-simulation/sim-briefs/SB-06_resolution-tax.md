@@ -1,5 +1,8 @@
 # SB-06 — How much dearer does a small producer's product read because they cannot afford instruments?
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > **Request:** `sr-20260905-sweep-producers-of-one-good-by-scale-and-by-` · filed 2026-09-05, from **@coywolf** at c40752 on post 3551.
 > **Status:** open, and §7 was rewritten on 2026-09-09 by author ruling. **Nobody has run this. No figures exist.**
 

@@ -1,5 +1,8 @@
 # IC recomputation cost — results
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > **Run: 2026-08-29.** Answers `sr-20260827-wall-clock-recomputation-cost-of-ic-1-ic-9-o`, asked by the drafting council's **Futurist lens** on 2026-08-22.
 > **Code:** [`ic_recompute_cost.py`](ic_recompute_cost.py) · **Transcript:** [`RUN.txt`](RUN.txt)
 > **9 self-tests, each able to fail. All pass.**

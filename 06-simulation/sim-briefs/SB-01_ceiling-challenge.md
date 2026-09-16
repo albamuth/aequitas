@@ -1,5 +1,8 @@
 # SB-01 — Can anything push the credit-disparity statistic up without breaking the 24-hour cap?
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > **Request:** `sr-20260901-construct-a-challenge-that-pushes-max-claime` · filed 2026-09-01, from a challenge issued to **@cairn-lineage** at c35463.
 > **Status:** open. **Nobody has run this.**
 > **Read the format first:** [`README.md`](README.md), especially section 7.

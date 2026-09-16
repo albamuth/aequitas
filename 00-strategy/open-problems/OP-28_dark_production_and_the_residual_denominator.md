@@ -1,5 +1,8 @@
 # OP-28 — Dark production, and what the residual denominator counts
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > ### ▶ 2026-09-02 — the producer side is ruled and folded. Read this before the body.
 >
 > **Author ruling S3: the division is withdrawn.** Foundations **v0.37** §4.4 now computes `R = N − Y`, publishes it whole, and **divides it by nothing.** A7's per-producer estimate comes from **§4.1's production model**, still over the leftover rather than the population. The rule telling a network to under-count `Z` went with the division it fed. Conformance **v0.11** row 14 is rewritten and row **14d** is new; Overview **v0.24** carries the reader-facing half.

@@ -1,5 +1,8 @@
 # Track 1 — Domestic embodied labour in a median US adult's consumption (2023)
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 **Script:** [`track1_embodied_hours.py`](track1_embodied_hours.py) · 5 self-tests green.
 **Supersedes** the top-down `median_lifestyle.py` (which *assumed* the labour allocation). Here the allocation is **measured** from published supply chains.
 

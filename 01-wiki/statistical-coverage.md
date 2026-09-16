@@ -1,5 +1,8 @@
 # Statistical Coverage
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > Every human is accounted for whether or not they participate, and **credit and debit are estimated symmetrically for everyone**. What participation unlocks is not being counted — it is being able to *act* on what was counted.
 
 ## What it is
@@ -151,4 +154,4 @@ A farm records 8 sacks in and 8 sacks out. Someone then deletes the last **2 sac
 
 ---
 *Status: settled (principle) / provisional (production model, OP-14, OP-15)*
-*Source: `00-strategy/Aequitas_Foundations_v0.2.md` A7, §3.4, §4.1, §4.4, §12*
+*Source: `00-strategy/Aequitas_Foundations.md` A7, §3.3 (coverage estimates re-weight), §3.4, §4.1, §4.4 (the leftover and the coverage figure)*

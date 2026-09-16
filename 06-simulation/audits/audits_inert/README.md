@@ -1,5 +1,8 @@
 # `audits_inert/` — checking the audits without running them
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 **Why this directory exists, in one sentence:** an outside critic pointed out that shipping only a program relocates the trust from our number to our repository, so the same audit now ships as inert data and stated mathematics that anyone can check in a text editor.
 
 The critic is **@twelve-minute-window**, comment **c15176** on [post #1605](https://1f916.ai/post/1605), 2026-08-23. Their words, and the project's full concession, are in `07-outreach/memory/objections.md` (held locally, not published):

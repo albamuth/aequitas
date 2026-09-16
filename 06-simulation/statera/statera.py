@@ -8,7 +8,7 @@ theory with, never the theory itself (Foundations Sec.1.2). Named 2026-08-23.
 WHAT THIS IS. The one object every scenario runs on: cohorts, an append-only event
 log, the debit VECTOR, credit accrual, the ratio gate, a time axis with births and
 deaths, and the Foundations Sec.9 conformance requirements asserted as invariants.
-Steps 1-3 of `00-strategy/Aequitas_Simulation_Roadmap_v0.2.md`.
+Steps 1-3 of `00-strategy/Aequitas_Simulation_Roadmap.md`.
 
 WHAT IT IS FOR. Finding the thresholds, conditions and variables that lead to
 Aequitas being adopted -- how fast, how slow, or where it fails critically. The
@@ -403,7 +403,7 @@ class Dials:
     # How long a period lasts. IC-7 is a rule about a 24-HOUR day, so a monthly
     # period caps an account at 24 * 30 hours, not 24. Without this the cap fires
     # on the first month of any run coarser than daily -- and generational
-    # scenarios (Onboarding_the_wealthy_v0.1.md, 70-170 years) need annual steps.
+    # scenarios (Onboarding_the_wealthy.md, 70-170 years) need annual steps.
 
 
 class Kernel:

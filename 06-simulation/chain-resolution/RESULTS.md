@@ -1,5 +1,8 @@
 # Chain resolution — what detail buys, and what a naive ledger walk costs
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > **Date:** 2026-09-03 · **Code:** [`chain_resolution.py`](chain_resolution.py) · **Data:** [`chain_resolution.csv`](chain_resolution.csv)
 > **Answers:** the author ruling of 2026-09-03 — *a joint process's cost is not divided.*
 > **Replaces:** [`../method-spread/RESULTS.md`](../method-spread/RESULTS.md), whose question no longer exists.

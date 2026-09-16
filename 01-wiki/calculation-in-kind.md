@@ -1,5 +1,8 @@
 # Calculation in Kind (Neurath)
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > Otto Neurath's proposal, c.1919, that an economy be planned in **physical units** — tonnes, joules, hours, health outcomes — rather than in money. It is Aequitas's method, stated a century early, and it lost the argument it started.
 
 ## The claim

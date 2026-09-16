@@ -1,5 +1,8 @@
 # Sim spec — Recursion convergence of the OP-17 allocation
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > **Status:** ✅ **BUILT & RUN 2026-08-05 — PASS.** Written 2026-08-04. Implementation: [`recursion_convergence.py`](recursion_convergence.py); results: [`RESULTS.md`](RECURSION_RESULTS.md).
 > **Answers:** Objections `§C` Test 1 and NEXT.md's current task — **both resolved.**
 > **Owner note:** this was the sharpest surviving technical risk in the project. The negative result that would have invalidated §3.4a did not appear: the allocation is a non-negative Neumann series, 100% convergent for `ρ<1`, zero negatives across 4,098 economies, while the value arm goes negative in ~95%. Cleared to build C3.

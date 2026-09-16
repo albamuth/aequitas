@@ -1,5 +1,8 @@
 # Residual unravelling — results
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > **Read this instead of re-running.** From `python residual_unravelling.py --test`, last verified 2026-08-24.
 > The argument in full: [`UNRAVELLING.md`](UNRAVELLING.md). The whole fixture as data: [`../audits/audits_inert/residual_unravelling.json`](../audits/audits_inert/residual_unravelling.json).
 

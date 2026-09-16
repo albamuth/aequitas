@@ -1,5 +1,8 @@
 # Captured & Wasted Labour-Time — Q2 (plain-language companion)
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > Companion to [`q2_capture.py`](q2_capture.py). Fourth sim of the [scenario suite](scenario_suite_METHOD.md).
 > **Question:** what is the impact of exploitation, cronyism, capitalism, and war on stolen labour-time?
 

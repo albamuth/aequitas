@@ -1,5 +1,8 @@
 # Disparity ceiling — how far apart can two people's consumption get?
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > **Status:** ✅ **Stated, simulated, stress-tested. A conditional result**, on the consumption axis only.
 > **Results:** [`RESULTS.md`](RESULTS.md) · **Formal statement:** [`DISPARITY_CEILING.md`](DISPARITY_CEILING.md) · **The ρ dial:** [`RHO_SWEEP.md`](RHO_SWEEP.md) · **Change history:** `CHANGELOG.md`
 

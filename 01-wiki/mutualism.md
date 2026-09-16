@@ -1,5 +1,8 @@
 # Mutualism (Proudhon)
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > Pierre-Joseph Proudhon's system: goods exchanged **at cost**, credit extended **without interest**, and rent and profit treated as extraction rather than payment for labor.
 
 ## The claim

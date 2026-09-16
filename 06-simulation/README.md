@@ -1,5 +1,8 @@
 # 06-simulation — the code, and what it found
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > **You should be able to read this page and know where everything is without opening anything else.**
 > New here, and want the tour rather than the index? Read [`Simulations_in_Plain_Language.md`](Simulations_in_Plain_Language.md) — a sceptic's walk through every sim, asking of each one *could this have failed?*
 
@@ -28,6 +31,41 @@ Every command below is run **from inside that project's folder**. Every project 
 | **[`ceiling-rubric/`](ceiling-rubric/README.md)** | Score our own headline statistic as a detector: does it fire on a known omission, stay quiet on a clean case, and what witnesses that the tested population is complete? | `python ceiling_rubric.py --test` | ✅ **Done 2026-08-31.** Answers @cairn-lineage c33046. Foundations **§5.5.7**, **§4.3**. |
 | **[`method-spread/`](method-spread/README.md)** | How far did a §3.4a joint-process split move across honest methods? | `python method_spread.py --test` | ⚠️ **Superseded 2026-09-03.** The split rule it measured was withdrawn. **Kept because it is the measurement that caused the withdrawal.** |
 | **[`chain-resolution/`](chain-resolution/README.md)** | If a joint process's cost is not divided, what does reading the chain more finely change — and do the books inflate? | `python chain_resolution.py --test` | ✅ **Done 2026-09-03.** Answers the author ruling of the same day. Foundations **§3.4a**, **§2.5**, **A3**. |
+
+---
+
+## The nightly simulation agent — one request a night, 04:00
+
+**Set up 2026-09-15.** A scheduled agent works through the open simulation requests, one a night, and leaves a report for the author to read in the morning.
+
+> **It runs simulations and publishes nothing. The 03:00 outreach agent posts in public and runs no simulations.** That separation was ruled on 2026-08-25 and this agent keeps it.
+
+| | |
+|---|---|
+| **What it may write** | Inside `06-simulation/` only. **Never `00-strategy/`, never `07-outreach/`, no `git`, no network** |
+| **Which request** | The author's pin in [`PINNED_SIM.txt`](PINNED_SIM.txt) if there is one, else **the oldest open request** |
+| **Time limit** | **One hour.** A run too big for the hour is reported as too big, which is itself useful |
+| **Closing a request** | **The author does it**, after reading the report. The agent is forbidden from running `answer-sim` |
+| **Its brief** | [`SIM_AGENT_BRIEF.md`](SIM_AGENT_BRIEF.md) — the boundary, and the two rules that decide whether a run is worth anything |
+| **Its report** | `log/SIM-<date>.md`. Raw transcripts in `log/runs/` |
+
+**Commands you will actually use:**
+
+```bash
+python 06-simulation/bin/pick_sim.py --list
+```
+
+```bash
+python 06-simulation/bin/pick_sim.py
+```
+
+**To pin one**, put its id on its own line in [`PINNED_SIM.txt`](PINNED_SIM.txt). **To clear the pin**, delete that line.
+
+**Dry check, builds the prompt and does not start the agent:**
+
+```bash
+powershell -ExecutionPolicy Bypass -File 06-simulation/bin/run_sim_night.ps1 -NoAgent
+```
 
 ---
 
@@ -118,7 +156,7 @@ Each project's `RESULTS.md` carries the conditions, the limits, and what would f
 | Work on the current task | [`statera/README.md`](statera/README.md) |
 | Check a number before quoting it | that project's `RESULTS.md` |
 | Check a claim **without running our code** | [`audits/audits_inert/`](audits/audits_inert/README.md) |
-| Know what the whole programme is for | [`../00-strategy/Aequitas_Simulation_Roadmap_v0.2.md`](../00-strategy/Aequitas_Simulation_Roadmap_v0.2.md) |
+| Know what the whole programme is for | [`../00-strategy/Aequitas_Simulation_Roadmap.md`](../00-strategy/Aequitas_Simulation_Roadmap.md) |
 | Know what happens next | `../NEXT.md` (held locally) |
 
 ## What this code is, and is not

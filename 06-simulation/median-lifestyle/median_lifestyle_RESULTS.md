@@ -1,5 +1,8 @@
 # Median-Adult Lifestyle Cost — Running Results (bottom-up, v2)
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > **Living log.** Updated as each track is computed. Method: [`median_lifestyle_METHOD.md`](median_lifestyle_METHOD.md). Data provenance + BLS-withdrawal note: memory `median-lifestyle-data-sources`, files in `data/`.
 > **Question:** how many hours of human work per year does a median US adult's lifestyle command? (The disparity-ceiling proof's real-world anchor.)
 > **Year:** 2023 (latest internally-consistent CE + BLS ERM/IO). **Scope so far:** DOMESTIC labour; imports (Track 3) and own-pollution (Track 4) still pending.

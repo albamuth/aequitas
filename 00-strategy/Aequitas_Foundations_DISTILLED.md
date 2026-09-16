@@ -1,16 +1,16 @@
-<!-- generated-from: Aequitas_Foundations_v0.46.md -->
+<!-- generated-from: Aequitas_Foundations.md -->
 # Aequitas — Foundations, distilled
 
 > ## ⚠️ THIS FILE IS GENERATED. DO NOT EDIT IT.
 >
-> **Every edit belongs in [`Aequitas_Foundations_v0.46.md`](Aequitas_Foundations_v0.46.md), which is the document this was made from.**
+> **Every edit belongs in [`Aequitas_Foundations.md`](Aequitas_Foundations.md), which is the document this was made from.**
 > An edit made here is lost the next time anyone runs the generator, and while it survives it is a
 > second version of a rule — which is the failure this file exists to avoid.
 >
 > **Regenerate with:** `python bin/distill.py`
 
-> **Source:** [`Aequitas_Foundations_v0.46.md`](Aequitas_Foundations_v0.46.md) · **version 0.46**
-> **Size:** 123,930 bytes, from 252,738 — **49% of the source**
+> **Source:** [`Aequitas_Foundations.md`](Aequitas_Foundations.md) · **version 0.46**
+> **Size:** 123,802 bytes, from 252,495 — **49% of the source**
 
 **What was kept:** every heading, every rule, every table, and the stated result of every worked
 example. **What was dropped:** the explanation prose between them.
@@ -111,7 +111,7 @@ example. **What was dropped:** the explanation prose between them.
 | **Scope** — how much diverse phenomena it covers | **Universality** | Sharpened from *"covers a lot"* to *"covers everything, with no exception"* |
 | **Testability** | **Decentralization** | Narrowed to *who* may test it. A claim anyone can re-run without permission |
 | **Fruitfulness** — it predicts new phenomena | **Fecundity** | Widened from prediction to upkeep. **A mechanism must pay its own maintainer from inside the system** |
-> **⚠️ This attribution is the nearest match, not a confirmed source.** The three criteria entered this project through the Open Fair Credit Standard, and which book they came from was not recorded at the time. Research stub: [`../02-research/Schick_Vaughn_criteria-of-adequacy_v0.1.md`](../02-research/Schick_Vaughn_criteria-of-adequacy_v0.1.md).
+> **⚠️ This attribution is the nearest match, not a confirmed source.** The three criteria entered this project through the Open Fair Credit Standard, and which book they came from was not recorded at the time. Research stub: [`../02-research/Schick_Vaughn_criteria-of-adequacy.md`](../02-research/Schick_Vaughn_criteria-of-adequacy.md).
 #### Conformance to the three criteria
 | Criterion | How Aequitas satisfies it |
 |---|---|
@@ -262,14 +262,14 @@ example. **What was dropped:** the explanation prose between them.
 #### What is out of scope, explicitly
 | Out of scope | Whose question it is |
 |---|---|
-| Data-protection and erasure law | The implementer, under its own jurisdiction. Research: [`Law_gdpr-right-to-erasure_v0.1.md`](../02-research/Law_gdpr-right-to-erasure_v0.1.md) |
+| Data-protection and erasure law | The implementer, under its own jurisdiction. Research: [`Law_gdpr-right-to-erasure.md`](../02-research/Law_gdpr-right-to-erasure.md) |
 | Data security, backups, key management | A technology problem (§4.8) |
 | The corporate or legal form of a trust network | The implementer |
 | Which cryptography, which database, which protocol | The implementer |
 | Whether the ecosystem converges to one network | A prediction, not a design input (§4.8) |
 | **How a cost constant gets audited** — who replicates, what triggers a review, how a contested constant is handled while it is contested | The implementer (§3.3a). **That it must be answered is not out of scope**; the five properties in §3.3a are conformance items 16a–16c |
 | **How finely a process chain is resolved** — which steps a facility reads separately | The industry (§3.4a). **The rule is fixed here and needs no method**; resolution only ever moves a figure downward, so nothing has to be policed |
-> **The dial test is the standing screening question for anything proposed for these documents. What it leaves behind is a set of conformance requirements, never an architecture** — [`Aequitas_Conformance_v0.17.md`](Aequitas_Conformance_v0.17.md). **What must be true, never how to build it.**
+> **The dial test is the standing screening question for anything proposed for these documents. What it leaves behind is a set of conformance requirements, never an architecture** — [`Aequitas_Conformance.md`](Aequitas_Conformance.md). **What must be true, never how to build it.**
 ## 3. The Ledger Model
 ### 3.0 What a ledger is
 > **A person's ledger is two numbers, side by side.**
@@ -622,7 +622,7 @@ example. **What was dropped:** the explanation prose between them.
 > **The two figures cannot be added, and §4.2 says why.** They come from different weighting models, so they are not in the same unit. **No account holds 30 hours**, and IC-7 was not breached, because IC-7 applies to each account on its own.
 **A purchase clears against one set of books only.** If the seller accepts Network A, the gate `D ≤ ρ·C` is checked against A's figures and the event is recorded in A's log. **Network B never sees it.** The same purchase may clear on one network and be refused on the other, because the two use different floors and different values of ρ.
 **Where a network's records are partial it publishes a coverage figure saying so, and where a subscriber leaves activity undisclosed the network estimates it and errs against them** (§4.4). **The gap is measured and declared rather than hidden.**
-> **The hardest case for rule 1 is a pair of identical twins on the lowest rung of checking, deliberately engineering the confusion. The arithmetic refuses it.** IC-7 caps an account at 24 hours of activity in 24 hours, so two twins faking one account reach 34 hours a day against 36 hours honest. **They lose 730 hours a year and gain nothing**, because twins sharing a household share the goods either way. Worked in full, together with the cross-network case: [`OP-22_identity_not_disclosure_v0.2.md`](open-problems/OP-22_identity_not_disclosure_v0.2.md).
+> **The hardest case for rule 1 is a pair of identical twins on the lowest rung of checking, deliberately engineering the confusion. The arithmetic refuses it.** IC-7 caps an account at 24 hours of activity in 24 hours, so two twins faking one account reach 34 hours a day against 36 hours honest. **They lose 730 hours a year and gain nothing**, because twins sharing a household share the goods either way. Worked in full, together with the cross-network case: [`OP-22_identity_not_disclosure.md`](open-problems/OP-22_identity_not_disclosure.md).
 ### 4.2 It decides what counts as evidence, and publishes it
 > **A trust network publishes, for every kind of work it credits, what evidence that work requires. That published set is its contract with the subscriber. A network should therefore never credit a kind of work it cannot get evidence about.**
 ##### An example, with the numbers
@@ -1026,11 +1026,11 @@ example. **What was dropped:** the explanation prose between them.
 ### The companion documents
 | What it is | Where |
 |---|---|
-| **The conformance requirements** — what must be true for an implementation to *be* Aequitas, written for implementers | [`Aequitas_Conformance_v0.17.md`](Aequitas_Conformance_v0.17.md) |
-| **The objections register** — every open problem and every answered objection, with its status | [`Aequitas_Objections_v0.34.md`](Aequitas_Objections_v0.34.md) |
-| **The plain-language companion**, assuming no economics background | [`Aequitas_Overview_v0.27.md`](Aequitas_Overview_v0.27.md) |
-| **How adoption plausibly starts** — a reading of the historical record, not a statement of the system | [`Aequitas_Strategy_v0.9.md`](Aequitas_Strategy_v0.9.md) §5 |
-| **The simulation programme** — what is being tested and in what order | [`Aequitas_Simulation_Roadmap_v0.2.md`](Aequitas_Simulation_Roadmap_v0.2.md) |
+| **The conformance requirements** — what must be true for an implementation to *be* Aequitas, written for implementers | [`Aequitas_Conformance.md`](Aequitas_Conformance.md) |
+| **The objections register** — every open problem and every answered objection, with its status | [`Aequitas_Objections.md`](Aequitas_Objections.md) |
+| **The plain-language companion**, assuming no economics background | [`Aequitas_Overview.md`](Aequitas_Overview.md) |
+| **How adoption plausibly starts** — a reading of the historical record, not a statement of the system | [`Aequitas_Strategy.md`](Aequitas_Strategy.md) §5 |
+| **The simulation programme** — what is being tested and in what order | [`Aequitas_Simulation_Roadmap.md`](Aequitas_Simulation_Roadmap.md) |
 | **One paper per open problem** | [`open-problems/`](open-problems/) |
 | **Settled working papers these documents still cite by name** | [`papers/`](papers/) |
 ### The rest of the project

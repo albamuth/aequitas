@@ -75,7 +75,7 @@
 | **Why will this not die the way local currencies died?** | Three failures. **Circulation cannot occur — there is no medium of exchange.** Institutional suppression does not fit an accounting system. **Valuation is only partly answered** (OP-16) | §5.6 |
 | **Is in-kind calculation computationally possible at national scale?** | **Yes, demonstrated.** Cockshott & Cottrell with sparse-matrix methods. Mises's objection was in-principle; the scale objection was answered by people who ran the arithmetic | §3.3 |
 | **Does Steedman's negative-value result apply?** | **No.** Each share is a forward measurement of what physically went in, and a deposition cannot be negative. Confirmed across 4,098 economies. **Note the limit: it proves no split is negative, not that a split is unique** | §3.4a |
-| **Can identical twins share one account?** | **The arithmetic refuses it.** IC-7 caps an account at 24 h in 24 h, so two twins faking one account reach **34 hours a day against 36 honest** — they lose 730 hours a year and gain nothing | §4.1 · `OP-22_identity_not_disclosure_v0.2.md` |
+| **Can identical twins share one account?** | **The arithmetic refuses it.** IC-7 caps an account at 24 h in 24 h, so two twins faking one account reach **34 hours a day against 36 honest** — they lose 730 hours a year and gain nothing | §4.1 · `OP-22_identity_not_disclosure.md` |
 | **Who owns land?** | **Nobody.** A structure occupies a bounded space, and that occupation is a **remediation debt** discharged only by actually restoring the space | §3.7 |
 | **How does someone use Aequitas while the world still uses money?** | Both directions permitted, both dearer than trading inside. **Money is invisible because it is not physical**, so a payment is not an event. **Goods cross the boundary; standing does not — you cannot buy hours** | §4.8 · `OP-27_parallel_implementation.md` |
 | **Is a first estimate being wrong a problem?** | **No inaccuracy in this system is irreversible.** Every figure is a dated reading, and better science re-weights every affected ledger backwards through history | §3.3 |
@@ -141,7 +141,7 @@
 | If you are | Read |
 |---|---|
 | Answering one question | **This file.** If it is not here, §5 |
-| Proposing a new mechanism | **[`Aequitas_Foundations_v0.46.md`](Aequitas_Foundations_v0.46.md) whole**, then §2.1's three criteria |
-| Implementing | [`Aequitas_Conformance_v0.17.md`](Aequitas_Conformance_v0.17.md) — what must be true, never how to build it |
-| Checking whether an objection is new | [`Aequitas_Objections_v0.34.md`](Aequitas_Objections_v0.34.md) |
+| Proposing a new mechanism | **[`Aequitas_Foundations.md`](Aequitas_Foundations.md) whole**, then §2.1's three criteria |
+| Implementing | [`Aequitas_Conformance.md`](Aequitas_Conformance.md) — what must be true, never how to build it |
+| Checking whether an objection is new | [`Aequitas_Objections.md`](Aequitas_Objections.md) |
 | Checking the arithmetic without running code | [`../06-simulation/audits/audits_inert/constraints.md`](../06-simulation/audits/audits_inert/constraints.md) — IC-1 to IC-12 as mathematics |

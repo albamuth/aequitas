@@ -1,5 +1,8 @@
 # SB-03 — What does a full re-weighting of a billion-event log actually cost?
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > **Request:** `sr-20260901-wall-clock-and-memory-cost-of-a-full-re-weig` · filed 2026-09-01.
 > **Status:** open. **Nobody has run this.** **This is the most reproducible brief here** — it needs no theory, only a machine.
 > **Read the format first:** [`README.md`](README.md), especially section 7.

@@ -1,5 +1,8 @@
 # Q1b — Can the labour actually be staffed? (plain-language companion)
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > Companion to [`q1b_deployable_labour.py`](q1b_deployable_labour.py). **Run 2026-08-27**, after an author ruling.
 > **Question:** Q1 said an autarkic US has 2.28× the labour it needs. Is that true of hours anyone could actually work?
 > **Answer: no. At US production efficiency the hours do not close, at any corner of a defensible band.**

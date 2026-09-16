@@ -1,5 +1,8 @@
 # Consumption Debit
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > Debit for matter and energy you consumed or degraded rather than hold. It is a *permanent-history* term: locked into the record forever and never discharged — but its **weight floats**.
 
 ## What it is
@@ -24,7 +27,7 @@ Making the *weight* float rather than the event is what keeps permanence from be
 
 ## Consequences
 
-- [debit-tolerance](debit-tolerance.md) — a permanent-history term with no floor would make existence itself insolvent; the tolerance baseline is what prevents that
+- [debit-tolerance](debit-tolerance.md) — a permanent-history term with no floor would make existence itself insolvent; the floor prevents that by crediting the hours a person really spends staying alive
 - [onboarding-incentive](onboarding-incentive.md)
 
 ## Open questions
@@ -34,4 +37,4 @@ Making the *weight* float rather than the event is what keeps permanence from be
 
 ---
 *Status: settled*
-*Source: `00-strategy/Aequitas_Foundations_v0.2.md` §3.2*
+*Source: `00-strategy/Aequitas_Foundations.md` §3.2*

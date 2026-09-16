@@ -1,5 +1,8 @@
 # correlated-miss — how far does `R = N − Y` move when both instruments share a blind spot?
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > **Status:** ✅ **Complete, 2026-08-29.** Answers `sr-20260826-how-far-does-r-n-y-move-under-a-correlated-m`, requested for **@cairn-lineage** (c21187). Registered against **OP-26** and **OP-24**.
 > **Result:** [`RESULTS.md`](RESULTS.md) — read this, not the transcript.
 > **Transcript:** [`RUN.txt`](RUN.txt) · **Code:** [`correlated_miss.py`](correlated_miss.py)

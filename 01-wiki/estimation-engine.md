@@ -1,5 +1,8 @@
 # Estimation Engine
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > The machinery that turns "what a household consumes" into "what it truly cost" — propagating a consumption basket through the entire supply chain into labor, energy, materials, and pollution at every tier.
 
 ## What it does

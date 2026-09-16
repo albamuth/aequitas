@@ -1,7 +1,7 @@
 ﻿"""
 chains.py -- the five exemplar chains, recorded into STATERA.
 
-WHAT THIS IS. Step 4 of `STATERA_PLAN_v0.2.md`. Five worked supply chains --
+WHAT THIS IS. Step 4 of `STATERA_PLAN.md`. Five worked supply chains --
 housing, transport, food, healthcare, entertainment -- covering 82% of what a
 person materially consumes. Each one is modelled process by process so that the
 mechanisms it exercises are actually run rather than asserted.

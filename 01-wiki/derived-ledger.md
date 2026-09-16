@@ -1,5 +1,8 @@
 # Derived Ledger
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > Balances are not authoritative — the append-only event log is. Any account's standing is a pure function of *(its events × the current scientific cost-weighting model)*.
 
 ## What it is
@@ -44,4 +47,4 @@ The event log is why Aequitas is **an accounting system, not a currency, token, 
 
 ---
 *Status: settled (the principle) / open (the schema)*
-*Source: `00-strategy/Aequitas_Foundations_v0.2.md` A6, §3.1*
+*Source: `00-strategy/Aequitas_Foundations.md` A6, §3.1*

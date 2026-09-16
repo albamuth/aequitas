@@ -1,5 +1,8 @@
 # Residual unravelling — does darkness actually stop paying?
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 **Sim:** [`residual_unravelling.py`](residual_unravelling.py) — **8 self-tests green**
 **New readers: start at §0**, a five-farm worked example small enough to check by hand.
 **Tests:** Foundations **v0.17 §4.4** (producers) and **§4.4 condition 1** (periods within a life)

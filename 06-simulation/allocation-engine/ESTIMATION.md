@@ -1,5 +1,8 @@
 # Estimation engine — synthetic first deliverable (C3 / OP-3)
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > **Date:** 2026-08-06
 > **Code:** [`estimation_engine.py`](estimation_engine.py) · reuses the proven solver in [`recursion_convergence.py`](recursion_convergence.py)
 > **Answers:** NEXT.md current task (C3), *synthetic half* — a working per-product debit-vector pipeline into which real EEIO (EXIOBASE) data drops unchanged.

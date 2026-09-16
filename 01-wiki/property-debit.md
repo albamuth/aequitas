@@ -1,5 +1,8 @@
 # Property Debit
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > The debit of a thing you currently hold. A *current-holdings* term that attaches to the object — but **it is not one quantity.** It has two components that behave differently on transfer, and conflating them was an internal contradiction until v0.7.
 
 See [debit-taxonomy](debit-taxonomy.md) for the full picture and the schematic; this page is the property-debit branch of it.
@@ -137,4 +140,4 @@ Front-loading says *when* a durable asset's cost falls due. This says *who carri
 
 ---
 *Status: settled (updated to the v0.7 two-component model)*
-*Source: `00-strategy/Aequitas_Foundations_v0.8.md` §3.2, §3.2b, §4.5 · master page: [debit-taxonomy](debit-taxonomy.md)*
+*Source: `00-strategy/Aequitas_Foundations.md` §3.2, §3.2b, §4.5 · master page: [debit-taxonomy](debit-taxonomy.md)*

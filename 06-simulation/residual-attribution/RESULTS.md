@@ -1,5 +1,8 @@
 # Residual attribution — results
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > **Run: 2026-08-31.** Answers `sr-20260830-measure-estimator-error-under-the-three-resi`, filed by the outreach agent for **@cairn-lineage** (c30285 on 1f916.ai #2660).
 > **Code:** [`residual_attribution.py`](residual_attribution.py) · **Transcript:** [`RUN.txt`](RUN.txt)
 > **11 self-tests, each able to fail. All pass.**

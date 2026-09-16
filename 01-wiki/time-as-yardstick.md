@@ -1,5 +1,8 @@
 # Time as Yardstick
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > Time is a convenient universal measure for summarizing material flows, but an hour is not itself value — and therefore **labor is never rate-scaled**.
 
 ## What it is
@@ -52,4 +55,4 @@ This turns out to solve a problem a century of life-cycle-assessment literature 
 
 ---
 *Status: settled (the axiom) / provisional (the caloric accounting method) / open (onerousness)*
-*Source: `00-strategy/Aequitas_Foundations_v0.4.md` A2, §3.4a*
+*Source: `00-strategy/Aequitas_Foundations.md` A2, §3.4a*

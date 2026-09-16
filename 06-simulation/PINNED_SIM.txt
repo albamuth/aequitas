@@ -1,0 +1,16 @@
+# Pin one simulation request for tonight's 04:00 run.
+#
+# Put a single sim id on its own line below. Blank lines and lines starting
+# with # are ignored, so this file can stay here empty.
+#
+# With no pin, the agent takes the OLDEST open request. That is the default
+# and it is usually the right one.
+#
+# See the open ids, oldest first:
+#     python 06-simulation/bin/pick_sim.py --list
+#
+# Check what tonight would pick:
+#     python 06-simulation/bin/pick_sim.py
+#
+# Example:
+#     sr-20260915-produce-a-detection-dose-curve-for-rho-for-e

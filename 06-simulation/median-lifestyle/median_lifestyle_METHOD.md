@@ -1,5 +1,8 @@
 # Method Plan — Work-Hours to Support a Median US Adult (v2, bottom-up)
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 **Status:** PROPOSED — awaiting approval before any data-gathering or coding.
 **Supersedes the method in** [`median_lifestyle.py`](99-superseded/median_lifestyle.py) / [`MEDIAN_LIFESTYLE.md`](99-superseded/MEDIAN_LIFESTYLE.md) (top-down v1), which was rejected as unsound: it *assumes* the labour allocation, misses carried-forward labour in durables, and mixed data years. v1 is kept only as a rough sanity bracket.
 

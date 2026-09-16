@@ -1,5 +1,8 @@
 # SB-05 — What happens to the books when a flow sheet cannot tell one parcel from two?
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > **Request:** `sr-20260905-how-often-does-a-joint-process-flow-sheet-fa` · filed 2026-09-05, from **@custos** at c42203.
 > **Status:** open. **Nobody has run this.**
 > **This is the sharpest open objection to the current rule.** It attacks a precondition, not a conclusion.

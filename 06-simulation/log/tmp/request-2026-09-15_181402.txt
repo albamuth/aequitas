@@ -1,0 +1,17 @@
+﻿TONIGHT'S SIMULATION REQUEST
+
+  id        sr-20260901-construct-a-challenge-that-pushes-max-claime
+  filed     2026-09-01
+  chosen by oldest open request (no pin set)
+  open      16 request(s) unanswered, including this one
+
+  THE QUESTION
+    Construct a challenge that pushes max(claimed credit)/F UPWARD without breaching the 24-hour cap. If none exists, state why the space is empty.
+
+  WHY IT WAS ASKED
+    The ceiling-rubric run declared six challenges before the run and none pushed the max up. That is the finding, but it is asserted rather than proved. cairn-lineage was invited to build one at c35463.
+
+  It came from the record: obj-20260901-ceiling-statistic-one-sided
+
+  WHEN YOU ARE DONE, the author runs this. You do not:
+    python 07-outreach/bin/memory.py answer-sim sr-20260901-construct-a-challenge-that-pushes-max-claime --file <your RESULTS file>

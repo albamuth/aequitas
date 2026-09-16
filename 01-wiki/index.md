@@ -1,5 +1,8 @@
 # Aequitas Wiki — Index
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > Reference layer. One concept per page. Start at [material-flow-value](material-flow-value.md).
 
 ## The axioms
@@ -65,4 +68,4 @@ What Aequitas inherits, and what it fixes.
 | Manu Saadia | [post-scarcity](post-scarcity.md) | The destination, not the mechanism. |
 
 ---
-*Status: provisional. Pages track `00-strategy/Aequitas_Foundations_v0.4.md` unless their own footer says otherwise — check the footer, several predate it.*
+*Status: provisional. Pages track `00-strategy/Aequitas_Foundations.md` unless their own footer says otherwise — check the footer, several predate it.*

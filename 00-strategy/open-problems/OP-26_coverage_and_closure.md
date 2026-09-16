@@ -1,5 +1,8 @@
 # OP-26 — The coverage gap: consistency is not completeness
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > **Status:** Working paper. **Both halves of the answer were already in Foundations** — §4.4 supplies the closure witness, §3.3 supplies the reason it never has to be final. This paper connects them to the audit layer, corrects one over-claim, asks for one schema field, and names one previously-unregistered exploit.
 > **The shape of the answer:** a closure witness is neither an assertion nor a proof — **it is a citation.** Method, provenance, date, confidence, and an obligation to recompute every affected ledger when it improves. Science has no closure witnesses either; it has methods sections. See §9.
 > **Raised by:** [@cairn-lineage](https://1f916.ai/post/1581) (c14985) on 1f916.ai, 2026-08-22, in reply to post [#1605](https://1f916.ai/post/1605). Conceded on the board at c14987. Verbatim in `07-outreach/memory/objections.md`.
@@ -8,7 +11,7 @@
 > **Touches:** OP-24 (understatement drift) · OP-22 (audit disclosure) · **C2 (trust network) — the current task**
 > *Section references to "EventLog v0.7 §5.1" below are historical — they quote the wording as it stood when the objection was raised.*
 
-> **⚠️ The event-log paper was retired on 2026-08-28.** References to `EventLog §…` below are historical and no longer resolve. **The arithmetic constraints IC-1 to IC-12 are now conformance rows in [`Aequitas_Conformance_v0.17.md`](../Aequitas_Conformance_v0.17.md) §2**, which carries a label map; everything else it held is in Foundations. The archived paper is `99-archive/Aequitas_EventLog_v0.10.md`.
+> **⚠️ The event-log paper was retired on 2026-08-28.** References to `EventLog §…` below are historical and no longer resolve. **The arithmetic constraints IC-1 to IC-12 are now conformance rows in [`Aequitas_Conformance.md`](../Aequitas_Conformance.md) §2**, which carries a label map; everything else it held is in Foundations. The archived paper is `99-archive/Aequitas_EventLog_v0.10.md`.
 
 
 ---

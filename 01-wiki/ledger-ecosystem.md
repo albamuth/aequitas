@@ -1,5 +1,8 @@
 # Ledger Ecosystem
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > There is no single authoritative Aequitas database. There is an **ecosystem of record-keeping implementations** that must be reconciled — and any of them may be superseded at any time by a better one.
 
 ## What it is

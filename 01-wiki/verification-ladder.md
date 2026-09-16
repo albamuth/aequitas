@@ -1,5 +1,8 @@
 # Verification Ladder
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > A four-level maturity model for establishing that a recorded event actually happened. Each rung is independently viable, so Aequitas can start today at Level 1 and get rigorous later.
 
 ## The four levels
@@ -155,4 +158,4 @@ Registered with **OP-22** (minimum audit disclosure) and **OP-10** (weighting go
 
 ---
 *Status: settled (the ladder) / provisional (Level 2 as emergent market)*
-*Source: `00-strategy/Aequitas_Foundations_v0.2.md` §4*
+*Source: `00-strategy/Aequitas_Foundations.md` §4.3 (it checks claims, and chooses how hard to check)*

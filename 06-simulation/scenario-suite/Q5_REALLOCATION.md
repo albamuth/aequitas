@@ -1,5 +1,8 @@
 # Wasteful → Essential Reallocation — Q5 (plain-language companion)
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > Companion to [`q5_reallocation.py`](q5_reallocation.py). Fifth and final sim of the [scenario suite](scenario_suite_METHOD.md).
 > **Question:** how could the world's standard of living change if labour were shifted from wasteful (warfare, luxuries, policing, disposables, fossil fuels) to essential (healthcare, food/water, housing, clothing, renewables) under Aequitas?
 

@@ -1,5 +1,8 @@
 # Cost, Not Price
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > A thing's cost is the current best estimate of **what was materially consumed to make it**. Nothing is added to that figure, and nothing enters it that the thing did not consume.
 
 **Axiom A5.** *Renamed and repaired in Foundations v0.21. It previously read "price ≡ cost", and that wording was found to contradict the capital rule — see [Why the old name was wrong](#why-the-old-name-was-wrong).*
@@ -75,4 +78,4 @@ The axiom read *"the **price** of anything is its true, current-best-estimate ma
 ---
 *Status: settled — wording repaired v0.21*
 *Supersedes `99-archive/price-equals-cost.md`*
-*Source: `00-strategy/Aequitas_Foundations_v0.34.md` A5, §4.5, §5.1 · `99-archive/A5_repair_PLAN_v0.1.md`*
+*Source: `00-strategy/Aequitas_Foundations.md` A5, §4.5, §5.1 · `99-archive/A5_repair_PLAN_v0.1.md`*

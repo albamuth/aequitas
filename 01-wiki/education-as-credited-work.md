@@ -1,5 +1,8 @@
 # Education as Credited Work
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > **Children are credited for attending school**, and their teachers are credited for teaching them. Schooling is real, materially accounted activity — not unpaid time.
 
 ## What it is
@@ -83,4 +86,4 @@ Three instances so far:
 
 ---
 *Status: provisional — OP-5, OP-11*
-*Source: `00-strategy/Aequitas_Foundations_v0.2.md` §10 OP-5; design session 2026-07-31*
+*Source: `00-strategy/Aequitas_Foundations.md` §2.3 (enrichment), §4.5 (training is paid when it happens); OP-5 in `00-strategy/Aequitas_Objections.md`; design session 2026-07-31*

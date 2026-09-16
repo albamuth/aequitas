@@ -1,5 +1,8 @@
 # What a median US adult's lifestyle costs, in Aequitas credit (labour-hours)
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 **The bottom-up estimate, all four tracks (2022–23 data).** Supersedes the top-down `median_lifestyle.py`/`MEDIAN_LIFESTYLE.md` (kept only as a sanity bracket). Each track is a separate, tested script; this assembles them.
 
 ## Headline

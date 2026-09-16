@@ -1,5 +1,8 @@
 # Median lifestyle — what a normal life costs in hours
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > **Status:** ✅ The four tracks are done and green. This is the project's real-world anchor, ≈ **1,380 hours per year**.
 > **Results:** [`RESULTS.md`](RESULTS.md) · **Assembled result:** [`MEDIAN_LIFESTYLE_RESULT.md`](MEDIAN_LIFESTYLE_RESULT.md) · **Change history:** `CHANGELOG.md`
 

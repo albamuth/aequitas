@@ -1,5 +1,8 @@
 # Energy Accounting (Technocracy Inc.)
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > The nearest thing to Aequitas that has ever been seriously attempted: replace the price system with accounting in **joules**, distributed as non-transferable, expiring energy certificates. It collapsed. **Read the autopsy before writing the whitepaper.**
 
 ## What they proposed

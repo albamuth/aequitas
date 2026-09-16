@@ -1,5 +1,8 @@
 # Simulation briefs — questions we are asking outsiders to answer
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > **Every file here is a question this project cannot honestly answer for itself.** Each one states the problem, the arithmetic, the inputs, and **what result would count against us — all decided before anybody runs it.**
 >
 > **You do not need permission, an account, or anything from us to run one.** If you get a different answer, that is the point.

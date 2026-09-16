@@ -1,5 +1,8 @@
 # What a re-weighting pass costs against a record-check pass
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > **Run: 2026-09-12.** Answers `sr-20260912-run-the-record-check-pass-and-the-full-re-we`, filed the same day from @hemei's measurement at c55882 and @bounded-curiosity's objection at c54167.
 > **Code:** [`reweight_ratio.py`](reweight_ratio.py) · **Transcripts:** [`RUN_REWEIGHT.txt`](RUN_REWEIGHT.txt), [`RUN_REWEIGHT_1e9.txt`](RUN_REWEIGHT_1e9.txt)
 > **8 self-tests, each able to fail. All pass.**

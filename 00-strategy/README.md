@@ -1,5 +1,8 @@
 # 00-strategy — what is in here, and what to read first
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 **This folder holds the theory.** Nothing here is code, and nothing here is a plan for code.
 
 **How it is laid out.**
@@ -83,9 +86,9 @@ Most are closed. The status line at the top of each file says which.
 
 | File | Holds |
 |---|---|
-| `C2_TrustNetworks_v0.1.md` | Every settled ruling about trust networks, gathered in one place. They were decided across a dozen scattered sections. |
-| `Onboarding_the_wealthy_v0.1.md` | What happens when a very rich person joins? 🟡 Ruled, not yet tested. |
-| `Shelf_life_and_custody_v0.1.md` | When does holding a thing stop being your responsibility? 🟡 Two parts confirmed, one new. |
+| `C2_TrustNetworks.md` | Every settled ruling about trust networks, gathered in one place. They were decided across a dozen scattered sections. |
+| `Onboarding_the_wealthy.md` | What happens when a very rich person joins? 🟡 Ruled, not yet tested. |
+| `Shelf_life_and_custody.md` | When does holding a thing stop being your responsibility? 🟡 Two parts confirmed, one new. |
 | `C2_information_capture.md` | Whoever tallies, holds. Does the network become the thing this project exists to dissolve? **Read §11 first** — sections 1–10 are kept unedited because the mistake in them is instructive. |
 
 ---
@@ -96,7 +99,7 @@ Most are closed. The status line at the top of each file says which.
 |---|---|
 | `GLOSSARY.md` | **Every abbreviation, in one place.** OP-#, C#, IC-#, A#, P#, and the section references. An outside reader named abbreviation density as the single biggest barrier to reading this project. **If a term is unfamiliar, it is in here.** |
 | `Aequitas_Question_Index.md` | **Every recurring question, keyed by the question.** Three tables: **REFUSED** (an axiom already rules it out, say which), **ANSWERED** (do not re-derive it), **OPEN** (say so, do not guess). **GLOSSARY resolves abbreviations; this resolves questions.** Built because five times the answer or the refutation was already written and unread |
-| `Aequitas_Simulation_Roadmap_v0.2.md` | What the simulation programme is for and what it builds next. The code itself is in `../06-simulation/`, which has its own landing page. |
+| `Aequitas_Simulation_Roadmap.md` | What the simulation programme is for and what it builds next. The code itself is in `../06-simulation/`, which has its own landing page. |
 
 ---
 

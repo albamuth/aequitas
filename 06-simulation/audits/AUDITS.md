@@ -1,7 +1,10 @@
 # C11 — Arithmetic Audits (IC-1 … IC-12)
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 Companion write-up for [`arithmetic_audits.py`](arithmetic_audits.py).
-Tracks **`Aequitas_Conformance_v0.17.md`** and **Foundations v0.16** (`Aequitas_Foundations_v0.19.md` (superseded; held locally)).
+Tracks **`Aequitas_Conformance.md`** and **Foundations v0.16** (`Aequitas_Foundations.md` (superseded; held locally)).
 
 ---
 

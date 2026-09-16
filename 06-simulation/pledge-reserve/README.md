@@ -1,5 +1,8 @@
 # Pledge reserve — why anyone would take the nasty job
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > **Status:** ✅ Built and green, 5 self-tests. Answers the **hazard half** of OP-16 (the onerousness gap). The tedium half is still open.
 > **Results:** [`RESULTS.md`](RESULTS.md) · **Full write-up:** [`PLEDGE_RESERVE.md`](PLEDGE_RESERVE.md) · **Change history:** `CHANGELOG.md`
 

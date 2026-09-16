@@ -1,5 +1,8 @@
 # Track 4 — Labour to remediate the adult's OWN pollution (bucket-2 debit)
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 **Script:** [`track4_pollution.py`](track4_pollution.py) · 5 self-tests green.
 
 ## Scope (Foundations v0.15 §3.2b)

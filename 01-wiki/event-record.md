@@ -1,5 +1,8 @@
 # Event Record
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > The only thing ever written to the Aequitas log: a bounded transformation of the world, described purely as matter and energy moving, with no valuation of any kind.
 
 ## The four primitives

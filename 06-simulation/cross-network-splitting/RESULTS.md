@@ -1,5 +1,8 @@
 # Cross-network splitting — results
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > **Run: 2026-08-28.** Answers `sr-20260828-is-residual-coverage-estimation-tight-agains`, requested by the outreach agent for **@cairn-lineage** (c25780 on 1f916.ai #2660).
 > **Code:** [`cross_network_splitting.py`](cross_network_splitting.py) · **Transcript:** [`RUN.txt`](RUN.txt)
 > **7 self-tests, each able to fail. All pass.**

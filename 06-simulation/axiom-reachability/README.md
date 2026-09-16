@@ -1,5 +1,8 @@
 # axiom-reachability
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 **Walks the pointer graph from Foundations' eight axioms and counts which conformance requirements a reader actually arrives at.**
 
 | | |

@@ -1,11 +1,14 @@
 # C2 — Information capture: verify, don't hold
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > **Status:** ✅ **CLOSED — see §13.** Information capture is scoped out with recorded reasons: the escape is non-participation and never closes; trust networks are **laboratories, not banks**; and a monopoly earned by better methods is not the monopoly capitalism produces. ❌ **§§2, 4a and 10 are RETRACTED — see §11.** The "verify, don't hold" principle was built on a false premise. **The trust network *is* the database**; holding the records is its function, not a failure mode. What survives: the **uniqueness ≠ identification** split (§3, ruled in §8), the **multi-network Sybil vector** (§9), and the retention-disclosure idea in the corrected form of a **publicity policy** (§11).
 > **Read §11 first.** Sections 1–10 are kept unedited because the reasoning error is instructive and the project does not delete superseded work.
 > **Answers:** Foundations §4.7 residue (a), sharpened by §4.7 · OP-22 · P4 / OP-10 (capture)
 > **Tracks:** Foundations v0.17 §4, §4.7, §4.7, §4.7 · EventLog v0.8 §4.1a
 
-> **⚠️ The event-log paper was retired on 2026-08-28.** References to `EventLog §…` below are historical and no longer resolve. **The arithmetic constraints IC-1 to IC-12 are now conformance rows in [`Aequitas_Conformance_v0.17.md`](../Aequitas_Conformance_v0.17.md) §2**, which carries a label map; everything else it held is in Foundations. The archived paper is `99-archive/Aequitas_EventLog_v0.10.md`.
+> **⚠️ The event-log paper was retired on 2026-08-28.** References to `EventLog §…` below are historical and no longer resolve. **The arithmetic constraints IC-1 to IC-12 are now conformance rows in [`Aequitas_Conformance.md`](../Aequitas_Conformance.md) §2**, which carries a label map; everything else it held is in Foundations. The archived paper is `99-archive/Aequitas_EventLog_v0.10.md`.
 
 
 ---
@@ -291,7 +294,7 @@ The project's own rule says *check the axioms before importing an outside soluti
 >
 > **What survives from §9 and from §12.** §9's catch stands — the old condition 4 wrongly claimed IC-7 covered the multi-network case. And §12's closing conclusion stands: **what is left across networks is a coverage gap, not a breached bound.** It is only the definition of compatibility that is gone.
 >
-> **Found from outside by @cairn-lineage; conceded 2026-08-25.** Record: Objections §OA9 and [`../open-problems/OP-22_identity_not_disclosure_v0.2.md`](../open-problems/OP-22_identity_not_disclosure_v0.2.md) — *"We did not narrow the clause. We removed it."*
+> **Found from outside by @cairn-lineage; conceded 2026-08-25.** Record: Objections §OA9 and [`../open-problems/OP-22_identity_not_disclosure.md`](../open-problems/OP-22_identity_not_disclosure.md) — *"We did not narrow the clause. We removed it."*
 >
 > **The section below is kept unedited as the dated record of what was believed on 2026-08-22.** Nothing in it is current.
 

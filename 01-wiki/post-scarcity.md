@@ -1,5 +1,8 @@
 # Post-Scarcity (Saadia)
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > Manu Saadia's *Trekonomics* (2016): post-scarcity is **"not so much a matter of material wealth or natural bounty, but an organizational option for society."**
 
 ## The claim

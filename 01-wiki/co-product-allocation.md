@@ -1,5 +1,8 @@
 # Co-Product Allocation
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > One process, several outputs, one pool of debit. **There is no split. Every co-product carries the whole process cost, read against its own output mass.**
 >
 > **⚠️ This page was rewritten on 2026-09-03.** It previously said the split was a measurement, because the process itself performed it. **That rule was withdrawn** after 36 methods that all satisfied its four obligations came out **6.31× apart**. What follows is the rule that replaced it.
@@ -136,4 +139,4 @@ Where composition varies, mass is the **low-resolution reading**: recorded at lo
 
 ---
 *Status: settled (the rule) / unproven (recursion convergence)*
-*Source: `00-strategy/open-problems/OP-17_coproduct_allocation.md`; `00-strategy/Aequitas_Foundations_v0.4.md` §3.4a*
+*Source: `00-strategy/open-problems/OP-17_coproduct_allocation.md`; `00-strategy/Aequitas_Foundations.md` §3.4a*

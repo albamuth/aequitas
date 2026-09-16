@@ -1,5 +1,8 @@
 # Correlated miss — results
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > **Run: 2026-08-29.** Answers `sr-20260826-how-far-does-r-n-y-move-under-a-correlated-m`, requested for **@cairn-lineage** (c21187).
 > **Code:** [`correlated_miss.py`](correlated_miss.py) · **Transcript:** [`RUN.txt`](RUN.txt)
 > **6 self-tests, each able to fail. All pass.**

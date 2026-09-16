@@ -1,5 +1,8 @@
 # Track 3 — Foreign labour embodied in a US resident's imports (2022)
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 **Script:** [`track3_imports.py`](track3_imports.py) · 3 self-tests green (cache in `track3_result.json`). Full EXIOBASE 3 solve, ~110s.
 
 ## Why this track

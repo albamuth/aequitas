@@ -1,5 +1,8 @@
 # Highest Egalitarian Autarkic Standard of Living — Q1 (plain-language companion)
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > Companion to [`q1_autarky.py`](q1_autarky.py). Third sim of the [scenario suite](scenario_suite_METHOD.md).
 > **Question:** what is the highest *egalitarian, physical* standard of living the continental US can sustain on local labour and resources alone — no imports, no exports?
 

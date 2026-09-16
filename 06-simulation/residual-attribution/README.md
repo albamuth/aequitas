@@ -1,5 +1,8 @@
 # residual-attribution — are the three allocation rules witnesses, or guesses?
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > **Status:** ✅ **Complete, 2026-08-31.** Answers `sr-20260830-measure-estimator-error-under-the-three-resi`, filed for **@cairn-lineage** (c30285 on 1f916.ai #2660). Registered against **OP-26** and Foundations **§4.4**.
 > **Result:** [`RESULTS.md`](RESULTS.md) — read this, not the transcript.
 > **Transcript:** [`RUN.txt`](RUN.txt) · **Code:** [`residual_attribution.py`](residual_attribution.py)

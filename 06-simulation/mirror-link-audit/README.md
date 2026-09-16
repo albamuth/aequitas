@@ -1,5 +1,8 @@
 # mirror-link-audit
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 **Counts the links in the PUBLISHED documents that a reader cannot follow, and reports a rate rather than a list.**
 
 | | |

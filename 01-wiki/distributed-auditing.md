@@ -1,5 +1,8 @@
 # Distributed Auditing
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > Auditing records is itself **credited work**. There is no audit authority — there are competing trust networks, and the people who do the reconciling are paid for it in the same way anyone else is.
 
 ## What it is

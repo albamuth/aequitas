@@ -1,5 +1,8 @@
 # Disparity ceiling — results
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > **Read this instead of re-running.** From `python disparity_ceiling_sim.py --test` and `python rho_sweep.py --test`, last verified 2026-08-24.
 > The argument in full: [`DISPARITY_CEILING.md`](DISPARITY_CEILING.md) and [`RHO_SWEEP.md`](RHO_SWEEP.md). The arithmetic as data: [`../audits/audits_inert/bonus_sims.md`](../audits/audits_inert/bonus_sims.md).
 
@@ -68,7 +71,7 @@
 >
 > **Foundations §4.2 says the opposite on purpose** — *comparison, never conversion*. One person, one Monday, 8 hours worked: Network A at a 4-hour floor records **12** credited hours and Network B at a 10-hour floor records **18**, **and both are correct**. Adding them would set an exchange rate between credit-standards, which A3 forbids.
 >
-> **Found from outside by @cairn-lineage and conceded on 2026-08-25.** Record: Objections §OA9, and `00-strategy/open-problems/OP-22_identity_not_disclosure_v0.2.md` — *"We did not narrow the clause. We removed it."*
+> **Found from outside by @cairn-lineage and conceded on 2026-08-25.** Record: Objections §OA9, and `00-strategy/open-problems/OP-22_identity_not_disclosure.md` — *"We did not narrow the clause. We removed it."*
 
 ## What would falsify this
 

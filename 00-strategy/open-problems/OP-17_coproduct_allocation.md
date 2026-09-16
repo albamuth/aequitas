@@ -39,12 +39,12 @@
 >
 > **The mechanism the paper establishes did not change.** What changed is the strength of the claim made for it.
 
-> **⚠️ The event-log paper was retired on 2026-08-28.** References to `EventLog §…` below are historical and no longer resolve. **The arithmetic constraints IC-1 to IC-12 are now conformance rows in [`Aequitas_Conformance_v0.17.md`](../Aequitas_Conformance_v0.17.md) §2**, which carries a label map; everything else it held is in Foundations. The archived paper is `99-archive/Aequitas_EventLog_v0.10.md`.
+> **⚠️ The event-log paper was retired on 2026-08-28.** References to `EventLog §…` below are historical and no longer resolve. **The arithmetic constraints IC-1 to IC-12 are now conformance rows in [`Aequitas_Conformance.md`](../Aequitas_Conformance.md) §2**, which carries a label map; everything else it held is in Foundations. The archived paper is `99-archive/Aequitas_EventLog_v0.10.md`.
 
 
 **Status:** ✅ **Resolved for the material/energy half. Two new problems spun out (OP-23, OP-24).**
 **Version:** v3 — 2026-08-01 (v1 and v2 superseded same day, unreleased; see §10)
-**Register:** `Aequitas_Objections_v0.5.md` — A1 / B7
+**Register:** `Aequitas_Objections.md` — A1 / B7
 **Research:** `GLOSSARY.md#src-joint-production-allocation-problem` · `GLOSSARY.md#src-auditor-independence`
 **Amends:** Foundations §2.5 (row 1 **deleted**), §3.3, §3.4 (**narrowed**), §4, §10 · EventLog §7 (IC-10, IC-11, IC-12), §13
 **Stress-tested:** 2026-08-01, verdict *passes with changes* — changes applied in this version.

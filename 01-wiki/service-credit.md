@@ -1,5 +1,8 @@
 # Service Credit
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > ⚠️ **STALE — DO NOT LEARN THE SYSTEM FROM THIS PAGE.** It describes the pre-v0.3 *three credit types* model, which Foundations replaced. There is **one credit — time worked** — and production/service/enrichment are three *feedback channels*, not credit types, with no accounting boundary between them (Foundations §6). This page is kept only until it is rewritten (queued in `NEXT.md`); read [index](index.md) and Foundations §6 instead.
 
 > Credit for labor that produces no object — care, teaching, medicine, civil service. It converts not to holdings but to **responsibility and influence**.
@@ -43,4 +46,4 @@ Test any proposal against: *can a group with high service credit in one domain e
 
 ---
 *Status: contested — OP-1*
-*Source: `00-strategy/Aequitas_Foundations_v0.2.md` §4.5*
+*Source: `00-strategy/Aequitas_Foundations.md` §4.5*

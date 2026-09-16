@@ -1,5 +1,8 @@
 # Does the 1,380 h/yr anchor move now that a joint process's cost is not divided?
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > **Answered 2026-09-05.** Request `sr-20260904-recompute-the-1-380-h-yr-median-lifestyle-an`.
 > **Foundations §3.4a names this as unmeasured in its own text**, and says the direction is not known in advance.
 > **Method:** re-ran `track1_embodied_hours.py` and audited every Track for an allocation step.

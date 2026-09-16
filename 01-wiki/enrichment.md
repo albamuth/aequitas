@@ -1,5 +1,8 @@
 # Enrichment
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > ⚠️ **STALE — DO NOT LEARN THE SYSTEM FROM THIS PAGE.** It describes the pre-v0.3 *three credit types* model, which Foundations replaced. There is **one credit — time worked** — and production/service/enrichment are three *feedback channels*, not credit types, with no accounting boundary between them (Foundations §6). Non-convertibility now holds simply because feedback was never credit. This page is kept only until it is rewritten (queued in `NEXT.md`); read [index](index.md) and Foundations §6 instead.
 
 > A non-convertible social value signal for art, science, teaching, and discovery. Its function is to be **the channel by which people voluntarily direct their credit surplus.**
@@ -48,4 +51,4 @@ None of this is solved. Do not treat enrichment as settled.
 
 ---
 *Status: contested — OP-6, OP-8*
-*Source: `00-strategy/Aequitas_Foundations_v0.2.md` §4.6*
+*Source: `00-strategy/Aequitas_Foundations.md` §2.3 (the three categories), §4.5 (what enrichment covers)*

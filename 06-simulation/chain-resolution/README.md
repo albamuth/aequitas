@@ -1,5 +1,8 @@
 # chain-resolution
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 **If a joint process's cost is not divided, what does reading the chain more finely change — and do the books inflate?**
 
 The author ruling of 2026-09-03 withdrew the Foundations §3.4a split. **Every co-product now carries the whole cost of the process it came through, read against its own output mass.** This run answers the two questions that ruling raised.

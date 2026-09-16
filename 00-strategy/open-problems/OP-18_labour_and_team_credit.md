@@ -1,5 +1,8 @@
 # OP-18 — Labour & team credit (resolution note)
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > **⚠️ Note, 2026-09-04. The convention this paper resolved (α) with was withdrawn on 2026-09-03, and OP-18 stays closed.**
 > <!-- struck-ok: names the withdrawn convention in order to record that it was withdrawn -->
 > **This paper resolves (α) with a declared convention: *labour rides the process's material split*.** The split it rode was withdrawn when 36 honest methods came out **6.31×** apart (`06-simulation/method-spread/`). **Labour now needs no convention at all: every co-product carries all of the process's hours against its own mass, exactly as the energy does** — Foundations v0.40 §3.4a, Objections **B9**.

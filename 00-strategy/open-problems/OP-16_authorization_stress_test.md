@@ -1,5 +1,8 @@
 # Stress Test — Credit-Earner Authorization of Future Work
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > **Date:** 2026-08-01
 > **Mechanism proposed:** credit-earners register wants and authorize which future work is creditable — "like a bank approving a business loan." Four variants.
 > **Proposed as:** a solution to **OP-16** (the onerousness gap).
@@ -258,4 +261,4 @@ Why this survives A2 where a rate premium does not:
 
 ---
 
-*Related:* `00-strategy/Aequitas_Objections_v0.1.md` (OP-16, OP-19, OP-9, P4, P5, W1) · `GLOSSARY.md#src-participatory-economics` · `GLOSSARY.md#src-local-currency-experiments`
+*Related:* `00-strategy/Aequitas_Objections.md` (OP-16, OP-19, OP-9, P4, P5, W1) · `GLOSSARY.md#src-participatory-economics` · `GLOSSARY.md#src-local-currency-experiments`

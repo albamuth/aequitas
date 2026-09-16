@@ -1,5 +1,8 @@
 # Regulator Inversion
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > An EPA-like body stops being an adversary and becomes something businesses **actively want**, because it helps them lower the debit-cost of their products. Enforcement becomes consulting.
 
 ## What it is
@@ -39,4 +42,4 @@ The separation between *measuring* and *advising* must be specified. Linked dire
 
 ---
 *Status: settled (mechanism) / provisional (conflict-of-interest handling)*
-*Source: `00-strategy/Aequitas_Foundations_v0.2.md` §5.3*
+*Source: `00-strategy/Aequitas_Foundations.md` §5.3*

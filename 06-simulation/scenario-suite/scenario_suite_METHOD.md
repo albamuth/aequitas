@@ -1,5 +1,8 @@
 # Societal-Scale Scenario Suite — Method & Plan
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > **Status:** planned 2026-08-10. Five societal-scale simulations requested by the author.
 > **Anchored on:** the completed median-lifestyle result (`median_lifestyle_RESULTS.md`, ~1,600 h/adult·yr, ~½ foreign; footprint 12.4 t CO₂ / 19 t materials / 2.2 ha / 1,600 m³) and the built disparity-ceiling sim (`disparity_ceiling_sim.py` / `DISPARITY_CEILING.md`).
 > **Governing docs:** Foundations v0.11, Overview v0.8, Objections v0.12.

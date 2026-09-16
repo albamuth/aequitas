@@ -1,5 +1,8 @@
 # Arithmetic audits — results
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > **Read this instead of re-running.** From `python arithmetic_audits.py --test`, last verified 2026-08-24.
 > Full detail: [`AUDITS.md`](AUDITS.md). Every number as data: [`audits_inert/`](audits_inert/).
 

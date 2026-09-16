@@ -1,5 +1,8 @@
 # Allocation engine — turning a physical economy into per-product costs
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > **Status:** ✅ All four pieces built and green. Components C3 and OP-3; answers Objections §C tests 1 and 4.
 > **Results:** [`RESULTS.md`](RESULTS.md) · **Change history:** `CHANGELOG.md`
 

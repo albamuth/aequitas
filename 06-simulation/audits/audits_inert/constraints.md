@@ -1,8 +1,11 @@
 # The twelve constraints, stated in arithmetic
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 **Hand-written. Not generated.** Mathematics cannot be mechanically exported from an implementation, so this file is written by a person reading [`arithmetic_audits.py`](../arithmetic_audits.py) line by line. Where the code does something this page does not say, that is recorded in [`expected_verdicts.md` section 4](expected_verdicts.md#4-where-the-python-and-the-stated-mathematics-disagree) rather than smoothed over.
 
-**IC** means *integrity constraint*. The twelve are defined in `Aequitas_Conformance_v0.17.md` section 7. IC-1 to IC-9 are **log-side**: they read only the recorded events. IC-10 to IC-12 are **projection-side**: they also read a published process-energetics model, which is a set of chosen numbers that is not part of the log.
+**IC** means *integrity constraint*. The twelve are defined in `Aequitas_Conformance.md` section 7. IC-1 to IC-9 are **log-side**: they read only the recorded events. IC-10 to IC-12 are **projection-side**: they also read a published process-energetics model, which is a set of chosen numbers that is not part of the log.
 
 Every worked example below uses digits from [`fixture.json`](fixture.json). Every result was printed by a real run and is recorded in [`worked_arithmetic.json`](worked_arithmetic.json) and [`expected_verdicts.json`](expected_verdicts.json). No number on this page was typed from memory.
 

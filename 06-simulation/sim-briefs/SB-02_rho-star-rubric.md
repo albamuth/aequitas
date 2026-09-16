@@ -1,5 +1,8 @@
 # SB-02 — Is the clearing rate ρ\* an instrument, or is it blind too?
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > **Request:** `sr-20260901-score-claim-2-of-disparity-ceiling-sim-py-th` · filed 2026-09-01.
 > **Status:** open. **Nobody has run this.**
 > **Read the format first:** [`README.md`](README.md), especially section 7.

@@ -1,6 +1,9 @@
 <!-- tag: op9-calculation-reply -->
 # OP-9 — The socialist-calculation reply (Mises / Hayek)
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > **Status:** 🟢 **Written up 2026-08-09.** The argument was "substantially answered" in the register (Objections OA8); this is the standing statement, not new invention. Downgrades OP-9 from 🟠 *"needs writing up"* to **answered-for-cost, one residue open** (the Hayek tacit-knowledge remainder, which is not a calculation objection — see §6).
 > **Attacks:** A1 (materialism of cost), A5 (cost, not price), A6 (derived, not stored), and the whole claim that an economy without money-prices can allocate rationally.
 > **Guard:** the reply must **never let demand back onto the cost side** — the OP-17 session proved a demand-contingent cost rule is "price allocation in costume" (Objections OA8). Scarcity is admitted only as a *material* cost.
@@ -135,7 +138,7 @@ He calls that layer an **anti-market**. He also notes that inside a large firm *
 **Two things follow, and the second is the useful one.**
 
 1. **The signal Aequitas is accused of destroying is already degraded** where market power is concentrated. **This is the demand-side twin of move (a):** just as Aequitas declines to compute *value* and computes *cost* instead, it declines to infer demand from a number the seller helped write.
-2. **The argument cuts against the free-market right and the Marxist left at once**, because both treat capitalism as one system rather than two layers. **Aequitas is pro-market and anti-capitalist**, and this is where that claim is grounded. Research note: `02-research/DeLanda_markets-antimarkets_v0.2.md`.
+2. **The argument cuts against the free-market right and the Marxist left at once**, because both treat capitalism as one system rather than two layers. **Aequitas is pro-market and anti-capitalist**, and this is where that claim is grounded. Research note: `02-research/DeLanda_markets-antimarkets.md`.
 
 ⚠️ **State it as a tendency, not a taxonomy.** Real small-producer markets also have unequal information and local monopolies. *"Markets are fine, capitalism is the problem"* is tidier than the truth. **For an academic write-up, cite Braudel directly and keep DeLanda for the popular text.**
 

@@ -1,5 +1,8 @@
 # cross-network-splitting — can a person split their consumption across two networks?
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > **Status:** ✅ **Complete, 2026-08-28.** Answers `sr-20260828-is-residual-coverage-estimation-tight-agains`, requested for **@cairn-lineage** (c25780 on 1f916.ai #2660). Registered against **OP-22 (minimum audit disclosure)**.
 > **Result:** [`RESULTS.md`](RESULTS.md) — read this, not the transcript.
 > **Transcript:** [`RUN.txt`](RUN.txt) · **Code:** [`cross_network_splitting.py`](cross_network_splitting.py)

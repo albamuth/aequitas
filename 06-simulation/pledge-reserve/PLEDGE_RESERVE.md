@@ -1,5 +1,8 @@
 # Pledge Reserve — the contingent-reserve incentive for hazardous work
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 **Sim:** [`pledge_reserve.py`](pledge_reserve.py) · **Ruling:** session 2026-08-14 · **Status:** all 5 self-tests green
 **Bears on:** OP-16 (onerousness gap, hazard half) · OP-1 · P4 · C5 · C2 · Foundations §4.6/§4.6, §3.2, §3.7 · IC-8
 

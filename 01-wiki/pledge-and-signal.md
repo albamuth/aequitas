@@ -1,5 +1,8 @@
 # Pledge and Signal
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > The two ways credit-earners direct what gets made next. A **pledge** is a *permanent, non-revocable grant of debit-room*, spent from a lifetime allowance equal to earned credit; a **signal** is a free, unbacked "I want this." Together they are the demand side of the economy — with no prices, no planner, and no board.
 
 Aequitas keeps **cost** and **demand** strictly separate (see [material-flow-value](material-flow-value.md)): cost measures what a thing took; pledges and signals reveal who wants it. This page is the demand side.
@@ -145,7 +148,7 @@ This is the standard reply from economics, and it rests on three assumptions. **
 | **Demand is a fact the price reports.** | Demand is manufactured, at scale. That is what the whole advertising industry is for. |
 | **A price is therefore an honest reading of what people want.** | In a concentrated market the same firms set supply *and* work on demand. **The price partly reports its own producer.** |
 
-**This is not a new claim, and it is not a left-wing one.** Fernand Braudel's economic history separates two layers: **market towns**, where many small sellers meet and price settles from below, and above them a small number of large operators who set prices instead of taking them. [Manuel DeLanda's summary](https://nettime.org/Lists-Archives/nettime-l-9610/msg00025.html) of that layer is direct: capitalism *"has always engaged in anti-competitive practices, manipulating demand and supply in a variety of ways."* **He calls the upper layer an *anti*-market, and so does this project.** See `02-research/DeLanda_markets-antimarkets_v0.2.md`.
+**This is not a new claim, and it is not a left-wing one.** Fernand Braudel's economic history separates two layers: **market towns**, where many small sellers meet and price settles from below, and above them a small number of large operators who set prices instead of taking them. [Manuel DeLanda's summary](https://nettime.org/Lists-Archives/nettime-l-9610/msg00025.html) of that layer is direct: capitalism *"has always engaged in anti-competitive practices, manipulating demand and supply in a variety of ways."* **He calls the upper layer an *anti*-market, and so does this project.** See `02-research/DeLanda_markets-antimarkets.md`.
 
 > **So the objection assumes the price is a clean instrument. It is not. Aequitas is not replacing an honest demand signal with a worse one. It is replacing a signal that is partly written by the seller.**
 
@@ -205,4 +208,4 @@ That is a distribution question and it has a separate answer: a queue, a lottery
 
 ---
 *Status: settled (permanent grant of debit-room + contingent reserve, Foundations v0.14)*
-*Source: `00-strategy/Aequitas_Foundations_v0.19.md` §4.6, §4.6, §4.6, §4.5 · IC-8 and IC-9, now conformance row 9*
+*Source: `00-strategy/Aequitas_Foundations.md` §4.6 (pledges and signals), §4.5 (the lifetime pledging budget) · IC-8 and IC-9, now conformance row 9*

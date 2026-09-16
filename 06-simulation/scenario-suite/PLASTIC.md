@@ -1,5 +1,8 @@
 # The Labour Debt of Plastic — Q3 (plain-language companion)
 
+> **Version:** 0.1
+> **Date:** 2026-09-16
+
 > Companion to [`plastic_debt.py`](plastic_debt.py). First sim of the [scenario suite](scenario_suite_METHOD.md).
 > **Question:** what is the labour debt of plastic pollution (cleanup time per ton), and what does recycling cost?
 
