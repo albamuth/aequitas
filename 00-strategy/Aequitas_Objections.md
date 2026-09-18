@@ -1272,4 +1272,4 @@ The version-by-version change log (former §E) now lives in a separate file, rea
 
 ---
 
-*End of v0.31.*
+*End of v0.33.*

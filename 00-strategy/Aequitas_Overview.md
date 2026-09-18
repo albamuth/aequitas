@@ -714,4 +714,4 @@ What was deliberately dropped:
 
 *For the rigorous statement of everything above, with the arguments and the open problems in full: `00-strategy/Aequitas_Foundations.md`.*
 
-*End of v0.26.*
+*End of v0.27.*

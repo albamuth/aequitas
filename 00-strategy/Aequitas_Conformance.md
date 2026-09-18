@@ -475,4 +475,4 @@ Foundations §4.1 states it, and the **OP-22 ruling of 2026-08-25** makes it a r
 
 ---
 
-*End of v0.13.*
+*End of v0.17.*
