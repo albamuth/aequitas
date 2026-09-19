@@ -1,18 +1,10 @@
 <!-- tag: cnf-aequitas-conformance -->
 # Aequitas — Conformance Requirements
 
-> **Version:** 0.18 · **Date:** 2026-09-18
+> **Version:** 0.19 · **Date:** 2026-09-19
 > **Audience: implementers.** Anyone building a trust network.
 > **Companion:** [`Aequitas_Foundations.md`](Aequitas_Foundations.md) — the system itself, and the argument behind every row below. **Where the two differ, Foundations governs.**
-> **Version history is kept separately and is not published**, so this document carries only what is currently true.
 > **Two row numbers are retired and are never reused: the bare `17`, and `14c`.**
-> **New row 14e makes a joining person's declared span a record rather than an assertion.** §4.4 rebuilds a whole life, and each declared year opens `ρ·F·365` hours of consumption room while adding about 1,380 hours of debit. **Below `ρ·F` = 3.78 hours a day those swap over and a filer gains by deleting a year of their own life**, inside the band §5.5.3 calls workable. **The row names a date — the earliest the evidence allows — rather than a direction**, because which direction runs against the filer flips with the network's own floor.
-> **New row 10h gives a passage claim a keeper and a scope.** §3.4a's whole published rule for a passage was *"a binary fact off the plant's own flow sheet"*, and **no row owned it.** The claim is now published by the producer, and must reconcile against records made on a different path — energy bills, intake weights, output weights. **New row 4b states what subscribing discloses**: what a subscriber enters into the accounting is auditable by the network, and what they keep out was never in it. **Neither row claims a self-made record becomes independent by being readable.**
-> **Row 2c now carries the scope it was missing.** It governs debit an organisation's members caused **while acting for it**, not a member's own errand. **New row 2d states that a transport emission follows whoever held the fuel parcel and burned it**, and that it may never be tagged onto the goods the journey carried.
-> **Row 10e now says where a parcel's identity comes from, and what an implementation does without it.** A mix and a split are recorded events, and each creates the parcels it produces, so identity is never assumed. **A parcel with no such event behind it is a missing record and is caught by row 7, not tolerated as an unknowable fact.** **New row 10f states that a split divides by mass per dimension while a joint process divides nothing** — using the wrong one of those inflates a drawn-off quantity by the ratio of the whole to the part. **New row 10g requires a figure handed outward to carry the parcel's id and kind**, so a mismatch has somewhere to land instead of rendering as clean data.
-> **Row 15 now names the object it waits for. The leftover is held *explicitly unassigned* until an attribution witness binds a share of it to a named principal**, which is the state A4 gained on 2026-09-04. A producer joining supplies a witness; conservation arithmetic never does.
-> **Row 14 no longer requires a per-head slice of the leftover, and no longer tells a network to under-count the producers it cannot see. New row 14d requires an extent register to be published as unaudited.**
-> **Row 10a no longer divides a joint process's debit at all. Every co-product carries the whole process cost against its own output mass, so there is no method to publish and no basis, routing or boundary to choose. Rows 10c and 10d are repaired to match** — outputs no longer sum to their input, their **union** does, and a coarser reading is now a **ceiling** rather than an equal. **New row 10e requires a ledger walk to be a union over identified parcels rather than a sum**, which is what stops the books inflating once the division is gone.
 
 ---
 
@@ -474,7 +466,3 @@ Foundations §4.1 states it, and the **OP-22 ruling of 2026-08-25** makes it a r
 **A8 already names the always-creditable list as a capture surface** and leaves *which* activities a network credits to the network. **Row 3a does not touch that.** It fixes the outer boundary and leaves every choice inside it where A8 put it.
 
 > **⚠️ The honest limit. Enrichment is broad, so 3a is a weak filter rather than a tight one.** A network determined to credit something worthless can argue it is enrichment. **What the row rules out is the plain case** — crediting loyalty, crediting holding an asset, crediting being popular — **and those are the cases that turn a network into an issuer.** The rest of the defence is structural and written elsewhere: competing networks and ratio-based evaluation (Foundations §3.5), and public membership composition (row 16b, Foundations §3.3a).
-
----
-
-*End of v0.17.*

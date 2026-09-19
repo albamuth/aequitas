@@ -1,9 +1,8 @@
 <!-- tag: obj-aequitas-objections-register -->
 # Aequitas — Objections Register
 
-> **Version:** 0.35 · **Date:** 2026-09-18
+> **Version:** 0.36 · **Date:** 2026-09-19
 > **Tracks:** `Aequitas_Foundations.md` · `Aequitas_Conformance.md` · `OP-22_identity_not_disclosure.md` · `OP-27_parallel_implementation.md` · `OP-28_dark_production_and_the_residual_denominator.md` · `OP-26_coverage_and_closure.md` · `OP-18_labour_and_team_credit.md` · `OP-23_capital_and_pollution.md` · `OP-17_coproduct_allocation.md` · `06-simulation/allocation-engine/RECURSION_RESULTS.md` · `06-simulation/disparity-ceiling/DISPARITY_CEILING.md` · `06-simulation/scenario-suite/scenario_suite_METHOD.md`
-> **Version history & what each version superseded:** `00-strategy/Aequitas_Objections_CHANGELOG.md`.
 > **Purpose:** one place holding every serious objection to the theory, its source, the axiom it attacks, and its status.
 
 **This register is now the only ranked list of open problems.** Foundations v0.1 to v0.23 carried a summary of it as §10. **It was truncated on 2026-08-25 by author ruling** — a summary of the objections belongs here, not in the document that states the system. **Seven entries that existed only in Foundations v0.23 §10 were folded into the status board below**, so nothing was lost: OP-2, OP-3, OP-4, OP-7, OP-8 (reframed), OP-14 and OP-15.
@@ -1270,7 +1269,3 @@ Named so they are not silently skipped. ~~**Test 1 is the sharpest surviving tec
 ## Change history
 
 The version-by-version change log (former §E) now lives in a separate file, read only when needed: **`Aequitas_Objections_CHANGELOG.md`**.
-
----
-
-*End of v0.33.*

@@ -1,12 +1,9 @@
 <!-- tag: str-aequitas-overall-strategy -->
 # Aequitas — Overall Strategy
 
-> **Version:** 0.10 · **Date:** 2026-09-18
-> <!-- struck-ok: names the withdrawn convention in order to record that it was withdrawn -->
-> **This version stops reporting a rule Foundations withdrew on 2026-09-03.** Five places said OP-18 closed by a *declared convention — labour rides the material split*, and one said OP-17 split a joint process by measurement. **Neither is true.** A joint process's cost is not divided at all; every co-product carries the whole process cost against its own output mass, and **labour needs no convention** (Foundations §3.4a). **Both problems are still closed, and both closed the other way: by removing a division rather than by governing one.**
+> **Version:** 0.11 · **Date:** 2026-09-19
 > **Target:** A statement of the system, tested against scenarios, in ~3 months — with a conformance list an implementer can build against.
 > **Companion docs:** `Aequitas_Foundations.md` (axioms), `Aequitas_Objections.md` (register), `Aequitas_Conformance.md` (what an implementation must satisfy), `../NEXT.md` (task queue)
-> **Version history & what each version superseded:** `00-strategy/Aequitas_Strategy_CHANGELOG.md`.
 
 ---
 
@@ -237,7 +234,3 @@ This also answers the socialist-calculation critique pre-emptively: we don't arg
 ## Change history
 
 The version-by-version change log now lives in a separate file, read only when needed: **`Aequitas_Strategy_CHANGELOG.md`**.
-
----
-
-*End of v0.9.*
