@@ -29,15 +29,27 @@ A pledge is **not** a purchase, **not** a spend of your credit, and **not** a pr
 
 **A pledge need not involve an object at all.** Pledge two hours toward mowing a public verge; someone mows for an hour, shows proof, and earns an hour of credit — no object changed hands, no debit moved. A pledge simply **summons creditable work into being**.
 
-## The contingent reserve — over-pledging dangerous work
+## What a pledge names, and when it becomes room
 
-When a task attracts **more pledged hours than it costs**, the surplus is **not** a bonus to the doer and **not** spendable — that would be profit ([cost-not-price](cost-not-price.md)) and would let someone concentrate consumption. Instead it becomes a **contingent reserve**: earmarked, non-spendable room that pays out **only against a verified future cost caused by the task** — the doer's later injury or illness, a site's remediation resurfacing, third-party harm.
+> **A pledge names a person, or the criteria under which a person will be named.** Until a person is named it grants room to nobody. **Once a person is named the room is committed, consumable, and unchangeable.**
 
-- **Split by hours *on the task*** — the cover reaches whoever did *this* work, not whoever's been a co-op member longest.
-- **Causation by physical-trace** — a claim draws the reserve only if the harm traces to the task; diffuse/latent harm goes to a cohort convention.
-- **Buffer, not shield** — once the reserve is exhausted, residual task-caused debit reverts to the causer, which keeps the doer careful.
+| What it names | When it becomes room |
+|---|---|
+| **A person** — anyone, **including the pledger** | at once |
+| **A fund, cause, initiative or organisation** | only when distributed to named people |
+| **Criteria that will name a person** — *"whoever mitigates harm from this task"*, *"whoever a panel judges to have solved this"* | when the criteria name somebody; otherwise it lapses |
 
-This gives *hazardous* unwanted work a demand-gated incentive with no danger-pay and no rating authority — society de-risks the toxic-cleanup worker exactly as much as it pledges for the job. It does **not** help plain *boring* work (no causal tail to fund), which stays open under [[onerousness-gap|OP-16]]. Sim: `06-simulation/pledge-reserve/pledge_reserve.py`.
+**The budget is spent at pledge time in every row**, and an undistributed pledge lapses. **Where a pledge states no criteria, room goes to whoever did the named work, by hours worked** — A1 rules out the fund itself, A2 rules out any basis weighing one worker's hour above another's, and the [statistical-coverage](statistical-coverage.md) rule against dividing by a head count rules out an equal split.
+
+**Criteria may be any conditional thing, including a judging panel.** That is how an X-Prize works, and no rule written in advance could replace it. **The one condition is that criteria are published before the pledge is made.**
+
+### Over-pledging unwanted work
+
+**Pledge more for the jobs nobody wants, and that room goes to whoever does them.** Nobody's hourly credit changed ([non-fungibility](non-fungibility.md), A2) — what changed is how much room others chose to put behind them, which is demand deciding rather than a rate.
+
+**A pledge may carry conditions:** *"this part goes to whoever cleans up any harm this job causes within thirty years."* If nothing goes wrong, that part lapses and nobody's gate ever held it. **Note who that names — the mitigator, not necessarily the victim. Whoever writes the criteria decides.**
+
+> **This reaches boring work as well as dangerous work**, because a pledge can simply name whoever does the dull job. The withdrawn contingent reserve could not: only hazard leaves a causal tail for cover to attach to, which is why the tedium half of [[onerousness-gap|OP-16]] stayed open under it.
 
 ## What it's for
 
@@ -109,23 +121,15 @@ Credit-earners direct what gets worked on next. Two distinct instruments, distin
 
 ---
 
-## The contingent reserve, in full
+## The contingent reserve — withdrawn 2026-09-18
 
-> **Moved here from Foundations §4.6 on 2026-08-27, when §4, §5 and §6 were consolidated into one section. The rule itself stays in Foundations §4.6. This page carries the worked detail.**
+> **Author ruling. It was a trust network's ruling, not this system's.** Foundations §4.6 withdrew its own version and keeps the case only as a worked example of what a network decides.
 
-<!-- tag: fnd-s6-4c -->
-### 6.4c The contingent reserve — how over-pledging incentivises hazardous work
+**What stopped being foundational.** Non-consumable surplus · the pro-rata-by-task-hours split · the physical-trace causation test · the cohort convention for diffuse harm · buffer-not-shield. **Each is now a condition a network may write into a pledge's criteria**, and none is imposed here.
 
-Because pledges are permanent, a task can attract **more pledged hours than it costs**. The surplus is **not** a payment to the doer and is **not** consumable — treating it as spendable would be a scarcity price (profit), which A5 forbids, and would re-open a channel for concentrating consumption advantage. Instead the surplus becomes a **contingent reserve**: earmarked, non-spendable debit-room that activates **only against a verified future cost causally traceable to the task** — the doer's later injury or illness, site remediation that resurfaces, third-party harm. This is *any* task-caused cost, not only the doer's.
+**Why it was not foundational.** The §2.6 dial test: the accounting is identical whether or not a network runs a reserve. **Conservation holds, the gate runs, the leftover rule runs.**
 
-- **Pledge shares split pro-rata by hours *on the task*** (a doer's share of a pledge = their task-hours ÷ total task-hours), so the cover reaches whoever actually did *this* work — not, via a whole-co-op-history denominator, whoever has been a member longest (which would be the P4 seniority-skim).
-- **Causation is decided by the physical-trace test** (§3.4a / OP-17): a claim draws the reserve only if the harm left a trace linking it to the task; diffuse or latent harm with no individual trace is handled by a **cohort/actuarial convention** (the §4.4 residual rule), never an open claim.
-- **The reserve is a buffer, not a shield: overflow reverts to the causer.** Once a reserve is exhausted, residual task-caused debit falls back on the doer/cooperative under the ordinary rules (§3.2 possession, §3.7 remediation). Without this, third-party/environmental cover would licence carelessness; with it, the care incentive survives.
-- **An abandoned task's pledges are burned** — the pledger's finite budget is spent for nothing, which is what disciplines frivolous pledging. Unused reserve on a completed task likewise never becomes consumable and never reverts; it lapses. **This resolves C5's reversion question in the negative: nothing reverts.**
-
-**What it buys.** Onerousness has two halves. This mechanism gives the *hazardous* half a demand-gated incentive **without** wage premium, rate-scaling, or a rating authority: society de-risks the toxic-cleanup worker exactly to the extent it pledges for the work, and the danger internalises as the size of the reserve the task must attract. It leaves the *tedium/indignity* half open (dull but safe work generates no causal tail, so no reserve, no incentive) — that remainder stays with OP-16. Because the reserve only ever *cancels* a task-caused cost and never *adds* spendable room, it creates no consumption advantage. Sim: `06-simulation/pledge-reserve/pledge_reserve.py` (clears the job at coverage ≈ cover-the-tail; overflow-reverts preserves care; integrity rests on physical-trace causation).
-
----
+**The sim that tested it**, `06-simulation/pledge-reserve/pledge_reserve.py`, now tests one example among many rather than a rule.
 
 ## Who holds the demand lever, in full
 
@@ -161,7 +165,7 @@ This is the standard reply from economics, and it rests on three assumptions. **
 | System | How concentrated the demand lever is |
 |---|---|
 | Money | Top-tail wealth reaches about **10⁶ ×** the median (SCF 2022 + Forbes, §5.5) |
-| Aequitas | Pledging power cannot exceed **24 ÷ F ≈ 2.4 ×** at a 10-hour floor — and that is an **absolute maximum nobody reaches.** A very hard working life reaches about **1.6 ×** (§5.5.5) |
+| Aequitas | Pledging power per day lived cannot exceed **24 ÷ F ≈ 2.4 ×** at a 10-hour floor — and that is an **absolute maximum nobody reaches.** A very hard working life reaches about **1.6 ×** (§5.5.5). **This bounds the say over what gets made, not what anybody consumes** |
 
 **That is the argument in one line: the demand lever moves from a distribution with no upper bound to one bounded at about 2.4 ×.** Every living person holds some, because self-care credits everyone (§4.5).
 
@@ -189,7 +193,7 @@ They tell their device. Under presets they set earlier, it pledges **0.5 h** tow
 | The artist's next work — materials and travel | **300 h** |
 | Surplus | **200 h** |
 
-**The surplus does not become spendable.** Under §4.6 it becomes an earmarked contingent reserve, and unused reserve lapses. **Nobody is paid a bonus for being liked.**
+**The surplus is room the artist can use**, unless the pledgers attached conditions to it. **So somebody well-liked can end up with a lot of room, and Aequitas does not prevent it** (§5.5.5). What that room cannot do is earn: it cannot be lent at interest, rented out, charged for, or used to hire anybody.
 
 > **⚠️ A design point that matters, found while working these numbers.** A **flat rate per like** does not discipline anything. At 0.1 h a like, a person earning 5,450 h a year could give **54,500 likes a year** before their budget bound. **The sound preset is a share of a budget:** *this like costs (my art budget) ÷ (likes I give this period)*. Allocate 50 h a year and give 500 likes, and each is 0.1 h; give 5,000 likes and each is 0.01 h. **It normalises itself.** A network offering the flat preset is offering a broken one.
 
@@ -207,5 +211,5 @@ That is a distribution question and it has a separate answer: a queue, a lottery
 **Full statement of the reply, including the Mises and Hayek arguments:** `00-strategy/open-problems/OP-9_calculation_reply.md`.
 
 ---
-*Status: settled (permanent grant of debit-room + contingent reserve, Foundations v0.14)*
+*Status: settled (Foundations v0.47 — a pledge names a person or the criteria that will name one; committed room is consumable; the contingent reserve is withdrawn)*
 *Source: `00-strategy/Aequitas_Foundations.md` §4.6 (pledges and signals), §4.5 (the lifetime pledging budget) · IC-8 and IC-9, now conformance row 9*

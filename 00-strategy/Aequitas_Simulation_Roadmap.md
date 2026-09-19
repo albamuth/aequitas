@@ -33,7 +33,7 @@ These are the system. They are the same in every scenario, and a scenario that n
 - Standing is **derived from an append-only event log**, never stored (A6).
 - **Debit is a vector** — mass, energy, labour-hours, land-area-years, water — collapsed only on demand, and **divided per dimension before collapsing** (§3.2a).
 - **Property debit** splits into dischargeable material and holding-time-permanent creation cost (§3.2, §4.5). **Consumption and pollution debit is permanent and stays on the causer** (§3.2b).
-- The gate `D ≤ ρ·C` is a **ratio re-checked at each event**, evaluated at transaction time (§3.3, §5.5).
+- The gate `D ≤ ρ·(C + P)` is a **ratio re-checked at each event**, evaluated at transaction time (§3.3, §5.5).
 - **Pledges** are permanent, backed 1:1 by lifetime earned credit (IC-8), with surplus becoming a non-spendable contingent reserve (§4.6).
 - **Pollution weight floats with the ambient stock** above the natural-remediation baseline (§3.3).
 - **Retroactive re-weighting**: improve a constant, and every affected record recomputes (§3.3).
@@ -123,7 +123,7 @@ The decomposition that does work:
 
 The two, both already computed and both cheap to check:
 
-1. **The disparity ceiling.** At `F = 10 h`, equal age, the ratio between the highest and lowest cumulative consumption must come out at **2.40×**, and it must stay 2.40× across every ρ from 1 to 3. *(From `disparity_ceiling_sim.py`, N = 200,000.)*
+1. **The disparity ceiling.** At `F = 10 h`, equal age, the ratio between the highest and lowest **lifetime pledge budget per day lived** must come out at **2.40×**, and it must stay 2.40× across every ρ from 1 to 3. *(From `disparity_ceiling_sim.py`, N = 200,000.)* **⚠️ Restated 2026-09-18: this is not a check on consumption.** Consumption is gated by `D ≤ ρ·(C + P)` and committed pledged room has no per-account limit (Foundations §5.5.5).
 2. **The clearing rate.** Under the US production method, the market-clearing ρ must land near **1.20**, with the median person reaching about **0.92** of their desired lifestyle and roughly **35%** of people held below their wants. *(From `rho_sweep.py`.)*
 
 **If the new kernel cannot re-derive those numbers, it is wrong, and no result it produces afterwards is worth reading.** They cost nothing to check and they are unforgiving.
@@ -138,7 +138,7 @@ The two, both already computed and both cheap to check:
 
 | Step | What | Done when |
 |---|---|---|
-| **1** | **The kernel**, with a toy economy and one period. Agents, event log, debit vector, credit accrual, the gate, the §5.5 assertions. | It reproduces **2.40× at a 10-hour floor** and **ρ* ≈ 1.20**, and the floor sweep tracks `24/F`. |
+| **1** | **The kernel**, with a toy economy and one period. Agents, event log, debit vector, credit accrual, the gate, the §5.5 assertions. | It reproduces **2.40× at a 10-hour floor** on **pledge budgets per day lived**, and **ρ\* ≈ 1.20**, and the floor sweep tracks `24/F`. **⚠️ `06-simulation/statera/` was retired on 2026-09-18** — it encoded the withdrawn pledge rule. A successor kernel is unbuilt. |
 | **2** | **Periods.** Everything re-evaluated per period, credit accruing, stocks drawing down, the gate re-checked. | A ten-period run holds the invariants and the bound stays at `24/F` for whatever floor the scenario set. |
 | **3** | **The scenario config layer.** Dials, shocks-at-period-*t*, and a recorder. | Any of the author's eight is expressible as a config file **with no new code**. |
 | **4** | **The outside world plug.** Money economy, gift economy, second network with different dials, and a boundary agents cross. | Adoption and floor-shopping are both runnable. |

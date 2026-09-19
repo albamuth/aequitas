@@ -69,7 +69,7 @@ Sorting them apart dissolves three of the four classes.
 
 1. The fake credit is negated. **C falls.**
 2. **D does not.** They really did take the things.
-3. `D ≤ ρ·C` now fails. **They cannot make discretionary purchases.**
+3. `D ≤ ρ·(C + P)` now fails. **They cannot make discretionary purchases.**
 4. **Selling restores the ratio** — property debit is dischargeable on transfer (§3.2), so handing goods on lowers *D*.
 
 **Nobody imposes a penalty. The books are simply correct, and being correct is the penalty.** Essentials are untouched throughout — §5.5.4's backstop reaches non-essentials only, and it does so for the fraudster on exactly the terms it does for anyone mis-measured.

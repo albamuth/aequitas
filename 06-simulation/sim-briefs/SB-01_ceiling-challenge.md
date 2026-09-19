@@ -17,7 +17,9 @@
 
 ## 2. What depends on it
 
-**Foundations §5.5.5** states the disparity ceiling: *inside any one trust network's books, the ratio between the largest and the smallest credit **per day lived** cannot exceed `24 ÷ F`.* At a ten-hour floor that is **2.4×**, against money's spread of roughly **10⁶×**.
+**Foundations §5.5.5** states the disparity ceiling: *inside any one trust network's books, the ratio between the largest and the smallest lifetime **pledge budget** per day lived cannot exceed `24 ÷ F`.* At a ten-hour floor that is **2.4×**, against money's spread of roughly **10⁶×**.
+
+> **⚠️ Restated 2026-09-18. The bound is over the say in what gets made, not over consumption.** Consumption is gated by `D ≤ ρ·(C + P)`, and committed pledged room `P` has no per-account limit. **A challenge that shows one person consuming beyond `24 ÷ F` times a floor-only life is not a counter-example** — Foundations §5.5.5 says so. **The target is a construction that gives one account a pledge budget per day lived beyond `24 ÷ F`.**
 
 **It is the most-quoted result this project has.** If a construction exists, the ceiling is not a ceiling.
 

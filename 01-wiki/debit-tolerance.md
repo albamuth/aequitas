@@ -3,7 +3,7 @@
 > **Version:** 0.1
 > **Date:** 2026-09-16
 
-> **A trust network lets a person consume while `D ≤ ρ·C`. That is the consumption gate, and it has two dials: the floor `F`, and the tolerance ρ.** The floor is credit for work a person really did. It is not an allowance, and nothing is issued to anybody.
+> **A trust network lets a person consume while `D ≤ ρ·(C + P)`. That is the consumption gate.** `P` is committed pledged room — hours others pledged to this person by name (§4.6). **It has two dials: the floor `F`, and the tolerance ρ.** The floor is credit for work a person really did. It is not an allowance, and nothing is issued to anybody.
 
 ## The words this page uses
 
@@ -11,7 +11,7 @@
 |---|---|
 | **`C`** | A person's credit — every hour of their life the books have recorded as work |
 | **`D`** | A person's debit — what their consumption is currently reckoned to cost, in hours |
-| **The gate** | `D ≤ ρ·C`, checked at the moment of each transaction |
+| **The gate** | `D ≤ ρ·(C + P)`, checked at the moment of each transaction |
 | **`F`**, the floor | The hours a day a network counts as the work of keeping a human being alive |
 | **ρ** ("rho"), the tolerance | The multiplier in the gate. At ρ = 1.2 a person may carry debit up to 1.2 times their recorded credit |
 | **`E`** | What a year of essentials commands, in hours of other people's labour |
@@ -41,7 +41,7 @@
 
 **A network at `F` = 10 h/day and ρ = 1.2. Two people, both aged 40.** A median lifestyle commands about **1,380 hours** of other people's labour a year.
 
-| | Credit `C` | Debit `D` | `D ÷ C` | Room left, `ρ·C − D` |
+| | Credit `C` | Debit `D` | `D ÷ C` | Room left, `ρ·(C + P) − D`, at `P` = 0 |
 |---|--:|--:|--:|--:|
 | **A — stays alive, and works 1,000 h a year** | 40 × (3,650 + 1,000) = **186,000 h** | 40 × 1,380 = **55,200 h** | **0.30** | **168,000 h** |
 | **B — stays alive, works nothing, consumes the same** | 40 × 3,650 = **146,000 h** | **55,200 h** | **0.38** | **120,000 h** |

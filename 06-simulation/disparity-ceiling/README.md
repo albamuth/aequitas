@@ -46,4 +46,4 @@ The arithmetic is written out in [`../audits/audits_inert/bonus_sims.md`](../aud
 
 ## What depends on this
 
-The Statera kernel has to re-derive both headline numbers before any new scenario runs — see [`../statera/RESULTS.md`](../statera/RESULTS.md). It does, exactly.
+The Statera kernel has to re-derive both headline numbers before any new scenario runs — see [`../99-superseded/statera/RESULTS.md`](../99-superseded/statera/RESULTS.md). It does, exactly.

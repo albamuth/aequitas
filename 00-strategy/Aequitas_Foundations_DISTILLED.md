@@ -9,8 +9,8 @@
 >
 > **Regenerate with:** `python bin/distill.py`
 
-> **Source:** [`Aequitas_Foundations.md`](Aequitas_Foundations.md) · **version 0.46**
-> **Size:** 123,802 bytes, from 252,495 — **49% of the source**
+> **Source:** [`Aequitas_Foundations.md`](Aequitas_Foundations.md) · **version 0.47**
+> **Size:** 129,843 bytes, from 263,892 — **49% of the source**
 
 **What was kept:** every heading, every rule, every table, and the stated result of every worked
 example. **What was dropped:** the explanation prose between them.
@@ -80,7 +80,7 @@ example. **What was dropped:** the explanation prose between them.
 <!-- tag: fnd-s0 -->
 ## 0. The One-Sentence Theory
 > **Aequitas is a universal accounting of material flows.** Every credit and every debit is a record of matter and energy moving through the world, attributable to the people who caused the movement. **Cost is nothing other than this.**
-> **On the credit side, the substance is *time* — and time, not effort**. A credit records *time a human spent*, and the conceptual leap Aequitas asks of a reader is to see time itself as the finite thing being spent — like money is "spent" today, except that time is possessed by every person in exactly equal measure (24 hours a day) and can be neither hoarded, lent, nor transferred (A3 (non-fungibility)). This is the deep reason Aequitas produces a **bounded** inequality where money produces an unbounded one: money accumulates without limit; time structurally cannot — you get 24 hours a day and no more, ever, and you cannot buy anyone else's. Effort, hazard, and skill are real differences between workers, but they resolve as *material* costs (A2 (time as measure)), never as a time-multiplier. **Because the unit of account is an equally-distributed, non-transferable resource, the *engine* of a bounded inequality is the arithmetic itself, not any rule that polices it.** *(The exact bound, though, is a **conditional** result, and it is an **absolute maximum rather than an expected spread**. It depends on the value a network sets for its floor, on whether that network credits a child's learning time, and on fraud not manufacturing hours; see §5.5.5. **A very hard working life reaches about 1.6×, not 2.4×.** Earlier drafts overstated it as a flat arithmetic certainty.)*
+> **On the credit side, the substance is *time* — and time, not effort**. A credit records *time a human spent*, and the conceptual leap Aequitas asks of a reader is to see time itself as the finite thing being spent — like money is "spent" today, except that time is possessed by every person in exactly equal measure (24 hours a day) and can be neither hoarded, lent, nor transferred (A3 (non-fungibility)). This is the deep reason Aequitas produces a **bounded** inequality where money produces an unbounded one: money accumulates without limit; time structurally cannot — you get 24 hours a day and no more, ever, and you cannot buy anyone else's. Effort, hazard, and skill are real differences between workers, but they resolve as *material* costs (A2 (time as measure)), never as a time-multiplier. **Because the unit of account is an equally-distributed, non-transferable resource, the *engine* of a bounded inequality is the arithmetic itself, not any rule that polices it.** *(The exact bound, though, is a **conditional** result, and it is an **absolute maximum rather than an expected spread**. It depends on the value a network sets for its floor, on whether that network credits a child's learning time, and on fraud not manufacturing hours; see §5.5.5. **A very hard working life reaches about 1.6×, not 2.4×.** **And the bound is over the say in what gets made, not over what anybody consumes** — pledges grant consumable room that no per-person rule limits, which §5.5.5 states.)*
 ## 1. Axioms
 > **Each axiom below is a definition and nothing else.** What follows from it, why it holds, and what it rules out are in §2 onward, and each axiom says where to look. **An axiom that argues for itself is doing another section's job.**
 ### A1 (materialism of cost)
@@ -259,6 +259,8 @@ example. **What was dropped:** the explanation prose between them.
 | **The verification rung** — how hard the network checks a claim | §4.3 |
 | **The list of always-creditable activities** — inside the boundary §2.3 fixes | §2.3 |
 | **The size of the network** | §4.0 |
+| **Who may consent to a property transfer** — and so who carries what a child consumes | §4.6, §5.5.7 |
+| **How a service's cost is attributed** — which treatments a person carries, and what an unresolved case does | §2.2, §4.7 |
 #### What is out of scope, explicitly
 | Out of scope | Whose question it is |
 |---|---|
@@ -275,12 +277,15 @@ example. **What was dropped:** the explanation prose between them.
 > **A person's ledger is two numbers, side by side.**
 > **`C`, their credit — every hour of their life the books have recorded as work.**
 > **`D`, their debit — every hour their consumption is currently reckoned to cost, once the bundle of physical quantities is converted at today's weightings.**
+> **`P`, their committed room — every hour other people have pledged to them by name.**
+> **`D ≤ ρ·(C + P)`**
 ##### An example, with the numbers
-| | Credit `C` | Debit `D` | `D ÷ C` | Room left, `ρ·C − D` |
+| | Credit `C` | Committed room `P` | Debit `D` | Room left, `ρ·(C + P) − D` |
 |---|---|---|---|---|
-| **A — stays alive, and works 1,000 h a year** | 40 × (3,650 + 1,000) = **186,000 h** | 40 × 1,380 = **55,200 h** | **0.30** | **168,000 h** |
-| **B — stays alive, works nothing, consumes the same** | 40 × 3,650 = **146,000 h** | **55,200 h** | **0.38** | **120,000 h** |
-**Neither person's numbers ever went down.** A's extra work did not cancel A's consumption. **It widened the gap between two figures that both only grow**, and both people sit far inside the gate.
+| **A — stays alive, and works 1,000 h a year** | 40 × (3,650 + 1,000) = **186,000 h** | 0 | 40 × 1,380 = **55,200 h** | **168,000 h** |
+| **B — stays alive, works nothing, consumes the same** | 40 × 3,650 = **146,000 h** | 0 | **55,200 h** | **120,000 h** |
+| **C — like B, and 300 people have pledged 100 h each to them** | **146,000 h** | **30,000 h** | **55,200 h** | **156,000 h** |
+**Nobody's numbers ever went down.** A's extra work did not cancel A's consumption. **It widened the gap between figures that only grow.** C's credit did not move either — three hundred people spent their own lifetime pledge budgets, permanently, and got nothing back (§4.6).
 **§3.5 says why the two figures can never be added into one and why the books must never balance.** The rest of §3 is the machinery that produces them.
 ### 3.1 Structure — an event log, not a balance
 #### What never goes in the log: financial instruments
@@ -358,7 +363,7 @@ example. **What was dropped:** the explanation prose between them.
 | Total member hours | 10 × 2,000 = **20,000 h** |
 | Each member's share of the hours | 2,000 ÷ 20,000 = **10%** |
 | Each member's share of the debit | 10% × 24,000 = **2,400 h** |
-**Now close the co-operative and open a new one with the same ten people.** Each member still carries 2,400 h. Repeat the year, and each carries 4,800 h. **After ten rounds each member carries 24,000 h, and their own gate `D ≤ ρ·C` begins to bind.** The count never resets.
+**Now close the co-operative and open a new one with the same ten people.** Each member still carries 2,400 h. Repeat the year, and each carries 4,800 h. **After ten rounds each member carries 24,000 h, and their own gate `D ≤ ρ·(C + P)` begins to bind.** The count never resets.
 #### Two boundaries this rule does **not** cross
 | Not covered | Which rule covers it | Why they do not collide |
 |---|---|---|
@@ -369,7 +374,7 @@ example. **What was dropped:** the explanation prose between them.
 > **This convention also closes the residue §3.4a used to leave open** — apportioning a jointly-*caused* debit across a team. The two questions have the same shape and have the same answer. **The check was run against a metered delivery tailpipe on 2026-09-09**, which is the hardest form of the case, because the flow is measured exactly and one member's hands are on the vehicle. *(The case was put by @cairn-lineage, c48695, reasoning from the axioms with no access to §3.4a's open list.)*
 ### 3.3 Retroactive re-weighting
 > **A flow is a *pollutant* only above the rate at which the natural world remediates it unaided.**
-> **The transaction-time rule.** Because figures move, the gate must not. **`D ≤ ρ·C` is evaluated at the moment of the transaction.** A later re-weight, re-split, or coverage revision changes **future** debit-room; it never retroactively invalidates a completed act.
+> **The transaction-time rule.** Because figures move, the gate must not. **`D ≤ ρ·(C + P)` is evaluated at the moment of the transaction.** A later re-weight, re-split, or coverage revision changes **future** debit-room; it never retroactively invalidates a completed act.
 >
 > Without this, a dynamic ledger implies retroactive liability — a revision could make a past purchase an offence — and no one should adopt a system that does that. Re-weighting corrects *the record of what things cost*; it does not reopen *what people were permitted to do* under the record as it then stood.
 ### 3.3a Who checks the science — the problem, and whose problem it is
@@ -584,7 +589,7 @@ example. **What was dropped:** the explanation prose between them.
 | **Estimate** | A figure computed from a published method, where no direct record exists. |
 | **Record** | A figure taken from an observation or an attestation. **A record always beats an estimate** (§4.4). |
 | **The floor**, written `F` | The number of hours a day a network counts as the work of keeping a human being alive. **The network chooses which activities count and how many hours each takes** (§5.5.1). |
-| **ρ** ("rho") | The network's debit tolerance — the multiplier in the consumption gate `D ≤ ρ·C`, defined in §3.0. |
+| **ρ** ("rho") | The network's debit tolerance — the multiplier in the consumption gate `D ≤ ρ·(C + P)`, defined in §3.0. |
 | **IC-7** | The integrity check that stops any account claiming more than 24 hours of activity in 24 hours. |
 #### Three facts that shape everything below
 #### What this section covers
@@ -620,7 +625,7 @@ example. **What was dropped:** the explanation prose between them.
 | Credit recorded for that Monday | 8 + 4 = **12 hours** | 8 + 10 = **18 hours** |
 **Both figures are correct.** Each network read the same two physical facts, eight hours worked and one human alive, through its own settings.
 > **The two figures cannot be added, and §4.2 says why.** They come from different weighting models, so they are not in the same unit. **No account holds 30 hours**, and IC-7 was not breached, because IC-7 applies to each account on its own.
-**A purchase clears against one set of books only.** If the seller accepts Network A, the gate `D ≤ ρ·C` is checked against A's figures and the event is recorded in A's log. **Network B never sees it.** The same purchase may clear on one network and be refused on the other, because the two use different floors and different values of ρ.
+**A purchase clears against one set of books only.** If the seller accepts Network A, the gate `D ≤ ρ·(C + P)` is checked against A's figures and the event is recorded in A's log. **Network B never sees it.** The same purchase may clear on one network and be refused on the other, because the two use different floors and different values of ρ.
 **Where a network's records are partial it publishes a coverage figure saying so, and where a subscriber leaves activity undisclosed the network estimates it and errs against them** (§4.4). **The gap is measured and declared rather than hidden.**
 > **The hardest case for rule 1 is a pair of identical twins on the lowest rung of checking, deliberately engineering the confusion. The arithmetic refuses it.** IC-7 caps an account at 24 hours of activity in 24 hours, so two twins faking one account reach 34 hours a day against 36 hours honest. **They lose 730 hours a year and gain nothing**, because twins sharing a household share the goods either way. Worked in full, together with the cross-network case: [`OP-22_identity_not_disclosure.md`](open-problems/OP-22_identity_not_disclosure.md).
 ### 4.2 It decides what counts as evidence, and publishes it
@@ -836,11 +841,39 @@ example. **What was dropped:** the explanation prose between them.
 | Rate | **A finite lifetime budget, equal to lifetime earned credit, spent once** | Many per hour earned, or unbounded |
 | Permanence | **Permanent and non-revocable** | — |
 | Looks like | Crowdfunding, commissioning a task, choosing a GP | Likes, ratings, applause |
+##### What a pledge names, and when it becomes room
+> **A pledge names a person, or it names the criteria under which a person will be named.**
+>
+> **Until a person is named the pledge is uncommitted, and it grants room to nobody.**
+> **Once a person is named the room is committed, consumable, and unchangeable.**
+| What the pledge names | When it becomes room |
+|---|---|
+| **A person** — anyone, **including the pledger** | **At once** |
+| **A fund, a cause, an initiative, an organisation** | **Only when it is distributed to named people.** Until then it sits in nobody's gate |
+| **Criteria that will name a person** — *"whoever mitigates harm from this task"*, *"whoever a panel judges to have solved this"* | **When the criteria name somebody.** If they never do, it lapses |
+> **The one condition: criteria are published before the pledge is made.** §4.2 already requires a network to publish its evidence rules before anyone joins, and A8 already requires it to publish what it runs. **A pledger choosing a fund is choosing a published rule**, and a fund that changes its criteria after collecting pledges is visible on a public pledge ledger (§4.7).
+##### A pledge is an act, and it requires consent
+> **A budget cannot be manufactured.** It equals credit the pledger earned, and IC-7 caps an account at 24 hours of activity in 24 hours. **To hand somebody a million hours of room you need real, verified humans who each lived a life.** So concentration of room is bounded by the population and nothing else, which §5.5.5 states.
 #### Everyone alive holds some of this, simply by being alive
 #### Recording is never gated. Verification decides when credit counts
 ##### For goods, the hand-off is the verification
 #### When a task attracts more pledges than it costs
-> **The surplus becomes an earmarked reserve that activates only against a verified future cost traceable to that task** — the doer's later injury or illness, remediation that resurfaces, harm to a third party.
+##### An example, with the numbers
+**A toxic cleanup. 200 people pledge 50 hours each, under criteria published before anybody pledged.**
+| | Hours |
+|---|--:|
+| Pledged in total | 10,000 |
+| *The task's own cost, to whoever does it, by hours worked* | 6,000 |
+| *The rest, to whoever mitigates any harm this task causes within 30 years* | 4,000 |
+| When | What happens | Whose gate |
+|---|---|---|
+| **Year 1** | Three workers do the cleanup, 2,000 h each | **6,000 h committed**, 2,000 each. Consumable and unchangeable |
+| **Year 12** | A worker falls ill. A clinic treats them | **4,000 h commits to the clinic's staff** — the mitigator, not the victim |
+| **Year 30, and no harm arose** | Nothing triggered the second criterion | **Nobody's, ever.** It lapses |
+**The pledgers spent 10,000 hours of budget on the day they pledged, in every branch.** What varies is who ends up named.
+**Note who the second criterion names.** It does not have to be the injured party. **Whoever writes the criteria decides**, and a network that wants cover to reach the victim writes it that way instead.
+**What this buys.** Onerousness has two halves. **Society de-risks the toxic-cleanup worker exactly to the extent it pledges for the work**, with no wage premium, no rate-scaling and no rating authority. **And the tedium half is reachable now too**, because a pledge can simply name whoever does dull work. That is a change from the earlier rule, under which only hazard left a causal tail for cover to attach to.
+> **A2 is untouched.** Room is not credit. **A person doing filthy work is still credited one hour per hour** (A2). What changes is how much room other people choose to grant them, **which is demand deciding rather than a rate.**
 #### Why a pledge is a better demand signal than a price
 | The assumption | What is actually the case |
 |---|---|
@@ -908,7 +941,7 @@ example. **What was dropped:** the explanation prose between them.
 |---|---|
 | **The floor**, written `F` | The hours a day a trust network counts as the work of keeping a human being alive. |
 | **Trust network** | The organisation that keeps the books and sets `F` for its own subscribers (§4.0). |
-| **ρ** ("rho") | The network's debit tolerance. The multiplier in the consumption gate `D ≤ ρ·C` (§3.5). |
+| **ρ** ("rho") | The network's debit tolerance. The multiplier in the consumption gate `D ≤ ρ·(C + P)` (§3.5). |
 | **`C`** | A person's cumulative credit — the hours of their life the books have recorded as work. |
 | **`D`** | A person's cumulative debit — the material and energy the books have recorded against them. |
 > **The floor is credit for time a person spends on the activities their trust network counts as essential to staying alive.**
@@ -950,9 +983,9 @@ example. **What was dropped:** the explanation prose between them.
 | 4 h/day | 1,752 h | **1.27×** |
 | 8 h/day | 3,504 h | **2.54×** |
 | 10 h/day | 4,380 h | **3.17×** |
-> **The gate then stops binding on almost everybody.** `D ≤ ρ·C` still holds, but it is not the thing deciding who gets what. **Where the economy can actually deliver that much, this is abundance and it is the intended end state** (§3.5, Q6). **Where it cannot, physical shortage is decided at the point of distribution instead — by a queue or a lottery** (§3.4a, §4.6) — **and the accounting has stopped doing the work it was set up to do.**
+> **The gate then stops binding on almost everybody.** `D ≤ ρ·(C + P)` still holds, but it is not the thing deciding who gets what. **Where the economy can actually deliver that much, this is abundance and it is the intended end state** (§3.5, Q6). **Where it cannot, physical shortage is decided at the point of distribution instead — by a queue or a lottery** (§3.4a, §4.6) — **and the accounting has stopped doing the work it was set up to do.**
 ##### The band, measured
-> **The band exists at every floor from 1 to 14 hours a day, and it never closes. What binds it is capacity, not affordability.**
+> **The band exists at every floor from 1 to 14 hours a day, and with no pledging it never closes. What binds it is capacity, not affordability.**
 | `F` | ρ*(`F`) | `E_max` | As a multiple of a median **American** lifestyle |
 |---|---|---|---|
 | **2 h/day** | 3.70 | 2,701 h/yr | **1.96×** — the tightest floor measured |
@@ -966,14 +999,25 @@ example. **What was dropped:** the explanation prose between them.
 | German or Japanese | 8.83 | **88,196** | **0.0%** |
 | Spanish | 7.59 | **102,629** | **0.0%** |
 > **Under the American method the envelope delivers less than people want, so the gate rations and about a third are held back. Under the German, Japanese or Spanish method the same envelope delivers more than everyone wants, the gate never binds, and nobody is held back at all.**
+> **⚠️ The band was computed in published ρ with no pledge term, and the pledge term halves its upper edge.** Committed pledges can double a network's gate (§4.6), so a network's **effective** tolerance runs to `2ρ`. Re-run on 2026-09-18 with a pledge density `p`, the publishable upper edge is `ρ*(F) ÷ (1 + p)`: at `F` = 10 it falls from **1.20** at no pledging to **0.60** at the one-for-one ceiling. **`ρ*(10) = 1.20` is the same number as the ρ = 1.2 used throughout this section**, so that setting sits exactly at the edge with no pledging and above it with any. **And the band closes** at `F` = 1.0 with essentials at 70% of a median lifestyle — the first swept cell in which it ever has. `06-simulation/stable-band/PLEDGE_BAND_RESULTS.md`. **`p` is swept and not measured.**
+>
 > **⚠️ What is measured and what is not.** The two zero rows are **floors, not values** (conformance row 13): the gate does not bind anywhere below ρ = 4.0, which is where the swept range ended. Nobody looked above it. **And ρ\*'s absolute values inherit the weighting model and an illustrative capacity figure — the shape is the result, the numbers are dated readings.** Full method, the three things it does not show, and five self-tests that can each fail: `06-simulation/stable-band/RESULTS.md`. Registered with **OP-4 (debit tolerance)**.
 #### 5.5.4 Essentials are always affordable, by arithmetic first
 > **1. The floor's own arithmetic. A person's credit for staying alive is sized to cover what staying alive costs.** This is the ordinary case and it covers everybody, however little else they do. Nobody is assessed, nobody applies, and nobody decides they qualify.
 > **2. A backstop for the abnormal case. A restriction arising from a person's standing reaches non-essentials only.**
 > **The floor is therefore not only a welfare provision. It is the error tolerance of the whole accounting.**
-#### 5.5.5 The disparity ceiling — an absolute maximum, not an expected spread
-> **Inside any one trust network's books, the ratio between the largest and the smallest credit *per day lived* cannot exceed `24 ÷ F`.**
-> **What this result is for.** It says the gap between the most and least credited person in one network's books is **small enough to state as a single number**, against a money economy where the top reaches about **10⁶ ×** the median. **The exact figure is second-order. The question that decides whether a network works is whether `F` is set inside the band that keeps essentials affordable and still rations what is short**, which is §5.5.3.
+#### 5.5.5 The disparity ceiling — what it bounds, and what it does not
+> **Inside any one trust network's books, the ratio between the largest and the smallest lifetime pledge budget *per day lived* cannot exceed `24 ÷ F`.**
+>
+> **It bounds the say over what gets made. It does not bound consumption.**
+##### Why it is not a bound on consumption
+> **The only limit on `P` is the population.** Committed room across a network can never exceed the credit its subscribers earned, which bounds the sum. **It does not bound one person's share of it, and nothing here does.**
+##### The comparison against money, which is the point
+| What is being compared | Money | Aequitas |
+|---|--:|--:|
+| **The say over what gets made** | about **10⁶ ×** the median | **2.40× at `F` = 10, and nobody reaches it** |
+| **Material consumption** | about **670 ×** the median (§5.5.8) | **No bound.** Bounded only by how many people back you |
+> **What this result is for.** It says the gap in the **demand lever** in one network's books is **small enough to state as a single number.** **The question that decides whether a network works is whether `F` sits inside §5.5.3's band**, not what the exact ratio is.
 ##### It is an extreme, and nobody reaches it
 ###### An example, with the numbers
 **A network with `F` = 10 h/day. Four whole lives, 80 years each.**
@@ -991,11 +1035,12 @@ example. **What was dropped:** the explanation prose between them.
 | Credit a child's learning time in full | **2.400×** — the arithmetic ceiling is reachable |
 | Credit none of it | **2.085×** — nobody can reach the stated ceiling, ever |
 > **A network that does not credit childhood has a stated ceiling of 2.4× that no subscriber can reach, and its most industrious subscriber falls short of it for a reason that has nothing to do with how hard they worked.**
-##### Four conditions on the bound
+##### Five conditions on the bound
 ##### Why condition 4 is stated as narrowly as it is
-> **The comparison against money is unchanged, and it is a fair one.** Money's spread reaches about **10⁶ ×** the median **within one country's own statistics** (SCF 2022 and Forbes). The bound above is the spread within one network's own books. **Two sets of books, compared like for like.**
+> **The comparison against money is a fair one, and it is now a comparison of demand levers.** Money's spread reaches about **10⁶ ×** the median **within one country's own statistics** (SCF 2022 and Forbes), and whoever holds it directs what is made. The bound above is the spread of that same power within one network's own books. **Two sets of books, compared like for like.**
 > **⚠️ What is left open, and it is narrow.** **Floor-shopping** — joining the network with the most generous floor — is arrested by the seller choosing which network a transaction lands on (§4.0), so a network with an implausible floor loses sellers. **What still depends on OP-22 (minimum audit disclosure) is proving a *pledge's* backing across a model boundary** (§4.2). Registered, not settled.
 #### 5.5.6 Why hoarding does not beat the bound
+> **⚠️ It does not follow that their consumption stands in the same ratio, and this section used to say it did.** Consumption is gated by `D ≤ ρ·(C + P)`. **Two people of equal credit consume very differently if one has been pledged to and the other has not** (§5.5.5).
 ##### Most of what a person consumes cannot be accumulated at all
 ###### An example, with the numbers
 **A network with `F` = 10 h/day and ρ = 1.2. Two people at age 40.**
@@ -1004,9 +1049,9 @@ example. **What was dropped:** the explanation prose between them.
 | **Floor-only** | 146,000 h | **10.0 h/day** | 40 × 1,380 = **55,200 h** |
 | **Maximum worker** | 350,400 h | **24.0 h/day** | 40 × 1,380 = **55,200 h** |
 **The maximum worker's extra credit bought no extra durable holdings. It bought room.** To convert that room into consumption, they must consume, and consuming is what raises `D` permanently.
-> **In plain words: nobody reaches `24 ÷ F` by holding things, because holding a thing raises your own debit, and nobody reaches it by eating, because eaten things leave a permanent debit and no asset.** The only way to the wall is to work 24 hours a day for a whole life, which is the wall nobody gets to.
+> **In plain words: nobody enlarges their own budget by holding things, because holding a thing raises your own debit, and nobody enlarges it by eating, because eaten things leave a permanent debit and no asset.** The only way to the wall is to work 24 hours a day for a whole life, which is the wall nobody gets to. **Being pledged to is the other way to consume more, and it raises nobody's budget** (§5.5.5, condition 5).
 #### 5.5.7 What the simulations found
-> **Formally stated, simulated, and stress-tested.** The formal statement and a plain-language explainer are in `06-simulation/disparity-ceiling/DISPARITY_CEILING.md`. The adversarial pass of 2026-08-14 answered all three attacks — **Methuselah** (§5.5.6 above), **dynasty and household** (a household is a co-op; its dwelling debit splits per occupant by dwelling time, children included, so the bound is per person and inheritance dilutes it, §4.5), and **collector** (holdings raise your own debit, so a hoard bounds itself).
+> **Formally stated, simulated, and stress-tested.** The formal statement and a plain-language explainer are in `06-simulation/disparity-ceiling/DISPARITY_CEILING.md`. The adversarial pass of 2026-08-14 answered all three attacks — **Methuselah** (§5.5.6 above), **dynasty and household** (a pledge budget is credit the holder earned, so **room received never enlarges what anybody can pledge**, and committed room is not transferable, so **it does not pass on death** — §5.5.5 condition 5, §4.6), and **collector** (holdings raise your own debit, so a hoard bounds itself).
   > **`24 ÷ F` reads no accounts.** At `F` = 10 it returns 2.40 whatever the population contains, so *"still 2.40× at 40% fraud"* means **the arithmetic never looked** — not that anything caught the fraud. **Insert a fabricated account and the figure moves by 0.00, for the same reason.**
   >
   > **So the run is a control observation about the statistic's sensitivity, and never evidence that the population was witnessed.** It bounds; it does not witness. **A reproducible detector can still reproducibly certify only the world it was shown.**
@@ -1014,6 +1059,7 @@ example. **What was dropped:** the explanation prose between them.
   > **This is §4.4 applied to the project's own headline** — *a check that compares a thing to itself can find a mistake, and cannot find a hole.* **The witness for coverage is a different instrument and it is physical: the outside total `N`** (§4.4). *(Found from outside by @cairn-lineage; conceded 2026-08-31.)*
 > **The stable band described in §5.5.3 was found on 2026-08-28** and is reported there. `06-simulation/stable-band/`, 60,000 people, every cell driven through the kernel's own gate and all eight conformance checks. **The band never closes, capacity binds rather than affordability, and the upper edge turns out to be an artefact of the American production method.**
 #### 5.5.8 The real-distribution comparison
+> **⚠️ The run assumes nobody was pledged to, and that assumption is now visible.** `ρ · 24 h/day` is what a person can earn **alone**. **Somebody with committed room `P` behind them is gated at `ρ·(C + P)` and is locked out later, or not at all** (§3.0, §5.5.5). **So the locked fraction is an upper bound and has not been recomputed with a pledge term in it.**
 ### 5.6 Why the alternative-economy graveyard does not apply
 | Failure | What happened | Aequitas |
 |---|---|---|

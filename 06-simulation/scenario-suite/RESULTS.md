@@ -63,7 +63,7 @@ Complete the transition and everyone can live at roughly today's *average* stand
 
 ## The shared limit
 
-**All five are single-period.** None has a time axis, so none can say how fast anything happens, or whether a transition is stable. That is what the [Statera kernel](../statera/) was built for.
+**All five are single-period.** None has a time axis, so none can say how fast anything happens, or whether a transition is stable. That is what the [Statera kernel](../99-superseded/statera/) was built for.
 
 ## Figures
 

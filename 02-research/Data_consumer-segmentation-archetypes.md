@@ -3,7 +3,7 @@
 **Version:** 0.1
 **Type:** source survey + method ruling
 **Compiled:** 2026-08-23
-**Bears on:** the simulator's consumer cohorts ([`06-simulation/statera/STATERA_PLAN.md`](../06-simulation/statera/STATERA_PLAN.md) §4), the culture and locale dials, and any scenario that asks *"which mix of people makes Aequitas stable?"*
+**Bears on:** the simulator's consumer cohorts ([`06-simulation/statera/STATERA_PLAN.md`](../06-simulation/99-superseded/statera/STATERA_PLAN.md) §4), the culture and locale dials, and any scenario that asks *"which mix of people makes Aequitas stable?"*
 
 > **Headline, and it is a warning as much as a finding.** There are two completely different kinds of "consumer type" in the world, and they are easy to confuse.
 >

@@ -81,10 +81,14 @@ import sys
 import numpy as np
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-sys.path.insert(0, os.path.join(HERE, "..", "statera"))
+sys.path.insert(0, HERE)
 sys.path.insert(0, os.path.join(HERE, "..", "disparity-ceiling"))
 
-from statera import Kernel, Dials, Conformance, DAY          # noqa: E402
+# The gate used to come from 06-simulation/statera/. Statera was RETIRED on
+# 2026-09-18 (author ruling) because it encodes the pledge rule withdrawn that
+# day. `gate.py` is the part this study exercised, re-implemented against the
+# current spec: D <= rho * (C + P). See 99-superseded/statera/.
+from gate import Kernel, Dials, Conformance, DAY            # noqa: E402
 
 RNG_SEED = 7
 N = 60_000

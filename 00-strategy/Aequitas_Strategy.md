@@ -1,7 +1,7 @@
 <!-- tag: str-aequitas-overall-strategy -->
 # Aequitas — Overall Strategy
 
-> **Version:** 0.9 · **Date:** 2026-09-04
+> **Version:** 0.10 · **Date:** 2026-09-18
 > <!-- struck-ok: names the withdrawn convention in order to record that it was withdrawn -->
 > **This version stops reporting a rule Foundations withdrew on 2026-09-03.** Five places said OP-18 closed by a *declared convention — labour rides the material split*, and one said OP-17 split a joint process by measurement. **Neither is true.** A joint process's cost is not divided at all; every co-product carries the whole process cost against its own output mass, and **labour needs no convention** (Foundations §3.4a). **Both problems are still closed, and both closed the other way: by removing a division rather than by governing one.**
 > **Target:** A statement of the system, tested against scenarios, in ~3 months — with a conformance list an implementer can build against.
@@ -52,7 +52,7 @@ Not a manifesto. Not a pitch. **And not an architecture.**
 The whitepaper's credibility rests on claims that sound impossible. Several now **ship with a passing simulation**; the rest are the remaining sim budget:
 
 - ✅ **"Joint production allocation converges."** Recursion-convergence sim (`06-simulation/allocation-engine/recursion_convergence.py`, 5,224-run sweep) — **PASS**: the allocation is a non-negative Neumann series, 100% convergent for `ρ(Ã) < 1`, zero negative shares across 4,098 economies, while the rival value/price arm goes negative in ~95%. **Sraffa/Steedman blocked by construction.**
-- ✅ **"Fraud undetected at rate *r* still cannot produce observed wealth distributions."** *(the disparity ceiling)* — `disparity_ceiling_sim.py` (N = 200,000): **inside one network's books** the `24/F` ceiling is exact, ρ-independent, and does not move under fraud, vs money's 10⁴–10⁶× tail. **It bounds what fraud is worth and does not detect fraud**, because the arithmetic never reads the accounts (Foundations §5.5.7). **The old "conditional on OP-22" clause is withdrawn** — the cross-network claim it qualified was struck on 2026-08-25, and the ceiling is a statement about one set of books (§5.5.5 condition 4).
+- ✅ **"Fraud undetected at rate *r* still cannot produce observed wealth distributions."** *(the disparity ceiling)* — `disparity_ceiling_sim.py` (N = 200,000): **inside one network's books** the `24/F` ceiling on **pledge budgets per day lived** is exact, ρ-independent, and does not move under fraud, vs money's 10⁴–10⁶× tail. **It bounds what fraud is worth and does not detect fraud**, because the arithmetic never reads the accounts (Foundations §5.5.7). **The old "conditional on OP-22" clause is withdrawn** — the cross-network claim it qualified was struck on 2026-08-25, and the ceiling is a statement about one set of books (§5.5.5 condition 4).
 - ✅ **Societal-scale feasibility** — the five-sim scenario suite (`scenario_suite_METHOD.md`): labour is abundant, materials/energy bind.
 - ◻ "Estimation converges from global average to individual truth." — C3 in progress on real EXIOBASE data.
 - ◻ "Price ≡ cost is stable and doesn't require a planner." / "A demand signal arises from pledges alone." — not yet tested.

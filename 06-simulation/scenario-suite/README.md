@@ -3,7 +3,7 @@
 > **Version:** 0.1
 > **Date:** 2026-09-16
 
-> **Status:** ✅ All five built and green, 2026-08-10. Historical: these are one-off scripts, superseded as *machinery* by the [Statera kernel](../statera/), but their **answers still stand**.
+> **Status:** ✅ All five built and green, 2026-08-10. Historical: these are one-off scripts, superseded as *machinery* by the [Statera kernel](../99-superseded/statera/), but their **answers still stand**.
 > **Results:** [`RESULTS.md`](RESULTS.md) · **Method and design rules:** [`scenario_suite_METHOD.md`](scenario_suite_METHOD.md) · **Change history:** `CHANGELOG.md`
 
 ## What this is
@@ -47,6 +47,6 @@ So each sim is built as one of two legitimate object types and **never as an Aeq
 
 ## Their status now
 
-**The answers stand. The machinery is superseded.** Each of these five scripts re-implements its own agents, its own credit accrual and its own gate, which is why none composes with another. That duplication is the reason the [Statera kernel](../statera/) exists: one engine, and a scenario becomes a configuration file rather than a script.
+**The answers stand. The machinery is superseded.** Each of these five scripts re-implements its own agents, its own credit accrual and its own gate, which is why none composes with another. That duplication is the reason the [Statera kernel](../99-superseded/statera/) exists: one engine, and a scenario becomes a configuration file rather than a script.
 
 **Every one of them is single-period.** There is no time axis anywhere in this folder. Anything about how a quantity moves over years has to be re-asked of Statera.

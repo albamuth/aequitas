@@ -1,9 +1,17 @@
 # Disparity Ceiling
 
-> **Version:** 0.1
-> **Date:** 2026-09-16
+> **Version:** 0.2
+> **Date:** 2026-09-18
 
-> **Result (conditional):** **inside one trust network's own books**, the maximum sustainable **consumption** disparity is **`24 / F`** — the length of a day divided by that network's self-care floor *F* (hours/day) — independent of the tolerance dial ρ and of the weighting model. At *F* = 10 h that is **2.4×**. Under money the same ratio runs to **~10⁶×** and compounds without limit.
+> **Result (conditional):** **inside one trust network's own books**, the maximum disparity in **lifetime pledge budget per day lived** is **`24 / F`** — the length of a day divided by that network's self-care floor *F* (hours/day) — independent of the tolerance dial ρ and of the weighting model. At *F* = 10 h that is **2.4×**. Under money the same lever runs to **~10⁶×** and compounds without limit.
+
+> **⚠️ Restated 2026-09-18. It bounds the say over what gets made. It does not bound consumption.**
+>
+> A pledge budget is credit the holder earned and nothing else, so `24/F` follows from IC-7 and the floor. **Consumption is gated by `D ≤ ρ·(C + P)`, where `P` is room others pledged to a person by name — and `P` has no per-account limit.** Somebody widely backed can consume far beyond `24/F` times a floor-only life, and Aequitas does not prevent it.
+>
+> **The only limit on `P` is the population.** Committed room across a network can never exceed the credit its subscribers earned. **That bounds the sum and not one person's share.**
+>
+> **Why this is still not capitalism's kind of wealth.** Pledged room **cannot be lent at interest, rented out, charged for, or used to hire anybody** — credit never moves ([non-fungibility](non-fungibility.md)), nothing may be added to a cost figure ([cost-not-price](cost-not-price.md)), and working on your own property raises its debit by the hours it credits. **Property under capitalism is a machine for getting more. Pledged room lets you hold and consume.**
 
 **Two limits belong in the same breath as the number.**
 
@@ -29,7 +37,9 @@ So the top consumes `ρ·24`, the bottom `ρ·F`, and the ratio is **`(ρ·24)/(
 
 Credit and debit are **cumulative running tallies** derived from the event log ([A6](event-record.md): the ledger is *derived, not stored*). **Credit is never *spent*** — a purchase adds to your *debit*, it never draws your credit down. The rule checked at each purchase is a **ratio**: total debit ≤ ρ × total credit; a purchase that would breach it is blocked.
 
-So there is nothing to "bank and blow." A lifelong hoarder who consumes nothing then splurges is **clipped to their own `ρ·C`** — front-loading rearranges *when* they consume, never *how much*. At **equal age**, two people's cumulative credits stand in ratio ≤ 24/F, so cumulative-consumption disparity is bounded by 24/F too. The only spread beyond it is **age** — time lived, not class, and everyone traverses it.
+So there is nothing to "bank and blow." A lifelong hoarder who consumes nothing then splurges is **clipped to their own `ρ·(C + P)`** — front-loading rearranges *when* they consume, never *how much*. At **equal age**, two people's cumulative credits stand in ratio ≤ 24/F, **and so do their pledge budgets.** The only spread beyond it is **age** — time lived, not class, and everyone traverses it.
+
+> **⚠️ It does not follow that their consumption stands in the same ratio.** Two people of equal credit consume very differently if one has been pledged to and the other has not.
 
 *(This is the resolution of the "Methuselah" objection from the stress test. It needs no special "rate gate" — it is just A3 + A6.)*
 
@@ -38,10 +48,12 @@ So there is nothing to "bank and blow." A lifelong hoarder who consumes nothing 
 | Attack | Resolution |
 |---|---|
 | **Methuselah hoarder** — bank a lifetime, splurge it | Credit is a record, not a balance (above). A splurge can't exceed your own `ρ·C`. |
-| **Dynasty / household** — pool N people into one mansion | A household is a co-op: its dwelling-debt splits per occupant by dwelling-time (children included, §4.5). The bound is **per-person**; inheritance *dilutes* the load each generation. One member dominating the rest is coercion ([[service-to-influence|OP-1]]), not accounting. |
+| **Dynasty / household** — pool N people into one mansion | **Re-answered 2026-09-18.** A pledge budget is credit the holder earned, so **room received never enlarges what anybody can pledge**, and committed room is **not transferable**, so it does not pass on death. A dynasty cannot compound. *(The old reason — dwelling debt splitting per occupant, children included — is withdrawn: a child cannot consent to a property transfer.)* One member dominating the rest is coercion ([[service-to-influence|OP-1]]), and is the legal system's problem. |
 | **Collector** — hoard houses, gold, art | Holdings are a **burden**, not income ([property-debit](property-debit.md)): they raise your *own* debit against a fixed credit, so a hoard self-bounds. |
 
-**Coupled to the pledge ruling:** the one channel that could have breached A3 — a *transferable pledged surplus* — was closed by making pledge surplus a non-consumable [contingent reserve](pledge-and-signal.md) (§4.6). The disparity ceiling and permanent-pledges are one mechanism.
+> **⚠️ The channel this page used to say was closed is open, by ruling.** It read: *the one channel that could have breached A3 — a transferable pledged surplus — was closed by making pledge surplus a non-consumable contingent reserve.* **The reserve was withdrawn on 2026-09-18 and committed room is consumable** ([pledge-and-signal](pledge-and-signal.md)).
+>
+> **A3 is not breached.** No credit moves, and a pledge is not a transfer of credit — it is a one-way, non-refundable grant of room, spent from a budget that cannot be manufactured. **What changed is that the ceiling is now stated over budgets rather than over consumption**, which is where the arithmetic actually holds.
 
 ## Why it matters
 

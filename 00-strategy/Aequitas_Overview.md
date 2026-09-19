@@ -1,11 +1,14 @@
 <!-- tag: ovw-aequitas-overview -->
 # Aequitas — Overview
 
-> **Version:** 0.27
-> **Date:** 2026-09-09
+> **Version:** 0.28
+> **Date:** 2026-09-18
 > **Audience:** everyone. No economics background assumed, none required.
 > **Rigorous version:** `00-strategy/Aequitas_Foundations.md`. This document is the plain-language companion; where they differ, the Foundations govern.
 > **Version history & what each version superseded:** `00-strategy/Aequitas_Overview_CHANGELOG.md`.
+>
+<!-- struck-ok: the header summary must quote the withdrawn wording to say it was withdrawn -->
+> **This version says plainly that the 2.4× wall is about your *say*, not your *stuff*.** People can put their own earned hours behind somebody else — a pledge — and nothing limits how many people back one person, **so somebody widely admired can live well beyond the wall.** What that room cannot do is earn: it cannot be lent at interest, rented out, charged for, or used to hire anybody. **§6's danger-pay passage is rewritten** — the insurance-fund mechanism is withdrawn, and people simply pledge more for jobs nobody wants, which reaches boring work as well as dangerous work. ***"Nobody gets a bonus for being popular"* was false and is gone.**
 
 *Aequitas* (genitive *aequitatis*) is the Latin word for fairness, evenness, symmetry — the quality of things being level with one another.
 
@@ -145,7 +148,7 @@ That identity is the whole of §7 in one line. **Property cannot be an engine, b
 
 **And nobody starves for having a low score.** Everyone earns a baseline just by staying alive (§2) — the real, counted work of maintaining a human — so there is always something behind your basic needs. On top of that, an account carries some **debit tolerance**, scaled by age and circumstance, and exceeding it restricts *luxuries*, never necessities. A nurse is credited for nursing you whatever your books look like. This is not charity bolted onto the system; it is a structural requirement, because a system where being mis-measured can starve you is a system nobody should adopt.
 
-**And here is why the gap between most and least is *capped* in a way money's isn't — the engine is arithmetic, not any rule.** Money can be piled up without limit; time cannot. Everyone gets the same 24 hours a day, you cannot buy anyone else's, and credit — a record of *your* time — never moves. So the most anyone can out-earn anyone else is the ratio between a full day's work and the baseline everyone already gets for living. If a community counts, say, 10 hours a day as the cost of simply keeping yourself going, the busiest possible contributor tops out at 24 ÷ 10 = **2.4 times** the person who only lives. Set against today, where the top of the scale runs into the *millions* of times the bottom, that is a different universe.
+**And here is why the gap in *who gets a say over what the world makes* is capped in a way money's isn't — the engine is arithmetic, not any rule.** Money can be piled up without limit; time cannot. Everyone gets the same 24 hours a day, you cannot buy anyone else's, and credit — a record of *your* time — never moves. **How much you can put behind the things you want made is exactly the credit you earned, and no more.** So the most anyone can out-say anyone else is the ratio between a full day's work and the baseline everyone already gets for living. If a community counts, say, 10 hours a day as the cost of simply keeping yourself going, the busiest possible contributor tops out at 24 ÷ 10 = **2.4 times** the person who only lives. Set against today, where the top of the scale runs into the *millions* of times the bottom, that is a different universe.
 
 > **Read 2.4 as a wall, not as an outcome. Nobody reaches it, and it is worth showing why with real lives.**
 >
@@ -176,8 +179,13 @@ That identity is the whole of §7 in one line. **Property cannot be an engine, b
 >
 > **So it is a limit on what cheating is worth, and it is not a way of finding cheating.** Finding it is a different job, done by a different tool: **measure the world from outside and compare** (§7). *(This was pointed out to us from outside, and we agreed. We had been publishing the first half without the second.)*
 | **That it is one network's books** | **Not a statement about anything wider**, and there is no wider figure to give. Two networks' numbers are read through different weightings, so **they cannot be added or compared.** See the box in §0. |
+| **That it is about your *say*, not your *stuff*** | **This is the big one, and it was added in v0.28.** The wall caps how much say anyone gets over what the world makes next. **It does not cap what anyone consumes**, because other people can pledge room to you and nothing limits how much (§6). |
 
-**And one thing genuinely unsolved sits underneath it:** confirming that someone's hours are *real* without prying open their whole private record (§8). **So the honest version is: inside one network's books, with sane baselines and that verification problem solved, the gap is capped in a way money never is.** Still a different universe — just a *conditional* result, not yet a theorem.
+**And one thing genuinely unsolved sits underneath it:** confirming that someone's hours are *real* without prying open their whole private record (§8). **So the honest version is: inside one network's books, with sane baselines and that verification problem solved, the gap in who gets a say is capped in a way money never is.** Still a different universe — just a *conditional* result, not yet a theorem.
+
+> **And be clear about what is *not* capped: what a person can consume.** People can put their own earned hours behind someone else — a pledge (§6) — and that gives the receiver room to hold and use more. **Nothing limits how many people back one person.** So somebody widely admired can live well beyond the wall above, and this system does not prevent it.
+>
+> **Why that is a different thing from being rich today.** That room **cannot be lent at interest, rented out, charged for, or used to hire anybody.** You can hold things and use things. **You cannot turn it into a machine that earns while you sleep**, which is what property does now. And it can't be conjured: every hour of it is an hour somebody really lived, and nobody has more than 24 in a day.
 
 **And here's something that's true even before any of that.** Aequitas only ever counts *material* things — what you physically hold, use, and consume. It never counts money-wealth: a share of stock, a bond, a crypto-token is a claim on paper, not matter or energy, so it simply doesn't appear. (The factory those shares represent *is* counted — but on the people who actually run it, not on the distant shareholder.) That one fact does something striking on its own. Today the richest person's *money* is around a million times the typical person's. But their *stuff* — the houses, jets, yachts, the actual physical consumption — is only a few hundred times as much, because you can only physically use so much in a 24-hour day. **Strip away the paper and the real gap is already about a thousand times smaller than the money gap makes it look.** When we ran the numbers on real wealth data, only a fraction of a percent of people — the genuine mega-consumers, not the merely rich — would even be over their limit, and most people would come out *ahead* by joining. The inequality we live under is, to a startling degree, an artefact of counting paper.
 
@@ -471,7 +479,7 @@ Three things this quietly fixes:
 - **It funds the speculative.** A prize for solving a hard problem needs no billionaire patron; a large enough pool of pledges *is* the prize.
 - **It sets the number of doctors.** Society decides how many to train by pledging for it — no ministry, no quota. Study nobody pledged for still credits your hours, but leaves you carrying the cost.
 
-- **It gets dangerous work done — without danger-pay.** Everyone earns the same credit per hour, so there's no hazard bonus to lure people into a toxic cleanup. Instead, when lots of people pledge to see it done, the pledges *beyond* what the job costs become an **insurance fund** for that job: it only pays out if the work later harms whoever did it (their medical care, cleaning up a mess that resurfaces, harm to bystanders). Society de-risks the worker exactly as much as it wants the job done. Because that fund can only ever cover real harm — never be pocketed as a treat — it rewards the nasty work without making anyone richer than anyone else. (It helps with *dangerous* unwanted work; plain *boring* work is still an open problem.)
+- **It gets unwanted work done — without danger-pay.** Everyone earns the same credit per hour, so there's no hazard bonus to lure people into a toxic cleanup. Instead, people pledge more for the jobs nobody wants, and that room goes to whoever does them. Society de-risks the worker exactly as much as it wants the job done, and **nobody's hourly credit changed** — what changed is how much room other people chose to put behind them. A pledge can also carry conditions: *"this part goes to whoever cleans up any harm this job causes in the next thirty years."* If nothing goes wrong, that part simply lapses. **This reaches boring work as well as dangerous work**, because a pledge can name whoever does the dull job.
 
 **One honest weakness.** Pledges follow reputation, so a first-time maker attracts none. This is the same cold-start problem unknown creators face with money today, and the barrier is much lower — attention rather than capital — but it is real and shouldn't be waved away.
 
@@ -515,7 +523,7 @@ Putting one extra box on that shelf — picking it, loading it, the lorry's extr
 | What their next mural needs — paint, travel | **300 hours** |
 | Left over | **200 hours** |
 
-**The leftover does not become spending money.** It is set aside against harm the job might cause, and if nothing goes wrong it simply lapses. **Nobody gets a bonus for being popular.**
+**The leftover is room the artist can use**, unless the people pledging attached conditions to it. **So yes — somebody well-liked can end up with a lot of room, and Aequitas does not stop that.** What it stops is the thing that makes money-wealth grow: that room **can't be lent at interest, rented out, charged for, or used to hire anyone.** It lets you hold and use things. It is not a machine for getting more.
 
 *(One catch worth knowing: a flat rate per like doesn't limit anything — at six minutes a like you could hand out fifty thousand likes a year before it pinched. The sensible setting is a **share of a budget**: "this like costs my art budget divided by the likes I give this month." That balances itself.)*
 

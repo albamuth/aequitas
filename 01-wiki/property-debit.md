@@ -74,7 +74,7 @@ See [self-work-identity](self-work-identity.md) for the surprising and important
 >
 > **So where did the 20,000 hours go?** Onto the barn, split by holding time (above). One operator who holds it the whole 20 years carries **20,000 hours**, permanently.
 >
-> **And that is not a light thing to carry.** The gate is `D ≤ ρ·C`. At **ρ = 1.2**, carrying 20,000 hours of debit needs `20,000 ÷ 1.2 =` **16,667 hours** of credit standing behind it. Every living person accrues about **3,650 hours a year** from self-care alone (§4.5), so the barn eats **4.6 years of one person's entire credit accrual.**
+> **And that is not a light thing to carry.** The gate is `D ≤ ρ·(C + P)`, and this holder has no pledges behind them. At **ρ = 1.2**, carrying 20,000 hours of debit needs `20,000 ÷ 1.2 =` **16,667 hours** of credit standing behind it. Every living person accrues about **3,650 hours a year** from self-care alone (§4.5), so the barn eats **4.6 years of one person's entire credit accrual.**
 >
 > > **That is why nobody builds a barn they do not need.**
 >

@@ -14,12 +14,12 @@ Every command below is run **from inside that project's folder**. Every project 
 
 | Project | What it answers | Run it | Status |
 |---|---|---|---|
-| **[`statera/`](statera/README.md)** | The kernel. One engine every future scenario runs on: agents, an append-only event log, the debit vector, credit accrual, the ratio gate, the conformance checks. | `python statera.py --test` | 🟢 **Live. This is the current work.** Steps 1–4 done; step 5 blocked on a data download. |
+| **[`99-superseded/statera/`](99-superseded/statera/README.md)** | The kernel. Agents, an append-only event log, the debit vector, credit accrual, the ratio gate, the conformance checks. | — | ⛔ **RETIRED 2026-09-18** (author ruling). Its `room()` encodes the pledge rule withdrawn that day: the grant was capped at the recipient's own creation-cost and never became spendable. **Do not learn the gate from it.** The current gate is `D ≤ ρ·(C + P)`, in [`stable-band/gate.py`](stable-band/gate.py). |
 | **[`disparity-ceiling/`](disparity-ceiling/README.md)** | How far apart can two people's consumption get? And where should the consumption dial ρ sit? | `python disparity_ceiling_sim.py --test`<br>`python rho_sweep.py --test` | ✅ Stated, simulated, stress-tested. A **conditional** result. |
 | **[`median-lifestyle/`](median-lifestyle/README.md)** | What does a normal life cost, in hours of human labour? Four measured tracks plus a cross-country comparison. | `python track1_embodied_hours.py --test`<br>(one script per track) | ✅ Done. **The project's real-world anchor.** |
 | **[`allocation-engine/`](allocation-engine/README.md)** | Does the cost recursion converge, and is every share non-negative? Then: per-product costs from a real economy, and a refinery where physical and price allocation disagree. | `python recursion_convergence.py --test`<br>`python estimation_engine.py --test`<br>`python refinery_slice.py --test` | ✅ Done. Closed the project's sharpest technical risk. |
 | **[`audits/`](audits/README.md)** | The twelve event-log integrity constraints, made runnable — and each one shown to actually fire. | `python arithmetic_audits.py --test` | ✅ Closed. Plus `audits_inert/`, the same audits **as data**, checkable without running code. |
-| **[`scenario-suite/`](scenario-suite/README.md)** | Five societal questions: autarky, captured labour, plastic, who is locked out, wasteful-to-essential reallocation. | `python q1_autarky.py --test`<br>(one script per question) | ✅ Answers stand. **Machinery superseded** by `statera/`. |
+| **[`scenario-suite/`](scenario-suite/README.md)** | Five societal questions: autarky, captured labour, plastic, who is locked out, wasteful-to-essential reallocation. | `python q1_autarky.py --test`<br>(one script per question) | ✅ Answers stand. **Each script carries its own gate**, so none depends on the retired kernel. |
 | **[`residual-unravelling/`](residual-unravelling/README.md)** | Does staying unmeasured stop paying? Tests the rule that cohort estimates are computed over the residual, never the population. | `python residual_unravelling.py --test` | ✅ Passes, with one measured limit. |
 | **[`pledge-reserve/`](pledge-reserve/README.md)** | Why would anyone take the hazardous job in a system with no wage premium? | `python pledge_reserve.py --test` | ✅ Built. Answers the hazard half of the onerousness gap. |
 | **[`stable-band/`](stable-band/README.md)** | Is there a band of the floor `F` and the tolerance ρ inside which essentials stay affordable **and** the ledger still rations? | `python stable_band.py --test` | ✅ **Done 2026-08-28.** Answers the simulation Foundations §5.5.3 says it owes. |
@@ -138,7 +138,7 @@ Each project's `RESULTS.md` carries the conditions, the limits, and what would f
 
 ### Two things stay at the top level
 
-**`data/` is shared and stays here. It is 288 MB and is deliberately not published**, so the links below go to the original sources instead. It holds the **[Bureau of Labor Statistics Employment Requirements matrices](https://web.archive.org/web/2025/https://www.bls.gov/emp/data/input-output-matrix.htm)**, the **[BLS input-output tables](https://web.archive.org/web/2025/https://www.bls.gov/emp/data/input-output-matrix.htm)**, and the 234 MB **[EXIOBASE](https://www.exiobase.eu/)** multi-region table. **Anyone can rebuild it from those three sources.** `median-lifestyle/` uses them today and `statera/` will need the same tables at step 5, so duplicating them would be wrong and moving them into one project would be misleading. **Scripts reach up one level to find it.**
+**`data/` is shared and stays here. It is 288 MB and is deliberately not published**, so the links below go to the original sources instead. It holds the **[Bureau of Labor Statistics Employment Requirements matrices](https://web.archive.org/web/2025/https://www.bls.gov/emp/data/input-output-matrix.htm)**, the **[BLS input-output tables](https://web.archive.org/web/2025/https://www.bls.gov/emp/data/input-output-matrix.htm)**, and the 234 MB **[EXIOBASE](https://www.exiobase.eu/)** multi-region table. **Anyone can rebuild it from those three sources.** `median-lifestyle/` uses them today and any successor kernel will need the same tables, so duplicating them would be wrong and moving them into one project would be misleading. **Scripts reach up one level to find it.**
 
 > **⚠️ The Bureau of Labor Statistics withdrew the Employment Requirements matrices on 2026-02-06.** The copies in `data/erm_full/` came back through the [Internet Archive](https://web.archive.org/) and are the only ones we have. **Do not delete them.**
 
@@ -153,7 +153,7 @@ Each project's `RESULTS.md` carries the conditions, the limits, and what would f
 | You want to | Go to |
 |---|---|
 | Understand what any of this proves, without maths | [`Simulations_in_Plain_Language.md`](Simulations_in_Plain_Language.md) |
-| Work on the current task | [`statera/README.md`](statera/README.md) |
+| Understand the consumption gate | [`stable-band/gate.py`](stable-band/gate.py) |
 | Check a number before quoting it | that project's `RESULTS.md` |
 | Check a claim **without running our code** | [`audits/audits_inert/`](audits/audits_inert/README.md) |
 | Know what the whole programme is for | [`../00-strategy/Aequitas_Simulation_Roadmap.md`](../00-strategy/Aequitas_Simulation_Roadmap.md) |

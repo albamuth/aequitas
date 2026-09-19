@@ -1,7 +1,7 @@
 <!-- tag: cnf-aequitas-conformance -->
 # Aequitas — Conformance Requirements
 
-> **Version:** 0.17 · **Date:** 2026-09-15
+> **Version:** 0.18 · **Date:** 2026-09-18
 > **Audience: implementers.** Anyone building a trust network.
 > **Companion:** [`Aequitas_Foundations.md`](Aequitas_Foundations.md) — the system itself, and the argument behind every row below. **Where the two differ, Foundations governs.**
 > **Version history is kept separately and is not published**, so this document carries only what is currently true.
@@ -60,7 +60,7 @@ Worked: *"records are never deleted"* is something you can read off an implement
 | **Collapse** | Turning a debit's list of physical quantities into one comparable figure, by applying a weighting model. It happens when somebody asks, never in storage. |
 | **Record** | A figure that came from an observation or an attestation. |
 | **Estimate** | A figure that came from a published method, used where no record exists. **A record always beats an estimate.** |
-| **The gate** | The rule `D ≤ ρ·C`. A person's debit `D` may not exceed their credit `C` times the network's debit tolerance **ρ** ("rho"). |
+| **The gate** | The rule `D ≤ ρ·(C + P)`. A person's debit `D` may not exceed their credit `C` plus the room `P` others have pledged to them by name, times the network's debit tolerance **ρ** ("rho"). **ρ multiplies both terms**, or a pledged hour would buy less room than a worked one. |
 | **The floor**, `F` | The hours a day a network counts as the work of keeping a human being alive. **Each network sets its own.** |
 | **Extent** | The piece of the world a figure is about — a region, a sector, a population. **Never the set of subscribers** (row 17a). |
 | **Coverage** | The share of an extent's real material flow that a network's records actually captured. As a formula, `Y ÷ N`. |
@@ -163,7 +163,9 @@ Worked: *"records are never deleted"* is something you can read off an implement
 |---|---|---|
 | 7 | **Matter and energy balance across every recorded process**, within a stated tolerance and at one level of detail. **Everything the books track has a beginning and an end.** It came from an extraction, or from an estimated entry for something that already existed when the books started; and at any moment it is **held by somebody, used up, or released to a named place in the world.** **A thing with neither a beginning nor an end is reported as *unaccounted*, never left out.** Nothing is recorded as used before it exists or after it is gone. | A1, A4 · *IC-1, IC-2, IC-3, IC-4, IC-6* |
 | 8 | **No account claims more than 24 hours of activity in 24 hours.** | A2, §5.5.5 · *IC-7* |
-| 9 | **A person's pledges never exceed the credit they have earned in their life, one hour for one hour.** The budget is spent **when the pledge is made**, not when the work happens, **and there is no path that gives it back.** | §4.6 · *IC-8, IC-9* |
+| 9 | **A person's pledges never exceed the credit they have earned in their life, one hour for one hour.** The budget is spent **when the pledge is made**, not when the work happens, **and there is no path that gives it back.** **Room received never enlarges the budget** — a budget is credit the holder earned, and nothing else. | §4.6, §5.5.5 · *IC-8, IC-9* |
+| 9a | **A pledge grants room to nobody until it names a person.** A pledge may name a person, or the criteria that will name one. **Until a person is named it sits in no account's gate; once named the room is committed and is never revoked.** An undistributed pledge lapses, and the budget is spent either way. **Where a pledge states no criteria, room goes to whoever did the named work, by hours worked.** | §4.6, §3.2c |
+| 9b | **Awarding criteria are published before the pledge is made.** Criteria may be any conditional thing, including a judging panel. **A network that lets criteria change after pledges are taken cannot show what a pledger agreed to.** | §4.6, §4.2, A8 |
 | 10 | **A debit is a list of physical quantities, not one number.** Any division — across co-products, across a team, across anything — **is computed on each quantity separately, before they are combined into one figure.** | §3.2a |
 | 10a | **A joint process's cost is not divided among its outputs.** Every co-product carries the **whole** cost of the process it came through, read against its **own output mass**. **What must be recorded is which steps each product passed through — a binary fact, never a share.** A cost may still never depend on **demand or desirability**; it may depend on output mass, because a scale reads one. | §3.4a, §2.5 |
 | 10b | **No quantity a product carries is negative.** A product's cost is a total of the steps it passed through, and a step cannot consume less than nothing. A negative result is a measurement error or a badly drawn process boundary. | §3.4a · *IC-10* |
