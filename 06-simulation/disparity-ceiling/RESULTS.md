@@ -37,7 +37,9 @@
 | Under efficient (non-US) production | median reaches **1.00×** |
 | After a disaster | ρ\* tightens to **0.68**; growth loosens it |
 
-**In every scenario the real-consumption disparity stays at or under 24/F = 2.4×.**
+**In every scenario the disparity stays at or under 24/F = 2.4×.**
+
+> **⚠️ What that sentence is about, corrected 2026-09-21.** <!-- struck-ok: names the withdrawn wording in order to correct it --> **It used to say *"the real-consumption disparity."*** **`24/F` bounds lifetime pledge budgets per day lived, and it does not bound consumption** (Foundations §5.5.5). Consumption is gated by `D ≤ ρ·(C + P)`, and `P` — room other people pledged to you — has **no per-account limit**. **These runs set `P` = 0 for every agent**, so their consumption figures read like the bound; that is the assumption showing, not a result.
 
 > ### Claim 3 is a bound, not a detector, and the two rows below are one property
 >

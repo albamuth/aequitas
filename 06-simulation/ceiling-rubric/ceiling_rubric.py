@@ -263,9 +263,15 @@ def self_tests():
           os.path.basename(dcs.__file__) == "disparity_ceiling_sim.py",
           os.path.relpath(dcs.__file__, HERE).replace("\\", "/"))
 
-    # 3 -- the artifact's own constants are what we think
-    check("3 F = 10 h/day and the stated ceiling is 24/F",
-          dcs.F == 10.0 and abs(dcs.CEILING - 2.4) < 1e-12,
+    # 3 -- the artifact's floor is REPORTED, and its ceiling is 24/F at that
+    # floor. This used to assert dcs.F == 10.0, which pinned a setting the
+    # system leaves free: Foundations 5.5.1 gives F to the network and 5.5.3
+    # sweeps 1.0 to 14.0. A test whose NAME claims disclosure must not have an
+    # ASSERTION that performs pinning -- the same defect found in
+    # ic-recompute-cost/reweight_ratio.py on 2026-09-19.
+    check("3 F is reported and the stated ceiling is 24/F at that F",
+          isinstance(dcs.F, float) and 0.0 < dcs.F < dcs.DAY
+          and abs(dcs.CEILING - dcs.DAY / dcs.F) < 1e-12,
           f"F={dcs.F} ceiling={dcs.CEILING}")
 
     # 4 -- every challenge actually changes the population it is given
@@ -338,7 +344,16 @@ def self_tests():
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--test", action="store_true")
-    if ap.parse_args().test:
+    ap.add_argument("--floor", type=float, default=None, metavar="H",
+                    help="score the simulator at this self-care floor F, in "
+                         "h/day, instead of its default. F is a network setting "
+                         "(Foundations 5.5.1); 5.5.3 sweeps 1.0 to 14.0.")
+    args = ap.parse_args()
+    if args.floor is not None:
+        if not 0.0 < args.floor < dcs.DAY:
+            ap.error(f"--floor must be above 0 and below {dcs.DAY}")
+        dcs.set_floor(args.floor)
+    if args.test:
         return self_tests()
 
     line = "-" * 78

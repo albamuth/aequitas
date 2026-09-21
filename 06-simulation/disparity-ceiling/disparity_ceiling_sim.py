@@ -6,8 +6,16 @@ discretionary consumption is gated by  D_i <= rho * C_i  (OP-4 shape), credit C
 accrues in equally-distributed, non-transferable time (A3), and no account may
 claim > 24 h/day (IC-7):
 
-  CLAIM 1 (headline)  -- the consumption disparity is bounded by 24/F and is
-                         INDEPENDENT of rho; money's is orders of magnitude larger.
+  CLAIM 1 (headline)  -- the PLEDGE-BUDGET disparity per day lived is bounded by
+                         24/F and is INDEPENDENT of rho; money's demand lever is
+                         orders of magnitude larger.
+                         NOT A BOUND ON CONSUMPTION. Foundations 5.5.5: "It bounds
+                         the say over what gets made. It does not bound consumption."
+                         Consumption is gated by D <= rho*(C + P), and P -- room
+                         other people pledged to you -- has NO per-account limit,
+                         so a much-backed person may consume far beyond 24/F times
+                         a floor-only life. This run sets P = 0 throughout, which
+                         Foundations 5.5.8 registers as a stated assumption.
   CLAIM 2 (prime-rate)-- a rho can be chosen so aggregate demand matches productive
                          capacity, and it moves predictably under shocks (tighten in
                          a shortage). rho is exogenous; Aequitas is agnostic to it.
@@ -21,10 +29,14 @@ claim > 24 h/day (IC-7):
                          is exactly 24/F; the ONLY spread beyond it is age.
 
 Model. N agents. Each works w_i in [0, 24-F] discretionary hours/day on top of the
-self-care floor F (credited to everyone, A2/§6.1b), so the credit rate is
-c_i = F + w_i in [F, 24]. Consumption is d_i = min(appetite_i, rho * c_i). The
-disparity CEILING is the most anyone may consume vs a bare-subsistence person's
-allowance:  max(rho*c) / (rho*F) = 24/F  -- rho cancels.
+self-care floor F (credited to everyone, A2 / Foundations 5.5.1), so the credit
+rate is c_i = F + w_i in [F, 24]. A person's lifetime PLEDGE BUDGET equals the
+credit they earned (conformance 9), so the CEILING is the ratio of the largest
+budget per day lived to the smallest:  max(c) / F = 24/F.  Written through the
+gate with P = 0 it is  max(rho*c) / (rho*F) = 24/F  -- rho cancels.
+
+WHAT MOVES A PERSON PAST IT. Being pledged to. P has no per-account limit, so the
+run below bounds the demand lever and says nothing about what anybody consumes.
 
 Run:  python disparity_ceiling_sim.py            # run all, write plots
       python disparity_ceiling_sim.py --test     # self-tests only
@@ -39,10 +51,27 @@ import numpy as np
 HERE = os.path.dirname(os.path.abspath(__file__))
 RNG = np.random.default_rng(42)
 
-F = 10.0            # self-care floor, h/day (credited to all)
+# F is a NETWORK SETTING, not a constant of the system. Foundations 5.5.1 leaves
+# it to each trust network; 5.5.3 sweeps it and finds a workable band at every
+# value from 1 to 14 h/day -- 1.0 and 14.0 being where stable_band.py's sweep
+# begins and ends, not proven limits. Set it with --floor.
+#
+# CEILING is 24/F: the maximum ratio between two subscribers' LIFETIME PLEDGE
+# BUDGETS per day lived, inside one network's books (Foundations 5.5.5). It is
+# not a bound on consumption -- consumption is gated by D <= rho*(C + P), and P
+# has no per-account limit.
+F = 10.0            # self-care floor, h/day (credited to all); --floor overrides
 DAY = 24.0
-CEILING = DAY / F   # 2.4x -- the structural bound
+CEILING = DAY / F   # 2.4x at F = 10 -- the pledge-budget bound
 N = 200_000
+
+
+def set_floor(f):
+    """Set the floor and re-derive the ceiling. Called by main() for --floor."""
+    global F, CEILING
+    F = float(f)
+    CEILING = DAY / F
+    return F, CEILING
 
 
 # ---------------------------------------------------------------------------
@@ -276,7 +305,7 @@ def make_plots():
     wea_p99 = np.percentile(wea, 99) / np.median(wea)
     fig, ax = plt.subplots(figsize=(8.5, 4.8))
     ax.plot(d1[:, 0], d1[:, 1], "o-", color=BLUE, lw=2,
-            label=f"AEQUITAS consumption ceiling = {CEILING:.1f}× (flat)")
+            label=f"AEQUITAS pledge-budget ceiling = {CEILING:.1f}× (flat)")
     ax.axhline(inc_p99, ls=":", color=ORANGE,
                label=f"US income, top 1% / median ≈ {inc_p99:.0f}×")
     ax.axhline(wea_p99, ls=":", color=RED,
@@ -287,7 +316,9 @@ def make_plots():
     ax.set_ylim(1, 5e6)
     ax.set_xlabel("ρ (tolerance ratio — the exogenous dial)")
     ax.set_ylabel("disparity vs the median (log scale)")
-    ax.set_title("Aequitas caps command-over-resources at 24/F — money runs to 10⁶×")
+    ax.set_title("Aequitas caps the DEMAND LEVER at 24/F — money runs to 10⁶×\n"
+                 "(pledge budgets per day lived, not consumption — Foundations §5.5.5)",
+                 fontsize=10)
     ax.legend(fontsize=8.5, loc="center right")
     fig.tight_layout(); fig.savefig(os.path.join(HERE, "ceiling_fig1_rho.png"), dpi=130)
     plt.close(fig)
@@ -318,7 +349,7 @@ def make_plots():
     ax.axhline(CEILING, ls="--", color=GREEN, label=f"24/F = {CEILING:.1f}×")
     ax.set_ylim(0, CEILING * 1.4)
     ax.set_xlabel("fraud rate (% of accounts inflating claimed hours ×2)")
-    ax.set_ylabel("consumption disparity ceiling")
+    ax.set_ylabel("pledge-budget disparity ceiling")
     ax.set_title("Fraud CANNOT break the ceiling — IC-7 caps every account at 24 h/day")
     ax.legend(fontsize=9)
     fig.tight_layout(); fig.savefig(os.path.join(HERE, "ceiling_fig3_fraud.png"), dpi=130)
@@ -359,8 +390,10 @@ def report():
     print("=" * W)
     d1 = claim1_ceiling_vs_rho()
     print("CLAIM 1 — ceiling vs ρ (should be flat at ≤ 2.4×):")
-    print(f"  Aequitas consumption ceiling: {d1[0,1]:.2f}×  (flat across ρ∈[1,3]; "
+    print(f"  Aequitas pledge-budget ceiling: {d1[0,1]:.2f}×  (flat across ρ∈[1,3]; "
           f"range {d1[:,1].min():.2f}-{d1[:,1].max():.2f})")
+    print("    NOT a bound on consumption. P is 0 in this run and has no per-account")
+    print("    limit in the system. Foundations §5.5.5.")
     inc, wea = real_income(), real_wealth()
     ip = np.median(inc); wp = np.median(wea)
     print("  vs REAL US disparity (ratio to the median):")
@@ -368,7 +401,7 @@ def report():
     print(f"    money WEALTH  p90={np.percentile(wea,90)/wp:5.1f}×  p99={np.percentile(wea,99)/wp:5.1f}×  "
           f"(SCF real: 10× / 71×)")
     print(f"    billionaire / median = {SCF_BILLIONAIRE_OVER_MEDIAN:,.0f}×  (Forbes ~$200B / SCF median $192,900)")
-    print(f"  => Aequitas caps command-over-resources at ~{d1[0,1]:.1f}×; money runs to ~10^6×.")
+    print(f"  => Aequitas caps the DEMAND LEVER at ~{d1[0,1]:.1f}×; money runs to ~10^6×.")
     print("-" * W)
     results, base_rho, *_ = claim2_market_and_shocks()
     print("CLAIM 2 — clearing ρ* (baseline) and under shocks:")
@@ -484,7 +517,16 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--test", action="store_true")
     ap.add_argument("--no-plots", action="store_true")
+    ap.add_argument("--floor", type=float, default=None, metavar="H",
+                    help="self-care floor F in h/day. Foundations 5.5.1 leaves F "
+                         "to the network; 5.5.3 sweeps 1.0 to 14.0, those being "
+                         "where the sweep starts and stops rather than proven "
+                         "limits. Default 10.0.")
     args = ap.parse_args()
+    if args.floor is not None:
+        if not 0.0 < args.floor < DAY:
+            ap.error(f"--floor must be above 0 and below {DAY}")
+        set_floor(args.floor)
     if args.test:
         run_tests()
         return 0

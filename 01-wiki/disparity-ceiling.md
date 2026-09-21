@@ -25,13 +25,15 @@
 
 ## The proof — three axioms doing three jobs
 
-A person's sustainable consumption allowance is `ρ · c`, where `c` is their credit *rate* in hours/day. The bound is the ratio of the largest such allowance to the smallest:
+A person's **pledge budget per day lived** is their credit *rate* `c`, in hours a day, because a budget is credit the holder earned and nothing else. The bound is the ratio of the largest such rate to the smallest:
 
 - **Upper end `c ≤ 24`** — nobody can be credited for time they don't have. That's [IC-7](distributed-auditing.md), the 24-hour cap, and it holds *even for a fraudster*, who still only has 24 hours in a day.
 - **Lower end `c ≥ F`** — staying alive is credited work ([[basic-needs-floor|§5.5]] self-care floor), so nobody sits at zero.
 - **No stacking** — [A3](non-fungibility.md): credit can't be transferred, pooled, lent, inherited, or compounded. This is what makes the bound `24/F` rather than `24·k/F`; one account can't absorb others' hours.
 
-So the top consumes `ρ·24`, the bottom `ρ·F`, and the ratio is **`(ρ·24)/(ρ·F) = 24/F`**. The **ρ cancels** (it scales both ends equally), and the weighting model cancels too (same hours-unit both ends, A2). The bound depends on *neither* — so it does **not** rest on [[weighting-governance|OP-10]].
+So the top budget is `24` and the bottom is `F`, and the ratio is **`24/F`**. **ρ does not appear at all**, because ρ is a dial on consumption and a budget is not consumption. The weighting model does not appear either, because a budget is counted in hours worked. The bound depends on *neither* — so it does **not** rest on [[weighting-governance|OP-10]].
+
+> **⚠️ Corrected 2026-09-21.** <!-- struck-ok: names the withdrawn derivation in order to correct it --> These two paragraphs read *"A person's sustainable consumption allowance is `ρ · c`… So the top consumes `ρ·24`, the bottom `ρ·F`, and the ratio is `(ρ·24)/(ρ·F) = 24/F`."* **That silently sets `P` = 0 for both people.** This page's header was restated on 2026-09-18 and **its derivation was not**, so the summary said pledge budgets while the proof still worked in consumption.
 
 ## Why hoarding can't beat it (credit is not a currency)
 
@@ -47,7 +49,7 @@ So there is nothing to "bank and blow." A lifelong hoarder who consumes nothing 
 
 | Attack | Resolution |
 |---|---|
-| **Methuselah hoarder** — bank a lifetime, splurge it | Credit is a record, not a balance (above). A splurge can't exceed your own `ρ·C`. |
+| **Methuselah hoarder** — bank a lifetime, splurge it | Credit is a record, not a balance (above). A splurge can't exceed your own `ρ·(C + P)`. |
 | **Dynasty / household** — pool N people into one mansion | **Re-answered 2026-09-18.** A pledge budget is credit the holder earned, so **room received never enlarges what anybody can pledge**, and committed room is **not transferable**, so it does not pass on death. A dynasty cannot compound. *(The old reason — dwelling debt splitting per occupant, children included — is withdrawn: a child cannot consent to a property transfer.)* One member dominating the rest is coercion ([[service-to-influence|OP-1]]), and is the legal system's problem. |
 | **Collector** — hoard houses, gold, art | Holdings are a **burden**, not income ([property-debit](property-debit.md)): they raise your *own* debit against a fixed credit, so a hoard self-bounds. |
 
@@ -81,5 +83,5 @@ So there is nothing to "bank and blow." A lifelong hoarder who consumes nothing 
 - [honest-advantage](honest-advantage.md) — low fraud upside plus high honest return is the whole security model
 
 ---
-*Status: conditional result (consumption axis; conditional on OP-22 + narrow-band floor). Formally stated, simulated (7 tests), and stress-tested → PASSES 2026-08-14. Folded into Foundations v0.15 §5.5 / Objections v0.16 §C test 8.*
+*Status: conditional result (**pledge-budget axis**; conditional on OP-22 + narrow-band floor). Formally stated, simulated (7 tests), and stress-tested → PASSES 2026-08-14. Folded into Foundations §5.5 / Objections §C test 8.*
 *Source: `00-strategy/Aequitas_Foundations.md` §5.5.5 (the ceiling and its four conditions), §5.5.6 (why hoarding does not beat it) · design session 2026-07-31 · formal statement `06-simulation/disparity-ceiling/DISPARITY_CEILING.md`*

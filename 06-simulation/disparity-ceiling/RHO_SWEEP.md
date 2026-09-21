@@ -34,7 +34,9 @@ Discretionary consumption is gated by **D ≤ ρ·C** (OP-4 shape): you may cons
 2. **ρ moves predictably under shocks — the "prime-rate" behaviour.** Disaster (−30% budget) *tightens* ρ to 0.68; growth *loosens* it to 2.15; a pollution re-weighting (+25% debit) tightens it to ~1.0. Governance turns one dial, in the intuitive direction.
 3. **The big one — efficiency, not labour, crosses the scarcity threshold.** The *same* society is mildly scarcity-constrained under the US production method (ρ*=1.2, 35% of people constrained below their wants) but tips into **post-scarcity** — the debit gate stops binding at all, everyone gets their full desired lifestyle — under German/Japanese or Spanish efficiency. This closes the loop: **Q1** (labour is abundant; materials/energy bind), **Q6** (the US is the inefficient outlier), and the ρ mechanism are one story. Cutting waste and producing efficiently, *not* working more, is what delivers abundance.
 4. **The median always gets a lifestyle.** Even at the tightest realistic setting the median person's discretionary layer stays positive (0.62–1.00× of desired) — the gate rations the *top tail*, not the typical person.
-5. **The 24/F ceiling is invariant throughout.** Real-consumption disparity (top vs the subsistence allowance) is exactly 2.4× in every scenario — ρ sets the *level*, never the *spread* (IC-7; proved in `disparity_ceiling_sim.py`).
+5. **The 24/F ceiling is invariant throughout.** The disparity (top vs the subsistence allowance) is exactly 2.4× in every scenario — ρ sets the *level*, never the *spread* (IC-7; proved in `disparity_ceiling_sim.py`).
+
+   > **⚠️ Corrected 2026-09-21.** <!-- struck-ok: names the withdrawn wording in order to correct it --> This read *"Real-consumption disparity."* **`24/F` bounds lifetime pledge budgets per day lived and does not bound consumption** (Foundations §5.5.5). **This sweep sets `P` = 0**, so the two coincide here and only here.
 
 ## Honest limits
 

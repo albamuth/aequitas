@@ -249,7 +249,10 @@ def test_disparity_within_ceiling():
         if d["rho"] is None:
             continue
         assert d["disparity"] <= CEILING + 1e-6, f"{name} broke 24/F: {d['disparity']}"
-    print(f"[ok] real-consumption disparity <= 24/F = {CEILING:.1f}x in all scenarios")
+    # 24/F bounds LIFETIME PLEDGE BUDGETS per day lived, not consumption
+    # (Foundations 5.5.5). This sweep sets P = 0 for every agent, so the two
+    # coincide here and only here.
+    print(f"[ok] disparity <= 24/F = {CEILING:.1f}x in all scenarios (P = 0 throughout)")
 
 
 def run_tests():
