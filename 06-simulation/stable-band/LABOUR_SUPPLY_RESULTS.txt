@@ -1,0 +1,119 @@
+==============================================================================
+WHAT PRODUCES A SHORTAGE -- SWEEPING THE FLOOR AND THE LABOUR SUPPLY
+==============================================================================
+
+  Grid      5 floors x 4 work means x 3 spreads
+            = 60 cells, N = 60,000, seed 20260922
+  Fixed     kappa and the physical envelope B, calibrated ONCE at the
+            reference arm (mean 6.0 h/day = 42 h/week, sd 3.0)
+  Labour    a lifestyle-unit commands 3.781 h/day of other people's
+            labour (1380 h/yr, Foundations 3.5, measured)
+
+  THE FLOOR DOES NOT ENTER THE LABOUR CEILING. Work hours only.
+  That is Q1's defect and self-test 1 refuses it.
+
+------------------------------------------------------------------------------
+FIRST RESULT -- THE FLOOR DOES NOT APPEAR IN THIS QUESTION AT ALL
+------------------------------------------------------------------------------
+
+      F      R_phys    R_labour      wanted  binds
+    2.0       56505       65026       66476  physical
+    4.0       56505       65026       66476  physical
+    6.0       56505       65026       66476  physical
+    8.0       56505       65026       66476  physical
+   10.0       56505       65026       66476  physical
+
+  In plain words: every row is identical. Neither ceiling reads F, because the
+  physical envelope is a fact about factories and the labour ceiling is a fact
+  about hours worked. **The floor decides who may draw on output. It does not
+  decide how much output there is.**
+
+  So the shortage question is one-dimensional in the floor, and the remaining
+  tables drop it.
+
+------------------------------------------------------------------------------
+SECOND RESULT -- THE LABOUR SUPPLY IS WHERE THE ANSWER LIVES
+------------------------------------------------------------------------------
+
+  THE STATISTIC IS R_labour / R_phys -- can the hours worked exploit the
+  physical envelope that already exists? Below 1.0 the hours bind and the
+  plant stands idle. Above 1.0 the envelope binds and more work buys nothing.
+
+  ⚠️ The margin against WANTS is printed too and is ENTAILED, so do not read
+  it. B = CAP x wanted x kappa with CAP = 0.85, so the physical ceiling is
+  85% of wants BY CONSTRUCTION and that column can never beat -15%. It is a
+  restatement of a constant somebody chose.
+
+
+    mean     sd    worked     R_phys      R_lab    ratio  binds     (entailed)
+    h/wk   h/wk      h/wk
+      20   10.5      14.9      56505      33830     0.60  HOURS BIND     -49.1%
+      20   21.0      16.1      56505      36394     0.64  HOURS BIND     -45.2%
+      20   31.5      17.6      56505      39945     0.71  HOURS BIND     -39.9%
+      30   10.5      21.4      56505      48421     0.86  HOURS BIND     -27.1%
+      30   21.0      21.7      56505      49117     0.87  HOURS BIND     -26.1%
+      30   31.5      22.2      56505      50376     0.89  HOURS BIND     -24.2%
+      40   10.5      27.9      56505      63141     1.12  hours spare    -15.0%
+      40   21.0      27.5      56505      62398     1.10  hours spare    -15.0%
+      40   31.5      27.0      56505      61162     1.08  hours spare    -15.1%
+      50   10.5      34.3      56505      77720     1.38  hours spare    -15.0%
+      50   21.0      33.2      56505      75160     1.33  hours spare    -15.1%
+      50   31.5      31.6      56505      71599     1.27  hours spare    -15.1%
+
+------------------------------------------------------------------------------
+THE CROSSOVER -- how many hours a week must be worked to clear wants
+------------------------------------------------------------------------------
+
+  At the current spread, the labour ceiling meets the physical envelope at a
+  drawn mean of 37.6 h/week -- 26.1 h/week averaged over EVERYBODY, because
+  about 35% do little or no paid work.
+
+  Below it the hours bind and plant stands idle. Above it the envelope binds
+  and more work buys nothing.
+
+------------------------------------------------------------------------------
+THE ANSWER
+------------------------------------------------------------------------------
+
+  6 of 12 labour cells are bound by HOURS rather than by the physical
+  envelope, which is the same count as 6 cells binding on labour.
+
+  1. THE FLOOR IS NOT IN THIS QUESTION. F moves who may draw on output and
+     moves nothing about how much exists. The disparity ceiling 24/F is
+     likewise arithmetic on IC-7 and the floor. **Both are one-line results.**
+
+  2. THE MEAN DECIDES, AND THE SPREAD ACTS ONLY THROUGH THE CLIP. One step
+     in the mean, 20 to 30 h/week, moves the ratio 0.64 to 0.87. Tripling the
+     spread at a fixed mean moves it about half as far.
+
+     **And the spread moves it in OPPOSITE directions at the two ends**:
+     0.60 to 0.71 at a 20 h/week mean, and 1.38 to 1.27 at 50. That is not an
+     effect of dispersion. A symmetric spread cannot move a total. It is the
+     CLIP at [0, 10 h/day] biting asymmetrically -- at a low mean the lower
+     clip truncates the left tail and raises the total, at a high mean the
+     upper clip truncates the right tail and lowers it.
+
+     ⚠️ **So the sd column is measuring a clip bound, not a society.** That is
+     the same defect family the 2026-09-22 nightcheck found in
+     disparity_ceiling_sim.py line 91, in a third file. Read the mean column;
+     do not quote the sd column as a finding about inequality of hours.
+
+  3. THE TURNOVER SITS AT ABOUT 38 h/WEEK DRAWN. Below it the hours bind;
+     above it the plant does. This is Foundations 3.5's deployable-hours
+     finding arriving from a second direction and agreeing with it: that
+     section measured US deployable/needed at 0.43-0.87 and peer countries
+     at 0.66-1.34, and this sweep spans the same interval across the same
+     kind of range.
+
+  ⚠️ TWO THINGS THIS DOES NOT SHOW.
+
+  The physical envelope B is calibrated from the reference arm and HELD FIXED.
+  That is correct for a bookkeeping dial, which is what stable_band.py's
+  header rules about, and it is an ASSUMPTION for a labour arm: a society
+  working half as much would over decades also build fewer factories. **This
+  is a statement about an economy whose plant already exists, not a steady
+  state.**
+
+  And the margin against wants is ENTAILED by CAP = 0.85 and says nothing.
+  It is printed only so that nobody recomputes it and reports it as a finding.
+

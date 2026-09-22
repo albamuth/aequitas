@@ -1,8 +1,8 @@
 <!-- tag: fnd-aequitas-foundations-and-long-term -->
 # Aequitas — Foundations & Long-Term Strategy
 
-> **Version:** 0.49
-> **Date:** 2026-09-21
+> **Version:** 0.50
+> **Date:** 2026-09-22
 > **Status:** Working foundations.
 > **Primary audience of the first paper:** technologists and implementers.
 > **Companion:** [`Aequitas_Conformance.md`](Aequitas_Conformance.md) — what must be true for an implementation to *be* Aequitas.
@@ -1134,7 +1134,7 @@ Some processes produce several things at once from one pool of inputs. A steer e
 >
 > **⚠️ The delta is settled. The level is not, and the two must not be quoted together.** The memory arm above reads 0.114–0.129 at 10⁸ events against the 0.27 this section publishes at 10⁹ — **about a factor of two, and that gap is not a length effect.** The outside run used **two logs with two byte spellings**: 34 bytes an event for the record check, 28 for the re-weighting. **One log served both read paths, and no log served both passes**, so the level of the ratio is read across generators and the delta is not.
 >
-> **What would settle it is one run and it has been requested:** one generator, one byte spelling, one machine, disk and memory, 10⁸ and 10⁹, eight checks and nine. **Until that runs, 0.27 is a reading on one stack rather than this system's figure.**
+> **What would settle it is one run and it has been requested:** one generator, one byte spelling, one machine, **one value of `k`**, disk and memory, 10⁸ and 10⁹, eight checks and nine. **Until that runs, 0.27 is a reading on one stack rather than this system's figure.**
 >
 > *(The disk arm is **@hemei**'s, citizen #700, run from their own seat inside a day of the arm being pre-registered, with the stack string attached to every number. **They flagged the two-log caveat themselves.** The pre-registration they ran against was defective — all three of its registered outcomes were stated over the delta and none over the level, so none of them could have caught a factor of two. That defect is the outreach agent's and was published as such.)*
 >
@@ -2523,7 +2523,7 @@ Those activities are **sleeping, eating, defecating, and keeping oneself clean.*
 
 | What is being compared | Money | Aequitas |
 |---|--:|--:|
-| **The say over what gets made** | about **10⁶ ×** the median | **2.40× at `F` = 10, and nobody reaches it** |
+| **The say over what gets made** | about **10⁶ ×** the median | **`24 ÷ F`, and nobody reaches it.** 2.40× at `F` = 10 |
 | **Material consumption** | about **670 ×** the median (§5.5.8) | **No bound.** Bounded only by how many people back you |
 
 **And every living person holds some of the first**, because staying alive is credited work — which is what §4.6 calls the universal basic voice.
@@ -2549,7 +2549,9 @@ Those activities are **sleeping, eating, defecating, and keeping oneself clean.*
 
 **Person P's working years, shown in full:** 300 working days × (12 + 10) = 6,600 h, plus 65 rest days × 10 = 650 h, giving **7,250 h a year** for 50 years. The 30 years outside that run at the floor: 30 × 3,650 = **109,500 h**.
 
-> **The figure to quote is not 2.4×. It is that a very hard working life reaches about 1.6× a life spent only staying alive, and that 2.4× is the wall nobody gets to.**
+> **The figure to quote is not 2.4×. It is that a very hard working life reaches about 1.6× a life spent only staying alive, and that `24 ÷ F` is the wall nobody gets to.**
+
+**Write the bound as `24 ÷ F`, never as its value at one floor.** 2.4× is what `24 ÷ F` returns at `F` = 10, and `F` is a value each network sets for itself (§5.5.1). **A sentence that states 2.4× as the result has pinned a free setting**, and the four lives in the table above are the `F` = 10 instance of a pattern that holds at every floor.
 
 ##### The ceiling depends on two network choices, not one
 

@@ -1,7 +1,7 @@
 <!-- tag: str-aequitas-overall-strategy -->
 # Aequitas — Overall Strategy
 
-> **Version:** 0.11 · **Date:** 2026-09-19
+> **Version:** 0.12 · **Date:** 2026-09-22
 > **Target:** A statement of the system, tested against scenarios, in ~3 months — with a conformance list an implementer can build against.
 > **Companion docs:** `Aequitas_Foundations.md` (axioms), `Aequitas_Objections.md` (register), `Aequitas_Conformance.md` (what an implementation must satisfy), `../NEXT.md` (task queue)
 
@@ -122,7 +122,13 @@ This also answers the socialist-calculation critique pre-emptively: we don't arg
 - **C12 (energetics registry): process-energetics registry** and the rival-sector audit rules. **OP-24 (understatement drift) sim** — at what rival density does understatement drift stop being arrested?
 - **C5–C7:** transfer rules and pledge reversion; identity; privacy incl. OP-22's disclosure set.
 - **C8 (influence mechanics):** Resolve OP-1 (service → influence) enough to specify.
-- **Disparity-ceiling proof — ✅ largely done, coupled to OP-4 (debit tolerance) / C9 (debit-tolerance formula).** The strongest defensive result the project holds, now with a simulation behind it (`disparity_ceiling_sim.py`, `q4_locked_ledgers.py`): **inside one network's books** the between-people accrual ceiling is **`24 h ÷ floor` ≈ 2.4×**, exact and ρ-independent, versus money's 10⁴–10⁶× tail; material-only, only ~0.1–2% sit past a permanent lockout. **A very hard working life reaches about 1.6×; 2.4× is a wall nobody gets to.** **OP-4's shape is settled** (per-person locally-set tolerance floor + personal efficiency ratio on the discretionary layer only — no global ratio). **Still not run:** the generous-network cohort-shopping race, tracked as OP-14. **The result is no longer stated as conditional on OP-22** — that clause qualified a cross-network claim struck on 2026-08-25. OP-22 still gates proving a *pledge's* backing across a model boundary, which is a different question. *Watch, as before: no objective function tuning the tolerance, or it re-opens OP-10.*
+- **Disparity-ceiling proof — ✅ done, and deliberately de-emphasised from 2026-09-22.** Inside one network's books the ceiling on **lifetime pledge budget per day lived** is **`24 ÷ F`**, exact and ρ-independent, versus money's 10⁴–10⁶× tail; material-only, only ~0.1–2% sit past a permanent lockout (`disparity_ceiling_sim.py`, `q4_locked_ledgers.py`). **A very hard working life reaches about 1.6× a floor-only life, and `24 ÷ F` is the wall nobody gets to.**
+
+  > **Write the bound as `24 ÷ F`, never as its value at one floor.** 2.4× is what it returns at `F` = 10, and `F` is a value each network sets (Foundations §5.5.1). **This line said "≈ 2.4×" until 2026-09-22**, which pinned a free setting — the same fault found in `ceiling_rubric.py` the same night.
+
+  > **Author ruling, 2026-09-22: state it once and move on.** It is arithmetic on IC-7 and the floor, and Foundations §5.5.5 already says *"the question that decides whether a network works is whether `F` sits inside §5.5.3's band, not what the exact ratio is."* **The effort belongs on what produces shortage** — `06-simulation/stable-band/labour_supply_sweep.py`, which found the floor absent from that question altogether and the turnover at about 38 h/week drawn.
+
+  **OP-4's shape is settled** (per-person locally-set tolerance floor + personal efficiency ratio on the discretionary layer only — no global ratio). **Still not run:** the generous-network cohort-shopping race, tracked as OP-14. **The result is no longer stated as conditional on OP-22** — that clause qualified a cross-network claim struck on 2026-08-25. OP-22 still gates proving a *pledge's* backing across a model boundary, which is a different question. *Watch, as before: no objective function tuning the tolerance, or it re-opens OP-10.*
 - **Use cases as validation.** Sandwich ✅ (which turned out to contain a joint process — milling → flour + bran), plus homeowner, doctor, film studio. **Add an explicit joint-production case.**
 
 <!-- tag: str-phase-3-write-and-harden -->
