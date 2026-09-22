@@ -1,8 +1,8 @@
 <!-- tag: fnd-aequitas-foundations-and-long-term -->
 # Aequitas — Foundations & Long-Term Strategy
 
-> **Version:** 0.48
-> **Date:** 2026-09-19
+> **Version:** 0.49
+> **Date:** 2026-09-21
 > **Status:** Working foundations.
 > **Primary audience of the first paper:** technologists and implementers.
 > **Companion:** [`Aequitas_Conformance.md`](Aequitas_Conformance.md) — what must be true for an implementation to *be* Aequitas.
@@ -1560,6 +1560,46 @@ An attacker invents **2.0 kg** of a good arriving from nowhere, and **2.0 kg** o
 
 **A falsehood is not prevented at the moment of writing. It is made permanent and traceable, and it is exposed by arithmetic the moment any part of what it describes is measured.** This is how a scientific literature handles a wrong result, and it is the only method that needs no authority standing at the door deciding what may be written down.
 
+##### A network publishes how a correction is asked for
+
+**The two paragraphs above say what happens to a wrong record. They do not say how anybody gets one looked at, and a rule nobody can invoke is not available to them.**
+
+> **A trust network publishes a procedure for correcting records. Aequitas requires the procedure to exist and to be readable before anyone joins. It does not say what the procedure is.**
+
+**Three things it covers, and they are different problems wearing one word.**
+
+| | What it is |
+|---|---|
+| **A mistake** | The record describes the right event and gets a quantity wrong |
+| **Bad data** | The instrument, the method or the source behind the record was faulty |
+| **Fraud** | The record describes an event that did not happen |
+
+**Four properties any procedure must have. An implementation must be able to show how it meets each.**
+
+| # | What must hold | Why |
+|---|---|---|
+| **1** | **The procedure is published, and is readable before a person joins.** | This is §4.2's rule applied to correction: a network that will not say in advance how a record is challenged is asking to be trusted rather than checked. |
+| **2** | **It says who may raise a correction, and on what evidence.** | A route only the network can open is not a correction procedure. |
+| **3** | **It says what happens to the record while the correction is open.** | A contested record is still being read. **The append-only rules above govern the outcome and say nothing about the interval.** |
+| **4** | **Every correction is dated, attributed, and appended.** Nothing is deleted and nothing is edited. | The paragraphs above, stated as an obligation on the procedure rather than on the record. |
+
+**This is §3.3a's shape, applied to records rather than to constants.** That section states what a cost-constant audit must achieve and leaves the design to the network. **The same division holds here: Aequitas states what must be true, and never how to build it** (§2.6).
+
+##### An example, with the numbers
+
+**A person joins at forty and the network estimates their declared span back to the earliest date its evidence permits.** In a network with `F` = 10 h/day and ρ = 1.2, each declared year opens `1.2 × 10 × 365 =` **4,380 hours** of room and adds about **1,380 hours** of consumption, so an honest year is worth **+3,000 hours** (below).
+
+**Eight years later a baptismal register turns up showing they were born three years later than the estimate.**
+
+| | |
+|---|---|
+| The original estimated span | **not edited, not deleted** |
+| The register | **appended beside it**, dated and attributed |
+| The person's position | **re-derived from the log** (A6), so three years of room and consumption come off |
+| What the procedure decided | **who could file the register, and what the books did for the eight years in between** |
+
+**In plain words: the append-only rule settles where the record ends up, and the procedure settles how it got looked at.** Without the second, the first describes an outcome nobody can reach.
+
 #### How much of a region's output the books did not see
 
 **A network has to say how much of a region's output is missing from its own records.** That figure is one subtraction.
@@ -1796,7 +1836,9 @@ A median lifestyle commands about **1,380 hours** of other people's labour a yea
 1. **An estimate for an undisclosed period is computed over the undisclosed leftover, not over the whole population.** This is the rule above, applied to periods inside one life. Without it, a person who documents only their flattering years free-rides forever on an average their own silence inflates. **Selective disclosure is expected and is not an exploit, provided this holds.**
 2. **An estimate errs against the estimated party, on both sides.** Debit is estimated at the unfavourable end and credit at the conservative end, so **supplying evidence always pays**, whichever way the truth lies.
 
-3. **The declared span is itself a record, and is estimated to the earliest date the evidence allows.** A **declared span** is how long the person says they have lived, and it decides how many years the reconstruction rebuilds. **It is not exempt from the rule at the head of this section: an assertion is not evidence.** Where the span is not evidenced, it is estimated back to the earliest date the available evidence permits, and a later record supersedes that estimate like any other.
+3. **The declared span is a record.** A **declared span** is how long the person says they have lived, and it decides how many years the reconstruction rebuilds. **It is not exempt from the rule at the head of this section: an assertion is not evidence.** Where the span is not evidenced, the network sets it by one published rule — **back to the earliest date the available evidence permits** — and what that rule produces is a record, corrected by supersession and by the procedure above, like every other record.
+
+> **Why a span carries no interval and no label, when every derived figure above carries both.** The three labels exist for one arithmetic reason: **a subtraction reverses the direction of every error inside it**, so `R = N − Y` cannot say which way it is wrong without an argument about each operand. **The earliest-date rule is not a subtraction.** The earliest permitted date gives the longest permitted span, so the figure is **one-sided by construction** and carries its direction without a label being argued onto it. **A label is what you need when the arithmetic has destroyed the direction. Here it never had one to destroy.**
 
 ##### Why condition 3 names a date rather than a direction
 

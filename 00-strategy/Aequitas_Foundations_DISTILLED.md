@@ -9,8 +9,8 @@
 >
 > **Regenerate with:** `python bin/distill.py`
 
-> **Source:** [`Aequitas_Foundations.md`](Aequitas_Foundations.md) · **version 0.48**
-> **Size:** 129,843 bytes, from 252,348 — **51% of the source**
+> **Source:** [`Aequitas_Foundations.md`](Aequitas_Foundations.md) · **version 0.49**
+> **Size:** 132,877 bytes, from 256,051 — **52% of the source**
 
 **What was kept:** every heading, every rule, every table, and the stated result of every worked
 example. **What was dropped:** the explanation prose between them.
@@ -693,6 +693,29 @@ example. **What was dropped:** the explanation prose between them.
 #### A record always beats an estimate, and never the other way round
 > **A record replaces an estimate. An estimate may never replace a record.**
 #### Records are annotated, never deleted
+##### A network publishes how a correction is asked for
+> **A trust network publishes a procedure for correcting records. Aequitas requires the procedure to exist and to be readable before anyone joins. It does not say what the procedure is.**
+| | What it is |
+|---|---|
+| **A mistake** | The record describes the right event and gets a quantity wrong |
+| **Bad data** | The instrument, the method or the source behind the record was faulty |
+| **Fraud** | The record describes an event that did not happen |
+| # | What must hold | Why |
+|---|---|---|
+| **1** | **The procedure is published, and is readable before a person joins.** | This is §4.2's rule applied to correction: a network that will not say in advance how a record is challenged is asking to be trusted rather than checked. |
+| **2** | **It says who may raise a correction, and on what evidence.** | A route only the network can open is not a correction procedure. |
+| **3** | **It says what happens to the record while the correction is open.** | A contested record is still being read. **The append-only rules above govern the outcome and say nothing about the interval.** |
+| **4** | **Every correction is dated, attributed, and appended.** Nothing is deleted and nothing is edited. | The paragraphs above, stated as an obligation on the procedure rather than on the record. |
+##### An example, with the numbers
+**A person joins at forty and the network estimates their declared span back to the earliest date its evidence permits.** In a network with `F` = 10 h/day and ρ = 1.2, each declared year opens `1.2 × 10 × 365 =` **4,380 hours** of room and adds about **1,380 hours** of consumption, so an honest year is worth **+3,000 hours** (below).
+**Eight years later a baptismal register turns up showing they were born three years later than the estimate.**
+| | |
+|---|---|
+| The original estimated span | **not edited, not deleted** |
+| The register | **appended beside it**, dated and attributed |
+| The person's position | **re-derived from the log** (A6), so three years of room and consumption come off |
+| What the procedure decided | **who could file the register, and what the books did for the eight years in between** |
+**In plain words: the append-only rule settles where the record ends up, and the procedure settles how it got looked at.** Without the second, the first describes an outcome nobody can reach.
 #### How much of a region's output the books did not see
 > **R = N − Y**
 >
@@ -795,6 +818,7 @@ example. **What was dropped:** the explanation prose between them.
 **The estimate is the default, and evidence is voluntary.** A person supplies whatever narrows it — where they were born, how long they lived in each place, which jobs they held, how far they commuted, which vehicles they owned — and accepts the estimate for every period they leave undisclosed. **Nothing is compulsory, and evidence moves the figure in either direction, which is why people supply it.**
 **Details may arrive years later and the position re-derives.** No new machinery is needed, because a position is computed from the log and never stored (A6).
 **Three conditions, and without any one of them this breaks.**
+> **Why a span carries no interval and no label, when every derived figure above carries both.** The three labels exist for one arithmetic reason: **a subtraction reverses the direction of every error inside it**, so `R = N − Y` cannot say which way it is wrong without an argument about each operand. **The earliest-date rule is not a subtraction.** The earliest permitted date gives the longest permitted span, so the figure is **one-sided by construction** and carries its direction without a label being argued onto it. **A label is what you need when the arithmetic has destroyed the direction. Here it never had one to destroy.**
 ##### Why condition 3 names a date rather than a direction
 | The network | Room a year opens, `ρ·F·365` | Debit a year adds | An honest year is worth |
 |---|--:|--:|--:|

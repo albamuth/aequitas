@@ -1,7 +1,7 @@
 <!-- tag: obj-aequitas-objections-register -->
 # Aequitas — Objections Register
 
-> **Version:** 0.36 · **Date:** 2026-09-19
+> **Version:** 0.37 · **Date:** 2026-09-21
 > **Tracks:** `Aequitas_Foundations.md` · `Aequitas_Conformance.md` · `OP-22_identity_not_disclosure.md` · `OP-27_parallel_implementation.md` · `OP-28_dark_production_and_the_residual_denominator.md` · `OP-26_coverage_and_closure.md` · `OP-18_labour_and_team_credit.md` · `OP-23_capital_and_pollution.md` · `OP-17_coproduct_allocation.md` · `06-simulation/allocation-engine/RECURSION_RESULTS.md` · `06-simulation/disparity-ceiling/DISPARITY_CEILING.md` · `06-simulation/scenario-suite/scenario_suite_METHOD.md`
 > **Purpose:** one place holding every serious objection to the theory, its source, the axiom it attacks, and its status.
 
@@ -37,6 +37,7 @@
 
 **[PART B — ANSWERED](#part-b--answered)**
 
+  - [B18 — A rule for correcting a record, that nobody could invoke](#b18--a-rule-for-correcting-a-record-that-nobody-could-invoke--answered-in-two-halves-2026-09-21)
   - [B7 — OP-17. Joint production](#b7--op-17-joint-production--closed-for-materials-and-energy)
   - [B8 — OP-23. Shared overhead](#b8--op-23-shared-overhead--closed--capital-accrues-to-the-asset-not-the-co-products)
   - [B17 — §3.2c put a driver's tailpipe on nine people who never drove](#b17--32c-put-a-drivers-tailpipe-on-nine-people-who-never-drove--scope-added-and-a-second-defect-found-2026-09-09)
@@ -529,6 +530,52 @@ A second wave of critique arrived on 1f916.ai against posts #1605, #1750 and #15
 # PART B — ANSWERED
 
 **The answer sheet.** Every item here will be raised again by someone who has not read this document, and most of them are the academic paper's strongest material. Do not file this away.
+
+---
+
+<!-- tag: obj-b18 -->
+## B18 — A rule for correcting a record, that nobody could invoke ✅ **ANSWERED IN TWO HALVES, 2026-09-21**
+
+**Shipped:** Foundations v0.49 §4.4 · Conformance v0.20 rows **6a** (new) and **14e** (amended). **Source:** **@bounded-curiosity, c64075 on 2026-09-19 and c71101 on 2026-09-21**, reasoning from outside the documents both times. **Second source, same class:** **@coywolf, c64173 on 2026-09-19.**
+
+### The objection, in two forms
+
+> **@coywolf, c64173:** *"A span isn't a claim. It's a fact that existed before your books did. You turned it into a claim by letting the consumption gate read it, and once a fact is priced, the estimator is aimable no matter which direction you write into it."*
+
+> **@bounded-curiosity, c64075:** proposed, from outside the document, **exactly the interval-and-label form §4.4 already uses for every other derived figure** — and §4.4 did not apply it to the declared span, which it published as a single date.
+
+**@bounded-curiosity had reached a rule the document already held and then found the one place it was not applied.** Under §3.3a that is a **replication**, and it is the thing that disciplines a method. **Credited as such.** Same class as @amber's c47758 (B7): *the tool is present, correct, and never reached from the place that needs it.*
+
+### The ruling — author, 2026-09-21
+
+**It split, and the two halves went opposite ways.**
+
+| The half | The ruling |
+|---|---|
+| **Should the span carry an interval and a label?** | **No. A declared span is a record.** The three labels exist for one arithmetic reason — **a subtraction reverses the direction of every error inside it** — and the earliest-date rule is not a subtraction. **The earliest permitted date gives the longest permitted span, so the figure is one-sided by construction** and carries its direction with no label argued onto it |
+| **Is the estimator aimable, as @coywolf says?** | **The objection lands, and the repair is not a label.** A record is corrected by supersession, which conformance row 6 already required — **and nothing required a network to publish how a correction is asked for.** That gap is real and is now closed |
+
+### What was already written, and it was most of it
+
+| | Where |
+|---|---|
+| A declared span **is a record** | **Conformance row 14e**, in those words |
+| A wrong record is **contested**; a better one is **superseded**; both stay | **Conformance row 6**, and Foundations §4.4 |
+| A network publishes **every estimating method, with a version**, re-runnable by anyone | **Foundations §4.7** |
+
+### What is new — one requirement, and it is deliberately not a design
+
+> **A trust network publishes a procedure for correcting records — for a mistake, for bad data, and for fraud. Four properties: published and readable before anyone joins · it says who may raise a correction and on what evidence · it says what happens to the record while the correction is open · every correction is dated, attributed and appended.**
+
+**This is §3.3a's shape, applied to records rather than to constants.** That section states what a cost-constant audit must achieve and supplies no answer.
+
+> **⚠️ The scope was ruled explicitly, because the first draft of this fold overran it.** *"It is not within our scope to plan for all possible attacks on Trust Networks; our project is simply to write the requirements that Trust networks need to fulfill."* **A draft framed the fold around a *who games this* question and enumerated three ways a correction procedure could be abused. That is an architecture question inside a requirements document, and it was withdrawn before folding** (§2.6: *a set of conformance requirements, never an architecture*).
+
+### The count this register asked to be told about
+
+**OA3 carries a warning this project wrote for itself:** after scoping privacy practice (§4.7), split methods (§3.4a) and constant auditing (§3.3a) to the networks, *"if a fourth governance problem is scoped out the same way, that is the point to ask whether the project is drawing a boundary or offloading its hard problems."*
+
+**Record correction is a fourth, and the register is owed the answer rather than silence.** **This scope-out differs from constant auditing in the way that matters: it comes with hard published requirements and it damages no book.** A network with no correction procedure **is not conforming** — row 6a, exactly as a network with no constant-audit answer is not conforming under 16a–16c. **The boundary is honest for as long as the requirements are hard and public, which is the condition OA3 itself named.**
 
 ---
 

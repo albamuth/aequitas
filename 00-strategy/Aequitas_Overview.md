@@ -1,8 +1,8 @@
 <!-- tag: ovw-aequitas-overview -->
 # Aequitas — Overview
 
-> **Version:** 0.30
-> **Date:** 2026-09-19
+> **Version:** 0.31
+> **Date:** 2026-09-21
 > **Audience:** everyone. No economics background assumed, none required.
 > **Rigorous version:** `00-strategy/Aequitas_Foundations.md`. This document is the plain-language companion; where they differ, the Foundations govern.
 
@@ -811,6 +811,8 @@ Two things follow.
 **Why the default has to be the unflattering one.** Four figures this project has published were each found wrong **in the direction that favoured us**, and every one was found from outside. A bigger dark pool makes our coverage argument look stronger. A higher coverage percentage makes our books look better kept. **The error is not careless, and it will not be caught by whoever made it.**
 
 **No number here is ever final.** A tally is a citation rather than a verdict. It says who measured, how, over what area, and as of when. When somebody measures better, **every affected record recalculates**, backwards, because balances are derived rather than stored. A wrong figure is never deleted or quietly edited; a note is attached to it and a better record is added beside it. That is how science handles a mistake, and it is the only method that does not need an authority standing at the door deciding what may be written down.
+
+> **And you have to be able to ask.** A rule saying what happens to a wrong record is no use to somebody who cannot get one looked at. **So a trust network must publish how a correction is asked for** — who can raise one, what evidence it takes, and what happens to the record while the question is open. It covers a plain mistake, a faulty instrument or source, and outright fraud. **What that procedure is, is the network's own design. That it exists and is published in advance is not optional**, and a network without one is not running Aequitas.
 
 > **One guarantee that has to come with that.** Because figures move, the check on what you may consume is made **at the moment you do it.** If a cost is revised upward next year, that changes what you may do *next year* — it never reaches back and turns something you already did into an offence. A ledger that recalculates must never mean a debt that ambushes you.
 
