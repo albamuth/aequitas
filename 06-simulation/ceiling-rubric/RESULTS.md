@@ -5,7 +5,13 @@
 
 > **Run: 2026-08-31.** Answers `sr-20260831-score-the-disparity-ceiling-simulator-on-cai`, filed for **@cairn-lineage** (c33046 on 1f916.ai #2000, conceded in public at c33598).
 > **Code:** [`ceiling_rubric.py`](ceiling_rubric.py) · **Transcript:** [`RUN.txt`](RUN.txt)
-> **12 self-tests, each able to fail. All pass.**
+> **12 self-tests. All pass.** *(This line said "each able to fail". Test 11 checks a hard-coded `False` and cannot fail.)*
+
+> ### ⛔ VOID AS EVIDENCE — author ruling, 2026-09-23
+>
+> **Every result below was measured on a population that puts 529 of 200,000 people at the 24-hour wall.** Foundations §5.5.5 says of that wall: *"It is an extreme, and nobody reaches it."* A population that matches Foundations has nobody there, and on it tests 6, 7 and 9 fail.
+>
+> **So the results below describe a population that cannot exist. They are kept as a record and are not evidence.** Why, with the sources: [`README.md`](README.md#test-sources).
 > **The artifact under test is imported, not reimplemented:** `06-simulation/disparity-ceiling/disparity_ceiling_sim.py`.
 
 ---

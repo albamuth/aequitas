@@ -31,7 +31,7 @@ Needs `numpy`; the figures need `matplotlib`. The default population is 200,000 
 
 | Path | What it is |
 |---|---|
-| [`disparity_ceiling_sim.py`](disparity_ceiling_sim.py) | The population model. Four claims, five self-tests. |
+| [`disparity_ceiling_sim.py`](disparity_ceiling_sim.py) | The population model. Four claims, seven self-tests. |
 | [`DISPARITY_CEILING.md`](DISPARITY_CEILING.md) | The formal statement, its five conditions, and the plain-language explainer in §0. |
 | `ceiling_fig1_rho.png` … `ceiling_fig4_frontloading.png` | The four figures the sim writes. |
 | [`rho_sweep.py`](rho_sweep.py) | The ρ dial, calibrated against the median-lifestyle anchor. |
@@ -47,3 +47,33 @@ The arithmetic is written out in [`../audits/audits_inert/bonus_sims.md`](../aud
 ## What depends on this
 
 The Statera kernel has to re-derive both headline numbers before any new scenario runs — see [`../99-superseded/statera/RESULTS.md`](../99-superseded/statera/RESULTS.md). It does, exactly.
+
+## Test sources
+
+> **Author ruling, 2026-09-23:** every test that makes a claim about the world, or uses a number we chose, cites a scientific source for its method. **Of this folder's 12 checks, 8 are code checks, 1 is sourced, and 3 are unsourced.** The labels are defined in [`../ceiling-rubric/README.md`](../ceiling-rubric/README.md#test-sources).
+
+**Most of these checks confirm arithmetic.** The author ruled on 2026-09-02 that `24 ÷ F` is simple mathematics and needs no simulation to prove it. **A check that confirms an identity is a code check.** It shows the code does the arithmetic. It is not evidence about any economy.
+
+### `disparity_ceiling_sim.py` — 7 checks
+
+| # | Test | Label |
+|---|---|---|
+| 1 | The ceiling is at most `24/F` and does not move with ρ | code check. ρ cancels in `ρ·24 ÷ ρ·F` |
+| 2 | Synthetic wealth reproduces SCF 2022 percentile ratios | **unsourced.** The median, $192,900, is confirmed. **The p90, p95 and p99 figures are not on the cited Federal Reserve page.** See [`Data_survey-of-consumer-finances-2022.md`](../../02-research/Data_survey-of-consumer-finances-2022.md). The tolerances, 9–11.5 and 62–82, are also our choice |
+| 3 | Money's top-to-median ratio dwarfs `24/F` | **unsourced.** The "~$200B" Forbes figure has no dated source. The comparison holds by five orders of magnitude, so a corrected figure is unlikely to change the result |
+| 4 | A clearing ρ exists, and a disaster tightens it | code check. Less capacity lowers the clearing ρ by the model's construction |
+| 5 | Fraud cannot break the ceiling | code check. IC-7 clips every account at 24, so this cannot fail. Foundations §5.5.7 already says the statistic *"reads no accounts"* |
+| 6 | Hoard-then-splurge ends where steady consumption ends | code check. The gate is a ratio checked at each event |
+| 7 | Only age adds spread beyond `24/F` | code check. An identity |
+
+### `rho_sweep.py` — 5 checks
+
+| # | Test | Label |
+|---|---|---|
+| 1 | The baseline has a clearing ρ | code check |
+| 2 | More efficient production loosens ρ | **sourced.** The efficiency figures come from Q6, which cites EXIOBASE: [`Data_cross-country-labour-efficiency.md`](../../02-research/Data_cross-country-labour-efficiency.md) |
+| 3 | A disaster tightens ρ and growth loosens it | code check. By construction |
+| 4 | The median person gets more than 0.7 of a full lifestyle | **unsourced.** `0.7` is our number |
+| 5 | Disparity stays within `24/F` in every scenario | code check. `P` = 0 throughout, so it is an identity here |
+
+**This file's credit population is the one `ceiling_rubric.py` scores.** `draw_population()` uses `normal(6.0, 3.0)` with 35% non-workers, and **no source justifies either**. See [`../ceiling-rubric/README.md`](../ceiling-rubric/README.md#test-sources).
