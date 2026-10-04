@@ -1,0 +1,173 @@
+{
+ "part_a": {
+  "pce_total": 611.9158746531805,
+  "categories": {
+   "14": {
+    "name": "Therapeutic appliances and equipment",
+    "hours": 3.248425185164426,
+    "by_industry": {
+     "care providers": 0.5615629574112082,
+     "drug manufacturing": 0.007565494246803716,
+     "medical equipment manufacturing": 0.9772577350773304,
+     "advertising and PR": 0.005956638362602085,
+     "marketing research and other professional": 0.007181576312137427,
+     "scientific R&D": 0.0002690850890453393,
+     "insurance": 0.016539231870684314,
+     "wholesale and retail trade": 0.8590550420864184,
+     "everything else": 0.8130374247081962
+    }
+   },
+   "27": {
+    "name": "Pharmaceutical and other medical products",
+    "hours": 12.62042112647621,
+    "by_industry": {
+     "care providers": 0.001488551012452459,
+     "drug manufacturing": 3.3896427949247716,
+     "medical equipment manufacturing": 0.1133545117067681,
+     "advertising and PR": 0.03714451573413739,
+     "marketing research and other professional": 0.04971260069363674,
+     "scientific R&D": 0.0018948018968236978,
+     "insurance": 0.0811509960479636,
+     "wholesale and retail trade": 6.175755100279637,
+     "everything else": 2.7702772541800194
+    }
+   },
+   "41": {
+    "name": "Physician services",
+    "hours": 26.63537136720539,
+    "by_industry": {
+     "care providers": 18.202915481008766,
+     "drug manufacturing": 0.05636687739913884,
+     "medical equipment manufacturing": 0.11563691224898008,
+     "advertising and PR": 0.05199984661670554,
+     "marketing research and other professional": 0.0675072973984303,
+     "scientific R&D": 0.004328207948115474,
+     "insurance": 0.2461499154406931,
+     "wholesale and retail trade": 0.608018769465398,
+     "everything else": 7.282448059679162
+    }
+   },
+   "42": {
+    "name": "Dental services",
+    "hours": 7.3186917300537315,
+    "by_industry": {
+     "care providers": 5.667543164095522,
+     "drug manufacturing": 0.006031542089552238,
+     "medical equipment manufacturing": 0.12400850536119404,
+     "advertising and PR": 0.01908751088955224,
+     "marketing research and other professional": 0.013696240191044777,
+     "scientific R&D": 0.0006217128,
+     "insurance": 0.036189252537313435,
+     "wholesale and retail trade": 0.21448163670447762,
+     "everything else": 1.2370321653850747
+    }
+   },
+   "43": {
+    "name": "Paramedical services",
+    "hours": 27.31781717017939,
+    "by_industry": {
+     "care providers": 21.976396532303944,
+     "drug manufacturing": 0.09106425669832623,
+     "medical equipment manufacturing": 0.014926619974636334,
+     "advertising and PR": 0.03770995986220683,
+     "marketing research and other professional": 0.03612827349107599,
+     "scientific R&D": 0.0020757385260719054,
+     "insurance": 0.14454848620474586,
+     "wholesale and retail trade": 0.4422437066121399,
+     "everything else": 4.57272359650624
+    }
+   },
+   "44": {
+    "name": "Hospitals",
+    "hours": 47.02655117874627,
+    "by_industry": {
+     "care providers": 32.245536893802985,
+     "drug manufacturing": 0.09818261365970149,
+     "medical equipment manufacturing": 0.25785105936716424,
+     "advertising and PR": 0.0828298784955224,
+     "marketing research and other professional": 0.11930198593432836,
+     "scientific R&D": 0.016101649074626866,
+     "insurance": 0.41384982691343275,
+     "wholesale and retail trade": 1.0024961605253733,
+     "everything else": 12.790401110973136
+    }
+   },
+   "45": {
+    "name": "Nursing homes",
+    "hours": 14.951175636721667,
+    "by_industry": {
+     "care providers": 12.135793166022975,
+     "drug manufacturing": 0.009458982889511459,
+     "medical equipment manufacturing": 0.005261261627560013,
+     "advertising and PR": 0.013744597802618871,
+     "marketing research and other professional": 0.017294942336106622,
+     "scientific R&D": 0.0011534550289777883,
+     "insurance": 0.07159294745518147,
+     "wholesale and retail trade": 0.13290595921674767,
+     "everything else": 2.5639703243419874
+    }
+   },
+   "62": {
+    "name": "Net health insurance",
+    "hours": 5.51605960004776,
+    "by_industry": {
+     "care providers": 0.0011824022686567164,
+     "drug manufacturing": 8.34636895522388e-05,
+     "medical equipment manufacturing": 0.0001669273791044776,
+     "advertising and PR": 0.027904693540298512,
+     "marketing research and other professional": 0.007428268370149252,
+     "scientific R&D": 0.00040340783283582086,
+     "insurance": 4.476574989134328,
+     "wholesale and retail trade": 0.031910950638805974,
+     "everything else": 0.9704044971940293
+    }
+   }
+  },
+  "health_total": 144.63451299459484
+ },
+ "part_b": {
+  "product_names": [
+   "Health and social work services (85)"
+  ],
+  "all_dom": 671.2352437735632,
+  "all_for": 604.9428924873597,
+  "health_dom": 186.3274150249964,
+  "health_for": 65.15470609276333
+ },
+ "anchor": {
+  "care": 179.88007148213651,
+  "goods": 32.62488990527557,
+  "insurance": 5.964802965150613,
+  "health": 218.46976435256272,
+  "share": 0.15831142344388602,
+  "r_care": 0.34967858102911276,
+  "r_goods": 0.9012382739119599,
+  "scenarios": [
+   [
+    "A: every treatment lands on the patient",
+    1380.0
+   ],
+   [
+    "B: care services covered, drugs and devices on the patient",
+    1194.155125552713
+   ],
+   [
+    "C: all healthcare covered",
+    1161.5302356474372
+   ]
+  ],
+  "peer": {
+   "ratios": {
+    "DE": 0.572476214317323,
+    "JP": 0.6762780094152332,
+    "SE": 0.5689210610286307,
+    "FR": 0.5114523261622059,
+    "ES": 0.3271826543450308
+   },
+   "median_ratio": 0.5689210610286307,
+   "anchor_median": 1296.492686678236,
+   "anchor_low": 1253.0087648040121,
+   "anchor_high": 1315.8040622281221
+  }
+ }
+}

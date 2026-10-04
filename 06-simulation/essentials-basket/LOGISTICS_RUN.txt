@@ -1,0 +1,30 @@
+parsing EXIOBASE 3 (~2 min)...
+solving (I-A) X = Y for 12 demand vectors...
+  US: B trade 188 h, B transport 102 h
+  DE: B trade 136 h, B transport 72 h
+  JP: B trade 209 h, B transport 78 h
+  SE: B trade 189 h, B transport 103 h
+  FR: B trade 160 h, B transport 106 h
+  ES: B trade 55 h, B transport 84 h
+======================================================================================
+LOGISTICS WORK PER PERSON PER YEAR -- trade (shops, wholesale) and transport
+  A = bought as an item   B = worked in these sectors behind consumption   C = worked at home
+======================================================================================
+         A item   B trade  B transp.   B both  of all B   C trade  C transp.  all hours
+  US        330       188        102      290       21%       117         83       1398
+  DE        117       136         72      208       18%        98         31       1173
+  JP        234       209         78      286       24%       169        101       1179
+  SE        220       189        103      292       24%        84         90       1235
+  FR        238       160        106      266       23%       108         65       1172
+  ES        127        55         84      140       15%         3         78        956
+--------------------------------------------------------------------------------------
+  peer median   B trade 160 h (US 188)   B transport 84 h (US 102)
+--------------------------------------------------------------------------------------
+  B transport by mode, and the share worked at home
+  US  land 48  water 22  air 18  storage and handling 14   | at home: trade 61%, transport 63%
+  DE  land 22  water 15  air 21  storage and handling 14   | at home: trade 40%, transport 20%
+  JP  land 39  water 7  air 11  storage and handling 21   | at home: trade 78%, transport 67%
+  SE  land 68  water 13  air 11  storage and handling 11   | at home: trade 21%, transport 50%
+  FR  land 62  water 19  air 16  storage and handling 9   | at home: trade 62%, transport 49%
+  ES  land 43  water 7  air 4  storage and handling 31   | at home: trade 3%, transport 64%
+======================================================================================

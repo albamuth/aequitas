@@ -23,6 +23,7 @@ Each is a separate tested script. They are added together in [`MEDIAN_LIFESTYLE_
 | **3 — imports** | Hours worked **abroad** embodied in what a person imports | [`track3_imports.py`](track3_imports.py) — **this is the Track 3 answer** | [`TRACK3.md`](TRACK3.md) |
 | **4 — own pollution** | Hours to remediate the pollution the person causes **by their own action** | [`track4_pollution.py`](track4_pollution.py) · [`track4_carbon_intensity.py`](track4_carbon_intensity.py) | [`TRACK4.md`](TRACK4.md) |
 | **6 — efficiency** | Which rich countries deliver a comparable life for fewer hours | [`track6_country_labour.py`](track6_country_labour.py) · [`track6_efficiency.py`](track6_efficiency.py) | [`Q6.md`](Q6.md) |
+| **healthcare share** | How much of the anchor is healthcare, and the range a network's attribution rule opens | [`health_share.py`](health_share.py) · [`health_peer.py`](health_peer.py) | [`HEALTH_SHARE.md`](HEALTH_SHARE.md) |
 | **mean, not median** | What everyone *would* have if consumption were shared evenly | [`average_household.py`](average_household.py) · [`average_footprint.py`](average_footprint.py) | in `MEDIAN_LIFESTYLE_RESULT.md` |
 
 **There is no track 5.** The numbering follows the method plan, which had a track that was folded into another.

@@ -1,7 +1,7 @@
 # Debit Tolerance
 
-> **Version:** 0.1
-> **Date:** 2026-09-16
+> **Version:** 0.2
+> **Date:** 2026-09-24
 
 > **A trust network lets a person consume while `D ≤ ρ·(C + P)`. That is the consumption gate.** `P` is committed pledged room — hours others pledged to this person by name (§4.6). **It has two dials: the floor `F`, and the tolerance ρ.** The floor is credit for work a person really did. It is not an allowance, and nothing is issued to anybody.
 
@@ -31,7 +31,7 @@
 
 **Credit records that a person spent time on work (A2).** Handing somebody credit for no time worked would be an abstract, issued quantity, **and A1 forbids those anywhere in the system.** So a floor written as a grant would have broken the first axiom.
 
-> **Every living human really does spend those hours. The floor credits them at the ordinary rate, and that is the whole of the derivation.**
+> **Every living human spends time staying alive. The network counts that time at a published duration for each activity, which is a declared convention (Foundations §2.5), and credits it at the ordinary rate.** At `F` = 10, a person who sleeps 6 hours is still credited 10 hours for the day.
 
 **What a network chooses is which activities it recognises and how many hours each takes.** One network counts eight hours of sleep and lands near 10 h/day. Another accepts that four hours suffices and lands near 6. A fourth counts only the hours a body cannot avoid and lands near 2. The sleep evidence a network argues from is public — the [AASM and SRS consensus statement](https://aasm.org/aasm-and-srs-publish-new-sleep-duration-consensus-statement/) says adults aged 18 to 60 should sleep 7 or more hours a night.
 
@@ -52,13 +52,14 @@
 
 **Set `F` too low and people cannot afford what they need. Set it too high and the books stop rationing anything.**
 
-**The lower bound is arithmetic:** `ρ · F · 365 ≥ E`. **Worked at `E` = 700 h/year and ρ = 1.2:**
+**The lower bound is arithmetic:** `ρ · F · 365 ≥ E`, where `E` is the hours of work behind a year of essentials. **`E` was measured on 2026-09-24** for one US person ([`../06-simulation/essentials-basket/RESULTS.md`](../06-simulation/essentials-basket/RESULTS.md)). Which goods count is each network's choice, so there are two baskets:
 
-| | |
-|---|---|
-| Minimum floor | 700 ÷ (1.2 × 365) = **1.6 h/day** |
-| At `F` = 2 h/day, room a year | 1.2 × 2 × 365 = **876 h** — covers 700 h of essentials |
-| At `F` = 1 h/day, room a year | 1.2 × 1 × 365 = **438 h** — **short by 262 h** |
+| Basket | `E`, h/yr | Lowest floor at ρ = 1.2 |
+|---|--:|--:|
+| Narrow: food at home, clothing, shelter, utilities, care | 516 – 655 | 1.2 – 1.5 h/day |
+| Broad: narrow, plus household goods, local transport, telecoms, schooling | 826 – 965 | 1.9 – 2.2 h/day |
+
+**Worked, at 965 h:** at `F` = 1 h/day the floor gives 1.2 × 1 × 365 = **438 h** of room, **527 h short**.
 
 **In plain words: a network at `F` = 1 h/day has subscribers who cannot afford to eat, and that network fails.**
 

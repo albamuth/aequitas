@@ -27,7 +27,7 @@ Making the *weight* float rather than the event is what keeps permanence from be
 
 ## Consequences
 
-- [debit-tolerance](debit-tolerance.md) — a permanent-history term with no floor would make existence itself insolvent; the floor prevents that by crediting the hours a person really spends staying alive
+- [debit-tolerance](debit-tolerance.md) — a permanent-history term with no floor would make existence itself insolvent; the floor prevents that by crediting each lived day at the network's published floor durations
 - [onboarding-incentive](onboarding-incentive.md)
 
 ## Open questions

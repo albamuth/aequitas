@@ -1,0 +1,104 @@
+{
+ "US": {
+  "categories": {
+   "Food eaten at home": 130.9720617981087,
+   "Clothing and footwear": 121.28950772286899,
+   "Shelter services": 37.54773152819163,
+   "Household utilities": 20.777585397982797,
+   "Health and social care": 252.7648082041694,
+   "Chemicals, paper, plastics (incl. drugs)": 103.26068932995267,
+   "Furniture and other goods": 78.1430872404957,
+   "Land transport services": 58.45553904284137,
+   "Post and telecoms": 13.060121627978889,
+   "Schooling": 87.24045259920022
+  },
+  "total": 1398.0747630159235,
+  "trade": 223.98483733321686,
+  "population_m": 333.3
+ },
+ "DE": {
+  "categories": {
+   "Food eaten at home": 159.5835741060157,
+   "Clothing and footwear": 127.5618836021536,
+   "Shelter services": 0.8454998609721895,
+   "Household utilities": 17.0393504403956,
+   "Health and social care": 144.70184051336707,
+   "Chemicals, paper, plastics (incl. drugs)": 33.40549533514039,
+   "Furniture and other goods": 18.11008640488796,
+   "Land transport services": 20.47475244275274,
+   "Post and telecoms": 69.00994028883817,
+   "Schooling": 64.65732708815457
+  },
+  "total": 1173.2139112372067,
+  "trade": 30.24748661124446,
+  "population_m": 83.8
+ },
+ "JP": {
+  "categories": {
+   "Food eaten at home": 169.9661254132587,
+   "Clothing and footwear": 49.624255576467775,
+   "Shelter services": 4.33714143874192,
+   "Household utilities": 6.295966541600932,
+   "Health and social care": 170.93928134253886,
+   "Chemicals, paper, plastics (incl. drugs)": 3.9173996045385717,
+   "Furniture and other goods": 5.463662216834588,
+   "Land transport services": 19.395320333603788,
+   "Post and telecoms": 31.738803510164615,
+   "Schooling": 76.73805766003757
+  },
+  "total": 1178.8688132543873,
+  "trade": 10.330590042724568,
+  "population_m": 125.0
+ },
+ "SE": {
+  "categories": {
+   "Food eaten at home": 140.70397681028751,
+   "Clothing and footwear": 89.24535240783061,
+   "Shelter services": 4.206341077917948,
+   "Household utilities": 11.509729691312124,
+   "Health and social care": 143.8032228742144,
+   "Chemicals, paper, plastics (incl. drugs)": 22.80285031187653,
+   "Furniture and other goods": 12.171055379994206,
+   "Land transport services": 107.51746139050177,
+   "Post and telecoms": 0.1304938665251935,
+   "Schooling": 161.86536733718938
+  },
+  "total": 1235.1191921744808,
+  "trade": 72.52872966447394,
+  "population_m": 10.5
+ },
+ "FR": {
+  "categories": {
+   "Food eaten at home": 176.62648436323644,
+   "Clothing and footwear": 75.97371624247828,
+   "Shelter services": 69.38089458975192,
+   "Household utilities": 19.837145510320294,
+   "Health and social care": 129.2771491279663,
+   "Chemicals, paper, plastics (incl. drugs)": 19.656552604379094,
+   "Furniture and other goods": 13.435458182920833,
+   "Land transport services": 65.73884162001886,
+   "Post and telecoms": 2.867797669769184,
+   "Schooling": 73.08215553835466
+  },
+  "total": 1171.8201594199995,
+  "trade": 68.7208319266311,
+  "population_m": 68.0
+ },
+ "ES": {
+  "categories": {
+   "Food eaten at home": 231.2197392362736,
+   "Clothing and footwear": 102.86228859539793,
+   "Shelter services": 25.29436735671923,
+   "Household utilities": 20.255540175066994,
+   "Health and social care": 82.70026087325274,
+   "Chemicals, paper, plastics (incl. drugs)": 18.582341406109883,
+   "Furniture and other goods": 17.471217391547416,
+   "Land transport services": 37.938563686958304,
+   "Post and telecoms": 1.1620503029956073,
+   "Schooling": 61.61102658838124
+  },
+  "total": 956.2723640851519,
+  "trade": 10.99010227574041,
+  "population_m": 47.8
+ }
+}

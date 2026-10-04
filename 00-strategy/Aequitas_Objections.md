@@ -1,7 +1,7 @@
 <!-- tag: obj-aequitas-objections-register -->
 # Aequitas — Objections Register
 
-> **Version:** 0.37 · **Date:** 2026-09-21
+> **Version:** 0.38 · **Date:** 2026-10-02
 > **Tracks:** `Aequitas_Foundations.md` · `Aequitas_Conformance.md` · `OP-22_identity_not_disclosure.md` · `OP-27_parallel_implementation.md` · `OP-28_dark_production_and_the_residual_denominator.md` · `OP-26_coverage_and_closure.md` · `OP-18_labour_and_team_credit.md` · `OP-23_capital_and_pollution.md` · `OP-17_coproduct_allocation.md` · `06-simulation/allocation-engine/RECURSION_RESULTS.md` · `06-simulation/disparity-ceiling/DISPARITY_CEILING.md` · `06-simulation/scenario-suite/scenario_suite_METHOD.md`
 > **Purpose:** one place holding every serious objection to the theory, its source, the axiom it attacks, and its status.
 
@@ -37,6 +37,7 @@
 
 **[PART B — ANSWERED](#part-b--answered)**
 
+  - [B19 — Two conclusions the arithmetic beside them did not reach](#b19--two-conclusions-the-arithmetic-beside-them-did-not-reach--answered-2026-10-02)
   - [B18 — A rule for correcting a record, that nobody could invoke](#b18--a-rule-for-correcting-a-record-that-nobody-could-invoke--answered-in-two-halves-2026-09-21)
   - [B7 — OP-17. Joint production](#b7--op-17-joint-production--closed-for-materials-and-energy)
   - [B8 — OP-23. Shared overhead](#b8--op-23-shared-overhead--closed--capital-accrues-to-the-asset-not-the-co-products)
@@ -533,6 +534,38 @@ A second wave of critique arrived on 1f916.ai against posts #1605, #1750 and #15
 
 ---
 
+<!-- tag: obj-b19 -->
+## B19 — Two conclusions the arithmetic beside them did not reach ✅ **ANSWERED 2026-10-02**
+
+**Shipped:** Foundations v0.53 §2.3, §2.5, §3.2c, §4.4, §5.5.2, §5.5.5. **Sources:** **@reed-agent, c78139** and **@gradient-dissent, c78549**, both on 1f916.ai on 2026-09-26, and both reasoning from the documents with no code run.
+
+### 1 — Does the floor credit hours nobody spent? (@reed-agent)
+
+> *"Choosing an activity does not establish its duration."*
+
+**The case.** A network counts 8 hours of sleep. One person sleeps 6.
+
+| Credit | What it costs |
+|---|---|
+| **6** | `24 ÷ F` loses its denominator. At the §5.5.1 floor one 6-hour sleeper moves it from **2.400×** to **3.000×** |
+| **8** | 2 credited hours were not slept, and §2.5 did not list floor durations as a convention |
+
+**Half was already answered.** §2.3 said the floor is *"named activities with named durations, not a tally of a person's day"*, which picks 8. **Half was new.** §2.5 did not list the durations, and §2.3, §4.4 and §5.5.2 each said the hours were really spent.
+
+**Author ruling, 2026-10-02: the floor's durations are a declared convention on a measurable basis.** Proof of life is the trace that the day was lived. §2.5 gains the row, and §5.5.5 condition 1 names it.
+
+> **⚠️ The axiom question, stated rather than buried.** A1 says a credit is a record of time a person spent. **Under this ruling the person spent the day, and the floor counts that day at a published figure.** The figure is not a measurement of that person. This is the same kind of declared convention as holding time (§4.5). It is not claimed to be a measurement.
+
+### 2 — §3.2c's shell chain never binds (@gradient-dissent)
+
+§3.2c ended its worked example: after ten rounds *"their own gate begins to bind."* **The gate is a ratio, and each round adds credit too.** At `F` = 10 and ρ = 1.2, `D ÷ ρ·C` = 2,400 ÷ (1.2 × 5,650) = **0.354** after round 1 and **0.354** after round 10. **The round count cancels at every `F` and every ρ.**
+
+**Author ruling, 2026-10-02: a shell chain is neutral.** The true half stays: the count never resets. A member's gate binds only above about **3.39 hours of debit per member-hour worked** at these settings, in any round.
+
+**Both findings leaned in the project's favour, and both were found from outside.** That is the pattern Part 0a records.
+
+---
+
 <!-- tag: obj-b18 -->
 ## B18 — A rule for correcting a record, that nobody could invoke ✅ **ANSWERED IN TWO HALVES, 2026-09-21**
 
@@ -679,7 +712,7 @@ A grocery co-op of **ten members**, each on **2,000 hours** a year, buys **40 li
 
 **In plain words: naming *oneself* in the service row moved neither number.** The day was already 24 hours long.
 
-**And §5.5.2's heading survives.** The floor is still not an allowance: **the hours were really spent**, and credit for hours not spent would be the abstract issued quantity A1 forbids. **What a network chooses is which activities it recognises. What no network chooses is that recognised time credits one hour for one hour** — A2 settled that.
+**And §5.5.2's heading survives.** The floor is still not an allowance: **the person really lived the day, and the network counts it at published durations** (a declared convention since B19), and credit for hours not spent would be the abstract issued quantity A1 forbids. **What a network chooses is which activities it recognises. What no network chooses is that recognised time credits one hour for one hour** — A2 settled that.
 
 ### The finding that is refuted, and the half of it that is not
 
@@ -775,7 +808,7 @@ A grocery co-op of **ten members**, each on **2,000 hours** a year, buys **40 li
 >
 > > **An organisation's account is a view of its members' positions, not an owner of them. Its debit is at all times the debit of the people who worked there, divided by hours worked. Closing it moves nothing.** Foundations v0.22 **§3.2c**, conformance **2c**.
 >
-> **Worked: 10 members, 2,000 h each, a shell taking 24,000 h of debit per round.** Each member carries **2,400 h** after round 1, **4,800 h** after round 2, **24,000 h** after round 10 — and their own gates begin to bind. **A new shell resets nothing.**
+> **Worked: 10 members, 2,000 h each, a shell taking 24,000 h of debit per round.** Each member carries **2,400 h** after round 1, **4,800 h** after round 2, **24,000 h** after round 10. **A new shell resets nothing, and it does not make the gate bind either** — each round adds the members' credit too, so `D ÷ ρ·C` stays at **0.354** at `F` = 10 and ρ = 1.2 (see **B19**).
 >
 > **No new rule was needed.** §5.1 already shared team debit **by hours worked, not by rank**, and §4.6 already split a task's pledged cover **pro-rata by hours on the task**. §3.2c states the same thing about the organisation as a whole.
 >

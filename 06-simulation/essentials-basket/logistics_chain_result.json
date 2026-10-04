@@ -1,0 +1,104 @@
+{
+ "US": {
+  "total_behind_consumption": 1398.0747630159267,
+  "A_bought_as_item": 330.4761847435613,
+  "B_trade": 187.85174186679245,
+  "B_trade_home": 114.90985713017169,
+  "B_transport": 101.72661165677614,
+  "B_transport_home": 63.73756589623563,
+  "B_transport_modes": {
+   "land": 47.78551001933878,
+   "water": 22.092347797643924,
+   "air": 18.143781964929044,
+   "storage and handling": 13.704971874864365
+  },
+  "C_trade": 117.06673745098539,
+  "C_transport": 82.54556197755484,
+  "population_m": 333.3
+ },
+ "DE": {
+  "total_behind_consumption": 1173.2139112372072,
+  "A_bought_as_item": 116.95983417847472,
+  "B_trade": 135.89560514457332,
+  "B_trade_home": 53.74646947380544,
+  "B_transport": 72.47057024869879,
+  "B_transport_home": 14.453005047020307,
+  "B_transport_modes": {
+   "land": 21.760745884207992,
+   "water": 15.411650864943363,
+   "air": 21.188444504043694,
+   "storage and handling": 14.109728995503739
+  },
+  "C_trade": 98.26682748099124,
+  "C_transport": 31.45147548784457,
+  "population_m": 83.8
+ },
+ "JP": {
+  "total_behind_consumption": 1178.8688132543873,
+  "A_bought_as_item": 233.76367648363183,
+  "B_trade": 208.73168096170411,
+  "B_trade_home": 163.7948102346279,
+  "B_transport": 77.7520521094771,
+  "B_transport_home": 51.74923524374612,
+  "B_transport_modes": {
+   "land": 38.74897155586698,
+   "water": 7.3272211538977405,
+   "air": 10.511569517225844,
+   "storage and handling": 21.16428988248655
+  },
+  "C_trade": 168.74013495911896,
+  "C_transport": 100.884122408032,
+  "population_m": 125.0
+ },
+ "SE": {
+  "total_behind_consumption": 1235.1191921744805,
+  "A_bought_as_item": 220.44158347906995,
+  "B_trade": 188.79226010508413,
+  "B_trade_home": 39.04077011612539,
+  "B_transport": 102.70864647109947,
+  "B_transport_home": 51.00140929931478,
+  "B_transport_modes": {
+   "land": 67.57298574551454,
+   "water": 12.779494662320081,
+   "air": 11.044955834886132,
+   "storage and handling": 11.311210228378695
+  },
+  "C_trade": 83.6603527840506,
+  "C_transport": 89.81372295776795,
+  "population_m": 10.5
+ },
+ "FR": {
+  "total_behind_consumption": 1171.8201594200004,
+  "A_bought_as_item": 237.95844154223025,
+  "B_trade": 160.3349806351953,
+  "B_trade_home": 99.29438206143566,
+  "B_transport": 105.76436976481422,
+  "B_transport_home": 52.182167113984434,
+  "B_transport_modes": {
+   "land": 62.460559787621406,
+   "water": 18.635845487091412,
+   "air": 15.893062682346343,
+   "storage and handling": 8.774901807755079
+  },
+  "C_trade": 107.75040814721476,
+  "C_transport": 65.41510505772952,
+  "population_m": 68.0
+ },
+ "ES": {
+  "total_behind_consumption": 956.2723640851518,
+  "A_bought_as_item": 127.27501390377294,
+  "B_trade": 55.230532156115224,
+  "B_trade_home": 1.6007707571945111,
+  "B_transport": 84.36348815000967,
+  "B_transport_home": 54.150565497340025,
+  "B_transport_modes": {
+   "land": 42.86091313166966,
+   "water": 6.683706291281949,
+   "air": 3.8502110942464483,
+   "storage and handling": 30.968657632811624
+  },
+  "C_trade": 2.8351354308726355,
+  "C_transport": 77.91020270905166,
+  "population_m": 47.8
+ }
+}

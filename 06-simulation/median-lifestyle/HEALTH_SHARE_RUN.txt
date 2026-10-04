@@ -1,0 +1,44 @@
+==========================================================================
+PART A -- domestic hours per capita/yr, by where the jobs sit (BLS 2023)
+==========================================================================
+    47.0 h  Hospitals
+              32.25 h  care providers
+              12.79 h  everything else
+               1.00 h  wholesale and retail trade
+               0.41 h  insurance
+               0.26 h  medical equipment manufacturing
+               0.12 h  marketing research and other professional
+               0.10 h  drug manufacturing
+               0.08 h  advertising and PR
+    27.3 h  Paramedical services
+    26.6 h  Physician services
+    15.0 h  Nursing homes
+    12.6 h  Pharmaceutical and other medical products
+               6.18 h  wholesale and retail trade
+               3.39 h  drug manufacturing
+               2.77 h  everything else
+               0.11 h  medical equipment manufacturing
+               0.08 h  insurance
+               0.05 h  marketing research and other professional
+               0.04 h  advertising and PR
+               0.00 h  scientific R&D
+               0.00 h  care providers
+     7.3 h  Dental services
+     5.5 h  Net health insurance
+     3.2 h  Therapeutic appliances and equipment
+   144.6 h  HEALTHCARE, of 611.9 h domestic (23.6%)
+--------------------------------------------------------------------------
+PART B -- EXIOBASE, per capita/yr
+  health services: 186.3 h domestic + 65.2 h foreign
+  all consumption: 671.2 h domestic + 604.9 h foreign
+--------------------------------------------------------------------------
+IN THE 1,380 h MEDIAN-ADULT ANCHOR
+  care services    180 h   drugs+devices    33 h   insurance    6 h   = 218 h (15.8%)
+    1380 h  A: every treatment lands on the patient
+    1194 h  B: care services covered, drugs and devices on the patient
+    1162 h  C: all healthcare covered
+--------------------------------------------------------------------------
+ADEQUATE PROVISION -- care at the level of countries with universal coverage
+  care services x 0.57 (median of DE JP SE FR ES), insurance removed
+    1296 h  anchor, patient carries every treatment  (range 1253 - 1316)
+==========================================================================

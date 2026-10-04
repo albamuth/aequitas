@@ -9,8 +9,8 @@
 >
 > **Regenerate with:** `python bin/distill.py`
 
-> **Source:** [`Aequitas_Foundations.md`](Aequitas_Foundations.md) · **version 0.50**
-> **Size:** 133,263 bytes, from 256,438 — **52% of the source**
+> **Source:** [`Aequitas_Foundations.md`](Aequitas_Foundations.md) · **version 0.53**
+> **Size:** 135,590 bytes, from 259,730 — **52% of the source**
 
 **What was kept:** every heading, every rule, every table, and the stated result of every worked
 example. **What was dropped:** the explanation prose between them.
@@ -210,7 +210,7 @@ example. **What was dropped:** the explanation prose between them.
 | Someone who claims all 24 hours as self-continuance | **24**, capped by IC-7 — and credited only for the activities the network published a rule for |
 **In plain words: naming *oneself* in the service row moved neither figure.** The day was already 24 hours long, and the floor was already a published list.
 > *(§2.3 used to argue this instead of stating it — *"maintaining a body is work when it is done for somebody else, therefore the same work when the body is your own"* — and **@amber, c40261, 2026-09-04, showed the inference was not licensed.** They were right, and the argument was never needed. **The word *body* in the service row meant an organisation, not a torso**, which is what made the confusion possible.)*
-**This is where the basic-needs floor comes from, and it is not a grant.** Credit for no time worked would be exactly the abstract, issued quantity A1 forbids, so a floor could never have been written as an allowance. **Every living human really does spend those hours, and they credit at the ordinary rate.** How many hours a network counts, and the evidence behind that number, is §5.5.1. What the floor then does to an economy is §5.5.
+**This is where the basic-needs floor comes from, and it is not a grant.** Credit for no time worked would be exactly the abstract, issued quantity A1 forbids, so a floor could never have been written as an allowance. **Every living human spends time on these activities, and the network counts that time at a published duration for each one.** The duration is a declared convention (§2.5), not a tally of one person's day: in a network that counts 8 hours of sleep, a person who sleeps 6 is credited 8. How many hours a network counts, and the evidence behind that number, is §5.5.1. What the floor then does to an economy is §5.5.
 ### 2.4 Transactions and sales
 > **A transaction is a hand-off. One person gives another a physical thing, and the debit riding with that thing goes too. That is the whole of a sale, and it is the only kind of sale there is.**
 ##### An example, with the numbers
@@ -225,15 +225,16 @@ example. **What was dropped:** the explanation prose between them.
 >
 > **Where it did — measure it.** Feed energy, the heat needed to crack crude oil, and a turbine's trade-off between heat and power are facts about a process.
 >
-> **Where it did not — declare a convention and say so.** A convention is a choice the system makes and names. Holding time and hours worked are used this way.
+> **Where it did not — declare a convention and say so.** A convention is a choice the system makes and names. Holding time, hours worked and the floor's published durations are used this way.
 >
 > **Or refuse to divide.** Where nothing was divided in the world, the system need not divide it in the books either. **This is not a third kind of convention, because nothing is chosen.**
-#### The three conventions this system declares
+#### What this system divides, and how
 | The quantity | What it is | The rule |
 |---|---|---|
 | **A team's credit, split across its members** | **Not a convention at all.** It dissolves | Credit is time worked (§2.3), so **each member is credited their own hours.** Nobody ever needs a figure saying the welder caused 40% of the bridge, because credit was never a share of the output |
 | **One process's cost, split across its several outputs** | **Not a convention either. It is refused** | **Nothing is split.** Every co-product carries the whole process cost against its own output mass (§3.4a). The energy was not spent partly on one output — it was spent entirely on both |
 | **An organisation's debit, across its members** | **A convention, on a measurable basis** | **Hours worked**, which are already recorded for credit and already capped at 24 a day by IC-7, so the basis adds no new lever (§3.2c) |
+| **The hours a floor activity counts for** | **A convention, on a measurable basis** | **Proof of life is the physical trace: it shows the person lived the day.** How long each recognised activity took is not read off the person. The network publishes one duration per activity, and every living subscriber is credited that duration (§2.3, §5.5.1). **At `F` = 10, a person who sleeps 6 hours is credited 10 h that day, not 8 h** |
 | **A durable asset's creation-cost, split across its holders** | **A convention, on a measurable basis** | **Holding time is a physical trace, so the split is measured rather than invented:** your share is your holding time divided by the total holding time over the asset's whole life (§4.5) |
 ##### An example, with the numbers
 **And they did not need to.** The 8 hours were spent on the whole animal, so every output carries all 8 against its own mass.
@@ -363,7 +364,13 @@ example. **What was dropped:** the explanation prose between them.
 | Total member hours | 10 × 2,000 = **20,000 h** |
 | Each member's share of the hours | 2,000 ÷ 20,000 = **10%** |
 | Each member's share of the debit | 10% × 24,000 = **2,400 h** |
-**Now close the co-operative and open a new one with the same ten people.** Each member still carries 2,400 h. Repeat the year, and each carries 4,800 h. **After ten rounds each member carries 24,000 h, and their own gate `D ≤ ρ·(C + P)` begins to bind.** The count never resets.
+**Now close the co-operative and open a new one with the same ten people.** Each member still carries 2,400 h. Repeat the year, and each carries 4,800 h. After ten rounds each carries 24,000 h. **The count never resets, so closing the co-operative escapes nothing.**
+**A shell chain is neutral. It also does not make the gate bind.** The gate `D ≤ ρ·(C + P)` is a ratio, and each round adds credit as well as debit.
+| At `F` = 10, ρ = 1.2, per member | `D` | `C` (2,000 worked + 3,650 floor a year) | `D ÷ ρ·C` |
+|---|--:|--:|--:|
+| After round 1 | 2,400 h | 5,650 h | **0.354** |
+| After round 10 | 24,000 h | 56,500 h | **0.354** |
+**In plain words: the round count cancels.** At these settings a member's gate binds only when the organisation takes on more than **3.39 hours of debit per member-hour worked** (1.2 × 5,650 ÷ 2,000). That is as true in the first round as in the thousandth. *(The arithmetic is @gradient-dissent's, c78549.)*
 #### Two boundaries this rule does **not** cross
 | Not covered | Which rule covers it | Why they do not collide |
 |---|---|---|
@@ -562,6 +569,11 @@ example. **What was dropped:** the explanation prose between them.
 > *(The split is @amber's, c49097, 2026-09-09, refining their own earlier rule above.)*
 >
 > **The measured anchor (2026-08).** A bottom-up estimate puts the **labour a median US lifestyle commands at ≈ 1,380 h/yr** (`06-simulation/median-lifestyle/MEDIAN_LIFESTYLE_RESULT.md`; measured from BLS employment-requirements × the actual PCE mix, EXIOBASE import labour, §4.5 durables, and own-pollution remediation — *not* a blanket ratio). **Do not set that figure against the 3,650 h/yr of self-care credit and call the difference slack.** That is the circular comparison struck above. **The figure earns its place as the denominator for the deployable-hours test, and for the efficiency spread below. And the same-standard efficiency spread is large:** cross-country accounting (EXIOBASE, `06-simulation/median-lifestyle/Q6.md`) finds the US the labour- *and* carbon-inefficient outlier — commanding **50–80% more embodied labour and 2.5–4× the CO₂ per capita** than Germany, Sweden, France, Japan, or Spain, which deliver a comparable-or-better material standard (and longer lives) at ~⅔ the labour. **This is the positive form of A4 (no externalities) and A5 (cost, not price):** the inefficient, fossil-heavy, long-chain method is simply *dearer in the ledger*, so the accounting rewards the efficiency the leaders already demonstrate — no mandate required. What looks like "we cannot afford a decent standard for all" is, quantitatively, an artefact of the most wasteful production method, not a limit of human hours.
+> **What the 1,380 h/yr figure is, and what it is not.** It is **today's median US consumption**: the hours of other people's work that a median American adult's yearly consumption takes, whoever ends up carrying them. **It is one reading, in the same way `F` = 10 h/day is one reading.** It is not a fact about any one person's ledger.
+>
+> **How much of it lands on a ledger is each network's rule.** Which treatments a patient carries, for example, is the network's choice (§2.6). Healthcare is **218** of the 1,380 hours. A network that puts every treatment on the patient reads **1,380**. A network that covers all care reads 1,380 − 218 = **1,162** (`06-simulation/median-lifestyle/HEALTH_SHARE.md`).
+>
+> **It is not the essentials basket `E`** (§5.5.3). It describes what Americans consume now, including care that is excessive and care that is missing. **What an adequately provided person needs belongs in `E`.**
 ### 3.6 End-of-life, recycling, and product-as-pollution
 > **⚠️ Live enforcement gap — OP-25.** Rules 1–3 price *lawful* disposal correctly. They do not by themselves stop *illicit* dumping — abandoning an object in the environment to escape its end-of-life debit. Attribution of abandonment back to the abandoner is a Level-2 trust-and-provenance problem, registered as OP-25.
 ### 3.7 Land is not owned; a building carries a remediation debt
@@ -827,7 +839,7 @@ example. **What was dropped:** the explanation prose between them.
 > **In plain words: "err against the party" has no fixed meaning here, because the same act helps a filer in one conforming network and harms them in another.** *The earliest date the evidence allows* is the same instrument on both sides of 3.78, which is why condition 3 names it.
 > **Why the two sides are not treated alike, and it is not a preference.** **Over-estimating somebody's debit consumes nothing** — it costs them room they were not using. **Over-estimating their credit hands out real consumption room on the strength of a guess about production.** The two errors are the same shape and have opposite consequences, **which is why a position only starts acting on what a person may consume once observation has replaced the estimate** (A7).
 > **Credit is issuable backwards, and this is where that happens.** When a person joins, their earlier real contributions enter the record **at the dates they occurred**, not at the date they joined.
-> **Subsistence is exempt and must stay exempt.** The floor is not an estimate. **It is credit for hours that were really spent, attested by proof of life** (§4.2). **So condition 2 never reaches subsistence, and a person who cannot document a life is not thereby impoverished by this rule.**
+> **Subsistence is exempt and must stay exempt.** The floor is not an estimate. **It is credit for a lived day, counted at the network's published durations and attested by proof of life** (§4.2, §2.5). **So condition 2 never reaches subsistence, and a person who cannot document a life is not thereby impoverished by this rule.**
 > **⚠️ This raises the stakes on OP-22, the open problem of minimum audit disclosure, and it is the strongest objection to the reconstruction.** A whole-life record is a dossier: birthplace, every residence, employment history, commuting distance, vehicles owned. **Disclosure is voluntary, but the incentive runs toward disclosing**, so the arrangement puts steady pressure on people to assemble exactly the record a surveillance state would want. §4.7's split of public market data from private personal ledgers now has to hold across a lifetime. **Registered, not solved.**
 ### 4.5 It credits work
 > **There is one credit. It is time spent by a person, recorded as material flow. Everyone earns at the same rate, and therefore influences at the same rate.**
@@ -995,11 +1007,10 @@ example. **What was dropped:** the explanation prose between them.
 #### 5.5.3 The floor's value is an economic setting, with a bound at each end
 > **Set it too low and people cannot afford what they need. Set it too high and the books stop rationing anything. Finding the value that balances the economy is the network's job.**
 ##### The lower bound, with the numbers
-| | |
-|---|---|
-| Minimum floor | 700 ÷ (1.2 × 365) = **1.6 h/day** |
-| At `F` = 2 h/day, room per year | 1.2 × 2 × 365 = **876 h** — covers 700 h of essentials |
-| At `F` = 1 h/day, room per year | 1.2 × 1 × 365 = **438 h** — **short by 262 h** |
+| Basket | `E`, h/yr | Lowest floor at ρ = 1.2 |
+|---|--:|--:|
+| **Narrow**: food eaten at home, clothing, shelter, utilities, care | 516 – 655 | 1.2 – 1.5 h/day |
+| **Broad**: the narrow basket, plus household goods, local transport, telecoms and schooling | 826 – 965 | 1.9 – 2.2 h/day |
 ##### The upper bound, with the numbers
 | Floor | Room from the floor alone, `ρ·F·365` at ρ = 1.2 | As a multiple of a median lifestyle |
 |---|---|---|

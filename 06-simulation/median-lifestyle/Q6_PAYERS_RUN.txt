@@ -1,0 +1,58 @@
+parsing EXIOBASE 3 (~2 min)...
+solving (I-A)^T m = e ...
+  US: HH 1283  AIC-matched 1283
+  DE: HH 820  AIC-matched 1072
+  FR: HH 856  AIC-matched 1101
+  GB: HH 1007  AIC-matched 1319
+  IT: HH 767  AIC-matched 875
+  ES: HH 709  AIC-matched 882
+  SE: HH 832  AIC-matched 1120
+  NL: HH 1165  AIC-matched 1497
+  DK: HH 994  AIC-matched 1437
+  NO: HH 872  AIC-matched 1239
+  FI: HH 739  AIC-matched 1138
+  CH: HH 1240  AIC-matched 1410
+  AT: HH 916  AIC-matched 1077
+  BE: HH 1151  AIC-matched 1475
+  IE: HH 1781  AIC-matched 2031
+  PT: HH 787  AIC-matched 908
+  PL: HH 546  AIC-matched 712
+  CA: HH 676  AIC-matched 889
+  AU: HH 807  AIC-matched 1062
+  JP: HH 862  AIC-matched 1073
+  KR: HH 825  AIC-matched 1001
+  CZ: HH 581  AIC-matched 770
+  GR: HH 703  AIC-matched 788
+====================================================================================
+Q6 WITH EVERY PAYER -- hours per person per year, 2022
+====================================================================================
+           HH  NPISH  GOV ind  GOV coll  AIC-matched   US ÷ HH  US ÷ AIC
+  IE     1781     11      240        33         2031      0.72      0.63
+  NL     1165     24      308       148         1497      1.10      0.86
+  BE     1151     26      298       111         1475      1.11      0.87
+  DK      994     26      418        73         1437      1.29      0.89
+  CH     1240     64      106        64         1410      1.03      0.91
+  GB     1007      9      303         5         1319      1.27      0.97
+  US     1283      0        0       115         1283      1.00      1.00
+  NO      872     26      341       106         1239      1.47      1.04
+  FI      739     82      317       100         1138      1.73      1.13
+  SE      832     22      266       115         1120      1.54      1.15
+  FR      856     24      221        71         1101      1.50      1.17
+  AT      916     25      136       109         1077      1.40      1.19
+  JP      862     36      176       106         1073      1.49      1.20
+  DE      820     22      230       101         1072      1.56      1.20
+  AU      807     73      182       169         1062      1.59      1.21
+  KR      825     49      127        70         1001      1.55      1.28
+  PT      787     33       88        99          908      1.63      1.41
+  CA      676     81      131       114          889      1.90      1.44
+  ES      709     18      154        74          882      1.81      1.45  data gap
+  IT      767      4      103        56          875      1.67      1.47
+  GR      703      4       81       112          788      1.82      1.63
+  CZ      581     20      170       106          770      2.21      1.67
+  PL      546     35      131        77          712      2.35      1.80  data gap
+------------------------------------------------------------------------------------
+  US extra hours against Germany, Sweden, France, Japan:
+    households only (as Q6)   49% to 56% more
+    every individual payer    15% to 20% more
+  peers' AIC-matched hours as a share of the US: 0.84 - 0.87  (Q6 household-only: 0.64 - 0.67)
+====================================================================================

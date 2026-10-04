@@ -1,0 +1,209 @@
+{
+ "US": {
+  "health_h_per_capita": 252.7648082041694,
+  "by_payer": {
+   "Final consumption expenditure by households": 252.7648082041694,
+   "Final consumption expenditure by non-profit organisations serving households (NPISH)": 0.0,
+   "Final consumption expenditure by government": 0.0
+  },
+  "population_m": 333.3
+ },
+ "DE": {
+  "health_h_per_capita": 144.70184051336713,
+  "by_payer": {
+   "Final consumption expenditure by households": 1.0000289670399378,
+   "Final consumption expenditure by non-profit organisations serving households (NPISH)": 5.8485044670893185,
+   "Final consumption expenditure by government": 137.85330707923788
+  },
+  "population_m": 83.8
+ },
+ "FR": {
+  "health_h_per_capita": 129.27714912796628,
+  "by_payer": {
+   "Final consumption expenditure by households": 28.901772763724235,
+   "Final consumption expenditure by non-profit organisations serving households (NPISH)": 6.457627941263233,
+   "Final consumption expenditure by government": 93.91774842297882
+  },
+  "population_m": 68.0
+ },
+ "GB": {
+  "health_h_per_capita": 207.9763042140651,
+  "by_payer": {
+   "Final consumption expenditure by households": 2.1149573714111547,
+   "Final consumption expenditure by non-profit organisations serving households (NPISH)": 6.386639316495185,
+   "Final consumption expenditure by government": 199.47470752615877
+  },
+  "population_m": 67.0
+ },
+ "IT": {
+  "health_h_per_capita": 75.75929836546473,
+  "by_payer": {
+   "Final consumption expenditure by households": 20.51175974175476,
+   "Final consumption expenditure by non-profit organisations serving households (NPISH)": 1.5153797532050546,
+   "Final consumption expenditure by government": 53.73215887050491
+  },
+  "population_m": 59.0
+ },
+ "ES": {
+  "health_h_per_capita": 82.70026087325276,
+  "by_payer": {
+   "Final consumption expenditure by households": 0.7240412243297422,
+   "Final consumption expenditure by non-profit organisations serving households (NPISH)": 3.7002210065528103,
+   "Final consumption expenditure by government": 78.27599864237021
+  },
+  "population_m": 47.8
+ },
+ "SE": {
+  "health_h_per_capita": 143.8032228742144,
+  "by_payer": {
+   "Final consumption expenditure by households": 136.0801144738007,
+   "Final consumption expenditure by non-profit organisations serving households (NPISH)": 0.0,
+   "Final consumption expenditure by government": 7.723108400413705
+  },
+  "population_m": 10.5
+ },
+ "NL": {
+  "health_h_per_capita": 166.92571931728997,
+  "by_payer": {
+   "Final consumption expenditure by households": 0.37400295318590493,
+   "Final consumption expenditure by non-profit organisations serving households (NPISH)": 0.16815470691399484,
+   "Final consumption expenditure by government": 166.38356165719009
+  },
+  "population_m": 17.7
+ },
+ "DK": {
+  "health_h_per_capita": 178.61559566873464,
+  "by_payer": {
+   "Final consumption expenditure by households": 3.099897034677737,
+   "Final consumption expenditure by non-profit organisations serving households (NPISH)": 5.261230430074438,
+   "Final consumption expenditure by government": 170.25446820398247
+  },
+  "population_m": 5.9
+ },
+ "NO": {
+  "health_h_per_capita": 217.6642133022156,
+  "by_payer": {
+   "Final consumption expenditure by households": 6.043048885811611,
+   "Final consumption expenditure by non-profit organisations serving households (NPISH)": 0.8470459307451711,
+   "Final consumption expenditure by government": 210.77411848565882
+  },
+  "population_m": 5.5
+ },
+ "FI": {
+  "health_h_per_capita": 189.15358171548993,
+  "by_payer": {
+   "Final consumption expenditure by households": 20.036894853313985,
+   "Final consumption expenditure by non-profit organisations serving households (NPISH)": 7.7606943023457395,
+   "Final consumption expenditure by government": 161.3559925598302
+  },
+  "population_m": 5.55
+ },
+ "CH": {
+  "health_h_per_capita": 204.66262231964944,
+  "by_payer": {
+   "Final consumption expenditure by households": 179.57263520450175,
+   "Final consumption expenditure by non-profit organisations serving households (NPISH)": 22.269871795573025,
+   "Final consumption expenditure by government": 2.820115319574678
+  },
+  "population_m": 8.8
+ },
+ "AT": {
+  "health_h_per_capita": 118.00315996584983,
+  "by_payer": {
+   "Final consumption expenditure by households": 103.01268875468612,
+   "Final consumption expenditure by non-profit organisations serving households (NPISH)": 11.516280005441388,
+   "Final consumption expenditure by government": 3.474191205722316
+  },
+  "population_m": 9.0
+ },
+ "BE": {
+  "health_h_per_capita": 143.0598152236931,
+  "by_payer": {
+   "Final consumption expenditure by households": 6.562775128022118,
+   "Final consumption expenditure by non-profit organisations serving households (NPISH)": 10.87968361234046,
+   "Final consumption expenditure by government": 125.61735648333052
+  },
+  "population_m": 11.6
+ },
+ "IE": {
+  "health_h_per_capita": 38.66578081591055,
+  "by_payer": {
+   "Final consumption expenditure by households": 6.60635126018736,
+   "Final consumption expenditure by non-profit organisations serving households (NPISH)": 3.685162633978709,
+   "Final consumption expenditure by government": 28.374266921744482
+  },
+  "population_m": 5.1
+ },
+ "PT": {
+  "health_h_per_capita": 90.74094409155327,
+  "by_payer": {
+   "Final consumption expenditure by households": 67.32288797496051,
+   "Final consumption expenditure by non-profit organisations serving households (NPISH)": 21.77911987645306,
+   "Final consumption expenditure by government": 1.638936240139707
+  },
+  "population_m": 10.3
+ },
+ "PL": {
+  "health_h_per_capita": 76.2052531583317,
+  "by_payer": {
+   "Final consumption expenditure by households": 24.313606226187826,
+   "Final consumption expenditure by non-profit organisations serving households (NPISH)": 6.68397427902023,
+   "Final consumption expenditure by government": 45.207672653123645
+  },
+  "population_m": 37.7
+ },
+ "CA": {
+  "health_h_per_capita": 108.31716197303598,
+  "by_payer": {
+   "Final consumption expenditure by households": 37.31266913032652,
+   "Final consumption expenditure by non-profit organisations serving households (NPISH)": 18.864613949700015,
+   "Final consumption expenditure by government": 52.139878893009445
+  },
+  "population_m": 38.9
+ },
+ "AU": {
+  "health_h_per_capita": 182.94930595660563,
+  "by_payer": {
+   "Final consumption expenditure by households": 60.44659419456682,
+   "Final consumption expenditure by non-profit organisations serving households (NPISH)": 34.29929356249201,
+   "Final consumption expenditure by government": 88.20341819954679
+  },
+  "population_m": 26.0
+ },
+ "JP": {
+  "health_h_per_capita": 170.9392813425389,
+  "by_payer": {
+   "Final consumption expenditure by households": 0.7714846914054232,
+   "Final consumption expenditure by non-profit organisations serving households (NPISH)": 24.340446862659007,
+   "Final consumption expenditure by government": 145.82734978847446
+  },
+  "population_m": 125.0
+ },
+ "KR": {
+  "health_h_per_capita": 112.32325270866248,
+  "by_payer": {
+   "Final consumption expenditure by households": 28.326251985130877,
+   "Final consumption expenditure by non-profit organisations serving households (NPISH)": 16.960801058104625,
+   "Final consumption expenditure by government": 67.03619966542698
+  },
+  "population_m": 51.6
+ },
+ "CZ": {
+  "health_h_per_capita": 93.32782009304377,
+  "by_payer": {
+   "Final consumption expenditure by households": 21.3242344030914,
+   "Final consumption expenditure by non-profit organisations serving households (NPISH)": 2.1059705448221298,
+   "Final consumption expenditure by government": 69.89761514513025
+  },
+  "population_m": 10.5
+ },
+ "GR": {
+  "health_h_per_capita": 45.310421326528655,
+  "by_payer": {
+   "Final consumption expenditure by households": 20.611894137460183,
+   "Final consumption expenditure by non-profit organisations serving households (NPISH)": 0.0,
+   "Final consumption expenditure by government": 24.698527189068475
+  },
+  "population_m": 10.4
+ }
+}

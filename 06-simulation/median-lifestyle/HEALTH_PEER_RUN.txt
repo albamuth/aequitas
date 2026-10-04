@@ -1,0 +1,58 @@
+parsing EXIOBASE 3 (~2 min)...
+solving (I-A)^T m = e ...
+  US: 253 h/cap
+  DE: 145 h/cap
+  FR: 129 h/cap
+  GB: 208 h/cap
+  IT: 76 h/cap
+  ES: 83 h/cap
+  SE: 144 h/cap
+  NL: 167 h/cap
+  DK: 179 h/cap
+  NO: 218 h/cap
+  FI: 189 h/cap
+  CH: 205 h/cap
+  AT: 118 h/cap
+  BE: 143 h/cap
+  IE: 39 h/cap
+  PT: 91 h/cap
+  PL: 76 h/cap
+  CA: 108 h/cap
+  AU: 183 h/cap
+  JP: 171 h/cap
+  KR: 112 h/cap
+  CZ: 93 h/cap
+  GR: 45 h/cap
+======================================================================
+HEALTH AND SOCIAL WORK SERVICES -- hours per person per year, 2022
+  (all payers: households + non-profits + government; worked anywhere)
+======================================================================
+  US   252.8 h   (households 252.8, government   0.0)  <- US
+  NO   217.7 h   (households   6.9, government 210.8)
+  GB   208.0 h   (households   8.5, government 199.5)
+  CH   204.7 h   (households 201.8, government   2.8)
+  FI   189.2 h   (households  27.8, government 161.4)
+  AU   182.9 h   (households  94.7, government  88.2)
+  DK   178.6 h   (households   8.4, government 170.3)
+  JP   170.9 h   (households  25.1, government 145.8)  *
+  NL   166.9 h   (households   0.5, government 166.4)
+  DE   144.7 h   (households   6.8, government 137.9)  *
+  SE   143.8 h   (households 136.1, government   7.7)  *
+  BE   143.1 h   (households  17.4, government 125.6)
+  FR   129.3 h   (households  35.4, government  93.9)  *
+  AT   118.0 h   (households 114.5, government   3.5)
+  KR   112.3 h   (households  45.3, government  67.0)
+  CA   108.3 h   (households  56.2, government  52.1)
+  CZ    93.3 h   (households  23.4, government  69.9)
+  PT    90.7 h   (households  89.1, government   1.6)
+  ES    82.7 h   (households   4.4, government  78.3)  *
+  PL    76.2 h   (households  31.0, government  45.2)
+  IT    75.8 h   (households  22.0, government  53.7)
+  GR    45.3 h   (households  20.6, government  24.7)
+  IE    38.7 h   (households  10.3, government  28.4)
+----------------------------------------------------------------------
+  US                           252.8 h
+  median of the five named *   143.8 h  = 0.57 x US
+  median of all 22 peers        136.2 h  = 0.54 x US
+  range of the five named       82.7 - 170.9 h
+======================================================================

@@ -1,0 +1,31 @@
+========================================================================
+E -- hours of work behind a year of essentials, per person, 2022
+  (EXIOBASE; worked anywhere; all payers)
+========================================================================
+  category                                        US   peer median   basket
+  Food eaten at home                           131.0         170.0   narrow
+  Clothing and footwear                        121.3          89.2   narrow
+  Shelter services                              37.5           4.3   narrow
+  Household utilities                           20.8          17.0   narrow
+  Health and social care                       252.8         143.8   narrow
+  Chemicals, paper, plastics (incl. drugs)     103.3          19.7   broad only
+  Furniture and other goods                     78.1          13.4   broad only
+  Land transport services                       58.5          37.9   broad only
+  Post and telecoms                             13.1           2.9   broad only
+  Schooling                                     87.2          73.1   broad only
+------------------------------------------------------------------------
+  E, NARROW basket                               563           424
+  E, BROAD basket                                904           571
+  all US consumption                            1398
+  narrow is 40% and broad 65% of all US consumption hours
+------------------------------------------------------------------------
+E AT THE US LEVEL, with the two pieces EXIOBASE does not carry
+  NARROW  = 563 + drugs 30 + housing structure 31-61  = 625 - 655 h
+  BROAD   = 904 + housing structure 31-61  = 935 - 965 h   (drugs already inside)
+  with care at the peer level (-109 h):  NARROW 516 - 546 h,  BROAD 826 - 856 h
+  lowest floor that affords NARROW at rho = 1.2:  1.18 - 1.49 h/day
+  lowest floor that affords BROAD at rho = 1.2:  1.88 - 2.20 h/day
+------------------------------------------------------------------------
+  retail and wholesale hours households buy directly (shared out above):
+   US 224  DE 30  JP 10  SE 73  FR 69  ES 11
+========================================================================
