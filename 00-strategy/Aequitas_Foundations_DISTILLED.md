@@ -9,8 +9,8 @@
 >
 > **Regenerate with:** `python bin/distill.py`
 
-> **Source:** [`Aequitas_Foundations.md`](Aequitas_Foundations.md) · **version 0.53**
-> **Size:** 135,590 bytes, from 259,730 — **52% of the source**
+> **Source:** [`Aequitas_Foundations.md`](Aequitas_Foundations.md) · **version 0.54**
+> **Size:** 136,103 bytes, from 260,292 — **52% of the source**
 
 **What was kept:** every heading, every rule, every table, and the stated result of every worked
 example. **What was dropped:** the explanation prose between them.
@@ -80,7 +80,7 @@ example. **What was dropped:** the explanation prose between them.
 <!-- tag: fnd-s0 -->
 ## 0. The One-Sentence Theory
 > **Aequitas is a universal accounting of material flows.** Every credit and every debit is a record of matter and energy moving through the world, attributable to the people who caused the movement. **Cost is nothing other than this.**
-> **On the credit side, the substance is *time* — and time, not effort**. A credit records *time a human spent*, and the conceptual leap Aequitas asks of a reader is to see time itself as the finite thing being spent — like money is "spent" today, except that time is possessed by every person in exactly equal measure (24 hours a day) and can be neither hoarded, lent, nor transferred (A3 (non-fungibility)). This is the deep reason Aequitas produces a **bounded** inequality where money produces an unbounded one: money accumulates without limit; time structurally cannot — you get 24 hours a day and no more, ever, and you cannot buy anyone else's. Effort, hazard, and skill are real differences between workers, but they resolve as *material* costs (A2 (time as measure)), never as a time-multiplier. **Because the unit of account is an equally-distributed, non-transferable resource, the *engine* of a bounded inequality is the arithmetic itself, not any rule that polices it.** *(The exact bound, though, is a **conditional** result, and it is an **absolute maximum rather than an expected spread**. It depends on the value a network sets for its floor, on whether that network credits a child's learning time, and on fraud not manufacturing hours; see §5.5.5. **A very hard working life reaches about 1.6×, not 2.4×.** **And the bound is over the say in what gets made, not over what anybody consumes** — pledges grant consumable room that no per-person rule limits, which §5.5.5 states.)*
+> **On the credit side, the substance is *time* — and time, not effort**. A credit records *time a human spent*, and the conceptual leap Aequitas asks of a reader is to see time itself as the finite thing being spent — like money is "spent" today, except that time is possessed by every person in exactly equal measure (24 hours a day) and can be neither hoarded, lent, nor transferred (A3 (non-fungibility)). This is the deep reason Aequitas produces a **bounded** inequality where money produces an unbounded one: money accumulates without limit; time structurally cannot — you get 24 hours a day and no more, ever, and you cannot buy anyone else's. Effort, hazard, and skill are real differences between workers, but they resolve as *material* costs (A2 (time as measure)), never as a time-multiplier. **Because the unit of account is an equally-distributed, non-transferable resource, the *engine* of a bounded inequality is the arithmetic itself, not any rule that polices it.** *(The exact bound, though, is a **conditional** result, and it is an **absolute maximum rather than an expected spread**. It depends on the value a network sets for its floor, on whether that network credits a child's learning time, and on fraud not manufacturing hours; see §5.5.5. **At `F` = 10, a very hard working life reaches about 1.6×, not 2.4×.** **And the bound is over the say in what gets made, not over what anybody consumes** — pledges grant consumable room that no per-person rule limits, which §5.5.5 states.)*
 ## 1. Axioms
 > **Each axiom below is a definition and nothing else.** What follows from it, why it holds, and what it rules out are in §2 onward, and each axiom says where to look. **An axiom that argues for itself is doing another section's job.**
 ### A1 (materialism of cost)
@@ -228,6 +228,7 @@ example. **What was dropped:** the explanation prose between them.
 > **Where it did not — declare a convention and say so.** A convention is a choice the system makes and names. Holding time, hours worked and the floor's published durations are used this way.
 >
 > **Or refuse to divide.** Where nothing was divided in the world, the system need not divide it in the books either. **This is not a third kind of convention, because nothing is chosen.**
+> **A figure computed at a network setting is printed beside that setting.** The settings are the ones §2.6 lists, such as the floor `F` and the debit tolerance ρ. **At `F` = 10 and ρ = 1.2 the floor alone opens 4,380 h of room a year, against a median lifestyle of 1,380 h. At `F` = 2 it opens 876 h.** So "the gate never binds" is true at the first setting and false at the second, and a sentence that drops the setting reads as a fact about every network.
 #### What this system divides, and how
 | The quantity | What it is | The rule |
 |---|---|---|
@@ -1033,7 +1034,7 @@ example. **What was dropped:** the explanation prose between them.
 | **US** | 13.80 | **56,446** | **35.8%** |
 | German or Japanese | 8.83 | **88,196** | **0.0%** |
 | Spanish | 7.59 | **102,629** | **0.0%** |
-> **Under the American method the envelope delivers less than people want, so the gate rations and about a third are held back. Under the German, Japanese or Spanish method the same envelope delivers more than everyone wants, the gate never binds, and nobody is held back at all.**
+> **At `F` = 10 and ρ = 1.2: under the American method the envelope delivers less than people want, so the gate rations and about a third are held back. Under the German, Japanese or Spanish method the same envelope delivers more than everyone wants, the gate never binds, and nobody is held back at all.**
 > **⚠️ The band was computed in published ρ with no pledge term, and the pledge term halves its upper edge.** Committed pledges can double a network's gate (§4.6), so a network's **effective** tolerance runs to `2ρ`. Re-run on 2026-09-18 with a pledge density `p`, the publishable upper edge is `ρ*(F) ÷ (1 + p)`: at `F` = 10 it falls from **1.20** at no pledging to **0.60** at the one-for-one ceiling. **`ρ*(10) = 1.20` is the same number as the ρ = 1.2 used throughout this section**, so that setting sits exactly at the edge with no pledging and above it with any. **And the band closes** at `F` = 1.0 with essentials at 70% of a median lifestyle — the first swept cell in which it ever has. `06-simulation/stable-band/PLEDGE_BAND_RESULTS.md`. **`p` is swept and not measured.**
 >
 > **⚠️ What is measured and what is not.** The two zero rows are **floors, not values** (conformance row 13): the gate does not bind anywhere below ρ = 4.0, which is where the swept range ended. Nobody looked above it. **And ρ\*'s absolute values inherit the weighting model and an illustrative capacity figure — the shape is the result, the numbers are dated readings.** Full method, the three things it does not show, and five self-tests that can each fail: `06-simulation/stable-band/RESULTS.md`. Registered with **OP-4 (debit tolerance)**.
@@ -1063,7 +1064,7 @@ example. **What was dropped:** the explanation prose between them.
 | **N — maximum, but childhood not credited** | 10 h/day to age 18, then 24 h/day | 65,700 + 543,120 = **608,820 h** | **2.085×** |
 | **P — a very hard working life** | 12 h work/day, 300 days a year, ages 20 to 70 | 362,500 + 109,500 = **472,000 h** | **1.616×** |
 **Person P's working years, shown in full:** 300 working days × (12 + 10) = 6,600 h, plus 65 rest days × 10 = 650 h, giving **7,250 h a year** for 50 years. The 30 years outside that run at the floor: 30 × 3,650 = **109,500 h**.
-> **The figure to quote is not 2.4×. It is that a very hard working life reaches about 1.6× a life spent only staying alive, and that `24 ÷ F` is the wall nobody gets to.**
+> **The figure to quote is not 2.4×. It is that at `F` = 10 a very hard working life reaches about 1.6× a life spent only staying alive, and that `24 ÷ F` is the wall nobody gets to.**
 **Write the bound as `24 ÷ F`, never as its value at one floor.** 2.4× is what `24 ÷ F` returns at `F` = 10, and `F` is a value each network sets for itself (§5.5.1). **A sentence that states 2.4× as the result has pinned a free setting**, and the four lives in the table above are the `F` = 10 instance of a pattern that holds at every floor.
 ##### The ceiling depends on two network choices, not one
 | The network's choice on childhood | Highest reachable lifetime ratio |

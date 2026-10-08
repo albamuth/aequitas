@@ -1,8 +1,8 @@
 <!-- tag: fnd-aequitas-foundations-and-long-term -->
 # Aequitas — Foundations & Long-Term Strategy
 
-> **Version:** 0.53
-> **Date:** 2026-10-02
+> **Version:** 0.54
+> **Date:** 2026-10-05
 > **Status:** Working foundations.
 > **Primary audience of the first paper:** technologists and implementers.
 > **Companion:** [`Aequitas_Conformance.md`](Aequitas_Conformance.md) — what must be true for an implementation to *be* Aequitas.
@@ -89,7 +89,7 @@ This distinction is load-bearing. Every previous attempt at objective accounting
 
 Aequitas makes the narrower and far more defensible claim. **Cost is what a thing takes from the world; it is physical, and we can measure it. Value is what someone thinks it is worth; it is not physical, and we do not attempt to measure it.** Value enters the system as *feedback and pledges* (§4.6), never as an accounting quantity.
 
-> **On the credit side, the substance is *time* — and time, not effort**. A credit records *time a human spent*, and the conceptual leap Aequitas asks of a reader is to see time itself as the finite thing being spent — like money is "spent" today, except that time is possessed by every person in exactly equal measure (24 hours a day) and can be neither hoarded, lent, nor transferred (A3 (non-fungibility)). This is the deep reason Aequitas produces a **bounded** inequality where money produces an unbounded one: money accumulates without limit; time structurally cannot — you get 24 hours a day and no more, ever, and you cannot buy anyone else's. Effort, hazard, and skill are real differences between workers, but they resolve as *material* costs (A2 (time as measure)), never as a time-multiplier. **Because the unit of account is an equally-distributed, non-transferable resource, the *engine* of a bounded inequality is the arithmetic itself, not any rule that polices it.** *(The exact bound, though, is a **conditional** result, and it is an **absolute maximum rather than an expected spread**. It depends on the value a network sets for its floor, on whether that network credits a child's learning time, and on fraud not manufacturing hours; see §5.5.5. **A very hard working life reaches about 1.6×, not 2.4×.** **And the bound is over the say in what gets made, not over what anybody consumes** — pledges grant consumable room that no per-person rule limits, which §5.5.5 states.)*
+> **On the credit side, the substance is *time* — and time, not effort**. A credit records *time a human spent*, and the conceptual leap Aequitas asks of a reader is to see time itself as the finite thing being spent — like money is "spent" today, except that time is possessed by every person in exactly equal measure (24 hours a day) and can be neither hoarded, lent, nor transferred (A3 (non-fungibility)). This is the deep reason Aequitas produces a **bounded** inequality where money produces an unbounded one: money accumulates without limit; time structurally cannot — you get 24 hours a day and no more, ever, and you cannot buy anyone else's. Effort, hazard, and skill are real differences between workers, but they resolve as *material* costs (A2 (time as measure)), never as a time-multiplier. **Because the unit of account is an equally-distributed, non-transferable resource, the *engine* of a bounded inequality is the arithmetic itself, not any rule that polices it.** *(The exact bound, though, is a **conditional** result, and it is an **absolute maximum rather than an expected spread**. It depends on the value a network sets for its floor, on whether that network credits a child's learning time, and on fraud not manufacturing hours; see §5.5.5. **At `F` = 10, a very hard working life reaches about 1.6×, not 2.4×.** **And the bound is over the say in what gets made, not over what anybody consumes** — pledges grant consumable room that no per-person rule limits, which §5.5.5 states.)*
 
 Everything downstream — no capitalism, no rent, no taxation, no externalities, no inflation — is a *consequence* of taking the cost rule seriously and applying it without exception.
 
@@ -494,6 +494,8 @@ A shop holds a bicycle. Its record carries **18 kg** of steel and aluminium, **4
 > **Or refuse to divide.** Where nothing was divided in the world, the system need not divide it in the books either. **This is not a third kind of convention, because nothing is chosen.**
 
 **A convention that is declared is not an ad-hoc rule. A convention disguised as a measurement is.** That is the whole reason this section exists: **every choice the system makes is named here rather than buried in an implementation.**
+
+> **A figure computed at a network setting is printed beside that setting.** The settings are the ones §2.6 lists, such as the floor `F` and the debit tolerance ρ. **At `F` = 10 and ρ = 1.2 the floor alone opens 4,380 h of room a year, against a median lifestyle of 1,380 h. At `F` = 2 it opens 876 h.** So "the gate never binds" is true at the first setting and false at the second, and a sentence that drops the setting reads as a fact about every network.
 
 **The third move is the strongest of the three and should be tried first.** §3.4a is the case: a joint process's energy was not spent partly on one output and partly on another, **it was spent entirely on both**, so there is no fraction to find and no convention needed to stand in for one. **A convention is what you declare when a division is genuinely required. It is not what you declare to avoid noticing that one is not.**
 
@@ -2479,7 +2481,7 @@ Those activities are **sleeping, eating, defecating, and keeping oneself clean.*
 
 > **⚠️ The 1,380 h/yr anchor is a median *American* lifestyle, and that is not a neutral choice.** `06-simulation/median-lifestyle/Q6.md` measures the US as the labour- and carbon-inefficient outlier: **Germany, Japan and Spain reach a comparable-or-better material standard, and longer lives, on about two thirds of the embodied labour.**
 
-**Hold the physical envelope fixed — the same energy, the same materials — and change only how much debit a unit of the same real standard costs.**
+**Hold the physical envelope fixed — the same energy, the same materials — and change only how much debit a unit of the same real standard costs.** The table is computed at `F` = 10 and ρ = 1.2.
 
 | Production method | Debit-hours per unit | Real living the same envelope delivers | Share held back by the gate |
 |---|---|---|---|
@@ -2489,7 +2491,7 @@ Those activities are **sleeping, eating, defecating, and keeping oneself clean.*
 
 **People want 66,407 units in total. Read the middle column against that.**
 
-> **Under the American method the envelope delivers less than people want, so the gate rations and about a third are held back. Under the German, Japanese or Spanish method the same envelope delivers more than everyone wants, the gate never binds, and nobody is held back at all.**
+> **At `F` = 10 and ρ = 1.2: under the American method the envelope delivers less than people want, so the gate rations and about a third are held back. Under the German, Japanese or Spanish method the same envelope delivers more than everyone wants, the gate never binds, and nobody is held back at all.**
 
 **In plain words: the band needs an upper edge only while the method is wasteful. Change the method and there is nothing left to ration.** §5.5.3 already named that outcome as the intended one rather than a defect.
 
@@ -2568,7 +2570,7 @@ Those activities are **sleeping, eating, defecating, and keeping oneself clean.*
 
 **Person P's working years, shown in full:** 300 working days × (12 + 10) = 6,600 h, plus 65 rest days × 10 = 650 h, giving **7,250 h a year** for 50 years. The 30 years outside that run at the floor: 30 × 3,650 = **109,500 h**.
 
-> **The figure to quote is not 2.4×. It is that a very hard working life reaches about 1.6× a life spent only staying alive, and that `24 ÷ F` is the wall nobody gets to.**
+> **The figure to quote is not 2.4×. It is that at `F` = 10 a very hard working life reaches about 1.6× a life spent only staying alive, and that `24 ÷ F` is the wall nobody gets to.**
 
 **Write the bound as `24 ÷ F`, never as its value at one floor.** 2.4× is what `24 ÷ F` returns at `F` = 10, and `F` is a value each network sets for itself (§5.5.1). **A sentence that states 2.4× as the result has pinned a free setting**, and the four lives in the table above are the `F` = 10 instance of a pattern that holds at every floor.
 
