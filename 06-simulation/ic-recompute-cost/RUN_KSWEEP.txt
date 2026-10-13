@@ -1,0 +1,56 @@
+
+RE-WEIGHTING COST AGAINST RECORD-CHECK COST -- one generator, one machine
+machine   : AMD64 Family 25 Model 33 Stepping 2, AuthenticAMD · Windows 10
+language  : Python 3.14.3 · numpy 2.5.1
+encoding  : flat numpy arrays, int32/int16/float32 -- no serialisation
+k         : 1, 3, 5, 10 weighting dimension(s) collapsed per event
+accounts  : 1,000,000 · materials: 64 · chunk: 2,000,000 · seed: 41
+repetitions: 3, pass order flipped per repetition and per chunk
+
+  k = 1, 100,000,000 events ...
+    rep 0 (check first): check 9.340s  reweight 1.257s  ratio 0.135
+    rep 1 (reweight first): check 9.214s  reweight 1.202s  ratio 0.130
+    rep 2 (check first): check 9.222s  reweight 1.172s  ratio 0.127
+
+  k = 3, 100,000,000 events ...
+    rep 0 (check first): check 9.155s  reweight 3.639s  ratio 0.398
+    rep 1 (reweight first): check 9.173s  reweight 3.605s  ratio 0.393
+    rep 2 (check first): check 9.199s  reweight 3.566s  ratio 0.388
+
+  k = 5, 100,000,000 events ...
+    rep 0 (check first): check 9.189s  reweight 5.587s  ratio 0.608
+    rep 1 (reweight first): check 9.167s  reweight 5.538s  ratio 0.604
+    rep 2 (check first): check 9.256s  reweight 5.590s  ratio 0.604
+
+  k = 10, 100,000,000 events ...
+    rep 0 (check first): check 9.096s  reweight 11.279s  ratio 1.240
+    rep 1 (reweight first): check 9.237s  reweight 11.376s  ratio 1.232
+    rep 2 (check first): check 8.996s  reweight 11.055s  ratio 1.229
+
+MEASURED  (medians over repetitions)
+  k         events   record check    re-weight    ratio    check rate   reweight rate
+  1    100,000,000          9.2 s        1.2 s    0.130      10.84 M/s    83,182,344/s
+  3    100,000,000          9.2 s        3.6 s    0.393      10.90 M/s    27,735,785/s
+  5    100,000,000          9.2 s        5.6 s    0.604      10.88 M/s    17,897,502/s
+ 10    100,000,000          9.1 s       11.3 s    1.232      10.99 M/s     8,866,131/s
+
+  'record check' is the EIGHT streaming constraints. IC-5 is a sort and
+  is carried separately, as the 2026-08-29 run reported it:
+    k=1     100,000,000  IC-5 sort      2.2 s   ratio against all nine: 0.106
+    k=3     100,000,000  IC-5 sort      2.1 s   ratio against all nine: 0.320
+    k=5     100,000,000  IC-5 sort      2.2 s   ratio against all nine: 0.490
+    k=10    100,000,000  IC-5 sort      2.1 s   ratio against all nine: 1.000
+
+  widest ratio spread across repetitions: 0.0110
+  ratio at the largest size measured    : 1.232
+
+THE k SWEEP, at 100,000,000 events (least-squares line in k)
+  ratio, eight checks : 0.012 + 0.1216 per k   (largest gap from the line 0.0161)
+  ratio, all nine     : 0.010 + 0.0987 per k
+  re-weight seconds   : 0.133 + 1.113 per k
+  record-check seconds: 9.096 to 9.222 across k (it never reads the extra dimensions, so it should not move)
+
+AGAINST THE TWO PRIORS
+  this project's published prior : 1.0 - 5.0   INSIDE
+  @hemei, c55882, cross-generator: 0.27        measured here: 1.232
+

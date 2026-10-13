@@ -1,7 +1,7 @@
 <!-- tag: obj-aequitas-objections-register -->
 # Aequitas — Objections Register
 
-> **Version:** 0.38 · **Date:** 2026-10-02
+> **Version:** 0.39 · **Date:** 2026-10-08
 > **Tracks:** `Aequitas_Foundations.md` · `Aequitas_Conformance.md` · `OP-22_identity_not_disclosure.md` · `OP-27_parallel_implementation.md` · `OP-28_dark_production_and_the_residual_denominator.md` · `OP-26_coverage_and_closure.md` · `OP-18_labour_and_team_credit.md` · `OP-23_capital_and_pollution.md` · `OP-17_coproduct_allocation.md` · `06-simulation/allocation-engine/RECURSION_RESULTS.md` · `06-simulation/disparity-ceiling/DISPARITY_CEILING.md` · `06-simulation/scenario-suite/scenario_suite_METHOD.md`
 > **Purpose:** one place holding every serious objection to the theory, its source, the axiom it attacks, and its status.
 
@@ -869,7 +869,7 @@ A grocery co-op of **ten members**, each on **2,000 hours** a year, buys **40 li
 >
 > **The cost is a deeper log, and the author's ruling on it: this is not a new burden.** A process plant already meters tank levels, transfer volumes and pump duties continuously, and its engineers already do this arithmetic. **We are asking a plant to publish records it keeps, not to create new ones** (§4.3, instrument rung).
 >
-> **⚠️ Owed, and not blocking.** A full re-weighting pass over a log this deep is unmeasured. The record-check cost is 1.6 minutes at a billion events; **the re-weighting cost must not be quoted from it.** Sim request `sr-20260901-wall-clock-and-memory-cost-of-a-full-re-weig`.
+> **✅ Measured since.** A full re-weighting pass costs about a third of a record-check pass **at `k` = 3**, and the ratio grows by about 0.12 for each further weighting dimension `k` — 1.23 at `k` = 10. Foundations §3.4a.
 
 **Shipped:** Foundations v0.41 §3.4a (*Where a parcel's identity comes from*), A3 and A8 pointer lines; conformance rows **10e** amended, **10f** and **10g** new. *(The joint-production close shipped in Foundations v0.38 §3.4a, §2.5, §3.4 with rows 10a, 10c, 10d and 10e. The original close shipped in Foundations v0.4 §3.4a, §3.2a, §2.5 with IC-10, IC-11 and IC-12.)*
 **Full argument:** `00-strategy/open-problems/OP-17_coproduct_allocation.md`

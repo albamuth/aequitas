@@ -83,6 +83,15 @@ RUN
     python reweight_ratio.py               10^6 and 10^7, 3 repetitions
     python reweight_ratio.py --full        adds a measured 10^8
     python reweight_ratio.py --events 5e6 --reps 5
+    python reweight_ratio.py --full --k-sweep 1,3,5,10   the k sweep
+
+THE k SWEEP, filed as
+sr-20260916-measure-the-re-weighting-to-record-check-rat on 2026-09-16:
+the re-weighting pass is linear in k and the record check is not, so the
+ratio must move with k. --k-sweep runs every k off the same log. Dimensions
+1-3 are mass_out, energy and mass_in, as before. Dimensions 4 and up are
+extra physical quantities drawn per event from their own seeded stream,
+untimed, so the record check reads exactly the log it always read.
 """
 
 import argparse
@@ -109,11 +118,12 @@ from ic_recompute_cost import (  # noqa: E402  -- ONE generator, imported not co
 # k -- the number of weighting dimensions collapsed per event. Named because
 # the sim request asks for it by name: the re-weighting cost is linear in k
 # and a run that does not state k is not reproducible.
-K_DIMENSIONS = 3
+K_DIMENSIONS = 3          # the default; --k and --k-sweep override it
+BASE_COLUMNS = ("mass_out", "energy", "mass_in")
 
 
 # ------------------------------------------------------------ the weights
-def make_weights(seed=SEED):
+def make_weights(seed=SEED, k=K_DIMENSIONS):
     """The current weighting model: hours per physical unit, per material.
 
     Shape is (N_MATERIALS, k). Real values come from published cost constants
@@ -121,7 +131,20 @@ def make_weights(seed=SEED):
     does not depend on which numbers are in the table.
     """
     rng = np.random.default_rng(seed + 977)
-    return rng.random((N_MATERIALS, K_DIMENSIONS)).astype(np.float64) * 0.05
+    return rng.random((N_MATERIALS, k)).astype(np.float64) * 0.05
+
+
+def dim_columns(k):
+    """The k physical quantities a re-weight collapses, in order."""
+    return list(BASE_COLUMNS[:k]) + [f"q{j}" for j in range(3, k)]
+
+
+def add_extra_dims(c, k, rng):
+    """Dimensions 4..k: more physical quantities on the same events. Untimed."""
+    n = len(c["actor"])
+    for j in range(3, k):
+        c[f"q{j}"] = rng.random(n).astype(np.float32)
+    return c
 
 
 class Reweight:
@@ -133,15 +156,16 @@ class Reweight:
 
     def __init__(self, weights, n_accounts=N_ACCOUNTS):
         self.w = weights
+        self.cols = dim_columns(weights.shape[1])
         self.debit = np.zeros(n_accounts, dtype=np.float64)
         self.events = 0
 
     def feed(self, c):
         """Collapse one chunk's debit vector into hours, per dimension."""
         w = self.w[c["material"]]                     # gather, (n, k)
-        hours = (c["mass_out"] * w[:, 0]
-                 + c["energy"] * w[:, 1]
-                 + c["mass_in"] * w[:, 2])            # collapse, per dimension
+        hours = c[self.cols[0]] * w[:, 0]
+        for j in range(1, len(self.cols)):            # collapse, per dimension
+            hours = hours + c[self.cols[j]] * w[:, j]
         np.add.at(self.debit, c["actor"], hours)      # scatter-add
         self.events += len(c["actor"])
 
@@ -154,16 +178,17 @@ class Reweight:
 
 # ------------------------------------------------------------ the paired run
 def paired_pass(n_events, reps, n_accounts=N_ACCOUNTS, chunk=CHUNK, seed=SEED,
-                verbose=False, stream_only=False):
+                verbose=False, stream_only=False, k=K_DIMENSIONS):
     """Run both passes over the SAME events, flipping which goes first.
 
     Returns one row per repetition. The order flips per repetition AND per
     chunk inside a repetition, so neither pass keeps the warm-cache advantage.
     """
-    weights = make_weights(seed)
+    weights = make_weights(seed, k)
     rows = []
     for r in range(reps):
         rng = np.random.default_rng(seed)          # identical log every rep
+        xrng = np.random.default_rng(seed + 5003)  # extra dims, own stream
         ch = Checks(n_accounts)
         rw = Reweight(weights, n_accounts)
         check_s = reweight_s = 0.0
@@ -171,6 +196,7 @@ def paired_pass(n_events, reps, n_accounts=N_ACCOUNTS, chunk=CHUNK, seed=SEED,
         while left > 0:
             m = min(chunk, left)
             c = make_chunk(rng, m, n_accounts)     # generated ONCE, untimed
+            add_extra_dims(c, k, xrng)             # untimed too
             check_first = ((r + i) % 2 == 0)
             if check_first:
                 t0 = time.perf_counter(); ch.feed(c); t1 = time.perf_counter()
@@ -293,7 +319,24 @@ def self_tests():
 
     # 8. k is load-bearing and must be stated. A one-dimension collapse is a
     #    cheaper pass than Foundations section 3.2a describes.
-    check("k is stated", K_DIMENSIONS == 3, f"k = {K_DIMENSIONS}")
+    #    The old form pinned k == 3, which tested a literal (queue item 98).
+    #    This form checks that k really changes the work done.
+    a5 = add_extra_dims({kk: v.copy() for kk, v in a.items()}, 5,
+                        np.random.default_rng(SEED + 5003))
+    r5 = Reweight(make_weights(SEED, 5), acc); r5.feed(a5)
+    r1k = Reweight(make_weights(SEED, 1), acc); r1k.feed(a)
+    totals = (r1k.total(), r1.total(), r5.total())
+    check("k is a real setting: k = 1, 3, 5 give three different figures",
+          len({round(t, 6) for t in totals}) == 3,
+          "k=1 {:.1f} · k=3 {:.1f} · k=5 {:.1f}".format(*totals))
+
+    # 9. At k = 3 the generic collapse equals the original three-term sum, so
+    #    every earlier result still reproduces.
+    wm = w[a["material"]]
+    ref = np.zeros(acc)
+    np.add.at(ref, a["actor"], a["mass_out"] * wm[:, 0]
+              + a["energy"] * wm[:, 1] + a["mass_in"] * wm[:, 2])
+    check("k = 3 reproduces the original pass", np.allclose(ref, r1.debit))
 
     print()
     print("  all self-tests pass" if ok else "  SELF-TESTS FAILED")
@@ -311,7 +354,11 @@ def main():
                     help="drop IC-5's keys as they are made, so the eight "
                          "streaming checks can be measured at a size IC-5's "
                          "sort cannot fit. Reports no IC-5 figure.")
+    ap.add_argument("--k", type=int, default=K_DIMENSIONS)
+    ap.add_argument("--k-sweep", type=str, default=None,
+                    help="comma list of k, each run off the same log, e.g. 1,3,5,10")
     a = ap.parse_args()
+    ks = [int(x) for x in a.k_sweep.split(",")] if a.k_sweep else [a.k]
 
     print()
     rule("=")
@@ -321,7 +368,7 @@ def main():
           f"{platform.system()} {platform.release()}")
     print(f"language  : Python {platform.python_version()} · numpy {np.__version__}")
     print(f"encoding  : flat numpy arrays, int32/int16/float32 -- no serialisation")
-    print(f"k         : {K_DIMENSIONS} weighting dimensions collapsed per event")
+    print(f"k         : {', '.join(map(str, ks))} weighting dimension(s) collapsed per event")
     print(f"accounts  : {N_ACCOUNTS:,} · materials: {N_MATERIALS} · "
           f"chunk: {CHUNK:,} · seed: {SEED}")
     print(f"repetitions: {a.reps}, pass order flipped per repetition and per chunk")
@@ -336,22 +383,24 @@ def main():
         sizes.append(100_000_000)
 
     results = []
-    for n in sizes:
-        print(f"  {n:,} events ...")
-        rows = paired_pass(n, a.reps, verbose=True, stream_only=a.stream_only)
-        s = summarise(rows)
-        s["events"] = n
-        results.append(s)
-        print()
+    for kk in ks:
+        for n in sizes:
+            print(f"  k = {kk}, {n:,} events ...")
+            rows = paired_pass(n, a.reps, verbose=True,
+                               stream_only=a.stream_only, k=kk)
+            s = summarise(rows)
+            s["events"], s["k"] = n, kk
+            results.append(s)
+            print()
 
     rule()
     print("MEASURED  (medians over repetitions)")
     rule()
-    print(f"{'events':>14} {'record check':>14} {'re-weight':>12} "
+    print(f"{'k':>3} {'events':>14} {'record check':>14} {'re-weight':>12} "
           f"{'ratio':>8} {'check rate':>13} {'reweight rate':>15}")
     for s in results:
         n = s["events"]
-        print(f"{n:>14,} {human_time(s['check_s_med']):>14} "
+        print(f"{s['k']:>3} {n:>14,} {human_time(s['check_s_med']):>14} "
               f"{human_time(s['reweight_s_med']):>12} "
               f"{s['ratio_stream_med']:>8.3f} "
               f"{n / s['check_s_med'] / 1e6:>10.2f} M/s "
@@ -365,7 +414,7 @@ def main():
         print("    would be the mislabelling this project keeps finding elsewhere.")
     else:
         for s in results:
-            print(f"    {s['events']:>14,}  IC-5 sort {human_time(s['ic5_s_med']):>10}"
+            print(f"    k={s['k']:<3}{s['events']:>14,}  IC-5 sort {human_time(s['ic5_s_med']):>10}"
                   f"   ratio against all nine: {s['ratio_all9_med']:.3f}")
     print()
 
@@ -373,6 +422,27 @@ def main():
     print(f"  widest ratio spread across repetitions: {spread:.4f}")
     print(f"  ratio at the largest size measured    : "
           f"{results[-1]['ratio_stream_med']:.3f}")
+    if len(ks) > 1:
+        big = [s for s in results if s["events"] == sizes[-1]]
+        kx = np.array([s["k"] for s in big], dtype=float)
+        rr = np.array([s["ratio_stream_med"] for s in big])
+        rw = np.array([s["reweight_s_med"] for s in big])
+        ck = np.array([s["check_s_med"] for s in big])
+        print()
+        rule()
+        print(f"THE k SWEEP, at {sizes[-1]:,} events (least-squares line in k)")
+        rule()
+        sl, ic = np.polyfit(kx, rr, 1)
+        print(f"  ratio, eight checks : {ic:.3f} + {sl:.4f} per k   "
+              f"(largest gap from the line {np.abs(rr - (ic + sl * kx)).max():.4f})")
+        if not a.stream_only:
+            ra = np.array([s["ratio_all9_med"] for s in big])
+            sl9, ic9 = np.polyfit(kx, ra, 1)
+            print(f"  ratio, all nine     : {ic9:.3f} + {sl9:.4f} per k")
+        slt, ict = np.polyfit(kx, rw, 1)
+        print(f"  re-weight seconds   : {ict:.3f} + {slt:.3f} per k")
+        print(f"  record-check seconds: {ck.min():.3f} to {ck.max():.3f} across k "
+              f"(it never reads the extra dimensions, so it should not move)")
     print()
     rule()
     print("AGAINST THE TWO PRIORS")

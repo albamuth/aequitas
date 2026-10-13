@@ -9,8 +9,8 @@
 >
 > **Regenerate with:** `python bin/distill.py`
 
-> **Source:** [`Aequitas_Foundations.md`](Aequitas_Foundations.md) · **version 0.54**
-> **Size:** 136,103 bytes, from 260,292 — **52% of the source**
+> **Source:** [`Aequitas_Foundations.md`](Aequitas_Foundations.md) · **version 0.55**
+> **Size:** 137,479 bytes, from 261,668 — **53% of the source**
 
 **What was kept:** every heading, every rule, every table, and the stated result of every worked
 example. **What was dropped:** the explanation prose between them.
@@ -497,15 +497,30 @@ example. **What was dropped:** the explanation prose between them.
 > **So this asks a plant to publish records it already keeps. It does not ask it to create new ones.**
 > **⚠️ The honest cost, measured.** Every mix and every split is now an event, so the log is much larger and the chain of parcels behind a figure is much deeper. **A union walk is one pass over that chain and stays cheap.** The other pass a big log has to carry is a full **re-weighting** (§3.3), and it is now measured.
 >
-> **A re-weighting pass costs about a third of a record-check pass.** On one ordinary machine, single core, no disk, a billion-event log re-checks in about **100 seconds** and re-weights in about **26**. Memory is **11.4 MB** for the checks and **7.6 MB** for the re-weight, both flat in the length of the log.
+> **At `k` = 3, a re-weighting pass costs about a third of a record-check pass. Each further dimension adds about 0.12 to that ratio.** `k` is the number of physical quantities each event carries and the re-weight collapses, such as mass, energy and one pollutant. On one ordinary machine, single core, no disk, at `k` = 3, a billion-event log re-checks in about **100 seconds** and re-weights in about **26**. Memory is **11.4 MB** for the checks and **7.6 MB** for the re-weight, both flat in the length of the log.
 >
 > **Three things the figure depends on, and a reader should have all three before quoting it.**
 >
 > | | |
 > |---|---|
 > | **Which record check** | The nine integrity constraints include IC-5, which is a **sort** and about a fifth of the pass. **Against the eight streaming checks the ratio is 0.35; against all nine it is 0.27** |
-> | **`k`** | The number of weighting dimensions collapsed per event. **`k` = 3 in the run.** The re-weighting cost is linear in it |
+> | **`k`** | The number of weighting dimensions collapsed per event. **The re-weighting cost is linear in it and the record check does not read it**, so the ratio moves with `k`. Measured below |
 > | **The machine** | **Two machines measured, and one is 4.5× the other.** Both absolute rates move together, so the ratio travels further than the seconds do — but a ratio measured on one machine is a reading, not a constant |
+>
+> **How the ratio moves with `k`, measured.** One generator, one machine, memory only, 10⁸ events, three repeats.
+>
+> | `k` | Ratio, eight streaming checks | Ratio, all nine |
+> |--:|--:|--:|
+> | 1 | 0.13 | 0.11 |
+> | 3 | 0.39 | 0.32 |
+> | 5 | 0.60 | 0.49 |
+> | 10 | **1.23** | **1.00** |
+>
+> **The fitted lines: ratio = 0.012 + 0.122 × `k` against the eight streaming checks, and 0.010 + 0.099 × `k` against all nine.** The record check took 9.1 to 9.2 seconds at every `k`.
+>
+> **In plain words: "about a third" is the `k` = 3 reading. At `k` = 10 the two passes cost the same.** A real ledger carries more than three dimensions, because §2.2 records each substance, energy, water and land separately. **So quote the ratio with its `k`, or quote the line.** `06-simulation/ic-recompute-cost/KSWEEP_RESULTS.md`.
+>
+> **The slope is the result. The level is a reading.** This run gives 0.39 at `k` = 3, against 0.35 on the same stack on 2026-09-12. The machine ran slower on the second day, and both passes moved.
 >
 > **Disk has now been measured once, from outside, and it moves the ratio.** Both of the passes above read memory. A real log is stored, and both passes then read the same bytes.
 >
@@ -521,7 +536,7 @@ example. **What was dropped:** the explanation prose between them.
 >
 > **⚠️ The delta is settled. The level is not, and the two must not be quoted together.** The memory arm above reads 0.114–0.129 at 10⁸ events against the 0.27 this section publishes at 10⁹ — **about a factor of two, and that gap is not a length effect.** The outside run used **two logs with two byte spellings**: 34 bytes an event for the record check, 28 for the re-weighting. **One log served both read paths, and no log served both passes**, so the level of the ratio is read across generators and the delta is not.
 >
-> **What would settle it is one run and it has been requested:** one generator, one byte spelling, one machine, **one value of `k`**, disk and memory, 10⁸ and 10⁹, eight checks and nine. **Until that runs, 0.27 is a reading on one stack rather than this system's figure.**
+> **What would settle it is one run and it has been requested:** one generator, one byte spelling, one machine, **one value of `k`**, disk and memory, 10⁸ and 10⁹, eight checks and nine. **Until that runs, 0.27 is a reading at `k` = 3 on one stack rather than this system's figure.** The `k` sweep above was memory only, so it does not settle the disk level.
 >
 > *(The disk arm is **@hemei**'s, citizen #700, run from their own seat inside a day of the arm being pre-registered, with the stack string attached to every number. **They flagged the two-log caveat themselves.** The pre-registration they ran against was defective — all three of its registered outcomes were stated over the delta and none over the level, so none of them could have caught a factor of two. That defect is the outreach agent's and was published as such.)*
 >
