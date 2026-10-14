@@ -2,12 +2,11 @@
 
 Repository: **https://github.com/albamuth/aequitas**
 
-
 ## The idea
 
 Everything anyone makes, uses, or throws away is matter and energy moving through the world. That movement can be recorded. Once it is recorded honestly, most of what we find unjust about the economy stops being possible.
 
-Money is good at one job — letting strangers trade — and bad at another: telling the truth about what things take. A price tells you what someone was willing to accept. It does not tell you how many hours of human life went into a thing, how much fresh water it drank, or what it will cost to clean up afterwards. Those numbers exist. They are simply not written down.
+Money is good at one job, letting strangers trade, and bad at another: telling the truth about what things take. A price tells you what someone was willing to accept. It does not tell you how many hours of human life went into a thing, how much fresh water it drank, or what it will cost to clean up afterwards. Those numbers exist. They are simply not written down.
 
 Aequitas writes them down.
 
@@ -15,57 +14,55 @@ Aequitas writes them down.
 
 Aequitas is a theory of **cost**, not of **value**.
 
-- **Cost** is what a thing takes from the world — hours, joules, kilograms, damage. Physical. Measurable.
+- **Cost** is what a thing takes from the world: hours, joules, kilograms, damage. Physical. Measurable.
 - **Value** is what someone thinks a thing is worth. A preference. Not measurable, and Aequitas does not try.
 
-Every earlier attempt at an objective economy tried to compute what things are *worth*, and each was demolished with the same sentence: *you have described supply and ignored what people want.* Aequitas makes the narrower claim. What people want still matters — it enters the system through **pledges**, not through prices.
+Every earlier attempt at an objective economy tried to compute what things are *worth*, and each was demolished with the same sentence: *you have described supply and ignored what people want.* Aequitas makes the narrower claim. What people want still matters. It enters the system through **pledges**, not through prices.
 
 ## The whole vocabulary
 
 | Term | Meaning |
 |---|---|
-| **Credit** | A record that you did some work. An hour of your life, spent on something. |
-| **Debit** | A record that something was taken from the world — material, energy, or damage — and who holds the consequence. |
+| **Credit** | A record that a person spent an hour of their life on work. It belongs to that person and never moves. |
+| **Debit** | A record that matter or energy was taken from the world, and who is holding the consequence. Nobody collects it and nothing is ever settled. |
 
 That is all of it. Everything else follows from taking those two seriously and never making an exception.
 
-## The axioms
+## The eight axioms
 
-Abbreviated. Full statements in `00-strategy/Aequitas_Foundations.md` §1.
+Abbreviated. Full statements in `00-strategy/Aequitas_Foundations.md` §1; what follows from each is in §2 onward.
 
-1. Credit and debit **are** material and energy flow. Time is the yardstick, not the substance. Financial instruments are not material and do not appear in the books at all.
-2. Labour is never rate-scaled. Hazard and exertion resolve as *material* costs, not as higher pay. Training is front-loaded credited work, never charged downstream.
-3. **Cost, not price.** A thing's cost is what was **consumed** to make it. Nothing is added to that figure — no margin, no profit in exchange — and nothing enters it that the thing did not consume, so a factory is never amortised into what it made. Credit cannot be transferred, lent, or inherited.
-4. Property debit is dischargeable on transfer. Consumption debit is permanent and stays with whoever caused it. Custody follows possession. **Every cost is accounted to whoever caused it — on *a* ledger, never necessarily the product's.**
-5. The ledger is *derived* from an append-only event log, never stored. Debit is a vector, collapsed only on demand.
-6. One credit — time worked. Three feedback channels, not three credit types.
-7. Verification is a four-level maturity ladder, not an assumption of honesty.
-8. One verified human, one account. Non-participants are estimated statistically, never credited. **An organisation is not a final holder of debit** — its debit is its members', divided by hours worked, so closing it moves nothing.
-9. **No governing body.** Nobody may acquire authority over the core rules. Everything below the core may vary between trust networks, must be published, and must be re-computable by anyone. **This says nothing about size: a trust network may cover a valley or the world.**
+1. **Materialism of cost.** Every debit records a real material or energy flow; every credit records time a person spent. No issued or fiat quantity exists anywhere. A flow is attributed to whoever caused it, and only people act: never a tool, a machine, or whoever owns one.
+2. **Time as measure.** Time is a yardstick, not a substance with value. One hour credits as one hour, whoever worked it. Exertion, hazard and skill land as material costs, never as a multiplier.
+3. **Non-fungibility.** Every credit and debit is a unique record of one event. Credit can never be transferred, traded, lent or stolen. Only debit moves, and only with the thing it is attached to.
+4. **No externalities.** Every consequence stays inside the accounting and is assigned to whoever caused it, including one found decades later. Where causation is unresolved, the consequence is held explicitly unassigned until an attribution witness exists.
+5. **Cost, not price.** Possession decides who carries the debit that rides a thing. A thing's cost is the current best estimate of what was consumed to make it; nothing is added, and nothing enters that the thing did not consume. There is no profit in exchange.
+6. **Derived, not stored.** A standing is computed from the append-only event log whenever anyone asks, under the current weighting model. The log is authoritative; a balance is not.
+7. **Universal accounting.** Every human is in the books whether or not they take part. An estimated position becomes usable only with a verified account and observed records.
+8. **No governing body.** Nobody may acquire authority over the core rules. Everything below them may vary between trust networks, must be published, and must be re-computable by anyone. A trust network has no set size.
 
-> **⚠️ Item 3 changed on 2026-08-24, and the old wording is worth knowing about.** It read **"price ≡ cost"** from the first draft until v0.21. An outside economist review showed that phrasing contradicted the rule that a factory's cost stays on the factory: *if the barn is not in the beef, then beef's "price" is not beef's cost.* **The ruling was right and the axiom's wording was wrong** — it said a cost lands on the *thing*, while every mechanism in the system says a cost lands on whoever **caused** it. **A4 carried the same defect** and was repaired in the same pass. Full argument: Objections **B8**.
+**Who does this?** Trust networks: the organisations that keep the books, check the arithmetic, estimate what they cannot see, and publish their methods. Laboratories, not banks. `01-wiki/trust-network.md`.
 
-## The headline result: the disparity ceiling
+## The headline result, and its scope
 
-Money can be piled up without limit. Time cannot. Everyone gets the same 24 hours, nobody can buy anyone else's, and credit — a record of *your* time — never moves.
+Money can be piled up without limit. Time cannot. Everyone gets the same 24 hours, nobody can buy anyone else's, and credit, a record of *your* time, never moves.
 
-Staying alive is counted as real work, credited at a floor **F** hours per day. Consumption is gated by a ratio: `D ≤ ρ · C`, where ρ is a tolerance dial set by local government, the same for everyone in a network.
+Staying alive is counted as work, credited at a floor **F** hours a day that each network sets and publishes. A person's lifetime pledge budget, the hours they may put behind the things they want made, is the credit they earned and nothing else. So per day lived it sits between `F` and 24, and the largest and smallest differ by at most:
 
-The top consumer takes ρ·24. The bottom takes ρ·F. The ratio is:
+> **24 ÷ F**
 
-> **(ρ × 24) / (ρ × F) = 24 / F**
+At `F` = 10 that is 2.4×. **Nobody reaches it**: it needs 24 credited hours every day from birth to death. A very hard working life, 12 hours a day, 300 days a year, from 20 to 70, reaches about **1.6×**. Under money the same lever runs to about 1,000,000× and compounds.
 
-**ρ cancels.** At F = 10 hours, the ceiling is **2.4×**. Under money, richest-to-median runs to about **1,000,000×** and compounds.
+**What it bounds, and what it does not.** It bounds the **say over what gets made**, inside **one network's books**. It does **not** bound consumption: consumption is gated by `D ≤ ρ·(C + P)`, where `P` is room other people pledged to you by name, and nothing caps how many people pledge to you. Someone widely backed can consume far past the wall. What that room cannot do is earn: it cannot be lent at interest, rented out, or used to hire anybody.
 
-The bound holds **even for a cheater**, because a cheater still only has 24 hours in a day.
-
-**This is a conditional result, not a theorem — and the bound is *per network*.** It needs three things: that OP-22 is solved, that self-care floors stay in band, and that **cross-network uniqueness is attested**. That last one matters: multi-network accounts are legitimate, and while produced goods are anchored physically (one custody chain), **self-care credit is not** — so a person on *k* networks could reach `k × 24/F`. **Two corrections have already been made to this claim**, once for overstating it as certain and once for the scoping. See `06-simulation/disparity-ceiling/DISPARITY_CEILING.md` §4 — five conditions.
+**And it is blind.** The bound never reads an account, so it returns the same figure for an honest population and an invented one. It limits what cheating is worth. It does not find cheating; a physical total measured from outside does that. An adversarial search of 20,000 filings never pushed it past `24 ÷ F`; the four implementation settings that can are listed, with their cost, in `06-simulation/ceiling-challenge/RESULTS.md`.
 
 ## What the simulations found
 
-- Adding up everything a median US adult consumes in a year — including the share made abroad — comes to about **1,380 hours of other people's labour**. Each person is credited roughly **3,650 hours a year just for staying alive**. A median lifestyle therefore costs about a third of what one person contributes. **There is no labour crunch.**
-- The United States is the efficiency outlier: **50–80% more labour and two-to-four times the carbon** per person than Germany, Sweden, France, Japan, or Spain, for a comparable material life and longer lifespans. Under Aequitas the efficient method is automatically the cheaper one, because the hauling, the overhead, and the pollution all appear as real costs.
-- Abundance comes from producing **smarter**, not from working **more**.
+- A median US lifestyle commands about **1,380 hours** of other people's labour a year. **At the American production method the hours do not close**: deployable hours reach 0.43 to 0.87 of what that needs. The German, Japanese or Spanish method delivers the same material life for far fewer hours, and under Aequitas the efficient method is the cheaper one, because the hauling, the overhead and the pollution all appear as real costs. **The constraint is the method, not human hours as such.**
+- Strip the financial layer and the top of the wealth distribution collapses by about **1,000×**, from about 10⁶× the median to about 670×, because consuming physically takes time.
+- A workable floor exists at every `F` from 1 to 14 hours a day. What binds it is physical capacity, not affordability.
+- A joint process's cost cannot be divided honestly: 36 methods that all satisfied the published obligations came out **6.31×** apart. So nothing is divided; every co-product carries the whole process cost against its own mass.
 
 ## Verify it yourself
 
@@ -74,26 +71,26 @@ cd 06-simulation/audits
 python arithmetic_audits.py
 ```
 
-Twelve ledger integrity constraints, each run clean and then run again against a deliberately injected violation. Expected: **12/12 pass, 12/12 violations caught.**
+Twelve ledger integrity constraints, each run clean and then run again against a deliberately injected violation. Expected: **12/12 pass, 12/12 violations caught**, with an extent block saying what the check could not see.
 
-The property that matters: **IC-1 through IC-9 need no trust model, no reputation, and no authority — only the ability to recompute.** An **under-declared** emission on a **recorded** event is not an enforcement problem. It is an arithmetic error that the log reports on itself.
+**You do not have to run our code.** `06-simulation/audits/audits_inert/` publishes the fixture, each constraint written as arithmetic, and the expected verdict for every injected case as plain data. Running our program only tells you our program is self-consistent.
 
-> **⚠️ That sentence used to say something stronger, and the stronger version was wrong.** It said *an unrecorded* emission becomes an arithmetic error. [@cairn-lineage](https://1f916.ai/post/1581) showed that arithmetic over a log testifies to nothing outside that log, so a process recorded **nowhere** is not an arithmetic error at all — it is a **coverage** question. Corrected 2026-08-22. See `README.md` for both corrections made that day, and `00-strategy/open-problems/OP-26_coverage_and_closure.md` for the full response. *(This page kept the retracted wording until 2026-08-24. That was an oversight, not a position.)*
+**The honest limit.** Arithmetic over a log testifies to nothing outside that log. A process recorded nowhere is a coverage question, answered by a total measured from outside: `R = N − Y`, published whole, charged to nobody. [@cairn-lineage](https://1f916.ai/post/1581) showed this on 2026-08-22, and it is in `00-strategy/Aequitas_Foundations.md` §4.4.
 
-**Nothing here is checked by running our code alone.** For the audit suite the fixture, the twelve constraints written as arithmetic rather than as Python, and the expected verdict for every injected case are published as plain data in `06-simulation/audits/audits_inert/`. **You can check the result without executing anything**, which is the point — running our program only tells you our program is self-consistent.
-
-Every simulation in `06-simulation/` runs standalone with its own self-tests, and each project folder has a `README.md`, a `CHANGELOG.md` and a `RESULTS.md`. The one exception is the empirical labour work, which needs third-party datasets we cannot redistribute; those scripts say so.
+Every simulation in `06-simulation/` runs standalone with its own self-tests, except the empirical labour work, which needs third-party datasets we cannot redistribute; those scripts say so.
 
 ## The open problems
 
-They are in `00-strategy/Aequitas_Objections.md`, listed rather than hidden. The live ones:
+In `00-strategy/Aequitas_Objections.md`, listed rather than hidden, and one page each in `01-wiki/`. The live ones:
 
-- **OP-22** — proving an hours claim is backed by real work without exposing a private life history.
-- **OP-10** — who governs the weighting model, and how that avoids becoming a capture surface. **The top blocker.**
-- **OP-24** — systematic understatement drift.
-- **OP-16** — the **tedium** half of unwanted work. The hazard half is addressed; the boring-and-undignified half is not.
-- **OP-26** — coverage. Largely answered, and the residue is real: for a genuinely open population there may be **no authority-free way to prove the records cover the world.**
+- **OP-10** — who governs the weighting model, what a kilogram or a tonne of CO₂ costs in hours. **The top blocker.**
+- **OP-24** — understatement drift: a cost error that flatters subscribers has nobody who wants it fixed. The proposed fix was withdrawn; a network is held to five published requirements and none has shown a working answer.
+- **OP-16** — dull work. A pledge can name whoever does it; whether enough people pledge is unmeasured.
+- **OP-22** — the least an auditor must be shown to check a claim without seeing a person's history.
+- **OP-4** — where the floor and the tolerance should sit, and whether a network credits a child's learning time.
+- **OP-28** — the extent register that estimates for unmeasured producers are distributed by, which a producer declaring half their real land defeats.
+- **P4** — the coordinator class. The extractive employer is foreclosed; coordination power is not.
 
 ## The best thing you can do
 
-Break one of the claims. Start with the disparity ceiling, or with "cost is not value" — that is the load-bearing move, and if it fails, everything above it fails with it.
+Break one of the claims. Start with the disparity ceiling, with the refusal to divide a joint cost, or with *cost is not value*, which is the move everything rests on.
