@@ -1,3 +1,32 @@
+---
+title: Debit tolerance
+summary: The consumption gate D ≤ ρ·(C + P), its two dials the floor F and the tolerance ρ, why the floor is credit for lived time rather than an allowance, and the measured band inside which both work.
+type: mechanism
+ids: [§3.0, §5.5, C9]
+status: provisional
+edges:
+  - {rel: depends_on, to: non-fungibility}
+  - {rel: depends_on, to: derived-ledger}
+  - {rel: depends_on, to: time-as-yardstick}
+  - {rel: depends_on, to: consumption-debit}
+  - {rel: depends_on, to: books-never-balance}
+  - {rel: depends_on, to: verification-ladder}
+  - {rel: depends_on, to: pledge-and-signal}
+  - {rel: implies, to: disparity-ceiling}
+  - {rel: implies, to: no-taxation}
+  - {rel: constrained_by, to: IC-7}
+  - {rel: open_under, to: OP-4}
+  - {rel: related, to: op-4}
+  - {rel: tested_by, to: 06-simulation/essentials-basket/RESULTS.md}
+  - {rel: tested_by, to: 06-simulation/stable-band/RESULTS.md}
+  - {rel: tested_by, to: 06-simulation/stable-band/PLEDGE_BAND_RESULTS.md}
+  - {rel: source, to: "Foundations §3.0"}
+  - {rel: source, to: "Foundations §5.5.1"}
+  - {rel: source, to: "Foundations §5.5.2"}
+  - {rel: source, to: "Foundations §5.5.3"}
+  - {rel: source, to: "Foundations §5.5.4"}
+  - {rel: source, to: "Foundations §5.5.6"}
+---
 # Debit Tolerance
 
 > **Version:** 0.2

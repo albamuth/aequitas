@@ -1,3 +1,20 @@
+---
+title: How a dispute resolves
+summary: Disputes about the physical record, the weighting model and an estimate need no verdict, because each party recomputes the shared record under its own model; only fraud needs a finding of fact, and correction negates the fake credit without reversing any transaction.
+type: mechanism
+ids: [§4.7]
+status: settled
+edges:
+  - {rel: depends_on, to: derived-ledger}
+  - {rel: depends_on, to: retroactive-reweighting}
+  - {rel: depends_on, to: distributed-auditing}
+  - {rel: depends_on, to: ledger-ecosystem}
+  - {rel: depends_on, to: debit-tolerance}
+  - {rel: constrained_by, to: "Conformance row 6"}
+  - {rel: source, to: "Foundations §3.3"}
+  - {rel: source, to: "Foundations §4.4"}
+  - {rel: source, to: "Foundations §4.7"}
+---
 # How a dispute resolves
 
 > **Version:** 0.1

@@ -1,3 +1,16 @@
+---
+title: Self-work identity
+summary: Work on a thing you hold credits you the hours and raises the thing's debit by the same hours, so the net is zero apart from the materials and energy consumed.
+type: mechanism
+ids: [§3.2]
+status: settled
+edges:
+  - {rel: depends_on, to: property-debit}
+  - {rel: depends_on, to: cost-not-price}
+  - {rel: implies, to: capitalism-cannot-function}
+  - {rel: source, to: "Foundations §3.2"}
+  - {rel: source, to: "Overview §1"}
+---
 # The Self-Work Identity
 
 > **Version:** 0.1

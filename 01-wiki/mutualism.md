@@ -1,3 +1,14 @@
+---
+title: Mutualism (Proudhon)
+summary: Proudhon's exchange at cost and interest-free mutual credit; Aequitas keeps the diagnosis of rent and interest as extraction and rejects the monetary remedy.
+type: lineage
+ids: []
+status: settled
+edges:
+  - {rel: related, to: field-record}
+  - {rel: source, to: 02-research/Proudhon_mutualism.md}
+  - {rel: source, to: "Foundations §5.6"}
+---
 # Mutualism (Proudhon)
 
 > **Version:** 0.1

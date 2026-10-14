@@ -1,3 +1,32 @@
+---
+title: Co-product allocation
+summary: A joint process's cost is not divided; every co-product carries the whole cost of the steps it passed through against its own mass, a ledger walk unions parcels rather than summing them, and a finer reading can only lower a figure.
+type: mechanism
+ids: [§3.4a, OP-17]
+status: settled
+edges:
+  - {rel: depends_on, to: material-flow-value}
+  - {rel: depends_on, to: time-as-yardstick}
+  - {rel: depends_on, to: non-fungibility}
+  - {rel: depends_on, to: event-record}
+  - {rel: depends_on, to: physical-trace-test}
+  - {rel: depends_on, to: retroactive-reweighting}
+  - {rel: implies, to: estimation-engine}
+  - {rel: implies, to: debit-taxonomy}
+  - {rel: constrained_by, to: IC-10}
+  - {rel: constrained_by, to: IC-11}
+  - {rel: constrained_by, to: IC-12}
+  - {rel: constrained_by, to: "Conformance row 10b"}
+  - {rel: constrained_by, to: "Conformance row 10c"}
+  - {rel: open_under, to: OP-24}
+  - {rel: supersedes, to: OP-18}
+  - {rel: tested_by, to: 06-simulation/method-spread/RESULTS.md}
+  - {rel: tested_by, to: 06-simulation/chain-resolution/RESULTS.md}
+  - {rel: tested_by, to: 06-simulation/allocation-engine/RECURSION_RESULTS.md}
+  - {rel: source, to: "Foundations §2.5"}
+  - {rel: source, to: "Foundations §3.4a"}
+  - {rel: source, to: 00-strategy/open-problems/OP-17_coproduct_allocation.md}
+---
 # Co-Product Allocation
 
 > **Version:** 0.1

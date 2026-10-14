@@ -1,7 +1,7 @@
 # Struck phrases — wordings that must not appear in a live document
 
-> **Version:** 0.1
-> **Date:** 2026-09-16
+> **Version:** 0.2
+> **Date:** 2026-10-14
 
 > **Read by [`bin/consistency.py`](../bin/consistency.py). The table below is the machine-readable part; everything else on this page is for people.**
 
@@ -89,6 +89,9 @@ That is not a hypothetical. **It happened three times in a single day, 2026-08-2
 | `shared I/O would push the ratio toward 1.0` | 2026-09-15 | Author ruling. The sentence's whole point was that the amount was unknown, and @hemei measured it from outside at 10⁸ events: disk 0.192–0.219 against memory 0.114–0.129, a delta of **+0.084**, outside both spreads | **Storing the log raises the re-weighting ratio by about 0.084 on one outside stack.** The **level** of 0.27 is still unsettled, because that run used two logs with two byte spellings — Foundations §3.4a |
 | `by an amount nobody has measured` | 2026-09-15 | Same ruling. Somebody has | As above — Foundations §3.4a |
 | `the surplus is not a payment to the doer and is not consumable` | 2026-09-18 | Author ruling. The contingent reserve is a trust network's ruling, not this system's. A pledge names a person or the criteria that will name one, and **once a person is named the room is committed, consumable and unchangeable** | **Surplus pledges are room like any other.** Where criteria are silent it goes to the doers by hours worked — Foundations §4.6 |
+| `by the grid's measured fuel mix` | 2026-09-09 | A paraphrase of the struck consumer-electricity rule that the register did not catch. It survived in the Question Index until 2026-10-14 | **No emission reaches a consumer who never held the fuel** — Foundations §3.2b |
+| `a forward measurement of what physically went in` | 2026-09-03 | Described a share of a joint process's cost. The division was withdrawn (B7), so no share exists | **Every co-product carries the whole process cost against its own mass** — Foundations §3.4a |
+| `an earmarked, non-consumable reserve` | 2026-09-18 | The contingent reserve's own description. Same ruling as the row above | **A pledge names a person or the criteria that will name one, and committed room is consumable** — Foundations §4.6 |
 | `Nobody gets a bonus for being popular` | 2026-09-18 | Same ruling. Somebody widely backed does end up with more room, and the documents now say so | **Pledge-wealth is possible and is stated.** What it cannot do is earn — it cannot be lent, rented, charged for or used to hire — Overview §1, §6 · Foundations §5.5.5 |
 | `the ratio between the largest and the smallest credit per day lived` | 2026-09-18 | Author ruling. The bound is over **pledge budgets**, which are earned credit and nothing else. Consumption is gated by `D ≤ ρ·(C + P)` and `P` has no per-account limit | **`24 ÷ F` bounds the say over what gets made, not what anybody consumes** — Foundations §5.5.5 |
 | `so their cumulative consumption does too` | 2026-09-18 | Same ruling. Two people of equal credit consume very differently if one has been pledged to | **The inference from equal credit to equal consumption is withdrawn** — Foundations §5.5.6 |

@@ -1,7 +1,29 @@
+---
+title: Protocol governance
+summary: No organisation may acquire authority over the axioms or the conformance requirements; everything below them may vary from one trust network to the next and must be published.
+type: axiom
+ids: [A8]
+status: settled
+edges:
+  - {rel: depends_on, to: derived-ledger}
+  - {rel: implies, to: regulator-inversion}
+  - {rel: implies, to: trust-network}
+  - {rel: implies, to: ledger-ecosystem}
+  - {rel: implies, to: privacy-is-a-network-choice}
+  - {rel: open_under, to: OP-1}
+  - {rel: open_under, to: OP-10}
+  - {rel: tested_by, to: 06-simulation/axiom-reachability/RESULTS.md}
+  - {rel: source, to: "Foundations §1"}
+  - {rel: source, to: "Foundations §2.3"}
+  - {rel: source, to: "Foundations §2.6"}
+  - {rel: source, to: "Foundations §4.0"}
+  - {rel: source, to: "Foundations §4.7"}
+  - {rel: source, to: 00-strategy/Aequitas_Conformance.md}
+---
 # Protocol Governance
 
-> **Version:** 0.1
-> **Date:** 2026-09-16
+> **Version:** 0.2
+> **Date:** 2026-10-13
 
 > Governance is a property of the protocol, not of any institution. No organization that grows up around Aequitas may acquire authority over its core rules.
 

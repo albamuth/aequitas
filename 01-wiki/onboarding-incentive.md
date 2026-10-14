@@ -1,3 +1,22 @@
+---
+title: Onboarding incentive
+summary: Joining replaces an assigned cohort estimate with a real record; most people's footprint is below their cohort average and their estimated credit is unusable until they join, so joining pays.
+type: mechanism
+ids: [§4.8]
+status: provisional
+edges:
+  - {rel: depends_on, to: statistical-coverage}
+  - {rel: depends_on, to: verification-ladder}
+  - {rel: depends_on, to: estimation-engine}
+  - {rel: implies, to: honest-advantage}
+  - {rel: open_under, to: OP-3}
+  - {rel: open_under, to: OP-14}
+  - {rel: open_under, to: OP-22}
+  - {rel: tested_by, to: 06-simulation/scenario-suite/RESULTS.md}
+  - {rel: source, to: "Foundations §4.4"}
+  - {rel: source, to: "Foundations §4.8"}
+  - {rel: source, to: "Overview §7"}
+---
 # Onboarding Incentive
 
 > **Version:** 0.1

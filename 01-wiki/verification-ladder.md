@@ -1,3 +1,22 @@
+---
+title: Verification ladder
+summary: Four rungs for establishing that a recorded event happened, from people vouching to instruments to machine tallying; every rung reads every other, checking gets cheaper per unit as you climb, and trust moves to the instrument rather than disappearing.
+type: mechanism
+ids: [§4.3]
+status: settled
+edges:
+  - {rel: depends_on, to: derived-ledger}
+  - {rel: depends_on, to: distributed-auditing}
+  - {rel: implies, to: statistical-coverage}
+  - {rel: implies, to: estimation-engine}
+  - {rel: implies, to: onboarding-incentive}
+  - {rel: constrained_by, to: IC-7}
+  - {rel: open_under, to: OP-7}
+  - {rel: open_under, to: OP-22}
+  - {rel: tested_by, to: 06-simulation/residual-unravelling/RESULTS.md}
+  - {rel: source, to: "Foundations §4.3"}
+  - {rel: source, to: "Overview §7"}
+---
 # Verification Ladder
 
 > **Version:** 0.1

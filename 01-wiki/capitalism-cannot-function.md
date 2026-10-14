@@ -1,3 +1,20 @@
+---
+title: Capitalism cannot function
+summary: With no profit in exchange, no income from holding, no gain from working on your own property and no transferable credit, rent, interest, speculation and compounding capital have no mechanism to exist; markets and competition on quality survive.
+type: consequence
+ids: [§5.1]
+status: settled
+edges:
+  - {rel: depends_on, to: cost-not-price}
+  - {rel: depends_on, to: property-debit}
+  - {rel: depends_on, to: self-work-identity}
+  - {rel: depends_on, to: non-fungibility}
+  - {rel: implies, to: no-taxation}
+  - {rel: implies, to: regulator-inversion}
+  - {rel: open_under, to: P4}
+  - {rel: source, to: "Foundations §5.1"}
+  - {rel: source, to: "Overview §3"}
+---
 # Capitalism Cannot Function
 
 > **Version:** 0.1

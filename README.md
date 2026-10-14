@@ -26,7 +26,7 @@ The property that matters: **IC-1 through IC-9 need no trust model, no reputatio
 
 > **Two corrections were made on 2026-08-22. Read them before you attack this — they are the most useful pages here.**
 >
-> **1. This line over-claimed.** It used to say *an unrecorded emission* becomes an arithmetic error. [@cairn-lineage](https://1f916.ai/post/1581) pointed out that arithmetic over a log testifies to nothing outside that log, so a process recorded **nowhere** is not an arithmetic error at all — it is a **coverage** question, answered by an independently measured total reconciled against the ledger's sum (`00-strategy/Aequitas_Foundations_v0.22.md` §5.1b). Full response: `00-strategy/OP-26_coverage_and_closure.md`.
+> **1. This line over-claimed.** It used to say *an unrecorded emission* becomes an arithmetic error. [@cairn-lineage](https://1f916.ai/post/1581) pointed out that arithmetic over a log testifies to nothing outside that log, so a process recorded **nowhere** is not an arithmetic error at all — it is a **coverage** question, answered by an independently measured total reconciled against the ledger's sum (`00-strategy/Aequitas_Foundations.md` §4.4). Full response: `00-strategy/open-problems/OP-26_coverage_and_closure.md`.
 >
 > **2. The disparity ceiling was scoped wrong.** `24/F` is a **per-network** bound. Multi-network accounts are legitimate, and self-care credit has no physical anchor — produced goods do — so a person on *k* networks can accrue the floor *k* times and reach `k × 24/F`. A condition claiming IC-7 covered this was **wrong**: IC-7 caps per account per network. Fixed in `06-simulation/disparity-ceiling/DISPARITY_CEILING.md` §4, condition 5.
 >
@@ -34,7 +34,7 @@ The property that matters: **IC-1 through IC-9 need no trust model, no reputatio
 
 > **Four more corrections on 2026-08-24, and these ones reached the axioms.** An outside economist review found a contradiction we had carried since the first draft.
 >
-> **3. `A5` said the wrong thing, and it took `A4` with it.** A5 read **"price ≡ cost"** and A4 read *"every consequence is **priced into** it."* Both phrasings say a cost rides the *product*. **Every mechanism in the system says the opposite: a cost attaches to whoever *caused* it.** The attack that exposed it: *a barn costs 20,000 hours and shelters cattle producing 40,000 kg of beef, so beef should carry 0.5 h/kg — and Aequitas shows 0.* **The ruling was right; the axioms were wrong.** A5 is now **"cost, not price"** and A4 is *"accounted to whoever caused it."* **No mechanism moved.** See `00-strategy/A5_repair_PLAN_v0.1.md` and Objections **B8**.
+> **3. `A5` said the wrong thing, and it took `A4` with it.** A5 read **"price ≡ cost"** and A4 read *"every consequence is **priced into** it."* Both phrasings say a cost rides the *product*. **Every mechanism in the system says the opposite: a cost attaches to whoever *caused* it.** The attack that exposed it: *a barn costs 20,000 hours and shelters cattle producing 40,000 kg of beef, so beef should carry 0.5 h/kg — and Aequitas shows 0.* **The ruling was right; the axioms were wrong.** A5 is now **"cost, not price"** and A4 is *"accounted to whoever caused it."* **No mechanism moved.** See Objections **B8**.
 >
 > **4. "Joint production is a measurement, not a convention" was overstated.** The recursion result proves no split goes negative **given** a split matrix. It never proved the split is unique. A refinery can be read by enthalpy, by mass, by hydrogen use, or by sub-metering, over different windows. **It is a choice that measurement constrains.** What we fix are the obligations — measure at the facility for the period described, compute per dimension, **publish the method**, never let demand or yield in. **The method itself belongs to the industry, and no single model fits every process.** A robustness test is owed and not run.
 >
@@ -74,26 +74,10 @@ python recursion_convergence.py           # full sweep + plots, long
 
 ---
 
-## Statera — the simulation kernel
+## The simulation kernel
 
-**New in this refresh, and it is where the work now happens.** Everything above is a single-question script. **Statera is the shared engine they should all have been built on.**
+**Statera, the shared kernel this section used to describe, was retired on 2026-09-18** because it encoded a pledge rule the author withdrew the same day. It is held locally under `99-superseded/` and is not in this repository. **The gate the simulations now run is `D ≤ ρ·(C + P)`**, implemented for the studies that need it in `06-simulation/stable-band/gate.py`, with its own self-tests. `06-simulation/README.md` is the landing page: every study, its purpose, its run command, and its status.
 
-| | |
-|---|---|
-| `06-simulation/statera/statera.py` | The kernel. Cohorts, an append-only event log, the debit vector, the ratio gate, a time axis with births and deaths, and the Foundations §9 conformance requirements asserted as invariants. **25 self-tests.** |
-| `06-simulation/statera/chains.py` | Five worked supply chains — housing, transport, food, healthcare, entertainment. **14 self-tests.** |
-| `06-simulation/statera/run_scenario.py` | Run a scenario from a settings file. **No Python needed to use it.** |
-| `06-simulation/statera/STATERA_WHITEPAPER_v0.1.md` | Every equation with its derivation, worked examples, citations, honest limits. |
-
-```bash
-python statera.py --test
-python chains.py --test
-python run_scenario.py scenarios/generational.toml
-```
-
-**What it is for: finding the thresholds and conditions under which Aequitas is adopted — how fast, how slow, or where it fails critically.** The conformance checks and the disparity bound are *instrument checks*; they prove the machine measures what it claims, and they are not the object of study.
-
-> **⚠️ Two things to know before quoting any Statera number.** Every figure it prints is a **floor, never a value** — the default weighting prices labour hours only, and each run says so on its own face. And **the five supply chains carry placeholder figures**: their job is to exercise the machinery, not to describe the world. Calibration against real physical data is not done.
 
 ---
 
@@ -103,25 +87,25 @@ python run_scenario.py scenarios/generational.toml
 |---|---|
 | `00_START_HERE.md` | The short version. Read this first. |
 | **`00-strategy/README.md`** | **The map of the theory folder** — what every file is for, what to read first, and in what order depending on why you are here. **Start here if the list below is too long.** |
-| `00-strategy/Aequitas_Overview_v0.17.md` | Plain-language walkthrough. No economics background assumed. |
-| `00-strategy/Aequitas_Foundations_v0.22.md` | The rigorous version. Axioms A1–A8 and every mechanism. **Where this and the Overview differ, Foundations governs.** |
-| `00-strategy/Aequitas_Objections_v0.21.md` | **The register of open problems and unresolved objections.** Read this before writing a critique — your objection may already be listed, and several are listed as *unsolved*. |
-| `00-strategy/Aequitas_EventLog_v0.9.md` | The data model. Event schema and the twelve integrity constraints. |
-| `00-strategy/Aequitas_Strategy_v0.5.md` | The roadmap, and what the deliverable actually is. |
-| `00-strategy/Aequitas_Simulation_Roadmap_v0.2.md` | **The simulation programme.** One configurable engine, not a pile of one-off scripts. |
-| `00-strategy/OP-9_calculation_reply.md` | The reply to Mises and Hayek on economic calculation. |
-| `00-strategy/OP-27_parallel_implementation.md` | **How you use Aequitas while everyone else still uses money.** Both directions across the boundary are deliberately costly and neither is forbidden. **Money cannot buy standing at any scale**, and extraction self-limits through the extractor's own gate. |
-| `00-strategy/Onboarding_the_wealthy_v0.1.md` | **Generational wealth becomes generational debt.** One year of billionaire-scale consumption takes 70–170 years of credit to clear. **Ruled, not yet stress-tested — attack it.** |
-| `00-strategy/Shelf_life_and_custody_v0.1.md` | Custody termination, shelf life, and waste disposal as a service. **Contains a mechanism the author overturned the same day, with the reasoning kept.** |
-| `00-strategy/OP-26_declare_dont_allocate_stress_test.md` | An outside proposal, stress-tested and **not adopted** — it was already in the spec. |
-| `00-strategy/OP-26_coverage_and_closure.md` | **Consistency is not completeness.** The full response to the coverage objection, including two candidate constraints that were proposed and then **rejected** by stress-test, with the reasoning for the rejection kept. |
-| `00-strategy/C2_TrustNetworks_v0.1.md` | **Who actually implements this.** Aequitas is a system the way capitalism is a system — nobody joins it, and **trust networks are what carry it out**. What they hold, publish, verify; how they are funded; how disputes and fraud resolve. **Read as laboratories, not banks.** |
-| `00-strategy/C2_information_capture.md` | **Contains a retraction of its own central proposal.** Sections 2, 4a and 10 argued a privacy architecture; §11 retracts it, because an axiom the author had written years earlier made it impossible. The superseded reasoning is kept unedited on purpose. |
-| `00-strategy/OP-16`, `OP-17`, `OP-18`, `OP-23` | Standalone working papers on hazard authorization, co-product allocation, team credit, and capital/pollution. |
-| `00-strategy/*_CHANGELOG.md` | Version history for each core document. Every change, dated. |
-| `00-strategy/GLOSSARY.md` | Terms and sources. |
-| `research/` | Source stubs — Proudhon, Neurath, Kantorovich, Cockshott & Cottrell, Albert & Hahnel, Ellerman, Steedman's joint-production problem, and others. Each carries a citation, the date retrieved, and why it matters. These are internal notes: `[[double-bracket]]` links are wiki-internal and will not resolve here. |
-| `wiki/` | Two concept pages referenced by the simulations, plus figures. |
+| `00-strategy/Aequitas_Overview.md` | Plain-language walkthrough. No economics background assumed. |
+| `00-strategy/Aequitas_Foundations.md` | The rigorous version. Axioms A1–A8 and every mechanism. **Where this and the Overview differ, Foundations governs.** The version is the `> **Version:**` line in its header; the filename never changes. |
+| `00-strategy/Aequitas_Objections.md` | **The register of open problems and unresolved objections.** Read this before writing a critique — your objection may already be listed, and several are listed as *unsolved*. |
+| `00-strategy/Aequitas_Conformance.md` | **What must be true for an implementation to be Aequitas**, including the twelve integrity constraints IC-1 to IC-12 as numbered rows. The event-log paper that used to hold them was retired on 2026-08-28. |
+| `00-strategy/Aequitas_Strategy.md` | The roadmap, and what the deliverable actually is. |
+| `00-strategy/Aequitas_Simulation_Roadmap.md` | **The simulation programme.** One configurable engine, not a pile of one-off scripts. |
+| `00-strategy/open-problems/OP-9_calculation_reply.md` | The reply to Mises and Hayek on economic calculation. |
+| `00-strategy/open-problems/OP-27_parallel_implementation.md` | **How you use Aequitas while everyone else still uses money.** Both directions across the boundary are deliberately costly and neither is forbidden. **Money cannot buy standing at any scale**, and extraction self-limits through the extractor's own gate. |
+| `00-strategy/papers/Onboarding_the_wealthy.md` | **Generational wealth becomes generational debt.** One year of billionaire-scale consumption takes 70–170 years of credit to clear. **Ruled, not yet stress-tested — attack it.** |
+| `00-strategy/papers/Shelf_life_and_custody.md` | Custody termination, shelf life, and waste disposal as a service. **Contains a mechanism the author overturned the same day, with the reasoning kept.** |
+| `00-strategy/open-problems/OP-26_declare_dont_allocate_stress_test.md` | An outside proposal, stress-tested and **not adopted** — it was already in the spec. |
+| `00-strategy/open-problems/OP-26_coverage_and_closure.md` | **Consistency is not completeness.** The full response to the coverage objection, including two candidate constraints that were proposed and then **rejected** by stress-test, with the reasoning for the rejection kept. |
+| `00-strategy/papers/C2_TrustNetworks.md` | **Who actually implements this.** Aequitas is a system the way capitalism is a system — nobody joins it, and **trust networks are what carry it out**. What they hold, publish, verify; how they are funded; how disputes and fraud resolve. **Read as laboratories, not banks.** |
+| `00-strategy/papers/C2_information_capture.md` | **Contains a retraction of its own central proposal.** Sections 2, 4a and 10 argued a privacy architecture; §11 retracts it, because an axiom the author had written years earlier made it impossible. The superseded reasoning is kept unedited on purpose. |
+| `00-strategy/open-problems/` | One paper per open problem: OP-16, OP-17, OP-18, OP-22, OP-23, OP-26, OP-27, OP-28. `00-strategy/papers/` holds the settled working papers the core documents still cite. |
+| `00-strategy/GLOSSARY.md` | Every abbreviation (A#, C#, IC-#, OP-#) and every source, in one place. |
+| `00-strategy/Aequitas_Question_Index.md` | The questions readers ask, keyed by the question, with a verdict: REFUSED by an axiom, ANSWERED in a section, or OPEN. |
+| `02-research/` | Source stubs — Proudhon, Neurath, Kantorovich, Cockshott & Cottrell, Albert & Hahnel, Ellerman, Steedman's joint-production problem, and others. Each carries a citation, the date retrieved, and why it matters. These are internal notes: `[[double-bracket]]` links are wiki-internal and will not resolve here. |
+| `01-wiki/` | **One page per concept, 70 of them, and every page is a node in a typed graph.** `01-wiki/AGENT_GUIDE.md` says how to answer a question from one page and its edges; `01-wiki/graph.md` is the node table and `graph.json` the machine-readable form. Each page carries a one-sentence summary, a worked example with digits, its status, and the section that states it. **The fastest way into the theory for a reader who wants one mechanism.** |
 
 ---
 
@@ -131,7 +115,7 @@ Stated up front so nobody wastes a cycle refuting a position we do not hold.
 
 - **It is not a theory of value.** It measures cost — hours, joules, kilograms, damage. It never computes what a thing is *worth*. Value is a preference and is not measurable. Preferences enter the system elsewhere, through pledges.
 - **The disparity ceiling is conditional, not a theorem.** It holds only if a verification problem (OP-22) is solved, the self-care floor stays in band, and floor-shopping is arrested. This is stated as conditional in the source, and overstating it was corrected once already.
-- **Several problems are open.** They are listed in `00-strategy/Aequitas_Objections_v0.21.md`, not hidden. Notably: the trust-network design, weighting governance, understatement drift, and the tedium half of unwanted work.
+- **Several problems are open.** They are listed in `00-strategy/Aequitas_Objections.md`, not hidden. Notably: the trust-network design, weighting governance, understatement drift, and the tedium half of unwanted work.
 - **It is not a political programme.** It keeps existing institutions — municipal government, planning, civil service — and changes only their economic nature.
 
 ---
@@ -149,5 +133,5 @@ The documents are versioned. Old versions are kept, never deleted. If you find t
 ## How to respond
 
 - **Found a real flaw?** That is the point. Open an issue, or reply in the thread where you found this.
-- **Want to extend it?** The open problems in `00-strategy/Aequitas_Objections_v0.21.md` are the useful frontier.
+- **Want to extend it?** The open problems in `00-strategy/Aequitas_Objections.md` are the useful frontier.
 - **Think the whole framing is wrong?** Say why, specifically. "Cost is not value" is the load-bearing move — if it fails, everything above it fails.

@@ -1,7 +1,24 @@
+---
+title: Time as yardstick
+summary: Time is a yardstick for summarising flows, not a value in itself, so labour is never rate-scaled and one hour credits as one hour.
+type: axiom
+ids: [A2]
+status: settled
+edges:
+  - {rel: depends_on, to: material-flow-value}
+  - {rel: implies, to: cost-not-price}
+  - {rel: implies, to: education-as-credited-work}
+  - {rel: implies, to: co-product-allocation}
+  - {rel: implies, to: physical-trace-test}
+  - {rel: open_under, to: OP-16}
+  - {rel: source, to: "Foundations §1"}
+  - {rel: source, to: "Foundations §2.3"}
+  - {rel: source, to: "Foundations §3.4a"}
+---
 # Time as Yardstick
 
-> **Version:** 0.1
-> **Date:** 2026-09-16
+> **Version:** 0.2
+> **Date:** 2026-10-13
 
 > Time is a convenient universal measure for summarizing material flows, but an hour is not itself value — and therefore **labor is never rate-scaled**.
 

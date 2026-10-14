@@ -1,3 +1,23 @@
+---
+title: Property debit
+summary: The debit of a thing you hold; its material moves with the thing, your share of its making hours is set by how long you held it and stays with you, and a durable asset's whole creation cost sits on its holders, never in what it made.
+type: mechanism
+ids: [§3.2, §4.5, OP-23]
+status: settled
+edges:
+  - {rel: depends_on, to: material-flow-value}
+  - {rel: depends_on, to: cost-not-price}
+  - {rel: depends_on, to: physical-trace-test}
+  - {rel: implies, to: self-work-identity}
+  - {rel: implies, to: capitalism-cannot-function}
+  - {rel: constrained_by, to: IC-5}
+  - {rel: constrained_by, to: IC-9}
+  - {rel: open_under, to: OP-25}
+  - {rel: source, to: "Foundations §2.4"}
+  - {rel: source, to: "Foundations §3.2"}
+  - {rel: source, to: "Foundations §4.5"}
+  - {rel: source, to: 00-strategy/open-problems/OP-23_capital_and_pollution.md}
+---
 # Property Debit
 
 > **Version:** 0.1

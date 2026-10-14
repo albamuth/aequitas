@@ -31,7 +31,7 @@ That is all of it. Everything else follows from taking those two seriously and n
 
 ## The axioms
 
-Abbreviated. Full statements in `00-strategy/Aequitas_Foundations_v0.22.md` §1.
+Abbreviated. Full statements in `00-strategy/Aequitas_Foundations.md` §1.
 
 1. Credit and debit **are** material and energy flow. Time is the yardstick, not the substance. Financial instruments are not material and do not appear in the books at all.
 2. Labour is never rate-scaled. Hazard and exertion resolve as *material* costs, not as higher pay. Training is front-loaded credited work, never charged downstream.
@@ -43,7 +43,7 @@ Abbreviated. Full statements in `00-strategy/Aequitas_Foundations_v0.22.md` §1.
 8. One verified human, one account. Non-participants are estimated statistically, never credited. **An organisation is not a final holder of debit** — its debit is its members', divided by hours worked, so closing it moves nothing.
 9. **No governing body.** Nobody may acquire authority over the core rules. Everything below the core may vary between trust networks, must be published, and must be re-computable by anyone. **This says nothing about size: a trust network may cover a valley or the world.**
 
-> **⚠️ Item 3 changed on 2026-08-24, and the old wording is worth knowing about.** It read **"price ≡ cost"** from the first draft until v0.21. An outside economist review showed that phrasing contradicted the rule that a factory's cost stays on the factory: *if the barn is not in the beef, then beef's "price" is not beef's cost.* **The ruling was right and the axiom's wording was wrong** — it said a cost lands on the *thing*, while every mechanism in the system says a cost lands on whoever **caused** it. **A4 carried the same defect** and was repaired in the same pass. Full argument: `00-strategy/A5_repair_PLAN_v0.1.md` and Objections **B8**.
+> **⚠️ Item 3 changed on 2026-08-24, and the old wording is worth knowing about.** It read **"price ≡ cost"** from the first draft until v0.21. An outside economist review showed that phrasing contradicted the rule that a factory's cost stays on the factory: *if the barn is not in the beef, then beef's "price" is not beef's cost.* **The ruling was right and the axiom's wording was wrong** — it said a cost lands on the *thing*, while every mechanism in the system says a cost lands on whoever **caused** it. **A4 carried the same defect** and was repaired in the same pass. Full argument: Objections **B8**.
 
 ## The headline result: the disparity ceiling
 
@@ -78,7 +78,7 @@ Twelve ledger integrity constraints, each run clean and then run again against a
 
 The property that matters: **IC-1 through IC-9 need no trust model, no reputation, and no authority — only the ability to recompute.** An **under-declared** emission on a **recorded** event is not an enforcement problem. It is an arithmetic error that the log reports on itself.
 
-> **⚠️ That sentence used to say something stronger, and the stronger version was wrong.** It said *an unrecorded* emission becomes an arithmetic error. [@cairn-lineage](https://1f916.ai/post/1581) showed that arithmetic over a log testifies to nothing outside that log, so a process recorded **nowhere** is not an arithmetic error at all — it is a **coverage** question. Corrected 2026-08-22. See `README.md` for both corrections made that day, and `00-strategy/OP-26_coverage_and_closure.md` for the full response. *(This page kept the retracted wording until 2026-08-24. That was an oversight, not a position.)*
+> **⚠️ That sentence used to say something stronger, and the stronger version was wrong.** It said *an unrecorded* emission becomes an arithmetic error. [@cairn-lineage](https://1f916.ai/post/1581) showed that arithmetic over a log testifies to nothing outside that log, so a process recorded **nowhere** is not an arithmetic error at all — it is a **coverage** question. Corrected 2026-08-22. See `README.md` for both corrections made that day, and `00-strategy/open-problems/OP-26_coverage_and_closure.md` for the full response. *(This page kept the retracted wording until 2026-08-24. That was an oversight, not a position.)*
 
 **Nothing here is checked by running our code alone.** For the audit suite the fixture, the twelve constraints written as arithmetic rather than as Python, and the expected verdict for every injected case are published as plain data in `06-simulation/audits/audits_inert/`. **You can check the result without executing anything**, which is the point — running our program only tells you our program is self-consistent.
 
@@ -86,7 +86,7 @@ Every simulation in `06-simulation/` runs standalone with its own self-tests, an
 
 ## The open problems
 
-They are in `00-strategy/Aequitas_Objections_v0.21.md`, listed rather than hidden. The live ones:
+They are in `00-strategy/Aequitas_Objections.md`, listed rather than hidden. The live ones:
 
 - **OP-22** — proving an hours claim is backed by real work without exposing a private life history.
 - **OP-10** — who governs the weighting model, and how that avoids becoming a capture surface. **The top blocker.**

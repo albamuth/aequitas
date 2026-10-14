@@ -1,3 +1,20 @@
+---
+title: Rival-sector audit (withdrawn)
+summary: The withdrawn proposal that a rival sector would fund the replication of an understated cost constant; it fails because rivals gain more from their own generous constant, so understatement drift stays open as OP-24.
+type: mechanism
+ids: [OA3, OA10]
+status: contested
+edges:
+  - {rel: depends_on, to: retroactive-reweighting}
+  - {rel: depends_on, to: cost-not-price}
+  - {rel: depends_on, to: distributed-auditing}
+  - {rel: open_under, to: OP-24}
+  - {rel: related, to: open-problems}
+  - {rel: related, to: op-24}
+  - {rel: source, to: "Foundations §3.3a"}
+  - {rel: source, to: "Objections OA3"}
+  - {rel: source, to: 02-research/History_auditor-independence.md}
+---
 # Rival-Sector Audit
 
 > **Version:** 0.1

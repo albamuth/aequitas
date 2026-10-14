@@ -1,7 +1,27 @@
+---
+title: Derived ledger
+summary: An account's standing is never stored; it is computed on demand from the append-only event log under the current weighting model, and the log alone is authoritative.
+type: axiom
+ids: [A6]
+status: settled
+edges:
+  - {rel: depends_on, to: material-flow-value}
+  - {rel: implies, to: retroactive-reweighting}
+  - {rel: implies, to: non-fungibility}
+  - {rel: implies, to: verification-ladder}
+  - {rel: implies, to: statistical-coverage}
+  - {rel: implies, to: event-record}
+  - {rel: implies, to: permanence-and-death}
+  - {rel: implies, to: dispute-resolution}
+  - {rel: source, to: "Foundations §1"}
+  - {rel: source, to: "Foundations §3.0"}
+  - {rel: source, to: "Foundations §3.1"}
+  - {rel: source, to: "Foundations §3.3"}
+---
 # Derived Ledger
 
-> **Version:** 0.1
-> **Date:** 2026-09-16
+> **Version:** 0.2
+> **Date:** 2026-10-13
 
 > Balances are not authoritative — the append-only event log is. Any account's standing is a pure function of *(its events × the current scientific cost-weighting model)*.
 

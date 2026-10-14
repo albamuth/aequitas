@@ -1,3 +1,30 @@
+---
+title: Estimation engine
+summary: How a consumption basket is turned into labour, energy, materials and pollution through the whole supply chain, where the data comes from, and the rule that the leftover R = N − Y is published whole and divided by nothing.
+type: mechanism
+ids: [§4.4, C3]
+status: provisional
+edges:
+  - {rel: depends_on, to: event-record}
+  - {rel: depends_on, to: statistical-coverage}
+  - {rel: depends_on, to: material-flow-value}
+  - {rel: depends_on, to: co-product-allocation}
+  - {rel: implies, to: onboarding-incentive}
+  - {rel: implies, to: honest-advantage}
+  - {rel: constrained_by, to: "Conformance row 14a"}
+  - {rel: constrained_by, to: "Conformance row 14d"}
+  - {rel: open_under, to: OP-3}
+  - {rel: open_under, to: OP-24}
+  - {rel: open_under, to: OP-28}
+  - {rel: related, to: op-28}
+  - {rel: tested_by, to: 06-simulation/producer-side-splitting/RESULTS.md}
+  - {rel: tested_by, to: 06-simulation/median-lifestyle/MEDIAN_LIFESTYLE_RESULT.md}
+  - {rel: source, to: "Foundations §3.5"}
+  - {rel: source, to: "Foundations §4.1"}
+  - {rel: source, to: "Foundations §4.4"}
+  - {rel: source, to: 02-research/Data_estimation-engine-sources.md}
+  - {rel: source, to: 00-strategy/open-problems/OP-28_dark_production_and_the_residual_denominator.md}
+---
 # Estimation Engine
 
 > **Version:** 0.1
@@ -30,28 +57,31 @@ Household-side inputs: [BLS Consumer Expenditure Survey](https://www.bls.gov/opu
 
 Full source map with links: `../00-strategy/GLOSSARY.md#src-estimation-engine-data-sources`.
 
-## ⚠ The monetary-allocation problem — now answered, but only for materials and energy
+## ⚠ The monetary-allocation problem — answered
 
 **EEIO models are monetary.** They record inter-sector transactions in dollars and use **price as the allocation key** for distributing physical impacts.
 
 That collides directly with [cost-not-price](cost-not-price.md) and [material-flow-value](material-flow-value.md): we would be using price to compute the very quantity we claim should replace price.
 
-**[co-product-allocation](co-product-allocation.md) supplies the replacement.** Where a joint process's own physics is measurable — tissue energetics, cracking enthalpy, a turbine curve — the split is a **measurement**, and price allocation is not merely undesirable but *wrong*. So:
+**[co-product-allocation](co-product-allocation.md) supplies the replacement, and it is not a different key. It is no key.** A joint process's cost is not divided among its outputs at all: every co-product carries the whole cost of the steps it passed through, against its own mass. Price allocation is therefore not merely undesirable but *wrong*, because it invents a fraction that does not exist. So:
 
 - **USEEIO is unusable as a source of truth**, though still usable as data.
 - **Any price-derived sector split must be flagged `declared` basis, never `measured`.** Best available, honestly labelled — the same discipline the axioms apply to conventions, applied to imported data.
 - The bias has a **known direction**: monetary allocation under-weights cheap, heavy, low-value flows (waste, bulk materials, land) and over-weights expensive light ones.
 - Improvements propagate: as process energetics are loaded, [retroactive-reweighting](retroactive-reweighting.md) re-splits everything computed the old way.
 
-> **First high-value target: re-derive a refinery's fraction slate under process-physics allocation and compare it against USEEIO's price allocation.** A materially different answer is the most publishable technical result available early.
+> **First high-value target: re-derive a refinery's fraction slate under the whole-cost-by-passage rule and compare it against USEEIO's price allocation.** A materially different answer is the most publishable technical result available early. `06-simulation/method-spread/` already measured 36 division methods 6.31× apart on real DOE refinery energies, which is why the division was withdrawn.
 
 **Physical Input-Output Tables (PIOTs)** are the correct long-run answer — inter-sector flows in tonnes rather than dollars. See [Weisz & Duchin, *Ecological Economics* 2006](https://www.sciencedirect.com/science/article/abs/pii/S092180090500248X) and [this open-access PIOT construction method](https://journalofeconomicstructures.springeropen.com/articles/10.1186/s40008-018-0123-1). Hubacek & Giljum's argument that physical flows — not monetary ones — are what environmental pressure actually tracks is **the Aequitas position stated in mainstream literature a generation early.** Coverage is patchy, so: monetary now, labelled; physical as it matures, absorbed by [retroactive-reweighting](retroactive-reweighting.md).
 
-## 🔴 What blocks this engine
+## What used to block this engine, and what blocks it now
 
-**Labour hours at product resolution.** EXIOBASE is sector-level, and going finer requires splitting labour across a process's outputs — **which no instrument can do**, because the farmer's hours were spent on the animal, not on the hide ([physical-trace-test](physical-trace-test.md)). Materials and energy are unblocked; labour is not.
+**Labour at product resolution no longer needs a convention.** EXIOBASE is sector-level, and going finer used to look as though it required splitting labour across a process's outputs, which no instrument can do. Under the current rule nothing is split: the farmer's 8 hours are the process's hours, and every co-product carries all 8 against its own mass, exactly as the energy does ([co-product-allocation](co-product-allocation.md)). **OP-18's co-product half dissolved on 2026-09-03.**
 
-> **This is OP-18, and it is now what blocks the estimation engine.** The blocking position moved here from co-product allocation without anything being solved twice — the material half was a measurement all along, and the labour half is a genuine convention that must be *declared*, not found.
+**What blocks the engine now is data, in two places.**
+
+- **Process-energetics constants per sector**, which the whole-cost rule needs for every step a product passes through. Whoever publishes a constant sets every figure in that sector; nobody funds a correction that makes their own figure worse. **OP-24.**
+- **The extent register** that the leftover rule divides by. Honest noise barely moves it; a producer declaring half their real land defeats it. **OP-28.**
 
 ## Estimating what nobody recorded
 
@@ -161,5 +191,5 @@ A region reports its wheat.
 - [honest-advantage](honest-advantage.md) — the material-superiority comparison cannot be computed without it
 
 ---
-*Status: provisional — OP-3. **Blocked on OP-18.***
+*Status: provisional — OP-3 (convergence), OP-24 (the constants), OP-28 (the extent register)*
 *Source: `../00-strategy/GLOSSARY.md#src-estimation-engine-data-sources`; `00-strategy/open-problems/OP-17_coproduct_allocation.md` §10*

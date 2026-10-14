@@ -1,3 +1,18 @@
+---
+title: Regulator inversion
+summary: An environmental regulator becomes a service businesses want, because helping a producer lower its debit lowers its products' cost; enforcement turns into consulting.
+type: consequence
+ids: [§5.3]
+status: settled
+edges:
+  - {rel: depends_on, to: no-externalities}
+  - {rel: depends_on, to: cost-not-price}
+  - {rel: depends_on, to: retroactive-reweighting}
+  - {rel: implies, to: no-taxation}
+  - {rel: open_under, to: OP-10}
+  - {rel: source, to: "Foundations §5.3"}
+  - {rel: source, to: "Overview §4"}
+---
 # Regulator Inversion
 
 > **Version:** 0.1

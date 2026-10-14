@@ -1,3 +1,26 @@
+---
+title: Event record
+summary: The only thing written to the log is an event, matter and energy moving between parcels, reservoirs and accounts, with no price, weight or value field, so cost is computed at projection time and conservation is an arithmetic check.
+type: mechanism
+ids: [§3.1, C1]
+status: provisional
+edges:
+  - {rel: depends_on, to: derived-ledger}
+  - {rel: depends_on, to: material-flow-value}
+  - {rel: implies, to: retroactive-reweighting}
+  - {rel: implies, to: co-product-allocation}
+  - {rel: implies, to: permanence-and-death}
+  - {rel: constrained_by, to: IC-1}
+  - {rel: constrained_by, to: IC-2}
+  - {rel: constrained_by, to: IC-3}
+  - {rel: constrained_by, to: IC-4}
+  - {rel: constrained_by, to: IC-5}
+  - {rel: constrained_by, to: IC-6}
+  - {rel: constrained_by, to: "Conformance row 7"}
+  - {rel: supersedes, to: 99-archive/Aequitas_EventLog_v0.10.md}
+  - {rel: source, to: "Foundations §3.1"}
+  - {rel: source, to: "Foundations §3.4a"}
+---
 # Event Record
 
 > **Version:** 0.1
@@ -65,32 +88,33 @@ Word of mouth is a **legitimate basis**, not a defect — it is the rung [verifi
 
 Records improve by **supersession**, never edit — and only ever toward stronger basis and finer resolution, so nobody can bury a measurement under a flattering estimate.
 
-## Joint outputs need no field
+## Joint outputs need no field, because nothing is divided
 
-An event may have several outputs — milling yields flour *and* bran — and the schema **records them faithfully without saying how the debit divides.** That split is computed at projection time from the event's process classifier plus published process energetics ([co-product-allocation](co-product-allocation.md)).
+An event may have several outputs — milling yields flour *and* bran — and the schema **records them faithfully without dividing the debit among them.** There is nothing to divide: every output carries the whole cost of the steps it passed through, against its own mass ([co-product-allocation](co-product-allocation.md)). What the record has to carry is **passage**, whether a product went through a step, which is a binary fact off the flow sheet and never a share.
 
-**There is no field for an allocation fraction, and that is a guarantee rather than an omission.** Someone wanting to assert a self-serving split has nowhere to put it; they would have to publish a process model, in public, subject to [rival-sector-audit](rival-sector-audit.md). **The strongest kind of protection this schema offers is the one where the exploit has no field to live in.**
+**There is no field for an allocation fraction, and that is a guarantee rather than an omission.** Someone wanting to assert a self-serving split has nowhere to put it. What is left to misstate is a passage, and a false passage is a false record, caught by the closure checks (conformance rows 7 and 10h) rather than by an allocation rule.
 
-The schema absorbed the project's most dangerous open problem **without a single field being added**, which is the best evidence yet that C1 was right.
+**A mix and a split are events.** Mixing two parcels of one substance records a new parcel pointing back at both; splitting one records a child for each part pointing back at the parent. That is where a parcel's identity comes from, and it is what lets a ledger walk count a parcel reached by two paths once ([debit-vector](debit-vector.md)).
 
 ## Integrity constraints
 
 **IC-1…IC-9 check the log** and are pure arithmetic — mass and energy balance, origin and fate closure, custody continuity, interval sanity, the 24-hours-per-24-hours cap, and pledge backing. No trust model, no authority, no inspection.
 
-**IC-10…IC-12 check a *projection*** — the first constraints in the spec that do:
+**IC-10…IC-12 check what an output carries:**
 
-- **IC-10** — no allocated share is negative. *(Asserted, not proven for the recursive case; this is where Sraffa could re-enter.)*
-- **IC-11** — per dimension, allocated shares sum to the recorded input total.
-- **IC-12** — allocating a process stage-by-stage equals allocating it whole. **The defence against boundary gerrymandering.**
+- **IC-10** — no quantity a product carries is negative. A negative result is a measurement error or a badly drawn boundary.
+- **IC-11** — the union of what every output carries equals what went into the process. Their naive total is never reported.
+- **IC-12** — reading a process more coarsely never lowers what any output carries. **The defence against boundary gerrymandering**, and a finer reading can only lower a figure by being truer.
+
+The full table, one row each with its conformance row: [integrity-constraints](integrity-constraints.md).
 
 ## Open
 
-- **Confidence propagation** along the parcel DAG — asserted as "weakest link governs," arithmetic unspecified. Must now also cover allocated shares.
+- **Confidence propagation** along the parcel DAG — asserted as "weakest link governs," arithmetic unspecified.
 - **Conservative weighting of vague records** — now load-bearing four times over. Without it, staying coarse is free.
 - Retracting a faulty measurement, given supersession may not move to a weaker basis
-- **Labour allocation across co-products** — OP-18, and **it now blocks the [estimation-engine](estimation-engine.md)**
-- **Process-energetics model registry** — the published data splits are computed from
-- Substance, process, role, and reservoir taxonomies. *The **process** taxonomy is the underrated one: it keys retroactive hazard injection* and *the allocation model.*
+- **Process-energetics registry** — the published constants every step's cost is read from. Where OP-24 lives.
+- Substance, process, role, and reservoir taxonomies. *The **process** taxonomy is the underrated one: it keys retroactive hazard injection* and *which steps a product passed through.*
 - ~~Amortization denominator for training cost~~ — **resolved:** training does not flow downstream, so there is no denominator
 - ~~Custody acceptance semantics~~ — **settled: possession decides.** No refusal right; the physical act of taking the thing is the consent step
 

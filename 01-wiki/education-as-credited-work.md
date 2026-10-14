@@ -1,3 +1,22 @@
+---
+title: Education as credited work
+summary: Students are credited for learning and teachers for teaching; the cost of training is carried during the training years, cushioned by pledges, and never charged to whoever uses the skill later.
+type: mechanism
+ids: [§4.5]
+status: settled
+edges:
+  - {rel: depends_on, to: material-flow-value}
+  - {rel: depends_on, to: time-as-yardstick}
+  - {rel: depends_on, to: pledge-and-signal}
+  - {rel: implies, to: honest-advantage}
+  - {rel: implies, to: debit-tolerance}
+  - {rel: supersedes, to: OP-5}
+  - {rel: supersedes, to: OP-11}
+  - {rel: supersedes, to: OP-21}
+  - {rel: source, to: "Foundations §2.3"}
+  - {rel: source, to: "Foundations §4.5"}
+  - {rel: source, to: "Overview §2"}
+---
 # Education as Credited Work
 
 > **Version:** 0.1
@@ -11,7 +30,7 @@ Learning enriches the individual and, indirectly, everyone the person later serv
 
 So it is credited. Both sides of the room.
 
-Simultaneously, the **cost** of that schooling — the real time and materials it consumed — flows downstream into the services the graduate later provides ([time-as-yardstick](time-as-yardstick.md)). Education is credited to the student *and* carried forward as a cost of what they later do.
+The **cost** of that schooling — teachers' time, buildings, materials — is carried during the training years, cushioned by the debit-room of the people who pledged for it. **Nothing is charged to whoever uses the skill later** (Foundations §4.5). A doctor's visit costs the patient the doctor's time, the clinic's materials and the medicines, and never the lecture given twenty years earlier. The front-loading rule below is the general form.
 
 ## Why it works this way
 
@@ -23,7 +42,7 @@ It is also how [time-as-yardstick](time-as-yardstick.md) escapes the trap that s
 
 ## Open questions
 
-- **OP-11 — the amortization denominator.** The training cost flows downstream, but over *how many* future service-hours? Unresolved, and it blocks full A2 implementation.
+- ~~**OP-11 — the amortization denominator.**~~ **Dissolved.** Training is never charged downstream, so there is no denominator to choose (Objections B3).
 - Does credit for attendance create an incentive to attend without learning? Probably answered by the fact that credit is for the activity, not for an outcome — but worth testing.
 - Lifelong learning, retraining, and self-teaching: same treatment, presumably. Unspecified.
 

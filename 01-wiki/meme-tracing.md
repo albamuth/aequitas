@@ -1,3 +1,18 @@
+---
+title: Meme tracing
+summary: Ideas are traced as they spread so originators are recognised without anyone being excluded from using them; the recognition is feedback and never credit.
+type: mechanism
+ids: []
+status: provisional
+edges:
+  - {rel: depends_on, to: enrichment}
+  - {rel: depends_on, to: cost-not-price}
+  - {rel: depends_on, to: derived-ledger}
+  - {rel: open_under, to: OP-6}
+  - {rel: source, to: "Foundations §4.5"}
+  - {rel: source, to: "Foundations §4.6"}
+  - {rel: source, to: "Overview §5"}
+---
 # Meme Tracing
 
 > **Version:** 0.1

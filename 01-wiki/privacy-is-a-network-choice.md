@@ -1,3 +1,20 @@
+---
+title: Privacy is a network choice
+summary: Market data is public and personal ledgers are private; how private is each trust network's own setting, opacity is discounted rather than forbidden, and the minimum an auditor must see is the unsolved OP-22.
+type: mechanism
+ids: [§4.7, C7]
+status: provisional
+edges:
+  - {rel: depends_on, to: protocol-governance}
+  - {rel: depends_on, to: ledger-ecosystem}
+  - {rel: depends_on, to: permanence-and-death}
+  - {rel: open_under, to: OP-22}
+  - {rel: related, to: op-22}
+  - {rel: tested_by, to: 06-simulation/residual-unravelling/RESULTS.md}
+  - {rel: source, to: "Foundations §2.6"}
+  - {rel: source, to: "Foundations §4.7"}
+  - {rel: source, to: 00-strategy/papers/C2_information_capture.md}
+---
 # Privacy is a network choice
 
 > **Version:** 0.1

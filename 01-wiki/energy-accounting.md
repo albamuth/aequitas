@@ -1,3 +1,14 @@
+---
+title: Energy accounting (Technocracy Inc.)
+summary: Technocracy Inc.'s non-transferable energy certificates, the nearest failed relative of Aequitas; it died as an organisation with a leader, which is the historical case for A8.
+type: lineage
+ids: []
+status: settled
+edges:
+  - {rel: related, to: field-record}
+  - {rel: source, to: 02-research/Technocracy_energy-accounting.md}
+  - {rel: source, to: "Foundations §5.6"}
+---
 # Energy Accounting (Technocracy Inc.)
 
 > **Version:** 0.1

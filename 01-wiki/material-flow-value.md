@@ -1,7 +1,25 @@
+---
+title: Material flow value
+summary: Every debit records a real material or energy flow and every credit records time a person spent; no abstract or issued quantity exists anywhere in the system.
+type: axiom
+ids: [A1]
+status: settled
+edges:
+  - {rel: depends_on, to: ellerman-responsibility}
+  - {rel: implies, to: time-as-yardstick}
+  - {rel: implies, to: non-fungibility}
+  - {rel: implies, to: no-externalities}
+  - {rel: implies, to: cost-not-price}
+  - {rel: implies, to: derived-ledger}
+  - {rel: source, to: "Foundations §1"}
+  - {rel: source, to: "Foundations §2.2"}
+  - {rel: source, to: "Foundations §2.3"}
+  - {rel: source, to: "Foundations §3.1"}
+---
 # Material Flow Value
 
-> **Version:** 0.1
-> **Date:** 2026-09-16
+> **Version:** 0.2
+> **Date:** 2026-10-13
 
 > Every credit and every debit in Aequitas is a record of matter or energy moving through the world, attributable to the people who caused the movement. Nothing else is value.
 

@@ -1,3 +1,15 @@
+---
+title: Calculation in kind (Neurath)
+summary: Neurath's 1919 proposal to plan in physical units rather than money, and the Mises and Hayek calculation objection it provoked, which Aequitas answers by keeping cost and demand separate.
+type: lineage
+ids: []
+status: settled
+edges:
+  - {rel: open_under, to: OP-9}
+  - {rel: source, to: 02-research/Neurath_calculation-in-kind.md}
+  - {rel: source, to: 00-strategy/open-problems/OP-9_calculation_reply.md}
+  - {rel: source, to: "Overview §9"}
+---
 # Calculation in Kind (Neurath)
 
 > **Version:** 0.1

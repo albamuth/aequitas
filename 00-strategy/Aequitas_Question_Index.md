@@ -1,8 +1,8 @@
 <!-- tag: qidx-aequitas-question-index -->
 # Aequitas — Question Index
 
-> **Version:** 0.1
-> **Date:** 2026-09-03
+> **Version:** 0.2
+> **Date:** 2026-10-14
 > **What this is:** a lookup table keyed by **the question you are about to ask**, so you find the answer that is already written instead of deriving a new one.
 > **What this is not:** a summary of the theory. It settles nothing. Every row points at the document that does.
 > **Companion:** [`GLOSSARY.md`](GLOSSARY.md) resolves abbreviations. **This file resolves questions.**
@@ -53,7 +53,7 @@
 | **Make someone accept an object they do not want** | §2.4, rule 3 | *Custody follows possession* means you cannot take a thing and disclaim its debit. **It does not mean anyone can be forced to take a thing** |
 | **Reverse a fraudulent past transaction** | §4.7 | **You cannot un-eat a sandwich.** The fake credit is negated, the ratio fails, and discretionary purchases stop. **Unwinding it would corrupt the honest seller's books** |
 | **Add bankruptcy, or forgive accumulated debit** | §4.7 | **There is time.** Everyone alive accrues credit at the floor, so the ratio recovers on its own. **The consequence is exactly the size of the fraud, measured in time, and nobody sets it** |
-| **Attribute an electricity emission by a supply contract** | §3.2b | **An agreement is a paper claim.** A record of CO₂ must come from a measurement of CO₂ — the grid's actual fuel mix in the periods the consumer drew |
+| **Attribute an electricity emission by a supply contract** | §3.2b | **An agreement is a paper claim.** A record of CO₂ must come from a measurement of CO₂ — and the emission is the generating company's, which held the fuel and burned it. **No emission reaches a consumer who never held the fuel** |
 | **Let a network declare loyalty to itself creditable** | §2.3 | Loyalty is not production, not a service, and not enrichment. **The three categories are the outer wall and they do not vary** |
 | **Add a rule, an exception or a special case for an awkward profession or sector** | §2.1 | **Universality.** *"A system with exceptions cannot be shown to be wrong. Any awkward case gets a new exception"* |
 
@@ -70,11 +70,11 @@
 | **What stops inequality?** | **`24 ÷ F` inside one network's books, and it is an absolute maximum nobody reaches.** A very hard working life reaches about **1.6×**, not 2.4×. Money reaches ~**10⁶×** | §5.5.5 |
 | **Who funds the auditors?** | **Nobody. "Funding" imports a question from money that does not survive translation.** Audit work is work, recorded when it happens. **What is scarce is demand and verification, not the credit** | §4.7 |
 | **What stops a lax network exporting inflated credit?** | A counterparty **re-computes** the claim through its own model and discounts it. ⚠️ **That guard depends on OP-22 and the mechanism does not exist yet** | §4.2 |
-| **Whose are a power station's emissions?** | **The consumer's**, by the grid's measured fuel mix over the periods they drew. Electricity cannot be stored, so flipping the switch commands a generator to burn fuel now. **Transmission losses stay with the producer** | §3.2b |
+| **Whose are a power station's emissions?** | **The generating company's.** It bought the fuel, held it and burned it, so the emission is its members' debit, divided by hours worked. **A kilowatt-hour carries only the labour and materials the plant consumed; the household never held the fuel.** Transmission losses stay with the generator | §3.2b · §3.2c |
 | **What happens on death?** | The record closes and persists. **Credit does not transfer and nothing is inherited on the credit side.** Material debit moves with the things; consumption and pollution debit does not move | §4.8 |
 | **Why will this not die the way local currencies died?** | Three failures. **Circulation cannot occur — there is no medium of exchange.** Institutional suppression does not fit an accounting system. **Valuation is only partly answered** (OP-16) | §5.6 |
 | **Is in-kind calculation computationally possible at national scale?** | **Yes, demonstrated.** Cockshott & Cottrell with sparse-matrix methods. Mises's objection was in-principle; the scale objection was answered by people who ran the arithmetic | §3.3 |
-| **Does Steedman's negative-value result apply?** | **No.** Each share is a forward measurement of what physically went in, and a deposition cannot be negative. Confirmed across 4,098 economies. **Note the limit: it proves no split is negative, not that a split is unique** | §3.4a |
+| **Does Steedman's negative-value result apply?** | **No.** Nothing is divided and nothing is inverted, so there is no share that could be negative. The withdrawn division was also confirmed non-negative across 4,098 economies, **and the result survives a fortiori now that no division is performed** | §3.4a |
 | **Can identical twins share one account?** | **The arithmetic refuses it.** IC-7 caps an account at 24 h in 24 h, so two twins faking one account reach **34 hours a day against 36 honest** — they lose 730 hours a year and gain nothing | §4.1 · `OP-22_identity_not_disclosure.md` |
 | **Who owns land?** | **Nobody.** A structure occupies a bounded space, and that occupation is a **remediation debt** discharged only by actually restoring the space | §3.7 |
 | **How does someone use Aequitas while the world still uses money?** | Both directions permitted, both dearer than trading inside. **Money is invisible because it is not physical**, so a payment is not an event. **Goods cross the boundary; standing does not — you cannot buy hours** | §4.8 · `OP-27_parallel_implementation.md` |
@@ -93,8 +93,8 @@
 | Label | The question | Status |
 |---|---|---|
 | **OP-10 (weighting governance)** | Who governs the weighting model | 🔴 **Top blocker** |
-| **OP-24 (understatement drift)** | A cost error that flatters subscribers has **nobody** who wants it fixed. **The observed failure mode of every carbon-accounting regime so far** | 🔴 Fix proposed, unproven. **§3.3a states the problem and deliberately does not solve it** |
-| **OP-16 (onerousness gap)** | Tedium and indignity leave no material signature. **The hazardous half is answered by the pledge reserve; the dull-but-safe half is not** | 🔴 Unsolved |
+| **OP-24 (understatement drift)** | A cost error that flatters subscribers has **nobody** who wants it fixed. **The observed failure mode of every carbon-accounting regime so far** | 🔴 Open. The rival-audit fix was withdrawn 2026-08-24. **§3.3a states the problem, holds a network to five requirements, and deliberately does not solve it** |
+| **OP-16 (onerousness gap)** | Tedium and indignity leave no material signature. **A pledge may name whoever does the dull or dangerous job, so both halves are reachable; whether enough people pledge for dull work is unmeasured** | 🟠 Mechanism in place, unmeasured |
 | **OP-22 (audit disclosure)** | The minimum an auditor must see to check a claim **without seeing a history** | 🔽 **Load-bearing.** Gates the disparity ceiling and the anti-arbitrage guard |
 | **OP-4 (debit tolerance)** | Where ρ should sit, and the second dial: **whether a network credits a child's learning time** | Open |
 | **OP-25 (illicit dumping)** | Attributing abandonment back to the abandoner | 🔽 Minor, Level-2 |
@@ -102,7 +102,6 @@
 | **P4 (coordinator class)** | The extractive employer is structurally foreclosed. **Coordination power is not** | 🔴 Live blocker |
 | **Can feedback be bought?** | A purchasable signal is a back-door currency | Registered, not solved (§4.6) |
 | **The "natural state" baseline** | What the natural state of an already-urban plot is | Open sub-question of §3.7 |
-| **Real-time against batch** | Grid storage and on-demand services sit between the two poles | Registered open edge (§3.2b) |
 | **Whether a network can be trusted with what it holds** | A network keeping lifetime reconstructions holds a concentration of **information** comparable to the concentration of **wealth** this project removes | **Unanswered** (§4.7) |
 
 ---

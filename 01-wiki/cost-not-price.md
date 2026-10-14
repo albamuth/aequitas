@@ -1,7 +1,31 @@
+---
+title: Cost, not price
+summary: A thing's cost is the current best estimate of what was consumed to make it; nothing is added and nothing enters that the thing did not consume, so there is no profit in exchange.
+type: axiom
+ids: [A5]
+status: settled
+edges:
+  - {rel: depends_on, to: material-flow-value}
+  - {rel: depends_on, to: time-as-yardstick}
+  - {rel: depends_on, to: no-externalities}
+  - {rel: implies, to: capitalism-cannot-function}
+  - {rel: implies, to: property-debit}
+  - {rel: implies, to: no-taxation}
+  - {rel: constrained_by, to: IC-4}
+  - {rel: open_under, to: OP-9}
+  - {rel: supersedes, to: 99-archive/price-equals-cost.md}
+  - {rel: tested_by, to: 06-simulation/method-spread/RESULTS.md}
+  - {rel: source, to: "Foundations §1"}
+  - {rel: source, to: "Foundations §2.2"}
+  - {rel: source, to: "Foundations §2.4"}
+  - {rel: source, to: "Foundations §3.2"}
+  - {rel: source, to: "Foundations §4.5"}
+  - {rel: source, to: "Foundations §5.1"}
+---
 # Cost, Not Price
 
-> **Version:** 0.1
-> **Date:** 2026-09-16
+> **Version:** 0.2
+> **Date:** 2026-10-13
 
 > A thing's cost is the current best estimate of **what was materially consumed to make it**. Nothing is added to that figure, and nothing enters it that the thing did not consume.
 

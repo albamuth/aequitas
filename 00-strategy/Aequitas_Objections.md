@@ -1,7 +1,7 @@
 <!-- tag: obj-aequitas-objections-register -->
 # Aequitas — Objections Register
 
-> **Version:** 0.39 · **Date:** 2026-10-08
+> **Version:** 0.40 · **Date:** 2026-10-14
 > **Tracks:** `Aequitas_Foundations.md` · `Aequitas_Conformance.md` · `OP-22_identity_not_disclosure.md` · `OP-27_parallel_implementation.md` · `OP-28_dark_production_and_the_residual_denominator.md` · `OP-26_coverage_and_closure.md` · `OP-18_labour_and_team_credit.md` · `OP-23_capital_and_pollution.md` · `OP-17_coproduct_allocation.md` · `06-simulation/allocation-engine/RECURSION_RESULTS.md` · `06-simulation/disparity-ceiling/DISPARITY_CEILING.md` · `06-simulation/scenario-suite/scenario_suite_METHOD.md`
 > **Purpose:** one place holding every serious objection to the theory, its source, the axiom it attacks, and its status.
 
@@ -284,15 +284,17 @@ The candidate direction flagged in v0.5 — *"apply front-loading to tooling so 
 
 **Attacks:** A2 (time as measure), and the system's ability to allocate labour at all.
 **Sources:** [Hahnel](https://znetwork.org/znetarticle/in-defense-of-participatory-economics-by-robin-hahnel/) · [PLOS One time-banking review, 2025](https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0322760) · `GLOSSARY.md#src-participatory-economics`
-**Status:** 🟠 **Hazard half now addressed (v0.15); tedium/indignity half open.**
+**Status:** 🟠 **Both halves reachable by pledges since 2026-09-18; neither measured.**
 
 Parecon remunerates **duration, intensity, and onerousness**. Aequitas refuses to rate-scale labour (A2) and resolves differences materially instead.
 
 **What A2 v0.3 covers:** exertion (extra calories), hazard (retroactive health debit), and **skill** (training is credited work rather than a downstream charge).
 
-> **✅ The hazard subset is now addressed — the contingent reserve (Foundations §4.6).** Flat credit alone under-staffs dangerous work: a worker bears its expected future health cost on their own ledger, so they avoid it (the 45-year time-banking shortage). Permanent over-pledging fixes this *without* a wage premium or rating authority — the surplus becomes an earmarked, non-consumable reserve that pre-funds any verified task-caused harm to the doer. Society de-risks the toxic-cleanup worker exactly to the extent it pledges for the work; the danger internalises as the reserve the task must attract. Sim `06-simulation/pledge-reserve/pledge_reserve.py`: the job clears once pledges roughly cover the tail, and overflow-reverts-to-causer (§3.2/§3.7) preserves care. **This is a demand-gated incentive, not a rate multiplier — A2-clean.**
+> **⛔ The contingent reserve, adopted here in v0.15 for the hazard half, was withdrawn on 2026-09-18** (author ruling; Foundations §4.6, `papers/Pledges.md`). It was a trust network's ruling, not this system's. <!-- struck-ok: naming the withdrawn mechanism in order to record that it was withdrawn --> It had made a task's surplus pledges an earmarked, non-consumable reserve pre-funding task-caused harm, which reached hazard only, because only hazard leaves a causal tail.
+>
+> **What replaces it reaches both halves.** A pledge names a person, or the criteria that will name one, and committed room is consumable. **So society can simply pledge more for a job nobody wants, dull or dangerous alike**, and a pledge may carry *"this part goes to whoever mitigates harm from this task"* as a published criterion. Flat credit still under-staffs dangerous work on its own (the 45-year time-banking shortage); demand decides, without a wage premium or a rating authority. Sim `06-simulation/pledge-reserve/pledge_reserve.py` now tests one example of what a network may write into a pledge's criteria. **A2 is untouched: credit is one hour per hour, and it is demand deciding rather than a rate.**
 
-**What remains uncovered: disutility with no material signature *and no causal tail*.** Tedium, isolation, indignity. Dull-but-safe work generates no future task-caused cost, so the reserve gives it no incentive. Two such jobs with identical calories, identical training, and identical health outcomes credit identically per hour — but nobody wants one of them. **This half stays open.**
+**What remains open is behavioural, not structural.** Tedium, isolation and indignity have no material signature and no causal tail, so two jobs with identical calories, training and health outcomes credit identically per hour while nobody wants one of them. A pledge can now name whoever does the dull job, so the mechanism reaches it. **Whether enough people choose to pledge for boring necessary work, and what happens in a community where they do not, is unmeasured.**
 
 **This is not theoretical.** Time banking credits every hour identically — exactly A2's flat hour — and 45 years across dozens of countries produces chronic **skill mismatch**, credit hoarding, and skills in short supply.
 
@@ -301,7 +303,7 @@ Parecon remunerates **duration, intensity, and onerousness**. Aequitas refuses t
 - **(b) Check how much of OP-16 (onerousness gap) is simply unmeasured hazard.** Night shift, isolation, and repetitive strain have documented health costs A2's hazard clause **already** injects. **Do this first** — it may shrink the problem substantially.
 - **(c) Automation pressure.** Unfilled pledges are a visible, quantified signal saying *automate this*.
 - **(d) Rotation** (balanced job complexes). Carries [the compulsory-labour critique](http://libcom.org/blog/workers-critique-parecon-11042012). Last resort.
-- **(e) The contingent reserve — adopted for the hazard subset (v0.15).** See the box above; Foundations §4.6. It covers hazardous-onerous work; it does *not* touch tedium/indignity, which has no causal tail to pre-fund.
+- **(e) ~~The contingent reserve~~ — adopted for the hazard subset in v0.15, withdrawn 2026-09-18.** See the box above. Replaced by pledges naming a person or published criteria, which reach dull and dangerous work alike (Foundations §4.6).
 
 > **Withdrawn candidate:** *"route onerous work to service credit."* There is no separate service credit to pay a premium in. Recorded so it is not re-proposed.
 
@@ -341,7 +343,7 @@ Parecon's central historical claim: Soviet-type systems abolished capitalists an
 
 **The new residual, introduced by pledging.** Pledging power accrues per hour worked, equally for everyone — egalitarian across *sectors*, but weighted by **hours available to work**, which is not equally distributed. Caregivers, part-time workers, the disabled, and the chronically ill hold systematically less say in what gets produced. **Live and unaddressed.**
 
-> **A second seniority-weighted channel was avoided, not opened (v0.15).** The contingent reserve (§4.6) splits a task's pledged cover **pro-rata by hours *on the task*** — deliberately *not* by whole-co-op-history hours, which would have let long-tenured members skim cover from work newcomers actually did (a fresh P4 surface). Task-scoped splitting keeps the cover on the doer.
+> **A second seniority-weighted channel was avoided, not opened (v0.15).** Where a pledge's criteria are silent, room goes to the doers **pro-rata by hours *on the task*** (§4.6; the contingent reserve that first carried this split was withdrawn 2026-09-18, and the split survived it) — deliberately *not* by whole-co-op-history hours, which would have let long-tenured members skim cover from work newcomers actually did (a fresh P4 surface). Task-scoped splitting keeps the cover on the doer.
 
 **Consequences for OP-1:** *proposal power with universal suffrage* is the only candidate that structurally separates agenda-setting from deciding. Parecon's **decision weight proportional to how much you are affected** is a fifth candidate, and it does not accumulate at all — the best available answer to the hours-inequality residual.
 
@@ -909,7 +911,7 @@ A grocery co-op of **ten members**, each on **2,000 hours** a year, buys **40 li
 
 | | |
 |---|---|
-| **Steedman is blocked, not inherited** | Nothing is inverted, so negative values do not arise: each share is a forward measurement of what physically went in. ✅ *Now derived, not merely asserted — the recursion is a non-negative Neumann series `p = Σ Ãⁿc`; simulation confirms `min(p) ≥ 0` across 4,098 productive economies while the value arm goes negative in ~95%. See `06-simulation/allocation-engine/RECURSION_RESULTS.md` and §C test 1.* |
+| **Steedman is blocked, not inherited** | Nothing is divided and nothing is inverted, so there is no share that could be negative (§3.4a). ✅ *The withdrawn division was also checked, and the result survives a fortiori with no division performed — the recursion is a non-negative Neumann series `p = Σ Ãⁿc`; simulation confirms `min(p) ≥ 0` across 4,098 productive economies while the value arm goes negative in ~95%. See `06-simulation/allocation-engine/RECURSION_RESULTS.md` and §C test 1.* |
 | **Waste outputs are co-products** | Counting manure and methane in the split **removes the residual**, and with it the entire question of who absorbs an unwanted output. |
 | **Fate sets ledger character; the process sets cost share** | Manure is pollution debit in a lagoon, a co-product in a biodigester, an observed fertiliser offset when spread. The allocation literature conflates these two questions. |
 | **A §2.5 row was deleted rather than filled in** | The strongest possible outcome for a declared-convention entry. |

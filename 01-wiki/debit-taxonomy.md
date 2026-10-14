@@ -1,3 +1,28 @@
+---
+title: Debit taxonomy
+summary: The map of every kind of debit, property debit with its three components, consumption and pollution debit that never moves, the vector rule, the self-work identity, non-cascade, and the front-loading rule.
+type: mechanism
+ids: [§3.2, §3.2a, §3.2b, C5]
+status: settled
+edges:
+  - {rel: depends_on, to: material-flow-value}
+  - {rel: depends_on, to: non-fungibility}
+  - {rel: depends_on, to: cost-not-price}
+  - {rel: depends_on, to: derived-ledger}
+  - {rel: implies, to: property-debit}
+  - {rel: implies, to: consumption-debit}
+  - {rel: implies, to: self-work-identity}
+  - {rel: implies, to: education-as-credited-work}
+  - {rel: implies, to: capitalism-cannot-function}
+  - {rel: constrained_by, to: IC-4}
+  - {rel: open_under, to: OP-10}
+  - {rel: open_under, to: OP-25}
+  - {rel: source, to: "Foundations §3.2"}
+  - {rel: source, to: "Foundations §3.2a"}
+  - {rel: source, to: "Foundations §3.2b"}
+  - {rel: source, to: "Foundations §3.6"}
+  - {rel: source, to: "Foundations §4.5"}
+---
 # Debit Taxonomy
 
 > **Version:** 0.1
@@ -5,7 +30,7 @@
 
 > The master map of §3.2: **what kind of debit a thing carries, and how each kind behaves when the thing changes hands.** This is the engine room of the theory — most of what makes Aequitas different from money is a consequence of these distinctions. The reviewer (2026-08-09) flagged §3.2 as load-bearing but text-only; this is the visual.
 
-![[debit-taxonomy.svg]]
+![The debit taxonomy](assets/debit-taxonomy.svg)
 
 *(If the diagram doesn't render, the same structure is in the tables below.)*
 
@@ -70,7 +95,7 @@ They are not the same quantity and they do not move together:
 - **not downstream** to a buyer — the miner keeps the tailings, not the person wearing the ring ([Ellerman responsibility-imputation](no-externalities.md));
 - **not upstream** to the first human who ever built anything — an asset carries only the creation-cost knowable *within* Aequitas, and everything before genesis is out of scope (computational closure).
 
-Either cascade breaks the books. This is the same constraint as the [[#The Front-Loading Rule|Front-Loading Rule]] below, seen from the ledger side.
+Either cascade breaks the books. This is the same constraint as the [Front-Loading Rule](front-loading-rule.md) below, seen from the ledger side.
 
 **End of life** → [consumption-debit](consumption-debit.md). Refuse to pass a worn-out thing on and you have *consumed* it: its property-debit becomes your permanent consumption debit, as if you had eaten it. A discarded object is itself a pollutant for as long as it sits (§3.6).
 

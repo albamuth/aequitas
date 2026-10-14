@@ -1,7 +1,27 @@
+---
+title: Non-fungibility
+summary: Every credit and debit is a unique record of one event; credit cannot be transferred, lent or traded, and only debit moves, attached to a thing.
+type: axiom
+ids: [A3]
+status: settled
+edges:
+  - {rel: depends_on, to: material-flow-value}
+  - {rel: depends_on, to: derived-ledger}
+  - {rel: depends_on, to: ellerman-responsibility}
+  - {rel: implies, to: capitalism-cannot-function}
+  - {rel: implies, to: property-debit}
+  - {rel: implies, to: enrichment}
+  - {rel: implies, to: books-never-balance}
+  - {rel: implies, to: pledge-and-signal}
+  - {rel: source, to: "Foundations §1"}
+  - {rel: source, to: "Foundations §2.3"}
+  - {rel: source, to: "Foundations §3.4a"}
+  - {rel: source, to: "Foundations §5.6"}
+---
 # Non-Fungibility
 
-> **Version:** 0.1
-> **Date:** 2026-09-16
+> **Version:** 0.2
+> **Date:** 2026-10-13
 
 > Every credit and debit is a unique, non-exchangeable record of a specific event. Credits cannot be transferred, traded, gambled, lent, or stolen. Only *debit* moves — and only by transferring the thing it is attached to.
 

@@ -1,3 +1,13 @@
+---
+title: Post-scarcity (Saadia)
+summary: Manu Saadia's reading of Star Trek as post-scarcity by organisational choice; useful for making the goal vivid, never as evidence that a mechanism works.
+type: lineage
+ids: []
+status: settled
+edges:
+  - {rel: open_under, to: OP-6}
+  - {rel: source, to: 02-research/Saadia_trekonomics.md}
+---
 # Post-Scarcity (Saadia)
 
 > **Version:** 0.1

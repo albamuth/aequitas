@@ -99,6 +99,7 @@ Most are closed. The status line at the top of each file says which.
 |---|---|
 | `GLOSSARY.md` | **Every abbreviation, in one place.** OP-#, C#, IC-#, A#, P#, and the section references. An outside reader named abbreviation density as the single biggest barrier to reading this project. **If a term is unfamiliar, it is in here.** |
 | `Aequitas_Question_Index.md` | **Every recurring question, keyed by the question.** Three tables: **REFUSED** (an axiom already rules it out, say which), **ANSWERED** (do not re-derive it), **OPEN** (say so, do not guess). **GLOSSARY resolves abbreviations; this resolves questions.** Built because five times the answer or the refutation was already written and unread |
+| [`../01-wiki/AGENT_GUIDE.md`](../01-wiki/AGENT_GUIDE.md) | **How an agent answers a question from the wiki instead of from this folder.** One page plus its typed edges in `01-wiki/graph.json`, built by `bin/graph.py` from every page's frontmatter, the glossary ID tables and the Question Index rows. Every §2–§5 rule in Foundations has a node. **Start there before reading a 260 KB document.** |
 | `Aequitas_Simulation_Roadmap.md` | What the simulation programme is for and what it builds next. The code itself is in `../06-simulation/`, which has its own landing page. |
 
 ---

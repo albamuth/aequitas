@@ -1,3 +1,16 @@
+---
+title: Honest advantage
+summary: The main defence against cheating is that honest participation returns more than cheating, because fraud cannot compound or transfer and its upside is bounded.
+type: consequence
+ids: []
+status: provisional
+edges:
+  - {rel: depends_on, to: cost-not-price}
+  - {rel: depends_on, to: disparity-ceiling}
+  - {rel: depends_on, to: onboarding-incentive}
+  - {rel: source, to: "Foundations §4.5"}
+  - {rel: source, to: "Foundations §5.5.7"}
+---
 # Honest Advantage
 
 > **Version:** 0.1

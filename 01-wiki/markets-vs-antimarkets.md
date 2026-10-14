@@ -1,3 +1,14 @@
+---
+title: Markets vs antimarkets (DeLanda)
+summary: "DeLanda's reading of Braudel: markets of small price-takers and antimarkets of large price-setters are different things, and Aequitas targets only the second."
+type: lineage
+ids: []
+status: settled
+edges:
+  - {rel: source, to: 02-research/DeLanda_markets-antimarkets.md}
+  - {rel: source, to: "Foundations §4.6"}
+  - {rel: source, to: "Overview §6"}
+---
 # Markets vs Antimarkets
 
 > **Version:** 0.1

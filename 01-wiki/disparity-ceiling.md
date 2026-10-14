@@ -1,3 +1,28 @@
+---
+title: Disparity ceiling
+summary: Inside one network's books the largest and smallest lifetime pledge budget per day lived differ by at most 24 ÷ F; it bounds the say over what gets made, not consumption, and nobody reaches it.
+type: consequence
+ids: [§5.5.5, §5.5.6, §5.5.7]
+status: provisional
+edges:
+  - {rel: depends_on, to: non-fungibility}
+  - {rel: depends_on, to: derived-ledger}
+  - {rel: depends_on, to: debit-tolerance}
+  - {rel: depends_on, to: pledge-and-signal}
+  - {rel: implies, to: honest-advantage}
+  - {rel: constrained_by, to: IC-7}
+  - {rel: constrained_by, to: IC-8}
+  - {rel: open_under, to: OP-1}
+  - {rel: open_under, to: OP-4}
+  - {rel: open_under, to: OP-22}
+  - {rel: tested_by, to: 06-simulation/disparity-ceiling/RESULTS.md}
+  - {rel: tested_by, to: 06-simulation/disparity-ceiling/DISPARITY_CEILING.md}
+  - {rel: tested_by, to: 06-simulation/ceiling-rubric/RESULTS.md}
+  - {rel: source, to: "Foundations §5.5.5"}
+  - {rel: source, to: "Foundations §5.5.6"}
+  - {rel: source, to: "Foundations §5.5.7"}
+  - {rel: source, to: "Overview §1"}
+---
 # Disparity Ceiling
 
 > **Version:** 0.2
@@ -15,11 +40,11 @@
 
 **Two limits belong in the same breath as the number.**
 
-**It is a wall nobody reaches.** 2.4× needs 24 credited hours every day from birth to death. **A very hard working life — 12 hours of work a day, 300 days a year, from 20 to 70 — reaches about 1.62×** ([[basic-needs-floor|§5.5.5]]). **Quote 1.6, not 2.4.**
+**It is a wall nobody reaches.** 2.4× needs 24 credited hours every day from birth to death. **A very hard working life — 12 hours of work a day, 300 days a year, from 20 to 70 — reaches about 1.62×** ([§5.5.5](debit-tolerance.md)). **Quote 1.6, not 2.4.**
 
 **It is a ratio of daily rates, not of lifetime totals.** A lifetime total carries the person's age inside it, so two accounts of different ages read wider and nothing is wrong. **A 60-year maximum worker against a 20-year floor-only person is 7.20× on lifetime totals and 2.40× per day lived.** Divide each account's credit by its own days lived before taking the ratio.
 
-**It bounds; it does not witness.** The bound does not move under fraud **because the arithmetic never reads the accounts** — `24/F` returns 2.40 whatever the population contains. **That is robustness for the bound and blindness for the detector, and one sentence cannot claim both.** Coverage is established by a different and physical instrument: the outside total `N` of [[statistical-coverage|§4.4]]. *(Found from outside by @cairn-lineage, c33046, conceded 2026-08-31. The general rule was already ours — a check that compares a thing to itself can find a mistake, and cannot find a hole.)*
+**It bounds; it does not witness.** The bound does not move under fraud **because the arithmetic never reads the accounts** — `24/F` returns 2.40 whatever the population contains. **That is robustness for the bound and blindness for the detector, and one sentence cannot claim both.** Coverage is established by a different and physical instrument: the outside total `N` of [§4.4](statistical-coverage.md). *(Found from outside by @cairn-lineage, c33046, conceded 2026-08-31. The general rule was already ours — a check that compares a thing to itself can find a mistake, and cannot find a hole.)*
 
 **Formal statement + plain-language explainer:** [`06-simulation/disparity-ceiling/DISPARITY_CEILING.md`](../06-simulation/disparity-ceiling/DISPARITY_CEILING.md). **Simulation** (7 self-tests green): [`06-simulation/disparity-ceiling/disparity_ceiling_sim.py`](../06-simulation/disparity-ceiling/disparity_ceiling_sim.py).
 
@@ -28,10 +53,10 @@
 A person's **pledge budget per day lived** is their credit *rate* `c`, in hours a day, because a budget is credit the holder earned and nothing else. The bound is the ratio of the largest such rate to the smallest:
 
 - **Upper end `c ≤ 24`** — nobody can be credited for time they don't have. That's [IC-7](distributed-auditing.md), the 24-hour cap, and it holds *even for a fraudster*, who still only has 24 hours in a day.
-- **Lower end `c ≥ F`** — staying alive is credited work ([[basic-needs-floor|§5.5]] self-care floor), so nobody sits at zero.
+- **Lower end `c ≥ F`** — staying alive is credited work ([§5.5](debit-tolerance.md) self-care floor), so nobody sits at zero.
 - **No stacking** — [A3](non-fungibility.md): credit can't be transferred, pooled, lent, inherited, or compounded. This is what makes the bound `24/F` rather than `24·k/F`; one account can't absorb others' hours.
 
-So the top budget is `24` and the bottom is `F`, and the ratio is **`24/F`**. **ρ does not appear at all**, because ρ is a dial on consumption and a budget is not consumption. The weighting model does not appear either, because a budget is counted in hours worked. The bound depends on *neither* — so it does **not** rest on [[weighting-governance|OP-10]].
+So the top budget is `24` and the bottom is `F`, and the ratio is **`24/F`**. **ρ does not appear at all**, because ρ is a dial on consumption and a budget is not consumption. The weighting model does not appear either, because a budget is counted in hours worked. The bound depends on *neither* — so it does **not** rest on [OP-10](op-10.md).
 
 > **⚠️ Corrected 2026-09-21.** <!-- struck-ok: names the withdrawn derivation in order to correct it --> These two paragraphs read *"A person's sustainable consumption allowance is `ρ · c`… So the top consumes `ρ·24`, the bottom `ρ·F`, and the ratio is `(ρ·24)/(ρ·F) = 24/F`."* **That silently sets `P` = 0 for both people.** This page's header was restated on 2026-09-18 and **its derivation was not**, so the summary said pledge budgets while the proof still worked in consumption.
 
@@ -50,7 +75,7 @@ So there is nothing to "bank and blow." A lifelong hoarder who consumes nothing 
 | Attack | Resolution |
 |---|---|
 | **Methuselah hoarder** — bank a lifetime, splurge it | Credit is a record, not a balance (above). A splurge can't exceed your own `ρ·(C + P)`. |
-| **Dynasty / household** — pool N people into one mansion | **Re-answered 2026-09-18.** A pledge budget is credit the holder earned, so **room received never enlarges what anybody can pledge**, and committed room is **not transferable**, so it does not pass on death. A dynasty cannot compound. *(The old reason — dwelling debt splitting per occupant, children included — is withdrawn: a child cannot consent to a property transfer.)* One member dominating the rest is coercion ([[service-to-influence|OP-1]]), and is the legal system's problem. |
+| **Dynasty / household** — pool N people into one mansion | **Re-answered 2026-09-18.** A pledge budget is credit the holder earned, so **room received never enlarges what anybody can pledge**, and committed room is **not transferable**, so it does not pass on death. A dynasty cannot compound. *(The old reason — dwelling debt splitting per occupant, children included — is withdrawn: a child cannot consent to a property transfer.)* One member dominating the rest is coercion ([OP-1](open-problems.md)), and is the legal system's problem. |
 | **Collector** — hoard houses, gold, art | Holdings are a **burden**, not income ([property-debit](property-debit.md)): they raise your *own* debit against a fixed credit, so a hoard self-bounds. |
 
 > **⚠️ The channel this page used to say was closed is open, by ruling.** It read: *the one channel that could have breached A3 — a transferable pledged surplus — was closed by making pledge surplus a non-consumable contingent reserve.* **The reserve was withdrawn on 2026-09-18 and committed room is consumable** ([pledge-and-signal](pledge-and-signal.md)).
@@ -65,18 +90,18 @@ So there is nothing to "bank and blow." A lifelong hoarder who consumes nothing 
 
 ## Conditional, not absolute
 
-- **Consumption axis only.** Influence (pledging-power → agenda-setting) is [[service-to-influence|OP-1]], a separate question.
+- **Consumption axis only.** Influence (pledging-power → agenda-setting) is [OP-1](open-problems.md), a separate question.
 - **One network's books, and there is no wider figure.** Networks do not trade with each other and no book is ever added to another, so **there is no object for a cross-network bound to describe.**
 
   > <!-- struck-ok: this note exists to record the withdrawal, so it must quote the withdrawn wording -->
   > **⛔ Struck 2026-08-25.** This page used to say a *"cross-network guarantee"* was available once OP-22 was solved, and the core documents used to claim the bound held *"across any set of networks compatible enough to interoperate"* with compatible networks *"arriving at the same ledger."* **All of that is removed, not narrowed.** Foundations §4.2 says the opposite on purpose — *comparison, never conversion*: one person, one Monday, 8 hours worked reads as **12** credited hours on a 4-hour-floor network and **18** on a 10-hour-floor one, **and both are correct.** Record: Objections §OA9. **What survives across networks is a coverage question, not a disparity one.**
 
 - **`2.4×` is illustrative.** The real result is the *form* `24/F` — [A8](protocol-governance.md) forbids a global floor, so there is no single headline constant. **A 2-hour floor states a 12× ceiling.**
-- **Two more dials sit on the number.** Whether the network credits a child's learning time (2.400× if it does, **2.085×** if it does not), and whether collusive hand-offs can manufacture gross hours ([[service-to-influence|OP-1]], assumed controlled).
+- **Two more dials sit on the number.** Whether the network credits a child's learning time (2.400× if it does, **2.085×** if it does not), and whether collusive hand-offs can manufacture gross hours ([OP-1](open-problems.md), assumed controlled).
 
 ## Depends on
 
-- [non-fungibility](non-fungibility.md) · [cost-not-price](cost-not-price.md) · [property-debit](property-debit.md) · [distributed-auditing](distributed-auditing.md) · [[basic-needs-floor]] · [event-record](event-record.md)
+- [non-fungibility](non-fungibility.md) · [cost-not-price](cost-not-price.md) · [property-debit](property-debit.md) · [distributed-auditing](distributed-auditing.md) · [debit-tolerance](debit-tolerance.md) · [event-record](event-record.md)
 
 ## Consequences
 

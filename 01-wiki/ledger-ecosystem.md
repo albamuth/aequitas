@@ -1,3 +1,21 @@
+---
+title: Ledger ecosystem
+summary: There is no single Aequitas database; many trust networks keep their own books, compare but never convert each other's figures, and are expected to federate and merge over time.
+type: mechanism
+ids: [§4.0, §4.8]
+status: provisional
+edges:
+  - {rel: depends_on, to: derived-ledger}
+  - {rel: depends_on, to: protocol-governance}
+  - {rel: depends_on, to: trust-network}
+  - {rel: implies, to: distributed-auditing}
+  - {rel: constrained_by, to: "Conformance row 4a"}
+  - {rel: open_under, to: OP-22}
+  - {rel: source, to: "Foundations §4.0"}
+  - {rel: source, to: "Foundations §4.2"}
+  - {rel: source, to: "Foundations §4.8"}
+  - {rel: source, to: 00-strategy/papers/C2_TrustNetworks.md}
+---
 # Ledger Ecosystem
 
 > **Version:** 0.1

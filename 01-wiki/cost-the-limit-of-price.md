@@ -1,3 +1,15 @@
+---
+title: Cost the limit of price (Warren)
+summary: Josiah Warren's 1827 Cincinnati Time Store sold at cost and was paid in labour hours; it worked and broke on skill and unpleasantness, the problem A2 and front-loaded training answer.
+type: lineage
+ids: []
+status: settled
+edges:
+  - {rel: related, to: field-record}
+  - {rel: source, to: 02-research/Warren_cost-the-limit-of-price.md}
+  - {rel: source, to: "Foundations §5.6"}
+  - {rel: source, to: "Overview §9"}
+---
 # Cost the Limit of Price
 
 > **Version:** 0.1
@@ -21,7 +33,7 @@ Warren could not reconcile "labor for labor" with differences in **skill and dis
 
 That concession is fatal, and it is worth being blunt about why: **individual judgment is a judge.** The moment a rate is a matter of opinion, the system has an authority, and an authority is a capture point. Warren's experiment did not fail on logistics or on popularity — it failed on the same axiom Aequitas identifies as A2.
 
-**Aequitas's answer:** skill and hazard are never rate multipliers. They resolve as *material* costs — training resolves as the real time and materials of schooling flowing downstream into the recipient's debit; hard labor resolves as extra caloric intake; hazard resolves retroactively via [retroactive-reweighting](retroactive-reweighting.md). No judgment, no judge.
+**Aequitas's answer:** skill and hazard are never rate multipliers. They resolve as *material* costs — training is credited work, carried and cushioned by pledges when it happens and never charged to whoever uses the skill later ([education-as-credited-work](education-as-credited-work.md)); hard labor resolves as extra caloric intake; hazard resolves retroactively via [retroactive-reweighting](retroactive-reweighting.md). No judgment, no judge.
 
 This is a strong, specific, historically grounded claim: **Aequitas closes a 199-year-old open problem in mutualist economics.** It belongs in the academic paper and probably in the whitepaper's opening.
 

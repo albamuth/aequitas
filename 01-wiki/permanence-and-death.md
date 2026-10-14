@@ -1,3 +1,20 @@
+---
+title: Permanence, and what happens at death
+summary: Once records of a person exist they are never destroyed, only added to, including after death; you can stop transacting but you cannot be erased, and consumption debit stays with its causer for good.
+type: mechanism
+ids: [§4.8]
+status: settled
+edges:
+  - {rel: depends_on, to: derived-ledger}
+  - {rel: depends_on, to: statistical-coverage}
+  - {rel: depends_on, to: non-fungibility}
+  - {rel: depends_on, to: consumption-debit}
+  - {rel: implies, to: privacy-is-a-network-choice}
+  - {rel: constrained_by, to: "Conformance row 6"}
+  - {rel: source, to: "Foundations §4.1"}
+  - {rel: source, to: "Foundations §4.8"}
+  - {rel: source, to: 02-research/Law_gdpr-right-to-erasure.md}
+---
 # Permanence, and what happens at death
 
 > **Version:** 0.1

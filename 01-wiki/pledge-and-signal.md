@@ -1,3 +1,37 @@
+---
+title: Pledge and signal
+summary: A pledge is a permanent grant of debit-room backed one for one by the pledger's earned credit and spent once from a lifetime budget; a signal is a free statement of wanting; together they are the demand side with no price and no planner.
+type: mechanism
+ids: [§4.6, C8, OP-19]
+status: settled
+edges:
+  - {rel: depends_on, to: material-flow-value}
+  - {rel: depends_on, to: time-as-yardstick}
+  - {rel: depends_on, to: non-fungibility}
+  - {rel: depends_on, to: protocol-governance}
+  - {rel: implies, to: debit-tolerance}
+  - {rel: implies, to: disparity-ceiling}
+  - {rel: implies, to: education-as-credited-work}
+  - {rel: implies, to: no-taxation}
+  - {rel: constrained_by, to: IC-7}
+  - {rel: constrained_by, to: IC-8}
+  - {rel: constrained_by, to: IC-9}
+  - {rel: constrained_by, to: "Conformance row 9"}
+  - {rel: open_under, to: OP-1}
+  - {rel: open_under, to: OP-6}
+  - {rel: open_under, to: OP-16}
+  - {rel: related, to: op-16}
+  - {rel: open_under, to: P4}
+  - {rel: tested_by, to: 06-simulation/pledge-reserve/RESULTS.md}
+  - {rel: tested_by, to: 06-simulation/stable-band/PLEDGE_BAND_RESULTS.md}
+  - {rel: source, to: "Foundations §3.0"}
+  - {rel: source, to: "Foundations §4.6"}
+  - {rel: source, to: "Foundations §5.5.5"}
+  - {rel: source, to: "Overview §6"}
+  - {rel: source, to: 00-strategy/open-problems/OP-9_calculation_reply.md}
+  - {rel: source, to: 00-strategy/papers/Pledges.md}
+  - {rel: source, to: 02-research/Problem_pledge-inflation.md}
+---
 # Pledge and Signal
 
 > **Version:** 0.1
@@ -49,7 +83,7 @@ A pledge is **not** a purchase, **not** a spend of your credit, and **not** a pr
 
 **A pledge may carry conditions:** *"this part goes to whoever cleans up any harm this job causes within thirty years."* If nothing goes wrong, that part lapses and nobody's gate ever held it. **Note who that names — the mitigator, not necessarily the victim. Whoever writes the criteria decides.**
 
-> **This reaches boring work as well as dangerous work**, because a pledge can simply name whoever does the dull job. The withdrawn contingent reserve could not: only hazard leaves a causal tail for cover to attach to, which is why the tedium half of [[onerousness-gap|OP-16]] stayed open under it.
+> **This reaches boring work as well as dangerous work**, because a pledge can simply name whoever does the dull job. The withdrawn contingent reserve could not: only hazard leaves a causal tail for cover to attach to, which is why the tedium half of [OP-16](op-16.md) stayed open under it.
 
 ## What it's for
 
@@ -61,7 +95,7 @@ A pledge is **not** a purchase, **not** a spend of your credit, and **not** a pr
 ## Who games this
 
 - **Fractional-reserve pledging** — granting more debit-room than your credit backs. Blocked by the 1:1 cap ([IC-8](event-record.md)).
-- **Influence pumping** — manufacturing gross fake hours to pump pledging-power. Bounded by the 24-hour cap (IC-7) and a wrecked efficiency ratio — *and* now by permanence: pledging spends a finite lifetime budget, so a pumper can't pledge for free and pledge-farming needs real colluders burning real budget on the public ledger. Narrowed but not fully closed — residual is [[service-to-influence|OP-1]].
+- **Influence pumping** — manufacturing gross fake hours to pump pledging-power. Bounded by the 24-hour cap (IC-7) and a wrecked efficiency ratio — *and* now by permanence: pledging spends a finite lifetime budget, so a pumper can't pledge for free and pledge-farming needs real colluders burning real budget on the public ledger. Narrowed but not fully closed — residual is [OP-1](open-problems.md).
 - **Signal flooding** — cheap, unbacked signals generated at scale. Projection-side, parked as **OP-6**.
 
 ## Depends on
@@ -71,7 +105,7 @@ A pledge is **not** a purchase, **not** a spend of your credit, and **not** a pr
 
 ## Consequences
 
-- [[the-front-loading-rule]]
+- [front-loading-rule](front-loading-rule.md)
 - [debit-tolerance](debit-tolerance.md)
 
 ## Open questions

@@ -1,6 +1,6 @@
 # Aequitas — Acronym Registry & Glossary
 
-> **Version:** 0.3 · **Date:** 2026-08-23 · **Status:** canonical index
+> **Version:** 0.4 · **Date:** 2026-10-14 · **Status:** canonical index
 > **Why this exists:** the [external critique](#src-external-critique-2026-08-09) flagged abbreviation density (OP-#, C#, IC-#, A#, P#, §x.x) with no master index as the #1 accessibility barrier. This is that index, and the resolution target for the acronym-titling pass in `NEXT.md`.
 > **v0.3 (2026-08-23):** added the [Simulation, cohort, and data terms](#simulation-terms) table — the vocabulary the economy simulator introduced — and **four missing rows to the source index**, which had drifted behind `02-research/`: cross-country labour efficiency, the GDPR erasure note, and two new files on consumer segmentation and on labour/pollution intensity.
 > **v0.2 (2026-08-13):** added the [Research & academic terms](#research-terms) table — the outside vocabulary (economic theory, alternative-currency history, accounting method) used across `02-research/`, each with a plain definition, the research doc that best explains it, and an external authoritative (non-paywalled) source. Every definition below was checked against its linked source on 2026-08-13.
@@ -115,7 +115,7 @@ Series is non-contiguous (early merges left gaps at OP-2/12/13). Status taxonomy
 | <a id="op-11"></a>**OP-11** | training amortization | Choosing a training-cost denominator. | ✅ Dissolved (B3, front-loading) |
 | <a id="op-14"></a>**OP-14** | cohort shopping | Joiners self-identify into a favourable cohort / floor. | Open |
 | <a id="op-15"></a>**OP-15** | ghost harvesting | Estimated credit accrues to non-joiners and the dead. | Open |
-| <a id="op-16"></a>**OP-16** | onerousness gap | Tedium/indignity have no material signature. | 🔴 Underweight, unsolved *(re-rated 2026-08-09)* |
+| <a id="op-16"></a>**OP-16** | onerousness gap | Tedium/indignity have no material signature. | 🟠 Both halves reachable by pledges since 2026-09-18; neither measured |
 | <a id="op-17"></a>**OP-17** | joint production | Allocating a joint process's debit across co-products. | ✅ Closed — **re-closed 2026-09-03 by removing the division.** Every co-product carries the **whole** process cost against its own output mass. The earlier split rule was withdrawn after 36 honest methods measured 6.31× apart (B7) |
 | <a id="op-18"></a>**OP-18** | labour & team credit | Responsibility/labour split across co-products and teams. | ✅ Closed (B9). **The co-product half dissolved 2026-09-03**: labour is not split across outputs either, so the OP-18(α) convention is withdrawn. **The team half stands** |
 | <a id="op-19"></a>**OP-19** | saturated producer | What surplus production is for. | ✅ Resolved by pledges (B5) |
@@ -123,7 +123,7 @@ Series is non-contiguous (early merges left gaps at OP-2/12/13). Status taxonomy
 | <a id="op-21"></a>**OP-21** | media reproduction | Charging for infinitely-copyable media. | ✅ Dissolved (B3, front-loading) |
 | <a id="op-22"></a>**OP-22** | audit disclosure | The minimum zero-knowledge disclosure set. (C7) | 🔽 Load-bearing — gates the disparity ceiling & anti-arbitrage |
 | <a id="op-23"></a>**OP-23** | shared overhead | Attributing capital/overhead across co-products. | ✅ Closed — accrues to the asset (B8) |
-| <a id="op-24"></a>**OP-24** | understatement drift | Cost errors that favour subscribers have no funder. | 🔴 Fix proposed (rival-audit), unproven |
+| <a id="op-24"></a>**OP-24** | understatement drift | Cost errors that favour subscribers have no funder. | 🔴 Open. Rival-audit fix withdrawn 2026-08-24; five requirements in Foundations §3.3a |
 | <a id="op-25"></a>**OP-25** | illicit dumping | Abandonment/end-of-life attribution. | 🔽 New, minor (Level-2) |
 | <a id="op-28"></a>**OP-28** | residual denominator | What `(N − Y)` is divided by. A headcount where §2.5 requires a measurement. | 🟠 Open — candidate repair unmeasured |
 

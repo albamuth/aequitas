@@ -1,7 +1,27 @@
+---
+title: No externalities
+summary: Every consequence of an activity stays inside the accounting and is assigned to whoever caused it, or held explicitly unassigned until an attribution witness exists.
+type: axiom
+ids: [A4]
+status: settled
+edges:
+  - {rel: depends_on, to: material-flow-value}
+  - {rel: depends_on, to: retroactive-reweighting}
+  - {rel: implies, to: cost-not-price}
+  - {rel: implies, to: regulator-inversion}
+  - {rel: implies, to: consumption-debit}
+  - {rel: implies, to: no-taxation}
+  - {rel: open_under, to: OP-24}
+  - {rel: tested_by, to: 06-simulation/residual-attribution/RESULTS.md}
+  - {rel: source, to: "Foundations §1"}
+  - {rel: source, to: "Foundations §2.2"}
+  - {rel: source, to: "Foundations §3.3"}
+  - {rel: source, to: "Foundations §4.4"}
+---
 # No Externalities
 
-> **Version:** 0.1
-> **Date:** 2026-09-16
+> **Version:** 0.2
+> **Date:** 2026-10-13
 
 > Every consequence of an activity is **accounted to whoever caused it**, including consequences discovered decades later. There is no "outside" of the accounting.
 

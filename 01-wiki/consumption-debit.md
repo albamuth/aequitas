@@ -1,3 +1,22 @@
+---
+title: Consumption debit
+summary: Debit for matter or energy used up, burned or released; it stays permanently on whoever caused it, never moves with a thing, and its weight floats with the current cost of remediation.
+type: mechanism
+ids: [§3.2, §3.6]
+status: settled
+edges:
+  - {rel: depends_on, to: material-flow-value}
+  - {rel: depends_on, to: no-externalities}
+  - {rel: depends_on, to: retroactive-reweighting}
+  - {rel: implies, to: debit-tolerance}
+  - {rel: implies, to: onboarding-incentive}
+  - {rel: implies, to: permanence-and-death}
+  - {rel: constrained_by, to: IC-4}
+  - {rel: open_under, to: OP-25}
+  - {rel: source, to: "Foundations §2.2"}
+  - {rel: source, to: "Foundations §3.2"}
+  - {rel: source, to: "Foundations §3.6"}
+---
 # Consumption Debit
 
 > **Version:** 0.1

@@ -1,7 +1,35 @@
+---
+title: Statistical coverage
+summary: Every human is in the books whether or not they take part; an estimated position becomes usable only with a verified account and observed records that replace the estimates.
+type: axiom
+ids: [A7]
+status: settled
+edges:
+  - {rel: depends_on, to: material-flow-value}
+  - {rel: depends_on, to: verification-ladder}
+  - {rel: implies, to: onboarding-incentive}
+  - {rel: implies, to: estimation-engine}
+  - {rel: implies, to: one-account-per-person}
+  - {rel: implies, to: unassigned-residual}
+  - {rel: implies, to: lifetime-reconstruction}
+  - {rel: constrained_by, to: "Conformance row 13"}
+  - {rel: constrained_by, to: "Conformance row 14b"}
+  - {rel: open_under, to: OP-3}
+  - {rel: open_under, to: OP-14}
+  - {rel: open_under, to: OP-15}
+  - {rel: open_under, to: OP-28}
+  - {rel: tested_by, to: 06-simulation/residual-attribution/RESULTS.md}
+  - {rel: tested_by, to: 06-simulation/residual-unravelling/RESULTS.md}
+  - {rel: source, to: "Foundations §1"}
+  - {rel: source, to: "Foundations §3.3"}
+  - {rel: source, to: "Foundations §3.4"}
+  - {rel: source, to: "Foundations §4.1"}
+  - {rel: source, to: "Foundations §4.4"}
+---
 # Statistical Coverage
 
-> **Version:** 0.1
-> **Date:** 2026-09-16
+> **Version:** 0.2
+> **Date:** 2026-10-13
 
 > Every human is accounted for whether or not they participate, and **credit and debit are estimated symmetrically for everyone**. What participation unlocks is not being counted — it is being able to *act* on what was counted.
 

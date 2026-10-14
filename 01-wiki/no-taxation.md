@@ -1,3 +1,18 @@
+---
+title: No taxation
+summary: Civil servants are credited directly and infrastructure users carry debit by use, so there is nothing to collect and nothing to fund.
+type: consequence
+ids: [§5.4]
+status: provisional
+edges:
+  - {rel: depends_on, to: no-externalities}
+  - {rel: depends_on, to: non-fungibility}
+  - {rel: depends_on, to: debit-tolerance}
+  - {rel: depends_on, to: pledge-and-signal}
+  - {rel: open_under, to: OP-1}
+  - {rel: source, to: "Foundations §5.4"}
+  - {rel: source, to: "Overview §4"}
+---
 # No Taxation
 
 > **Version:** 0.1
@@ -11,7 +26,7 @@ Taxation exists to do three jobs. Aequitas removes all three:
 
 | Job of taxation | Why it's unnecessary |
 |---|---|
-| **Fund public servants** | Civil servants are credited directly for [[service-credit\|service]]. There is no payroll to finance. |
+| **Fund public servants** | Civil servants are credited directly for [service](service-credit.md). There is no payroll to finance. |
 | **Fund infrastructure** | Infrastructure providers are credited; users carry proportional debit by usage. The road accounts for its own wear. |
 | **Correct externalities** (Pigouvian) | [no-externalities](no-externalities.md) — harm is already priced in. Nothing left to correct. |
 | **Redistribute** | [debit-tolerance](debit-tolerance.md) provides the floor structurally, not by transfer. |

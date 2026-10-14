@@ -1,3 +1,27 @@
+---
+title: Retroactive re-weighting
+summary: When a cost constant improves, every record computed from it recalculates backwards through history; a pollutant's weight floats with the ambient stock, and the gate is evaluated at transaction time so no revision reopens a completed act.
+type: mechanism
+ids: [§3.3, §3.3a, C4]
+status: settled
+edges:
+  - {rel: depends_on, to: derived-ledger}
+  - {rel: depends_on, to: no-externalities}
+  - {rel: depends_on, to: consumption-debit}
+  - {rel: implies, to: regulator-inversion}
+  - {rel: implies, to: co-product-allocation}
+  - {rel: implies, to: dispute-resolution}
+  - {rel: constrained_by, to: "Conformance row 16a"}
+  - {rel: open_under, to: OP-10}
+  - {rel: open_under, to: OP-24}
+  - {rel: related, to: op-10}
+  - {rel: related, to: op-24}
+  - {rel: tested_by, to: 06-simulation/ic-recompute-cost/RESULTS.md}
+  - {rel: tested_by, to: 06-simulation/ic-recompute-cost/KSWEEP_RESULTS.md}
+  - {rel: source, to: "Foundations §2.2"}
+  - {rel: source, to: "Foundations §3.3"}
+  - {rel: source, to: "Foundations §3.3a"}
+---
 # Retroactive Re-weighting
 
 > **Version:** 0.1

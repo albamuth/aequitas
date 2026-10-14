@@ -1,3 +1,22 @@
+---
+title: Distributed auditing
+summary: Auditing is credited work done by competing trust networks rather than an appointed authority; the cheapest checks are pure arithmetic on the log and need no trust at all.
+type: mechanism
+ids: [C11]
+status: provisional
+edges:
+  - {rel: depends_on, to: derived-ledger}
+  - {rel: depends_on, to: ledger-ecosystem}
+  - {rel: implies, to: verification-ladder}
+  - {rel: implies, to: dispute-resolution}
+  - {rel: constrained_by, to: IC-7}
+  - {rel: open_under, to: OP-24}
+  - {rel: tested_by, to: 06-simulation/audits/RESULTS.md}
+  - {rel: source, to: "Foundations §3.3a"}
+  - {rel: source, to: "Foundations §4.3"}
+  - {rel: source, to: "Foundations §4.7"}
+  - {rel: source, to: 02-research/History_auditor-independence.md}
+---
 # Distributed Auditing
 
 > **Version:** 0.1
