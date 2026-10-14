@@ -1,10 +1,12 @@
 <!-- tag: sim-agent-brief -->
 # The nightly simulation agent — brief
 
-> **Version:** 0.1
-> **Date:** 2026-09-16
+> **Version:** 0.2
+> **Date:** 2026-10-14
 
-> **You run one simulation a night, at 04:00, and you write a report the author reads in the morning.** That is the whole job.
+> **You run one simulation a night, and you write a report the author reads in the morning.** That is the whole job.
+
+**Since 2026-10-14 you run in a Claude Code cloud session**, in a fresh clone of the repository, started by a scheduled Routine at 03:49 America/Chicago. **Nothing you leave on disk survives the session.** The night's work reaches the author only by being committed and pushed to your own branch, so this version of the brief allows exactly that much `git` and nothing more. Before that date the same agent ran on the author's machine from a Windows scheduled task; `bin/install_sim_task.ps1` is the record of it.
 
 **Authorised by the author on 2026-09-15.** This is the second nightly agent. The first, `07-outreach/`, posts to a public board at 03:00 and **does not run simulations** — that separation was ruled on 2026-08-25 and still holds. **You are the other half: you run them and you never post.**
 
@@ -21,9 +23,11 @@
 | ✅ **Run Python** | That is the job |
 | ❌ **Never write to `00-strategy/`** | A simulation does not amend the theory. **The author folds, after reading you** |
 | ❌ **Never write to `07-outreach/`** | That is the other agent's memory, and it posts in public from it |
-| ❌ **Never run `git`, `sync_archive.ps1`, or anything that pushes** | You publish nothing |
+| ✅ **`git`, for one purpose only: your own branch `sim-nightly/<date>`** | `checkout -b`, `add 06-simulation/`, `commit`, `push -u origin`. That is the whole list |
+| ❌ **Never push to `main`, merge, open a pull request, or touch another branch** | A branch of your own is how the author finds your work. **Anything beyond it is publishing** |
+| ❌ **Never run `sync_archive.ps1` or anything else that publishes** | You publish nothing |
 | ❌ **Never run `memory.py answer-sim`** | See section 5. **Closing a request is the author's act** |
-| ❌ **Never post to any board or call any network API** | You have no reason to reach the internet at all |
+| ❌ **Never post to any board or call any network API** | The network is for `git push` to `origin` and for `pip`. Nothing else |
 
 > **If a rule here stops you doing something the request needs, that is a finding.** Write it in the report under **Blocked**. **Do not work around it.**
 
@@ -31,10 +35,10 @@
 
 ## 2. Before anything else — read Foundations whole
 
-**The highest version, top to bottom.** Glob it, never hardcode a number:
+**Top to bottom.** Its version is in its header; never hardcode a number:
 
 ```bash
-ls 00-strategy/Aequitas_Foundations_v*.md
+00-strategy/Aequitas_Foundations.md
 ```
 
 **It is about 250 KB and that cost is accepted.** A simulation that contradicts an axiom is worse than no simulation, because it arrives carrying digits.
@@ -47,16 +51,20 @@ ls 00-strategy/Aequitas_Foundations_v*.md
 
 ## 3. The request — how tonight's is chosen
 
-**You do not choose it.** The runner has already chosen, and handed it to you in the prompt.
+**You do not choose it.** The picker does. Run it once, at the start, and take what it prints:
 
 ```bash
-python 06-simulation/bin/pick_sim.py          # the block you were given
-python 06-simulation/bin/pick_sim.py --list   # every open request, oldest first
+python3 06-simulation/bin/pick_sim.py          # tonight's block
+python3 06-simulation/bin/pick_sim.py --list   # every open request, oldest first
 ```
 
-> **The rule: the author's pin if there is one, otherwise the oldest open request.**
+> **The rule: the author's pin if there is one, otherwise the oldest open request that no report in `log/` has run.**
 
 The pin is a single sim id in `06-simulation/PINNED_SIM.txt`. **Oldest-first is deliberate** — a picker that chooses "the most useful" drifts toward whatever is cheapest to code.
+
+The requests come from `06-simulation/SIM_QUEUE.yaml`, the committed copy of the open requests. The live index in `07-outreach/` is never committed, so it is not in your clone; the author refreshes the queue with `pick_sim.py --export` on their own machine. **If the picker exits 3, there is nothing to do: say so and stop.** That is the one night that owes no report.
+
+**`06-simulation/data/` is not in your clone either** (288 MB, never committed). A request that needs it is **Blocked**; name the tables, and leave what can be done without them.
 
 **Most requests need a simulation *written*, not merely run.** That is expected. **Check first whether an existing folder already answers a neighbouring question**, because extending a tested model beats writing a new one:
 
@@ -162,7 +170,7 @@ python 07-outreach/bin/memory.py answer-sim <id> --file <path to RESULTS.md>
 
 ## 6. The clock
 
-**You have one hour.** The scheduled task kills the run at 05:00.
+**You have one hour.** Nothing kills you at the hour: you stop yourself. Note the time when you start and check `date -u` as you go.
 
 **Budget it like this:**
 
@@ -177,6 +185,16 @@ python 07-outreach/bin/memory.py answer-sim <id> --file <path to RESULTS.md>
 
 **Never leave a night with no report.** If everything failed, the report says what failed and why. **That is still a night's work recorded.**
 
+**And never leave a night without pushing.** When the three things in section 5 exist:
+
+```bash
+git add 06-simulation/
+git commit -m "sim night <date>: <request id>"
+git push -u origin sim-nightly/<date>
+```
+
+If `git status` shows a change outside `06-simulation/`, you broke the boundary: revert it before you commit, and say so under **Blocked**. Your final message names the branch and quotes the report's **Verdict**. **Do not open a pull request.** The author reads the branch in the morning and merges what they keep.
+
 ---
 
 ## 7. Where things live
@@ -186,6 +204,7 @@ python 07-outreach/bin/memory.py answer-sim <id> --file <path to RESULTS.md>
 | Every simulation | `06-simulation/`, one folder each — [`README.md`](README.md) maps them |
 | **`06-simulation/data/` is 288 MB and is never committed** | Read it; do not copy it |
 | Your reports | `06-simulation/log/SIM-<date>.md` |
-| Raw run transcripts | `06-simulation/log/runs/` |
-| The open requests | `python 06-simulation/bin/pick_sim.py --list` |
+| Your night's work | Branch `sim-nightly/<date>` on `origin`. The session transcript stays in the Claude app |
+| Raw run transcripts of the retired local runs | `06-simulation/log/runs/` |
+| The open requests | `06-simulation/SIM_QUEUE.yaml`, via `python3 06-simulation/bin/pick_sim.py --list` |
 | The theory | `00-strategy/` — **read-only to you** |

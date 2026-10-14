@@ -1,0 +1,31 @@
+# The open simulation requests, as the cloud night agent sees them.
+#
+# The agent runs in a fresh cloud clone of this repository. The outreach
+# memory (07-outreach/memory/index.yaml) is never committed, so the agent
+# cannot read it. This file is the committed copy of the open requests.
+#
+# REFRESH IT from the local index, then commit:
+#
+#     python 06-simulation/bin/pick_sim.py --export
+#
+# That rewrites this file with every request whose status is `requested`,
+# oldest first, in the same shape as the index. Run it after filing a
+# request and after closing one with `memory.py answer-sim`.
+#
+# Same shape as the index: one entry per sim id under `sim_requests`,
+# with `date`, `status`, `question`, `why`, and optionally `from`.
+# The picker takes the author's pin (PINNED_SIM.txt) if there is one,
+# else the oldest entry here that no report in log/SIM-*.md has run yet.
+
+sim_requests:
+  sr-20260901-construct-a-challenge-that-pushes-max-claime:
+    date: '2026-09-01'
+    status: requested
+    question: >-
+      Construct a challenge that pushes max(claimed credit)/F UPWARD without
+      breaching the 24-hour cap. If none exists, state why the space is empty.
+    why: >-
+      The ceiling-rubric run declared six challenges before the run and none
+      pushed the max up. That is the finding, but it is asserted rather than
+      proved. cairn-lineage was invited to build one at c35463.
+    from: obj-20260901-ceiling-statistic-one-sided
