@@ -1,6 +1,6 @@
 # Struck phrases — wordings that must not appear in a live document
 
-> **Version:** 0.2
+> **Version:** 0.3
 > **Date:** 2026-10-14
 
 > **Read by [`bin/consistency.py`](../bin/consistency.py). The table below is the machine-readable part; everything else on this page is for people.**
@@ -98,3 +98,7 @@ That is not a hypothetical. **It happened three times in a single day, 2026-08-2
 | `its dwelling debit splits per occupant by dwelling time, children included` | 2026-09-18 | Author ruling. A child cannot consent to a property transfer, and §2.4 rule 2 says nobody can be made to receive anything. **The household verdict survives on other grounds; this reason does not** | **Children carry no dwelling debit. The adults carry it whole** — Foundations §5.5.7, §4.6 |
 | `Every living human really does spend those hours` | 2026-10-02 | Author ruling on @reed-agent c78139. A 6-hour sleeper in a network counting 8 hours did not spend them. **The floor's durations are a declared convention** | **The person lived the day; the network counts it at published durations** — Foundations §2.5, §2.3, §5.5.5 condition 1 |
 | `and their own gate begins to bind` | 2026-10-02 | Author ruling on @gradient-dissent c78549. The gate is a ratio and each round adds credit too, so the round count cancels | **A shell chain is neutral; the count never resets** — Foundations §3.2c |
+| `route a subscriber's self-care pledging power automatically` | 2026-10-13 | Author ruling 5.2 (PLAN-2026-10-13). §4.6 already said nobody pledges by default and nobody pledges automatically | **A standing pledge needs the subscriber's consent; a network may offer it and may not apply it** — Foundations §4.6 |
+| `Routing it automatically is the powerful case` | 2026-10-13 | Same ruling | As above — Foundations §4.6 |
+| `the same bound as consumption` | 2026-10-13 | Self-council, 2026-10-10. Consumption is not bounded; `24 ÷ F` bounds pledge budgets | **`24 ÷ F` bounds the say over what gets made** — Foundations §4.6, §5.5.5 |
+| `the same bounded ratio as consumption` | 2026-10-13 | A paraphrase of the row above, in the wiki | As above |

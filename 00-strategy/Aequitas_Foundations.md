@@ -1,8 +1,8 @@
 <!-- tag: fnd-aequitas-foundations-and-long-term -->
 # Aequitas — Foundations & Long-Term Strategy
 
-> **Version:** 0.55
-> **Date:** 2026-10-08
+> **Version:** 0.56
+> **Date:** 2026-10-13
 > **Status:** Working foundations.
 > **Primary audience of the first paper:** technologists and implementers.
 > **Companion:** [`Aequitas_Conformance.md`](Aequitas_Conformance.md) — what must be true for an implementation to *be* Aequitas.
@@ -2080,9 +2080,31 @@ A median lifestyle commands about **1,380 hours** of other people's labour a yea
 
 #### Everyone alive holds some of this, simply by being alive
 
-**Self-care is credit in full, so like all credit it generates pledging power.** Every living human therefore directs some share of what society works on next. **Because the floor is the same for everyone, this compresses the spread of influence to the same bound as consumption** (§5.5).
+**Self-care is credit in full, so like all credit it generates pledging power.** Every living human therefore directs some share of what society works on next. **Because the floor is the same for everyone, the spread of pledge budgets per day lived is bounded at `24 ÷ F`** (§5.5.5). That bound is on the say over what gets made. **It is not a bound on consumption**, which §5.5.5 says nothing here limits.
 
-**Where it goes by default is a network choice.** A network may route a subscriber's self-care pledging power automatically toward basic-needs sectors, leave it for the person to direct, or split it. **Routing it automatically is the powerful case, because the pledging power of a whole population aimed at essentials funds essential provision from the act of staying alive itself.** The trade-off is the network's to make.
+##### A standing pledge, and what it needs
+
+> **A subscriber may make a standing pledge: one act that commits a stated share of their pledging budget, as it accrues, to published criteria.** It is a pledge like any other. It needs the subscriber's consent, and it is made when they consent to it, never by a network's default.
+
+**So a network may offer routing, and it may not apply it.** A network can offer a standing pledge toward basic-needs work at subscription, and a subscriber can accept it, refuse it, or take part of it. **A subscriber who is never asked, or who cannot consent, has made no standing pledge**, and their budget stays theirs to direct. An infant is the clear case, by the paragraph above.
+
+**A standing pledge to a sector grants room to nobody until its criteria name a person**, as the table above says of any pledge to a fund or a cause.
+
+###### An example, with the numbers
+
+**A network with `F` = 10 h/day.** A person's self-care alone accrues 10 × 365 = **3,650 h** of pledge budget a year, and **292,000 h** over 80 years.
+
+| | What is committed | Budget left to direct |
+|---|--:|--:|
+| Never asked, or refused | 0 h | **292,000 h** |
+| Accepted a standing pledge of 50% of self-care budget, at age 20 | 50% × 3,650 × 60 = **109,500 h** | 182,500 h |
+| A network applies 100% by default | **Not available.** No consent was given, so no pledge exists | 292,000 h |
+
+**In plain words: the third row is the one this section forbids.** It would spend 100% of a floor-only life's say over what gets made on the strength of the network's setting.
+
+**What routing still buys, and what it costs.** The pledges of everyone who accepts a standing pledge to essentials fund essential provision from the act of staying alive. **How many accept is now a measure of how many want it**, which a default could never be.
+
+**⚠️ A network that offers one standing pledge to every subscriber writes the criteria for a large share of the population's budget.** That is a coordinator with real power over what gets made, and it is the same P4 (coordinator class) surface as the large discretionary fund above. **Publishing the criteria before anyone accepts makes that power visible. It does not remove it.**
 
 #### Recording is never gated. Verification decides when credit counts
 

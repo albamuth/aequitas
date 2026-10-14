@@ -9,8 +9,8 @@
 >
 > **Regenerate with:** `python bin/distill.py`
 
-> **Source:** [`Aequitas_Foundations.md`](Aequitas_Foundations.md) · **version 0.55**
-> **Size:** 137,479 bytes, from 261,668 — **53% of the source**
+> **Source:** [`Aequitas_Foundations.md`](Aequitas_Foundations.md) · **version 0.56**
+> **Size:** 139,160 bytes, from 263,590 — **53% of the source**
 
 **What was kept:** every heading, every rule, every table, and the stated result of every worked
 example. **What was dropped:** the explanation prose between them.
@@ -907,6 +907,18 @@ example. **What was dropped:** the explanation prose between them.
 ##### A pledge is an act, and it requires consent
 > **A budget cannot be manufactured.** It equals credit the pledger earned, and IC-7 caps an account at 24 hours of activity in 24 hours. **To hand somebody a million hours of room you need real, verified humans who each lived a life.** So concentration of room is bounded by the population and nothing else, which §5.5.5 states.
 #### Everyone alive holds some of this, simply by being alive
+##### A standing pledge, and what it needs
+> **A subscriber may make a standing pledge: one act that commits a stated share of their pledging budget, as it accrues, to published criteria.** It is a pledge like any other. It needs the subscriber's consent, and it is made when they consent to it, never by a network's default.
+###### An example, with the numbers
+**A network with `F` = 10 h/day.** A person's self-care alone accrues 10 × 365 = **3,650 h** of pledge budget a year, and **292,000 h** over 80 years.
+| | What is committed | Budget left to direct |
+|---|--:|--:|
+| Never asked, or refused | 0 h | **292,000 h** |
+| Accepted a standing pledge of 50% of self-care budget, at age 20 | 50% × 3,650 × 60 = **109,500 h** | 182,500 h |
+| A network applies 100% by default | **Not available.** No consent was given, so no pledge exists | 292,000 h |
+**In plain words: the third row is the one this section forbids.** It would spend 100% of a floor-only life's say over what gets made on the strength of the network's setting.
+**What routing still buys, and what it costs.** The pledges of everyone who accepts a standing pledge to essentials fund essential provision from the act of staying alive. **How many accept is now a measure of how many want it**, which a default could never be.
+**⚠️ A network that offers one standing pledge to every subscriber writes the criteria for a large share of the population's budget.** That is a coordinator with real power over what gets made, and it is the same P4 (coordinator class) surface as the large discretionary fund above. **Publishing the criteria before anyone accepts makes that power visible. It does not remove it.**
 #### Recording is never gated. Verification decides when credit counts
 ##### For goods, the hand-off is the verification
 #### When a task attracts more pledges than it costs

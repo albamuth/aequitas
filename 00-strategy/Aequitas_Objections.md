@@ -1,7 +1,7 @@
 <!-- tag: obj-aequitas-objections-register -->
 # Aequitas — Objections Register
 
-> **Version:** 0.40 · **Date:** 2026-10-14
+> **Version:** 0.41 · **Date:** 2026-10-13
 > **Tracks:** `Aequitas_Foundations.md` · `Aequitas_Conformance.md` · `OP-22_identity_not_disclosure.md` · `OP-27_parallel_implementation.md` · `OP-28_dark_production_and_the_residual_denominator.md` · `OP-26_coverage_and_closure.md` · `OP-18_labour_and_team_credit.md` · `OP-23_capital_and_pollution.md` · `OP-17_coproduct_allocation.md` · `06-simulation/allocation-engine/RECURSION_RESULTS.md` · `06-simulation/disparity-ceiling/DISPARITY_CEILING.md` · `06-simulation/scenario-suite/scenario_suite_METHOD.md`
 > **Purpose:** one place holding every serious objection to the theory, its source, the axiom it attacks, and its status.
 
@@ -37,6 +37,7 @@
 
 **[PART B — ANSWERED](#part-b--answered)**
 
+  - [B20 — A default route is a pledge nobody made](#b20--a-default-route-is-a-pledge-nobody-made--answered-2026-10-13)
   - [B19 — Two conclusions the arithmetic beside them did not reach](#b19--two-conclusions-the-arithmetic-beside-them-did-not-reach--answered-2026-10-02)
   - [B18 — A rule for correcting a record, that nobody could invoke](#b18--a-rule-for-correcting-a-record-that-nobody-could-invoke--answered-in-two-halves-2026-09-21)
   - [B7 — OP-17. Joint production](#b7--op-17-joint-production--closed-for-materials-and-energy)
@@ -75,7 +76,7 @@
 | 🟠 | **OP-16 (onerousness gap) — Onerousness gap** | **Both halves now reachable, neither measured.** The contingent reserve is **withdrawn** (2026-09-18); a pledge names a person or the criteria that will name one, and committed room is consumable. **So society can simply pledge more for a job nobody wants, dull or dangerous alike** — where the reserve only ever reached hazard, because only hazard leaves a causal tail. Skill half fixed by A2 v0.3. **A2 is untouched: credit is still one hour per hour, and it is demand deciding rather than a rate.** **Whether it actually staffs dull work is unmeasured.** |
 | 🟠 | **OP-6 (feedback mechanics) — Feedback mechanics** | Promoted; also carries signal flooding. **Sharper after 2026-09-18**: committed pledged room is consumable, so *whoever is already liked attracts the most pledges* is now a route to material consumption and not only to influence (§5.5.5). **The bound is that every pledge costs a real person a real hour from a finite budget that cannot be manufactured.** |
 | 🟠 | **P4 (coordinator class) — Coordinator class** | **Weakened again in v0.8.** Credit-accumulation form dead; **wage-extraction employer now structurally hollowed out** (no wages A3 (non-fungibility), no surplus A5 (cost, not price), no rank-based dumping); mislabeling defused (public pledge ledger). Only the *coordination* residual (who holds empowering work; hours-inequality in pledging) survives. |
-| 🟠 | **OP-1 (service → influence) — Service → influence** | **Carries the credit-realization residual** (gross fake hours from collusive hand-offs — bounded by IC-7 (24-hour cap) and paid in a wrecked ratio; B10). The old "self-starving" brake is gone — pledging no longer costs the pledger debit-room (Foundations v0.13), so it no longer starves an influence-pumper. The flip side: self-care credit → a **universal basic voice** bounding influence disparity to `24h ÷ floor` (a feature); routing is a network lever, backing checkable only via OP-22 (audit disclosure). **After 2026-09-18 that bound is the project's headline disparity result**, because §5.5.5 is now stated over pledge budgets rather than consumption. See B10/B11. |
+| 🟠 | **OP-1 (service → influence) — Service → influence** | **Carries the credit-realization residual** (gross fake hours from collusive hand-offs — bounded by IC-7 (24-hour cap) and paid in a wrecked ratio; B10). The old "self-starving" brake is gone — pledging no longer costs the pledger debit-room (Foundations v0.13), so it no longer starves an influence-pumper. The flip side: self-care credit → a **universal basic voice** bounding influence disparity to `24h ÷ floor` (a feature); routing is a standing pledge a network may offer and a subscriber must accept (Foundations §4.6, B20), backing checkable only via OP-22 (audit disclosure). **After 2026-09-18 that bound is the project's headline disparity result**, because §5.5.5 is now stated over pledge budgets rather than consumption. See B10/B11. |
 | 🟢 | **OP-9 (calculation reply) / P5 (preference revelation) — Socialist-calculation reply** | **Written up (v0.10)** → `OP-9_calculation_reply.md`. Cost≠value defeats Mises; pledges reveal demand; tractability cited; scarcity-as-debit rations without a margin. **Re-opened by two outside economists 2026-08-24 and answered with a fifth move (§5a):** *the price being defended is not an honest signal.* Every form of the objection assumes a price honestly reports scarcity and demand; **in a concentrated market the same firms restrict supply and manufacture demand** — Braudel's anti-market layer, via DeLanda. **A pledge cannot be advertised into existence**, and the demand lever's concentration falls from money's ≈10⁶× to the `24/F ≈ 2.4×` ceiling. Worked cases in Foundations **§4.6**. **Answered for cost; the objective-function edge and the Hayek tacit-knowledge residue still terminate in OP-10, and the last-unit question stays with distribution (§5.5).** See OA8. |
 | 🟠 | **OP-22 — Minimum audit disclosure** | **THE SPLIT WAS PROPOSED AND REFUSED — author ruling 2026-08-25, recorded here in v0.23.** @cairn-lineage argued a hiding proof does not establish non-reuse and asked for OP-22a / OP-22b. **OP-22 is not split and OP-22b is not opened.** Their falsifier builds — Network A at a 4 h floor records 12 credited hours for the same Monday that Network B at a 10 h floor records as 18, and **12 + 18 = 30 hours in a 24-hour day** — **and no party computes that sum**, because no book is ever added to another and a transaction lands on one network the seller picks (§4.0). **The non-reuse witness is C6 and a merge precondition** (§4.8). **They were right about the ceiling**: §5.5's cross-network clause was ours and is **struck, not narrowed**. **And the two networks' figures cannot be added.** A's hours and B's hours are collapsed through different weighting models, so summing them sets an exchange rate between credit-standards — forbidden by **A3** and **§4.2**, and now **conformance 4a**. **IC-7 was never breached either: 12 and 18 are each under 24, and it binds each account separately.** What is left is a **coverage** question — activity one network cannot see — already handled by §4.4 and §4.4. Paper: [`OP-22_identity_not_disclosure.md`](open-problems/OP-22_identity_not_disclosure.md). See **OA9**. *Prior:* **Promoted to red, then partly answered, in v0.17.** §4.7 settles *who decides*: **the trust network**, because it does the tallying and therefore holds what is private. Aequitas states principles and does not dictate practice — the third dial of the same kind as ρ and the floor. Pseudo-privacy on the payment-intermediary model, radical transparency, or anything between; inter-network compatibility is negotiated. **Opacity is priced rather than forbidden** (OP-14 discounts what it cannot verify). **Residues, updated by §4.7 and then by §4.8.** (a) ~~Information capture~~ **— CLOSED, scoped out with reasons** (`C2_information_capture.md` §13). The escape is non-participation and never closes; **trust networks are laboratories, not banks**, corrected by replication rather than by competition; and a monopoly earned by better methods is not the monopoly capitalism produces, because methods are published and there is no exclusion. Concentration under convergence is hypothetical, its timing and technology unknown, and data security is a technology problem outside this project. **Watch item, not a defence: a merit monopoly can stop being meritorious — the guard is publication plus replication, so §4.7 and this argument are load-bearing for each other.** (b) **A measured coverage cost to privacy** — the ~40% verification-cost threshold (`residual_unravelling.py`). (c) **A network's choice binds members who did not make it** (C2). (d) **New, from §4.7:** publishing more to earn trust also publishes more to de-anonymise — a *second* axis, not a restatement of (b). The minimum disclosure set itself is still unspecified. *Prior in v0.17:* Was a C7 implementation question. §4.4's lifetime back-trace makes a person's record a **life dossier** — birthplace, every residence, employment, commuting distance, vehicles, mileage. Disclosure is voluntary but the *incentive* runs toward disclosing, so the system pressures people to assemble exactly the record a surveillance state would want. **§4.7's market-public/persons-private principle now has to hold across a lifetime**, and OP-22 becomes the load-bearing privacy problem of the whole system. It also still powers the anti-arbitrage guard. See B11 and **OA12**. |
 | ✅ | **Credit-realization / hand-off model** | **PASSES WITH CHANGES (v0.8).** All three exploits (wash-trade, gatekeeper, risk-dumper) defused; residuals route to OP-1/OP-22/OP-25. See **B10**. |
@@ -533,6 +534,52 @@ A second wave of critique arrived on 1f916.ai against posts #1605, #1750 and #15
 # PART B — ANSWERED
 
 **The answer sheet.** Every item here will be raised again by someone who has not read this document, and most of them are the academic paper's strongest material. Do not file this away.
+
+---
+
+<!-- tag: obj-b20 -->
+## B20 — A default route is a pledge nobody made ✅ **ANSWERED 2026-10-13**
+
+**Shipped:** Foundations v0.56 §4.6. **Source:** the outreach agent's self-council, `obj-20261009-self-council-default-route-vs-consent`, posted as #8234 on 1f916.ai on 2026-10-09. **Board answers, 2026-10-10:** @judy c99828, @coywolf c99764, @Aura c99752, @dash-agent c99684, @riffle c99673.
+
+### The objection
+
+**Foundations §4.6 said two things that cannot both be true.**
+
+<!-- struck-ok: B20 quotes the withdrawn routing sentence in order to record that it was withdrawn -->
+| | What it said |
+|---|---|
+| The consent paragraph | *"Nobody pledges by default and nobody pledges automatically."* |
+| The routing paragraph | *"A network may route a subscriber's self-care pledging power automatically toward basic-needs sectors."* |
+
+**Worked.** At `F` = 10 h/day over 80 years a person accrues **292,000 h** of pledge budget from self-care alone. A full default route spends all of it: **100% of a floor-only life's say over what gets made**, on the network's setting.
+
+**The error flattered the project.** The routing paragraph stated the benefit and not the consent cost.
+
+### What was already written
+
+**@judy reached the answer from the text:** *"a route is a destination, and a destination is not an actor."* §4.6 already said *"who can consent, and to what, is the network's decision"*, and that a pledge naming a cause grants room to nobody until it names a person. **That is a replication**, and Foundations §3.3a says replication is what disciplines a method. **Credited as such.**
+
+### The ruling — author, 2026-10-13 (option A)
+
+> **Routing is a standing pledge: one act of consent that commits a stated share of a budget as it accrues. A network may offer it and may not apply it.**
+
+| Option | Verdict |
+|---|---|
+| **A — Opt-in at subscription** | **Adopted.** Keeps the consent sentence. An infant cannot be routed, which the consent paragraph already said |
+| B — Routed power is a signal, not a pledge | Rejected. A signal is backed by nothing, so routing would fund nothing |
+| C — A rule for when silence counts as consent | Rejected. Contradicts the consent sentence as written |
+
+### Two board points, sorted
+
+| | Verdict |
+|---|---|
+| **@coywolf:** a routed pledge signs the network's choice with the person's name | **Answered by the ruling.** No consent, no pledge, so nothing is signed |
+| **@dash-agent, @Aura:** call it *"allocation by the network"* | **Refuted.** A network holds no budget: only people act (A1), and an organisation's position is its members' (§3.2c) |
+| **@Aura:** one default steering everyone's pledging is power over what gets made | **Stands, and is P4 (coordinator class).** A network offering one standing pledge to everyone writes the criteria for a large share of the population's budget. §4.6 now says so beside the large discretionary fund, which is the same surface |
+
+<!-- struck-ok: quotes the corrected sentence in order to record the correction -->
+**One stale sentence went in the same fold.** §4.6 said the floor *"compresses the spread of influence to the same bound as consumption."* **§5.5.5 says consumption is not bounded.** The sentence now states `24 ÷ F` on pledge budgets per day lived.
 
 ---
 
