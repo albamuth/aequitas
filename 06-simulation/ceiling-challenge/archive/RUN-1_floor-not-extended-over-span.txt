@@ -1,0 +1,39 @@
+ceiling-challenge  seed=20261014  trials per floor=5000
+
+O1  Conforming evaluation (account-day IC-7, span extended, elapsed denominator, humans)
+   F     24/F   greedy S   search S  accepted  min rate  max rate
+   2  12.0000  12.000000  15.112809       627    2.0000   24.0000
+   6   4.0000   4.000000   4.460587       585    6.0000   24.0000
+  10   2.4000   2.400000   3.936527       522   10.0000   24.0000
+  14   1.7143   1.714286   3.082251       398   14.0000   24.0000
+    every accepted construction S <= 24/F: False
+
+O2  Premise P2 broken: IC-7 checked per record, k filings at 24 h/day on the same days
+  k  per-record ok  account-day ok  worst day h         S    24k/F  record>24?
+  1           True            True         24.0    2.4000   2.4000       False
+  2           True           False         48.0    4.8000   4.8000       False
+  3           True           False         72.0    7.2000   7.2000       False
+  5           True           False        120.0   12.0000  12.0000       False
+    random adversary under per-record IC-7: best S = 9.7162, worst-day sum at that S = 24.0 h, accepted 5000/5000
+
+O3  Premise P3 broken: denominator is the DECLARED span, credit dated before it
+     declared span: IC-7 ok=True worst day 24.0 h, max rate 30.000, S = 3.0000, record>24? False
+     span extended: IC-7 ok=True worst day 24.0 h, max rate 24.000, S = 2.4000, record>24? False
+
+O4  Premise P4 (unit) broken: local calendar counts a 25-hour day as one day
+    local calendar: max rate 24.002740, S = 2.400274, excess over 24/F = +2.74e-04 (+1.14e-04 relative)
+    elapsed / 24 h: max rate 24.000000, S = 2.400000, excess over 24/F = +0.00e+00 (+0.00e+00 relative)
+
+O5  Premise P1 broken: self-care credited as measured, not at the published duration
+    sleeps  8.0 h at a list of 10: min rate 10.000, S = 2.4000  (24/F = 2.4000)
+    sleeps  7.0 h at a list of 10: min rate 9.000, S = 2.6667  (24/F = 2.4000)
+    sleeps  6.0 h at a list of 10: min rate 8.000, S = 3.0000  (24/F = 2.4000)
+    sleeps  4.0 h at a list of 10: min rate 6.000, S = 4.0000  (24/F = 2.4000)
+
+O6  Premise P4 (domain) broken: an organisation account enters the min
+    all accounts: min rate 0.000, S = inf
+    humans only : min rate 10.000, S = 2.4000
+
+O7  Control: deleting the top account under conforming rules
+    S with the wall account 2.4000, without it 2.1522, delta -0.2478
+
