@@ -1,4 +1,19 @@
 <#
+    RETIRED 2026-10-14. The nightly simulation run moved to a Claude Code
+    cloud Routine (see 06-simulation/README.md, "The nightly simulation
+    agent"). The runner this task invoked, bin\run_sim_night.ps1, was
+    removed the same day.
+
+    The ONE remaining use of this file is to unregister the old task on the
+    author's machine, so two agents never run the same night:
+
+        powershell -ExecutionPolicy Bypass -File bin\install_sim_task.ps1 -Remove
+
+    Installing with it will fail, because the runner is gone. Everything
+    below is kept as the record of what the local task was.
+
+    ---- original header ----
+
     Register (or re-register) the nightly simulation run as a Windows
     Scheduled Task.
 

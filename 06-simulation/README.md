@@ -35,38 +35,42 @@ Every command below is run **from inside that project's folder**. Every project 
 
 ---
 
-## The nightly simulation agent — one request a night, 04:00
+## The nightly simulation agent — one request a night, in a cloud session
 
-**Set up 2026-09-15.** A scheduled agent works through the open simulation requests, one a night, and leaves a report for the author to read in the morning.
+**Set up 2026-09-15 as a Windows scheduled task on the author's machine. Moved to a Claude Code cloud Routine on 2026-10-14.** A scheduled agent works through the open simulation requests, one a night, and leaves its work on a branch for the author to read in the morning.
 
-> **It runs simulations and publishes nothing. The 03:00 outreach agent posts in public and runs no simulations.** That separation was ruled on 2026-08-25 and this agent keeps it.
+> **It runs simulations and publishes nothing. The 03:00 outreach agent posts in public and runs no simulations.** That separation was ruled on 2026-08-25 and this agent keeps it. A branch of its own on `origin` is how its work reaches the author; it never pushes to `main`, never opens a pull request, never posts.
 
 | | |
 |---|---|
-| **What it may write** | Inside `06-simulation/` only. **Never `00-strategy/`, never `07-outreach/`, no `git`, no network** |
-| **Which request** | The author's pin in [`PINNED_SIM.txt`](PINNED_SIM.txt) if there is one, else **the oldest open request** |
-| **Time limit** | **One hour.** A run too big for the hour is reported as too big, which is itself useful |
+| **Where it runs** | A fresh cloud clone of this repository, in the **Aequitas Agent** cloud environment, started by the Routine **Aequitas simulation nightly** |
+| **When** | **03:49 America/Chicago**, daily. Off the hour on purpose, so it does not queue behind every other 04:00 routine. Change it in the Routine, not here |
+| **What it may write** | Inside `06-simulation/` only. **Never `00-strategy/`, never `07-outreach/`** |
+| **What it may push** | Its own branch, **`sim-nightly/<date>`**, and only paths under `06-simulation/`. Nothing else, ever |
+| **Which request** | The author's pin in [`PINNED_SIM.txt`](PINNED_SIM.txt) if there is one, else **the oldest open request in [`SIM_QUEUE.yaml`](SIM_QUEUE.yaml)** that no report in `log/` has run |
+| **Where the requests come from** | [`SIM_QUEUE.yaml`](SIM_QUEUE.yaml), the **committed** copy of the open requests. The live index in `07-outreach/` is never committed, so the cloud clone cannot see it. **Refresh the queue locally and commit it** |
+| **Time limit** | **One hour**, self-enforced. A run too big for the hour is reported as too big, which is itself useful |
+| **What it needs** | numpy, scipy, PyYAML, openpyxl, installed by [`.claude/hooks/session-start.sh`](../.claude/hooks/session-start.sh) when the session starts. **`data/` is not in the clone**, so a request that needs it is reported as Blocked |
 | **Closing a request** | **The author does it**, after reading the report. The agent is forbidden from running `answer-sim` |
 | **Its brief** | [`SIM_AGENT_BRIEF.md`](SIM_AGENT_BRIEF.md) — the boundary, and the two rules that decide whether a run is worth anything |
-| **Its report** | `log/SIM-<date>.md`. Raw transcripts in `log/runs/` |
+| **Its prompt** | [`SIM_NIGHTLY_PROMPT.md`](SIM_NIGHTLY_PROMPT.md). The Routine's own message only tells the agent to read it |
+| **Its report** | `log/SIM-<date>.md`, on the branch. The session transcript is in the Claude app, under the Routine's runs |
 
-**Commands you will actually use:**
-
-```bash
-python 06-simulation/bin/pick_sim.py --list
-```
+**Commands you will actually use, on your own machine:**
 
 ```bash
-python 06-simulation/bin/pick_sim.py
+python 06-simulation/bin/pick_sim.py --export   # refresh SIM_QUEUE.yaml from the live index, then commit it
+python 06-simulation/bin/pick_sim.py --list     # every open request, oldest first; marks the ones with a report
+python 06-simulation/bin/pick_sim.py            # what tonight would pick
 ```
 
-**To pin one**, put its id on its own line in [`PINNED_SIM.txt`](PINNED_SIM.txt). **To clear the pin**, delete that line.
+**Run the export after filing a request and after closing one.** The agent only sees what is committed on `main`.
 
-**Dry check, builds the prompt and does not start the agent:**
+**To pin one**, put its id on its own line in [`PINNED_SIM.txt`](PINNED_SIM.txt) and commit. **To clear the pin**, delete that line and commit.
 
-```bash
-powershell -ExecutionPolicy Bypass -File 06-simulation/bin/run_sim_night.ps1 -NoAgent
-```
+**In the morning:** read `log/SIM-<date>.md` on `sim-nightly/<date>`, merge the branch if the night is worth keeping, run the `answer-sim` command the report ends with, then re-export the queue. A night not worth keeping is deleted with its branch.
+
+**The old local task** is unregistered with `powershell -ExecutionPolicy Bypass -File 06-simulation/bin/install_sim_task.ps1 -Remove`. Do that once, so the two never run the same request on the same night.
 
 ---
 
