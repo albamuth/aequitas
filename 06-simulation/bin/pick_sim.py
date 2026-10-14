@@ -14,10 +14,10 @@ produce which result.
 Where the requests come from (changed 2026-10-14, when the agent moved to a
 cloud session):
 
-    1. 06-simulation/SIM_QUEUE.yaml  -- the committed copy. The cloud agent
-       runs in a fresh clone and this is the only source it has.
-    2. 07-outreach/memory/index.yaml -- the live index, present only on the
-       author's machine. Used when the queue file is absent.
+    1. 07-outreach/memory/index.yaml -- the live index. Present on the
+       author's machine, never in the public mirror. Preferred when it exists.
+    2. 06-simulation/SIM_QUEUE.yaml  -- the committed copy. The cloud agent
+       runs in a fresh clone of the mirror, and this is the only source it has.
 
 `--export` writes the queue file FROM the live index. The author runs it
 locally and commits the result, after filing or closing a request.
@@ -102,8 +102,8 @@ def load(path):
 
 
 def load_source():
-    """(index, which) -- the queue file if present, else the live index."""
-    for path in (QUEUE, INDEX):
+    """(index, which) -- the live index if present, else the committed queue."""
+    for path in (INDEX, QUEUE):
         if path.exists():
             return load(path), path
     raise FileNotFoundError(f"neither {QUEUE} nor {INDEX} exists")
