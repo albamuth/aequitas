@@ -68,7 +68,19 @@ python 06-simulation/bin/pick_sim.py            # what tonight would pick
 
 **To pin one**, put its id on its own line in [`PINNED_SIM.txt`](PINNED_SIM.txt) and commit. **To clear the pin**, delete that line and commit.
 
-**In the morning:** read `log/SIM-<date>.md` on `sim-nightly/<date>`, merge the branch if the night is worth keeping, run the `answer-sim` command the report ends with, then re-export the queue. A night not worth keeping is deleted with its branch.
+**Where the agent works, and why the morning has one extra step.** This public repository is a mirror. `07-outreach/bin/sync_archive.ps1` copies four folders from the private project into it and **deletes anything in them the private project does not have.** The agent clones and pushes here, so its night's work exists only here until it is brought into the private project. **Bring it over before the next sync, or the sync erases it.** The same holds for the agent's own files in this folder: they are kept in the private project's `06-simulation/` so the sync carries them.
+
+**In the morning, in the private project:**
+
+```bash
+git fetch https://github.com/albamuth/aequitas sim-nightly/<date>
+git cherry-pick FETCH_HEAD                      # the night's commit, into the private project
+python 07-outreach/bin/memory.py answer-sim <id> --file 06-simulation/<project>/RESULTS.md
+python 06-simulation/bin/pick_sim.py --export   # the queue, minus the request just closed
+git commit -am "sim night <date> folded; queue refreshed"
+```
+
+Then sync the mirror as usual. A night not worth keeping is not cherry-picked, and its branch is deleted.
 
 **The old local task** is unregistered with `powershell -ExecutionPolicy Bypass -File 06-simulation/bin/install_sim_task.ps1 -Remove`. Do that once, so the two never run the same request on the same night.
 
