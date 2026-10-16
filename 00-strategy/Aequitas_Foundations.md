@@ -1,7 +1,7 @@
 <!-- tag: fnd-aequitas-foundations-and-long-term -->
 # Aequitas — Foundations & Long-Term Strategy
 
-> **Version:** 0.59
+> **Version:** 0.60
 > **Date:** 2026-10-16
 > **Status:** Working foundations.
 > **Primary audience of the first paper:** technologists and implementers.
@@ -91,7 +91,7 @@ Aequitas makes the narrower and far more defensible claim. **Cost is what a thin
 
 > **On the credit side, the substance is *time* — and time, not effort**. A credit records *time a human spent*, and the conceptual leap Aequitas asks of a reader is to see time itself as the finite thing being spent — like money is "spent" today, except that time is possessed by every person in exactly equal measure (24 hours a day) and can be neither hoarded, lent, nor transferred (A3 (non-fungibility)). Money accumulates without limit; time structurally cannot — you get 24 hours a day and no more, ever, and you cannot buy anyone else's. Effort, hazard, and skill are real differences between workers, but they resolve as *material* costs (A2 (time as measure)), never as a time-multiplier. **So the spread of credit between two people is bounded by arithmetic, and what credit buys is the say over what gets made** (§4.6, §5.5.5). *(That bound is conditional and is an absolute maximum rather than an expected spread; at `F` = 10 a very hard working life reaches about 1.6×, not 2.4×. See §5.5.5.)*
 
-> **Credit is not wealth, and this document bounds no one's wealth.** Wealth is an accrual of material gains and property, and in these books property is **debit** (§3.2, §4.5). How much property a person can hold is set by the gate `D ≤ ρ·(C + P)` (§3.0), and `P`, the room other people have pledged to them, has no per-account limit (§5.5.5). **So a person with many pledges behind them can hold more than a person with none, by any amount the pledgers' budgets allow.** What makes that different from money is that pledged room is a one-time grant that cannot be lent, rented, charged for, or used to hire anybody (§5.5.5), and every hour of it was earned by a verified person who spent it once (§4.6).
+> **Credit is not wealth, and this document bounds no one's wealth.** Wealth is an accrual of material gains and property, and in these books property is **debit** (§3.2, §4.5). How much property a person can hold is set by the gate `D ≤ ρ·(C + P)` (§3.0), and `P`, the backing other people have pledged to them, has no per-account limit (§5.5.5). **So a person with many pledges behind them can hold more than a person with none, by any amount the pledgers' budgets allow.** What makes that different from money is that backing is a one-time grant that cannot be lent, rented, charged for, or used to hire anybody (§5.5.5), and every hour of it was earned by a verified person who spent it once (§4.6).
 
 Everything downstream — no capitalism, no rent, no taxation, no externalities, no inflation — is a *consequence* of taking the cost rule seriously and applying it without exception.
 
@@ -497,7 +497,7 @@ A shop holds a bicycle. Its record carries **18 kg** of steel and aluminium, **4
 
 **A convention that is declared is not an ad-hoc rule. A convention disguised as a measurement is.** That is the whole reason this section exists: **every choice the system makes is named here rather than buried in an implementation.**
 
-> **A figure computed at a network setting is printed beside that setting.** The settings are the ones §2.6 lists, such as the floor `F` and the debit tolerance ρ. **At `F` = 10 and ρ = 1.2 the floor alone opens 4,380 h of room a year, against a median lifestyle of 1,380 h. At `F` = 2 it opens 876 h.** So "the gate never binds" is true at the first setting and false at the second, and a sentence that drops the setting reads as a fact about every network.
+> **A figure computed at a network setting is printed beside that setting.** The settings are the ones §2.6 lists, such as the floor `F` and the debit tolerance ρ. **At `F` = 10 and ρ = 1.2 the floor alone balances 4,380 h of debit a year, against a median lifestyle of 1,380 h. At `F` = 2 it balances 876 h.** So "the gate never binds" is true at the first setting and false at the second, and a sentence that drops the setting reads as a fact about every network.
 
 **The third move is the strongest of the three and should be tried first.** §3.4a is the case: a joint process's energy was not spent partly on one output and partly on another, **it was spent entirely on both**, so there is no fraction to find and no convention needed to stand in for one. **A convention is what you declare when a division is genuinely required. It is not what you declare to avoid noticing that one is not.**
 
@@ -605,23 +605,23 @@ Trust networks operate in the real world and must deal with governments, courts,
 > **A person's ledger is three numbers, side by side.**
 > **`C`, their credit — every hour of their life the books have recorded as work.**
 > **`D`, their debit — every hour their consumption is currently reckoned to cost, once the bundle of physical quantities is converted at today's weightings.**
-> **`P`, their committed room — every hour other people have pledged to them by name.**
+> **`P`, their backing — every hour other people have pledged to them by name.**
 
-**None of the three is a currency, so they never cancel each other.** Nothing is netted, nothing is spent, and **no fourth number is produced by subtracting one from another.** A ledger is a way of looking at one person's consumption beside their work done and the room others have put behind them, and that is the whole of it.
+**None of the three is a currency, so they never cancel each other.** Nothing is netted, nothing is spent, and **no fourth number is produced by subtracting one from another.** A ledger is a way of looking at one person's consumption beside their work done and the backing others have put behind them, and that is the whole of it.
 
 **Two things follow immediately, and the rest of §3 depends on both.**
 
 **1. All three numbers only ever rise.** A purchase adds to `D` and takes nothing from `C`, because credit is not something you hand over (A3). A pledge adds to the recipient's `P` and is never taken back (§4.6). There is no stored lump to draw down and nothing to run out of.
 
-**2. So they are compared as a ratio, never as a balance.** A trust network's consumption gate is:
+**2. So credit balances debit as a ratio, and nobody holds a balance.** *Balances* is a verb here: credit stands against debit, up to a multiple the network sets. *A balance*, a stored number that could be drawn down, does not exist (A6). A trust network's consumption gate is:
 
 > **`D ≤ ρ·(C + P)`**
 
-where **ρ** (said "rho") is a multiplier the network sets, called its **debit tolerance** (§3.5, §5.5). At ρ = 1.2, a person may carry debit up to 1.2 times their recorded credit plus the room pledged to them.
+where **ρ** (said "rho") is a multiplier the network sets, called its **debit tolerance** (§3.5, §5.5). At ρ = 1.2, a person may carry debit up to 1.2 times their recorded credit plus the backing pledged to them.
 
-**ρ multiplies both terms, and that is not a detail.** A2 says one hour credits as one hour, whoever worked it. **Write the gate `ρ·C + P` instead and a pledged hour buys less room than a worked one, which is a rate distinction between two hours.** It also puts pledged room beyond ρ's reach, leaving a network no instrument to ration with (§4.6, §5.5.3).
+**ρ multiplies both terms, and that is not a detail.** A2 says one hour credits as one hour, whoever worked it. **Write the gate `ρ·C + P` instead and a pledged hour balances less debit than a worked one, which is a rate distinction between two hours.** It also puts backing beyond ρ's reach, leaving a network no instrument to ration with (§4.6, §5.5.3).
 
-**`P` counts committed room only.** A pledge naming a fund, a cause or an organisation grants nothing to anybody until it names a person (§4.6).
+**`P` counts committed backing only.** A pledge may be made to a fund, a cause, a company or a municipality, and it backs nobody until it is distributed to a named person (§4.6).
 
 **None of the three is stored anywhere.** All are recomputed from the event log whenever anyone asks (A6, §3.1), so a better weighting model changes `D` for everybody, backwards through history (§3.3).
 
@@ -629,7 +629,7 @@ where **ρ** (said "rho") is a multiplier the network sets, called its **debit t
 
 Three people, all aged 40, in a network with a floor of 10 hours a day and ρ = 1.2. **A median lifestyle commands about 1,380 hours of other people's labour a year** (§3.5).
 
-| | Credit `C` | Committed room `P` | Debit `D` | Room left, `ρ·(C + P) − D` |
+| | Credit `C` | Backing `P` | Debit `D` | May still carry, `ρ·(C + P) − D` |
 |---|---|---|---|---|
 | **A — stays alive, and works 1,000 h a year** | 40 × (3,650 + 1,000) = **186,000 h** | 0 | 40 × 1,380 = **55,200 h** | **168,000 h** |
 | **B — stays alive, works nothing, consumes the same** | 40 × 3,650 = **146,000 h** | 0 | **55,200 h** | **120,000 h** |
@@ -778,7 +778,7 @@ A grocery co-op of **ten members**, each working **2,000 hours** a year, buys **
 > **Two things follow, and neither needs a rule.**
 >
 > - **A fossil generator becomes hard to staff and a clean one easy.** Nobody has to forbid coal. **The people who would have to run the plant carry what it emits.**
-> - **The cushion is pledges, and it is the ordinary one.** A community that wants power pledges toward it, which grants the generator's members permanent debit-room (§4.6, §4.5). **A generator society will not pledge for is a generator society will not staff.**
+> - **The cushion is pledges, and it is the ordinary one.** A community that wants power pledges toward it, which backs the generator's members, permanently (§4.6, §4.5). **A generator society will not pledge for is a generator society will not staff.**
 >
 > **Transmission losses stay with the generator and the network operator**, and now trivially so: that power was never handed to anyone, and the fuel that made it was theirs. **Worked: at a 7% loss, generators burn fuel for `300 ÷ 0.93 =` 323 kWh so that 300 kWh arrives. The 23 kWh difference is theirs.**
 >
@@ -865,7 +865,7 @@ Two consequences worth stating. **(1)** This is one mechanism, not two: atmosphe
 
 So a coverage figure is a dated reading with a stated basis, exactly like every other estimate here — and when the science improves, **every affected ledger recalculates.** This costs nothing structurally, because the ledger is derived from the log and never stored (A6): recomputation is not a repair, it is how the system normally runs. And it means the fecundity loop closes for coverage as well: **improving the estimate of the dark is credited work — a measurement of a region is work like any other — recorded** *in the same ledger the estimate corrects*.
 
-> **The transaction-time rule.** Because figures move, the gate must not. **`D ≤ ρ·(C + P)` is evaluated at the moment of the transaction.** A later re-weight, re-split, or coverage revision changes **future** debit-room; it never retroactively invalidates a completed act.
+> **The transaction-time rule.** Because figures move, the gate must not. **`D ≤ ρ·(C + P)` is evaluated at the moment of the transaction.** A later re-weight, re-split, or coverage revision changes what a person may carry in **future**; it never retroactively invalidates a completed act.
 >
 > Without this, a dynamic ledger implies retroactive liability — a revision could make a past purchase an offence — and no one should adopt a system that does that. Re-weighting corrects *the record of what things cost*; it does not reopen *what people were permitted to do* under the record as it then stood.
 
@@ -1507,7 +1507,7 @@ A network publishes its rule for translation work: **the translated text exists,
 
 **A network with lax checking therefore cannot export the credit it issues.** Whoever trades with its members discounts it.
 
-> **⚠️ That guard depends on OP-22, the open problem of minimum audit disclosure.** Re-computing what backs a claim means seeing what backs it, and personal ledgers are private (§4.7). The guard needs *"this pledge is backed by X hours recorded under weighting model M"* to be provable without revealing the history. **The market check on a lax network is only as real as that mechanism, and the mechanism does not exist yet.**
+> **⚠️ That guard depends on OP-22, the open problem of minimum audit disclosure.** Re-computing what a claim is drawn from means seeing it, and personal ledgers are private (§4.7). The guard needs *"this pledge is drawn from X hours recorded under weighting model M"* to be provable without revealing the history. **The market check on a lax network is only as real as that mechanism, and the mechanism does not exist yet.**
 
 #### What subscribing discloses, and what it does not
 
@@ -1660,7 +1660,7 @@ An attacker invents **2.0 kg** of a good arriving from nowhere, and **2.0 kg** o
 
 ##### An example, with the numbers
 
-**A person joins at forty and the network estimates their declared span back to the earliest date its evidence permits.** In a network with `F` = 10 h/day and ρ = 1.2, each declared year opens `1.2 × 10 × 365 =` **4,380 hours** of room and adds about **1,380 hours** of consumption, so an honest year is worth **+3,000 hours** (below).
+**A person joins at forty and the network estimates their declared span back to the earliest date its evidence permits.** In a network with `F` = 10 h/day and ρ = 1.2, each declared year's credit balances `1.2 × 10 × 365 =` **4,380 hours** of debit and adds about **1,380 hours** of consumption, so an honest year is worth **+3,000 hours** (below).
 
 **Eight years later a baptismal register turns up showing they were born three years later than the estimate.**
 
@@ -1668,7 +1668,7 @@ An attacker invents **2.0 kg** of a good arriving from nowhere, and **2.0 kg** o
 |---|---|
 | The original estimated span | **not edited, not deleted** |
 | The register | **appended beside it**, dated and attributed |
-| The person's position | **re-derived from the log** (A6), so three years of room and consumption come off |
+| The person's position | **re-derived from the log** (A6), so three years of credit and consumption come off |
 | What the procedure decided | **who could file the register, and what the books did for the eight years in between** |
 
 **In plain words: the append-only rule settles where the record ends up, and the procedure settles how it got looked at.** Without the second, the first describes an outcome nobody can reach.
@@ -1917,16 +1917,16 @@ A median lifestyle commands about **1,380 hours** of other people's labour a yea
 
 **Conditions 1 and 2 both err *against* the party, and condition 3 cannot be written that way, because which direction is against them changes with the network's own settings.**
 
-**Each declared year does two things at once.** It opens `ρ·F·365` hours of consumption room, and it adds a year of consumption to the debit — about **1,380 hours** at the median lifestyle this document uses (§3.5).
+**Each declared year does two things at once.** Its credit balances `ρ·F·365` hours of debit, and it adds a year of consumption to the debit — about **1,380 hours** at the median lifestyle this document uses (§3.5).
 
 **Worked at two conforming settings.**
 
-| The network | Room a year opens, `ρ·F·365` | Debit a year adds | An honest year is worth |
+| The network | Debit a year's credit balances, `ρ·F·365` | Debit a year adds | An honest year is worth |
 |---|--:|--:|--:|
 | `F` = 10 h/day, ρ = 1.2 | 4,380 h | 1,380 h | **+3,000 h** |
 | `F` = 2 h/day, ρ = 1.0 | 730 h | 1,380 h | **−650 h** |
 
-**Break-even is `ρ·F` = 1,380 ÷ 365 = 3.78 hours a day.** Above it a longer span pays and nobody shortens one. **Below it a filer gains 650 hours of room for every year of their own life they delete** — and **§5.5.3 states that the workable band never closes between `F` = 1 and `F` = 14**, so a network at `F` = 2 is conforming.
+**Break-even is `ρ·F` = 1,380 ÷ 365 = 3.78 hours a day.** Above it a longer span pays and nobody shortens one. **Below it a filer may carry 650 hours more for every year of their own life they delete** — and **§5.5.3 states that the workable band never closes between `F` = 1 and `F` = 14**, so a network at `F` = 2 is conforming.
 
 > **In plain words: "err against the party" has no fixed meaning here, because the same act helps a filer in one conforming network and harms them in another.** *The earliest date the evidence allows* is the same instrument on both sides of 3.78, which is why condition 3 names it.
 
@@ -1934,7 +1934,7 @@ A median lifestyle commands about **1,380 hours** of other people's labour a yea
 
 *(Reached by the outreach agent's own drafting council on 2026-09-14 from **@coywolf**'s question at c58595 — *"what does an honest span buy the filer that a shortened one doesn't?"* — and answered in public before the ruling.)*
 
-> **Why the two sides are not treated alike, and it is not a preference.** **Over-estimating somebody's debit consumes nothing** — it costs them room they were not using. **Over-estimating their credit hands out real consumption room on the strength of a guess about production.** The two errors are the same shape and have opposite consequences, **which is why a position only starts acting on what a person may consume once observation has replaced the estimate** (A7).
+> **Why the two sides are not treated alike, and it is not a preference.** **Over-estimating somebody's debit consumes nothing** — it lowers what they may carry by an amount they were not using. **Over-estimating their credit lets them carry real consumption on the strength of a guess about production.** The two errors are the same shape and have opposite consequences, **which is why a position only starts acting on what a person may consume once observation has replaced the estimate** (A7).
 
 > **Credit is issuable backwards, and this is where that happens.** When a person joins, their earlier real contributions enter the record **at the dates they occurred**, not at the date they joined.
 
@@ -1967,11 +1967,11 @@ A median lifestyle commands about **1,380 hours** of other people's labour a yea
 
 **It is verified by proof of life** (§4.2), which is the strongest evidence there is and costs almost nothing to check.
 
-**Its size is a network choice with a bound at each end, not a free dial.** Which activities count, and how many hours each takes, is set by each network (§5.5.1). **The value must be high enough that essentials stay affordable and low enough that the consumption gate still rations what is genuinely short.** Generosity here is product differentiation rather than a rule anyone imposes, **and it cannot be exported**, because a counterparty re-computes the backing through its own model (§4.2).
+**Its size is a network choice with a bound at each end, not a free dial.** Which activities count, and how many hours each takes, is set by each network (§5.5.1). **The value must be high enough that essentials stay affordable and low enough that the consumption gate still rations what is genuinely short.** Generosity here is product differentiation rather than a rule anyone imposes, **and it cannot be exported**, because a counterparty re-computes what stands behind it through its own model (§4.2).
 
 #### Training is paid when it happens, and never charged to anyone later
 
-**A student is credited for their time while training.** The debit of training — teachers' time, facilities, materials — **is carried during the training years**, cushioned by the debit-room that pledgers grant for it (§4.6).
+**A student is credited for their time while training.** The debit of training — teachers' time, facilities, materials — **is carried during the training years**, cushioned by the backing pledgers grant for it (§4.6).
 
 > **Nothing is charged downstream.** A doctor's care costs the recipient the doctor's time, the material cost of running the clinic, and the medicines dispensed. **The doctor's education is not in that bill.** It was underwritten up front, by the people who wanted doctors to exist.
 
@@ -1979,7 +1979,7 @@ A median lifestyle commands about **1,380 hours** of other people's labour a yea
 
 ##### The general rule this is the first case of
 
-> **A large up-front cost with a diffuse benefit is carried where it is incurred, and cushioned at that time by the debit-room the people who pledged for it grant. It is never charged onward to whoever happens to consume the result.**
+> **A large up-front cost with a diffuse benefit is carried where it is incurred, and cushioned at that time by the backing of the people who pledged for it. It is never charged onward to whoever happens to consume the result.**
 
 **It covers education, media and creative production, research, infrastructure, tooling, and capital.**
 
@@ -1993,7 +1993,7 @@ A median lifestyle commands about **1,380 hours** of other people's labour a yea
 
 **A building, plant or tool holds its creation-cost as debit on the asset itself.** That debit settles in three steps.
 
-1. **Pledges grant the holders debit-room to carry it.** A pledge does not reduce the creation-cost. **It is a permanent grant of room**, drawn from the pledger's finite lifetime pledging budget (§4.6). **A facility is built at the scale the community will pledge for**, so pledges are both the authorisation and the brake.
+1. **Pledges back the holders, so that they may carry it.** A pledge does not reduce the creation-cost. **It is permanent backing**, drawn from the pledger's finite lifetime pledging budget (§4.6). **A facility is built at the scale the community will pledge for**, so pledges are both the authorisation and the brake.
 2. **The full creation-cost is shared among the asset's holders by how long each held it.** Each holder's permanent share is their holding time divided by the total holding time over the asset's whole life. **Pledges cushion the bite; they never shrink the debit, because nothing may vanish** (A1).
 3. **The basic-needs floor caps how hard any remainder bites** (§5.5).
 
@@ -2042,7 +2042,7 @@ A median lifestyle commands about **1,380 hours** of other people's labour a yea
 
 1. **No account may claim more than 24 hours of activity in 24 hours.** The press only runs so fast.
 2. **Weak evidence weighs near zero until something corroborates it.** Self-asserted, unwitnessed work carries the weakest basis and the lowest confidence, so a cautious weighting values it near zero. **This is an incentive rather than an enforcement rule: vagueness is cheap to assert and cheap to hold.**
-3. **Pledges bound what anyone will underwrite.** Someone generating unwanted volume at scale attracts no pledges, and a pledge is the only thing that moves a claim from asserted to backed.
+3. **Pledges bound what anyone will underwrite.** Someone generating unwanted volume at scale attracts no pledges, and a pledge is the only thing that moves a claim from asserted to pledged-for.
 
 > **Read mechanism 2 alongside §4.2, because the two are easily confused.** Cautious weighting decides **how much a claim weighs inside a rule the network has already published.** It never stands in for a rule that was never written. **A network weighting a whole class of real work near zero has written the wrong rule, or has failed to write one.**
 
@@ -2065,36 +2065,36 @@ A median lifestyle commands about **1,380 hours** of other people's labour a yea
 
 #### Pledges and signals, told apart by one test
 
-> **Is it backed one-for-one by credit the person already earned?**
+> **Is it paid for, one hour for one hour, from credit the person already earned?**
 
 | | **A pledge** | **A signal** |
 |---|---|---|
 | Says | *"I authorise this work"* | *"I want this to exist"* |
-| Backed by | **earned credit, one hour for one hour** | nothing |
+| Drawn from | **earned credit, one hour for one hour** | nothing |
 | Rate | **A finite lifetime budget, equal to lifetime earned credit, spent once** | Many per hour earned, or unbounded |
 | Permanence | **Permanent and non-revocable** | — |
 | Looks like | Crowdfunding, commissioning a task, choosing a GP | Likes, ratings, applause |
 
 **A pledge authorises creditable work. It need not involve an object and need not move any debit.** A resident who has earned 4 hours pledges 2 toward mowing the public verge. Someone with a mower sees the pledge, mows for an hour, submits evidence, **and is credited 1 hour. One pledged hour remains for a later mow.** No object changed hands and no debit moved. **The pledge summoned an hour of creditable work, and drew an hour from the pledger's lifetime budget to do it. The underlying credit never moved.**
 
-##### What a pledge names, and when it becomes room
+##### What a pledge names, and when it becomes backing
 
 > **A pledge names a person, or it names the criteria under which a person will be named.**
 >
-> **Until a person is named the pledge is uncommitted, and it grants room to nobody.**
-> **Once a person is named the room is committed, consumable, and unchangeable.**
+> **Until a person is named the pledge is uncommitted, and it backs nobody.**
+> **Once a person is named the backing is committed, consumable, and unchangeable.** Whoever fulfils the pledge's conditions gets the backing.
 
-| What the pledge names | When it becomes room |
+| What the pledge names | When it becomes backing |
 |---|---|
 | **A person** — anyone, **including the pledger** | **At once** |
 | **A fund, a cause, an initiative, an organisation** | **Only when it is distributed to named people.** Until then it sits in nobody's gate |
 | **Criteria that will name a person** — *"whoever mitigates harm from this task"*, *"whoever a panel judges to have solved this"* | **When the criteria name somebody.** If they never do, it lapses |
 
-**The pledger's budget is spent at pledge time in every one of those rows**, and there is no path that returns it. **An undistributed pledge lapses**, so a fund that never distributes has spent its pledgers' budgets and created no room.
+**The pledger's budget is spent at pledge time in every one of those rows**, and there is no path that returns it. **An undistributed pledge lapses**, so a fund that never distributes has spent its pledgers' budgets and backed nobody.
 
-**Where a pledge states no criteria, room distributes by hours worked on the work it named.** That is not a preference. **A1 rules out the fund itself, because only people act. A2 rules out every basis that weighs one worker's hour above another's** — skill, rank, seniority, need. **And §4.4's rule against dividing by a head count rules out an equal split**, for the same reason: a head count leaves no physical trace. **Hours worked is what is left, and §3.2c already divides by it.**
+**Where a pledge states no criteria, the backing distributes by hours worked on the work it named.** That is not a preference. **A1 rules out the fund itself, because only people act. A2 rules out every basis that weighs one worker's hour above another's** — skill, rank, seniority, need. **And §4.4's rule against dividing by a head count rules out an equal split**, for the same reason: a head count leaves no physical trace. **Hours worked is what is left, and §3.2c already divides by it.**
 
-**Criteria may be any conditional thing, including a judging panel.** A prize for solving a hard problem is exactly this: many people pledge toward a stated achievement, a panel decides who reached it, and the room commits to them. **No objective rule stated in advance could replace the panel**, because nobody can write criteria for *"solved a problem nobody has solved."*
+**Criteria may be any conditional thing, including a judging panel.** A prize for solving a hard problem is exactly this: many people pledge toward a stated achievement, a panel decides who reached it, and the backing commits to them. **No objective rule stated in advance could replace the panel**, because nobody can write criteria for *"solved a problem nobody has solved."*
 
 > **The one condition: criteria are published before the pledge is made.** §4.2 already requires a network to publish its evidence rules before anyone joins, and A8 already requires it to publish what it runs. **A pledger choosing a fund is choosing a published rule**, and a fund that changes its criteria after collecting pledges is visible on a public pledge ledger (§4.7).
 
@@ -2106,13 +2106,13 @@ A median lifestyle commands about **1,380 hours** of other people's labour a yea
 
 **Who can consent, and to what, is the network's decision** (§2.6).
 
-**Why exactly one for one.** Pledges are permanent debit-room granted to other people. **Let the total exceed the pledger's own earned credit and you get more permanent room across the network than anybody's credit can stand behind.** That is a solvency constraint rather than a preference. **It is also the only stable value**: above one, pledging power grows until pledges filter nothing; below one, the directed economy shrinks to zero.
+**Why exactly one for one.** Pledges are permanent backing granted to other people. **Let the total exceed the pledger's own earned credit and you get more permanent backing across the network than anybody's credit can stand behind.** That is a solvency constraint rather than a preference. **It is also the only stable value**: above one, pledging power grows until pledges filter nothing; below one, the directed economy shrinks to zero.
 
-**And that one-for-one backing is what bounds the whole system's room.** Committed room across a network can never exceed the credit its subscribers earned, so **total room reaches at most `2·ρ·C_total` and never more.** The factor is 2 at every value of ρ. **A network must therefore choose ρ knowing pledges can double its gate** (§5.5.3). **What that does to an economy, and why it cannot produce a price spiral, is worked in full in [`../02-research/Problem_pledge-inflation.md`](../02-research/Problem_pledge-inflation.md)** — the short form is that inflation needs a seller who raises the number, and A5 leaves no price to raise.
+**And that one-for-one rule is what bounds the backing in the whole system.** Committed backing across a network can never exceed the credit its subscribers earned, so **what all its subscribers may carry together reaches at most `2·ρ·C_total` and never more.** The factor is 2 at every value of ρ. **A network must therefore choose ρ knowing pledges can double its gate** (§5.5.3). **What that does to an economy, and why it cannot produce a price spiral, is worked in full in [`../02-research/Problem_pledge-inflation.md`](../02-research/Problem_pledge-inflation.md)** — the short form is that inflation needs a seller who raises the number, and A5 leaves no price to raise.
 
 **Because the budget is spent once and never refunded, pledging is a real sacrifice.** Someone pumping influence can no longer pledge for free, and farming a task requires real verified colluders each burning their own finite budget, **visible on a public pledge ledger.**
 
-> **A budget cannot be manufactured.** It equals credit the pledger earned, and IC-7 caps an account at 24 hours of activity in 24 hours. **To hand somebody a million hours of room you need real, verified humans who each lived a life.** So concentration of room is bounded by the population and nothing else, which §5.5.5 states.
+> **A budget cannot be manufactured.** It equals credit the pledger earned, and IC-7 caps an account at 24 hours of activity in 24 hours. **To back somebody with a million hours you need real, verified humans who each lived a life.** So concentration of backing is bounded by the population and nothing else, which §5.5.5 states.
 
 **Why signals should be plentiful.** Under one-for-one you can only signal for as much as you personally worked, so you signal your top priorities and the system learns nothing about your second tier. **Cheap, abundant signals reveal the whole ordering rather than only its top slice.**
 
@@ -2128,7 +2128,7 @@ A median lifestyle commands about **1,380 hours** of other people's labour a yea
 
 **So a network may offer routing, and it may not apply it.** A network can offer a standing pledge toward basic-needs work at subscription, and a subscriber can accept it, refuse it, or take part of it. **A subscriber who is never asked, or who cannot consent, has made no standing pledge**, and their budget stays theirs to direct. An infant is the clear case, by the paragraph above.
 
-**A standing pledge to a sector grants room to nobody until its criteria name a person**, as the table above says of any pledge to a fund or a cause.
+**A standing pledge to a sector backs nobody until its criteria name a person**, as the table above says of any pledge to a fund or a cause.
 
 ###### An example, with the numbers
 
@@ -2146,11 +2146,11 @@ A median lifestyle commands about **1,380 hours** of other people's labour a yea
 
 **⚠️ A network that offers one standing pledge to every subscriber writes the criteria for a large share of the population's budget.** That is a coordinator with real power over what gets made, and it is the same P4 (coordinator class) surface as the large discretionary fund above. **Publishing the criteria before anyone accepts makes that power visible. It does not remove it.**
 
-**Consent gates the hours. It does not gate the list.** The same network also writes the list of which needs count, and writing a list is a signal: it is backed by nothing, spends nobody's budget, and needs nobody's consent (the table above). **So the signal leg is the same P4 surface through a second door, and consent closes only the pledge leg.** A network of 1,000,000 subscribers at `F` = 10 accrues 3.65 × 10⁹ h of budget a year; if 60% accept the offered standing pledge (an illustrative share), 2.19 × 10⁹ h of consented room is directed by criteria one party wrote. The public pledge ledger (§4.7) shows what each listed need received. **It cannot show a need that was never listed.**
+**Consent gates the hours. It does not gate the list.** The same network also writes the list of which needs count, and writing a list is a signal: it is drawn from nothing, spends nobody's budget, and needs nobody's consent (the table above). **So the signal leg is the same P4 surface through a second door, and consent closes only the pledge leg.** A network of 1,000,000 subscribers at `F` = 10 accrues 3.65 × 10⁹ h of budget a year; if 60% accept the offered standing pledge (an illustrative share), 2.19 × 10⁹ h of consented backing is directed by criteria one party wrote. The public pledge ledger (§4.7) shows what each listed need received. **It cannot show a need that was never listed.**
 
 #### Recording is never gated. Verification decides when credit counts
 
-**The work is always recorded.** An event is logged the moment work is done, so nothing is left with no origin. **What a pledge buys is authorisation and demand-room, not permission to record.**
+**The work is always recorded.** An event is logged the moment work is done, so nothing is left with no origin. **What a pledge buys is authorisation and backing, not permission to record.**
 
 **But a recorded credit only begins counting toward a person's position when the output is verified** (§4.2). **This is verification, not approval.** No committee judges the work worthy. The trigger is objective evidence that the output exists.
 
@@ -2163,11 +2163,11 @@ A median lifestyle commands about **1,380 hours** of other people's labour a yea
 - **No downstream buyer can hold a maker's credit hostage**, because credit counts at the **first** hand-off to **any** receiver. And because debit follows possession, **a would-be gatekeeper's leverage inverts**: holding goods means holding their debit, so it is motivated to pass them on.
 - **The count checks itself.** A receiver takes on the debit of exactly what they accept, **so they will never sign for units that do not exist.** The party harmed by an error is the one who catches it, and no dedicated auditor is needed.
 
-**Who carries the risk that goods do not sell.** Unsold goods are unrealised credit plus inventory debit on whoever holds them. **In speculative production the producer holds them, and the risk falls on everyone who worked the run, shared by hours worked and never dumped by rank.** In pledged production the pledges grant permanent room that can be relied on, **which removes withdrawal risk but not demand risk** — taking the finished good is always a separate act.
+**Who carries the risk that goods do not sell.** Unsold goods are unrealised credit plus inventory debit on whoever holds them. **In speculative production the producer holds them, and the risk falls on everyone who worked the run, shared by hours worked and never dumped by rank.** In pledged production the pledges are permanent backing that can be relied on, **which removes withdrawal risk but not demand risk** — taking the finished good is always a separate act.
 
 #### When a task attracts more pledges than it costs
 
-**The surplus is room like any other, and it commits to whoever the criteria name.** Where the criteria are silent it commits to the doers, by hours worked on that task.
+**The surplus is backing like any other, and it commits to whoever the criteria name.** Where the criteria are silent it commits to the doers, by hours worked on that task.
 
 **Aequitas does not decide what those criteria are, and a network does.** The example below is what a network would rule on, not a rule this document imposes.
 
@@ -2193,7 +2193,7 @@ A median lifestyle commands about **1,380 hours** of other people's labour a yea
 
 **What this buys.** Onerousness has two halves. **Society de-risks the toxic-cleanup worker exactly to the extent it pledges for the work**, with no wage premium, no rate-scaling and no rating authority. **And the tedium half is reachable now too**, because a pledge can simply name whoever does dull work. That is a change from the earlier rule, under which only hazard left a causal tail for cover to attach to.
 
-> **A2 is untouched.** Room is not credit. **A person doing filthy work is still credited one hour per hour** (A2). What changes is how much room other people choose to grant them, **which is demand deciding rather than a rate.**
+> **A2 is untouched.** Backing is not credit. **A person doing filthy work is still credited one hour per hour** (A2). What changes is how much backing other people choose to give them, **which is demand deciding rather than a rate.**
 
 #### Why a pledge is a better demand signal than a price
 
@@ -2207,7 +2207,7 @@ A median lifestyle commands about **1,380 hours** of other people's labour a yea
 
 > **So the objection assumes the price is a clean instrument. It is not. Aequitas is not replacing an honest demand signal with a worse one. It is replacing a signal the seller helped write.**
 
-**What a pledge does that a price cannot: it cannot be advertised into existence.** It is backed by hours the pledger worked, it is spent once, and it is public. **A firm can make you want something. A firm cannot put more hours in your day.**
+**What a pledge does that a price cannot: it cannot be advertised into existence.** It is drawn from hours the pledger worked, it is spent once, and it is public. **A firm can make you want something. A firm cannot put more hours in your day.**
 
 **And the lever is far more evenly spread, which is measurable.** Money's top tail reaches about **10⁶ times** the median. **Pledging power per day lived cannot exceed 24 ÷ F**, which is about **2.4 times** at a ten-hour floor, **and that is an absolute maximum nobody reaches** (§5.5.5). **Every living person holds some.** **This is the bound the project states, and it is about the say over what gets made rather than about what anybody consumes** (§5.5.5).
 
@@ -2288,7 +2288,7 @@ A median lifestyle commands about **1,380 hours** of other people's labour a yea
 
 **A network may document its founding carefully, thinly, or not at all. All are permitted, and they differ in what they earn.** The founding record is the first thing about a network anyone can check, so it is a signal about all the rest. **Nobody has to forbid a bad founding record. It simply does not attract anyone.**
 
-**Three things bound the damage anyway.** Founding credit is capped at wall-clock hours multiplied by the number of founders, which anyone with a calendar can check. It is publicly recorded, so a later network re-computes it. **And because credit is non-transferable and consumption is gated by ratio, over-crediting founders buys only consumption room, bounded like everyone else's** (§5.5).
+**Three things bound the damage anyway.** Founding credit is capped at wall-clock hours multiplied by the number of founders, which anyone with a calendar can check. It is publicly recorded, so a later network re-computes it. **And because credit is non-transferable and consumption is gated by ratio, over-crediting founders only lets them carry more consumption, bounded like everyone else's** (§5.5).
 
 #### How a dispute resolves
 
@@ -2504,7 +2504,7 @@ Those activities are **sleeping, eating, defecating, and keeping oneself clean.*
 
 #### 5.5.3 The floor's value is an economic setting, with a bound at each end
 
-**Setting `F` is not an act of generosity.** It is the network deciding how much consumption room the act of being alive creates, and the number has to work.
+**Setting `F` is not an act of generosity.** It is the network deciding how much debit the act of being alive balances, and the number has to work.
 
 > **Set it too low and people cannot afford what they need. Set it too high and the books stop rationing anything. Finding the value that balances the economy is the network's job.**
 
@@ -2523,13 +2523,13 @@ Those activities are **sleeping, eating, defecating, and keeping oneself clean.*
 
 **Each range runs from care at the level of countries that cover everyone to care at the US level.**
 
-**Worked, with the broad basket at 965 h:** the lowest floor is 965 ÷ (1.2 × 365) = **2.2 h/day**. At `F` = 1 h/day the floor gives 1.2 × 1 × 365 = **438 h** of room, which is **527 h short**. **A network at `F` = 1 h/day has subscribers who cannot afford to eat. That network fails.**
+**Worked, with the broad basket at 965 h:** the lowest floor is 965 ÷ (1.2 × 365) = **2.2 h/day**. At `F` = 1 h/day the floor balances 1.2 × 1 × 365 = **438 h** of debit, which is **527 h short**. **A network at `F` = 1 h/day has subscribers who cannot afford to eat. That network fails.**
 
 ##### The upper bound, with the numbers
 
-**Compare the floor's room against what a year of ordinary life actually commands.** A median lifestyle commands about **1,380 hours** of other people's labour a year (§3.5).
+**Compare what the floor balances against what a year of ordinary life actually commands.** A median lifestyle commands about **1,380 hours** of other people's labour a year (§3.5).
 
-| Floor | Room from the floor alone, `ρ·F·365` at ρ = 1.2 | As a multiple of a median lifestyle |
+| Floor | Debit the floor alone balances, `ρ·F·365` at ρ = 1.2 | As a multiple of a median lifestyle |
 |---|---|---|
 | 2 h/day | 876 h | **0.63×** |
 | 4 h/day | 1,752 h | **1.27×** |
@@ -2592,7 +2592,7 @@ Those activities are **sleeping, eating, defecating, and keeping oneself clean.*
 
 **The second exists because of measurement error, not because of poverty.** A producer over-assigned for years would suffer real harm before §3.3 corrected the record — the shape of the [Post Office Horizon scandal](https://en.wikipedia.org/wiki/British_Post_Office_scandal). **The backstop caps that exposure at restricted non-essential consumption for a period, followed by correction.** It applies on the same terms to somebody found to have committed fraud (§4.7).
 
-**The floor does not require anybody to spend it on essentials.** A person may put their room toward anything they like. **The guarantee is that they can afford what they need, not that they must buy it.**
+**The floor does not require anybody to spend it on essentials.** A person may carry anything they like with it. **The guarantee is that they can afford what they need, not that they must buy it.**
 
 > **The floor is therefore not only a welfare provision. It is the error tolerance of the whole accounting.**
 
@@ -2611,13 +2611,13 @@ Those activities are **sleeping, eating, defecating, and keeping oneself clean.*
 
 ##### Why it is not a bound on consumption
 
-**Consumption is gated by `D ≤ ρ·(C + P)`, and `P` — the room other people pledged to a person — has no limit on any one account** (§3.0, §4.6). **So a much-backed person may consume far beyond `24 ÷ F` times a floor-only life, and this system does not prevent it.**
+**Consumption is gated by `D ≤ ρ·(C + P)`, and `P` — the backing other people pledged to a person — has no limit on any one account** (§3.0, §4.6). **So a much-backed person may consume far beyond `24 ÷ F` times a floor-only life, and this system does not prevent it.**
 
-> **The only limit on `P` is the population.** Committed room across a network can never exceed the credit its subscribers earned, which bounds the sum. **It does not bound one person's share of it, and nothing here does.**
+> **The only limit on `P` is the population.** Committed backing across a network can never exceed the credit its subscribers earned, which bounds the sum. **It does not bound one person's share of it, and nothing here does.**
 
-**That is an accepted property rather than a defect, and the reason is that the two kinds of wealth are not alike.** Room granted by pledges **cannot be lent at interest, rented out, charged for, or used to hire anybody**, because credit never moves (A3), nothing may be added to a cost figure (A5), and working on your own property raises that property's debit by the hours it credits (§3.2). **Property under capitalism is a machine for getting more. Pledged room is a one-time grant that lets a person hold and consume.**
+**That is an accepted property rather than a defect, and the reason is that the two kinds of wealth are not alike.** Backing **cannot be lent at interest, rented out, charged for, or used to hire anybody**, because credit never moves (A3), nothing may be added to a cost figure (A5), and working on your own property raises that property's debit by the hours it credits (§3.2). **Property under capitalism is a machine for getting more. Backing is a one-time grant that lets a person hold and consume.**
 
-**And it cannot be manufactured.** A budget is credit somebody earned, capped by IC-7 at 24 hours a day. **To hand somebody a million hours of room you need real, verified humans who each lived a life**, so concentration is bounded by how many people will back you and by nothing else.
+**And it cannot be manufactured.** A budget is credit somebody earned, capped by IC-7 at 24 hours a day. **To back somebody with a million hours you need real, verified humans who each lived a life**, so concentration is bounded by how many people will back you and by nothing else.
 
 ##### The comparison against money, which is the point
 
@@ -2675,7 +2675,7 @@ Those activities are **sleeping, eating, defecating, and keeping oneself clean.*
 3. **No fraud manufactures hours.** IC-7 caps a day at 24 hours, but collusive hand-offs could still inflate gross hours (**OP-1**, service → influence). The bound assumes that channel is controlled.
 4. **It is a statement about one network's books.** Nothing else.
    **And "per day lived" means the declared span of §4.4, condition 3** — back to the earliest date the evidence permits, with the floor credited on every day of it, and the days counted as elapsed time over human subscribers. A span that starts before the credit it carries, or a floor that stops short of the span, is a defect in the evaluator and not a hole in the bound: ten years of 24-hour credit filed before a declared birth reads 3.00× at `F` = 10 against a span that omits those years, and 2.40× once the span is extended to cover them (`06-simulation/ceiling-challenge/RESULTS.md`).
-5. **Receiving room must never raise a pledge budget.** A budget is credit the holder earned. **If room granted to a person enlarged what they could pledge, `P` would re-enter and this bound would fail exactly as the consumption claim did.**
+5. **Receiving backing must never raise a pledge budget.** A budget is credit the holder earned. **If backing enlarged what they could pledge, `P` would re-enter and this bound would fail exactly as the consumption claim did.**
 
 ##### Why condition 4 is stated as narrowly as it is
 
@@ -2687,7 +2687,7 @@ Those activities are **sleeping, eating, defecating, and keeping oneself clean.*
 
 > **The comparison against money is a fair one, and it is now a comparison of demand levers.** Money's spread reaches about **10⁶ ×** the median **within one country's own statistics** (SCF 2022 and Forbes), and whoever holds it directs what is made. The bound above is the spread of that same power within one network's own books. **Two sets of books, compared like for like.**
 
-> **⚠️ What is left open, and it is narrow.** **Floor-shopping** — joining the network with the most generous floor — is arrested by the seller choosing which network a transaction lands on (§4.0), so a network with an implausible floor loses sellers. **What still depends on OP-22 (minimum audit disclosure) is proving a *pledge's* backing across a model boundary** (§4.2). Registered, not settled.
+> **⚠️ What is left open, and it is narrow.** **Floor-shopping** — joining the network with the most generous floor — is arrested by the seller choosing which network a transaction lands on (§4.0), so a network with an implausible floor loses sellers. **What still depends on OP-22 (minimum audit disclosure) is proving what a *pledge* is drawn from across a model boundary** (§4.2). Registered, not settled.
 
 ---
 
@@ -2716,7 +2716,7 @@ Those activities are **sleeping, eating, defecating, and keeping oneself clean.*
 | **Floor-only** | 146,000 h | **10.0 h/day** | 40 × 1,380 = **55,200 h** |
 | **Maximum worker** | 350,400 h | **24.0 h/day** | 40 × 1,380 = **55,200 h** |
 
-**The maximum worker's extra credit bought no extra durable holdings. It bought room.** To convert that room into consumption, they must consume, and consuming is what raises `D` permanently.
+**The maximum worker's extra credit bought no extra durable holdings. It balances more debit.** To turn that into consumption, they must consume, and consuming is what raises `D` permanently.
 
 > **In plain words: nobody enlarges their own budget by holding things, because holding a thing raises your own debit, and nobody enlarges it by eating, because eaten things leave a permanent debit and no asset.** The only way to the wall is to work 24 hours a day for a whole life, which is the wall nobody gets to. **Being pledged to is the other way to consume more, and it raises nobody's budget** (§5.5.5, condition 5).
 
@@ -2724,7 +2724,7 @@ Those activities are **sleeping, eating, defecating, and keeping oneself clean.*
 
 #### 5.5.7 What the simulations found
 
-> **Formally stated, simulated, and stress-tested.** The formal statement and a plain-language explainer are in `06-simulation/disparity-ceiling/DISPARITY_CEILING.md`. The adversarial pass of 2026-08-14 answered all three attacks — **Methuselah** (§5.5.6 above), **dynasty and household** (a pledge budget is credit the holder earned, so **room received never enlarges what anybody can pledge**, and committed room is not transferable, so **it does not pass on death** — §5.5.5 condition 5, §4.6), and **collector** (holdings raise your own debit, so a hoard bounds itself).
+> **Formally stated, simulated, and stress-tested.** The formal statement and a plain-language explainer are in `06-simulation/disparity-ceiling/DISPARITY_CEILING.md`. The adversarial pass of 2026-08-14 answered all three attacks — **Methuselah** (§5.5.6 above), **dynasty and household** (a pledge budget is credit the holder earned, so **backing received never enlarges what anybody can pledge**, and committed backing is not transferable, so **it does not pass on death** — §5.5.5 condition 5, §4.6), and **collector** (holdings raise your own debit, so a hoard bounds itself).
 
 `06-simulation/disparity-ceiling/disparity_ceiling_sim.py`, N = 200,000, gate `D ≤ ρ·(C + P)`, credit in `[F, 24]` h/day, 7 self-tests green:
 
@@ -2747,9 +2747,9 @@ Those activities are **sleeping, eating, defecating, and keeping oneself clean.*
 `06-simulation/scenario-suite/q4_locked_ledgers.py` applies the gate to real US and world distributions under the **material-only** rule (A1, and the financial-instruments rule in §3.1), asking what fraction of people would sit past a permanent lockout — non-essential consumption held at the floor for life because their sustained footprint exceeds `ρ · 24 h/day`, **the most any human can earn on their own.**
 
 - **Stripping the financial layer collapses the top of the distribution by about 1,000×.** Money wealth reaches ~10⁶× the median, but material **consumption** only ~670× (Oxfam billionaire personal footprints), because consuming physically takes bounded time. **The spread is far smaller than the monetary one.**
-- **Only a thin slice is locked.** Material-only, about **0.1–2%** of Americans are permanently locked, ρ-dependent, around 0.5% at ρ = 1.5. **These are the ultra-consumers, not the merely rich**, and fully divesting material property does not save them, because consumption debit is permanent (§3.2). **Meanwhile about two-thirds sit below their cohort average and would gain room by joining** (§4.8).
+- **Only a thin slice is locked.** Material-only, about **0.1–2%** of Americans are permanently locked, ρ-dependent, around 0.5% at ρ = 1.5. **These are the ultra-consumers, not the merely rich**, and fully divesting material property does not save them, because consumption debit is permanent (§3.2). **Meanwhile about two-thirds sit below their cohort average and could carry more by joining** (§4.8).
 
-> **⚠️ The run assumes nobody was pledged to, and that assumption is now visible.** `ρ · 24 h/day` is what a person can earn **alone**. **Somebody with committed room `P` behind them is gated at `ρ·(C + P)` and is locked out later, or not at all** (§3.0, §5.5.5). **So the locked fraction is an upper bound and has not been recomputed with a pledge term in it.**
+> **⚠️ The run assumes nobody was pledged to, and that assumption is now visible.** `ρ · 24 h/day` is what a person can earn **alone**. **Somebody with backing `P` behind them is gated at `ρ·(C + P)` and is locked out later, or not at all** (§3.0, §5.5.5). **So the locked fraction is an upper bound and has not been recomputed with a pledge term in it.**
 
 <!-- tag: fnd-s5-6 -->
 ### 5.6 Why the alternative-economy graveyard does not apply

@@ -21,6 +21,7 @@
 > 13. **Coercion is the legal system's problem**, beyond this system's scope. §7.2.
 > 14. **Discretionary awarding criteria are permitted, and are how a prize works.** §8.4.
 
+> **⚠️ Terminology note, 2026-10-16.** This paper is the record of the 2026-09-18 rulings in the words of its day. Since Foundations v0.60 the quantity this paper calls *room* or *debit-room* is called **backing** — the hours other people have pledged to a person by name — and a pledge is *drawn from* the pledger's credit rather than "backed by" it. The rulings are unchanged. Read *room* here as *backing*. The current wording is in [`../Aequitas_Foundations.md`](../Aequitas_Foundations.md) §4.6 and [`../GLOSSARY.md#vocabulary`](../GLOSSARY.md#vocabulary). <!-- struck-ok: a dated record of the pre-2026-10-16 wording; see GLOSSARY.md#vocabulary -->
 ---
 
 ## 1. What a pledge is
@@ -77,7 +78,7 @@ The core documents write the gate as `D ≤ ρ·C`. That form has no place in it
 
 > **`D ≤ ρ·(C + P)`**
 >
-> `P` is the committed room the account has been granted by other people's pledges.
+> `P` is the committed room the account has been granted by other people's pledges. <!-- struck-ok: a dated record of the pre-2026-10-16 wording; see GLOSSARY.md#vocabulary -->
 
 **Two reasons ρ multiplies `P` as well as `C`, and the second is what decides it.**
 
@@ -94,7 +95,7 @@ The core documents write the gate as `D ≤ ρ·C`. That form has no place in it
 | | Hours |
 |---|--:|
 | Credit `C`, 40 years at 10 h/day | 146,000 |
-| Committed room granted by 300 people pledging 100 h each, `P` | 30,000 |
+| Committed room granted by 300 people pledging 100 h each, `P` | 30,000 | <!-- struck-ok: a dated record of the pre-2026-10-16 wording; see GLOSSARY.md#vocabulary -->
 | **Their gate, `ρ·(C + P)`** | **211,200** |
 | The same gate with no pledges, `ρ·C` | 175,200 |
 
@@ -104,7 +105,7 @@ The core documents write the gate as `D ≤ ρ·C`. That form has no place in it
 
 > **A pledge to a fund, a cause, an organisation, or any other mechanism is *uncommitted*. It becomes room only when it is distributed to named people.**
 
-**`P` counts committed room only.** An uncommitted pledge sits in no account's gate, so it lets nobody take anything.
+**`P` counts committed room only.** An uncommitted pledge sits in no account's gate, so it lets nobody take anything. <!-- struck-ok: a dated record of the pre-2026-10-16 wording; see GLOSSARY.md#vocabulary -->
 
 **The pledger's budget is still spent at pledge time.** It is not returned, and there is no path that returns it. **This keeps IC-9 exactly as written**, and it keeps pledging a real sacrifice whether or not the money ever reaches anybody.
 
@@ -155,7 +156,7 @@ The core documents write the gate as `D ≤ ρ·C`. That form has no place in it
 
 ### 4.1 What it used to say, and why that failed
 
-**The old claim was about what a person may consume.** It failed because consumption is gated by `ρ·(C + P)`, and `P` has no limit on any one account. **The only limit on `P` is the population**: total committed room across a network can never exceed the total credit its subscribers have earned. That bounds the sum. **It does not bound one person's share, and nothing in the system does.**
+**The old claim was about what a person may consume.** It failed because consumption is gated by `ρ·(C + P)`, and `P` has no limit on any one account. **The only limit on `P` is the population**: total committed room across a network can never exceed the total credit its subscribers have earned. That bounds the sum. **It does not bound one person's share, and nothing in the system does.** <!-- struck-ok: a dated record of the pre-2026-10-16 wording; see GLOSSARY.md#vocabulary -->
 
 ### 4.2 What it says now
 
@@ -325,7 +326,7 @@ The core documents write the gate as `D ≤ ρ·C`. That form has no place in it
 
 | | Now |
 |---|---|
-| The surplus is non-consumable | **Gone.** Committed room is consumable, whatever named it |
+| The surplus is non-consumable | **Gone.** Committed room is consumable, whatever named it | <!-- struck-ok: a dated record of the pre-2026-10-16 wording; see GLOSSARY.md#vocabulary -->
 | Shares split pro-rata by hours on that task | **The default where criteria are silent** (§3.1), not a rule about reserves |
 | Causation decided by the physical-trace test | **A criterion a network may write**, not a rule this system imposes |
 | Diffuse harm handled by a cohort convention | **The same** |
@@ -500,7 +501,7 @@ The core documents write the gate as `D ≤ ρ·C`. That form has no place in it
 | **A5** (cost, not price) | **No.** Nothing is added to any thing's cost figure |
 | **A8** (no governing body) | **No**, provided the network publishes the setting |
 
-> **And no axiom tells a self-pledge apart from any other pledge.** Both spend one hour of budget and create one hour of committed room. **Both add exactly 1 to the network's `P` total.** Barring one and not the other would be an exception with no axiom behind it, which is what the universality test refuses.
+> **And no axiom tells a self-pledge apart from any other pledge.** Both spend one hour of budget and create one hour of committed room. **Both add exactly 1 to the network's `P` total.** Barring one and not the other would be an exception with no axiom behind it, which is what the universality test refuses. <!-- struck-ok: a dated record of the pre-2026-10-16 wording; see GLOSSARY.md#vocabulary -->
 
 ### 11.3 The real division is not self against other. It is person against work
 
@@ -658,7 +659,7 @@ The core documents write the gate as `D ≤ ρ·C`. That form has no place in it
 
 **A pledge is permanent and non-revocable.** `Aequitas_Foundations.md` §4.6 says so, and §4.8 says a person's record closes on death but persists. **Neither death nor departure revokes room already granted to somebody else.**
 
-> **So committed room outlives the people who backed it, and production capacity does not.**
+> **So committed room outlives the people who backed it, and production capacity does not.** <!-- struck-ok: a dated record of the pre-2026-10-16 wording; see GLOSSARY.md#vocabulary -->
 
 #### An example, with the numbers
 

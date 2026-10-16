@@ -1,8 +1,8 @@
 <!-- tag: ovw-aequitas-overview -->
 # Aequitas — Overview
 
-> **Version:** 0.32
-> **Date:** 2026-10-15
+> **Version:** 0.33
+> **Date:** 2026-10-16
 > **Audience:** everyone. No economics background assumed, none required.
 > **Rigorous version:** `00-strategy/Aequitas_Foundations.md`. This document is the plain-language companion; where they differ, the Foundations govern.
 
@@ -175,7 +175,7 @@ That identity is the whole of §7 in one line. **Property cannot be an engine, b
 
 **Read the scope before the number, because the number is easy to take for more than it is.**
 
-> **What follows is a ceiling on the credit one person can earn by working, and therefore on the influence that credit buys.** Credit is what a pledge is backed by, so a ceiling on credit is a ceiling on how much anyone can put behind the things they want made next.
+> **What follows is a ceiling on the credit one person can earn by working, and therefore on the influence that credit buys.** Credit is what a pledge is drawn from, so a ceiling on credit is a ceiling on how much anyone can put behind the things they want made next.
 >
 > **It is not a ceiling on what anyone may consume, and there is no ceiling on that.** What you may hold and use depends on your own credit **plus every hour other people have pledged to you**, and **nothing caps how many people pledge to you.** So somebody widely admired can consume far past the figure below. This system does not prevent it.
 
@@ -184,7 +184,7 @@ That identity is the whole of §7 in one line. **Property cannot be an engine, b
 | | Can it be capped? | What sets it |
 |---|---|---|
 | **Credit you earn, and so the say it buys** | **Yes, at `24 ÷ F`** | Your own hours. A day has 24 of them and you cannot buy anyone else's |
-| **Room to consume** | **No** | Your own credit **plus** hours pledged to you by others, which nothing limits |
+| **What you may carry** | **No** | Your own credit **plus** hours pledged to you by others, which nothing limits |
 
 **In plain words: working harder than everybody else has a hard ceiling. Being backed by a lot of people does not.** The end of this section says why the second is still a different thing from being rich today.
 
@@ -225,20 +225,20 @@ So the most anyone can out-say anyone else is the ratio between a full day and t
 | **Whether the community credits a child's learning time** | Credit it and `24 ÷ F` is reachable. Credit none of it and nobody can reach the published ceiling. **At a 10-hour baseline over an 80-year life the most anyone reaches is 2.09 against a stated 2.4.** That shortfall is not a fixed fraction — it moves with the baseline and with how long the person lives. |
 | **That nobody manufactures fake hours** | The wall holds by arithmetic for honest and dishonest accounts alike. But people trading fake hand-offs between them could still inflate the totals, and controlling that is a separate open problem. |
 | **That it is one network's books** | Not a statement about anything wider, and there is no wider figure to give. Two networks' numbers are read through different weightings, so they cannot be added or compared. See the box in §0. |
-| **That room you receive never enlarges what you can pledge** | Your pledge budget is credit *you* earned, and nothing else. **If hours pledged to you also raised what you could pledge onward, the wall would have no top at all** — people could back you on the strength of backing you already had. |
+| **The backing you receive never enlarges what you can pledge** | Your pledge budget is credit *you* earned, and nothing else. **If hours pledged to you also raised what you could pledge onward, the wall would have no top at all** — people could back you on the strength of backing you had only received. |
 
 **In plain words: the first four say what the number depends on. The fifth says what would destroy it.**
 
-**Why the fifth one matters, with the numbers.** Take somebody with 146,000 hours of credit and 30,000 hours of room pledged to them by others.
+**Why the fifth one matters, with the numbers.** Take somebody with 146,000 hours of credit and 30,000 hours of backing pledged to them by others.
 
 | | Hours |
 |---|--:|
 | Credit they earned | 146,000 |
-| Room others pledged to them | 30,000 |
+| Backing others pledged to them | 30,000 |
 | **What they may pledge onward** | **146,000 — the earned figure only** |
-| What it would be if received room counted | 176,000, and then more, with no top |
+| What it would be if received backing counted | 176,000, and then more, with no top |
 
-**So the rule is that received room grants consumption and grants no say.** Break it and the bound fails the same way the consumption claim did.
+**So the rule is that backing lets you carry more and grants no say.** Break it and the bound fails the same way the consumption claim did.
 
 > **And one thing the wall is not.**
 >
@@ -264,13 +264,13 @@ So the most anyone can out-say anyone else is the ratio between a full day and t
 
 **In plain words: even the tightest baseline tested carries an essentials basket costing nearly twice a whole median American lifestyle.** Essentials are a part of that lifestyle, not double it, so **no baseline in that range fails on affordability.** What binds instead is what the economy can physically produce.
 
-**Two limits on that result, stated rather than buried.** The run used published tolerance figures **with no pledging in them**, and pledges can double a community's room, which halves the usable top end. **And at a 1-hour baseline with essentials at 70% of a median lifestyle, the band does close** — the first swept case where it ever has.
+**Two limits on that result, stated rather than buried.** The run used published tolerance figures **with no pledging in them**, and backing can double what a community may carry, which halves the usable top end. **And at a 1-hour baseline with essentials at 70% of a median lifestyle, the band does close** — the first swept case where it ever has.
 
 ### And what is not capped: what a person consumes
 
-People can put their own earned hours behind someone else, which is a pledge (§6), and that gives the receiver room to hold and use more. **Nothing limits how many people back one person.** So somebody widely admired can live well beyond the wall above.
+People can put their own earned hours behind someone else, which is a pledge (§6), and that lets the receiver hold and use more. **Nothing limits how many people back one person.** So somebody widely admired can live well beyond the wall above.
 
-**Why that is a different thing from being rich today.** That room cannot be lent at interest, rented out, charged for, or used to hire anybody. You can hold things and use things. **You cannot turn it into a machine that earns while you sleep**, which is what property does now. And it cannot be conjured: every hour of it is an hour somebody really lived, and nobody has more than 24 in a day.
+**Why that is a different thing from being rich today.** That backing cannot be lent at interest, rented out, charged for, or used to hire anybody. You can hold things and use things. **You cannot turn it into a machine that earns while you sleep**, which is what property does now. And it cannot be conjured: every hour of it is an hour somebody really lived, and nobody has more than 24 in a day.
 
 **One more thing is true before any of that.** Aequitas only ever counts *material* things: what you physically hold, use, and consume. It never counts money-wealth. A share of stock, a bond or a crypto-token is a claim on paper rather than matter or energy, so it simply does not appear. The factory those shares represent *is* counted, but on the people who actually run it, not on the distant shareholder.
 
@@ -283,9 +283,9 @@ People can put their own earned hours behind someone else, which is a pledge (§
 
 **In plain words: strip away the paper and the real gap is about a thousand times smaller than the money gap makes it look.** The reason is not a rule. Consuming physically takes time, and nobody has more than 24 hours in a day.
 
-**Running the gate against real US and world wealth data found two things.** Between 0.1% and 2% of Americans would sit past a permanent limit on non-essentials, depending on the tolerance a network sets, and around 0.5% at a tolerance of 1.5. These are the genuine mega-consumers rather than the merely rich, and selling their property does not save them, because what you have already consumed stays consumed. Meanwhile **about two thirds of people sit below their group's average and would gain room by joining.**
+**Running the gate against real US and world wealth data found two things.** Between 0.1% and 2% of Americans would sit past a permanent limit on non-essentials, depending on the tolerance a network sets, and around 0.5% at a tolerance of 1.5. These are the genuine mega-consumers rather than the merely rich, and selling their property does not save them, because what you have already consumed stays consumed. Meanwhile **about two thirds of people sit below their group's average and could carry more by joining.**
 
-**That locked figure is an upper bound and is not final.** The run assumed nobody had been pledged to. Somebody with room behind them is limited later, or not at all, and the figure has not been recomputed with a pledge term in it. The inequality we live under is, to a startling degree, an artefact of counting paper.
+**That locked figure is an upper bound and is not final.** The run assumed nobody had been pledged to. Somebody with backing behind them is limited later, or not at all, and the figure has not been recomputed with a pledge term in it. The inequality we live under is, to a startling degree, an artefact of counting paper.
 
 ### Is there enough human work to go round?
 
@@ -348,19 +348,19 @@ An economy that needs a constant supply of *new* debt to generate demand is an e
 >
 > **`C`, your credit** — the hours the books recorded as your work.
 > **`D`, your debit** — what everything you have consumed is currently reckoned to have taken from the world.
-> **`P`, your room** — hours other people have pledged to you by name (§6).
+> **`P`, your backing** — hours other people have pledged to you by name (§6).
 
 **When you buy something, one test runs.** Is `D` still no more than `ρ` times `C` plus `P`?
 
 > **`D ≤ ρ · (C + P)`**
 
-**`ρ` is the debit tolerance**, a single multiplier the community sets and publishes. **At `ρ` = 1.2 you may carry debit up to 1.2 times your credit plus your pledged room.**
+**`ρ` is the debit tolerance**, a single multiplier the community sets and publishes. **At `ρ` = 1.2 you may carry debit up to 1.2 times your credit plus your backing.**
 
 ##### Worked, with three people at age 40
 
 A community with a 10-hour baseline and `ρ` = 1.2. A median lifestyle costs 1,380 hours a year, and staying alive earns 3,650.
 
-| | Credit `C` | Room `P` | Debit `D` | Room left |
+| | Credit `C` | Backing `P` | Debit `D` | May still carry |
 |---|--:|--:|--:|--:|
 | **A — stays alive, works 1,000 h a year** | 186,000 h | 0 | 55,200 h | **168,000 h** |
 | **B — stays alive, works nothing, consumes the same** | 146,000 h | 0 | 55,200 h | **120,000 h** |
@@ -419,7 +419,7 @@ Education. Research. Infrastructure. Films. A blockbuster's viewers pay for the 
 
 **So who carries a building year to year?** The whole cost rides the **building itself**, shared among the people who run it *by how long each has worked there*. A nurse hired on Monday inherits almost none of it, and a thirty-year veteran a little more. **Nobody takes on a whole hospital by walking in the door.** Otherwise that entry cost would scare people away from staffing exactly the places that need it most.
 
-The community's pledges do not erase that cost. They give the staff the *room* to carry it, cushioning the bite. **And a pledge is permanent — it cannot be taken back** (see §6). So the staff can rely on that room and get on with the work. The cost is a one-time expense to whoever pledged, not a loan that can be called in.
+The community's pledges do not erase that cost. They back the staff, so the staff may carry it, cushioning the bite. **And a pledge is permanent — it cannot be taken back** (see §6). So the staff can rely on that backing and get on with the work. The cost is a one-time expense to whoever pledged, not a loan that can be called in.
 
 **The share you built up stays yours — you can't hand it off by walking away.** The *stuff* of a thing (its material) travels with it when you pass it on. But your share of the *work that made it*, earned by the time you held it, stays on your record. Own a 500,000-hour mansion for ten years and hand it on, and after the next owner has held it as long as you did, roughly half of that making-cost is still on your books. You can't dodge it by giving the thing to someone outside the system either — if there's no record of a hand-off, the record still shows *you* holding it, so you keep the whole weight. The one thing that lightens your load is a *real* new holder taking it on. A useful side effect: **second-hand things start out cheap** for the new owner, who has put in no time yet, and grow heavier the longer they keep them.
 
@@ -431,9 +431,9 @@ Your credit is a fact about you. It cannot be given, sold, lent, taxed, gambled,
 
 **3. Your record is three numbers, and they never cancel each other.**
 
-**Your credit is every hour of your life that got counted as work. Your debit is everything your consumption is currently reckoned to have taken from the world. Your room is every hour other people have pledged to you by name** (§6). They sit side by side. **Nothing is subtracted, nothing is spent, and no fourth number is made by taking one from another.**
+**Your credit is every hour of your life that got counted as work. Your debit is everything your consumption is currently reckoned to have taken from the world. Your backing is every hour other people have pledged to you by name** (§6). They sit side by side. **Nothing is subtracted, nothing is spent, and no fourth number is made by taking one from another.**
 
-**All three only ever go up.** Buying something adds to your debit and takes nothing off your credit, because credit is not a thing you hand over. A pledge adds to your room and is never taken back. **So they are compared as a ratio — is your debit within some multiple of your credit plus your room? — never as a balance you could run down to zero.** A ledger here is a way of looking at what one person consumed beside what they did and what others put behind them, and that is all it is.
+**All three only ever go up.** Buying something adds to your debit and takes nothing off your credit, because credit is not a thing you hand over. A pledge adds to your backing and is never taken back. **So your credit balances your debit, as a ratio — is your debit within some multiple of your credit plus your backing? — and there is no balance you could run down to zero.** *Balances* is a verb here; nobody holds a stored number. A ledger here is a way of looking at what one person consumed beside what they did and what others put behind them, and that is all it is.
 
 **None of the three is stored anywhere.** All are worked out fresh from the record of what happened, every time anyone looks. That is why a better measurement can change everybody's figures, backwards (§4).
 
@@ -617,22 +617,22 @@ Two honest caveats, because overclaiming here would be easy:
 
 This is the question every planned economy failed. If prices don't direct production and no committee does, what does?
 
-**The answer is that people put their credit behind the things they want made.** Two instruments, separated by one test: *is it backed, one-for-one, by credit you actually earned?*
+**The answer is that people put their credit behind the things they want made.** Two instruments, separated by one test: *is it paid for, one-for-one, from credit you actually earned?*
 
 | | **Pledge** | **Signal** |
 |---|---|---|
 | Means | "I'll put an hour of my credit behind making this happen" | "I want this to exist" |
-| Backed by | your earned credit, one-for-one | nothing |
+| Drawn from | your earned credit, one-for-one | nothing |
 | How much | exactly one hour pledged per hour worked | plenty — signal freely |
 | Familiar as | a wishlist that funds; choosing your GP; crowdfunding; commissioning a job | likes, reviews, applause |
 
-**A pledge doesn't spend your credit, and it isn't a promise to buy.** Your credit stays yours — a pledge just puts it *behind* something, the way naming a beneficiary doesn't hand over your bank balance. It gives whoever you're backing more room to carry the cost of the work. What it *does* use up is a separate **lifetime allowance**. Over your whole life you can pledge as many hours as you have earned, and **a pledge is permanent: you cannot take it back.** That permanence is deliberate, so the people you back can rely on it and get on with the work. And because a pledge is a real, one-time expense, nobody can pledge frivolously or flood the system for free.
+**A pledge doesn't spend your credit, and it isn't a promise to buy.** Your credit stays yours — a pledge just puts it *behind* something, the way naming a beneficiary doesn't hand over your bank balance. It backs whoever you name, so they may carry the cost of the work. What it *does* use up is a separate **lifetime allowance**. Over your whole life you can pledge as many hours as you have earned, and **a pledge is permanent: you cannot take it back.** That permanence is deliberate, so the people you back can rely on it and get on with the work. And because a pledge is a real, one-time expense, nobody can pledge frivolously or flood the system for free.
 
-**A pledge summons work — it doesn't have to be about a *thing*.** Say you've earned four hours and you pledge two toward mowing the scrappy public verge on your street. Someone with a mower sees it, spends an hour, shows proof, and earns an hour of credit. That's the whole transaction — no object changed hands, nobody's credit was cancelled, and one pledged hour is still behind the next mow. Where the pledged work *does* make an object, taking that object is a separate step: whoever accepts it takes on its debit with their *own* room, pledge or no pledge. It is deliberately messy. People will pledge for silly things, pledges will go unfilled, and groups will form to coordinate them. That is fine. Messy or not, it's the thing that creates jobs.
+**A pledge summons work — it doesn't have to be about a *thing*.** Say you've earned four hours and you pledge two toward mowing the scrappy public verge on your street. Someone with a mower sees it, spends an hour, shows proof, and earns an hour of credit. That's the whole transaction — no object changed hands, nobody's credit was cancelled, and one pledged hour is still behind the next mow. Where the pledged work *does* make an object, taking that object is a separate step: whoever accepts it takes on its debit against their *own* credit and backing, pledge or no pledge. It is deliberately messy. People will pledge for silly things, pledges will go unfilled, and groups will form to coordinate them. That is fine. Messy or not, it's the thing that creates jobs.
 
 **Pledges are the demand side of the economy.** Cost tells you what something takes; pledges tell you who wants it. Together they do the job prices do, with no central optimiser and no board deciding priorities.
 
-They must be strictly one-to-one: the hours you put behind things over your life can never exceed the credit you've actually earned. Let it, and people would be backing work with room that isn't really there — the makers leaning on it would be standing on a promise nobody can keep. That's not a preference, it's arithmetic.
+They must be strictly one-to-one: the hours you put behind things over your life can never exceed the credit you've actually earned. Let it, and people would be backing work with hours that aren't really there — the makers leaning on it would be standing on a promise nobody can keep. That's not a preference, it's arithmetic.
 
 **Signals should be abundant** precisely because pledges are scarce. If pledging is all you have, the system only ever hears your single top priority and learns nothing about the rest. Cheap signals reveal what you actually care about, in order.
 
@@ -642,7 +642,7 @@ Three things this quietly fixes:
 - **It funds the speculative.** A prize for solving a hard problem needs no billionaire patron; a large enough pool of pledges *is* the prize.
 - **It sets the number of doctors.** Society decides how many to train by pledging for it — no ministry, no quota. Study nobody pledged for still credits your hours, but leaves you carrying the cost.
 
-- **It gets unwanted work done — without danger-pay.** Everyone earns the same credit per hour, so there's no hazard bonus to lure people into a toxic cleanup. Instead, people pledge more for the jobs nobody wants, and that room goes to whoever does them. Society de-risks the worker exactly as much as it wants the job done, and **nobody's hourly credit changed** — what changed is how much room other people chose to put behind them. A pledge can also carry conditions: *"this part goes to whoever cleans up any harm this job causes in the next thirty years."* If nothing goes wrong, that part simply lapses. **This reaches boring work as well as dangerous work**, because a pledge can name whoever does the dull job.
+- **It gets unwanted work done — without danger-pay.** Everyone earns the same credit per hour, so there's no hazard bonus to lure people into a toxic cleanup. Instead, people pledge more for the jobs nobody wants, and that backing goes to whoever does them. Society de-risks the worker exactly as much as it wants the job done, and **nobody's hourly credit changed** — what changed is how much backing other people chose to put behind them. A pledge can also carry conditions: *"this part goes to whoever cleans up any harm this job causes in the next thirty years."* If nothing goes wrong, that part simply lapses. **This reaches boring work as well as dangerous work**, because a pledge can name whoever does the dull job.
 
 **One honest weakness.** Pledges follow reputation, so a first-time maker attracts none. This is the same cold-start problem unknown creators face with money today. The barrier is much lower, because it is attention rather than capital, but it is real and should not be waved away.
 
@@ -663,7 +663,7 @@ Three things this quietly fixes:
 
 > **So Aequitas is not smashing a clean instrument and offering a worse one. It is replacing a signal the seller helped write.**
 
-**A pledge cannot be advertised into existence.** It is backed by hours you actually worked, spent once, and visible to everyone. **A seller can make you want something. A seller cannot put more hours in your day.**
+**A pledge cannot be advertised into existence.** It is drawn from hours you actually worked, spent once, and visible to everyone. **A seller can make you want something. A seller cannot put more hours in your day.**
 
 **The power to say what gets made is spread far more evenly. Here are both halves of the comparison, including the one where this system has no bound at all.**
 
@@ -684,11 +684,11 @@ Putting one extra box on that shelf takes about **two hours of work**: picking i
 
 | | |
 |---|---|
-| Room raised for the artist | **500 hours** |
+| Backing raised for the artist | **500 hours** |
 | What their next mural needs — paint, travel | **300 hours** |
 | Left over | **200 hours** |
 
-**The leftover is room the artist can use**, unless the people pledging attached conditions to it. **So yes — somebody well-liked can end up with a lot of room, and Aequitas does not stop that.** What it stops is the thing that makes money-wealth grow: that room **can't be lent at interest, rented out, charged for, or used to hire anyone.** It lets you hold and use things. It is not a machine for getting more.
+**The leftover is backing the artist can use**, unless the people pledging attached conditions to it. **So yes — somebody well-liked can end up with a lot of backing, and Aequitas does not stop that.** What it stops is the thing that makes money-wealth grow: that backing **can't be lent at interest, rented out, charged for, or used to hire anyone.** It lets you hold and use things. It is not a machine for getting more.
 
 *(One catch worth knowing: a flat rate per like barely limits anything. Six minutes is 0.1 hours, and a person earns about 3,650 hours a year from staying alive, so the budget only runs out at about **36,500 likes a year** — far more than anybody gives. The sensible setting is a **share of a budget**: "this like costs my art budget divided by the likes I give this month." That balances itself.)*
 
@@ -902,7 +902,7 @@ A proposal that admits nothing is a proposal nobody should trust.
 - **Who controls the cost model.** Whoever sets what a tonne of carbon "costs" influences every ledger in history without touching a single rule. Several defences are in place; the general problem is not closed.
 - **Understatement drift.** Errors that make something look *more* costly get corrected by everyone affected. Errors that make it look *less* costly benefit everyone affected, and nobody funds the correction. **We had a proposed answer, that rival producers would police each other, and we withdrew it on 2026-08-24 because it does not hold** (§7). **This is now stated as an unsolved problem that each trust network must design against, held to five published requirements.** It bites hardest on the "how much pollution can the world absorb on its own" line, which is one of the most powerful settings in the whole system and which has no rival at all: everyone benefits from it being drawn too generously.
 - **Dumping.** Owning the end of a thing's life (§4) counts correctly for anyone who plays by the rules. But someone could still fly-tip a worthless object to escape its disposal cost. Catching that is the same kind of problem as any other false record, and is left to the verification layer rather than solved here.
-- **Unpleasant work** *(the mechanism is now in place; what is open is whether it works)*. Exertion, danger and skill all resolve into material costs. Tedium and indignity leave no physical trace, so for a long time nothing reached them. **A pledge now can**: it may simply name whoever does the dull job, so the room goes to them without anybody's hourly credit changing (§6). What is genuinely unsettled is behavioural rather than structural — whether enough people will choose to pledge for boring necessary work, and what happens in a community where they do not.
+- **Unpleasant work** *(the mechanism is now in place; what is open is whether it works)*. Exertion, danger and skill all resolve into material costs. Tedium and indignity leave no physical trace, so for a long time nothing reached them. **A pledge now can**: it may simply name whoever does the dull job, so the backing goes to them without anybody's hourly credit changing (§6). What is genuinely unsettled is behavioural rather than structural — whether enough people will choose to pledge for boring necessary work, and what happens in a community where they do not.
 - **Turning contribution into influence.** How much say people get, and how it accrues, is unsettled. The leading candidate is that everyone accrues the same influence per hour worked — not a voting scheme, and deliberately not one. One nice consequence already falls out: because staying alive earns credit, *everyone* gets a baseline say in what the world makes next simply for being alive, and since that baseline is equal for all, it would cap the say-gap the same way it caps the wealth-gap — and subject to the same caveats (§1): only if fake hours can be prevented and baselines stay sane. **Two things are still open.** Stopping people from *manufacturing* fake hours to buy extra say, and how generous each community sets its "cost of staying alive" baseline, which quietly sets where the cap lands.
 - **Feedback mechanics.** How appreciation aggregates without turning into a popularity contest, and whether it can be bought. If it can be bought, it is a currency by the back door.
 

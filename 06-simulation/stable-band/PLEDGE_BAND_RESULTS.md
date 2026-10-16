@@ -93,7 +93,7 @@ Write `P = p·C`. Then the gate is:
 |---|---|
 | **`p` is swept, not measured** | Nobody knows what pledge density a real network would run at. **It is a behavioural quantity and no network exists** |
 | **The upper edge is inherited** | Including `stable_band.py`'s own censoring. Rows whose `ρ*` ran off the top of the swept range are floors, not values (conformance row 13), and are **excluded here rather than reported** |
-| **Uncommitted pledges are not in `p`** | A pledge to a fund grants no room until it names somebody. **The room that matters is committed room only** |
+| **Uncommitted pledges are not in `p`** | A pledge to a fund grants no room until it names somebody. **The room that matters is committed room only** | <!-- struck-ok: a dated record of the pre-2026-10-16 wording; see GLOSSARY.md#vocabulary -->
 | **The anchor behind `E` is a reading** | 1,380 h/yr is one defensible figure, not a fact about the world. See `papers/Pledges.md` §15.3 |
 | **Nothing here tests the two live attacks** | A pledge costing the pledger nothing material, and coercion. Those are `papers/Pledges.md` §7 |
 

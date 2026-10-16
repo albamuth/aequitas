@@ -47,7 +47,7 @@ edges:
 
 **Science can afford an unresolved dispute. An accounting system often cannot.**
 
-A field can stay divided for thirty years and lose nothing. But a purchase either clears or it does not, **now**. You cannot tell a buyer that opinion is divided on whether their debit exceeds their room and to come back when the literature settles.
+A field can stay divided for thirty years and lose nothing. But a purchase either clears or it does not, **now**. You cannot tell a buyer that opinion is divided on whether their debit exceeds what they may carry and to come back when the literature settles.
 
 **The lab framing supplies the epistemics. It does not supply a decision procedure.** So the question is what decides *at transaction time*.
 
@@ -78,7 +78,7 @@ Sorting them apart dissolves three of the four classes.
 
 > **The past transaction is not reversed. The fraudulent credits are negated, the ledger rebalances, and the person's ratio may now be too low to buy anything until they sell some of what they hold.**
 
-**This is the transaction-time rule (§3.3), not a special fraud procedure.** The gate is evaluated when the transaction happens; a later correction changes *future* room and never the validity of a completed act. **Fraud correction is an ordinary re-weighting that happens to be large.**
+**This is the transaction-time rule (§3.3), not a special fraud procedure.** The gate is evaluated when the transaction happens; a later correction changes what they may carry in *future* and never the validity of a completed act. **Fraud correction is an ordinary re-weighting that happens to be large.**
 
 **And reversal would be wrong, not merely difficult.** The goods moved. You cannot un-eat a sandwich. The counterparty acted on the record as it then stood, shed their property-debit legitimately under custody (§3.2), and was credited for work that really happened. **Unwinding the buyer's fraud would corrupt the seller's books to punish someone else's lie.**
 

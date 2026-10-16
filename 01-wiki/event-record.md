@@ -98,7 +98,7 @@ An event may have several outputs — milling yields flour *and* bran — and th
 
 ## Integrity constraints
 
-**IC-1…IC-9 check the log** and are pure arithmetic — mass and energy balance, origin and fate closure, custody continuity, interval sanity, the 24-hours-per-24-hours cap, and pledge backing. No trust model, no authority, no inspection.
+**IC-1…IC-9 check the log** and are pure arithmetic — mass and energy balance, origin and fate closure, custody continuity, interval sanity, the 24-hours-per-24-hours cap, and pledges drawn from credit. No trust model, no authority, no inspection.
 
 **IC-10…IC-12 check what an output carries:**
 

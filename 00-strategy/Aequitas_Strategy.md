@@ -1,7 +1,7 @@
 <!-- tag: str-aequitas-overall-strategy -->
 # Aequitas — Overall Strategy
 
-> **Version:** 0.12 · **Date:** 2026-09-22
+> **Version:** 0.13 · **Date:** 2026-10-16
 > **Target:** A statement of the system, tested against scenarios, in ~3 months — with a conformance list an implementer can build against.
 > **Companion docs:** `Aequitas_Foundations.md` (axioms), `Aequitas_Objections.md` (register), `Aequitas_Conformance.md` (what an implementation must satisfy), `../NEXT.md` (task queue)
 
@@ -84,7 +84,7 @@ This also answers the socialist-calculation critique pre-emptively: we don't arg
 | C2 (verification / trust networks) <!-- tag: str-c2 --> | **Verification protocol** — all 4 levels | L2 is an emergent trust market. **Now also carries the trust-network shape question (register OA10 (auditor independence)).** | Partial |
 | C3 (estimation engine) <!-- tag: str-c3 --> | **Estimation engine** — global avg → cohort → individual (OP-3 (estimation convergence)) | **In progress.** OP-18 closed — **labour needs no convention, because a joint process's cost is not divided at all** (§3.4a) — so C3 is unblocked; synthetic slice + test-MRIO loader built and the real EXIOBASE dataset is on disk. | In progress |
 | C4 (re-weighting) <!-- tag: str-c4 --> | **Re-weighting mechanism** + conservative weighting (load-bearing four times over) | Not started | ⛔ Yes |
-| C5 (debit taxonomy) <!-- tag: str-c5 --> | **Debit taxonomy + transfer rules** — property vs consumption, self-work identity, **pledge discharge and reversion** | Custody **settled: possession decides** (Foundations §3.2b, conformance row 7a); the pledge is **settled as a permanent grant of debit-room** (Foundations v0.14); **reversion resolved — pledges are permanent and unspent ones burn, so nothing reverts.** | ✅ Reversion closed; transfer-rule detail remains |
+| C5 (debit taxonomy) <!-- tag: str-c5 --> | **Debit taxonomy + transfer rules** — property vs consumption, self-work identity, **pledge discharge and reversion** | Custody **settled: possession decides** (Foundations §3.2b, conformance row 7a); the pledge is **settled as permanent backing** (Foundations v0.14); **reversion resolved — pledges are permanent and unspent ones burn, so nothing reverts.** | ✅ Reversion closed; transfer-rule detail remains |
 | C6 (identity) <!-- tag: str-c6 --> | **Identity / proof-of-personhood** — one human, one account | Not started. *Now also the defence against debit dumping.* | ⛔ Yes |
 | C7 (privacy layer) <!-- tag: str-c7 --> | **Privacy layer** + minimum audit disclosure set (OP-22 (audit disclosure)) | Not started | Yes |
 | C8 (influence mechanics) <!-- tag: str-c8 --> | **Influence mechanics** — OP-1 (service → influence), feedback aggregation (OP-6 (feedback mechanics)) | Partial | Partial |
@@ -128,7 +128,7 @@ This also answers the socialist-calculation critique pre-emptively: we don't arg
 
   > **Author ruling, 2026-09-22: state it once and move on.** It is arithmetic on IC-7 and the floor, and Foundations §5.5.5 already says *"the question that decides whether a network works is whether `F` sits inside §5.5.3's band, not what the exact ratio is."* **The effort belongs on what produces shortage** — `06-simulation/stable-band/labour_supply_sweep.py`, which found the floor absent from that question altogether and the turnover at about 38 h/week drawn.
 
-  **OP-4's shape is settled** (per-person locally-set tolerance floor + personal efficiency ratio on the discretionary layer only — no global ratio). **Still not run:** the generous-network cohort-shopping race, tracked as OP-14. **The result is no longer stated as conditional on OP-22** — that clause qualified a cross-network claim struck on 2026-08-25. OP-22 still gates proving a *pledge's* backing across a model boundary, which is a different question. *Watch, as before: no objective function tuning the tolerance, or it re-opens OP-10.*
+  **OP-4's shape is settled** (per-person locally-set tolerance floor + personal efficiency ratio on the discretionary layer only — no global ratio). **Still not run:** the generous-network cohort-shopping race, tracked as OP-14. **The result is no longer stated as conditional on OP-22** — that clause qualified a cross-network claim struck on 2026-08-25. OP-22 still gates proving what a *pledge* is drawn from across a model boundary, which is a different question. *Watch, as before: no objective function tuning the tolerance, or it re-opens OP-10.*
 - **Use cases as validation.** Sandwich ✅ (which turned out to contain a joint process — milling → flour + bran), plus homeowner, doctor, film studio. **Add an explicit joint-production case.**
 
 <!-- tag: str-phase-3-write-and-harden -->

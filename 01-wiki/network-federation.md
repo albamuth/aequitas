@@ -72,7 +72,7 @@ edges:
 
 ## What stays open
 
-Whether a person can hide behind a fake or borrowed membership list is a verification question (OP-25, C6). A template can be captured like any constant (OP-24, OP-10). Proving a pledge's backing across a model boundary waits on OP-22.
+Whether a person can hide behind a fake or borrowed membership list is a verification question (OP-25, C6). A template can be captured like any constant (OP-24, OP-10). Proving what a pledge is drawn from across a model boundary waits on OP-22.
 
 ## Depends on
 

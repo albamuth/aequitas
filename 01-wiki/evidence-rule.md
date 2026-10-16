@@ -55,7 +55,7 @@ edges:
 
 **Two rules stop this becoming a route for fraud.** Verification asks whether the work happened and never whether anyone valued it; letting credit depend on likes would make feedback a currency by the back door. And weak evidence weighs near zero until something corroborates it, inside a rule, never in place of one.
 
-**A network never converts another network's figures into its own.** Converting a balance from one model into another would set an exchange rate between two credit-standards, which is a medium of exchange and forbidden by A3. **A network with lax checking therefore cannot export the credit it issues**: whoever trades with its members discounts it. That guard depends on OP-22, because re-computing what backs a claim means seeing what backs it.
+**A network never converts another network's figures into its own.** Converting a balance from one model into another would set an exchange rate between two credit-standards, which is a medium of exchange and forbidden by A3. **A network with lax checking therefore cannot export the credit it issues**: whoever trades with its members discounts it. That guard depends on OP-22, because re-computing what a claim is drawn from means seeing it.
 
 ## An example, with the numbers
 

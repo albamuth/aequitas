@@ -14,7 +14,7 @@ Should over-pledging highly-desired unwanted work (a toxic site everyone wants c
 
 ## The ruling being tested
 
-Pledges are now **permanent, non-revocable** grants of debit-room (reversing the v0.13 revocable model — revocability let doers who consumed against a pledge get stranded when it was withdrawn, and was gameable). A pledge first cushions the task's labour/material cost, **pro-rata by hours *on the task*** (not whole-co-op history — that skims pledges to seniority, a P4 surface). Any **surplus is not consumable**. It becomes a **contingent reserve**: earmarked, non-spendable room that activates only against a **verified future cost causally traceable to the task** — the doer's injury/illness, resurfaced site remediation, third-party harm.
+Pledges are now **permanent, non-revocable** grants of debit-room (reversing the v0.13 revocable model — revocability let doers who consumed against a pledge get stranded when it was withdrawn, and was gameable). A pledge first cushions the task's labour/material cost, **pro-rata by hours *on the task*** (not whole-co-op history — that skims pledges to seniority, a P4 surface). Any **surplus is not consumable**. It becomes a **contingent reserve**: earmarked, non-spendable room that activates only against a **verified future cost causally traceable to the task** — the doer's injury/illness, resurfaced site remediation, third-party harm. <!-- struck-ok: a dated record of the pre-2026-10-16 wording; see GLOSSARY.md#vocabulary -->
 
 Two possibilities were **rejected** first:
 - **Surplus as extra credit / wage premium** — breaks A2 (rate-scaling).

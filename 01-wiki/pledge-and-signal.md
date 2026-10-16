@@ -1,6 +1,6 @@
 ---
 title: Pledge and signal
-summary: A pledge is a permanent grant of debit-room backed one for one by the pledger's earned credit and spent once from a lifetime budget; a signal is a free statement of wanting; together they are the demand side with no price and no planner.
+summary: A pledge is permanent backing of a named person, drawn one for one from the pledger's earned credit and spent once from a lifetime budget; a signal is a free statement of wanting; together they are the demand side with no price and no planner.
 type: mechanism
 ids: [§4.6, C8, OP-19]
 status: settled
@@ -37,7 +37,7 @@ edges:
 > **Version:** 0.1
 > **Date:** 2026-09-16
 
-> The two ways credit-earners direct what gets made next. A **pledge** is a *permanent, non-revocable grant of debit-room*, spent from a lifetime allowance equal to earned credit; a **signal** is a free, unbacked "I want this." Together they are the demand side of the economy — with no prices, no planner, and no board.
+> The two ways credit-earners direct what gets made next. A **pledge** is *permanent, non-revocable backing of a named person*, spent from a lifetime budget equal to earned credit; a **signal** is a free, unbacked "I want this." Together they are the demand side of the economy — with no prices, no planner, and no board.
 
 Aequitas keeps **cost** and **demand** strictly separate (see [material-flow-value](material-flow-value.md)): cost measures what a thing took; pledges and signals reveal who wants it. This page is the demand side.
 
@@ -46,40 +46,40 @@ Aequitas keeps **cost** and **demand** strictly separate (see [material-flow-val
 | | **Pledge** | **Signal** |
 |---|---|---|
 | Says | "I put an hour of my credit behind making this happen" | "I want this to exist" |
-| Backed by | your earned credit, **1:1** | nothing |
+| Drawn from | your earned credit, **1:1** | nothing |
 | How much | exactly one hour pledged per hour worked | plenty — signal freely |
 | Familiar as | a wishlist that funds; choosing your GP; crowdfunding; commissioning a job | likes, reviews, applause |
 
-**Why pledges are 1:1 and signals are plentiful:** the credit you put behind things can never exceed the credit you earned, or people would back work with room that isn't really there ([IC-8](event-record.md)). Signals carry no such constraint, so they should be abundant — they reveal your *whole* preference ordering, not just the top slice a scarce pledge can express.
+**Why pledges are 1:1 and signals are plentiful:** the credit you put behind things can never exceed the credit you earned, or people would back work with hours that aren't really there ([IC-8](event-record.md)). Signals carry no such constraint, so they should be abundant — they reveal your *whole* preference ordering, not just the top slice a scarce pledge can express.
 
 ## What a pledge actually is *(Foundations v0.14 — pledges made permanent)*
 
-A pledge is **not** a purchase, **not** a spend of your credit, and **not** a promise to buy. It is a **permanent, non-revocable grant of debit-room**:
+A pledge is **not** a purchase, **not** a spend of your credit, and **not** a promise to buy. It is **permanent, non-revocable backing**:
 
 - **Your credit stays yours, but a separate allowance is spent.** A pledge puts credit *behind* something — like naming a beneficiary, not handing over your balance. What it spends is *pledging-power* — a **lifetime budget equal to your earned credit, drawn down once**. A pledged hour is gone from that budget for good.
-- **To the receiver it is virtual credit.** It expands the receiving person's or co-op's [debit-room](debit-tolerance.md) so a fixed cost bites less. The debit itself does not move to the pledger and does not vanish — it stays where it was incurred (e.g. holding-time-split on a facility's holders, [debit-taxonomy](debit-taxonomy.md) §4.5); the pledge only *cushions* the bite.
-- **It is permanent — you can't take it back.** The receiver can rely on the granted room and get on with the work; it won't vanish under them. The discipline is *at pledge time* — because a pledge is a real, one-time expense, nobody pledges frivolously or floods the system for free. An unspent pledge to an abandoned task is **burned**, not returned.
+- **To the receiver it is backing, not credit.** It raises what the receiving person or co-op [may carry](debit-tolerance.md), so a fixed cost bites less. The debit itself does not move to the pledger and does not vanish — it stays where it was incurred (e.g. holding-time-split on a facility's holders, [debit-taxonomy](debit-taxonomy.md) §4.5); the pledge only *cushions* the bite.
+- **It is permanent — you can't take it back.** The receiver can rely on the backing and get on with the work; it won't vanish under them. The discipline is *at pledge time* — because a pledge is a real, one-time expense, nobody pledges frivolously or floods the system for free. An unspent pledge to an abandoned task is **burned**, not returned.
 - **Buying is a separate act.** Where pledged work yields a held object, taking that object loads its [property-debit](property-debit.md) on **whoever accepts possession** (§3.2) — pledge or no pledge, and not necessarily the pledger.
 
 **A pledge need not involve an object at all.** Pledge two hours toward mowing a public verge; someone mows for an hour, shows proof, and earns an hour of credit — no object changed hands, no debit moved. A pledge simply **summons creditable work into being**.
 
-## What a pledge names, and when it becomes room
+## What a pledge names, and when it becomes backing
 
-> **A pledge names a person, or the criteria under which a person will be named.** Until a person is named it grants room to nobody. **Once a person is named the room is committed, consumable, and unchangeable.**
+> **A pledge names a person, or the criteria under which a person will be named.** Until a person is named it backs nobody. **Once a person is named the backing is committed, consumable, and unchangeable.** Whoever fulfils the pledge's conditions gets the backing.
 
-| What it names | When it becomes room |
+| What it names | When it becomes backing |
 |---|---|
 | **A person** — anyone, **including the pledger** | at once |
 | **A fund, cause, initiative or organisation** | only when distributed to named people |
 | **Criteria that will name a person** — *"whoever mitigates harm from this task"*, *"whoever a panel judges to have solved this"* | when the criteria name somebody; otherwise it lapses |
 
-**The budget is spent at pledge time in every row**, and an undistributed pledge lapses. **Where a pledge states no criteria, room goes to whoever did the named work, by hours worked** — A1 rules out the fund itself, A2 rules out any basis weighing one worker's hour above another's, and the [statistical-coverage](statistical-coverage.md) rule against dividing by a head count rules out an equal split.
+**The budget is spent at pledge time in every row**, and an undistributed pledge lapses. **Where a pledge states no criteria, the backing goes to whoever did the named work, by hours worked** — A1 rules out the fund itself, A2 rules out any basis weighing one worker's hour above another's, and the [statistical-coverage](statistical-coverage.md) rule against dividing by a head count rules out an equal split.
 
 **Criteria may be any conditional thing, including a judging panel.** That is how an X-Prize works, and no rule written in advance could replace it. **The one condition is that criteria are published before the pledge is made.**
 
 ### Over-pledging unwanted work
 
-**Pledge more for the jobs nobody wants, and that room goes to whoever does them.** Nobody's hourly credit changed ([non-fungibility](non-fungibility.md), A2) — what changed is how much room others chose to put behind them, which is demand deciding rather than a rate.
+**Pledge more for the jobs nobody wants, and that backing goes to whoever does them.** Nobody's hourly credit changed ([non-fungibility](non-fungibility.md), A2) — what changed is how much backing others chose to put behind them, which is demand deciding rather than a rate.
 
 **A pledge may carry conditions:** *"this part goes to whoever cleans up any harm this job causes within thirty years."* If nothing goes wrong, that part lapses and nobody's gate ever held it. **Note who that names — the mitigator, not necessarily the victim. Whoever writes the criteria decides.**
 
@@ -94,7 +94,7 @@ A pledge is **not** a purchase, **not** a spend of your credit, and **not** a pr
 
 ## Who games this
 
-- **Fractional-reserve pledging** — granting more debit-room than your credit backs. Blocked by the 1:1 cap ([IC-8](event-record.md)).
+- **Fractional-reserve pledging** — pledging more hours than you have earned. Blocked by the 1:1 cap ([IC-8](event-record.md)).
 - **Influence pumping** — manufacturing gross fake hours to pump pledging-power. Bounded by the 24-hour cap (IC-7) and a wrecked efficiency ratio — *and* now by permanence: pledging spends a finite lifetime budget, so a pumper can't pledge for free and pledge-farming needs real colluders burning real budget on the public ledger. Narrowed but not fully closed — residual is [OP-1](open-problems.md).
 - **Signal flooding** — cheap, unbacked signals generated at scale. Projection-side, parked as **OP-6**.
 
@@ -124,21 +124,21 @@ A pledge is **not** a purchase, **not** a spend of your credit, and **not** a pr
 
 Credit-earners direct what gets worked on next. Two distinct instruments, distinguished by one test:
 
-> **Is it backed 1:1 by earned credit?**
+> **Is it paid for, 1:1, from earned credit?**
 
 | | **Pledge** | **Signal** |
 |---|---|---|
 | Says | "I authorize this creditable work" | "I want this to exist" |
-| Backed by | earned credit, 1:1 | nothing |
+| Drawn from | earned credit, 1:1 | nothing |
 | Rate | **1 hour pledged per hour earned — a finite lifetime budget, spent once** | *n* per hour earned, or unbounded |
 | Permanence | **permanent, non-revocable** | — |
 | Analogue | a wishlist that funds a run; choosing a GP; crowdfunding; commissioning a task | likes, ratings, applause |
 
-**A pledge is a 1:1-backed pre-authorization of creditable work — it need not involve an object or move any debit**. The old framing ("I will absorb this debit") was too narrow. Concrete case: a resident earns 4 credit-hours and **pledges 2 toward mowing the public verge on their block**. Someone with a mower sees the pledge, mows for an hour, submits evidence, and **is credited 1 hour** — 1 pledged hour remains for a later mow. *That is the entire transaction: no object changes hands, no property-debit moves, credits and pledges do not cancel.* The pledge simply **summoned an hour of creditable work** and drew an hour from the pledger's lifetime pledging-budget to do it — without spending or transferring the underlying credit, which stays on the pledger's ledger. **A pledge is permanent and non-revocable, and is not a promise to buy.** Where the pledged work *does* yield a held object, taking that object is a *separate* act: whoever accepts possession takes on its property-debit against their own debit-room (§3.2), whether or not they pledged. That is the ordinary possession rule, not what *defines* a pledge. What defines a pledge is the 1:1 credit backing (IC-8).
+**A pledge is a pre-authorization of creditable work, drawn 1:1 from earned credit; — it need not involve an object or move any debit**. The old framing ("I will absorb this debit") was too narrow. Concrete case: a resident earns 4 credit-hours and **pledges 2 toward mowing the public verge on their block**. Someone with a mower sees the pledge, mows for an hour, submits evidence, and **is credited 1 hour** — 1 pledged hour remains for a later mow. *That is the entire transaction: no object changes hands, no property-debit moves, credits and pledges do not cancel.* The pledge simply **summoned an hour of creditable work** and drew an hour from the pledger's lifetime pledging-budget to do it — without spending or transferring the underlying credit, which stays on the pledger's ledger. **A pledge is permanent and non-revocable, and is not a promise to buy.** Where the pledged work *does* yield a held object, taking that object is a *separate* act: whoever accepts possession takes on its property-debit against their own credit and backing (§3.2), whether or not they pledged. That is the ordinary possession rule, not what *defines* a pledge. What defines a pledge is that it is drawn 1:1 from earned credit (IC-8).
 
 **Pledging is deliberately messy, and that is fine.** There will be unfulfilled pledges, frivolous pledges toward trivial or unverifiable tasks, and people learning to pledge well. Coordination groups and pledge-influencing politics will emerge around it. None of this is a defect: **pledges are the job-creating demand lever**, and a lever people organize around is a lever that works.
 
-**Why pledges must be exactly 1:1.** A person's pledges are permanent debit-room they confer on receivers, and every hour of it is drawn from a **finite lifetime pledging-budget equal to their lifetime earned credit**; the 1:1 cap (IC-8) holds cumulative pledging to that backing. Let it exceed and you get **fractional-reserve pledging** — more permanent debit-room granted across the network than the grantors' credit can stand behind. This is a solvency constraint, not a preference. It also happens to be the only stationary value: pledging power created per period is *kL* and consumed at most *L*, so any *k* > 1 diverges until pledges filter nothing, and any *k* < 1 shrinks the directed economy to zero. **Because the budget is spent once and never refunded, pledging is itself a real sacrifice — which is what re-arms the influence guard: an influence-pumper can no longer pledge for free (tightening OP-1), and pledge-farming a task now requires real verified colluders each burning their own finite budget, visible on the public pledge ledger (§4.7).**
+**Why pledges must be exactly 1:1.** A person's pledges are permanent backing they confer on receivers, and every hour of it is drawn from a **finite lifetime pledging-budget equal to their lifetime earned credit**; the 1:1 cap (IC-8) holds cumulative pledging to that credit. Let it exceed and you get **fractional-reserve pledging** — more permanent backing granted across the network than the pledgers' credit can stand behind. This is a solvency constraint, not a preference. It also happens to be the only stationary value: pledging power created per period is *kL* and consumed at most *L*, so any *k* > 1 diverges until pledges filter nothing, and any *k* < 1 shrinks the directed economy to zero. **Because the budget is spent once and never refunded, pledging is itself a real sacrifice — which is what re-arms the influence guard: an influence-pumper can no longer pledge for free (tightening OP-1), and pledge-farming a task now requires real verified colluders each burning their own finite budget, visible on the public pledge ledger (§4.7).**
 
 **Why signals should be plentiful.** Under 1:1 you can only signal for as much as you personally worked, so you signal your top priorities and the system learns nothing about your second tier. Cheap, abundant signals **reveal the full preference ordering rather than just the top slice.**
 
@@ -151,11 +151,11 @@ Credit-earners direct what gets worked on next. Two distinct instruments, distin
 
 **Self-care pledging-power — a universal basic voice**. Self-care (§4.5) is credit in full, so like all credit it generates **pledging-power** as well as consumption headroom (§5.5). Every living human therefore directs some share of what society works on next simply by being alive — a **universal basic voice**. Because the floor is equal for all, the spread of pledge budgets per day lived is bounded at `24 ÷ F` (§5.5.5). **That bounds the say over what gets made, not consumption**, which nothing here limits.
 
-**Routing is a standing pledge, and it needs consent** (Foundations §4.6). A subscriber may commit a stated share of their budget, as it accrues, to published criteria such as basic-needs work. **A network may offer this at subscription and may not apply it by default**, because nobody pledges by default and nobody pledges automatically. A subscriber who is never asked, or who cannot consent, such as an infant, has made no standing pledge. A standing pledge to a sector grants room to nobody until its criteria name a person.
+**Routing is a standing pledge, and it needs consent** (Foundations §4.6). A subscriber may commit a stated share of their budget, as it accrues, to published criteria such as basic-needs work. **A network may offer this at subscription and may not apply it by default**, because nobody pledges by default and nobody pledges automatically. A subscriber who is never asked, or who cannot consent, such as an infant, has made no standing pledge. A standing pledge to a sector backs nobody until its criteria name a person.
 
 **Worked, at `F` = 10 h/day.** Self-care accrues 3,650 h of budget a year and 292,000 h over 80 years. A 50% standing pledge accepted at age 20 commits 0.5 × 3,650 × 60 = **109,500 h** and leaves 182,500 h to direct. A network applying 100% by default would spend all 292,000 h with no consent, and that is not available. **A network offering one standing pledge to everyone writes the criteria for much of the population's budget**, which is a P4 (coordinator class) surface.
 
-**Approval never gates credit — but *verification* gates its realization**. The work is **always recorded**: an event is logged the moment work is done, so origin closure holds and unpledged wheat still has a grower (A7, IC-3). What a pledge buys is **authorization and demand-room** for the work — a permanent grant, but still not a guaranteed sale; whoever ultimately takes the resulting good uses their own debit-room to hold it (§3.2, §4.6). But a recorded credit **realizes** — begins counting toward the worker's position — only when the output is **verified**, exactly as A7 already gates an estimated position on observation. This is *verification, not approval*: no committee judges the work worthy; the trigger is objective evidence the output exists. See §4.6 for how, for a physical good, that verification *is* the hand-off.
+**Approval never gates credit — but *verification* gates its realization**. The work is **always recorded**: an event is logged the moment work is done, so origin closure holds and unpledged wheat still has a grower (A7, IC-3). What a pledge buys is **authorization and backing** for the work — a permanent grant, but still not a guaranteed sale; whoever ultimately takes the resulting good carries it against their own credit and backing (§3.2, §4.6). But a recorded credit **realizes** — begins counting toward the worker's position — only when the output is **verified**, exactly as A7 already gates an estimated position on observation. This is *verification, not approval*: no committee judges the work worthy; the trigger is objective evidence the output exists. See §4.6 for how, for a physical good, that verification *is* the hand-off.
 
 ---
 
@@ -176,7 +176,7 @@ Credit-earners direct what gets worked on next. Two distinct instruments, distin
 <!-- tag: fnd-s6-4d -->
 ### 6.4d Who holds the demand lever
 
-**Terms used here.** The **demand lever** is whatever decides how much of a thing gets made. A **pledge** is a request for work, backed 1:1 by hours the pledger has already earned, spent once from a lifetime budget (§4.6).
+**Terms used here.** The **demand lever** is whatever decides how much of a thing gets made. A **pledge** is a request for work, drawn 1:1 from hours the pledger has already earned, spent once from a lifetime budget (§4.6).
 
 #### The objection this answers
 
@@ -196,7 +196,7 @@ This is the standard reply from economics, and it rests on three assumptions. **
 
 #### What pledges change
 
-**A pledge cannot be manufactured by a seller.** It is backed by hours the pledger worked, it is spent once, and it is public (§4.7). A firm cannot advertise a pledge into existence, because a pledge costs the pledger something real that only they can spend.
+**A pledge cannot be manufactured by a seller.** It is drawn from hours the pledger worked, it is spent once, and it is public (§4.7). A firm cannot advertise a pledge into existence, because a pledge costs the pledger something real that only they can spend.
 
 **And the lever is distributed far more evenly, which is measurable.**
 
@@ -227,17 +227,17 @@ They tell their device. Under presets they set earlier, it pledges **0.5 h** tow
 
 | | |
 |---|---|
-| Pledged debit-room raised | 5,000 × 0.1 h = **500 h** |
+| Backing raised | 5,000 × 0.1 h = **500 h** |
 | The artist's next work — materials and travel | **300 h** |
 | Surplus | **200 h** |
 
-**The surplus is room the artist can use**, unless the pledgers attached conditions to it. **So somebody well-liked can end up with a lot of room, and Aequitas does not prevent it** (§5.5.5). What that room cannot do is earn: it cannot be lent at interest, rented out, charged for, or used to hire anybody.
+**The surplus is backing the artist can use**, unless the pledgers attached conditions to it. **So somebody well-liked can end up with a lot of backing, and Aequitas does not prevent it** (§5.5.5). What that backing cannot do is earn: it cannot be lent at interest, rented out, charged for, or used to hire anybody.
 
 > **⚠️ A design point that matters, found while working these numbers.** A **flat rate per like** does not discipline anything. At 0.1 h a like, a person earning 5,450 h a year could give **54,500 likes a year** before their budget bound. **The sound preset is a share of a budget:** *this like costs (my art budget) ÷ (likes I give this period)*. Allocate 50 h a year and give 500 likes, and each is 0.1 h; give 5,000 likes and each is 0.01 h. **It normalises itself.** A network offering the flat preset is offering a broken one.
 
 #### Two checks against existing rules
 
-- **Does example 2 let feedback buy credit?** **No.** §4.2 forbids *credit* from realising on feedback, which would make likes a currency (OP-8). **A pledge is not credit.** It grants debit-room and is backed 1:1 by hours the pledger already earned. Auto-routing your own pledging budget is the same permitted move §4.6 already describes for self-care.
+- **Does example 2 let feedback buy credit?** **No.** §4.2 forbids *credit* from realising on feedback, which would make likes a currency (OP-8). **A pledge is not credit.** It backs a named person and is drawn 1:1 from hours the pledger already earned. Auto-routing your own pledging budget is the same permitted move §4.6 already describes for self-care.
 - **Does it create a popularity contest?** **Yes, and that is the known open problem OP-6 (feedback mechanics), not a new one.** Whoever is already liked attracts the most pledges. The bound is that every pledge costs a real person a real hour from a finite budget, and the ceiling above holds. **Registered, not solved.**
 
 #### What this does **not** answer
@@ -249,5 +249,5 @@ That is a distribution question and it has a separate answer: a queue, a lottery
 **Full statement of the reply, including the Mises and Hayek arguments:** `00-strategy/open-problems/OP-9_calculation_reply.md`.
 
 ---
-*Status: settled (Foundations v0.47 — a pledge names a person or the criteria that will name one; committed room is consumable; the contingent reserve is withdrawn)*
+*Status: settled (Foundations v0.47 — a pledge names a person or the criteria that will name one; committed backing is consumable; the contingent reserve is withdrawn)*
 *Source: `00-strategy/Aequitas_Foundations.md` §4.6 (pledges and signals), §4.5 (the lifetime pledging budget) · IC-8 and IC-9, now conformance row 9*

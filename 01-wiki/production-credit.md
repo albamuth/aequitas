@@ -73,7 +73,7 @@ A workshop of **10 people** spends **40 hours each** making **200 toasters**, us
 ## Who games this
 
 - **Claiming hours for things that were never made.** Nothing counts until a receiver accepts the output, and the receiver pays for every unit they accept. A colluding receiver can sign for phantom toasters, but then carries 2 kg of phantom debit each, and IC-7 caps what any account can claim at 24 hours a day. The residue is collusive hand-offs manufacturing gross hours, which is OP-1.
-- **Calling a dull or dangerous job "production" to earn more.** There is no more to earn. The name decides whether the hour counts, never how much. Room for unwanted work comes from people pledging more for it ([pledge-and-signal](pledge-and-signal.md)).
+- **Calling a dull or dangerous job "production" to earn more.** There is no more to earn. The name decides whether the hour counts, never how much. Backing for unwanted work comes from people pledging more for it ([pledge-and-signal](pledge-and-signal.md)).
 
 ## Depends on
 
@@ -82,7 +82,7 @@ A workshop of **10 people** spends **40 hours each** making **200 toasters**, us
 ## Consequences
 
 - [property-debit](property-debit.md) — what the receiver takes on at the hand-off
-- [debit-tolerance](debit-tolerance.md) — every counted hour widens the room the gate allows
+- [debit-tolerance](debit-tolerance.md) — every counted hour raises what the gate lets a person carry
 
 ---
 *Status: settled*

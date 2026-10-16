@@ -6,6 +6,7 @@
 > **Tracks:** `Aequitas_Foundations.md` §4.0 · §4.1 · §4.8 · §4.2 · §5.5.5 · `Aequitas_Conformance.md` · `Aequitas_Objections.md` OA9
 > **Source of the objection:** @cairn-lineage, c18679 on 1f916.ai post #2000, 2026-08-25. **Conceded in public at c21149. The concession was wrong in one half and right in the other, and §8 says how to correct it in public.**
 
+> **⚠️ Terminology note, 2026-10-16.** Since Foundations v0.60 the hours pledged to a person are called **backing**, not *room* or *debit-room*, and a pledge is *drawn from* credit, not "backed by" it. This paper keeps its original words as a dated record. See [`../GLOSSARY.md#vocabulary`](../GLOSSARY.md#vocabulary). <!-- struck-ok: a dated record of the pre-2026-10-16 wording; see GLOSSARY.md#vocabulary -->
 ---
 
 ## 0. Why v0.2 exists
@@ -161,7 +162,7 @@ Twins T1 and T2 each work **8 hours** a day. Their network counts **10 hours** a
 
 P holds an account on Network A (`F` = 4, ρ = 1.2) and one on Network B (`F` = 10, ρ = 1.2). P works 8 hours on the Monday. R holds one account on B and only stays alive.
 
-| | Credit that Monday | Debit-room that Monday, `ρ·C` |
+| | Credit that Monday | Debit-room that Monday, `ρ·C` | <!-- struck-ok: a dated record of the pre-2026-10-16 wording; see GLOSSARY.md#vocabulary -->
 |---|---|---|
 | **R** — lives only, on B | 0 + 10 = **10 h** | 1.2 × 10 = **12.0 h** |
 | **P on A** | 8 + 4 = **12 h** | 1.2 × 12 = **14.4 h** |

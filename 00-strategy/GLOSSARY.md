@@ -1,6 +1,6 @@
 # Aequitas — Acronym Registry & Glossary
 
-> **Version:** 0.4 · **Date:** 2026-10-14 · **Status:** canonical index
+> **Version:** 0.5 · **Date:** 2026-10-16 · **Status:** canonical index
 > **Why this exists:** the [external critique](#src-external-critique-2026-08-09) flagged abbreviation density (OP-#, C#, IC-#, A#, P#, §x.x) with no master index as the #1 accessibility barrier. This is that index, and the resolution target for the acronym-titling pass in `NEXT.md`.
 > **v0.3 (2026-08-23):** added the [Simulation, cohort, and data terms](#simulation-terms) table — the vocabulary the economy simulator introduced — and **four missing rows to the source index**, which had drifted behind `02-research/`: cross-country labour efficiency, the GDPR erasure note, and two new files on consumer segmentation and on labour/pollution intensity.
 > **v0.2 (2026-08-13):** added the [Research & academic terms](#research-terms) table — the outside vocabulary (economic theory, alternative-currency history, accounting method) used across `02-research/`, each with a plain definition, the research doc that best explains it, and an external authoritative (non-paywalled) source. Every definition below was checked against its linked source on 2026-08-13.
@@ -90,7 +90,7 @@ The fixed core. Do not re-litigate (see `CLAUDE.md`).
 | <a id="ic-5"></a>**IC-5** | custody continuity | One holder at any instant; every hand-off is an event. | Conformance row 7a |
 | <a id="ic-6"></a>**IC-6** | interval sanity | No consuming a parcel before it exists or after it's destroyed. | Conformance row 7 |
 | <a id="ic-7"></a>**IC-7** | 24-hour cap | Agent-time can't exceed wall-clock; ≤24h credited per 24h. | Conformance row 8 |
-| <a id="ic-8"></a>**IC-8** | pledge backing | **Cumulative** pledged hours ≤ **lifetime** earned credit (no fractional reserve). The budget is spent at pledge time and never returned. | Conformance row 9 |
+| <a id="ic-8"></a>**IC-8** | pledges drawn from credit | **Cumulative** pledged hours ≤ **lifetime** earned credit (no fractional reserve). The budget is spent at pledge time and never returned. | Conformance row 9 |
 | <a id="ic-9"></a>**IC-9** | pledge discharge | On occurrence, a held object's debit follows possession to whoever accepts it (not necessarily the pledger); a pure service moves none. Pledges are **permanent and non-revocable** (§4.6); an unfulfilled pledge burns, it is not returned. | Conformance row 9 |
 | <a id="ic-10"></a>**IC-10** | non-negative allocation | No output's share of any dimension is negative. | Conformance row 10b |
 | <a id="ic-11"></a>**IC-11** | exhaustive allocation | Per dimension, shares sum to the recorded input total. | Conformance row 10c |
@@ -157,6 +157,15 @@ Early problem list; several merged into the OP series.
 | <a id="p9"></a>**P9** | local-currency read | ✅ Fixed (the overlay computes what money can't) |
 
 ---
+
+## <a id="vocabulary"></a>Project vocabulary — three words the documents fix (ruled 2026-10-16)
+
+| Word | What it means | Do not say |
+|---|---|---|
+| <a id="backing"></a>**backing** | Hours other people have pledged to a person by name: `P` in the gate `D ≤ ρ·(C + P)`. A pledge *backs* whoever it names, and may be made to a fund, a company, a municipality or a prize; it backs a person only when distributed to one. *Whoever fulfils the pledge's conditions gets the backing.* Foundations §3.0, §4.6 | *room*, *debit-room*, *grants room* | <!-- struck-ok: the glossary names the struck words in order to say they are struck -->
+| <a id="balances"></a>**balances** (verb) | Credit stands against debit, up to ρ times: *the floor balances 4,380 h of debit a year*. Foundations §3.0 | *a balance* (noun) — a stored number that could be drawn down does not exist (A6, §3.5) |
+| <a id="may-carry"></a>**may still carry** | The gate's slack, `ρ·(C + P) − D`. Foundations §3.0 | *room left*, *headroom* | <!-- struck-ok: the glossary names the struck words in order to say they are struck -->
+| <a id="drawn-from"></a>**drawn from** | What a pledge is paid for with: the pledger's earned credit, one hour for one hour. Foundations §4.6 | *backed by credit* — "backing" is reserved for the person a pledge names | <!-- struck-ok: the glossary names the struck words in order to say they are struck -->
 
 ## <a id="research-terms"></a>Research & academic terms — the outside vocabulary
 

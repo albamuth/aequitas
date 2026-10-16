@@ -1,5 +1,6 @@
 # Pledge Inflation — Does Granting Debit-Room Create Claims Without Goods?
 
+> **⚠️ Terminology note, 2026-10-16.** Since Foundations v0.60 the hours pledged to a person are called **backing**, not *room* or *debit-room*, and a pledge is *drawn from* credit, not "backed by" it. This note keeps its original words as a dated record; its argument is unchanged. See [`../00-strategy/GLOSSARY.md#vocabulary`](../00-strategy/GLOSSARY.md#vocabulary).
 **Version:** 0.1
 **Type:** technical problem — original analysis, internal to this project
 **Author(s):** this project. The monetary comparison draws on Keynes, Graeber and the local-currency record already archived here.

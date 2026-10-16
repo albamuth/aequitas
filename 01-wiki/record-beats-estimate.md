@@ -53,7 +53,7 @@ edges:
 
 ## An example, with the numbers
 
-**A person joins at forty, and the network estimates their declared span back to the earliest date its evidence permits.** At `F` = 10 h/day and ρ = 1.2, each declared year opens 1.2 × 10 × 365 = **4,380 hours** of room and adds about **1,380 hours** of consumption, so an honest year is worth **+3,000 hours** of room.
+**A person joins at forty, and the network estimates their declared span back to the earliest date its evidence permits.** At `F` = 10 h/day and ρ = 1.2, each declared year's credit balances 1.2 × 10 × 365 = **4,380 hours** of debit and adds about **1,380 hours** of consumption, so an honest year is worth **+3,000 hours** a person may carry.
 
 **Eight years later a baptismal register turns up showing they were born three years later than the estimate.**
 
@@ -61,12 +61,12 @@ edges:
 |---|---|
 | The original estimated span | **not edited, not deleted** |
 | The register | **appended beside it**, dated and attributed |
-| The person's position | **re-derived from the log**, so 3 × 3,000 = **9,000 hours** of room come off |
+| The person's position | **re-derived from the log**, so 3 × 3,000 = **9,000 hours** a person may carry come off |
 | What the procedure decided | who could file the register, and what the books did for the eight years in between |
 
 **In plain words: the append-only rule settles where the record ends up, and the procedure settles how it got looked at.** Without the second, the first describes an outcome nobody can reach.
 
-**And the gate is checked at the moment of the transaction.** A correction changes future room; it never makes a completed purchase invalid ([retroactive-reweighting](retroactive-reweighting.md), conformance row 11).
+**And the gate is checked at the moment of the transaction.** A correction changes what a person may carry in future; it never makes a completed purchase invalid ([retroactive-reweighting](retroactive-reweighting.md), conformance row 11).
 
 ## Depends on
 

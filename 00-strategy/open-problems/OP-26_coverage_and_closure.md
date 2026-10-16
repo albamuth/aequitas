@@ -3,6 +3,7 @@
 > **Version:** 0.1
 > **Date:** 2026-09-16
 
+> **⚠️ Terminology note, 2026-10-16.** Since Foundations v0.60 the hours pledged to a person are called **backing**, not *room* or *debit-room*, and a pledge is *drawn from* credit, not "backed by" it. This paper keeps its original words as a dated record. See [`../GLOSSARY.md#vocabulary`](../GLOSSARY.md#vocabulary). <!-- struck-ok: a dated record of the pre-2026-10-16 wording; see GLOSSARY.md#vocabulary -->
 > **Status:** Working paper. **Both halves of the answer were already in Foundations** — §4.4 supplies the closure witness, §3.3 supplies the reason it never has to be final. This paper connects them to the audit layer, corrects one over-claim, asks for one schema field, and names one previously-unregistered exploit.
 > **The shape of the answer:** a closure witness is neither an assertion nor a proof — **it is a citation.** Method, provenance, date, confidence, and an obligation to recompute every affected ledger when it improves. Science has no closure witnesses either; it has methods sections. See §9.
 > **Raised by:** [@cairn-lineage](https://1f916.ai/post/1581) (c14985) on 1f916.ai, 2026-08-22, in reply to post [#1605](https://1f916.ai/post/1605). Conceded on the board at c14987. Verbatim in `07-outreach/memory/objections.md`.

@@ -106,7 +106,7 @@ Either cascade breaks the books. This is the same constraint as the [Front-Loadi
 *A named consolidation of §4.5 / §4.5 / §4.5 and objections B3 / B8 — the second thing §3.2 needs to be legible. Where the taxonomy above says how a cost **behaves**, this says **when it is paid and by whom**, for the one class of cost that would otherwise never terminate.*
 
 > ### 🔒 THE FRONT-LOADING RULE
-> **A large up-front cost with a diffuse benefit is carried when it is incurred, cushioned by the debit-room the people who pledged for it grant. It is never amortized downstream onto whoever happens to consume the result.**
+> **A large up-front cost with a diffuse benefit is carried when it is incurred, cushioned by the backing of the people who pledged for it. It is never amortized downstream onto whoever happens to consume the result.**
 
 **What it covers.** Four cases, one rule:
 
@@ -126,7 +126,7 @@ Either cascade breaks the books. This is the same constraint as the [Front-Loadi
 
 **Who actually carries front-loaded capital — the waterfall (§4.5):**
 
-1. **Community pledges grant the holders debit-room to carry it.** A [pledge](pledge-and-signal.md) does **not** draw the cost down: it is a *permanent grant of debit-room* — virtual credit conferred on the co-op, drawn from the pledger's finite lifetime pledging-budget; their credit itself never moves. It cushions the bite (and, being permanent, can be relied on rather than re-exposed by withdrawal), and doubles as the construction authorization *and* the demand brake — a facility is built at the scale the community will pledge for.
+1. **Community pledges back the holders, so that they may carry it.** A [pledge](pledge-and-signal.md) does **not** draw the cost down: it is *permanent backing* of the co-op, drawn from the pledger's finite lifetime pledging-budget; their credit itself never moves. It cushions the bite (and, being permanent, can be relied on rather than re-exposed by withdrawal), and doubles as the construction authorization *and* the demand brake — a facility is built at the scale the community will pledge for.
 2. **The full cost is holding-time split** among the asset's holders (share = holding-duration ÷ total holder-years over its life) — pledges cushion the bite, they don't shrink the debit (nothing vanishes, [A1](material-flow-value.md)). Holding-duration is a [physical trace](physical-trace-test.md), so this is measured, not invented — and it passes the cooperative-game checklist an even split fails (**dummy:** a new hire bears ≈0, killing the entry-toll that would scare people off staffing hospitals; **symmetry;** progressive; final only at disposal).
 3. **The [basic-needs floor](debit-tolerance.md) caps how hard any residual bites** (§5.5).
 

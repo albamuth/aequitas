@@ -1,7 +1,7 @@
 <!-- tag: cnf-aequitas-conformance -->
 # Aequitas — Conformance Requirements
 
-> **Version:** 0.21 · **Date:** 2026-10-13
+> **Version:** 0.22 · **Date:** 2026-10-16
 > **Audience: implementers.** Anyone building a trust network.
 > **Companion:** [`Aequitas_Foundations.md`](Aequitas_Foundations.md) — the system itself, and the argument behind every row below. **Where the two differ, Foundations governs.**
 > **Two row numbers are retired and are never reused: the bare `17`, and `14c`.**
@@ -21,7 +21,7 @@
 
 **1. The dial test.** Turn any implementation choice to one extreme, then to the other. **If the rule is still true at both ends, the choice was not part of the rule.**
 
-Worked: take *how much anyone can see*. At one extreme, every record is public. At the other, only machines ever read the ledger and no human does. **Mass still balances at both ends. A pledge is still backed one-for-one at both ends.** So conservation and pledge-backing are rules, and transparency is a dial. Transparency is not on this list; conservation and pledge-backing are.
+Worked: take *how much anyone can see*. At one extreme, every record is public. At the other, only machines ever read the ledger and no human does. **Mass still balances at both ends. A pledge is still drawn one-for-one from earned credit at both ends.** So conservation and the one-for-one rule are rules, and transparency is a dial. Transparency is not on this list; conservation and the one-for-one rule are.
 
 **2. The have-versus-achieve test.** A row states something an implementation **has**. It never states something an implementation must **succeed at**.
 
@@ -33,7 +33,7 @@ Worked: *"records are never deleted"* is something you can read off an implement
 
 > **"Given a trust network with a secure database, 99.999% identity security, and practically unlimited storage…"**
 
-**What survives is an accounting rule and belongs here. What dissolves was an engineering complaint.** *"That would be too much data"* dissolves. *"You could not prove one person holds one account"* dissolves. **Mass must still balance, and a pledge must still be backed one-for-one.**
+**What survives is an accounting rule and belongs here. What dissolves was an engineering complaint.** *"That would be too much data"* dissolves. *"You could not prove one person holds one account"* dissolves. **Mass must still balance, and a pledge must still be drawn one-for-one from earned credit.**
 
 ---
 
@@ -52,7 +52,7 @@ Worked: *"records are never deleted"* is something you can read off an implement
 | **Collapse** | Turning a debit's list of physical quantities into one comparable figure, by applying a weighting model. It happens when somebody asks, never in storage. |
 | **Record** | A figure that came from an observation or an attestation. |
 | **Estimate** | A figure that came from a published method, used where no record exists. **A record always beats an estimate.** |
-| **The gate** | The rule `D ≤ ρ·(C + P)`. A person's debit `D` may not exceed their credit `C` plus the room `P` others have pledged to them by name, times the network's debit tolerance **ρ** ("rho"). **ρ multiplies both terms**, or a pledged hour would buy less room than a worked one. |
+| **The gate** | The rule `D ≤ ρ·(C + P)`. A person's debit `D` may not exceed their credit `C` plus the backing `P` others have pledged to them by name, times the network's debit tolerance **ρ** ("rho"). **ρ multiplies both terms**, or a pledged hour would balance less debit than a worked one. |
 | **The floor**, `F` | The hours a day a network counts as the work of keeping a human being alive. **Each network sets its own.** |
 | **Extent** | The piece of the world a figure is about — a region, a sector, a population. **Never the set of subscribers** (row 17a). |
 | **Coverage** | The share of an extent's real material flow that a network's records actually captured. As a formula, `Y ÷ N`. |
@@ -130,7 +130,7 @@ Worked: *"records are never deleted"* is something you can read off an implement
 |---|---|---|
 | The floor `F` | 4 h/day | 10 h/day |
 | Credit recorded for that Monday | 8 + 4 = **12 h** | 8 + 10 = **18 h** |
-| Debit-room at ρ = 1.2 | 1.2 × 12 = **14.4 h** | 1.2 × 18 = **21.6 h** |
+| Debit balanced at ρ = 1.2 | 1.2 × 12 = **14.4 h** | 1.2 × 18 = **21.6 h** |
 
 **Both figures are correct. Neither breaks row 8**, because 12 and 18 are each under 24 and row 8 applies to each account on its own.
 
@@ -145,8 +145,8 @@ Worked: *"records are never deleted"* is something you can read off an implement
 | 5 | **A person's standing is never stored. It is computed from the event log every time anyone asks.** The log holds physical quantities only — kilograms, joules, hours — **never a price, a weight, a cost, or a value.** The cost is produced at the moment somebody reads the log, by applying the weighting model then in force. | A6, A5 |
 | 6 | **No record is ever deleted or edited.** A record found to be wrong gets a dated, attributed note appended saying so. A record with something better gets the better one added beside it. **Both stay.** | §4.4, §4.8 |
 | 6a | **The network publishes a procedure for correcting records** — for a **mistake** (the quantity is wrong), **bad data** (the instrument, method or source was faulty), and **fraud** (the event did not happen). **Four properties.** It is **published and readable before a person joins**; it says **who may raise a correction and on what evidence**; it says **what happens to the record while the correction is open**; and every correction is **dated, attributed and appended**, per row 6. **What the procedure is, is the network's design. That one exists and is published is not optional.** | §4.4, §4.2, §2.6 |
-| 11 | **The gate is checked at the moment of the transaction.** A later correction changes how much room a person has in future. **It never makes a completed purchase invalid.** | §3.3 |
-| 17b | **When a cost constant, a joint split, or a coverage figure improves, every affected record in history is recomputed.** A figure is a dated reading, never a verdict. **This changes future room only, and never the validity of a completed act** (row 11). | A4, A6, §3.3 |
+| 11 | **The gate is checked at the moment of the transaction.** A later correction changes what a person may carry in future. **It never makes a completed purchase invalid.** | §3.3 |
+| 17b | **When a cost constant, a joint split, or a coverage figure improves, every affected record in history is recomputed.** A figure is a dated reading, never a verdict. **This changes only what a person may carry in future, and never the validity of a completed act** (row 11). | A4, A6, §3.3 |
 
 ---
 
@@ -156,8 +156,8 @@ Worked: *"records are never deleted"* is something you can read off an implement
 |---|---|---|
 | 7 | **Matter and energy balance across every recorded process**, within a stated tolerance and at one level of detail. **Everything the books track has a beginning and an end.** It came from an extraction, or from an estimated entry for something that already existed when the books started; and at any moment it is **held by somebody, used up, or released to a named place in the world.** **A thing with neither a beginning nor an end is reported as *unaccounted*, never left out.** Nothing is recorded as used before it exists or after it is gone. | A1, A4 · *IC-1, IC-2, IC-3, IC-4, IC-6* |
 | 8 | **No account claims more than 24 hours of activity in 24 hours.** | A2, §5.5.5 · *IC-7* |
-| 9 | **A person's pledges never exceed the credit they have earned in their life, one hour for one hour.** The budget is spent **when the pledge is made**, not when the work happens, **and there is no path that gives it back.** **Room received never enlarges the budget** — a budget is credit the holder earned, and nothing else. | §4.6, §5.5.5 · *IC-8, IC-9* |
-| 9a | **A pledge grants room to nobody until it names a person.** A pledge may name a person, or the criteria that will name one. **Until a person is named it sits in no account's gate; once named the room is committed and is never revoked.** An undistributed pledge lapses, and the budget is spent either way. **Where a pledge states no criteria, room goes to whoever did the named work, by hours worked.** | §4.6, §3.2c |
+| 9 | **A person's pledges never exceed the credit they have earned in their life, one hour for one hour.** The budget is spent **when the pledge is made**, not when the work happens, **and there is no path that gives it back.** **Backing received never enlarges the budget** — a budget is credit the holder earned, and nothing else. | §4.6, §5.5.5 · *IC-8, IC-9* |
+| 9a | **A pledge backs nobody until it names a person.** A pledge may name a person, or the criteria that will name one. **Until a person is named it sits in no account's gate; once named the backing is committed and is never revoked.** A pledge may be made to a fund, a company, a municipality or a prize; it backs a person only when distributed to one. An undistributed pledge lapses, and the budget is spent either way. **Where a pledge states no criteria, the backing goes to whoever did the named work, by hours worked.** | §4.6, §3.2c |
 | 9b | **Awarding criteria are published before the pledge is made.** Criteria may be any conditional thing, including a judging panel. **A network that lets criteria change after pledges are taken cannot show what a pledger agreed to.** | §4.6, §4.2, A8 |
 | 10 | **A debit is a list of physical quantities, not one number.** Any division — across co-products, across a team, across anything — **is computed on each quantity separately, before they are combined into one figure.** | §3.2a |
 | 10a | **A joint process's cost is not divided among its outputs.** Every co-product carries the **whole** cost of the process it came through, read against its **own output mass**. **What must be recorded is which steps each product passed through — a binary fact, never a share.** A cost may still never depend on **demand or desirability**; it may depend on output mass, because a scale reads one. | §3.4a, §2.5 |
@@ -267,7 +267,7 @@ Worked: *"records are never deleted"* is something you can read off an implement
 | # | Requirement | From |
 |---|---|---|
 | 14 | **An unmeasured producer's estimated share is worked out over the producers still unmeasured, never over everybody**, and it comes from a production model for their occupation, region and known activity. **The leftover `R` is never divided by a count of producers.** Two worlds with different truths hand one network identical books, so no per-head figure computed from those books can describe either. | §4.4, §4.1 |
-| 14e | **A joining person's declared span is a record.** Where it is unevidenced the network sets it by one published rule, **back to the earliest date the evidence allows**, and what that rule produces is a record — corrected by supersession under rows 6 and 6a, **and carrying no interval and no label.** A **declared span** is how long the person says they have lived, and it sets how many years the reconstruction rebuilds. **It is not exempt from the rule that an assertion is not evidence.** The rule names a date and not a direction, because each declared year opens `ρ·F·365` hours of room while adding about a year of consumption: **above `ρ·F` = 3.78 h/day a longer span pays the filer, and below it a shorter one does.** Both settings are inside the workable band. **Row 13's three labels do not reach it**, because they exist to repair a subtraction's reversal of direction and the earliest-date rule is not a subtraction — **the earliest permitted date gives the longest permitted span, so the figure is one-sided by construction.** | §4.4, §5.5.3 |
+| 14e | **A joining person's declared span is a record.** Where it is unevidenced the network sets it by one published rule, **back to the earliest date the evidence allows**, and what that rule produces is a record — corrected by supersession under rows 6 and 6a, **and carrying no interval and no label.** A **declared span** is how long the person says they have lived, and it sets how many years the reconstruction rebuilds. **It is not exempt from the rule that an assertion is not evidence.** The rule names a date and not a direction, because each declared year's credit balances `ρ·F·365` hours of debit while adding about a year of consumption: **above `ρ·F` = 3.78 h/day a longer span pays the filer, and below it a shorter one does.** Both settings are inside the workable band. **Row 13's three labels do not reach it**, because they exist to repair a subtraction's reversal of direction and the earliest-date rule is not a subtraction — **the earliest permitted date gives the longest permitted span, so the figure is one-sided by construction.** | §4.4, §5.5.3 |
 | 14d | **Where a network works an estimate out over a measured extent** — hectares, vessel-days, throughput — **it publishes that extent register as unaudited.** Honest error in an extent reading barely moves the estimate. **A producer who deliberately declares half their real extent returns it to the accuracy of the rule this replaced.** Whether the survey behind `N` catches that has been argued and never tested. | §4.4, **OP-28** |
 | 14b | **A coverage figure rests on a measurement that reaches past the network's own membership** — a physical stock somebody went and measured, or an independently known total `N` for the whole extent. **Adding up subscribers' own records proves the books are *consistent*.** **It can never prove they are complete**, because a producer nobody recorded is missing from both sides of every internal sum and every sum still balances. **A coverage figure with nothing behind it that reaches non-subscribers is published as `not identified`.** | §4.4, §4.3, A7 |
 | 15 | **The leftover `R` is computed, published, and held explicitly unassigned** until an **attribution witness** binds a share of it to a named principal. **An attribution witness is a record that names a causer**; a producer joining supplies one, and conservation arithmetic never does. **The unassigned state is what A4 states for unresolved causation, not an exception to it.** | A4, §4.4 |
@@ -365,7 +365,7 @@ Worked: *"records are never deleted"* is something you can read off an implement
 | **IC-5** | One holder at a time | 7a |
 | **IC-6** | Nothing is used before it exists | 7 |
 | **IC-7** | **The 24-hour cap** | **8** |
-| **IC-8** | Pledges are backed one-for-one by earned credit | 9 |
+| **IC-8** | Pledges are drawn one-for-one from earned credit | 9 |
 | **IC-9** | A spent pledge budget is never returned | 9 |
 | **IC-10** | No negative quantity carried | 10b |
 | **IC-11** | The union equals what went in | 10c |
@@ -439,7 +439,7 @@ Foundations §4.1 states it, and the **OP-22 ruling of 2026-08-25** makes it a r
 
 **Freeze its weighting model forever.** Row 5 makes recomputation *possible*; rows 11 and 16b both *assume* it happens. **No row required that a better constant actually re-weighs history**, while A6 says improving the science re-weighs everything and A4 reaches consequences discovered decades later.
 
-**It does not weaken the two rows that constrain recomputation.** Row 16b still requires two unaffiliated replications before a constant may re-weight history. Row 11 still says a re-weight changes future room and never the validity of a completed act.
+**It does not weaken the two rows that constrain recomputation.** Row 16b still requires two unaffiliated replications before a constant may re-weight history. Row 11 still says a re-weight changes only what a person may carry in future and never the validity of a completed act.
 
 ### 16d — what it removes
 
@@ -455,7 +455,7 @@ Foundations §4.1 states it, and the **OP-22 ruling of 2026-08-25** makes it a r
 
 **The gap was one word in row 16.** It requires every estimating number and method the network **uses** to be published. **A record is not an estimating number**, and nothing anywhere required a record to carry a pointer to its own evidence. Row 12 covers **estimates** only. Row 16d says what evidence a **kind of work** needs, in advance, but never ties an individual record back to the rule it satisfied.
 
-> **So an implementation could hold a twenty-hour record backed by a client confirmation and a twenty-hour record backed by nothing, store them identically, and conform.** The only party able to tell them apart is the network.
+> **So an implementation could hold a twenty-hour record supported by a client confirmation and a twenty-hour record supported by nothing, store them identically, and conform.** The only party able to tell them apart is the network.
 
 **It is not a new burden.** Row 16d already makes the network publish the rule before it credits anything, so the rule the record satisfied is a value the network already had. **12c requires it to be written down.**
 

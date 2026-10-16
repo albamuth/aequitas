@@ -12,7 +12,7 @@ Somebody has to clean the toxic site. A market pays a wage premium for nasty wor
 
 ## The mechanism being tested
 
-A **pledge** is a permanent, non-revocable grant of debit-room. Pledges on a task first cushion that task's labour and material cost, shared out by hours worked **on the task** — not by whole-career seniority, which would be a different problem.
+A **pledge** is a permanent, non-revocable grant of debit-room. Pledges on a task first cushion that task's labour and material cost, shared out by hours worked **on the task** — not by whole-career seniority, which would be a different problem. <!-- struck-ok: a dated record of the pre-2026-10-16 wording; see GLOSSARY.md#vocabulary -->
 
 Any **surplus is not consumable.** Banking it as spendable room would re-create a channel for accumulating consumption advantage. Instead the surplus becomes a **contingent reserve**: earmarked, non-spendable room that activates only against a verified future cost traceable to that task — the worker's injury, the site needing remediation again, harm to a third party.
 

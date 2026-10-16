@@ -35,7 +35,7 @@ edges:
 | **Credit** | A record that a person spent an hour of their life on work. It belongs to one person and never moves ([non-fungibility](non-fungibility.md)). |
 | **The three names** | [Production](production-credit.md), [service](service-credit.md) and enrichment. An activity is creditable if it is at least one of the three (Foundations §2.3). |
 | **Feedback** | How a society signals what it wants more of: a stock-out, a referral, applause, a like. **It is not credit and never converts into credit** (Foundations §4.6). |
-| **Pledge** | A permanent grant of debit-room, backed one hour for one hour by credit the pledger already earned ([pledge-and-signal](pledge-and-signal.md)). |
+| **Pledge** | Permanent backing of a named person, drawn one hour for one hour from credit the pledger already earned ([pledge-and-signal](pledge-and-signal.md)). |
 
 ## What it is
 
@@ -49,7 +49,7 @@ edges:
 
 ## Feedback is not credit, and there is nothing to firewall
 
-**Feedback was never credit, so it cannot convert into credit.** A like, a review, a referral or a stock-out tells a society what it wants more of. The thing that carries real backing is a pledge, and a pledge is spent from a finite lifetime budget equal to the pledger's own earned hours.
+**Feedback was never credit, so it cannot convert into credit.** A like, a review, a referral or a stock-out tells a society what it wants more of. The thing with real hours behind it is a pledge, and a pledge is spent from a finite lifetime budget equal to the pledger's own earned hours.
 
 ### An example, with the numbers
 
@@ -59,11 +59,11 @@ edges:
 |---|--:|
 | Credit for the 40 hours of painting, once the network's evidence rule is met | **40 h**, and no more however many likes arrive |
 | Credit from the 5,000 likes | **0 h.** A like is feedback |
-| Room raised, if each liker's app pledges 0.1 h from their own budget | 5,000 × 0.1 = **500 h** of debit-room for the artist |
+| Backing raised, if each liker's app pledges 0.1 h from their own budget | 5,000 × 0.1 = **500 h** of backing for the artist |
 | What the next mural needs in paint and travel | **300 h** |
-| Left over | **200 h** of room the artist can use |
+| Left over | **200 h** of backing the artist can use |
 
-**In plain words: the likes turned into room only because 5,000 people each spent a tenth of an hour of their own finite pledge budget.** Nobody's credit moved, and the artist's 40 hours did not grow. That is the universal rule for how popularity reaches a creator, and it is the same whether the work is a mural, a film, or a theorem.
+**In plain words: the likes turned into backing only because 5,000 people each spent a tenth of an hour of their own finite pledge budget.** Nobody's credit moved, and the artist's 40 hours did not grow. That is the universal rule for how popularity reaches a creator, and it is the same whether the work is a mural, a film, or a theorem.
 
 **The same rule pays for creative work up front.** A film's crew are credited during production, and the people who wanted the film pledge for it then. The audience pays for delivery only ([education-as-credited-work](education-as-credited-work.md) states the front-loading rule). **A popular film cannot gouge its audience, because there is no mechanism by which it could** (Overview §5).
 

@@ -56,7 +56,7 @@ edges:
 | Bound | Figure |
 |---|---|
 | Wall-clock cap: 3 founders × 14 months × 24 h a day, checkable with a calendar | **≈ 30,660 h** at most, and IC-7 holds each to 24 a day |
-| What over-crediting buys | **Consumption room only**, gated by `D ≤ ρ·(C + P)` like everyone else's. Credit is non-transferable, so it buys nothing else |
+| What over-crediting buys | **Only more to carry**, gated by `D ≤ ρ·(C + P)` like everyone else's. Credit is non-transferable, so it buys nothing else |
 | Who re-computes it | **Any later network**, from the public founding record |
 
 **In plain words: a generous founding record is visible, bounded by the calendar, and worth only what any other credit is worth.** Nobody has to forbid a bad founding record. It simply does not attract anyone.

@@ -52,9 +52,9 @@ edges:
 2. **An estimate errs against the person, on both sides.** Debit at the unfavourable end, credit at the conservative end, so supplying evidence always pays whichever way the truth lies.
 3. **The declared span is a record, set by one published rule: back to the earliest date the available evidence permits.** An assertion is not evidence ([record-beats-estimate](record-beats-estimate.md)).
 
-**Why condition 3 names a date and not a direction.** Each declared year opens `ρ·F·365` hours of room and adds about 1,380 hours of consumption. Break-even is `ρ·F` = 1,380 ÷ 365 = **3.78 hours a day**. Above it a longer span pays the filer; below it a shorter one does, and both settings are conforming. *The earliest date the evidence allows* is the same instrument on both sides of 3.78.
+**Why condition 3 names a date and not a direction.** Each declared year's credit balances `ρ·F·365` hours of debit and adds about 1,380 hours of consumption. Break-even is `ρ·F` = 1,380 ÷ 365 = **3.78 hours a day**. Above it a longer span pays the filer; below it a shorter one does, and both settings are conforming. *The earliest date the evidence allows* is the same instrument on both sides of 3.78.
 
-| The network | Room a year opens | Debit a year adds | An honest year is worth |
+| The network | Debit a year's credit balances | Debit a year adds | An honest year is worth |
 |---|--:|--:|--:|
 | `F` = 10, ρ = 1.2 | 4,380 h | 1,380 h | **+3,000 h** |
 | `F` = 2, ρ = 1.0 | 730 h | 1,380 h | **−650 h** |
@@ -69,7 +69,7 @@ edges:
 |---|--:|
 | Estimated lifetime credit, 40 × 3,650 | **146,000** |
 | Estimated lifetime consumption, 40 × 1,380 | **55,200** |
-| Room at joining, 1.2 × 146,000 − 55,200 | **120,000** |
+| May still carry at joining, 1.2 × 146,000 − 55,200 | **120,000** |
 
 **In plain words: joining is a windfall for a median person, and that is the adoption incentive computed rather than asserted.** The people for whom a full reconstruction is costly are those whose lifetime consumption genuinely exceeded their lifetime contribution. Earlier real contributions enter the record at the dates they occurred, not the joining date.
 

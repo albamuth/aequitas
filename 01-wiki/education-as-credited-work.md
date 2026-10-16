@@ -30,7 +30,7 @@ Learning enriches the individual and, indirectly, everyone the person later serv
 
 So it is credited. Both sides of the room.
 
-The **cost** of that schooling — teachers' time, buildings, materials — is carried during the training years, cushioned by the debit-room of the people who pledged for it. **Nothing is charged to whoever uses the skill later** (Foundations §4.5). A doctor's visit costs the patient the doctor's time, the clinic's materials and the medicines, and never the lecture given twenty years earlier. The front-loading rule below is the general form.
+The **cost** of that schooling — teachers' time, buildings, materials — is carried during the training years, cushioned by the backing of the people who pledged for it. **Nothing is charged to whoever uses the skill later** (Foundations §4.5). A doctor's visit costs the patient the doctor's time, the clinic's materials and the medicines, and never the lecture given twenty years earlier. The front-loading rule below is the general form.
 
 ## Why it works this way
 
@@ -65,12 +65,12 @@ It is also how [time-as-yardstick](time-as-yardstick.md) escapes the trap that s
 Training is the first instance of a general rule, and the rule is worth stating once — and naming — rather than rediscovering per case. It is referenced across the theory as **the Front-Loading Rule**:
 
 > ### 🔒 THE FRONT-LOADING RULE
-> **A large up-front cost with a diffuse benefit is carried where it is incurred and cushioned at that time by the debit-room the people who pledged for it grant. It is never amortized downstream onto whoever happens to consume the result.**
+> **A large up-front cost with a diffuse benefit is carried where it is incurred and cushioned at that time by the backing of the people who pledged for it. It is never amortized downstream onto whoever happens to consume the result.**
 >
 > **Covers:** education (§4.5), media/creative production, research · infrastructure · tooling, and **capital & overhead** (§4.5 — which is *why* it also closed OP-23).
 > **Why it's right:** the downstream window is always arbitrary (that arbitrariness *was* OP-11/OP-21), and downstream amortization triggers an infinite regress to the first human activity — **computational closure** (the upstream face of the §3.2b non-cascade rule).
 > **Boundary:** capital vs. consumption, told apart by **physical fate** (does the thing survive the process?), auditable via IC-4 (fate closure) — not by the producer's declaration.
-> **Who carries the capital:** the §4.5 waterfall — the full creation-cost is holding-time-split among the asset's holders; community pledges grant debit-room that cushions the bite; basic-needs-floor cap.
+> **Who carries the capital:** the §4.5 waterfall — the full creation-cost is holding-time-split among the asset's holders; community pledges back the holders, which cushions the bite; basic-needs-floor cap.
 > **Dissolved:** OP-11 (training amortization), OP-5 (education), OP-21 (media) as one malformed question (B3); OP-23 (shared overhead), by accruing capital to the asset, never to co-products (B8).
 > **Honest residue:** cold start (a first-time creator attracts no pledges); a per-unit debit-cost is therefore *not* a full-lifecycle figure — the capital footprint sits on the asset, never lost (no A4 breach), just located honestly.
 

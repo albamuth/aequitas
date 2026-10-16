@@ -37,7 +37,7 @@
 - [co-product-allocation](co-product-allocation.md) — **one process, several outputs, no split.** Every co-product carries the whole process cost against its own mass
 - [front-loading-rule](front-loading-rule.md) — **a big up-front cost is carried when it happens, cushioned by pledges, never charged on**
 - [physical-trace-test](physical-trace-test.md) — **measure it, declare a convention, or refuse to divide. The test that tells you which**
-- [pledge-and-signal](pledge-and-signal.md) — **the demand side: a pledge is a permanent grant of debit-room (+ the contingent reserve), a signal is free**
+- [pledge-and-signal](pledge-and-signal.md) — **the demand side: a pledge is permanent backing of a named person, a signal is free**
 - [verification-ladder](verification-ladder.md) — how truth gets established at four maturity levels
 - [estimation-engine](estimation-engine.md) — what a basket truly cost *(OP-18 closed; now in progress on real data)*
 - [onboarding-incentive](onboarding-incentive.md) — why joining is individually rational

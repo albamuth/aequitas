@@ -32,7 +32,7 @@ edges:
 > **Version:** 0.2
 > **Date:** 2026-09-24
 
-> **A trust network lets a person consume while `D ≤ ρ·(C + P)`. That is the consumption gate.** `P` is committed pledged room — hours others pledged to this person by name (§4.6). **It has two dials: the floor `F`, and the tolerance ρ.** The floor is credit for work a person really did. It is not an allowance, and nothing is issued to anybody.
+> **A trust network lets a person consume while `D ≤ ρ·(C + P)`. That is the consumption gate.** `P` is backing — hours others pledged to this person by name (§4.6). **It has two dials: the floor `F`, and the tolerance ρ.** The floor is credit for work a person really did. It is not an allowance, and nothing is issued to anybody.
 
 ## The words this page uses
 
@@ -52,7 +52,7 @@ edges:
 
 **Three parts, and the first one is the one most often got wrong.**
 
-1. **The floor is credit, not unbacked room.** Sleeping, eating, washing and bodily upkeep are activities a network may recognise as work. Where it recognises them, those hours credit at one hour for one hour, like any other recognised hours. **The evidence is proof of life, which is the strongest evidence in the system and costs almost nothing to check.**
+1. **The floor is credit, not backing.** Sleeping, eating, washing and bodily upkeep are activities a network may recognise as work. Where it recognises them, those hours credit at one hour for one hour, like any other recognised hours. **The evidence is proof of life, which is the strongest evidence in the system and costs almost nothing to check.**
 2. **The gate is a ratio, never a balance.** `C` and `D` both only ever rise. A purchase adds to `D` and takes nothing from `C`, because credit is not a currency and never moves ([non-fungibility](non-fungibility.md), A3). **There is no stored lump to draw down and nothing to run out of.**
 3. **A restriction reaches non-essentials only.** Where a person's standing does restrict them, essentials still flow. That backstop exists for measurement error, not for poverty. **And the provider is never made to means-test**: a counsellor is credited for the hours they worked, because credit is decided by the network's published evidence rule and never by the recipient's standing ([service-credit](service-credit.md)).
 
@@ -70,7 +70,7 @@ edges:
 
 **A network at `F` = 10 h/day and ρ = 1.2. Two people, both aged 40.** A median lifestyle commands about **1,380 hours** of other people's labour a year.
 
-| | Credit `C` | Debit `D` | `D ÷ C` | Room left, `ρ·(C + P) − D`, at `P` = 0 |
+| | Credit `C` | Debit `D` | `D ÷ C` | May still carry, `ρ·(C + P) − D`, at `P` = 0 |
 |---|--:|--:|--:|--:|
 | **A — stays alive, and works 1,000 h a year** | 40 × (3,650 + 1,000) = **186,000 h** | 40 × 1,380 = **55,200 h** | **0.30** | **168,000 h** |
 | **B — stays alive, works nothing, consumes the same** | 40 × 3,650 = **146,000 h** | **55,200 h** | **0.38** | **120,000 h** |
@@ -88,7 +88,7 @@ edges:
 | Narrow: food at home, clothing, shelter, utilities, care | 516 – 655 | 1.2 – 1.5 h/day |
 | Broad: narrow, plus household goods, local transport, telecoms, schooling | 826 – 965 | 1.9 – 2.2 h/day |
 
-**Worked, at 965 h:** at `F` = 1 h/day the floor gives 1.2 × 1 × 365 = **438 h** of room, **527 h short**.
+**Worked, at 965 h:** at `F` = 1 h/day the floor balances 1.2 × 1 × 365 = **438 h** of debit, **527 h short**.
 
 **In plain words: a network at `F` = 1 h/day has subscribers who cannot afford to eat, and that network fails.**
 
@@ -115,7 +115,7 @@ edges:
 
 **The backstop exists because of measurement error.** A producer over-assigned for years would suffer real harm before the record was corrected — the shape of the [Post Office Horizon scandal](https://en.wikipedia.org/wiki/British_Post_Office_scandal). **It caps that exposure at restricted non-essential consumption for a period, followed by correction**, and it applies on the same terms to somebody found to have committed fraud.
 
-**The floor does not require anybody to spend it on essentials.** A person may put their room toward anything. **The guarantee is that they can afford what they need, not that they must buy it.**
+**The floor does not require anybody to spend it on essentials.** A person may carry anything they like with it. **The guarantee is that they can afford what they need, not that they must buy it.**
 
 > **This is not a conformance requirement and must not be written as one.** Whether essentials are actually affordable depends on `F`, on ρ, and on what the economy can deliver. **It is a result a network achieves, not a property an implementation has.**
 
@@ -125,7 +125,7 @@ edges:
 
 **The arithmetic refuses the hardest case on its own.** Two identical twins on the lowest rung of checking, deliberately engineering the confusion, reach **34 hours a day against 36 hours honest**, because IC-7 caps each account at 24 hours of activity in 24 hours. **They lose 730 hours a year and gain nothing**, since twins sharing a household share the goods either way.
 
-**Floor-shopping** — joining the network with the most generous floor — **is arrested by the seller choosing which network a transaction lands on.** A network with an implausible floor loses sellers, and a generous floor cannot be exported, because a counterparty re-computes the backing through its own model.
+**Floor-shopping** — joining the network with the most generous floor — **is arrested by the seller choosing which network a transaction lands on.** A network with an implausible floor loses sellers, and a generous floor cannot be exported, because a counterparty re-computes what stands behind it through its own model.
 
 **Hoarding does not beat the gate either.** Holding a thing raises your own debit, and food, fuel and heat are used up when used, so their debit is permanent and buys no holding. **The only way to the wall is to work 24 hours a day for a whole life.**
 

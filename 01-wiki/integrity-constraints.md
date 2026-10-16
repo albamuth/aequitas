@@ -1,6 +1,6 @@
 ---
 title: Integrity constraints IC-1 to IC-12
-summary: The twelve arithmetic checks a ledger must never violate, each a conformance row; nine check the log itself (mass and energy balance, origin and fate closure, one holder at a time, interval sanity, the 24-hour cap, pledge backing and no refund) and three check what any output carries (nothing negative, the union equals what went in, a coarser reading never lowers a figure).
+summary: The twelve arithmetic checks a ledger must never violate, each a conformance row; nine check the log itself (mass and energy balance, origin and fate closure, one holder at a time, interval sanity, the 24-hour cap, pledges drawn from credit and no refund) and three check what any output carries (nothing negative, the union equals what went in, a coarser reading never lowers a figure).
 type: hub
 ids: []
 covers: [IC-1, IC-2, IC-3, IC-4, IC-5, IC-6, IC-7, IC-8, IC-9, IC-10, IC-11, IC-12]
@@ -49,7 +49,7 @@ edges:
 | **IC-5** | One holder at any instant; every change of holder is a recorded event | 7a | [property-debit](property-debit.md) |
 | **IC-6** | Nothing is used before it exists or after it is gone | 7 | [event-record](event-record.md) |
 | **IC-7** | **No account claims more than 24 hours of activity in 24 hours** | 8 | [debit-tolerance](debit-tolerance.md), [disparity-ceiling](disparity-ceiling.md), [organisation-debit](organisation-debit.md) |
-| **IC-8** | A person's pledges never exceed the credit they earned in their life, one hour for one hour. Room received never enlarges the budget | 9 | [pledge-and-signal](pledge-and-signal.md) |
+| **IC-8** | A person's pledges never exceed the credit they earned in their life, one hour for one hour. Backing received never enlarges the budget | 9 | [pledge-and-signal](pledge-and-signal.md) |
 | **IC-9** | A pledge budget is spent when the pledge is made and is never returned; an unfulfilled pledge lapses | 9 | [pledge-and-signal](pledge-and-signal.md) |
 | **IC-10** | No quantity a product carries is negative. A negative result is a measurement error or a badly drawn boundary | 10b | [co-product-allocation](co-product-allocation.md) |
 | **IC-11** | The union of what every output carries is exactly what went into the process. Their naive total is never reported | 10c | [co-product-allocation](co-product-allocation.md) |

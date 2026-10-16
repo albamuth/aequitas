@@ -107,7 +107,7 @@
 | `ic-5` | IC-5 (custody continuity) | Conformance row 7a | 5 | 0 |
 | `ic-6` | IC-6 (interval sanity) | Conformance row 7 | 2 | 0 |
 | `ic-7` | IC-7 (24-hour cap) | Conformance row 8 | 12 | 0 |
-| `ic-8` | IC-8 (pledge backing) | Conformance row 9 | 3 | 0 |
+| `ic-8` | IC-8 (pledges drawn from credit) | Conformance row 9 | 3 | 0 |
 | `ic-9` | IC-9 (pledge discharge) | Conformance row 9 | 3 | 0 |
 
 ## component (2)

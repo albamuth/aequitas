@@ -32,11 +32,11 @@ edges:
 
 > **⚠️ Restated 2026-09-18. It bounds the say over what gets made. It does not bound consumption.**
 >
-> A pledge budget is credit the holder earned and nothing else, so `24/F` follows from IC-7 and the floor. **Consumption is gated by `D ≤ ρ·(C + P)`, where `P` is room others pledged to a person by name — and `P` has no per-account limit.** Somebody widely backed can consume far beyond `24/F` times a floor-only life, and Aequitas does not prevent it.
+> A pledge budget is credit the holder earned and nothing else, so `24/F` follows from IC-7 and the floor. **Consumption is gated by `D ≤ ρ·(C + P)`, where `P` is the backing others pledged to a person by name — and `P` has no per-account limit.** Somebody widely backed can consume far beyond `24/F` times a floor-only life, and Aequitas does not prevent it.
 >
-> **The only limit on `P` is the population.** Committed room across a network can never exceed the credit its subscribers earned. **That bounds the sum and not one person's share.**
+> **The only limit on `P` is the population.** Committed backing across a network can never exceed the credit its subscribers earned. **That bounds the sum and not one person's share.**
 >
-> **Why this is still not capitalism's kind of wealth.** Pledged room **cannot be lent at interest, rented out, charged for, or used to hire anybody** — credit never moves ([non-fungibility](non-fungibility.md)), nothing may be added to a cost figure ([cost-not-price](cost-not-price.md)), and working on your own property raises its debit by the hours it credits. **Property under capitalism is a machine for getting more. Pledged room lets you hold and consume.**
+> **Why this is still not capitalism's kind of wealth.** Backing **cannot be lent at interest, rented out, charged for, or used to hire anybody** — credit never moves ([non-fungibility](non-fungibility.md)), nothing may be added to a cost figure ([cost-not-price](cost-not-price.md)), and working on your own property raises its debit by the hours it credits. **Property under capitalism is a machine for getting more. Backing lets you hold and consume.**
 
 **Two limits belong in the same breath as the number.**
 
@@ -75,12 +75,12 @@ So there is nothing to "bank and blow." A lifelong hoarder who consumes nothing 
 | Attack | Resolution |
 |---|---|
 | **Methuselah hoarder** — bank a lifetime, splurge it | Credit is a record, not a balance (above). A splurge can't exceed your own `ρ·(C + P)`. |
-| **Dynasty / household** — pool N people into one mansion | **Re-answered 2026-09-18.** A pledge budget is credit the holder earned, so **room received never enlarges what anybody can pledge**, and committed room is **not transferable**, so it does not pass on death. A dynasty cannot compound. *(The old reason — dwelling debt splitting per occupant, children included — is withdrawn: a child cannot consent to a property transfer.)* One member dominating the rest is coercion ([OP-1](open-problems.md)), and is the legal system's problem. |
+| **Dynasty / household** — pool N people into one mansion | **Re-answered 2026-09-18.** A pledge budget is credit the holder earned, so **backing received never enlarges what anybody can pledge**, and committed backing is **not transferable**, so it does not pass on death. A dynasty cannot compound. *(The old reason — dwelling debt splitting per occupant, children included — is withdrawn: a child cannot consent to a property transfer.)* One member dominating the rest is coercion ([OP-1](open-problems.md)), and is the legal system's problem. |
 | **Collector** — hoard houses, gold, art | Holdings are a **burden**, not income ([property-debit](property-debit.md)): they raise your *own* debit against a fixed credit, so a hoard self-bounds. |
 
-> **⚠️ The channel this page used to say was closed is open, by ruling.** It read: *the one channel that could have breached A3 — a transferable pledged surplus — was closed by making pledge surplus a non-consumable contingent reserve.* **The reserve was withdrawn on 2026-09-18 and committed room is consumable** ([pledge-and-signal](pledge-and-signal.md)).
+> **⚠️ The channel this page used to say was closed is open, by ruling.** It read: *the one channel that could have breached A3 — a transferable pledged surplus — was closed by making pledge surplus a non-consumable contingent reserve.* **The reserve was withdrawn on 2026-09-18 and committed backing is consumable** ([pledge-and-signal](pledge-and-signal.md)).
 >
-> **A3 is not breached.** No credit moves, and a pledge is not a transfer of credit — it is a one-way, non-refundable grant of room, spent from a budget that cannot be manufactured. **What changed is that the ceiling is now stated over budgets rather than over consumption**, which is where the arithmetic actually holds.
+> **A3 is not breached.** No credit moves, and a pledge is not a transfer of credit — it is one-way, non-refundable backing, spent from a budget that cannot be manufactured. **What changed is that the ceiling is now stated over budgets rather than over consumption**, which is where the arithmetic actually holds.
 
 ## Why it matters
 

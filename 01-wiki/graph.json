@@ -94,7 +94,7 @@
    "id": "answered-17",
    "type": "answered-question",
    "title": "Does re-weighting make past purchases retroactively illegal?",
-   "summary": "No. `D ≤ ρ·(C + P)` is evaluated at the moment of the transaction. A revision changes future debit-room and never invalidates a completed act",
+   "summary": "No. `D ≤ ρ·(C + P)` is evaluated at the moment of the transaction. A revision changes what a person may carry in future and never invalidates a completed act",
    "source": "00-strategy/Aequitas_Question_Index.md#2-answered",
    "in": 0,
    "out": 1
@@ -545,7 +545,7 @@
   {
    "id": "ic-8",
    "type": "constraint",
-   "title": "IC-8 (pledge backing)",
+   "title": "IC-8 (pledges drawn from credit)",
    "summary": "Cumulative pledged hours ≤ lifetime earned credit (no fractional reserve). The budget is spent at pledge time and never returned.",
    "status": "Conformance row 9",
    "glossary": "00-strategy/GLOSSARY.md#ic-8",
@@ -1016,7 +1016,7 @@
    "id": "integrity-constraints",
    "type": "hub",
    "title": "Integrity constraints IC-1 to IC-12",
-   "summary": "The twelve arithmetic checks a ledger must never violate, each a conformance row; nine check the log itself (mass and energy balance, origin and fate closure, one holder at a time, interval sanity, the 24-hour cap, pledge backing and no refund) and three check what any output carries (nothing negative, the union equals what went in, a coarser reading never lowers a figure).",
+   "summary": "The twelve arithmetic checks a ledger must never violate, each a conformance row; nine check the log itself (mass and energy balance, origin and fate closure, one holder at a time, interval sanity, the 24-hour cap, pledges drawn from credit and no refund) and three check what any output carries (nothing negative, the union equals what went in, a coarser reading never lowers a figure).",
    "status": "settled",
    "file": "01-wiki/integrity-constraints.md",
    "in": 2,
@@ -1335,7 +1335,7 @@
    "id": "front-loading-rule",
    "type": "mechanism",
    "title": "The front-loading rule",
-   "summary": "A large up-front cost with a diffuse benefit is carried where it is incurred, cushioned at that time by the debit-room the people who pledged for it grant, and never charged onward to whoever happens to consume the result; it covers education, media, research, infrastructure, tooling and capital, and a durable asset's cost is shared among its holders by holding time.",
+   "summary": "A large up-front cost with a diffuse benefit is carried where it is incurred, cushioned at that time by the backing of the people who pledged for it, and never charged onward to whoever happens to consume the result; it covers education, media, research, infrastructure, tooling and capital, and a durable asset's cost is shared among its holders by holding time.",
    "status": "settled",
    "ids": [
     "§4.5"
@@ -1481,7 +1481,7 @@
    "id": "pledge-and-signal",
    "type": "mechanism",
    "title": "Pledge and signal",
-   "summary": "A pledge is a permanent grant of debit-room backed one for one by the pledger's earned credit and spent once from a lifetime budget; a signal is a free statement of wanting; together they are the demand side with no price and no planner.",
+   "summary": "A pledge is permanent backing of a named person, drawn one for one from the pledger's earned credit and spent once from a lifetime budget; a signal is a free statement of wanting; together they are the demand side with no price and no planner.",
    "status": "settled",
    "ids": [
     "§4.6",

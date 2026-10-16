@@ -1,6 +1,6 @@
 # Struck phrases — wordings that must not appear in a live document
 
-> **Version:** 0.5
+> **Version:** 0.6
 > **Date:** 2026-10-16
 
 > **Read by [`bin/consistency.py`](../bin/consistency.py). The table below is the machine-readable part; everything else on this page is for people.**
@@ -102,6 +102,10 @@ That is not a hypothetical. **It happened three times in a single day, 2026-08-2
 | `Routing it automatically is the powerful case` | 2026-10-13 | Same ruling | As above — Foundations §4.6 |
 | `produces a bounded inequality` | 2026-10-16 | Author ruling 2026-10-15. Credit is not wealth; property is debit, and pledged room `P` has no per-account limit, so wealth is not bounded by `24 ÷ F` | **The spread of credit is bounded, and credit buys the say over what gets made; nobody's wealth is bounded** — Foundations §0, §5.5.5 |
 | `engine of a bounded inequality` | 2026-10-16 | Same ruling | As above |
+| `debit-room` | 2026-10-16 | Author ruling 2026-10-16 (`Backing_terminology_PLAN.md`). "Room in the gate" is counter-intuitive and borrows nothing a reader knows | **A pledge *backs* a person; `P` is their *backing*** — Foundations §3.0, §4.6, GLOSSARY *vocabulary* |
+| `grants room to nobody` | 2026-10-16 | Same ruling | **A pledge backs nobody until it names a person** — Foundations §4.6, Conformance 9a |
+| `committed room` | 2026-10-16 | Same ruling | **committed backing** — Foundations §3.0 |
+| `backed one-for-one by credit` | 2026-10-16 | Same ruling. "Backing" now means hours pledged *to* a person, so a pledge cannot also be "backed by" credit | **A pledge is *drawn from* earned credit, one hour for one hour** — Foundations §4.6 |
 | `the same bound as consumption` | 2026-10-13 | Self-council, 2026-10-10. Consumption is not bounded; `24 ÷ F` bounds pledge budgets | **`24 ÷ F` bounds the say over what gets made** — Foundations §4.6, §5.5.5 |
 | `the same bounded ratio as consumption` | 2026-10-13 | A paraphrase of the row above, in the wiki | As above |
 | `Neither has been recomputed under this rule` | 2026-10-13 | Self-council, 2026-10-10. Both were recomputed on 2026-09-05 and neither moves | **The anchor and ρ\* do not move; BEA's secondary-product convention is unaudited** — Foundations §3.4a |

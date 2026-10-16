@@ -3,6 +3,7 @@
 > **Version:** 0.1
 > **Date:** 2026-09-16
 
+> **⚠️ Terminology note, 2026-10-16.** Since Foundations v0.60 the hours pledged to a person are called **backing**, not *room* or *debit-room*, and a pledge is *drawn from* credit, not "backed by" it. This paper keeps its original words as a dated record. See [`../GLOSSARY.md#vocabulary`](../GLOSSARY.md#vocabulary). <!-- struck-ok: a dated record of the pre-2026-10-16 wording; see GLOSSARY.md#vocabulary -->
 > **Date:** 2026-08-01
 > **Mechanism proposed:** credit-earners register wants and authorize which future work is creditable — "like a bank approving a business loan." Four variants.
 > **Proposed as:** a solution to **OP-16** (the onerousness gap).
@@ -146,7 +147,7 @@ Note what falls out: the unbacked signal **is** §4.6's enrichment feedback. Ple
 
 That is mostly desirable — it is an anti-overproduction mechanism, and overproduction is a real pathology of the current system. But it has a sharp edge: **nobody makes the thing nobody asked for**, and that is how most genuinely new things arrive. Combined with P1's authorization gate, the speculative innovator is squeezed from both sides.
 
-**This is where Enrichment must carry weight.** §4.6 grants debit-room retrospectively to makers people appreciate. That is the correct home for speculative work — and note it is the **dual** of P1: Enrichment is retrospective and voluntary, authorization is prospective and committed. **The system needs both halves, and only one is currently written down.**
+**This is where Enrichment must carry weight.** §4.6 grants debit-room retrospectively to makers people appreciate. That is the correct home for speculative work — and note it is the **dual** of P1: Enrichment is retrospective and voluntary, authorization is prospective and committed. **The system needs both halves, and only one is currently written down.** <!-- struck-ok: a dated record of the pre-2026-10-16 wording; see GLOSSARY.md#vocabulary -->
 
 ---
 

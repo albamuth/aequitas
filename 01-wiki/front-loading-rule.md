@@ -1,6 +1,6 @@
 ---
 title: The front-loading rule
-summary: A large up-front cost with a diffuse benefit is carried where it is incurred, cushioned at that time by the debit-room the people who pledged for it grant, and never charged onward to whoever happens to consume the result; it covers education, media, research, infrastructure, tooling and capital, and a durable asset's cost is shared among its holders by holding time.
+summary: A large up-front cost with a diffuse benefit is carried where it is incurred, cushioned at that time by the backing of the people who pledged for it, and never charged onward to whoever happens to consume the result; it covers education, media, research, infrastructure, tooling and capital, and a durable asset's cost is shared among its holders by holding time.
 type: mechanism
 ids: [§4.5]
 status: settled
@@ -30,13 +30,13 @@ edges:
 > **Version:** 0.1
 > **Date:** 2026-10-14
 
-> **A large up-front cost with a diffuse benefit is carried where it is incurred, and cushioned at that time by the debit-room the people who pledged for it grant. It is never charged onward to whoever happens to consume the result.**
+> **A large up-front cost with a diffuse benefit is carried where it is incurred, and cushioned at that time by the backing of the people who pledged for it. It is never charged onward to whoever happens to consume the result.**
 
 ## The words this page uses
 
 | Term | What it means |
 |---|---|
-| **Pledge** | A permanent grant of debit-room to a named person, spent once from the pledger's lifetime budget of earned credit ([pledge-and-signal](pledge-and-signal.md)). |
+| **Pledge** | Permanent backing of a named person, spent once from the pledger's lifetime budget of earned credit ([pledge-and-signal](pledge-and-signal.md)). |
 | **Creation cost** | The hours and materials that made a durable thing. It sits on the thing as property debit ([property-debit](property-debit.md)). |
 | **Holding time** | How long a person held a thing. A physical trace, so a split by it is measured rather than invented ([physical-trace-test](physical-trace-test.md)). |
 | **Capital** | A thing that survives the process it is used in. **Consumption** is what the process used up. |
@@ -51,7 +51,7 @@ edges:
 
 **Who carries a durable asset, in three steps.**
 
-1. **Pledges grant the holders debit-room to carry it.** A pledge does not shrink the creation cost; nothing may vanish (A1). A facility is built at the scale the community will pledge for, so pledges are both the authorisation and the brake.
+1. **Pledges back the holders, so that they may carry it.** A pledge does not shrink the creation cost; nothing may vanish (A1). A facility is built at the scale the community will pledge for, so pledges are both the authorisation and the brake.
 2. **The full creation cost is shared among the asset's holders by holding time.** Each holder's permanent share is their holding time divided by the total holding time over the asset's whole life. **A new hire bears almost nothing**, which removes the entry toll an equal split would put on exactly the capital-heavy essential work society most needs staffed. A carrier in transit takes no share.
 3. **The basic-needs floor caps how hard any remainder bites** ([debit-tolerance](debit-tolerance.md)).
 
@@ -62,7 +62,7 @@ edges:
 | | Hours |
 |---|--:|
 | Creation cost on the asset | **100,000 h**, and it stays 100,000 |
-| Pledged room cushioning the holders | 50,000 h, so **50,000 h** of it effectively restricts anybody |
+| Backing cushioning the holders | 50,000 h, so **50,000 h** of it effectively restricts anybody |
 | A nurse hired on Monday | **≈ 0 h**, no holding time yet |
 | A 30-year veteran's share, 30 ÷ (200 × 60) holder-years | **≈ 0.25%**, about **250 h** |
 

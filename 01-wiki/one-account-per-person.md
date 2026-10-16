@@ -65,7 +65,7 @@ edges:
 
 - **Many accounts, one person.** Each extra account would earn the floor again. Stopping it is Sybil resistance, a network's own design at whatever rung of the [verification-ladder](verification-ladder.md) it runs. The proof-of-personhood literature is the prior art.
 - **Floor shopping.** Joining the network with the most generous floor. Arrested by the seller choosing which network a transaction lands on, so a network with an implausible floor loses sellers. Watch item, not measured: **OP-14**.
-- **Proving a pledge's backing across two networks** still depends on what an auditor may see. **OP-22.**
+- **Proving what a pledge is drawn from across two networks** still depends on what an auditor may see. **OP-22.**
 
 ## Depends on
 

@@ -1,7 +1,7 @@
 <!-- tag: qidx-aequitas-question-index -->
 # Aequitas — Question Index
 
-> **Version:** 0.2
+> **Version:** 0.3
 > **Date:** 2026-10-14
 > **What this is:** a lookup table keyed by **the question you are about to ask**, so you find the answer that is already written instead of deriving a new one.
 > **What this is not:** a summary of the theory. It settles nothing. Every row points at the document that does.
@@ -79,7 +79,7 @@
 | **Who owns land?** | **Nobody.** A structure occupies a bounded space, and that occupation is a **remediation debt** discharged only by actually restoring the space | §3.7 |
 | **How does someone use Aequitas while the world still uses money?** | Both directions permitted, both dearer than trading inside. **Money is invisible because it is not physical**, so a payment is not an event. **Goods cross the boundary; standing does not — you cannot buy hours** | §4.8 · `OP-27_parallel_implementation.md` |
 | **Is a first estimate being wrong a problem?** | **No inaccuracy in this system is irreversible.** Every figure is a dated reading, and better science re-weights every affected ledger backwards through history | §3.3 |
-| **Does re-weighting make past purchases retroactively illegal?** | **No. `D ≤ ρ·(C + P)` is evaluated at the moment of the transaction.** A revision changes future debit-room and never invalidates a completed act | §3.3 |
+| **Does re-weighting make past purchases retroactively illegal?** | **No. `D ≤ ρ·(C + P)` is evaluated at the moment of the transaction.** A revision changes what a person may carry in future and never invalidates a completed act | §3.3 |
 | **Does the system need to record everything a person does?** | **No, and attempting it would be "futile and grotesque."** The accounting covers what is claimed and attested. **What a network owes is to say in advance what it does cover** | §4.5 · §4.2 |
 | **Who gets the last scarce item?** | **Deliberately not settled here.** A queue, a lottery, or pledge-priority, decided where the physical thing is handed over. **Cost says what a thing took; distribution is a separate question** | §3.4a · §4.6 |
 | **How big is a trust network?** | **No set size.** One valley, one trade, one country, or the world. **A8 is about who may change the rules, not about how big anyone is** | §4.0 |

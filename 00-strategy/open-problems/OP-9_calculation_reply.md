@@ -4,6 +4,7 @@
 > **Version:** 0.1
 > **Date:** 2026-09-16
 
+> **⚠️ Terminology note, 2026-10-16.** Since Foundations v0.60 the hours pledged to a person are called **backing**, not *room* or *debit-room*, and a pledge is *drawn from* credit, not "backed by" it. This paper keeps its original words as a dated record. See [`../GLOSSARY.md#vocabulary`](../GLOSSARY.md#vocabulary). <!-- struck-ok: a dated record of the pre-2026-10-16 wording; see GLOSSARY.md#vocabulary -->
 > **Status:** 🟢 **Written up 2026-08-09.** The argument was "substantially answered" in the register (Objections OA8); this is the standing statement, not new invention. Downgrades OP-9 from 🟠 *"needs writing up"* to **answered-for-cost, one residue open** (the Hayek tacit-knowledge remainder, which is not a calculation objection — see §6).
 > **Attacks:** A1 (materialism of cost), A5 (cost, not price), A6 (derived, not stored), and the whole claim that an economy without money-prices can allocate rationally.
 > **Guard:** the reply must **never let demand back onto the cost side** — the OP-17 session proved a demand-contingent cost rule is "price allocation in costume" (Objections OA8). Scarcity is admitted only as a *material* cost.
@@ -159,7 +160,7 @@ It is backed 1:1 by hours the pledger actually worked, it is spent once from a l
 
 ### Worked examples
 
-Both are in **Foundations §4.6** with the arithmetic: a **radicchio** request where **four 0.5-hour pledges** cover the ≈2 hours of work to put an extra box on a shelf; and an artist whose **5,000 likes** convert to **500 h** of pledged debit-room against a **300 h** need, with the 200 h surplus becoming a non-consumable reserve under §4.6 rather than a bonus.
+Both are in **Foundations §4.6** with the arithmetic: a **radicchio** request where **four 0.5-hour pledges** cover the ≈2 hours of work to put an extra box on a shelf; and an artist whose **5,000 likes** convert to **500 h** of pledged debit-room against a **300 h** need, with the 200 h surplus becoming a non-consumable reserve under §4.6 rather than a bonus. <!-- struck-ok: a dated record of the pre-2026-10-16 wording; see GLOSSARY.md#vocabulary -->
 
 **One design finding recorded there:** a **flat rate per like breaks the budget discipline** (at 0.1 h a like, a person could give 54,500 likes a year before their budget bound). **The sound preset is a share of a budget**, which normalises itself.
 

@@ -57,7 +57,7 @@ edges:
 
 ## An example, with the numbers
 
-**At `F` = 10 and ρ = 1.2, with no pledging**, the floor alone opens 1.2 × 10 × 365 = **4,380 h** of room a year against a median lifestyle of 1,380 h, so the gate does not bind. **Now let pledge density reach `p` = 1.** The same network's effective tolerance is 2 × 1.2 = 2.4, above ρ\*(10) = 1.20, so the gate rations nothing and physical shortage is decided at the point of distribution instead. **A network must choose ρ knowing pledges can double its gate.**
+**At `F` = 10 and ρ = 1.2, with no pledging**, the floor alone balances 1.2 × 10 × 365 = **4,380 h** of debit a year against a median lifestyle of 1,380 h, so the gate does not bind. **Now let pledge density reach `p` = 1.** The same network's effective tolerance is 2 × 1.2 = 2.4, above ρ\*(10) = 1.20, so the gate rations nothing and physical shortage is decided at the point of distribution instead. **A network must choose ρ knowing pledges can double its gate.**
 
 ## Depends on
 

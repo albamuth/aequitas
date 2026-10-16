@@ -1,7 +1,7 @@
 <!-- tag: simroadmap-v0-2 -->
 # Aequitas — Simulation Roadmap
 
-> **Version:** 0.2
+> **Version:** 0.3
 > **Date:** 2026-08-23
 > **Status:** Author ruling, 2026-08-23.
 > **Companions:** `Aequitas_Foundations.md` §2.6/§6 (scope, where the rest of the project lives), `Aequitas_Strategy.md` §2, `06-simulation/scenario-suite/scenario_suite_METHOD.md`.
@@ -34,7 +34,7 @@ These are the system. They are the same in every scenario, and a scenario that n
 - **Debit is a vector** — mass, energy, labour-hours, land-area-years, water — collapsed only on demand, and **divided per dimension before collapsing** (§3.2a).
 - **Property debit** splits into dischargeable material and holding-time-permanent creation cost (§3.2, §4.5). **Consumption and pollution debit is permanent and stays on the causer** (§3.2b).
 - The gate `D ≤ ρ·(C + P)` is a **ratio re-checked at each event**, evaluated at transaction time (§3.3, §5.5).
-- **Pledges** are permanent, backed 1:1 by lifetime earned credit (IC-8), with surplus becoming a non-spendable contingent reserve (§4.6).
+- **Pledges** are permanent, drawn 1:1 from lifetime earned credit (IC-8), with surplus committing to whoever the criteria name (§4.6). *(Until 2026-09-18 the surplus became a non-spendable contingent reserve; that reserve is withdrawn.)*
 - **Pollution weight floats with the ambient stock** above the natural-remediation baseline (§3.3).
 - **Retroactive re-weighting**: improve a constant, and every affected record recomputes (§3.3).
 - **Coverage** is estimated over the unmeasured residual, `(N − Y) / Z`, never over the whole population (§4.4), and the leftover is charged to no account (§4.4).
@@ -123,7 +123,7 @@ The decomposition that does work:
 
 The two, both already computed and both cheap to check:
 
-1. **The disparity ceiling.** At `F = 10 h`, equal age, the ratio between the highest and lowest **lifetime pledge budget per day lived** must come out at **2.40×**, and it must stay 2.40× across every ρ from 1 to 3. *(From `disparity_ceiling_sim.py`, N = 200,000.)* **⚠️ Restated 2026-09-18: this is not a check on consumption.** Consumption is gated by `D ≤ ρ·(C + P)` and committed pledged room has no per-account limit (Foundations §5.5.5).
+1. **The disparity ceiling.** At `F = 10 h`, equal age, the ratio between the highest and lowest **lifetime pledge budget per day lived** must come out at **2.40×**, and it must stay 2.40× across every ρ from 1 to 3. *(From `disparity_ceiling_sim.py`, N = 200,000.)* **⚠️ Restated 2026-09-18: this is not a check on consumption.** Consumption is gated by `D ≤ ρ·(C + P)` and committed backing has no per-account limit (Foundations §5.5.5).
 2. **The clearing rate.** Under the US production method, the market-clearing ρ must land near **1.20**, with the median person reaching about **0.92** of their desired lifestyle and roughly **35%** of people held below their wants. *(From `rho_sweep.py`.)*
 
 **If the new kernel cannot re-derive those numbers, it is wrong, and no result it produces afterwards is worth reading.** They cost nothing to check and they are unforgiving.
