@@ -1,8 +1,8 @@
 <!-- tag: fnd-aequitas-foundations-and-long-term -->
 # Aequitas — Foundations & Long-Term Strategy
 
-> **Version:** 0.56
-> **Date:** 2026-10-13
+> **Version:** 0.58
+> **Date:** 2026-10-15
 > **Status:** Working foundations.
 > **Primary audience of the first paper:** technologists and implementers.
 > **Companion:** [`Aequitas_Conformance.md`](Aequitas_Conformance.md) — what must be true for an implementation to *be* Aequitas.
@@ -600,7 +600,7 @@ Trust networks operate in the real world and must deal with governments, courts,
 
 **§2 defined a credit and a debit one at a time. A ledger is what you get when you hold all of one person's together.**
 
-> **A person's ledger is two numbers, side by side.**
+> **A person's ledger is three numbers, side by side.**
 > **`C`, their credit — every hour of their life the books have recorded as work.**
 > **`D`, their debit — every hour their consumption is currently reckoned to cost, once the bundle of physical quantities is converted at today's weightings.**
 > **`P`, their committed room — every hour other people have pledged to them by name.**
@@ -1102,6 +1102,42 @@ Some processes produce several things at once from one pool of inputs. A steer e
 
 **The children's shares add back to the parent**, so the union still returns what went in (conformance row 10c).
 
+##### One holding with parts of several co-products
+
+**The union rule covers a whole co-product, and the split rule covers part of one. A holding can contain parts of several, and both parts point back at the same parcels.**
+
+> **For each parcel, a holding carries the parcel's cost times the largest mass fraction of any one co-product, among those that passed through it.** The pieces of one co-product add before the largest is taken. **What the holder has consumed stays in the count permanently.** Conformance row 10i.
+
+**Terms used here.** A co-product's **fraction** is the mass of it in the holding divided by the whole output of it. **The count** is everything the account holds now plus everything it has consumed.
+
+**Why the largest fraction and no other rule.** Three things the books already require leave one answer.
+
+| | What it requires |
+|---|---|
+| **The split rule, above** | A part of one co-product alone carries its own mass share |
+| **Holding more never carries less** | Adding a cut to a holding cannot lower its figure |
+| **Row 10c, applied to one holder** | Someone holding a whole output splits it into ten identical bundles. **The bundles add back to the whole**, so each carries a tenth |
+
+**For a holding of fractions `a ≥ b`, the first two give at least `a`, and the second and third give at most `a`.** So it is `a`.
+
+###### An example, with the numbers
+
+**The seven-step steer above, with 20 hours of labour. The hide leaves at step 2, after 5 of the 20 hours. The beef passes all seven steps.** *(Illustrative digits.)*
+
+| The holding | Steps 1–2, 5 h | Steps 3–7, 15 h | It carries |
+|---|--:|--:|--:|
+| 10% of the beef and 10% of the hide | 0.1 × 5 | 0.1 × 15 | **2.0 h** |
+| 10% of the beef and 50% of the hide | 0.5 × 5 | 0.1 × 15 | **4.0 h** |
+| 10% of every co-product | 0.1 × 5 | 0.1 × 15 | **2.0 h**, a tenth of the steer |
+
+**In plain words: a tenth of a whole steer carries a tenth of the steer.** Treating the parts as independent draws instead gives **3.65 h** for that row, and ten such bundles would carry 1.83 steers.
+
+**The largest fraction is taken step by step, not once for the whole process.** In the second row the hide's 50% reaches only the two steps it passed through.
+
+**And consumption never escapes it.** Someone holding 50% of the hide eats 50% of the beef, then sells the hide. **They still carry 0.5 × 20 = 10 h**, which is what eating half the beef costs. Counting only what is held now would leave them carrying nothing for it.
+
+**The rule needs no exception.** A fraction of 1 on every path is the union rule, and a single path is the split rule. Checked against both chain cases, including the refinery on real DOE energies: `06-simulation/fractional-holdings/RESULTS.md`, 10 self-tests.
+
 ##### What is left when identity is still not resolvable
 
 **One case remains: a plant mixed two parcels and did not record the mix.**
@@ -1211,7 +1247,9 @@ Two reasons the ban stands:
 
 **Whether a producer can declare a false passage.** Claiming a co-product left the chain before work it really consumed would lower its figure. **That is a verification question rather than an accounting one**, and conformance row 7's closure checks are what answer it. Not measured.
 
-**Whether the calibrated figures move.** The **1,380 h/yr** median-lifestyle anchor (§3.5) and the **ρ\* ≈ 1.2** clearing rate (§5.5.7) were computed under the withdrawn division. **Neither has been recomputed under this rule, and the direction they would move is not known in advance.**
+**The calibrated figures do not move, and one upstream convention is unaudited.** The **1,380 h/yr** median-lifestyle anchor (§3.5) and the **ρ\* ≈ 1.2** clearing rate (§5.5.7) were recomputed under this rule on 2026-09-05, and **neither moves**, because the measurement works at industry resolution and never divided a process among its outputs (`06-simulation/median-lifestyle/ANCHOR_UNDER_NO_DIVISION.md`).
+
+**The input-output tables behind the anchor carry a convention of their own.** BEA (the US Bureau of Economic Analysis) moves **secondary products**, such as a sawmill's wood chips or a dairy's hides, out of the industry that made them, under an assumption BEA chose. **That makes it a cost constant this project did not audit and cannot re-run**, so under §3.3a requirement 5 the anchor is a dated reading with an unreviewed upstream convention in it. **How far a defensible change in that assumption moves 1,380 h/yr is not measured.**
 
 <!-- tag: fnd-s3-5 -->
 ### 3.5 The books never balance — and must not
@@ -2106,6 +2144,8 @@ A median lifestyle commands about **1,380 hours** of other people's labour a yea
 
 **⚠️ A network that offers one standing pledge to every subscriber writes the criteria for a large share of the population's budget.** That is a coordinator with real power over what gets made, and it is the same P4 (coordinator class) surface as the large discretionary fund above. **Publishing the criteria before anyone accepts makes that power visible. It does not remove it.**
 
+**Consent gates the hours. It does not gate the list.** The same network also writes the list of which needs count, and writing a list is a signal: it is backed by nothing, spends nobody's budget, and needs nobody's consent (the table above). **So the signal leg is the same P4 surface through a second door, and consent closes only the pledge leg.** A network of 1,000,000 subscribers at `F` = 10 accrues 3.65 × 10⁹ h of budget a year; if 60% accept the offered standing pledge (an illustrative share), 2.19 × 10⁹ h of consented room is directed by criteria one party wrote. The public pledge ledger (§4.7) shows what each listed need received. **It cannot show a need that was never listed.**
+
 #### Recording is never gated. Verification decides when credit counts
 
 **The work is always recorded.** An event is logged the moment work is done, so nothing is left with no origin. **What a pledge buys is authorisation and demand-room, not permission to record.**
@@ -2632,6 +2672,7 @@ Those activities are **sleeping, eating, defecating, and keeping oneself clean.*
 2. **The network's treatment of childhood**, per the table above.
 3. **No fraud manufactures hours.** IC-7 caps a day at 24 hours, but collusive hand-offs could still inflate gross hours (**OP-1**, service → influence). The bound assumes that channel is controlled.
 4. **It is a statement about one network's books.** Nothing else.
+   **And "per day lived" means the declared span of §4.4, condition 3** — back to the earliest date the evidence permits, with the floor credited on every day of it, and the days counted as elapsed time over human subscribers. A span that starts before the credit it carries, or a floor that stops short of the span, is a defect in the evaluator and not a hole in the bound: ten years of 24-hour credit filed before a declared birth reads 3.00× at `F` = 10 against a span that omits those years, and 2.40× once the span is extended to cover them (`06-simulation/ceiling-challenge/RESULTS.md`).
 5. **Receiving room must never raise a pledge budget.** A budget is credit the holder earned. **If room granted to a person enlarged what they could pledge, `P` would re-enter and this bound would fail exactly as the consumption claim did.**
 
 ##### Why condition 4 is stated as narrowly as it is
@@ -2686,7 +2727,7 @@ Those activities are **sleeping, eating, defecating, and keeping oneself clean.*
 `06-simulation/disparity-ceiling/disparity_ceiling_sim.py`, N = 200,000, gate `D ≤ ρ·(C + P)`, credit in `[F, 24]` h/day, 7 self-tests green:
 
 - **The `24 ÷ F` ceiling is exact and does not move with ρ**, because ρ cancels in `ρ·24 ÷ ρ·F`. It also does not move with the weighting model, so **the headline result does not depend on OP-10.** On the same synthetic population, money's spread is 14× on income and roughly 700–950× on wealth.
-- **ρ behaves like a prime rate.** A ρ can be chosen so that aggregate demand matches productive capacity, and it moves sensibly under shocks. Against the median-lifestyle anchor the baseline clears at **ρ\* ≈ 1.2**, a −30% capacity disaster tightens it to ~0.68, growth loosens it to ~2.2, and a +25% pollution re-weighting tightens it to ~1.0. *(Absolute values are illustrative and depend on OP-10; the directions are robust.)*
+- **ρ behaves like a prime rate.** A ρ can be chosen so that aggregate demand matches productive capacity, and it moves sensibly under shocks. Against the median-lifestyle anchor the baseline clears at **ρ\* ≈ 1.2**, a −30% capacity disaster tightens it to ~0.68, growth loosens it to ~2.2, and a +25% pollution re-weighting tightens it to ~1.0 (`06-simulation/disparity-ceiling/RHO_SWEEP.md`). *(Absolute values are illustrative and depend on OP-10; the directions are robust. A second instrument, `06-simulation/rho-rubric/`, perturbs `disparity_ceiling_sim.py` directly and reads 0.82 and 1.19 for the same two shocks: the same directions, different levels.)*
 - **Efficiency, not extra labour, is what reaches abundance.** The same population is mildly short under the wasteful US production method and reaches everyone's full desired standard under German, Japanese or Spanish efficiency (Q6). **The binding constraint is physical throughput** (§3.5).
 - **The ceiling is fraud-invariant, and that is the same fact as its blindness.** IC-7 bounds every account, honest or not, so the most a fraudster reaches is `ρ·24` — the honest maximum. **Fraud fills the band and cannot create an outlier beyond it.**
   > **`24 ÷ F` reads no accounts.** At `F` = 10 it returns 2.40 whatever the population contains, so *"still 2.40× at 40% fraud"* means **the arithmetic never looked** — not that anything caught the fraud. **Insert a fabricated account and the figure moves by 0.00, for the same reason.**

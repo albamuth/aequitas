@@ -1,7 +1,7 @@
 <!-- tag: cnf-aequitas-conformance -->
 # Aequitas — Conformance Requirements
 
-> **Version:** 0.20 · **Date:** 2026-09-21
+> **Version:** 0.21 · **Date:** 2026-10-13
 > **Audience: implementers.** Anyone building a trust network.
 > **Companion:** [`Aequitas_Foundations.md`](Aequitas_Foundations.md) — the system itself, and the argument behind every row below. **Where the two differ, Foundations governs.**
 > **Two row numbers are retired and are never reused: the bare `17`, and `14c`.**
@@ -168,6 +168,7 @@ Worked: *"records are never deleted"* is something you can read off an implement
 | 10f | **A split divides; a joint process does not.** Dividing one parcel of one substance into parts is a division of a real thing, so **its debit divides by mass, on each physical quantity separately, before they are combined** (row 10). A joint process's cost is **not** divided at all (row 10a). **An implementation that applies 10a to a split overstates a drawn-off quantity by the ratio of the whole to the part** — ten times for 10 kg drawn from 100 kg. **The parts of a split add back to the parent**, so row 10c still holds over them. | §3.4a, §3.2a, §2.5 |
 | 10g | **A figure handed outward carries the parcel's identifier and its kind.** A quantity published with neither cannot be checked against the parcel it claims to describe, **so a mismatch has nowhere to land and renders as well-formed data.** | §3.4a · **A3** |
 | 10h | **A passage claim is published by the producer who makes it, and reconciles against records made on a different path** — metered energy, intake weights, output weights — **within a stated margin.** A passage says which steps a co-product went through, and **a false one lowers that product's figure by up to 6.25× on §3.4a's own worked spread.** A claim that reconciles against nothing but the producer's own flow sheet is a self-check and **is reported as unreconciled, never accepted as established.** | §3.4a, §4.3, §4.4 · row 7 |
+| 10i | **A holding with parts of several co-products carries, for each parcel, that parcel's cost times the largest mass fraction of any one co-product that passed through it.** The pieces of one co-product add first. **What the holder consumed stays in the count permanently**, so selling the largest share never clears what was eaten. **An implementation that treats the parts as independent breaks row 10c**: ten bundles of a tenth of every output carry 1.83 steers on the illustrative steer and 2.99 refineries on the DOE case. | §3.4a · **A3**, A5 |
 
 #### Row 9, worked
 

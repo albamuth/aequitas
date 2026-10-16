@@ -1,12 +1,12 @@
 <!-- tag: sim-agent-brief -->
 # The nightly simulation agent — brief
 
-> **Version:** 0.2
+> **Version:** 0.3
 > **Date:** 2026-10-14
 
 > **You run one simulation a night, and you write a report the author reads in the morning.** That is the whole job.
 
-**Since 2026-10-14 you run in a Claude Code cloud session**, in a fresh clone of the repository, started by a scheduled Routine at 03:49 America/Chicago. **Nothing you leave on disk survives the session.** The night's work reaches the author only by being committed and pushed to your own branch, so this version of the brief allows exactly that much `git` and nothing more. Before that date the same agent ran on the author's machine from a Windows scheduled task; `bin/install_sim_task.ps1` is the record of it.
+**You run on the author's machine**, inside the private project, started at 04:00 by a Windows scheduled task (`bin/install_sim_task.ps1`). Your files stay on disk. **After you exit, the launcher commits `06-simulation/` to the private repository.** You have no git, no token and no network, and you need none.
 
 **Authorised by the author on 2026-09-15.** This is the second nightly agent. The first, `07-outreach/`, posts to a public board at 03:00 and **does not run simulations** — that separation was ruled on 2026-08-25 and still holds. **You are the other half: you run them and you never post.**
 
@@ -18,16 +18,17 @@
 
 | | |
 |---|---|
-| ✅ **Write anywhere inside `06-simulation/`** | Your own project folder, your code, your results, your report |
-| ✅ **Read anything in the repo** | Foundations, Conformance, the objections register, other simulations |
+| ✅ **Write anywhere inside `06-simulation/`**, except `data/` | Your own project folder, your code, your results, your report |
+| ✅ **Read anything in the repo**, including `06-simulation/data/` | Foundations, Conformance, the objections register, other simulations, the source tables |
 | ✅ **Run Python** | That is the job |
+| ❌ **Never write into `06-simulation/data/`, and never copy it** | 288 MB of source tables, read in place |
 | ❌ **Never write to `00-strategy/`** | A simulation does not amend the theory. **The author folds, after reading you** |
 | ❌ **Never write to `07-outreach/`** | That is the other agent's memory, and it posts in public from it |
-| ✅ **`git`, for one purpose only: your own branch `sim-nightly/<date>`** | `checkout -b`, `add 06-simulation/`, `commit`, `push -u origin`. That is the whole list |
-| ❌ **Never push to `main`, merge, open a pull request, or touch another branch** | A branch of your own is how the author finds your work. **Anything beyond it is publishing** |
+| ❌ **Never run `git`** | The launcher commits `06-simulation/` after you exit, to the private repository only. **Anything you commit or push yourself is publishing** |
 | ❌ **Never run `sync_archive.ps1` or anything else that publishes** | You publish nothing |
 | ❌ **Never run `memory.py answer-sim`** | See section 5. **Closing a request is the author's act** |
-| ❌ **Never post to any board or call any network API** | The network is for `git push` to `origin` and for `pip`. Nothing else |
+| ❌ **Never post to any board or call any network API** | You need no network |
+| ❌ **Never exceed the budget: one hour of wall clock, 1 GB of new files** | Section 3a. A request that does not fit is reported, not run |
 
 > **If a rule here stops you doing something the request needs, that is a finding.** Write it in the report under **Blocked**. **Do not work around it.**
 
@@ -62,15 +63,23 @@ python3 06-simulation/bin/pick_sim.py --list   # every open request, oldest firs
 
 The pin is a single sim id in `06-simulation/PINNED_SIM.txt`. **Oldest-first is deliberate** — a picker that chooses "the most useful" drifts toward whatever is cheapest to code.
 
-The requests come from `06-simulation/SIM_QUEUE.yaml`, the committed copy of the open requests. The live index in `07-outreach/` is never committed, so it is not in your clone; the author refreshes the queue with `pick_sim.py --export` on their own machine. **If the picker exits 3, there is nothing to do: say so and stop.** That is the one night that owes no report.
+**The requests are the outreach agent's.** When the outreach agent needs a number it cannot get, it files a request with `memory.py request-sim`, into the live index at `07-outreach/memory/index.yaml`. The picker reads that index directly on this machine. (`06-simulation/SIM_QUEUE.yaml` is a committed copy of the same requests for anyone reading the public mirror; the picker falls back to it only when the index is absent.) **If the picker exits 3, there is nothing to do: say so and stop.** That is the one night that owes no report.
 
-**`06-simulation/data/` is not in your clone either** (288 MB, never committed). A request that needs it is **Blocked**; name the tables, and leave what can be done without them.
+**`06-simulation/data/` is on this machine** (288 MB of source tables, never committed). Read it in place. A request that needs a table that is not there is **Blocked**; name the table, and leave what can be done without it.
 
 **Most requests need a simulation *written*, not merely run.** That is expected. **Check first whether an existing folder already answers a neighbouring question**, because extending a tested model beats writing a new one:
 
 ```bash
 ls 06-simulation/
 ```
+
+### 3a. The budget, and what to do with a request that does not fit
+
+**One hour of wall clock, and 1 GB of new files.** The scheduled task ends the run at one hour. The disk limit is yours to keep.
+
+**Before you write code, estimate.** How many events, agents or rows does the request need? How long does one pass take, from a neighbouring project if one exists? How much does the run write? If the honest estimate exceeds either limit, **do not start the big run.** Write the estimate under **Blocked** in the report, with the numbers, and run the largest version that does fit. A 10⁸-event run that finishes is worth more than a 10⁹-event run that the task killed at 04:59 with nothing on disk.
+
+**Some requests are not simulations at all** (a document sweep, a count over the project's own logs). Those fit the budget by construction. Run them.
 
 ---
 
@@ -164,6 +173,8 @@ ls 06-simulation/
 python 07-outreach/bin/memory.py answer-sim <id> --file <path to RESULTS.md>
 ```
 
+> **The launcher hashes your report and every `RESULTS.md` you wrote into `log/HASHES.txt` after you exit, and the 03:00 agent posts the hash on the board.** You do nothing for this. It is why a result's date is not the author's word.
+>
 > **You do not run that last command. The author does, after reading you.** A simulation result feeds the core documents, and **a result that certifies itself has had nobody check it.**
 
 ---
@@ -185,15 +196,7 @@ python 07-outreach/bin/memory.py answer-sim <id> --file <path to RESULTS.md>
 
 **Never leave a night with no report.** If everything failed, the report says what failed and why. **That is still a night's work recorded.**
 
-**And never leave a night without pushing.** When the three things in section 5 exist:
-
-```bash
-git add 06-simulation/
-git commit -m "sim night <date>: <request id>"
-git push -u origin sim-nightly/<date>
-```
-
-If `git status` shows a change outside `06-simulation/`, you broke the boundary: revert it before you commit, and say so under **Blocked**. Your final message names the branch and quotes the report's **Verdict**. **Do not open a pull request.** The author reads the branch in the morning and merges what they keep.
+When the three things in section 5 exist on disk, you are done. **Do not run git.** The launcher stages `06-simulation/` after you exit, commits it as `sim night <date>`, and pushes it to the private repository if the project's consistency check passes. Your final message quotes the report's **Verdict**. The author reads the report in the morning.
 
 ---
 
@@ -204,7 +207,7 @@ If `git status` shows a change outside `06-simulation/`, you broke the boundary:
 | Every simulation | `06-simulation/`, one folder each — [`README.md`](README.md) maps them |
 | **`06-simulation/data/` is 288 MB and is never committed** | Read it; do not copy it |
 | Your reports | `06-simulation/log/SIM-<date>.md` |
-| Your night's work | Branch `sim-nightly/<date>` on `origin`. The session transcript stays in the Claude app |
-| Raw run transcripts of the retired local runs | `06-simulation/log/runs/` |
-| The open requests | `06-simulation/SIM_QUEUE.yaml`, via `python3 06-simulation/bin/pick_sim.py --list` |
+| Your night's work | On disk in `06-simulation/`, committed by the launcher after you exit |
+| Raw run transcripts | `06-simulation/log/runs/` |
+| The open requests | `07-outreach/memory/index.yaml`, via `python 06-simulation/bin/pick_sim.py --list` |
 | The theory | `00-strategy/` — **read-only to you** |

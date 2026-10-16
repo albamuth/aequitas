@@ -1,8 +1,8 @@
 <!-- tag: ovw-aequitas-overview -->
 # Aequitas — Overview
 
-> **Version:** 0.31
-> **Date:** 2026-09-21
+> **Version:** 0.32
+> **Date:** 2026-10-15
 > **Audience:** everyone. No economics background assumed, none required.
 > **Rigorous version:** `00-strategy/Aequitas_Foundations.md`. This document is the plain-language companion; where they differ, the Foundations govern.
 
@@ -429,13 +429,13 @@ Your credit is a fact about you. It cannot be given, sold, lent, taxed, gambled,
 
 **A debt crisis requires a creditor who must be made whole.** Here there are none. The mechanism that turns a bad year into a spiral simply has no part to attach to.
 
-**3. Your record is two numbers, and they never cancel each other.**
+**3. Your record is three numbers, and they never cancel each other.**
 
-**Your credit is every hour of your life that got counted as work. Your debit is everything your consumption is currently reckoned to have taken from the world.** They sit side by side. **Nothing is subtracted, nothing is spent, and there is no third number.**
+**Your credit is every hour of your life that got counted as work. Your debit is everything your consumption is currently reckoned to have taken from the world. Your room is every hour other people have pledged to you by name** (§6). They sit side by side. **Nothing is subtracted, nothing is spent, and no fourth number is made by taking one from another.**
 
-**Both only ever go up.** Buying something adds to your debit and takes nothing off your credit, because credit is not a thing you hand over. **So the two are compared as a ratio — is your debit within some multiple of your credit? — never as a balance you could run down to zero.** A ledger here is a way of looking at what one person consumed beside what they did, and that is all it is.
+**All three only ever go up.** Buying something adds to your debit and takes nothing off your credit, because credit is not a thing you hand over. A pledge adds to your room and is never taken back. **So they are compared as a ratio — is your debit within some multiple of your credit plus your room? — never as a balance you could run down to zero.** A ledger here is a way of looking at what one person consumed beside what they did and what others put behind them, and that is all it is.
 
-**Neither number is stored anywhere.** Both are worked out fresh from the record of what happened, every time anyone looks. That is why a better measurement can change everybody's figures, backwards (§4).
+**None of the three is stored anywhere.** All are worked out fresh from the record of what happened, every time anyone looks. That is why a better measurement can change everybody's figures, backwards (§4).
 
 **4. The books never balance — and they must not.**
 

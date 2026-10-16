@@ -1,6 +1,6 @@
 # Struck phrases — wordings that must not appear in a live document
 
-> **Version:** 0.3
+> **Version:** 0.4
 > **Date:** 2026-10-14
 
 > **Read by [`bin/consistency.py`](../bin/consistency.py). The table below is the machine-readable part; everything else on this page is for people.**
@@ -102,3 +102,4 @@ That is not a hypothetical. **It happened three times in a single day, 2026-08-2
 | `Routing it automatically is the powerful case` | 2026-10-13 | Same ruling | As above — Foundations §4.6 |
 | `the same bound as consumption` | 2026-10-13 | Self-council, 2026-10-10. Consumption is not bounded; `24 ÷ F` bounds pledge budgets | **`24 ÷ F` bounds the say over what gets made** — Foundations §4.6, §5.5.5 |
 | `the same bounded ratio as consumption` | 2026-10-13 | A paraphrase of the row above, in the wiki | As above |
+| `Neither has been recomputed under this rule` | 2026-10-13 | Self-council, 2026-10-10. Both were recomputed on 2026-09-05 and neither moves | **The anchor and ρ\* do not move; BEA's secondary-product convention is unaudited** — Foundations §3.4a |

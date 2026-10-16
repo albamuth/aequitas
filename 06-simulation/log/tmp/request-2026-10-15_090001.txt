@@ -1,0 +1,16 @@
+﻿TONIGHT'S SIMULATION REQUEST
+
+  id        sr-20260901-score-claim-2-of-disparity-ceiling-sim-py-th
+  filed     2026-09-01
+  chosen by oldest open request without a report (no pin set)
+  open      30 request(s) unanswered, including this one
+  source    07-outreach/memory/index.yaml
+
+  THE QUESTION
+    Score claim 2 of disparity_ceiling_sim.py - the clearing rate rho* - on the same three-way sensitivity/specificity/coverage rubric. It is the one claim in that file that genuinely varies with the draw.
+
+  WHY IT WAS ASKED
+    The 2026-08-31 rubric run scored only the max statistic and named this as owed in its own What-this-does-not-show section.
+
+  WHEN YOU ARE DONE, the author runs this. You do not:
+    python 07-outreach/bin/memory.py answer-sim sr-20260901-score-claim-2-of-disparity-ceiling-sim-py-th --file <your RESULTS file>

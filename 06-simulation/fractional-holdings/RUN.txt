@@ -1,0 +1,23 @@
+PASS  test_reduces_to_the_union_rule: max with f = 1 equals buyer_union on 400 random selections
+PASS  test_reduces_to_the_split_rule: one co-product at fraction f carries f x its own steps, 55 cases
+PASS  test_n_bundles_add_back_to_the_whole: n bundles of 1/n of everything: steer n=2: max 1.00, independent 1.32, sum 2.00 wholes; steer n=10: max 1.00, independent 1.83, sum 2.00 wholes; refinery n=2: max 1.00, independent 1.63, sum 3.63 wholes; refinery n=10: max 1.00, independent 2.99, sum 3.63 wholes
+PASS  test_monotone: no addition lowered a debit, 8000 random additions
+PASS  test_never_above_one_whole_per_parcel: every one of 8000 random holdings is at most the chain total
+PASS  test_eating_never_lowers_and_selling_stops_at_what_was_eaten: after selling the hide: max carries 10.0 h for the beef eaten; max without the consumed-parts change carries 0.0 h
+PASS  test_order_does_not_matter: 1000 target states, each reached by 4 shuffled sequences, one debit each
+PASS  test_splitting_across_accounts_never_pays: split never lowered the total, 8000 random splits; it raised it up to 1.76x
+PASS  test_per_parcel_not_per_process: 10% beef + 50% hide: per step 82.0 MJ; one max over the whole process 250.0 MJ
+PASS  test_resolution_still_only_lowers: coarse >= fine on 600 random holding-resolution pairs
+
+10/10 self-tests pass
+
+Steer, ILLUSTRATIVE digits (chain-resolution case 1). Labour per holding:
+
+holding                                max   indep     sum  no-keep
+10% beef, 10% hide                    2.00    2.45    2.50     2.00
+10% beef, 50% hide                    4.00    4.25    4.50     4.00
+10% of every co-product               2.00    3.65    4.00     2.00
+50% hide held, 50% beef eaten        10.00   11.25   12.50     2.50
+50% beef eaten, hide sold            10.00   10.00   10.00     0.00
+
+Whole steer: 20.0 h. Run with --test for the self-tests.

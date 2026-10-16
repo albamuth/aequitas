@@ -11,16 +11,16 @@ Oldest-first is deliberate. A picker that chooses "the most useful" drifts
 toward whatever is easiest to code, and nobody can predict which night will
 produce which result.
 
-Where the requests come from (changed 2026-10-14, when the agent moved to a
-cloud session):
+Where the requests come from:
 
-    1. 07-outreach/memory/index.yaml -- the live index. Present on the
-       author's machine, never in the public mirror. Preferred when it exists.
-    2. 06-simulation/SIM_QUEUE.yaml  -- the committed copy. The cloud agent
-       runs in a fresh clone of the mirror, and this is the only source it has.
+    1. 07-outreach/memory/index.yaml -- the live index, which the outreach
+       agent fills with `memory.py request-sim`. Present on the author's
+       machine, never in the public mirror. Preferred when it exists. The
+       nightly sim agent runs on the author's machine, so this is its source.
+    2. 06-simulation/SIM_QUEUE.yaml  -- the committed copy, for anyone
+       reading the public mirror. Used only when the index is absent.
 
-`--export` writes the queue file FROM the live index. The author runs it
-locally and commits the result, after filing or closing a request.
+`--export` writes the queue file FROM the live index, for the mirror.
 
 A request that a report in 06-simulation/log/SIM-*.md already names is
 skipped, so a night cannot re-run last night's request just because the
@@ -63,19 +63,18 @@ OPEN_STATUSES = {"requested"}
 SIM_ID = re.compile(r"\bsr-\d{8}-[a-z0-9-]+")
 
 QUEUE_HEADER = """\
-# The open simulation requests, as the cloud night agent sees them.
+# The open simulation requests: a committed copy for readers of the public
+# mirror. The live source is 07-outreach/memory/index.yaml, which the
+# outreach agent fills with `memory.py request-sim` and which is never
+# committed. The nightly sim agent reads the live index directly; it uses
+# this file only if the index is absent.
 #
-# The agent runs in a fresh cloud clone of this repository. The outreach
-# memory (07-outreach/memory/index.yaml) is never committed, so the agent
-# cannot read it. This file is the committed copy of the open requests.
-#
-# REFRESH IT from the local index, then commit:
+# REFRESH IT from the local index before a sync:
 #
 #     python 06-simulation/bin/pick_sim.py --export
 #
 # That rewrites this file with every request whose status is `requested`,
-# oldest first, in the same shape as the index. Run it after filing a
-# request and after closing one with `memory.py answer-sim`.
+# oldest first, in the same shape as the index.
 #
 # Same shape as the index: one entry per sim id under `sim_requests`,
 # with `date`, `status`, `question`, `why`, and optionally `from`.
@@ -164,7 +163,7 @@ def export():
               f"Run this on the machine that holds 07-outreach/.", file=sys.stderr)
         return 1
     rows = open_requests(load(INDEX))
-    keep = ("date", "status", "question", "why", "from")
+    keep = ("date", "status", "question", "why", "from", "request_hash")
     sims = {
         sid: {k: (body or {}).get(k) for k in keep if (body or {}).get(k) is not None}
         for sid, body in rows

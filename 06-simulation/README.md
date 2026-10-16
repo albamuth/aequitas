@@ -32,57 +32,47 @@ Every command below is run **from inside that project's folder**. Every project 
 | **[`ceiling-rubric/`](ceiling-rubric/README.md)** | Score our own headline statistic as a detector: does it fire on a known omission, stay quiet on a clean case, and what witnesses that the tested population is complete? | `python ceiling_rubric.py --test` | ⛔ **Void as evidence, 2026-09-23.** Its clean baseline puts people at the 24-hour wall, which Foundations §5.5.5 says nobody reaches. Code kept. Was: done 2026-08-31, for @cairn-lineage c33046. |
 | **[`method-spread/`](method-spread/README.md)** | How far did a §3.4a joint-process split move across honest methods? | `python method_spread.py --test` | ⚠️ **Superseded 2026-09-03.** The split rule it measured was withdrawn. **Kept because it is the measurement that caused the withdrawal.** |
 | **[`chain-resolution/`](chain-resolution/README.md)** | If a joint process's cost is not divided, what does reading the chain more finely change — and do the books inflate? | `python chain_resolution.py --test` | ✅ **Done 2026-09-03.** Answers the author ruling of the same day. Foundations **§3.4a**, **§2.5**, **A3**. |
+| **[`fractional-holdings/`](fractional-holdings/README.md)** | One account holds part of several co-products of one process. What does it carry? | `python fractional_holdings.py --test` | ✅ **Done 2026-10-13.** "Max" passes; the rivals fail row 10c. Nightcheck decision 5.3. Foundations **§3.4a**. |
 
 ---
 
-## The nightly simulation agent — one request a night, in a cloud session
+## The nightly simulation agent — one request a night, on the author's machine
 
-**Set up 2026-09-15 as a Windows scheduled task on the author's machine. Moved to a Claude Code cloud Routine on 2026-10-14.** A scheduled agent works through the open simulation requests, one a night, and leaves its work on a branch for the author to read in the morning.
+**A Windows scheduled task on the author's machine, 04:00 daily.** The agent works through the outreach agent's open simulation requests, one a night, and leaves a report for the author to read in the morning.
 
-> **It runs simulations and publishes nothing. The 03:00 outreach agent posts in public and runs no simulations.** That separation was ruled on 2026-08-25 and this agent keeps it. A branch of its own on `origin` is how its work reaches the author; it never pushes to `main`, never opens a pull request, never posts.
+> **It runs simulations and publishes nothing. The 03:00 outreach agent posts in public and runs no simulations.** That separation was ruled on 2026-08-25 and this agent keeps it. The agent has no git and no token. After it exits, the launcher commits `06-simulation/` to the private repository, and only there.
 
 | | |
 |---|---|
-| **Where it runs** | A fresh cloud clone of this repository, in the **Aequitas Agent** cloud environment, started by the Routine **Aequitas simulation nightly** |
-| **When** | **03:49 America/Chicago**, daily. Off the hour on purpose, so it does not queue behind every other 04:00 routine. Change it in the Routine, not here |
-| **What it may write** | Inside `06-simulation/` only. **Never `00-strategy/`, never `07-outreach/`** |
-| **What it may push** | Its own branch, **`sim-nightly/<date>`**, and only paths under `06-simulation/`. Nothing else, ever |
-| **Which request** | The author's pin in [`PINNED_SIM.txt`](PINNED_SIM.txt) if there is one, else **the oldest open request in [`SIM_QUEUE.yaml`](SIM_QUEUE.yaml)** that no report in `log/` has run |
-| **Where the requests come from** | [`SIM_QUEUE.yaml`](SIM_QUEUE.yaml), the **committed** copy of the open requests. The live index in `07-outreach/` is never committed, so the cloud clone cannot see it. **Refresh the queue locally and commit it** |
-| **Time limit** | **One hour**, self-enforced. A run too big for the hour is reported as too big, which is itself useful |
-| **What it needs** | numpy, scipy, PyYAML, openpyxl, installed by [`.claude/hooks/session-start.sh`](../.claude/hooks/session-start.sh) when the session starts. **`data/` is not in the clone**, so a request that needs it is reported as Blocked |
+| **Where it runs** | This machine, inside the private project, from the task **Aequitas simulation nightly** ([`bin/install_sim_task.ps1`](bin/install_sim_task.ps1)) |
+| **When** | **04:00 local**, daily, one hour after the outreach run, whose own limit is one hour. The two never overlap |
+| **The launcher** | [`bin/run_sim_night.ps1`](bin/run_sim_night.ps1): picks the request, builds the prompt, runs the agent at Sonnet-level effort, then commits |
+| **What it may write** | Inside `06-simulation/` only, never `data/`. **Never `00-strategy/`, never `07-outreach/`** |
+| **Which request** | The author's pin in [`PINNED_SIM.txt`](PINNED_SIM.txt) if there is one, else **the oldest open request** that no report in `log/` has run |
+| **Where the requests come from** | **The outreach agent's live index**, `07-outreach/memory/index.yaml`, which it fills with `memory.py request-sim`. [`SIM_QUEUE.yaml`](SIM_QUEUE.yaml) is a committed copy for readers of the public mirror; the picker falls back to it only if the index is absent |
+| **The budget** | **One hour of wall clock, 1 GB of new files.** The task kills the run at the hour. The agent estimates first and reports a request that does not fit as Blocked, with the cost, instead of running it |
+| **What it needs** | numpy, scipy, PyYAML, openpyxl on this machine. **`data/` is here**, read in place |
 | **Closing a request** | **The author does it**, after reading the report. The agent is forbidden from running `answer-sim` |
-| **Its brief** | [`SIM_AGENT_BRIEF.md`](SIM_AGENT_BRIEF.md) — the boundary, and the two rules that decide whether a run is worth anything |
-| **Its prompt** | [`SIM_NIGHTLY_PROMPT.md`](SIM_NIGHTLY_PROMPT.md). The Routine's own message only tells the agent to read it |
-| **Its report** | `log/SIM-<date>.md`, on the branch. The session transcript is in the Claude app, under the Routine's runs |
+| **Its brief** | [`SIM_AGENT_BRIEF.md`](SIM_AGENT_BRIEF.md): the boundary, the budget, and the two rules that decide whether a run is worth anything |
+| **Its prompt** | [`SIM_NIGHTLY_PROMPT.md`](SIM_NIGHTLY_PROMPT.md), with the request and the date substituted by the launcher |
+| **Its report** | `log/SIM-<date>.md`. The raw transcript is `log/runs/run-<stamp>.txt` |
+| **After it exits** | The launcher stages `06-simulation/`, commits `sim night <date>`, and pushes to the private repository if `bin/consistency.py` passes. The public mirror is untouched until the author runs `sync_archive.ps1` |
 
-**Commands you will actually use, on your own machine:**
+**Commands you will actually use:**
 
 ```bash
-python 06-simulation/bin/pick_sim.py --export   # refresh SIM_QUEUE.yaml from the live index, then commit it
 python 06-simulation/bin/pick_sim.py --list     # every open request, oldest first; marks the ones with a report
 python 06-simulation/bin/pick_sim.py            # what tonight would pick
+python 06-simulation/bin/pick_sim.py --export   # refresh SIM_QUEUE.yaml, the public copy, when you next sync
 ```
 
-**Run the export after filing a request and after closing one.** The agent only sees what is committed on `main`.
+**In the morning:** read `log/SIM-<date>.md`, then run the `answer-sim` command the report ends with. The night's commit is already on `main`. A night not worth keeping is reverted with `git revert`.
 
-**To pin one**, put its id on its own line in [`PINNED_SIM.txt`](PINNED_SIM.txt) and commit. **To clear the pin**, delete that line and commit.
+**To pin one**, put its id on its own line in [`PINNED_SIM.txt`](PINNED_SIM.txt). **To clear the pin**, delete that line.
 
-**Where the agent works, and why the morning has one extra step.** This public repository is a mirror. `07-outreach/bin/sync_archive.ps1` copies four folders from the private project into it and **deletes anything in them the private project does not have.** The agent clones and pushes here, so its night's work exists only here until it is brought into the private project. **Bring it over before the next sync, or the sync erases it.** The same holds for the agent's own files in this folder: they are kept in the private project's `06-simulation/` so the sync carries them.
+**Install or move the task:** `powershell -ExecutionPolicy Bypass -File 06-simulation/bin/install_sim_task.ps1` (add `-At 05:00` to move it, `-Remove` to unregister). **Dry run:** `powershell -ExecutionPolicy Bypass -File 06-simulation/bin/run_sim_night.ps1 -NoAgent` builds and checks the prompt without invoking Claude.
 
-**In the morning, in the private project:**
-
-```bash
-git fetch https://github.com/albamuth/aequitas sim-nightly/<date>
-git cherry-pick FETCH_HEAD                      # the night's commit, into the private project
-python 07-outreach/bin/memory.py answer-sim <id> --file 06-simulation/<project>/RESULTS.md
-python 06-simulation/bin/pick_sim.py --export   # the queue, minus the request just closed
-git commit -am "sim night <date> folded; queue refreshed"
-```
-
-Then sync the mirror as usual. A night not worth keeping is not cherry-picked, and its branch is deleted.
-
-**The old local task** is unregistered with `powershell -ExecutionPolicy Bypass -File 06-simulation/bin/install_sim_task.ps1 -Remove`. Do that once, so the two never run the same request on the same night.
+**History.** The task was first registered 2026-09-15. On 2026-10-14 the run moved to a Claude Code cloud Routine for one night and came back the same day: the cloud clone could not see the live index or `data/`, and its branches on the public mirror had to be cherry-picked into the private project by hand before every sync. The Routine is paused, not deleted.
 
 ---
 

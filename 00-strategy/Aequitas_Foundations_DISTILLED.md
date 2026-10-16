@@ -9,8 +9,8 @@
 >
 > **Regenerate with:** `python bin/distill.py`
 
-> **Source:** [`Aequitas_Foundations.md`](Aequitas_Foundations.md) · **version 0.56**
-> **Size:** 139,160 bytes, from 263,590 — **53% of the source**
+> **Source:** [`Aequitas_Foundations.md`](Aequitas_Foundations.md) · **version 0.58**
+> **Size:** 142,013 bytes, from 268,560 — **53% of the source**
 
 **What was kept:** every heading, every rule, every table, and the stated result of every worked
 example. **What was dropped:** the explanation prose between them.
@@ -276,7 +276,7 @@ example. **What was dropped:** the explanation prose between them.
 > **The dial test is the standing screening question for anything proposed for these documents. What it leaves behind is a set of conformance requirements, never an architecture** — [`Aequitas_Conformance.md`](Aequitas_Conformance.md). **What must be true, never how to build it.**
 ## 3. The Ledger Model
 ### 3.0 What a ledger is
-> **A person's ledger is two numbers, side by side.**
+> **A person's ledger is three numbers, side by side.**
 > **`C`, their credit — every hour of their life the books have recorded as work.**
 > **`D`, their debit — every hour their consumption is currently reckoned to cost, once the bundle of physical quantities is converted at today's weightings.**
 > **`P`, their committed room — every hour other people have pledged to them by name.**
@@ -491,6 +491,24 @@ example. **What was dropped:** the explanation prose between them.
 | Was anything divided? | **No.** The energy was spent entirely on both | **Yes.** The parcel was physically divided |
 | The rule | **Nothing is divided.** Every output carries the whole process cost against its own mass, and a ledger walk unions them | **The parcel's debit vector divides by mass, per dimension, before collapsing** (§3.2a) |
 | Why | There is no fraction to find (§2.5) | **Mass is a physical trace, so the split is measured rather than declared** (§2.5) |
+##### One holding with parts of several co-products
+> **For each parcel, a holding carries the parcel's cost times the largest mass fraction of any one co-product, among those that passed through it.** The pieces of one co-product add before the largest is taken. **What the holder has consumed stays in the count permanently.** Conformance row 10i.
+| | What it requires |
+|---|---|
+| **The split rule, above** | A part of one co-product alone carries its own mass share |
+| **Holding more never carries less** | Adding a cut to a holding cannot lower its figure |
+| **Row 10c, applied to one holder** | Someone holding a whole output splits it into ten identical bundles. **The bundles add back to the whole**, so each carries a tenth |
+###### An example, with the numbers
+**The seven-step steer above, with 20 hours of labour. The hide leaves at step 2, after 5 of the 20 hours. The beef passes all seven steps.** *(Illustrative digits.)*
+| The holding | Steps 1–2, 5 h | Steps 3–7, 15 h | It carries |
+|---|--:|--:|--:|
+| 10% of the beef and 10% of the hide | 0.1 × 5 | 0.1 × 15 | **2.0 h** |
+| 10% of the beef and 50% of the hide | 0.5 × 5 | 0.1 × 15 | **4.0 h** |
+| 10% of every co-product | 0.1 × 5 | 0.1 × 15 | **2.0 h**, a tenth of the steer |
+**In plain words: a tenth of a whole steer carries a tenth of the steer.** Treating the parts as independent draws instead gives **3.65 h** for that row, and ten such bundles would carry 1.83 steers.
+**The largest fraction is taken step by step, not once for the whole process.** In the second row the hide's 50% reaches only the two steps it passed through.
+**And consumption never escapes it.** Someone holding 50% of the hide eats 50% of the beef, then sells the hide. **They still carry 0.5 × 20 = 10 h**, which is what eating half the beef costs. Counting only what is held now would leave them carrying nothing for it.
+**The rule needs no exception.** A fraction of 1 on every path is the union rule, and a single path is the split rule. Checked against both chain cases, including the refinery on real DOE energies: `06-simulation/fractional-holdings/RESULTS.md`, 10 self-tests.
 ##### What is left when identity is still not resolvable
 > **That is a missing record, not an unknowable fact.**
 ##### The records this needs already exist
@@ -919,6 +937,7 @@ example. **What was dropped:** the explanation prose between them.
 **In plain words: the third row is the one this section forbids.** It would spend 100% of a floor-only life's say over what gets made on the strength of the network's setting.
 **What routing still buys, and what it costs.** The pledges of everyone who accepts a standing pledge to essentials fund essential provision from the act of staying alive. **How many accept is now a measure of how many want it**, which a default could never be.
 **⚠️ A network that offers one standing pledge to every subscriber writes the criteria for a large share of the population's budget.** That is a coordinator with real power over what gets made, and it is the same P4 (coordinator class) surface as the large discretionary fund above. **Publishing the criteria before anyone accepts makes that power visible. It does not remove it.**
+**Consent gates the hours. It does not gate the list.** The same network also writes the list of which needs count, and writing a list is a signal: it is backed by nothing, spends nobody's budget, and needs nobody's consent (the table above). **So the signal leg is the same P4 surface through a second door, and consent closes only the pledge leg.** A network of 1,000,000 subscribers at `F` = 10 accrues 3.65 × 10⁹ h of budget a year; if 60% accept the offered standing pledge (an illustrative share), 2.19 × 10⁹ h of consented room is directed by criteria one party wrote. The public pledge ledger (§4.7) shows what each listed need received. **It cannot show a need that was never listed.**
 #### Recording is never gated. Verification decides when credit counts
 ##### For goods, the hand-off is the verification
 #### When a task attracts more pledges than it costs

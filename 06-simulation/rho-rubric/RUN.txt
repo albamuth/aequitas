@@ -1,0 +1,64 @@
+DECLARED.md sha256 prefix: f73e7c9829d0e814   (printed before any statistic is computed)
+N = 200,000   seeds = 1..30   F = 10   fault stream = seed + 10,000,000
+======================================================================================================================================================
+id  leg     clean  faulted     move sd(pair)     2*sd  sd(unp)      r       z  fires
+------------------------------------------------------------------------------------------------------------------------------------------------------
+S1  sens   1.2472   0.8192  -0.4280  0.00043  0.00085  0.00054  0.735 -5506.4  YES  (exp down)  capacity -30%
+S2  sens   1.2472   1.7700  +0.5228  0.00127  0.00253  0.00179  0.896  2260.7  YES  (exp up)  capacity +25%
+S3  sens   1.2472   1.1871  -0.0601  0.00031  0.00063  0.00060  0.840 -1051.8  YES  (exp down)  every appetite +25% (re-weighting)
+S4a sens   1.2472   1.2472  -0.0000  0.00016  0.00031  0.00073  0.955    -0.6  no   (exp none)  +20,000 fabricated floor accts, typical appetite, K tied to credit
+S4b sens   1.2472   1.1420  -0.1052  0.00022  0.00044  0.00066  0.914 -2638.8  YES  (exp down)  +20,000 fabricated floor accts, typical appetite, K physical
+S4c sens   1.2472   1.3709  +0.1236  0.00023  0.00047  0.00088  0.980  2902.4  YES  (exp up)  +20,000 phantom floor accts, zero appetite, K tied to credit
+S5a sens   1.2472   1.7686  +0.5214  0.00396  0.00791  0.00410  0.275   721.8  YES  (exp up)  20% of accounts' consumption omitted
+S5b sens   1.2472   1.4160  +0.1688  0.00093  0.00187  0.00146  0.896   991.6  YES  (exp up)  every account's consumption x0.8
+S6a sens   1.2472   1.3279  +0.0807  0.00064  0.00128  0.00099  0.651   689.7  YES  (exp none)  shuffle appetite across ALL accounts, total fixed
+S6b sens   1.2472   1.2485  +0.0013  0.00007  0.00015  0.00072  0.990    93.5  YES  (exp none)  shuffle appetite within credit deciles, total fixed
+U0  spec   1.2472   1.2472  +0.0000  0.00000  0.00000  0.00073  1.000     0.0  no   (exp none)  no fault (null)
+U1  spec   1.2472   1.2472  +0.0000  0.00000  0.00000  0.00073  1.000     0.0  no   (exp none)  reorder the accounts
+U2  spec   1.2472   1.2472  +0.0000  0.00000  0.00000  0.00073  1.000     0.0  no   (exp none)  rescale every unit x2 (c, a, K)
+======================================================================================================================================================
+
+CLEAN BASELINE (exact solver):  mean 1.2472   sd across seeds 0.00052
+CLEAN BASELINE (file's 200-point grid, step 0.0176):  mean 1.2457   sd across seeds 0.00876
+
+GRID vs EXACT, paired move (the file's own solver snaps to a grid):
+  S1: exact move -0.4280   grid move -0.4291   grid sd(pair) 0.00876
+  S3: exact move -0.0601   grid move -0.0598   grid sd(pair) 0.00876
+  S5a: exact move +0.5214   grid move +0.5212   grid sd(pair) 0.00978
+
+OBSERVATIONAL EQUIVALENCE: the capacity multiplier on clean books that reproduces each fault's rho* (mean over seeds)
+  S3   capacity x0.9630  (-3.70%)   every appetite +25% (re-weighting)
+  S4b  capacity x0.9341  (-6.59%)   +20,000 fabricated floor accts, typical appetite, K physical
+  S4c  capacity x1.0705  (+7.05%)   +20,000 phantom floor accts, zero appetite, K tied to credit
+  S5a  capacity x1.2495  (+24.95%)   20% of accounts' consumption omitted
+  S5b  capacity x1.0945  (+9.45%)   every account's consumption x0.8
+  S6a  capacity x1.0469  (+4.69%)   shuffle appetite across ALL accounts, total fixed
+  S6b  capacity x1.0008  (+0.08%)   shuffle appetite within credit deciles, total fixed
+
+SMALLEST CAPACITY SHIFT THAT FIRES (sensitivity floor in capacity terms):
+  capacity x0.999  move -0.00166  bar(2sd) 0.00001  fires
+  capacity x0.995  move -0.00830  bar(2sd) 0.00003  fires
+  capacity x0.99   move -0.01654  bar(2sd) 0.00005  fires
+  capacity x0.98   move -0.03286  bar(2sd) 0.00010  fires
+  capacity x0.95   move -0.08059  bar(2sd) 0.00024  fires
+  capacity x0.9    move -0.15652  bar(2sd) 0.00043  fires
+
+FABRICATION SWEEP (how many fabricated floor accounts before rho* moves past the bar):
+  typical, K tied        + 2,000 accts ( 1.0%)  move +0.00000  bar(2sd) 0.00009  no
+  typical, K tied        + 5,000 accts ( 2.5%)  move -0.00000  bar(2sd) 0.00013  no
+  typical, K tied        +20,000 accts (10.0%)  move -0.00002  bar(2sd) 0.00031  no
+  typical, K tied        +50,000 accts (25.0%)  move -0.00006  bar(2sd) 0.00030  no
+  typical, K physical    + 2,000 accts ( 1.0%)  move -0.01160  bar(2sd) 0.00010  fires
+  typical, K physical    + 5,000 accts ( 2.5%)  move -0.02852  bar(2sd) 0.00017  fires
+  typical, K physical    +20,000 accts (10.0%)  move -0.10520  bar(2sd) 0.00044  fires
+  typical, K physical    +50,000 accts (25.0%)  move -0.22852  bar(2sd) 0.00067  fires
+  zero appetite, K tied  + 2,000 accts ( 1.0%)  move +0.01180  bar(2sd) 0.00004  fires
+  zero appetite, K tied  + 5,000 accts ( 2.5%)  move +0.02972  bar(2sd) 0.00010  fires
+  zero appetite, K tied  +20,000 accts (10.0%)  move +0.12365  bar(2sd) 0.00047  fires
+  zero appetite, K tied  +50,000 accts (25.0%)  move +0.33969  bar(2sd) 0.00146  fires
+
+PAIRING (brief 7a): S1 noise on the move, three ways
+  clean-arm sd 0.00052;  paired-difference sd 0.00043;  unpaired sd 0.00054;  r(clean, faulted) = 0.7348
+  S4a move -0.00002 vs paired bar 0.00031 vs unpaired bar 0.00146
+
+LEG 3 (coverage witness): UNAVAILABLE on a generator. rho* is computed from the population it describes; no outside total exists here.
