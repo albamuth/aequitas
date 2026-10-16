@@ -15,6 +15,14 @@
     at the end run AFTER the agent has exited, go to the PRIVATE repository
     only, and stage 06-simulation\ only.
 
+    Permissions (author ruling 2026-10-16, PLAN-2026-10-16 5.1): the agent
+    runs at the repository root, whose .claude\settings.json allows nothing,
+    so until 2026-10-16 every python call it made was refused at 04:00 with
+    nobody awake to approve it. Its allow and deny lists now live in
+    bin\sim_agent_settings.json, in this folder, and are passed to the CLI
+    with --settings. The root settings are untouched and an interactive
+    session at the root is unaffected.
+
     Run by hand:  powershell -ExecutionPolicy Bypass -File bin\run_sim_night.ps1
     No agent:     ... -NoAgent      builds and checks the prompt, does not invoke Claude
     Preflight:    ... -WhatIfOnly   stops after the checks
@@ -24,7 +32,7 @@ param(
     [switch]$WhatIfOnly,
     [switch]$NoAgent,      # everything except invoking Claude; leaves the exact
                            # prompt at log\tmp\prompt-<stamp>.md
-    [string]$Model = "opus"     # author ruling 2026-10-15 (nightcheck 5.3 B): back to Opus. The 2026-10-15 Sonnet run had every python call refused; the Opus outreach run the same night did not
+    [string]$Model = "sonnet"   # author ruling 2026-10-16 (nightcheck 5.3 A). The 2026-10-15 move to Opus rested on the guess that Sonnet caused the python refusals; the Opus run of 2026-10-16 was refused the same way. The cause was the working folder (see bin\sim_agent_settings.json), so the cheaper model is back
 )
 
 $ErrorActionPreference = "Stop"
@@ -146,10 +154,18 @@ if ($NoAgent) {
 # the fact that this agent has no key, no token and nothing to publish with.
 # The prompt goes in on STDIN, not as an argument: Windows caps a whole
 # command line at 32,767 characters and a prompt can exceed that silently.
+$SettingsFile = Join-Path $Root "bin\sim_agent_settings.json"
+if (-not (Test-Path $SettingsFile)) {
+    "FATAL: $SettingsFile is missing. Without it every python call is refused. Not invoking Claude." |
+        Tee-Object -FilePath $RunLog -Append
+    exit 1
+}
+"permissions: $SettingsFile" | Tee-Object -FilePath $RunLog -Append
 $claudeArgs = @(
     "-p",
     "--model", $Model,
     "--permission-mode", "acceptEdits",
+    "--settings", $SettingsFile,
     "--output-format", "text"
 )
 
@@ -204,7 +220,12 @@ $since = (Get-Date).AddHours(-24)
 $toStamp = @()
 if (Test-Path $report) { $toStamp += Get-Item $report }
 $toStamp += Get-ChildItem -Path $Root -Recurse -Filter "RESULTS.md" -File |
-            Where-Object { $_.LastWriteTime -gt $since -and $_.FullName -notmatch "\(log|archive|99-superseded)\\" }
+            Where-Object { $_.LastWriteTime -gt $since -and $_.FullName -notmatch "\\(log|archive|99-superseded)\\" }
+            # The pattern above is a backslash, then one of three folder names, then a
+            # backslash. On 2026-10-16 it read `"\(log|...)\\"`: a single `\(` is an
+            # escaped literal paren, which left the `)` unmatched, .NET threw
+            # "Too many )'s" under -ErrorActionPreference Stop, and the run died here
+            # with no HASHES.txt and no git block.
 foreach ($f in $toStamp) {
     $h   = (Get-FileHash -Algorithm SHA256 -Path $f.FullName).Hash.ToLower()
     $rel = ("06-simulation/" + $f.FullName.Substring($Root.Length + 1)) -replace "\\", "/"

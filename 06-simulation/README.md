@@ -33,6 +33,7 @@ Every command below is run **from inside that project's folder**. Every project 
 | **[`method-spread/`](method-spread/README.md)** | How far did a §3.4a joint-process split move across honest methods? | `python method_spread.py --test` | ⚠️ **Superseded 2026-09-03.** The split rule it measured was withdrawn. **Kept because it is the measurement that caused the withdrawal.** |
 | **[`chain-resolution/`](chain-resolution/README.md)** | If a joint process's cost is not divided, what does reading the chain more finely change — and do the books inflate? | `python chain_resolution.py --test` | ✅ **Done 2026-09-03.** Answers the author ruling of the same day. Foundations **§3.4a**, **§2.5**, **A3**. |
 | **[`fractional-holdings/`](fractional-holdings/README.md)** | One account holds part of several co-products of one process. What does it carry? | `python fractional_holdings.py --test` | ✅ **Done 2026-10-13.** "Max" passes; the rivals fail row 10c. Nightcheck decision 5.3. Foundations **§3.4a**. |
+| **[`household-consolidation/`](household-consolidation/README.md)** | How much does a two-adult household save under max by putting co-products of one process on one account? | `python household_consolidation.py --test` | ✅ **Done 2026-10-16.** 8/8 self-tests; code matches the hand figures: 0.12 h/yr typical (0.004% of household debit), under 1% at every swept corner. Nothing in the documents moves. Foundations **§3.4a**. |
 
 ---
 

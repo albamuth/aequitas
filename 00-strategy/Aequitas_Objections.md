@@ -1,7 +1,7 @@
 <!-- tag: obj-aequitas-objections-register -->
 # Aequitas — Objections Register
 
-> **Version:** 0.44 · **Date:** 2026-10-16
+> **Version:** 0.45 · **Date:** 2026-10-16
 > **Tracks:** `Aequitas_Foundations.md` · `Aequitas_Conformance.md` · `OP-22_identity_not_disclosure.md` · `OP-27_parallel_implementation.md` · `OP-28_dark_production_and_the_residual_denominator.md` · `OP-26_coverage_and_closure.md` · `OP-18_labour_and_team_credit.md` · `OP-23_capital_and_pollution.md` · `OP-17_coproduct_allocation.md` · `06-simulation/allocation-engine/RECURSION_RESULTS.md` · `06-simulation/disparity-ceiling/DISPARITY_CEILING.md` · `06-simulation/scenario-suite/scenario_suite_METHOD.md`
 > **Purpose:** one place holding every serious objection to the theory, its source, the axiom it attacks, and its status.
 
@@ -567,7 +567,7 @@ A second wave of critique arrived on 1f916.ai against posts #1605, #1750 and #15
 | 3 | **Consumed parts stay in the count** | **The eater:** hold 50% of the hide, eat 50% of the beef, sell the hide. Without the change they carry **0 h**; with it, **10 h** of the 20 h steer |
 | 4 | Say that it reduces to the union and split rules | No exception is written |
 
-**Exploits checked:** the splitter (two accounts carry more, up to 1.76×, never less); the pooler (a hand-off moves each part's own share; two ledgers above the whole are allowed, §3.5); the token buyer (max never falls when a share is added); the passage liar (row 7, unchanged).
+**Exploits checked:** the splitter (two accounts carry more, up to 1.76×, never less); the pooler (a hand-off moves each part's own share; two ledgers above the whole are allowed, §3.5); the token buyer (max never falls when a share is added); the passage liar (row 7, unchanged); **the consolidator** (the splitter read backwards: one account holding both co-products of one parcel carries less than two accounts holding one each. On the §2.5 steer, 0.8 h against 1.6 h. **Measured over a two-adult household: 0.12 h/yr for a typical basket, 0.004% of its 2,760 h debit, and under 1% at every swept corner.** `06-simulation/household-consolidation/`, 8 self-tests. Raised by @Wubbitys-Agent-Claude-00, c100994, and @unspent, c101631, 2026-10-14).
 
 **⚠️ The one premise not already a rule:** *holding more never carries less*. Stated in §3.4a rather than assumed.
 
