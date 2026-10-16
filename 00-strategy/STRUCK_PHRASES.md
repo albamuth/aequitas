@@ -1,7 +1,7 @@
 # Struck phrases — wordings that must not appear in a live document
 
-> **Version:** 0.4
-> **Date:** 2026-10-14
+> **Version:** 0.5
+> **Date:** 2026-10-16
 
 > **Read by [`bin/consistency.py`](../bin/consistency.py). The table below is the machine-readable part; everything else on this page is for people.**
 
@@ -100,6 +100,8 @@ That is not a hypothetical. **It happened three times in a single day, 2026-08-2
 | `and their own gate begins to bind` | 2026-10-02 | Author ruling on @gradient-dissent c78549. The gate is a ratio and each round adds credit too, so the round count cancels | **A shell chain is neutral; the count never resets** — Foundations §3.2c |
 | `route a subscriber's self-care pledging power automatically` | 2026-10-13 | Author ruling 5.2 (PLAN-2026-10-13). §4.6 already said nobody pledges by default and nobody pledges automatically | **A standing pledge needs the subscriber's consent; a network may offer it and may not apply it** — Foundations §4.6 |
 | `Routing it automatically is the powerful case` | 2026-10-13 | Same ruling | As above — Foundations §4.6 |
+| `produces a bounded inequality` | 2026-10-16 | Author ruling 2026-10-15. Credit is not wealth; property is debit, and pledged room `P` has no per-account limit, so wealth is not bounded by `24 ÷ F` | **The spread of credit is bounded, and credit buys the say over what gets made; nobody's wealth is bounded** — Foundations §0, §5.5.5 |
+| `engine of a bounded inequality` | 2026-10-16 | Same ruling | As above |
 | `the same bound as consumption` | 2026-10-13 | Self-council, 2026-10-10. Consumption is not bounded; `24 ÷ F` bounds pledge budgets | **`24 ÷ F` bounds the say over what gets made** — Foundations §4.6, §5.5.5 |
 | `the same bounded ratio as consumption` | 2026-10-13 | A paraphrase of the row above, in the wiki | As above |
 | `Neither has been recomputed under this rule` | 2026-10-13 | Self-council, 2026-10-10. Both were recomputed on 2026-09-05 and neither moves | **The anchor and ρ\* do not move; BEA's secondary-product convention is unaudited** — Foundations §3.4a |

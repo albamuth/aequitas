@@ -1,8 +1,8 @@
 <!-- tag: fnd-aequitas-foundations-and-long-term -->
 # Aequitas — Foundations & Long-Term Strategy
 
-> **Version:** 0.58
-> **Date:** 2026-10-15
+> **Version:** 0.59
+> **Date:** 2026-10-16
 > **Status:** Working foundations.
 > **Primary audience of the first paper:** technologists and implementers.
 > **Companion:** [`Aequitas_Conformance.md`](Aequitas_Conformance.md) — what must be true for an implementation to *be* Aequitas.
@@ -89,7 +89,9 @@ This distinction is load-bearing. Every previous attempt at objective accounting
 
 Aequitas makes the narrower and far more defensible claim. **Cost is what a thing takes from the world; it is physical, and we can measure it. Value is what someone thinks it is worth; it is not physical, and we do not attempt to measure it.** Value enters the system as *feedback and pledges* (§4.6), never as an accounting quantity.
 
-> **On the credit side, the substance is *time* — and time, not effort**. A credit records *time a human spent*, and the conceptual leap Aequitas asks of a reader is to see time itself as the finite thing being spent — like money is "spent" today, except that time is possessed by every person in exactly equal measure (24 hours a day) and can be neither hoarded, lent, nor transferred (A3 (non-fungibility)). This is the deep reason Aequitas produces a **bounded** inequality where money produces an unbounded one: money accumulates without limit; time structurally cannot — you get 24 hours a day and no more, ever, and you cannot buy anyone else's. Effort, hazard, and skill are real differences between workers, but they resolve as *material* costs (A2 (time as measure)), never as a time-multiplier. **Because the unit of account is an equally-distributed, non-transferable resource, the *engine* of a bounded inequality is the arithmetic itself, not any rule that polices it.** *(The exact bound, though, is a **conditional** result, and it is an **absolute maximum rather than an expected spread**. It depends on the value a network sets for its floor, on whether that network credits a child's learning time, and on fraud not manufacturing hours; see §5.5.5. **At `F` = 10, a very hard working life reaches about 1.6×, not 2.4×.** **And the bound is over the say in what gets made, not over what anybody consumes** — pledges grant consumable room that no per-person rule limits, which §5.5.5 states.)*
+> **On the credit side, the substance is *time* — and time, not effort**. A credit records *time a human spent*, and the conceptual leap Aequitas asks of a reader is to see time itself as the finite thing being spent — like money is "spent" today, except that time is possessed by every person in exactly equal measure (24 hours a day) and can be neither hoarded, lent, nor transferred (A3 (non-fungibility)). Money accumulates without limit; time structurally cannot — you get 24 hours a day and no more, ever, and you cannot buy anyone else's. Effort, hazard, and skill are real differences between workers, but they resolve as *material* costs (A2 (time as measure)), never as a time-multiplier. **So the spread of credit between two people is bounded by arithmetic, and what credit buys is the say over what gets made** (§4.6, §5.5.5). *(That bound is conditional and is an absolute maximum rather than an expected spread; at `F` = 10 a very hard working life reaches about 1.6×, not 2.4×. See §5.5.5.)*
+
+> **Credit is not wealth, and this document bounds no one's wealth.** Wealth is an accrual of material gains and property, and in these books property is **debit** (§3.2, §4.5). How much property a person can hold is set by the gate `D ≤ ρ·(C + P)` (§3.0), and `P`, the room other people have pledged to them, has no per-account limit (§5.5.5). **So a person with many pledges behind them can hold more than a person with none, by any amount the pledgers' budgets allow.** What makes that different from money is that pledged room is a one-time grant that cannot be lent, rented, charged for, or used to hire anybody (§5.5.5), and every hour of it was earned by a verified person who spent it once (§4.6).
 
 Everything downstream — no capitalism, no rent, no taxation, no externalities, no inflation — is a *consequence* of taking the cost rule seriously and applying it without exception.
 

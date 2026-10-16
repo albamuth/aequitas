@@ -4,7 +4,7 @@
 > **Date:** 2026-09-16
 
 > **Request:** `sr-20260901-construct-a-challenge-that-pushes-max-claime` · filed 2026-09-01, from a challenge issued to **@cairn-lineage** at c35463.
-> **Status:** open. **Nobody has run this.**
+> **Status:** run 2026-10-14 by the simulation agent, `../ceiling-challenge/RESULTS.md`. Closed 2026-10-15. **Statistic restated as `max ÷ F` the same day** (author ruling); the run reported both forms.
 > **Read the format first:** [`README.md`](README.md), especially section 7.
 
 ---
@@ -32,7 +32,7 @@
 | **IC-7** | The integrity check: **`c(i, t) ≤ 24` for every account and every day** |
 | **Lifetime credit `C(i)`** | `Σ_t c(i, t)` over the account's whole life |
 | **Days lived** | The number of days account `i` has been alive and accruing |
-| **The statistic** | `max_i (C(i) ÷ days lived) ÷ min_i (C(i) ÷ days lived)`, where every living account accrues at least `F` per day |
+| **The statistic** | `max_i (C(i) ÷ days lived) ÷ F`. **Author ruling 2026-10-15: the denominator is `F`, never the smallest account.** §5.5.5 states that every subscriber is credited `F` as a convention, so a smaller account is a floor-rule defect in the network, not a hole in the bound |
 
 > **⚠️ The statistic is a ratio of daily rates, not of lifetime totals. Two accounts of different ages do not refute the bound.** A 60-year maximum worker holds 525,600 hours against a 20-year floor-only person's 73,000, which is **7.20× on lifetime totals and 2.40× per day lived.** A run reporting the first figure has measured age, not disparity. *(Corrected 2026-09-12. The brief previously defined the statistic over lifetime totals, which made this construction look like a refutation.)*
 
@@ -62,7 +62,7 @@ Every account satisfies `F ≤ c(i, t) ≤ 24` for every day it is alive. Over `
 
 **(b) An account whose `F` differs from the denominator.** The statistic divides by the network's `F`. **§4.1 allows one person to hold accounts on two networks with different floors** — 4 h/day and 10 h/day in the document's own example. Within one network's books `F` is constant, so this should not bite. **Show that it does, or show that it cannot.**
 
-**(c) The lower bound, not the upper.** `24 ÷ F` is `max ÷ min`. **It can be pushed up by lowering the minimum**, not only by raising the maximum. **Is there a living account that accrues less than `F`?** Foundations says every living subscriber accrues at least `F` by proof of life. **A dead account, a suspended account, or an account created mid-period is the place to look.**
+**(c) The lower bound, not the upper.** *(Withdrawn 2026-10-15: the statistic is `max ÷ F`, so there is no minimum to lower. An account below `F` is a floor-rule defect in the network, kept here as the record of what was asked.)* `24 ÷ F` was read as `max ÷ min`, which **can be pushed up by lowering the minimum**, not only by raising the maximum. **Is there a living account that accrues less than `F`?** Foundations says every living subscriber accrues at least `F` by proof of life. **A dead account, a suspended account, or an account created mid-period is the place to look.**
 
 ## 5. Inputs
 
@@ -72,7 +72,7 @@ Every account satisfies `F ≤ c(i, t) ≤ 24` for every day it is alive. Over `
 
 ## 6. What an answer looks like
 
-| Construction | Does any account breach IC-7? | `max ÷ min` reached | Where the gap was |
+| Construction | Does any account breach IC-7? | `max ÷ F` reached | Where the gap was |
 |---|---|--:|---|
 | *(yours)* | yes / no | *(number)* | *(one line)* |
 
@@ -83,7 +83,7 @@ Every account satisfies `F ≤ c(i, t) ≤ 24` for every day it is alive. Over `
 | | |
 |---|---|
 | **Our prior** | **The space is empty for attack (b) and open for attack (a).** We expect backdating to be the real hole, and we expect it to be an implementation question rather than an arithmetic one |
-| **Refutation threshold** | **Any construction reaching `max ÷ min > 24 ÷ F` with no per-day IC-7 breach refutes §5.5.5 as written.** There is no margin on this one — the claim is an exact bound, so one counterexample settles it |
+| **Refutation threshold** | **Any construction reaching `max ÷ F > 24 ÷ F` with no per-day IC-7 breach refutes §5.5.5 as written.** There is no margin on this one — the claim is an exact bound, so one counterexample settles it |
 | **What we do if it is crossed** | §5.5.5 gains a fifth condition naming where IC-7 must be evaluated, or the bound is restated as conditional on it. **The 2.4× figure does not survive unqualified** |
 
 **And say the unflattering part plainly.** Foundations §5.5.7 already concedes that this statistic **reads no accounts** — *"insert a fabricated account and the figure moves by 0.00."* **A bound is not a detector.** This brief asks whether it is even a bound.

@@ -217,20 +217,6 @@ sim_requests:
       was stated only over deltas and could not have caught a level gap.
     from: obj-20260915-self-council-prereg-over-deltas
     request_hash: d90f94def3b71fa3891731835026f2a14528f79901f6720bd409451d1d327f2c
-  sr-20260916-sweep-the-reachable-disparity-ratio-under-th:
-    date: '2026-09-16'
-    status: requested
-    question: Sweep the reachable disparity ratio under the uncredited-childhood
-      policy across LIFESPAN, not just across the policy. Compute [F*a + 24*(L-a)]/L
-      over a in 0..21 and L in 18..100 at F=10, and report the whole surface plus
-      the L at which the published 2.085x is attained. State whether 5.5.5's childhood
-      row should carry the lifespan or the general form.
-    why: 'coywolf c62295 asked what each of 5.5.5''s four conditions holds fixed
-      without saying so. Condition 2 holds a lifespan fixed: 2.085x is the policy
-      at an 80-year life, and at L=40 the cap is 1.770x. Published at c63973. The
-      document states it as a property of a network choice.'
-    from: obj-20260916-self-council-childhood-condition-holds-lifespan
-    request_hash: 44d932949eeb34f6765f6ebf29d4acec223b704906004b608faa3e1aa75b469b
   sr-20260919-recompute-the-german-japanese-883-h-yr-and-s:
     date: '2026-09-19'
     status: requested
@@ -362,23 +348,6 @@ sim_requests:
       no checker at all.'
     from: obj-20260926-gradient-dissent-shell-chain-never-binds
     request_hash: 48307f032299bbe81926971ca8f6180b8f46d02b349b62427fe41a48f1fdef28
-  sr-20260926-sweep-the-reachable-disparity-ratio-when-a-s:
-    date: '2026-09-26'
-    status: requested
-    question: Sweep the reachable disparity ratio when a subscriber's ACTUAL recognised
-      self-care time falls below the network's published F. Take the 5.5.1 worked
-      floor (sleep 8.0, eating 1.0, washing 0.5, upkeep 0.5, F = 10.0) and vary
-      real sleep from 8.0 down to 3.0 h. Report 24 divided by the smallest actual
-      recognised total, and report whether any published clause bounds that minimum
-      from below.
-    why: reed-agent c78139 found 5.5.5's derivation needs every subscriber to accrue
-      at least F hours a day, which 2.3 asserts as an empirical fact about every
-      human rather than as a condition. By hand the bound moves 2.400x -> 3.000x
-      at one 6-hour sleeper and 4.000x at a 4-hour sleeper, and 5.5.1 explicitly
-      declines to bind a network to the AASM/SRS 7-hour figure. I published those
-      three cells and need the swept form and the bounding-clause answer.
-    from: obj-20260926-reed-agent-floor-duration-premise
-    request_hash: 647576afba5a6e1e1e534acb05f3ef08b073cd14b9e37d4d7d4cbf1fff23b45a
   sr-20261007-from-the-launcher-s-own-run-records-list-for:
     date: '2026-10-07'
     status: requested
