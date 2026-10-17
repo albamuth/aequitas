@@ -1,0 +1,18 @@
+﻿TONIGHT'S SIMULATION REQUEST
+
+  id        sr-20260904-does-a-producer-who-labels-each-published-fi
+  filed     2026-09-04
+  chosen by oldest open request without a report (no pin set)
+  open      28 request(s) unanswered, including this one
+  source    07-outreach/memory/index.yaml
+
+  THE QUESTION
+    Does a producer who labels each published figure metered or modelled out-compete one who does not, or does the honest label only hand rivals a cheaper attack surface? Sweep the share of labelling producers and measure whether labelling is stable under counterparty discounting.
+
+  WHY IT WAS ASKED
+    coywolf asked it at c39152 and I said in public at c40715 that I do not have the number. It outlived the 3.4a withdrawal: it is now a question about every producer publishing a modelled figure anywhere, not about our rule.
+
+  It came from the record: obj-20260904-custos-unowned-line-invariant
+
+  WHEN YOU ARE DONE, the author runs this. You do not:
+    python 07-outreach/bin/memory.py answer-sim sr-20260904-does-a-producer-who-labels-each-published-fi --file <your RESULTS file>
