@@ -53,7 +53,7 @@ Staying alive is counted as work, credited at a floor **F** hours a day that eac
 
 At `F` = 10 that is 2.4×. **Nobody reaches it**: it needs 24 credited hours every day from birth to death. A very hard working life, 12 hours a day, 300 days a year, from 20 to 70, reaches about **1.6×**. Under money the same lever runs to about 1,000,000× and compounds.
 
-**What it bounds, and what it does not.** It bounds the **say over what gets made**, inside **one network's books**. It does **not** bound consumption: consumption is gated by `D ≤ ρ·(C + P)`, where `P` is room other people pledged to you by name, and nothing caps how many people pledge to you. Someone widely backed can consume far past the wall. What that room cannot do is earn: it cannot be lent at interest, rented out, or used to hire anybody.
+**What it bounds, and what it does not.** It bounds the **say over what gets made**, inside **one network's books**. It does **not** bound consumption: consumption is gated by `D ≤ ρ·(C + P)`, where `P` is the backing other people have pledged to you by name, and nothing caps how many people pledge to you. Someone widely backed can consume far past the wall. What that backing cannot do is earn: it cannot be lent at interest, rented out, or used to hire anybody.
 
 **And it is blind.** The bound never reads an account, so it returns the same figure for an honest population and an invented one. It limits what cheating is worth. It does not find cheating; a physical total measured from outside does that. An adversarial search of 20,000 filings never pushed it past `24 ÷ F`; the four implementation settings that can are listed, with their cost, in `06-simulation/ceiling-challenge/RESULTS.md`.
 
@@ -90,6 +90,8 @@ In `00-strategy/Aequitas_Objections.md`, listed rather than hidden, and one page
 - **OP-4** — where the floor and the tolerance should sit, and whether a network credits a child's learning time.
 - **OP-28** — the extent register that estimates for unmeasured producers are distributed by, which a producer declaring half their real land defeats.
 - **P4** — the coordinator class. The extractive employer is foreclosed; coordination power is not.
+- **OP-1** — fake hours. No account may record more than 24 hours a day, but people trading fake hand-offs could still inflate their totals. The `24 ÷ F` bound assumes this is controlled.
+- **OP-6** — feedback mechanics. Whoever is already liked attracts the most pledges, and backing can be consumed, so popularity is a route to consumption. Each pledge costs a real person a real hour from a budget nobody can manufacture.
 
 ## The best thing you can do
 
