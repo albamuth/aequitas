@@ -30,7 +30,7 @@ Requires Python 3.11+, `numpy`, `scipy`, `matplotlib`; the request picker needs 
 
 ## The claims, and where to attack them
 
-Every rule below is stated in `00-strategy/Aequitas_Foundations.md` (v0.60 at this refresh; the version is in the file's header, the filename never changes). Every figure is a dated reading at a stated setting, never a verdict.
+Every rule below is stated in `00-strategy/Aequitas_Foundations.md` (v0.61 at this refresh; the version is in the file's header, the filename never changes). Every figure is a dated reading at a stated setting, never a verdict.
 
 | # | Claim | Code | Write-up |
 |---|---|---|---|
