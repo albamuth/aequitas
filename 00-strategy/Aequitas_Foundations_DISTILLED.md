@@ -9,8 +9,8 @@
 >
 > **Regenerate with:** `python bin/distill.py`
 
-> **Source:** [`Aequitas_Foundations.md`](Aequitas_Foundations.md) · **version 0.60**
-> **Size:** 142,375 bytes, from 269,156 — **53% of the source**
+> **Source:** [`Aequitas_Foundations.md`](Aequitas_Foundations.md) · **version 0.61**
+> **Size:** 143,018 bytes, from 269,800 — **53% of the source**
 
 **What was kept:** every heading, every rule, every table, and the stated result of every worked
 example. **What was dropped:** the explanation prose between them.
@@ -825,6 +825,7 @@ example. **What was dropped:** the explanation prose between them.
 | **`not identified`** | **The default.** Either blind spot has no defensible direction, so the interval is published and neither label is. |
 > **A `floor` label is earned by the arithmetic that produced the figure. It is never inherited from the fact that some input was incomplete.**
 **`not identified` is where every derived figure starts.** A label is promoted onto it by an argument. **The same rule governs the coverage percentage below, and every future figure of the same shape.**
+**The label is required, and the measurement says why it has to be.** A producer who marks which part of a figure is modelled shows a rival where to aim. In a game of 20 producers where a label may be dropped, nobody drops it once most figures carry one, provided an unlabelled figure is discounted by more than about 2.6%; but a lone labeller among 19 unlabelled rivals loses trade (3.60% of it against 5.02%), and labelling does not start on its own until about 4 of the 20 already do it. **A voluntary label would not get started. A required one holds.** `06-simulation/honest-label/RESULTS.md`.
 #### Why the label always wants to be wrong in the same direction
 > **Whoever computes a figure of this shape benefits from a particular one of its two labels. The error is therefore not random, and it will not be caught by whoever made it.**
 | The figure | What it is | Which error flatters the publisher |
@@ -1169,7 +1170,7 @@ example. **What was dropped:** the explanation prose between them.
 | [`../01-wiki/`](../01-wiki/) | One concept per page, linked to each other. **The worked detail behind most sections of this document lives here** — [`property-debit.md`](../01-wiki/property-debit.md), [`verification-ladder.md`](../01-wiki/verification-ladder.md), [`estimation-engine.md`](../01-wiki/estimation-engine.md), [`statistical-coverage.md`](../01-wiki/statistical-coverage.md), [`debit-taxonomy.md`](../01-wiki/debit-taxonomy.md) |
 | [`../02-research/`](../02-research/) | Downloaded sources and original research notes, each with its citation and the date it was retrieved |
 | [`../03-journal/`](../03-journal/) | A dated development log |
-| [`../04-use-cases/`](../04-use-cases/) | End-user scenarios |
+| `04-use-cases/` | End-user scenarios. **Held locally and not published, so there is no link to follow** |
 | [`../05-marketing/`](../05-marketing/) | Public-facing material |
 | [`../06-simulation/`](../06-simulation/) | Every simulation, one folder each, with its own README and results. **Where the numbers quoted in §3.5 and §5.5 were produced** |
 | [`../07-outreach/`](../07-outreach/) | The outreach agent that puts these arguments in front of outside critics |

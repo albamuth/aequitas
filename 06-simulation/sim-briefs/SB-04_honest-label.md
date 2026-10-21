@@ -69,9 +69,12 @@
 | | Labelled | Unlabelled |
 |---|--:|--:|
 | Expected trade lost to attack | 0.3 × 0.20 × 53.5% = **3.2 pts** | 0.05 × 0.20 × 46.5% = **0.5 pts** |
-| **Net share** | **50.3%** | **46.0%** |
+| Expected trade **won** from the other's loss | **0.5 pts** | **3.2 pts** |
+| **Net share** | **50.7%** | **49.3%** |
 
-**In plain words: at these numbers labelling still wins, but the attack has eaten nearly half the advantage.** The question this brief asks is **where the crossover is** — the combination of `d`, `q`, `q'` and `g` at which labelling stops paying.
+**Trade that one producer loses to an attack goes to the attacker, so the two shares still add to 100%.** Subtracting the losses and dropping the gains gives 50.3% against 46.0%, which adds to 96.3% and overstates the labelling edge at 4.2 points. The conserving figure is **1.5 points** (`06-simulation/honest-label/RESULTS.md`, §3).
+
+**In plain words: at these numbers labelling still wins, and the attack has eaten most of the advantage.** The question this brief asks is **where the crossover is** — the combination of `d`, `q`, `q'` and `g` at which labelling stops paying.
 
 ## 5. Inputs
 
@@ -96,6 +99,8 @@
 | **What we do if it is crossed** | **§4.4 gains a note saying the label rule is not self-enforcing**, naming what a network would have to do to make it so. **It would also strengthen OP-24 rather than relieve it** — a conclusion against us, since §3.3a currently treats the audit of *extent* as being in better shape than the audit of *weight* |
 
 **A result that says "labelling always wins" should be distrusted, including by us.** It is the flattering answer, and this project has published four figures that were wrong in the flattering direction.
+
+**Run 2026-10-17** (`06-simulation/honest-label/RESULTS.md`). The prior held: the stay threshold is **0.0256** against `q · g · m` = 0.024. The refutation threshold was **not** crossed from a half-labelling start (17.7% of attack-active cells collapse). It is crossed from a zero start: a lone labeller fails to invade in 77% of cells at 20 producers, and the invade threshold is **24 times** the stay threshold. So the label rule is self-enforcing once most figures carry one, and not self-starting. Foundations §4.4 says so.
 
 ## 8. Self-tests, each able to fail
 

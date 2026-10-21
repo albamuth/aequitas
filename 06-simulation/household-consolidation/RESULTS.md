@@ -129,4 +129,4 @@ python 06-simulation/household-consolidation/household_consolidation.py --test
 python 06-simulation/household-consolidation/household_consolidation.py
 ```
 
-Seed **20261016**, 20,000 uniform draws over the ranges in `P` at the top of the file. **Not yet run.**
+Seed **20261016**, 20,000 uniform draws over the ranges in `P` at the top of the file. **Run on 2026-10-16**; the output is in [`RUN.txt`](RUN.txt) and summarised in §3a.

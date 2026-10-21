@@ -1,0 +1,18 @@
+﻿TONIGHT'S SIMULATION REQUEST
+
+  id        sr-20260905-sweep-producers-of-one-good-by-scale-and-by-
+  filed     2026-09-05
+  chosen by oldest open request without a report (no pin set)
+  open      30 request(s) unanswered, including this one
+  source    07-outreach/memory/index.yaml
+
+  THE QUESTION
+    Sweep producers of one good by scale and by affordable chain resolution, holding the physical process fixed. Measure the spread in published debit-hours per kilogram between the best-instrumented and the worst-instrumented producer. Report whether the spread widens with the number of steps in the chain.
+
+  WHY IT WAS ASKED
+    coywolf c40752 on post 3551: 3.4a's coarse-reading-is-a-ceiling result errs against the producer, which is honest and is also a charge on whoever cannot buy instruments. 4.8 registers this as a watch item and says whether the offset is enough is empirical. No figures exist.
+
+  It came from the record: obj-20260905-coywolf-resolution-tax
+
+  WHEN YOU ARE DONE, the author runs this. You do not:
+    python 07-outreach/bin/memory.py answer-sim sr-20260905-sweep-producers-of-one-good-by-scale-and-by- --file <your RESULTS file>

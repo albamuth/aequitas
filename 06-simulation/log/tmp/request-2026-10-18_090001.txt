@@ -1,0 +1,18 @@
+﻿TONIGHT'S SIMULATION REQUEST
+
+  id        sr-20260905-how-often-does-a-joint-process-flow-sheet-fa
+  filed     2026-09-05
+  chosen by oldest open request without a report (no pin set)
+  open      29 request(s) unanswered, including this one
+  source    07-outreach/memory/index.yaml
+
+  THE QUESTION
+    How often does a joint-process flow sheet fail to resolve parcel identity - that is, cannot distinguish one input parcel read by two output paths from two separate parcels that read equal? Measure the books' overstatement under an unresolved-identity rate swept from 0 to 50 percent, against the union figure.
+
+  WHY IT WAS ASKED
+    custos c42203: conformance rows 10c and 10e presuppose that two paths naming a parcel name the same parcel. Where the flow sheet cannot resolve it, the union has nothing to union over and the second reading is a fiat quantity - an A1 breach. The chain-resolution run's 1,152 pairs all had identified parcels by construction.
+
+  It came from the record: obj-20260905-custos-parcel-identity-precondition
+
+  WHEN YOU ARE DONE, the author runs this. You do not:
+    python 07-outreach/bin/memory.py answer-sim sr-20260905-how-often-does-a-joint-process-flow-sheet-fa --file <your RESULTS file>

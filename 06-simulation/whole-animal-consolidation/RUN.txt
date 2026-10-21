@@ -1,0 +1,23 @@
+Household debit denominator 2,760 h/yr; 1% bar = 27.6 h
+
+== lamb ==
+central: shared hours/animal 11.0933; S/animal 11.0933; animals/yr 1; S/yr 11.093 h = 0.402% of debit
+corner low : S/animal 1.7000; S/yr 1.700
+corner high: S/animal 46.9737; S/yr 93.947 = 3.404%
+draws S/animal p5 6.8918 p50 13.0078 p95 22.3084 max 38.0540
+draws S/animal share >= bar: 0.0076
+draws S/yr     p5 8.615 p50 17.042 p95 31.477 max 59.400  share >= bar: 0.1024
+variant fleece shorn live (kill not shared): S/animal 10.293 h = 0.373%
+variant f_meat 0.6, f_fleece 1.0: S/animal 6.656 h
+variant f_meat 0.6, f_fleece 0.7: S/animal 6.656 h
+variant 2 lambs/yr, both paired: 22.187 h = 0.804%
+== chicken ==
+central: shared hours/animal 0.0608; S/animal 0.0608; animals/yr 52; S/yr 3.162 h = 0.115% of debit
+corner low : S/animal 0.0160; S/yr 0.416
+corner high: S/animal 0.2150; S/yr 22.360 = 0.810%
+draws S/animal p5 0.0498 p50 0.0774 p95 0.1162 max 0.1680
+draws S/animal share >= bar: 0.0000
+draws S/yr     p5 2.374 p50 4.536 p95 8.248 max 16.130  share >= bar: 0.0000
+variant per bird in minutes: 3.65 min
+
+seed 20261020, 20000 triangular draws per species over the declared ranges
