@@ -1,7 +1,7 @@
 # C2 — Trust Networks: the implementers of Aequitas
 
-> **Version:** 0.1
-> **Date:** 2026-08-22
+> **Version:** 0.2
+> **Date:** 2026-10-25
 > **Status:** First assembly. Every ruling here is settled and folded into Foundations v0.17; this document gathers them in one place because they were decided across a dozen separate sections. **One thing remains open and it is named in §11: OP-10 (weighting-model governance).**
 > **Depends on:** `Aequitas_Foundations.md` §2.6, §3.3, §3.3a, §4, §4.1–§4.8 · `Aequitas_Conformance.md`
 > **Companion:** `C2_information_capture.md` — the reasoning behind §6 below, including a retracted proposal kept on purpose.
@@ -153,11 +153,11 @@ A trust network is the basis on which all accounting rests, so it cannot be paid
 | **The physical record** | **Arithmetic.** This is an *error*, and recomputation says whose. | No |
 | **The weighting model** | **Nobody has to accept anyone else's model.** Each side re-computes the shared physical record through its own weights and decides for itself — *comparison, never conversion.* | **No** |
 | **An estimate** | A **floor that improves**, not a finding. Better evidence supersedes it. | No |
-| **Fraud** | A finding of fact. | **Yes** |
+| **Fraud** | A finding of fact, **made by the trust network**: its own research supersedes the false records. | **Yes** |
 
 > **A transaction never waits on a shared verdict.** Two parties can price the same thing differently and still trade. **"Comparison, never conversion" was always the dispute-resolution mechanism; it had simply never been named as one.**
 
-**Fraud is the one class needing a verdict — and science is not self-correcting about fraud either.** It answers with investigation by an institution. Aequitas answers the same way: **courts, small claims, contract law and ordinary social pressure continue to exist** (Foundations §4.7), and per §2.6 how an implementer engages them is praxis.
+**Fraud is the one class needing a verdict — and science is not self-correcting about fraud either.** It answers with investigation and retraction by an institution. **In Aequitas the institution is the trust network**, which supersedes false records in its own books. Courts, small claims, contract law and ordinary social pressure continue to exist (Foundations §4.7), and per §2.6 how an implementer engages them is praxis.
 
 ---
 
@@ -165,13 +165,13 @@ A trust network is the basis on which all accounting rests, so it cannot be paid
 
 **Catching fraud is the trust network's task.** What it does on finding some is what it does on any other day.
 
-> **The past transaction is not reversed. The fraudulent credits are negated, the ledger rebalances, and the person's ratio may now be too low to buy anything until they sell some of what they hold.**
+> **The past transaction is not reversed. The network supersedes the false credit records with its own research, and the person may have to sell some of what they hold to get back within the gate.**
 
 **Reversal would be wrong, not merely difficult.** The goods moved. The counterparty shed their property debit legitimately and was credited for work that really happened. **Unwinding the buyer's fraud would corrupt the seller's books to punish someone else's lie.**
 
-**Nobody imposes a penalty. The books are simply correct, and being correct is the penalty.** Essentials are untouched throughout.
+**Three more rules govern the rest** (Foundations §4.7). **Finding the fraud is the network's ordinary work**, credited to whoever does it whatever the finding. **Correcting what the fraud caused is debit on the person who committed it**, including a legal system's time and materials where that system keeps its books in Aequitas. **A thing handed on keeps the seller's holding-time share of its creation cost**; only the material leaves with it. Who buys does not matter, and after a small fraud nothing need be sold. Essentials are untouched throughout.
 
-**Two consequences worth knowing.** Consumption debit **cannot** be sold off, so someone who ate or burned what they took cannot trade their way out. **But credit accrues to everyone alive**, so the ratio recovers on its own — and **the recovery period equals the faked credit divided by the accrual rate. The sentence is exactly the size of the fraud, measured in time, and nobody sets it.**
+**Two consequences worth knowing.** Consumption debit **cannot** be sold off, so someone who ate or burned what they took cannot trade their way out. **And there is no bankruptcy, because there is no creditor:** a debit is not a bill, and nobody collects it.
 
 ---
 

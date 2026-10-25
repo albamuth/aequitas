@@ -42,7 +42,7 @@
 00-strategy/Aequitas_Foundations.md
 ```
 
-**It is about 250 KB and that cost is accepted.** A simulation that contradicts an axiom is worse than no simulation, because it arrives carrying digits.
+**It is over 256 KB, which is more than the Read tool returns in one call, and that cost is accepted.** Read it in chunks: `limit` 500, `offset` 1, then 501, 1001 and so on until a read comes back short. That is six calls and fits inside the 15 minutes in section 6. **Reading it whole is the one step you may not trim to save time. If the hour is short, shrink the run, not the read.** A simulation that contradicts an axiom is worse than no simulation, because it arrives carrying digits.
 
 > **Why a search cannot replace the read.** A grep finds a mechanism when you already know its name. **It does not find the premise your model is about to contradict.** This project has been caught by that five times.
 

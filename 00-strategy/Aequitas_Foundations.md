@@ -1,8 +1,8 @@
 <!-- tag: fnd-aequitas-foundations-and-long-term -->
 # Aequitas — Foundations & Long-Term Strategy
 
-> **Version:** 0.61
-> **Date:** 2026-10-21
+> **Version:** 0.62
+> **Date:** 2026-10-25
 > **Status:** Working foundations.
 > **Primary audience of the first paper:** technologists and implementers.
 > **Companion:** [`Aequitas_Conformance.md`](Aequitas_Conformance.md) — what must be true for an implementation to *be* Aequitas.
@@ -2309,25 +2309,51 @@ A median lifestyle commands about **1,380 hours** of other people's labour a yea
 | **The physical record** — did 70 g of wheat actually move? | **Arithmetic.** The integrity checks recompute it. **This is not a dispute; it is an error, and recomputation says whose.** | No |
 | **The weighting model** — what does a tonne of CO₂ cost? | **Nobody has to accept anyone else's model.** Each party re-computes the shared physical record through its own weights and decides for itself (§4.2). | **No** |
 | **An estimate for something unmeasured** | Published method, and anyone can re-run it. The figure carries its interval and its label, and better evidence supersedes it (§4.4). | No |
-| **Fraud** — someone recorded events that never happened | **A finding of fact, and it needs one.** | **Yes** |
+| **Fraud** — someone recorded events that never happened | **A finding of fact, made by the network.** Its own research supersedes the false records, through the correction procedure it publishes (§4.4). The finding is itself a dated record, and it can be challenged through the same procedure. | **Yes** |
 
 > **A transaction never waits on a shared verdict.** Each side computes its own answer over the same physical record and decides whether to trade. **Disagreement about weights does not block commerce. It means two parties read the same thing differently, which is a fact about models rather than a deadlock.**
 
 ##### What correction looks like — nothing is reversed
 
-> **The past transaction is not reversed. The fraudulent credits are negated, the ledger rebalances, and the person's ratio may now be too low to buy anything until they hand on some of what they hold.**
+> **The network supersedes the false credit records with its own research. No past transaction is reversed.** Superseding adds the better record beside the old one, and nothing is deleted (§4.4). It is the same act as superseding any weakly evidenced record with a better one.
 
 **Reversal would be wrong rather than merely difficult.** The goods moved, and you cannot un-eat a sandwich. **The counterparty acted on the record as it then stood and was credited for work that really happened. Unwinding the buyer's fraud would corrupt the seller's books to punish someone else's lie.**
 
-**So the correction is arithmetic and the consequence is automatic.** The fake credit is negated, so credit falls. Debit does not, because they really did take the things. The gate now fails, so discretionary purchases stop. **Selling restores the ratio, because material debit is dischargeable on transfer.**
+**Four rules govern what happens.**
 
-**Three things follow that are not obvious.**
+| | The rule | Where it comes from |
+|---|---|---|
+| **1** | **The network supersedes the false credit records with its own research.** How it ranks evidence is its own published choice | §4.2, §4.4 |
+| **2** | **Finding the fraud is the network's ordinary work.** The people who do it are credited for their hours whether or not fraud is found, and its cost stays with the network like any of its operating costs | §4.3, §3.2c |
+| **3** | **Correcting what the fraud caused is debit on the person who committed it.** Where a legal system that keeps its books in Aequitas spends time and materials on the case, those may land on them too | A4: a consequence is assigned to whoever caused it |
+| **4** | **A thing handed on during its working life keeps the seller's holding-time share of its creation cost.** Only the material leaves with it | §3.2, §4.5 |
+
+**So `C` falls and `D` does not**, because they really did take the things. If `D` is now above `ρ·(C + P)`, discretionary purchases stop. **Handing on some of what they hold is how they get back within the gate**, and who takes it does not matter. After a small fraud that leaves them within the gate, nothing need be sold. Essentials stay within reach throughout (§5.5.4).
+
+##### An example, with the numbers
+
+**A network with ρ = 1.2.** A person's records show `C` = 50,000 h, `P` = 0 and `D` = 52,000 h. **The network finds that 10,000 h of the credit describe work that never happened.** Part of their debit is a boat they have held for 5 years: **6,000 h** of material, and the **8,000 h** that made it, all of it theirs while they are its only holder.
+
+| Step | `C` | `D` | `ρ·(C + P)` | May still carry |
+|---|--:|--:|--:|--:|
+| Before the finding | 50,000 h | 52,000 h | 60,000 h | 8,000 h |
+| The network supersedes 10,000 h of false credit (rule 1) | 40,000 h | 52,000 h | 48,000 h | −4,000 h |
+| Correcting what the fraud caused takes 300 h of work and materials (rule 3) | 40,000 h | 52,300 h | 48,000 h | −4,300 h |
+| They sell the boat; its 6,000 h of material leaves with it (rule 4) | 40,000 h | 46,300 h | 48,000 h | +1,700 h |
+
+**Their share of the 8,000 h that made the boat stays with them.** It falls as the next holder keeps the boat, and settles at 5 years of the boat's 20-year life: 8,000 × 5 ÷ 20 = **2,000 h** (§4.5).
+
+**Had the network found 2,000 h of false credit instead**, the gate would read 1.2 × 48,000 = 57,600 h against 52,300 h, and nothing need be sold.
+
+**In plain words: the false credit comes off, the cost of correcting it goes on, and the person sells only as much as they need to get back within the gate.** No fine is added. The correction debit is work that was really done.
+
+**Three things follow.**
 
 - **Consumption debit cannot be sold off.** If what they took was eaten, burned or emitted, selling does not help. **They cannot trade their way out.**
-- **There is no bankruptcy, and there need not be, because there is time.** Credit accrues to everyone alive at the floor, whatever their standing, so the ratio recovers on its own. **The recovery period is the faked credit divided by the rate they now accrue**, which means **the consequence is exactly the size of the fraud, measured in time, and nobody sets it.** A person who faked ten years of credit works off roughly ten years.
-- **Influence corrects the same way.** Negating credit can put a person retroactively over their lifetime pledging cap. **The pledges themselves are permanent and the work they summoned really happened, so nothing unwinds. They simply cannot pledge again until credit recovers.**
+- **There is no bankruptcy, because there is no creditor.** A debit is not a bill and nobody collects it (§2.2), so there is nothing to discharge (§3.5).
+- **Influence corrects the same way.** Superseding false credit can put a person retroactively over their lifetime pledging cap. **The pledges themselves are permanent and the work they summoned really happened, so nothing unwinds.** They cannot pledge again until their earned credit passes what they have already pledged (§4.6).
 
-> **⚠️ One real load stays, and it is not a disagreement about weights.** Deciding whether a **particular past task caused a particular later harm** is a contested finding of fact wherever no physical trace exists. **It routes to existing recourse, like fraud does. Registered, not solved here.**
+> **⚠️ One real load stays, and it is not a disagreement about weights.** Deciding whether a **particular past task caused a particular later harm** is a contested finding of fact wherever no physical trace exists. **It routes to existing recourse. Registered, not solved here.**
 
 ---
 

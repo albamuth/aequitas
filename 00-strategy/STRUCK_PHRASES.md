@@ -1,7 +1,7 @@
 # Struck phrases — wordings that must not appear in a live document
 
-> **Version:** 0.6
-> **Date:** 2026-10-16
+> **Version:** 0.7
+> **Date:** 2026-10-25
 
 > **Read by [`bin/consistency.py`](../bin/consistency.py). The table below is the machine-readable part; everything else on this page is for people.**
 
@@ -31,9 +31,9 @@ That is not a hypothetical. **It happened three times in a single day, 2026-08-2
 
 ## Where it is checked, and where it is not
 
-**Checked:** `00-strategy/` (not the changelogs), `01-wiki/`, `04-use-cases/`, `05-marketing/`, `07-outreach/AGENT_BRIEF.md`, `07-outreach/memory/records/`.
+**Checked:** `00-strategy/` (not the changelogs), `01-wiki/`, `04-use-cases/`, `05-marketing/`, `07-outreach/AGENT_BRIEF.md`.
 
-**Not checked, deliberately:** `99-archive/`, every `*_CHANGELOG.md`, `03-journal/`, `07-outreach/log/`, and this file. **Those are dated records. A struck phrase is supposed to appear in them** — that is what a record is for.
+**Not checked, deliberately:** `99-archive/`, every `*_CHANGELOG.md`, `03-journal/`, `07-outreach/log/`, `07-outreach/memory/records/`, `NEXT.md`, and this file. **Those are dated records. A struck phrase is supposed to appear in them** — that is what a record is for.
 
 ---
 
@@ -108,4 +108,7 @@ That is not a hypothetical. **It happened three times in a single day, 2026-08-2
 | `backed one-for-one by credit` | 2026-10-16 | Same ruling. "Backing" now means hours pledged *to* a person, so a pledge cannot also be "backed by" credit | **A pledge is *drawn from* earned credit, one hour for one hour** — Foundations §4.6 |
 | `the same bound as consumption` | 2026-10-13 | Self-council, 2026-10-10. Consumption is not bounded; `24 ÷ F` bounds pledge budgets | **`24 ÷ F` bounds the say over what gets made** — Foundations §4.6, §5.5.5 |
 | `the same bounded ratio as consumption` | 2026-10-13 | A paraphrase of the row above, in the wiki | As above |
+| `exactly the size of the fraud` | 2026-10-25 | **Author ruling 2026-10-25. A recovery period was never the rule**, and the promise was wrong by the gate: essentials still add to `D`, so the wait is longer, and at the lower edge of §5.5.3's band it never ends | **The network supersedes the false records; correcting what the fraud caused is debit on the person who committed it; a seller keeps their holding-time share** — Foundations §4.7 |
+| `the faked credit divided by the` | 2026-10-25 | Same ruling, the formula's wording | As above |
+| `fraudulent credits are negated` | 2026-10-25 | Same ruling. False credit is superseded by §4.4's ordinary rule, not removed by a separate act | **Superseded by the network's own research** — Foundations §4.4, §4.7 |
 | `Neither has been recomputed under this rule` | 2026-10-13 | Self-council, 2026-10-10. Both were recomputed on 2026-09-05 and neither moves | **The anchor and ρ\* do not move; BEA's secondary-product convention is unaudited** — Foundations §3.4a |

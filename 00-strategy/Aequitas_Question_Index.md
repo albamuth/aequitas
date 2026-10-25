@@ -1,8 +1,8 @@
 <!-- tag: qidx-aequitas-question-index -->
 # Aequitas — Question Index
 
-> **Version:** 0.3
-> **Date:** 2026-10-14
+> **Version:** 0.4
+> **Date:** 2026-10-25
 > **What this is:** a lookup table keyed by **the question you are about to ask**, so you find the answer that is already written instead of deriving a new one.
 > **What this is not:** a summary of the theory. It settles nothing. Every row points at the document that does.
 > **Companion:** [`GLOSSARY.md`](GLOSSARY.md) resolves abbreviations. **This file resolves questions.**
@@ -51,8 +51,8 @@
 | **Require the books to balance** | §3.5 | **Aggregate debit exceeds aggregate credit permanently and by construction.** That is the second law of thermodynamics appearing in the ledger |
 | **Record a share, a bond, a currency or a token** | **A1** · §3.1 | Not matter and not energy. **What is recorded is the material the claim is upon**, sitting on whoever physically holds or operates it |
 | **Make someone accept an object they do not want** | §2.4, rule 3 | *Custody follows possession* means you cannot take a thing and disclaim its debit. **It does not mean anyone can be forced to take a thing** |
-| **Reverse a fraudulent past transaction** | §4.7 | **You cannot un-eat a sandwich.** The fake credit is negated, the ratio fails, and discretionary purchases stop. **Unwinding it would corrupt the honest seller's books** |
-| **Add bankruptcy, or forgive accumulated debit** | §4.7 | **There is time.** Everyone alive accrues credit at the floor, so the ratio recovers on its own. **The consequence is exactly the size of the fraud, measured in time, and nobody sets it** |
+| **Reverse a fraudulent past transaction** | §4.7 | **You cannot un-eat a sandwich.** The network supersedes the false credit with its own research, and if the gate then fails, discretionary purchases stop. **Unwinding it would corrupt the honest seller's books** |
+| **Add bankruptcy, or forgive accumulated debit** | §4.7 · §2.2 | **There is no creditor.** A debit is not a bill and nobody collects it. **A person over the gate after a fraud sells what they hold or buys only essentials**, and the gate lets them buy more once `ρ·(C + P)` is back above `D` |
 | **Attribute an electricity emission by a supply contract** | §3.2b | **An agreement is a paper claim.** A record of CO₂ must come from a measurement of CO₂ — and the emission is the generating company's, which held the fuel and burned it. **No emission reaches a consumer who never held the fuel** |
 | **Let a network declare loyalty to itself creditable** | §2.3 | Loyalty is not production, not a service, and not enrichment. **The three categories are the outer wall and they do not vary** |
 | **Add a rule, an exception or a special case for an awkward profession or sector** | §2.1 | **Universality.** *"A system with exceptions cannot be shown to be wrong. Any awkward case gets a new exception"* |

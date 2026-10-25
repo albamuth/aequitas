@@ -1,7 +1,7 @@
 # Pledges — what they are, what they buy, and why that is not profit
 
-> **Version:** 1.0
-> **Date:** 2026-09-18
+> **Version:** 1.1
+> **Date:** 2026-10-25
 > **Status:** Rulings settled. **Not folded** — the core documents still carry the old rules. **Two code jobs remain**; see §16.
 >
 > **Fourteen author rulings, all 2026-09-18.**
@@ -277,7 +277,7 @@ The core documents write the gate as `D ≤ ρ·C`. That form has no place in it
 
 **This is the §2.6 move, and `Aequitas_Foundations.md` §4.7 already makes it:** *"it does not replace existing recourse. Courts, small claims, contract law and ordinary social pressure continue to exist and continue to handle fraud between people."* **The accounting is identical whether or not coercion is prevented, so it is not foundational.**
 
-> **⚠️ One asymmetry to state rather than bury.** A coerced money payment can be clawed back by a court. **A coerced pledge cannot be, by this system.** §4.7 says fraudulent credits are negated but *"the pledges themselves are permanent and the work they summoned really happened, so nothing unwinds."*
+> **⚠️ One asymmetry to state rather than bury.** A coerced money payment can be clawed back by a court. **A coerced pledge cannot be, by this system.** §4.7 says false credit is superseded but *"the pledges themselves are permanent and the work they summoned really happened, so nothing unwinds."*
 >
 > **So a court can punish the coercer and cannot restore the room.** That is a narrower remedy than money offers, and the documents should say so rather than leaving a reader to find it.
 

@@ -19,4 +19,11 @@ python 06-simulation/resolution-tax/resolution_tax.py
 python 06-simulation/resolution-tax/resolution_tax.py --test
 ```
 
-Files: `resolution_tax.py` (model, sweep, tests) · `RESULTS.md` · `run_output.txt` (the run quoted in RESULTS).
+**Part 2 (2026-10-25):** resolution spread against efficiency spread, one generator, one statistic. Request `sr-20260909-off-one-generator-measure-the-spread-in-a-co`.
+
+```bash
+python 06-simulation/resolution-tax/res_vs_eff.py
+python 06-simulation/resolution-tax/res_vs_eff.py --test
+```
+
+Files: `resolution_tax.py` (model, sweep, tests) · `res_vs_eff.py` (Part 2, imports the first) · `DECLARED_res_vs_eff.md` (outcomes written before the run) · `RESULTS.md` (Part 1, then Part 2) · `run_output.txt` (Part 1 run).

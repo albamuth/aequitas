@@ -1,0 +1,82 @@
+==============================================================================
+STEER: understatement from a false exit (per kg, absolute then share)
+==============================================================================
+product        true claim depth MJ/kg true MJ/kg under h/kg under  share shared?
+hide              1     0     1      2.000       0.750     0.0762    59%    True
+organs            2     0     2      2.000       1.167     0.0875    71%    True
+organs            2     1     1      2.000       0.667     0.0367    30%    True
+hooves_head       3     0     3      4.667       3.000     0.2100    75%    True
+hooves_head       3     1     2      4.667       2.000     0.1083    39%    True
+hooves_head       3     2     1      4.667       0.667     0.0350    13%    True
+packaged_beef     6     0     6      2.000       1.800     0.0746    90%   False
+packaged_beef     6     1     5      2.000       1.680     0.0624    76%   False
+packaged_beef     6     2     4      2.000       1.520     0.0536    65%   False
+packaged_beef     6     3     3      2.000       1.440     0.0494    60%   False
+packaged_beef     6     4     2      2.000       0.240     0.0414    48%   False
+packaged_beef     6     5     1      2.000       0.120     0.0170    20%   False
+
+  one-step lie: worst 0.750 MJ/kg, 38% of the true figure
+  any depth   : worst 3.000 MJ/kg, 90% of the true figure
+  mean over all 12 lies: 49%
+
+  CHECKS ON THE PUBLISHED RECORD
+  totals reconciliation, lie on a shared step : 0/6 flagged
+  totals reconciliation, lie orphans a step   : 6/6 flagged (orphaned cost stays with producer: 30-360 MJ)
+  coarse-reading ceiling, all lies            : 0/12 flagged
+
+  INDISTINGUISHABLE with no independent meter: 6/6 shared-step lies give identical totals, union and ceiling records
+
+  INDEPENDENT MASS METER (row 7 balance at a finer cut), z = 3
+   sigma        meters     owner  catch, lies spanning a meter  catch, lies not spanning  false alarm
+    0.5%          none third party                    nan% (n=0)              0.0% (n=6)      0.00%
+    0.5%     mid (b=3) third party                  100.0% (n=3)              0.3% (n=3)      0.30%
+    0.5%     mid (b=3)    producer                    0.5% (n=3)              0.3% (n=3)      0.22%
+    0.5%           all third party                  100.0% (n=6)              nan% (n=0)      1.52%
+    0.5%           all    producer                    1.6% (n=6)              nan% (n=0)      1.70%
+    1.0%          none third party                    nan% (n=0)              0.0% (n=6)      0.00%
+    1.0%     mid (b=3) third party                  100.0% (n=3)              0.2% (n=3)      0.18%
+    1.0%     mid (b=3)    producer                    0.3% (n=3)              0.5% (n=3)      0.27%
+    1.0%           all third party                  100.0% (n=6)              nan% (n=0)      1.43%
+    1.0%           all    producer                    1.5% (n=6)              nan% (n=0)      1.47%
+    2.0%          none third party                    nan% (n=0)              0.0% (n=6)      0.00%
+    2.0%     mid (b=3) third party                   99.7% (n=3)              0.3% (n=3)      0.27%
+    2.0%     mid (b=3)    producer                    0.3% (n=3)              0.3% (n=3)      0.38%
+    2.0%           all third party                   99.9% (n=6)              nan% (n=0)      1.43%
+    2.0%           all    producer                    1.6% (n=6)              nan% (n=0)      1.65%
+    5.0%          none third party                    nan% (n=0)              0.0% (n=6)      0.00%
+    5.0%     mid (b=3) third party                    nan% (n=0)              0.2% (n=3)      0.25%
+    5.0%     mid (b=3)    producer                    nan% (n=0)              0.3% (n=3)      0.20%
+    5.0%           all third party                   91.3% (n=2)              nan% (n=0)      1.68%
+    5.0%           all    producer                    1.7% (n=2)              nan% (n=0)      1.60%
+
+==============================================================================
+REFINERY (DOE energies, TBtu/yr native units): drop one really-used shared step
+==============================================================================
+product        dropped step            true /kg   under /kg  share  totals ceiling
+lpg            alkylation             2.351e+00   2.058e-01     9%   False   False
+lpg            fcc                    2.351e+00   7.639e-01    32%   False   False
+gasoline       alkylation             2.944e-01   1.561e-02     5%   False   False
+gasoline       fcc                    2.944e-01   5.794e-02    20%   False   False
+gasoline       hydrotreating          2.944e-01   6.765e-02    23%   False   False
+jet            hydrocracking          8.483e-01   6.683e-02     8%   False   False
+jet            hydrotreating          8.483e-01   3.066e-01    36%   False   False
+diesel         hydrocracking          3.247e-01   2.122e-02     7%   False   False
+diesel         hydrotreating          3.247e-01   9.734e-02    30%   False   False
+diesel         vac_distillation       3.247e-01   5.541e-02    17%   False   False
+residual_fuel  vac_distillation       1.749e+00   4.701e-01    27%   False   False
+petcoke        vac_distillation       1.126e+00   2.660e-01    24%   False   False
+asphalt        vac_distillation       1.681e+00   4.519e-01    27%   False   False
+
+  refinery: 13 lies, share understated 5% to 36%; totals flagged 0, ceiling flagged 0
+
+SELF-TESTS
+------------------------------------------------------------------------------
+  PASS  every false-passage lie lowers the product's figure, none raises it
+  PASS  honest record passes totals and ceiling
+  PASS  totals check fires when a metered step reaches no product at all
+  PASS  ceiling is blind to downward lies (the direction a false claim uses)
+  PASS  independent meter 100%, own meter 0.3%, wrong-boundary meter 0.1%
+  PASS  honest false-alarm rate with 6 meters at 3 sigma: 1.65%
+  PASS  10.5% mass lie vs 15% threshold caught 29% even with the right meter
+  7/7 passed
+

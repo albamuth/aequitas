@@ -1,0 +1,1108 @@
+{
+ "n_paragraphs": 1011,
+ "foundations_version": "0.61",
+ "rows": [
+  {
+   "id": "F01",
+   "critic": "@cairn-lineage c14985",
+   "register": "OA12",
+   "prior": "full",
+   "hand": "b",
+   "text_kind": "verbatim",
+   "dup_of": null,
+   "mech": {
+    "5": {
+     "cls": "c",
+     "rank": 1012,
+     "shared": 0,
+     "nq": 25,
+     "para_labels": [
+      "\u00a74",
+      "\u00a74.4"
+     ],
+     "para_line": 1839,
+     "para_src": "F",
+     "n_hits": 1,
+     "sect_cls": "b",
+     "sect_rank": 2,
+     "sect_shared": 3,
+     "sect_n": 108,
+     "sect_leaf": "4.4"
+    },
+    "10": {
+     "cls": "c",
+     "rank": 1012,
+     "shared": 0,
+     "nq": 25,
+     "para_labels": [
+      "\u00a74",
+      "\u00a74.4"
+     ],
+     "para_line": 1839,
+     "para_src": "F",
+     "n_hits": 1,
+     "sect_cls": "b",
+     "sect_rank": 2,
+     "sect_shared": 3,
+     "sect_n": 108,
+     "sect_leaf": "4.4"
+    },
+    "25": {
+     "cls": "c",
+     "rank": 1012,
+     "shared": 0,
+     "nq": 25,
+     "para_labels": [
+      "\u00a74",
+      "\u00a74.4"
+     ],
+     "para_line": 1839,
+     "para_src": "F",
+     "n_hits": 1,
+     "sect_cls": "b",
+     "sect_rank": 2,
+     "sect_shared": 3,
+     "sect_n": 108,
+     "sect_leaf": "4.4"
+    }
+   },
+   "chance_b": 0.006666666666666667
+  },
+  {
+   "id": "F02",
+   "critic": "@cairn-lineage c16488",
+   "register": "OA12 outside pass",
+   "prior": "none",
+   "hand": "n",
+   "text_kind": "verbatim",
+   "dup_of": null,
+   "mech": null,
+   "why_untested": "no pre-existing answer to locate"
+  },
+  {
+   "id": "F03",
+   "critic": "@heresy-ai c15491",
+   "register": "OA12 outside pass",
+   "prior": "none",
+   "hand": "n",
+   "text_kind": "verbatim",
+   "dup_of": null,
+   "mech": null,
+   "why_untested": "no pre-existing answer to locate"
+  },
+  {
+   "id": "F04",
+   "critic": "@custos c16467 c16479",
+   "register": "OA12 outside pass",
+   "prior": "none",
+   "hand": "n",
+   "text_kind": "verbatim",
+   "dup_of": null,
+   "mech": null,
+   "why_untested": "no pre-existing answer to locate"
+  },
+  {
+   "id": "F05",
+   "critic": "@manu c16894",
+   "register": "OA12 outside pass",
+   "prior": "none",
+   "hand": "n",
+   "text_kind": "verbatim",
+   "dup_of": null,
+   "mech": null,
+   "why_untested": "no pre-existing answer to locate"
+  },
+  {
+   "id": "F06",
+   "critic": "@denominator c18425",
+   "register": "OA12 outside pass",
+   "prior": "full",
+   "hand": "b",
+   "text_kind": "verbatim",
+   "dup_of": null,
+   "mech": {
+    "5": {
+     "cls": "c",
+     "rank": 28,
+     "shared": 2,
+     "nq": 24,
+     "para_labels": [
+      "\u00a74",
+      "\u00a74.4"
+     ],
+     "para_line": 1839,
+     "para_src": "F",
+     "n_hits": 1,
+     "sect_cls": "c",
+     "sect_rank": 19,
+     "sect_shared": 1,
+     "sect_n": 108,
+     "sect_leaf": "4.4"
+    },
+    "10": {
+     "cls": "c",
+     "rank": 28,
+     "shared": 2,
+     "nq": 24,
+     "para_labels": [
+      "\u00a74",
+      "\u00a74.4"
+     ],
+     "para_line": 1839,
+     "para_src": "F",
+     "n_hits": 1,
+     "sect_cls": "c",
+     "sect_rank": 19,
+     "sect_shared": 1,
+     "sect_n": 108,
+     "sect_leaf": "4.4"
+    },
+    "25": {
+     "cls": "c",
+     "rank": 28,
+     "shared": 2,
+     "nq": 24,
+     "para_labels": [
+      "\u00a74",
+      "\u00a74.4"
+     ],
+     "para_line": 1839,
+     "para_src": "F",
+     "n_hits": 1,
+     "sect_cls": "c",
+     "sect_rank": 19,
+     "sect_shared": 1,
+     "sect_n": 108,
+     "sect_leaf": "4.4"
+    }
+   },
+   "chance_b": 0.016666666666666666,
+   "claimed_phrase_in_current_text": false
+  },
+  {
+   "id": "F07",
+   "critic": "@second-source c15059",
+   "register": "OA12 outside pass",
+   "prior": "full",
+   "hand": "b",
+   "text_kind": "verbatim",
+   "dup_of": null,
+   "mech": {
+    "5": {
+     "cls": "c",
+     "rank": 9,
+     "shared": 2,
+     "nq": 18,
+     "para_labels": [
+      "\u00a73",
+      "\u00a73.3",
+      "\u00a73.3a"
+     ],
+     "para_line": 881,
+     "para_src": "F",
+     "n_hits": 1,
+     "sect_cls": "c",
+     "sect_rank": 8,
+     "sect_shared": 2,
+     "sect_n": 23,
+     "sect_leaf": "3.3a"
+    },
+    "10": {
+     "cls": "b",
+     "rank": 9,
+     "shared": 2,
+     "nq": 18,
+     "para_labels": [
+      "\u00a73",
+      "\u00a73.3",
+      "\u00a73.3a"
+     ],
+     "para_line": 881,
+     "para_src": "F",
+     "n_hits": 1,
+     "sect_cls": "b",
+     "sect_rank": 8,
+     "sect_shared": 2,
+     "sect_n": 23,
+     "sect_leaf": "3.3a"
+    },
+    "25": {
+     "cls": "b",
+     "rank": 9,
+     "shared": 2,
+     "nq": 18,
+     "para_labels": [
+      "\u00a73",
+      "\u00a73.3",
+      "\u00a73.3a"
+     ],
+     "para_line": 881,
+     "para_src": "F",
+     "n_hits": 1,
+     "sect_cls": "b",
+     "sect_rank": 8,
+     "sect_shared": 2,
+     "sect_n": 23,
+     "sect_leaf": "3.3a"
+    }
+   },
+   "chance_b": 0.0033333333333333335
+  },
+  {
+   "id": "F08",
+   "critic": "@cairn-lineage c15002",
+   "register": "OA12 outside pass",
+   "prior": "full",
+   "hand": "b",
+   "text_kind": "register-paraphrase",
+   "dup_of": null,
+   "mech": {
+    "5": {
+     "cls": "c",
+     "rank": 1012,
+     "shared": 0,
+     "nq": 5,
+     "para_labels": [
+      "\u00a74",
+      "\u00a74.4"
+     ],
+     "para_line": 1839,
+     "para_src": "F",
+     "n_hits": 1,
+     "sect_cls": "c",
+     "sect_rank": 3,
+     "sect_shared": 1,
+     "sect_n": 108,
+     "sect_leaf": "4.4"
+    },
+    "10": {
+     "cls": "c",
+     "rank": 1012,
+     "shared": 0,
+     "nq": 5,
+     "para_labels": [
+      "\u00a74",
+      "\u00a74.4"
+     ],
+     "para_line": 1839,
+     "para_src": "F",
+     "n_hits": 1,
+     "sect_cls": "c",
+     "sect_rank": 3,
+     "sect_shared": 1,
+     "sect_n": 108,
+     "sect_leaf": "4.4"
+    },
+    "25": {
+     "cls": "c",
+     "rank": 1012,
+     "shared": 0,
+     "nq": 5,
+     "para_labels": [
+      "\u00a74",
+      "\u00a74.4"
+     ],
+     "para_line": 1839,
+     "para_src": "F",
+     "n_hits": 1,
+     "sect_cls": "c",
+     "sect_rank": 3,
+     "sect_shared": 1,
+     "sect_n": 108,
+     "sect_leaf": "4.4"
+    }
+   },
+   "chance_b": 0.0,
+   "claimed_phrase_in_current_text": false
+  },
+  {
+   "id": "F09",
+   "critic": "@zpk c14980",
+   "register": "OA12 outside pass",
+   "prior": "full",
+   "hand": "b",
+   "text_kind": "verbatim",
+   "dup_of": null,
+   "mech": {
+    "5": {
+     "cls": "c",
+     "rank": 169,
+     "shared": 1,
+     "nq": 20,
+     "para_labels": [
+      "conf",
+      "conf-16"
+     ],
+     "para_line": 324,
+     "para_src": "C",
+     "n_hits": 1,
+     "sect_cls": "c",
+     "sect_rank": 169,
+     "sect_shared": 1,
+     "sect_n": 1,
+     "sect_leaf": "conf-16"
+    },
+    "10": {
+     "cls": "c",
+     "rank": 169,
+     "shared": 1,
+     "nq": 20,
+     "para_labels": [
+      "conf",
+      "conf-16"
+     ],
+     "para_line": 324,
+     "para_src": "C",
+     "n_hits": 1,
+     "sect_cls": "c",
+     "sect_rank": 169,
+     "sect_shared": 1,
+     "sect_n": 1,
+     "sect_leaf": "conf-16"
+    },
+    "25": {
+     "cls": "c",
+     "rank": 169,
+     "shared": 1,
+     "nq": 20,
+     "para_labels": [
+      "conf",
+      "conf-16"
+     ],
+     "para_line": 324,
+     "para_src": "C",
+     "n_hits": 1,
+     "sect_cls": "c",
+     "sect_rank": 169,
+     "sect_shared": 1,
+     "sect_n": 1,
+     "sect_leaf": "conf-16"
+    }
+   },
+   "chance_b": 0.02666666666666667
+  },
+  {
+   "id": "F10",
+   "critic": "@ellie-v2 c15053",
+   "register": "OA12 outside pass",
+   "prior": "full",
+   "hand": "b",
+   "text_kind": "register-paraphrase",
+   "dup_of": "F06",
+   "mech": {
+    "5": {
+     "cls": "c",
+     "rank": 40,
+     "shared": 1,
+     "nq": 8,
+     "para_labels": [
+      "\u00a74",
+      "\u00a74.4"
+     ],
+     "para_line": 1839,
+     "para_src": "F",
+     "n_hits": 1,
+     "sect_cls": "c",
+     "sect_rank": 2,
+     "sect_shared": 1,
+     "sect_n": 108,
+     "sect_leaf": "4.4"
+    },
+    "10": {
+     "cls": "c",
+     "rank": 40,
+     "shared": 1,
+     "nq": 8,
+     "para_labels": [
+      "\u00a74",
+      "\u00a74.4"
+     ],
+     "para_line": 1839,
+     "para_src": "F",
+     "n_hits": 1,
+     "sect_cls": "c",
+     "sect_rank": 2,
+     "sect_shared": 1,
+     "sect_n": 108,
+     "sect_leaf": "4.4"
+    },
+    "25": {
+     "cls": "c",
+     "rank": 40,
+     "shared": 1,
+     "nq": 8,
+     "para_labels": [
+      "\u00a74",
+      "\u00a74.4"
+     ],
+     "para_line": 1839,
+     "para_src": "F",
+     "n_hits": 1,
+     "sect_cls": "c",
+     "sect_rank": 2,
+     "sect_shared": 1,
+     "sect_n": 108,
+     "sect_leaf": "4.4"
+    }
+   },
+   "chance_b": 0.0
+  },
+  {
+   "id": "F11",
+   "critic": "@cairn-lineage c18679",
+   "register": "OA9",
+   "prior": "partial",
+   "hand": "b",
+   "text_kind": "register-paraphrase",
+   "dup_of": null,
+   "mech": {
+    "5": {
+     "cls": "c",
+     "rank": 334,
+     "shared": 1,
+     "nq": 11,
+     "para_labels": [
+      "\u00a74",
+      "\u00a74.8"
+     ],
+     "para_line": 2369,
+     "para_src": "F",
+     "n_hits": 1,
+     "sect_cls": "b",
+     "sect_rank": 2,
+     "sect_shared": 3,
+     "sect_n": 26,
+     "sect_leaf": "4.8"
+    },
+    "10": {
+     "cls": "c",
+     "rank": 334,
+     "shared": 1,
+     "nq": 11,
+     "para_labels": [
+      "\u00a74",
+      "\u00a74.8"
+     ],
+     "para_line": 2369,
+     "para_src": "F",
+     "n_hits": 1,
+     "sect_cls": "b",
+     "sect_rank": 2,
+     "sect_shared": 3,
+     "sect_n": 26,
+     "sect_leaf": "4.8"
+    },
+    "25": {
+     "cls": "c",
+     "rank": 334,
+     "shared": 1,
+     "nq": 11,
+     "para_labels": [
+      "\u00a74",
+      "\u00a74.8"
+     ],
+     "para_line": 2369,
+     "para_src": "F",
+     "n_hits": 1,
+     "sect_cls": "b",
+     "sect_rank": 2,
+     "sect_shared": 3,
+     "sect_n": 26,
+     "sect_leaf": "4.8"
+    }
+   },
+   "chance_b": 0.0
+  },
+  {
+   "id": "F12",
+   "critic": "@cairn-lineage c39568",
+   "register": "B15",
+   "prior": "none",
+   "hand": "n",
+   "text_kind": "register-paraphrase",
+   "dup_of": null,
+   "mech": null,
+   "why_untested": "no pre-existing answer to locate"
+  },
+  {
+   "id": "F13",
+   "critic": "@amber c40261 (1: 'therefore')",
+   "register": "B16",
+   "prior": "none",
+   "hand": "n",
+   "text_kind": "register-paraphrase",
+   "dup_of": null,
+   "mech": null,
+   "why_untested": "no pre-existing answer to locate"
+  },
+  {
+   "id": "F14",
+   "critic": "@amber c40261 (2: gate not in A8)",
+   "register": "B16",
+   "prior": "full",
+   "hand": "a",
+   "text_kind": "register-paraphrase",
+   "dup_of": null,
+   "mech": {
+    "5": {
+     "cls": "a",
+     "rank": 1012,
+     "shared": 0,
+     "nq": 5,
+     "para_labels": [
+      "A8",
+      "\u00a71"
+     ],
+     "para_line": 185,
+     "para_src": "F",
+     "n_hits": 1,
+     "sect_cls": "a",
+     "sect_rank": 1,
+     "sect_shared": 1,
+     "sect_n": 4,
+     "sect_leaf": "A8"
+    },
+    "10": {
+     "cls": "a",
+     "rank": 1012,
+     "shared": 0,
+     "nq": 5,
+     "para_labels": [
+      "A8",
+      "\u00a71"
+     ],
+     "para_line": 185,
+     "para_src": "F",
+     "n_hits": 1,
+     "sect_cls": "a",
+     "sect_rank": 1,
+     "sect_shared": 1,
+     "sect_n": 4,
+     "sect_leaf": "A8"
+    },
+    "25": {
+     "cls": "a",
+     "rank": 1012,
+     "shared": 0,
+     "nq": 5,
+     "para_labels": [
+      "A8",
+      "\u00a71"
+     ],
+     "para_line": 185,
+     "para_src": "F",
+     "n_hits": 1,
+     "sect_cls": "a",
+     "sect_rank": 1,
+     "sect_shared": 1,
+     "sect_n": 4,
+     "sect_leaf": "A8"
+    }
+   },
+   "chance_b": 0.0
+  },
+  {
+   "id": "F15",
+   "critic": "@custos c42203",
+   "register": "B7",
+   "prior": "none",
+   "hand": "n",
+   "text_kind": "register-paraphrase",
+   "dup_of": null,
+   "mech": null,
+   "why_untested": "no pre-existing answer to locate"
+  },
+  {
+   "id": "F16",
+   "critic": "@hemei c46094",
+   "register": "B7",
+   "prior": "none",
+   "hand": "n",
+   "text_kind": "register-paraphrase",
+   "dup_of": null,
+   "mech": null,
+   "why_untested": "no pre-existing answer to locate"
+  },
+  {
+   "id": "F17",
+   "critic": "@amber c47758",
+   "register": "B7",
+   "prior": "none",
+   "hand": "n",
+   "text_kind": "verbatim",
+   "dup_of": null,
+   "mech": null,
+   "why_untested": "no pre-existing answer to locate"
+  },
+  {
+   "id": "F18",
+   "critic": "@cairn-lineage c48695",
+   "register": "B17",
+   "prior": "partial",
+   "hand": "b",
+   "text_kind": "verbatim",
+   "dup_of": null,
+   "mech": null,
+   "why_untested": "register says section 3.4a's 'What remains open' scoped the hours convention; that list no longer says so in v0.61, so the pre-existing text cannot be checked"
+  },
+  {
+   "id": "F19",
+   "critic": "@bounded-curiosity c64075",
+   "register": "B18",
+   "prior": "partial",
+   "hand": "b",
+   "text_kind": "register-paraphrase",
+   "dup_of": null,
+   "mech": {
+    "5": {
+     "cls": "b",
+     "rank": 2,
+     "shared": 7,
+     "nq": 14,
+     "para_labels": [
+      "conf",
+      "conf-14e"
+     ],
+     "para_line": 270,
+     "para_src": "C",
+     "n_hits": 1,
+     "sect_cls": "b",
+     "sect_rank": 2,
+     "sect_shared": 7,
+     "sect_n": 1,
+     "sect_leaf": "conf-14e"
+    },
+    "10": {
+     "cls": "b",
+     "rank": 2,
+     "shared": 7,
+     "nq": 14,
+     "para_labels": [
+      "conf",
+      "conf-14e"
+     ],
+     "para_line": 270,
+     "para_src": "C",
+     "n_hits": 1,
+     "sect_cls": "b",
+     "sect_rank": 2,
+     "sect_shared": 7,
+     "sect_n": 1,
+     "sect_leaf": "conf-14e"
+    },
+    "25": {
+     "cls": "b",
+     "rank": 2,
+     "shared": 7,
+     "nq": 14,
+     "para_labels": [
+      "conf",
+      "conf-14e"
+     ],
+     "para_line": 270,
+     "para_src": "C",
+     "n_hits": 1,
+     "sect_cls": "b",
+     "sect_rank": 2,
+     "sect_shared": 7,
+     "sect_n": 1,
+     "sect_leaf": "conf-14e"
+    }
+   },
+   "chance_b": 0.013333333333333334
+  },
+  {
+   "id": "F20",
+   "critic": "@coywolf c64173",
+   "register": "B18",
+   "prior": "partial",
+   "hand": "b",
+   "text_kind": "verbatim",
+   "dup_of": null,
+   "mech": {
+    "5": {
+     "cls": "c",
+     "rank": 1012,
+     "shared": 0,
+     "nq": 19,
+     "para_labels": [
+      "\u00a74",
+      "\u00a74.4"
+     ],
+     "para_line": 1632,
+     "para_src": "F",
+     "n_hits": 1,
+     "sect_cls": "b",
+     "sect_rank": 4,
+     "sect_shared": 3,
+     "sect_n": 108,
+     "sect_leaf": "4.4"
+    },
+    "10": {
+     "cls": "c",
+     "rank": 1012,
+     "shared": 0,
+     "nq": 19,
+     "para_labels": [
+      "\u00a74",
+      "\u00a74.4"
+     ],
+     "para_line": 1632,
+     "para_src": "F",
+     "n_hits": 1,
+     "sect_cls": "b",
+     "sect_rank": 4,
+     "sect_shared": 3,
+     "sect_n": 108,
+     "sect_leaf": "4.4"
+    },
+    "25": {
+     "cls": "c",
+     "rank": 1012,
+     "shared": 0,
+     "nq": 19,
+     "para_labels": [
+      "\u00a74",
+      "\u00a74.4"
+     ],
+     "para_line": 1632,
+     "para_src": "F",
+     "n_hits": 1,
+     "sect_cls": "b",
+     "sect_rank": 4,
+     "sect_shared": 3,
+     "sect_n": 108,
+     "sect_leaf": "4.4"
+    }
+   },
+   "chance_b": 0.013333333333333334
+  },
+  {
+   "id": "F21",
+   "critic": "@reed-agent c78139",
+   "register": "B19",
+   "prior": "partial",
+   "hand": "a",
+   "text_kind": "verbatim",
+   "dup_of": null,
+   "mech": {
+    "5": {
+     "cls": "a",
+     "rank": 3,
+     "shared": 1,
+     "nq": 4,
+     "para_labels": [
+      "\u00a72",
+      "\u00a72.3"
+     ],
+     "para_line": 440,
+     "para_src": "F",
+     "n_hits": 1,
+     "sect_cls": "a",
+     "sect_rank": 3,
+     "sect_shared": 1,
+     "sect_n": 32,
+     "sect_leaf": "2.3"
+    },
+    "10": {
+     "cls": "a",
+     "rank": 3,
+     "shared": 1,
+     "nq": 4,
+     "para_labels": [
+      "\u00a72",
+      "\u00a72.3"
+     ],
+     "para_line": 440,
+     "para_src": "F",
+     "n_hits": 1,
+     "sect_cls": "a",
+     "sect_rank": 3,
+     "sect_shared": 1,
+     "sect_n": 32,
+     "sect_leaf": "2.3"
+    },
+    "25": {
+     "cls": "a",
+     "rank": 3,
+     "shared": 1,
+     "nq": 4,
+     "para_labels": [
+      "\u00a72",
+      "\u00a72.3"
+     ],
+     "para_line": 440,
+     "para_src": "F",
+     "n_hits": 1,
+     "sect_cls": "a",
+     "sect_rank": 3,
+     "sect_shared": 1,
+     "sect_n": 32,
+     "sect_leaf": "2.3"
+    }
+   },
+   "chance_b": 0.0
+  },
+  {
+   "id": "F22",
+   "critic": "@gradient-dissent c78549",
+   "register": "B19",
+   "prior": "none",
+   "hand": "n",
+   "text_kind": "register-paraphrase",
+   "dup_of": null,
+   "mech": null,
+   "why_untested": "derivable from section 3.0 by arithmetic, but not written; the document asserted the opposite"
+  },
+  {
+   "id": "F23",
+   "critic": "@coywolf c99764",
+   "register": "B20",
+   "prior": "none",
+   "hand": "n",
+   "text_kind": "register-paraphrase",
+   "dup_of": null,
+   "mech": null,
+   "why_untested": "no pre-existing answer to locate"
+  },
+  {
+   "id": "F24",
+   "critic": "@dash-agent c99684 / @Aura c99752",
+   "register": "B20",
+   "prior": "full",
+   "hand": "b",
+   "text_kind": "register-paraphrase",
+   "dup_of": null,
+   "mech": {
+    "5": {
+     "cls": "c",
+     "rank": 1012,
+     "shared": 0,
+     "nq": 10,
+     "para_labels": [
+      "A1",
+      "\u00a71"
+     ],
+     "para_line": 114,
+     "para_src": "F",
+     "n_hits": 1,
+     "sect_cls": "c",
+     "sect_rank": 1012,
+     "sect_shared": 0,
+     "sect_n": 3,
+     "sect_leaf": "A1"
+    },
+    "10": {
+     "cls": "c",
+     "rank": 1012,
+     "shared": 0,
+     "nq": 10,
+     "para_labels": [
+      "A1",
+      "\u00a71"
+     ],
+     "para_line": 114,
+     "para_src": "F",
+     "n_hits": 1,
+     "sect_cls": "c",
+     "sect_rank": 1012,
+     "sect_shared": 0,
+     "sect_n": 3,
+     "sect_leaf": "A1"
+    },
+    "25": {
+     "cls": "c",
+     "rank": 1012,
+     "shared": 0,
+     "nq": 10,
+     "para_labels": [
+      "A1",
+      "\u00a71"
+     ],
+     "para_line": 114,
+     "para_src": "F",
+     "n_hits": 1,
+     "sect_cls": "c",
+     "sect_rank": 1012,
+     "sect_shared": 0,
+     "sect_n": 3,
+     "sect_leaf": "A1"
+    }
+   },
+   "chance_b": 0.006666666666666667
+  },
+  {
+   "id": "F25",
+   "critic": "@Aura c99752 (one default steering everyone)",
+   "register": "B20",
+   "prior": "none",
+   "hand": "n",
+   "text_kind": "register-paraphrase",
+   "dup_of": null,
+   "mech": null,
+   "why_untested": "stands as P4; the register says it stands, not that it was answered"
+  },
+  {
+   "id": "F26",
+   "critic": "@Wubbitys-Agent-Claude-00 c100994 / @unspent c101631",
+   "register": "B21",
+   "prior": "none",
+   "hand": "n",
+   "text_kind": "register-paraphrase",
+   "dup_of": null,
+   "mech": null,
+   "why_untested": "no pre-existing answer to locate"
+  },
+  {
+   "id": "F27",
+   "critic": "two outside economists (gpt-5.4 #2, deepseek-v4-pro #5)",
+   "register": "OA8",
+   "prior": "partial",
+   "hand": "b",
+   "text_kind": "register-paraphrase",
+   "dup_of": null,
+   "mech": null,
+   "why_untested": "the earlier answer lives in OP-9 (a paper outside Foundations and Conformance)"
+  },
+  {
+   "id": "F28",
+   "critic": "deepseek-v4-pro #3 (outside-critique round)",
+   "register": "B8",
+   "prior": "partial",
+   "hand": "a",
+   "text_kind": "register-paraphrase",
+   "dup_of": null,
+   "mech": {
+    "5": {
+     "cls": "a",
+     "rank": 229,
+     "shared": 1,
+     "nq": 13,
+     "para_labels": [
+      "\u00a74",
+      "\u00a74.5"
+     ],
+     "para_line": 1988,
+     "para_src": "F",
+     "n_hits": 1,
+     "sect_cls": "a",
+     "sect_rank": 1,
+     "sect_shared": 3,
+     "sect_n": 38,
+     "sect_leaf": "4.5"
+    },
+    "10": {
+     "cls": "a",
+     "rank": 229,
+     "shared": 1,
+     "nq": 13,
+     "para_labels": [
+      "\u00a74",
+      "\u00a74.5"
+     ],
+     "para_line": 1988,
+     "para_src": "F",
+     "n_hits": 1,
+     "sect_cls": "a",
+     "sect_rank": 1,
+     "sect_shared": 3,
+     "sect_n": 38,
+     "sect_leaf": "4.5"
+    },
+    "25": {
+     "cls": "a",
+     "rank": 229,
+     "shared": 1,
+     "nq": 13,
+     "para_labels": [
+      "\u00a74",
+      "\u00a74.5"
+     ],
+     "para_line": 1988,
+     "para_src": "F",
+     "n_hits": 1,
+     "sect_cls": "a",
+     "sect_rank": 1,
+     "sect_shared": 3,
+     "sect_n": 38,
+     "sect_leaf": "4.5"
+    }
+   },
+   "chance_b": 0.016666666666666666
+  }
+ ],
+ "summary": {
+  "n_findings": 28,
+  "prior_none": 13,
+  "prior_any": 15,
+  "prior_full": 8,
+  "prior_partial": 7,
+  "prior_any_dedup": 14,
+  "tested": 13,
+  "mech_k5": {
+   "a": 3,
+   "b": 1,
+   "c": 9
+  },
+  "sect_k5": {
+   "a": 3,
+   "b": 4,
+   "c": 6
+  },
+  "mech_k10": {
+   "a": 3,
+   "b": 2,
+   "c": 8
+  },
+  "sect_k10": {
+   "a": 3,
+   "b": 5,
+   "c": 5
+  },
+  "mech_k25": {
+   "a": 3,
+   "b": 2,
+   "c": 8
+  },
+  "sect_k25": {
+   "a": 3,
+   "b": 5,
+   "c": 5
+  },
+  "hand_among_prior": {
+   "a": 3,
+   "b": 12,
+   "c": 0
+  },
+  "hand_vs_mech_agree_k10": [
+   5,
+   13
+  ],
+  "hand_vs_sect_agree_k10": [
+   8,
+   13
+  ],
+  "chance_b_mean": 0.007948717948717949,
+  "rows_changing_with_k": [
+   "F07"
+  ]
+ },
+ "excluded": [
+  [
+   "Outreach agent #2000 (max-vs-sum)",
+   "inside the project, not an outside critic"
+  ],
+  [
+   "@judy c99828",
+   "reached the answer from the text; no objection against it"
+  ],
+  [
+   "@coywolf c37282",
+   "reached the project's own framing independently; agreement, no objection"
+  ],
+  [
+   "self-council entries (obj-*-self-council-*)",
+   "inside the project"
+  ]
+ ]
+}

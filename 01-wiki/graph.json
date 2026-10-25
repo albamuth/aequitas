@@ -15,7 +15,7 @@
  },
  "counts": {
   "nodes": 300,
-  "edges": 1174
+  "edges": 1175
  },
  "nodes": [
   {
@@ -1211,7 +1211,7 @@
    "id": "dispute-resolution",
    "type": "mechanism",
    "title": "How a dispute resolves",
-   "summary": "Disputes about the physical record, the weighting model and an estimate need no verdict, because each party recomputes the shared record under its own model; only fraud needs a finding of fact, and correction negates the fake credit without reversing any transaction.",
+   "summary": "Disputes about the physical record, the weighting model and an estimate need no verdict, because each party recomputes the shared record under its own model; only fraud needs a finding of fact, made by the trust network, and correction supersedes the false credit without reversing any transaction.",
    "status": "settled",
    "ids": [
     "§4.7"
@@ -2129,7 +2129,7 @@
    "id": "refused-19",
    "type": "refused-proposal",
    "title": "Reverse a fraudulent past transaction",
-   "summary": "You cannot un-eat a sandwich. The fake credit is negated, the ratio fails, and discretionary purchases stop. Unwinding it would corrupt the honest seller's books",
+   "summary": "You cannot un-eat a sandwich. The network supersedes the false credit with its own research, and if the gate then fails, discretionary purchases stop. Unwinding it would corrupt the honest seller's books",
    "source": "00-strategy/Aequitas_Question_Index.md#1-refused",
    "in": 1,
    "out": 0
@@ -2147,9 +2147,9 @@
    "id": "refused-20",
    "type": "refused-proposal",
    "title": "Add bankruptcy, or forgive accumulated debit",
-   "summary": "There is time. Everyone alive accrues credit at the floor, so the ratio recovers on its own. The consequence is exactly the size of the fraud, measured in time, and nobody sets it",
+   "summary": "There is no creditor. A debit is not a bill and nobody collects it. A person over the gate after a fraud sells what they hold or buys only essentials, and the gate lets them buy more once `ρ·(C + P)` is back above `D`",
    "source": "00-strategy/Aequitas_Question_Index.md#1-refused",
-   "in": 1,
+   "in": 2,
    "out": 0
   },
   {
@@ -2623,7 +2623,7 @@
     "retroactive-reweighting"
    ],
    "in": 8,
-   "out": 0
+   "out": 1
   },
   {
    "id": "foundations-2.3",
@@ -5695,6 +5695,11 @@
    "from": "foundations-2.1",
    "rel": "forbids",
    "to": "refused-23"
+  },
+  {
+   "from": "foundations-2.2",
+   "rel": "forbids",
+   "to": "refused-20"
   },
   {
    "from": "foundations-2.3",

@@ -1,0 +1,86 @@
+{
+ "n_findings": 28,
+ "prior_none": 13,
+ "prior_any": 15,
+ "prior_full": 8,
+ "prior_partial": 7,
+ "prior_any_dedup": 14,
+ "tested": 13,
+ "mech_k5": {
+  "a": 3,
+  "b": 1,
+  "c": 9
+ },
+ "sect_k5": {
+  "a": 3,
+  "b": 4,
+  "c": 6
+ },
+ "mech_k10": {
+  "a": 3,
+  "b": 2,
+  "c": 8
+ },
+ "sect_k10": {
+  "a": 3,
+  "b": 5,
+  "c": 5
+ },
+ "mech_k25": {
+  "a": 3,
+  "b": 2,
+  "c": 8
+ },
+ "sect_k25": {
+  "a": 3,
+  "b": 5,
+  "c": 5
+ },
+ "hand_among_prior": {
+  "a": 3,
+  "b": 12,
+  "c": 0
+ },
+ "hand_vs_mech_agree_k10": [
+  5,
+  13
+ ],
+ "hand_vs_sect_agree_k10": [
+  8,
+  13
+ ],
+ "chance_b_mean": 0.007948717948717949,
+ "rows_changing_with_k": [
+  "F07"
+ ]
+}
+
+id   prior    hand k5   k10  k25   rank shared  | section arm: cls rank shared n_paras leaf | critic
+F01  full     b    c    c    c     1012   0/25  | b    2  3 108 4.4      | @cairn-lineage c14985
+F02  none     n    -    -    -     @cairn-lineage c16488
+F03  none     n    -    -    -     @heresy-ai c15491
+F04  none     n    -    -    -     @custos c16467 c16479
+F05  none     n    -    -    -     @manu c16894
+F06  full     b    c    c    c       28   2/24  | c   19  1 108 4.4      | @denominator c18425
+F07  full     b    c    b    b        9   2/18  | b    8  2  23 3.3a     | @second-source c15059
+F08  full     b    c    c    c     1012   0/5   | c    3  1 108 4.4      | @cairn-lineage c15002
+F09  full     b    c    c    c      169   1/20  | c  169  1   1 conf-16  | @zpk c14980
+F10  full     b    c    c    c       40   1/8   | c    2  1 108 4.4      | @ellie-v2 c15053
+F11  partial  b    c    c    c      334   1/11  | b    2  3  26 4.8      | @cairn-lineage c18679
+F12  none     n    -    -    -     @cairn-lineage c39568
+F13  none     n    -    -    -     @amber c40261 (1: 'therefore')
+F14  full     a    a    a    a     1012   0/5   | a    1  1   4 A8       | @amber c40261 (2: gate not in A8)
+F15  none     n    -    -    -     @custos c42203
+F16  none     n    -    -    -     @hemei c46094
+F17  none     n    -    -    -     @amber c47758
+F18  partial  b    -    -    -     @cairn-lineage c48695
+F19  partial  b    b    b    b        2   7/14  | b    2  7   1 conf-14e | @bounded-curiosity c64075
+F20  partial  b    c    c    c     1012   0/19  | b    4  3 108 4.4      | @coywolf c64173
+F21  partial  a    a    a    a        3   1/4   | a    3  1  32 2.3      | @reed-agent c78139
+F22  none     n    -    -    -     @gradient-dissent c78549
+F23  none     n    -    -    -     @coywolf c99764
+F24  full     b    c    c    c     1012   0/10  | c 1012  0   3 A1       | @dash-agent c99684 / @Aura c99752
+F25  none     n    -    -    -     @Aura c99752 (one default steering everyone)
+F26  none     n    -    -    -     @Wubbitys-Agent-Claude-00 c100994 / @unspent c101631
+F27  partial  b    -    -    -     two outside economists (gpt-5.4 #2, deepseek-v4-pro #5)
+F28  partial  a    a    a    a      229   1/13  | a    1  3  38 4.5      | deepseek-v4-pro #3 (outside-critique round)
