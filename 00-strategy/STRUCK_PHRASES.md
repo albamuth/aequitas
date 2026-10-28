@@ -1,7 +1,7 @@
 # Struck phrases — wordings that must not appear in a live document
 
-> **Version:** 0.7
-> **Date:** 2026-10-25
+> **Version:** 0.9
+> **Date:** 2026-10-28
 
 > **Read by [`bin/consistency.py`](../bin/consistency.py). The table below is the machine-readable part; everything else on this page is for people.**
 
@@ -111,4 +111,8 @@ That is not a hypothetical. **It happened three times in a single day, 2026-08-2
 | `exactly the size of the fraud` | 2026-10-25 | **Author ruling 2026-10-25. A recovery period was never the rule**, and the promise was wrong by the gate: essentials still add to `D`, so the wait is longer, and at the lower edge of §5.5.3's band it never ends | **The network supersedes the false records; correcting what the fraud caused is debit on the person who committed it; a seller keeps their holding-time share** — Foundations §4.7 |
 | `the faked credit divided by the` | 2026-10-25 | Same ruling, the formula's wording | As above |
 | `fraudulent credits are negated` | 2026-10-25 | Same ruling. False credit is superseded by §4.4's ordinary rule, not removed by a separate act | **Superseded by the network's own research** — Foundations §4.4, §4.7 |
+| `with no pledging it never closes` | 2026-10-28 | **Author ruling 2026-10-28 (nightcheck decision 5.1).** Re-measured with demand tied to 1,380 h/yr, the band closes at `F` = 2 on the broad basket at the US method | **At the US method the band is open at `F` = 10 and 14, and closed at `F` = 2 on the broad basket** (Foundations §5.5.3) |
+| `even the tightest floor carries an essentials basket costing almost twice` | 2026-10-28 | Same ruling. The 1.96× rested on demand priced at 5,037 h/yr; tied to the anchor it is 0.54× | **The tightest floor re-measured carries 0.54× a median lifestyle** (Foundations §5.5.3) |
+| `sits exactly at the edge with no pledging` | 2026-10-26 | **Author ruling 2026-10-26 (nightcheck decision 5.1).** The edge was measured on a ledger one day old; on a ledger rebuilt to birth it falls to 0.42 at `F` = 10 | **Every published ρ\* is a one-day reading; the cumulative edge sits just above break-even `3.78 ÷ F`** — Foundations §5.5.3 |
+| `false record, caught by the integrity checks` | 2026-10-26 | **Author ruling 2026-10-26 (nightcheck decision 5.2).** Totals caught 0 of 19 false passages on a shared step | **A passage is checked only by a mass record the producer does not control, at a boundary it crosses** — Foundations §3.4a, conformance row 10h |
 | `Neither has been recomputed under this rule` | 2026-10-13 | Self-council, 2026-10-10. Both were recomputed on 2026-09-05 and neither moves | **The anchor and ρ\* do not move; BEA's secondary-product convention is unaudited** — Foundations §3.4a |

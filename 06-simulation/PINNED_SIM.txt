@@ -1,1 +1,12 @@
-# Cleared 2026-10-21: the lamb request ran on 2026-10-20 and again on 2026-10-21. Oldest-open-first again.
+# Pin list, ruled 2026-10-25 (PLAN-2026-10-25 decision 5.5).
+# One sim id per line, in run order. The picker takes the first id that is
+# still open and that no report in log/SIM-*.md names, so the list advances
+# by itself. When every id here has run, it falls back to oldest-open-first.
+sr-20261023-re-run-stable-band-py-s-upper-edge-rho-on-a-
+# kappa tied to 1,380 h/yr, both edges. PLAN-2026-10-26 decision 5.1 A.
+sr-20261026-re-run-stable-band-py-with-kappa-tied-to-the
+# The band at the German and Spanish methods. PLAN-2026-10-28 decision 5.1 item 4.
+sr-20261028-re-run-stable-band-kappa-py-at-the-german-ja
+# Hive hours: uncomment once an apiary labour source is in 02-research/.
+# Without one the run reports Blocked. Due to the board 2026-10-31 (#9090).
+# sr-20261018-hours-of-labour-and-materials-energy-in-one-

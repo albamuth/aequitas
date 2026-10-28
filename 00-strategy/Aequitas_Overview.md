@@ -1,8 +1,8 @@
 <!-- tag: ovw-aequitas-overview -->
 # Aequitas — Overview
 
-> **Version:** 0.33
-> **Date:** 2026-10-16
+> **Version:** 0.34
+> **Date:** 2026-10-28
 > **Audience:** everyone. No economics background assumed, none required.
 > **Rigorous version:** `00-strategy/Aequitas_Foundations.md`. This document is the plain-language companion; where they differ, the Foundations govern.
 
@@ -254,17 +254,21 @@ So the most anyone can out-say anyone else is the ratio between a full day and t
 
 **Condition 1 above invites a fair worry: if the community picks the baseline, can it pick a value that does not work?** A baseline set too low leaves people unable to afford what they need. Set too high, the books stop rationing anything that is genuinely short.
 
-**This was measured rather than argued.** A run in 2026 swept baselines from 1 to 14 hours a day against the tolerance `ρ`, checking both ends at once.
+**This was measured rather than argued, and the answer depends on how wasteful the economy's production is.** The run below uses today's US method, where a median American life costs 1,380 hours of other people's work a year.
 
 | The baseline `F` | The largest essentials basket that baseline can carry | Against one whole median American lifestyle |
 |---|--:|--:|
-| **2 hours a day** — the tightest tested | 2,701 h/yr | **1.96 ×** |
-| 10 hours a day | 4,380 h/yr | 3.17 × |
-| 14 hours a day | 4,599 h/yr | 3.33 × |
+| **2 hours a day** — the tightest tested | 742 h/yr | **0.54 ×** |
+| 10 hours a day | 1,205 h/yr | 0.87 × |
+| 14 hours a day | 1,293 h/yr | 0.94 × |
 
-**In plain words: even the tightest baseline tested carries an essentials basket costing nearly twice a whole median American lifestyle.** Essentials are a part of that lifestyle, not double it, so **no baseline in that range fails on affordability.** What binds instead is what the economy can physically produce.
+**What essentials cost, measured for one US person:** a narrow basket (food at home, clothing, shelter, utilities, care) is 516–655 h a year. A broad one, which adds household goods, local transport, telephones and schooling, is 826–965 h.
 
-**Two limits on that result, stated rather than buried.** The run used published tolerance figures **with no pledging in them**, and backing can double what a community may carry, which halves the usable top end. **And at a 1-hour baseline with essentials at 70% of a median lifestyle, the band does close** — the first swept case where it ever has.
+**In plain words: at the US method, baselines of 10 and 14 hours carry either basket. A 2-hour baseline carries the narrow basket and not the broad one,** because 742 h is less than 826 h.
+
+**The same material life costs about two thirds as much by the German or Japanese method, and less again by the Spanish.** Under those methods the economy produces more than everyone wants, so nothing has to be rationed. Whether a 2-hour baseline then carries the broad basket has not been measured yet.
+
+**One more limit.** The run used tolerance figures **with no pledging in them**, and backing can double what a community may carry, which halves the usable top end.
 
 ### And what is not capped: what a person consumes
 

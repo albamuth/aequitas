@@ -136,7 +136,7 @@ Where composition varies, mass is the **low-resolution reading**: recorded at lo
 
 **Shared overhead.** The barn shelters the whole animal. **All capital and overhead accrues to the asset**, never to the outputs, so there is nothing to inherit. OP-23.
 
-**A false passage.** Claiming a co-product left the chain before work it really consumed would lower its figure. **That is a verification question rather than an accounting one**, and the event-record closure checks answer it. Not measured.
+**A false passage.** Claiming a co-product left the chain before work it really consumed lowers its figure: claiming the hide left one step early cuts it from 2.00 to 1.25 MJ/kg on the seven-step steer. **Totals cannot see it.** Where another product still passes the step, the totals reconciliation caught **0 of 19** such lies and the coarse-reading ceiling **0 of 25**. **A mass meter the producer does not control, on a boundary the lie crosses, caught 99.7–100%** at 0.5–2% noise; the same meter owned by the producer caught 0.3–1.7%, its false-alarm rate. **What is open is whether such an instrument can exist at a plant's boundaries**, which is the instrument-trust limit of the [verification ladder](verification-ladder.md). `06-simulation/false-passage/RESULTS.md`.
 
 ## Who games this
 

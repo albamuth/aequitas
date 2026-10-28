@@ -92,15 +92,15 @@ edges:
 
 **In plain words: a network at `F` = 1 h/day has subscribers who cannot afford to eat, and that network fails.**
 
-**The upper bound was run on 2026-08-28**, sweeping `F` from 1 to 14 hours a day. `E_max` below is the largest essentials basket a floor can carry, `365 · F · ρ*(F)`.
+**The upper bound was run on 2026-08-28 and re-measured on 2026-10-27** with each person's demand tied to the 1,380 h/yr anchor, at the US method. `E_max` below is the largest essentials basket a floor can carry, `365 · F · ρ*(F)`. The band is **closed** when the lower edge `E ÷ (365·F)` sits above ρ\*.
 
-| `F` | ρ*(`F`) | `E_max` | As a multiple of a median American lifestyle |
-|---|--:|--:|---|
-| **2 h/day** | 3.70 | 2,701 h/yr | **1.96×** — the tightest floor measured |
-| 10 h/day | 1.20 | 4,380 h/yr | 3.17× |
-| 14 h/day | 0.90 | 4,599 h/yr | 3.33× |
+| `F` | ρ*(`F`) | `E_max` | As a multiple of a median American lifestyle | The band |
+|---|--:|--:|---|---|
+| **2 h/day** | 1.017 | 742 h/yr | **0.54×** — the tightest floor measured | Open narrow, **closed broad** (needs 1.13–1.32) |
+| 10 h/day | 0.330 | 1,205 h/yr | 0.87× | Open |
+| 14 h/day | 0.253 | 1,293 h/yr | 0.94× | Open |
 
-**In plain words: the band exists at every floor from 1 to 14 hours a day and never closes.** What binds it is what an economy can physically deliver, not whether essentials are affordable. **The upper edge turns out to be an artefact of the American production method** — the same material standard costs 1,380 hours by the American method, 883 by the German or Japanese, and 759 by the Spanish.
+**In plain words: at the US method a 2-hour floor cannot carry the broad basket, and floors of 10 and 14 hours carry either basket.** The first run priced demand at 5,037 h/yr on the upper edge, so its edges were 3.65 times too high. What binds the upper edge is what an economy can physically deliver. **The upper edge turns out to be an artefact of the American production method** — the same material standard costs 1,380 hours by the American method, 883 by the German or Japanese, and 759 by the Spanish.
 
 > **⚠️ ρ\*'s absolute values inherit the weighting model and an illustrative capacity figure. The shape is the result; the numbers are dated readings.** Full method: `06-simulation/stable-band/RESULTS.md`.
 

@@ -1,8 +1,8 @@
 <!-- tag: fnd-aequitas-foundations-and-long-term -->
 # Aequitas — Foundations & Long-Term Strategy
 
-> **Version:** 0.62
-> **Date:** 2026-10-25
+> **Version:** 0.64
+> **Date:** 2026-10-28
 > **Status:** Working foundations.
 > **Primary audience of the first paper:** technologists and implementers.
 > **Companion:** [`Aequitas_Conformance.md`](Aequitas_Conformance.md) — what must be true for an implementation to *be* Aequitas.
@@ -1209,9 +1209,21 @@ Some processes produce several things at once from one pool of inputs. A steer e
 
 **There is no profit motive, because there is no margin to protect (A5).** There *is* a weaker motive: **understating your own debit improves your debit-to-credit ratio and makes your goods lighter for whoever takes them.** That is **OP-24 (understatement drift)**, and it is unchanged.
 
-**What this rule removes is the room to do it honestly.** The withdrawn rule let a producer choose a routing model and a boundary, publish both, and satisfy every obligation. **Here there is no model to choose.** What is left to misstate is a **passage** — claiming a product left before work it really consumed — and that is a false record, caught by the integrity checks (conformance row 7) rather than by an allocation rule.
+**What this rule removes is the room to do it honestly.** The withdrawn rule let a producer choose a routing model and a boundary, publish both, and satisfy every obligation. **Here there is no model to choose.** What is left to misstate is a **passage** — claiming a product left before work it really consumed. **That is a false record, not an allocation choice.**
 
-**And the claim is auditable against records that already exist.** A mill can be asked for its power bills, its intake weights and its output weights. The claim must reconcile with those, within a stated margin of error.
+**Totals cannot catch a false passage, and this was measured.** Where another product still passes the step the lie removes, the union over parcels still equals the chain total. **So the power bills, the intake weights and the output weights all still reconcile**, and so does the coarse-reading ceiling, which bounds a figure from above while the lie lowers it.
+
+| The check | False passages on a shared step that it caught |
+|---|--:|
+| Totals reconciliation: the union of claimed passages against the metered chain total | **0 of 19** (6 on the steer, 13 on the refinery) |
+| The coarse-reading ceiling | **0 of 25** |
+| A mass meter on a boundary the lie crosses, **made by an instrument the producer does not control** | **99.7–100%** at 0.5–2% meter noise. 91.3% at 5% |
+
+**A meter the producer owns is not in the table, because the run did not measure one.** The model sets that meter's reading to the producer's own claim plus noise, so it can only return its false-alarm rate. **A check whose reading never depends on the lie is model-entailed, and §3.5 excludes it rather than restating it.**
+
+**What a lie is worth, on the seven-step steer above.** Claiming the hide left one step early cuts its figure from 2.00 to 1.25 MJ/kg, which is **38%**. The largest lie on a shared step cuts hooves and head from 4.67 to 1.67 MJ/kg, which is **64%**. On the DOE refinery, dropping one really-used step cuts a product's figure by **5% to 36%**.
+
+> **In plain words: a passage claim is checked only by a mass record made on a different path, at a boundary the lie crosses.** This is §4.3 (*"rung 3 moves trust from the ledger to the instrument"*) and §4.4 (*"a check that compares a thing to itself can find a mistake and cannot find a hole"*) applied to a passage. A lie that removes a step no other product passes is different: the union falls short of the chain total, the totals check fires, and the cost stays with the producer (§3.2b). `06-simulation/false-passage/RESULTS.md`, 7 self-tests.
 
 #### One thing the cost may never do
 
@@ -1247,7 +1259,7 @@ Two reasons the ban stands:
 
 #### What remains open
 
-**Whether a producer can declare a false passage.** Claiming a co-product left the chain before work it really consumed would lower its figure. **That is a verification question rather than an accounting one**, and conformance row 7's closure checks are what answer it. Not measured.
+**Whether an independent instrument can sit at a plant's boundaries.** *What stops a producer understating*, above, measures what such a meter would catch. **It does not show that one can exist**, or who would own it. That is the instrument-trust limit of §4.3, and a verification question rather than an accounting one. The run also modelled one lie at a time, checked through mass only, with illustrative steer digits and a declared refinery passage table.
 
 **The calibrated figures do not move, and one upstream convention is unaudited.** The **1,380 h/yr** median-lifestyle anchor (§3.5) and the **ρ\* ≈ 1.2** clearing rate (§5.5.7) were recomputed under this rule on 2026-09-05, and **neither moves**, because the measurement works at industry resolution and never divided a process among its outputs (`06-simulation/median-lifestyle/ANCHOR_UNDER_NO_DIVISION.md`).
 
@@ -1928,7 +1940,7 @@ A median lifestyle commands about **1,380 hours** of other people's labour a yea
 | `F` = 10 h/day, ρ = 1.2 | 4,380 h | 1,380 h | **+3,000 h** |
 | `F` = 2 h/day, ρ = 1.0 | 730 h | 1,380 h | **−650 h** |
 
-**Break-even is `ρ·F` = 1,380 ÷ 365 = 3.78 hours a day.** Above it a longer span pays and nobody shortens one. **Below it a filer may carry 650 hours more for every year of their own life they delete** — and **§5.5.3 states that the workable band never closes between `F` = 1 and `F` = 14**, so a network at `F` = 2 is conforming.
+**Break-even is `ρ·F` = 1,380 ÷ 365 = 3.78 hours a day.** Above it a longer span pays and nobody shortens one. **Below it a filer may carry 650 hours more for every year of their own life they delete** — and **no conformance requirement sets a lowest floor** (§5.5.4), so a network at `F` = 2 is conforming.
 
 > **In plain words: "err against the party" has no fixed meaning here, because the same act helps a filer in one conforming network and harms them in another.** *The earliest date the evidence allows* is the same instrument on both sides of 3.78, which is why condition 3 names it.
 
@@ -2570,19 +2582,23 @@ Those activities are **sleeping, eating, defecating, and keeping oneself clean.*
 
 ##### The band, measured
 
-**Aequitas does not set `F` and must not** (A8). **What this project had not shown was that a workable value exists** — that for a given economy there is a band of `F` and ρ inside which essentials are affordable and the ledger still rations what is genuinely short. **It was run on 2026-08-28.**
+**Aequitas does not set `F` and must not** (A8). **What this project had not shown was that a workable value exists** — that for a given economy there is a band of `F` and ρ inside which essentials are affordable and the ledger still rations what is genuinely short. **It was run on 2026-08-28, and its edges were re-measured on 2026-10-27 with each person's demand tied to the 1,380 h/yr anchor** (§3.5).
 
-> **The band exists at every floor from 1 to 14 hours a day, and with no pledging it never closes. What binds it is capacity, not affordability.**
+> **At the US production method the band is open at `F` = 10 and `F` = 14 on both essentials baskets. At `F` = 2 it is open on the narrow basket and closed on the broad one. What binds the upper edge is capacity.**
 
-**How wide.** The band is `ρ ∈ [ E/(365·F) , ρ*(F) ]`, where `E` is what a year of essentials commands and `ρ*(F)` is the tolerance above which the ledger stops rationing. So the largest essentials basket a floor can carry is `E_max = 365 · F · ρ*(F)`.
+**Terms used here.** The band is `ρ ∈ [ E/(365·F) , ρ*(F) ]`. The **lower edge** `E/(365·F)` is the ρ below which a floor-only person cannot afford a year of essentials. The **upper edge** `ρ*(F)` is the tolerance above which the ledger stops rationing. The band is **open** when the lower edge sits below the upper edge, and **closed** when it sits above. The largest essentials basket a floor can carry is `E_max = 365 · F · ρ*(F)`. The two baskets are the ones measured above: **narrow 516–655 h/yr, broad 826–965 h/yr.**
 
-| `F` | ρ*(`F`) | `E_max` | As a multiple of a median **American** lifestyle |
-|---|---|---|---|
-| **2 h/day** | 3.70 | 2,701 h/yr | **1.96×** — the tightest floor measured |
-| 10 h/day | 1.20 | 4,380 h/yr | 3.17× |
-| 14 h/day | 0.90 | 4,599 h/yr | 3.33× |
+| `F` | ρ*(`F`) | `E_max` | As a multiple of a median **American** lifestyle | Lower edge, narrow | Lower edge, broad | The band |
+|--:|--:|--:|--:|--:|--:|---|
+| **2 h/day** | 1.017 | 742 h/yr | **0.54×** | 0.71 – 0.90 | **1.13 – 1.32** | Open narrow, **closed broad** |
+| 10 h/day | 0.330 | 1,205 h/yr | 0.87× | 0.14 – 0.18 | 0.23 – 0.26 | Open |
+| 14 h/day | 0.253 | 1,293 h/yr | 0.94× | 0.10 – 0.13 | 0.16 – 0.19 | Open |
 
-**In plain words: even the tightest floor carries an essentials basket costing almost twice a whole median American lifestyle. Essentials are a part of that lifestyle, not double it, so no floor in this range fails on affordability.** The band's width in ρ falls as the floor rises — about 3.2 at a 1.5-hour floor, 0.70 at a 14-hour floor.
+**Worked, at `F` = 2 with the broad basket at 826 h.** The lower edge is 826 ÷ (365 × 2) = **1.13**. The upper edge is **1.017**. No ρ is both above 1.13 and below 1.017, so the band is closed.
+
+**In plain words: at the US method a 2-hour floor cannot carry the broad essentials basket, and floors of 10 and 14 hours can carry either basket.** `F` = 1 was not re-measured.
+
+**Why the 2026-08-28 edges were higher.** The first run priced a year of a median person's demand at **5,037 h** (median daily credit × 365) on one edge and at the 1,380 h/yr anchor on the other. **Admitted demand depends on ρ ÷ that yearly figure only**, so every upper edge was 5,037 ÷ 1,380 = **3.65 times** too high. Tied to the anchor, each edge moved by exactly that factor. `06-simulation/stable-band/RESULTS_KAPPA.md`, six declared outcomes, all held.
 
 ##### And the upper edge is an artefact of the American production method
 
@@ -2598,15 +2614,31 @@ Those activities are **sleeping, eating, defecating, and keeping oneself clean.*
 
 **People want 66,407 units in total. Read the middle column against that.**
 
-> **At `F` = 10 and ρ = 1.2: under the American method the envelope delivers less than people want, so the gate rations and about a third are held back. Under the German, Japanese or Spanish method the same envelope delivers more than everyone wants, the gate never binds, and nobody is held back at all.**
+**⚠️ The right-hand column was computed with demand at 5,037 h a year, the unit mismatch named above, and has not been re-run.** The middle column does not depend on it: it is what the envelope delivers. Under the German, Japanese or Spanish method the envelope delivers more than people want, so there is no shortage for the gate to ration at any ρ. **Under the US method it delivers 85% of wants**, and at `F` = 10 the re-measured gate stops rationing above ρ = 0.330, so at ρ = 1.2 the 15% shortfall is settled at distribution rather than by the gate.
+
+> **Under the American method the envelope delivers less than people want, so something must ration. Under the German, Japanese or Spanish method the same envelope delivers more than everyone wants, and nothing has to be held back at all.**
+>
+> **Whether the band closes at `F` = 2 under those methods is not measured.** Scaling the broad basket by the German ratio, 883 ÷ 1,380 = 0.64, gives 529–618 h and a lower edge of 0.72–0.85 at `F` = 2. That is an inference, and the run that would measure it has been requested.
 
 **In plain words: the band needs an upper edge only while the method is wasteful. Change the method and there is nothing left to ration.** §5.5.3 already named that outcome as the intended one rather than a defect.
 
 **And the same measurement gives the mechanism that moves people toward it, with no mandate and nothing forbidden.** One median American lifestyle costs **1,380 hours** of other people's labour by the American method, **883** by the German or Japanese, and **759** by the Spanish. **Two people can live the same material life and carry different debit, because one is supplied by a wasteful chain.** The gate `D ≤ ρ·(C + P)` then reaches further for whoever is supplied by the efficient one. **That is A4 and A5 producing a pull toward the sustainable method out of the arithmetic, rather than a rule anyone enforces.**
 
-> **⚠️ The band was computed in published ρ with no pledge term, and the pledge term halves its upper edge.** Committed pledges can double a network's gate (§4.6), so a network's **effective** tolerance runs to `2ρ`. Re-run on 2026-09-18 with a pledge density `p`, the publishable upper edge is `ρ*(F) ÷ (1 + p)`: at `F` = 10 it falls from **1.20** at no pledging to **0.60** at the one-for-one ceiling. **`ρ*(10) = 1.20` is the same number as the ρ = 1.2 used throughout this section**, so that setting sits exactly at the edge with no pledging and above it with any. **And the band closes** at `F` = 1.0 with essentials at 70% of a median lifestyle — the first swept cell in which it ever has. `06-simulation/stable-band/PLEDGE_BAND_RESULTS.md`. **`p` is swept and not measured.**
+> **⚠️ The band was computed in published ρ with no pledge term, and the pledge term halves its upper edge.** Committed pledges can double a network's gate (§4.6), so a network's **effective** tolerance runs to `2ρ`. Re-run on 2026-09-18 with a pledge density `p`, the publishable upper edge is `ρ*(F) ÷ (1 + p)`: at `F` = 10 it fell from **1.20** at no pledging to **0.60** at the one-for-one ceiling, and the band closed at `F` = 1.0 with essentials at 70% of a median lifestyle. `06-simulation/stable-band/PLEDGE_BAND_RESULTS.md`. **`p` is swept and not measured, and those levels were computed with demand at 5,037 h a year.** The halving is a relation and does not depend on that figure. The levels do, and the pledge term has not been re-run with demand tied to 1,380 h/yr.
 >
 > **⚠️ What is measured and what is not.** The two zero rows are **floors, not values** (conformance row 13): the gate does not bind anywhere below ρ = 4.0, which is where the swept range ended. Nobody looked above it. **And ρ\*'s absolute values inherit the weighting model and an illustrative capacity figure — the shape is the result, the numbers are dated readings.** Full method, the three things it does not show, and five self-tests that can each fail: `06-simulation/stable-band/RESULTS.md`. Registered with **OP-4 (debit tolerance)**.
+>
+> **⚠️ The edges above hold on a ledger rebuilt to birth as well as on one a day old.** §4.4 says a joiner arrives with a life rebuilt to birth, and §5.5.6 says the gate is cumulative. **Terms used here.** The **cumulative edge** is ρ\* when every person joins with their past rebuilt and every year from 1 to 100 must fit inside capacity. The **break-even ρ** is the ρ at which a year of floor credit balances a year of median consumption: `ρ·F·365 = 1,380`, so `ρ = 3.78 ÷ F` (§4.4).
+>
+> | `F` | One-day ρ\* | Cumulative edge | Break-even `3.78 ÷ F` |
+> |--:|--:|--:|--:|
+> | 2 h/day | 1.017 | **1.017** | 1.890 |
+> | 10 h/day | 0.330 | **0.330** | 0.378 |
+> | 14 h/day | 0.253 | **0.253** | 0.270 |
+>
+> **In plain words: with a joiner's past and future both priced at 1,380 h a year, the cumulative edge equals the one-day edge, and both sit below break-even.** At `F` = 10 a floor-only person may carry `0.330 × 3,650 =` **1,205 h** a year at the edge, against 1,380 h for one median lifestyle.
+>
+> **The equality is built in, and it is not evidence about a real economy.** It follows from declaring a joiner's past rate equal to their later rate. **When the two differ the cumulative edge moves**: a past of 5,037 h a year beside a flow of 1,380 gives 1.894 / 0.489 / 0.362. **Four more limits:** 1,380 h/yr is today's US-method median, not the essentials basket; capacity was held at 85% of wants; everyone joins on the first day with **no held property**; and nobody is born or dies in the hundred years. `06-simulation/stable-band/RESULTS_KAPPA.md` and `RESULTS_CUMULATIVE.md`.
 
 ---
 
@@ -2766,7 +2798,7 @@ Those activities are **sleeping, eating, defecating, and keeping oneself clean.*
   >
   > **This is §4.4 applied to the project's own headline** — *a check that compares a thing to itself can find a mistake, and cannot find a hole.* **The witness for coverage is a different instrument and it is physical: the outside total `N`** (§4.4). *(Found from outside by @cairn-lineage; conceded 2026-08-31.)*
 
-> **The stable band described in §5.5.3 was found on 2026-08-28** and is reported there. `06-simulation/stable-band/`, 60,000 people, every cell driven through the kernel's own gate and all eight conformance checks. **The band never closes, capacity binds rather than affordability, and the upper edge turns out to be an artefact of the American production method.**
+> **The stable band described in §5.5.3 was found on 2026-08-28** and is reported there. `06-simulation/stable-band/`, 60,000 people, every cell driven through the kernel's own gate and all eight conformance checks. **Re-measured on 2026-10-27 with demand tied to 1,380 h/yr: at the US method the band is open at `F` = 10 and 14, and closed at `F` = 2 on the broad essentials basket.** Capacity binds the upper edge, and the upper edge is an artefact of the American production method.
 
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: OP-4 — the debit-tolerance formula
-summary: The floor F and the tolerance ρ are each network's settings with a bound at each end; the band inside which essentials stay affordable and the gate still rations was measured and never closes between 1 and 14 hours a day, but the formula was not derived, the band's upper edge halves under full pledging, and whether a network credits a child's learning time is a second dial on the same ceiling.
+summary: The floor F and the tolerance ρ are each network's settings with a bound at each end; the band inside which essentials stay affordable and the gate still rations was measured and, at the US method, closes at a 2-hour floor on the broad essentials basket; but the formula was not derived, the band's upper edge halves under full pledging, and whether a network credits a child's learning time is a second dial on the same ceiling.
 type: open-problem
 ids: [OP-4]
 status: contested
@@ -38,26 +38,29 @@ edges:
 
 **The lower bound is arithmetic:** `ρ · F · 365 ≥ E`. Measured for one US person, a broad essentials basket costs 826 to 965 h/yr, so the lowest floor at ρ = 1.2 is 1.9 to 2.2 h/day. **A network at `F` = 1 h/day has subscribers who cannot afford to eat.**
 
-**The band exists and never closes.** Run on 2026-08-28 across 60,000 people and 6,237 grid cells: at every floor from 1 to 14 hours a day there is a range of ρ inside which essentials are affordable and the gate still rations. What binds it is what the economy can physically deliver, not affordability ([debit-tolerance](debit-tolerance.md)).
+**At the US method the band is open at 10 and 14 hours a day, and closed at 2 hours on the broad essentials basket.** Re-measured on 2026-10-27 with each person's demand tied to the 1,380 h/yr anchor. The first run, on 2026-08-28, priced demand at 5,037 h/yr on the upper edge, so its edges were 3.65 times too high ([debit-tolerance](debit-tolerance.md)).
 
 | `F` | ρ\*(`F`) | Largest essentials basket the floor can carry | Against a median American lifestyle |
 |--:|--:|--:|--:|
-| 2 h/day | 3.70 | 2,701 h/yr | 1.96× |
-| 10 h/day | 1.20 | 4,380 h/yr | 3.17× |
-| 14 h/day | 0.90 | 4,599 h/yr | 3.33× |
+| 2 h/day | 1.017 | 742 h/yr | 0.54× |
+| 10 h/day | 0.330 | 1,205 h/yr | 0.87× |
+| 14 h/day | 0.253 | 1,293 h/yr | 0.94× |
+
+**Worked:** at 2 h/day the broad basket's 826 h needs ρ ≥ 826 ÷ 730 = 1.13, which is above 1.017, so no ρ works.
 
 **ρ behaves like a prime rate.** A ρ can be chosen so demand matches capacity, and it moves sensibly: a 30% capacity disaster tightens it from about 1.2 to about 0.68, growth loosens it to about 2.2 ([disparity-ceiling](disparity-ceiling.md)).
 
 ## What is open
 
 1. **The formula.** The band was found by sweeping, not derived from the axioms. Component C9 is not started.
-2. **Pledging halves the upper edge.** Committed pledges can double a network's gate, so the publishable upper edge is `ρ*(F) ÷ (1 + p)`: at `F` = 10 it falls from 1.20 with no pledging to 0.60 at the one-for-one ceiling. **The ρ = 1.2 used throughout the documents sits exactly at the edge with no pledging and above it with any.** And the band closes at `F` = 1 with essentials at 70% of a median lifestyle, the first swept cell where it ever has.
+2. **Pledging halves the upper edge.** Committed pledges can double a network's gate, so the publishable upper edge is `ρ*(F) ÷ (1 + p)`: at `F` = 10 it falls from 1.20 with no pledging to 0.60 at the one-for-one ceiling. And the band closes at `F` = 1 with essentials at 70% of a median lifestyle, the first swept cell where it ever has.
 3. **The childhood dial.** Whether a network credits a child's learning time moves the reachable ceiling from 2.400× to 2.085× at `F` = 10. It belongs here and with A8's list of always-creditable activities.
 4. **ρ\*'s absolute values inherit the weighting model and an illustrative capacity figure.** The shape is the result; the numbers are dated readings.
+5. **The other production methods are not measured.** Under the German, Japanese or Spanish method the envelope covers all wants. Whether the band opens at 2 h/day there is inferred (a lower edge of 0.72–0.85, by scaling the basket by 0.64), and a run is requested. On a ledger rebuilt to birth the edges equal the one-day edges when past and future demand are both 1,380 h/yr, and that equality is built in. `06-simulation/stable-band/RESULTS_KAPPA.md`.
 
 ## An example, with the numbers
 
-**At `F` = 10 and ρ = 1.2, with no pledging**, the floor alone balances 1.2 × 10 × 365 = **4,380 h** of debit a year against a median lifestyle of 1,380 h, so the gate does not bind. **Now let pledge density reach `p` = 1.** The same network's effective tolerance is 2 × 1.2 = 2.4, above ρ\*(10) = 1.20, so the gate rations nothing and physical shortage is decided at the point of distribution instead. **A network must choose ρ knowing pledges can double its gate.**
+**At `F` = 10 and ρ = 1.2, with no pledging**, the floor alone balances 1.2 × 10 × 365 = **4,380 h** of debit a year against a median lifestyle of 1,380 h, so the gate does not bind: ρ = 1.2 is already above ρ\*(10) = 0.330. **Now let pledge density reach `p` = 1.** The same network's effective tolerance is 2 × 1.2 = 2.4, further above it, so the gate rations nothing and physical shortage is decided at the point of distribution instead. **A network must choose ρ knowing pledges can double its gate.**
 
 ## Depends on
 

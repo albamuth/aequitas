@@ -1,0 +1,27 @@
+N=60,000  seed=7  kappa=13.797  R_max=56,446  wants_total=66,407  M=100
+ages seed 11: mean 39.8  median 38.8
+
+== 1. rho*_L (every period 1..M rations) vs one-day rho* ==
+F=   2  one-day 3.712   rho*_L 1.982 (sd 0.000, min 1.982, max 1.982) flags ['']   rho*_L at period 100 only: 3.668 flags ['']
+F=  10  one-day 1.206   rho*_L 0.416 (sd 0.000, min 0.416, max 0.416) flags ['']   rho*_L at period 100 only: 1.155 flags ['']
+F=  14  one-day 0.922   rho*_L 0.299 (sd 0.000, min 0.299, max 0.299) flags ['']   rho*_L at period 100 only: 0.878 flags ['']
+
+== 2. admitted demand by period, and the return to the one-day level ==
+F=   2           rho=1.2 (rho 1.200) one-day    30,201 R_max 56,446 | t=1     1,272 t=10    22,691 t=50    30,201 t=100    30,201 t=400    30,201 | return: M=100 1  M=400 1
+F=   2  rho=one-day rho* (rho 3.712) one-day    56,445 R_max 56,446 | t=1    66,200 t=10    62,353 t=50    57,214 t=100    56,663 t=400    56,459 | return: M=100 60  M=400 60
+F=  10           rho=1.2 (rho 1.200) one-day    56,333 R_max 56,446 | t=1    66,318 t=10    64,539 t=50    59,185 t=100    57,431 t=400    56,421 | return: M=100 None  M=400 150
+F=  10  rho=one-day rho* (rho 1.206) one-day    56,446 R_max 56,446 | t=1    66,319 t=10    64,571 t=50    59,297 t=100    57,545 t=400    56,532 | return: M=100 None  M=400 150
+F=  14           rho=1.2 (rho 1.200) one-day    61,699 R_max 56,446 | t=1    66,387 t=10    65,854 t=50    63,842 t=100    62,741 t=400    61,808 | return: M=100 None  M=400 144
+F=  14  rho=one-day rho* (rho 0.922) one-day    56,440 R_max 56,446 | t=1    66,328 t=10    64,728 t=50    59,639 t=100    57,706 t=400    56,552 | return: M=100 None  M=400 165
+
+== 3. sensitivities of rho*_L (age seed 11) ==
+declared                                           F=2     1.982  F=10     0.416  F=14     0.299
+all join at age 0                                  F=2     3.712  F=10     1.206  F=14     0.922
+all join at age 20                                 F=2     2.039  F=10     0.430  F=14     0.309
+all join at age 40                                 F=2     1.968  F=10     0.405  F=14     0.290
+past work credited (adults, at today's work_h)     F=2     1.846  F=10     0.401  F=14     0.289
+past debit 1,000 h/yr                              F=2     1.503  F=10     0.320  F=14     0.230
+past debit 2,000 h/yr                              F=2     2.782  F=10     0.575  F=14     0.413
+past debit = model flow, 5,037 h/yr (kappa*365)    F=2     3.712  F=10     1.206  F=14     0.922
+
+(<) = even rho 0.005 fails to ration: value is a ceiling on the edge, not a value.  (>=) = grid ended: a floor, not a value.

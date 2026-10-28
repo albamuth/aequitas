@@ -15,7 +15,7 @@
  },
  "counts": {
   "nodes": 300,
-  "edges": 1175
+  "edges": 1176
  },
  "nodes": [
   {
@@ -1145,7 +1145,7 @@
    "file": "01-wiki/co-product-allocation.md",
    "glossary": "00-strategy/GLOSSARY.md#op-17",
    "in": 13,
-   "out": 24
+   "out": 25
   },
   {
    "id": "consumption-debit",
@@ -1670,7 +1670,7 @@
     "§4.3"
    ],
    "file": "01-wiki/verification-ladder.md",
-   "in": 18,
+   "in": 19,
    "out": 15
   },
   {
@@ -1939,7 +1939,7 @@
    "id": "op-4",
    "type": "open-problem",
    "title": "OP-4 — the debit-tolerance formula",
-   "summary": "The floor F and the tolerance ρ are each network's settings with a bound at each end; the band inside which essentials stay affordable and the gate still rations was measured and never closes between 1 and 14 hours a day, but the formula was not derived, the band's upper edge halves under full pledging, and whether a network credits a child's learning time is a second dial on the same ceiling.",
+   "summary": "The floor F and the tolerance ρ are each network's settings with a bound at each end; the band inside which essentials stay affordable and the gate still rations was measured and, at the US method, closes at a 2-hour floor on the broad essentials basket; but the formula was not derived, the band's upper edge halves under full pledging, and whether a network credits a child's learning time is a second dial on the same ceiling.",
    "status": "contested",
    "ids": [
     "OP-4"
@@ -3870,6 +3870,11 @@
    "from": "co-product-allocation",
    "rel": "related",
    "to": "rival-sector-audit"
+  },
+  {
+   "from": "co-product-allocation",
+   "rel": "related",
+   "to": "verification-ladder"
   },
   {
    "from": "co-product-allocation",

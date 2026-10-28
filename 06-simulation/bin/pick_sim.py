@@ -26,10 +26,12 @@ A request that a report in 06-simulation/log/SIM-*.md already names is
 skipped, so a night cannot re-run last night's request just because the
 queue has not been refreshed yet.
 
-The pin lives in 06-simulation/PINNED_SIM.txt -- one sim id, or nothing.
-Blank lines and lines starting with # are ignored, so the file can carry its
-own instructions. A pinned id is taken even if a report already names it;
-pinning is the author's way of saying "again".
+The pins live in 06-simulation/PINNED_SIM.txt -- sim ids, one per line, in
+the order to run them. Blank lines and lines starting with # are ignored, so
+the file can carry its own instructions. The picker takes the first pinned id
+that is still open and that no report names yet, so the list advances by
+itself night by night (ruled 2026-10-25, PLAN-2026-10-25 decision 5.5). To
+run a request again, file a new request; a reported id is never re-taken.
 
 Usage:
     python bin/pick_sim.py              # print the block
@@ -84,15 +86,16 @@ QUEUE_HEADER = """\
 """
 
 
-def read_pin():
-    """The pinned sim id, or None. Comments and blank lines are skipped."""
+def read_pins():
+    """The pinned sim ids, in order. Comments and blank lines are skipped."""
     if not PIN.exists():
-        return None
+        return []
+    pins = []
     for raw in PIN.read_text(encoding="utf-8").splitlines():
         line = raw.strip()
         if line and not line.startswith("#"):
-            return line
-    return None
+            pins.append(line)
+    return pins
 
 
 def load(path):
@@ -206,19 +209,21 @@ def main():
             print(f"{(body or {}).get('date') or '??????????'}  {sid}{mark}")
         return 0
 
-    pin = read_pin()
-    if pin:
-        match = next((r for r in rows if r[0] == pin), None)
-        if match is None:
-            print(
-                f"FATAL: PINNED_SIM.txt names `{pin}`, which is not an open request.\n"
-                f"Clear the pin or fix the id. Open ids: "
-                f"python 06-simulation/bin/pick_sim.py --list",
-                file=sys.stderr,
-            )
-            return 3
-        sid, body = match
-        how = "the author's pin in 06-simulation/PINNED_SIM.txt"
+    pins = read_pins()
+    open_ids = {r[0] for r in rows}
+    bad = [p for p in pins if p not in open_ids and p not in done]
+    if bad:
+        print(
+            f"FATAL: PINNED_SIM.txt names `{bad[0]}`, which is not an open request.\n"
+            f"Remove it or fix the id. Open ids: "
+            f"python 06-simulation/bin/pick_sim.py --list",
+            file=sys.stderr,
+        )
+        return 3
+    pick = next((p for p in pins if p in open_ids and p not in done), None)
+    if pick:
+        sid, body = next(r for r in rows if r[0] == pick)
+        how = "the author's pin list in 06-simulation/PINNED_SIM.txt"
     else:
         fresh = [r for r in rows if r[0] not in done]
         if not fresh:

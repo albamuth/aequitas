@@ -1,7 +1,7 @@
 # stable-band — the band of `F` and ρ inside which a network works
 
-> **Version:** 0.1
-> **Date:** 2026-09-16
+> **Version:** 0.2
+> **Date:** 2026-10-28
 
 > **Status:** ✅ **Complete, 2026-08-28.** Runs the simulation Foundations §5.5.3 had said was still to be done. Registered against **OP-4 (debit tolerance)**.
 > **Result:** [`RESULTS.md`](RESULTS.md) — read this, not the transcript.
@@ -31,9 +31,31 @@ python stable_band.py             # the full sweep, about 3 minutes
 
 ## The headline
 
-**The band exists at every floor from 1 to 14 hours a day, for every essentials basket tested. It never closes.** What binds is capacity, not affordability. **The width in ρ falls as the floor rises**, from about 3.2 at a 1.5-hour floor to 0.70 at a 14-hour floor.
+**Superseded on 2026-10-27; read the κ re-run below.** This sweep found the band open at every floor from 1 to 14 hours a day. **It priced a median person's yearly demand at 5,037 h on the upper edge and 1,380 h on the lower**, so every upper edge was 3.65 times too high.
 
 **Read [`RESULTS.md`](RESULTS.md) for the tables, the three things this does not show, and why it is an instrument rather than a ceremony.**
+
+## Cumulative re-run, 2026-10-26
+
+**Code:** [`stable_band_cumulative.py`](stable_band_cumulative.py) · **Result:** [`RESULTS_CUMULATIVE.md`](RESULTS_CUMULATIVE.md) · **Declared first:** [`CUMULATIVE_DECLARED.md`](CUMULATIVE_DECLARED.md)
+
+```bash
+python stable_band_cumulative.py --test   # 6 self-tests, each able to fail
+python stable_band_cumulative.py          # about 2 minutes
+```
+
+Defect 1 below is now measured: ρ\*_L is 0.416 at F = 10 against 1.206 one-day. The size depends on the gap between the 1,380 h/yr past and the model's own 5,037 h/yr yearly demand. Defect 2 is still open and affects the F = 2 row.
+
+## κ re-run, 2026-10-27
+
+**Code:** [`stable_band_kappa.py`](stable_band_kappa.py) · **Result:** [`RESULTS_KAPPA.md`](RESULTS_KAPPA.md) · **Declared first:** [`KAPPA_DECLARED.md`](KAPPA_DECLARED.md)
+
+```bash
+python stable_band_kappa.py --test   # 6 self-tests
+python stable_band_kappa.py
+```
+
+**Demand tied to the 1,380 h/yr anchor, at the US method.** ρ\* is **1.017 / 0.330 / 0.253** at `F` = 2 / 10 / 14, one-day and cumulative alike. **At `F` = 2 the broad essentials basket needs ρ ≥ 1.13, so the band is closed there.** It is open at 10 and 14. Folded to Foundations v0.64 §5.5.3.
 
 ## Known defects, found 2026-10-25
 
