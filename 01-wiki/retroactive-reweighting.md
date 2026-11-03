@@ -62,7 +62,7 @@ The obvious exploit: **capture the weighting model.** If one body decides what a
 
 1. **[rival-sector-audit](rival-sector-audit.md)** disciplines cost *constants*: if a constant understates a sector's debit, the rival sector is materially harmed and will fund the replication. Consumers police neither direction; rivals police both. Plus **two unaffiliated replications before a constant may re-weight history** — retroactivity is too powerful to trigger from one source.
 2. **Splits happen per-dimension, before collapsing.** A debit is a vector of physical quantities collapsed to one comparable number only on demand. Any division is computed on the vector, so the split is **weighting-independent** — two communities with different models compute the *same* split. Had divisions been computed on the collapsed scalar, the model maintainer would have controlled every allocation in history invisibly.
-3. **"Does this need an objective function?"** is a fast screen — see [physical-trace-test](physical-trace-test.md). Every mechanism requiring one hands someone this lever.
+3. **A rule that needs an objective function hands someone this lever**, which fails the decentralisation criterion; see [physical-trace-test](physical-trace-test.md).
 
 ## Depends on
 

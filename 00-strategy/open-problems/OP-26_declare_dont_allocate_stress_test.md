@@ -115,6 +115,7 @@ A region grows **100 tonnes** of a crop. The books account for **60 tonnes**. Th
 
 "The party with closure authority" is a designated maintainer. In @custos's own example that party is a **treasury**. Aequitas has no treasury: §5.4 removes taxation, and §4.7 says funding is not a budget but the recognition of work as creditable. A mechanism that needs an appointed publisher has an expiry date, which is what test 5 exists to catch.
 
+<!-- struck-ok: dated stress-test record from 2026-08; since 2026-11-02 there are three criteria and this question is the decentralization criterion applied to a rule that optimises (Foundations §2.1) -->
 ### Test 6 — Does this need an objective function? **No. Passes.**
 
 Nothing here has to be maximised, and no allocation rule is being chosen. This test is clean.

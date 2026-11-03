@@ -1,7 +1,7 @@
 # Struck phrases — wordings that must not appear in a live document
 
-> **Version:** 0.9
-> **Date:** 2026-10-28
+> **Version:** 0.11
+> **Date:** 2026-11-02
 
 > **Read by [`bin/consistency.py`](../bin/consistency.py). The table below is the machine-readable part; everything else on this page is for people.**
 
@@ -116,3 +116,16 @@ That is not a hypothetical. **It happened three times in a single day, 2026-08-2
 | `sits exactly at the edge with no pledging` | 2026-10-26 | **Author ruling 2026-10-26 (nightcheck decision 5.1).** The edge was measured on a ledger one day old; on a ledger rebuilt to birth it falls to 0.42 at `F` = 10 | **Every published ρ\* is a one-day reading; the cumulative edge sits just above break-even `3.78 ÷ F`** — Foundations §5.5.3 |
 | `false record, caught by the integrity checks` | 2026-10-26 | **Author ruling 2026-10-26 (nightcheck decision 5.2).** Totals caught 0 of 19 false passages on a shared step | **A passage is checked only by a mass record the producer does not control, at a boundary it crosses** — Foundations §3.4a, conformance row 10h |
 | `Neither has been recomputed under this rule` | 2026-10-13 | Self-council, 2026-10-10. Both were recomputed on 2026-09-05 and neither moves | **The anchor and ρ\* do not move; BEA's secondary-product convention is unaudited** — Foundations §3.4a |
+| `on about two thirds of the embodied labour` | 2026-10-29 | **Author ruling 2026-10-29 (nightcheck decisions 5.1, 5.2, 5.4).** Q6 counted what households buy and left out the care and schooling a state pays for in the peers. Counting every payer, the peers use 0.84 – 0.87 of the US hours, not 0.64 – 0.67 | **0.84 – 0.87 of the US hours, so the US uses 15 – 20% more** — Foundations §3.5, §5.5.3 |
+| `50–80% more embodied labour` | 2026-10-29 | Same ruling | As above |
+| `50–80% more human labour` | 2026-10-29 | Same ruling, the Overview wording | **15% to 20% more human labour** — Overview §1 |
+| `~⅔ the labour` | 2026-10-29 | Same ruling | As above |
+| `German, Swedish or Japanese efficiency reaches break-even` | 2026-10-29 | Same ruling. The 6.7 trillion figure was household-only; at 0.84 – 0.87 the same standard needs about 8.7 – 9.1 trillion against 6.5 | **Deployable hours are short at the peer method too** — Foundations §3.5 |
+| `Abundance comes from producing smarter, not from working more` | 2026-10-29 | Same ruling. The spread is 13 – 16% of the hours and does not close the gap | **Producing smarter narrows the gap and does not close it** — Overview §1 |
+| `the upper edge is an artefact of the American production method` | 2026-10-29 | Same ruling. At the peers' ratio the envelope sits between a 3% shortage and a 2% surplus; whether an upper edge exists there is not measured | **The upper edge depends on the production method, and by how much at the peer method is not measured** — Foundations §5.5.3 |
+| `the band needs an upper edge only while the method is wasteful` | 2026-10-29 | Same ruling | As above |
+| `nothing has to be held back at all` | 2026-10-29 | Same ruling. The 33% surplus at the German or Japanese method came from 883 h, a household-only ratio | As above |
+| `that is the adoption incentive computed rather than asserted` | 2026-10-29 | **Author ruling 2026-10-29 (nightcheck decision 5.1).** The windfall has no setting beside it. At the US method every ρ at which the gate rations gives the median joiner a negative margin | **Whether joining is a windfall depends on `F` and ρ; at the US method it is one only above break-even** — Foundations §4.4 |
+| `reconstruction is a windfall, worked in` | 2026-10-29 | Same ruling, the §4.8 wording | As above — Foundations §4.8 |
+| `fourth screening question` | 2026-11-02 | **Author ruling 2026-11-02. There are three criteria and no fourth.** *"Does this need a Paul Glover?"* is the universality criterion asked of a mechanism's maintainer: a mechanism that depends on one person has a special case | **Three criteria: universality, decentralization, fecundity. Founder dependency fails universality** — Foundations §2.1, §5.6 |
+| `does this need an objective function` | 2026-11-02 | Same ruling. Presented as a test, the question was indecipherable. What it pointed at is the decentralization criterion: a rule that needs somebody to choose what is optimised hands that somebody a lever over every derived number | **A rule that needs an objective function fails decentralization and re-opens OP-10** — Foundations §2.1, Objections OA2, Strategy §6 |

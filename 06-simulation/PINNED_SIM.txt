@@ -7,6 +7,10 @@ sr-20261023-re-run-stable-band-py-s-upper-edge-rho-on-a-
 sr-20261026-re-run-stable-band-py-with-kappa-tied-to-the
 # The band at the German and Spanish methods. PLAN-2026-10-28 decision 5.1 item 4.
 sr-20261028-re-run-stable-band-kappa-py-at-the-german-ja
+# The band at the German and Japanese method, every-payer ratios (0.836-0.873). PLAN-2026-10-29 decision 5.2.
+sr-20261029-re-run-stable-band-methods-py-the-kappa-tied
+# The pledge term on the kappa-tied ledger (US method, unaffected by Q6). PLAN-2026-10-29 decision 5.3.
+sr-20261028-run-pledge-band-py-s-pledge-term-on-the-kapp
 # Hive hours: uncomment once an apiary labour source is in 02-research/.
 # Without one the run reports Blocked. Due to the board 2026-10-31 (#9090).
 # sr-20261018-hours-of-labour-and-materials-energy-in-one-

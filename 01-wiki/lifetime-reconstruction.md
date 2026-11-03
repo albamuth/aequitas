@@ -1,6 +1,6 @@
 ---
 title: Lifetime reconstruction
-summary: When a person joins, their position is rebuilt back to their birth on both sides, credit and debit; the estimate is the default and evidence is voluntary, an undisclosed period is estimated over the undisclosed leftover and errs against the person, the declared span is set back to the earliest date the evidence allows, and for a median person joining is a windfall.
+summary: When a person joins, their position is rebuilt back to their birth on both sides, credit and debit; the estimate is the default and evidence is voluntary, an undisclosed period is estimated over the undisclosed leftover and errs against the person, the declared span is set back to the earliest date the evidence allows, and whether joining is a windfall for a median person depends on `F` and ρ.
 type: mechanism
 ids: [§4.4, §4.8]
 status: settled
@@ -71,7 +71,7 @@ edges:
 | Estimated lifetime consumption, 40 × 1,380 | **55,200** |
 | May still carry at joining, 1.2 × 146,000 − 55,200 | **120,000** |
 
-**In plain words: joining is a windfall for a median person, and that is the adoption incentive computed rather than asserted.** The people for whom a full reconstruction is costly are those whose lifetime consumption genuinely exceeded their lifetime contribution. Earlier real contributions enter the record at the dates they occurred, not the joining date.
+**In plain words: at `F` = 10 and ρ = 1.2 joining gives a median person 120,000 hours of room. Whether it does so depends on `F` and ρ.** The break-even is `ρ·F` = 1,380 ÷ 365 = 3.78 hours a day. At the US method the highest ρ at which the gate still rations is 1.017 / 0.330 / 0.253 at `F` = 2 / 10 / 14, below break-even at every floor. There the median joiner at forty arrives over the gate by 25,504 / 7,020 / 3,487 hours. Other production methods are not measured (Foundations §4.4). The people for whom a full reconstruction is costly are those whose lifetime consumption genuinely exceeded their lifetime contribution. Earlier real contributions enter the record at the dates they occurred, not the joining date.
 
 ## Two rules this looks like it breaks, and does not
 

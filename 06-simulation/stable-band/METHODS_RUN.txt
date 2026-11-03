@@ -1,0 +1,13 @@
+Run 2026-10-29, python 06-simulation/stable-band/stable_band_methods.py (stdout summary; full per-F lines are in RESULTS_METHODS.md section 3).
+N=60,000 seed=7 total wants 66,407, age seeds 11-15, M=100
+
+US (control)      kappa 3.7808 R 56,446 | F=2  one-day 1.017 cum 1.017 | F=10 0.330 / 0.330 | F=14 0.253 / 0.253
+German/Japanese   kappa 2.4192 R 88,196 | F=2,10,14 one-day >=4.0 censored, cum >=4.0 censored (admitted at rho 4.0: 66,404 / 66,407 / 66,407)
+Spanish           kappa 2.0795 R 102,629| F=2,10,14 one-day >=4.0 censored, cum >=4.0 censored (admitted at rho 4.0: 66,407 each)
+
+rho_sat (>=99.9% of wants admitted), one-day / cumulative mean:
+German   F=2 2.679 / 2.535   F=10 0.655 / 0.609   F=14 0.488 / 0.453
+Spanish  F=2 2.303 / 2.179   F=10 0.563 / 0.524   F=14 0.420 / 0.389
+US       F=2 >=4.0 / 3.962   F=10 1.023 / 0.952   F=14 0.763 / 0.708
+
+Self-tests (--test): 6 passed.

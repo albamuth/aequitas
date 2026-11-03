@@ -66,9 +66,9 @@ edges:
 | Production method | Deployable ÷ needed | Closes? |
 |---|---|---|
 | **United States** | **0.43 – 0.87** | **No, at no corner of the band** |
-| Peer countries at about ⅔ of US labour | 0.66 – 1.34 | **Yes, in about a third of cases** |
+| Peer countries at 0.84 – 0.87 of US labour, every payer counted | 0.50 – 1.04 | **At one corner of the 27 at most** |
 
-**So the claim is not that labour is never the constraint. It is that the constraint is production efficiency**, and at the wasteful method the hours are short. The same lifestyle costs **1,380** hours by the American method, **883** by the German or Japanese, and **759** by the Spanish. Energy, not labour, is the tightest physical constraint on an autarkic US: **0.19** of what a median standard needs at the current build.
+**So the claim is not that labour is never the constraint. Deployable hours are short at the American method and, at all but one corner of the band, at the peer method too.** The peers use 13% to 16% fewer hours, which narrows the gap and does not close it. The same lifestyle costs **1,380** hours by the American method and about **1,150 – 1,200** by the German or Japanese (scaled, not separately measured). Energy, not labour, is the tightest physical constraint on an autarkic US: **0.19** of what a median standard needs at the current build.
 
 ## Depends on
 

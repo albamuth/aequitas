@@ -455,7 +455,7 @@ The core documents write the gate as `D ≤ ρ·C`. That form has no place in it
 | **Fecundity** | **Unchanged.** A pledge is a record and needs no maintainer |
 | **Who games this?** | **Two attacks, neither answered.** §7.1 and §7.2. **The dynasty attack is withdrawn** — §7.3 |
 | **Does this need a Paul Glover?** | **No** |
-| **Does this need an objective function?** | **Not as proposed, and it would if distribution were discretionary.** §3.1 is where that is decided |
+| **Does this need an objective function?** | **Not as proposed, and it would if distribution were discretionary.** §3.1 is where that is decided | <!-- struck-ok: dated stress-test record; since 2026-11-02 this row is read as the decentralization criterion, not a test of its own (Foundations §2.1) -->
 
 ### The axiom question, withdrawn
 

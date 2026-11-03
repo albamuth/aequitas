@@ -20,8 +20,8 @@ edges:
 ---
 # The field record — what actually kills these systems
 
-> **Version:** 0.1
-> **Date:** 2026-10-14
+> **Version:** 0.2
+> **Date:** 2026-11-02
 
 > **A century of people building alternative economies and finding out what breaks.** Ithaca HOURS, Burlington Bread, time banking, Wörgl, WIR, Sardex, LETS. It is the closest thing the project has to an experimental literature, and **it does not show one failure repeated. It shows three.**
 
@@ -39,7 +39,7 @@ edges:
 |---|---|---|---|
 | **1 — Valuation** | Flat-hour crediting cannot recruit skill or fill unpleasant jobs | Warren's Cincinnati Time Store, 1827; time banking, 45 years on, still short of skilled members | 🟠 **Partly answered.** Skill is answered by training credited when it happens ([education-as-credited-work](education-as-credited-work.md)). Hazard and tedium are reachable by pledges; whether dull work gets staffed is unmeasured ([op-16](op-16.md)) |
 | **2 — Circulation** | Scrip pools at sinks and stops moving | Ithaca HOURS businesses were *"drowning in Hours"*; Burlington Bread piled up at cafés | ✅ **Immune by construction.** There is no medium of exchange. Credit never moves (A3), so nobody ever receives credit from anyone and nobody can be stuck holding it ([non-fungibility](non-fungibility.md)) |
-| **3 — Institutional** | Founder dependency; state suppression | Ithaca died when Paul Glover moved away; Wörgl's scrip was shut down by Austria's central bank *for working*, under the legal-tender monopoly | ✅ **Addressed.** No issuer, no notes, nothing to counterfeit, so the legal weapon does not fit an accounting system. Founder dependency is a standing screening question: every mechanism must pay its own maintainer from inside the system ([protocol-governance](protocol-governance.md)) |
+| **3 — Institutional** | Founder dependency; state suppression | Ithaca died when Paul Glover moved away; Wörgl's scrip was shut down by Austria's central bank *for working*, under the legal-tender monopoly | ✅ **Addressed.** No issuer, no notes, nothing to counterfeit, so the legal weapon does not fit an accounting system. Founder dependency fails the universality criterion: a mechanism that depends on one person has a special case, so every mechanism must pay its own maintainer from inside the system ([protocol-governance](protocol-governance.md)) |
 
 **This is the substantive reason Aequitas must never be called a currency.** The instrument that killed Wörgl was the legal-tender monopoly, and it reaches anything that is one.
 
@@ -51,7 +51,7 @@ edges:
 
 ## What this record is for
 
-**It is the test any new mechanism is run against before it is accepted**: *does this need a Paul Glover?* A mechanism that depends on an enthusiast has an expiry date. Auditing as credited work passes; cost-constant auditing is the case that does not clearly pass, which is why [op-24](op-24.md) is stated as an unsolved design problem rather than a mechanism (Foundations §2.1).
+**It is why the universality criterion is asked of every new mechanism's maintainer before the mechanism is accepted**: *does this need a Paul Glover?* A mechanism that depends on an enthusiast has a special case and an expiry date. There is no fourth criterion. Auditing as credited work passes; cost-constant auditing is the case that does not clearly pass, which is why [op-24](op-24.md) is stated as an unsolved design problem rather than a mechanism (Foundations §2.1).
 
 ## Depends on
 
@@ -63,4 +63,4 @@ edges:
 
 ---
 *Status: settled (the three classes)*
-*Source: `00-strategy/Aequitas_Objections.md` OA0; `00-strategy/Aequitas_Foundations.md` §2.1 (the fourth screening question), §5.6; `02-research/History_local-currency-experiments.md`*
+*Source: `00-strategy/Aequitas_Objections.md` OA0; `00-strategy/Aequitas_Foundations.md` §2.1 (the universality criterion asked of a maintainer), §5.6; `02-research/History_local-currency-experiments.md`*

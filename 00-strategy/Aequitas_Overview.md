@@ -1,8 +1,8 @@
 <!-- tag: ovw-aequitas-overview -->
 # Aequitas — Overview
 
-> **Version:** 0.34
-> **Date:** 2026-10-28
+> **Version:** 0.35
+> **Date:** 2026-10-29
 > **Audience:** everyone. No economics background assumed, none required.
 > **Rigorous version:** `00-strategy/Aequitas_Foundations.md`. This document is the plain-language companion; where they differ, the Foundations govern.
 
@@ -266,7 +266,7 @@ So the most anyone can out-say anyone else is the ratio between a full day and t
 
 **In plain words: at the US method, baselines of 10 and 14 hours carry either basket. A 2-hour baseline carries the narrow basket and not the broad one,** because 742 h is less than 826 h.
 
-**The same material life costs about two thirds as much by the German or Japanese method, and less again by the Spanish.** Under those methods the economy produces more than everyone wants, so nothing has to be rationed. Whether a 2-hour baseline then carries the broad basket has not been measured yet.
+**The same material life takes 13% to 16% less labour by the German or Japanese method.** That counts the work behind everything people consume, whoever pays for it. At that saving the economy would deliver roughly what everyone wants, between 3% short and 2% over, so little or nothing would have to be rationed. This is the US figures rescaled and has not been run. Whether a 2-hour baseline then carries the broad basket has not been measured.
 
 **One more limit.** The run used tolerance figures **with no pledging in them**, and backing can double what a community may carry, which halves the usable top end.
 
@@ -293,7 +293,7 @@ People can put their own earned hours behind someone else, which is a pledge (§
 
 ### Is there enough human work to go round?
 
-**The honest answer is that it depends entirely on how wastefully things are made, and this project got it wrong once before getting it right.**
+**The honest answer is that it depends on how wastefully things are made, and that the hours are short even at the efficient methods measured.**
 
 **First, the measured cost of an ordinary life.** Add up everything a typical American consumes in a year: food, housing, healthcare, everything they buy, and the share of things made abroad. It comes to about **1,380 hours of other people's work.**
 
@@ -304,21 +304,22 @@ People can put their own earned hours behind someone else, which is a pledge (§
 | Production method | Deployable hours ÷ hours needed | Does it close? |
 |---|---|---|
 | **United States** | **0.43 – 0.87** | **No, at no corner of the range** |
-| Peer countries, at about two thirds of US labour | 0.66 – 1.34 | **Yes, in about a third of cases** |
+| Peer countries, using 84% to 87% of US labour | 0.50 – 1.04 | **At one corner of the range at most** |
 
-**In plain words: at the American way of producing things the hours do not close, and the best case assumes full-time work from 85% of every working-age adult.** At the German, Swedish or Japanese way they do. The same result shows up at world scale: a US-efficiency median standard for 8.1 billion people needs about **10.4 trillion labour-hours a year against about 6.5 trillion available**, which is a shortfall no workweek anyone would accept can cover.
+**In plain words: at the American way of producing things the hours do not close, and the best case assumes full-time work from 85% of every working-age adult.** At the German, Swedish or Japanese way they close at one corner of the range at most. The same pattern shows up at world scale: a US-efficiency median standard for 8.1 billion people needs about **10.4 trillion labour-hours a year against about 6.5 trillion available**, which is a shortfall no workweek anyone would accept can cover. At the peers' 84% to 87% it needs about 8.7 to 9.1 trillion, which is smaller and still short. *(Rescaled from the US figures, not re-run.)*
 
-**So the claim is not that labour is never the constraint.** It is that **the constraint is production efficiency**, and at the wasteful method the hours are genuinely short.
+**So the claim is not that labour is never the constraint.** Deployable hours are short at the American method and nearly as short at the peers' method. Efficient production narrows the gap. It does not close it.
 
-**What the same measurement shows about method.** The United States uses 50–80% more human labour and 2.5–4 times the carbon per person than Germany, Sweden, France, Japan or Spain, countries that deliver a comparable material life and longer lifespans for far less. Sprawl, fossil fuels and long tangled supply chains are the difference.
+**What the same measurement shows about method.** Counting the work behind everything people consume, whoever pays for it, the United States uses 15% to 20% more human labour per person than Germany, Sweden, France or Japan. Those countries deliver a comparable material life and longer lifespans. Spain and Poland are left out because their data is missing most shop work. The carbon gap is larger, but it has been counted for households only and has not been recomputed. Sprawl, fossil fuels and long tangled supply chains are the likely reasons.
 
 | The method supplying you | Hours of other people's work a year |
 |---|--:|
 | American | **1,380** |
-| German or Japanese | **883** |
-| Spanish | **759** |
+| German or Japanese | **about 1,150 – 1,200** |
 
-**In plain words: two people can live the same material life and carry very different debit, because one of them is supplied by a wasteful chain.** Under Aequitas the efficient way is automatically the cheaper way, because the pollution, the extra hauling and the bloated overhead all show up as real costs in the books. **The accounting pulls toward the efficient method with nobody enforcing anything and nothing forbidden.** Abundance comes from producing smarter, not from working more.
+*(The German and Japanese row is the American figure scaled by the peers' share of US labour. It is not a separate measurement.)*
+
+**In plain words: two people can live the same material life and carry very different debit, because one of them is supplied by a wasteful chain.** Under Aequitas the efficient way is automatically the cheaper way, because the pollution, the extra hauling and the bloated overhead all show up as real costs in the books. **The accounting pulls toward the efficient method with nobody enforcing anything and nothing forbidden.** The pull is worth 13% to 16% of the hours. Producing smarter helps, and it does not replace working.
 
 ---
 
@@ -898,7 +899,7 @@ It should. A century of alternative economies died, and pretending otherwise wou
 
 A proposal that admits nothing is a proposal nobody should trust.
 
-**This project has withdrawn published claims after outside critics showed they did not hold.** Three of them are named in the sections they affected: the rival-producer answer to cost drift (§7), the labour-abundance comparison (§1), and a rule sending a power station's emissions to the household (§4). **In every case the error ran in this project's own favour, and in every case somebody outside found it.** That is the record, and it is the reason to take the list below seriously rather than as decoration.
+**This project has withdrawn published claims after outside critics showed they did not hold.** Four of them are named in the sections they affected: the rival-producer answer to cost drift (§7), the labour-abundance comparison (§1), a rule sending a power station's emissions to the household (§4), and the size of the labour gap between the United States and its peers (§1). **In every case the error ran in this project's own favour. Outsiders found three of the four, and the project's own check found the fourth.** That is the record, and it is the reason to take the list below seriously rather than as decoration.
 
 **The live problems, in order of how much they matter:**
 

@@ -1,0 +1,85 @@
+N=60,000 seed=7 total wants 66,407 real units, age seeds (11, 12, 13, 14, 15), M=100
+
+===== US (control): ratio 1.000, h 1380.0 h/yr, kappa 3.7808, capacity 56,446 (0.850 x wants) =====
+narrow basket 516-655 h, broad 826-965 h (assumption A: US baskets x 1.000)
+
+F=2  break-even 1.8904  admitted at rho=4.0: 66,319 (capacity 56,446)
+  upper edge one-day: 1.017   cumulative: mean 1.017 sd 0.0000 flags ['']
+  rho_sat one-day: 4.000 (>=)   cumulative: mean 3.962 sd 0.0144 flags ['']
+  lower edge narrow 0.707-0.897  broad 1.132-1.322
+  band narrow: open | broad: CLOSED
+
+F=10  break-even 0.3781  admitted at rho=4.0: 66,407 (capacity 56,446)
+  upper edge one-day: 0.330   cumulative: mean 0.330 sd 0.0000 flags ['']
+  rho_sat one-day: 1.023   cumulative: mean 0.952 sd 0.0041 flags ['']
+  lower edge narrow 0.141-0.179  broad 0.226-0.264
+  band narrow: open | broad: open
+
+F=14  break-even 0.2701  admitted at rho=4.0: 66,407 (capacity 56,446)
+  upper edge one-day: 0.253   cumulative: mean 0.253 sd 0.0000 flags ['']
+  rho_sat one-day: 0.763   cumulative: mean 0.708 sd 0.0019 flags ['']
+  lower edge narrow 0.101-0.128  broad 0.162-0.189
+  band narrow: open | broad: open
+
+===== Germany, Japan: ratio 0.836, h 1153.7 h/yr, kappa 3.1608, capacity 67,519 (1.017 x wants) =====
+narrow basket 431-548 h, broad 691-807 h (assumption A: US baskets x 0.836)
+
+F=2  break-even 1.5804  admitted at rho=4.0: 66,381 (capacity 67,519)
+  upper edge one-day: 4.000 (>=)   cumulative: mean 4.000 sd 0.0000 flags ['censored']
+  rho_sat one-day: 3.501   cumulative: mean 3.312 sd 0.0120 flags ['']
+  lower edge narrow 0.591-0.750  broad 0.946-1.105
+  band narrow: open (no upper edge) | broad: open (no upper edge)
+
+F=10  break-even 0.3161  admitted at rho=4.0: 66,407 (capacity 67,519)
+  upper edge one-day: 4.000 (>=)   cumulative: mean 4.000 sd 0.0000 flags ['censored']
+  rho_sat one-day: 0.855   cumulative: mean 0.796 sd 0.0034 flags ['']
+  lower edge narrow 0.118-0.150  broad 0.189-0.221
+  band narrow: open (no upper edge) | broad: open (no upper edge)
+
+F=14  break-even 0.2258  admitted at rho=4.0: 66,407 (capacity 67,519)
+  upper edge one-day: 4.000 (>=)   cumulative: mean 4.000 sd 0.0000 flags ['censored']
+  rho_sat one-day: 0.638   cumulative: mean 0.592 sd 0.0015 flags ['']
+  lower edge narrow 0.084-0.107  broad 0.135-0.158
+  band narrow: open (no upper edge) | broad: open (no upper edge)
+
+===== France: ratio 0.858, h 1184.0 h/yr, kappa 3.2439, capacity 65,788 (0.991 x wants) =====
+narrow basket 443-562 h, broad 709-828 h (assumption A: US baskets x 0.858)
+
+F=2  break-even 1.6220  admitted at rho=4.0: 66,375 (capacity 65,788)
+  upper edge one-day: 2.365   cumulative: mean 1.653 sd 0.0007 flags ['']
+  rho_sat one-day: 3.593   cumulative: mean 3.399 sd 0.0123 flags ['']
+  lower edge narrow 0.606-0.770  broad 0.971-1.134
+  band narrow: open | broad: open
+
+F=10  break-even 0.3244  admitted at rho=4.0: 66,407 (capacity 65,788)
+  upper edge one-day: 0.612   cumulative: mean 0.342 sd 0.0005 flags ['']
+  rho_sat one-day: 0.878   cumulative: mean 0.817 sd 0.0034 flags ['']
+  lower edge narrow 0.121-0.154  broad 0.194-0.227
+  band narrow: open | broad: open
+
+F=14  break-even 0.2317  admitted at rho=4.0: 66,407 (capacity 65,788)
+  upper edge one-day: 0.459   cumulative: mean 0.246 sd 0.0005 flags ['']
+  rho_sat one-day: 0.655   cumulative: mean 0.608 sd 0.0016 flags ['']
+  lower edge narrow 0.087-0.110  broad 0.139-0.162
+  band narrow: open | broad: open
+
+===== Sweden: ratio 0.873, h 1204.7 h/yr, kappa 3.3007, capacity 64,658 (0.974 x wants) =====
+narrow basket 450-572 h, broad 721-842 h (assumption A: US baskets x 0.873)
+
+F=2  break-even 1.6503  admitted at rho=4.0: 66,370 (capacity 64,658)
+  upper edge one-day: 1.823   cumulative: mean 1.656 sd 0.0000 flags ['']
+  rho_sat one-day: 3.655   cumulative: mean 3.459 sd 0.0126 flags ['']
+  lower edge narrow 0.617-0.783  broad 0.988-1.154
+  band narrow: open | broad: open
+
+F=10  break-even 0.3301  admitted at rho=4.0: 66,407 (capacity 64,658)
+  upper edge one-day: 0.496   cumulative: mean 0.337 sd 0.0001 flags ['']
+  rho_sat one-day: 0.893   cumulative: mean 0.832 sd 0.0035 flags ['']
+  lower edge narrow 0.123-0.157  broad 0.198-0.231
+  band narrow: open | broad: open
+
+F=14  break-even 0.2358  admitted at rho=4.0: 66,407 (capacity 64,658)
+  upper edge one-day: 0.374   cumulative: mean 0.242 sd 0.0001 flags ['']
+  rho_sat one-day: 0.666   cumulative: mean 0.618 sd 0.0016 flags ['']
+  lower edge narrow 0.088-0.112  broad 0.141-0.165
+  band narrow: open | broad: open

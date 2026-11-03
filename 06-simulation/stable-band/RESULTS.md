@@ -76,7 +76,7 @@
 
 > ### ⚠️ **The anchor is the United States, and that is not a neutral choice.**
 >
-> **1,380 h/yr is what a median *American* lifestyle commands.** [`../median-lifestyle/Q6.md`](../median-lifestyle/Q6.md) measured the US as the labour- and carbon-inefficient outlier: **Germany, Japan and Spain reach a comparable-or-better material standard, and longer lives, on about two thirds of the embodied labour and a quarter to a half of the CO₂.**
+> **1,380 h/yr is what a median *American* lifestyle commands.** [`../median-lifestyle/Q6.md`](../median-lifestyle/Q6.md) measured the US as the labour- and carbon-inefficient outlier: **Germany, Japan and Spain reach a comparable-or-better material standard, and longer lives, on about two thirds of the embodied labour and a quarter to a half of the CO₂.** <!-- struck-ok: record of the 2026-09-16 run; its household-only ratio is withdrawn, see Foundations v0.65 §5.5.3 -->
 >
 > **So every "× a median lifestyle" figure above is × a median *American* lifestyle.**
 
@@ -165,6 +165,6 @@
 
 > **A stable band exists at every floor between 1 and 14 hours a day. Its width in ρ falls as the floor rises, from about 3.2 at a 1.5-hour floor to 0.70 at a 14-hour floor. The binding edge is capacity, not affordability: the tightest floor measured still carries an essentials basket costing almost twice a median American lifestyle, and essentials are a part of that lifestyle rather than double it.**
 
-> **And the upper edge is an artefact of the American production method. Holding the physical envelope fixed and switching to the German, Japanese or Spanish method, the same energy and materials deliver more than everyone wants, the gate never binds, and nobody is held back. The band needs an upper edge only while the method is wasteful.**
+> **And the upper edge is an artefact of the American production method. Holding the physical envelope fixed and switching to the German, Japanese or Spanish method, the same energy and materials deliver more than everyone wants, the gate never binds, and nobody is held back. The band needs an upper edge only while the method is wasteful.** <!-- struck-ok: record of the 2026-09-16 run at the household-only ratios, withdrawn; see Foundations v0.65 §5.5.3 -->
 
 **What must go with it: the absolute ρ values depend on the weighting model and on an illustrative capacity figure. The shape is the result; the numbers are dated readings.**

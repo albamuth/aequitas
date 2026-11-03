@@ -7,6 +7,8 @@
 > **Result:** [`RESULTS.md`](RESULTS.md) — read this, not the transcript.
 > **Transcript:** [`RUN.txt`](RUN.txt) · **Code:** [`stable_band.py`](stable_band.py)
 
+> **2026-10-29 addition:** [`stable_band_methods.py`](stable_band_methods.py) runs the κ-tied band at the German/Japanese and Spanish methods. Result: [`RESULTS_METHODS.md`](RESULTS_METHODS.md). Run: `python stable_band_methods.py [--test]`.
+
 ## What it answers
 
 **Foundations §5.5.3 gives the floor a bound at each end and nothing in between**, and says so in its own text:

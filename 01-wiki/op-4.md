@@ -56,7 +56,7 @@ edges:
 2. **Pledging halves the upper edge.** Committed pledges can double a network's gate, so the publishable upper edge is `ρ*(F) ÷ (1 + p)`: at `F` = 10 it falls from 1.20 with no pledging to 0.60 at the one-for-one ceiling. And the band closes at `F` = 1 with essentials at 70% of a median lifestyle, the first swept cell where it ever has.
 3. **The childhood dial.** Whether a network credits a child's learning time moves the reachable ceiling from 2.400× to 2.085× at `F` = 10. It belongs here and with A8's list of always-creditable activities.
 4. **ρ\*'s absolute values inherit the weighting model and an illustrative capacity figure.** The shape is the result; the numbers are dated readings.
-5. **The other production methods are not measured.** Under the German, Japanese or Spanish method the envelope covers all wants. Whether the band opens at 2 h/day there is inferred (a lower edge of 0.72–0.85, by scaling the basket by 0.64), and a run is requested. On a ledger rebuilt to birth the edges equal the one-day edges when past and future demand are both 1,380 h/yr, and that equality is built in. `06-simulation/stable-band/RESULTS_KAPPA.md`.
+5. **The other production methods are not measured.** At the German or Japanese ratio, counting every payer (0.836 – 0.873 of US labour), the envelope delivers 97% to 102% of wants. Whether the band opens at 2 h/day there is not measured: scaling the baskets gives a lower edge of 0.95 – 1.15 on the broad basket, and the upper edge has not been run. A run on those inputs is requested. On a ledger rebuilt to birth the edges equal the one-day edges when past and future demand are both 1,380 h/yr, and that equality is built in. `06-simulation/stable-band/RESULTS_KAPPA.md`.
 
 ## An example, with the numbers
 

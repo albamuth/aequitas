@@ -1375,7 +1375,7 @@
    "id": "lifetime-reconstruction",
    "type": "mechanism",
    "title": "Lifetime reconstruction",
-   "summary": "When a person joins, their position is rebuilt back to their birth on both sides, credit and debit; the estimate is the default and evidence is voluntary, an undisclosed period is estimated over the undisclosed leftover and errs against the person, the declared span is set back to the earliest date the evidence allows, and for a median person joining is a windfall.",
+   "summary": "When a person joins, their position is rebuilt back to their birth on both sides, credit and debit; the estimate is the default and evidence is voluntary, an undisclosed period is estimated over the undisclosed leftover and errs against the person, the declared span is set back to the earliest date the evidence allows, and whether joining is a windfall for a median person depends on `F` and ρ.",
    "status": "settled",
    "ids": [
     "§4.4",

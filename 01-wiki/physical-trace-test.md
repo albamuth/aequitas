@@ -74,13 +74,13 @@ The project's recurring difficulty has never been measuring totals. A refinery c
 
 Applying the test leaves the declared conventions in the table above, and they share one shape: **each is a human-attribution problem with a measurable basis** (hours, holding time, proof of life). None is a physics problem. That is a narrower and more defensible place for a theory of material cost to keep its conventions than "division in general."
 
-## A companion question
+## A companion lesson
 
-Applied alongside the other screening questions, and earned the same way:
+Earned the same way, and an application of the decentralisation criterion rather than a test of its own:
 
-> **Does this need an objective function?**
+> **A rule that needs somebody to choose what is being optimised hands that somebody a lever.**
 
-Both allocation rules rejected for [co-product-allocation](co-product-allocation.md) — Aumann–Shapley marginal allocation and Kantorovich shadow prices — required one, and **whoever sets an objective function sets every number that derives from it.** It is a fast proxy for *"does this create a capture surface?"*, and it is why the adopted rule leaves [protocol-governance](protocol-governance.md)'s largest hole no wider than it found it.
+Both allocation rules rejected for [co-product-allocation](co-product-allocation.md), Aumann–Shapley marginal allocation and Kantorovich shadow prices, needed an objective function, and **whoever sets an objective function sets every number that derives from it.** That is a capture surface, and it is why the adopted rule leaves [protocol-governance](protocol-governance.md)'s largest hole no wider than it found it.
 
 ## Depends on
 

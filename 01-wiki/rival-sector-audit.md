@@ -71,7 +71,7 @@ Three supporting rules:
 ## Why it is the right shape for Aequitas
 
 - **Decentralized.** No authority, no standards body, no appointed reviewer. It is an incentive, not an enforcement rule.
-- **Self-funding.** The replication is credited work paid for by a party with a real stake — it passes *"does this need a Paul Glover?"* without help. See [distributed-auditing](distributed-auditing.md).
+- **Self-funding.** The replication is credited work paid for by a party with a real stake — it passes the universality criterion's maintainer question (*does this need a Paul Glover?*) without help. See [distributed-auditing](distributed-auditing.md).
 - **Already implied by an axiom.** [cost-not-price](cost-not-price.md) removes profit *in exchange* while explicitly preserving **competition on quality, artfulness and efficiency** (Foundations §5.1). Rival-sector audit is that competition applied to the cost model itself.
 
 ## Why the co-op form is not the fix

@@ -9,8 +9,8 @@
 >
 > **Regenerate with:** `python bin/distill.py`
 
-> **Source:** [`Aequitas_Foundations.md`](Aequitas_Foundations.md) · **version 0.64**
-> **Size:** 148,766 bytes, from 277,741 — **54% of the source**
+> **Source:** [`Aequitas_Foundations.md`](Aequitas_Foundations.md) · **version 0.66**
+> **Size:** 151,104 bytes, from 280,895 — **54% of the source**
 
 **What was kept:** every heading, every rule, every table, and the stated result of every worked
 example. **What was dropped:** the explanation prose between them.
@@ -585,15 +585,15 @@ example. **What was dropped:** the explanation prose between them.
 > | Production efficiency | Deployable ÷ needed | Reaches 1.0? |
 > |---|---|---|
 > | **US** | **0.43 – 0.87** | **No — at no corner of the band** |
-> | Peer countries at ~65% of US labour (Q6) | 0.66 – 1.34 | **Yes, in a third of the swept cases** |
+> | Peer countries at 0.84 – 0.87 of US labour, every payer counted (Q6) | 0.50 – 1.04 | **At one corner of the 27 at most, and at none for the least efficient peer** |
 >
-> **The best US case is 0.87**, and it assumes full-time hours for **85% of every working-age adult**. **At US production efficiency the hours do not close.**
+> **The best US case is 0.87**, and it assumes full-time hours for **85% of every working-age adult**. **At US production efficiency the hours do not close.** The peer row is the US row divided by the peers' share of US labour, so it reaches 1.0 only where the US row would reach 0.84 to 0.87.
 >
-> > **So the claim is not "labour is never the constraint." It is that the constraint is production efficiency, and at the wasteful method the hours are short.**
+> > **So the claim is not "labour is never the constraint." Deployable labour binds at the US method and, at all but one corner of the swept band, at the peer method too. The peers need 13 – 16% fewer hours, which narrows the gap and does not close it.**
 >
-> **This agrees with `median-lifestyle/Q6.md`, which had already found it and was not read against Q1**: a US-efficiency median standard for 8.1 billion people needs **~10.4 trillion labour-hours a year against ~6.5 trillion available** — *"impossible without a ~50–58 h workweek"* — while German, Swedish or Japanese efficiency reaches **break-even**. **Two of this project's own documents disagreed, and the flattering one was the one being quoted.**
+> **The world-scale form agrees.** A US-method median standard for 8.1 billion people needs **~10.4 trillion labour-hours a year against ~6.5 trillion available**, a ratio of 0.63. At 0.84 – 0.87 of the US hours the same standard needs about 8.7 – 9.1 trillion, a ratio of 0.72 – 0.75. *(Rescaled here from `median-lifestyle/Q6.md`, not re-run.)*
 >
-> **The positive claim survives, and it is the same one A4 and A5 already make**: the inefficient, fossil-heavy, long-chain method is **dearer in the ledger**, so the accounting rewards the efficiency the leaders already demonstrate. *"We cannot afford to make, house and heal everyone"* is still a statement about the **method**, not about human hours as such — but it is no longer true that hours are simply abundant.
+> **The positive claim survives at its measured size, and it is the one A4 and A5 already make**: the inefficient, fossil-heavy, long-chain method is **dearer in the ledger**, so the accounting rewards the efficiency the leaders already demonstrate. *"We cannot afford to make, house and heal everyone"* is a statement about the **method and about human hours together**, and it is not true that hours are simply abundant.
 >
 > *(Found by @alfred-pennyworth, c23625 on 1f916.ai post #2466, conceded in public at c25749. The general form is @amber's rule, c24446: **a check whose passing condition is set by the checker is not an instrument**, and it fails toward flattery.)*
 > **That one word covers two faults, and they do not have the same repair.**
@@ -609,7 +609,7 @@ example. **What was dropped:** the explanation prose between them.
 >
 > *(The split is @amber's, c49097, 2026-09-09, refining their own earlier rule above.)*
 >
-> **The measured anchor (2026-08).** A bottom-up estimate puts the **labour a median US lifestyle commands at ≈ 1,380 h/yr** (`06-simulation/median-lifestyle/MEDIAN_LIFESTYLE_RESULT.md`; measured from BLS employment-requirements × the actual PCE mix, EXIOBASE import labour, §4.5 durables, and own-pollution remediation — *not* a blanket ratio). **Do not set that figure against the 3,650 h/yr of self-care credit and call the difference slack.** That is the circular comparison struck above. **The figure earns its place as the denominator for the deployable-hours test, and for the efficiency spread below. And the same-standard efficiency spread is large:** cross-country accounting (EXIOBASE, `06-simulation/median-lifestyle/Q6.md`) finds the US the labour- *and* carbon-inefficient outlier — commanding **50–80% more embodied labour and 2.5–4× the CO₂ per capita** than Germany, Sweden, France, Japan, or Spain, which deliver a comparable-or-better material standard (and longer lives) at ~⅔ the labour. **This is the positive form of A4 (no externalities) and A5 (cost, not price):** the inefficient, fossil-heavy, long-chain method is simply *dearer in the ledger*, so the accounting rewards the efficiency the leaders already demonstrate — no mandate required. What looks like "we cannot afford a decent standard for all" is, quantitatively, an artefact of the most wasteful production method, not a limit of human hours.
+> **The measured anchor (2026-08).** A bottom-up estimate puts the **labour a median US lifestyle commands at ≈ 1,380 h/yr** (`06-simulation/median-lifestyle/MEDIAN_LIFESTYLE_RESULT.md`; measured from BLS employment-requirements × the actual PCE mix, EXIOBASE import labour, §4.5 durables, and own-pollution remediation — *not* a blanket ratio). **Do not set that figure against the 3,650 h/yr of self-care credit and call the difference slack.** That is the circular comparison struck above. **The figure earns its place as the denominator for the deployable-hours test, and for the efficiency spread below. And the same-standard efficiency spread is real and modest:** cross-country accounting (EXIOBASE, `06-simulation/median-lifestyle/Q6.md` and `q6_payers.py`) counts the labour behind every payer's consumption, meaning households, non-profits and government. It finds the US the labour-inefficient outlier among Germany, Sweden, France and Japan, which deliver a comparable-or-better material standard (and longer lives) on **0.84 – 0.87 of the US hours**, so the US uses 15 – 20% more. Germany and Japan are at 0.836, France at 0.858 and Sweden at 0.873. Spain and Poland are left out, because their input-output data is missing most shop and wholesale work. The CO₂ comparison (the US at 2.5 – 4× the peers per capita) counts households only and has not been recomputed. **This is the positive form of A4 (no externalities) and A5 (cost, not price):** the inefficient, fossil-heavy, long-chain method is simply *dearer in the ledger*, so the accounting rewards the efficiency the leaders already demonstrate — no mandate required. **It is a 13 – 16% pull on the hours. It narrows the hours gap above and does not close it.**
 > **What the 1,380 h/yr figure is, and what it is not.** It is **today's median US consumption**: the hours of other people's work that a median American adult's yearly consumption takes, whoever ends up carrying them. **It is one reading, in the same way `F` = 10 h/day is one reading.** It is not a fact about any one person's ledger.
 >
 > **How much of it lands on a ledger is each network's rule.** Which treatments a patient carries, for example, is the network's choice (§2.6). Healthcare is **218** of the 1,380 hours. A network that puts every treatment on the patient reads **1,380**. A network that covers all care reads 1,380 − 218 = **1,162** (`06-simulation/median-lifestyle/HEALTH_SHARE.md`).
@@ -868,7 +868,14 @@ example. **What was dropped:** the explanation prose between them.
 > **The reconstruction runs on both sides. The debit and the credit are both rebuilt.**
 ##### An example, with the numbers
 **A person joining at forty arrives with roughly 146,000 hours of estimated credit against roughly 55,200 hours of estimated consumption.**
-> **Joining is a windfall for a median person, and that is the adoption incentive computed rather than asserted** (§4.8). **The people for whom a full reconstruction is costly are those whose lifetime consumption genuinely exceeded their lifetime contribution.**
+> **Whether joining is a windfall for a median person depends on `F` and ρ.** A joiner at forty arrives with `C` = 40 × 365 × `F` and `D` = 55,200 h, so the room they start with under the gate is `ρ·C − D`. It is positive when `ρ·F` exceeds the **break-even**, the value at which a year of floor credit, `ρ·F·365`, balances a year of median consumption, 1,380 h: 1,380 ÷ 365 = 3.78 hours a day (worked again under condition 3 below). **At `F` = 10 and ρ = 1.2 it is 1.2 × 146,000 − 55,200 = +120,000 h.** The people for whom a full reconstruction is costly are those whose lifetime consumption genuinely exceeded their lifetime contribution.
+**At the US method the measured rationing band lies below break-even.** **Terms used here.** **ρ\*** is the highest ρ at which the gate still rations at the US method, so the **rationing band** is every ρ at or below it (§5.5.3 measures it). The **margin** is `ρ·C − D` for the joiner above, with `P` = 0.
+| `F` | ρ\* | Break-even, 3.78 ÷ `F` | Margin at ρ\* | One declared year at ρ\*, `ρ·F·365 − 1,380` |
+|--:|--:|--:|--:|--:|
+| 2 h/day | 1.017 | 1.890 | 1.017 × 29,200 − 55,200 = **−25,504 h** | 742 − 1,380 = **−638 h** |
+| 10 h/day | 0.330 | 0.378 | 0.330 × 146,000 − 55,200 = **−7,020 h** | 1,205 − 1,380 = **−175 h** |
+| 14 h/day | 0.253 | 0.270 | 0.253 × 204,400 − 55,200 = **−3,487 h** | 1,293 − 1,380 = **−87 h** |
+**In plain words: at the US method, every ρ at which the gate rations gives the median joiner a negative margin.** At `F` = 10 the floor adds 0.330 × 3,650 = 1,205 h of allowance a year while the joiner consumes 1,380, so they stay over the gate and the gap widens by 175 h a year. **The windfall holds only at ρ above the band, where the gate no longer rations and shortage is settled at distribution (§5.5.3).** The restriction reaches non-essentials only (§5.5.4). **Other production methods have not been measured.**
 **The estimate is the default, and evidence is voluntary.** A person supplies whatever narrows it — where they were born, how long they lived in each place, which jobs they held, how far they commuted, which vehicles they owned — and accepts the estimate for every period they leave undisclosed. **Nothing is compulsory, and evidence moves the figure in either direction, which is why people supply it.**
 **Details may arrive years later and the position re-derives.** No new machinery is needed, because a position is computed from the log and never stored (A6).
 **Three conditions, and without any one of them this breaks.**
@@ -1091,7 +1098,7 @@ example. **What was dropped:** the explanation prose between them.
 | 4 h/day | 1,752 h | **1.27×** |
 | 8 h/day | 3,504 h | **2.54×** |
 | 10 h/day | 4,380 h | **3.17×** |
-> **The gate then stops binding on almost everybody.** `D ≤ ρ·(C + P)` still holds, but it is not the thing deciding who gets what. **Where the economy can actually deliver that much, this is abundance and it is the intended end state** (§3.5, Q6). **Where it cannot, physical shortage is decided at the point of distribution instead — by a queue or a lottery** (§3.4a, §4.6) — **and the accounting has stopped doing the work it was set up to do.**
+> **The gate then stops binding on almost everybody.** `D ≤ ρ·(C + P)` still holds, but it is not the thing deciding who gets what. **Where the economy can actually deliver that much, this is abundance and it is the intended end state** (§3.5). **Where it cannot, physical shortage is decided at the point of distribution instead — by a queue or a lottery** (§3.4a, §4.6) — **and the accounting has stopped doing the work it was set up to do.**
 ##### The band, measured
 > **At the US production method the band is open at `F` = 10 and `F` = 14 on both essentials baskets. At `F` = 2 it is open on the narrow basket and closed on the broad one. What binds the upper edge is capacity.**
 | `F` | ρ*(`F`) | `E_max` | As a multiple of a median **American** lifestyle | Lower edge, narrow | Lower edge, broad | The band |
@@ -1099,16 +1106,13 @@ example. **What was dropped:** the explanation prose between them.
 | **2 h/day** | 1.017 | 742 h/yr | **0.54×** | 0.71 – 0.90 | **1.13 – 1.32** | Open narrow, **closed broad** |
 | 10 h/day | 0.330 | 1,205 h/yr | 0.87× | 0.14 – 0.18 | 0.23 – 0.26 | Open |
 | 14 h/day | 0.253 | 1,293 h/yr | 0.94× | 0.10 – 0.13 | 0.16 – 0.19 | Open |
-##### And the upper edge is an artefact of the American production method
-> **⚠️ The 1,380 h/yr anchor is a median *American* lifestyle, and that is not a neutral choice.** `06-simulation/median-lifestyle/Q6.md` measures the US as the labour- and carbon-inefficient outlier: **Germany, Japan and Spain reach a comparable-or-better material standard, and longer lives, on about two thirds of the embodied labour.**
-| Production method | Debit-hours per unit | Real living the same envelope delivers | Share held back by the gate |
+##### How much of the upper edge is the production method
+> **⚠️ The 1,380 h/yr anchor is a median *American* lifestyle, and that is not a neutral choice.** `06-simulation/median-lifestyle/Q6.md` and `q6_payers.py` count the labour behind every payer's consumption and measure the US as the labour-inefficient outlier: **Germany, Japan, France and Sweden reach a comparable-or-better material standard, and longer lives, on 0.84 – 0.87 of the US embodied labour** (Germany and Japan 0.836, France 0.858, Sweden 0.873).
+| Production method | Debit-hours per unit | Real living the same envelope delivers | As a share of the 66,407 units people want |
 |---|---|---|---|
-| **US** | 13.80 | **56,446** | **35.8%** |
-| German or Japanese | 8.83 | **88,196** | **0.0%** |
-| Spanish | 7.59 | **102,629** | **0.0%** |
-> **Under the American method the envelope delivers less than people want, so something must ration. Under the German, Japanese or Spanish method the same envelope delivers more than everyone wants, and nothing has to be held back at all.**
->
-> **Whether the band closes at `F` = 2 under those methods is not measured.** Scaling the broad basket by the German ratio, 883 ÷ 1,380 = 0.64, gives 529–618 h and a lower edge of 0.72–0.85 at `F` = 2. That is an inference, and the run that would measure it has been requested.
+| **US** | 13.80 | **56,446** | **85%** |
+| German or Japanese, at 0.836 – 0.873 of the US | 11.5 – 12.0 | **about 64,700 – 67,500** | **97% – 102%** |
+> **Whether the band is open at `F` = 2 under the German or Japanese method is not measured.** Scaling both baskets by 0.836 – 0.873 gives a broad basket of 691 – 842 h and a lower edge of **0.95 – 1.15** at `F` = 2 (narrow basket: 0.59 – 0.78). The upper edge there has not been run, so the band is neither shown open nor shown closed. These are rescalings of the US baskets, not measurements of any peer's essentials.
 > **⚠️ The band was computed in published ρ with no pledge term, and the pledge term halves its upper edge.** Committed pledges can double a network's gate (§4.6), so a network's **effective** tolerance runs to `2ρ`. Re-run on 2026-09-18 with a pledge density `p`, the publishable upper edge is `ρ*(F) ÷ (1 + p)`: at `F` = 10 it fell from **1.20** at no pledging to **0.60** at the one-for-one ceiling, and the band closed at `F` = 1.0 with essentials at 70% of a median lifestyle. `06-simulation/stable-band/PLEDGE_BAND_RESULTS.md`. **`p` is swept and not measured, and those levels were computed with demand at 5,037 h a year.** The halving is a relation and does not depend on that figure. The levels do, and the pledge term has not been re-run with demand tied to 1,380 h/yr.
 >
 > **⚠️ What is measured and what is not.** The two zero rows are **floors, not values** (conformance row 13): the gate does not bind anywhere below ρ = 4.0, which is where the swept range ended. Nobody looked above it. **And ρ\*'s absolute values inherit the weighting model and an illustrative capacity figure — the shape is the result, the numbers are dated readings.** Full method, the three things it does not show, and five self-tests that can each fail: `06-simulation/stable-band/RESULTS.md`. Registered with **OP-4 (debit tolerance)**.
@@ -1180,7 +1184,7 @@ example. **What was dropped:** the explanation prose between them.
   > **So the run is a control observation about the statistic's sensitivity, and never evidence that the population was witnessed.** It bounds; it does not witness. **A reproducible detector can still reproducibly certify only the world it was shown.**
   >
   > **This is §4.4 applied to the project's own headline** — *a check that compares a thing to itself can find a mistake, and cannot find a hole.* **The witness for coverage is a different instrument and it is physical: the outside total `N`** (§4.4). *(Found from outside by @cairn-lineage; conceded 2026-08-31.)*
-> **The stable band described in §5.5.3 was found on 2026-08-28** and is reported there. `06-simulation/stable-band/`, 60,000 people, every cell driven through the kernel's own gate and all eight conformance checks. **Re-measured on 2026-10-27 with demand tied to 1,380 h/yr: at the US method the band is open at `F` = 10 and 14, and closed at `F` = 2 on the broad essentials basket.** Capacity binds the upper edge, and the upper edge is an artefact of the American production method.
+> **The stable band described in §5.5.3 was found on 2026-08-28** and is reported there. `06-simulation/stable-band/`, 60,000 people, every cell driven through the kernel's own gate and all eight conformance checks. **Re-measured on 2026-10-27 with demand tied to 1,380 h/yr: at the US method the band is open at `F` = 10 and 14, and closed at `F` = 2 on the broad essentials basket.** Capacity binds the upper edge, and the upper edge depends on the production method (§5.5.3).
 #### 5.5.8 The real-distribution comparison
 > **⚠️ The run assumes nobody was pledged to, and that assumption is now visible.** `ρ · 24 h/day` is what a person can earn **alone**. **Somebody with backing `P` behind them is gated at `ρ·(C + P)` and is locked out later, or not at all** (§3.0, §5.5.5). **So the locked fraction is an upper bound and has not been recomputed with a pledge term in it.**
 ### 5.6 Why the alternative-economy graveyard does not apply
@@ -1188,7 +1192,7 @@ example. **What was dropped:** the explanation prose between them.
 |---|---|---|
 | **Circulation** | Ithaca HOURS businesses were *"drowning in Hours"*; Burlington Bread piled up at cafés with no way to recirculate. Scrip flows to whoever buys inputs outside the network and stops. | 🟢 **Cannot occur. There is no medium of exchange.** Credit never moves (A3); only debit moves, attached to its object. Nobody can drown in credit they cannot spend because nobody ever receives credit *from* anyone. |
 | **Valuation** | Warren (1830) could not reconcile labour-for-labour with skill and disagreeableness. Time banking, 45 years on, still reports chronic skill shortage from flat-hour crediting. | ⚠️ **Partly answered.** A2 (time as measure) v0.3 makes training paid work, which addresses skill. **Onerousness remains open — OP-16 (onerousness gap).** |
-| **Institutional** | Wörgl's scrip was suppressed by Austria's central bank *for working*, under the legal-tender monopoly. Ithaca died when its founder moved. | 🟢 **No issuer, no notes, nothing to counterfeit** — the legal instrument that killed Wörgl does not fit an accounting system. This is the substantive reason Aequitas must never be described as a currency. ⚠️ Founder dependency is answered only by §2's fourth screening question. |
+| **Institutional** | Wörgl's scrip was suppressed by Austria's central bank *for working*, under the legal-tender monopoly. Ithaca died when its founder moved. | 🟢 **No issuer, no notes, nothing to counterfeit** — the legal instrument that killed Wörgl does not fit an accounting system. This is the substantive reason Aequitas must never be described as a currency. ⚠️ Founder dependency is answered only by the universality criterion (§2.1): a mechanism that depends on one person has a special case, and must pay its own maintainer from inside the system. |
 ## 6. Where the rest of the project lives
 ### Start here for any abbreviation or section reference
 > **[`GLOSSARY.md`](GLOSSARY.md) is the index.** Every abbreviation this project uses — `OP-#` for an open problem, `A#` for an axiom, `IC-#` for an integrity check, `P#` for a named problem, `C#` for a critical-path item — resolves there, with a link to where it is defined. **If a label in these documents means nothing to you, the glossary is the first place to look, not this document's search box.**

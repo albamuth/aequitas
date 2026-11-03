@@ -46,3 +46,6 @@ Real DOE 2015 Petroleum Refining Bandwidth Study per-process energies, already l
 | `chain_resolution.py` | The model, both cases, the resolution sweep, and eight self-tests |
 | `RESULTS.md` | The write-up, with the theorem and the five things it does not show |
 | `chain_resolution.csv` | Every product, dimension and resolution extreme |
+| `exit_table.py` | (2026-11-01) Coarse÷fine ratio against exit step, one row per co-product; 7 self-tests. Run: `python 06-simulation/chain-resolution/exit_table.py --csv 06-simulation/chain-resolution/exit_table.csv` (not with `-I`; needs numpy) |
+| `EXIT_TABLE_RESULTS.md` | Its write-up: declared outcomes, both tables, seven things it does not show |
+| `exit_table.csv` | The 11 rows, recomputable from two columns |

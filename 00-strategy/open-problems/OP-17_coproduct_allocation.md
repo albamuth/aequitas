@@ -221,6 +221,7 @@ If beef's energetics are understated, plant-protein producers are **materially h
 Why this is the right shape for Aequitas:
 
 - **Decentralized.** No authority, no standards body, no appointed reviewer. It is an incentive, not an enforcement rule.
+<!-- struck-ok: dated record of the 2026-08 stress test; since 2026-11-02 there is no fourth criterion and the Paul Glover question is the universality criterion (Foundations §2.1) -->
 - **Self-funding.** The replication is credited work paid for by a party with a real stake — it passes the fourth screening question ("does this need a Paul Glover?") without help.
 - **Two-sided.** It converts a one-way asymmetry into a market. Every constant has a party who benefits from it being lower and a party who benefits from it being higher.
 - **Already implied.** A5 removes profit *in exchange*; it does not remove **rivalry in efficiency**, which Foundations §5.1 explicitly preserves ("producers compete on quality, artfulness, and efficiency"). Rival-sector audit is that competition applied to the cost model itself.

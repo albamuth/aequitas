@@ -100,7 +100,7 @@ edges:
 | 10 h/day | 0.330 | 1,205 h/yr | 0.87× | Open |
 | 14 h/day | 0.253 | 1,293 h/yr | 0.94× | Open |
 
-**In plain words: at the US method a 2-hour floor cannot carry the broad basket, and floors of 10 and 14 hours carry either basket.** The first run priced demand at 5,037 h/yr on the upper edge, so its edges were 3.65 times too high. What binds the upper edge is what an economy can physically deliver. **The upper edge turns out to be an artefact of the American production method** — the same material standard costs 1,380 hours by the American method, 883 by the German or Japanese, and 759 by the Spanish.
+**In plain words: at the US method a 2-hour floor cannot carry the broad basket, and floors of 10 and 14 hours carry either basket.** The first run priced demand at 5,037 h/yr on the upper edge, so its edges were 3.65 times too high. What binds the upper edge is what an economy can physically deliver. **The upper edge depends on the production method.** The same material standard costs 1,380 hours by the American method and about 1,150 to 1,200 by the German or Japanese (the American figure scaled by the peers' 0.836 – 0.873 share of US labour, every payer counted). At that ratio the envelope delivers 97% to 102% of what people want, and whether an upper edge exists there has not been measured.
 
 > **⚠️ ρ\*'s absolute values inherit the weighting model and an illustrative capacity figure. The shape is the result; the numbers are dated readings.** Full method: `06-simulation/stable-band/RESULTS.md`.
 

@@ -1,7 +1,7 @@
 <!-- tag: str-aequitas-overall-strategy -->
 # Aequitas — Overall Strategy
 
-> **Version:** 0.13 · **Date:** 2026-10-16
+> **Version:** 0.14 · **Date:** 2026-11-02
 > **Target:** A statement of the system, tested against scenarios, in ~3 months — with a conformance list an implementer can build against.
 > **Companion docs:** `Aequitas_Foundations.md` (axioms), `Aequitas_Objections.md` (register), `Aequitas_Conformance.md` (what an implementation must satisfy), `../NEXT.md` (task queue)
 
@@ -161,10 +161,10 @@ This also answers the socialist-calculation critique pre-emptively: we don't arg
 
 **The measurement unknowns that used to top this list — recursion convergence, then OP-18 — are resolved.** The highest-risk unknowns now are **governance**: OP-10 (who controls the weighting model, the top blocker), OP-24 (understatement drift — costs quietly bias low with no funder to correct them), and OP-16 (onerousness — tedium/indignity leave no material trace). Each is a *capture-surface* or *incentive* question rather than a physics one, and each wants a straw-man trust-network design or a sim before the whitepaper leans on it.
 
-**Two screening questions worth applying to every mechanism from here:**
+**The screen is the three criteria of Foundations §2.1, and there is no fourth.** Two reminders on how to apply them, each earned by a specific failure:
 
-1. **"Does this need a Paul Glover?"** A mechanism that requires an enthusiast has an expiry date, and must pay its own maintainer from inside the system.
-2. **"Does this need an objective function?"** Both allocation rules that were rejected for OP-17 (joint production) — Aumann–Shapley and Kantorovich shadow prices — required one, and each would have re-opened **OP-10 (weighting governance)** through the allocation layer. **It is a fast proxy for "does this create a capture surface?"**
+1. **Dependence on one person is a universality failure.** Ithaca HOURS died when its founder moved. A mechanism that requires an enthusiast has a special case and an expiry date, and must pay its own maintainer from inside the system.
+2. **A rule that needs somebody to choose what is being optimised is a decentralization failure.** Both allocation rules that were rejected for OP-17 (joint production), Aumann–Shapley and Kantorovich shadow prices, needed one, and each would have re-opened **OP-10 (weighting governance)** through the allocation layer, because whoever writes the objective sets every number derived from it.
 
 ---
 
