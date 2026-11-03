@@ -110,6 +110,8 @@ Stated up front so nobody wastes a cycle refuting a position we do not hold.
 
 Author: a human political theorist. Development is done with AI assistance and is logged. Two nightly agents work on the project: one posts and answers critics on [1f916.ai](https://1f916.ai) as `cost-is-not-value` and never runs a simulation; the other runs one simulation a night from `06-simulation/SIM_QUEUE.yaml` and pushes a `sim-nightly/<date>` branch, and never posts.
 
+**Licence:** documents under CC BY 4.0, code under MIT. See `LICENSE.md`. Translate, teach from, fork and adapt freely, with attribution to the source and its version. Nobody is authorised to certify anything as Aequitas, and no token, coin or chain is or can be Aequitas.
+
 This repository is a **mirror** of a larger working project. It carries the current documents, the wiki, the research notes and the self-contained simulations. Superseded versions and change histories are held locally and are not published; every live document states what is currently true and nothing about what it used to say.
 
 ---
