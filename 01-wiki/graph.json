@@ -14,8 +14,8 @@
   "related": "a body link, untyped"
  },
  "counts": {
-  "nodes": 300,
-  "edges": 1176
+  "nodes": 301,
+  "edges": 1177
  },
  "nodes": [
   {
@@ -880,6 +880,14 @@
    "title": "06-simulation/disparity-ceiling/RESULTS.md",
    "file": "06-simulation/disparity-ceiling/RESULTS.md",
    "in": 2,
+   "out": 0
+  },
+  {
+   "id": "06-simulation/disparity-ceiling/RHO_SWEEP_ANCHOR_RESULTS.md",
+   "type": "file",
+   "title": "06-simulation/disparity-ceiling/RHO_SWEEP_ANCHOR_RESULTS.md",
+   "file": "06-simulation/disparity-ceiling/RHO_SWEEP_ANCHOR_RESULTS.md",
+   "in": 1,
    "out": 0
   },
   {
@@ -1947,7 +1955,7 @@
    "file": "01-wiki/op-4.md",
    "glossary": "00-strategy/GLOSSARY.md#op-4",
    "in": 4,
-   "out": 11
+   "out": 12
   },
   {
    "id": "op-5",
@@ -7290,6 +7298,11 @@
    "from": "op-4",
    "rel": "source",
    "to": "objections-C"
+  },
+  {
+   "from": "op-4",
+   "rel": "tested_by",
+   "to": "06-simulation/disparity-ceiling/RHO_SWEEP_ANCHOR_RESULTS.md"
   },
   {
    "from": "op-4",

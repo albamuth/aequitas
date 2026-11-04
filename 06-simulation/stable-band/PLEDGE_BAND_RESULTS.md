@@ -3,6 +3,8 @@
 > **Run:** 2026-09-18 · `pledge_band.py` · 5 self-tests green · N = 60,000
 > **Against:** [`RESULTS.md`](RESULTS.md), which computed the same band with **no pledges in it**.
 > **Ruling it tests:** a pledge grants consumable room, so the gate is `D ≤ ρ·(C + P)` — author, 2026-09-18, written up in [`../../00-strategy/papers/Pledges.md`](../../00-strategy/papers/Pledges.md).
+>
+> **⚠️ Dated note, 2026-11-04.** Every ρ level in this file was computed with demand priced at 5,037 h/yr (median credit × 365), before the anchor tie of 2026-10-27 ([`RESULTS_KAPPA.md`](RESULTS_KAPPA.md)). Anchor-tied, the no-pledge clearing rate reads **0.33** at `F` = 10, not 1.20 ([`../disparity-ceiling/RHO_SWEEP_ANCHOR_RESULTS.md`](../disparity-ceiling/RHO_SWEEP_ANCHOR_RESULTS.md)). **The halving relation `ρ*(F) ÷ (1 + p)` stands — it does not depend on the demand figure. The levels do, and the pledge term has not been re-run at the anchor.**
 
 ---
 

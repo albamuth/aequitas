@@ -19,7 +19,7 @@
 | # | Claim | Verdict |
 |---|---|---|
 | 1 | The ceiling is `24/F` | **Closed-form.** Exact at every floor tested. |
-| 2 | A clearing rate exists | **Simulated.** ρ\* ≈ **1.20**, resolved no finer than one grid step of 0.0176. |
+| 2 | A clearing rate exists | **Simulated.** <!-- struck-ok: dated record; the level was later measured as the wrong unit --> ρ\* ≈ **1.20**, resolved no finer than one grid step of 0.0176. *(Wrong unit — anchor-tied it reads **0.33** at `F` = 10: [`RHO_SWEEP_ANCHOR_RESULTS.md`](RHO_SWEEP_ANCHOR_RESULTS.md), 2026-11-04. The existence claim stands.)* |
 | 3 | The ceiling is invariant to fraud | **Closed-form.** Holds at **40% fraud**, because a day still has 24 hours. **This is an insensitivity, not a coverage result** — see below. |
 | 4 | Front-loaded costs do not amortise | **Closed-form.** |
 

@@ -1,0 +1,61 @@
+machine   : AMD64 Family 25 Model 33 Stepping 2, AuthenticAMD · Windows 10
+language  : Python 3.14.3 · numpy 2.5.1
+RAM       : 63.9 GB total, 27.1 GB available at start
+filesystem: NTFS (log dir C:\PROJECTS\Aequitas\06-simulation\log\tmp)
+record    : 34 B/event, one packed spelling, both passes read the same bytes
+k = 3 · accounts 1,000,000 · seed 41 · chunk 2,048,000 events
+
+10,000,000 events: wrote 324.2 MB in 0.9s
+    memory    rep 0 (check    first)  check 1.175s (sort 0.173)  reweight 0.411s  ratio9 0.349  ratio8 0.410
+    memory    rep 1 (reweight first)  check 1.186s (sort 0.173)  reweight 0.426s  ratio9 0.359  ratio8 0.420
+    memory    rep 2 (check    first)  check 1.175s (sort 0.172)  reweight 0.417s  ratio9 0.355  ratio8 0.416
+    memory    rep 3 (reweight first)  check 1.175s (sort 0.172)  reweight 0.416s  ratio9 0.354  ratio8 0.415
+    memory    rep 4 (check    first)  check 1.179s (sort 0.175)  reweight 0.420s  ratio9 0.356  ratio8 0.418
+    disk-warm rep 0 (check    first)  check 1.324s (sort 0.172)  reweight 0.638s  ratio9 0.482  ratio8 0.553
+    disk-warm rep 1 (reweight first)  check 1.430s (sort 0.173)  reweight 0.641s  ratio9 0.448  ratio8 0.510
+    disk-warm rep 2 (check    first)  check 1.426s (sort 0.171)  reweight 0.678s  ratio9 0.475  ratio8 0.540
+    disk-warm rep 3 (reweight first)  check 1.419s (sort 0.173)  reweight 0.681s  ratio9 0.480  ratio8 0.546
+    disk-warm rep 4 (check    first)  check 1.422s (sort 0.174)  reweight 0.679s  ratio9 0.478  ratio8 0.544
+    disk-cold rep 0 (check    first)  check 1.429s (sort 0.168)  reweight 0.638s  ratio9 0.446  ratio8 0.506
+    disk-cold rep 1 (reweight first)  check 1.391s (sort 0.172)  reweight 0.633s  ratio9 0.455  ratio8 0.520
+    disk-cold rep 2 (check    first)  check 1.387s (sort 0.170)  reweight 0.636s  ratio9 0.459  ratio8 0.523
+    disk-cold rep 3 (reweight first)  check 1.440s (sort 0.167)  reweight 0.643s  ratio9 0.446  ratio8 0.505
+    disk-cold rep 4 (check    first)  check 1.411s (sort 0.173)  reweight 0.637s  ratio9 0.451  ratio8 0.515
+
+20,000,000 events: wrote 648.5 MB in 1.9s
+    memory    rep 0 (check    first)  check 2.350s (sort 0.355)  reweight 0.834s  ratio9 0.355  ratio8 0.418
+    memory    rep 1 (reweight first)  check 2.365s (sort 0.355)  reweight 0.840s  ratio9 0.355  ratio8 0.418
+    memory    rep 2 (check    first)  check 2.348s (sort 0.351)  reweight 0.842s  ratio9 0.358  ratio8 0.421
+    memory    rep 3 (reweight first)  check 2.353s (sort 0.359)  reweight 0.821s  ratio9 0.349  ratio8 0.412
+    memory    rep 4 (check    first)  check 2.351s (sort 0.353)  reweight 0.826s  ratio9 0.351  ratio8 0.413
+    disk-warm rep 0 (check    first)  check 2.835s (sort 0.349)  reweight 1.348s  ratio9 0.475  ratio8 0.542
+    disk-warm rep 1 (reweight first)  check 2.878s (sort 0.349)  reweight 1.352s  ratio9 0.470  ratio8 0.535
+    disk-warm rep 2 (check    first)  check 2.903s (sort 0.350)  reweight 1.375s  ratio9 0.473  ratio8 0.538
+    disk-warm rep 3 (reweight first)  check 2.905s (sort 0.350)  reweight 1.364s  ratio9 0.470  ratio8 0.534
+    disk-warm rep 4 (check    first)  check 2.922s (sort 0.350)  reweight 1.389s  ratio9 0.475  ratio8 0.540
+    disk-cold rep 0 (check    first)  check 2.763s (sort 0.340)  reweight 1.253s  ratio9 0.454  ratio8 0.517
+    disk-cold rep 1 (reweight first)  check 2.768s (sort 0.351)  reweight 1.263s  ratio9 0.456  ratio8 0.522
+    disk-cold rep 2 (check    first)  check 2.769s (sort 0.342)  reweight 1.266s  ratio9 0.457  ratio8 0.521
+    disk-cold rep 3 (reweight first)  check 2.761s (sort 0.352)  reweight 1.267s  ratio9 0.459  ratio8 0.526
+    disk-cold rep 4 (check    first)  check 2.779s (sort 0.352)  reweight 1.270s  ratio9 0.457  ratio8 0.523
+
+====================================================================================================
+MEASURED (medians; sd over repetitions)
+====================================================================================================
+
+10,000,000 events   same log in all three arms: True
+arm        ratio9 med     sd       min-max  ratio8  check9 M/s  check8 M/s  reweight M/s
+memory          0.355  0.003   0.349-0.359   0.416        8.51        9.96         23.98
+disk-warm       0.478  0.014   0.448-0.482   0.544        7.03        8.01         14.75
+disk-cold       0.451  0.006   0.446-0.459   0.515        7.09        8.08         15.71
+  delta ratio9 (disk-warm - memory) = +0.123   widest run-to-run range = 0.034
+  delta ratio9 (disk-cold - memory) = +0.096   widest run-to-run range = 0.013
+
+20,000,000 events   same log in all three arms: True
+arm        ratio9 med     sd       min-max  ratio8  check9 M/s  check8 M/s  reweight M/s
+memory          0.355  0.004   0.349-0.358   0.418        8.51       10.01         23.98
+disk-warm       0.473  0.003   0.470-0.475   0.538        6.89        7.83         14.66
+disk-cold       0.457  0.002   0.454-0.459   0.522        7.22        8.25         15.80
+  delta ratio9 (disk-warm - memory) = +0.119   widest run-to-run range = 0.009
+  delta ratio9 (disk-cold - memory) = +0.102   widest run-to-run range = 0.009
+

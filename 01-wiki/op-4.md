@@ -13,14 +13,15 @@ edges:
   - {rel: tested_by, to: 06-simulation/stable-band/RESULTS.md}
   - {rel: tested_by, to: 06-simulation/stable-band/PLEDGE_BAND_RESULTS.md}
   - {rel: tested_by, to: 06-simulation/essentials-basket/RESULTS.md}
+  - {rel: tested_by, to: 06-simulation/disparity-ceiling/RHO_SWEEP_ANCHOR_RESULTS.md}
   - {rel: source, to: "Foundations §5.5.3"}
   - {rel: source, to: "Foundations §5.5.5"}
   - {rel: source, to: "Objections §C"}
 ---
 # OP-4 — the debit-tolerance formula
 
-> **Version:** 0.1
-> **Date:** 2026-10-14
+> **Version:** 0.2
+> **Date:** 2026-11-04
 
 > **🟠 Open. The band was measured; the formula was not derived.** There is no single global debit-to-credit ratio, because total debit always exceeds total credit and A8 forbids an expert-set one. What a network sets is a per-person tolerance ρ and a floor `F`, **and the question is what values work.**
 
@@ -48,12 +49,12 @@ edges:
 
 **Worked:** at 2 h/day the broad basket's 826 h needs ρ ≥ 826 ÷ 730 = 1.13, which is above 1.017, so no ρ works.
 
-**ρ behaves like a prime rate.** A ρ can be chosen so demand matches capacity, and it moves sensibly: a 30% capacity disaster tightens it from about 1.2 to about 0.68, growth loosens it to about 2.2 ([disparity-ceiling](disparity-ceiling.md)).
+**ρ behaves like a prime rate.** A ρ can be chosen so demand matches capacity, and it moves sensibly: with demand tied to the 1,380 h/yr anchor, a 30% capacity disaster tightens it from 0.33 to 0.19 at `F` = 10, and the broad essentials basket stops fitting inside the band at a 15% to 20% shock ([disparity-ceiling](disparity-ceiling.md); `06-simulation/disparity-ceiling/RHO_SWEEP_ANCHOR_RESULTS.md`).
 
 ## What is open
 
 1. **The formula.** The band was found by sweeping, not derived from the axioms. Component C9 is not started.
-2. **Pledging halves the upper edge.** Committed pledges can double a network's gate, so the publishable upper edge is `ρ*(F) ÷ (1 + p)`: at `F` = 10 it falls from 1.20 with no pledging to 0.60 at the one-for-one ceiling. And the band closes at `F` = 1 with essentials at 70% of a median lifestyle, the first swept cell where it ever has.
+2. **Pledging halves the upper edge.** Committed pledges can double a network's gate, so the publishable upper edge is `ρ*(F) ÷ (1 + p)`: at `F` = 10 it falls from 1.20 with no pledging to 0.60 at the one-for-one ceiling. And the band closes at `F` = 1 with essentials at 70% of a median lifestyle, the first swept cell where it ever has. Those levels were computed with demand at 5,037 h/yr, before the anchor tie; the halving is a relation and does not depend on that figure, and the pledge term has not been re-run at the anchor.
 3. **The childhood dial.** Whether a network credits a child's learning time moves the reachable ceiling from 2.400× to 2.085× at `F` = 10. It belongs here and with A8's list of always-creditable activities.
 4. **ρ\*'s absolute values inherit the weighting model and an illustrative capacity figure.** The shape is the result; the numbers are dated readings.
 5. **The other production methods are not measured.** At the German or Japanese ratio, counting every payer (0.836 – 0.873 of US labour), the envelope delivers 97% to 102% of wants. Whether the band opens at 2 h/day there is not measured: scaling the baskets gives a lower edge of 0.95 – 1.15 on the broad basket, and the upper edge has not been run. A run on those inputs is requested. On a ledger rebuilt to birth the edges equal the one-day edges when past and future demand are both 1,380 h/yr, and that equality is built in. `06-simulation/stable-band/RESULTS_KAPPA.md`.

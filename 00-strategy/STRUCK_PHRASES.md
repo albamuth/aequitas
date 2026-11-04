@@ -1,7 +1,7 @@
 # Struck phrases — wordings that must not appear in a live document
 
-> **Version:** 0.11
-> **Date:** 2026-11-02
+> **Version:** 0.12
+> **Date:** 2026-11-04
 
 > **Read by [`bin/consistency.py`](../bin/consistency.py). The table below is the machine-readable part; everything else on this page is for people.**
 
@@ -41,6 +41,8 @@ That is not a hypothetical. **It happened three times in a single day, 2026-08-2
 
 | Struck phrase | Struck on | Why | What is true instead |
 |---|---|---|---|
+| `ρ\* ≈ 1.2` | 2026-11-04 | **The wrong unit, and the error flattered us.** `rho_sweep.py` defined the 1,380 h/yr anchor and never read it; its cost term was the median credit rate, 13.8 h/day, making every clearing level 3.65× too high. Found by the outreach agent's self-council, 2026-11-04 | **ρ\* = 0.33 at `F` = 10, anchor-tied**, agreeing with the stable band's 0.330 — Foundations §5.5.7, `06-simulation/disparity-ceiling/RHO_SWEEP_ANCHOR_RESULTS.md` |
+| `tightens it to ~0.68` | 2026-11-04 | Same unit error, the −30% disaster cell | **A −30% capacity disaster tightens ρ\* to 0.19 at `F` = 10** — Foundations §5.5.7 |
 | `the re-weighting cost was not` | 2026-09-12 | **It has been measured, twice, on two machines.** The sentence was true when written and stopped a record-check figure being borrowed for a pass nobody had timed | **A re-weighting pass costs about a third of a record-check pass** — 26 s against about 100 s at 10⁹ events, single core, no disk. The ratio is 0.35 against the eight streaming checks and 0.27 against all nine — Foundations §3.4a |
 | `registered as owed` | 2026-09-12 | **A to-do marker dressed as a defined term.** It was never defined — not in `GLOSSARY.md`, not in §2, not on first use — and no ruling introduced it. It also collides with the accounting vocabulary: §2.2 says a debit *"is not a bill, and nobody collects it"*, so *owed* means one thing in the theory and another in the marker | Say what is actually true and who would fix it: **"This has not been measured. Measuring it means &lt;the run&gt;."** — Foundations §3.4a |
 | `test still owed` | 2026-09-12 | Same marker, second wording | **"The test that would settle it has not been run:"** followed by the test |

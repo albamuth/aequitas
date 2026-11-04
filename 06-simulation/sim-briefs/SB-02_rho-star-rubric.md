@@ -122,7 +122,7 @@
 
 ## 9. Out of scope
 
-- **Whether ρ\* ≈ 1.2 is the right number.** Its absolute value inherits the weighting model and an illustrative capacity figure. **This brief is about whether the statistic can see, not about where it sits.**
+- <!-- struck-ok: dated brief; the figure it declined to defend was later measured as the wrong unit (0.33 anchor-tied, RHO_SWEEP_ANCHOR_RESULTS.md, 2026-11-04) --> **Whether ρ\* ≈ 1.2 is the right number.** Its absolute value inherits the weighting model and an illustrative capacity figure. **This brief is about whether the statistic can see, not about where it sits.** *(It was not: anchor-tied it reads 0.33 at `F` = 10 — `../disparity-ceiling/RHO_SWEEP_ANCHOR_RESULTS.md`, 2026-11-04.)*
 - **The `24 ÷ F` ceiling.** Already scored, already conceded blind. That is [SB-01](SB-01_ceiling-challenge.md).
 - **Real-network coverage.** Leg 3 is unavailable on a generator and this brief does not pretend otherwise.
 

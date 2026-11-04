@@ -1,7 +1,9 @@
 # Pledges — what they are, what they buy, and why that is not profit
 
-> **Version:** 1.1
-> **Date:** 2026-10-25
+> **Version:** 1.2
+> **Date:** 2026-11-04
+>
+> **⚠️ Dated note, 2026-11-04.** §13.3 and §14 below quote the clearing rate at the pre-anchor unit (baseline about 1.20, −30% disaster about 0.68). Re-measured with demand tied to the 1,380 h/yr anchor, those read **0.33** and **0.19** at `F` = 10 (`../../06-simulation/disparity-ceiling/RHO_SWEEP_ANCHOR_RESULTS.md`; Foundations v0.67 §5.5.7). The argument both sections make — ρ is the adjusting instrument and moves below 1 under stress — is unchanged, and held at the old unit too. The quoted sentences stay as the record of what was argued from.
 > **Status:** Rulings settled. **Not folded** — the core documents still carry the old rules. **Two code jobs remain**; see §16.
 >
 > **Fourteen author rulings, all 2026-09-18.**

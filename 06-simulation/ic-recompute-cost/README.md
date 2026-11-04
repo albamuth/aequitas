@@ -33,4 +33,6 @@ python ic_recompute_cost.py --full
 
 > **The first version of this program claimed all nine streamed. It was wrong twice before a test capable of falsifying it was written.**
 
+**Disk arm (2026-11-04):** `python disk_ratio.py --test` then `python disk_ratio.py --events 1e7,2e7 --reps 5`. One packed 34-byte log read by both passes from memory, page cache and cache-bypassed disk. Results: [`DISK_RATIO_RESULTS.md`](DISK_RATIO_RESULTS.md); declared first: [`DISK_DECLARED.md`](DISK_DECLARED.md). Needs Windows for the cache-bypassed arm.
+
 **Read [`RESULTS.md`](RESULTS.md) for the tables, the four things this does not show, and the defects the tests caught.**

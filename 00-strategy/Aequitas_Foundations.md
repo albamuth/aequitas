@@ -1,8 +1,8 @@
 <!-- tag: fnd-aequitas-foundations-and-long-term -->
 # Aequitas — Foundations & Long-Term Strategy
 
-> **Version:** 0.66
-> **Date:** 2026-11-02
+> **Version:** 0.67
+> **Date:** 2026-11-04
 > **Status:** Working foundations.
 > **Primary audience of the first paper:** technologists and implementers.
 > **Companion:** [`Aequitas_Conformance.md`](Aequitas_Conformance.md) — what must be true for an implementation to *be* Aequitas.
@@ -1263,7 +1263,7 @@ Two reasons the ban stands:
 
 **Whether an independent instrument can sit at a plant's boundaries.** *What stops a producer understating*, above, measures what such a meter would catch. **It does not show that one can exist**, or who would own it. That is the instrument-trust limit of §4.3, and a verification question rather than an accounting one. The run also modelled one lie at a time, checked through mass only, with illustrative steer digits and a declared refinery passage table.
 
-**The calibrated figures do not move, and one upstream convention is unaudited.** The **1,380 h/yr** median-lifestyle anchor (§3.5) and the **ρ\* ≈ 1.2** clearing rate (§5.5.7) were recomputed under this rule on 2026-09-05, and **neither moves**, because the measurement works at industry resolution and never divided a process among its outputs (`06-simulation/median-lifestyle/ANCHOR_UNDER_NO_DIVISION.md`).
+**The calibrated figures do not move under this rule, and one upstream convention is unaudited.** The **1,380 h/yr** median-lifestyle anchor (§3.5) and the clearing rate ρ\* (§5.5.7) were recomputed under this rule on 2026-09-05, and **neither moves**, because the measurement works at industry resolution and never divided a process among its outputs (`06-simulation/median-lifestyle/ANCHOR_UNDER_NO_DIVISION.md`). That recompute tested the division rule, not the unit of the sweep's cost term; ρ\*'s level is §5.5.7's, **0.33 at `F` = 10**, measured with demand tied to the anchor.
 
 **The input-output tables behind the anchor carry a convention of their own.** BEA (the US Bureau of Economic Analysis) moves **secondary products**, such as a sawmill's wood chips or a dairy's hides, out of the industry that made them, under an assumption BEA chose. **That makes it a cost constant this project did not audit and cannot re-run**, so under §3.3a requirement 5 the anchor is a dated reading with an unreviewed upstream convention in it. **How far a defensible change in that assumption moves 1,380 h/yr is not measured.**
 
@@ -2798,7 +2798,7 @@ Those activities are **sleeping, eating, defecating, and keeping oneself clean.*
 `06-simulation/disparity-ceiling/disparity_ceiling_sim.py`, N = 200,000, gate `D ≤ ρ·(C + P)`, credit in `[F, 24]` h/day, 7 self-tests green:
 
 - **The `24 ÷ F` ceiling is exact and does not move with ρ**, because ρ cancels in `ρ·24 ÷ ρ·F`. It also does not move with the weighting model, so **the headline result does not depend on OP-10.** On the same synthetic population, money's spread is 14× on income and roughly 700–950× on wealth.
-- **ρ behaves like a prime rate.** A ρ can be chosen so that aggregate demand matches productive capacity, and it moves sensibly under shocks. Against the median-lifestyle anchor the baseline clears at **ρ\* ≈ 1.2**, a −30% capacity disaster tightens it to ~0.68, growth loosens it to ~2.2, and a +25% pollution re-weighting tightens it to ~1.0 (`06-simulation/disparity-ceiling/RHO_SWEEP.md`). *(Absolute values are illustrative and depend on OP-10; the directions are robust. A second instrument, `06-simulation/rho-rubric/`, perturbs `disparity_ceiling_sim.py` directly and reads 0.82 and 1.19 for the same two shocks: the same directions, different levels.)*
+- **ρ behaves like a prime rate.** A ρ can be chosen so that aggregate demand matches productive capacity, and it moves sensibly under shocks. With each person's demand tied to the 1,380 h/yr anchor (§3.5), the US-method baseline clears at **ρ\* = 0.33** at `F` = 10 — two instruments agree, since the stable band's upper edge reads 0.330 (§5.5.3) — and a −30% capacity disaster tightens it to **0.19**. Swept from 0 to −50% at `F` = 2, 10 and 14, the broad essentials basket stops fitting inside §5.5.3's band at a **−15% to −20%** shock at `F` = 10 and at −20% to −25% at `F` = 14; at `F` = 2 it never fit. Below those depths, §5.5.4's backstop and the distribution point carry the shortage. (`06-simulation/disparity-ceiling/RHO_SWEEP_ANCHOR_RESULTS.md`.) *(Absolute values inherit the weighting model, OP-10, and an illustrative capacity share; the directions are robust. Growth and pollution re-weighting shocks are rescalings, about 0.59 and 0.28, not re-run at the anchor. A second instrument, `06-simulation/rho-rubric/`, confirms the two shock directions; its levels predate the anchor tie.)*
 - **Efficiency narrows the shortfall and does not remove it.** The same population is 15% short under the US production method and between 3% short and 2% over at the German or Japanese ratio (§5.5.3, rescaled and not run). **The binding constraint is physical throughput** (§3.5).
 - **The ceiling is fraud-invariant, and that is the same fact as its blindness.** IC-7 bounds every account, honest or not, so the most a fraudster reaches is `ρ·24` — the honest maximum. **Fraud fills the band and cannot create an outlier beyond it.**
   > **`24 ÷ F` reads no accounts.** At `F` = 10 it returns 2.40 whatever the population contains, so *"still 2.40× at 40% fraud"* means **the arithmetic never looked** — not that anything caught the fraud. **Insert a fabricated account and the figure moves by 0.00, for the same reason.**

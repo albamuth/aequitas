@@ -1,8 +1,8 @@
 <!-- tag: simroadmap-v0-2 -->
 # Aequitas — Simulation Roadmap
 
-> **Version:** 0.3
-> **Date:** 2026-08-23
+> **Version:** 0.4
+> **Date:** 2026-11-04
 > **Status:** Author ruling, 2026-08-23.
 > **Companions:** `Aequitas_Foundations.md` §2.6/§6 (scope, where the rest of the project lives), `Aequitas_Strategy.md` §2, `06-simulation/scenario-suite/scenario_suite_METHOD.md`.
 
@@ -138,7 +138,7 @@ The two, both already computed and both cheap to check:
 
 | Step | What | Done when |
 |---|---|---|
-| **1** | **The kernel**, with a toy economy and one period. Agents, event log, debit vector, credit accrual, the gate, the §5.5 assertions. | It reproduces **2.40× at a 10-hour floor** on **pledge budgets per day lived**, and **ρ\* ≈ 1.20**, and the floor sweep tracks `24/F`. **⚠️ `06-simulation/statera/` was retired on 2026-09-18** — it encoded the withdrawn pledge rule. A successor kernel is unbuilt. |
+| **1** | **The kernel**, with a toy economy and one period. Agents, event log, debit vector, credit accrual, the gate, the §5.5 assertions. | It reproduces **2.40× at a 10-hour floor** on **pledge budgets per day lived**, and **ρ\* = 0.33 at `F` = 10** with demand tied to the 1,380 h/yr anchor (`../06-simulation/disparity-ceiling/RHO_SWEEP_ANCHOR_RESULTS.md`), and the floor sweep tracks `24/F`. **⚠️ `06-simulation/statera/` was retired on 2026-09-18** — it encoded the withdrawn pledge rule. A successor kernel is unbuilt. |
 | **2** | **Periods.** Everything re-evaluated per period, credit accruing, stocks drawing down, the gate re-checked. | A ten-period run holds the invariants and the bound stays at `24/F` for whatever floor the scenario set. |
 | **3** | **The scenario config layer.** Dials, shocks-at-period-*t*, and a recorder. | Any of the author's eight is expressible as a config file **with no new code**. |
 | **4** | **The outside world plug.** Money economy, gift economy, second network with different dials, and a boundary agents cross. | Adoption and floor-shopping are both runnable. |

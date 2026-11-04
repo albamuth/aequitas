@@ -63,9 +63,12 @@ The computation is one line:
 
 `stable_band.py` takes the anchor as a **constant input** — `MEDIAN_LIFESTYLE_H_YR = 1380.0`, line 92. **Nothing else in that sim reads a co-product rule.**
 
+> <!-- struck-ok: dated record (2026-09-05); the level it names was later measured as the wrong unit -->
 > **ρ\* ≈ 1.2 is a function of the anchor and the capacity figure. The anchor did not move, so ρ\* did not.**
 
 **In plain words: Foundations §3.4a can drop the sentence saying these two figures are owed a recomputation. It has been done, and they stand.**
+
+> **⚠️ Dated note, 2026-11-04.** This run tested the no-division rule and is unchanged by what followed. The **level** it quotes was later found to be in the wrong unit: `rho_sweep.py`'s cost term was the median credit rate, not the anchor, so ρ\* reads **0.33** at `F` = 10 once demand is anchor-tied ([`../disparity-ceiling/RHO_SWEEP_ANCHOR_RESULTS.md`](../disparity-ceiling/RHO_SWEEP_ANCHOR_RESULTS.md)). The claim of this section — the no-division rule moves neither figure — stands at either unit.
 
 ---
 
