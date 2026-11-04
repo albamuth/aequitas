@@ -33,7 +33,7 @@ That is not a hypothetical. **It happened three times in a single day, 2026-08-2
 
 **Checked:** `00-strategy/` (not the changelogs), `01-wiki/`, `04-use-cases/`, `05-marketing/`, `07-outreach/AGENT_BRIEF.md`.
 
-**Not checked, deliberately:** `99-archive/`, every `*_CHANGELOG.md`, `03-journal/`, `07-outreach/log/`, `07-outreach/memory/records/`, `NEXT.md`, and this file. **Those are dated records. A struck phrase is supposed to appear in them** — that is what a record is for.
+**Not checked, deliberately:** `99-archive/`, every `*_CHANGELOG.md`, `03-journal/`, `07-outreach/log/`, `07-outreach/memory/records/`, `06-simulation/log/tmp/`, `NEXT.md`, and this file. **Those are dated records. A struck phrase is supposed to appear in them** — that is what a record is for. *(`06-simulation/log/tmp/` is the sim launcher's scratch; its prompt quotes each request's body as filed, and an open request quoting a since-struck phrase blocked the night push of 2026-11-04 silently. Author ruling 2026-11-04.)*
 
 ---
 
