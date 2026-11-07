@@ -1,0 +1,29 @@
+$ python 06-simulation/ic-recompute-cost/single_spelling.py --arms mem-fresh,mem-replay,disk-cold --chunks 49 --reps 3
+machine   : AMD64 Family 25 Model 33 Stepping 2, AuthenticAMD - Windows 10
+language  : Python 3.14.3 - numpy 2.5.1
+RAM       : 63.9 GB total, 48.3 GB available at start
+filesystem: NTFS (log dir C:\PROJECTS\Aequitas\06-simulation\log\tmp)
+record    : 34 B/event, ONE packed spelling, both passes parse the same bytes
+k = 3 - accounts 1,000,000 - seed 41 - chunk 2,048,000 events - replay file 12 chunks
+
+requested 49 chunks = 100,352,000 events; IC-5 keys need about 1.5 GB peak (8 B/event, x2 at the sort)
+wrote replay file 796.9 MB in 2.3s
+  mem-fresh  rep 0: N=100,352,000  check8 9.76s  sort 1.86s  reweight 3.93s  ratio8 0.403  ratio9 0.338
+  mem-fresh  rep 1: N=100,352,000  check8 9.78s  sort 1.86s  reweight 3.93s  ratio8 0.402  ratio9 0.338
+  mem-fresh  rep 2: N=100,352,000  check8 9.74s  sort 1.88s  reweight 3.95s  ratio8 0.406  ratio9 0.340
+  mem-replay rep 0: N=100,352,000  check8 10.00s  sort 1.87s  reweight 3.85s  ratio8 0.385  ratio9 0.324
+  mem-replay rep 1: N=100,352,000  check8 10.08s  sort 1.88s  reweight 3.95s  ratio8 0.392  ratio9 0.330
+  mem-replay rep 2: N=100,352,000  check8 10.01s  sort 1.87s  reweight 3.87s  ratio8 0.387  ratio9 0.326
+  disk-cold  rep 0: N=100,352,000  check8 12.19s  sort 1.88s  reweight 6.03s  ratio8 0.495  ratio9 0.429
+  disk-cold  rep 1: N=100,352,000  check8 12.05s  sort 1.86s  reweight 6.06s  ratio8 0.503  ratio9 0.435
+  disk-cold  rep 2: N=100,352,000  check8 12.08s  sort 1.87s  reweight 6.04s  ratio8 0.500  ratio9 0.433
+
+MEASURED  N = 100,352,000 events  (medians; sd over reps; Mev/s = million events a second)
+arm          ratio9     sd       min-max  ratio8     sd  check9 Mev/s  check8 Mev/s  reweight Mev/s  sort s
+mem-fresh     0.338  0.001   0.338-0.340   0.403  0.002          8.63         10.28           25.51    1.86
+mem-replay    0.326  0.003   0.324-0.330   0.387  0.003          8.45         10.03           25.92    1.87
+disk-cold     0.433  0.003   0.429-0.435   0.500  0.004          7.19          8.31           16.63    1.87
+  delta ratio9 (disk-cold - mem-replay, same bytes) = +0.107   widest range = 0.007
+  delta ratio8 (disk-cold - mem-replay, same bytes) = +0.113   widest range = 0.008
+  replay control ratio9 (mem-replay - mem-fresh) = -0.012
+  replay control ratio8 (mem-replay - mem-fresh) = -0.016

@@ -14,3 +14,14 @@ sr-20261028-run-pledge-band-py-s-pledge-term-on-the-kapp
 # Hive hours: uncomment once an apiary labour source is in 02-research/.
 # Without one the run reports Blocked. Due to the board 2026-10-31 (#9090).
 # sr-20261018-hours-of-labour-and-materials-energy-in-one-
+# Five pins, ruled 2026-11-07 (PLAN-2026-11-07 decision 1, option A). Run order.
+# 1. Births arm. Due to the board 2026-11-15.
+sr-20261102-births-arm-of-stable-band-cumulative-py-kapp
+# 2. Stock gate after a capacity shock. Due to the board 2026-11-19.
+sr-20261105-stock-gate-clearing-rate-after-a-capacity-sh
+# 3. Re-run stable_band_cumulative.py, kappa-tied, two arms. Unblocks obj-20261031-self-council-band-line79-ignores-ruling7.
+sr-20261031-re-run-stable-band-cumulative-py-kappa-tied-
+# 4. Scale-the-anchor self-test.
+sr-20261105-add-a-scale-the-anchor-self-test-to-rho-swee
+# 5. Replace the typed 1380 with a read from the anchor file.
+sr-20261106-in-rho-sweep-anchor-py-and-stable-band-kappa

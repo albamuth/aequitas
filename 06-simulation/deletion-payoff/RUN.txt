@@ -1,0 +1,116 @@
+
+=== CAP 0.7  rho*(F) (value, flag) ===
+  F1:0.838  F1.5:0.714  F2:0.626  F2.5:0.560  F3:0.508  F3.5:0.466  F4:0.430  F4.5:0.401  F5:0.375  F5.5:0.353  F6:0.333  F6.5:0.316  F7:0.300  F7.5:0.286  F8:0.273  F8.5:0.262  F9:0.251  F9.5:0.241  F10:0.232  F10.5:0.223  F11:0.216  F11.5:0.209  F12:0.202  F12.5:0.196  F13:0.190  F13.5:0.184  F14:0.179
+  E_max = 365 F rho*: F1:306  F1.5:391  F2:457  F2.5:511  F3:556  F3.5:595  F4:629  F4.5:658  F5:685  F5.5:708  F6:729  F6.5:749  F7:766  F7.5:783  F8:797  F8.5:811  F9:824  F9.5:836  F10:847  F10.5:856  F11:867  F11.5:876  F12:884  F12.5:893  F13:900  F13.5:907  F14:914
+  CAP 0.7 narrow_lo  d=   690: open F 23/27, cells paying 0.670, width-weighted 0.661, F fully paying 5, never 0
+  CAP 0.7 narrow_lo  d=  1162: open F 23/27, cells paying 1.000, width-weighted 1.000, F fully paying 23, never 0
+  CAP 0.7 narrow_lo  d=  1296: open F 23/27, cells paying 1.000, width-weighted 1.000, F fully paying 23, never 0
+  CAP 0.7 narrow_lo  d=  1380: open F 23/27, cells paying 1.000, width-weighted 1.000, F fully paying 23, never 0
+  CAP 0.7 narrow_lo  d=  2760: open F 23/27, cells paying 1.000, width-weighted 1.000, F fully paying 23, never 0
+  CAP 0.7 narrow_hi  d=   690: open F 20/27, cells paying 0.319, width-weighted 0.239, F fully paying 2, never 0
+  CAP 0.7 narrow_hi  d=  1162: open F 20/27, cells paying 1.000, width-weighted 1.000, F fully paying 20, never 0
+  CAP 0.7 narrow_hi  d=  1296: open F 20/27, cells paying 1.000, width-weighted 1.000, F fully paying 20, never 0
+  CAP 0.7 narrow_hi  d=  1380: open F 20/27, cells paying 1.000, width-weighted 1.000, F fully paying 20, never 0
+  CAP 0.7 narrow_hi  d=  2760: open F 20/27, cells paying 1.000, width-weighted 1.000, F fully paying 20, never 0
+  CAP 0.7 broad_lo   d=   690: open F 10/27, cells paying 0.000, width-weighted 0.000, F fully paying 0, never 10
+  CAP 0.7 broad_lo   d=  1162: open F 10/27, cells paying 1.000, width-weighted 1.000, F fully paying 10, never 0
+  CAP 0.7 broad_lo   d=  1296: open F 10/27, cells paying 1.000, width-weighted 1.000, F fully paying 10, never 0
+  CAP 0.7 broad_lo   d=  1380: open F 10/27, cells paying 1.000, width-weighted 1.000, F fully paying 10, never 0
+  CAP 0.7 broad_lo   d=  2760: open F 10/27, cells paying 1.000, width-weighted 1.000, F fully paying 10, never 0
+  CAP 0.7 broad_hi   d=   690: open F 0/27, cells paying nan, width-weighted nan, F fully paying 0, never 0
+  CAP 0.7 broad_hi   d=  1162: open F 0/27, cells paying nan, width-weighted nan, F fully paying 0, never 0
+  CAP 0.7 broad_hi   d=  1296: open F 0/27, cells paying nan, width-weighted nan, F fully paying 0, never 0
+  CAP 0.7 broad_hi   d=  1380: open F 0/27, cells paying nan, width-weighted nan, F fully paying 0, never 0
+  CAP 0.7 broad_hi   d=  2760: open F 0/27, cells paying nan, width-weighted nan, F fully paying 0, never 0
+
+=== CAP 0.85  rho*(F) (value, flag) ===
+  F1:1.528  F1.5:1.213  F2:1.017  F2.5:0.882  F3:0.783  F3.5:0.707  F4:0.645  F4.5:0.595  F5:0.552  F5.5:0.516  F6:0.485  F6.5:0.457  F7:0.433  F7.5:0.411  F8:0.392  F8.5:0.374  F9:0.358  F9.5:0.344  F10:0.330  F10.5:0.318  F11:0.307  F11.5:0.296  F12:0.286  F12.5:0.277  F13:0.268  F13.5:0.260  F14:0.253
+  E_max = 365 F rho*: F1:558  F1.5:664  F2:743  F2.5:805  F3:857  F3.5:903  F4:942  F4.5:977  F5:1,008  F5.5:1,036  F6:1,061  F6.5:1,084  F7:1,106  F7.5:1,126  F8:1,144  F8.5:1,161  F9:1,177  F9.5:1,192  F10:1,206  F10.5:1,218  F11:1,231  F11.5:1,242  F12:1,253  F12.5:1,263  F13:1,273  F13.5:1,283  F14:1,291
+  CAP 0.85 narrow_lo  d=   690: open F 27/27, cells paying 0.379, width-weighted 0.396, F fully paying 2, never 0
+  CAP 0.85 narrow_lo  d=  1162: open F 27/27, cells paying 0.957, width-weighted 0.968, F fully paying 16, never 0
+  CAP 0.85 narrow_lo  d=  1296: open F 27/27, cells paying 1.000, width-weighted 1.000, F fully paying 27, never 0
+  CAP 0.85 narrow_lo  d=  1380: open F 27/27, cells paying 1.000, width-weighted 1.000, F fully paying 27, never 0
+  CAP 0.85 narrow_lo  d=  2760: open F 27/27, cells paying 1.000, width-weighted 1.000, F fully paying 27, never 0
+  CAP 0.85 narrow_hi  d=   690: open F 26/27, cells paying 0.136, width-weighted 0.103, F fully paying 1, never 0
+  CAP 0.85 narrow_hi  d=  1162: open F 26/27, cells paying 0.945, width-weighted 0.952, F fully paying 15, never 0
+  CAP 0.85 narrow_hi  d=  1296: open F 26/27, cells paying 1.000, width-weighted 1.000, F fully paying 26, never 0
+  CAP 0.85 narrow_hi  d=  1380: open F 26/27, cells paying 1.000, width-weighted 1.000, F fully paying 26, never 0
+  CAP 0.85 narrow_hi  d=  2760: open F 26/27, cells paying 1.000, width-weighted 1.000, F fully paying 26, never 0
+  CAP 0.85 broad_lo   d=   690: open F 23/27, cells paying 0.000, width-weighted 0.000, F fully paying 0, never 23
+  CAP 0.85 broad_lo   d=  1162: open F 23/27, cells paying 0.913, width-weighted 0.913, F fully paying 12, never 0
+  CAP 0.85 broad_lo   d=  1296: open F 23/27, cells paying 1.000, width-weighted 1.000, F fully paying 23, never 0
+  CAP 0.85 broad_lo   d=  1380: open F 23/27, cells paying 1.000, width-weighted 1.000, F fully paying 23, never 0
+  CAP 0.85 broad_lo   d=  2760: open F 23/27, cells paying 1.000, width-weighted 1.000, F fully paying 23, never 0
+  CAP 0.85 broad_hi   d=   690: open F 20/27, cells paying 0.000, width-weighted 0.000, F fully paying 0, never 20
+  CAP 0.85 broad_hi   d=  1162: open F 20/27, cells paying 0.852, width-weighted 0.828, F fully paying 9, never 0
+  CAP 0.85 broad_hi   d=  1296: open F 20/27, cells paying 1.000, width-weighted 1.000, F fully paying 20, never 0
+  CAP 0.85 broad_hi   d=  1380: open F 20/27, cells paying 1.000, width-weighted 1.000, F fully paying 20, never 0
+  CAP 0.85 broad_hi   d=  2760: open F 20/27, cells paying 1.000, width-weighted 1.000, F fully paying 20, never 0
+
+=== CAP 0.95  rho*(F) (value, flag) ===
+  F1:2.765  F1.5:2.082  F2:1.686  F2.5:1.426  F3:1.241  F3.5:1.102  F4:0.994  F4.5:0.906  F5:0.835  F5.5:0.774  F6:0.723  F6.5:0.678  F7:0.640  F7.5:0.606  F8:0.575  F8.5:0.548  F9:0.523  F9.5:0.501  F10:0.480  F10.5:0.462  F11:0.444  F11.5:0.429  F12:0.414  F12.5:0.400  F13:0.387  F13.5:0.375  F14:0.364
+  E_max = 365 F rho*: F1:1,009  F1.5:1,140  F2:1,231  F2.5:1,302  F3:1,359  F3.5:1,408  F4:1,451  F4.5:1,489  F5:1,523  F5.5:1,554  F6:1,584  F6.5:1,610  F7:1,634  F7.5:1,658  F8:1,679  F8.5:1,699  F9:1,719  F9.5:1,736  F10:1,753  F10.5:1,769  F11:1,784  F11.5:1,799  F12:1,812  F12.5:1,825  F13:1,838  F13.5:1,850  F14:1,861
+  CAP 0.95 narrow_lo  d=   690: open F 27/27, cells paying 0.173, width-weighted 0.198, F fully paying 0, never 0
+  CAP 0.95 narrow_lo  d=  1162: open F 27/27, cells paying 0.623, width-weighted 0.703, F fully paying 2, never 0
+  CAP 0.95 narrow_lo  d=  1296: open F 27/27, cells paying 0.734, width-weighted 0.806, F fully paying 3, never 0
+  CAP 0.95 narrow_lo  d=  1380: open F 27/27, cells paying 0.796, width-weighted 0.859, F fully paying 5, never 0
+  CAP 0.95 narrow_lo  d=  2760: open F 27/27, cells paying 1.000, width-weighted 1.000, F fully paying 27, never 0
+  CAP 0.95 narrow_hi  d=   690: open F 27/27, cells paying 0.043, width-weighted 0.047, F fully paying 0, never 0
+  CAP 0.95 narrow_hi  d=  1162: open F 27/27, cells paying 0.571, width-weighted 0.647, F fully paying 2, never 0
+  CAP 0.95 narrow_hi  d=  1296: open F 27/27, cells paying 0.698, width-weighted 0.769, F fully paying 3, never 0
+  CAP 0.95 narrow_hi  d=  1380: open F 27/27, cells paying 0.769, width-weighted 0.832, F fully paying 5, never 0
+  CAP 0.95 narrow_hi  d=  2760: open F 27/27, cells paying 1.000, width-weighted 1.000, F fully paying 27, never 0
+  CAP 0.95 broad_lo   d=   690: open F 27/27, cells paying 0.000, width-weighted 0.000, F fully paying 0, never 27
+  CAP 0.95 broad_lo   d=  1162: open F 27/27, cells paying 0.482, width-weighted 0.541, F fully paying 2, never 0
+  CAP 0.95 broad_lo   d=  1296: open F 27/27, cells paying 0.639, width-weighted 0.700, F fully paying 3, never 0
+  CAP 0.95 broad_lo   d=  1380: open F 27/27, cells paying 0.726, width-weighted 0.782, F fully paying 5, never 0
+  CAP 0.95 broad_lo   d=  2760: open F 27/27, cells paying 1.000, width-weighted 1.000, F fully paying 27, never 0
+  CAP 0.95 broad_hi   d=   690: open F 27/27, cells paying 0.000, width-weighted 0.000, F fully paying 0, never 27
+  CAP 0.95 broad_hi   d=  1162: open F 27/27, cells paying 0.375, width-weighted 0.392, F fully paying 2, never 0
+  CAP 0.95 broad_hi   d=  1296: open F 27/27, cells paying 0.569, width-weighted 0.603, F fully paying 3, never 0
+  CAP 0.95 broad_hi   d=  1380: open F 27/27, cells paying 0.675, width-weighted 0.711, F fully paying 5, never 0
+  CAP 0.95 broad_hi   d=  2760: open F 27/27, cells paying 1.000, width-weighted 1.000, F fully paying 27, never 0
+
+=== per-F detail: CAP 0.85, broad_lo (826 h), d = 1,380 ===
+    F      lo    rho* break-even   gain@lo  gain@rho*
+    1   2.263   1.528      3.781   band closed
+  1.5   1.509   1.213      2.521   band closed
+    2   1.132   1.017      1.890   band closed
+  2.5   0.905   0.882      1.512   band closed
+    3   0.754   0.783      1.260       554        523
+  3.5   0.647   0.707      1.080       554        477
+    4   0.566   0.645      0.945       554        438
+  4.5   0.503   0.595      0.840       554        403
+    5   0.453   0.552      0.756       554        372
+  5.5   0.411   0.516      0.687       554        344
+    6   0.377   0.485      0.630       554        319
+  6.5   0.348   0.457      0.582       554        296
+    7   0.323   0.433      0.540       554        274
+  7.5   0.302   0.411      0.504       554        254
+    8   0.283   0.392      0.473       554        236
+  8.5   0.266   0.374      0.445       554        219
+    9   0.251   0.358      0.420       554        203
+  9.5   0.238   0.344      0.398       554        188
+   10   0.226   0.330      0.378       554        174
+ 10.5   0.216   0.318      0.360       554        162
+   11   0.206   0.307      0.344       554        149
+ 11.5   0.197   0.296      0.329       554        138
+   12   0.189   0.286      0.315       554        127
+ 12.5   0.181   0.277      0.302       554        117
+   13   0.174   0.268      0.291       554        107
+ 13.5   0.168   0.260      0.280       554         97
+   14   0.162   0.253      0.270       554         89
+
+=== credit-per-day statistic, one floor-only year deleted (h/day change) ===
+F=2 span 40 y, work         0 h: +0.0000 h/day (from 2.000)
+F=2 span 40 y, work    20,000 h: +0.0351 h/day (from 3.370)
+F=2 span 40 y, work    50,000 h: +0.0878 h/day (from 5.425)
+F=2 span 60 y, work   100,000 h: +0.0774 h/day (from 6.566)
+F=10 span 40 y, work         0 h: +0.0000 h/day (from 10.000)
+F=10 span 40 y, work    20,000 h: +0.0351 h/day (from 11.370)
+F=10 span 40 y, work    50,000 h: +0.0878 h/day (from 13.425)
+F=10 span 60 y, work   100,000 h: +0.0774 h/day (from 14.566)
+F=14 span 40 y, work         0 h: +0.0000 h/day (from 14.000)
+F=14 span 40 y, work    20,000 h: +0.0351 h/day (from 15.370)
+F=14 span 40 y, work    50,000 h: +0.0878 h/day (from 17.425)
+F=14 span 60 y, work   100,000 h: +0.0774 h/day (from 18.566)

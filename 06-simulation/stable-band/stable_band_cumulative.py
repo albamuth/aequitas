@@ -75,7 +75,7 @@ def run_path(work_h, wants, ages, F, rho, kappa, M,
     k = Kernel(n, sb.credit_rate(work_h, F), Dials(rho=float(rho), floor_h=float(F)))
     k.C = F * 365.0 * ages                                   # floor, every day lived
     if past_work:                                            # sensitivity only
-        k.C = k.C + work_h * 365.0 * np.maximum(ages - 18.0, 0.0)
+        k.C = k.C + np.minimum(work_h, sb.DAY - F) * 365.0 * np.maximum(ages - 18.0, 0.0)  # IC-7 cap
     k.D = past_rate * ages                                   # rebuilt consumption
     out = np.empty(M)
     req = wants * kappa * 365.0

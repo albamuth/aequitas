@@ -1,8 +1,8 @@
 <!-- tag: ovw-aequitas-overview -->
 # Aequitas — Overview
 
-> **Version:** 0.35
-> **Date:** 2026-10-29
+> **Version:** 0.37
+> **Date:** 2026-11-07
 > **Audience:** everyone. No economics background assumed, none required.
 > **Rigorous version:** `00-strategy/Aequitas_Foundations.md`. This document is the plain-language companion; where they differ, the Foundations govern.
 
@@ -266,7 +266,7 @@ So the most anyone can out-say anyone else is the ratio between a full day and t
 
 **In plain words: at the US method, baselines of 10 and 14 hours carry either basket. A 2-hour baseline carries the narrow basket and not the broad one,** because 742 h is less than 826 h.
 
-**The same material life takes 13% to 16% less labour by the German or Japanese method.** That counts the work behind everything people consume, whoever pays for it. At that saving the economy would deliver roughly what everyone wants, between 3% short and 2% over, so little or nothing would have to be rationed. This is the US figures rescaled and has not been run. Whether a 2-hour baseline then carries the broad basket has not been measured.
+**The same material life takes 13% to 16% less labour by the German or Japanese method.** That counts the work behind everything people consume, whoever pays for it. At that saving the economy delivers roughly what everyone wants: 2.6% short by the Swedish method, 0.9% short by the French, and 1.7% over by the German or Japanese, so little or nothing has to be rationed. That was run on 2026-10-30 and 2026-11-07 at baselines of 2, 6, 10, 14 and 16 hours. Under every one of those methods a 2-hour baseline carries the broad basket, on the assumption that a peer's essentials cost the same share less as everything else does. Nobody has measured a peer's essentials basket directly.
 
 **One more limit.** The run used tolerance figures **with no pledging in them**, and backing can double what a community may carry, which halves the usable top end.
 
@@ -674,10 +674,10 @@ Three things this quietly fixes:
 
 | | Money | Aequitas |
 |---|---|---|
-| **The say over what gets made** | The top reaches about **1,000,000 ×** the middle | **Capped at `24 ÷ F`** inside one network's books — 2.4 × at a 10-hour baseline — and a very hard working life reaches about **1.6 ×**. Everyone alive holds some, because staying alive earns credit |
+| **The pledge budget: the hours a person can commit over a lifetime** | The top reaches about **1,000,000 ×** the middle | **Capped at `24 ÷ F`** inside one network's books — 2.4 × at a 10-hour baseline — and a very hard working life reaches about **1.6 ×**. Everyone alive holds some, because staying alive earns credit. **A person living on the baseline who pledges to their own needs has less of it left to point at anything else**, and how much less depends on the baseline (Foundations §5.5.5) |
 | **Material consumption** | about **670 ×** the middle | **No cap.** Limited only by how many people pledge to you (§1) |
 
-**In plain words: the say is bounded and stated as one number. Consumption is not bounded, and this document says so rather than leaving it to be found.**
+**In plain words: the budget is bounded and stated as one number. Consumption is not bounded, and this document says so rather than leaving it to be found.**
 
 #### Two examples
 

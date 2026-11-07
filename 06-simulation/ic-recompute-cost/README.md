@@ -35,4 +35,6 @@ python ic_recompute_cost.py --full
 
 **Disk arm (2026-11-04):** `python disk_ratio.py --test` then `python disk_ratio.py --events 1e7,2e7 --reps 5`. One packed 34-byte log read by both passes from memory, page cache and cache-bypassed disk. Results: [`DISK_RATIO_RESULTS.md`](DISK_RATIO_RESULTS.md); declared first: [`DISK_DECLARED.md`](DISK_DECLARED.md). Needs Windows for the cache-bypassed arm.
 
+**Single-spelling run (2026-11-07):** `python single_spelling.py --test` then `python single_spelling.py --arms mem-fresh,mem-replay,disk-cold --chunks 49 --reps 3` (10⁸) or `--chunks 488 --reps 1` (10⁹). Memory 0.338 / disk 0.433 (nine checks), same at both lengths. Results: [`SINGLE_SPELLING_RESULTS.md`](SINGLE_SPELLING_RESULTS.md); declared first: [`SINGLE_SPELLING_DECLARED.md`](SINGLE_SPELLING_DECLARED.md).
+
 **Read [`RESULTS.md`](RESULTS.md) for the tables, the four things this does not show, and the defects the tests caught.**

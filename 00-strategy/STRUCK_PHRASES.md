@@ -1,7 +1,7 @@
 # Struck phrases — wordings that must not appear in a live document
 
-> **Version:** 0.12
-> **Date:** 2026-11-04
+> **Version:** 0.13
+> **Date:** 2026-11-07
 
 > **Read by [`bin/consistency.py`](../bin/consistency.py). The table below is the machine-readable part; everything else on this page is for people.**
 
@@ -41,6 +41,12 @@ That is not a hypothetical. **It happened three times in a single day, 2026-08-2
 
 | Struck phrase | Struck on | Why | What is true instead |
 |---|---|---|---|
+| `two instruments agree` | 2026-11-07 | **Author ruling 2026-11-07 (`07-outreach/log/PLAN-2026-11-07.md`, decision 3).** `rho_sweep_anchor.py` and `stable_band_kappa.py` share one formula, so their agreement checks the code and not the economy | **One instrument read twice** — Foundations §5.5.7 |
+| `has not been re-run with demand tied to 1,380 h/yr` | 2026-11-07 | Same ruling. `06-simulation/stable-band/RESULTS_PLEDGE_KAPPA.md` ran the pledge term at the anchor on 2026-10-31 | **The anchor-tied pledge table, `ρ*(F) ÷ (1 + p)`** — Foundations §5.5.3 |
+| `must land near **1.20**` | 2026-11-07 | Same ruling. The pre-anchor cost term was 3.65× too high | **0.33 at `F` = 10, tied to the anchor** — Simulation Roadmap §4 |
+| `What would settle it is one run and it has been requested` | 2026-11-07 | Same ruling. The single-spelling run exists: memory 0.34, disk 0.43 at `k` = 3 | **Three stacks, three levels; quote the level with its stack** — Foundations §3.4a |
+| `It inflates and concentrates nothing` | 2026-11-07 | **Author ruling 2026-11-07 (decision 5).** A self-pledge raises no figure, but it spends the pledger's own budget, and a floor-only person spends most of theirs that way at a low floor | **It raises no figure and concentrates nothing, and it spends the pledger's own budget** — Pledges §14.2, Foundations §5.5.5 |
+| `It bounds the say over what gets made. It does not bound consumption` | 2026-11-07 | **Author ruling 2026-11-07 (decision 4).** `24 ÷ F` bounds budgets; part of a budget can be pledged to oneself, so the say is narrower, by the floor | **It bounds pledge budgets; a budget is not the same as the say** — Foundations §5.5.5 |
 | `ρ\* ≈ 1.2` | 2026-11-04 | **The wrong unit, and the error flattered us.** `rho_sweep.py` defined the 1,380 h/yr anchor and never read it; its cost term was the median credit rate, 13.8 h/day, making every clearing level 3.65× too high. Found by the outreach agent's self-council, 2026-11-04 | **ρ\* = 0.33 at `F` = 10, anchor-tied**, agreeing with the stable band's 0.330 — Foundations §5.5.7, `06-simulation/disparity-ceiling/RHO_SWEEP_ANCHOR_RESULTS.md` |
 | `tightens it to ~0.68` | 2026-11-04 | Same unit error, the −30% disaster cell | **A −30% capacity disaster tightens ρ\* to 0.19 at `F` = 10** — Foundations §5.5.7 |
 | `the re-weighting cost was not` | 2026-09-12 | **It has been measured, twice, on two machines.** The sentence was true when written and stopped a record-check figure being borrowed for a pass nobody had timed | **A re-weighting pass costs about a third of a record-check pass** — 26 s against about 100 s at 10⁹ events, single core, no disk. The ratio is 0.35 against the eight streaming checks and 0.27 against all nine — Foundations §3.4a |

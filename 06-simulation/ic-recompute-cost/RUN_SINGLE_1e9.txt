@@ -1,0 +1,23 @@
+$ python 06-simulation/ic-recompute-cost/single_spelling.py --arms mem-fresh,mem-replay,disk-cold --chunks 488 --reps 1
+machine   : AMD64 Family 25 Model 33 Stepping 2, AuthenticAMD - Windows 10
+language  : Python 3.14.3 - numpy 2.5.1
+RAM       : 63.9 GB total, 47.6 GB available at start
+filesystem: NTFS (log dir C:\PROJECTS\Aequitas\06-simulation\log\tmp)
+record    : 34 B/event, ONE packed spelling, both passes parse the same bytes
+k = 3 - accounts 1,000,000 - seed 41 - chunk 2,048,000 events - replay file 12 chunks
+
+requested 488 chunks = 999,424,000 events; IC-5 keys need about 14.9 GB peak (8 B/event, x2 at the sort)
+wrote replay file 796.9 MB in 2.3s
+  mem-fresh  rep 0: N=999,424,000  check8 96.93s  sort 20.46s  reweight 39.21s  ratio8 0.405  ratio9 0.334
+  mem-replay rep 0: N=999,424,000  check8 95.78s  sort 20.43s  reweight 37.98s  ratio8 0.397  ratio9 0.327
+  disk-cold  rep 0: N=999,424,000  check8 117.19s  sort 20.29s  reweight 59.49s  ratio8 0.508  ratio9 0.433
+
+MEASURED  N = 999,424,000 events  (one rep per arm, so no spread)
+arm          ratio9     ratio8     check9 Mev/s  check8 Mev/s  reweight Mev/s  sort s
+mem-fresh     0.334     0.405          8.51         10.31           25.49   20.46
+mem-replay    0.327     0.397          8.60         10.43           26.32   20.43
+disk-cold     0.433     0.508          7.27          8.53           16.80   20.29
+  delta ratio9 (disk-cold - mem-replay, same bytes) = +0.106
+  delta ratio8 (disk-cold - mem-replay, same bytes) = +0.111
+  replay control ratio9 (mem-replay - mem-fresh) = -0.007
+  replay control ratio8 (mem-replay - mem-fresh) = -0.008

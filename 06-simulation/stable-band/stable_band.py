@@ -138,7 +138,12 @@ def build_people(n=N, seed=RNG_SEED):
 
 
 def credit_rate(work_h, floor_h):
-    return float(floor_h) + work_h
+    """F + work_h, capped at 24 h/day (IC-7; Foundations §2.3: "24, capped by IC-7").
+
+    A no-op for every floor up to 14 h/day, because build_people clips work at
+    24 - 14 = 10 h. Above that (the author's F = 16 request, 2026-11-07) a person
+    working more than 24 - F hours is credited 24 and no more."""
+    return np.minimum(float(floor_h) + work_h, DAY)
 
 
 # =============================================================================

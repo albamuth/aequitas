@@ -1,6 +1,6 @@
 ---
 title: Disparity ceiling
-summary: Inside one network's books the largest and smallest lifetime pledge budget per day lived differ by at most 24 ÷ F; it bounds the say over what gets made, not consumption, and nobody reaches it.
+summary: Inside one network's books the largest and smallest lifetime pledge budget per day lived differ by at most 24 ÷ F; it bounds pledge budgets, not consumption, and nobody reaches it; part of a budget can be pledged to oneself, so the say is narrower than the budget.
 type: consequence
 ids: [§5.5.5, §5.5.6, §5.5.7]
 status: provisional
@@ -30,7 +30,7 @@ edges:
 
 > **Result (conditional):** **inside one trust network's own books**, the maximum disparity in **lifetime pledge budget per day lived** is **`24 / F`** — the length of a day divided by that network's self-care floor *F* (hours/day) — independent of the tolerance dial ρ and of the weighting model. At *F* = 10 h that is **2.4×**. Under money the same lever runs to **~10⁶×** and compounds without limit.
 
-> **⚠️ Restated 2026-09-18. It bounds the say over what gets made. It does not bound consumption.**
+> **⚠️ Restated 2026-09-18 and 2026-11-07. It bounds pledge budgets. It does not bound consumption, and a budget is not the same as the say: at ρ\* a floor-only person spends 86% of theirs backing the median at `F` = 2 and 15% at `F` = 10 (Foundations §5.5.5).**
 >
 > A pledge budget is credit the holder earned and nothing else, so `24/F` follows from IC-7 and the floor. **Consumption is gated by `D ≤ ρ·(C + P)`, where `P` is the backing others pledged to a person by name — and `P` has no per-account limit.** Somebody widely backed can consume far beyond `24/F` times a floor-only life, and Aequitas does not prevent it.
 >

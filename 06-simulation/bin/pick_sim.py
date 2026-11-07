@@ -65,7 +65,7 @@ OPEN_STATUSES = {"requested"}
 SIM_ID = re.compile(r"\bsr-\d{8}-[a-z0-9-]+")
 
 QUEUE_HEADER = """\
-# The open simulation requests: a committed copy for readers of the public
+# The hashed simulation requests: a committed copy for readers of the public
 # mirror. The live source is 07-outreach/memory/index.yaml, which the
 # outreach agent fills with `memory.py request-sim` and which is never
 # committed. The nightly sim agent reads the live index directly; it uses
@@ -75,8 +75,11 @@ QUEUE_HEADER = """\
 #
 #     python 06-simulation/bin/pick_sim.py --export
 #
-# That rewrites this file with every request whose status is `requested`,
-# oldest first, in the same shape as the index.
+# That rewrites this file with every request that carries a request hash,
+# whatever its status, oldest first, in the same shape as the index. A hash
+# posted on the board must stay openable here after the request is answered.
+# sync_archive.ps1 runs the export before every mirror sync, so every entry
+# opens at the next sync, within 7 days of sealing.
 #
 # Same shape as the index: one entry per sim id under `sim_requests`,
 # with `date`, `status`, `question`, `why`, and optionally `from`.
@@ -165,7 +168,12 @@ def export():
         print(f"FATAL: --export needs the live index at {INDEX}, which is not here.\n"
               f"Run this on the machine that holds 07-outreach/.", file=sys.stderr)
         return 1
-    rows = open_requests(load(INDEX))
+    # Every row that carries a request hash, whatever its status (ruled
+    # 2026-11-07, PLAN-2026-11-07 decision 2). A posted hash must stay
+    # openable after the request is answered, or the chain goes dark.
+    allrows = (load(INDEX).get("sim_requests") or {}).items()
+    rows = sorted(((sid, b) for sid, b in allrows if (b or {}).get("request_hash")),
+                  key=lambda kv: (kv[1] or {}).get("date", ""))
     keep = ("date", "status", "question", "why", "from", "request_hash")
     sims = {
         sid: {k: (body or {}).get(k) for k in keep if (body or {}).get(k) is not None}
@@ -175,7 +183,7 @@ def export():
         {"sim_requests": sims}, sort_keys=False, allow_unicode=True, width=78
     )
     QUEUE.write_text(text, encoding="utf-8")
-    print(f"wrote {len(sims)} open request(s) to {QUEUE.relative_to(ROOT).as_posix()}")
+    print(f"wrote {len(sims)} hashed request(s) to {QUEUE.relative_to(ROOT).as_posix()}")
     print("commit it, or the cloud agent will not see the change.")
     return 0
 

@@ -203,7 +203,7 @@ This is the standard reply from economics, and it rests on three assumptions. **
 | System | How concentrated the demand lever is |
 |---|---|
 | Money | Top-tail wealth reaches about **10⁶ ×** the median (SCF 2022 + Forbes, §5.5) |
-| Aequitas | Pledging power per day lived cannot exceed **24 ÷ F ≈ 2.4 ×** at a 10-hour floor — and that is an **absolute maximum nobody reaches.** A very hard working life reaches about **1.6 ×** (§5.5.5). **This bounds the say over what gets made, not what anybody consumes** |
+| Aequitas | Pledging power per day lived cannot exceed **24 ÷ F ≈ 2.4 ×** at a 10-hour floor — and that is an **absolute maximum nobody reaches.** A very hard working life reaches about **1.6 ×** (§5.5.5). **This bounds pledge budgets, not what anybody consumes; Foundations §5.5.5 says why a budget is not the whole say** |
 
 **That is the argument in one line: the demand lever moves from a distribution with no upper bound to one bounded at about 2.4 ×.** Every living person holds some, because self-care credits everyone (§4.5).
 

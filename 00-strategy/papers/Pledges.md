@@ -1,9 +1,9 @@
 # Pledges — what they are, what they buy, and why that is not profit
 
-> **Version:** 1.2
-> **Date:** 2026-11-04
+> **Version:** 1.3
+> **Date:** 2026-11-07
 >
-> **⚠️ Dated note, 2026-11-04.** §13.3 and §14 below quote the clearing rate at the pre-anchor unit (baseline about 1.20, −30% disaster about 0.68). Re-measured with demand tied to the 1,380 h/yr anchor, those read **0.33** and **0.19** at `F` = 10 (`../../06-simulation/disparity-ceiling/RHO_SWEEP_ANCHOR_RESULTS.md`; Foundations v0.67 §5.5.7). The argument both sections make — ρ is the adjusting instrument and moves below 1 under stress — is unchanged, and held at the old unit too. The quoted sentences stay as the record of what was argued from.
+> **⚠️ Dated note, 2026-11-04, narrowed 2026-11-07.** §14 now carries the anchor-tied figures. §13.3 below quotes the clearing rate at the pre-anchor unit (baseline about 1.20, −30% disaster about 0.68). Re-measured with demand tied to the 1,380 h/yr anchor, those read **0.33** and **0.19** at `F` = 10 (`../../06-simulation/disparity-ceiling/RHO_SWEEP_ANCHOR_RESULTS.md`; Foundations v0.67 §5.5.7). The argument both sections make — ρ is the adjusting instrument and moves below 1 under stress — is unchanged, and held at the old unit too. The quoted sentences stay as the record of what was argued from.
 > **Status:** Rulings settled. **Not folded** — the core documents still carry the old rules. **Two code jobs remain**; see §16.
 >
 > **Fourteen author rulings, all 2026-09-18.**
@@ -191,7 +191,7 @@ The core documents write the gate as `D ≤ ρ·C`. That form has no place in it
 
 | What is being compared | Money | Aequitas |
 |---|--:|--:|
-| **The say over what gets made** | ~10⁶ × the median | **2.40× at `F` = 10, and nobody reaches it** |
+| **The pledge budget per day lived** | ~10⁶ × the median | **2.40× at `F` = 10, and nobody reaches it.** Foundations §5.5.5 says why a budget is not the same as the say |
 | **Material consumption** | ~670 × the median | **No bound.** §5 measures the range instead |
 
 **And every living person holds some of it**, because staying alive is credited work, which is what OP-1 already calls the universal basic voice.
@@ -709,18 +709,18 @@ The core documents write the gate as `D ≤ ρ·C`. That form has no place in it
 | **10** | **ρ ∈ [0.20, 1.20]** |
 | 14 | **ρ ∈ [0.20, 0.90]** — entirely below 1 |
 
-**And `Aequitas_Foundations.md` §5.5.7 already moves ρ below 1 under stress:** a −30% capacity disaster tightens the clearing rate from about 1.20 to about **0.68**.
+**And `Aequitas_Foundations.md` §5.5.7 already moves ρ below 1 under stress:** a −30% capacity disaster tightens the clearing rate from **0.33** to **0.19** at `F` = 10, with demand tied to the 1,380 h/yr anchor.
 
 > **Pledges make ρ below 1 the ordinary published setting rather than a stress case.**
 
-**The reason is §12.1.** Committed pledges can double the gate, so a network's **effective** tolerance runs up to `2ρ`. To stay inside a measured upper edge of 1.20 at `F` = 10, the **published** ρ must sit at **0.60 or below.**
+**The reason is §12.1.** Committed pledges can double the gate, so a network's **effective** tolerance runs up to `2ρ`. To stay inside the measured upper edge of 0.330 at `F` = 10 (anchor-tied, Foundations §5.5.3), the **published** ρ must sit at **0.165 or below** once every earned hour is committed.
 
 | At `F` = 10 | Upper edge |
 |---|--:|
-| The band as measured, in effective tolerance | **1.20** |
-| **The band a network must publish, once pledges are counted** | **0.60** |
+| The band as measured, in effective tolerance | **0.330** |
+| **The band a network must publish, once every earned hour is pledged** | **0.165** |
 
-**So the publishable band at `F` = 10 is about ρ ∈ [0.26, 0.60], and every value in it is below 1.**
+**So the publishable band at `F` = 10 runs from the broad basket's lower edge, 0.226 – 0.264, up to 0.330 at no pledging, and it closes once about a quarter to a half of lifetime budgets are committed (Foundations §5.5.3). Every value in it is below 1.**
 
 #### Measured, 2026-09-18
 
@@ -730,22 +730,17 @@ The core documents write the gate as `D ≤ ρ·C`. That form has no place in it
 
 | `F` | p = 0 | p = 0.25 | p = 0.50 | p = 0.75 | p = 1.00 |
 |---|--:|--:|--:|--:|--:|
-| 2.0 | 3.70 | 2.96 | 2.47 | 2.11 | **1.85** |
-| **10.0** | **1.20** | **0.96** | **0.80** | **0.69** | **0.60** |
-| 14.0 | 0.90 | 0.72 | 0.60 | 0.51 | **0.45** |
+| 2 | 1.017 | 0.814 | 0.678 | 0.581 | **0.509** |
+| **10** | **0.330** | **0.264** | **0.220** | **0.189** | **0.165** |
+| 14 | 0.253 | 0.202 | 0.168 | 0.144 | **0.126** |
 
-> **ρ*(10) = 1.20 and the documented setting is ρ = 1.2. Those are the same number.** So the documented setting sits **exactly at** the publishable edge at `p` = 0 and **above it for every `p` > 0.** Any pledging at all puts it out of band.
+*(Re-measured 2026-10-31 with demand tied to 1,380 h/yr: [`../../06-simulation/stable-band/RESULTS_PLEDGE_KAPPA.md`](../../06-simulation/stable-band/RESULTS_PLEDGE_KAPPA.md), 6 self-tests. The band table at the top of §14.1, including its `F` = 6 row, was computed at 5,037 h/yr and is not re-measured.)*
+
+> **ρ\*(10) = 0.330, and the setting these documents use in worked examples is ρ = 1.2.** At the US method that setting sits **above the publishable edge at every `p`**, which is the case Foundations §5.5.3 describes: the gate no longer rations, and shortage is settled at distribution.
 
 **The two edges do not see `p` alike, and that is the substance.** The upper edge is an aggregate question, so the population's `p` belongs in it. **The lower edge must hold for somebody nobody pledged to, so it is read at `p` = 0 and does not move.** Reading it at the population's `p` would make essentials look affordable because *other* people were given room — the flattering direction §4.4 warns about.
 
-> **⚠️ And `RESULTS.md`'s headline does not survive. The band closes.**
->
-> | Essentials | `F` | `p` | Lower | Publishable upper |
-> |---|--:|--:|--:|--:|
-> | 70% of a median lifestyle | **1.0** | **0.75** | 2.647 | **2.286** |
-> | 70% of a median lifestyle | **1.0** | **1.00** | 2.647 | **2.000** |
->
-> **Two swept cells shut**, both at the tightest floor and the largest essentials basket. **Everywhere else it stays open at every density up to the ceiling.** So *"the band never closes"* becomes a near-miss with a condition on it, not a theorem.
+> **⚠️ And the band closes, at the ordinary floor.** With demand tied to the anchor, the broad essentials basket at `F` = 10 has a lower edge of 0.226 – 0.264 and the upper edge is `0.330 ÷ (1 + p)`. They meet between `p` = 0.25 and `p` = 0.46. **The earlier run's two shut cells, at `F` = 1 and 70% of a median lifestyle, were computed at 5,037 h/yr and are superseded by this.** *"The band never closes"* is withdrawn outright: Foundations §5.5.3 finds it closed at `F` = 2 on the broad basket even at `p` = 0.
 
 **⚠️ `p` is swept and not measured.** It is behavioural, and no network exists.
 
@@ -755,7 +750,7 @@ The core documents write the gate as `D ≤ ρ·C`. That form has no place in it
 
 | Where the pledge moves | What happens to the gate |
 |---|---|
-| **To themselves** | Room appears at once. **It inflates and concentrates nothing.** The pledger keeps their own claim rather than handing it to somebody else |
+| **To themselves** | Backing appears at once. **It raises no figure and concentrates nothing, and it spends the pledger's own budget.** A person living on the floor who backs their own needs has that much less to direct at anyone else's work: at ρ\* the median takes 86% of a floor-only budget at `F` = 2, 15% at `F` = 10 and 7% at `F` = 14 (Foundations §5.5.5). **So self-pledging lowers the demand pressure the floor population puts on what gets made, by the floor** |
 | **To a cause that would fix the shortage** | **Room appears only as the remediation work is done and distributed to the people who did it** (§3.1) |
 
 > **The second is the useful one, and it works because of ruling 3.** A cause-pledge is uncommitted until distributed. **So the room materialises at the same time as the output that relieves the shortage.** Room tracks goods instead of running ahead of them.

@@ -355,7 +355,7 @@
    "id": "disparity-ceiling",
    "type": "consequence",
    "title": "Disparity ceiling",
-   "summary": "Inside one network's books the largest and smallest lifetime pledge budget per day lived differ by at most 24 ÷ F; it bounds the say over what gets made, not consumption, and nobody reaches it.",
+   "summary": "Inside one network's books the largest and smallest lifetime pledge budget per day lived differ by at most 24 ÷ F; it bounds pledge budgets, not consumption, and nobody reaches it; part of a budget can be pledged to oneself, so the say is narrower than the budget.",
    "status": "provisional",
    "ids": [
     "§5.5.5",

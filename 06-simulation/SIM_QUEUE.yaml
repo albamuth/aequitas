@@ -1,4 +1,4 @@
-# The open simulation requests: a committed copy for readers of the public
+# The hashed simulation requests: a committed copy for readers of the public
 # mirror. The live source is 07-outreach/memory/index.yaml, which the
 # outreach agent fills with `memory.py request-sim` and which is never
 # committed. The nightly sim agent reads the live index directly; it uses
@@ -8,8 +8,11 @@
 #
 #     python 06-simulation/bin/pick_sim.py --export
 #
-# That rewrites this file with every request whose status is `requested`,
-# oldest first, in the same shape as the index.
+# That rewrites this file with every request that carries a request hash,
+# whatever its status, oldest first, in the same shape as the index. A hash
+# posted on the board must stay openable here after the request is answered.
+# sync_archive.ps1 runs the export before every mirror sync, so every entry
+# opens at the next sync, within 7 days of sealing.
 #
 # Same shape as the index: one entry per sim id under `sim_requests`,
 # with `date`, `status`, `question`, `why`, and optionally `from`.
@@ -28,7 +31,7 @@ sim_requests:
     request_hash: dcf9d924881f2b61f5bcb11095cd0c42537ea52604de1eeab290241cd6734ec1
   sr-20260904-does-a-producer-who-labels-each-published-fi:
     date: '2026-09-04'
-    status: requested
+    status: answered
     question: Does a producer who labels each published figure metered or modelled
       out-compete one who does not, or does the honest label only hand rivals a
       cheaper attack surface? Sweep the share of labelling producers and measure
@@ -38,9 +41,22 @@ sim_requests:
       every producer publishing a modelled figure anywhere, not about our rule.'
     from: obj-20260904-custos-unowned-line-invariant
     request_hash: 8157b55faf4bed33ede9d446179e03ae6d28151acfcf139f419cc7561fead2f5
+  sr-20260905-sweep-producers-of-one-good-by-scale-and-by-:
+    date: '2026-09-05'
+    status: answered
+    question: Sweep producers of one good by scale and by affordable chain resolution,
+      holding the physical process fixed. Measure the spread in published debit-hours
+      per kilogram between the best-instrumented and the worst-instrumented producer.
+      Report whether the spread widens with the number of steps in the chain.
+    why: 'coywolf c40752 on post 3551: 3.4a''s coarse-reading-is-a-ceiling result
+      errs against the producer, which is honest and is also a charge on whoever
+      cannot buy instruments. 4.8 registers this as a watch item and says whether
+      the offset is enough is empirical. No figures exist.'
+    from: obj-20260905-coywolf-resolution-tax
+    request_hash: 6721ef541e3aac33537f8a53bc193d97810b22f59703fe903050f8af12776765
   sr-20260905-how-often-does-a-joint-process-flow-sheet-fa:
     date: '2026-09-05'
-    status: requested
+    status: answered
     question: How often does a joint-process flow sheet fail to resolve parcel identity
       - that is, cannot distinguish one input parcel read by two output paths from
       two separate parcels that read equal? Measure the books' overstatement under
@@ -53,22 +69,9 @@ sim_requests:
       parcels by construction.'
     from: obj-20260905-custos-parcel-identity-precondition
     request_hash: 96aef69f46a5e5a1f1eff505780fd1859d3fa0b6ba76071f466afc2ec7bf032c
-  sr-20260905-sweep-producers-of-one-good-by-scale-and-by-:
-    date: '2026-09-05'
-    status: requested
-    question: Sweep producers of one good by scale and by affordable chain resolution,
-      holding the physical process fixed. Measure the spread in published debit-hours
-      per kilogram between the best-instrumented and the worst-instrumented producer.
-      Report whether the spread widens with the number of steps in the chain.
-    why: 'coywolf c40752 on post 3551: 3.4a''s coarse-reading-is-a-ceiling result
-      errs against the producer, which is honest and is also a charge on whoever
-      cannot buy instruments. 4.8 registers this as a watch item and says whether
-      the offset is enough is empirical. No figures exist.'
-    from: obj-20260905-coywolf-resolution-tax
-    request_hash: 6721ef541e3aac33537f8a53bc193d97810b22f59703fe903050f8af12776765
   sr-20260906-over-the-project-s-own-objection-register-cl:
     date: '2026-09-06'
-    status: requested
+    status: answered
     question: 'Over the project''s own objection register, classify every outside
       finding by where its answer actually lived: (a) in the section the critic
       named, (b) elsewhere but reachable by a query built from the critic''s own
@@ -81,7 +84,7 @@ sim_requests:
     request_hash: e8a6f177c6ac978e8d7af73699fc04dd7961a4dfeab89334c7d419c4a77d788f
   sr-20260908-rewrite-sb-05-section-7-with-a-refutation-th:
     date: '2026-09-08'
-    status: requested
+    status: answered
     question: 'Rewrite SB-05 section 7 with a refutation threshold both arms of
       which can fail. Custos''s candidate: P1 against P2, plus a penalty on P3''s
       unreportable share, since the three policies partition the space. Then re-run
@@ -92,23 +95,9 @@ sim_requests:
       briefs programme.
     from: obj-20260908-custos-sb05-threshold-unreachable
     request_hash: 91349a27b8c9d36b04f6de3de9d1dad2e332f3a05773de78422532409b487238
-  sr-20260909-how-large-is-the-gain-from-a-false-passage-c:
-    date: '2026-09-09'
-    status: requested
-    question: How large is the gain from a FALSE PASSAGE claim, and can any check
-      we publish detect one? Sweep a producer overstating how finely they read their
-      chain. Report the understatement in published debit-hours per kilogram, and
-      whether the totals reconciliation of 3.4a, conformance row 7 closure, or the
-      coarse-reading ceiling can separate a true fine reading from a false one.
-    why: coywolf c48233 asked what a third party holds outside our books that makes
-      fineness checkable. Every witness we have is either the producer's own instrument
-      or a total conserved across resolutions, and the ceiling bounds the error
-      in the direction a false claim does not use. 3.4a says this is not measured.
-    from: obj-20260909-coywolf-fineness-has-no-witness
-    request_hash: 6f2c25918f61502d9c51e5a81956c8798a4b1a852e4c24eca66e6a9a2dea1d1f
   sr-20260909-off-one-generator-measure-the-spread-in-a-co:
     date: '2026-09-09'
-    status: requested
+    status: answered
     question: Off one generator, measure the spread in a co-product's published
       debit-hours per kilogram caused by RESOLUTION differences against the spread
       caused by REAL physical efficiency differences between producers. Report both
@@ -120,9 +109,23 @@ sim_requests:
       come back either way. Queue item 79 is blocked on this.
     from: obj-20260909-self-council-sb-06-threshold-model-entailed
     request_hash: 2b6995a3131a0039a5302bb472d4cfe9d6a6ef09bfe1688af838b17a31b3e4d9
+  sr-20260909-how-large-is-the-gain-from-a-false-passage-c:
+    date: '2026-09-09'
+    status: answered
+    question: How large is the gain from a FALSE PASSAGE claim, and can any check
+      we publish detect one? Sweep a producer overstating how finely they read their
+      chain. Report the understatement in published debit-hours per kilogram, and
+      whether the totals reconciliation of 3.4a, conformance row 7 closure, or the
+      coarse-reading ceiling can separate a true fine reading from a false one.
+    why: coywolf c48233 asked what a third party holds outside our books that makes
+      fineness checkable. Every witness we have is either the producer's own instrument
+      or a total conserved across resolutions, and the ceiling bounds the error
+      in the direction a false claim does not use. 3.4a says this is not measured.
+    from: obj-20260909-coywolf-fineness-has-no-witness
+    request_hash: 6f2c25918f61502d9c51e5a81956c8798a4b1a852e4c24eca66e6a9a2dea1d1f
   sr-20260910-over-a-real-multi-step-process-flow-sheet-ho:
     date: '2026-09-10'
-    status: requested
+    status: answered
     question: Over a real multi-step process flow sheet, how often does an absent
       step divide into enumerated-and-absent versus never-looked-at, and what is
       the debit-hours-per-kg error when a reader cannot tell them apart?
@@ -156,6 +159,21 @@ sim_requests:
       and nobody has a figure for how large the attested span is in practice.
     from: obj-20260913-coywolf-days-lived-attested
     request_hash: 06fc56818bfbd97f0024d7baebed642f9a5882cd4ee2b88b2474f9864f6fd1c9
+  sr-20260914-sweep-rho-f-across-the-conforming-band-f-fro:
+    date: '2026-09-14'
+    status: requested
+    question: Sweep rho*F across the conforming band (F from 1 to 14 h/day, rho
+      from the affordability floor to rho*(F)) and report, for each cell, the net
+      debit-room a filer gains or loses per YEAR of declared span deleted on a 4.4
+      backdated reconstruction. Report the share of the conforming band in which
+      deleting a year PAYS on the gate as well as on the published credit-per-day
+      statistic. Use the recomputed median-lifestyle anchor, not 1,380 if that figure
+      has moved.
+    why: Answering coywolf c58595 I found the counter-incentive is conditional on
+      rho*F > 3.78 h/day at the 1,380 anchor, and 5.5.5's four conditions do not
+      name rho*F. I have the break-even by hand; nobody has the share of the band.
+    from: obj-20260914-self-council-span-exploit-flips-at-low-floor
+    request_hash: 328bd9776b2f6e13ba076086ec9872d3e484373db0269f8fdfbed028c1e4b91d
   sr-20260914-run-the-record-check-pass-and-the-full-re-we:
     date: '2026-09-14'
     status: requested
@@ -173,21 +191,21 @@ sim_requests:
       a second point, not the project's point. Two uncoordinated stacks under one
       pre-registration is the only shape that gives a slope.
     request_hash: ff3d94428f9d7628238c498a9e7a061ed74a0478314118af7380f38fcd72c7fe
-  sr-20260914-sweep-rho-f-across-the-conforming-band-f-fro:
-    date: '2026-09-14'
-    status: requested
-    question: Sweep rho*F across the conforming band (F from 1 to 14 h/day, rho
-      from the affordability floor to rho*(F)) and report, for each cell, the net
-      debit-room a filer gains or loses per YEAR of declared span deleted on a 4.4
-      backdated reconstruction. Report the share of the conforming band in which
-      deleting a year PAYS on the gate as well as on the published credit-per-day
-      statistic. Use the recomputed median-lifestyle anchor, not 1,380 if that figure
-      has moved.
-    why: Answering coywolf c58595 I found the counter-incentive is conditional on
-      rho*F > 3.78 h/day at the 1,380 anchor, and 5.5.5's four conditions do not
-      name rho*F. I have the break-even by hand; nobody has the share of the band.
-    from: obj-20260914-self-council-span-exploit-flips-at-low-floor
-    request_hash: 328bd9776b2f6e13ba076086ec9872d3e484373db0269f8fdfbed028c1e4b91d
+  sr-20260915-run-the-record-check-pass-and-the-full-re-we:
+    date: '2026-09-15'
+    status: answered
+    question: Run the record-check pass and the full re-weighting pass off ONE generator
+      with ONE bytes-per-event spelling, on one machine, from DISK and from MEMORY,
+      at 10^8 and 10^9 events, nine checks and eight. Report the four absolute rates
+      and the two ratios, and state whether the memory ratio reproduces the published
+      0.27.
+    why: hemei's disk arm (c61838) returns a memory ratio of 0.114-0.129 at 10^8
+      against our published 0.27 at 10^9 - about a factor of two - but their record-check
+      log is 34 B/event and their re-weighting log is 28 B/event, so the LEVEL is
+      cross-generator while the disk-vs-memory delta is clean. My pre-registration
+      was stated only over deltas and could not have caught a level gap.
+    from: obj-20260915-self-council-prereg-over-deltas
+    request_hash: d90f94def3b71fa3891731835026f2a14528f79901f6720bd409451d1d327f2c
   sr-20260915-produce-a-detection-dose-curve-for-rho-for-e:
     date: '2026-09-15'
     status: requested
@@ -202,36 +220,20 @@ sim_requests:
       as a route to it. A curve has no cell to confirm.'
     from: obj-20260915-gradient-dissent-spread-pairing-dose
     request_hash: 1fbe5dae8d5ed019d22aacce3dcf130561ae10197c437025d870388c74fd143b
-  sr-20260915-run-the-record-check-pass-and-the-full-re-we:
-    date: '2026-09-15'
-    status: requested
-    question: Run the record-check pass and the full re-weighting pass off ONE generator
-      with ONE bytes-per-event spelling, on one machine, from DISK and from MEMORY,
-      at 10^8 and 10^9 events, nine checks and eight. Report the four absolute rates
-      and the two ratios, and state whether the memory ratio reproduces the published
-      0.27.
-    why: hemei's disk arm (c61838) returns a memory ratio of 0.114-0.129 at 10^8
-      against our published 0.27 at 10^9 - about a factor of two - but their record-check
-      log is 34 B/event and their re-weighting log is 28 B/event, so the LEVEL is
-      cross-generator while the disk-vs-memory delta is clean. My pre-registration
-      was stated only over deltas and could not have caught a level gap.
-    from: obj-20260915-self-council-prereg-over-deltas
-    request_hash: d90f94def3b71fa3891731835026f2a14528f79901f6720bd409451d1d327f2c
-  sr-20260919-recompute-the-german-japanese-883-h-yr-and-s:
-    date: '2026-09-19'
-    status: requested
-    question: Recompute the German/Japanese 883 h/yr and Spanish 759 h/yr median-lifestyle
-      anchors under the current joint-production rule, the same way the 1,380 h/yr
-      US anchor was recomputed on 2026-09-04. Report whether the three move together
-      or separately, and republish the three break-even values rho*F = anchor/365.
-    why: At c69742 I published break-evens of 3.78, 2.42 and 2.08 h/day and exploit
-      sizes of 650, 153 and 29 h/yr, all derived from those three anchors. The US
-      anchor was recomputed under the v0.38 rule; I do not know whether the other
-      two were, and a break-even is a ratio of two anchors, so a move in one and
-      not the others changes the ordering I published. The result also flatters
-      us, which is the direction nobody inside audits.
-    from: obj-20260919-coywolf-span-priced-so-never-neutral
-    request_hash: f34e4562bd970b863718e34da22b13113df9da71041b60d8b22a5c0c0aaea0a5
+  sr-20260916-sweep-the-reachable-disparity-ratio-under-th:
+    date: '2026-09-16'
+    status: refused
+    question: Sweep the reachable disparity ratio under the uncredited-childhood
+      policy across LIFESPAN, not just across the policy. Compute [F*a + 24*(L-a)]/L
+      over a in 0..21 and L in 18..100 at F=10, and report the whole surface plus
+      the L at which the published 2.085x is attained. State whether 5.5.5's childhood
+      row should carry the lifespan or the general form.
+    why: 'coywolf c62295 asked what each of 5.5.5''s four conditions holds fixed
+      without saying so. Condition 2 holds a lifespan fixed: 2.085x is the policy
+      at an 80-year life, and at L=40 the cap is 1.770x. Published at c63973. The
+      document states it as a property of a network choice.'
+    from: obj-20260916-self-council-childhood-condition-holds-lifespan
+    request_hash: 44d932949eeb34f6765f6ebf29d4acec223b704906004b608faa3e1aa75b469b
   sr-20260919-sweep-span-estimate-generosity-across-compet:
     date: '2026-09-19'
     status: requested
@@ -248,6 +250,21 @@ sim_requests:
       arrest may not reach it. Stated in public as unanswered and no answer invented.
     from: obj-20260919-self-council-span-estimate-is-not-a-published-setting
     request_hash: b45903d625043bd463bf92547aa09a73e104a2f7f91d08ef01e8c41f77b48eae
+  sr-20260919-recompute-the-german-japanese-883-h-yr-and-s:
+    date: '2026-09-19'
+    status: requested
+    question: Recompute the German/Japanese 883 h/yr and Spanish 759 h/yr median-lifestyle
+      anchors under the current joint-production rule, the same way the 1,380 h/yr
+      US anchor was recomputed on 2026-09-04. Report whether the three move together
+      or separately, and republish the three break-even values rho*F = anchor/365.
+    why: At c69742 I published break-evens of 3.78, 2.42 and 2.08 h/day and exploit
+      sizes of 650, 153 and 29 h/yr, all derived from those three anchors. The US
+      anchor was recomputed under the v0.38 rule; I do not know whether the other
+      two were, and a break-even is a ratio of two anchors, so a move in one and
+      not the others changes the ordering I published. The result also flatters
+      us, which is the direction nobody inside audits.
+    from: obj-20260919-coywolf-span-priced-so-never-neutral
+    request_hash: f34e4562bd970b863718e34da22b13113df9da71041b60d8b22a5c0c0aaea0a5
   sr-20260920-run-the-re-weighting-and-record-check-passes:
     date: '2026-09-20'
     status: requested
@@ -319,20 +336,6 @@ sim_requests:
       against 2 and that nobody has priced it. I invented no figure.'
     from: obj-20260924-coywolf-publisher-is-harmed-party
     request_hash: da5b020d420db5c8a730484db8ec7c271c15af96306647928d851d2392d8f829
-  sr-20260926-count-this-seat-s-own-correction-rate-on-1f9:
-    date: '2026-09-26'
-    status: requested
-    question: 'Count this seat''s own correction rate on 1f916: over every post
-      and comment it has published, how many claims did it later correct against
-      itself, and what is the denominator of claims published? Report the count,
-      the denominator, and the convention used to decide what counts as one claim.'
-    why: coywolf c77725 proposed judging a rule by its correction record rather
-      than its wording. I answered yes and then had to say in public at c80678 that
-      I cannot state my own seat's rate, because I have a numerator every night
-      and have never counted a denominator. Quoting one without the other is the
-      exact fault I keep reporting in other people's figures.
-    from: obj-20260926-coywolf-span-judged-by-correction-record
-    request_hash: 43f05b85298ea895a07cfdc0736d07abc709423096d920f58332801ad37f6d6b
   sr-20260926-over-the-five-core-documents-enumerate-every:
     date: '2026-09-26'
     status: requested
@@ -348,6 +351,37 @@ sim_requests:
       no checker at all.'
     from: obj-20260926-gradient-dissent-shell-chain-never-binds
     request_hash: 48307f032299bbe81926971ca8f6180b8f46d02b349b62427fe41a48f1fdef28
+  sr-20260926-sweep-the-reachable-disparity-ratio-when-a-s:
+    date: '2026-09-26'
+    status: refused
+    question: Sweep the reachable disparity ratio when a subscriber's ACTUAL recognised
+      self-care time falls below the network's published F. Take the 5.5.1 worked
+      floor (sleep 8.0, eating 1.0, washing 0.5, upkeep 0.5, F = 10.0) and vary
+      real sleep from 8.0 down to 3.0 h. Report 24 divided by the smallest actual
+      recognised total, and report whether any published clause bounds that minimum
+      from below.
+    why: reed-agent c78139 found 5.5.5's derivation needs every subscriber to accrue
+      at least F hours a day, which 2.3 asserts as an empirical fact about every
+      human rather than as a condition. By hand the bound moves 2.400x -> 3.000x
+      at one 6-hour sleeper and 4.000x at a 4-hour sleeper, and 5.5.1 explicitly
+      declines to bind a network to the AASM/SRS 7-hour figure. I published those
+      three cells and need the swept form and the bounding-clause answer.
+    from: obj-20260926-reed-agent-floor-duration-premise
+    request_hash: 647576afba5a6e1e1e534acb05f3ef08b073cd14b9e37d4d7d4cbf1fff23b45a
+  sr-20260926-count-this-seat-s-own-correction-rate-on-1f9:
+    date: '2026-09-26'
+    status: requested
+    question: 'Count this seat''s own correction rate on 1f916: over every post
+      and comment it has published, how many claims did it later correct against
+      itself, and what is the denominator of claims published? Report the count,
+      the denominator, and the convention used to decide what counts as one claim.'
+    why: coywolf c77725 proposed judging a rule by its correction record rather
+      than its wording. I answered yes and then had to say in public at c80678 that
+      I cannot state my own seat's rate, because I have a numerator every night
+      and have never counted a denominator. Quoting one without the other is the
+      exact fault I keep reporting in other people's figures.
+    from: obj-20260926-coywolf-span-judged-by-correction-record
+    request_hash: 43f05b85298ea895a07cfdc0736d07abc709423096d920f58332801ad37f6d6b
   sr-20261007-from-the-launcher-s-own-run-records-list-for:
     date: '2026-10-07'
     status: requested
@@ -373,7 +407,7 @@ sim_requests:
     request_hash: 40ac7299324bef9bbea811c47f9a8dce131b80b98998d25d491d2946d70b05d7
   sr-20261014-over-a-realistic-household-basket-two-adults:
     date: '2026-10-14'
-    status: requested
+    status: answered
     question: Over a realistic household basket (two adults, one network), how much
       debit does routing co-products of one joint process (beef and hide, refinery
       products) to one member save under the max rule for fractional holdings, against
@@ -384,3 +418,409 @@ sim_requests:
       size for it.'
     from: obj-20261014-wubbitys-household-consolidation
     request_hash: 3fb1f88612a4fb94744ed9f56fdfdf1f58bd29de4255f85372d66f67c2306c6a
+  sr-20261017-hours-on-the-shared-steps-of-raising-and-sla:
+    date: '2026-10-17'
+    status: answered
+    question: Hours on the shared steps of raising and slaughtering ONE whole lamb
+      (meat and fleece both pass them), with a cited source, and the consolidation
+      saving S = min(f_meat, f_fleece) x shared hours for a two-adult household
+      that buys the whole lamb, one member holding the meat and the other the fleece,
+      as hours a year and as a share of 2,760 h. Repeat for one whole chicken (meat
+      and feathers).
+    why: 'Post 2026-10-17 on household consolidation: the closed form says S is
+      large only when f is near 1 on both co-products, which happens when the process
+      is small next to the household. I guessed in public that a whole-lamb household
+      passes 1% (27.6 h/yr) and promised the figure by 2026-10-31.'
+    from: obj-20261014-wubbitys-household-consolidation
+    request_hash: 67be0222852ddf1ca9366dfa7ac5b907710b071632cbfb0d53b060bc1f365122
+  sr-20261017-from-the-launcher-s-own-run-records-the-same:
+    date: '2026-10-17'
+    status: requested
+    question: 'From the launcher''s own run records (the same records as sr-20261007-from-the-launcher-s-own-run-records-list-for),
+      compute the admissibility rate: the fraction of run boundaries whose overlap
+      interval holds no arrival, and whether arrival counts inside overlap intervals
+      correlate with counts just outside them.'
+    why: 'gnomon c107830 on #7620: closing windows only at empty-overlap boundaries
+      selects quiet windows, so a miss rate over admissible windows is biased. Answered
+      c110183: the test reduces to whether arrivals cluster; I hold no admissibility
+      rate for my seat.'
+    from: obj-20261007-gnomon-cadence-read-off-prose
+    request_hash: d90e1756ef97a9d5ee297087c95205495231e14f5d262f9d5481ab0e09b4453d
+  sr-20261018-hours-of-labour-and-materials-energy-in-one-:
+    date: '2026-10-18'
+    status: requested
+    question: Hours of labour (and materials/energy) in one honeybee colony-year
+      that BOTH honey and beeswax pass through, from a sourced hobby or small-apiary
+      time study. Report hours per colony-year, the source, and whether two colonies
+      kept by one household cross 27.6 h/yr (1% of 2,760 h).
+    why: 'unspent c110925 on #9090 guessed 2% for a two-hive household (needs 27.6
+      h per colony) and asked whether the keeper''s hours count. Answered c111494:
+      they do, and for producers S is a split penalty. I hold no hours per hive
+      and promised scoring by 2026-10-31.'
+    from: obj-20261018-unspent-producer-households-baseline
+    request_hash: a6e7474cfe4a364a7a33a4e709982bac45cad32c0e851a2ca9df03864f6208bb
+  sr-20261019-from-a-sourced-direct-air-capture-or-point-s:
+    date: '2026-10-19'
+    status: requested
+    question: 'From a sourced direct-air-capture or point-source capture study,
+      what is r, the labour-hours (and energy) to remove one kg of CO2? Report a
+      sourced range, and recompute #9327''s per-household pledge line (750 x r -
+      0.81 h/yr) at both ends.'
+    why: '#9327 sized the pledge a gas plant''s staff need at Foundations 3.2b''s
+      illustrative r = 0.05 h/kg (36.7 h per household a year). The answer is linear
+      in r and I hold no measured r.'
+    from: obj-20261019-self-council-plant-pledge-timing
+    request_hash: 8d20aa6830115c6e1aeca26de7a5e34a328436c5f126e04f8a898a6d734f2063
+  sr-20261021-re-run-the-k-3-point-of-reweight-ratio-py-s-:
+    date: '2026-10-21'
+    status: requested
+    question: Re-run the k = 3 point of reweight_ratio.py's k sweep with TEN repeats
+      on the same stack, and publish the ratio as an interval (median and spread),
+      not as the widest repeat range. Report whether the k = 3 point's 0.018 miss
+      above the fitted affine line falls inside that interval.
+    why: 'hemei c114537/c114539 on #5992: their own sweep''s k = 3 point also sat
+      above their line (+0.114 vs a 0.089 span). Two stacks, same side. Ten repeats
+      decides whether ours is noise or a mid-range bend. Told hemei in public tonight
+      it is filed and undated.'
+    request_hash: 4eb06a555f526ea347805793f91272f9a581113ba61b6f0b0fcc98df724ea37e
+  sr-20261022-from-a-sourced-beef-carcass-cutout-table-nam:
+    date: '2026-10-22'
+    status: requested
+    question: From a sourced beef carcass cutout table (named retail cuts with masses
+      per carcass), compute for each cut the ratio between its figure read as its
+      own co-product (whole process against the cut's mass) and read as a mass-share
+      split of the beef. Report the median and the largest ratio, and the share
+      of carcass mass in cuts whose ratio exceeds 10.
+    why: 'On #9605 the 41.7x gap between conformance rows 10a and 10f is on the
+      illustrative 3.4a steer only; holy-hermes (c115924) showed it is a naming
+      lever larger than the 6.31x one the withdrawal removed. I have no sourced
+      size for it.'
+    from: obj-20261022-holy-hermes-cut-naming-is-a-model
+    request_hash: b9b5dd49cdbed9dcbd41916c05598429266116863e6151a8357aad4d804ea04d
+  sr-20261023-re-run-stable-band-py-s-upper-edge-rho-on-a-:
+    date: '2026-10-23'
+    status: answered
+    question: 'Re-run stable_band.py''s upper edge rho* on a CUMULATIVE ledger:
+      each agent joins with credit and debit rebuilt to birth (floor credit per
+      day lived, cohort consumption 1,380 h/yr at the US method), ages drawn from
+      a declared distribution, all joining on day one, then run M yearly periods.
+      Report rho*_L at F = 2, 10, 14 beside the one-day rho*, and the period at
+      which admitted demand returns to the one-day level. Declare ages, past consumption,
+      joining schedule and M before running.'
+    why: 'stable_band.py lines 159-163 open each cell at C = D = 0 (gate.py 65-66),
+      accrue one day and consume once. Foundations 5.5.6 makes the gate cumulative
+      and 4.4 rebuilds a joiner''s life, so 3.0''s person B joins able to carry
+      120,000 h (87 years of median consumption). Expected direction: rho*_L below
+      1.20, which flatters the documented rho = 1.2. Size unknown.'
+    request_hash: fb2d6f6e032598fd4e18ce9621c63f15c1f3ad9ffb51ca3182790fab2620cc99
+  sr-20261026-for-a-small-producer-of-an-early-leaving-co-:
+    date: '2026-10-26'
+    status: requested
+    question: 'For a small producer of an early-leaving co-product, compare two
+      routes to a fine chain reading: (a) buying and running its own boundary instruments
+      at resolution_tax.py''s default price of 40 h per cut, against (b) crediting
+      a third-party reader''s hours to visit and read one independent mass meter
+      per boundary at a stated sampling rate. Report hours per kg of output for
+      each route across producer scale 10^2 to 10^7 kg a year, and the scale at
+      which they cross.'
+    why: 'Post #10239 asks the board which is cheaper and says in public I do not
+      have the number. false_passage.py shows a producer-read meter catches lies
+      at its false-alarm rate (0.3-1.7%) and a third-party one at 99.7-100%; resolution_tax.py
+      shows the uninstrumented producer pays a median ~2x. Nobody has priced route
+      (b).'
+    from: obj-20261026-self-council-reader-backing-result-dependent
+    request_hash: 964ec77b3775b937ea259c6d36f2ac091c1f7fbeab37389132aeffd02d6ed9f2
+  sr-20261026-re-run-stable-band-py-with-kappa-tied-to-the:
+    date: '2026-10-26'
+    status: answered
+    question: 'Re-run stable_band.py with kappa tied to the measured anchor: each
+      person''s yearly demand is 1,380 h/yr at the US method, not the median daily
+      credit x 365 (13.797 h x 365 = 5,037 h/yr, line 187). Report BOTH edges at
+      F = 2, 10, 14: the one-day rho* and the cumulative rho*_L (same ages, joining
+      schedule, M and capacity as sr-20261023), beside break-even 3.78/F. Declare
+      kappa, capacity and population before running. State whether capacity still
+      binds at kappa = 1,380.'
+    why: 'PLAN-2026-10-26 decision 5.1 A, ruled 2026-10-26. sr-20261023 found the
+      cumulative edge falls to just above break-even (0.42 at F = 10) and that setting
+      past debit to 5,037 makes it equal the one-day edge exactly, so the size of
+      the fall is the gap between 5,037 and 1,380. Foundations 5.5.3 now says the
+      direction is measured and the level is not. Expected: the one-day edge moves
+      too, because each person asks for 3.78 h of debit a day rather than 13.8 h.
+      No held property is now the modelled case of every joiner keeping property
+      unrecorded (author ruling 2026-10-26).'
+    request_hash: e4135e047ebd529ac9ca292734b4b59d52e4414fea4eb7feb02948e898ee73df
+  sr-20261027-run-pledge-band-py-s-pledge-term-on-the-cumu:
+    date: '2026-10-27'
+    status: refused
+    question: 'Run pledge_band.py''s pledge term on the CUMULATIVE ledger of sr-20261023
+      (same ages, all join on day one, M = 100, same capacity): report the publishable
+      upper edge at pledge density p = 0, 0.25, 0.5, 0.75, 1 at F = 2, 10, 14, beside
+      break-even 3.78/F, and the p at which the edge meets break-even. State whether
+      the one-day rule edge = rho*(F)/(1+p) still holds on the rebuilt ledger.'
+    why: 'hemei c123296 on #9835 argues p* = rho*(F)/rho_neutral - 1 cancels ledger
+      bias. rho_neutral = 1,380/(365F) is arithmetic, not a ledger output, so it
+      does not move; on the cumulative run p* at F = 2 falls from 0.964 to about
+      0.05 IF the 1/(1+p) rule carries over. Nobody has run the pledge term on a
+      rebuilt ledger.'
+    request_hash: b2d04b0a67f5d9dcdd6539ee3a76722034a990751b8b1589db59ca05fca882c0
+  sr-20261028-on-the-ledger-rebuilt-to-birth-the-sr-202610:
+    date: '2026-10-28'
+    status: answered
+    question: On the ledger rebuilt to birth (the sr-20261023 cumulative stable-band
+      run), price every person's past debit at kappa = 5,037 h/yr instead of the
+      1,380 h/yr anchor, and report the rebuilt edge rho*_L at F = 2, 10 and 14.
+      Print rho*_L, the one-day rho*, their ratio, and rho*_L x F in one row per
+      floor.
+    why: 'hemei c123472 on #9835: the rebuilt/one-day ratio falls 47%, 65%, 68%
+      across F, so one unit substitution cannot explain it. On the published rows
+      rho*_L x F = 3.96, 4.16, 4.19 (1.05-1.11 x break-even 3.78/F), so the edge
+      looks pinned by break-even. Two cells published c-tonight: A (rho*_L x F within
+      10% of one value) against B (rho*_L = one-day rho* within 2%, my own c123379
+      claim). Due 2026-11-11.'
+    request_hash: 06f828854ebe6eb4e338e5e5f13cef6975fde7f4e255353c746eece3791858b2
+  sr-20261028-re-run-stable-band-kappa-py-at-the-german-ja:
+    date: '2026-10-28'
+    status: answered
+    question: Re-run stable_band_kappa.py at the German/Japanese and the Spanish
+      production methods. Tie each person's yearly demand to that method's median
+      lifestyle (883 and 759 h/yr, median-lifestyle/Q6.md) and set capacity to what
+      the same physical envelope delivers under that method (88,196 and 102,629
+      units against wants of 66,407, Foundations 5.5.3). Report the one-day and
+      cumulative upper edge rho* at F = 2, 10, 14 beside break-even (883 or 759)/(365F).
+      Scale the narrow (516-655 h) and broad (826-965 h) essentials baskets by the
+      method ratio (883/1,380 and 759/1,380), DECLARE that scaling as an assumption,
+      and say at each F whether the band is open on each basket. Say plainly if
+      the gate never binds, so that there is no upper edge. Declare outcomes before
+      running.
+    why: PLAN-2026-10-28 decision 5.1 item 4, author ruling 2026-10-28. The kappa-tied
+      run (sr-20261026) closed the band at F = 2 on the broad basket at the US method.
+      Foundations v0.64 5.5.3 says whether it opens under the efficient methods
+      is inferred (lower edge 0.72-0.85 at F = 2 by scaling the basket by 0.64),
+      not measured. This turns the inference into a measurement.
+    request_hash: 00c5d58e4e54d37548dbf4684f83237809319c655741b66a0d7634395ae5e455
+  sr-20261028-run-pledge-band-py-s-pledge-term-on-the-kapp:
+    date: '2026-10-28'
+    status: requested
+    question: 'Run pledge_band.py''s pledge term on the kappa-tied ledger of sr-20261026
+      (demand 1,380 h/yr, past debit 1,380 h/yr, same ages, all join on day one,
+      M = 100, capacity 56,446): report the publishable upper edge at pledge density
+      p = 0, 0.25, 0.5, 0.75, 1 at F = 2, 10, 14, beside break-even 3.78/F, and
+      state whether the one-day rule edge = rho*(F)/(1+p) still holds.'
+    why: 'Re-files sr-20261027 (hemei c123296 on #9835), refused 2026-10-28 because
+      it named the 5,037 h/yr ledger. PLAN-2026-10-28 decision 5.4.'
+    request_hash: 9b14133a36dd8c997bb78a2554666f7918df2a572604d05786ae6b65b5508f22
+  sr-20261029-re-run-stable-band-methods-py-the-kappa-tied:
+    date: '2026-10-29'
+    status: requested
+    question: 'Re-run stable_band_methods.py (the kappa-tied band at another production
+      method) at the every-payer peer ratios of 06-simulation/median-lifestyle/Q6_PAYERS_RUN.txt:
+      peers at 0.836 (Germany, Japan), 0.858 (France) and 0.873 (Sweden) of the
+      US yearly demand of 1,380 h, so kappa = 1,153.7 / 1,184.0 / 1,204.7 h/yr,
+      with capacity = 778,955 h divided by (kappa / 100) units (US capacity 56,446
+      units at 13.80 h a unit) against wants of 66,407. Report at F = 2, 10, 14
+      the one-day and cumulative rho* where a capacity edge exists (say ''none''
+      where it does not) and rho_sat, beside break-even kappa/(365*F). Scale both
+      essentials baskets by the same ratio and declare that scaling as an assumption.
+      Say whether the band is open on each basket. Leave Spain out (data gap). Keep
+      the US control.'
+    why: Replaces the 883 h / 759 h inputs of sr-20261028-re-run-stable-band-kappa-py-at-the-german-ja,
+      which are the household-only Q6 ratios 0.64 and 0.55, withdrawn by q6_payers.py
+      on 2026-09-24 and by Foundations v0.65. At those ratios capacity is 133% of
+      wants; at the every-payer ratios it is 97% to 102%, so whether an upper edge
+      exists is the open question. PLAN-2026-10-29 decisions 5.2 and 5.4.
+    from: rul-20261029-q6-every-payer-and-windfall
+    request_hash: ed3d4ec4e50c8018236797ed13f963cb53d6710ba4808e1288b88c51dac858ae
+  sr-20261031-split-the-1-380-h-yr-median-adult-anchor-int:
+    date: '2026-10-31'
+    status: requested
+    question: Split the 1,380 h/yr median-adult anchor into (a) the adult's own
+      consumption and (b) children's consumption that track1_embodied_hours.py lines
+      130-133 loads onto adults. Then give a child's consumption in h/yr by age
+      band (0-4, 5-11, 12-17), split into the narrow essentials basket and the rest.
+      Declare the child equivalence scale used.
+    why: 'MarxSignal c127036 on #10610: a network may book a minor''s necessaries
+      to the minor (Pledges.md ruling 8). The windfall margin at F = 2 under that
+      setting cannot be signed without (a), and every childhood figure we quote
+      is an adult rate or an all-ages basket. Pledges.md 13.1 says the figure is
+      measurable and unmeasured.'
+    from: obj-20261030-marxsignal-child-debit-booked-to-child
+    request_hash: 26f8c866f7ffb23ba5f7847cc6b588f927fd93cfb5c396e2e9014666d45c1d15
+  sr-20261031-re-run-stable-band-cumulative-py-kappa-tied-:
+    date: '2026-10-31'
+    status: requested
+    question: 'Re-run stable_band_cumulative.py (kappa-tied, kappa = 1,380/365)
+      in two arms at F = 2, 10, 14, beside the published rho*_L 1.017 / 0.330 /
+      0.253. Arm 1: line 79 past debit = 1,380 x max(0, age - 18) instead of 1,380
+      x age; nothing else changed. Arm 2: arm 1, plus every person under 18 requests
+      nothing under their own gate, and their wants are added to the adults'' requests
+      in equal shares (declared household rule). Report rho*_L, the period that
+      sets it, and whether the F = 2 narrow band (lower edge 0.71-0.90) stays open.
+      Declare outcomes before running.'
+    why: 'Pledges.md ruling 7: a child carries no debit; goods stay with the guardian.
+      Line 79 books every joiner''s childhood at an adult rate, and line 81 has
+      the 22% under 18 consume under their own gates. Pledges.md 13.1 says a network
+      with many children sets rho lower and nobody has measured how much. Posted
+      tonight with pre-registered cells.'
+    from: obj-20261030-marxsignal-child-debit-booked-to-child
+    request_hash: a2be36b62a82fbbfb70fb0845a347423a82dfe5384579b63d76dd50fd62c1548
+  sr-20261102-of-the-0-3-oecd-modified-weight-a-child-unde:
+    date: '2026-11-02'
+    status: refused
+    question: 'Of the 0.3 OECD-modified weight a child under 14 adds to household
+      consumption (Pledges.md 13.1: 552 h/yr in a two-adult home, 414 h/yr in a
+      one-adult home, both anchored at 1,380 h per adult), what share is purchased
+      care (daycare) and schooling? Report the share by age band (0-4, 5-11, 12-13)
+      with its source, and the hours that remain once that share is removed, since
+      under ruling 7 and Foundations 4.5 care and schooling debit nobody.'
+    why: Pledges.md 13.1 calls 552 h a ceiling and says the care-and-schooling share
+      is measurable and unmeasured (track1_by_category.py). Tonight's post computes
+      a single parent's yearly shortfall at the top of the band; it closes if that
+      share reaches 54% at F = 2 or 80-81% at F = 10 and 14. MarxSignal c129656
+      asked which scale; this is the number that decides whether the scale matters.
+    request_hash: 6094a977976708f0ce3ac3d3dff5ae339eb26d97c143922ac06fad1ed4d59e18
+  sr-20261102-births-arm-of-stable-band-cumulative-py-kapp:
+    date: '2026-11-02'
+    status: requested
+    question: 'Births arm of stable_band_cumulative.py (kappa-tied, US method, F
+      = 2, 10, 14). Add births and deaths over the 100 years; the runner DECLARES
+      the birth rate and the death schedule and prints both. Children follow Pledges.md
+      ruling 7: no debit, floor credit from birth, no requests below the consent
+      age (runner declares it). Report rho* with and without births at each F, and
+      the change, as three separate columns. Declared before running: cell 1, rho*(births)
+      < rho*(fixed) at every F; cell 2, it is >= at some F; cell 3 (level), rho*(births)
+      at F = 2 is below 0.90, the top of the narrow-basket lower edge.'
+    why: 'cinnabar c129621 on #10846 asked for the births arm with the change in
+      rho* reported separately and the birth and death assumptions stated. I promised
+      it by 2026-11-15 if arm 1 had not landed (c129566); filed early. The fixed-population
+      model has nobody born or dying (Foundations 5.5.3), so growth is unmeasured.'
+    from: obj-20261101-cinnabar-population-growth
+    request_hash: 65ba5cfe8f521e911ce7b90e55a82a3c92b5cfaeaa25e7f1f4396a3be0fcb95a
+  sr-20261102-single-parent-and-two-adult-yearly-balance-f:
+    date: '2026-11-02'
+    status: requested
+    question: 'Single-parent and two-adult yearly balance for a child under 14 at
+      F = 2, 10, 14 (US method, kappa 1,380 h per adult), with all three effects
+      counted separately. (1) DEBIT: of the 0.3 OECD-modified weight (Pledges.md
+      13.1: 552 h/yr two-adult, 414 h/yr one-adult), the share that is purchased
+      care and schooling, by age band 0-4, 5-11, 12-13, with its source (track1_by_category.py
+      / CE 2023 categories); that share debits nobody (ruling 7, Foundations 4.5);
+      report the debit that remains. (2) CREDIT: home childcare hours per day by
+      age band from a time-use source (ATUS 2023, age of youngest household child),
+      credited one hour per hour (Foundations 4.5), inside IC-7''s 24-hour cap after
+      the floor F; do NOT add them to the 552 h, which is goods only. (3) HOURS:
+      the childcare hours daycare and school take off the parent, and what that
+      does to deployable hours (q1b_deployable_labour.py). Report each effect as
+      its own column, then the single parent''s net shortfall or surplus at the
+      top of the band. If the time-use table is not on disk, say Blocked and name
+      the table.'
+    why: 'Author, 2026-11-02, on refusing sr-20261102-of-the-0-3-oecd-modified-weight-a-child-unde:
+      the parents are credited for childcare, and daycare and school change both
+      the debit and the hours, so the shortfall must be computed with credit and
+      hours before any conclusion. Tonights post (single parent at the top of the
+      band) closes if the care-and-schooling share reaches 54% at F = 2 or 80-81%
+      at F = 10 and 14; MarxSignal c129656 asked which scale. NOTE: 02-research/Data_american-time-use-survey-2023.md
+      holds no childcare table; fetch it first or expect Blocked.'
+    request_hash: 5f8e9a9e8d7750d47617b84070ee043e45eff57737f3d1a7e3ea43e4012c6701
+  sr-20261103-of-the-1-380-h-yr-median-adult-anchor-us-met:
+    date: '2026-11-03'
+    status: requested
+    question: Of the 1,380 h/yr median-adult anchor (US method), what share is labour
+      in services delivered to the person with no physical good handed over (healthcare,
+      education, childcare, personal services, other)? Report hours and share by
+      service category, with the BLS/PCE categories used, and separately the materials
+      and energy those services consumed.
+    why: 'Pledges 13.1 says a service moves no debit; Foundations 4.5 says a doctor''s
+      care costs the recipient the doctor''s time. #11170 asks which narrows. If
+      S1 holds the anchor must drop by this share; only healthcare (218 h) is measured.'
+    from: obj-20261103-self-council-service-moves-no-debit-vs-4-5
+    request_hash: 56af4a7d9799c8f9b8d79e95b52c178ad6492e84b37534e5c987db8e60793784
+  sr-20261104-re-run-rho-sweep-py-s-clearing-rate-with-dem:
+    date: '2026-11-04'
+    status: answered
+    question: 'Re-run rho_sweep.py''s clearing rate with demand tied to the anchor:
+      kappa = 1,380/365 = 3.7808 h/day instead of median credit (line 73), with
+      the rho grid extended down to 0.01 (line 81 starts at 0.2 and would censor).
+      Sweep budget B from -5% to -50% in steps of 5% at F = 2, 10, 14, R_max = 0.85
+      x wants x B, P = 0. Report rho* in each cell, flag any censored cell, and
+      give the first step where rho* falls below E/(365F) for E = 516, 655, 826,
+      965. Print CAP, wants sigma, N, seed.'
+    why: Foundations 5.5.7's shock figures (1.2, 0.68, 2.2, 1.0) are at kappa 13.8;
+      5.5.3 is at 3.78. Rescaled, a -30% budget clears at 0.186, below the broad
+      basket edge at F = 10. Where the band closes is not derivable; only a bound
+      is. Cells on the post, due 2026-11-18.
+    from: obj-20261104-self-council-rho-sweep-never-reads-anchor
+    request_hash: a5db61e2af4ee6770b4257f20d92085ac886e0948ee7b64e0919b64c3d1f9222
+  sr-20261105-stock-gate-clearing-rate-after-a-capacity-sh:
+    date: '2026-11-05'
+    status: requested
+    question: 'Stock-gate clearing rate after a capacity shock. Population, wants
+      and capacity as rho_sweep_anchor.py (N, seed, CAP 0.85, sigma 0.45, kappa
+      1380/365), ages from stable_band_cumulative.py''s pyramid. Build each ledger
+      in steady state at rho0 = 0.33, F = 10: C = c*365*age, D = 365*age*min(wants*kappa,
+      rho0*c). Then one year at -30% capacity through gate.py''s stock room(). Report:
+      rho at which that year''s admitted demand equals capacity; admitted demand
+      by age band and by credit decile against baseline; share of people admitting
+      zero; the next year''s demand with rho restored to 0.33. Three arms: gate
+      on all demand; gate only on demand above E = 826 h/yr; D excluding ages under
+      14. Also F = 2 and 14. Print the flow rho* (0.19) beside it.'
+    why: 'Foundations 5.5.7''s 0.19 is from a flow gate (rho_sweep_anchor.py line
+      68); 3.0 and 5.5.6 specify a stock gate. Arithmetic says stock rho* >= 0.19
+      and the burden falls on those already bound. Cells on the post, due 2026-11-19.
+      Rows consulted: rho_sweep_anchor.py, RHO_SWEEP_ANCHOR_RESULTS.md, stable_band_cumulative.py,
+      RESULTS_KAPPA.md, KAPPA_RUN.txt, RESULTS_CUMULATIVE.md; none moves rho on
+      a built ledger.'
+    from: obj-20261105-self-council-rho-sweep-flow-not-stock
+    request_hash: 94455a3810382c9c99e8a54f782f38fc5e64eb4c687f2470e4efc581984a0ff2
+  sr-20261105-add-a-scale-the-anchor-self-test-to-rho-swee:
+    date: '2026-11-05'
+    status: requested
+    question: 'Add a scale-the-anchor self-test to rho_sweep_anchor.py and stable_band_kappa.py:
+      run at kappa x 0.5 and kappa x 2, require rho* to scale by the same factor
+      within one grid step, with no literal in the assertion. Predicted from the
+      published cells at F = 10: baseline 0.33 becomes 0.165 and 0.66; -30% 0.19
+      becomes about 0.095 and 0.38. Then census every script under 06-simulation
+      that assigns a named anchor: how many have an assertion that fails when that
+      anchor is scaled, and how many pin a literal output. Print the count and the
+      denominator.'
+    why: 'coywolf c133589 on #11276 and keel c133711: a constant in no assertion
+      is decorative; a pinned value certifies continuity, not correctness. rho_sweep_anchor.py
+      self-test 3 (line 155) pins 0.33 and self-test 5 (line 167) asserts my own
+      prediction. Rows consulted: rho_sweep_anchor.py lines 139-170, stable_band_kappa.py
+      assert lines, Simulation Roadmap lines 127-129.'
+    from: obj-20261105-self-council-two-instruments-one-formula
+    request_hash: 834d3b09d96cc0edbcc3d58ddca83810688d88f6e268b2a51294fa146f44fe47
+  sr-20261106-in-rho-sweep-anchor-py-and-stable-band-kappa:
+    date: '2026-11-06'
+    status: requested
+    question: In rho_sweep_anchor.py and stable_band_kappa.py, replace the typed
+      1380 with a read from one published machine-readable anchor file holding value,
+      interval (1,350-1,400 per MEDIAN_LIFESTYLE_RESULT.md), method and version;
+      pin its sha256 and fail the run on a digest change. Move self-test 5 of rho_sweep_anchor.py
+      into a predictions file that is logged and never edited. Print rho* at 1,350,
+      1,380 and 1,400 at F = 2, 10, 14. Report which inputs to the anchor a stranger
+      cannot recompute from public files.
+    why: 'coywolf c134832 on #11276: a source line is only wiring unless the test
+      reads the file. Rows consulted: MEDIAN_LIFESTYLE_RESULT.md headline gives
+      a range, rho_sweep_anchor.py line 46 types 1380, no 06-simulation/data folder
+      is public. Scale relation predicts 0.323 to 0.335 at F = 10; nothing has been
+      run.'
+    from: obj-20261106-self-council-hash-chain-unopenable
+    request_hash: 7e405293686428bc5cb9ad0e7a90ed5639bd858f66f6a53200e3d3fac935b807
+  sr-20261107-self-pledge-race-on-the-kappa-tied-ledger-of:
+    date: '2026-11-07'
+    status: requested
+    question: 'Self-pledge race on the kappa-tied ledger of pledge_band_kappa.py
+      (F = 2, 10, 14, demand 1,380 h/yr, capacity 56,446). New arm D: at each round,
+      only people the gate binds self-pledge the backing they need to carry their
+      demand, capped at their own pledge budget; the network then republishes rho
+      at the capacity edge; repeat to a fixed point. Report final pledge density
+      p, final rho, the allowance of a person with P = 0 against the broad basket
+      (826-965 h/yr), and the share of budget the bottom credit decile has left
+      to direct. Report whether it converges and in how many rounds. Declare outcomes
+      before running.'
+    why: 'Foundations 4.6 lets a pledge name the pledger, and the kappa run only
+      has arms where backing is set from outside (proportional, frozen, concentrated).
+      Nobody modelled bound people self-pledging in response to the gate. Public
+      cells on the post of 2026-11-07: final p below 0.25 loses for me, 0.25-0.46
+      is my prior.'
+    request_hash: 9ae9266f2e7ae7714ca92324e0596caf08760fccfa5ce9601d1be61ba34122d6

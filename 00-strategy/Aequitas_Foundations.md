@@ -1,8 +1,8 @@
 <!-- tag: fnd-aequitas-foundations-and-long-term -->
 # Aequitas — Foundations & Long-Term Strategy
 
-> **Version:** 0.67
-> **Date:** 2026-11-04
+> **Version:** 0.69
+> **Date:** 2026-11-07
 > **Status:** Working foundations.
 > **Primary audience of the first paper:** technologists and implementers.
 > **Companion:** [`Aequitas_Conformance.md`](Aequitas_Conformance.md) — what must be true for an implementation to *be* Aequitas.
@@ -1168,7 +1168,7 @@ Some processes produce several things at once from one pool of inputs. A steer e
 >
 > | | |
 > |---|---|
-> | **Which record check** | The nine integrity constraints include IC-5, which is a **sort** and about a fifth of the pass. **Against the eight streaming checks the ratio is 0.35; against all nine it is 0.27** |
+> | **Which record check** | The nine integrity constraints include IC-5, which is a **sort** and about a fifth of the pass. **On the 2026-09-12 stack the ratio is 0.35 against the eight streaming checks and 0.27 against all nine. On the single-spelling stack of 2026-11-07 it is 0.40 and 0.34** |
 > | **`k`** | The number of weighting dimensions collapsed per event. **The re-weighting cost is linear in it and the record check does not read it**, so the ratio moves with `k`. Measured below |
 > | **The machine** | **Two machines measured, and one is 4.5× the other.** Both absolute rates move together, so the ratio travels further than the seconds do — but a ratio measured on one machine is a reading, not a constant |
 >
@@ -1187,21 +1187,21 @@ Some processes produce several things at once from one pool of inputs. A steer e
 >
 > **The slope is the result. The level is a reading.** This run gives 0.39 at `k` = 3, against 0.35 on the same stack on 2026-09-12. The machine ran slower on the second day, and both passes moved.
 >
-> **Disk has now been measured once, from outside, and it moves the ratio.** Both of the passes above read memory. A real log is stored, and both passes then read the same bytes.
+> **Disk has been measured twice, and it raises the ratio by about a tenth.** Both of the passes above read memory. A real log is stored, and both passes then read the same bytes.
 >
-> **Terms used here.** The **delta** is the disk ratio minus the memory ratio, measured on the same stack. A **spread** is the standard deviation across the run's own repeats. A **stack** is one machine, one generator, one log format.
+> **Terms used here.** The **delta** is the disk ratio minus the memory ratio, measured on the same stack. A **spread** is the range across a run's own repeats. A **stack** is one machine, one generator, one log format.
 >
-> | At 10⁸ events, nine checks | Ratio | Its spread |
-> |---|--:|--:|
-> | Memory | **0.114 – 0.129** | **± 0.015** |
-> | Disk | **0.192 – 0.219** | **± 0.026** |
-> | **Delta** | **+0.084** | **outside both spreads** |
+> | Run, nine checks | Memory | Disk | Delta |
+> |---|--:|--:|--:|
+> | @hemei, 2026-10, 10⁸ events, two logs with two byte spellings | 0.114 – 0.129, spread ± 0.015 | 0.192 – 0.219, spread ± 0.026 | **+0.084** |
+> | Single spelling, 2026-11-07, one generator, 34 bytes an event, 10⁸ events, three repeats | **0.338**, spread 0.002 | **0.433**, spread 0.006 | **+0.107** |
+> | The same, 10⁹ events, one repeat | 0.334 | 0.433 | +0.099 |
 >
-> **In plain words: storing the log raises the re-weighting pass from about an eighth of a record-check pass to about a fifth.** Shared I/O does push the ratio toward 1.0, and on this stack it pushes it by about 0.08.
+> **In plain words: storing the log costs the re-weighting pass about a tenth of a record-check pass more, on both stacks, and the figure does not move between 10⁸ and 10⁹ events.**
 >
-> **⚠️ The delta is settled. The level is not, and the two must not be quoted together.** The memory arm above reads 0.114–0.129 at 10⁸ events against the 0.27 this section publishes at 10⁹ — **about a factor of two, and that gap is not a length effect.** The outside run used **two logs with two byte spellings**: 34 bytes an event for the record check, 28 for the re-weighting. **One log served both read paths, and no log served both passes**, so the level of the ratio is read across generators and the delta is not.
+> **⚠️ The delta is settled. The level is a property of the stack, and it must be quoted with its stack.** At `k` = 3 three stacks have given three memory levels: **0.11 – 0.13**, **0.27**, and **0.34**. The gap is not a length effect, because 10⁹ events read within 0.004 of 10⁸. It is not a generator split, because one generator gave 0.34. **What moves it is how a record is spelled in bytes.** A packed record costs the re-weighting pass more to parse than the record check, and the re-weight reads 18 of the 34 bytes it parses. `06-simulation/ic-recompute-cost/SINGLE_SPELLING_RESULTS.md`, 10 self-tests, each able to fail.
 >
-> **What would settle it is one run and it has been requested:** one generator, one byte spelling, one machine, **one value of `k`**, disk and memory, 10⁸ and 10⁹, eight checks and nine. **Until that runs, 0.27 is a reading at `k` = 3 on one stack rather than this system's figure.** The `k` sweep above was memory only, so it does not settle the disk level.
+> **What that run did not do.** It stored no 3.4 GB or 34 GB log; the disk arm replays one 797 MiB file, and a control shows the replay does not distort the memory ratio. It ran 10⁹ once per arm. And it did not run on @hemei's hardware, which is the only way to separate byte spelling from hardware from code. **So "about a third" above is the single-spelling memory level at `k` = 3, and a reader quoting it should say so.**
 >
 > *(The disk arm is **@hemei**'s, citizen #700, run from their own seat inside a day of the arm being pre-registered, with the stack string attached to every number. **They flagged the two-log caveat themselves.** The pre-registration they ran against was defective — all three of its registered outcomes were stated over the delta and none over the level, so none of them could have caught a factor of two. That defect is the outreach agent's and was published as such.)*
 >
@@ -1914,7 +1914,7 @@ A median lifestyle commands about **1,380 hours** of other people's labour a yea
 
 **A person joining at forty arrives with roughly 146,000 hours of estimated credit against roughly 55,200 hours of estimated consumption.**
 
-> **Whether joining is a windfall for a median person depends on `F` and ρ.** A joiner at forty arrives with `C` = 40 × 365 × `F` and `D` = 55,200 h, so the room they start with under the gate is `ρ·C − D`. It is positive when `ρ·F` exceeds the **break-even**, the value at which a year of floor credit, `ρ·F·365`, balances a year of median consumption, 1,380 h: 1,380 ÷ 365 = 3.78 hours a day (worked again under condition 3 below). **At `F` = 10 and ρ = 1.2 it is 1.2 × 146,000 − 55,200 = +120,000 h.** The people for whom a full reconstruction is costly are those whose lifetime consumption genuinely exceeded their lifetime contribution.
+> **Whether joining is a windfall for a median person depends on `F` and ρ.** A joiner at forty arrives with `C` = 40 × 365 × `F` and `D` = 55,200 h, so what they may still carry under the gate when they join is `ρ·C − D`. It is positive when `ρ·F` exceeds the **break-even**, the value at which a year of floor credit, `ρ·F·365`, balances a year of median consumption, 1,380 h: 1,380 ÷ 365 = 3.78 hours a day (worked again under condition 3 below). **At `F` = 10 and ρ = 1.2 it is 1.2 × 146,000 − 55,200 = +120,000 h.** The people for whom a full reconstruction is costly are those whose lifetime consumption genuinely exceeded their lifetime contribution.
 
 **At the US method the measured rationing band lies below break-even.** **Terms used here.** **ρ\*** is the highest ρ at which the gate still rations at the US method, so the **rationing band** is every ρ at or below it (§5.5.3 measures it). The **margin** is `ρ·C − D` for the joiner above, with `P` = 0.
 
@@ -2146,7 +2146,7 @@ A median lifestyle commands about **1,380 hours** of other people's labour a yea
 
 #### Everyone alive holds some of this, simply by being alive
 
-**Self-care is credit in full, so like all credit it generates pledging power.** Every living human therefore directs some share of what society works on next. **Because the floor is the same for everyone, the spread of pledge budgets per day lived is bounded at `24 ÷ F`** (§5.5.5). That bound is on the say over what gets made. **It is not a bound on consumption**, which §5.5.5 says nothing here limits.
+**Self-care is credit in full, so like all credit it generates pledging power.** Every living human therefore directs some share of what society works on next. **Because the floor is the same for everyone, the spread of pledge budgets per day lived is bounded at `24 ÷ F`** (§5.5.5). That bound is on pledge budgets. **It is not a bound on consumption**, which §5.5.5 says nothing here limits, and §5.5.5 also says how much of a floor-only budget is left to direct once a person has backed their own needs.
 
 ##### A standing pledge, and what it needs
 
@@ -2235,7 +2235,7 @@ A median lifestyle commands about **1,380 hours** of other people's labour a yea
 
 **What a pledge does that a price cannot: it cannot be advertised into existence.** It is drawn from hours the pledger worked, it is spent once, and it is public. **A firm can make you want something. A firm cannot put more hours in your day.**
 
-**And the lever is far more evenly spread, which is measurable.** Money's top tail reaches about **10⁶ times** the median. **Pledging power per day lived cannot exceed 24 ÷ F**, which is about **2.4 times** at a ten-hour floor, **and that is an absolute maximum nobody reaches** (§5.5.5). **Every living person holds some.** **This is the bound the project states, and it is about the say over what gets made rather than about what anybody consumes** (§5.5.5).
+**And the lever is far more evenly spread, which is measurable.** Money's top tail reaches about **10⁶ times** the median. **Pledging power per day lived cannot exceed 24 ÷ F**, which is about **2.4 times** at a ten-hour floor, **and that is an absolute maximum nobody reaches** (§5.5.5). **Every living person holds some.** **This is the bound the project states. It is a bound on pledge budgets and not on what anybody consumes, and §5.5.5 says what it does and does not bound.**
 
 **The full argument, with Braudel's two layers and the worked examples, is in [`OP-9_calculation_reply.md`](open-problems/OP-9_calculation_reply.md) and [`../01-wiki/pledge-and-signal.md`](../01-wiki/pledge-and-signal.md).**
 
@@ -2603,12 +2603,14 @@ Those activities are **sleeping, eating, defecating, and keeping oneself clean.*
 | `F` | ρ*(`F`) | `E_max` | As a multiple of a median **American** lifestyle | Lower edge, narrow | Lower edge, broad | The band |
 |--:|--:|--:|--:|--:|--:|---|
 | **2 h/day** | 1.017 | 742 h/yr | **0.54×** | 0.71 – 0.90 | **1.13 – 1.32** | Open narrow, **closed broad** |
+| 6 h/day | 0.485 | 1,062 h/yr | 0.77× | 0.24 – 0.30 | 0.38 – 0.44 | Open |
 | 10 h/day | 0.330 | 1,205 h/yr | 0.87× | 0.14 – 0.18 | 0.23 – 0.26 | Open |
 | 14 h/day | 0.253 | 1,293 h/yr | 0.94× | 0.10 – 0.13 | 0.16 – 0.19 | Open |
+| 16 h/day | 0.228 | 1,332 h/yr | 0.97× | 0.09 – 0.11 | 0.14 – 0.17 | Open |
 
 **Worked, at `F` = 2 with the broad basket at 826 h.** The lower edge is 826 ÷ (365 × 2) = **1.13**. The upper edge is **1.017**. No ρ is both above 1.13 and below 1.017, so the band is closed.
 
-**In plain words: at the US method a 2-hour floor cannot carry the broad essentials basket, and floors of 10 and 14 hours can carry either basket.** `F` = 1 was not re-measured.
+**In plain words: at the US method a 2-hour floor cannot carry the broad essentials basket, and floors of 6, 10, 14 and 16 hours can carry either basket.** `F` = 1 was not re-measured. At `F` = 16 a person working more than 8 hours is credited 24 and no more (IC-7), which reaches 16% of the simulated people and nobody at any lower floor. `F` = 6 and 16 were run on 2026-11-07: `06-simulation/stable-band/RESULTS_PAYERS_F2-6-10-16.md`.
 
 **Why the 2026-08-28 edges were higher.** The first run priced a year of a median person's demand at **5,037 h** (median daily credit × 365) on one edge and at the 1,380 h/yr anchor on the other. **Admitted demand depends on ρ ÷ that yearly figure only**, so every upper edge was 5,037 ÷ 1,380 = **3.65 times** too high. Tied to the anchor, each edge moved by exactly that factor. `06-simulation/stable-band/RESULTS_KAPPA.md`, six declared outcomes, all held.
 
@@ -2616,24 +2618,49 @@ Those activities are **sleeping, eating, defecating, and keeping oneself clean.*
 
 > **⚠️ The 1,380 h/yr anchor is a median *American* lifestyle, and that is not a neutral choice.** `06-simulation/median-lifestyle/Q6.md` and `q6_payers.py` count the labour behind every payer's consumption and measure the US as the labour-inefficient outlier: **Germany, Japan, France and Sweden reach a comparable-or-better material standard, and longer lives, on 0.84 – 0.87 of the US embodied labour** (Germany and Japan 0.836, France 0.858, Sweden 0.873).
 
-**Hold the physical envelope fixed — the same energy, the same materials — and change only how much debit a unit of the same real standard costs.** The US row is the run. The German and Japanese row is the US row rescaled by the peers' share of US labour, and **it has not been run.**
+**Hold the physical envelope fixed — the same energy, the same materials — and change only how much debit a unit of the same real standard costs.** The US row and the three peer rows were run on 2026-10-30 and 2026-11-07, at `F` = 2, 6, 10, 14 and 16 (`06-simulation/stable-band/RESULTS_PAYERS.md`, `RESULTS_PAYERS_F2-6-10-16.md`). Each peer's capacity is the same envelope divided by that peer's debit-hours per unit.
 
 | Production method | Debit-hours per unit | Real living the same envelope delivers | As a share of the 66,407 units people want |
 |---|---|---|---|
 | **US** | 13.80 | **56,446** | **85%** |
-| German or Japanese, at 0.836 – 0.873 of the US | 11.5 – 12.0 | **about 64,700 – 67,500** | **97% – 102%** |
+| German or Japanese, at 0.836 of the US | 11.54 | **67,519** | **101.7%** |
+| French, at 0.858 | 11.84 | **65,788** | **99.1%** |
+| Swedish, at 0.873 | 12.05 | **64,658** | **97.4%** |
 
-**In plain words: at the US method the envelope delivers 85% of what people want. At the German or Japanese ratio it delivers between 97% and 102%, so the shortfall nearly closes and may change sign.** Which side of 100% the true figure falls on is not determined by this measurement.
+**In plain words: at the US method the envelope delivers 85% of what people want. At the German or Japanese ratio it delivers more than people want, and at the French and Swedish ratios a little less.** The German and Japanese row's surplus is set by the capacity input before a single person is simulated, so it is a fact about the input and not a finding about the people.
 
 **Under the US method the envelope delivers 85% of wants**, and at `F` = 10 the re-measured gate stops rationing above ρ = 0.330, so at ρ = 1.2 the 15% shortfall is settled at distribution rather than by the gate.
 
-> **Whether the band is open at `F` = 2 under the German or Japanese method is not measured.** Scaling both baskets by 0.836 – 0.873 gives a broad basket of 691 – 842 h and a lower edge of **0.95 – 1.15** at `F` = 2 (narrow basket: 0.59 – 0.78). The upper edge there has not been run, so the band is neither shown open nor shown closed. These are rescalings of the US baskets, not measurements of any peer's essentials.
+**At the peer methods the upper edge exists only where capacity is below wants.** The table gives the cumulative edge, the one a ledger rebuilt to birth sees, beside the one-day edge.
 
-**The size of the upper edge follows the production method, and by how much at the German or Japanese method has not been measured.** The US shortfall of 15% is the one measured case. At the peers' ratio the envelope sits between a 3% shortage and a 2% surplus.
+| `F` | German or Japanese | French, one-day / cumulative | Swedish, one-day / cumulative | Break-even at the French method, `1,184 ÷ (365·F)` |
+|--:|---|--:|--:|--:|
+| 2 h/day | no edge | 2.365 / 1.653 | 1.823 / 1.656 | 1.622 |
+| 6 h/day | no edge | 0.943 / 0.562 | 0.755 / 0.558 | 0.541 |
+| 10 h/day | no edge | 0.612 / 0.342 | 0.496 / 0.337 | 0.324 |
+| 16 h/day | no edge | 0.411 / 0.217 | 0.336 / 0.212 | 0.203 |
+
+**Worked, at `F` = 6 by the French method.** A floor-only person may carry 0.562 × 6 × 365 = **1,231 h** of debit a year at the cumulative edge, against the **1,184 h** a median lifestyle takes by that method, so the edge sits 47 h a year above break-even. By the US method the same person may carry 0.485 × 6 × 365 = **1,062 h** against 1,380 h, which is 318 h a year below it. **At the peer methods the cumulative edge sits just above break-even wherever an edge exists, and at the US method it sits below.**
+
+> **The band is open at every floor asked under every peer method, with one assumption declared.** The essentials baskets were scaled by each peer's ratio (broad 691 – 842 h at 0.836 – 0.873), which gives a broad lower edge of **0.95 – 1.15** at `F` = 2 (narrow: 0.59 – 0.78). Every peer upper edge is above its lower edge, including at `F` = 2, where the US band is closed. **Nobody has measured a peer's essentials basket**, so the peer rows are open under a scaling assumption and not under a measurement.
+
+**The size of the upper edge follows the production method, and the measurement now says by how much.** At `F` = 10 the one-day edge is 0.330 by the US method, 0.496 by the Swedish, 0.612 by the French, and absent by the German or Japanese. The US shortfall of 15% is the one case where the gate must ration at every floor; at the peers' ratios the envelope sits between a 2.6% shortage and a 1.7% surplus.
 
 **And the same measurement gives the mechanism that moves people toward the efficient method, with no mandate and nothing forbidden.** One median American lifestyle costs **1,380 hours** of other people's labour by the American method and about **1,150 to 1,200** by the German or Japanese (the same lifestyle at 0.836 – 0.873 of the US labour, scaled from the Q6 ratios and not measured separately). **Two people can live the same material life and carry different debit, because one is supplied by a longer chain.** A fixed debit allowance then buys 15 – 20% more of the same life for whoever is supplied by the efficient one. **That is A4 and A5 producing a pull toward the sustainable method out of the arithmetic, rather than a rule anyone enforces.**
 
-> **⚠️ The band was computed in published ρ with no pledge term, and the pledge term halves its upper edge.** Committed pledges can double a network's gate (§4.6), so a network's **effective** tolerance runs to `2ρ`. Re-run on 2026-09-18 with a pledge density `p`, the publishable upper edge is `ρ*(F) ÷ (1 + p)`: at `F` = 10 it fell from **1.20** at no pledging to **0.60** at the one-for-one ceiling, and the band closed at `F` = 1.0 with essentials at 70% of a median lifestyle. `06-simulation/stable-band/PLEDGE_BAND_RESULTS.md`. **`p` is swept and not measured, and those levels were computed with demand at 5,037 h a year.** The halving is a relation and does not depend on that figure. The levels do, and the pledge term has not been re-run with demand tied to 1,380 h/yr.
+> **⚠️ The band was computed in published ρ with no pledge term, and the pledge term lowers its upper edge.** Committed pledges can double a network's gate (§4.6), so a network's **effective** tolerance runs to `2ρ`. **Terms used here.** `p` is the **pledge density**: the share of the network's earned credit that has been committed as backing, so across the network `P = p·C`. The **publishable upper edge** is the highest published ρ at which the gate still rations.
+>
+> **Re-run on 2026-10-31 with demand tied to 1,380 h/yr** (`06-simulation/stable-band/RESULTS_PLEDGE_KAPPA.md`, 6 self-tests), the publishable upper edge is `ρ*(F) ÷ (1 + p)` to three decimals in every cell:
+>
+> | `F` | p = 0 | p = 0.25 | p = 0.50 | p = 0.75 | p = 1.00 |
+> |--:|--:|--:|--:|--:|--:|
+> | 2 | 1.017 | 0.814 | 0.678 | 0.581 | 0.509 |
+> | 10 | **0.330** | 0.264 | 0.220 | 0.189 | **0.165** |
+> | 14 | 0.253 | 0.202 | 0.168 | 0.144 | 0.126 |
+>
+> **In plain words: at `F` = 10 the edge falls from 0.330 with no pledging to 0.165 when every earned hour is committed.** The lower edge does not move with `p`, because it must hold for somebody nobody pledged to.
+>
+> **Worked, at `F` = 10 with the broad basket.** The lower edge is 826 ÷ 3,650 = **0.226** to 965 ÷ 3,650 = **0.264**. The upper edge `0.330 ÷ (1 + p)` meets it between `p` = 0.25 (0.264) and `p` = 0.46 (0.226). **So at the US method and `F` = 10 the broad-basket band closes once about a quarter to a half of lifetime budgets are committed.** That is arithmetic on the run's two edges; the run did not recompute affordability cell by cell. Pledges frozen at joining, or concentrated on a few people, lower the edge less: 0.192 at `F` = 10 and `p` = 1. **`p` is swept and not measured.**
 >
 > **⚠️ What is measured and what is not.** The two zero rows are **floors, not values** (conformance row 13): the gate does not bind anywhere below ρ = 4.0, which is where the swept range ended. Nobody looked above it. **And ρ\*'s absolute values inherit the weighting model and an illustrative capacity figure — the shape is the result, the numbers are dated readings.** Full method, the three things it does not show, and five self-tests that can each fail: `06-simulation/stable-band/RESULTS.md`. Registered with **OP-4 (debit tolerance)**.
 >
@@ -2674,9 +2701,31 @@ Those activities are **sleeping, eating, defecating, and keeping oneself clean.*
 
 > **Inside any one trust network's books, the ratio between the largest and the smallest lifetime pledge budget *per day lived* cannot exceed `24 ÷ F`.**
 >
-> **It bounds the say over what gets made. It does not bound consumption.**
+> **It bounds pledge budgets: the hours a person can commit over a lifetime, per day lived. It does not bound consumption. And a budget is not the same as the say, because part of a budget can be pledged to oneself; the block below works that through.**
 
 **Why the arithmetic gives that.** A pledge budget equals the credit a person earned in their life and nothing else (conformance requirement 9). IC-7 caps any account at **24 hours of activity per 24 hours** (conformance requirement 8), and every living subscriber accrues at least `F` hours a day. **So every subscriber's budget per day lived sits between `F` and 24, and the ratio of the largest to the smallest is `24 ÷ F`.** At `F` = 10 h/day that is **2.4**.
+
+##### A budget and the say are not the same number
+
+**Terms used here.** A person's **budget** is their lifetime earned credit, which is what they may pledge (§4.6). Their **say** is the part of that budget they direct at other people's work. A **self-pledge** is a pledge that names the pledger, which §4.6 allows. It backs the pledger's own consumption and summons no work.
+
+**`24 ÷ F` bounds budgets.** A person who must back their own needs out of their budget has less say than their budget, and the size of the gap is set by the floor.
+
+###### An example, with the numbers
+
+**A network at the top of its rationing band, ρ\* (§5.5.3), and a person living on the floor who wants the 1,380 h/yr median lifestyle (§3.5).** To carry 1,380 h of debit a year they need `1,380 ÷ ρ*` of credit and backing behind it. The floor gives `365·F` of credit. The rest they must pledge to themselves.
+
+| `F` | ρ\* | Floor credit a year, `365·F` | What the median needs, `1,380 ÷ ρ*` | Self-pledge needed | Share of the budget spent on oneself | Left to direct |
+|--:|--:|--:|--:|--:|--:|--:|
+| 2 | 1.017 | 730 h | 1,357 h | **627 h** | **86%** | 103 h |
+| 10 | 0.330 | 3,650 h | 4,182 h | **532 h** | **15%** | 3,118 h |
+| 14 | 0.253 | 5,110 h | 5,455 h | **345 h** | **7%** | 4,765 h |
+
+**Now a person who works those hours instead.** At `F` = 2, someone working 627 h a year has a budget of 730 + 627 = 1,357 h and carries the same 1,380 h without pledging anything to themselves. They keep all 1,357 h to direct. 1,357 ÷ 103 = **13.2×**, and the budget bound at `F` = 2 is 24 ÷ 2 = **12×**. At `F` = 10 the same comparison gives 4,182 ÷ 3,118 = **1.34×**, well inside 2.4×.
+
+**In plain words: a person who lives on the floor and backs their own needs puts less demand pressure on what gets made than their budget suggests, and how much less is set by the floor.** At a 2-hour floor almost the whole budget goes on oneself. At a 10-hour floor about a seventh does.
+
+**Two things this does not say.** It does not say the floor fails to feed people: at `F` = 10 and 14 the floor alone balances more than the broad essentials basket (§5.5.3, §5.5.4), so the self-pledge buys the median life and not the meal. And it does not say people will self-pledge. Whether they do is behavioural, and it is not measured.
 
 ##### Why it is not a bound on consumption
 
@@ -2692,7 +2741,7 @@ Those activities are **sleeping, eating, defecating, and keeping oneself clean.*
 
 | What is being compared | Money | Aequitas |
 |---|--:|--:|
-| **The say over what gets made** | about **10⁶ ×** the median | **`24 ÷ F`, and nobody reaches it.** 2.40× at `F` = 10 |
+| **The pledge budget per day lived, the demand lever** | about **10⁶ ×** the median | **`24 ÷ F`, and nobody reaches it.** 2.40× at `F` = 10 |
 | **Material consumption** | about **670 ×** the median (§5.5.8) | **No bound.** Bounded only by how many people back you |
 
 **And every living person holds some of the first**, because staying alive is credited work — which is what §4.6 calls the universal basic voice.
@@ -2798,8 +2847,8 @@ Those activities are **sleeping, eating, defecating, and keeping oneself clean.*
 `06-simulation/disparity-ceiling/disparity_ceiling_sim.py`, N = 200,000, gate `D ≤ ρ·(C + P)`, credit in `[F, 24]` h/day, 7 self-tests green:
 
 - **The `24 ÷ F` ceiling is exact and does not move with ρ**, because ρ cancels in `ρ·24 ÷ ρ·F`. It also does not move with the weighting model, so **the headline result does not depend on OP-10.** On the same synthetic population, money's spread is 14× on income and roughly 700–950× on wealth.
-- **ρ behaves like a prime rate.** A ρ can be chosen so that aggregate demand matches productive capacity, and it moves sensibly under shocks. With each person's demand tied to the 1,380 h/yr anchor (§3.5), the US-method baseline clears at **ρ\* = 0.33** at `F` = 10 — two instruments agree, since the stable band's upper edge reads 0.330 (§5.5.3) — and a −30% capacity disaster tightens it to **0.19**. Swept from 0 to −50% at `F` = 2, 10 and 14, the broad essentials basket stops fitting inside §5.5.3's band at a **−15% to −20%** shock at `F` = 10 and at −20% to −25% at `F` = 14; at `F` = 2 it never fit. Below those depths, §5.5.4's backstop and the distribution point carry the shortage. (`06-simulation/disparity-ceiling/RHO_SWEEP_ANCHOR_RESULTS.md`.) *(Absolute values inherit the weighting model, OP-10, and an illustrative capacity share; the directions are robust. Growth and pollution re-weighting shocks are rescalings, about 0.59 and 0.28, not re-run at the anchor. A second instrument, `06-simulation/rho-rubric/`, confirms the two shock directions; its levels predate the anchor tie.)*
-- **Efficiency narrows the shortfall and does not remove it.** The same population is 15% short under the US production method and between 3% short and 2% over at the German or Japanese ratio (§5.5.3, rescaled and not run). **The binding constraint is physical throughput** (§3.5).
+- **ρ behaves like a prime rate.** A ρ can be chosen so that aggregate demand matches productive capacity, and it moves sensibly under shocks. With each person's demand tied to the 1,380 h/yr anchor (§3.5), the US-method baseline clears at **ρ\* = 0.33** at `F` = 10 (the stable band's upper edge reads the same 0.330, §5.5.3; the two runs share one formula, so that is one instrument read twice and not two) and a −30% capacity disaster tightens it to **0.19**. Swept from 0 to −50% at `F` = 2, 10 and 14, the broad essentials basket stops fitting inside §5.5.3's band at a **−15% to −20%** shock at `F` = 10 and at −20% to −25% at `F` = 14; at `F` = 2 it never fit. Below those depths, §5.5.4's backstop and the distribution point carry the shortage. (`06-simulation/disparity-ceiling/RHO_SWEEP_ANCHOR_RESULTS.md`.) *(Absolute values inherit the weighting model, OP-10, and an illustrative capacity share; the directions are robust. Growth and pollution re-weighting shocks are rescalings, about 0.59 and 0.28, not re-run at the anchor. A second instrument, `06-simulation/rho-rubric/`, confirms the two shock directions; its levels predate the anchor tie.)*
+- **Efficiency narrows the shortfall and does not remove it.** The same population is 15% short under the US production method, 2.6% short at the Swedish ratio, 0.9% short at the French, and 1.7% over at the German or Japanese (§5.5.3, run 2026-10-30 and 2026-11-07 at `F` = 2, 6, 10, 14 and 16). **The binding constraint is physical throughput** (§3.5).
 - **The ceiling is fraud-invariant, and that is the same fact as its blindness.** IC-7 bounds every account, honest or not, so the most a fraudster reaches is `ρ·24` — the honest maximum. **Fraud fills the band and cannot create an outlier beyond it.**
   > **`24 ÷ F` reads no accounts.** At `F` = 10 it returns 2.40 whatever the population contains, so *"still 2.40× at 40% fraud"* means **the arithmetic never looked** — not that anything caught the fraud. **Insert a fabricated account and the figure moves by 0.00, for the same reason.**
   >
@@ -2807,7 +2856,7 @@ Those activities are **sleeping, eating, defecating, and keeping oneself clean.*
   >
   > **This is §4.4 applied to the project's own headline** — *a check that compares a thing to itself can find a mistake, and cannot find a hole.* **The witness for coverage is a different instrument and it is physical: the outside total `N`** (§4.4). *(Found from outside by @cairn-lineage; conceded 2026-08-31.)*
 
-> **The stable band described in §5.5.3 was found on 2026-08-28** and is reported there. `06-simulation/stable-band/`, 60,000 people, every cell driven through the kernel's own gate and all eight conformance checks. **Re-measured on 2026-10-27 with demand tied to 1,380 h/yr: at the US method the band is open at `F` = 10 and 14, and closed at `F` = 2 on the broad essentials basket.** Capacity binds the upper edge, and the upper edge depends on the production method (§5.5.3).
+> **The stable band described in §5.5.3 was found on 2026-08-28** and is reported there. `06-simulation/stable-band/`, 60,000 people, every cell driven through the kernel's own gate and all eight conformance checks. **Re-measured on 2026-10-27 with demand tied to 1,380 h/yr, and extended to `F` = 6 and 16 on 2026-11-07: at the US method the band is open at `F` = 6, 10, 14 and 16, and closed at `F` = 2 on the broad essentials basket.** Capacity binds the upper edge, and the upper edge depends on the production method (§5.5.3).
 
 ---
 

@@ -44,7 +44,7 @@ Capacity in a cell is `0.85 × Σwants × (1 + shock)`. No cell was censored; ev
 
 ## The cross-check that matters
 
-Two independent instruments now read the same quantity:
+Two instruments now read the same quantity. *(Corrected 2026-11-05: they are not independent — both use the same admitted-demand formula, the same capacity share, the same wants spread and the same κ. Agreement tests the wiring, not the value. Filed as `obj-20261105-self-council-two-instruments-one-formula`; the scale-the-anchor self-test is requested as `sr-20261105-add-a-scale-the-anchor-self-test-to-rho-swee`.)*
 
 | `F` | This run, baseline ρ\* | Stable-band edge ρ\*(F), Foundations §5.5.3 |
 |--:|--:|--:|
@@ -52,7 +52,7 @@ Two independent instruments now read the same quantity:
 | 10 | **0.33** | **0.330** |
 | 14 | **0.25** | **0.253** |
 
-**In plain words: at `F` = 10 and 14 the two instruments agree to the grid step.** At `F` = 2 this run reads about 9% lower; the two use different population kernels, and the spread is an instrument-level reading, not a contradiction. The agent's rescale prediction (1.2 ÷ 3.65 = 0.329) and the −30% prediction (0.68 ÷ 3.65 = 0.186) both land on the measured cells (0.33, 0.19).
+**In plain words: at `F` = 10 and 14 the two runs agree to the grid step. They share one formula, so the agreement checks the code and not the economy.** At `F` = 2 this run reads about 9% lower; the two use different population kernels, and the spread is an instrument-level reading, not a contradiction. The agent's rescale prediction (1.2 ÷ 3.65 = 0.329) and the −30% prediction (0.68 ÷ 3.65 = 0.186) both land on the measured cells (0.33, 0.19).
 
 ## When a shock closes the band
 

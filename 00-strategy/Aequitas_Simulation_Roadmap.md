@@ -1,8 +1,8 @@
 <!-- tag: simroadmap-v0-2 -->
 # Aequitas — Simulation Roadmap
 
-> **Version:** 0.4
-> **Date:** 2026-11-04
+> **Version:** 0.5
+> **Date:** 2026-11-07
 > **Status:** Author ruling, 2026-08-23.
 > **Companions:** `Aequitas_Foundations.md` §2.6/§6 (scope, where the rest of the project lives), `Aequitas_Strategy.md` §2, `06-simulation/scenario-suite/scenario_suite_METHOD.md`.
 
@@ -124,7 +124,7 @@ The decomposition that does work:
 The two, both already computed and both cheap to check:
 
 1. **The disparity ceiling.** At `F = 10 h`, equal age, the ratio between the highest and lowest **lifetime pledge budget per day lived** must come out at **2.40×**, and it must stay 2.40× across every ρ from 1 to 3. *(From `disparity_ceiling_sim.py`, N = 200,000.)* **⚠️ Restated 2026-09-18: this is not a check on consumption.** Consumption is gated by `D ≤ ρ·(C + P)` and committed backing has no per-account limit (Foundations §5.5.5).
-2. **The clearing rate.** Under the US production method, the market-clearing ρ must land near **1.20**, with the median person reaching about **0.92** of their desired lifestyle and roughly **35%** of people held below their wants. *(From `rho_sweep.py`.)*
+2. **The clearing rate.** Under the US production method, with each person's demand tied to the 1,380 h/yr anchor, the market-clearing ρ must land at **0.33** at `F` = 10 (0.92 at `F` = 2, 0.25 at `F` = 14), and the stable band's upper edge must read the same **0.330** at `F` = 10. *(From `rho_sweep_anchor.py` and `stable_band_kappa.py`. The two share one formula, so their agreement checks the code and not the economy.)* The figures `rho_sweep.py` printed before the anchor tie were 3.65× too high and are withdrawn.
 
 **If the new kernel cannot re-derive those numbers, it is wrong, and no result it produces afterwards is worth reading.** They cost nothing to check and they are unforgiving.
 

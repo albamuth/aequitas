@@ -52,7 +52,7 @@
 - [ledger-ecosystem](ledger-ecosystem.md) — no single database; competing implementations; ratios over absolutes
 - [dispute-resolution](dispute-resolution.md) — three of four kinds of dispute need no verdict; only fraud needs a finding of fact
 - [privacy-is-a-network-choice](privacy-is-a-network-choice.md) — market public, persons private; how private is each network's own dial
-- [disparity-ceiling](disparity-ceiling.md) — the bound `24 ÷ F` on the say over what gets made; it bounds, it does not witness
+- [disparity-ceiling](disparity-ceiling.md) — the bound `24 ÷ F` on pledge budgets; it bounds, it does not witness
 - [honest-advantage](honest-advantage.md) — the real security model: honesty pays better
 
 ## Credit and feedback

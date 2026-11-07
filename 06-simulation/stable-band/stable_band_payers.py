@@ -106,9 +106,16 @@ def run_tests():
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--test", action="store_true")
-    if ap.parse_args().test:
+    ap.add_argument("--floors", type=float, nargs="+", default=None,
+                    help="floors F (h/day) to report; default is the 2026-10-30 set (2, 10, 14). "
+                         "Author request 2026-11-07: 2 6 10 16")
+    args = ap.parse_args()
+    if args.test:
         run_tests()
         return
+    global FLOORS
+    if args.floors:
+        FLOORS = tuple(args.floors)
 
     w, x = sb.build_people()
     n, W = len(w), x.sum()

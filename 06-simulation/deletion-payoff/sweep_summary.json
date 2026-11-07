@@ -1,0 +1,829 @@
+{
+ "anchor": 1380.0,
+ "seed": 7,
+ "n": 60000,
+ "caps": {
+  "0.7": {
+   "rho_star": {
+    "1.0": [
+     0.8384295654296875,
+     ""
+    ],
+    "1.5": [
+     0.7135858154296874,
+     ""
+    ],
+    "2.0": [
+     0.6258050537109374,
+     ""
+    ],
+    "2.5": [
+     0.5599694824218748,
+     ""
+    ],
+    "3.0": [
+     0.5080325317382812,
+     ""
+    ],
+    "3.5": [
+     0.46584899902343746,
+     ""
+    ],
+    "4.0": [
+     0.4304928588867187,
+     ""
+    ],
+    "4.5": [
+     0.40074493408203116,
+     ""
+    ],
+    "5.0": [
+     0.3751422119140625,
+     ""
+    ],
+    "5.5": [
+     0.35270935058593744,
+     ""
+    ],
+    "6.0": [
+     0.3329586791992187,
+     ""
+    ],
+    "6.5": [
+     0.31564636230468746,
+     ""
+    ],
+    "7.0": [
+     0.29979705810546864,
+     ""
+    ],
+    "7.5": [
+     0.28589843749999994,
+     ""
+    ],
+    "8.0": [
+     0.27297515869140626,
+     ""
+    ],
+    "8.5": [
+     0.261514892578125,
+     ""
+    ],
+    "9.0": [
+     0.25078613281249995,
+     ""
+    ],
+    "9.5": [
+     0.24103271484374994,
+     ""
+    ],
+    "10.0": [
+     0.23201080322265621,
+     ""
+    ],
+    "10.5": [
+     0.22347656249999998,
+     ""
+    ],
+    "11.0": [
+     0.2159176635742187,
+     ""
+    ],
+    "11.5": [
+     0.2086026000976562,
+     ""
+    ],
+    "12.0": [
+     0.2017752075195312,
+     ""
+    ],
+    "12.5": [
+     0.19567932128906246,
+     ""
+    ],
+    "13.0": [
+     0.18958343505859376,
+     ""
+    ],
+    "13.5": [
+     0.1839752197265625,
+     ""
+    ],
+    "14.0": [
+     0.17885467529296872,
+     ""
+    ]
+   },
+   "tables": {
+    "narrow_lo|d=690": {
+     "open_floors": 23,
+     "all_floors": 27,
+     "cell_share": 0.6704347826086956,
+     "width_share": 0.6612966271647699,
+     "floors_fully_paying": 5,
+     "floors_never_paying": 0
+    },
+    "narrow_lo|d=1162": {
+     "open_floors": 23,
+     "all_floors": 27,
+     "cell_share": 1.0,
+     "width_share": 1.0,
+     "floors_fully_paying": 23,
+     "floors_never_paying": 0
+    },
+    "narrow_lo|d=1296": {
+     "open_floors": 23,
+     "all_floors": 27,
+     "cell_share": 1.0,
+     "width_share": 1.0,
+     "floors_fully_paying": 23,
+     "floors_never_paying": 0
+    },
+    "narrow_lo|d=1380": {
+     "open_floors": 23,
+     "all_floors": 27,
+     "cell_share": 1.0,
+     "width_share": 1.0,
+     "floors_fully_paying": 23,
+     "floors_never_paying": 0
+    },
+    "narrow_lo|d=2760": {
+     "open_floors": 23,
+     "all_floors": 27,
+     "cell_share": 1.0,
+     "width_share": 1.0,
+     "floors_fully_paying": 23,
+     "floors_never_paying": 0
+    },
+    "narrow_hi|d=690": {
+     "open_floors": 20,
+     "all_floors": 27,
+     "cell_share": 0.31925,
+     "width_share": 0.23854785276475213,
+     "floors_fully_paying": 2,
+     "floors_never_paying": 0
+    },
+    "narrow_hi|d=1162": {
+     "open_floors": 20,
+     "all_floors": 27,
+     "cell_share": 1.0,
+     "width_share": 1.0,
+     "floors_fully_paying": 20,
+     "floors_never_paying": 0
+    },
+    "narrow_hi|d=1296": {
+     "open_floors": 20,
+     "all_floors": 27,
+     "cell_share": 1.0,
+     "width_share": 1.0,
+     "floors_fully_paying": 20,
+     "floors_never_paying": 0
+    },
+    "narrow_hi|d=1380": {
+     "open_floors": 20,
+     "all_floors": 27,
+     "cell_share": 1.0,
+     "width_share": 1.0,
+     "floors_fully_paying": 20,
+     "floors_never_paying": 0
+    },
+    "narrow_hi|d=2760": {
+     "open_floors": 20,
+     "all_floors": 27,
+     "cell_share": 1.0,
+     "width_share": 1.0,
+     "floors_fully_paying": 20,
+     "floors_never_paying": 0
+    },
+    "broad_lo|d=690": {
+     "open_floors": 10,
+     "all_floors": 27,
+     "cell_share": 0.0,
+     "width_share": 0.0,
+     "floors_fully_paying": 0,
+     "floors_never_paying": 10
+    },
+    "broad_lo|d=1162": {
+     "open_floors": 10,
+     "all_floors": 27,
+     "cell_share": 1.0,
+     "width_share": 1.0,
+     "floors_fully_paying": 10,
+     "floors_never_paying": 0
+    },
+    "broad_lo|d=1296": {
+     "open_floors": 10,
+     "all_floors": 27,
+     "cell_share": 1.0,
+     "width_share": 1.0,
+     "floors_fully_paying": 10,
+     "floors_never_paying": 0
+    },
+    "broad_lo|d=1380": {
+     "open_floors": 10,
+     "all_floors": 27,
+     "cell_share": 1.0,
+     "width_share": 1.0,
+     "floors_fully_paying": 10,
+     "floors_never_paying": 0
+    },
+    "broad_lo|d=2760": {
+     "open_floors": 10,
+     "all_floors": 27,
+     "cell_share": 1.0,
+     "width_share": 1.0,
+     "floors_fully_paying": 10,
+     "floors_never_paying": 0
+    },
+    "broad_hi|d=690": {
+     "open_floors": 0,
+     "all_floors": 27,
+     "cell_share": NaN,
+     "width_share": NaN,
+     "floors_fully_paying": 0,
+     "floors_never_paying": 0
+    },
+    "broad_hi|d=1162": {
+     "open_floors": 0,
+     "all_floors": 27,
+     "cell_share": NaN,
+     "width_share": NaN,
+     "floors_fully_paying": 0,
+     "floors_never_paying": 0
+    },
+    "broad_hi|d=1296": {
+     "open_floors": 0,
+     "all_floors": 27,
+     "cell_share": NaN,
+     "width_share": NaN,
+     "floors_fully_paying": 0,
+     "floors_never_paying": 0
+    },
+    "broad_hi|d=1380": {
+     "open_floors": 0,
+     "all_floors": 27,
+     "cell_share": NaN,
+     "width_share": NaN,
+     "floors_fully_paying": 0,
+     "floors_never_paying": 0
+    },
+    "broad_hi|d=2760": {
+     "open_floors": 0,
+     "all_floors": 27,
+     "cell_share": NaN,
+     "width_share": NaN,
+     "floors_fully_paying": 0,
+     "floors_never_paying": 0
+    }
+   }
+  },
+  "0.85": {
+   "rho_star": {
+    "1.0": [
+     1.5277523803710937,
+     ""
+    ],
+    "1.5": [
+     1.2129608154296874,
+     ""
+    ],
+    "2.0": [
+     1.017160949707031,
+     ""
+    ],
+    "2.5": [
+     0.8823199462890624,
+     ""
+    ],
+    "3.0": [
+     0.7830789184570313,
+     ""
+    ],
+    "3.5": [
+     0.7065145874023435,
+     ""
+    ],
+    "4.0": [
+     0.6450680541992186,
+     ""
+    ],
+    "4.5": [
+     0.5945941162109374,
+     ""
+    ],
+    "5.0": [
+     0.5521667480468748,
+     ""
+    ],
+    "5.5": [
+     0.515835266113281,
+     ""
+    ],
+    "6.0": [
+     0.48462432861328114,
+     ""
+    ],
+    "6.5": [
+     0.4570709228515625,
+     ""
+    ],
+    "7.0": [
+     0.4329312133789062,
+     ""
+    ],
+    "7.5": [
+     0.4112298583984374,
+     ""
+    ],
+    "8.0": [
+     0.3917230224609374,
+     ""
+    ],
+    "8.5": [
+     0.3741668701171875,
+     ""
+    ],
+    "9.0": [
+     0.3583175659179687,
+     ""
+    ],
+    "9.5": [
+     0.3436874389648437,
+     ""
+    ],
+    "10.0": [
+     0.3302764892578124,
+     ""
+    ],
+    "10.5": [
+     0.31784088134765615,
+     ""
+    ],
+    "11.0": [
+     0.3066244506835936,
+     ""
+    ],
+    "11.5": [
+     0.29589569091796863,
+     ""
+    ],
+    "12.0": [
+     0.2861422729492187,
+     ""
+    ],
+    "12.5": [
+     0.27687652587890627,
+     ""
+    ],
+    "13.0": [
+     0.26834228515624997,
+     ""
+    ],
+    "13.5": [
+     0.2602957153320312,
+     ""
+    ],
+    "14.0": [
+     0.25273681640624995,
+     ""
+    ]
+   },
+   "tables": {
+    "narrow_lo|d=690": {
+     "open_floors": 27,
+     "all_floors": 27,
+     "cell_share": 0.3788888888888889,
+     "width_share": 0.3961533525850841,
+     "floors_fully_paying": 2,
+     "floors_never_paying": 0
+    },
+    "narrow_lo|d=1162": {
+     "open_floors": 27,
+     "all_floors": 27,
+     "cell_share": 0.9568518518518518,
+     "width_share": 0.9680016236620296,
+     "floors_fully_paying": 16,
+     "floors_never_paying": 0
+    },
+    "narrow_lo|d=1296": {
+     "open_floors": 27,
+     "all_floors": 27,
+     "cell_share": 1.0,
+     "width_share": 1.0,
+     "floors_fully_paying": 27,
+     "floors_never_paying": 0
+    },
+    "narrow_lo|d=1380": {
+     "open_floors": 27,
+     "all_floors": 27,
+     "cell_share": 1.0,
+     "width_share": 1.0,
+     "floors_fully_paying": 27,
+     "floors_never_paying": 0
+    },
+    "narrow_lo|d=2760": {
+     "open_floors": 27,
+     "all_floors": 27,
+     "cell_share": 1.0,
+     "width_share": 1.0,
+     "floors_fully_paying": 27,
+     "floors_never_paying": 0
+    },
+    "narrow_hi|d=690": {
+     "open_floors": 26,
+     "all_floors": 27,
+     "cell_share": 0.13634615384615384,
+     "width_share": 0.10332204208160692,
+     "floors_fully_paying": 1,
+     "floors_never_paying": 0
+    },
+    "narrow_hi|d=1162": {
+     "open_floors": 26,
+     "all_floors": 27,
+     "cell_share": 0.9448076923076923,
+     "width_share": 0.9524842294409221,
+     "floors_fully_paying": 15,
+     "floors_never_paying": 0
+    },
+    "narrow_hi|d=1296": {
+     "open_floors": 26,
+     "all_floors": 27,
+     "cell_share": 1.0,
+     "width_share": 1.0,
+     "floors_fully_paying": 26,
+     "floors_never_paying": 0
+    },
+    "narrow_hi|d=1380": {
+     "open_floors": 26,
+     "all_floors": 27,
+     "cell_share": 1.0,
+     "width_share": 1.0,
+     "floors_fully_paying": 26,
+     "floors_never_paying": 0
+    },
+    "narrow_hi|d=2760": {
+     "open_floors": 26,
+     "all_floors": 27,
+     "cell_share": 1.0,
+     "width_share": 1.0,
+     "floors_fully_paying": 26,
+     "floors_never_paying": 0
+    },
+    "broad_lo|d=690": {
+     "open_floors": 23,
+     "all_floors": 27,
+     "cell_share": 0.0,
+     "width_share": 0.0,
+     "floors_fully_paying": 0,
+     "floors_never_paying": 23
+    },
+    "broad_lo|d=1162": {
+     "open_floors": 23,
+     "all_floors": 27,
+     "cell_share": 0.9130434782608695,
+     "width_share": 0.912824033547214,
+     "floors_fully_paying": 12,
+     "floors_never_paying": 0
+    },
+    "broad_lo|d=1296": {
+     "open_floors": 23,
+     "all_floors": 27,
+     "cell_share": 1.0,
+     "width_share": 1.0,
+     "floors_fully_paying": 23,
+     "floors_never_paying": 0
+    },
+    "broad_lo|d=1380": {
+     "open_floors": 23,
+     "all_floors": 27,
+     "cell_share": 1.0,
+     "width_share": 1.0,
+     "floors_fully_paying": 23,
+     "floors_never_paying": 0
+    },
+    "broad_lo|d=2760": {
+     "open_floors": 23,
+     "all_floors": 27,
+     "cell_share": 1.0,
+     "width_share": 1.0,
+     "floors_fully_paying": 23,
+     "floors_never_paying": 0
+    },
+    "broad_hi|d=690": {
+     "open_floors": 20,
+     "all_floors": 27,
+     "cell_share": 0.0,
+     "width_share": 0.0,
+     "floors_fully_paying": 0,
+     "floors_never_paying": 20
+    },
+    "broad_hi|d=1162": {
+     "open_floors": 20,
+     "all_floors": 27,
+     "cell_share": 0.852,
+     "width_share": 0.8278227603746755,
+     "floors_fully_paying": 9,
+     "floors_never_paying": 0
+    },
+    "broad_hi|d=1296": {
+     "open_floors": 20,
+     "all_floors": 27,
+     "cell_share": 1.0,
+     "width_share": 1.0,
+     "floors_fully_paying": 20,
+     "floors_never_paying": 0
+    },
+    "broad_hi|d=1380": {
+     "open_floors": 20,
+     "all_floors": 27,
+     "cell_share": 1.0,
+     "width_share": 1.0,
+     "floors_fully_paying": 20,
+     "floors_never_paying": 0
+    },
+    "broad_hi|d=2760": {
+     "open_floors": 20,
+     "all_floors": 27,
+     "cell_share": 1.0,
+     "width_share": 1.0,
+     "floors_fully_paying": 20,
+     "floors_never_paying": 0
+    }
+   }
+  },
+  "0.95": {
+   "rho_star": {
+    "1.0": [
+     2.7647296142578126,
+     ""
+    ],
+    "1.5": [
+     2.082234191894531,
+     ""
+    ],
+    "2.0": [
+     1.6862454223632815,
+     ""
+    ],
+    "2.5": [
+     1.4263168334960934,
+     ""
+    ],
+    "3.0": [
+     1.2412457275390625,
+     ""
+    ],
+    "3.5": [
+     1.1022595214843747,
+     ""
+    ],
+    "4.0": [
+     0.9935089111328125,
+     ""
+    ],
+    "4.5": [
+     0.9064596557617186,
+     ""
+    ],
+    "5.0": [
+     0.8347720336914062,
+     ""
+    ],
+    "5.5": [
+     0.7743008422851562,
+     ""
+    ],
+    "6.0": [
+     0.7230953979492185,
+     ""
+    ],
+    "6.5": [
+     0.6784735107421874,
+     ""
+    ],
+    "7.0": [
+     0.6397036743164062,
+     ""
+    ],
+    "7.5": [
+     0.6055667114257812,
+     ""
+    ],
+    "8.0": [
+     0.5750872802734374,
+     ""
+    ],
+    "8.5": [
+     0.5477777099609373,
+     ""
+    ],
+    "9.0": [
+     0.5231503295898435,
+     ""
+    ],
+    "9.5": [
+     0.5007174682617186,
+     ""
+    ],
+    "10.0": [
+     0.48023529052734365,
+     ""
+    ],
+    "10.5": [
+     0.4617037963867187,
+     ""
+    ],
+    "11.0": [
+     0.4443914794921875,
+     ""
+    ],
+    "11.5": [
+     0.4285421752929687,
+     ""
+    ],
+    "12.0": [
+     0.41366821289062494,
+     ""
+    ],
+    "12.5": [
+     0.40001342773437487,
+     ""
+    ],
+    "13.0": [
+     0.3873339843749999,
+     ""
+    ],
+    "13.5": [
+     0.37538604736328124,
+     ""
+    ],
+    "14.0": [
+     0.3641696166992187,
+     ""
+    ]
+   },
+   "tables": {
+    "narrow_lo|d=690": {
+     "open_floors": 27,
+     "all_floors": 27,
+     "cell_share": 0.17296296296296296,
+     "width_share": 0.19814511900369355,
+     "floors_fully_paying": 0,
+     "floors_never_paying": 0
+    },
+    "narrow_lo|d=1162": {
+     "open_floors": 27,
+     "all_floors": 27,
+     "cell_share": 0.6231481481481481,
+     "width_share": 0.7030559014863742,
+     "floors_fully_paying": 2,
+     "floors_never_paying": 0
+    },
+    "narrow_lo|d=1296": {
+     "open_floors": 27,
+     "all_floors": 27,
+     "cell_share": 0.7335185185185186,
+     "width_share": 0.805882688805388,
+     "floors_fully_paying": 3,
+     "floors_never_paying": 0
+    },
+    "narrow_lo|d=1380": {
+     "open_floors": 27,
+     "all_floors": 27,
+     "cell_share": 0.7955555555555556,
+     "width_share": 0.8586792932742349,
+     "floors_fully_paying": 5,
+     "floors_never_paying": 0
+    },
+    "narrow_lo|d=2760": {
+     "open_floors": 27,
+     "all_floors": 27,
+     "cell_share": 1.0,
+     "width_share": 1.0,
+     "floors_fully_paying": 27,
+     "floors_never_paying": 0
+    },
+    "narrow_hi|d=690": {
+     "open_floors": 27,
+     "all_floors": 27,
+     "cell_share": 0.04296296296296296,
+     "width_share": 0.04735205511458893,
+     "floors_fully_paying": 0,
+     "floors_never_paying": 0
+    },
+    "narrow_hi|d=1162": {
+     "open_floors": 27,
+     "all_floors": 27,
+     "cell_share": 0.5714814814814815,
+     "width_share": 0.6472139885918339,
+     "floors_fully_paying": 2,
+     "floors_never_paying": 0
+    },
+    "narrow_hi|d=1296": {
+     "open_floors": 27,
+     "all_floors": 27,
+     "cell_share": 0.697962962962963,
+     "width_share": 0.7693778987209524,
+     "floors_fully_paying": 3,
+     "floors_never_paying": 0
+    },
+    "narrow_hi|d=1380": {
+     "open_floors": 27,
+     "all_floors": 27,
+     "cell_share": 0.7694444444444445,
+     "width_share": 0.8321031847249251,
+     "floors_fully_paying": 5,
+     "floors_never_paying": 0
+    },
+    "narrow_hi|d=2760": {
+     "open_floors": 27,
+     "all_floors": 27,
+     "cell_share": 1.0,
+     "width_share": 1.0,
+     "floors_fully_paying": 27,
+     "floors_never_paying": 0
+    },
+    "broad_lo|d=690": {
+     "open_floors": 27,
+     "all_floors": 27,
+     "cell_share": 0.0,
+     "width_share": 0.0,
+     "floors_fully_paying": 0,
+     "floors_never_paying": 27
+    },
+    "broad_lo|d=1162": {
+     "open_floors": 27,
+     "all_floors": 27,
+     "cell_share": 0.4824074074074074,
+     "width_share": 0.5410324927840783,
+     "floors_fully_paying": 2,
+     "floors_never_paying": 0
+    },
+    "broad_lo|d=1296": {
+     "open_floors": 27,
+     "all_floors": 27,
+     "cell_share": 0.6388888888888888,
+     "width_share": 0.6999652834576872,
+     "floors_fully_paying": 3,
+     "floors_never_paying": 0
+    },
+    "broad_lo|d=1380": {
+     "open_floors": 27,
+     "all_floors": 27,
+     "cell_share": 0.7255555555555555,
+     "width_share": 0.7815696193034782,
+     "floors_fully_paying": 5,
+     "floors_never_paying": 0
+    },
+    "broad_lo|d=2760": {
+     "open_floors": 27,
+     "all_floors": 27,
+     "cell_share": 1.0,
+     "width_share": 1.0,
+     "floors_fully_paying": 27,
+     "floors_never_paying": 0
+    },
+    "broad_hi|d=690": {
+     "open_floors": 27,
+     "all_floors": 27,
+     "cell_share": 0.0,
+     "width_share": 0.0,
+     "floors_fully_paying": 0,
+     "floors_never_paying": 27
+    },
+    "broad_hi|d=1162": {
+     "open_floors": 27,
+     "all_floors": 27,
+     "cell_share": 0.3748148148148148,
+     "width_share": 0.3923727328287353,
+     "floors_fully_paying": 2,
+     "floors_never_paying": 0
+    },
+    "broad_hi|d=1296": {
+     "open_floors": 27,
+     "all_floors": 27,
+     "cell_share": 0.5690740740740741,
+     "width_share": 0.6027839182451251,
+     "floors_fully_paying": 3,
+     "floors_never_paying": 0
+    },
+    "broad_hi|d=1380": {
+     "open_floors": 27,
+     "all_floors": 27,
+     "cell_share": 0.675,
+     "width_share": 0.7108199312519822,
+     "floors_fully_paying": 5,
+     "floors_never_paying": 0
+    },
+    "broad_hi|d=2760": {
+     "open_floors": 27,
+     "all_floors": 27,
+     "cell_share": 1.0,
+     "width_share": 1.0,
+     "floors_fully_paying": 27,
+     "floors_never_paying": 0
+    }
+   }
+  }
+ }
+}
