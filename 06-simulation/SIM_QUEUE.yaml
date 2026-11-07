@@ -600,7 +600,7 @@ sim_requests:
     request_hash: 00c5d58e4e54d37548dbf4684f83237809319c655741b66a0d7634395ae5e455
   sr-20261028-run-pledge-band-py-s-pledge-term-on-the-kapp:
     date: '2026-10-28'
-    status: requested
+    status: answered
     question: 'Run pledge_band.py''s pledge term on the kappa-tied ledger of sr-20261026
       (demand 1,380 h/yr, past debit 1,380 h/yr, same ages, all join on day one,
       M = 100, capacity 56,446): report the publishable upper edge at pledge density
@@ -611,7 +611,7 @@ sim_requests:
     request_hash: 9b14133a36dd8c997bb78a2554666f7918df2a572604d05786ae6b65b5508f22
   sr-20261029-re-run-stable-band-methods-py-the-kappa-tied:
     date: '2026-10-29'
-    status: requested
+    status: answered
     question: 'Re-run stable_band_methods.py (the kappa-tied band at another production
       method) at the every-payer peer ratios of 06-simulation/median-lifestyle/Q6_PAYERS_RUN.txt:
       peers at 0.836 (Germany, Japan), 0.858 (France) and 0.873 (Sweden) of the
