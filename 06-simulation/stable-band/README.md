@@ -37,6 +37,17 @@ python stable_band.py             # the full sweep, about 3 minutes
 
 **Read [`RESULTS.md`](RESULTS.md) for the tables, the three things this does not show, and why it is an instrument rather than a ceremony.**
 
+## Births arm, 2026-11-08
+
+**Code:** [`stable_band_births.py`](stable_band_births.py) · **Result:** [`RESULTS_BIRTHS.md`](RESULTS_BIRTHS.md) · **Declared first:** [`BIRTHS_DECLARED.md`](BIRTHS_DECLARED.md)
+
+```bash
+python stable_band_births.py --test   # 8 self-tests, each able to fail
+python stable_band_births.py          # about 2 minutes
+```
+
+Births and deaths over 100 years, children under ruling 7 (no debit, floor credit from birth, no requests below 18). ρ\* at F = 2 / 10 / 14 falls from 1.017 / 0.330 / 0.253 to 0.866 / 0.262 / 0.192.
+
 ## Cumulative re-run, 2026-10-26
 
 **Code:** [`stable_band_cumulative.py`](stable_band_cumulative.py) · **Result:** [`RESULTS_CUMULATIVE.md`](RESULTS_CUMULATIVE.md) · **Declared first:** [`CUMULATIVE_DECLARED.md`](CUMULATIVE_DECLARED.md)

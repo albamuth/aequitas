@@ -1,0 +1,40 @@
+N=60,000 seed=7 kappa=3.7808 R_max(start)=56,446 wants_total=66,407 M=100
+DECLARED  death schedule (age from, to, chance of dying in a year): 0-18: 0.0004; 18-35: 0.001; 35-50: 0.0025; 50-65: 0.008; 65-85: 0.035; 85-100: 0.15; all die at 100
+DECLARED  birth rate 0.012 per living person per year (sensitivity (0.008, 0.016));  consent age 18
+IMPLIED   life expectancy at birth 76.5 y;  stationary crude death rate ~0.0131
+
+== 0. demography actually drawn (age seed 11) ==
+realised crude death rate 0.0136, crude birth rate 0.0120; population t=1 60,000  t=25 59,050  t=50 56,178  t=100 51,015;  births in 100 y 67,242, deaths 76,335
+
+== 1. rho*: without births (A), with births (B), and the change ==
+   F |   A without births |      B with births |    B - A |   C fixed+r7 |  D births+old | C - A (r7) | D - A (turnover)
+   2 |    1.017 (sd 0.000) |    0.866 (sd 0.004) |   -0.152 |  0.994 (sd 0.001) |   1.017 (sd 0.004) |     -0.023 |           +0.000   flags A[''] B['']
+  10 |    0.330 (sd 0.000) |    0.262 (sd 0.000) |   -0.068 |  0.266 (sd 0.000) |   0.330 (sd 0.000) |     -0.064 |           -0.000   flags A[''] B['']
+  14 |    0.253 (sd 0.000) |    0.192 (sd 0.000) |   -0.061 |  0.194 (sd 0.000) |   0.252 (sd 0.000) |     -0.059 |           -0.001   flags A[''] B['']
+per-seed B: {2.0: [np.float64(0.867), np.float64(0.863), np.float64(0.864), np.float64(0.862), np.float64(0.872)], 10.0: [np.float64(0.262), np.float64(0.262), np.float64(0.263), np.float64(0.262), np.float64(0.262)], 14.0: [np.float64(0.192), np.float64(0.191), np.float64(0.192), np.float64(0.192), np.float64(0.192)]}
+
+== 2. the arm-B path at its own edge and at rho = one-day edge of A (age seed 11) ==
+F=   2 rho=0.867 (B edge) admitted t=1   15,046 t=10   35,517 t=50   41,019 t=100   37,390 | capacity t=1   44,005 t=100   37,485 | max admitted/capacity 1.000 | requesters t=1 46,808 t=100 39,811
+F=   2 rho=1.017 (A edge) admitted t=1   20,450 t=10   41,895 t=50   43,020 t=100   39,198 | capacity t=1   44,005 t=100   37,485 | max admitted/capacity 1.047 | requesters t=1 46,808 t=100 39,811
+F=  10 rho=0.262 (B edge) admitted t=1   36,102 t=10   44,474 t=50   40,451 t=100   36,869 | capacity t=1   44,005 t=100   37,485 | max admitted/capacity 0.999 | requesters t=1 46,808 t=100 39,811
+F=  10 rho=0.330 (A edge) admitted t=1   51,771 t=10   50,794 t=50   44,133 t=100   40,126 | capacity t=1   44,005 t=100   37,485 | max admitted/capacity 1.176 | requesters t=1 46,808 t=100 39,811
+F=  14 rho=0.192 (B edge) admitted t=1   38,616 t=10   44,176 t=50   39,725 t=100   36,194 | capacity t=1   44,005 t=100   37,485 | max admitted/capacity 1.000 | requesters t=1 46,808 t=100 39,811
+F=  14 rho=0.253 (A edge) admitted t=1   51,771 t=10   51,455 t=50   44,309 t=100   40,281 | capacity t=1   44,005 t=100   37,485 | max admitted/capacity 1.176 | requesters t=1 46,808 t=100 39,811
+
+== 2b. which period sets the edge (age seed 11): the period where admitted/capacity peaks at the edge ==
+F=   2 B births, ruling 7     rho=0.867  peak period 79  (ratio 1.000; t=1 0.342, t=18 0.940, t=50 0.996, t=100 0.997)
+F=   2 C fixed + ruling 7     rho=0.994  peak period 37  (ratio 1.000; t=1 0.443, t=18 0.974, t=50 0.997, t=100 0.994)
+F=  10 B births, ruling 7     rho=0.262  peak period 9  (ratio 0.999; t=1 0.820, t=18 0.984, t=50 0.982, t=100 0.984)
+F=  10 C fixed + ruling 7     rho=0.266  peak period 9  (ratio 0.999; t=1 0.859, t=18 0.974, t=50 0.911, t=100 0.900)
+F=  14 B births, ruling 7     rho=0.192  peak period 8  (ratio 1.000; t=1 0.878, t=18 0.969, t=50 0.965, t=100 0.966)
+F=  14 C fixed + ruling 7     rho=0.193  peak period 7  (ratio 0.999; t=1 0.906, t=18 0.955, t=50 0.883, t=100 0.871)
+
+== 3. sensitivities of arm B (age seed 11) ==
+entailment check: the most adult wants in any period is 52,467 real units; fixed R_max 56,446 is above it, so under that fixed-capacity convention rationing cannot fail.
+birth rate 0.008 (population t=100: 24,406)          F=2     0.893  F=10     0.262  F=14     0.192
+birth rate 0.016 (population t=100: 96,893)          F=2     0.845  F=10     0.262  F=14     0.191
+past debit 1,000 h/yr                                F=2     0.867  F=10     0.203  F=14     0.146
+past debit 2,000 h/yr                                F=2     0.867  F=10     0.271  F=14     0.206
+(arm A, same seed, for reference)                    F=2     1.017  F=10     0.330  F=14     0.253
+
+(<) = even rho 0.005 fails to ration: a ceiling on the edge, not a value.  (>=) = grid ended: a floor, not a value.

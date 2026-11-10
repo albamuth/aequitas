@@ -19,6 +19,10 @@ sr-20261028-run-pledge-band-py-s-pledge-term-on-the-kapp
 sr-20261102-births-arm-of-stable-band-cumulative-py-kapp
 # 2. Stock gate after a capacity shock. Due to the board 2026-11-19.
 sr-20261105-stock-gate-clearing-rate-after-a-capacity-sh
+# Pinned ahead of 3-5, ruled 2026-11-09 (PLAN-2026-11-09 section 7.4). Prime-rate sweep at the German method.
+sr-20261109-prime-rate-sweep-at-the-german-method-on-the
+# Its second arm, demand at Germany's middle fifth (1,048 h per person). PLAN-2026-11-09 section 7.6.
+sr-20261110-second-arm-of-sr-20261109-prime-rate-sweep-a
 # 3. Re-run stable_band_cumulative.py, kappa-tied, two arms. Unblocks obj-20261031-self-council-band-line79-ignores-ruling7.
 sr-20261031-re-run-stable-band-cumulative-py-kappa-tied-
 # 4. Scale-the-anchor self-test.

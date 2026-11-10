@@ -1,0 +1,5 @@
+====================================================================================================
+ARM C RECALIBRATED: rho0 solved so arm C's OWN unshocked year admits CAP*sum(wants)
+F=2: rho0_C 0.055 (base/cap 1.000) -> rho_s 0.046 (min 0.046 max 0.046) | adults admitting zero 0.000% | year2 0.783 x full cap | flags ['']
+F=10: rho0_C 0.020 (base/cap 1.000) -> rho_s 0.017 (min 0.017 max 0.017) | adults admitting zero 0.000% | year2 0.706 x full cap | flags ['']
+F=14: rho0_C 0.016 (base/cap 1.000) -> rho_s 0.013 (min 0.013 max 0.013) | adults admitting zero 0.000% | year2 0.698 x full cap | flags ['']

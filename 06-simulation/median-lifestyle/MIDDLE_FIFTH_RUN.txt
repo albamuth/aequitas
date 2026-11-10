@@ -1,0 +1,38 @@
+parsing EXIOBASE 3 (~2 min)...
+factorising (I - A) ...
+  US: average 1283 h, middle fifth 2023 1104 h
+  DE: average 1072 h, middle fifth 2015 1045 h, 2020 1048 h
+  FR: average 1101 h, middle fifth 2015 1036 h, 2020 1036 h
+  SE: average 1120 h, middle fifth 2015 1070 h
+  NL: average 1497 h, middle fifth 2015 1462 h, 2020 1454 h
+  DK: average 1437 h, middle fifth 2015 1413 h, 2020 1284 h
+  NO: average 1239 h, middle fifth 2015 1251 h, 2020 1227 h
+  BE: average 1475 h, middle fifth 2015 1446 h, 2020 1437 h
+  GB: average 1319 h, middle fifth 2015 1270 h
+  AT: average 1077 h, middle fifth 2015 1104 h, 2020 1061 h
+  FI: average 1138 h, middle fifth 2015 1095 h, 2020 1118 h
+================================================================================================
+MIDDLE FIFTH AGAINST THE AVERAGE -- hours per person per year, every payer, EXIOBASE 2022
+================================================================================================
+        average   middle  mid/avg  survey  spend mid/avg  abroad share  h per kEUR
+  NL       1497     1454     0.97    2020          1.011           78%        46.3
+  BE       1475     1437     0.97    2020          1.017           81%        45.8
+  DK       1437     1284     0.89    2020          0.949           72%        35.5
+  GB       1319     1270     0.96    2015          0.964           60%        36.1
+  US       1283     1104     0.86    2023          0.847           47%        25.7
+  NO       1239     1227     0.99    2020          1.013           62%        27.8
+  FI       1138     1118     0.98    2020          1.003           60%        34.5
+  SE       1120     1070     0.96    2015          0.989           62%        35.2
+  FR       1101     1036     0.94    2020          0.954           59%        40.5
+  AT       1077     1061     0.99    2020          1.009           64%        35.0
+  DE       1072     1048     0.98    2020          1.004           61%        34.8
+------------------------------------------------------------------------------------------------
+  DK survey wave check: 2015 1413 h, 2020 1284 h
+  NO survey wave check: 2015 1251 h, 2020 1227 h
+  AT survey wave check: 2015 1104 h, 2020 1061 h
+  FI survey wave check: 2015 1095 h, 2020 1118 h
+  DE survey wave check: 2015 1045 h, 2020 1048 h
+  NL survey wave check: 2015 1462 h, 2020 1454 h
+  BE survey wave check: 2015 1446 h, 2020 1437 h
+  FR survey wave check: 2015 1036 h, 2020 1036 h
+================================================================================================

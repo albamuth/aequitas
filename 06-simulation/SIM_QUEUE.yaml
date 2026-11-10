@@ -824,3 +824,52 @@ sim_requests:
       cells on the post of 2026-11-07: final p below 0.25 loses for me, 0.25-0.46
       is my prior.'
     request_hash: 9ae9266f2e7ae7714ca92324e0596caf08760fccfa5ce9601d1be61ba34122d6
+  sr-20261109-prime-rate-sweep-at-the-german-method-on-the:
+    date: '2026-11-09'
+    status: requested
+    question: 'Prime-rate sweep at the German method on the specified gate. Population,
+      wants and age pyramid as stock-gate-clearing/stock_gate_clearing.py (N 200,000,
+      seed 7, sigma 0.45). Method: German every-payer ratio 0.836 of US hours, so
+      capacity = 101.7% of wants (stable-band RESULTS_PAYERS_F2-6-10-16.md). Gate:
+      stock, D <= rho*(C+P), P = 0 (Foundations 3.0, 5.5.6). Essentials never gated
+      (5.5.4): the first E h/yr of each request is ungated, E = the broad basket
+      on GOODS ONLY scaled by 0.836, i.e. (523 to 553) x 0.836 = 437 to 462 h; report
+      both ends. Services and enrichment are not on the receiver''s D (author ruling
+      2026-11-09, PLAN-2026-11-09 section 7.1): remove care, schooling, land transport
+      services and post/telecoms hours from kappa before building D; print kappa
+      before and after. Pasts: joiners rebuilt to birth as Foundations 4.4 builds
+      them (uncapped past at kappa per year), not ledgers capped at rho0. Sweep
+      capacity at +20%, +10%, 0, -10%, -20%, -30%, -40% of baseline, at F = 2, 10,
+      14. For each cell report: the rho at which admitted demand equals capacity,
+      or ''none, gate never binds below rho = 4.0''; share of people admitting nothing
+      above E; admitted demand by age band; and the next year''s demand at the baseline
+      rho. Declare before running: at +20% and 0 no clearing rho exists; a clearing
+      rho appears below some shock depth and falls as the shock deepens.'
+    why: 'Author ruling 2026-11-09 (PLAN-2026-11-09 sections 7.3-7.4): the priority
+      is to show a network can set rho high in plenty and low in scarcity, on a
+      healthy method. Plenty half is measured (German method: no upper edge, 5.5.3).
+      Scarcity half is not: the only shock run (stock-gate-clearing) is US-method,
+      gates essentials, puts services on the receiver, and builds insider pasts,
+      which section 6 shows the documents do not specify.'
+    request_hash: 5748586db6be309d9a18619b92b1f4ad74426b1288a30669d6e0b43433585336
+  sr-20261110-second-arm-of-sr-20261109-prime-rate-sweep-a:
+    date: '2026-11-10'
+    status: requested
+    question: 'Second arm of sr-20261109-prime-rate-sweep-at-the-german-method-on-the,
+      with demand set to Germany''s own middle fifth. Same population, gate, essentials
+      rule, service rule, joiner pasts, capacity steps and floors as that request.
+      Change two inputs only. (1) Demand level: Germany''s middle fifth of households,
+      1,048 h per person per year, every payer, EXIOBASE 2022 (06-simulation/median-lifestyle/MIDDLE_FIFTH.md),
+      with care, schooling, land transport services and post/telecoms hours removed
+      before building D; print kappa before and after. Note the basis: per person,
+      all ages, not per median adult. (2) Output basis: baseline capacity = 100%
+      of that demand, declared, because it is the lifestyle Germany''s economy actually
+      delivered; sweep +20% to -40% from it. Report the same cells as the first
+      arm, and print each clearing rho beside the first arm''s at the same F and
+      step, with their ratio.'
+    why: 'Author ruling 2026-11-09 (PLAN-2026-11-09 section 7.6): keep the first
+      arm as filed and run this one after it. The author wants an advanced European
+      lifestyle, not a US-standard basket made the German way; the side session
+      measured Germany''s middle fifth at 1,048 h per person against an average
+      of 1,072.'
+    request_hash: 4a885068315e6dde2e7f903e58ee08c2ef14d384cd4ec2f214eda050ac48c478

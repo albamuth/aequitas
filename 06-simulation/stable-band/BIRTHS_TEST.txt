@@ -1,0 +1,10 @@
+[ok] no births, no deaths, published children: identical to stable_band_cumulative
+[ok] arm A reproduces 1.017 / 0.330 / 0.253 within 0.01
+[ok] a newborn carries 0 debit and F x 365 x age credit for 18 years, and debit starts only at 18
+[ok] alive(t+1) = alive(t) + births - deaths, for 59 periods; the dead never reappear
+[ok] realised death rate 0.03143 vs schedule 0.03114 (uniform ages 0-100)
+[ok] rho 0.02 rations and rho 4.0 does not, with and without ruling 7
+[ok] the rationing boolean flips at most once along rho (bisection is valid)
+[ok] ruling 7 moves the fixed-population edge: 0.329 -> 0.265
+
+All self-tests passed.

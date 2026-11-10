@@ -25,6 +25,7 @@ Each is a separate tested script. They are added together in [`MEDIAN_LIFESTYLE_
 | **6 — efficiency** | Which rich countries deliver a comparable life for fewer hours | [`track6_country_labour.py`](track6_country_labour.py) · [`track6_efficiency.py`](track6_efficiency.py) | [`Q6.md`](Q6.md) |
 | **healthcare share** | How much of the anchor is healthcare, and the range a network's attribution rule opens | [`health_share.py`](health_share.py) · [`health_peer.py`](health_peer.py) | [`HEALTH_SHARE.md`](HEALTH_SHARE.md) |
 | **mean, not median** | What everyone *would* have if consumption were shared evenly | [`average_household.py`](average_household.py) · [`average_footprint.py`](average_footprint.py) | in `MEDIAN_LIFESTYLE_RESULT.md` |
+| **middle fifth** | Hours behind the middle fifth of households by income, against the average, in the US and nine European countries | [`middle_fifth.py`](middle_fifth.py) | [`MIDDLE_FIFTH.md`](MIDDLE_FIFTH.md) |
 
 **There is no track 5.** The numbering follows the method plan, which had a track that was folded into another.
 
