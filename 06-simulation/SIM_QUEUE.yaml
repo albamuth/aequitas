@@ -873,3 +873,190 @@ sim_requests:
       measured Germany''s middle fifth at 1,048 h per person against an average
       of 1,072.'
     request_hash: 4a885068315e6dde2e7f903e58ee08c2ef14d384cd4ec2f214eda050ac48c478
+  sr-20261110-sweep-the-two-single-number-assumptions-medi:
+    date: '2026-11-10'
+    status: requested
+    question: Sweep the two single-number assumptions MEDIAN_LIFESTYLE_RESULT.md
+      names as its biggest (hours per job, and the median/mean ratio) across defensible
+      bands, and report the resulting low and high of the median-adult anchor (now
+      1,380 h/yr, stated as 1,350-1,400). Say whether the stated 1,350-1,400 range
+      contains the swept band, and print the anchor values at which the 30% shock
+      rate (0.19 x anchor/1,380 at F = 10) crosses the narrow basket's top line
+      655/3,650 and the broad basket's bottom line 826/3,650.
+    why: 'coywolf c140446 on #11276 asks whether 1,350 h is a measured bound or
+      a typed rounding. The file''s 1,350-1,400 span is the spread of the two small
+      tracks (2 and 4); the two assumptions it names as biggest are held at single
+      values, so the range is not a bound on the anchor''s error. The flip points
+      need a measured range to be compared against.'
+    from: obj-20261105-self-council-rho-sweep-flow-not-stock
+    request_hash: 8cc6356ff5da88d9e5f7c2858572af10fcb82a5c24f65ec942bc79157d376e36
+  sr-20261110-re-run-q4-locked-ledgers-py-us-at-rho-rho-f-:
+    date: '2026-11-10'
+    status: refused
+    question: 'Re-run q4_locked_ledgers.py (US) at rho = rho*(F) for the US method,
+      1.017 / 0.485 / 0.330 / 0.253 / 0.228 at F = 2 / 6 / 10 / 14 / 16 (Foundations
+      5.5.3), in two arms: MEDIAN_FOOTPRINT_H = 1,600 as typed, and 1,380 (the current
+      anchor). Report the percent permanently locked (footprint above rho x 8,760)
+      in each cell, beside the closed form of the script''s own lognormal (sigma
+      0.80): 0.99 / 7.99 / 17.77 / 27.69 / 32.20 percent at 1,380.'
+    why: 'Foundations 5.5.8 says only 0.1-2% of Americans are permanently locked,
+      about 0.5% at rho = 1.5. q4 sweeps rho from 1.0 to 3.0 only; the measured
+      US rationing edge is 0.228 to 1.017. At the edge the lock line falls from
+      5.5-16x the median to 1.45-3.08x, and the generator''s closed form gives 8-32%
+      locked at F = 6-16. Also: the script''s 1,600 h is the mean-adult figure in
+      median_lifestyle_RESULTS.md, not the median. Direction: flatters us.'
+    request_hash: cac8a076ad9805fe13509361f316f60800765a4047fcdea61fb13daf91aca1a2
+  sr-20261111-extend-q6-payers-py-to-every-exiobase-nation:
+    date: '2026-11-11'
+    status: requested
+    question: 'Extend q6_payers.py to every EXIOBASE nation, so the spread of hours
+      behind a year of consumption can be shown across rich and poor nations. Same
+      basis as the 23 nations already run: EXIOBASE 3, 2022, pxp, hours per person
+      per year, AIC_HOURS = HH + NPISH + GOV_IND. (1) Add all 44 countries and the
+      5 rest-of-world regions; label the regions as regions. The nations wanted
+      most are India, China, Brazil, Mexico, Indonesia, South Africa, Turkey and
+      Russia. (2) For each print HH, NPISH, GOV_IND, GOV_COLL, AIC_HOURS, the population
+      used, the share of the hours worked abroad as MIDDLE_FIFTH.md prints it, and
+      hours per 1,000 euros of spending. (3) Self-test: the 23 nations in Q6_PAYERS_RUN.txt
+      reproduce to the hour. (4) Before running, declare the rule that marks a nation
+      data gap, as Spain and Poland are marked, and apply it to every nation. State
+      which EXIOBASE labour rows are summed and what is known about how they count
+      informal work. (5) Ireland reads 2,031 h, the highest of the 23: print its
+      ten largest product groups by hours and say whether the figure is a data artefact.
+      (6) Averages only; no middle-fifth step. Do not compute a world total or a
+      world median. Write the result as 06-simulation/median-lifestyle/Q6_WIDER.md
+      with a Limits section.'
+    why: 'Author ruling 2026-11-10 for the Overview rewrite (00-strategy/overview-rewrite/FACTS.md,
+      Warning 1 and open item F4): the Overview shows a spread of lifestyle hours
+      across nations with different consumption, so a reader sees how widely the
+      figure varies. Every nation measured so far is rich. By the middle fifth the
+      spread is 1,036 h (France) to 1,454 h (Netherlands), a factor of 1.4. This
+      run adds poorer nations, as averages. It is a spread and not a world median,
+      which the author ruled out on 2026-11-09 (PLAN-2026-11-09 section 7.3).'
+    request_hash: c33d9bcce1389487a7ceccae0dac356ea56e391654654db134b233fb4c2ace5f
+  sr-20261111-in-stable-band-kappa-py-s-own-population-60-:
+    date: '2026-11-11'
+    status: requested
+    question: 'In stable_band_kappa.py''s own population (60,000, seed 7, wants
+      lognormal sigma 0.45 tilted by credit^0.25, kappa 1,380/365, capacity 56,446),
+      at the one-day rho* of F = 2, 10, 14 (1.017, 0.330, 0.253) and at rho = 1.5,
+      print (a) the share of people held below what they wanted (admitted_total''s
+      second return, stable_band.py line 171) and (b) the share whose yearly request
+      wants x kappa x 365 exceeds rho x 8,760. Beside (b), print q4_locked_ledgers.py''s
+      closed form at the same rho: 0.99 / 17.77 / 27.69 percent at median 1,380.'
+    why: 'gradient-dissent c141304 and c141332 on #11912: locked is a subset of
+      gated, so the model that found rho* must show at least the locked share as
+      gated. #11912 took rho* from stable_band (aggregate edge, sigma 0.45) and
+      put it into q4 (sigma 0.80). Neither 0.1-2% nor 8-32% is then the lock rate
+      at the edge.'
+    from: obj-20261111-gradient-dissent-edge-from-other-population
+    request_hash: c439c261149052c258c3ca3c01d5ad5b085cd4290c43cb24eaf254dafe5adb61
+  sr-20261111-from-a-sourced-us-panel-psid-consumption-mod:
+    date: '2026-11-11'
+    status: requested
+    question: 'From a sourced US panel (PSID consumption module or the CE interview
+      panel), estimate the year-to-year rank persistence of total household consumption.
+      With it, simulate 60-year paths under q4_locked_ledgers.py''s lognormal (sigma
+      0.80, median 1,380 h) and report the share whose lifetime-average yearly footprint
+      exceeds rho x 8,760 at rho = 0.330 and 1.5, beside the one-year shares 17.77%
+      and 0.42%. Report the two limits too: frozen rank and independent years.'
+    why: 'Aura c141290, keel c141414, town-crier c141538 on #11912: q4''s share
+      is a one-year exceedance rate and both 5.5.8 and #11912 call it lifetime.
+      With frozen rank the lifetime share equals the yearly one; with independent
+      years the lifetime average tends to the mean, 1,380 x e^0.32 = 1,900 h, below
+      both lock lines, so the share tends to zero. Nobody has the persistence.'
+    from: obj-20261111-aura-one-year-rate-not-lifetime
+    request_hash: 580a9e53ff39328b3382a2ae77a54a1a62f6ba5475776dbea0b7a16f8d2f6634
+  sr-20261111-fuel-blockade-at-the-german-method-same-popu:
+    date: '2026-11-11'
+    status: requested
+    question: 'Fuel blockade at the German method. Same population, gate and settings
+      as german-prime-sweep/german_prime_sweep.py (stock gate, P = 0, essentials
+      ungated at E = 437 and 462 h, services off the receiver, joiner pasts, F =
+      2, 10, 14). Replace the even capacity cut with an energy cut: fossil energy
+      input falls by 10%, 20%, 30% and 50%, and each product line''s output falls
+      by its share of fossil energy in its total input (from the EXIOBASE energy
+      extension on disk for Germany; if no energy table is on disk, report Blocked
+      and name the table needed, do not invent intensities). Report per cell: the
+      output fall of each essentials line and of non-essentials; the clearing rho,
+      or ''none below 4.0'', or ''none: ungated part exceeds capacity''; the share
+      admitting nothing above E. Print each beside the even-cut figure of the same
+      overall output loss from german-prime-sweep/RESULTS.md. Declare before running:
+      essentials fall less than non-essentials if food and care are less fossil-intensive
+      than manufacturing; the clearing rho at a given overall loss is no lower than
+      under the even cut.'
+    why: 'Author ruling 2026-11-11 (PLAN-2026-11-11 section 9): real scarcity is
+      caused by people and hits one input or one good, not all output evenly. A
+      fuel blockade is the realistic economy-wide case, and the case where an economy-wide
+      rho is the right tool (Foundations 3.5: energy is the tightest constraint).'
+    request_hash: 8f7ea9ad98773f0ef053a60c5d2ae676d3e050dc627d25ae45d7a26850804609
+  sr-20261111-lost-crop-at-the-german-method-same-populati:
+    date: '2026-11-11'
+    status: requested
+    question: 'Lost crop at the German method. Same population, gate and settings
+      as german-prime-sweep/german_prime_sweep.py. One food line (fruit and vegetables,
+      as the essentials basket defines food eaten at home) loses 50% of its output,
+      everything else at baseline (capacity 101.7% of wants). Report: the clearing
+      rho of the whole economy, or ''none below 4.0''; the shortfall in that line
+      in units and as a share of the line''s demand; the share of people who get
+      less than their want of that line if it is shared pro rata, and if it goes
+      to the smallest wants first. Declare before running: no clearing rho exists
+      below 4.0, because the lost line is a small share of total output; the shortage
+      is a distribution question (Foundations 3.4a, 4.6), and lowering rho would
+      cut every person''s non-essentials to ration one line.'
+    why: 'Author ruling 2026-11-11 (PLAN-2026-11-11 section 9): blight or contamination
+      removes one good, not a share of all output. Tests the claim that a one-good
+      shortage is settled at distribution and needs no change in rho.'
+    request_hash: 0489f6bb258c28d117212d5106048a3e7b38e4306d6a4ef1cbcc3a7311a5e94f
+  sr-20261112-re-find-rho-in-stable-band-kappa-py-s-own-po:
+    date: '2026-11-12'
+    status: requested
+    question: 'Re-find rho* in stable_band_kappa.py''s own population (60,000, seed
+      7, kappa 1,380/365, capacity fixed at 56,446 real units, tilt credit^0.25
+      unchanged) with the wants lognormal sigma raised from 0.45 to 0.80 at the
+      same median. At F = 2, 10, 14 report the one-day rho*, and at each rho* (a)
+      the share of people held below what they wanted (stable_band.py line 171)
+      and (b) the share whose yearly request exceeds rho x 8,760. Beside them print
+      the sigma 0.45 rho* (1.017 / 0.330 / 0.253). Declared outcome before running:
+      rho* at F = 10 comes back below 0.330.'
+    why: 'gradient-dissent c142653 on #11912: at one median a sigma 0.80 population''s
+      mean is 1.245x a sigma 0.45 population''s, and stable_band_kappa.py line 44
+      holds capacity in real units, so the edge #11912 used (0.330) may not be the
+      edge in q4''s spread at all. The filed sr-20261111 run measures sigma 0.45
+      only.'
+    from: obj-20261111-gradient-dissent-edge-from-other-population
+    request_hash: 75689e4d0b99dbdc61f9e87fa6d4c759e3a3234bf5f28b4cf5dc9a6798dbad56
+  sr-20261113-from-a-sourced-comparison-of-us-survey-spend:
+    date: '2026-11-13'
+    status: requested
+    question: 'From a sourced comparison of US survey spending (BLS Consumer Expenditure
+      Survey) against national-accounts consumption (BEA PCE), report the share
+      by which CE mean consumption falls below PCE, overall and for the top income
+      fifth. Print beside it the flip point for the narrow essentials pass: the
+      median-to-mean ratio of 0.753 (= 0.86 / 1.14), i.e. survey mean about 12%
+      below true mean. Say whether the sourced gap is above or below that flip point.'
+    why: 'coywolf c143974 on #11276: top-end survey undercoverage pushes the 0.86
+      middle-fifth ratio one way by an unknown amount, so 0.86 is a ceiling; the
+      verdict flips only if survey mean sits ~12% below true mean. The known CE-PCE
+      gap tests that without a new model. sr-20261110 sweeps the ratio but does
+      not print this gap.'
+    from: obj-20261105-self-council-rho-sweep-flow-not-stock
+    request_hash: 4e9ff0e7b94697122f8347cc246c0b239b266fe902e3b9a22e5c38184ab0795b
+  sr-20261114-from-a-sourced-reconciliation-of-the-bls-con:
+    date: '2026-11-14'
+    status: requested
+    question: 'From a sourced reconciliation of the BLS Consumer Expenditure Survey
+      (CE) against BEA personal consumption expenditures (PCE) on COMPARABLE categories
+      only (excluding imputed owner rent, employer-paid health premiums, nonprofit
+      outlays and other PCE items with no CE counterpart), report the share by which
+      CE falls below PCE for the top income fifth and the middle income fifth, side
+      by side. Print beside them the flip point for the narrow essentials pass:
+      median-to-mean ratio 0.753 (= 0.86 / 1.14), i.e. survey mean about 12% below
+      true mean. Say whether the top-fifth gap and the middle-fifth gap are each
+      above or below it.'
+    why: 'coywolf c145217 on #11276: the headline CE-PCE gap includes PCE items
+      no household budget passes through, so a headline gap above 12% could flip
+      the verdict on definitions alone. Supersedes sr-20261113-from-a-sourced-comparison-of-us-survey-spend,
+      which did not name the comparable-category reconciliation.'
+    from: obj-20261105-self-council-rho-sweep-flow-not-stock
+    request_hash: 9311d7cf818283d36eae1553ea8fa30d928a669b3a11751ba72cde54a80bdd24

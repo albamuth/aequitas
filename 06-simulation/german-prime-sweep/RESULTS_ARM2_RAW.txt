@@ -1,0 +1,112 @@
+GERMAN PRIME-RATE SWEEP, ARM 2   N=200,000 pop seed=7 age seeds=(11, 12, 13, 14, 15) RHO0=1.2
+ARM 1 kappa before 3.1608 h/day (1153.7 h/yr)  after 2.2171 (809.2 h/yr)  s=0.2986  capacity base 1.017
+ARM 2 kappa before 2.8712 h/day (1048.0 h/yr)  after 1.9276 (703.6 h/yr)  s=0.3287  capacity base 1.0
+services removed: 344.4 h (412 x 0.836); E = 437.2 and 462.3 h/yr (unchanged)
+
+----------------------------------------------------------------------------------------------------------------------
+F=10  E=437.2  wants=221,652  cap arm1=225,420 arm2=221,652
+  shock +20%: ARM1 rho none, gate never binds below rho = 4.0 || ARM2 rho none, gate never binds below rho = 4.0
+      arm2: cap 265,982 units 221,652 (0.833 x cap) | ungated 153,906 (0.579 x cap) | admit>E zero 0.00% (arm1 0.00%) | yr2@1.2 221,652 (1.000 x full cap; unshocked yr 1.000)
+      arm2 units by age band ['0-18', '18-35', '35-50', '50-65', '65-85'] : 48,600 51,112 42,208 41,975 37,757 | share of band wants: 1.000 1.000 1.000 1.000 1.000
+  shock +10%: ARM1 rho none, gate never binds below rho = 4.0 || ARM2 rho none, gate never binds below rho = 4.0
+      arm2: cap 243,817 units 221,652 (0.909 x cap) | ungated 153,906 (0.631 x cap) | admit>E zero 0.00% (arm1 0.00%) | yr2@1.2 221,652 (1.000 x full cap; unshocked yr 1.000)
+      arm2 units by age band ['0-18', '18-35', '35-50', '50-65', '65-85'] : 48,600 51,112 42,208 41,975 37,757 | share of band wants: 1.000 1.000 1.000 1.000 1.000
+  shock +0%: ARM1 rho none, gate never binds below rho = 4.0 || ARM2 rho none, gate never binds below rho = 4.0
+      arm2: cap 221,652 units 221,652 (1.000 x cap) | ungated 153,906 (0.694 x cap) | admit>E zero 0.00% (arm1 0.00%) | yr2@1.2 221,652 (1.000 x full cap; unshocked yr 1.000)
+      arm2 units by age band ['0-18', '18-35', '35-50', '50-65', '65-85'] : 48,600 51,112 42,208 41,975 37,757 | share of band wants: 1.000 1.000 1.000 1.000 1.000
+  shock -10%: ARM1 rho 0.309 || ARM2 rho 0.244 | ratio arm2/arm1 = 0.791
+      arm2: cap 199,487 units 199,487 (1.000 x cap) | ungated 153,906 (0.772 x cap) | admit>E zero 13.13% (arm1 8.51%) | yr2@1.2 221,652 (1.000 x full cap; unshocked yr 1.000)
+      arm2 units by age band ['0-18', '18-35', '35-50', '50-65', '65-85'] : 44,217 45,948 37,839 37,645 33,837 | share of band wants: 0.910 0.899 0.896 0.897 0.896
+  shock -20%: ARM1 rho 0.221 || ARM2 rho 0.170 | ratio arm2/arm1 = 0.771
+      arm2: cap 177,322 units 177,322 (1.000 x cap) | ungated 153,906 (0.868 x cap) | admit>E zero 38.01% (arm1 26.08%) | yr2@1.2 221,652 (1.000 x full cap; unshocked yr 1.000)
+      arm2 units by age band ['0-18', '18-35', '35-50', '50-65', '65-85'] : 39,370 40,819 33,641 33,432 30,060 | share of band wants: 0.810 0.799 0.797 0.796 0.796
+  shock -30%: ARM1 rho 0.158 || ARM2 rho 0.089 | ratio arm2/arm1 = 0.563
+      arm2: cap 155,156 units 155,156 (1.000 x cap) | ungated 153,906 (0.992 x cap) | admit>E zero 90.95% (arm1 54.17%) | yr2@1.2 221,652 (1.000 x full cap; unshocked yr 1.000)
+      arm2 units by age band ['0-18', '18-35', '35-50', '50-65', '65-85'] : 34,098 35,768 29,514 29,375 26,402 | share of band wants: 0.702 0.700 0.699 0.700 0.699
+  shock -40%: ARM1 rho none, ungated part alone exceeds capacity || ARM2 rho none, ungated part alone exceeds capacity
+      arm2: cap 132,991 units 221,652 (1.667 x cap) | ungated 153,906 (1.157 x cap) | admit>E zero 0.00% (arm1 0.00%) | yr2@1.2 221,652 (1.000 x full cap; unshocked yr 1.000)
+      arm2 units by age band ['0-18', '18-35', '35-50', '50-65', '65-85'] : 48,600 51,112 42,208 41,975 37,757 | share of band wants: 1.000 1.000 1.000 1.000 1.000
+----------------------------------------------------------------------------------------------------------------------
+F=10  E=462.3  wants=221,652  cap arm1=225,420 arm2=221,652
+  shock +20%: ARM1 rho none, gate never binds below rho = 4.0 || ARM2 rho none, gate never binds below rho = 4.0
+      arm2: cap 265,982 units 221,652 (0.833 x cap) | ungated 157,917 (0.594 x cap) | admit>E zero 0.00% (arm1 0.00%) | yr2@1.2 221,652 (1.000 x full cap; unshocked yr 1.000)
+  shock +10%: ARM1 rho none, gate never binds below rho = 4.0 || ARM2 rho none, gate never binds below rho = 4.0
+      arm2: cap 243,817 units 221,652 (0.909 x cap) | ungated 157,917 (0.648 x cap) | admit>E zero 0.00% (arm1 0.00%) | yr2@1.2 221,652 (1.000 x full cap; unshocked yr 1.000)
+  shock +0%: ARM1 rho none, gate never binds below rho = 4.0 || ARM2 rho none, gate never binds below rho = 4.0
+      arm2: cap 221,652 units 221,652 (1.000 x cap) | ungated 157,917 (0.712 x cap) | admit>E zero 0.00% (arm1 0.00%) | yr2@1.2 221,652 (1.000 x full cap; unshocked yr 1.000)
+  shock -10%: ARM1 rho 0.307 || ARM2 rho 0.242 | ratio arm2/arm1 = 0.788
+      arm2: cap 199,487 units 199,487 (1.000 x cap) | ungated 157,917 (0.792 x cap) | admit>E zero 14.15% (arm1 8.95%) | yr2@1.2 221,652 (1.000 x full cap; unshocked yr 1.000)
+  shock -20%: ARM1 rho 0.217 || ARM2 rho 0.165 | ratio arm2/arm1 = 0.761
+      arm2: cap 177,322 units 177,321 (1.000 x cap) | ungated 157,917 (0.891 x cap) | admit>E zero 42.16% (arm1 27.87%) | yr2@1.2 221,652 (1.000 x full cap; unshocked yr 1.000)
+  shock -30%: ARM1 rho 0.151 || ARM2 rho none, ungated part alone exceeds capacity
+      arm2: cap 155,156 units 221,652 (1.429 x cap) | ungated 157,917 (1.018 x cap) | admit>E zero 0.00% (arm1 59.71%) | yr2@1.2 221,652 (1.000 x full cap; unshocked yr 1.000)
+  shock -40%: ARM1 rho none, ungated part alone exceeds capacity || ARM2 rho none, ungated part alone exceeds capacity
+      arm2: cap 132,991 units 221,652 (1.667 x cap) | ungated 157,917 (1.187 x cap) | admit>E zero 0.00% (arm1 0.00%) | yr2@1.2 221,652 (1.000 x full cap; unshocked yr 1.000)
+----------------------------------------------------------------------------------------------------------------------
+F=2  E=437.2  wants=223,868  cap arm1=227,674 arm2=223,868
+  shock +20%: ARM1 rho none, gate never binds below rho = 4.0 || ARM2 rho none, gate never binds below rho = 4.0
+      arm2: cap 268,642 units 218,738 (0.814 x cap) | ungated 154,340 (0.575 x cap) | admit>E zero 3.04% (arm1 4.99%) | yr2@1.2 219,138 (0.979 x full cap; unshocked yr 0.977)
+  shock +10%: ARM1 rho none, gate never binds below rho = 4.0 || ARM2 rho none, gate never binds below rho = 4.0
+      arm2: cap 246,255 units 218,738 (0.888 x cap) | ungated 154,340 (0.627 x cap) | admit>E zero 3.04% (arm1 4.99%) | yr2@1.2 219,138 (0.979 x full cap; unshocked yr 0.977)
+  shock +0%: ARM1 rho none, gate never binds below rho = 4.0 || ARM2 rho none, gate never binds below rho = 4.0
+      arm2: cap 223,868 units 218,738 (0.977 x cap) | ungated 154,340 (0.689 x cap) | admit>E zero 3.04% (arm1 4.99%) | yr2@1.2 219,138 (0.979 x full cap; unshocked yr 0.977)
+  shock -10%: ARM1 rho 0.866 || ARM2 rho 0.635 | ratio arm2/arm1 = 0.733
+      arm2: cap 201,482 units 201,481 (1.000 x cap) | ungated 154,340 (0.766 x cap) | admit>E zero 23.89% (arm1 14.45%) | yr2@1.2 219,178 (0.979 x full cap; unshocked yr 0.977)
+  shock -20%: ARM1 rho 0.511 || ARM2 rho 0.361 | ratio arm2/arm1 = 0.707
+      arm2: cap 179,095 units 179,095 (1.000 x cap) | ungated 154,340 (0.862 x cap) | admit>E zero 54.02% (arm1 41.61%) | yr2@1.2 219,178 (0.979 x full cap; unshocked yr 0.977)
+  shock -30%: ARM1 rho 0.323 || ARM2 rho 0.176 | ratio arm2/arm1 = 0.545
+      arm2: cap 156,708 units 156,708 (1.000 x cap) | ungated 154,340 (0.985 x cap) | admit>E zero 89.95% (arm1 66.25%) | yr2@1.2 219,178 (0.979 x full cap; unshocked yr 0.977)
+  shock -40%: ARM1 rho none, ungated part alone exceeds capacity || ARM2 rho none, ungated part alone exceeds capacity
+      arm2: cap 134,321 units 218,738 (1.628 x cap) | ungated 154,340 (1.149 x cap) | admit>E zero 3.04% (arm1 4.99%) | yr2@1.2 219,138 (0.979 x full cap; unshocked yr 0.977)
+----------------------------------------------------------------------------------------------------------------------
+F=2  E=462.3  wants=223,868  cap arm1=227,674 arm2=223,868
+  shock +20%: ARM1 rho none, gate never binds below rho = 4.0 || ARM2 rho none, gate never binds below rho = 4.0
+      arm2: cap 268,642 units 218,860 (0.815 x cap) | ungated 158,300 (0.589 x cap) | admit>E zero 3.16% (arm1 5.14%) | yr2@1.2 219,239 (0.979 x full cap; unshocked yr 0.978)
+  shock +10%: ARM1 rho none, gate never binds below rho = 4.0 || ARM2 rho none, gate never binds below rho = 4.0
+      arm2: cap 246,255 units 218,860 (0.889 x cap) | ungated 158,300 (0.643 x cap) | admit>E zero 3.16% (arm1 5.14%) | yr2@1.2 219,239 (0.979 x full cap; unshocked yr 0.978)
+  shock +0%: ARM1 rho none, gate never binds below rho = 4.0 || ARM2 rho none, gate never binds below rho = 4.0
+      arm2: cap 223,868 units 218,860 (0.978 x cap) | ungated 158,300 (0.707 x cap) | admit>E zero 3.16% (arm1 5.14%) | yr2@1.2 219,239 (0.979 x full cap; unshocked yr 0.978)
+  shock -10%: ARM1 rho 0.853 || ARM2 rho 0.617 | ratio arm2/arm1 = 0.723
+      arm2: cap 201,482 units 201,482 (1.000 x cap) | ungated 158,300 (0.786 x cap) | admit>E zero 26.46% (arm1 15.50%) | yr2@1.2 219,277 (0.979 x full cap; unshocked yr 0.978)
+  shock -20%: ARM1 rho 0.493 || ARM2 rho 0.343 | ratio arm2/arm1 = 0.696
+      arm2: cap 179,095 units 179,095 (1.000 x cap) | ungated 158,300 (0.884 x cap) | admit>E zero 56.78% (arm1 44.18%) | yr2@1.2 219,277 (0.979 x full cap; unshocked yr 0.978)
+  shock -30%: ARM1 rho 0.304 || ARM2 rho none, ungated part alone exceeds capacity
+      arm2: cap 156,708 units 218,860 (1.397 x cap) | ungated 158,300 (1.010 x cap) | admit>E zero 3.16% (arm1 69.81%) | yr2@1.2 219,239 (0.979 x full cap; unshocked yr 0.978)
+  shock -40%: ARM1 rho none, ungated part alone exceeds capacity || ARM2 rho none, ungated part alone exceeds capacity
+      arm2: cap 134,321 units 218,860 (1.629 x cap) | ungated 158,300 (1.179 x cap) | admit>E zero 3.16% (arm1 5.14%) | yr2@1.2 219,239 (0.979 x full cap; unshocked yr 0.978)
+----------------------------------------------------------------------------------------------------------------------
+F=14  E=437.2  wants=221,470  cap arm1=225,235 arm2=221,470
+  shock +20%: ARM1 rho none, gate never binds below rho = 4.0 || ARM2 rho none, gate never binds below rho = 4.0
+      arm2: cap 265,764 units 221,470 (0.833 x cap) | ungated 153,870 (0.579 x cap) | admit>E zero 0.00% (arm1 0.00%) | yr2@1.2 221,470 (1.000 x full cap; unshocked yr 1.000)
+  shock +10%: ARM1 rho none, gate never binds below rho = 4.0 || ARM2 rho none, gate never binds below rho = 4.0
+      arm2: cap 243,617 units 221,470 (0.909 x cap) | ungated 153,870 (0.632 x cap) | admit>E zero 0.00% (arm1 0.00%) | yr2@1.2 221,470 (1.000 x full cap; unshocked yr 1.000)
+  shock +0%: ARM1 rho none, gate never binds below rho = 4.0 || ARM2 rho none, gate never binds below rho = 4.0
+      arm2: cap 221,470 units 221,470 (1.000 x cap) | ungated 153,870 (0.695 x cap) | admit>E zero 0.00% (arm1 0.00%) | yr2@1.2 221,470 (1.000 x full cap; unshocked yr 1.000)
+  shock -10%: ARM1 rho 0.237 || ARM2 rho 0.189 | ratio arm2/arm1 = 0.794
+      arm2: cap 199,323 units 199,323 (1.000 x cap) | ungated 153,870 (0.772 x cap) | admit>E zero 12.38% (arm1 8.04%) | yr2@1.2 221,470 (1.000 x full cap; unshocked yr 1.000)
+  shock -20%: ARM1 rho 0.172 || ARM2 rho 0.134 | ratio arm2/arm1 = 0.778
+      arm2: cap 177,176 units 177,176 (1.000 x cap) | ungated 153,870 (0.868 x cap) | admit>E zero 35.94% (arm1 24.75%) | yr2@1.2 221,470 (1.000 x full cap; unshocked yr 1.000)
+  shock -30%: ARM1 rho 0.125 || ARM2 rho 0.073 | ratio arm2/arm1 = 0.584
+      arm2: cap 155,029 units 155,029 (1.000 x cap) | ungated 153,870 (0.993 x cap) | admit>E zero 90.31% (arm1 51.89%) | yr2@1.2 221,470 (1.000 x full cap; unshocked yr 1.000)
+  shock -40%: ARM1 rho none, ungated part alone exceeds capacity || ARM2 rho none, ungated part alone exceeds capacity
+      arm2: cap 132,882 units 221,470 (1.667 x cap) | ungated 153,870 (1.158 x cap) | admit>E zero 0.00% (arm1 0.00%) | yr2@1.2 221,470 (1.000 x full cap; unshocked yr 1.000)
+----------------------------------------------------------------------------------------------------------------------
+F=14  E=462.3  wants=221,470  cap arm1=225,235 arm2=221,470
+  shock +20%: ARM1 rho none, gate never binds below rho = 4.0 || ARM2 rho none, gate never binds below rho = 4.0
+      arm2: cap 265,764 units 221,470 (0.833 x cap) | ungated 157,884 (0.594 x cap) | admit>E zero 0.00% (arm1 0.00%) | yr2@1.2 221,470 (1.000 x full cap; unshocked yr 1.000)
+  shock +10%: ARM1 rho none, gate never binds below rho = 4.0 || ARM2 rho none, gate never binds below rho = 4.0
+      arm2: cap 243,617 units 221,470 (0.909 x cap) | ungated 157,884 (0.648 x cap) | admit>E zero 0.00% (arm1 0.00%) | yr2@1.2 221,470 (1.000 x full cap; unshocked yr 1.000)
+  shock +0%: ARM1 rho none, gate never binds below rho = 4.0 || ARM2 rho none, gate never binds below rho = 4.0
+      arm2: cap 221,470 units 221,470 (1.000 x cap) | ungated 157,884 (0.713 x cap) | admit>E zero 0.00% (arm1 0.00%) | yr2@1.2 221,470 (1.000 x full cap; unshocked yr 1.000)
+  shock -10%: ARM1 rho 0.236 || ARM2 rho 0.187 | ratio arm2/arm1 = 0.792
+      arm2: cap 199,323 units 199,323 (1.000 x cap) | ungated 157,884 (0.792 x cap) | admit>E zero 13.30% (arm1 8.45%) | yr2@1.2 221,470 (1.000 x full cap; unshocked yr 1.000)
+  shock -20%: ARM1 rho 0.169 || ARM2 rho 0.130 | ratio arm2/arm1 = 0.769
+      arm2: cap 177,176 units 177,176 (1.000 x cap) | ungated 157,884 (0.891 x cap) | admit>E zero 39.72% (arm1 26.39%) | yr2@1.2 221,470 (1.000 x full cap; unshocked yr 1.000)
+  shock -30%: ARM1 rho 0.120 || ARM2 rho none, ungated part alone exceeds capacity
+      arm2: cap 155,029 units 221,470 (1.429 x cap) | ungated 157,884 (1.018 x cap) | admit>E zero 0.00% (arm1 57.04%) | yr2@1.2 221,470 (1.000 x full cap; unshocked yr 1.000)
+  shock -40%: ARM1 rho none, ungated part alone exceeds capacity || ARM2 rho none, ungated part alone exceeds capacity
+      arm2: cap 132,882 units 221,470 (1.667 x cap) | ungated 157,884 (1.188 x cap) | admit>E zero 0.00% (arm1 0.00%) | yr2@1.2 221,470 (1.000 x full cap; unshocked yr 1.000)
+ungated line arm1 E=437.2: 140,808 units = 0.635 of wants; ungated alone exceeds capacity at shock below -37.5%
+ungated line arm2 E=437.2: 153,906 units = 0.694 of wants; ungated alone exceeds capacity at shock below -30.6%
+ungated line arm1 E=462.3: 144,730 units = 0.653 of wants; ungated alone exceeds capacity at shock below -35.8%
+ungated line arm2 E=462.3: 157,917 units = 0.712 of wants; ungated alone exceeds capacity at shock below -28.8%

@@ -1,0 +1,192 @@
+FUEL BLOCKADE AT THE GERMAN METHOD  N=200,000 pop seed=7 age seeds=(11, 12, 13, 14, 15) RHO0=1.2 C=1.017
+fossil share source: EXIOBASE 3.10.2 pxp 2022 Z and x, German producers; energy extension on disk is all zero
+
+LINE FOSSIL SHARES (direct purchases)
+  food                          0.0168
+  clothing                      0.0163
+  shelter services              0.0010
+  utilities                     0.0783
+  drugs                         0.0379
+  housing structure             0.0058
+  chemicals paper plastics      0.0228
+  furniture and other goods     0.0175
+  care                          0.0038
+  schooling                     0.0025
+  land transport services       0.0296
+  post and telecoms             0.0041
+  non-essentials                0.0354
+
+LINE FOSSIL SHARES (direct + domestic upstream, SENSITIVITY)
+  food                          0.0405
+  clothing                      0.0355
+  shelter services              0.0018
+  utilities                     0.1121
+  drugs                         0.0618
+  housing structure             0.0206
+  chemicals paper plastics      0.0584
+  furniture and other goods     0.0325
+  care                          0.0078
+  schooling                     0.0054
+  land transport services       0.0522
+  post and telecoms             0.0089
+  non-essentials                0.0444
+
+========================================================================================================================
+PRIMARY: direct fossil purchases
+------------------------------------------------------------------------------------------------------------------------
+F=10  E=437.2 h/yr  wants=221,652  ungated demand U=140,808 (63.5%)  gated demand N=80,844  capacity base 225,420
+  CUT 10%: falls  essentials goods 0.195% | services 0.073% | non-essentials 0.354% | OVERALL loss 0.217% (= 480 of 221,652 units)
+      essentials lines: food 0.168% | clothing 0.163% | shelter services 0.010% | utilities 0.783% | drugs 0.379% | housing structure 0.058% | chemicals paper plastics 0.228% | furniture and other goods 0.175%
+      service lines:    care 0.038% | schooling 0.025% | land transport services 0.296% | post and telecoms 0.041%
+      per-line  rho: none below 4.0 | admit>E zero 0.00% | services short False essentials short False
+      even-cut  rho (same loss 0.217%): none below 4.0 | admit>E zero 0.00%
+      RESULTS.md even-cut grid at this F, E: {'-10%': 0.309, '-20%': 0.221, '-30%': 0.158}
+  CUT 20%: falls  essentials goods 0.390% | services 0.145% | non-essentials 0.708% | OVERALL loss 0.433% (= 960 of 221,652 units)
+      essentials lines: food 0.336% | clothing 0.327% | shelter services 0.020% | utilities 1.565% | drugs 0.757% | housing structure 0.117% | chemicals paper plastics 0.456% | furniture and other goods 0.350%
+      service lines:    care 0.076% | schooling 0.051% | land transport services 0.593% | post and telecoms 0.083%
+      per-line  rho: none below 4.0 | admit>E zero 0.00% | services short False essentials short False
+      even-cut  rho (same loss 0.433%): none below 4.0 | admit>E zero 0.00%
+      RESULTS.md even-cut grid at this F, E: {'-10%': 0.309, '-20%': 0.221, '-30%': 0.158}
+  CUT 30%: falls  essentials goods 0.586% | services 0.218% | non-essentials 1.062% | OVERALL loss 0.650% (= 1,440 of 221,652 units)
+      essentials lines: food 0.505% | clothing 0.490% | shelter services 0.030% | utilities 2.348% | drugs 1.136% | housing structure 0.175% | chemicals paper plastics 0.684% | furniture and other goods 0.526%
+      service lines:    care 0.115% | schooling 0.076% | land transport services 0.889% | post and telecoms 0.124%
+      per-line  rho: none below 4.0 | admit>E zero 0.00% | services short False essentials short False
+      even-cut  rho (same loss 0.650%): none below 4.0 | admit>E zero 0.00%
+      RESULTS.md even-cut grid at this F, E: {'-10%': 0.309, '-20%': 0.221, '-30%': 0.158}
+  CUT 50%: falls  essentials goods 0.976% | services 0.363% | non-essentials 1.770% | OVERALL loss 1.083% (= 2,399 of 221,652 units)
+      essentials lines: food 0.841% | clothing 0.817% | shelter services 0.050% | utilities 3.913% | drugs 1.894% | housing structure 0.292% | chemicals paper plastics 1.140% | furniture and other goods 0.876%
+      service lines:    care 0.191% | schooling 0.127% | land transport services 1.482% | post and telecoms 0.207%
+      per-line  rho: 0.874 (min 0.871, max 0.881; 5/5 seeds) | admit>E zero 0.01% | services short False essentials short False
+      even-cut  rho (same loss 1.083%): none below 4.0 | admit>E zero 0.00%
+      RESULTS.md even-cut grid at this F, E: {'-10%': 0.309, '-20%': 0.221, '-30%': 0.158}
+------------------------------------------------------------------------------------------------------------------------
+F=10  E=462.3 h/yr  wants=221,652  ungated demand U=144,730 (65.3%)  gated demand N=76,922  capacity base 225,420
+  CUT 10%: falls  essentials goods 0.188% | services 0.073% | non-essentials 0.354% | OVERALL loss 0.211% (= 468 of 221,652 units)
+      per-line  rho: none below 4.0 | admit>E zero 0.00% | services short False essentials short False
+      even-cut  rho (same loss 0.211%): none below 4.0 | admit>E zero 0.00%
+      RESULTS.md even-cut grid at this F, E: {'-10%': 0.307, '-20%': 0.217, '-30%': 0.151}
+  CUT 20%: falls  essentials goods 0.376% | services 0.145% | non-essentials 0.708% | OVERALL loss 0.422% (= 936 of 221,652 units)
+      per-line  rho: none below 4.0 | admit>E zero 0.00% | services short False essentials short False
+      even-cut  rho (same loss 0.422%): none below 4.0 | admit>E zero 0.00%
+      RESULTS.md even-cut grid at this F, E: {'-10%': 0.307, '-20%': 0.217, '-30%': 0.151}
+  CUT 30%: falls  essentials goods 0.563% | services 0.218% | non-essentials 1.062% | OVERALL loss 0.633% (= 1,404 of 221,652 units)
+      per-line  rho: none below 4.0 | admit>E zero 0.00% | services short False essentials short False
+      even-cut  rho (same loss 0.633%): none below 4.0 | admit>E zero 0.00%
+      RESULTS.md even-cut grid at this F, E: {'-10%': 0.307, '-20%': 0.217, '-30%': 0.151}
+  CUT 50%: falls  essentials goods 0.939% | services 0.363% | non-essentials 1.770% | OVERALL loss 1.055% (= 2,339 of 221,652 units)
+      per-line  rho: 0.877 (min 0.875, max 0.883; 5/5 seeds) | admit>E zero 0.01% | services short False essentials short False
+      even-cut  rho (same loss 1.055%): none below 4.0 | admit>E zero 0.00%
+      RESULTS.md even-cut grid at this F, E: {'-10%': 0.307, '-20%': 0.217, '-30%': 0.151}
+------------------------------------------------------------------------------------------------------------------------
+F=2  E=437.2 h/yr  wants=223,868  ungated demand U=141,272 (63.1%)  gated demand N=82,596  capacity base 227,674
+  CUT 10%: falls  essentials goods 0.195% | services 0.073% | non-essentials 0.354% | OVERALL loss 0.217% (= 486 of 223,868 units)
+      per-line  rho: none below 4.0 | admit>E zero 4.99% | services short False essentials short False
+      even-cut  rho (same loss 0.217%): none below 4.0 | admit>E zero 4.99%
+      RESULTS.md even-cut grid at this F, E: {'-10%': 0.866, '-20%': 0.511, '-30%': 0.323}
+  CUT 20%: falls  essentials goods 0.390% | services 0.145% | non-essentials 0.708% | OVERALL loss 0.434% (= 972 of 223,868 units)
+      per-line  rho: none below 4.0 | admit>E zero 4.99% | services short False essentials short False
+      even-cut  rho (same loss 0.434%): none below 4.0 | admit>E zero 4.99%
+      RESULTS.md even-cut grid at this F, E: {'-10%': 0.866, '-20%': 0.511, '-30%': 0.323}
+  CUT 30%: falls  essentials goods 0.586% | services 0.218% | non-essentials 1.062% | OVERALL loss 0.652% (= 1,459 of 223,868 units)
+      per-line  rho: none below 4.0 | admit>E zero 4.99% | services short False essentials short False
+      even-cut  rho (same loss 0.652%): none below 4.0 | admit>E zero 4.99%
+      RESULTS.md even-cut grid at this F, E: {'-10%': 0.866, '-20%': 0.511, '-30%': 0.323}
+  CUT 50%: falls  essentials goods 0.976% | services 0.363% | non-essentials 1.770% | OVERALL loss 1.086% (= 2,431 of 223,868 units)
+      per-line  rho: 3.149 (min 3.146, max 3.154; 5/5 seeds) | admit>E zero 0.02% | services short False essentials short False
+      even-cut  rho (same loss 1.086%): none below 4.0 | admit>E zero 4.99%
+      RESULTS.md even-cut grid at this F, E: {'-10%': 0.866, '-20%': 0.511, '-30%': 0.323}
+------------------------------------------------------------------------------------------------------------------------
+F=2  E=462.3 h/yr  wants=223,868  ungated demand U=145,154 (64.8%)  gated demand N=78,714  capacity base 227,674
+  CUT 10%: falls  essentials goods 0.188% | services 0.073% | non-essentials 0.354% | OVERALL loss 0.212% (= 474 of 223,868 units)
+      per-line  rho: none below 4.0 | admit>E zero 5.14% | services short False essentials short False
+      even-cut  rho (same loss 0.212%): none below 4.0 | admit>E zero 5.14%
+      RESULTS.md even-cut grid at this F, E: {'-10%': 0.853, '-20%': 0.493, '-30%': 0.304}
+  CUT 20%: falls  essentials goods 0.376% | services 0.145% | non-essentials 0.708% | OVERALL loss 0.424% (= 948 of 223,868 units)
+      per-line  rho: none below 4.0 | admit>E zero 5.14% | services short False essentials short False
+      even-cut  rho (same loss 0.424%): none below 4.0 | admit>E zero 5.14%
+      RESULTS.md even-cut grid at this F, E: {'-10%': 0.853, '-20%': 0.493, '-30%': 0.304}
+  CUT 30%: falls  essentials goods 0.563% | services 0.218% | non-essentials 1.062% | OVERALL loss 0.635% (= 1,423 of 223,868 units)
+      per-line  rho: none below 4.0 | admit>E zero 5.14% | services short False essentials short False
+      even-cut  rho (same loss 0.635%): none below 4.0 | admit>E zero 5.14%
+      RESULTS.md even-cut grid at this F, E: {'-10%': 0.853, '-20%': 0.493, '-30%': 0.304}
+  CUT 50%: falls  essentials goods 0.939% | services 0.363% | non-essentials 1.770% | OVERALL loss 1.059% (= 2,371 of 223,868 units)
+      per-line  rho: 3.158 (min 3.155, max 3.162; 5/5 seeds) | admit>E zero 0.02% | services short False essentials short False
+      even-cut  rho (same loss 1.059%): none below 4.0 | admit>E zero 5.14%
+      RESULTS.md even-cut grid at this F, E: {'-10%': 0.853, '-20%': 0.493, '-30%': 0.304}
+------------------------------------------------------------------------------------------------------------------------
+F=14  E=437.2 h/yr  wants=221,470  ungated demand U=140,769 (63.6%)  gated demand N=80,701  capacity base 225,235
+  CUT 10%: falls  essentials goods 0.195% | services 0.073% | non-essentials 0.354% | OVERALL loss 0.216% (= 479 of 221,470 units)
+      per-line  rho: none below 4.0 | admit>E zero 0.00% | services short False essentials short False
+      even-cut  rho (same loss 0.216%): none below 4.0 | admit>E zero 0.00%
+      RESULTS.md even-cut grid at this F, E: {'-10%': 0.237, '-20%': 0.172, '-30%': 0.125}
+  CUT 20%: falls  essentials goods 0.390% | services 0.145% | non-essentials 0.708% | OVERALL loss 0.433% (= 959 of 221,470 units)
+      per-line  rho: none below 4.0 | admit>E zero 0.00% | services short False essentials short False
+      even-cut  rho (same loss 0.433%): none below 4.0 | admit>E zero 0.00%
+      RESULTS.md even-cut grid at this F, E: {'-10%': 0.237, '-20%': 0.172, '-30%': 0.125}
+  CUT 30%: falls  essentials goods 0.586% | services 0.218% | non-essentials 1.062% | OVERALL loss 0.649% (= 1,438 of 221,470 units)
+      per-line  rho: none below 4.0 | admit>E zero 0.00% | services short False essentials short False
+      even-cut  rho (same loss 0.649%): none below 4.0 | admit>E zero 0.00%
+      RESULTS.md even-cut grid at this F, E: {'-10%': 0.237, '-20%': 0.172, '-30%': 0.125}
+  CUT 50%: falls  essentials goods 0.976% | services 0.363% | non-essentials 1.770% | OVERALL loss 1.082% (= 2,397 of 221,470 units)
+      per-line  rho: 0.650 (min 0.649, max 0.653; 5/5 seeds) | admit>E zero 0.01% | services short False essentials short False
+      even-cut  rho (same loss 1.082%): none below 4.0 | admit>E zero 0.00%
+      RESULTS.md even-cut grid at this F, E: {'-10%': 0.237, '-20%': 0.172, '-30%': 0.125}
+------------------------------------------------------------------------------------------------------------------------
+F=14  E=462.3 h/yr  wants=221,470  ungated demand U=144,694 (65.3%)  gated demand N=76,776  capacity base 225,235
+  CUT 10%: falls  essentials goods 0.188% | services 0.073% | non-essentials 0.354% | OVERALL loss 0.211% (= 467 of 221,470 units)
+      per-line  rho: none below 4.0 | admit>E zero 0.00% | services short False essentials short False
+      even-cut  rho (same loss 0.211%): none below 4.0 | admit>E zero 0.00%
+      RESULTS.md even-cut grid at this F, E: {'-10%': 0.236, '-20%': 0.169, '-30%': 0.12}
+  CUT 20%: falls  essentials goods 0.376% | services 0.145% | non-essentials 0.708% | OVERALL loss 0.422% (= 935 of 221,470 units)
+      per-line  rho: none below 4.0 | admit>E zero 0.00% | services short False essentials short False
+      even-cut  rho (same loss 0.422%): none below 4.0 | admit>E zero 0.00%
+      RESULTS.md even-cut grid at this F, E: {'-10%': 0.236, '-20%': 0.169, '-30%': 0.12}
+  CUT 30%: falls  essentials goods 0.563% | services 0.218% | non-essentials 1.062% | OVERALL loss 0.633% (= 1,402 of 221,470 units)
+      per-line  rho: none below 4.0 | admit>E zero 0.00% | services short False essentials short False
+      even-cut  rho (same loss 0.633%): none below 4.0 | admit>E zero 0.00%
+      RESULTS.md even-cut grid at this F, E: {'-10%': 0.236, '-20%': 0.169, '-30%': 0.12}
+  CUT 50%: falls  essentials goods 0.939% | services 0.363% | non-essentials 1.770% | OVERALL loss 1.055% (= 2,337 of 221,470 units)
+      per-line  rho: 0.652 (min 0.651, max 0.654; 5/5 seeds) | admit>E zero 0.01% | services short False essentials short False
+      even-cut  rho (same loss 1.055%): none below 4.0 | admit>E zero 0.00%
+      RESULTS.md even-cut grid at this F, E: {'-10%': 0.236, '-20%': 0.169, '-30%': 0.12}
+
+========================================================================================================================
+SENSITIVITY: direct + domestic upstream fossil purchases
+------------------------------------------------------------------------------------------------------------------------
+F=10  E=437.2 h/yr  wants=221,652  ungated demand U=140,808 (63.5%)  gated demand N=80,844  capacity base 225,420
+  CUT 10%: falls  essentials goods 0.408% | services 0.137% | non-essentials 0.444% | OVERALL loss 0.340% (= 754 of 221,652 units)
+      essentials lines: food 0.405% | clothing 0.355% | shelter services 0.018% | utilities 1.121% | drugs 0.618% | housing structure 0.206% | chemicals paper plastics 0.584% | furniture and other goods 0.325%
+      service lines:    care 0.078% | schooling 0.054% | land transport services 0.522% | post and telecoms 0.089%
+      per-line  rho: none below 4.0 | admit>E zero 0.00% | services short False essentials short False
+      even-cut  rho (same loss 0.340%): none below 4.0 | admit>E zero 0.00%
+  CUT 20%: falls  essentials goods 0.815% | services 0.274% | non-essentials 0.889% | OVERALL loss 0.680% (= 1,508 of 221,652 units)
+      essentials lines: food 0.809% | clothing 0.711% | shelter services 0.036% | utilities 2.243% | drugs 1.235% | housing structure 0.411% | chemicals paper plastics 1.168% | furniture and other goods 0.650%
+      service lines:    care 0.157% | schooling 0.108% | land transport services 1.043% | post and telecoms 0.178%
+      per-line  rho: none below 4.0 | admit>E zero 0.00% | services short False essentials short False
+      even-cut  rho (same loss 0.680%): none below 4.0 | admit>E zero 0.00%
+  CUT 30%: falls  essentials goods 1.223% | services 0.411% | non-essentials 1.333% | OVERALL loss 1.021% (= 2,262 of 221,652 units)
+      essentials lines: food 1.214% | clothing 1.066% | shelter services 0.055% | utilities 3.364% | drugs 1.853% | housing structure 0.617% | chemicals paper plastics 1.752% | furniture and other goods 0.975%
+      service lines:    care 0.235% | schooling 0.162% | land transport services 1.565% | post and telecoms 0.268%
+      per-line  rho: none below 4.0 | admit>E zero 0.00% | services short False essentials short False
+      even-cut  rho (same loss 1.021%): none below 4.0 | admit>E zero 0.00%
+  CUT 50%: falls  essentials goods 2.038% | services 0.685% | non-essentials 2.222% | OVERALL loss 1.701% (= 3,770 of 221,652 units)
+      essentials lines: food 2.023% | clothing 1.777% | shelter services 0.091% | utilities 5.607% | drugs 3.088% | housing structure 1.028% | chemicals paper plastics 2.920% | furniture and other goods 1.625%
+      service lines:    care 0.392% | schooling 0.270% | land transport services 2.608% | post and telecoms 0.446%
+      per-line  rho: none: ungated part exceeds capacity | admit>E zero 0.00% | services short False essentials short True
+      even-cut  rho (same loss 1.701%): 0.886 (min 0.884, max 0.888; 5/5 seeds) | admit>E zero 0.01%
+------------------------------------------------------------------------------------------------------------------------
+F=10  E=462.3 h/yr  wants=221,652  ungated demand U=144,730 (65.3%)  gated demand N=76,922  capacity base 225,420
+  CUT 10%: falls  essentials goods 0.397% | services 0.137% | non-essentials 0.444% | OVERALL loss 0.336% (= 744 of 221,652 units)
+      per-line  rho: none below 4.0 | admit>E zero 0.00% | services short False essentials short False
+      even-cut  rho (same loss 0.336%): none below 4.0 | admit>E zero 0.00%
+  CUT 20%: falls  essentials goods 0.793% | services 0.274% | non-essentials 0.889% | OVERALL loss 0.671% (= 1,488 of 221,652 units)
+      per-line  rho: none below 4.0 | admit>E zero 0.00% | services short False essentials short False
+      even-cut  rho (same loss 0.671%): none below 4.0 | admit>E zero 0.00%
+  CUT 30%: falls  essentials goods 1.190% | services 0.411% | non-essentials 1.333% | OVERALL loss 1.007% (= 2,232 of 221,652 units)
+      per-line  rho: none below 4.0 | admit>E zero 0.00% | services short False essentials short False
+      even-cut  rho (same loss 1.007%): none below 4.0 | admit>E zero 0.00%
+  CUT 50%: falls  essentials goods 1.983% | services 0.685% | non-essentials 2.222% | OVERALL loss 1.678% (= 3,720 of 221,652 units)
+      per-line  rho: none: ungated part exceeds capacity | admit>E zero 0.00% | services short False essentials short True
+      even-cut  rho (same loss 1.678%): 1.073 (min 1.038, max 1.087; 5/5 seeds) | admit>E zero 0.00%
+
+Done.

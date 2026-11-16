@@ -1,0 +1,11 @@
+command: python stable_band_children.py --arm {0,1,2}    (three processes, same seeds; --test run first: 6 of 6 passed)
+N=60,000 seed=7 kappa=3.7808 R_max=56,446 wants=66,407 M=100 age seeds [11, 12, 13, 14, 15]
+ARM 0 F=   2 rho*_L mean 1.017 sd 0.000 min 1.017 max 1.017 flags [''] setting period [74] max admitted at first failing rho 56,455 (R_max 56,446) under18 share 0.220
+ARM 0 F=  10 rho*_L mean 0.330 sd 0.000 min 0.330 max 0.330 flags [''] setting period [14, 15] max admitted at first failing rho 56,482 (R_max 56,446) under18 share 0.220
+ARM 0 F=  14 rho*_L mean 0.253 sd 0.000 min 0.253 max 0.253 flags [''] setting period [7] max admitted at first failing rho 56,498 (R_max 56,446) under18 share 0.220
+ARM 1 F=   2 rho*_L mean 1.009 sd 0.000 min 1.009 max 1.009 flags [''] setting period [40, 41] max admitted at first failing rho 56,455 (R_max 56,446) under18 share 0.220
+ARM 1 F=  10 rho*_L mean 0.267 sd 0.000 min 0.267 max 0.267 flags [''] setting period [6, 7] max admitted at first failing rho 56,622 (R_max 56,446) under18 share 0.220
+ARM 1 F=  14 rho*_L mean 0.194 sd 0.000 min 0.194 max 0.194 flags [''] setting period [6] max admitted at first failing rho 56,712 (R_max 56,446) under18 share 0.220
+ARM 2 F=   2 rho*_L mean 1.196 sd 0.002 min 1.195 max 1.199 flags [''] setting period [17, 18, 19] max admitted at first failing rho 56,455 (R_max 56,446) per-seed [1.195, 1.195, 1.196, 1.199, 1.197] under18 share 0.220
+ARM 2 F=  10 rho*_L mean 0.277 sd 0.000 min 0.277 max 0.277 flags [''] setting period [4] max admitted at first failing rho 56,720 (R_max 56,446) under18 share 0.220
+ARM 2 F=  14 rho*_L mean 0.199 sd 0.000 min 0.199 max 0.200 flags [''] setting period [4] max admitted at first failing rho 56,818 (R_max 56,446) under18 share 0.220

@@ -23,6 +23,11 @@ sr-20261105-stock-gate-clearing-rate-after-a-capacity-sh
 sr-20261109-prime-rate-sweep-at-the-german-method-on-the
 # Its second arm, demand at Germany's middle fifth (1,048 h per person). PLAN-2026-11-09 section 7.6.
 sr-20261110-second-arm-of-sr-20261109-prime-rate-sweep-a
+# Gated and over-line share at rho* in stable_band's own population, for the 5.5.8 scarcity row. PLAN-2026-11-11 decision 1, option A.
+sr-20261111-in-stable-band-kappa-py-s-own-population-60-
+# Sectoral shocks, ruled 2026-11-11 (PLAN-2026-11-11 section 9): real scarcity hits one input or one good.
+sr-20261111-fuel-blockade-at-the-german-method-same-popu
+sr-20261111-lost-crop-at-the-german-method-same-populati
 # 3. Re-run stable_band_cumulative.py, kappa-tied, two arms. Unblocks obj-20261031-self-council-band-line79-ignores-ruling7.
 sr-20261031-re-run-stable-band-cumulative-py-kappa-tied-
 # 4. Scale-the-anchor self-test.

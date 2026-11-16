@@ -1,0 +1,43 @@
+GERMAN LOST CROP  N=200,000  g=1.1602%  loss=50%  line supply = 0.5085 x line demand
+one lifestyle unit = 1,153.7 debit-h/yr at the German method (1380 x 0.836)
+
+====================================================================================================
+A. THE LINE AND ITS SHARING (population seeds 7..11, per F)
+F=10: wants 221,563 units | line demand 2,570.6 | supply 1,307.1 | shortfall 1,263.4 = 49.15% of demand = 1,457,600 debit-h/yr
+       pro rata short 100.00% | smallest-first short 31.74% (min 31.70%, max 31.77%) | smallest-first get NOTHING 31.74% (min 31.70%, max 31.77%)
+F=2: wants 223,679 units | line demand 2,595.1 | supply 1,319.6 | shortfall 1,275.5 = 49.15% of demand = 1,471,520 debit-h/yr
+       pro rata short 100.00% | smallest-first short 31.02% (min 30.99%, max 31.05%) | smallest-first get NOTHING 31.02% (min 30.99%, max 31.05%)
+F=14: wants 221,412 units | line demand 2,568.8 | supply 1,306.2 | shortfall 1,262.6 = 49.15% of demand = 1,456,608 debit-h/yr
+       pro rata short 100.00% | smallest-first short 31.81% (min 31.77%, max 31.83%) | smallest-first get NOTHING 31.81% (min 31.77%, max 31.83%)
+F=10 in persons: smallest-first short = 63,493 of 200,000; median person's line want = 13.4 debit-h/yr
+====================================================================================================
+B. WHOLE-ECONOMY CLEARING RHO, g = 1.1602% (capacity = 1.017 x W x (1 - 0.5 g) = 1.01110 x W)
+F=10 E=437.2: none below 4.0 (none, gate never binds below rho = 4.0) | capacity 224,112 vs wants 221,652 (1.0111x) | units admitted at rho 4.0 = 221,652 (1.0000 of wants) | g* = 3.343%
+F=10 E=462.3: none below 4.0 (none, gate never binds below rho = 4.0) | capacity 224,112 vs wants 221,652 (1.0111x) | units admitted at rho 4.0 = 221,652 (1.0000 of wants) | g* = 3.343%
+F=2 E=437.2: none below 4.0 (none, gate never binds below rho = 4.0) | capacity 226,353 vs wants 223,868 (1.0111x) | units admitted at rho 4.0 = 223,854 (0.9999 of wants) | g* = 3.356%
+F=2 E=462.3: none below 4.0 (none, gate never binds below rho = 4.0) | capacity 226,353 vs wants 223,868 (1.0111x) | units admitted at rho 4.0 = 223,854 (0.9999 of wants) | g* = 3.356%
+F=14 E=437.2: none below 4.0 (none, gate never binds below rho = 4.0) | capacity 223,928 vs wants 221,470 (1.0111x) | units admitted at rho 4.0 = 221,470 (1.0000 of wants) | g* = 3.343%
+F=14 E=462.3: none below 4.0 (none, gate never binds below rho = 4.0) | capacity 223,928 vs wants 221,470 (1.0111x) | units admitted at rho 4.0 = 221,470 (1.0000 of wants) | g* = 3.343%
+====================================================================================================
+C. THE LINE ITSELF: can any rho move its supply or demand? (F = 10, age seed 11)
+E=437.2 A essentials first (line inside E, ungated): line admitted/demand at rho 0, 0.3, 1.2, 4.0 = 1.000, 1.000, 1.000, 1.000 | line supply/demand 0.5085 | line-clearing rho: none, the ungated part of the line alone exceeds the line's supply
+E=437.2 B proportional within E: line admitted/demand at rho 0, 0.3, 1.2, 4.0 = 0.480, 0.869, 1.000, 1.000 | line supply/demand 0.5085 | line-clearing rho: 0.114
+E=437.2 C gated, E = 0 (contradicts 5.5.4; prices the alternative): line admitted/demand at rho 0, 0.3, 1.2, 4.0 = 0.000, 0.827, 1.000, 1.000 | line supply/demand 0.5085 | line-clearing rho: 0.192
+      at that rho the whole economy admits 145,235 of 221,652 units; units cut in all lines = 76,417 against a line shortfall of 1,263.9 (60.5x); share of people admitted nothing above E=0: 32.14%
+E=462.3 A essentials first (line inside E, ungated): line admitted/demand at rho 0, 0.3, 1.2, 4.0 = 1.000, 1.000, 1.000, 1.000 | line supply/demand 0.5085 | line-clearing rho: none, the ungated part of the line alone exceeds the line's supply
+E=462.3 B proportional within E: line admitted/demand at rho 0, 0.3, 1.2, 4.0 = 0.505, 0.871, 1.000, 1.000 | line supply/demand 0.5085 | line-clearing rho: 0.086
+E=462.3 C gated, E = 0 (contradicts 5.5.4; prices the alternative): line admitted/demand at rho 0, 0.3, 1.2, 4.0 = 0.000, 0.827, 1.000, 1.000 | line supply/demand 0.5085 | line-clearing rho: 0.192
+      at that rho the whole economy admits 145,235 of 221,652 units; units cut in all lines = 76,417 against a line shortfall of 1,263.9 (60.5x); share of people admitted nothing above E=0: 32.14%
+====================================================================================================
+D. SWEEP OF g (F = 10, E = 437.2, age seeds 11-13): where does a clearing rho first appear?
+g = 0.500%: capacity 1.0145 x wants | none below 4.0 | line shortfall 545 units | smallest-first short 31.75%
+g = 1.160%: capacity 1.0111 x wants | none below 4.0 | line shortfall 1,264 units | smallest-first short 31.75%
+g = 2.000%: capacity 1.0068 x wants | none below 4.0 | line shortfall 2,179 units | smallest-first short 31.75%
+g = 3.000%: capacity 1.0017 x wants | none below 4.0 | line shortfall 3,268 units | smallest-first short 31.75%
+g = 3.300%: capacity 1.0002 x wants | none below 4.0 | line shortfall 3,595 units | smallest-first short 31.75%
+g = 3.400%: capacity 0.9997 x wants | rho 0.888 (min 0.887, max 0.889, 3/3) | line shortfall 3,704 units | smallest-first short 31.75%
+g = 4.000%: capacity 0.9967 x wants | rho 0.649 (min 0.647, max 0.650, 3/3) | line shortfall 4,358 units | smallest-first short 31.75%
+g = 6.000%: capacity 0.9865 x wants | rho 0.498 (min 0.497, max 0.498, 3/3) | line shortfall 6,537 units | smallest-first short 31.75%
+g = 10.000%: capacity 0.9661 x wants | rho 0.404 (min 0.404, max 0.404, 3/3) | line shortfall 10,894 units | smallest-first short 31.75%
+g = 12.380%: capacity 0.9540 x wants | rho 0.373 (min 0.373, max 0.373, 3/3) | line shortfall 13,487 units | smallest-first short 31.75%
+g = 20.000%: capacity 0.9153 x wants | rho 0.309 (min 0.309, max 0.309, 3/3) | line shortfall 21,788 units | smallest-first short 31.75%
