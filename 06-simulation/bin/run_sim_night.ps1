@@ -227,7 +227,16 @@ $toStamp += Get-ChildItem -Path $Root -Recurse -Filter "RESULTS.md" -File |
             # "Too many )'s" under -ErrorActionPreference Stop, and the run died here
             # with no HASHES.txt and no git block.
 foreach ($f in $toStamp) {
-    $h   = (Get-FileHash -Algorithm SHA256 -Path $f.FullName).Hash.ToLower()
+    # Hash the file with LF line ends (author ruling 2026-11-16, PLAN-2026-11-16
+    # section 13). Get-FileHash hashed the bytes on this Windows disk, which end
+    # each line in CR LF; the public mirror stores LF, so a reader's sha256 of the
+    # downloaded file never matched. Latin-1 maps every byte to one char and back,
+    # so the replace touches only the CR LF pairs.
+    $latin = [System.Text.Encoding]::GetEncoding(28591)
+    $lf    = $latin.GetBytes(($latin.GetString([System.IO.File]::ReadAllBytes($f.FullName))).Replace("`r`n", "`n"))
+    $sha   = [System.Security.Cryptography.SHA256]::Create()
+    $h     = (-join ($sha.ComputeHash($lf) | ForEach-Object { $_.ToString("x2") }))
+    $sha.Dispose()
     $rel = ("06-simulation/" + $f.FullName.Substring($Root.Length + 1)) -replace "\\", "/"
     Add-Content -Path $HashFile -Encoding UTF8 -Value ("{0}`t{1}`t{2}" -f $Stamp, $h, $rel)
     "stamped $rel $($h.Substring(0,16))..." | Tee-Object -FilePath $RunLog -Append
