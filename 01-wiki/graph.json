@@ -15,7 +15,7 @@
  },
  "counts": {
   "nodes": 301,
-  "edges": 1177
+  "edges": 1183
  },
  "nodes": [
   {
@@ -252,7 +252,7 @@
    "file": "01-wiki/no-externalities.md",
    "glossary": "00-strategy/GLOSSARY.md#a4",
    "in": 14,
-   "out": 13
+   "out": 14
   },
   {
    "id": "non-fungibility",
@@ -380,14 +380,14 @@
    "id": "no-taxation",
    "type": "consequence",
    "title": "No taxation",
-   "summary": "Civil servants are credited directly and infrastructure users carry debit by use, so there is nothing to collect and nothing to fund.",
+   "summary": "A civil servant's work is a service to the people who consented to it; the worker is credited and those people carry the hours in equal parts, so no credit moves to the city and there is nothing to collect.",
    "status": "provisional",
    "ids": [
     "§5.4"
    ],
    "file": "01-wiki/no-taxation.md",
    "in": 10,
-   "out": 9
+   "out": 10
   },
   {
    "id": "regulator-inversion",
@@ -1064,7 +1064,7 @@
    "id": "ellerman-responsibility",
    "type": "lineage",
    "title": "Ellerman's responsibility imputation",
-   "summary": "A1's attribution rests on David Ellerman's labour theory of property, impute responsibility to whoever was in fact responsible, a juridical principle courts already use; it is chosen over any labour theory of value because it says only who did what, which is why credit cannot move, why machines and their owners get nothing, and why a cost never lands on a buyer who did not act.",
+   "summary": "A1's attribution rests on David Ellerman's labour theory of property, impute responsibility to whoever was in fact responsible, a juridical principle courts already use; it is chosen over any labour theory of value because it says only who did what, which is why credit cannot move, why machines and their owners get nothing, and why the pollution of what a maker used up never lands on a buyer.",
    "status": "settled",
    "ids": [
     "B6",
@@ -1152,7 +1152,7 @@
    ],
    "file": "01-wiki/co-product-allocation.md",
    "glossary": "00-strategy/GLOSSARY.md#op-17",
-   "in": 13,
+   "in": 14,
    "out": 25
   },
   {
@@ -1184,7 +1184,7 @@
    "file": "01-wiki/debit-taxonomy.md",
    "glossary": "00-strategy/GLOSSARY.md#c5",
    "in": 5,
-   "out": 26
+   "out": 27
   },
   {
    "id": "debit-tolerance",
@@ -1279,13 +1279,13 @@
    ],
    "file": "01-wiki/end-of-life-debit.md",
    "in": 4,
-   "out": 15
+   "out": 16
   },
   {
    "id": "enrichment",
    "type": "mechanism",
    "title": "Enrichment",
-   "summary": "Enrichment is work in which knowledge, skill or culture reaches somebody; it is one of three names that decide whether an hour is creditable, it credits one hour for one hour, and it is verified by evidence the work happened, never by how many people liked it, because feedback is not credit.",
+   "summary": "Enrichment is work in which knowledge, skill or culture reaches somebody; it is one of three names that decide whether an hour is creditable, it credits one hour for one hour, and it is verified by a receiver's confirmation or by other evidence that the work happened, never by how many people liked it, because feedback is not credit.",
    "status": "settled",
    "ids": [
     "§2.3",
@@ -1349,7 +1349,7 @@
     "§4.5"
    ],
    "file": "01-wiki/front-loading-rule.md",
-   "in": 10,
+   "in": 11,
    "out": 21
   },
   {
@@ -1498,21 +1498,21 @@
    ],
    "file": "01-wiki/pledge-and-signal.md",
    "glossary": "00-strategy/GLOSSARY.md#c8",
-   "in": 19,
+   "in": 20,
    "out": 32
   },
   {
    "id": "pollution-making-vs-using",
    "type": "mechanism",
    "title": "Pollution from making stays with the maker",
-   "summary": "Pollution caused by making a thing stays permanently with the maker and never reaches a buyer; pollution caused by using a thing belongs to whoever used it; a thing that will pollute when used carries that future pollution in physical units, and it moves with the thing until somebody uses it.",
+   "summary": "Pollution goes with the thing that causes it, to whoever uses that thing up; pollution from what a maker uses up stays permanently with the maker; pollution caused by using a thing belongs to whoever used it; a thing that will pollute when used carries that future pollution in physical units; and pollution that a thing's own material gives off in becoming that thing moves with the thing to whoever holds it.",
    "status": "settled",
    "ids": [
     "§3.2b"
    ],
    "file": "01-wiki/pollution-making-vs-using.md",
-   "in": 6,
-   "out": 16
+   "in": 8,
+   "out": 18
   },
   {
    "id": "privacy-is-a-network-choice",
@@ -1546,7 +1546,7 @@
    "id": "property-debit",
    "type": "mechanism",
    "title": "Property debit",
-   "summary": "The debit of a thing you hold; its material moves with the thing, your share of its making hours is set by how long you held it and stays with you, and a durable asset's whole creation cost sits on its holders, never in what it made.",
+   "summary": "The debit of a thing you hold; its material and the pollution that belongs to it move with the thing, your share of its making hours is set by how long you held it and stays with you, and a durable asset's whole creation cost sits on its holders, never in what it made.",
    "status": "settled",
    "ids": [
     "§3.2",
@@ -1631,7 +1631,7 @@
    "id": "service-credit",
    "type": "mechanism",
    "title": "Service",
-   "summary": "A service is work done for a person, an organisation or oneself, often with nothing to hand over; it credits one hour for one hour like any other work, the check is the client's confirmation, and keeping yourself alive is a service a network may recognise.",
+   "summary": "A service is work done for a person, an organisation or oneself, often with nothing to hand over; it credits one hour for one hour like any other work, the check is the confirmation of a receiver who asked for it, that receiver carries the hours unless the service is essential, and keeping yourself alive is a service a network may recognise.",
    "status": "settled",
    "ids": [
     "§2.3"
@@ -1890,7 +1890,7 @@
    ],
    "file": "01-wiki/op-24.md",
    "glossary": "00-strategy/GLOSSARY.md#op-24",
-   "in": 16,
+   "in": 17,
    "out": 14
   },
   {
@@ -4352,6 +4352,11 @@
   {
    "from": "debit-taxonomy",
    "rel": "related",
+   "to": "pollution-making-vs-using"
+  },
+  {
+   "from": "debit-taxonomy",
+   "rel": "related",
    "to": "protocol-governance"
   },
   {
@@ -5133,6 +5138,11 @@
    "from": "end-of-life-debit",
    "rel": "open_under",
    "to": "op-25"
+  },
+  {
+   "from": "end-of-life-debit",
+   "rel": "related",
+   "to": "pledge-and-signal"
   },
   {
    "from": "end-of-life-debit",
@@ -6646,6 +6656,11 @@
   },
   {
    "from": "no-externalities",
+   "rel": "related",
+   "to": "pollution-making-vs-using"
+  },
+  {
+   "from": "no-externalities",
    "rel": "source",
    "to": "foundations-1"
   },
@@ -6698,6 +6713,11 @@
    "from": "no-taxation",
    "rel": "related",
    "to": "capitalism-cannot-function"
+  },
+  {
+   "from": "no-taxation",
+   "rel": "related",
+   "to": "front-loading-rule"
   },
   {
    "from": "no-taxation",
@@ -7997,7 +8017,17 @@
   {
    "from": "pollution-making-vs-using",
    "rel": "related",
+   "to": "co-product-allocation"
+  },
+  {
+   "from": "pollution-making-vs-using",
+   "rel": "related",
    "to": "front-loading-rule"
+  },
+  {
+   "from": "pollution-making-vs-using",
+   "rel": "related",
+   "to": "op-24"
   },
   {
    "from": "pollution-making-vs-using",

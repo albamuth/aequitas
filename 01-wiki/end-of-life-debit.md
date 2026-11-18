@@ -46,9 +46,11 @@ edges:
 - **Maintain what you hold.** A co-operative is better off servicing its equipment than running it to failure.
 - **Pledge toward remediation and recycling.** Doing so lightens your own accumulated pollution debt, because the stock everyone is weighed against falls.
 
-**Rule 2 is one mechanism, not two.** Atmospheric CO₂ and a bottle in a landfill are the same stock-dependent rule. A compostable object generates none of it, because nature remediates it unaided. **This is the same quantity that rode the object as latent pollution while it was held** ([pollution-making-vs-using](pollution-making-vs-using.md), line 3), arriving at the end of its journey. It is recorded once, not twice.
+**Rule 2 is one mechanism, not two.** Atmospheric CO₂ and a bottle in a landfill are the same stock-dependent rule. A compostable object generates none of it, because nature remediates it unaided. **This is the same quantity that rode the object while it was held, as pollution that belongs to the thing** ([pollution-making-vs-using](pollution-making-vs-using.md), line 3), arriving at the end of its journey. It is recorded once, not twice.
 
-**Rule 3 is why recycling pays.** Recycled steel never carried the miner's tailings, because that pollution stayed permanently on the miner, and using it commissions no new extraction. The recycler is credited for the work of making waste useful again, and the recycled material re-enters as a low-cost input.
+**Rule 3 is why recycling pays.** Recycled steel does not carry what earlier producers used up to run their processes. That pollution stayed permanently on each producer. The steel carries the record its atoms already had, which includes any pollution that belongs to the material itself ([pollution-making-vs-using](pollution-making-vs-using.md), line 4). It adds no new record: using it commissions no new extraction and leaves no new waste rock. **The recycler is credited as any maker is.** Their hours count when a receiver takes the recycled output, which re-enters as a low-cost input.
+
+**Remediation that has no output to hand on, such as cleaning a river, has no receiver** unless a city or a network gathers consent for it. Without one, it earns the backing that people pledged for it, and no credit ([pledge-and-signal](pledge-and-signal.md)).
 
 ## An example, with the numbers
 
@@ -64,7 +66,7 @@ edges:
 
 | | |
 |---|---|
-| Credit to the recycler | **1.5 h** |
+| Credit to the recycler, when a receiver takes the recovered steel | **1.5 h** |
 | Property debit the 58 kg carries forward | the steel's accumulated material and making, **plus 1.5 h** |
 | The original mine's process pollution carried by that steel | **0 h.** It stayed on the miner |
 | The 2 kg of steel lost and the 10 kg of plastic with no taker | **consumption debit on the recycler**, who last held it |

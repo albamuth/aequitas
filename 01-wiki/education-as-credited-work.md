@@ -30,7 +30,7 @@ Learning enriches the individual and, indirectly, everyone the person later serv
 
 So it is credited. Both sides of the room.
 
-The **cost** of that schooling — teachers' time, buildings, materials — is carried during the training years, cushioned by the backing of the people who pledged for it. **Nothing is charged to whoever uses the skill later** (Foundations §4.5). A doctor's visit costs the patient the doctor's time, the clinic's materials and the medicines, and never the lecture given twenty years earlier. The front-loading rule below is the general form.
+The **cost** of that schooling — teachers' time, buildings, materials — is carried during the training years, cushioned by the backing of the people who pledged for it. **Nothing is charged to whoever uses the skill later** (Foundations §4.5). A patient who asks for care that their network does not count as essential carries the doctor's time and the materials the treatment used up, and never the lecture given twenty years earlier. The front-loading rule below is the general form.
 
 ## Why it works this way
 
@@ -78,7 +78,7 @@ Three instances so far:
 
 | Case | Front-loaded cost | What the eventual recipient pays |
 |---|---|---|
-| **Education** | Teachers' time, facilities, materials | The professional's time, clinic materials, medicines — **not the education** |
+| **Education** | Teachers' time, facilities, materials | Where the receiver asked for the service and it is not essential care: the professional's time and the materials the service used up — **not the education** |
 | **Media production** | Years of crew time, sets, equipment, post | **Delivery only** — theatre maintenance, projectionist hours, print or bandwidth, power |
 | **Research, infrastructure, tooling** | The build | Use, wear, and energy |
 
@@ -86,7 +86,7 @@ Three instances so far:
 
 **The decisive reason, though, is computational closure**. If a hospital's construction were amortized into each patient's bill, the accounting would have to chase the construction company's costs, then the equipment manufacturer's, then the steelmaker's, then the doctors' education — **an infinite regress to the first human activity.** The accounting would never terminate. Front-loading is what makes it *terminate*: you never chase an asset's own history, because the asset carries whatever creation-cost is knowable within Aequitas and everything upstream is out of scope by construction.
 
-> **This is the upstream face of the non-cascade rule in §3.2b.** Pollution not transferring downstream to a buyer and cost not regressing upstream to the first human are the *same* constraint: **cost attaches only to the causer, and never cascades to anyone who did not act.** Ellerman-imputation and computational closure are one principle read in two directions.
+> **This is the upstream face of the non-cascade rule in §3.2b.** The pollution of what a maker used up not transferring to a buyer and cost not regressing upstream to the first human are the *same* constraint: **cost attaches only to the causer, and never cascades to anyone who did not act.** Ellerman-imputation and computational closure are one principle read in two directions.
 
 > **The boundary is capital vs. consumption, not temporal.** A cost flows to a unit only if it is *consumed* producing that unit. A durable asset's *acquisition* is capital (front-loaded); only what it *consumes now* — energy, materials used up, wear — is a flow. The two are told apart by **physical fate**: does the thing survive the process? A drill bit that survives is capital; the oil it burned is consumption. Auditable via IC-4 (fate closure), not by the producer's declaration — which closes the *consumption-launderer* (reclassifying a used-up input as capital to move its debit off the unit).
 

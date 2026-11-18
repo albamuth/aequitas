@@ -1,0 +1,22 @@
+{
+  "filed": "2026-11-18",
+  "rule": "Never edited. predictions.py registers this file's sha256 as line 1 of predictions_log.jsonl on first run and refuses to run if the file later differs. A failed prediction is logged as failed and is not repaired by editing; file a new one with a new id.",
+  "predictions": [
+    {"id": "P0-old-selftest5", "kind": "cell", "anchor": 1380, "F": 10, "shock": -0.30, "lo": 0.0, "hi": 0.2263013699,
+     "why": "Moved from rho_sweep_anchor.py self-test 5: F=10 at -30% sits below the broad-basket lower edge 826/3650 = 0.2263 (Foundations 5.5.3)."},
+    {"id": "P1-level-1380-F10", "kind": "cell", "anchor": 1380, "F": 10, "shock": 0.0, "lo": 0.31, "hi": 0.35,
+     "why": "LEVEL. Stable band measured 0.330 and the 2026-11-04 run 0.33. A factor-of-two miss would be caught here."},
+    {"id": "P2-level-1350-F10", "kind": "cell", "anchor": 1350, "F": 10, "shock": 0.0, "lo": 0.31, "hi": 0.335,
+     "why": "LEVEL. Scale relation: 0.33 x 1350/1380 = 0.323. Request predicts 0.323 to 0.335."},
+    {"id": "P3-level-1400-F10", "kind": "cell", "anchor": 1400, "F": 10, "shock": 0.0, "lo": 0.32, "hi": 0.35,
+     "why": "LEVEL. Scale relation: 0.33 x 1400/1380 = 0.335."},
+    {"id": "P4-order-F10", "kind": "order", "F": 10, "shock": 0.0, "anchors": [1350, 1380, 1400],
+     "why": "rho* must not fall as the anchor rises (non-decreasing)."},
+    {"id": "P5-F2-1380", "kind": "cell", "anchor": 1380, "F": 2, "shock": 0.0, "lo": 0.85, "hi": 1.00,
+     "why": "LEVEL. 2026-11-04 run read 0.92."},
+    {"id": "P6-F14-1380", "kind": "cell", "anchor": 1380, "F": 14, "shock": 0.0, "lo": 0.23, "hi": 0.27,
+     "why": "LEVEL. 2026-11-04 run read 0.25."},
+    {"id": "P7-width-F10", "kind": "spread", "F": 10, "shock": 0.0, "anchors": [1350, 1400], "lo": 0.005, "hi": 0.020,
+     "why": "The whole 1,350-1,400 interval moves rho* at F=10 by about 0.33 x 50/1380 = 0.012. A spread above 0.02 or below 0.005 means the scale relation is wrong."}
+  ]
+}

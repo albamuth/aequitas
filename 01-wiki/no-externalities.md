@@ -44,7 +44,7 @@ In Aequitas there is no outside authority because there is no outside. If an act
 
 **Neither half asks for the *product's* ledger.** Three rules depend on that:
 
-- **Pollution stays permanently on whoever caused it** and never rides the goods to a buyer. The farmer keeps the fertiliser runoff; the grocery shopper does not. *Covered, and attributed to the farmer.*
+- **Pollution from what a person used up stays permanently on that person** and never rides the goods to a buyer. The farmer spread the fertiliser, so the farmer keeps the runoff; the grocery shopper does not. *Covered, and attributed to the farmer.* Pollution that belongs to a thing itself is a different record. Firing 100 kg of limestone gives off 44 kg of CO₂ from the limestone's own material, and those 44 kg move with the cement to whoever holds it ([pollution-making-vs-using](pollution-making-vs-using.md)).
 - **An unattributed coverage residual sits on nobody at all** until its causer joins — computed and published, charged to no account. *Covered, and not yet attributed. This is A4's third line, not an exception to it.*
 - **A durable asset's creation-cost stays on the asset and its holders** and is never amortised into what the asset made. *Covered, and attributed to the holders.* See [cost-not-price](cost-not-price.md).
 

@@ -1,7 +1,7 @@
 # Struck phrases — wordings that must not appear in a live document
 
-> **Version:** 0.13
-> **Date:** 2026-11-07
+> **Version:** 0.14
+> **Date:** 2026-11-18
 
 > **Read by [`bin/consistency.py`](../bin/consistency.py). The table below is the machine-readable part; everything else on this page is for people.**
 
@@ -41,6 +41,14 @@ That is not a hypothetical. **It happened three times in a single day, 2026-08-2
 
 | Struck phrase | Struck on | Why | What is true instead |
 |---|---|---|---|
+| `is credited 1 hour` | 2026-11-18 | **Author's ruling 2026-11-16.** The resident who mows a public verge under a pledge has no receiver who asked for the work. *"It is wrong to say they are 'credited'. They receive the pledge, instead."* | **The mower receives 1 hour of backing, and the hour does not count as credit** — Foundations §4.6, Conformance 9c |
+| `Civil servants are credited directly` | 2026-11-18 | Same rulings. A civil servant's work is a service to the people who consented to it | **The worker is credited, and the consenting residents carry the hours in equal parts** — Foundations §5.4 |
+| `Infrastructure users carry proportional debit by usage` | 2026-11-18 | Same rulings. The split is by consent, in equal parts for each record of consent | As above — Foundations §5.4, §4.5 |
+| `It never asks whether anyone valued it` | 2026-11-18 | Same rulings. A service that is not essential counts as credit only when a receiver who asked for it confirms it | **Verification asks whether the work happened, and whether a receiver accepted it. It never asks how much anyone valued it** — Foundations §4.2 |
+| `the material cost of running the clinic` | 2026-11-18 | Author's rulings 2026-11-09 and 2026-11-16. A patient carries a service's hours only when the care is not essential and they asked for it, and then only what the treatment used up | **The doctor's time and the materials the treatment used up** — Foundations §4.5 |
+| `is simply the recognition of an activity as creditable` | 2026-11-18 | The author's approved pick 3 of `PLAN_Fold_Consent_and_Pollution.md`. A network's own work needs receivers who consented, and its subscribers are those receivers | **A network's work is a service to its subscribers, who carry its hours in equal parts** — Foundations §4.7 |
+| `cleanly lower-burden than virgin` | 2026-11-18 | **Author's rulings 2026-11-17.** Pollution that belongs to a material goes forward with its atoms | **Recycled steel keeps the record its atoms had, and adds no new one** — Foundations §3.6 |
+| `auditing-as-credited-work` | 2026-11-18 | Pick 3, as above | **A network's auditors are credited, and its subscribers carry the hours** — Foundations §2.1, §4.7 |
 | `two instruments agree` | 2026-11-07 | **Author ruling 2026-11-07 (`07-outreach/log/PLAN-2026-11-07.md`, decision 3).** `rho_sweep_anchor.py` and `stable_band_kappa.py` share one formula, so their agreement checks the code and not the economy | **One instrument read twice** — Foundations §5.5.7 |
 | `has not been re-run with demand tied to 1,380 h/yr` | 2026-11-07 | Same ruling. `06-simulation/stable-band/RESULTS_PLEDGE_KAPPA.md` ran the pledge term at the anchor on 2026-10-31 | **The anchor-tied pledge table, `ρ*(F) ÷ (1 + p)`** — Foundations §5.5.3 |
 | `must land near **1.20**` | 2026-11-07 | Same ruling. The pre-anchor cost term was 3.65× too high | **0.33 at `F` = 10, tied to the anchor** — Simulation Roadmap §4 |

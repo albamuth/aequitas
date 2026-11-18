@@ -61,7 +61,28 @@ A pledge is **not** a purchase, **not** a spend of your credit, and **not** a pr
 - **It is permanent — you can't take it back.** The receiver can rely on the backing and get on with the work; it won't vanish under them. The discipline is *at pledge time* — because a pledge is a real, one-time expense, nobody pledges frivolously or floods the system for free. An unspent pledge to an abandoned task is **burned**, not returned.
 - **Buying is a separate act.** Where pledged work yields a held object, taking that object loads its [property-debit](property-debit.md) on **whoever accepts possession** (§3.2) — pledge or no pledge, and not necessarily the pledger.
 
-**A pledge need not involve an object at all.** Pledge two hours toward mowing a public verge; someone mows for an hour, shows proof, and earns an hour of credit — no object changed hands, no debit moved. A pledge simply **summons creditable work into being**.
+**A pledge need not involve an object at all.** Pledge two hours toward mowing a public verge. Someone mows for an hour, shows proof, and **receives 1 hour of backing**. The hour is recorded. It does not count as credit, because no receiver asked for it. No object changed hands and no debit moved. **A pledge summons work.**
+
+### Pledged work with no receiver earns the backing, and does not count as credit
+
+> **Work that a pledge named, and that nobody asked to receive, earns the pledge as backing. The same work done for people who consented to it counts as credit, and they share its hours** (Foundations §4.6).
+
+**Terms used here.** `F` is the floor: the hours a day a network counts as the work of staying alive. `C` is a person's credit. `P` is the backing pledged to them. The gate limits what a person may carry, and it reads `C + P`. A person's **pledge budget** equals their lifetime credit.
+
+**One person mows public verges for 1,000 hours in a year**, in a network with `F` = 10, which is 3,650 hours of floor credit a year.
+
+| | `C` that year | `P` gained | Pledge budget gained | Who carries the hours |
+|---|--:|--:|--:|---|
+| Residents pledged for the mowing. Nobody asked to receive it | 3,650 h | 1,000 h | 3,650 h | Nobody |
+| The mower works for a city, and 10,000 residents consented to its services | 4,650 h | 0 h | 4,650 h | Each resident, 1,000 ÷ 10,000 = **0.1 h** |
+
+**In plain words: both mowers may consume about the same, because the gate reads `C + P`. Only the city's mower gains pledge budget, which is the say over what gets made.**
+
+- **What counts as consent to a city's services** is the published rule of the network and the municipality. A visitor who walks on the mown verge carries 0 hours.
+- **A service on a network's essential list needs no receiver's consent.** A network whose list has the fire service credits the firefighters and adds no debit to anybody.
+- **A free performance has no receiver.** Its performers may still receive backing from a fund that people pledged to, on the conditions the fund published.
+- **Work on things held in common earns less say.** Over 40 years at 1,000 hours a year, the pledged mower has 40 × 1,000 = **40,000 hours** less pledge budget than the city's mower. Whoever can gather consent, such as a city, turns work into a say. That is P4 (coordinator class).
+- **A pledge makes no new pledge budget.** The total budget in a network grows only through work that a receiver accepted, through essential care, and through the floor.
 
 ## What a pledge names, and when it becomes backing
 
@@ -128,13 +149,13 @@ Credit-earners direct what gets worked on next. Two distinct instruments, distin
 
 | | **Pledge** | **Signal** |
 |---|---|---|
-| Says | "I authorize this creditable work" | "I want this to exist" |
+| Says | "I authorize this work" | "I want this to exist" |
 | Drawn from | earned credit, 1:1 | nothing |
 | Rate | **1 hour pledged per hour earned — a finite lifetime budget, spent once** | *n* per hour earned, or unbounded |
 | Permanence | **permanent, non-revocable** | — |
 | Analogue | a wishlist that funds a run; choosing a GP; crowdfunding; commissioning a task | likes, ratings, applause |
 
-**A pledge is a pre-authorization of creditable work, drawn 1:1 from earned credit; — it need not involve an object or move any debit**. The old framing ("I will absorb this debit") was too narrow. Concrete case: a resident earns 4 credit-hours and **pledges 2 toward mowing the public verge on their block**. Someone with a mower sees the pledge, mows for an hour, submits evidence, and **is credited 1 hour** — 1 pledged hour remains for a later mow. *That is the entire transaction: no object changes hands, no property-debit moves, credits and pledges do not cancel.* The pledge simply **summoned an hour of creditable work** and drew an hour from the pledger's lifetime pledging-budget to do it — without spending or transferring the underlying credit, which stays on the pledger's ledger. **A pledge is permanent and non-revocable, and is not a promise to buy.** Where the pledged work *does* yield a held object, taking that object is a *separate* act: whoever accepts possession takes on its property-debit against their own credit and backing (§3.2), whether or not they pledged. That is the ordinary possession rule, not what *defines* a pledge. What defines a pledge is that it is drawn 1:1 from earned credit (IC-8).
+**A pledge authorises work, and is drawn 1:1 from earned credit — it need not involve an object or move any debit**. The old framing ("I will absorb this debit") was too narrow. Concrete case: a resident earns 4 credit-hours and **pledges 2 toward mowing the public verge on their block**. Someone with a mower sees the pledge, mows for an hour, submits evidence, and **receives 1 hour of backing**. 1 pledged hour remains for a later mow. The hour is recorded, and it does not count as credit, because no receiver asked for it (the two mowers, above). *No object changes hands and no property-debit moves.* The pledge **summoned an hour of work** and drew an hour from the pledger's lifetime pledging-budget to do it — without spending or transferring the underlying credit, which stays on the pledger's ledger. **A pledge is permanent and non-revocable, and is not a promise to buy.** Where the pledged work *does* yield a held object, taking that object is a *separate* act: whoever accepts possession takes on its property-debit against their own credit and backing (§3.2), whether or not they pledged. That is the ordinary possession rule, not what *defines* a pledge. What defines a pledge is that it is drawn 1:1 from earned credit (IC-8).
 
 **Pledging is deliberately messy, and that is fine.** There will be unfulfilled pledges, frivolous pledges toward trivial or unverifiable tasks, and people learning to pledge well. Coordination groups and pledge-influencing politics will emerge around it. None of this is a defect: **pledges are the job-creating demand lever**, and a lever people organize around is a lever that works.
 
@@ -155,7 +176,7 @@ Credit-earners direct what gets worked on next. Two distinct instruments, distin
 
 **Worked, at `F` = 10 h/day.** Self-care accrues 3,650 h of budget a year and 292,000 h over 80 years. A 50% standing pledge accepted at age 20 commits 0.5 × 3,650 × 60 = **109,500 h** and leaves 182,500 h to direct. A network applying 100% by default would spend all 292,000 h with no consent, and that is not available. **A network offering one standing pledge to everyone writes the criteria for much of the population's budget**, which is a P4 (coordinator class) surface.
 
-**Approval never gates credit — but *verification* gates its realization**. The work is **always recorded**: an event is logged the moment work is done, so origin closure holds and unpledged wheat still has a grower (A7, IC-3). What a pledge buys is **authorization and backing** for the work — a permanent grant, but still not a guaranteed sale; whoever ultimately takes the resulting good carries it against their own credit and backing (§3.2, §4.6). But a recorded credit **realizes** — begins counting toward the worker's position — only when the output is **verified**, exactly as A7 already gates an estimated position on observation. This is *verification, not approval*: no committee judges the work worthy; the trigger is objective evidence the output exists. See §4.6 for how, for a physical good, that verification *is* the hand-off.
+**Approval never gates credit — but *verification* gates its realization**. The work is **always recorded**: an event is logged the moment work is done, so origin closure holds and unpledged wheat still has a grower (A7, IC-3). What a pledge buys is **authorization and backing** for the work — a permanent grant, but still not a guaranteed sale; whoever ultimately takes the resulting good carries it against their own credit and backing (§3.2, §4.6). But a recorded credit **realizes** — begins counting toward the worker's position — only when the output is **verified**, exactly as A7 already gates an estimated position on observation. This is *verification, not approval*: no committee judges the work worthy; the trigger is objective evidence the output exists. See §4.6 for how, for a physical good, that verification *is* the hand-off. **For a service that is not essential, the verification is the confirmation of a receiver who asked for it.** Verification asks whether the work happened and whether a receiver accepted it, and never how much anyone valued it.
 
 ---
 

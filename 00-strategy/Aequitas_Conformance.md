@@ -1,7 +1,7 @@
 <!-- tag: cnf-aequitas-conformance -->
 # Aequitas — Conformance Requirements
 
-> **Version:** 0.24 · **Date:** 2026-10-28
+> **Version:** 0.25 · **Date:** 2026-11-18
 > **Audience: implementers.** Anyone building a trust network.
 > **Companion:** [`Aequitas_Foundations.md`](Aequitas_Foundations.md) — the system itself, and the argument behind every row below. **Where the two differ, Foundations governs.**
 > **Two row numbers are retired and are never reused: the bare `17`, and `14c`.**
@@ -80,13 +80,34 @@ Worked: *"records are never deleted"* is something you can read off an implement
 | # | Requirement | From |
 |---|---|---|
 | 1 | **Every entry in the books records something physical that really happened.** A debit records matter or energy that moved. A credit records time a person spent. **Nothing is ever issued, printed, or created by declaring it** — there is no money, no token, and no unit anyone can make more of. | A1 |
-| 2 | **A flow is recorded against whoever caused it.** Only people act, so a cost never lands on a tool, a machine, a company, or a buyer who did not do the thing. | A1, §3.2b, §4.5 |
+| 2 | **A flow is recorded against whoever caused it.** Only people act, so a cost never lands on a tool, a machine, a company, or a buyer who did not do the thing. **What rides a thing to its buyer is the thing's own debit, and rows 2e and 7a say what that is.** | A1, §3.2b, §4.5 |
 | 2a | **A thing's cost figure contains only what that thing itself used up.** What it cost to build a barn stays with the barn and whoever holds it, and **is never spread across the beef the barn was used to produce.** The test is what physically happened to each input: **did it survive the process?** A drill bit that survives is equipment. The oil it burned is used up. **The producer does not decide which is which** — the record of what happened to each thing decides it, and row 7 checks that record. | A5, §4.5 |
 | 2b | **Nothing is ever added on top of a cost figure.** No margin, no fee, no markup, no spread, anywhere, by anyone. | A5 |
 | 2c | **A business is never the final holder of a debit. Only people are.** Whatever its workers caused **while acting for it** is at every moment their own debit, divided by the hours each worked there. **A worker's own errand is theirs alone.** **Closing the business moves nothing and clears nothing.** | A1, §3.2, §3.2c |
 | 2d | **A transport emission is recorded against whoever held the fuel parcel and burned it, and never against the goods that journey carried.** An implementation must not let a holder discharge a burned-fuel debit by tagging it onto anything it hands off. **Handing on the *unburned* parcel is the only transfer that moves it.** | A1, A5, §3.2b, §3.4a |
+| 2e | **Pollution is recorded with the thing that causes it, on whoever uses that thing up.** Pollution from what a maker uses up, such as fuel, power and chemicals, stays with the maker and never rides the goods. **Pollution that a thing's own material gives off in becoming that thing rides the thing**, up to the amount that the material's make-up fixes. **A release above that amount is the maker's.** The part that rides the thing is recorded once, and only a release that was measured is recorded. Where the make-up fixes no amount, the amount is a cost constant under rows 16a to 16c. | A4, A5, §3.2b, §3.3a |
+| 2f | **A debit lands on a person only by their own act, or by their recorded acceptance.** A gift that is not recorded as a hand-off leaves the debit with the giver. Work done on a thing a person holds adds to their debit only if they accepted the work. A purchase made for other people needs evidence that they authorised it beforehand. **What counts as consent, and who may give it, is the network's published rule.** A rule that reads consent from a status, such as residence, is published as that. | A5, §2.4, §2.4a, §3.2, §3.2c |
+| 2g | **A person carries the hours of a service only when the service is not on the network's essential list and they asked for it.** Work that continues a person's life adds no debit to that person. **Where one service has many receivers, they carry what the event itself used up, in equal parts, one for each ticket.** The parts add up to that cost and never to more. Buying a ticket adds nothing until the work is done. | §4.5, §2.4a, §3.4a |
 | 3 | **An hour is an hour, whoever worked it.** No profession, rank, skill or hazard multiplies it. Real differences between workers show up as **material costs** instead — the extra food a labourer eats, the harm a dangerous process is later found to have caused. | A2 |
 | 3a | **Every activity a network credits is at least one of three things: production, a service, or enrichment.** An activity that is none of the three is not work, whatever the network has declared. **Which of the three it is, is never written down and never changes the number.** An hour that is more than one of them credits once. | §2.3, §4.5 |
+
+#### Rows 2e and 2g, worked
+
+**Row 2e.** A kiln fires 100 kg of limestone into cement. The limestone gives off 44 kg of CO₂, by the weights of its atoms. The kiln's fuel gives off 30 kg more. *(The fuel figure is illustrative.)*
+
+| The CO₂ | Amount | Recorded on |
+|---|--:|---|
+| From the limestone | 44 kg | **The cement**, and then whoever holds what is built with it |
+| From the fuel | 30 kg | **The kiln's people** |
+| A report of 60 kg "from the limestone" | 60 kg | 44 kg on the cement. **16 kg on the kiln's people** |
+
+**Row 2g.** A concert uses up 120 hours of work and materials on the night.
+
+| | Each ticket carries |
+|---|--:|
+| 1,000 tickets | 120 ÷ 1,000 = **0.12 h** |
+| 100 tickets | 120 ÷ 100 = **1.2 h** |
+| A person outside the fence, with no ticket | **0 h** |
 
 #### Row 2a, worked
 
@@ -159,6 +180,7 @@ Worked: *"records are never deleted"* is something you can read off an implement
 | 9 | **A person's pledges never exceed the credit they have earned in their life, one hour for one hour.** The budget is spent **when the pledge is made**, not when the work happens, **and there is no path that gives it back.** **Backing received never enlarges the budget** — a budget is credit the holder earned, and nothing else. | §4.6, §5.5.5 · *IC-8, IC-9* |
 | 9a | **A pledge backs nobody until it names a person.** A pledge may name a person, or the criteria that will name one. **Until a person is named it sits in no account's gate; once named the backing is committed and is never revoked.** A pledge may be made to a fund, a company, a municipality or a prize; it backs a person only when distributed to one. An undistributed pledge lapses, and the budget is spent either way. **Where a pledge states no criteria, the backing goes to whoever did the named work, by hours worked.** | §4.6, §3.2c |
 | 9b | **Awarding criteria are published before the pledge is made.** Criteria may be any conditional thing, including a judging panel. **A network that lets criteria change after pledges are taken cannot show what a pledger agreed to.** | §4.6, §4.2, A8 |
+| 9c | **Work that a pledge named, and that nobody asked to receive, earns the pledge as backing and does not count as credit.** So it adds nothing to the worker's own pledge budget. The same work done for people who consented to it counts as credit, and they carry its hours (row 2g). | §4.6, §5.4 |
 | 10 | **A debit is a list of physical quantities, not one number.** Any division — across co-products, across a team, across anything — **is computed on each quantity separately, before they are combined into one figure.** | §3.2a |
 | 10a | **A joint process's cost is not divided among its outputs.** Every co-product carries the **whole** cost of the process it came through, read against its **own output mass**. **What must be recorded is which steps each product passed through — a binary fact, never a share.** A cost may still never depend on **demand or desirability**; it may depend on output mass, because a scale reads one. | §3.4a, §2.5 |
 | 10b | **No quantity a product carries is negative.** A product's cost is a total of the steps it passed through, and a step cannot consume less than nothing. A negative result is a measurement error or a badly drawn process boundary. | §3.4a · *IC-10* |
@@ -326,6 +348,7 @@ Worked: *"records are never deleted"* is something you can read off an implement
 | 16b | **A constant may re-weight history only after two unaffiliated replications.** Which constants get reviewed is decided by **how large the figure is, multiplied by how concentrated its beneficiaries are** — never by size alone. **Membership composition is public**, so a network concentrated in the sector it audits can be spotted from outside. | §3.3a |
 | 16c | **The network can show how it audits its cost constants.** *How* it does so is its own design (§2.6). **Having no answer is not conforming.** | §3.3a, §2.6 |
 | 16d | **For every kind of work it credits, the network publishes what evidence that work requires, before crediting any of it.** **It credits no kind of work for which it has published no rule.** *Which* kinds it covers is its own choice (§2.6, A8). **Having no published rule for something it credits is not conforming.** | §4.2, §4.5, §4.7 |
+| 16e | **A service that is not essential counts as credit only when a receiver who asked for it confirms it.** One confirming receiver is enough. **Care that a network counts as essential is on a published list, with an evidence rule for each entry.** Essential care that the receiver cannot confirm needs a second witness, made on a different path. | §4.2, §4.6, §4.3 |
 
 #### Row 16b, worked — why size alone is the wrong trigger
 
@@ -347,7 +370,7 @@ Worked: *"records are never deleted"* is something you can read off an implement
 | **A** delivers a translation, client confirms | 20 h | met | **20 h** |
 | **B** asserts 20 hours, with no text and no client | 20 h | not met | **0 h** |
 
-**B is not being judged and B is not being punished. B knew the rule before starting.** And if translating for someone who cannot confirm is work this network wants, **it writes a rule for that case — after which B's 20 hours credit at 20 hours**, not at some fraction because a vague claim was weighted cautiously.
+**B is not being judged and B is not being punished. B knew the rule before starting.** A network may accept a different record of the client's agreement, such as an order signed before the work began. **It writes a rule for that case. A translator who then holds such an order and the finished text is credited 20 hours**, not some fraction because a vague claim was weighted cautiously. **No rule credits a service that nobody asked for** (row 16e).
 
 ---
 

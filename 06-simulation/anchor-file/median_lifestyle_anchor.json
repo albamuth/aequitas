@@ -1,0 +1,27 @@
+{
+  "name": "median_lifestyle_anchor",
+  "value": 1380.0,
+  "unit": "hours of other people's labour per median US adult per year",
+  "interval": {"low": 1350.0, "high": 1400.0, "basis": "MEDIAN_LIFESTYLE_RESULT.md headline: 'about 1,350-1,400 hours'. A stated range, not a statistical confidence interval."},
+  "method": "Four tracks summed: (1) domestic embodied labour = BLS employment-requirements matrix 2023 x PCE final demand, jobs x 1,800 h/job, median/mean 0.80; (3) foreign labour in imports = EXIOBASE 3 2022 pxp; (2) housing structure annualised by holding time; (4) own-pollution remediation labour. Tracks 1+3 are computed per capita (1,276 h) and normalised to the median adult.",
+  "method_files": [
+    "06-simulation/median-lifestyle/track1_embodied_hours.py",
+    "06-simulation/median-lifestyle/track3_imports.py",
+    "06-simulation/median-lifestyle/track2_durables.py",
+    "06-simulation/median-lifestyle/track4_pollution.py",
+    "06-simulation/median-lifestyle/MEDIAN_LIFESTYLE_RESULT.md"
+  ],
+  "version": "1.0",
+  "dated": "2026-09-16",
+  "filed_in_anchor_file": "2026-11-18",
+  "inputs": [
+    {"id": "ERM2023", "what": "BLS Employment Requirements Matrix 2023 (NOMINAL_DOMEMPREQ_2023.csv, 176x176)", "stranger_can_fetch": "partly", "note": "BLS withdrew the matrices on 2026-02-06; the copy used was recovered from the Wayback Machine. Not in this repository's public files."},
+    {"id": "PCE_FD", "what": "BEA/BLS final-demand aggregates 2023 (NOMINAL_FDAGG.xlsx, col 1 = PCE)", "stranger_can_fetch": "partly", "note": "Same BLS withdrawal; local copy in 06-simulation/data/io."},
+    {"id": "EXIOBASE", "what": "EXIOBASE 3, 2022, product-by-product (IOT_2022_pxp.zip, 49 regions)", "stranger_can_fetch": "yes", "note": "Public on Zenodo but several GB; not in this repository."},
+    {"id": "CE2023", "what": "BLS Consumer Expenditure Survey 2023 tables", "stranger_can_fetch": "yes", "note": "Public BLS release; local HTML copy only."},
+    {"id": "H_PER_JOB", "what": "1,800 hours per job-year", "stranger_can_fetch": "typed constant", "note": "A typed assumption in track1_embodied_hours.py line 64 (OECD US ~1,811). Not read from any file."},
+    {"id": "MED_OVER_MEAN", "what": "median/mean consumption 0.80", "stranger_can_fetch": "typed constant", "note": "A typed assumption in track1_embodied_hours.py line 68 ('CE spread'). Not derived from a file."},
+    {"id": "SEC2_SEC4", "what": "Track 2 housing build-hours (~3,500 on-site, x2 for materials) and Track 4 carbon basis (nature vs DAC)", "stranger_can_fetch": "typed constant", "note": "Level-1 order-of-magnitude and a basis choice; Track 4 alone swings ~14x (1-32 h)."},
+    {"id": "BEA_SECONDARY", "what": "BEA secondary-product reassignment convention inside the input-output tables", "stranger_can_fetch": "no", "note": "Foundations 3.4a: unaudited upstream convention; effect on 1,380 not measured."}
+  ]
+}

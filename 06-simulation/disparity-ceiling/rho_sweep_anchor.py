@@ -35,15 +35,27 @@ Run:  python rho_sweep_anchor.py
 """
 from __future__ import annotations
 
+import os
+import sys
+
 import numpy as np
 
 import disparity_ceiling_sim as dcs
+
+# The anchor is READ from the published file, never typed (sr-20261106). load()
+# raises AnchorDigestError if the file's sha256 is not the pin in anchor.py.
+_AF = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "anchor-file")
+sys.path.insert(0, os.path.normpath(_AF))
+import anchor as _anchor                                    # noqa: E402
+import predictions as _predictions                          # noqa: E402
+
+ANCHOR = _anchor.load()                # dict: value, interval, method, version, sha256
 
 SEED = 7
 N = 200_000
 CAP = 0.85
 WANTS_SIGMA = 0.45
-KAPPA = 1380.0 / 365.0                 # 3.7808 debit-h/day per lifestyle unit
+KAPPA = _anchor.kappa(ANCHOR)          # value/365 = 3.7808 debit-h/day per lifestyle unit
 FLOORS = (2.0, 10.0, 14.0)
 SHOCKS = [0.00] + [round(-0.05 * k, 2) for k in range(1, 11)]   # 0%, -5% ... -50%
 RHOS = np.round(np.arange(0.01, 4.00 + 1e-9, 0.01), 2)  # grid to 0.01, per request
@@ -111,7 +123,9 @@ def report(results):
     W = 86
     print("=" * W)
     print("rho-SWEEP, ANCHOR-TIED -- sr-20261104 re-run")
-    print(f"  kappa = 1380/365 = {KAPPA:.4f} debit-h/day per median-lifestyle unit")
+    print(f"  kappa = {ANCHOR['value']:g}/365 = {KAPPA:.4f} debit-h/day per median-lifestyle unit")
+    print(f"  anchor file v{ANCHOR['version']} sha256 {ANCHOR['sha256']} "
+          f"interval {ANCHOR['interval']['low']:g}-{ANCHOR['interval']['high']:g}")
     print(f"  CAP = {CAP}, wants sigma = {WANTS_SIGMA}, N = {N}, seed = {SEED}")
     print(f"  rho grid: {RHOS[0]:.2f} to {RHOS[-1]:.2f}, step 0.01.  P = 0.")
     print("=" * W)
@@ -164,12 +178,27 @@ def self_tests(results):
     assert b2 > b10 > b14, f"floor ordering broken: {b2}, {b10}, {b14}"
     ok += 1
     print(f"[ok] 4. baseline rho* falls as F rises: {b2:.2f} > {b10:.2f} > {b14:.2f}")
-    # 5. The -30% cell at F=10 sits below the broad-basket lower edge (0.226),
-    #    the agent's headline arithmetic, now measured rather than rescaled.
-    r30 = results[(10.0, -0.30)][0]
-    assert r30 < 826.0 / 3650.0, f"-30% cell {r30} not below broad lower edge"
+    # 5. PREDICTIONS FILE (sr-20261106). The old test 5 (F=10 at -30% below the
+    #    broad-basket edge 0.226) lives in anchor-file/predictions.json as P0, with
+    #    seven more. The file is sha256-registered on first run and never edited;
+    #    every outcome is appended to predictions_log.jsonl before this asserts.
+    cache = {}
+
+    def measure(F, shock, anchor_value):
+        key = (F, anchor_value)
+        if key not in cache:
+            c_, w_ = build_population(float(F))
+            k_ = _anchor.kappa(_anchor.load(value=anchor_value))
+            cache[key] = (demand_curve(c_, w_, kappa=k_), w_.sum())
+        dem_, unc_ = cache[key]
+        return clearing(dem_, CAP * unc_ * (1.0 + shock))[0]
+
+    evals = _predictions.evaluate(measure)
+    failed = [p["id"] for p, obs, passed in evals if not passed]
+    assert not failed, f"predictions failed (logged, not edited): {failed}"
     ok += 1
-    print(f"[ok] 5. F=10 at -30%: rho* = {r30:.2f}, below the broad-basket edge 0.226")
+    print(f"[ok] 5. predictions file: {len(evals)}/{len(evals)} held and logged "
+          f"(anchor sha256 {ANCHOR['sha256'][:12]}..)")
     # 6. SCALE THE ANCHOR (sr-20261105). Demand reads rho / kappa only and R_max
     #    never reads kappa, so rho* must scale with kappa. Run the F = 10 baseline
     #    and the -30% cell at kappa x 0.5 and x 2; the assertion compares against

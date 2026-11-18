@@ -4,6 +4,7 @@
 > **Date:** 2026-09-16
 
 > **⚠️ Terminology note, 2026-10-16.** Since Foundations v0.60 the hours pledged to a person are called **backing**, not *room* or *debit-room*, and a pledge is *drawn from* credit, not "backed by" it. This paper keeps its original words as a dated record. See [`../GLOSSARY.md#vocabulary`](../GLOSSARY.md#vocabulary). <!-- struck-ok: a dated record of the pre-2026-10-16 wording; see GLOSSARY.md#vocabulary -->
+> **⚠️ Dated note, 2026-11-18.** Since Foundations v0.72 one kind of making-pollution does transfer: pollution that a thing's own material gives off in becoming that thing rides the thing (Foundations §3.2b, line 4; Objections B24). Pollution from what a maker uses up, such as fuel, still stays with the maker. So §4.2 below is too wide where it says recycled material never carried mining pollution: the mine's waste rock goes with the gold. This paper keeps its original words as a dated record.
 > **Status:** Resolved 2026-08-04. Closes **OP-23** (shared-overhead attribution). **Re-attacked from outside 2026-08-24 and held — see §8.**
 > **Feeds:** Foundations v0.4 → v0.5, Objections v0.5 → v0.6. **§8 feeds Foundations v0.21 (A4 + A5 repaired) and Objections v0.20 (B8).**
 > **Method:** design interview → stress-test (capital front-loading) → stress-test (the full capital-debit waterfall) → adopted with changes.
@@ -89,6 +90,7 @@ There is no right to force an unwanted asset (and its debit) onto anyone — cus
 > **Axiom phrasing fix (carried into §3.2 / OP-17):** "custody follows possession, no right to refuse a transfer" must read as *no right to accept an object but refuse its debit* — **not** "no right to decline receiving an object." The latter reading would enable garbage-dumping, the exact abuse the rule exists to prevent.
 
 ### 4.2 Trace-forward, corrected
+<!-- struck-ok: a dated record of the rule before Foundations v0.72; see the note at the top of this paper -->
 The **material** of a recycled object carries its accumulated *property*-debit forward (the atoms physically carried forward — Foundations §3.4a). It does **not** carry prior producers' *process-pollution*, because — per §3.2 above — that pollution never transferred; it stayed permanently on each producer. What a discarded product *does* generate is a **new** pollution-debt: a non-functional product sitting in the environment **is** a pollutant for as long as it persists, borne by its final holder. Recycling or remediating it discharges that end-of-life debt and lowers every future unit's burden. This resolves the perverse-incentive worry: recycled material is cleanly lower-burden than virgin because it never carried mining pollution and it avoids commissioning new extraction.
 
 ### 4.3 The pollution baseline — natural-remediation equilibrium

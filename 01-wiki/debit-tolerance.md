@@ -75,6 +75,8 @@ edges:
 | **A — stays alive, and works 1,000 h a year** | 40 × (3,650 + 1,000) = **186,000 h** | 40 × 1,380 = **55,200 h** | **0.30** | **168,000 h** |
 | **B — stays alive, works nothing, consumes the same** | 40 × 3,650 = **146,000 h** | **55,200 h** | **0.38** | **120,000 h** |
 
+**The debit column is the upper case.** It counts 1,380 hours for every one of the 40 years. What a person was given as a child stays with whoever gave it, so a real ledger reads lower (Foundations §4.4, *What a rebuilt childhood holds*).
+
 **In plain words: neither person's numbers ever went down, and both sit far inside the gate.** A's extra work did not cancel A's consumption. It widened the gap between two figures that both only grow.
 
 ## The floor has a bound at each end, and the band has been measured

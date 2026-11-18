@@ -1,6 +1,6 @@
 ---
 title: Service
-summary: A service is work done for a person, an organisation or oneself, often with nothing to hand over; it credits one hour for one hour like any other work, the check is the client's confirmation, and keeping yourself alive is a service a network may recognise.
+summary: A service is work done for a person, an organisation or oneself, often with nothing to hand over; it credits one hour for one hour like any other work, the check is the confirmation of a receiver who asked for it, that receiver carries the hours unless the service is essential, and keeping yourself alive is a service a network may recognise.
 type: mechanism
 ids: [§2.3]
 status: settled
@@ -42,7 +42,7 @@ edges:
 
 **"For oneself" is in the definition on purpose.** Sleeping, eating, washing and other bodily upkeep are services a person does for themselves. A network may recognise them as work. Where it does, those hours credit like any other recognised hours, at the network's published duration for each activity. That is where the floor comes from ([debit-tolerance](debit-tolerance.md)), and it is the ordinary rule rather than a special one.
 
-**A network credits no kind of work for which it has published no evidence rule** (Foundations §4.2). For a service the usual evidence is that the client confirms it happened. For self-care it is proof of life.
+**A network credits no kind of work for which it has published no evidence rule** (Foundations §4.2). For a service that is not essential, the evidence is that a receiver who asked for it confirms it happened. One confirming receiver is enough. For self-care it is proof of life. For essential care it is the network's published rule for that kind of care, and the receiver does not have to confirm it.
 
 ### An example, with the numbers
 
@@ -53,9 +53,37 @@ A network publishes its rule for translation work: **the translated text exists,
 | **A** delivers a translation and the client confirms | 20 h | Rule met | **20 h** |
 | **B** says they translated for 20 hours, with no text and no client | 20 h | Rule not met | **0 h** |
 
-**B is not being punished.** B knew the rule before starting, because the network published it. If the network wants to credit translation for clients who cannot confirm, it writes a rule for that case, and then B's 20 hours credit at 20 hours.
+**B is not being punished.** B knew the rule before starting, because the network published it. A network may accept a different record of the client's agreement, such as an order signed before the work began. It writes a rule for that case, and then a translator who holds such an order and the finished text is credited 20 hours. No rule can credit a service that nobody asked for.
 
 **Now the self-care case, at `F` = 10.** A network counts 8 hours of sleep, 1 of eating, 0.5 of washing and 0.5 of other upkeep. A person who sleeps 8, eats 1, washes 1 and works 8 hours as a nurse records **10 + 8 = 18 hours** that day. A person who claims all 24 hours as self-care is capped at **24** by IC-7 and credited only for the activities the network published a rule for, so **10**.
+
+## Who carries the hours of a service
+
+**Terms used here.** A **service** is work done on something the receiver holds: a thing of theirs, or their own body. An **essential service** is one on the network's published list of work that continues a person's life. A receiver **asked for** a service when they consented to it.
+
+> **A person carries a service's hours only when the service is not essential and they asked for it** (Foundations §4.5).
+
+| | The receiver asked for it | The receiver did not |
+|---|---|---|
+| **An essential service** | 0 h on the receiver | 0 h on the receiver |
+| **Any other service** | **The worker's hours are debit on the receiver** | 0 h on the receiver |
+
+| The service | The worker is credited | Added to the receiver's debit |
+|---|--:|--:|
+| A barber cuts the hair of a customer who asked, 0.5 h | 0.5 h | **0.5 h** |
+| A plumber repairs pipes that the holder asked them to fix, 2 h | 2 h | **2 h**, shared with later holders by holding time |
+| A surgeon operates on an unconscious accident victim, 3 h | 3 h | **0 h** |
+| A doctor treats a patient who asked, 1 h, in a network whose list counts that care as essential | 1 h | **0 h** |
+| The same hour, in a network whose list does not | 1 h | **1 h** |
+| A stranger paints a fence unasked, 6 h | 0 h | **0 h** |
+
+*(Illustrative digits.)*
+
+**The receiver carries the hours of the service and the materials it used up.** They do not carry the worker's training, or the tools and buildings that were still there afterwards.
+
+**One service, many receivers.** The receivers share what the event itself used up, in equal parts, one for each ticket. A concert that used up 120 hours puts 120 ÷ 1,000 = **0.12 hours** on each of 1,000 tickets. Buying a ticket adds 0 hours. The debit lands when the work is done. A person who hears the concert with no ticket carries nothing.
+
+**A network's own work is a service to its subscribers.** A network with 1,000,000 subscribers whose workers put in 1,000,000 hours in a year puts **1 hour** on each subscriber (Foundations §4.7).
 
 ## Two things a service hour does not do
 
@@ -77,7 +105,7 @@ A network publishes its rule for translation work: **the translated text exists,
 ## Consequences
 
 - [debit-tolerance](debit-tolerance.md) — the floor is self-care credited as a service done for oneself
-- [no-taxation](no-taxation.md) — civil servants are credited directly for service hours
+- [no-taxation](no-taxation.md) — a civil servant is credited, and the people who consented to the service carry its hours in equal parts
 - [regulator-inversion](regulator-inversion.md) — a regulator's advice is a service businesses want
 
 ---

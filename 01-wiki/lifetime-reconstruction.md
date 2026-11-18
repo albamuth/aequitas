@@ -71,7 +71,9 @@ edges:
 | Estimated lifetime consumption, 40 × 1,380 | **55,200** |
 | May still carry at joining, 1.2 × 146,000 − 55,200 | **120,000** |
 
-**In plain words: at `F` = 10 and ρ = 1.2 joining gives a median person 120,000 hours of room. Whether it does so depends on `F` and ρ.** The break-even is `ρ·F` = 1,380 ÷ 365 = 3.78 hours a day. At the US method the highest ρ at which the gate still rations is 1.017 / 0.330 / 0.253 at `F` = 2 / 10 / 14, below break-even at every floor. There the median joiner at forty arrives over the gate by 25,504 / 7,020 / 3,487 hours. Other production methods are not measured (Foundations §4.4). The people for whom a full reconstruction is costly are those whose lifetime consumption genuinely exceeded their lifetime contribution. Earlier real contributions enter the record at the dates they occurred, not the joining date.
+**The 55,200 hours are the upper case.** They count every year of childhood on the joiner, at the adult rate. What a person was given as a child stays with whoever gave it, and care adds no debit to the child. With nothing before age 18 counted on the joiner, the figure is 22 × 1,380 = **30,360 hours**. A real joiner sits between the two (Foundations §4.4, *What a rebuilt childhood holds*).
+
+**In plain words: at `F` = 10 and ρ = 1.2 joining gives a median person 120,000 hours of room. Whether it does so depends on `F` and ρ.** The break-even is `ρ·F` = 1,380 ÷ 365 = 3.78 hours a day. At the US method the highest ρ at which the gate still rations is 1.017 / 0.330 / 0.253 at `F` = 2 / 10 / 14, below break-even at every floor. There the median joiner at forty, in the upper case, arrives over the gate by 25,504 / 7,020 / 3,487 hours. Other production methods are not measured (Foundations §4.4). The people for whom a full reconstruction is costly are those whose lifetime consumption genuinely exceeded their lifetime contribution. Earlier real contributions enter the record at the dates they occurred, not the joining date.
 
 ## Two rules this looks like it breaks, and does not
 

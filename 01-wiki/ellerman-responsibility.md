@@ -1,6 +1,6 @@
 ---
 title: Ellerman's responsibility imputation
-summary: A1's attribution rests on David Ellerman's labour theory of property, impute responsibility to whoever was in fact responsible, a juridical principle courts already use; it is chosen over any labour theory of value because it says only who did what, which is why credit cannot move, why machines and their owners get nothing, and why a cost never lands on a buyer who did not act.
+summary: A1's attribution rests on David Ellerman's labour theory of property, impute responsibility to whoever was in fact responsible, a juridical principle courts already use; it is chosen over any labour theory of value because it says only who did what, which is why credit cannot move, why machines and their owners get nothing, and why the pollution of what a maker used up never lands on a buyer.
 type: lineage
 ids: [B6, P7]
 status: settled
@@ -47,16 +47,19 @@ edges:
 
 ## An example, with the numbers
 
-**A gold mine produces 1 kg of gold and 10 tonnes of tailings. A jeweller makes a ring from 5 g of it, and a buyer wears it.** Remediating a tonne of tailings is read at 8 hours (illustrative).
+**A gold mine works ore that holds 1 gram of gold in every tonne.** To get 10 g of gold it digs 10 tonnes of ore, and it leaves about 10 tonnes of waste rock. It uses up fuel, explosives and chemicals to do it, and cleaning up their pollution is read at 80 hours. **A jeweller makes a ring from the 10 g, and a buyer wears it.** *(Illustrative digits.)*
 
 | | Who acted | What the ledger records |
 |---|---|---|
-| The 10 t of tailings, 80 h | The miners | **80 h of pollution debit on the miners, permanently**, divided by hours worked |
-| The 5 g of gold in the ring | — | Property debit that **moves with the ring** to the jeweller, then the buyer |
-| The buyer's share of the tailings | They did not mine | **0 h.** Charging them would misattribute responsibility |
+| The pollution of the fuel, explosives and chemicals, 80 h | The miners used them up | **80 h of pollution debit on the miners, permanently**, divided by hours worked |
+| The 10 g of gold in the ring | — | Property debit that **moves with the ring** to the jeweller, then the buyer |
+| The 10 t of waste rock | — | **Part of the gold's record.** It is the ore's own material, less the gold, so it moves with the ring to whoever holds it |
+| The buyer's share of the fuel and chemicals | They did not use them up | **0 h.** Charging them would misattribute responsibility |
 | The mine's owner, who did not work there | They did not act | **0 h of credit.** Credit records who was responsible |
 
-**In plain words: the tailings stay on the people whose hands were on the process, the gold travels with the ring, and the owner of the drill is credited nothing for owning it** ([pollution-making-vs-using](pollution-making-vs-using.md)). **Cost never flows to whoever did not cause it**, neither downstream to a buyer nor upstream to the first human who ever built anything ([front-loading-rule](front-loading-rule.md)).
+**In plain words: the pollution of what the mine used up stays on the people whose hands were on the process. The gold and its waste rock travel with the ring. The owner of the drill is credited nothing for owning it** ([pollution-making-vs-using](pollution-making-vs-using.md)).
+
+**The buyer did not cause the mining, and the waste rock is not theirs on that ground.** It is theirs because it is part of what the gold is made from, and the buyer accepted the gold (Foundations §3.2b, line 4). **The cost of what a person used up never flows to somebody who did not use it up**, neither onward to a buyer nor back to the first human who ever built anything ([front-loading-rule](front-loading-rule.md)).
 
 ## Also banked from the same adoption
 

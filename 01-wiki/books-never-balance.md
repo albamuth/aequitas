@@ -55,6 +55,8 @@ edges:
 | **A** stays alive and works 1,000 h a year | 40 × 4,650 = **186,000 h** | 40 × 1,380 = **55,200 h** | **0.30** |
 | **B** stays alive, works nothing, consumes the same | 40 × 3,650 = **146,000 h** | **55,200 h** | **0.38** |
 
+**The debit column is the upper case.** It counts 1,380 hours for every one of the 40 years. What a person was given as a child stays with whoever gave it, so a real ledger reads lower (Foundations §4.4, *What a rebuilt childhood holds*).
+
 **In plain words: nothing was subtracted and nothing was spent.** A's extra 40,000 hours did not cancel A's consumption; it widened the gap between two figures that only ever grow. The two are compared as a ratio, never netted to a balance that could reach zero.
 
 ## The binding scarcity is material, and the honest form of that claim is narrow

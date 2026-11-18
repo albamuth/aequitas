@@ -28,7 +28,7 @@
 - [debit-taxonomy](debit-taxonomy.md) — **the master map of §3.2 + a schematic**
 - [debit-vector](debit-vector.md) — a debit is a bundle of quantities; divide per dimension, collapse on demand
 - [property-debit](property-debit.md) · [consumption-debit](consumption-debit.md) · [self-work-identity](self-work-identity.md)
-- [pollution-making-vs-using](pollution-making-vs-using.md) — the maker keeps the mine's pollution; the burner owns the tailpipe; latent pollution rides the parcel
+- [pollution-making-vs-using](pollution-making-vs-using.md) — the maker keeps the pollution of what it uses up; the burner owns the tailpipe; pollution that belongs to a thing rides the thing
 - [organisation-debit](organisation-debit.md) — an organisation's debit is its members' debit, by hours worked; shells escape nothing
 - [end-of-life-debit](end-of-life-debit.md) — whoever holds a thing when it runs out of takers has eaten it
 - [land-and-remediation](land-and-remediation.md) — land is not owned; a building carries a remediation debt

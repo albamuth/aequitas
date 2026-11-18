@@ -1,6 +1,6 @@
 ---
 title: Enrichment
-summary: Enrichment is work in which knowledge, skill or culture reaches somebody; it is one of three names that decide whether an hour is creditable, it credits one hour for one hour, and it is verified by evidence the work happened, never by how many people liked it, because feedback is not credit.
+summary: Enrichment is work in which knowledge, skill or culture reaches somebody; it is one of three names that decide whether an hour is creditable, it credits one hour for one hour, and it is verified by a receiver's confirmation or by other evidence that the work happened, never by how many people liked it, because feedback is not credit.
 type: mechanism
 ids: [§2.3, OP-8]
 status: settled
@@ -43,9 +43,17 @@ edges:
 
 **The name decides whether an hour counts. It never decides how much.** An hour of teaching and an hour of bricklaying both credit one hour (A2). An apprentice plumber's hour is production, a service and enrichment at once, and it credits as **1 hour**, not 3.
 
-**How it is checked.** A network publishes what evidence each kind of work needs (Foundations §4.2). For enrichment the evidence is **that the work happened**: the lesson was given, the paper exists, the mural is on the wall.
+**How it is checked.** A network publishes what evidence each kind of work needs (Foundations §4.2).
 
-> **Verification asks whether the work happened. It never asks whether anyone valued it.** Letting credit depend on likes, citations or applause is forbidden, because it would make feedback a currency by the back door (Foundations §4.2, §4.6).
+| The enrichment | The evidence |
+|---|---|
+| **Given to other people**: a lesson, a lecture, a concert | **A receiver who asked for it confirms it**, as for a [service](service-credit.md). One confirming receiver is enough |
+| **Other enrichment**: a paper, private study | Evidence that the work happened, under the network's published rule |
+| **Essential care**: work that continues another person's life, such as feeding and washing an infant | The network's published rule for that kind of care. The receiver does not have to confirm it. Where the receiver cannot confirm, a second witness does |
+
+**Worked.** A 1-hour lecture to 500 people who asked for it credits the lecturer **1 hour**. Each of the 500 carries 1 ÷ 500 = **0.002 hours**. A violinist who plays alone has given no concert. A band that plays in a park, with no gate and no tickets, has no receiver either. Those hours are recorded, and they do not count as credit (Foundations §4.5, §4.6).
+
+> **Verification asks whether the work happened, and whether a receiver accepted it. It never asks how much anyone valued it.** Letting credit depend on likes, citations or applause is forbidden, because it would make feedback a currency by the back door (Foundations §4.2, §4.6).
 
 ## Feedback is not credit, and there is nothing to firewall
 
@@ -90,4 +98,4 @@ edges:
 
 ---
 *Status: settled (the rule) · OP-6 open (feedback mechanics)*
-*Source: `00-strategy/Aequitas_Foundations.md` §2.3 (what counts as work; why enrichment is named separately), §4.2 (verification never asks whether anyone valued it), §4.5 (what enrichment covers; work nobody can observe), §4.6 (feedback is not credit)*
+*Source: `00-strategy/Aequitas_Foundations.md` §2.3 (what counts as work; why enrichment is named separately), §4.2 (verification never asks how much anyone valued it; the evidence by kind of output), §4.5 (what enrichment covers; work nobody can observe), §4.6 (feedback is not credit)*

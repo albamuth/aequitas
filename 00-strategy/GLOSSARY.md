@@ -1,6 +1,6 @@
 # Aequitas — Acronym Registry & Glossary
 
-> **Version:** 0.5 · **Date:** 2026-10-16 · **Status:** canonical index
+> **Version:** 0.6 · **Date:** 2026-11-18 · **Status:** canonical index
 > **Why this exists:** the [external critique](#src-external-critique-2026-08-09) flagged abbreviation density (OP-#, C#, IC-#, A#, P#, §x.x) with no master index as the #1 accessibility barrier. This is that index, and the resolution target for the acronym-titling pass in `NEXT.md`.
 > **v0.3 (2026-08-23):** added the [Simulation, cohort, and data terms](#simulation-terms) table — the vocabulary the economy simulator introduced — and **four missing rows to the source index**, which had drifted behind `02-research/`: cross-country labour efficiency, the GDPR erasure note, and two new files on consumer segmentation and on labour/pollution intensity.
 > **v0.2 (2026-08-13):** added the [Research & academic terms](#research-terms) table — the outside vocabulary (economic theory, alternative-currency history, accounting method) used across `02-research/`, each with a plain definition, the research doc that best explains it, and an external authoritative (non-paywalled) source. Every definition below was checked against its linked source on 2026-08-13.
@@ -48,7 +48,7 @@ The fixed core. Do not re-litigate (see `CLAUDE.md`).
 
 | Acronym | Title (1–3 words) | Statement | Source |
 |---|---|---|---|
-| <a id="a1"></a>**A1** | materialism of cost | Cost **is** material/energy flow. | Foundations §1 |
+| <a id="a1"></a>**A1** | materialism of cost | Cost **is** material/energy flow. A credit is a record of time a person spent working, and **work is something a human being does for human beings**: a product to be consumed, a service to be received, or enrichment that benefits one person or many. | Foundations §1 |
 | <a id="a2"></a>**A2** | time as measure | Time is a yardstick, not the substance; labour never rate-scaled *(amended v0.3)*. | Foundations §1 |
 | <a id="a3"></a>**A3** | non-fungibility | Credit is non-transferable; no medium of exchange. | Foundations §1 |
 | <a id="a4"></a>**A4** | no externalities | Two things, stated separately. **Coverage:** every consequence stays inside the accounting; nothing escapes. **Attribution:** it is assigned to whoever caused it and to nobody else — **never necessarily the product's ledger** — and where causation is unresolved it is held **explicitly unassigned** until an attribution witness exists. *(Eroded by OP-24 — see note.)* | Foundations §1 |
@@ -166,6 +166,16 @@ Early problem list; several merged into the OP series.
 | <a id="balances"></a>**balances** (verb) | Credit stands against debit, up to ρ times: *the floor balances 4,380 h of debit a year*. Foundations §3.0 | *a balance* (noun) — a stored number that could be drawn down does not exist (A6, §3.5) |
 | <a id="may-carry"></a>**may still carry** | The gate's slack, `ρ·(C + P) − D`. Foundations §3.0 | *room left*, *headroom* | <!-- struck-ok: the glossary names the struck words in order to say they are struck -->
 | <a id="drawn-from"></a>**drawn from** | What a pledge is paid for with: the pledger's earned credit, one hour for one hour. Foundations §4.6 | *backed by credit* — "backing" is reserved for the person a pledge names | <!-- struck-ok: the glossary names the struck words in order to say they are struck -->
+
+### Five terms from the consent and pollution rules (Foundations 0.72)
+
+| Word | What it means | Do not say |
+|---|---|---|
+| <a id="consent"></a>**consent** | A person's own act, or their recorded acceptance. A debit lands on a person only by one of the two. A hand-off the receiver agreed to, a service the receiver asked for, and a membership that lets somebody buy for them are each a record of consent. What counts as consent is each network's published rule. Foundations §1 (head), §2.4a | that a person *owes* a debit |
+| <a id="essential-care"></a>**essential care** | Work that a network counts as continuing another person's life, such as feeding an infant or treating an injury. It is credited to the carer and adds no debit to the person cared for. A network publishes its list, with an evidence rule for each entry. Foundations §4.2, §4.5 | — |
+| <a id="ticket"></a>**ticket** | A record that one person agreed, before an event, to take a share of what it will use up. The receivers of one service share its cost in equal parts, one for each ticket. Worked: 120 hours over 1,000 tickets is 0.12 hours each. A subscription to a network is a ticket in this sense. Foundations §4.5, §4.7 | — |
+| <a id="receiver"></a>**receiver** | A person who asked for a piece of work and confirms it. A service that is not essential counts as credit only when a receiver confirms it. Work that a pledge named, and that nobody asked to receive, earns backing and does not count as credit. Foundations §4.2, §4.6 | — |
+| <a id="own-pollution"></a>**a thing's own pollution** | Pollution that a thing's own material gives off in becoming that thing, where the make-up of the material fixes the amount. It rides the thing to whoever holds it. Worked: 100 kg of limestone gives off 44 kg of CO₂ as it becomes cement. Pollution from what a maker uses up, such as fuel, stays with the maker. Foundations §3.2b | — |
 
 ## <a id="research-terms"></a>Research & academic terms — the outside vocabulary
 

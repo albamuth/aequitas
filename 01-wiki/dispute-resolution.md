@@ -85,7 +85,7 @@ Sorting them apart dissolves three of the four classes.
 **Four rules govern what happens** (Foundations §4.7):
 
 1. **The network supersedes the false credit records with its own research.** How it ranks evidence is its own published choice (§4.2). The finding is itself a dated record and can be challenged through the network's correction procedure (§4.4).
-2. **Finding the fraud is the network's ordinary work.** The people who do it are credited for their hours whatever the finding, and its cost stays with the network like any of its operating costs (§3.2c).
+2. **Finding the fraud is the network's ordinary work.** The people who do it are credited for their hours whatever the finding. The network's subscribers carry those hours in equal parts, as they carry the rest of the network's work (§4.7).
 3. **Correcting what the fraud caused is debit on the person who committed it** (A4). Where a legal system that keeps its books in Aequitas spends time and materials on the case, those may land on them too.
 4. **A thing handed on during its working life keeps the seller's holding-time share of its creation cost** (§3.2, §4.5). Only the material leaves with it.
 

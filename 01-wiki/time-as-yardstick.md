@@ -31,7 +31,7 @@ But there is **no wage rate**. No one's hour is worth 3× another's hour. Differ
 | Difference | How it resolves |
 |---|---|
 | **Hard labor** | Extra caloric intake → recorded as real food-production cost |
-| **Skilled labor** | **Training is credited work in its own right, discharged at the time of training.** Nothing flows downstream — a doctor's care bills the recipient for the doctor's time, clinic materials and medicines, *not* the education. See [education-as-credited-work](education-as-credited-work.md). |
+| **Skilled labor** | **Training is credited work in its own right, discharged at the time of training.** Nothing flows downstream — a person who asks for care that their network does not count as essential carries the doctor's time and the materials the treatment used up, *not* the education. See [education-as-credited-work](education-as-credited-work.md). |
 | **Hazardous labor** | Health harms, once discovered, are retroactively injected as debit into the products that caused them ([retroactive-reweighting](retroactive-reweighting.md)) |
 
 > **⚠ Amended in Foundations v0.3.** The skilled-labour row previously read *"training is a real cost that flows downstream into the debit of whoever receives the service."* That rule answered a *pricing* question and left the *incentive* question open — it made the service expensive without ever rewarding the trainee, which is exactly the failure 45 years of time-banking evidence attributes to flat-hour crediting. Front-loading dissolved OP-11 rather than solving it.

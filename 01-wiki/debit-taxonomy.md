@@ -54,7 +54,9 @@ A debit is **not one number.** It is a bundle of physical quantities — kilogra
 | **On transfer** | See the split below | Never moves. Provenance travels; the debit doesn't |
 | **Weight** | Fixed by what was made | **Floats** with ambient stock (§3.3) — more pollution out there ⇒ every past unit re-weights up |
 
-### The third case the table above does not show: a thing that has not been used yet
+### The third case the table above does not show: pollution that belongs to a thing
+
+**Two kinds of pollution are property debit and ride the object:** what a thing will give off when it is used, and what its own material gave off in becoming it (§3.2b, lines 3 and 4). The first is worked here, and the second under the components table below.
 
 **A can of petrol has polluted nothing.** Nobody has caused an emission, so there is no consumption debit to attach to anybody. **But burning it will emit, and the accounting has to hold that somewhere.**
 
@@ -81,9 +83,13 @@ They are not the same quantity and they do not move together:
 |---|---|---|
 | **Embodied material** | The atoms you hold | 🟢 **Dischargeable.** Rides the object to the new holder; you are clear of it entirely. *(Effect: used goods enter cheap — the new holder has put in no time yet.)* |
 | **Creation-cost / labour** | The hours that *made* the thing | 🔴 **Permanent per holder.** Holding-time split: your share = your holding-duration ÷ the asset's whole life. Dilutes as later holders accrue time, but **never zeroes**. Clock starts at **deployment**, not purchase; transit carriers accrue **none**. (§4.5) |
-| **Latent pollution** | What the thing **will** emit when it is used | 🟡 **Rides the object, then locks.** Nobody has caused an emission yet, so it moves with the thing at every hand-off. **On use it converts into ordinary consumption debit, permanently, on whoever used it.** Recorded in litres or kilograms, never in hours. (§3.2b) |
+| **Pollution that belongs to the thing** | Two records. What the thing **will** give off when it is used. And what its own material **gave off** in becoming it | 🟡 **Rides the object.** It moves with the thing at every hand-off, in full, as the material does. **What the thing will give off converts on use into ordinary consumption debit, permanently, on whoever used it.** Recorded in litres or kilograms, never in hours. (§3.2b, lines 3 and 4) |
+
+**Worked, for the second record.** Firing 100 kg of limestone gives 56 kg of lime and 44 kg of CO₂. The 44 kg came out of the limestone itself, so they are part of the cement's debit and go to whoever holds what is built with it. The kiln's fuel gave off 30 kg more, and those stay with the kiln's people, because the kiln used the fuel up. *(The fuel figure is illustrative.)* [pollution-making-vs-using](pollution-making-vs-using.md) has the test that separates the two.
 
 **Worked case.** Hold a 500,000-hour house for 10 years, then pass it on. Once the next holder has held it an equal span, ≈250,000 hours of *making* is still on your books — the holding-time share, permanent. The *material* left with the house; the *making* did not. You cannot escape it through a non-participant either: with no record of a hand-off, the ledger still shows you holding it, so you keep the whole weight.
+
+**Work adds to a holder's debit only if the holder accepted it** (§3.2). A stranger who paints a fence unasked for 6 hours adds **0 hours** to the holder's debit, and the 6 hours credit 0 hours.
 
 ---
 
@@ -92,7 +98,7 @@ They are not the same quantity and they do not move together:
 **Self-work identity** → [self-work-identity](self-work-identity.md). While you hold a thing, working on it earns credit exactly equal to the property-debit it adds → **net zero** (bar materials used up). This is *why* property is a burden, not an engine: no rent, no appreciation, nothing earned by mere holding. Repair your own roof and you are credited the hours *and* the house's debit rises by the same hours — net effect on you, zero.
 
 **Non-cascade** (§3.2b = §4.5, one rule read in two directions). **Cost attaches only to the causer and never cascades:**
-- **not downstream** to a buyer — the miner keeps the tailings, not the person wearing the ring ([Ellerman responsibility-imputation](no-externalities.md));
+- **not onward** to a buyer — the mine keeps the pollution of the fuel and chemicals it used up, and the person wearing the ring carries none of it ([Ellerman responsibility-imputation](no-externalities.md)). Pollution that belongs to the thing is not such a flow: the gold's waste rock is part of the gold's record, and a buyer accepts it with the ring;
 - **not upstream** to the first human who ever built anything — an asset carries only the creation-cost knowable *within* Aequitas, and everything before genesis is out of scope (computational closure).
 
 Either cascade breaks the books. This is the same constraint as the [Front-Loading Rule](front-loading-rule.md) below, seen from the ledger side.
@@ -112,7 +118,7 @@ Either cascade breaks the books. This is the same constraint as the [Front-Loadi
 
 | Case | Front-loaded cost | What the eventual recipient pays |
 |---|---|---|
-| **Education** ([education-as-credited-work](education-as-credited-work.md)) | Teachers' time, facilities, materials | The professional's time, clinic materials, medicines — **not the education** |
+| **Education** ([education-as-credited-work](education-as-credited-work.md)) | Teachers' time, facilities, materials | Where the receiver asked for the service and it is not essential care: the professional's time and the materials the service used up — **not the education** |
 | **Media / creative** | Years of crew time, sets, post-production | **Delivery only** — venue, projectionist, bandwidth, power |
 | **Research · infrastructure · tooling** | The build | Use, wear, and energy |
 | **Capital & overhead** ([property-debit](property-debit.md)) | The plant, the barn, the machinery | Only what a unit *consumes* now — never a slice of the building |

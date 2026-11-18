@@ -34,7 +34,14 @@ sys.path.insert(0, HERE)
 import stable_band as sb                                    # noqa: E402
 import stable_band_cumulative as sc                         # noqa: E402
 
-KAPPA_ANCHOR = sb.MEDIAN_LIFESTYLE_H_YR / 365.0             # 3.7808
+sys.path.insert(0, os.path.normpath(os.path.join(HERE, "..", "anchor-file")))
+import anchor as _anchor                                    # noqa: E402
+
+# Read from the published anchor file (sr-20261106), sha256-pinned in anchor.py.
+# It no longer reads sb.MEDIAN_LIFESTYLE_H_YR; test_typed_copies_agree_with_anchor
+# fails if the typed copies in stable_band.py / stable_band_cumulative.py drift.
+ANCHOR = _anchor.load()
+KAPPA_ANCHOR = _anchor.kappa(ANCHOR)                        # 3.7808
 FLOORS = sc.FLOORS_ASKED
 
 
@@ -45,9 +52,10 @@ def setup(n=sb.N, seed=sb.RNG_SEED):
     return w, x, kappa_old, R
 
 
-def both_edges(w, x, R, F, kappa, seeds=sc.AGE_SEEDS):
+def both_edges(w, x, R, F, kappa, seeds=sc.AGE_SEEDS, past_rate=None):
+    pr = ANCHOR["value"] if past_rate is None else past_rate   # joiner's past = the anchor
     od, fo = sc.edge_one_day(w, x, F, kappa, R)
-    cum = [sc.edge_cumulative(w, x, sc.draw_ages(len(w), s), F, kappa, R)
+    cum = [sc.edge_cumulative(w, x, sc.draw_ages(len(w), s), F, kappa, R, past_rate=pr)
            for s in seeds]
     return od, fo, np.array([c[0] for c in cum]), sorted({c[1] for c in cum})
 
@@ -62,7 +70,8 @@ def _small(n=6000, seed=3):
 
 def test_kappa_is_the_anchor_not_the_median_credit():
     w, x, kappa_old, _ = _small()
-    assert abs(KAPPA_ANCHOR * 365.0 - 1380.0) < 1e-9
+    assert abs(KAPPA_ANCHOR * 365.0 - ANCHOR["value"]) < 1e-9
+    assert ANCHOR["interval"]["low"] <= ANCHOR["value"] <= ANCHOR["interval"]["high"]
     assert abs(kappa_old - 13.8) < 0.5, kappa_old          # old value is what we replace
     assert KAPPA_ANCHOR < kappa_old / 3.0
     print(f"[ok] kappa = {KAPPA_ANCHOR:.4f} (year = 1,380 h), old = {kappa_old:.3f}")
@@ -132,8 +141,37 @@ def test_scale_the_anchor():
           "(cumulative only when PAST_RATE is scaled with it)")
 
 
+def test_typed_copies_agree_with_anchor():
+    """Two typed 1380s remain upstream (stable_band.py line 96, and
+    stable_band_cumulative.PAST_RATE). This script no longer reads the first, but
+    the cumulative edge reads the second as the joiner's past debit. Fail if either
+    differs from the published anchor, so a changed anchor cannot half-propagate."""
+    assert sb.MEDIAN_LIFESTYLE_H_YR == ANCHOR["value"], (sb.MEDIAN_LIFESTYLE_H_YR, ANCHOR["value"])
+    assert sc.PAST_RATE == ANCHOR["value"], (sc.PAST_RATE, ANCHOR["value"])
+    print("[ok] typed copies in stable_band.py and stable_band_cumulative.py equal the anchor file")
+
+
+def test_digest_pin_fails_on_change():
+    """The pin must be able to fail: point load() at a one-byte-different copy."""
+    import tempfile
+    with open(_anchor.ANCHOR_PATH, "rb") as fh:
+        raw = fh.read()
+    with tempfile.TemporaryDirectory() as d:
+        p = os.path.join(d, "a.json")
+        with open(p, "wb") as fh:
+            fh.write(raw.replace(b"1380.0", b"1381.0", 1))
+        try:
+            _anchor.load(path=p)
+        except _anchor.AnchorDigestError:
+            print("[ok] a changed anchor file fails the sha256 pin")
+            return
+    raise AssertionError("digest pin did not fire on a modified anchor file")
+
+
 def run_tests():
-    for fn in (test_kappa_is_the_anchor_not_the_median_credit,
+    for fn in (test_typed_copies_agree_with_anchor,
+               test_digest_pin_fails_on_change,
+               test_kappa_is_the_anchor_not_the_median_credit,
                test_scale_the_anchor,
                test_capacity_is_the_old_capacity,
                test_one_day_edge_scales_with_kappa,

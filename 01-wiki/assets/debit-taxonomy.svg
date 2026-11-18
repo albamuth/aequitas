@@ -59,17 +59,17 @@
   <text x="366" y="567" font-size="12" fill="#3d4b58" text-anchor="middle">deployment; transit carriers</text>
   <text x="366" y="583" font-size="12" fill="#3d4b58" text-anchor="middle">accrue none. (§4.5)</text>
 
-  <!-- component 3: latent pollution (rides the object, locks on use) -->
+  <!-- component 3: pollution that belongs to the thing (rides the object; the part given off on use locks on the user) -->
   <rect x="492" y="392" width="196" height="206" rx="12" fill="#ffffff" stroke="#d18b2c" stroke-width="2"/>
-  <text x="590" y="420" font-size="16" font-weight="700" fill="#8a5a1f" text-anchor="middle">Latent pollution</text>
-  <text x="590" y="441" font-size="12.5" fill="#5b6b7a" text-anchor="middle">what it will emit when used</text>
+  <text x="590" y="420" font-size="14" font-weight="700" fill="#8a5a1f" text-anchor="middle">Pollution of the thing</text>
+  <text x="590" y="441" font-size="12.5" fill="#5b6b7a" text-anchor="middle">the thing's own pollution</text>
   <rect x="502" y="456" width="176" height="26" rx="6" fill="#fdf1dd"/>
   <text x="590" y="474" font-size="13" font-weight="700" fill="#b0561f" text-anchor="middle">RIDES THE OBJECT</text>
-  <text x="590" y="503" font-size="12" fill="#3d4b58" text-anchor="middle">Nobody has caused an</text>
-  <text x="590" y="519" font-size="12" fill="#3d4b58" text-anchor="middle">emission yet, so it moves</text>
-  <text x="590" y="535" font-size="12" fill="#3d4b58" text-anchor="middle">with the thing. Recorded</text>
-  <text x="590" y="551" font-size="12" fill="#3d4b58" text-anchor="middle">at the hand-off, in litres</text>
-  <text x="590" y="567" font-size="12" fill="#3d4b58" text-anchor="middle">or kg — never in hours.</text>
+  <text x="590" y="503" font-size="12" fill="#3d4b58" text-anchor="middle">What it will give off when</text>
+  <text x="590" y="519" font-size="12" fill="#3d4b58" text-anchor="middle">used, and what its material</text>
+  <text x="590" y="535" font-size="12" fill="#3d4b58" text-anchor="middle">gave off in becoming it.</text>
+  <text x="590" y="551" font-size="12" fill="#3d4b58" text-anchor="middle">It moves with the thing,</text>
+  <text x="590" y="567" font-size="12" fill="#3d4b58" text-anchor="middle">in litres or kg, not hours.</text>
   <text x="590" y="585" font-size="11" fill="#94a1ad" text-anchor="middle">→ 40 L petrol stays 40 L</text>
 
   <!-- ===== RIGHT branch: CONSUMPTION ===== -->
@@ -88,7 +88,7 @@
   <text x="965" y="521" font-size="12.5" fill="#3d4b58" text-anchor="middle">you keep only what you ate. Reselling the object sheds none of it.</text>
   <text x="965" y="545" font-size="12" fill="#3d4b58" text-anchor="middle">The provenance record travels with the product so buyers can still see it —</text>
   <text x="965" y="561" font-size="12" fill="#3d4b58" text-anchor="middle">but the debit is pinned to the causer. Its weight floats with ambient stock (§3.3).</text>
-  <text x="965" y="578" font-size="11.5" font-weight="600" fill="#8a4014" text-anchor="middle">Pollution from MAKING stays with the maker.</text>
+  <text x="965" y="578" font-size="11.5" font-weight="600" fill="#8a4014" text-anchor="middle">Pollution from what a maker USES UP stays with the maker.</text>
   <text x="965" y="592" font-size="11.5" font-weight="600" fill="#8a4014" text-anchor="middle">Pollution from USING is the user's. (§3.2b)</text>
 
   <!-- the conversion arrow: latent -> consumption, on use -->
@@ -107,7 +107,7 @@
   <circle cx="66" cy="728" r="4" fill="#c0392b"/>
   <text x="80" y="732" font-size="13" font-weight="700" fill="#93261a">Non-cascade (§3.2b = §4.5 — one rule, both directions).</text>
   <text x="425" y="732" font-size="13" fill="#3d4b58">Cost attaches only to the causer. Never onward to a</text>
-  <text x="80" y="751" font-size="13" fill="#3d4b58">buyer (pollution), never backwards to the first human who ever built anything (creation-cost). Either cascade breaks the books.</text>
+  <text x="80" y="751" font-size="13" fill="#3d4b58">buyer (what a maker used up), never backwards to the first human who ever built anything (creation-cost). Either cascade breaks the books.</text>
 
   <!-- end-of-life note -->
   <rect x="40" y="770" width="1160" height="52" rx="10" fill="#fff6e9" stroke="#e0b877" stroke-width="1.5"/>

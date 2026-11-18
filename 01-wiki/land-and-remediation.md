@@ -53,7 +53,7 @@ edges:
 
 **Now somebody restores the plot after the house comes down.** The 1,200 hours clear; the restorer is credited the hours of the restoring; the stove's CO₂ does not move, because it was consumption debit on the person who burned the gas.
 
-**In plain words: you owe for occupying, not for owning, and you owe only for your own tenure and your own emissions.**
+**In plain words: you carry debit for occupying, not for owning, and only for your own tenure and your own emissions.**
 
 ## Why this is bookkeeping rather than a political claim
 

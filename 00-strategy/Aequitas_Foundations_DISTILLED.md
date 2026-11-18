@@ -9,8 +9,8 @@
 >
 > **Regenerate with:** `python bin/distill.py`
 
-> **Source:** [`Aequitas_Foundations.md`](Aequitas_Foundations.md) · **version 0.69**
-> **Size:** 155,322 bytes, from 287,823 — **54% of the source**
+> **Source:** [`Aequitas_Foundations.md`](Aequitas_Foundations.md) · **version 0.72**
+> **Size:** 178,362 bytes, from 324,638 — **55% of the source**
 
 **What was kept:** every heading, every rule, every table, and the stated result of every worked
 example. **What was dropped:** the explanation prose between them.
@@ -40,6 +40,7 @@ example. **What was dropped:** the explanation prose between them.
   - [2.2 Debit](#22-debit)
   - [2.3 Credit](#23-credit)
   - [2.4 Transactions and sales](#24-transactions-and-sales)
+  - [2.4a Consent](#24a-consent)
   - [2.5 Measurement and convention](#25-measurement-and-convention)
   - [2.6 What this document answers, and what it does not](#26-what-this-document-answers-and-what-it-does-not)
 - [3. The Ledger Model](#3-the-ledger-model)
@@ -84,6 +85,8 @@ example. **What was dropped:** the explanation prose between them.
 > **Credit is not wealth, and this document bounds no one's wealth.** Wealth is an accrual of material gains and property, and in these books property is **debit** (§3.2, §4.5). How much property a person can hold is set by the gate `D ≤ ρ·(C + P)` (§3.0), and `P`, the backing other people have pledged to them, has no per-account limit (§5.5.5). **So a person with many pledges behind them can hold more than a person with none, by any amount the pledgers' budgets allow.** What makes that different from money is that backing is a one-time grant that cannot be lent, rented, charged for, or used to hire anybody (§5.5.5), and every hour of it was earned by a verified person who spent it once (§4.6).
 ## 1. Axioms
 > **Each axiom below is a definition and nothing else.** What follows from it, why it holds, and what it rules out are in §2 onward, and each axiom says where to look. **An axiom that argues for itself is doing another section's job.**
+> **Responsibility. A person answers for their own acts.**
+> **Consent. A debit lands on a person by their own act, or by their acceptance. It never lands by another person's act alone.**
 ### A1 (materialism of cost)
 ### A2 (time as measure)
 ### A3 (non-fungibility)
@@ -99,6 +102,7 @@ example. **What was dropped:** the explanation prose between them.
 | **2.2** | **Debit** |
 | **2.3** | **Credit** |
 | **2.4** | **Transactions and sales** |
+| **2.4a** | **Consent** — how a debit comes to be a person's |
 | **2.5** | How to tell a measurement from a convention, and the three conventions this system declares |
 | **2.6** | What this document answers, and what it deliberately leaves to somebody else |
 ### 2.1 The three criteria, and why they are the test
@@ -118,21 +122,23 @@ example. **What was dropped:** the explanation prose between them.
 |---|---|
 | **Universality** | One mechanism only — material flow accounting. No exceptions for professions, nations, or classes. Units (mass, energy, seconds) are measurable identically anywhere in the universe. Coverage extends to non-participants by statistical estimation **on both sides of the ledger** (A7 (universal accounting)). Where a genuine convention is required, §2.5 names it rather than concealing it. |
 | **Decentralization** | No issuer, no central bank, no authoritative institution. Anyone may verify any claim from the event log. The verification ladder (§4.3) begins with peer attestation, which requires no infrastructure and therefore no permission. Governance is core-immutable with competing open variance. **Cost constants are the weakest point of this criterion, and §3.3a says so rather than claiming otherwise** — the auditing practice is a network's own design, held to five published properties (conformance 16a–16c), and no network has yet demonstrated a working one. |
-| **Fecundity** | The verification ladder *pulls* technological development (§4.3). Retroactive re-weighting (§3.3) creates permanent demand for better science. Regulators invert into services businesses want (§5.3). Onboarding is individually rational (§4.8). Pledges give surplus a purpose (§4.6). **Reading a process chain more finely lowers a co-product's figure, so better instruments pay the producer who buys them (§3.4a).** |
+| **Fecundity** | The verification ladder *pulls* technological development (§4.3). Retroactive re-weighting (§3.3) creates permanent demand for better science. Regulators invert into services businesses want (§5.3). Onboarding is individually rational (§4.8). Pledges give surplus a purpose (§4.6). **Reading a process chain more finely lowers a co-product's figure, so better instruments pay the producer who buys them (§3.4a).** **Work on things held in common is the weak point of this criterion.** Where nobody asked to receive it, it earns backing and no credit, unless a city or a network gathers consent for it (§4.6). |
 ### 2.2 Debit
 > **A debit is a record that matter or energy was taken from the world, together with a statement of who is holding the consequence.**
 #### Who a flow is attributed to, and why
 > **Only people act. A tool does not, a machine does not, and neither does whoever owns one.** So responsibility attaches to people, and never to machinery or to its owner.
 | Kind | What it records | When the thing is handed on |
 |---|---|---|
-| **Property debit** | The matter you are holding, and the hours that made it | **The matter goes with the thing.** Your share of the making-hours is set by how long you held it, and it stays with you |
+| **Property debit** | The matter you are holding, the hours that made it, and any pollution that belongs to the thing (§3.2b, lines 3 and 4) | **The matter and that pollution go with the thing.** Your share of the making-hours is set by how long you held it, and it stays with you |
 | **Consumption and pollution debit** | What you used up, burned, or released | **It never moves.** It stays on whoever caused it, permanently |
 #### A1 and A5 answer two different questions, and that is what the two rows are
 | The question | The axiom that answers it | The example |
 |---|---|---|
-| **Who is responsible for a flow they caused?** | **A1.** Responsibility is a fact about a person | The miner keeps the tailings. The driver keeps the tailpipe |
+| **Who is responsible for a flow they caused?** | **A1.** Responsibility is a fact about a person | The miner keeps the pollution of the mine's fuel. The driver keeps the tailpipe |
 | **Who carries the debit that rides an object?** | **A5.** Possession decides it | Whoever is holding the ring carries its gold |
-> **A pollution debit follows the causer and never the object** (§3.2b). **A property debit follows the object, and therefore follows possession** (§3.2). **The two never compete for the same debit.**
+> **A pollution debit for what a person used up follows that person and never an object** (§3.2b). **A property debit follows the object, and therefore follows possession** (§3.2). **The two never compete for the same debit.**
+>
+> **Two kinds of pollution are property debit and ride the object:** what a thing will give off when it is used, and what its own material gave off in becoming it (§3.2b, lines 3 and 4).
 ##### An example, with the numbers
 | What happened | What the log stores | Which kind | Where it sits after the sale |
 |---|---|---|---|
@@ -140,6 +146,21 @@ example. **What was dropped:** the explanation prose between them.
 | The baker worked on it | **0.2 h** | Property | Split by holding time. The buyer's share starts near zero |
 | The oven burned gas | **0.3 kg of CO₂** | Pollution | **The baker, permanently.** The buyer did not light the oven |
 **Nothing was added to any of those three figures, and no total was struck.** The buyer took a loaf carrying 0.8 kg and a small share of 0.2 hours. The 0.3 kg of CO₂ stayed where it was.
+##### Where the 0.8 kg came from, with the numbers
+> **All the work a thing used up on its way is tallied and counted as its cost.** The tally runs back through every step the thing passed through.
+| Step the material passed through | This loaf's share of the work |
+|---|--:|
+| Growing and harvesting the wheat | 3 minutes |
+| Milling and packing the flour | 1 minute |
+| Moving and storing it | 2 minutes |
+| **The 0.8 kg of material, read in hours** | 6 minutes = **0.1 h** |
+| The baker's work on the loaf | **0.2 h** |
+| **The loaf's cost, read in hours of work** | 0.1 + 0.2 = **0.3 h** |
+| Left out of the loaf's cost | Where it is recorded | The rule |
+|---|---|---|
+| The tractor, the mill building and the delivery van | On their holders. They were still there after the loaf was made, so the loaf did not use them up | §4.5 |
+| The pollution from what each step used up, such as its fuel | On whoever used it up, permanently | §3.2b, line 1 |
+| The training of the farmer, the mill workers and the baker | Where the training happened, at the time | §4.5 |
 #### Two things a debit is not
 > **A debit is never final.** Better measurement re-weighs it, and re-weighs every record made under the old figure, automatically (A6, §3.3). **A cost is a dated reading, not a verdict.**
 > **And A4 does not require a cost to land on the made thing.**
@@ -149,7 +170,7 @@ example. **What was dropped:** the explanation prose between them.
 | **Attribution** | It is assigned to whoever caused it and to nobody else. **Where the causer is not yet resolved, it is held explicitly unassigned** |
 | The case | Coverage | Attribution |
 |---|---|---|
-| **§3.2b** — pollution stays with its causer, never with the goods | Inside | **The causer's ledger** |
+| **§3.2b, line 1** — pollution from what a maker used up stays with the maker, never with the goods | Inside | **The causer's ledger** |
 | **§4.5** — a barn's hours stay with its holders, never with the beef | Inside | **The holders' ledgers** |
 | **§4.4** — the leftover `R` is debit on no account | Inside. It is computed and published whole | **Not yet resolved, so held explicitly unassigned** |
 > *(The third row used to be reported as satisfying a single test — that a cost lands on **a** ledger — which the leftover does not do, because it lands on none. Found by @cairn-lineage, c39568, 2026-09-04, and conceded in public. **The mechanism did not move; the axiom's wording did.**)*
@@ -185,6 +206,10 @@ example. **What was dropped:** the explanation prose between them.
 | **Production** | Matter or energy is turned into something | Milling wheat into flour |
 | **A service** | Something is done for a person, an organisation, or oneself, often with nothing to hand over | Setting a broken arm |
 | **Enrichment** | Knowledge, skill or culture reaches somebody | Teaching a child to read |
+| It does not mean | Because |
+|---|---|
+| **A test of how much anybody valued the work** | Verification asks whether the work happened and whether a receiver accepted it. It never asks how much anyone valued it (§4.2). What people want is recorded by pledges and signals (§4.6) |
+| **That the worker is left out** | The human being may be the worker. The service row says *oneself*. Whether a network recognises the work of staying alive is still that network's choice (below) |
 > **The three categories decide whether an hour is creditable. They never decide how much it credits.** No rule in this system may credit production at one rate and enrichment at another, or divide a single hour between them (§4.5).
 #### The gate is the boundary. What sits inside it is the network's choice
 > **The three categories are the outer wall, and they do not vary. The list of always-credited activities sits inside that wall, and it does.**
@@ -221,6 +246,33 @@ example. **What was dropped:** the explanation prose between them.
 | The making-hours | 40 h, the shop's holding-time share so far | starts at **0 h**, and grows the longer they keep it |
 | The shop's collection fuel | 3 h | **0 h.** The shop burned it, so the shop keeps it |
 **So a second-hand bicycle starts cheap for a new owner and grows heavier the longer they hold it.** No margin was taken, no money is visible to the books at all (§4.8), and the only thing that moved was an object and what it carries.
+### 2.4a Consent
+> **A debit lands on a person by their own act, or by their acceptance. It never lands by another person's act alone.**
+#### The rules this is the reason for
+| The rule | Where | What consent says about it |
+|---|---|---|
+| Pollution from what a person used up stays with that person | A4, §3.2b line 1 | The people it affects accepted nothing |
+| Pollution that belongs to a thing goes with the thing | §3.2b lines 3 and 4 | The new holder accepted the thing, and what it holds with it |
+| Nobody can be made to receive anything | §2.4 rule 2 | Acceptance is required |
+| A gift that is not recorded leaves the debit with the giver | §2.4 rule 3 | No acceptance is on record |
+| Work adds to a holder's debit only if the holder accepted it | §3.2 | Acceptance is required |
+| A member carries a share of what an organisation takes on | §3.2c | The member authorised it by joining |
+| A non-participant is never charged for an estimate | §4.1 | They accepted nothing |
+##### Four cases, with the numbers
+| The case | What is recorded | Whose debit |
+|---|---|---|
+| **A pollutant.** A kiln's fuel releases 30 kg of CO₂ | 30 kg | **The kiln's people.** Nobody who breathes it agreed to it |
+| **A gift.** A carer buys 2 kg of food and gives it to a child, with no hand-off recorded | 2 kg | **The carer.** The books still show the carer holding it |
+| **Care without consent.** A surgeon works 3 h on an accident victim who is unconscious | 3 h of credit for the surgeon | **0 h on the patient.** They agreed to nothing |
+| **A proxy.** One member buys for a co-operative of ten, and takes on 24,000 h | 24,000 h | **2,400 h on each member**, at equal hours worked. A person who never authorised the purchase carries 0 h |
+#### Four things consent does not mean
+| It does not mean | Because |
+|---|---|
+| **Consent to the figure** | A person consents to an act: a purchase, a service. The weight of that debit is a dated reading, and §3.3 re-weighs it when the science improves. Nobody is asked again |
+| **A right to stay unrecorded** | Consent governs debit. It does not govern recording. A7 puts every human in the books whether they take part or not (§4.1) |
+| **A measure of harm** | Autonomy is the reason a pollutant stays with whoever released it. It does not set the size. The size is the work of cleaning it up (§2.2) |
+| **Consent read from a status** | A network may publish a rule that reads consent from a status, such as living in a town for a year. **That is the network's published rule. It is not consent in the sense of this section** |
+#### What Aequitas leaves to each network
 ### 2.5 Measurement and convention
 > **Did the thing being divided leave a physical trace?**
 >
@@ -262,8 +314,8 @@ example. **What was dropped:** the explanation prose between them.
 | **The verification rung** — how hard the network checks a claim | §4.3 |
 | **The list of always-creditable activities** — inside the boundary §2.3 fixes | §2.3 |
 | **The size of the network** | §4.0 |
-| **Who may consent to a property transfer** — and so who carries what a child consumes | §4.6, §5.5.7 |
-| **How a service's cost is attributed** — which treatments a person carries, and what an unresolved case does | §2.2, §4.7 |
+| **What counts as consent, and who may give it** — to a hand-off, to a service, or to a purchase made for other people | §2.4a, §4.6 |
+| **What counts as essential care** — the published list of work that continues a person's life, and the evidence each entry needs | §4.2, §4.5 |
 #### What is out of scope, explicitly
 | Out of scope | Whose question it is |
 |---|---|
@@ -302,9 +354,29 @@ example. **What was dropped:** the explanation prose between them.
 >
 > Divide the collapsed number instead, and whoever maintains the weighting model controls every allocation in history without anyone seeing it happen. Divide per dimension, and the split does not depend on the weighting at all: two communities running different weighting models compute the same split, and disagree only about what it weighs. This closes one route into OP-10 (weighting governance).
 ### 3.2b Pollution from making stays with the maker; pollution from using belongs to the user
-> **1. Pollution caused by *making* a thing stays with the maker, permanently. It never attaches to the thing and it never reaches a buyer.**
+> **1. Pollution from what a maker uses up to make a thing stays with the maker, permanently.** The maker is the last user of its fuel, its power and its chemicals, so this is line 2 applied to a maker. **That pollution never attaches to the thing the maker sells, and it never reaches a buyer.**
 > **2. Pollution caused by *using* a thing belongs to whoever uses it.**
 > **3. A thing that will pollute when it is used carries that future pollution as part of its debit, in physical units, and it moves with the thing.**
+> **4. Pollution that a thing's own material gives off in becoming that thing is part of the thing's debit, and it moves with the thing.**
+| The CO₂ | Amount | Who holds it |
+|---|--:|---|
+| Given off by the limestone as it becomes lime | **44 kg** | **The cement, and then whoever holds what is built with it** (line 4) |
+| Given off by the fuel that heats the kiln | 30 kg | **The kiln's people, permanently** (line 1) |
+##### The test for line 4
+> **A release is the thing's own when it is made of the thing's own material, and the make-up of that material fixes the amount.** What a maker uses up to run the process is the maker's (line 1).
+| | The rule | Why |
+|---|---|---|
+| **The ceiling** | The amount is at most what the material's make-up fixes: 44 kg of CO₂ for every 100 kg of limestone. **A release above that came from something the maker used up, and it falls under line 1** | Without a ceiling, a maker could report its fuel's pollution as the product's, and the debit would leave with the goods |
+| **The record** | What rides the thing is what was measured as released. **A release that a maker captures is not recorded** | A record of CO₂ must come from a measurement of CO₂ (below) |
+| **Counted once** | The part that rides the thing is not also on the maker | A ledger walk counts a parcel once (§3.4a) |
+| **Where the make-up fixes no amount** | The amount is a number the network publishes, with its method and its uncertainty | It is a cost constant, and §3.3a governs it |
+| The release | Made of the thing's own material? | Does the make-up fix the amount? | Whose |
+|---|---|---|---|
+| CO₂ from limestone as it becomes cement | Yes | Yes: 44 kg for every 100 kg | **The cement's** |
+| CO₂ from coke in a blast furnace | **No.** The carbon is the coke's, and the coke is used up. A furnace that uses hydrogen gives off water | — | **The steel maker's** (line 1) |
+| Waste rock from gold ore | Yes | Yes: the weight of the ore, less the weight of the gold | **The gold's** |
+| Methane from cattle | Yes: its carbon is the feed's, and the feed becomes the animal | **No.** It changes with feed and breed | **The beef's, at a number the network publishes** |
+> **⚠️ Where the make-up fixes no amount, the published number is a lever.** A network that sets cattle methane low moves debit off every buyer of beef at once. **That is the understatement drift of §3.3a (OP-24), in one more place.**
 > **The debit rides the parcel, and handing on the unburned parcel is the only thing that sheds it.** Once the fuel is burned the debit is consumption debit on whoever burned it, and §3.2 already makes that permanent.
 ##### An example, with the numbers
 | | What the log stores | What the ledger reads |
@@ -325,7 +397,8 @@ example. **What was dropped:** the explanation prose between them.
 > **It is not part of the thing's cost, so A5 (cost, not price) is unaffected.** A5 governs what a thing **cost to make**. Line 3 governs what a **holder carries while holding it**. A litre of petrol's creation cost and the CO₂ its burning will release are **two separate lines on the debit vector** (§3.2a), and neither is inside the other. **Nothing was added to the petrol's cost figure.**
 >
 > **It is not a second charge on top of §3.6.** For an object whose pollution *is* its disposal — a plastic bottle rather than a litre of fuel — line 3 and §3.6 describe **one quantity, recorded once.** Line 3 is the **carry** rule, saying how it travels while the object is held. §3.6 is the **terminus** rule, saying where it lands when nobody will take the object on. **An implementation that charges both has counted one physical fact twice.**
-> **This is the same principle as computational closure (§4.5), seen from the other end.** Ellerman says pollution *must not* transfer to a non-causer; §4.5 says a cost *cannot* cascade indefinitely or the accounting never terminates. They are one rule: **cost never flows to whoever did not cause it** — downstream to a buyer (pollution) or upstream to the first human activity (historical cost). Both directions break the books, and the same non-cascade closes both. The gasoline case makes it concrete: the refinery's process emissions stay on the refinery, and the *combustion* emissions fall on whoever burns the fuel — never on the receiver of goods a truck delivered.
+> **Line 4 never rests on the buyer having caused the firing.** A person who asks for a thing is not thereby the one who acted. A customer who orders a delivery carries none of the van's fuel, because the customer never held that fuel (line 2, *held the parcel, not caused the journey*).
+> **This is the same principle as computational closure (§4.5), seen from the other end.** Ellerman says pollution *must not* transfer to a non-causer; §4.5 says a cost *cannot* cascade indefinitely or the accounting never terminates. They are one rule: **cost never flows to whoever did not cause it** — downstream to a buyer (the pollution of what a maker used up) or upstream to the first human activity (historical cost). Lines 3 and 4 are not such a flow, because that pollution is part of the thing and a buyer accepts it with the thing. Both directions break the books, and the same non-cascade closes both. The gasoline case makes it concrete: the refinery's process emissions stay on the refinery, and the *combustion* emissions fall on whoever burns the fuel — never on the receiver of goods a truck delivered.
 > **Electricity, worked through — and it needs no rule of its own.** Electricity looks like the hard case and is not. **A generating company buys fuel, holds it, and burns it.** Line 1 puts the emission on the company, and §3.2c makes that its members' debit, divided by the hours each worked. **The consumer never held the fuel, so no emission reaches them.**
 >
 > **Terms used here.** A **grid** is the wired network joining several generators to many consumers. A **base load** is the steady demand a plant runs continuously to meet. **Dispatch** is starting or stopping a plant to follow demand through the day.
@@ -424,8 +497,9 @@ example. **What was dropped:** the explanation prose between them.
 |---|--:|--:|
 | **Co-product A**, 100 kg | 100 ÷ 100 = **1.000 MJ/kg** | 10 ÷ 100 = **0.100 h/kg** |
 | **Co-product B**, 300 kg | 100 ÷ 300 = **0.333 MJ/kg** | 10 ÷ 300 = **0.033 h/kg** |
-| **Pollutants**, 50 kg | the remediation cost, **on the producer, permanently** (§3.2b) | — |
-**The producer ends level.** They hold the process's whole cost and discharge it to each buyer as each co-product is handed on. **The pollution debit does not move.**
+| **Pollutants**, 50 kg | see below | — |
+**The 50 kg of pollutants came out of the 500 kg of materials, so they are the products' own** (§3.2b, line 4, where the materials' make-up fixes them). They are carried the way the energy is: whole against each co-product's own mass, **0.500 kg for each kg of A and 0.167 kg for each kg of B**, and a ledger walk counts the 50 kg once. **The pollution from the fuel behind the 100 MJ is a different record.** The producer used that fuel up, so it stays with the producer, permanently (§3.2b, line 1).
+**The producer ends level.** They hold the process's whole cost and discharge it to each buyer as each co-product is handed on. **The pollution from what the producer used up does not move.**
 > **A2 is why this problem has an answer at all.** Every other attempt had to pick **one** unit of account and defend it: split by mass and energy-heavy outputs read as free; split by energy and heavy outputs read as free. **A2 removes the choice**, because every physical quantity in the ledger is a stand-in for the hours it takes to produce or clean up. **The universal is the denominator, not the carrier.** Here it goes further: with no split to compute, no basis has to be named at all.
 #### Why the previous rule was withdrawn
 | Lever | Widest fraction | Max ÷ min |
@@ -689,14 +763,28 @@ example. **What was dropped:** the explanation prose between them.
 | **A** delivers a translation and the client confirms | 20 h | Rule met | **20 h** |
 | **B** says they translated for 20 hours, with no text and no client | 20 h | Rule not met | **0 h** |
 **B is not being judged and B is not being punished.** B knew the rule before starting, because the network published it.
-**Now change the network instead of the person.** If translating for someone who cannot confirm is work this network wants to credit, **it writes a rule for that case**, perhaps requiring a second witness. **Once the rule exists, B's 20 hours credit at 20 hours.**
+**Now change the network instead of the person.** A network may accept a different record of the client's agreement, such as an order signed before the work began. **It writes a rule for that case. Once the rule exists, a translator who holds such an order and the finished text is credited 20 hours.** No rule can credit a service that nobody asked for (§4.5, §4.6).
 #### What the evidence usually is, by kind of output
 | Output | How it is verified |
 |---|---|
 | **Goods** (matter or energy) | **The hand-off.** The receiver accepts possession, and the debit that rides with it, which attests that the goods exist (§4.5). |
-| **A service** (often with no physical output) | **The client confirms** that the service happened. |
-| **Enrichment** (intangible work, such as teaching or writing) | **Evidence that the work happened.** |
+| **A service** (often with no physical output) | **A receiver who asked for it confirms** that it happened. The confirmation is also the consent that puts the hours on that receiver (§4.5). One confirming receiver is enough. |
+| **Enrichment** (intangible work, such as teaching, writing or performing) | **Where it is given to other people, a receiver who asked for it confirms**, as for a service. A violinist who plays alone has given no concert. For other enrichment, evidence that the work happened, under the network's published rule. |
 | **Self-care** (the work of keeping yourself alive) | **Proof of life.** A verified living human demonstrably maintained itself. This is statistical, and it costs almost nothing to check. |
+| **Essential care** (work that continues another person's life) | **The network's published rule for that kind of care.** The receiver does not have to confirm it. Where the receiver cannot confirm, a second witness does (below). |
+#### Essential care is a published list
+> **A network that counts some care as essential publishes the list, and an evidence rule for each entry on it.** The floor is published the same way: named activities, each with its own rule (§5.5.1).
+| The receiver | The evidence |
+|---|---|
+| Can confirm the care | The receiver's confirmation, as for any service |
+| Cannot confirm it: an infant, an unconscious patient | **A second witness, made on a different path** (§4.3). A hospital's admission record is one. Another carer's record is one |
+##### Why each entry needs evidence, with the numbers
+| | Credit a year | New debit a year | Change in what each may carry |
+|---|--:|--:|--:|
+| Honest, floor only | 3,650 h | — | — |
+| The pair, with the 14 hours on the essential list | 8,760 h | 0 h | 0.330 × 5,110 = **+1,686 h** |
+| The pair, with the 14 hours counted as any other service | 8,760 h | 5,110 h | 1,686 − 5,110 = **−3,424 h** |
+> **⚠️ The list is a lever.** A network that calls every service essential takes all service hours off its subscribers. This is the same lever as a generous floor: another network re-computes the claim through its own rules, so the credit cannot be exported (below). **That check depends on OP-22 (minimum audit disclosure), which is open.**
 #### A network never converts another network's figures into its own
 > **This is comparison, never conversion. Nothing is exchanged between models, and each party re-reads the same physical log through its own weighting.**
 > **⚠️ That guard depends on OP-22, the open problem of minimum audit disclosure.** Re-computing what a claim is drawn from means seeing it, and personal ledgers are private (§4.7). The guard needs *"this pledge is drawn from X hours recorded under weighting model M"* to be provable without revealing the history. **The market check on a lax network is only as real as that mechanism, and the mechanism does not exist yet.**
@@ -809,7 +897,7 @@ example. **What was dropped:** the explanation prose between them.
 | The case | What is happening |
 |---|---|
 | **Subsistence** | A farmer feeds themselves and their farmworkers from part of the harvest, and records none of it (§3.2) |
-| **Gifts** | Handing a thing to somebody outside the system is not an event, so no record is made (§2.4, rule 3) |
+| **Gifts** | Handing a thing to somebody outside the system is not an event, so no record is made. Giving a thing to somebody inside it, with no hand-off recorded, is the same case. The debit stays with the giver (§2.4, rule 3) |
 | **Barter** | No hand-off is recorded on this network, so this network never sees it |
 | **Output held back for the money market** | **During adoption this is the common case.** A producer keeps most of their output for the ordinary currency economy and puts a slice on a trust network (§4.8) |
 | **The same output offered on two networks** | A producer lists produce with two networks so it has a better chance of finding a buyer. **A transaction lands on exactly one network and the seller picks which** (§4.0, fact 2) |
@@ -867,15 +955,30 @@ example. **What was dropped:** the explanation prose between them.
 #### When a person joins, their position is reconstructed back to their birth
 > **The reconstruction runs on both sides. The debit and the credit are both rebuilt.**
 ##### An example, with the numbers
-**A person joining at forty arrives with roughly 146,000 hours of estimated credit against roughly 55,200 hours of estimated consumption.**
-> **Whether joining is a windfall for a median person depends on `F` and ρ.** A joiner at forty arrives with `C` = 40 × 365 × `F` and `D` = 55,200 h, so what they may still carry under the gate when they join is `ρ·C − D`. It is positive when `ρ·F` exceeds the **break-even**, the value at which a year of floor credit, `ρ·F·365`, balances a year of median consumption, 1,380 h: 1,380 ÷ 365 = 3.78 hours a day (worked again under condition 3 below). **At `F` = 10 and ρ = 1.2 it is 1.2 × 146,000 − 55,200 = +120,000 h.** The people for whom a full reconstruction is costly are those whose lifetime consumption genuinely exceeded their lifetime contribution.
+**What a rebuilt childhood holds.** Three rules decide it.
+| What happened in childhood | Whose debit | The rule |
+|---|---|---|
+| The child bought a thing themselves | **The child's** | A debit is taken on by a person's own act (§2.4a) |
+| A carer gave the child food, clothes or a home, with no hand-off recorded | **The carer's** | A gift that is not recorded stays with the giver (§2.4, rule 3) |
+| A carer fed, washed and taught the child | **Nobody's.** The carer is credited | Work that continues a person's life adds no debit to that person (§4.5) |
+**So the hours a person consumed as a child are mostly on the people who raised them.** What a person later gives to children of their own is theirs in the same way.
+**A person joining at forty arrives with roughly 146,000 hours of estimated credit. Their estimated consumption is at most 40 × 1,380 = 55,200 hours.** That is the upper case: it counts every year of childhood on the joiner, at the adult rate. With nothing before age 18 counted on them, it is 22 × 1,380 = **30,360 hours**. A real joiner sits between the two.
+> **Whether joining is a windfall for a median person depends on `F`, on ρ, and on how much of their childhood was given to them.** The sums below use the upper case. A joiner at forty arrives with `C` = 40 × 365 × `F` and `D` = 55,200 h, so what they may still carry under the gate when they join is `ρ·C − D`. It is positive when `ρ·F` exceeds the **break-even**, the value at which a year of floor credit, `ρ·F·365`, balances a year of median consumption, 1,380 h: 1,380 ÷ 365 = 3.78 hours a day (worked again under condition 3 below). **At `F` = 10 and ρ = 1.2 it is 1.2 × 146,000 − 55,200 = +120,000 h.** The people for whom a full reconstruction is costly are those whose lifetime consumption genuinely exceeded their lifetime contribution.
 **At the US method the measured rationing band lies below break-even.** **Terms used here.** **ρ\*** is the highest ρ at which the gate still rations at the US method, so the **rationing band** is every ρ at or below it (§5.5.3 measures it). The **margin** is `ρ·C − D` for the joiner above, with `P` = 0.
 | `F` | ρ\* | Break-even, 3.78 ÷ `F` | Margin at ρ\* | One declared year at ρ\*, `ρ·F·365 − 1,380` |
 |--:|--:|--:|--:|--:|
 | 2 h/day | 1.017 | 1.890 | 1.017 × 29,200 − 55,200 = **−25,504 h** | 742 − 1,380 = **−638 h** |
 | 10 h/day | 0.330 | 0.378 | 0.330 × 146,000 − 55,200 = **−7,020 h** | 1,205 − 1,380 = **−175 h** |
 | 14 h/day | 0.253 | 0.270 | 0.253 × 204,400 − 55,200 = **−3,487 h** | 1,293 − 1,380 = **−87 h** |
-**In plain words: at the US method, every ρ at which the gate rations gives the median joiner a negative margin.** At `F` = 10 the floor adds 0.330 × 3,650 = 1,205 h of allowance a year while the joiner consumes 1,380, so they stay over the gate and the gap widens by 175 h a year. **The windfall holds only at ρ above the band, where the gate no longer rations and shortage is settled at distribution (§5.5.3).** The restriction reaches non-essentials only (§5.5.4). **Other production methods have not been measured.**
+**In plain words: at the US method and in the upper case, every ρ at which the gate rations gives the median joiner a negative margin.** At `F` = 10 the floor adds 0.330 × 3,650 = 1,205 h of allowance a year while the joiner consumes 1,380, so they stay over the gate and the gap widens by 175 h a year. **The windfall holds only at ρ above the band, where the gate no longer rations and shortage is settled at distribution (§5.5.3).** The restriction reaches non-essentials only (§5.5.4). **Other production methods have not been measured.**
+**The same joiner at `F` = 10, with childhood counted three ways.** Each run has its own edge, because moving debit off children changes what the whole population asks for.
+| What the run does with a child's consumption | The joiner's `D` | Edge ρ\* | Margin at the edge |
+|---|--:|--:|--:|
+| Counts it on the child, at the adult rate (the table above) | 55,200 h | 0.330 | **−7,020 h** |
+| Counts nothing before 18, on anybody | 30,360 h | 0.267 | 0.267 × 146,000 − 30,360 = **+8,622 h** |
+| Counts nothing before 18 on the child, and adds what children want to the requests of all adults, in equal shares | 30,360 h | 0.277 | 0.277 × 146,000 − 30,360 = **+10,082 h** |
+**In plain words: whether the median joiner is inside the gate at the edge depends on how much of their childhood was gifts.** With all of it counted on them they are 7,020 hours over. With none of it counted on them they are 8,622 to 10,082 hours inside.
+> **⚠️ No run matches the three rules above.** The third run is the nearest. It divides by equal shares among all adults, where the rule reads who held the thing. It puts the hours of care on the adults, where the rule puts them on nobody. No child in it buys anything, and nobody in it ages. It also does not rebuild what a joiner gave to children before they joined. `06-simulation/stable-band/RESULTS_CHILDREN.md`.
 **The estimate is the default, and evidence is voluntary.** A person supplies whatever narrows it — where they were born, how long they lived in each place, which jobs they held, how far they commuted, which vehicles they owned — and accepts the estimate for every period they leave undisclosed. **Nothing is compulsory, and evidence moves the figure in either direction, which is why people supply it.**
 **Details may arrive years later and the position re-derives.** No new machinery is needed, because a position is computed from the log and never stored (A6).
 **Three conditions, and without any one of them this breaks.**
@@ -895,8 +998,46 @@ example. **What was dropped:** the explanation prose between them.
 #### What enrichment covers
 > **Childcare is creditable work regardless of who performs it.** This alone brings the largest uncounted labour pool in human history onto the books.
 #### The floor is where self-care credit lands
+#### Who carries the hours of a service
+> **A person carries a service's hours only when the service is not essential and they asked for it.**
+| | The receiver asked for it | The receiver did not |
+|---|---|---|
+| **An essential service** | 0 h on the receiver | 0 h on the receiver |
+| **Any other service** | **The worker's hours are debit on the receiver** | 0 h on the receiver |
+##### An example, with the numbers
+| The service | The worker is credited | Added to the receiver's debit |
+|---|--:|--:|
+| A barber cuts the hair of a customer who asked, 0.5 h | 0.5 h | **0.5 h** |
+| A plumber repairs pipes that the holder asked them to fix, 2 h | 2 h | **2 h**, shared with later holders by holding time |
+| A surgeon operates on an unconscious accident victim, 3 h | 3 h | **0 h** |
+| A doctor treats a patient who asked, 1 h, in a network whose list counts that care as essential | 1 h | **0 h** |
+| The same hour, in a network whose list does not | 1 h | **1 h** |
+| A stranger paints a fence unasked, 6 h | 0 h (§3.2) | **0 h** |
+**What a carer or a hospital uses up in essential care stays with them.** The supplies used on the unconscious patient were goods the hospital held, and the hospital used them up. They stay with its members, divided by the hours each worked (§3.2c). Medicines that a patient takes away are a hand-off like any other (§2.4).
+> **⚠️ Essential care has a material debit of its own, and the person who receives the care does not carry it.** Pledges are what let the carers carry it (§4.6). Care that people do not pledge for is hard to staff.
+**Which services are essential, and what counts as asking, is each network's published rule** (§2.6, §4.2).
+##### One service, many receivers
+> **The receivers of one service carry what the event itself used up, divided among the tickets in equal parts.**
+| | The rule | Why |
+|---|---|---|
+| **What is shared** | The work and the materials that the event itself used up. **The performer's practice, the cleaning done before, and the building are left out** | A cost reaches a unit only if it was used up producing that unit (below) |
+| **How it is divided** | In equal parts, one for each ticket | A ticket is a record, and each ticket is one equal part by contract (§2.5). The divisor is tickets. It is never a count of people whom nobody recorded (§4.4) |
+| **When the debit lands** | When the work is done. **Buying a ticket adds 0 hours** | The ticket is the consent. The debit is the work (§2.4a) |
+| **A holder who stays at home** | Carries their share | They consented, and the work was done for them |
+| **A cancelled event** | Each ticket carries its share of the work already done: ticketing, advertising, cancelling | Only work that was done exists to be shared |
+| **A person who hears it with no ticket** | Carries nothing, in a park or outside a festival fence | They agreed to nothing (§2.4a) |
+###### An example, with the numbers
+| The case | Total | Tickets | Each ticket carries |
+|---|--:|--:|--:|
+| A full house | 120 h | 1,000 | 120 ÷ 1,000 = **0.12 h** |
+| A larger venue, with more ushers | 200 h | 5,000 | 200 ÷ 5,000 = **0.04 h** |
+| A low turnout | 120 h | 100 | 120 ÷ 100 = **1.2 h** |
+| Cancelled after 10 h of ticketing and advertising | 10 h | 200 | 10 ÷ 200 = **0.05 h** |
+**In plain words: the tickets always add up to the cost of the event, and never to more.** A 1-hour lecture to 500 people who asked for it puts 1 ÷ 500 = 0.002 hours on each, and 1 hour in all. **One receiver is enough.** With one ticket, the whole cost is that person's.
+**The size of a share is not known when the ticket is bought.** A low turnout makes each ticket heavier: 1.2 hours against 0.12 hours above. Consent is to the act and not to the figure (§2.4a), so the debit lands on the night, including on a holder who is over the gate by then. Whether a ticket states a highest share is the organiser's contract. Whether the gate is also read when the ticket is bought, against an estimate, is the network's rule.
+> **⚠️ An organiser can record practice, cleaning or upkeep as hours of the event.** Its members then move their own operating debit onto the audience. The check is a record made on another path: the dated work records, read against the date of the event (§3.4a).
 #### Training is paid when it happens, and never charged to anyone later
-> **Nothing is charged downstream.** A doctor's care costs the recipient the doctor's time, the material cost of running the clinic, and the medicines dispensed. **The doctor's education is not in that bill.** It was underwritten up front, by the people who wanted doctors to exist.
+> **Nothing is charged downstream.** A person who asks for care that their network does not count as essential carries the doctor's time and the materials the treatment used up (above). **The doctor's education is not in that figure.** It was underwritten up front, by the people who wanted doctors to exist.
 ##### The general rule this is the first case of
 > **A large up-front cost with a diffuse benefit is carried where it is incurred, and cushioned at that time by the backing of the people who pledged for it. It is never charged onward to whoever happens to consume the result.**
 > **⚠️ The honest limit: a first-time creator attracts no pledges.** The barrier is far lower than raising money, and the path is real — make small unpledged work, gather feedback, then attract pledges — **but it should be stated rather than assumed away.**
@@ -907,7 +1048,7 @@ example. **What was dropped:** the explanation prose between them.
 |---|---|
 | What a critic says beef should carry: 20,000 ÷ 40,000 | 0.5 |
 | **What beef actually carries from the barn** | **0.0** |
-> **This is not an exemption from A4 (no externalities), and the objection is worth answering here rather than leaving it.** Every hour still lands on a ledger. **A4 requires that; it never required the ledger to be the product's** (§2.2). **Charging a beef buyer for the barn is the same error as charging a ring buyer for the miner's tailings**, which §3.2b already refuses. One rule, two directions.
+> **This is not an exemption from A4 (no externalities), and the objection is worth answering here rather than leaving it.** Every hour still lands on a ledger. **A4 requires that; it never required the ledger to be the product's** (§2.2). **Charging a beef buyer for the barn is the same error as charging a ring buyer for the pollution of the mine's fuel**, which §3.2b already refuses. One rule, two directions.
 > **⚠️ The honest limit.** Two producers of the same good, one with a 20,000-hour barn and one with a 2,000-hour shed, **publish the same figure per kilogram.** A buyer comparing those figures cannot tell them apart, because a unit's figure answers *"what did this unit consume?"* and never *"what does this producer's whole method cost?"* **What disciplines the barn is the builder's own gate, not the label on the beef.**
 #### There are no patents, and attribution is by recognition
 #### Not all work is capturable, and the system does not require it to be
@@ -955,6 +1096,29 @@ example. **What was dropped:** the explanation prose between them.
 **Consent gates the hours. It does not gate the list.** The same network also writes the list of which needs count, and writing a list is a signal: it is drawn from nothing, spends nobody's budget, and needs nobody's consent (the table above). **So the signal leg is the same P4 surface through a second door, and consent closes only the pledge leg.** A network of 1,000,000 subscribers at `F` = 10 accrues 3.65 × 10⁹ h of budget a year; if 60% accept the offered standing pledge (an illustrative share), 2.19 × 10⁹ h of consented backing is directed by criteria one party wrote. The public pledge ledger (§4.7) shows what each listed need received. **It cannot show a need that was never listed.**
 #### Recording is never gated. Verification decides when credit counts
 ##### For goods, the hand-off is the verification
+##### For a service, the receiver's confirmation is the verification
+| Work | It counts as credit when |
+|---|---|
+| Goods | A receiver accepts the hand-off (above) |
+| A service that is not essential | A receiver who asked for it confirms it |
+| Essential care, and self-care | The network's evidence rule is met. No receiver has to consent (§4.2) |
+> **⚠️ A pair can fake a service.** A friend confirms 8 hours a day of concerts that never happened. The player gains 8 hours of credit, and the friend gains 8 hours of debit. At ρ = 0.330, what the pair may carry together changes by 0.330 × 8 − 8 = **−5.36 hours a day**. At ρ = 1.2 it changes by 1.2 × 8 − 8 = **+1.6 hours a day**. This is the wash trade registered as OP-1 (service → influence). IC-7 caps it at 24 hours a day.
+##### Pledged work with no receiver earns the backing, and does not count as credit
+> **Work that a pledge named, and that nobody asked to receive, earns the pledge as backing. The same work done for people who consented to it counts as credit, and they share its hours.**
+###### An example, with the numbers
+| | `C` that year | `P` gained | Pledge budget gained | Who carries the hours |
+|---|--:|--:|--:|---|
+| Residents pledged for the mowing. Nobody asked to receive it | 3,650 h | 1,000 h | 3,650 h | Nobody |
+| The mower works for a city, and 10,000 residents consented to its services | 4,650 h | 0 h | 4,650 h | Each resident, 1,000 ÷ 10,000 = **0.1 h** |
+**In plain words: both mowers may consume about the same, because the gate reads `C + P`. Only the city's mower gains pledge budget, which is the say over what gets made** (§5.5.5).
+**What counts as consent to a city's services is the rule of the network and the municipality** (§2.6, §5.4). *"Living in the area for more than a year"* is one such rule, and §2.4a says what kind of rule that is. **A person who benefits without consenting carries nothing.** A visitor walks on the clean street and shares none of its hours.
+**A service on a network's essential list needs no receiver's consent.** A network whose list has the fire service credits the firefighters and adds no debit to anybody (§4.5).
+**A free performance has no receiver.** Its performers and crew may still receive backing from a fund that people pledged to for free public performances, on the conditions that the fund published.
+> **⚠️ Two costs of this rule.**
+>
+> **Work on things held in common earns less say.** Over 40 years at 1,000 hours a year, the pledged mower has 40 × 1,000 = **40,000 hours** less pledge budget than the city's mower. Whoever can gather consent, such as a city, turns work into a say. That is P4 (coordinator class), in one more place.
+>
+> **A pledge makes no new pledge budget.** The total budget in a network grows only through work that a receiver accepted, through essential care, and through the floor.
 #### When a task attracts more pledges than it costs
 ##### An example, with the numbers
 **A toxic cleanup. 200 people pledge 50 hours each, under criteria published before anybody pledged.**
@@ -971,7 +1135,7 @@ example. **What was dropped:** the explanation prose between them.
 **The pledgers spent 10,000 hours of budget on the day they pledged, in every branch.** What varies is who ends up named.
 **Note who the second criterion names.** It does not have to be the injured party. **Whoever writes the criteria decides**, and a network that wants cover to reach the victim writes it that way instead.
 **What this buys.** Onerousness has two halves. **Society de-risks the toxic-cleanup worker exactly to the extent it pledges for the work**, with no wage premium, no rate-scaling and no rating authority. **And the tedium half is reachable now too**, because a pledge can simply name whoever does dull work. That is a change from the earlier rule, under which only hazard left a causal tail for cover to attach to.
-> **A2 is untouched.** Backing is not credit. **A person doing filthy work is still credited one hour per hour** (A2). What changes is how much backing other people choose to give them, **which is demand deciding rather than a rate.**
+> **A2 is untouched.** Backing is not credit. **An hour that counts as credit counts as one hour, however filthy the work** (A2). What changes is how much backing other people choose to give them, **which is demand deciding rather than a rate.**
 #### Why a pledge is a better demand signal than a price
 | The assumption | What is actually the case |
 |---|---|
@@ -996,7 +1160,16 @@ example. **What was dropped:** the explanation prose between them.
 > **To be trustworthy a network publishes every estimating number it uses, every method, and anonymised data covering all of its participants. A network that will not show its arithmetic is asking to be trusted rather than checked, which is the thing this system exists to stop needing.**
 > **⚠️ And this cuts against itself.** Anonymised participant data becomes **more** re-identifiable the more of it there is. **Publishing more to earn trust also publishes more to identify people by.** A network is choosing on that axis whether it means to or not.
 ##### "Funding" is not a budget. It is recognition
-> **Funding, in Aequitas, is simply the recognition of an activity as creditable.**
+> **Funding, in Aequitas, is the recognition of an activity as creditable, by the people who asked for it.**
+###### An example, with the numbers
+| | |
+|---|--:|
+| The network's work that year | 500 × 2,000 = **1,000,000 h** |
+| Each worker is credited | **2,000 h** |
+| Each subscriber carries | 1,000,000 ÷ 1,000,000 = **1 h** |
+**In plain words: a subscriber carries about 1 hour a year for the keeping of the books.** The size of that share is not known on the day a person subscribes. Consent is to the act and not to the figure (§2.4a).
+**The tools and buildings the network holds stay with its workers**, shared by holding time (§4.5). The pollution from what its workers use up stays with them too (§3.2b, line 1).
+**What *is* scarce is demand and verification.** A pledge says someone wants a piece of work done, and verification decides when the credit counts (§4.6).
 ##### A network's own founding is recorded like any pre-existing thing
 #### How a dispute resolves
 ##### Where the analogy breaks, and this is the part worth having
@@ -1012,7 +1185,7 @@ example. **What was dropped:** the explanation prose between them.
 | | The rule | Where it comes from |
 |---|---|---|
 | **1** | **The network supersedes the false credit records with its own research.** How it ranks evidence is its own published choice | §4.2, §4.4 |
-| **2** | **Finding the fraud is the network's ordinary work.** The people who do it are credited for their hours whether or not fraud is found, and its cost stays with the network like any of its operating costs | §4.3, §3.2c |
+| **2** | **Finding the fraud is the network's ordinary work.** The people who do it are credited for their hours whether or not fraud is found. The network's subscribers carry those hours, as they carry the rest of the network's work (above) | §4.3, §4.5 |
 | **3** | **Correcting what the fraud caused is debit on the person who committed it.** Where a legal system that keeps its books in Aequitas spends time and materials on the case, those may land on them too | A4: a consequence is assigned to whoever caused it |
 | **4** | **A thing handed on during its working life keeps the seller's holding-time share of its creation cost.** Only the material leaves with it | §3.2, §4.5 |
 ##### An example, with the numbers
@@ -1030,7 +1203,7 @@ example. **What was dropped:** the explanation prose between them.
 > **⚠️ One real load stays, and it is not a disagreement about weights.** Deciding whether a **particular past task caused a particular later harm** is a contested finding of fact wherever no physical trace exists. **It routes to existing recourse. Registered, not solved here.**
 ### 4.8 It takes people in, it merges with other networks, and it can end
 #### Joining replaces an assigned average with your real record
-> **⚠️ Watch item: fixed joining costs consolidate industries.** Documentation burdens are repeatedly argued to disadvantage small producers, which is why organic-certification cost-share programmes exist at all. **The structural offset is that helping someone join is credited work borne by the network rather than the entrant. Whether that is enough is empirical and should be watched rather than assumed.**
+> **⚠️ Watch item: fixed joining costs consolidate industries.** Documentation burdens are repeatedly argued to disadvantage small producers, which is why organic-certification cost-share programmes exist at all. **The structural offset is that helping someone join is credited work whose hours the network's subscribers carry, rather than the entrant (§4.7). Whether that is enough is empirical and should be watched rather than assumed.**
 #### There is entry, and there is no exit
 > **Once records of a person exist they are never destroyed. They are only added to, including after that person's death.**
 > **One consequence follows from all of this. Because deletion is unavailable, publicity is the only privacy control that exists** (§4.7). **There is no falling back on erasure**, which raises what §4.7 has to carry. The full note, including the erasure-law reading, is in [`../01-wiki/permanence-and-death.md`](../01-wiki/permanence-and-death.md).
@@ -1049,8 +1222,26 @@ example. **What was dropped:** the explanation prose between them.
 ### 5.1 Capitalism cannot function
 > **Producers compete on quality, artfulness, and efficiency. They never compete on margin, because there is no margin to compete on.**
 ### 5.2 Exploitation and pollution self-penalize
+| The pollution | Where it lands | Who has a reason to act |
+|---|---|---|
+| From what a maker uses up: fuel, power, chemicals (§3.2b, line 1) | On the maker, permanently | **The maker.** A polluter carries permanent pollution-debt, a poor efficiency ratio (§3.5), and restricted discretionary consumption (§5.5), whether or not any consumer ever notices |
+| From the thing's own material, and from using the thing (§3.2b, lines 2 to 4) | With the thing, on whoever holds it or uses it up | **The buyer.** A thing that pollutes by its nature is heavier to hold, so a buyer has a reason to choose one that does not |
 ### 5.3 Regulators invert into services
 ### 5.4 Taxation is unnecessary
+##### An example, with the numbers
+| | |
+|---|--:|
+| The worker is credited | **1,000 h** |
+| Each consenting resident carries | 1,000 ÷ 10,000 = **0.1 h** |
+| A visitor who walks on the mown verge carries | **0 h** |
+**No credit moves from a resident to the city, so there is nothing to collect** (A3). The resident's portion is a record of debit, like any other.
+**Three things are left to the network and the municipality.**
+| | Whose decision |
+|---|---|
+| What counts as consent to a city's bundle of services | The network's and the municipality's published rule (§2.4a, §2.6) |
+| Which services are essential, and so add no debit to anybody | The network's published list (§4.2). A fire service is a likely entry |
+| How many services a city runs, and how much of each | Government and local law (§2.6) |
+**A person who benefits without consenting carries nothing.** That is accepted, and it follows from §2.4a.
 ### 5.5 The basic-needs floor
 #### 5.5.1 What the floor is
 | Term | What it means |
@@ -1108,6 +1299,11 @@ example. **What was dropped:** the explanation prose between them.
 | 10 h/day | 0.330 | 1,205 h/yr | 0.87× | 0.14 – 0.18 | 0.23 – 0.26 | Open |
 | 14 h/day | 0.253 | 1,293 h/yr | 0.94× | 0.10 – 0.13 | 0.16 – 0.19 | Open |
 | 16 h/day | 0.228 | 1,332 h/yr | 0.97× | 0.09 – 0.11 | 0.14 – 0.17 | Open |
+| `F` | Upper edge, child's consumption on the child (this section) | Upper edge, the nearest run | Lower edge, broad basket |
+|--:|--:|--:|--:|
+| 2 h/day | 1.017 | **1.196** | 1.13 – 1.32 |
+| 10 h/day | 0.330 | **0.277** | 0.23 – 0.26 |
+| 14 h/day | 0.253 | **0.199** | 0.16 – 0.19 |
 ##### How much of the upper edge is the production method
 > **⚠️ The 1,380 h/yr anchor is a median *American* lifestyle, and that is not a neutral choice.** `06-simulation/median-lifestyle/Q6.md` and `q6_payers.py` count the labour behind every payer's consumption and measure the US as the labour-inefficient outlier: **Germany, Japan, France and Sweden reach a comparable-or-better material standard, and longer lives, on 0.84 – 0.87 of the US embodied labour** (Germany and Japan 0.836, France 0.858, Sweden 0.873).
 | Production method | Debit-hours per unit | Real living the same envelope delivers | As a share of the 66,407 units people want |
@@ -1204,7 +1400,7 @@ example. **What was dropped:** the explanation prose between them.
 ##### Most of what a person consumes cannot be accumulated at all
 ###### An example, with the numbers
 **A network with `F` = 10 h/day and ρ = 1.2. Two people at age 40.**
-| | Lifetime credit `C` | Credit per day lived | Debit `D` from 40 years of median consumption |
+| | Lifetime credit `C` | Credit per day lived | Debit `D` from 40 years of median consumption, all counted on the person (the upper case, §4.4) |
 |---|--:|--:|--:|
 | **Floor-only** | 146,000 h | **10.0 h/day** | 40 × 1,380 = **55,200 h** |
 | **Maximum worker** | 350,400 h | **24.0 h/day** | 40 × 1,380 = **55,200 h** |

@@ -1,8 +1,8 @@
 <!-- tag: ovw-aequitas-overview -->
 # Aequitas — Overview
 
-> **Version:** 0.37
-> **Date:** 2026-11-07
+> **Version:** 0.38
+> **Date:** 2026-11-18
 > **Audience:** everyone. No economics background assumed, none required.
 > **Rigorous version:** `00-strategy/Aequitas_Foundations.md`. This document is the plain-language companion; where they differ, the Foundations govern.
 
@@ -541,7 +541,7 @@ A power company today puts the cost of its smoke onto everybody else. **Here it 
 
 **Regulators become something businesses want.** An environmental agency's job stops being punishment and becomes advice: *here is how to lower your debit.* Every hour they save you is an hour off your product's cost. Enforcement quietly turns into consulting.
 
-**Taxation becomes unnecessary.** Civil servants are credited directly for the work they do — there is no salary that needs funding first. People who use a road carry a share of its debit by using it. There is nothing left to collect, and therefore nothing to argue about collecting.
+**Taxation becomes unnecessary.** A civil servant is credited for the work they do, and there is no salary that needs funding first. The residents who agreed to a city's services share the hours of that work in equal parts. If a city worker mows verges for 1,000 hours and 10,000 residents agreed, each resident's debit rises by 0.1 hours. Nothing is taken from anybody's credit, so there is nothing left to collect.
 
 <!-- tag: ovw-two-things-this-requires-and -->
 ### Two things this requires, and both are features
@@ -633,7 +633,7 @@ This is the question every planned economy failed. If prices don't direct produc
 
 **A pledge doesn't spend your credit, and it isn't a promise to buy.** Your credit stays yours — a pledge just puts it *behind* something, the way naming a beneficiary doesn't hand over your bank balance. It backs whoever you name, so they may carry the cost of the work. What it *does* use up is a separate **lifetime allowance**. Over your whole life you can pledge as many hours as you have earned, and **a pledge is permanent: you cannot take it back.** That permanence is deliberate, so the people you back can rely on it and get on with the work. And because a pledge is a real, one-time expense, nobody can pledge frivolously or flood the system for free.
 
-**A pledge summons work — it doesn't have to be about a *thing*.** Say you've earned four hours and you pledge two toward mowing the scrappy public verge on your street. Someone with a mower sees it, spends an hour, shows proof, and earns an hour of credit. That's the whole transaction — no object changed hands, nobody's credit was cancelled, and one pledged hour is still behind the next mow. Where the pledged work *does* make an object, taking that object is a separate step: whoever accepts it takes on its debit against their *own* credit and backing, pledge or no pledge. It is deliberately messy. People will pledge for silly things, pledges will go unfilled, and groups will form to coordinate them. That is fine. Messy or not, it's the thing that creates jobs.
+**A pledge summons work — it doesn't have to be about a *thing*.** Say you've earned four hours and you pledge two toward mowing the scrappy public verge on your street. Someone with a mower sees it, spends an hour, shows proof, and receives that hour of your pledge as backing. The hour is recorded, but it does not count as credit, because nobody asked to receive the mowing. A city worker who mows the same verge for residents who agreed to the city's services is credited, and those residents share the hour. That's the whole transaction — no object changed hands, nobody's credit was cancelled, and one pledged hour is still behind the next mow. Where the pledged work *does* make an object, taking that object is a separate step: whoever accepts it takes on its debit against their *own* credit and backing, pledge or no pledge. It is deliberately messy. People will pledge for silly things, pledges will go unfilled, and groups will form to coordinate them. That is fine. Messy or not, it's the thing that creates jobs.
 
 **Pledges are the demand side of the economy.** Cost tells you what something takes; pledges tell you who wants it. Together they do the job prices do, with no central optimiser and no board deciding priorities.
 

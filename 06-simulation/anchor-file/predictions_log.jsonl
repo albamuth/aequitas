@@ -1,0 +1,9 @@
+{"type": "registered", "predictions_sha256": "c626204e02632e2e51b2bccdb9945931642f45fb5b76e8d3689b2c584028cb28", "date": "2026-11-18"}
+{"type": "result", "run": "2026-11-18T03:02:02", "id": "P0-old-selftest5", "observed": 0.19, "passed": true}
+{"type": "result", "run": "2026-11-18T03:02:02", "id": "P1-level-1380-F10", "observed": 0.33, "passed": true}
+{"type": "result", "run": "2026-11-18T03:02:02", "id": "P2-level-1350-F10", "observed": 0.32, "passed": true}
+{"type": "result", "run": "2026-11-18T03:02:02", "id": "P3-level-1400-F10", "observed": 0.33, "passed": true}
+{"type": "result", "run": "2026-11-18T03:02:02", "id": "P4-order-F10", "observed": [0.32, 0.33, 0.33], "passed": true}
+{"type": "result", "run": "2026-11-18T03:02:02", "id": "P5-F2-1380", "observed": 0.92, "passed": true}
+{"type": "result", "run": "2026-11-18T03:02:02", "id": "P6-F14-1380", "observed": 0.25, "passed": true}
+{"type": "result", "run": "2026-11-18T03:02:02", "id": "P7-width-F10", "observed": 0.01, "passed": true}

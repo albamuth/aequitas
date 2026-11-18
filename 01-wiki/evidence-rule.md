@@ -49,11 +49,38 @@ edges:
 | Output | How it is verified |
 |---|---|
 | **Goods** | The hand-off. The receiver accepts possession and the debit that rides with it ([production-credit](production-credit.md)) |
-| **A service** | The client confirms it happened ([service-credit](service-credit.md)) |
-| **Enrichment** | Evidence that the work happened, never that anyone valued it ([enrichment](enrichment.md)) |
+| **A service** | A receiver who asked for it confirms that it happened. The confirmation is also the consent that puts the hours on that receiver. One confirming receiver is enough ([service-credit](service-credit.md)) |
+| **Enrichment** | Where it is given to other people, a receiver who asked for it confirms, as for a service. For other enrichment, evidence that the work happened, under the network's published rule ([enrichment](enrichment.md)) |
 | **Self-care** | Proof of life. A verified living human maintained itself ([debit-tolerance](debit-tolerance.md)) |
+| **Essential care** (work that continues another person's life) | The network's published rule for that kind of care. The receiver does not have to confirm it. Where the receiver cannot confirm, a second witness does |
 
-**Two rules stop this becoming a route for fraud.** Verification asks whether the work happened and never whether anyone valued it; letting credit depend on likes would make feedback a currency by the back door. And weak evidence weighs near zero until something corroborates it, inside a rule, never in place of one.
+**Two rules stop this becoming a route for fraud.**
+
+- **Verification asks whether the work happened, and whether a receiver accepted it. It never asks how much anyone valued it.** Letting credit depend on likes would make feedback a currency by the back door.
+- **Weak evidence weighs near zero until something corroborates it**, inside a rule, never in place of one.
+
+### Essential care is a published list
+
+> **A network that counts some care as essential publishes the list, and an evidence rule for each entry on it.**
+
+**Essential care is credited to the carer and adds no debit to the person cared for.** So an entry on the list is credit with no debit beside it, and its check must come from the evidence rule.
+
+| The receiver | The evidence |
+|---|---|
+| Can confirm the care | The receiver's confirmation, as for any service |
+| Cannot confirm it: an infant, an unconscious patient | A second witness, made on a different path. A hospital's admission record is one. Another carer's record is one |
+
+**Worked, at a floor of `F` = 10 hours a day and a debit tolerance of ρ = 0.330.** Two adults each claim 14 hours a day of care for the other. That is 14 × 365 = 5,110 hours a year on top of 3,650 hours of floor credit.
+
+| | Credit a year | New debit a year | Change in what each may carry |
+|---|--:|--:|--:|
+| Honest, floor only | 3,650 h | — | — |
+| The pair, with the 14 hours on the essential list | 8,760 h | 0 h | 0.330 × 5,110 = **+1,686 h** |
+| The pair, with the 14 hours counted as any other service | 8,760 h | 5,110 h | 1,686 − 5,110 = **−3,424 h** |
+
+**In plain words: a false service that lands on the receiver costs each of the pair 3,424 hours a year. The same false service on the essential list gains each of them 1,686 hours.** A network that calls every service essential takes all service hours off its subscribers. The check on that is another network re-computing the claim through its own rules (below).
+
+### Comparison, never conversion
 
 **A network never converts another network's figures into its own.** Converting a balance from one model into another would set an exchange rate between two credit-standards, which is a medium of exchange and forbidden by A3. **A network with lax checking therefore cannot export the credit it issues**: whoever trades with its members discounts it. That guard depends on OP-22, because re-computing what a claim is drawn from means seeing it.
 
@@ -66,7 +93,7 @@ edges:
 | **A** delivers a translation and the client confirms | 20 h | met | **20 h** |
 | **B** says they translated for 20 hours, with no text and no client | 20 h | not met | **0 h** |
 
-**B is not being judged.** B knew the rule before starting. **Now change the network instead of the person.** If translating for someone who cannot confirm is work this network wants to credit, it writes a rule for that case, perhaps a second witness, and then B's 20 hours credit at 20 hours, not at some fraction because a vague claim was weighted cautiously.
+**B is not being judged.** B knew the rule before starting. **Now change the network instead of the person.** A network may accept a different record of the client's agreement, such as an order signed before the work began. It writes a rule for that case. Once the rule exists, a translator who holds such an order and the finished text is credited 20 hours, not some fraction because a vague claim was weighted cautiously. **No rule can credit a service that nobody asked for.**
 
 ## What subscribing discloses, and what it does not
 

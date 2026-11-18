@@ -1,6 +1,6 @@
 ---
 title: Property debit
-summary: The debit of a thing you hold; its material moves with the thing, your share of its making hours is set by how long you held it and stays with you, and a durable asset's whole creation cost sits on its holders, never in what it made.
+summary: The debit of a thing you hold; its material and the pollution that belongs to it move with the thing, your share of its making hours is set by how long you held it and stays with you, and a durable asset's whole creation cost sits on its holders, never in what it made.
 type: mechanism
 ids: [§3.2, §4.5, OP-23]
 status: settled
@@ -36,7 +36,25 @@ See [debit-taxonomy](debit-taxonomy.md) for the full picture and the schematic; 
 
 - Acquire an item → you take on its **material** in full, and begin accruing a **holding-time share** of its making.
 - Transfer it → the **material** leaves with the atoms; your **creation-cost share persists**, diluting as the new holder accumulates time. You can't escape it via a non-participant — no record of a hand-off means the ledger still shows *you* holding it.
-- Work done on the property **increases** the property's creation-cost, and therefore the holder's — see [self-work-identity](self-work-identity.md).
+- Give it away with no hand-off recorded → the debit stays with you, the giver. A carer who buys 2 kg of food and gives it to a child, with no hand-off recorded, still carries the 2 kg (Foundations §2.4, rule 3).
+- Work done on the property **increases** the property's creation-cost, and therefore the holder's, **only if the holder accepted the work** — see [self-work-identity](self-work-identity.md).
+
+**Pollution that belongs to the object rides it too.** There are two records: what the object will give off when it is used, and what its own material gave off in becoming it (Foundations §3.2b, lines 3 and 4). Both move with the object in full, as the material does.
+
+| The object | The pollution that belongs to it | Who carries it |
+|---|---|---|
+| 40 litres of petrol | 40 × 2.31 = 92.4 kg of CO₂ that burning will release | Whoever holds the litres. Once burned, whoever burned them, permanently |
+| Cement made from 100 kg of limestone | 44 kg of CO₂ that the limestone gave off as it became lime | Whoever holds the cement, and then what is built with it |
+| The same cement, 30 kg of CO₂ from the kiln's fuel *(illustrative)* | None. The kiln used the fuel up | The kiln's people, permanently |
+
+**Work adds to a holder's debit only if the holder accepted it** (Foundations §3.2, §2.4a). A debit lands on a person by their own act or by their acceptance, and never by another person's act alone.
+
+| The work | Added to the holder's debit | Credited to the worker |
+|---|--:|--:|
+| A plumber repairs pipes that the holder asked them to fix, 2 h | **2 h**, shared with later holders by holding time | 2 h |
+| A stranger paints a fence unasked, 6 h | **0 h** | 0 h. It meets no published evidence rule |
+
+*(Illustrative digits.)*
 
 Contrast with [consumption-debit](consumption-debit.md), which is permanent and never discharges at all.
 
@@ -54,6 +72,7 @@ See [self-work-identity](self-work-identity.md) for the surprising and important
 
 **Debit dumping.** The exploit would be to offload high-debit property onto someone who may still carry more. Two things now blunt it: the *material* transfers but the **creation-cost does not** (your holding-time share stays with you), and **custody is accepted, not imposed** (§3.2b) — you cannot be forced to *receive* an object, though if you accept one you cannot disclaim the debit that rides with it. The residue is *illicit* dumping — abandoning a thing in the environment to escape its end-of-life debit — parked as **OP-25**.
 
+**Loading a holder with unasked work.** A person could work on a thing somebody else holds, and so raise that holder's debit. The acceptance condition stops it: unasked work adds 0 hours to the holder and credits 0 hours to the worker.
 ## Depends on
 
 - [material-flow-value](material-flow-value.md)

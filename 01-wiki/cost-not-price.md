@@ -50,7 +50,7 @@ Competition does not disappear — it moves. Producers compete on **quality**, *
 
 **On the second half, which is the part people argue with.** A barn shelters cattle for twenty years. Why is the barn not in the beef?
 
-> **Because the beef did not build the barn.** Under [A1](material-flow-value.md) only people act, so a cost attaches to whoever caused it — and **a thing causes nothing.** Charging a beef buyer for the barn is the same error as charging a ring buyer for the miner's tailings, which [the non-transfer rule](no-externalities.md) already refuses.
+> **Because the beef did not build the barn.** Under [A1](material-flow-value.md) only people act, so a cost attaches to whoever caused it — and **a thing causes nothing.** Charging a beef buyer for the barn is the same error as charging a ring buyer for the fuel the mine burned, which [the non-transfer rule](no-externalities.md) already refuses.
 
 **The numbers.** A 20,000-hour barn over 40,000 kg of beef would be **0.5 h/kg**. Aequitas shows **0.0**. The 20,000 hours sit on the farmer, and at ρ = 1.2 they need about **16,700 hours of credit** standing behind them — roughly **four and a half years** of one person's entire accrual. *That* is what stops a barn going up that nobody needs. Push it onto the beef instead and the cost leaves the one person who chose to build it and lands on ~40,000 buyers who did not. Full worked cases: Foundations §4.5.
 

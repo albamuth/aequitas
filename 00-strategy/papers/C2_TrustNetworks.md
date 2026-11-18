@@ -3,6 +3,7 @@
 > **Version:** 0.2
 > **Date:** 2026-10-25
 > **Status:** First assembly. Every ruling here is settled and folded into Foundations v0.17; this document gathers them in one place because they were decided across a dozen separate sections. **One thing remains open and it is named in §11: OP-10 (weighting-model governance).**
+> **⚠️ Dated note, 2026-11-18.** Since Foundations v0.72 a network's own work is a service to its subscribers. Its workers are credited, and its subscribers, who asked for the work by subscribing, carry its hours in equal parts (Foundations §4.7). The sentence on funding below keeps its original words as a dated record.
 > **Depends on:** `Aequitas_Foundations.md` §2.6, §3.3, §3.3a, §4, §4.1–§4.8 · `Aequitas_Conformance.md`
 > **Companion:** `C2_information_capture.md` — the reasoning behind §6 below, including a retracted proposal kept on purpose.
 
@@ -118,6 +119,7 @@ Secure identification at the point of transaction — a card chip, a biometric, 
 
 **It isn't, in the sense the question usually means.**
 
+<!-- struck-ok: a dated record of the wording before Foundations v0.72; see the note at the top of this paper -->
 > **Funding, in Aequitas, is simply the recognition of an activity as creditable.**
 
 There is no treasury, no allocation, no grant. Audit work is work; recording is never gated on approval (A7), so **the credit for doing the work was never scarce and never needed a funder.**

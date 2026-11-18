@@ -1,7 +1,7 @@
 <!-- tag: obj-aequitas-objections-register -->
 # Aequitas — Objections Register
 
-> **Version:** 0.56 · **Date:** 2026-11-07
+> **Version:** 0.57 · **Date:** 2026-11-18
 > **Tracks:** `Aequitas_Foundations.md` · `Aequitas_Conformance.md` · `OP-22_identity_not_disclosure.md` · `OP-27_parallel_implementation.md` · `OP-28_dark_production_and_the_residual_denominator.md` · `OP-26_coverage_and_closure.md` · `OP-18_labour_and_team_credit.md` · `OP-23_capital_and_pollution.md` · `OP-17_coproduct_allocation.md` · `06-simulation/allocation-engine/RECURSION_RESULTS.md` · `06-simulation/disparity-ceiling/DISPARITY_CEILING.md` · `06-simulation/scenario-suite/scenario_suite_METHOD.md`
 > **Purpose:** one place holding every serious objection to the theory, its source, the axiom it attacks, and its status.
 
@@ -37,6 +37,8 @@
 
 **[PART B — ANSWERED](#part-b--answered)**
 
+  - [B24 — Pollution that belongs to the product goes with the product](#b24--pollution-that-belongs-to-the-product-goes-with-the-product--passes-with-changes-folded-2026-11-18)
+  - [B23 — Who a debit lands on: consent, services, tickets and pledged work](#b23--who-a-debit-lands-on-consent-services-tickets-and-pledged-work--passes-with-changes-folded-2026-11-18)
   - [B22 — Joining is a windfall with no setting, and the peer ratios counted households only](#b22--joining-is-a-windfall-with-no-setting-and-the-peer-ratios-counted-households-only--corrected-2026-10-29)
   - [B21 — One buyer, part of two co-products](#b21--one-buyer-part-of-two-co-products--answered-2026-10-13)
   - [B20 — A default route is a pledge nobody made](#b20--a-default-route-is-a-pledge-nobody-made--answered-2026-10-13)
@@ -235,6 +237,8 @@ Whoever sets the mitigation-cost model controls every balance in history without
 
 Retroactive re-weighting (§3.3) makes cost constants extraordinarily powerful: whoever publishes the energetics of a process sets every split in that sector, backwards through all history.
 
+**One more constant of this kind, since Foundations v0.72.** Pollution that a thing's own material gives off rides the thing (§3.2b, line 4; B24). Where the material's make-up fixes the amount, as for limestone, anyone can check it. **Where it does not, as for methane from cattle, the amount is a network's published number.** A network that sets it low moves debit off every buyer of that product at once.
+
 > **⚠️ Lever enlarged in v0.6.** Foundations §3.3 now makes pollution-debt **stock-dependent**, floating with the ambient stock above a natural-remediation baseline. Two new constants — the **equilibrium baseline** and the **ambient-stock measurement** — move every pollution record in history at once. They are the largest single levers in the weighting model, and the consumer-side understatement bias below applies to them with full force: everyone benefits from the baseline being set high (fewer things count as pollution) and the stock being read low. Foundations §3.3a puts them under the same five requirements as every other constant. **This does not solve OP-24 (understatement drift); it raises the stakes on it.**
 
 **One channel of capture is structurally closed and should be claimed.** There is no market-dominating corporation to fund a favourable result, because A5 (cost, not price) removes the profit that pays for captured science today. Labs are credited by trust networks for doing work. **The Enron-shaped failure cannot operate the same way here.**
@@ -352,6 +356,8 @@ Parecon's central historical claim: Soviet-type systems abolished capitalists an
 **The new residual, introduced by pledging.** Pledging power accrues per hour worked, equally for everyone — egalitarian across *sectors*, but weighted by **hours available to work**, which is not equally distributed. Caregivers, part-time workers, the disabled, and the chronically ill hold systematically less say in what gets produced. **Live and unaddressed.**
 
 > **A second seniority-weighted channel was avoided, not opened (v0.15).** Where a pledge's criteria are silent, the backing goes to the doers **pro-rata by hours *on the task*** (§4.6; the contingent reserve that first carried this split was withdrawn 2026-09-18, and the split survived it) — deliberately *not* by whole-co-op-history hours, which would have let long-tenured members skim cover from work newcomers actually did (a fresh P4 surface). Task-scoped splitting keeps the cover on the doer.
+
+**A third residual, introduced by the consent rule (Foundations v0.72 §4.6; B23).** Work that nobody asked to receive earns backing and no pledge budget. The same work done for a city's consenting residents is credited. **So whoever can gather consent turns work into a say.** Worked: a person who mows public verges for 1,000 hours a year under pledges has, after 40 years, 40,000 hours less pledge budget than a city worker who did the same mowing. **Live and unaddressed.**
 
 **Consequences for OP-1:** *proposal power with universal suffrage* is the only candidate that structurally separates agenda-setting from deciding. Parecon's **decision weight proportional to how much you are affected** is a fifth candidate, and it does not accumulate at all — the best available answer to the hours-inequality residual.
 
@@ -544,6 +550,117 @@ A second wave of critique arrived on 1f916.ai against posts #1605, #1750 and #15
 
 ---
 
+<!-- tag: obj-b24 -->
+## B24 — Pollution that belongs to the product goes with the product ✅ **PASSES WITH CHANGES, FOLDED 2026-11-18**
+
+**Shipped:** Foundations v0.71 and v0.72 §3.2b, §2.2, §3.2, §3.4a, §3.6, §5.2 · Conformance v0.25 row 2e. **Source:** author's rulings, 2026-11-17 (`03-journal/2026-11-17.md`). The stress test is in `PLAN_Fold_Consent_and_Pollution.md`, section 2.
+
+### The objection
+
+**§3.2b said that pollution from making a thing "never reaches a buyer".** Cement is made by firing limestone, and the limestone itself gives off CO₂: 100 kg gives 56 kg of lime and 44 kg of CO₂. No kiln can avoid that. Under the old line the 44 kg stayed with the kiln's people, so a buyer who chose concrete over a material with no such release saw no difference in the books.
+
+### The ruling — author, 2026-11-17
+
+**One mechanism: pollution goes with the product that causes it, to whoever uses that product up.**
+
+| The case | Whose pollution |
+|---|---|
+| A maker burns fuel to run a process | **The maker's.** The maker is the last user of that fuel, as a driver is |
+| A thing's own material gives off pollution in becoming the thing | **The thing's.** It goes to the buyer and the holder |
+
+**The reason, in the author's words:** *"the incentive is that the maker minimize their process pollution, and that the buyer seek products that are not inherently polluting."*
+
+### What the stress test changed before folding
+
+**Verdict: PASSES WITH CHANGES.** The author's first test was *"every maker of that product must release it"*. It fails its own example when a kiln captures its CO₂, and a narrow product name defeats it.
+
+| The attacker | What they do | What stops it |
+|---|---|---|
+| **The relabeller** | A kiln reports its fuel's CO₂ as the limestone's, so the debit leaves with the cement | **A ceiling.** At most 44 kg for every 100 kg of limestone rides the cement. More is the maker's |
+| **The narrow name** | A steel maker names its product "blast-furnace steel", so every maker of it must release the coke's CO₂ | **A test on the material.** The carbon is the coke's, and the coke is used up |
+| **The capturing kiln** | Captures the CO₂, so "every maker must release it" is false | The test reads what the material must give off. The record is what was measured as released |
+| **The double count** | The chimney meter reads all the CO₂ as the kiln's, and 44 kg also ride the cement | Counted once |
+
+**The test as folded:** a release is the thing's own when it is made of the thing's own material, and the make-up of that material fixes the amount.
+
+**A4 (no externalities) is not changed.** A4 asks who caused a consequence. A5 (cost, not price) asks what a thing is made from and who holds it. The 44 kg are part of the material the cement consumed. **The rule never rests on the buyer having caused the firing**, which is the ground B17 struck.
+
+### Two examples changed their meaning
+
+| | Before | Now |
+|---|---|---|
+| **A gold ring** | Its owner carried nothing of the mine's | The mine's fuel and chemicals stay with the mine. **The waste rock goes with the gold**: about 10 tonnes for a 10-gram ring, at 1 gram a tonne |
+| **Recycled steel** | Lighter than new steel | It keeps the record its atoms had, and adds no new one |
+
+### What is left
+
+- **Registered under OP-24 (understatement drift): the published number.** Where the make-up fixes no amount, such as methane from cattle, the amount is a network's published number. A network that sets it low moves debit off every buyer of beef at once.
+- **The test that would settle the size has not been run:** a sweep over real product chains, to count how much pollution moves from makers to buyers.
+
+---
+
+<!-- tag: obj-b23 -->
+## B23 — Who a debit lands on: consent, services, tickets and pledged work ✅ **PASSES WITH CHANGES, FOLDED 2026-11-18**
+
+**Shipped:** Foundations v0.72 §1 (head), A5, §2.4a, §2.4, §3.2, §3.2c, §4.2, §4.4, §4.5, §4.6, §4.7, §5.4 · Conformance v0.25 rows 2f, 2g, 9c, 16e. **Sources:** author's rulings, 2026-11-16 (`07-outreach/log/PLAN-2026-11-16.md`, sections 7 to 12); the outreach agent's `obj-20261103-self-council-service-moves-no-debit-vs-4-5` and `obj-20261102-self-council-pledges-household-net-sums-ledgers`.
+
+### The objections
+
+1. **Three documents disagreed about a child's debit.** The Pledges paper said a child carries none. Foundations §2.6 called it a network setting. §3.0 and §4.4 counted childhood on the person, at the adult rate.
+2. **Does a service put the worker's hours on the receiver?** §4.5 said yes. The Pledges paper and A3 (non-fungibility) said no.
+3. **One service, many receivers.** A 1-hour lecture to 500 people would put 500 hours of debit beside 1 hour of credit.
+4. **Is work credited when nobody asked to receive it?** §4.6 credited a resident who mowed a public verge under a pledge.
+
+### The rulings — author, 2026-11-16
+
+**The principle:** a debit lands on a person by their own act, or by their acceptance. It never lands by another person's act alone. It stands at the head of the axioms, not numbered.
+
+| Question | The rule |
+|---|---|
+| A child | Takes on debit by their own act. What a child is given stays with the giver. Care adds no debit to the child |
+| A service | The receiver carries its hours only when it is not essential and they asked for it |
+| Many receivers | They share what the event itself used up, in equal parts for each ticket. A 1-hour lecture to 500 people puts 0.002 hours on each |
+| Work nobody asked to receive | It earns the pledge as backing and does not count as credit. The same work for consenting receivers is credited, and they carry it |
+| A purchase for other people | Needs evidence that they authorised it beforehand |
+
+**What each network decides:** what counts as consent, and which care is essential. The author: *"The definition becomes a legal matter, and Aequitas is not a legal system."*
+
+### What the stress test changed before folding
+
+| Found | The change |
+|---|---|
+| The first ground offered was *"the customer caused the haircut by asking"*. A1 (materialism of cost) puts responsibility on whoever acted, and B17 struck the same test for transport fuel | **The ground is §3.2:** a service is work on something the receiver holds, and it adds debit only if they accepted it |
+| An essential service that the receiver asked for adds no debit. That looked like an exception | **It is the floor's rule:** work that continues a person's life adds no debit to that person, whoever's hands do it |
+| §3.2 had no consent condition. A stranger could do 1,000 hours of unwanted work on a house and load its holder | **Closed.** Work adds debit only if the holder accepted it |
+| A network may read consent from a status, such as residence | §2.4a says that such a rule is the network's published rule, and is not consent in the sense of the principle |
+
+### Exploits
+
+| The attacker | What they do | What stops it |
+|---|---|---|
+| **The care ring** | Two adults each claim 14 hours a day of essential care for the other. At `F` = 10 and ρ = 0.330 each gains 0.330 × 5,110 = **+1,686 h** a year of what they may carry | **Only the network's evidence rule for its essential list.** Counted as any other service, the same claim costs each of them 3,424 h a year. IC-7 caps a day at 24 hours |
+| **The child as a sink** | A parent records their own purchases as the child's | The network's rule for a purchase made for another person. **A loose rule harms a person who could not refuse** |
+| **The false concert** | A friend confirms 8 hours a day of concerts that never happened | At ρ = 0.330 the pair lose 5.36 hours a day between them. At ρ = 1.2 they gain 1.6 |
+| **The network** | Calls every service essential, so no subscriber carries service hours | The same check as for a generous floor (B11): another network re-computes it. That depends on OP-22 (minimum audit disclosure) |
+| **The organiser** | Records practice or upkeep as hours of an event, to move operating debit onto the audience | Dated work records, read against the date of the event |
+| **The gift route** | A person over the gate lives on gifts | The giver carries every hour, inside the giver's own gate |
+
+**Registered under OP-1 (service → influence): the care ring, the child as a sink, and the false concert.** The author on the care ring: *"Evidence rules and methods are one of the trust network's reason for existing."* No Aequitas rule is added.
+
+### The cost, named
+
+- **Fecundity is weaker.** Work on things held in common earns backing and no pledge budget, unless a city or a network gathers consent for it. Over 40 years at 1,000 hours a year, that is 40,000 hours less budget.
+- **A pledge makes no new pledge budget.**
+- **Whoever can gather consent turns work into a say.** That is P4 (coordinator class), in one more place (OA7).
+
+### What is left
+
+- **No simulation run matches the ruling on children.** The nearest gives upper edges of 1.196 / 0.277 / 0.199 at `F` = 2 / 10 / 14, against 1.017 / 0.330 / 0.253 (Foundations §5.5.3). B22's margins are now the upper case.
+- **The test of the care ring has not been run:** the share of a network's credit that false essential hours can reach before a second-witness rule at a stated sampling rate catches them.
+- **§3.5 says total debit is above total credit by construction.** At `F` = 10 a person is credited at least 3,650 h a year, against 1,380 h of debit for a median life. Not examined here.
+
+---
+
 <!-- tag: obj-b22 -->
 ## B22 — Joining is a windfall with no setting, and the peer ratios counted households only ✅ **CORRECTED 2026-10-29**
 
@@ -558,6 +675,8 @@ A second wave of critique arrived on 1f916.ai against posts #1605, #1750 and #15
 **What was already written.** The pieces were in §4.4, where the declared-span table prints −650 h a year at `F` = 2 and ρ = 1.0, and in §5.5.3, where both edges sit below break-even. The two sentences contradicted them. **The agent's council found the contradiction, and that is a replication in the §3.3a sense.**
 
 **The repair.** §2.5's existing rule, applied to two sentences. No axiom and no mechanism moved. §4.4 now prints the setting, the break-even and a three-row table. Other production methods are stated as not measured.
+
+**Since Foundations v0.72 these margins are the upper case.** `D` = 55,200 h counts every year of childhood on the joiner. What a child is given stays with the giver (B23), so the lower case is 22 × 1,380 = 30,360 h. At `F` = 10 the margin at the edge is then +8,622 h or +10,082 h, by run (§4.4).
 
 ### 2 — The peer ratios counted households only
 
