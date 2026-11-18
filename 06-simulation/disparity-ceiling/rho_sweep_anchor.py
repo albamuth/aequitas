@@ -62,10 +62,13 @@ def build_population(floor, n=N, seed=SEED):
     return c, wants
 
 
-def demand_curve(c, wants, rhos=RHOS):
-    """Admitted demand at each rho. Vectorised over the grid."""
+def demand_curve(c, wants, rhos=RHOS, kappa=None):
+    """Admitted demand at each rho. Vectorised over the grid.
+    kappa=None reads the module anchor KAPPA; the scale-the-anchor self-test
+    passes a scaled value."""
+    k = KAPPA if kappa is None else kappa
     # (n_rho, N) would be 320 MB; loop the grid instead, each step vectorised.
-    return np.array([np.minimum(wants, r * c / KAPPA).sum() for r in rhos])
+    return np.array([np.minimum(wants, r * c / k).sum() for r in rhos])
 
 
 def clearing(dem, R_max, rhos=RHOS):
@@ -167,7 +170,24 @@ def self_tests(results):
     assert r30 < 826.0 / 3650.0, f"-30% cell {r30} not below broad lower edge"
     ok += 1
     print(f"[ok] 5. F=10 at -30%: rho* = {r30:.2f}, below the broad-basket edge 0.226")
-    print(f"[ok] {ok}/5 self-tests green")
+    # 6. SCALE THE ANCHOR (sr-20261105). Demand reads rho / kappa only and R_max
+    #    never reads kappa, so rho* must scale with kappa. Run the F = 10 baseline
+    #    and the -30% cell at kappa x 0.5 and x 2; the assertion compares against
+    #    the unscaled run times the factor -- no literal. Tolerance: one grid step
+    #    plus the half-step the unscaled value was rounded by, times the factor.
+    step = float(RHOS[1] - RHOS[0])
+    c, wants = build_population(10.0)
+    unconstrained = wants.sum()
+    for scale in (0.5, 2.0):
+        dem = demand_curve(c, wants, kappa=KAPPA * scale)
+        for shock in (0.0, -0.30):
+            got, flag = clearing(dem, CAP * unconstrained * (1.0 + shock))
+            assert got is not None and not flag, (scale, shock, flag)
+            want = results[(10.0, shock)][0] * scale
+            assert abs(got - want) <= step + 0.5 * step * scale, (scale, shock, got, want)
+    ok += 1
+    print("[ok] 6. kappa x 0.5 and x 2: rho* scales by the same factor within one grid step")
+    print(f"[ok] {ok}/6 self-tests green")
 
 
 if __name__ == "__main__":

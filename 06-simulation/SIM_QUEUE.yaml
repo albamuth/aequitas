@@ -647,7 +647,7 @@ sim_requests:
     request_hash: 26f8c866f7ffb23ba5f7847cc6b588f927fd93cfb5c396e2e9014666d45c1d15
   sr-20261031-re-run-stable-band-cumulative-py-kappa-tied-:
     date: '2026-10-31'
-    status: requested
+    status: answered
     question: 'Re-run stable_band_cumulative.py (kappa-tied, kappa = 1,380/365)
       in two arms at F = 2, 10, 14, beside the published rho*_L 1.017 / 0.330 /
       0.253. Arm 1: line 79 past debit = 1,380 x max(0, age - 18) instead of 1,380
@@ -773,7 +773,7 @@ sim_requests:
     request_hash: 94455a3810382c9c99e8a54f782f38fc5e64eb4c687f2470e4efc581984a0ff2
   sr-20261105-add-a-scale-the-anchor-self-test-to-rho-swee:
     date: '2026-11-05'
-    status: requested
+    status: answered
     question: 'Add a scale-the-anchor self-test to rho_sweep_anchor.py and stable_band_kappa.py:
       run at kappa x 0.5 and kappa x 2, require rho* to scale by the same factor
       within one grid step, with no literal in the assertion. Predicted from the
@@ -936,7 +936,7 @@ sim_requests:
     request_hash: c33d9bcce1389487a7ceccae0dac356ea56e391654654db134b233fb4c2ace5f
   sr-20261111-in-stable-band-kappa-py-s-own-population-60-:
     date: '2026-11-11'
-    status: requested
+    status: answered
     question: 'In stable_band_kappa.py''s own population (60,000, seed 7, wants
       lognormal sigma 0.45 tilted by credit^0.25, kappa 1,380/365, capacity 56,446),
       at the one-day rho* of F = 2, 10, 14 (1.017, 0.330, 0.253) and at rho = 1.5,
@@ -969,7 +969,7 @@ sim_requests:
     request_hash: 580a9e53ff39328b3382a2ae77a54a1a62f6ba5475776dbea0b7a16f8d2f6634
   sr-20261111-fuel-blockade-at-the-german-method-same-popu:
     date: '2026-11-11'
-    status: requested
+    status: answered
     question: 'Fuel blockade at the German method. Same population, gate and settings
       as german-prime-sweep/german_prime_sweep.py (stock gate, P = 0, essentials
       ungated at E = 437 and 462 h, services off the receiver, joiner pasts, F =
@@ -992,7 +992,7 @@ sim_requests:
     request_hash: 8f7ea9ad98773f0ef053a60c5d2ae676d3e050dc627d25ae45d7a26850804609
   sr-20261111-lost-crop-at-the-german-method-same-populati:
     date: '2026-11-11'
-    status: requested
+    status: answered
     question: 'Lost crop at the German method. Same population, gate and settings
       as german-prime-sweep/german_prime_sweep.py. One food line (fruit and vegetables,
       as the essentials basket defines food eaten at home) loses 50% of its output,

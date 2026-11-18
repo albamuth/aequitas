@@ -111,8 +111,30 @@ def test_a_wrong_past_debit_changes_the_cumulative_edge():
     print(f"[ok] past debit matters: edge {a:.3f} (1,380) vs {b:.3f} (5,037)")
 
 
+def test_scale_the_anchor():
+    """sr-20261105. Scale the anchor kappa by 0.5 and 2 and require both edges to
+    scale by the same factor, comparing against the unscaled run times the factor
+    (no literal). The cumulative edge reads TWO copies of the anchor, kappa and
+    the joiner's past debit (PAST_RATE); both must be scaled or the test is
+    scaling half of the anchor. Tolerance: bisection TOL, relative."""
+    w, x, _, R = _small()
+    F = 10.0
+    ag = sc.draw_ages(len(w), 11)
+    od1, _ = sc.edge_one_day(w, x, F, KAPPA_ANCHOR, R)
+    cu1, _ = sc.edge_cumulative(w, x, ag, F, KAPPA_ANCHOR, R, M=20)
+    for s in (0.5, 2.0):
+        od, fo = sc.edge_one_day(w, x, F, KAPPA_ANCHOR * s, R)
+        assert not fo and abs(od - od1 * s) <= 2 * sc.TOL * max(s, 1.0), (s, od, od1 * s)
+        cu, fc = sc.edge_cumulative(w, x, ag, F, KAPPA_ANCHOR * s, R, M=20,
+                                    past_rate=sc.PAST_RATE * s)
+        assert not fc and abs(cu - cu1 * s) <= 2 * sc.TOL * max(s, 1.0), (s, cu, cu1 * s)
+    print("[ok] scale the anchor: one-day and cumulative edges scale with kappa "
+          "(cumulative only when PAST_RATE is scaled with it)")
+
+
 def run_tests():
     for fn in (test_kappa_is_the_anchor_not_the_median_credit,
+               test_scale_the_anchor,
                test_capacity_is_the_old_capacity,
                test_one_day_edge_scales_with_kappa,
                test_capacity_binds_at_anchor,
