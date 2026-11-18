@@ -3,11 +3,14 @@
 > **Version:** 0.1
 > **Date:** 2026-09-16
 
+> **⚠️ Dated note, 2026-11-18.** The headline below quotes a locked share of 0.1–2% and calls the lock permanent. That range came from ρ near 1.5, which is above the US rationing band, and it used a 1,600 h mean where the median is 1,380 h. Foundations v0.73 §5.5.8 prints the share beside its ρ: 0.24% in one year at ρ = 1.5, and 5.1% or 17.7% at ρ = 0.330, by population. The lock lasts while ρ stays at that setting. The text below stays as the record of the run.
+
 > Companion to [`q4_locked_ledgers.py`](q4_locked_ledgers.py). Second sim of the [scenario suite](scenario_suite_METHOD.md).
 > **Question:** if everyone were entered honestly into Aequitas, what fraction already sit past the point of a *permanent* ledger lockout?
 
 ## The one-line answer
 
+<!-- struck-ok: a dated run record; see the note of 2026-11-18 at the top of this file -->
 **Once you strip out paper wealth — which Aequitas doesn't count — only about 0.1–2% of Americans are permanently locked out, and it's the *ultra-consumers*, not the merely rich. Their edge was never physical; it was financial, and financial assets aren't material. Meanwhile ~two-thirds of people would *gain* room by joining.**
 
 ## First, the correction that makes the question answerable

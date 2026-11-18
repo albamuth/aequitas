@@ -1,5 +1,7 @@
 # Stock-gate clearing rate after a −30% capacity year
 
+> **⚠️ Dated note, 2026-11-18. Author ruling: Foundations §5.5.7 prints arm B.** Arm B is the gate the documents specify: all debit against all credit, with essentials never gated (Foundations §3.0, §5.5.4). It clears the −30% year at ρ = 0.240 to 0.251, and nobody is admitted nothing. **Arm A's 0.323 gates essentials too, which §5.5.4 forbids. Do not quote 0.323 as the system's figure.** The flow gate's 0.186 checks one year only and is not the gate of §3.0. This run's people have pasts already held under the gate; §4.4's joiners do not, and the shock has not been measured on them. The text below stays as the record of the run.
+
 ## 1. The question (quoted)
 
 > Stock-gate clearing rate after a capacity shock. Population, wants and capacity as rho_sweep_anchor.py (N, seed, CAP 0.85, sigma 0.45, kappa 1380/365), ages from stable_band_cumulative.py's pyramid. Build each ledger in steady state at rho0 = 0.33, F = 10: C = c*365*age, D = 365*age*min(wants*kappa, rho0*c). Then one year at -30% capacity through gate.py's stock room(). Report: rho at which that year's admitted demand equals capacity; admitted demand by age band and by credit decile against baseline; share of people admitting zero; the next year's demand with rho restored to 0.33. Three arms: gate on all demand; gate only on demand above E = 826 h/yr; D excluding ages under 14. Also F = 2 and 14. Print the flow rho* (0.19) beside it.

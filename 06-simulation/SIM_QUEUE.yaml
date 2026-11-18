@@ -752,7 +752,7 @@ sim_requests:
     request_hash: a5db61e2af4ee6770b4257f20d92085ac886e0948ee7b64e0919b64c3d1f9222
   sr-20261105-stock-gate-clearing-rate-after-a-capacity-sh:
     date: '2026-11-05'
-    status: requested
+    status: answered
     question: 'Stock-gate clearing rate after a capacity shock. Population, wants
       and capacity as rho_sweep_anchor.py (N, seed, CAP 0.85, sigma 0.45, kappa
       1380/365), ages from stable_band_cumulative.py''s pyramid. Build each ledger

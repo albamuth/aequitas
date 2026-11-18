@@ -1,7 +1,7 @@
 <!-- tag: ovw-aequitas-overview -->
 # Aequitas — Overview
 
-> **Version:** 0.38
+> **Version:** 0.39
 > **Date:** 2026-11-18
 > **Audience:** everyone. No economics background assumed, none required.
 > **Rigorous version:** `00-strategy/Aequitas_Foundations.md`. This document is the plain-language companion; where they differ, the Foundations govern.
@@ -287,7 +287,7 @@ People can put their own earned hours behind someone else, which is a pledge (§
 
 **In plain words: strip away the paper and the real gap is about a thousand times smaller than the money gap makes it look.** The reason is not a rule. Consuming physically takes time, and nobody has more than 24 hours in a day.
 
-**Running the gate against real US and world wealth data found two things.** Between 0.1% and 2% of Americans would sit past a permanent limit on non-essentials, depending on the tolerance a network sets, and around 0.5% at a tolerance of 1.5. These are the genuine mega-consumers rather than the merely rich, and selling their property does not save them, because what you have already consumed stays consumed. Meanwhile **about two thirds of people sit below their group's average and could carry more by joining.**
+**Running the gate against real US and world wealth data found two things.** How many people would sit past the limit on non-essentials depends on the tolerance a network sets. At a tolerance of 1.5, which a network sets in times of plenty, it is about 0.24% of Americans in one year. At 0.33, the edge at which a network on the US method rations, it is between 5% and 18%, by how widely consumption is spread. The limit lasts while the tolerance stays at that setting. In plenty, the people past it are the heaviest consumers rather than the merely rich, and selling their property does not save them, because what you have already consumed stays consumed. Meanwhile **about two thirds of people sit below their group's average and could carry more by joining.**
 
 **That locked figure is an upper bound and is not final.** The run assumed nobody had been pledged to. Somebody with backing behind them is limited later, or not at all, and the figure has not been recomputed with a pledge term in it. The inequality we live under is, to a startling degree, an artefact of counting paper.
 

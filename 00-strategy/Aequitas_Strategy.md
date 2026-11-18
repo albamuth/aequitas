@@ -1,7 +1,7 @@
 <!-- tag: str-aequitas-overall-strategy -->
 # Aequitas — Overall Strategy
 
-> **Version:** 0.14 · **Date:** 2026-11-02
+> **Version:** 0.15 · **Date:** 2026-11-18
 > **Target:** A statement of the system, tested against scenarios, in ~3 months — with a conformance list an implementer can build against.
 > **Companion docs:** `Aequitas_Foundations.md` (axioms), `Aequitas_Objections.md` (register), `Aequitas_Conformance.md` (what an implementation must satisfy), `../NEXT.md` (task queue)
 
@@ -122,7 +122,7 @@ This also answers the socialist-calculation critique pre-emptively: we don't arg
 - **C12 (energetics registry): process-energetics registry** and the rival-sector audit rules. **OP-24 (understatement drift) sim** — at what rival density does understatement drift stop being arrested?
 - **C5–C7:** transfer rules and pledge reversion; identity; privacy incl. OP-22's disclosure set.
 - **C8 (influence mechanics):** Resolve OP-1 (service → influence) enough to specify.
-- **Disparity-ceiling proof — ✅ done, and deliberately de-emphasised from 2026-09-22.** Inside one network's books the ceiling on **lifetime pledge budget per day lived** is **`24 ÷ F`**, exact and ρ-independent, versus money's 10⁴–10⁶× tail; material-only, only ~0.1–2% sit past a permanent lockout (`disparity_ceiling_sim.py`, `q4_locked_ledgers.py`). **A very hard working life reaches about 1.6× a floor-only life, and `24 ÷ F` is the wall nobody gets to.**
+- **Disparity-ceiling proof — ✅ done, and deliberately de-emphasised from 2026-09-22.** Inside one network's books the ceiling on **lifetime pledge budget per day lived** is **`24 ÷ F`**, exact and ρ-independent, versus money's 10⁴–10⁶× tail; material-only, 0.24% of people are over the lock line in one year at ρ = 1.5, and 5% to 18% at the US rationing edge of 0.330 (`disparity_ceiling_sim.py`, `q4_locked_ledgers.py`, Foundations §5.5.8). **A very hard working life reaches about 1.6× a floor-only life, and `24 ÷ F` is the wall nobody gets to.**
 
   > **Write the bound as `24 ÷ F`, never as its value at one floor.** 2.4× is what it returns at `F` = 10, and `F` is a value each network sets (Foundations §5.5.1). **This line said "≈ 2.4×" until 2026-09-22**, which pinned a free setting — the same fault found in `ceiling_rubric.py` the same night.
 

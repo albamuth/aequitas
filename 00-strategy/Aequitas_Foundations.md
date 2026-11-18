@@ -1,7 +1,7 @@
 <!-- tag: fnd-aequitas-foundations-and-long-term -->
 # Aequitas — Foundations & Long-Term Strategy
 
-> **Version:** 0.72
+> **Version:** 0.73
 > **Date:** 2026-11-18
 > **Status:** Working foundations.
 > **Primary audience of the first paper:** technologists and implementers.
@@ -1473,7 +1473,7 @@ Two consequences:
 
 > **What the 1,380 h/yr figure is, and what it is not.** It is **today's median US consumption**: the hours of other people's work that a median American adult's yearly consumption takes, whoever ends up carrying them. **It is one reading, in the same way `F` = 10 h/day is one reading.** It is not a fact about any one person's ledger.
 >
-> **How much of it lands on a ledger is each network's rule.** Which treatments a patient carries, for example, is the network's choice (§2.6). Healthcare is **218** of the 1,380 hours. A network that puts every treatment on the patient reads **1,380**. A network that covers all care reads 1,380 − 218 = **1,162** (`06-simulation/median-lifestyle/HEALTH_SHARE.md`).
+> **How much of it lands on a ledger depends on the network's essential list.** Care on that list adds no debit to the person who receives it (§4.2, §4.5). Healthcare is **218** of the 1,380 hours. A network whose list has no care reads **1,380**. A network whose list has all care reads 1,380 − 218 = **1,162** (`06-simulation/median-lifestyle/HEALTH_SHARE.md`). Schooling and other services on a list come off in the same way. Their hours on this basis, per median adult, have not been measured.
 >
 > **It is not the essentials basket `E`** (§5.5.3). It describes what Americans consume now, including care that is excessive and care that is missing. **What an adequately provided person needs belongs in `E`.**
 
@@ -2939,6 +2939,20 @@ Those activities are **sleeping, eating, defecating, and keeping oneself clean.*
 
 **Worked, with the broad basket at 965 h:** the lowest floor is 965 ÷ (1.2 × 365) = **2.2 h/day**. At `F` = 1 h/day the floor balances 1.2 × 1 × 365 = **438 h** of debit, which is **527 h short**. **A network at `F` = 1 h/day has subscribers who cannot afford to eat. That network fails.**
 
+##### What the essential list does to `E`
+
+**The figures above count every hour behind a basket, for goods and for services alike.** An essential service adds no debit to the person who receives it (§4.5). **So the part of `E` that a floor has to carry depends on the network's essential list** (§4.2). The table is arithmetic on the same measurement, at the US level of care. It is not a new run.
+
+| The network's essential list | Narrow basket | Broad basket | Lowest floor for the broad basket at ρ = 1.2 |
+|---|--:|--:|--:|
+| No service is on it, as above | 625 – 655 h | 935 – 965 h | 965 ÷ 438 = **2.2 h/day** |
+| Care and schooling | 372 – 402 h | 595 – 625 h | 625 ÷ 438 = **1.4 h/day** |
+| Every service in the basket: care, schooling, land transport, post and telecoms | 372 – 402 h | 523 – 553 h | 553 ÷ 438 = **1.3 h/day** |
+
+**Worked, for the broad basket at 965 h.** Care is 253 h, schooling 87 h, land transport services 59 h, and post and telecoms 13 h. Together they are 412 h, which is 412 ÷ 965 = 43% of the basket. With all four on the list, a floor has to carry 965 − 412 = **553 h**. Food, clothes, housing, utilities and medicines are goods, and a person carries them whatever the list says.
+
+> **⚠️ Every upper edge ρ\* in this section was measured with those service hours on the receiver.** How far each edge moves when they come off has not been measured at the US method. The work is still done and still takes capacity: the list changes whose debit it is, and not how much the economy has to make.
+
 ##### The upper bound, with the numbers
 
 **Compare what the floor balances against what a year of ordinary life actually commands.** A median lifestyle commands about **1,380 hours** of other people's labour a year (§3.5).
@@ -3219,7 +3233,19 @@ Those activities are **sleeping, eating, defecating, and keeping oneself clean.*
 `06-simulation/disparity-ceiling/disparity_ceiling_sim.py`, N = 200,000, gate `D ≤ ρ·(C + P)`, credit in `[F, 24]` h/day, 7 self-tests green:
 
 - **The `24 ÷ F` ceiling is exact and does not move with ρ**, because ρ cancels in `ρ·24 ÷ ρ·F`. It also does not move with the weighting model, so **the headline result does not depend on OP-10.** On the same synthetic population, money's spread is 14× on income and roughly 700–950× on wealth.
-- **ρ behaves like a prime rate.** A ρ can be chosen so that aggregate demand matches productive capacity, and it moves sensibly under shocks. With each person's demand tied to the 1,380 h/yr anchor (§3.5), the US-method baseline clears at **ρ\* = 0.33** at `F` = 10 (the stable band's upper edge reads the same 0.330, §5.5.3; the two runs share one formula, so that is one instrument read twice and not two) and a −30% capacity disaster tightens it to **0.19**. Swept from 0 to −50% at `F` = 2, 10 and 14, the broad essentials basket stops fitting inside §5.5.3's band at a **−15% to −20%** shock at `F` = 10 and at −20% to −25% at `F` = 14; at `F` = 2 it never fit. Below those depths, §5.5.4's backstop and the distribution point carry the shortage. (`06-simulation/disparity-ceiling/RHO_SWEEP_ANCHOR_RESULTS.md`.) *(Absolute values inherit the weighting model, OP-10, and an illustrative capacity share; the directions are robust. Growth and pollution re-weighting shocks are rescalings, about 0.59 and 0.28, not re-run at the anchor. A second instrument, `06-simulation/rho-rubric/`, confirms the two shock directions; its levels predate the anchor tie.)*
+- **ρ behaves like a prime rate.** A ρ can be chosen so that aggregate demand matches productive capacity, and it moves sensibly under shocks. With each person's demand tied to the 1,380 h/yr anchor (§3.5), the US-method baseline clears at **ρ\* = 0.33** at `F` = 10 (the stable band's upper edge reads the same 0.330, §5.5.3; the two runs share one formula, so that is one instrument read twice and not two) and a −30% capacity disaster tightens it. **How far depends on which gate is read**, and the table below gives the three readings. On the one-year gate, swept from 0 to −50% at `F` = 2, 10 and 14, the broad essentials basket stops fitting inside §5.5.3's band at a **−15% to −20%** shock at `F` = 10 and at −20% to −25% at `F` = 14; at `F` = 2 it never fit. Below those depths, §5.5.4's backstop and the distribution point carry the shortage. (`06-simulation/disparity-ceiling/RHO_SWEEP_ANCHOR_RESULTS.md`.) *(Absolute values inherit the weighting model, OP-10, and an illustrative capacity share; the directions are robust. Growth and pollution re-weighting shocks are rescalings, about 0.59 and 0.28, not re-run at the anchor. A second instrument, `06-simulation/rho-rubric/`, confirms the two shock directions; its levels predate the anchor tie.)*
+  **The clearing ρ after a −30% year, at `F` = 10, US method.** **Terms used here.** A **one-year gate** checks one year's new debit against one year's credit. The **specified gate** is the one this document defines: everything a person has consumed against everything they have been credited (§3.0, §5.5.6), with essentials never gated (§5.5.4). Here essentials are the first 826 h a year of each person's request, the low end of the broad basket (§5.5.3).
+
+  | The gate | Clearing ρ, from 0.33 | People admitted nothing that year |
+  |---|--:|--:|
+  | One-year gate. **It is not the gate of §3.0** | 0.19 | not measured |
+  | **The specified gate** | **0.24 – 0.25** | **0%** |
+  | All debit against all credit, with essentials gated too. **§5.5.4 forbids this** | 0.323 | 13.4% |
+
+  **In plain words: on the specified gate a 30% loss lowers ρ from 0.33 to about 0.24 or 0.25, and nobody loses essentials.** The ungated essentials take 88.6% of the reduced output, so the gate rations only the last 11.4%. The range is the run's two orders of charging. The third row is printed so that nobody quotes it: 13.4% of 200,000 people is 26,800 people with no food admitted.
+
+  > **⚠️ The run's people are not the joiners of §4.4.** It built each person's past as already held under the gate at ρ = 0.33. §4.4 rebuilds a joiner's past with no gate, and its median joiner starts 7,020 h over. **The −30% year has not been measured on joiners at the US method.** One population draw. `06-simulation/stock-gate-clearing/RESULTS.md`.
+
 - **Efficiency narrows the shortfall and does not remove it.** The same population is 15% short under the US production method, 2.6% short at the Swedish ratio, 0.9% short at the French, and 1.7% over at the German or Japanese (§5.5.3, run 2026-10-30 and 2026-11-07 at `F` = 2, 6, 10, 14 and 16). **The binding constraint is physical throughput** (§3.5).
 - **The ceiling is fraud-invariant, and that is the same fact as its blindness.** IC-7 bounds every account, honest or not, so the most a fraudster reaches is `ρ·24` — the honest maximum. **Fraud fills the band and cannot create an outlier beyond it.**
   > **`24 ÷ F` reads no accounts.** At `F` = 10 it returns 2.40 whatever the population contains, so *"still 2.40× at 40% fraud"* means **the arithmetic never looked** — not that anything caught the fraud. **Insert a fabricated account and the figure moves by 0.00, for the same reason.**
@@ -3234,12 +3260,31 @@ Those activities are **sleeping, eating, defecating, and keeping oneself clean.*
 
 #### 5.5.8 The real-distribution comparison
 
-`06-simulation/scenario-suite/q4_locked_ledgers.py` applies the gate to real US and world distributions under the **material-only** rule (A1, and the financial-instruments rule in §3.1), asking what fraction of people would sit past a permanent lockout — non-essential consumption held at the floor for life because their sustained footprint exceeds `ρ · 24 h/day`, **the most any human can earn on their own.**
+`06-simulation/scenario-suite/q4_locked_ledgers.py` applies the gate to real US and world distributions under the **material-only** rule (A1, and the financial-instruments rule in §3.1), asking what share of people are over the **lock line**. A person is over the line when their yearly footprint is more than `ρ × 8,760` hours, which is `ρ · 24 h/day`, **the most any human can earn on their own.** Their non-essential consumption is held at the floor while ρ stays at that setting.
 
 - **Stripping the financial layer collapses the top of the distribution by about 1,000×.** Money wealth reaches ~10⁶× the median, but material **consumption** only ~670× (Oxfam billionaire personal footprints), because consuming physically takes bounded time. **The spread is far smaller than the monetary one.**
-- **Only a thin slice is locked.** Material-only, about **0.1–2%** of Americans are permanently locked, ρ-dependent, around 0.5% at ρ = 1.5. **These are the ultra-consumers, not the merely rich**, and fully divesting material property does not save them, because consumption debit is permanent (§3.2). **Meanwhile about two-thirds sit below their cohort average and could carry more by joining** (§4.8).
+- **How many people are over the line depends on ρ, so each share is printed beside its ρ** (§2.5). The median footprint is 1,380 h a year (§3.5).
 
-> **⚠️ The run assumes nobody was pledged to, and that assumption is now visible.** `ρ · 24 h/day` is what a person can earn **alone**. **Somebody with backing `P` behind them is gated at `ρ·(C + P)` and is locked out later, or not at all** (§3.0, §5.5.5). **So the locked fraction is an upper bound and has not been recomputed with a pledge term in it.**
+| ρ | When a network sets it | The line, `ρ × 8,760` | Share over the line, in q4's population (spread σ = 0.80) | Share over the line, in the stable band's population (σ = 0.45) |
+|--:|---|--:|--:|--:|
+| 1.5 | In plenty | 13,140 h, which is 9.5 median lives | **0.24%** | 0.00% |
+| 0.330 | At the US rationing edge, `F` = 10 (§5.5.3) | 2,891 h, which is 2.1 median lives | **17.7%** | **5.1%** |
+
+**In plain words: in plenty the line sits at 9.5 times a median life, and almost nobody is over it. At the US rationing edge it sits at 2.1 times a median life, and between 1 person in 20 and 1 in 6 is over it.** The two populations differ in how widely footprints spread. Which spread matches real consumption has not been measured.
+
+**Three things each share is.**
+
+| | |
+|---|---|
+| **A one-year share** | It compares one year's footprint with the line |
+| **A `ceiling` on the lifetime share** (§4.4) | A person's footprint moves from year to year, so fewer people stay over the line than are over it in one year. How many stay has not been measured |
+| **Not the share the gate holds back** | At the same edge, 35% of people are held below what they want in the stable band's population. Most of them are under the line (`06-simulation/stable-band/RESULTS_gated_vs_locked.md`) |
+
+**In plenty, the people over the line are the heaviest consumers, not the merely rich.** Giving up material property does not bring them under it, because consumption debit is permanent (§3.2). **Meanwhile about two-thirds of people sit below their cohort average and could carry more by joining** (§4.8).
+
+**ρ = 1.5 is above the US rationing band at every measured floor except `F` = 2** (§5.5.3). So the 0.24% describes plenty. It does not describe a network that is rationing.
+
+> **⚠️ The run assumes nobody was pledged to, and that assumption is now visible.** `ρ · 24 h/day` is what a person can earn **alone**. **Somebody with backing `P` behind them is gated at `ρ·(C + P)` and is locked out later, or not at all** (§3.0, §5.5.5). **So each share over the line is an upper bound, and it has not been recomputed with a pledge term in it.**
 
 <!-- tag: fnd-s5-6 -->
 ### 5.6 Why the alternative-economy graveyard does not apply

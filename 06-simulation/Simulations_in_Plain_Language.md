@@ -166,7 +166,7 @@
 | **Q1** | An America that traded with nobody | Not short of labour, land, water or food. **Energy binds** — 0.19 of what a median standard needs at the current build, against land at 1.10 and water at 5.22 |
 | **Q2** | Labour captured or spent on enforcement | **About 185–396 hours per adult per year**, a combined **36%** — de-duplicated, not summed |
 | **Q3** | What plastic costs in hours | Ocean cleanup ≈ **950 h/tonne** — roughly **70×** the labour to make it new. **Microplastic has no figure, and that is the finding** |
-| **Q4** | Who is already locked out | Strip out paper wealth and only **0.1–2%** of Americans are permanently locked out — **the ultra-consumers, not the merely rich.** Money wealth reaches ~10⁶× the median; material consumption only ~**670×** |
+| **Q4** | Who is already locked out | Strip out paper wealth, and **0.24%** of Americans are over the lock line in one year at ρ = 1.5, a setting for plenty. At the US rationing edge, ρ = 0.330, it is **5% to 18%**, by how widely consumption is spread (Foundations §5.5.8). In plenty they are **the heaviest consumers, not the merely rich.** Money wealth reaches ~10⁶× the median; material consumption only ~**670×** |
 | **Q5** | Moving labour from wasteful to essential | The freed labour — **1.1 to 2.4 trillion hours a year** — closes the global health-worker shortage **50 to 100 times over** |
 
 ---

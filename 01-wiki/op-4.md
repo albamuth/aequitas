@@ -49,7 +49,7 @@ edges:
 
 **Worked:** at 2 h/day the broad basket's 826 h needs ρ ≥ 826 ÷ 730 = 1.13, which is above 1.017, so no ρ works.
 
-**ρ behaves like a prime rate.** A ρ can be chosen so demand matches capacity, and it moves sensibly: with demand tied to the 1,380 h/yr anchor, a 30% capacity disaster tightens it from 0.33 to 0.19 at `F` = 10, and the broad essentials basket stops fitting inside the band at a 15% to 20% shock ([disparity-ceiling](disparity-ceiling.md); `06-simulation/disparity-ceiling/RHO_SWEEP_ANCHOR_RESULTS.md`).
+**ρ behaves like a prime rate.** A ρ can be chosen so demand matches capacity, and it moves sensibly: with demand tied to the 1,380 h/yr anchor, a 30% capacity disaster tightens it at `F` = 10 from 0.33 to about 0.24 or 0.25 on the gate the documents specify, with essentials never gated and nobody admitted nothing. A gate that checks one year only reads 0.19, and on that gate the broad essentials basket stops fitting inside the band at a 15% to 20% shock ([disparity-ceiling](disparity-ceiling.md); `06-simulation/disparity-ceiling/RHO_SWEEP_ANCHOR_RESULTS.md`).
 
 ## What is open
 

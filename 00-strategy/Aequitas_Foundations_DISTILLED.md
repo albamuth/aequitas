@@ -9,8 +9,8 @@
 >
 > **Regenerate with:** `python bin/distill.py`
 
-> **Source:** [`Aequitas_Foundations.md`](Aequitas_Foundations.md) · **version 0.72**
-> **Size:** 178,362 bytes, from 324,638 — **55% of the source**
+> **Source:** [`Aequitas_Foundations.md`](Aequitas_Foundations.md) · **version 0.73**
+> **Size:** 180,927 bytes, from 329,569 — **55% of the source**
 
 **What was kept:** every heading, every rule, every table, and the stated result of every worked
 example. **What was dropped:** the explanation prose between them.
@@ -686,7 +686,7 @@ example. **What was dropped:** the explanation prose between them.
 > **The measured anchor (2026-08).** A bottom-up estimate puts the **labour a median US lifestyle commands at ≈ 1,380 h/yr** (`06-simulation/median-lifestyle/MEDIAN_LIFESTYLE_RESULT.md`; measured from BLS employment-requirements × the actual PCE mix, EXIOBASE import labour, §4.5 durables, and own-pollution remediation — *not* a blanket ratio). **Do not set that figure against the 3,650 h/yr of self-care credit and call the difference slack.** That is the circular comparison struck above. **The figure earns its place as the denominator for the deployable-hours test, and for the efficiency spread below. And the same-standard efficiency spread is real and modest:** cross-country accounting (EXIOBASE, `06-simulation/median-lifestyle/Q6.md` and `q6_payers.py`) counts the labour behind every payer's consumption, meaning households, non-profits and government. It finds the US the labour-inefficient outlier among Germany, Sweden, France and Japan, which deliver a comparable-or-better material standard (and longer lives) on **0.84 – 0.87 of the US hours**, so the US uses 15 – 20% more. Germany and Japan are at 0.836, France at 0.858 and Sweden at 0.873. Spain and Poland are left out, because their input-output data is missing most shop and wholesale work. The CO₂ comparison (the US at 2.5 – 4× the peers per capita) counts households only and has not been recomputed. **This is the positive form of A4 (no externalities) and A5 (cost, not price):** the inefficient, fossil-heavy, long-chain method is simply *dearer in the ledger*, so the accounting rewards the efficiency the leaders already demonstrate — no mandate required. **It is a 13 – 16% pull on the hours. It narrows the hours gap above and does not close it.**
 > **What the 1,380 h/yr figure is, and what it is not.** It is **today's median US consumption**: the hours of other people's work that a median American adult's yearly consumption takes, whoever ends up carrying them. **It is one reading, in the same way `F` = 10 h/day is one reading.** It is not a fact about any one person's ledger.
 >
-> **How much of it lands on a ledger is each network's rule.** Which treatments a patient carries, for example, is the network's choice (§2.6). Healthcare is **218** of the 1,380 hours. A network that puts every treatment on the patient reads **1,380**. A network that covers all care reads 1,380 − 218 = **1,162** (`06-simulation/median-lifestyle/HEALTH_SHARE.md`).
+> **How much of it lands on a ledger depends on the network's essential list.** Care on that list adds no debit to the person who receives it (§4.2, §4.5). Healthcare is **218** of the 1,380 hours. A network whose list has no care reads **1,380**. A network whose list has all care reads 1,380 − 218 = **1,162** (`06-simulation/median-lifestyle/HEALTH_SHARE.md`). Schooling and other services on a list come off in the same way. Their hours on this basis, per median adult, have not been measured.
 >
 > **It is not the essentials basket `E`** (§5.5.3). It describes what Americans consume now, including care that is excessive and care that is missing. **What an adequately provided person needs belongs in `E`.**
 ### 3.6 End-of-life, recycling, and product-as-pollution
@@ -1282,6 +1282,13 @@ example. **What was dropped:** the explanation prose between them.
 |---|--:|--:|
 | **Narrow**: food eaten at home, clothing, shelter, utilities, care | 516 – 655 | 1.2 – 1.5 h/day |
 | **Broad**: the narrow basket, plus household goods, local transport, telecoms and schooling | 826 – 965 | 1.9 – 2.2 h/day |
+##### What the essential list does to `E`
+| The network's essential list | Narrow basket | Broad basket | Lowest floor for the broad basket at ρ = 1.2 |
+|---|--:|--:|--:|
+| No service is on it, as above | 625 – 655 h | 935 – 965 h | 965 ÷ 438 = **2.2 h/day** |
+| Care and schooling | 372 – 402 h | 595 – 625 h | 625 ÷ 438 = **1.4 h/day** |
+| Every service in the basket: care, schooling, land transport, post and telecoms | 372 – 402 h | 523 – 553 h | 553 ÷ 438 = **1.3 h/day** |
+> **⚠️ Every upper edge ρ\* in this section was measured with those service hours on the receiver.** How far each edge moves when they come off has not been measured at the US method. The work is still done and still takes capacity: the list changes whose debit it is, and not how much the economy has to make.
 ##### The upper bound, with the numbers
 | Floor | Debit the floor alone balances, `ρ·F·365` at ρ = 1.2 | As a multiple of a median lifestyle |
 |---|---|---|
@@ -1408,6 +1415,12 @@ example. **What was dropped:** the explanation prose between them.
 > **In plain words: nobody enlarges their own budget by holding things, because holding a thing raises your own debit, and nobody enlarges it by eating, because eaten things leave a permanent debit and no asset.** The only way to the wall is to work 24 hours a day for a whole life, which is the wall nobody gets to. **Being pledged to is the other way to consume more, and it raises nobody's budget** (§5.5.5, condition 5).
 #### 5.5.7 What the simulations found
 > **Formally stated, simulated, and stress-tested.** The formal statement and a plain-language explainer are in `06-simulation/disparity-ceiling/DISPARITY_CEILING.md`. The adversarial pass of 2026-08-14 answered all three attacks — **Methuselah** (§5.5.6 above), **dynasty and household** (a pledge budget is credit the holder earned, so **backing received never enlarges what anybody can pledge**, and committed backing is not transferable, so **it does not pass on death** — §5.5.5 condition 5, §4.6), and **collector** (holdings raise your own debit, so a hoard bounds itself).
+  | The gate | Clearing ρ, from 0.33 | People admitted nothing that year |
+  |---|--:|--:|
+  | One-year gate. **It is not the gate of §3.0** | 0.19 | not measured |
+  | **The specified gate** | **0.24 – 0.25** | **0%** |
+  | All debit against all credit, with essentials gated too. **§5.5.4 forbids this** | 0.323 | 13.4% |
+  > **⚠️ The run's people are not the joiners of §4.4.** It built each person's past as already held under the gate at ρ = 0.33. §4.4 rebuilds a joiner's past with no gate, and its median joiner starts 7,020 h over. **The −30% year has not been measured on joiners at the US method.** One population draw. `06-simulation/stock-gate-clearing/RESULTS.md`.
   > **`24 ÷ F` reads no accounts.** At `F` = 10 it returns 2.40 whatever the population contains, so *"still 2.40× at 40% fraud"* means **the arithmetic never looked** — not that anything caught the fraud. **Insert a fabricated account and the figure moves by 0.00, for the same reason.**
   >
   > **So the run is a control observation about the statistic's sensitivity, and never evidence that the population was witnessed.** It bounds; it does not witness. **A reproducible detector can still reproducibly certify only the world it was shown.**
@@ -1415,7 +1428,16 @@ example. **What was dropped:** the explanation prose between them.
   > **This is §4.4 applied to the project's own headline** — *a check that compares a thing to itself can find a mistake, and cannot find a hole.* **The witness for coverage is a different instrument and it is physical: the outside total `N`** (§4.4). *(Found from outside by @cairn-lineage; conceded 2026-08-31.)*
 > **The stable band described in §5.5.3 was found on 2026-08-28** and is reported there. `06-simulation/stable-band/`, 60,000 people, every cell driven through the kernel's own gate and all eight conformance checks. **Re-measured on 2026-10-27 with demand tied to 1,380 h/yr, and extended to `F` = 6 and 16 on 2026-11-07: at the US method the band is open at `F` = 6, 10, 14 and 16, and closed at `F` = 2 on the broad essentials basket.** Capacity binds the upper edge, and the upper edge depends on the production method (§5.5.3).
 #### 5.5.8 The real-distribution comparison
-> **⚠️ The run assumes nobody was pledged to, and that assumption is now visible.** `ρ · 24 h/day` is what a person can earn **alone**. **Somebody with backing `P` behind them is gated at `ρ·(C + P)` and is locked out later, or not at all** (§3.0, §5.5.5). **So the locked fraction is an upper bound and has not been recomputed with a pledge term in it.**
+| ρ | When a network sets it | The line, `ρ × 8,760` | Share over the line, in q4's population (spread σ = 0.80) | Share over the line, in the stable band's population (σ = 0.45) |
+|--:|---|--:|--:|--:|
+| 1.5 | In plenty | 13,140 h, which is 9.5 median lives | **0.24%** | 0.00% |
+| 0.330 | At the US rationing edge, `F` = 10 (§5.5.3) | 2,891 h, which is 2.1 median lives | **17.7%** | **5.1%** |
+| | |
+|---|---|
+| **A one-year share** | It compares one year's footprint with the line |
+| **A `ceiling` on the lifetime share** (§4.4) | A person's footprint moves from year to year, so fewer people stay over the line than are over it in one year. How many stay has not been measured |
+| **Not the share the gate holds back** | At the same edge, 35% of people are held below what they want in the stable band's population. Most of them are under the line (`06-simulation/stable-band/RESULTS_gated_vs_locked.md`) |
+> **⚠️ The run assumes nobody was pledged to, and that assumption is now visible.** `ρ · 24 h/day` is what a person can earn **alone**. **Somebody with backing `P` behind them is gated at `ρ·(C + P)` and is locked out later, or not at all** (§3.0, §5.5.5). **So each share over the line is an upper bound, and it has not been recomputed with a pledge term in it.**
 ### 5.6 Why the alternative-economy graveyard does not apply
 | Failure | What happened | Aequitas |
 |---|---|---|

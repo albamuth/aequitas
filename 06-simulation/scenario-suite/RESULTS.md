@@ -3,6 +3,8 @@
 > **Version:** 0.1
 > **Date:** 2026-09-16
 
+> **⚠️ Dated note, 2026-11-18.** The Q4 headline below quotes a locked share of 0.1–2% and calls the lock permanent. That range came from ρ near 1.5, which is above the US rationing band, and it used a 1,600 h mean where the median is 1,380 h. Foundations v0.73 §5.5.8 prints the share beside its ρ: 0.24% in one year at ρ = 1.5, and 5.1% or 17.7% at ρ = 0.330, by population. The lock lasts while ρ stays at that setting. The text below stays as the record of the run.
+
 > **Read this instead of re-running.** From the five `--test` runs, last verified 2026-08-24.
 > This is the summary layer. Each question keeps its own plain-language companion beside it — [`Q1_AUTARKY.md`](Q1_AUTARKY.md), [`Q2_CAPTURE.md`](Q2_CAPTURE.md), [`PLASTIC.md`](PLASTIC.md), [`Q4_LOCKED.md`](Q4_LOCKED.md), [`Q5_REALLOCATION.md`](Q5_REALLOCATION.md) — and those carry the caveats.
 
@@ -34,6 +36,7 @@ Complete the transition and everyone can live at roughly today's *average* stand
 
 ## Q4 — Who is already locked out
 
+<!-- struck-ok: a dated run record; see the note of 2026-11-18 at the top of this file -->
 > **Strip out paper wealth, which Aequitas does not count, and only about 0.1–2% of Americans are permanently locked out — and they are the ultra-consumers, not the merely rich.**
 
 | | Ratio |
