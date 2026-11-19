@@ -1,7 +1,7 @@
 <!-- tag: fnd-aequitas-foundations-and-long-term -->
 # Aequitas — Foundations & Long-Term Strategy
 
-> **Version:** 0.77
+> **Version:** 0.80
 > **Date:** 2026-11-19
 > **Status:** Working foundations.
 > **Primary audience of the first paper:** technologists and implementers.
@@ -524,6 +524,94 @@ Someone releases **1 tonne of CO₂**. Three ways to put a number on it. *(All t
 **A network with `F` = 10 h/day credits a school day as 5 hours.** *(Illustrative digits.)* A child in the fifth year of school is credited 10 + 5 = **15 hours** for that day. The 5 hours are the child's own time, and they are in no thing, so they add 0 hours of debit (§2.2).
 
 **Rest and pleasure are different.** What a person does only for their own rest or pleasure benefits nobody else, and A1 says it is not work (below).
+
+##### A network ratifies the kinds of enrichment that it credits
+
+**Terms used here.** A network **ratifies** a kind of work when it publishes an evidence rule for that kind (§4.2). Hours that meet the rule are then credited.
+
+**A service has a receiver, and the receiver's confirmation shows that the work was done and that somebody asked for it** (§4.2). **Much enrichment has no such receiver.** The people who will benefit from a student's study are not yet there to confirm anything.
+
+> **So a network ratifies the kinds of enrichment that it credits, with one published evidence rule for each kind. Aequitas does not say which kinds a network ratifies, and it does not say how a network decides.**
+
+**How a network governs itself is outside this document** (§2.6, §4.2, A8). The three cases below are examples of what a network could decide. None is a rule of Aequitas.
+
+###### Example 1: study, under a rule that rests on accreditation
+
+**Accreditation** is a system that checks schools, and recognises the ones whose teaching and degrees are sound. It exists today for universities, for schools and for trades.
+
+**A network can write its rule for study on it:** a student's hours are credited when an accreditor on the network's published list recognises the school. Under that rule a person cannot open a school, invent degrees, and have its students credited. No accreditor on the list recognises that school, so the rule is not met.
+
+Four people each work 1,000 hours in a year, in a network with that rule. *(Illustrative digits.)*
+
+| The person | What shows that the work is real and wanted | Credit | Backing |
+|---|---|--:|--:|
+| A student at a school that an accreditor recognises | The accreditation, and the school's record of attendance | **1,000 h** | — |
+| A student at a school that no accreditor recognises | Nothing | **0 h** | — |
+| A mower who works for a city | The residents who consented to the city's services (§4.6) | **1,000 h** | — |
+| A mower on public verges under a pledge, with no receiver | The pledge shows that people wanted the work. Nobody received it | **0 h** | 1,000 h |
+
+**In plain words: credited work meets a rule that the network published.** For a service, the rule needs a receiver who asked. For study in this network, the rule needs an accreditor. The pledged mower's work is a service with no receiver, so the hours earn the backing and no credit (§4.6).
+
+**Which accreditors a network accepts is its published rule** (§2.6, §4.2). Where no accreditor exists, a network writes a different evidence rule for study, or it credits none.
+
+> **⚠️ Accreditation can be captured, and it has been.** In the United States the accreditor [ACICS](https://en.wikipedia.org/wiki/Accrediting_Council_for_Independent_Colleges_and_Schools) recognised Corinthian Colleges, which collapsed in 2015, and ITT Technical Institute, which closed in 2016. The Department of Education ended its recognition of ACICS in 2022. There are also [accreditation mills](https://en.wikipedia.org/wiki/Accreditation_mill), which recognise schools with no authority to do so. **A network that names an accreditor in its rule takes on that accreditor's faults.** A student's hours are credit with no debit beside them: at ρ = 0.330, 1,000 credited hours of study add 330 hours a year to what the student may carry. The defences are the three that guard the list of always-credited activities, above.
+
+###### Example 2: schooling on the essential list
+
+**A network decides what work is essential** (§4.2). It can put a kind of enrichment on that list. Schooling for young children is the likely case. The student is then credited for the hours of study, the teacher is credited for the hours of teaching, and those hours add no debit to anybody.
+
+A teacher teaches a class of 25 children for a school day of 5 hours, in a network with `F` = 10 h/day. *(Illustrative digits.)*
+
+| | Schooling is on the essential list | Schooling is not on it |
+|---|--:|--:|
+| Each child's credit for the day | 10 + 5 = **15 h** | **15 h** |
+| The teacher's credit for the day | 10 + 5 = **15 h** | **15 h** |
+| Debit for the teacher's 5 hours | **0 h**, on anybody | 5 ÷ 25 = **0.2 h** for each child, on whoever asked for the schooling (§4.5) |
+
+**In plain words: with schooling on the list, the class adds 25 × 5 + 5 = 130 hours of credit for study and teaching that day, and 0 hours of debit.** What the school uses up stays with its members, as in any essential care (§4.5).
+
+> **⚠️ This is the essential list used as a lever** (§4.2). A network can argue that any kind of enrichment is essential. The learner and the teacher are then both credited, with no debit beside the credit. Two adults who each claim 7 hours a day of teaching the other, and 7 hours of study, reach the 24 hours of IC-7. At ρ = 0.330 each may carry 0.330 × 14 × 365 = **1,686 hours** more a year. The check is the evidence rule for each entry on the list, and the network writes that rule.
+
+###### Example 3: research, under pledges or on the essential list
+
+**How research is supported is the network's decision too.** There are two ways. The first is a research fund, and a fund works by pledges (§4.6). The second is the essential list (below).
+
+**A network holds a research fund as a bank holds the money for a prize or a grant.** People pledge hours to the fund. The network decides when the pledged hours are released to a project, under the criteria that it published before anybody pledged. The researchers who are named receive backing. Research that only a special interest wants is done in the same way, under the pledges of the people who want it.
+
+A researcher works 1,000 hours in a year on a study of soil. *(Illustrative digits.)*
+
+| The case | Credit | Backing |
+|---|--:|--:|
+| 200 people pledge 5 hours each to the network's research fund, and the network releases the 1,000 hours to this project | **0 h** | 1,000 h |
+| 20 farmers who want the study pledge 50 hours each to the researcher by name | **0 h** | 1,000 h |
+| Nobody pledges, and the network's essential list does not hold this kind of research | **0 h** | 0 h |
+| The network's essential list holds this kind of research | **1,000 h** | — |
+
+**In plain words: under a fund, research earns the backing that people pledged for it.** A pledger's budget is spent on the day of the pledge, whether the fund releases the hours or not (§4.6).
+
+**A network can define a kind of research as essential, as it can for schooling.** It then credits the work in that field, and it needs no pledge fund for it. The researcher's 1,000 hours are credit, with no debit beside them. That is the lever of Example 2.
+
+###### A special interest can control what a network does
+
+**The people who control a network decide what its fund releases and what its essential list holds. Aequitas does not prescribe who they are.** So a network can back research that some of its subscribers do not support. It can also leave out research that some of them want.
+
+A network has 1,000,000 subscribers, and ρ = 0.330. One group controls it. 400,000 subscribers each pledge 1 hour a year to its research fund. *(Illustrative digits.)*
+
+| What the network does | The result |
+|---|---|
+| It releases all 400,000 hours to research that many of the pledgers do not support | The researchers receive 400,000 h of backing, and may carry 0.330 × 400,000 = **132,000 h** more a year between them. The pledgers' budgets are spent, and nothing returns to them (§4.6) |
+| It releases nothing to the research that 300,000 subscribers want | They can pledge to those researchers by name. At 1 hour each, that is 300,000 h of backing |
+| It puts a kind of training that serves the group on its essential list | The learners and the teachers are credited, and nobody carries the hours |
+
+**Three things limit this, and each one comes from how trust networks are built.**
+
+| | |
+|---|---|
+| **Joining is voluntary** | A subscriber who does not accept what a network does can stop taking part, or can hold an account with another network (§4.1, §4.8). Nobody has to pledge to a network's fund (§4.6) |
+| **Networks are many, and no network governs another** | A seller chooses which network a sale is recorded on (§4.0). Another network re-computes a claim through its own rules, so it does not take over credit that it does not recognise (§4.2) |
+| **The rules are published** | A person can read a network's essential list before they join (§4.2), and a fund's criteria before they pledge (§4.6) |
+
+> **⚠️ Each limit works only as far as a subscriber can leave.** A person who leaves a network leaves their life history with it (§4.7). §4.8 expects networks to merge toward one, and with fewer networks there are fewer to move to. The re-computing by another network depends on OP-22 (minimum audit disclosure), which is open. **The research that a controlled network is least likely to back is the research that would raise its own subscribers' debit**, such as a replication that finds a cost constant too low (§3.3a, OP-24 (understatement drift)).
 
 #### Keeping yourself alive is work a network may recognise
 
@@ -1770,7 +1858,7 @@ A network publishes its rule for translation work: **the translated text exists,
 |---|---|
 | **Goods** (matter or energy) | **The hand-off.** The receiver accepts possession, and the debit that rides with it, which attests that the goods exist (§4.5). |
 | **A service** (often with no physical output) | **A receiver who asked for it confirms** that it happened. The confirmation is also the consent that puts the hours on that receiver (§4.5). One confirming receiver is enough. |
-| **Enrichment** (intangible work, such as teaching, writing or performing) | **Where it is given to other people, a receiver who asked for it confirms**, as for a service. A violinist who plays alone has given no concert. For other enrichment, evidence that the work happened, under the network's published rule. |
+| **Enrichment** (intangible work, such as teaching, writing or performing) | **Where it is given to other people, a receiver who asked for it confirms**, as for a service. A violinist who plays alone has given no concert. For other enrichment, evidence that the work happened, under the network's published rule. §2.3 gives an example of such a rule, for study. |
 | **Self-care** (the work of keeping yourself alive) | **Proof of life.** A verified living human demonstrably maintained itself. This is statistical, and it costs almost nothing to check. **Any contact with the network is proof.** The baseline is credited at a contact, for every day since the last one: 7 days with no contact at `F` = 10 is 70 hours at the next contact (§2.3). |
 | **Essential care** (work that continues another person's life) | **The network's published rule for that kind of care.** The receiver does not have to confirm it. Where the receiver cannot confirm, a second witness does (below). |
 
@@ -1781,7 +1869,7 @@ A network publishes its rule for translation work: **the translated text exists,
 
 #### Essential care is a published list
 
-**Terms used here.** **Essential care** is work that a network counts as continuing another person's life. A parent who feeds and washes an infant gives it. So does a surgeon who operates on an accident victim. **That meaning is a suggestion. Each network writes its own list** (§2.6).
+**Terms used here.** **Essential care** is work that a network counts as continuing another person's life. A parent who feeds and washes an infant gives it. So does a surgeon who operates on an accident victim. **That meaning is a suggestion. Each network writes its own list** (§2.6). A network can put a kind of enrichment on its list, and schooling for young children is a likely entry (§2.3).
 
 > **A network that counts some care as essential publishes the list, and an evidence rule for each entry on it.** The floor is published the same way: named activities, each with its own rule (§5.5.1).
 
@@ -1866,7 +1954,7 @@ A network publishes its rule for translation work: **the translated text exists,
 
 **§4.5 states the other half of this:** the accounting covers what is claimed and attested, and everything else is life. **That says the system need not capture everything. This says a network must state in advance what it does capture.**
 
-**How a network decides which rules to write is its own business.** It may take proposals from its subscribers, from a trade body, or from nobody at all. **Aequitas does not say, and cannot** (§2.6, A8).
+**How a network decides which rules to write is its own business.** It may take proposals from its subscribers, from a trade body, or from nobody at all. **Aequitas does not say, and cannot** (§2.6, A8). §2.3 works the case where a special interest controls that decision.
 
 ---
 
@@ -2367,6 +2455,8 @@ A median lifestyle commands about **1,380 hours** of other people's labour a yea
 
 **A paramedic and a cosmetic surgeon show it.** A paramedic who keeps a crash victim alive is credited, and the victim carries none of those hours. A surgeon who does cosmetic surgery that a customer chose is credited, and the customer carries all of them. **Each network's list says where it draws the line** (§4.2).
 
+**A network's list can go further than survival.** A network that counts schooling for young children as essential credits the teacher, and adds no debit to the child for the teacher's hours (§2.3).
+
 **The rule is about hours of work that keep a body alive.** The food a person eats and the medicine they take away are things, and each carries its debit as any thing does (§2.4).
 
 ##### An example, with the numbers
@@ -2426,7 +2516,7 @@ A crew of 20 works 5 hours each on the night, and the concert uses up materials 
 
 #### Training is paid when it happens, and never charged to anyone later
 
-**A student is credited for their time while training.** The debit of training — teachers' time, facilities, materials — **is carried during the training years**, cushioned by the backing pledgers grant for it (§4.6).
+**A student is credited for their time while training**, under the network's evidence rule for study (§2.3). The debit of training — teachers' time, facilities, materials — **is carried during the training years**, cushioned by the backing pledgers grant for it (§4.6). Where a network's list counts the schooling as essential, the teachers' time adds no debit to the student (above).
 
 > **Nothing is charged downstream.** A person who asks for care that their network does not count as essential carries the doctor's time and the materials the treatment used up (above). **The doctor's education is not in that figure.** It was underwritten up front, by the people who wanted doctors to exist.
 
@@ -2438,7 +2528,7 @@ A crew of 20 works 5 hours each on the night, and the concert uses up materials 
 
 **It covers education, media and creative production, research, infrastructure, tooling, and capital.**
 
-**Whether the hours of that work count as credit follows the ordinary rule.** They count when a receiver who asked for the work confirms it, or when a receiver takes the goods (§4.6). Research that pledges named, and that nobody asked to receive, earns the backing and no credit.
+**Whether the hours of that work count as credit follows the ordinary rule.** They count when a receiver who asked for the work confirms it, when a receiver takes the goods (§4.6), or when the work meets the network's evidence rule for a kind of enrichment that it has ratified (§2.3). Research that pledges named, that nobody asked to receive, and that no rule of the network covers, earns the backing and no credit.
 
 **Two reasons, and the second is decisive.** Charging a cost onward means choosing a window — how many patients, how many viewers — **and every candidate window is arbitrary.** And charging onward never terminates: **amortise a hospital's construction into each patient's bill and the accounting must then chase the builder's costs, then the equipment maker's, then the steelmaker's, then the doctors' education, back to the first human activity.** Carrying the cost where it falls is what makes the arithmetic stop.
 
@@ -2649,6 +2739,7 @@ A company of ten members makes a series. It publishes a budget for a new season:
 | Goods | A receiver accepts the hand-off (above) |
 | A service that is not essential | A receiver who asked for it confirms it |
 | Essential care, and self-care | The network's evidence rule is met. No receiver has to consent (§4.2) |
+| Enrichment that the network has ratified, such as study | The network's evidence rule for that kind is met (§2.3, §4.2) |
 
 **A service that nobody received is like a loaf that nobody took.** The hour is recorded, because recording is never gated. It does not count as credit. A violinist who plays alone cannot claim to have given a concert. A band that plays in a park, with no gate and no tickets, has no receiver either, so its hours do not count as credit.
 
@@ -2679,7 +2770,7 @@ One person mows public verges for **1,000 hours** in a year, in a network with `
 >
 > **Work on things held in common earns less say.** Over 40 years at 1,000 hours a year, the pledged mower has 40 × 1,000 = **40,000 hours** less pledge budget than the city's mower. Whoever can gather consent, such as a city, turns work into a say. That is P4 (coordinator class), in one more place.
 >
-> **A pledge makes no new pledge budget.** The total budget in a network grows only through work that a receiver accepted, through essential care, and through the floor.
+> **A pledge makes no new pledge budget.** The total budget in a network grows only through work that a receiver accepted, through essential care, through enrichment that the network has ratified, and through the floor.
 
 #### When a task attracts more pledges than it costs
 

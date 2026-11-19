@@ -1,6 +1,6 @@
 # Struck phrases — wordings that must not appear in a live document
 
-> **Version:** 0.17
+> **Version:** 0.18
 > **Date:** 2026-11-19
 
 > **Read by [`bin/consistency.py`](../bin/consistency.py). The table below is the machine-readable part; everything else on this page is for people.**
@@ -41,6 +41,8 @@ That is not a hypothetical. **It happened three times in a single day, 2026-08-2
 
 | Struck phrase | Struck on | Why | What is true instead |
 |---|---|---|---|
+| `work that is credited has a structure that warrants it` | 2026-11-19 | **Author's ruling 2026-11-19.** Accreditation is an example of how a network ratifies a kind of enrichment work. It is not a rule of Aequitas, and Aequitas does not prescribe how a network decides | **A network ratifies the kinds of enrichment that it credits, with one published evidence rule for each kind** — Foundations §2.3 |
+| `Accreditation does that job for education` | 2026-11-19 | Same ruling. The sentence stated one network's possible rule as the rule | **A network can write its rule for study on accreditation. That is one example** — Foundations §2.3 |
 | `enrichment that benefits one person or many` | 2026-11-19 | **Author's ruling 2026-11-19.** Enrichment can seem to benefit one person, such as a student. Its benefit is to society as a whole. Read alone, the old wording also made a novel read for pleasure into work | **Enrichment is knowledge, skill or culture that a person gains or passes on. It benefits society as a whole. What a person does only for their own rest or pleasure is not work** — Foundations A1, §2.3 |
 | `benefit flows from all of humanity to at least one person` | 2026-11-19 | Same ruling. The old definition had the benefit go to one person | **Its benefit is to society as a whole** — Foundations §4.5 |
 | `The floor already has this form` | 2026-11-18 | **Author's ruling 2026-11-18.** It gave the floor as the reason that life-continuing work adds no debit, and the floor needs that rule to do anything. That was a circle | **A debit counts only what a person takes from the world or from other people. A person's own hours on their own life take nothing from either** — Foundations §2.2, §4.5 |

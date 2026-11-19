@@ -23,10 +23,18 @@ edges:
 ---
 # Enrichment
 
-> **Version:** 0.3
+> **Version:** 0.6
 > **Date:** 2026-11-19
 
 > **Enrichment is knowledge, skill or culture that a person gains or passes on. It benefits society as a whole, also where it seems to benefit one person only** (Foundations A1). An apprentice who trains as a plumber gains a trade, and society gains a plumber. A child in the fifth year of school is becoming a person who can contribute to society. **What a person does only for their own rest or pleasure is not work.** Teaching, learning, research, writing, art, childcare. It is one of three names a trust network uses to decide whether an hour counts as work. It is not a kind of credit and it is not a social-value signal. **There is one credit, time spent, and an enrichment hour credits exactly as any other hour does.**
+
+**A network ratifies the kinds of enrichment that it credits.** To ratify a kind of work is to publish an evidence rule for it. Much enrichment has no receiver who confirms the work, so the network's rule is what decides. **Aequitas does not say which kinds a network ratifies, and it does not say how a network decides** (Foundations §2.3). Three examples follow, and none is a rule of Aequitas.
+
+- **Study.** A network can write its rule for study on accreditation, which is a system that checks schools and recognises the ones whose teaching and degrees are sound. Under that rule, a student at a recognised school who studies for 1,000 hours is credited 1,000 hours. A student at a school that no accreditor on the network's list recognises is credited 0 hours. **Accreditation can be captured:** the accreditor [ACICS](https://en.wikipedia.org/wiki/Accrediting_Council_for_Independent_Colleges_and_Schools) recognised colleges that collapsed in 2015 and 2016, and lost its federal recognition in 2022.
+- **Schooling on the essential list.** A network decides what work is essential, and it can count a kind of enrichment. Schooling for young children is the likely case. A teacher teaches 25 children for 5 hours. Each child is credited 5 hours of study, the teacher is credited 5 hours, and nobody is debited: 130 hours of credit and 0 of debit. **This is the essential list used as a lever.** Two adults who each claim 7 hours of teaching the other and 7 of study gain 0.330 × 14 × 365 = 1,686 hours a year each at ρ = 0.330.
+- **Research.** It works by pledges. A network holds a research fund as a bank holds the money for a prize or a grant, and it decides when the pledged hours are released to a project. 200 people who pledge 5 hours each to the fund give a researcher 1,000 hours of backing and no credit. Research that only a special interest wants is done under that interest's pledges. A network can also define a kind of research as essential. It then credits the work in that field, with no pledge fund and no debit beside the credit.
+
+**A special interest can control what a network does.** Its fund can release pledged hours to research that many pledgers do not support, and its essential list can hold training that serves it. What limits this is that joining is voluntary, networks are many, and the rules are published. Those limits work only as far as a subscriber can leave (Foundations §2.3).
 
 ## The words this page uses
 
