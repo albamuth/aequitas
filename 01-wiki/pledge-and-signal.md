@@ -34,8 +34,8 @@ edges:
 ---
 # Pledge and Signal
 
-> **Version:** 0.1
-> **Date:** 2026-09-16
+> **Version:** 0.2
+> **Date:** 2026-11-19
 
 > The two ways credit-earners direct what gets made next. A **pledge** is *permanent, non-revocable backing of a named person*, spent from a lifetime budget equal to earned credit; a **signal** is a free, unbacked "I want this." Together they are the demand side of the economy — with no prices, no planner, and no board.
 
@@ -82,7 +82,10 @@ A pledge is **not** a purchase, **not** a spend of your credit, and **not** a pr
 - **A service on a network's essential list needs no receiver's consent.** A network whose list has the fire service credits the firefighters and adds no debit to anybody.
 - **A free performance has no receiver.** Its performers may still receive backing from a fund that people pledged to, on the conditions the fund published.
 - **Work on things held in common earns less say.** Over 40 years at 1,000 hours a year, the pledged mower has 40 × 1,000 = **40,000 hours** less pledge budget than the city's mower. Whoever can gather consent, such as a city, turns work into a say. That is P4 (coordinator class).
-- **A pledge makes no new pledge budget.** The total budget in a network grows only through work that a receiver accepted, through essential care, and through the floor.
+- **A pledge makes no new pledge budget.** The total budget in a network grows only through work that a receiver accepted, through essential care, through enrichment that the network has ratified, and through the floor.
+- **A pledge should say exactly what it is for.** A fund can hold pledges uncommitted until a published budget is met. A company of ten asks for 20,000 pledged hours, for equipment that adds 10,000 hours of debit at ρ = 0.5. No hour is passed to a member until the pledges cover the budget (Foundations §4.6).
+- **Pledges are where growth comes from.** Nothing is sold for more than it cost, so the push to make a new thing comes from pledges. Each hour of credit balances ρ hours of debit, and gives its holder one hour to pledge.
+- **A research fund is pledges that the network holds and releases**, as a bank holds the money for a grant. A researcher under it gains backing and no credit. The people who control a network decide what its fund releases (Foundations §2.3).
 
 ## What a pledge names, and when it becomes backing
 
@@ -176,7 +179,7 @@ Credit-earners direct what gets worked on next. Two distinct instruments, distin
 
 **Worked, at `F` = 10 h/day.** Self-care accrues 3,650 h of budget a year and 292,000 h over 80 years. A 50% standing pledge accepted at age 20 commits 0.5 × 3,650 × 60 = **109,500 h** and leaves 182,500 h to direct. A network applying 100% by default would spend all 292,000 h with no consent, and that is not available. **A network offering one standing pledge to everyone writes the criteria for much of the population's budget**, which is a P4 (coordinator class) surface.
 
-**Approval never gates credit — but *verification* gates its realization**. The work is **always recorded**: an event is logged the moment work is done, so origin closure holds and unpledged wheat still has a grower (A7, IC-3). What a pledge buys is **authorization and backing** for the work — a permanent grant, but still not a guaranteed sale; whoever ultimately takes the resulting good carries it against their own credit and backing (§3.2, §4.6). But a recorded credit **realizes** — begins counting toward the worker's position — only when the output is **verified**, exactly as A7 already gates an estimated position on observation. This is *verification, not approval*: no committee judges the work worthy; the trigger is objective evidence the output exists. See §4.6 for how, for a physical good, that verification *is* the hand-off. **For a service that is not essential, the verification is the confirmation of a receiver who asked for it.** Verification asks whether the work happened and whether a receiver accepted it, and never how much anyone valued it.
+**Approval never gates credit — but *verification* gates its realization**. The work is **always recorded**: an event is logged the moment work is done, so origin closure holds and unpledged wheat still has a grower (A7, IC-3). What a pledge buys is **authorization and backing** for the work — a permanent grant, but still not a guaranteed sale; whoever ultimately takes the resulting good carries it against their own credit and backing (§3.2, §4.6). But a recorded credit **realizes** — begins counting toward the worker's position — only when the output is **verified**, exactly as A7 already gates an estimated position on observation. This is *verification, not approval*: no committee judges the work worthy; the trigger is objective evidence the output exists. See §4.6 for how, for a physical good, that verification *is* the hand-off. **For a service that is not essential, the verification is the confirmation of a receiver who asked for it.** Essential care, self-care, and enrichment that the network has ratified count when the network's evidence rule for them is met (Foundations §4.6). Verification asks whether the work happened and whether a receiver accepted it, and never how much anyone valued it.
 
 ---
 

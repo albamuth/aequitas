@@ -20,8 +20,8 @@ edges:
 ---
 # Non-Fungibility
 
-> **Version:** 0.2
-> **Date:** 2026-10-13
+> **Version:** 0.3
+> **Date:** 2026-11-19
 
 > Every credit and debit is a unique, non-exchangeable record of a specific event. Credits cannot be transferred, traded, gambled, lent, or stolen. Only *debit* moves — and only by transferring the thing it is attached to.
 
@@ -42,7 +42,7 @@ Fungibility is what turns an accounting unit into a currency, and a currency int
 
 This is also why Aequitas is **not a token or a blockchain**. Both assume fungible transferable units. Aequitas is an accounting system over an [event log](derived-ledger.md).
 
-The firewall is load-bearing for [enrichment](enrichment.md) especially: enrichment must never become convertible, or it becomes currency by the back door (OP-8).
+**Feedback is the case to watch.** An hour of [enrichment](enrichment.md) is ordinary credit, at one hour for one hour. Feedback on it, such as likes and applause, was never credit, so it cannot convert into credit (Foundations §4.6). A rule that let feedback create credit would make a currency by the back door.
 
 ## Depends on
 

@@ -1,6 +1,6 @@
 ---
 title: A network publishes its own workings
-summary: A network asks people to rely on its arithmetic, so it publishes every estimating number, every method, and anonymised data covering all its participants; funding is only the recognition of an activity as creditable; a network's own founding is recorded like any pre-existing thing; and publishing more to earn trust also publishes more to identify people by.
+summary: A network asks people to rely on its arithmetic, so it publishes every estimating number, every method, and anonymised data covering all its participants; funding is the recognition of an activity as creditable by the people who asked for it; a network's own founding is recorded like any pre-existing thing; and publishing more to earn trust also publishes more to identify people by.
 type: mechanism
 ids: [§4.7]
 status: settled
@@ -24,8 +24,8 @@ edges:
 ---
 # A network publishes its own workings
 
-> **Version:** 0.1
-> **Date:** 2026-10-14
+> **Version:** 0.2
+> **Date:** 2026-11-19
 
 > **To be trustworthy a network publishes every estimating number it uses, every method, and anonymised data covering all of its participants. A network that will not show its arithmetic is asking to be trusted rather than checked, which is the thing this system exists to stop needing.**
 
@@ -34,7 +34,7 @@ edges:
 | Term | What it means |
 |---|---|
 | **Tallying** | Computing positions, estimates and the leftover from the log. A computation, not a judgement made case by case. |
-| **Funding** | In Aequitas, only the recognition of an activity as creditable. There is no treasury, no allocation and no grant. |
+| **Funding** | In Aequitas, the recognition of an activity as creditable, by the people who asked for it. A network's own work is a service to its subscribers: the workers are credited, and each subscriber carries an equal part of the hours. 500 workers at 2,000 hours each, over 1,000,000 subscribers, is 1 hour for each subscriber. **A research fund is a different thing.** It is pledges that the network holds and releases, and a researcher under it gains backing and no credit (Foundations §4.7, §2.3). |
 | **Genesis entry** | The estimated record made for a thing that existed before the ledger started. |
 
 ## What a network owes
@@ -45,7 +45,7 @@ edges:
 
 > **And this cuts against itself.** Anonymised participant data becomes more re-identifiable the more of it there is. **Publishing more to earn trust also publishes more to identify people by.** A network is choosing on that axis whether it means to or not. The minimum an auditor must see is OP-22, unsolved.
 
-**"Funding" is not a budget.** Asking who funds an auditor imports a question from money that does not survive translation. Audit work is work, recorded when it happens, and recording is never gated on approval. **The credit for doing the work was never scarce.** What is scarce is demand (a pledge says someone wants the work done) and verification (which decides when the credit counts).
+**"Funding" is not a budget.** Asking who funds an auditor imports a question from money that does not survive translation. Audit work is work, recorded when it happens, and recording is never gated on approval. **Audit work is work, and recording it is never gated.** What is scarce is demand (a pledge says someone wants the work done) and verification (which decides when the credit counts).
 
 **A network's own founding is recorded like any pre-existing thing.** A network cannot be paid by an accounting that does not exist yet, so whether its founders take credit for creating it is the network's own decision, entered as an estimate after the fact and open to supersession. A network may document its founding carefully, thinly, or not at all; **the founding record is the first thing anyone can check, so it is a signal about all the rest.**
 

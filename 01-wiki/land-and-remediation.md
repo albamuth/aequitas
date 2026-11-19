@@ -19,8 +19,8 @@ edges:
 ---
 # Land is not owned; a building carries a remediation debt
 
-> **Version:** 0.1
-> **Date:** 2026-10-14
+> **Version:** 0.2
+> **Date:** 2026-11-19
 
 > **Land cannot be owned.** A building does not sit on property it holds title to. It occupies a bounded space relative to the Earth, and **that occupation is itself a debit: the cost of restoring the space to its natural state.** It is discharged to zero only by actually doing the restoring.
 
@@ -51,7 +51,7 @@ edges:
 | The gas stove's emissions over 20 years | their own measured CO₂ | **This occupant, permanently.** They burned the gas |
 | The original builders' construction pollution and forced labour | on the original causers | **0 h on this occupant** |
 
-**Now somebody restores the plot after the house comes down.** The 1,200 hours clear; the restorer is credited the hours of the restoring; the stove's CO₂ does not move, because it was consumption debit on the person who burned the gas.
+**Now somebody restores the plot after the house comes down.** The 1,200 hours clear; the restorer's hours count as credit where somebody asked for the restoring and confirms it, as for any service (restoring that only a pledge named earns the backing and no credit, Foundations §4.6); the stove's CO₂ does not move, because it was consumption debit on the person who burned the gas.
 
 **In plain words: you carry debit for occupying, not for owning, and only for your own tenure and your own emissions.**
 

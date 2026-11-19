@@ -25,8 +25,8 @@ edges:
 ---
 # Debit Taxonomy
 
-> **Version:** 0.1
-> **Date:** 2026-09-16
+> **Version:** 0.2
+> **Date:** 2026-11-19
 
 > The master map of §3.2: **what kind of debit a thing carries, and how each kind behaves when the thing changes hands.** This is the engine room of the theory — most of what makes Aequitas different from money is a consequence of these distinctions. The reviewer (2026-08-09) flagged §3.2 as load-bearing but text-only; this is the visual.
 
@@ -95,7 +95,7 @@ They are not the same quantity and they do not move together:
 
 ## Two rules that cut across both branches
 
-**Self-work identity** → [self-work-identity](self-work-identity.md). While you hold a thing, working on it earns credit exactly equal to the property-debit it adds → **net zero** (bar materials used up). This is *why* property is a burden, not an engine: no rent, no appreciation, nothing earned by mere holding. Repair your own roof and you are credited the hours *and* the house's debit rises by the same hours — net effect on you, zero.
+**Self-work identity** → [self-work-identity](self-work-identity.md). While you hold a thing, working on it earns credit exactly equal to the property-debit it adds → **net zero** (bar materials used up). This is *why* property is a burden, not an engine: no rent, no appreciation, nothing earned by mere holding. Repair your own roof and you are credited the hours *and* the house's debit rises by the same hours — net effect on you, zero. **The identity is about hours that go into a thing.** A debit counts only what a person takes from the world or from other people (Foundations §2.2). The hours of self-care go into no thing, so the baseline is credit with no debit beside it: 10 hours of credit a day at `F` = 10, and 0 hours of debit.
 
 **Non-cascade** (§3.2b = §4.5, one rule read in two directions). **Cost attaches only to the causer and never cascades:**
 - **not onward** to a buyer — the mine keeps the pollution of the fuel and chemicals it used up, and the person wearing the ring carries none of it ([Ellerman responsibility-imputation](no-externalities.md)). Pollution that belongs to the thing is not such a flow: the gold's waste rock is part of the gold's record, and a buyer accepts it with the ring;

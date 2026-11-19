@@ -36,8 +36,8 @@ edges:
 ---
 # Trust network
 
-> **Version:** 0.1
-> **Date:** 2026-10-14
+> **Version:** 0.2
+> **Date:** 2026-11-19
 
 > **A trust network keeps the books.** It records material flows, hand-offs, services, pledges, and measurements of the world itself. It checks the arithmetic, estimates what it cannot observe, and publishes its methods so anyone can re-run them. **Aequitas says what should be counted. Trust networks are where the counting happens, or fails to.**
 
@@ -77,7 +77,7 @@ edges:
 | **4.7** | It publishes its own workings, and settles disputes | [privacy-is-a-network-choice](privacy-is-a-network-choice.md), [dispute-resolution](dispute-resolution.md) |
 | **4.8** | It takes people in, it merges with other networks, and it can end | [onboarding-incentive](onboarding-incentive.md), [permanence-and-death](permanence-and-death.md) |
 
-**What is not prescribed.** How a network handles privacy, what technology it runs on, which laws it must satisfy, how it documents its own founding, and how it audits its cost constants are all the network's own design (Foundations §2.6). **What it must do is publish what it runs, so anybody can re-compute its claims** (A8).
+**What is not prescribed.** How a network handles privacy, what technology it runs on, which laws it must satisfy, how it documents its own founding, how it audits its cost constants, which kinds of enrichment it ratifies, what its essential list holds, and how it governs itself are all the network's own design (Foundations §2.6, §2.3). **A special interest can control a network's research fund and its essential list.** Three things limit that: joining is voluntary, networks are many, and the rules are published. Each limit works only as far as a subscriber can leave, and a person who leaves a network leaves their life history with it. **What it must do is publish what it runs, so anybody can re-compute its claims** (A8).
 
 ## An example, with the numbers
 

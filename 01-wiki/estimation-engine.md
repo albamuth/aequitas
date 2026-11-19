@@ -27,8 +27,8 @@ edges:
 ---
 # Estimation Engine
 
-> **Version:** 0.1
-> **Date:** 2026-09-16
+> **Version:** 0.2
+> **Date:** 2026-11-19
 
 > The machinery that turns "what a household consumes" into "what it truly cost" — propagating a consumption basket through the entire supply chain into labor, energy, materials, and pollution at every tier.
 
@@ -119,7 +119,7 @@ For producers outside the system, use the finest-resolution data that exists —
 
 - ~~**Training cost embodied in skilled service**~~ — **dissolved.** Training is front-loaded, so nothing flows downstream and no dataset is needed
 - **Occupational harm flowing retroactively into products** — A2 requires it; needs Social LCA sources verified
-- **Household unpaid labor attributed to the goods it services**
+- **Household unpaid labor attributed to the goods it services** — only the hours that go into a thing the person holds, such as a repair. Self-care, with cooking for oneself, is inside the baseline and goes into no thing's record (Foundations §2.2, §2.3)
 - **Process energetics per sector** — a *new* dependency created by the allocation rule, and where OP-24 lives
 
 ## Depends on

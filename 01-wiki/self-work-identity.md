@@ -13,8 +13,8 @@ edges:
 ---
 # The Self-Work Identity
 
-> **Version:** 0.1
-> **Date:** 2026-09-16
+> **Version:** 0.2
+> **Date:** 2026-11-19
 
 > A homeowner who repairs their own house earns credit for the labor exactly equal to the increase in the property's debit — **net zero**, excluding materials and energy actually consumed.
 
@@ -32,7 +32,7 @@ Materials and energy consumed in the work are *not* cancelled — they are real 
 
 This is the mechanism that makes property a burden rather than an engine. Without it, "improve your own asset" would be a credit pump: work on your house forever, accumulate credit, sell at a price reflecting the improvements, and you have reinvented capital gains.
 
-It also generalizes past housing. Any entity improving something it holds — a firm upgrading its own plant — gets the same identity. **Nobody can bootstrap credit by working on their own stuff.**
+It also generalizes past housing. Any entity improving something it holds — a firm upgrading its own plant — gets the same identity. **Nobody can bootstrap credit by working on their own stuff.** **The identity covers hours that go into a thing.** Staying alive is not this case. The hours of self-care go into no thing, so the baseline is credit with no debit beside it, and cooking for oneself is inside the baseline. Rest and pleasure add no credit and no debit (Foundations §2.2, §2.3, §3.2).
 
 Note what it does *not* discourage: the homeowner still gets a better house. The real benefit is entirely preserved. What's removed is the financial gain from the same act. That is exactly the right split, and it's a good demonstration case for public writing.
 

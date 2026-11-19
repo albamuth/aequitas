@@ -29,8 +29,8 @@ edges:
 ---
 # Debit Tolerance
 
-> **Version:** 0.2
-> **Date:** 2026-09-24
+> **Version:** 0.3
+> **Date:** 2026-11-19
 
 > **A trust network lets a person consume while `D ≤ ρ·(C + P)`. That is the consumption gate.** `P` is backing — hours others pledged to this person by name (§4.6). **It has two dials: the floor `F`, and the tolerance ρ.** The floor is credit for work a person really did. It is not an allowance, and nothing is issued to anybody.
 
@@ -60,7 +60,7 @@ edges:
 
 **Credit records that a person spent time on work (A2).** Handing somebody credit for no time worked would be an abstract, issued quantity, **and A1 forbids those anywhere in the system.** So a floor written as a grant would have broken the first axiom.
 
-> **Every living human spends time staying alive. The network counts that time at a published duration for each activity, which is a declared convention (Foundations §2.5), and credits it at the ordinary rate.** At `F` = 10, a person who sleeps 6 hours is still credited 10 hours for the day.
+> **Every living human spends time staying alive. The network counts that time at a published duration for each activity, which is a declared convention (Foundations §2.5), and credits it at the ordinary rate. **The floor is one figure for all of self-care, and cooking for oneself is inside it.** It has no debit beside it, because a debit counts only what a person takes from the world or from other people. It is credited at any contact with the network, for every day since the last one: 7 days with no contact at `F` = 10 is 70 hours at the next contact (Foundations §2.2, §2.3).** At `F` = 10, a person who sleeps 6 hours is still credited 10 hours for the day.
 
 **What a network chooses is which activities it recognises and how many hours each takes.** One network counts eight hours of sleep and lands near 10 h/day. Another accepts that four hours suffices and lands near 6. A fourth counts only the hours a body cannot avoid and lands near 2. The sleep evidence a network argues from is public — the [AASM and SRS consensus statement](https://aasm.org/aasm-and-srs-publish-new-sleep-duration-consensus-statement/) says adults aged 18 to 60 should sleep 7 or more hours a night.
 

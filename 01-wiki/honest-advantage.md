@@ -13,8 +13,8 @@ edges:
 ---
 # Honest Advantage
 
-> **Version:** 0.1
-> **Date:** 2026-09-16
+> **Version:** 0.2
+> **Date:** 2026-11-19
 
 > The primary defence against cheating is not detection. It is that **participating honestly pays better than cheating** — and better than the current system.
 
@@ -39,11 +39,11 @@ Concrete cases where the difference is legible:
 | Today | Under Aequitas |
 |---|---|
 | Landlords collect rent for owning | Credited for **maintaining** the property; ownership itself yields nothing ([property-debit](property-debit.md), [self-work-identity](self-work-identity.md)) |
-| Schooling is unpaid time for the student | **Children are credited for attending school**, and teachers credited for teaching them ([education-as-credited-work](education-as-credited-work.md)) |
+| Schooling is unpaid time for the student | **Study is work.** A student is credited under the rule that their network publishes for study, and teachers are credited for teaching ([education-as-credited-work](education-as-credited-work.md)) |
 | Wages are what's left after profit | Credit reflects contribution; there is no margin taken |
 | Care and civil work are cost centres | [service-credit](service-credit.md) — credited directly, funded by nobody's taxes ([no-taxation](no-taxation.md)) |
 
-The schooling case is especially strong: it converts the largest unpaid contribution most people make in their lives into credited work, and it does so without any special rule — attending school is materially real activity like any other.
+The schooling case is especially strong: it turns the largest unpaid contribution most people make in their lives into work that a network can credit. The rule is the ordinary one: a network publishes an evidence rule for study, as it does for every kind of work it credits.
 
 ## Why this is the right shape
 

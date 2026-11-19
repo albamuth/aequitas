@@ -22,8 +22,8 @@ edges:
 ---
 # Protocol Governance
 
-> **Version:** 0.2
-> **Date:** 2026-10-13
+> **Version:** 0.3
+> **Date:** 2026-11-19
 
 > Governance is a property of the protocol, not of any institution. No organization that grows up around Aequitas may acquire authority over its core rules.
 
@@ -32,7 +32,7 @@ edges:
 Axiom **A8 (no governing body)**. Rules evolve as **immutable core + open variance**: everything below the core may differ from one trust network to the next, and those differences compete in public.
 
 - **Core** — the axioms and the conformance requirements. Not amendable by any body, including one calling itself the Aequitas Foundation.
-- **Open variance** — everything else: the weighting model, the self-care floor, the privacy practice, the verification rung. **A network must publish what it runs, and anyone must be able to re-compute its claims.**
+- **Open variance** — everything else: the weighting model, the self-care floor, the privacy practice, the verification rung, the kinds of enrichment a network ratifies, and its essential list. **A network must publish what it runs, and anyone must be able to re-compute its claims.**
 
 > **A8 is about who may change the rules. It says nothing about size.** A trust network may cover one valley, one trade, one country, or the world. *(Renamed in Foundations v0.21→v0.22: the axiom was called "local governance", and outside reviewers kept reading "local" as "small and geographic". The word was doing two jobs, so it was removed.)*
 

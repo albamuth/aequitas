@@ -18,10 +18,10 @@ edges:
 ---
 # Material Flow Value
 
-> **Version:** 0.2
-> **Date:** 2026-10-13
+> **Version:** 0.3
+> **Date:** 2026-11-19
 
-> Every credit and every debit in Aequitas is a record of matter or energy moving through the world, attributable to the people who caused the movement. Nothing else is value.
+> Every debit in Aequitas is a record of matter or energy taken from the world, attributable to the person who caused it. Every credit is a record of time a person spent working. No abstract or issued quantity exists anywhere in the system.
 
 ## What it is
 
@@ -30,7 +30,7 @@ The root axiom (A1). There is no abstract, issued, or fiat value anywhere in the
 Accounting extends all the way down: the oxygen a human inhales and the CO₂ they exhale are in principle in scope. In practice the system records what is known and estimates the rest ([statistical-coverage](statistical-coverage.md)), refining forever.
 
 Two directions of flow:
-- **Credit** — you caused matter/energy to become more useful to others.
+- **Credit** — a record of time you spent working: for another person, for many people, or for yourself (Foundations A1). Work makes a product, gives a service, or is enrichment. Enrichment is knowledge, skill or culture that a person gains or passes on, and it benefits society as a whole. What a person does only for their own rest or pleasure is not work.
 - **Debit** — you caused matter/energy to be consumed, degraded, or held out of use.
 
 ## Why it works this way

@@ -26,8 +26,8 @@ edges:
 ---
 # The published evidence rule
 
-> **Version:** 0.1
-> **Date:** 2026-10-14
+> **Version:** 0.2
+> **Date:** 2026-11-19
 
 > **A trust network publishes, for every kind of work it credits, what evidence that work requires. That published set is its contract with the subscriber. A network never credits a kind of work it cannot get evidence about.**
 
@@ -50,9 +50,9 @@ edges:
 |---|---|
 | **Goods** | The hand-off. The receiver accepts possession and the debit that rides with it ([production-credit](production-credit.md)) |
 | **A service** | A receiver who asked for it confirms that it happened. The confirmation is also the consent that puts the hours on that receiver. One confirming receiver is enough ([service-credit](service-credit.md)) |
-| **Enrichment** | Where it is given to other people, a receiver who asked for it confirms, as for a service. For other enrichment, evidence that the work happened, under the network's published rule ([enrichment](enrichment.md)) |
+| **Enrichment** | Where it is given to other people, a receiver who asked for it confirms, as for a service. For other enrichment, evidence that the work happened, under the network's published rule. A network ratifies each kind of enrichment that it credits with a rule of its own, and Aequitas does not name the kinds ([enrichment](enrichment.md)) |
 | **Self-care** | Proof of life. A verified living human maintained itself ([debit-tolerance](debit-tolerance.md)) |
-| **Essential care** (work that continues another person's life) | The network's published rule for that kind of care. The receiver does not have to confirm it. Where the receiver cannot confirm, a second witness does |
+| **Essential care** (work that continues another person's life) | The network's published rule for that kind of care. The receiver does not have to confirm it. Where the receiver cannot confirm, a second witness does. A network's list can also hold a kind of enrichment, such as schooling for young children, and an entry may be one published figure for a whole kind of care, such as 6 hours a day for a child under 5 (Foundations §4.2) |
 
 **Two rules stop this becoming a route for fraud.**
 

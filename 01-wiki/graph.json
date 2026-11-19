@@ -15,7 +15,7 @@
  },
  "counts": {
   "nodes": 301,
-  "edges": 1183
+  "edges": 1186
  },
  "nodes": [
   {
@@ -1125,7 +1125,7 @@
    "status": "settled",
    "file": "01-wiki/post-scarcity.md",
    "in": 1,
-   "out": 8
+   "out": 9
   },
   {
    "id": "books-never-balance",
@@ -1259,14 +1259,14 @@
    "id": "education-as-credited-work",
    "type": "mechanism",
    "title": "Education as credited work",
-   "summary": "Students are credited for learning and teachers for teaching; the cost of training is carried during the training years, cushioned by pledges, and never charged to whoever uses the skill later.",
+   "summary": "Study is work, and a student is credited under the evidence rule that their network publishes for study; teachers are credited for teaching; the cost of training is carried during the training years, cushioned by pledges, and never charged to whoever uses the skill later; a network can put schooling on its essential list, and then nobody's debit holds the teacher's hours.",
    "status": "settled",
    "ids": [
     "§4.5"
    ],
    "file": "01-wiki/education-as-credited-work.md",
    "in": 10,
-   "out": 13
+   "out": 14
   },
   {
    "id": "end-of-life-debit",
@@ -1293,7 +1293,7 @@
    ],
    "file": "01-wiki/enrichment.md",
    "glossary": "00-strategy/GLOSSARY.md#op-8",
-   "in": 9,
+   "in": 10,
    "out": 18
   },
   {
@@ -1401,7 +1401,7 @@
    "status": "provisional",
    "file": "01-wiki/meme-tracing.md",
    "in": 1,
-   "out": 7
+   "out": 8
   },
   {
    "id": "network-federation",
@@ -1498,7 +1498,7 @@
    ],
    "file": "01-wiki/pledge-and-signal.md",
    "glossary": "00-strategy/GLOSSARY.md#c8",
-   "in": 20,
+   "in": 22,
    "out": 32
   },
   {
@@ -1562,7 +1562,7 @@
    "id": "publish-own-workings",
    "type": "mechanism",
    "title": "A network publishes its own workings",
-   "summary": "A network asks people to rely on its arithmetic, so it publishes every estimating number, every method, and anonymised data covering all its participants; funding is only the recognition of an activity as creditable; a network's own founding is recorded like any pre-existing thing; and publishing more to earn trust also publishes more to identify people by.",
+   "summary": "A network asks people to rely on its arithmetic, so it publishes every estimating number, every method, and anonymised data covering all its participants; funding is the recognition of an activity as creditable by the people who asked for it; a network's own founding is recorded like any pre-existing thing; and publishing more to earn trust also publishes more to identify people by.",
    "status": "settled",
    "ids": [
     "§4.7"
@@ -5002,6 +5002,11 @@
   {
    "from": "education-as-credited-work",
    "rel": "related",
+   "to": "enrichment"
+  },
+  {
+   "from": "education-as-credited-work",
+   "rel": "related",
    "to": "service-credit"
   },
   {
@@ -6473,6 +6478,11 @@
    "from": "meme-tracing",
    "rel": "open_under",
    "to": "op-6"
+  },
+  {
+   "from": "meme-tracing",
+   "rel": "related",
+   "to": "pledge-and-signal"
   },
   {
    "from": "meme-tracing",
@@ -8083,6 +8093,11 @@
    "from": "post-scarcity",
    "rel": "related",
    "to": "no-taxation"
+  },
+  {
+   "from": "post-scarcity",
+   "rel": "related",
+   "to": "pledge-and-signal"
   },
   {
    "from": "post-scarcity",

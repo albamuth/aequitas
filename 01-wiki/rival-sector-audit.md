@@ -17,8 +17,8 @@ edges:
 ---
 # Rival-Sector Audit
 
-> **Version:** 0.1
-> **Date:** 2026-09-16
+> **Version:** 0.2
+> **Date:** 2026-11-19
 
 <!-- struck-ok: this box quotes the withdrawn proposal in order to withdraw it -->
 > ## ⛔ WITHDRAWN AS A MECHANISM, 2026-08-24
@@ -43,7 +43,7 @@ edges:
 
 [retroactive-reweighting](retroactive-reweighting.md) makes cost constants extraordinarily powerful. Whoever publishes the energetics of a process sets every [co-product-allocation](co-product-allocation.md) split in that sector — **backwards through all of history.** That is a capture surface, and it needs an answer that is not a standards body.
 
-**One channel closes for free, and it is worth claiming.** There is no market-dominating corporation to fund a favourable result, because [cost-not-price](cost-not-price.md) removes the profit that pays for captured science today. Labs are credited by trust networks for doing the work. **The Enron-shaped failure cannot operate the same way here.**
+**One channel closes for free, and it is worth claiming.** There is no market-dominating corporation to fund a favourable result, because [cost-not-price](cost-not-price.md) removes the profit that pays for captured science today. A network's own workers are credited for doing the work, and its subscribers carry the hours. A lab that works only under a pledge earns the backing and no credit (Foundations §4.5, §4.7). **The Enron-shaped failure cannot operate the same way here.**
 
 **But the obvious fix introduces its mirror.** A general-membership trust network is dominated by the *consuming* side of any given good — everyone eats beef, few raise cattle. Its members therefore collectively benefit from beef's debit being **understated**. And the incentive to correct runs one way only:
 
@@ -71,7 +71,7 @@ Three supporting rules:
 ## Why it is the right shape for Aequitas
 
 - **Decentralized.** No authority, no standards body, no appointed reviewer. It is an incentive, not an enforcement rule.
-- **Self-funding.** The replication is credited work paid for by a party with a real stake — it passes the universality criterion's maintainer question (*does this need a Paul Glover?*) without help. See [distributed-auditing](distributed-auditing.md).
+- **Self-funding.** The replication is work that a party with a real stake asks for or pledges for — it passes the universality criterion's maintainer question (*does this need a Paul Glover?*) without help. See [distributed-auditing](distributed-auditing.md).
 - **Already implied by an axiom.** [cost-not-price](cost-not-price.md) removes profit *in exchange* while explicitly preserving **competition on quality, artfulness and efficiency** (Foundations §5.1). Rival-sector audit is that competition applied to the cost model itself.
 
 ## Why the co-op form is not the fix

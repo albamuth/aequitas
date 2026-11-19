@@ -15,22 +15,22 @@ edges:
 ---
 # Meme Tracing
 
-> **Version:** 0.1
-> **Date:** 2026-09-16
+> **Version:** 0.2
+> **Date:** 2026-11-19
 
-> Feedback-weighted recognition of idea originators as ideas replicate and spread — crediting creators without ever suppressing usage. No patents, no exclusion.
+> Feedback-weighted recognition of idea originators as ideas replicate and spread — recognising creators without ever suppressing usage. No patents, no exclusion.
 
 ## What it is
 
-An application of [enrichment](enrichment.md) to ideas. When an idea, technique, design, or work propagates, recognition flows back along the propagation path to whoever originated it.
+An application of feedback ([pledge-and-signal](pledge-and-signal.md)) to ideas. Making or teaching an idea is [enrichment](enrichment.md), and its hours are ordinary credit. Recognition of the originator is feedback, and it is never credit. When an idea, technique, design, or work propagates, recognition flows back along the propagation path to whoever originated it.
 
-The critical property: **attribution without exclusion.** Nothing about tracing an idea's origin prevents anyone from using it. There is no license, no royalty, no injunction — only a record of provenance that carries enrichment back.
+The critical property: **attribution without exclusion.** Nothing about tracing an idea's origin prevents anyone from using it. There is no license, no royalty, no injunction — only a record of provenance that carries recognition back.
 
 ## Why it works this way
 
 Intellectual property exists because, under capitalism, the only way to reward a creator is to let them charge for access — which requires excluding non-payers. That exclusion is pure deadweight loss: it makes a non-rival good artificially rival.
 
-Aequitas doesn't need it. Since [cost-not-price](cost-not-price.md) means copying an idea costs only the material of copying, and since enrichment rewards creators without any transfer occurring, the reward and the exclusion come apart cleanly. **This is one of the strongest and most publicly legible consequences of the theory.**
+Aequitas doesn't need it. Since [cost-not-price](cost-not-price.md) means copying an idea costs only the material of copying, and since recognition reaches creators as feedback and pledges, with no transfer of credit, the reward and the exclusion come apart cleanly. **This is one of the strongest and most publicly legible consequences of the theory.**
 
 ## Who games this
 

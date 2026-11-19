@@ -27,8 +27,8 @@ edges:
 ---
 # The front-loading rule
 
-> **Version:** 0.1
-> **Date:** 2026-10-14
+> **Version:** 0.2
+> **Date:** 2026-11-19
 
 > **A large up-front cost with a diffuse benefit is carried where it is incurred, and cushioned at that time by the backing of the people who pledged for it. It is never charged onward to whoever happens to consume the result.**
 
@@ -43,7 +43,7 @@ edges:
 
 ## The rule
 
-**It covers education, media and creative production, research, infrastructure, tooling, and capital.** Training is its first case: a student is credited for their time, the teachers and buildings are carried during the training years, and nothing of it ever appears in a patient's bill ([education-as-credited-work](education-as-credited-work.md)). A film's audience pays for delivery only.
+**It covers education, media and creative production, research, infrastructure, tooling, and capital.** Training is its first case: a student is credited for their time under the network's evidence rule for study, the teachers and buildings are carried during the training years, and nothing of it ever appears in a patient's bill ([education-as-credited-work](education-as-credited-work.md)). Where a network's essential list counts the schooling, the teachers' time adds to nobody's debit. **Whether the hours of front-loaded work count as credit follows the ordinary rule.** Research that a pledge named, that nobody asked to receive, and that no rule of the network covers, earns the backing and no credit (Foundations §4.5). A film's audience pays for delivery only.
 
 **Two reasons, and the second is decisive.** Charging a cost onward means choosing a window, how many patients, how many viewers, and every candidate window is arbitrary. And charging onward never terminates: amortise a hospital into each bill and the accounting must chase the builder's costs, the steelmaker's, the engineers' schooling, back to the first human activity. **Carrying the cost where it falls is what makes the arithmetic stop.** This is the upstream face of the rule that the pollution of what a maker uses up never flows to a buyer ([pollution-making-vs-using](pollution-making-vs-using.md)): cost attaches only to the causer and never cascades.
 

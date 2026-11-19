@@ -1,8 +1,8 @@
 <!-- tag: ovw-aequitas-overview -->
 # Aequitas — Overview
 
-> **Version:** 0.39
-> **Date:** 2026-11-18
+> **Version:** 0.40
+> **Date:** 2026-11-19
 > **Audience:** everyone. No economics background assumed, none required.
 > **Rigorous version:** `00-strategy/Aequitas_Foundations.md`. This document is the plain-language companion; where they differ, the Foundations govern.
 
@@ -343,7 +343,11 @@ An economy that needs a constant supply of *new* debt to generate demand is an e
 >
 > Two people who spend an hour on the same task are credited the same. It does not matter that one breezed through it and the other found it gruelling. A real difference in effort shows up as a material cost instead: the harder worker eats more, and a dangerous job's harm is charged back to the work that caused it. It is never a bigger number for the same hour.
 >
-> Once you see credit as time spent, something surprising follows: **looking after yourself is work.** Sleeping, eating, resting and keeping yourself going is time spent maintaining a living human. So is looking after a child, and history refused to count that only because nobody was paid for it. So everyone earns a baseline simply by staying alive. That baseline is not a hand-out bolted onto the system. It is the real work of being alive, finally counted, and it is where the floor under everyone (§1) comes from.
+> Once you see credit as time spent, something surprising follows: **looking after yourself is work.** Sleeping, eating, washing and keeping yourself going is time spent maintaining a living human. So is looking after a child, and history refused to count that only because nobody was paid for it. So everyone earns a baseline simply by staying alive. That baseline is not a hand-out bolted onto the system. It is the real work of being alive, finally counted, and it is where the floor under everyone (§1) comes from.
+>
+> **The baseline adds nothing to your debit.** A debit counts only what you take from the world or from other people. The food you eat is debit, as always. The hour you spend eating it is your own time.
+>
+> **What you do only for your own rest or pleasure is not work.** An evening with a novel earns no credit. It adds no debit either, because the hours take nothing from anybody. The novel itself is a thing, and its debit came with it.
 
 #### The one test that decides what you may take
 
@@ -384,11 +388,15 @@ A community with a 10-hour baseline and `ρ` = 1.2. A median lifestyle costs 1,3
 |---|---|---|
 | **Production** | Matter or energy is turned into something | Milling wheat into flour |
 | **A service** | Something is done for a person, an organisation, or yourself | Setting a broken arm |
-| **Enrichment** | Knowledge, skill or culture reaches somebody | Teaching a child to read |
+| **Enrichment** | A person gains knowledge, skill or culture, or passes it on | Teaching a child to read. Learning to read |
 
 **One is enough, and nobody records which one.** An apprentice plumber's single hour is all three at once — copper becomes plumbing, a customer's pipes work, and a trade gets learned. **It still counts as one hour.** The three names decide *whether* an hour counts, never *how much* it counts for.
 
+**Enrichment benefits society as a whole, also where it seems to benefit one person only.** An apprentice gains a trade, and society gains a plumber. A child who learns to read is becoming a person who can contribute. So study is work, and a novel read for pleasure is not.
+
 **This is why looking after yourself can count, and it is the ordinary rule rather than a special one.** A community writes down what it treats as work. **If it treats sleeping, eating and washing as work, then the hours you spend on them are credited — exactly like any other hours it recognises.** If it does not, they are not. **The list is the community's to write.**
+
+**The baseline is one figure for all of it.** Nobody keeps a log of your sleep or your meals. Cooking your own dinner is inside the figure, so it is not claimed a second time. At a 10-hour baseline, a day with 1.5 hours of cooking and a day with 0.5 hours are each credited 10 hours.
 
 **How is it checked? You are still here.** A living, verified person plainly did the maintaining, and confirming that costs almost nothing.
 
@@ -408,7 +416,7 @@ No profession earns at a higher rate. This sounds naïve until you see where the
 - **Dangerous labour** — if a process turns out to damage the people doing it, that harm is charged back to the products that process made. Even decades later.
 - **Skilled labour** — and this is the important one.
 
-**Training is work, and it is carried at the time.** A medical student is credited for their hours studying, exactly as a bricklayer is credited for hours laying bricks. The cost of that training is the teachers, the buildings and the equipment. It is carried *during the training years*, cushioned by the people who wanted doctors to exist putting their credit behind it.
+**Training is work, and it is carried at the time.** A medical student is credited for their hours studying, as a bricklayer is credited for hours laying bricks. **Each network publishes the rule that study has to meet, and Aequitas does not write that rule.** One network's rule could be that a recognised school records the student's attendance. Under that rule, 1,000 hours at a recognised school are 1,000 hours of credit, and 1,000 hours at a school that nobody recognises are 0. The cost of that training is the teachers, the buildings and the equipment. It is carried *during the training years*, cushioned by the people who wanted doctors to exist putting their credit behind it.
 
 Which means: **the doctor's education never appears on any patient's bill.** Your visit costs their time, the clinic's materials, and the medicines you were given. Nothing else. It was already accounted for, up front.
 
@@ -704,7 +712,7 @@ Putting one extra box on that shelf takes about **two hours of work**: picking i
 
 Your work is written down the moment you do it. But it **counts once the result is checked.** For something you *made*, the check is simple: it counts when the thing **changes hands.** When a workshop hands a batch of toasters to a driver, the driver takes them on and takes on the debt that rides with them. That is what confirms the toasters are real. That confirmation is what turns the makers' hours into credit that counts.
 
-**What "checked" means depends on what you did.** For a *made thing*, it's the hand-off above. For a *service* with nothing to hand over, such as a haircut or an hour of counselling, it is the person you did it for confirming it happened. For *creative or intellectual work*, it's evidence the work was really done — never a tally of how many people *liked* it (approval is not the check, or applause would quietly turn into money). And for the work of *keeping yourself alive*, the check is simply that you're still here: a living, verified person plainly did the maintaining. Different kinds of work, checked in the way that fits each — and the trust networks (§7) are the ones who work out and police exactly how.
+**What "checked" means depends on what you did.** For a *made thing*, it's the hand-off above. For a *service* with nothing to hand over, such as a haircut or an hour of counselling, it is the person you did it for confirming it happened. For *creative or intellectual work*, it's evidence the work was really done, under a rule the network published for that kind of work — never a tally of how many people *liked* it (approval is not the check, or applause would quietly turn into money). And for the work of *keeping yourself alive*, the check is simply that you're still here: a living, verified person plainly did the maintaining. Different kinds of work, checked in the way that fits each — and the trust networks (§7) are the ones who work out and police exactly how.
 
 This has three quietly powerful effects:
 
