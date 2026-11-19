@@ -1060,3 +1060,18 @@ sim_requests:
       which did not name the comparable-category reconciliation.'
     from: obj-20261105-self-council-rho-sweep-flow-not-stock
     request_hash: 9311d7cf818283d36eae1553ea8fa30d928a669b3a11751ba72cde54a80bdd24
+  sr-20261119-lost-crop-at-the-german-method-with-substitu:
+    date: '2026-11-19'
+    status: requested
+    question: 'Lost crop at the German method with substitution. Same population,
+      gate and settings as german-lost-crop/german_lost_crop.py (fresh fruit and
+      vegetables lose 50%, F = 2, 10, 14, E = 437.2 and 462.3 h). Let each person
+      short of the line buy other food lines inside E up to their spare capacity
+      (at most 1.7% over wants). Report, under smallest-wants-first and pro rata:
+      the share of people who get less than their total food want, and the share
+      who get no fresh produce. Print beside the no-substitution 31.74% and 100%.
+      Declared: below 20% / 20% to 31.74% / unchanged; my call 20% to 31.74%.'
+    why: 'Cell 2 of post #12844, called in public on 2026-11-19. The run''s own
+      limit 6 says substitution was not run. Rows consulted: german-lost-crop/RESULTS.md
+      sections 3 and 4.'
+    request_hash: d15a8031138db164dfc12dc1ae2df9e6dac029762be6ccbb7db21d9b7ee30737

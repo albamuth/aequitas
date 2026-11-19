@@ -1,7 +1,7 @@
 # Struck phrases — wordings that must not appear in a live document
 
-> **Version:** 0.15
-> **Date:** 2026-11-18
+> **Version:** 0.17
+> **Date:** 2026-11-19
 
 > **Read by [`bin/consistency.py`](../bin/consistency.py). The table below is the machine-readable part; everything else on this page is for people.**
 
@@ -41,6 +41,11 @@ That is not a hypothetical. **It happened three times in a single day, 2026-08-2
 
 | Struck phrase | Struck on | Why | What is true instead |
 |---|---|---|---|
+| `enrichment that benefits one person or many` | 2026-11-19 | **Author's ruling 2026-11-19.** Enrichment can seem to benefit one person, such as a student. Its benefit is to society as a whole. Read alone, the old wording also made a novel read for pleasure into work | **Enrichment is knowledge, skill or culture that a person gains or passes on. It benefits society as a whole. What a person does only for their own rest or pleasure is not work** — Foundations A1, §2.3 |
+| `benefit flows from all of humanity to at least one person` | 2026-11-19 | Same ruling. The old definition had the benefit go to one person | **Its benefit is to society as a whole** — Foundations §4.5 |
+| `The floor already has this form` | 2026-11-18 | **Author's ruling 2026-11-18.** It gave the floor as the reason that life-continuing work adds no debit, and the floor needs that rule to do anything. That was a circle | **A debit counts only what a person takes from the world or from other people. A person's own hours on their own life take nothing from either** — Foundations §2.2, §4.5 |
+| `A person holds their own body for life` | 2026-11-18 | Same ruling. If a body were a held thing, the self-work rule of §3.2 would add a baseline's hours to the same person's debit | **Work on the receiver's person stays with the receiver, because there is no thing to hand on** — Foundations §4.5 |
+| `a thing of theirs, or their own body` | 2026-11-18 | Same ruling, the definition of a service | **A service is work done for a receiver: on a thing that they hold, or on their person** — Foundations §4.5 |
 | `of Americans are permanently locked` | 2026-11-18 | **Author's rulings 2026-11-10 and 2026-11-11.** The range 0.1–2% came from ρ near 1.5, which is above the US rationing band, and it was printed with no ρ beside it. The lock also lasts only while ρ stays at that setting | **0.24% over the lock line in one year at ρ = 1.5; 5.1% or 17.7% at ρ = 0.330, by population** — Foundations §5.5.8, Objections B25 |
 | `sit past a permanent lockout` | 2026-11-18 | Same rulings, the Strategy wording | As above |
 | `is credited 1 hour` | 2026-11-18 | **Author's ruling 2026-11-16.** The resident who mows a public verge under a pledge has no receiver who asked for the work. *"It is wrong to say they are 'credited'. They receive the pledge, instead."* | **The mower receives 1 hour of backing, and the hour does not count as credit** — Foundations §4.6, Conformance 9c |

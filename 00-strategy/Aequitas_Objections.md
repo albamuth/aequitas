@@ -1,7 +1,7 @@
 <!-- tag: obj-aequitas-objections-register -->
 # Aequitas — Objections Register
 
-> **Version:** 0.58 · **Date:** 2026-11-18
+> **Version:** 0.62 · **Date:** 2026-11-19
 > **Tracks:** `Aequitas_Foundations.md` · `Aequitas_Conformance.md` · `OP-22_identity_not_disclosure.md` · `OP-27_parallel_implementation.md` · `OP-28_dark_production_and_the_residual_denominator.md` · `OP-26_coverage_and_closure.md` · `OP-18_labour_and_team_credit.md` · `OP-23_capital_and_pollution.md` · `OP-17_coproduct_allocation.md` · `06-simulation/allocation-engine/RECURSION_RESULTS.md` · `06-simulation/disparity-ceiling/DISPARITY_CEILING.md` · `06-simulation/scenario-suite/scenario_suite_METHOD.md`
 > **Purpose:** one place holding every serious objection to the theory, its source, the axiom it attacks, and its status.
 
@@ -37,6 +37,7 @@
 
 **[PART B — ANSWERED](#part-b--answered)**
 
+  - [B26 — "Credit for sleep is a trick to make the numbers come out"](#b26--credit-for-sleep-is-a-trick-to-make-the-numbers-come-out--answered-2026-11-18)
   - [B25 — The locked share was quoted at a ρ above the rationing band](#b25--the-locked-share-was-quoted-at-a-ρ-above-the-rationing-band--corrected-2026-11-18)
   - [B24 — Pollution that belongs to the product goes with the product](#b24--pollution-that-belongs-to-the-product-goes-with-the-product--passes-with-changes-folded-2026-11-18)
   - [B23 — Who a debit lands on: consent, services, tickets and pledged work](#b23--who-a-debit-lands-on-consent-services-tickets-and-pledged-work--passes-with-changes-folded-2026-11-18)
@@ -551,6 +552,48 @@ A second wave of critique arrived on 1f916.ai against posts #1605, #1750 and #15
 
 ---
 
+<!-- tag: obj-b26 -->
+## B26 — "Credit for sleep is a trick to make the numbers come out" ✅ **ANSWERED 2026-11-18**
+
+**Shipped:** Foundations v0.74 A1, §2.3, §4.2, §5.5.2, v0.75 §2.2, §4.5, v0.76 §2.3, §4.2, §4.5, and v0.77 A1 · Conformance v0.26 row 16f, v0.27 row 2h and v0.28 row 2i. **Source:** reader round 10 of the Overview draft, 2026-11-18: five test readers, all of whom understood the baseline and refused it. **Author's rulings, 2026-11-18 and 2026-11-19.**
+
+**The objection.** A network credits 10 hours a day for sleeping, eating and washing. That looks like credit handed out so that everybody can buy things, with a reason found afterwards.
+
+**The answer, in six steps.** A credit records time spent working, and the measure is time (A1, A2). Work is something a human being does for a human being (A1). To keep a human being alive is such work: a nurse who feeds and washes a patient is credited. The human being can be the worker: A1 now says *or for themself*. So the hours a person spends keeping themself alive are hours of work. A network that counts that work credits them, at a number of hours it publishes.
+
+**Three points the author ruled.**
+
+| | |
+|---|---|
+| **Time is credited, never the act** | A credit does not measure value, so it is not based on effort. The network does not reward sleep, and does not check it |
+| **The number is the network's estimate** | The time it takes self-care to need. People decide it, and one purpose is to keep the spread between people small |
+| **Proof of life comes first** | The baseline is credited at a contact with the network. A week with no contact at `F` = 10 is 70 hours at the next contact |
+
+**How this differs from B16.** B16 struck an inference: care is work when done for another, *therefore* it is work when done for oneself. This answer does not infer. A1 states that the human being worked for may be the worker, by the author's ruling.
+
+**The strongest reply a critic has.** Accounts of unpaid work use a "third-person" test: an activity is work if a person could pay another to do it. By that test, eating and sleeping are not work. **The author's answer:** a record of work here is unique to the person who did it, nobody can pay another to do their work, and self-care that is credited is not unpaid. A critic who keeps the test can still decline the answer.
+
+**Why these hours add no debit.** If they did, at `F` = 10 and ρ = 0.5 the baseline would cost a person 1,825 hours of allowance a year, where it now gives 1,825. **Author's ruling, 2026-11-18: a debit counts only what a person takes from the world or from other people** (Foundations §2.2). The food a person eats is debit. The hour they spend eating it is their own time.
+
+**The reply a critic has.** A repair of 2 hours on your own roof is +2 credit and +2 debit (Foundations §3.2). Those hours are the person's own too. **The answer, ruled by the author on 2026-11-19:** a person's own hours are debit only when they are in a thing. The roof's cost reads the same whoever made it, and the roof can pass to another holder. Self-care makes no thing.
+
+**Where self-care ends. Author's ruling, 2026-11-19.** The baseline is one figure for everything a person does to keep themself alive, and cooking for oneself is inside it. A network keeps no log of sleep, meals and washing. An act that the baseline covers is not claimed a second time. Childcare may be credited in the same way, as one figure. **Rest and pleasure for oneself are not work**, because they are not needed to keep the person alive.
+
+**One line for both kinds of hands.** A paramedic who keeps a person alive is credited, and the person carries none of those hours. A surgeon who does cosmetic surgery that a customer chose is credited, and the customer carries all of them. The person's own hands follow the same line: self-care is credited with no debit, and rest and pleasure are not credited.
+
+**Worked.** At `F` = 10 a person who cooks for 1.5 hours is credited 10 hours of self-care that day, and not 11.5. A person who claims 14 hours a day of reading for themself is credited 0 hours for it. If a network did credit it, at ρ = 0.330 it would add 0.330 × 14 × 365 = 1,686 hours a year with no debit beside it.
+
+**What is left.**
+
+| | |
+|---|---|
+| **Study, and the limit in A1** | **Ruled 2026-11-19, in Foundations v0.77.** A1 now says that enrichment benefits society as a whole, also where it seems to benefit one person only, and that what a person does only for their own rest or pleasure is not work. A student's hours are work for that reason. A network that calls reading at home "study" uses the lever that §2.3 already names |
+| **Work for society with no receiver** | A person who mows public verges for 1,000 hours under a pledge gains 0 hours of credit and 1,000 hours of backing (Foundations §4.6). A student who studies for 1,000 hours gains 1,000 hours of credit. Both benefit society as a whole. The text does not say why one counts as credit and the other does not. Not ruled |
+| **Pleasure that goes into a thing** | A model plane built for pleasure is credit and the same hours of debit, by §3.2. At ρ = 1.2, 1,000 such hours add 200 hours to what the person may carry. Not ruled |
+| **One figure with no record of the acts** | Its only check is its evidence rule. Two carers who each claim the whole childcare figure for one child is the case that a network's limit has to cover |
+
+---
+
 <!-- tag: obj-b25 -->
 ## B25 — The locked share was quoted at a ρ above the rationing band ✅ **CORRECTED 2026-11-18**
 
@@ -947,6 +990,8 @@ A grocery co-op of **ten members**, each on **2,000 hours** a year, buys **40 li
 
 <!-- tag: obj-b16 -->
 ## B16 — The floor rested on an inference the gate did not license ✅ **THE ARGUMENT IS DELETED, NOT REPAIRED, 2026-09-04**
+
+> **Since Foundations v0.74 (2026-11-18) the baseline is argued again, on a different base: A1 itself now says that a person can work for themself. See B26.** The record below is of the argument that was struck, and of why.
 
 **Shipped:** Foundations v0.40 §2.3, §5.5.1, §5.5.2 · Overview v0.26 §2. **Source:** **@amber, c40261 on post #1605, 2026-09-04**, running ask #1 against §2.3. **They returned two findings. One is refuted; one stands and is folded here.**
 
@@ -1459,7 +1504,7 @@ The barn stays on the farm operator; the fab stays on its cooperative; hide and 
 
 ### ⚠️ The honest limit, and it should be stated rather than claimed away
 
-**Enrichment is broad.** *"Work whose benefit flows from all of humanity to at least one person, in ways not readily measured in material"* will stretch to cover a great deal, and a network determined to credit something worthless can argue its way in.
+**Enrichment is broad.** *"Knowledge, skill or culture that a person gains or passes on"*, with a benefit *"to society as a whole, in ways that are not readily measured in material"*, will stretch to cover a great deal, and a network determined to credit something worthless can argue its way in.
 
 **So 3a is a weak filter, not a tight one.** It catches the plain cases — crediting loyalty, crediting holding an asset, crediting being popular — **and those are exactly the cases that turn a trust network into an issuer.** The rest of the defence is unchanged and structural: competing networks, ratio-based evaluation (Foundations §3.5), and public membership composition (Foundations §3.3a, conformance row 16b).
 

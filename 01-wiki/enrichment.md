@@ -1,6 +1,6 @@
 ---
 title: Enrichment
-summary: Enrichment is work in which knowledge, skill or culture reaches somebody; it is one of three names that decide whether an hour is creditable, it credits one hour for one hour, and it is verified by a receiver's confirmation or by other evidence that the work happened, never by how many people liked it, because feedback is not credit.
+summary: Enrichment is knowledge, skill or culture that a person gains or passes on, and its benefit is to society as a whole; it is one of three names that decide whether an hour is creditable, it credits one hour for one hour, and it is verified by a receiver's confirmation or by other evidence that the work happened, never by how many people liked it, because feedback is not credit.
 type: mechanism
 ids: [§2.3, OP-8]
 status: settled
@@ -23,10 +23,10 @@ edges:
 ---
 # Enrichment
 
-> **Version:** 0.2
-> **Date:** 2026-10-14
+> **Version:** 0.3
+> **Date:** 2026-11-19
 
-> **Enrichment is work in which knowledge, skill or culture reaches somebody.** Teaching, learning, research, writing, art, childcare. It is one of three names a trust network uses to decide whether an hour counts as work. It is not a kind of credit and it is not a social-value signal. **There is one credit, time spent, and an enrichment hour credits exactly as any other hour does.**
+> **Enrichment is knowledge, skill or culture that a person gains or passes on. It benefits society as a whole, also where it seems to benefit one person only** (Foundations A1). An apprentice who trains as a plumber gains a trade, and society gains a plumber. A child in the fifth year of school is becoming a person who can contribute to society. **What a person does only for their own rest or pleasure is not work.** Teaching, learning, research, writing, art, childcare. It is one of three names a trust network uses to decide whether an hour counts as work. It is not a kind of credit and it is not a social-value signal. **There is one credit, time spent, and an enrichment hour credits exactly as any other hour does.**
 
 ## The words this page uses
 

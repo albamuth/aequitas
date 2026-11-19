@@ -1,6 +1,6 @@
 # Aequitas — Acronym Registry & Glossary
 
-> **Version:** 0.6 · **Date:** 2026-11-18 · **Status:** canonical index
+> **Version:** 0.8 · **Date:** 2026-11-19 · **Status:** canonical index
 > **Why this exists:** the [external critique](#src-external-critique-2026-08-09) flagged abbreviation density (OP-#, C#, IC-#, A#, P#, §x.x) with no master index as the #1 accessibility barrier. This is that index, and the resolution target for the acronym-titling pass in `NEXT.md`.
 > **v0.3 (2026-08-23):** added the [Simulation, cohort, and data terms](#simulation-terms) table — the vocabulary the economy simulator introduced — and **four missing rows to the source index**, which had drifted behind `02-research/`: cross-country labour efficiency, the GDPR erasure note, and two new files on consumer segmentation and on labour/pollution intensity.
 > **v0.2 (2026-08-13):** added the [Research & academic terms](#research-terms) table — the outside vocabulary (economic theory, alternative-currency history, accounting method) used across `02-research/`, each with a plain definition, the research doc that best explains it, and an external authoritative (non-paywalled) source. Every definition below was checked against its linked source on 2026-08-13.
@@ -48,7 +48,7 @@ The fixed core. Do not re-litigate (see `CLAUDE.md`).
 
 | Acronym | Title (1–3 words) | Statement | Source |
 |---|---|---|---|
-| <a id="a1"></a>**A1** | materialism of cost | Cost **is** material/energy flow. A credit is a record of time a person spent working, and **work is something a human being does for human beings**: a product to be consumed, a service to be received, or enrichment that benefits one person or many. | Foundations §1 |
+| <a id="a1"></a>**A1** | materialism of cost | Cost **is** material/energy flow. A credit is a record of time a person spent working, and **work is something a human being does for a human being: for another person, for many people, or for themself**: a product to be consumed, a service to be received, or enrichment. **Enrichment is knowledge, skill or culture that a person gains or passes on, and it benefits society as a whole.** What a person does only for their own rest or pleasure is not work. | Foundations §1 |
 | <a id="a2"></a>**A2** | time as measure | Time is a yardstick, not the substance; labour never rate-scaled *(amended v0.3)*. | Foundations §1 |
 | <a id="a3"></a>**A3** | non-fungibility | Credit is non-transferable; no medium of exchange. | Foundations §1 |
 | <a id="a4"></a>**A4** | no externalities | Two things, stated separately. **Coverage:** every consequence stays inside the accounting; nothing escapes. **Attribution:** it is assigned to whoever caused it and to nobody else — **never necessarily the product's ledger** — and where causation is unresolved it is held **explicitly unassigned** until an attribution witness exists. *(Eroded by OP-24 — see note.)* | Foundations §1 |

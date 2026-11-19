@@ -42,7 +42,7 @@ edges:
 |---|---|---|
 | **Production** | Matter or energy is turned into something | Milling wheat into flour |
 | **A service** | Something is done for a person, an organisation, or oneself | Setting a broken arm |
-| **Enrichment** | Knowledge, skill or culture reaches somebody | Teaching a child to read |
+| **Enrichment** | A person gains knowledge, skill or culture, or passes it on | Teaching a child to read. Learning to read |
 
 **An hour that is all three is still one hour.** An apprentice plumber's hour turns copper into working plumbing (production), fixes a customer's pipes (a service), and teaches the apprentice a trade (enrichment). **It credits as 1 hour, not 3.** Splitting it would need a convention nobody can measure ([physical-trace-test](physical-trace-test.md)), and there is no reason to want one.
 

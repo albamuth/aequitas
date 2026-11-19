@@ -1,7 +1,7 @@
 <!-- tag: cnf-aequitas-conformance -->
 # Aequitas — Conformance Requirements
 
-> **Version:** 0.25 · **Date:** 2026-11-18
+> **Version:** 0.28 · **Date:** 2026-11-19
 > **Audience: implementers.** Anyone building a trust network.
 > **Companion:** [`Aequitas_Foundations.md`](Aequitas_Foundations.md) — the system itself, and the argument behind every row below. **Where the two differ, Foundations governs.**
 > **Two row numbers are retired and are never reused: the bare `17`, and `14c`.**
@@ -88,6 +88,8 @@ Worked: *"records are never deleted"* is something you can read off an implement
 | 2e | **Pollution is recorded with the thing that causes it, on whoever uses that thing up.** Pollution from what a maker uses up, such as fuel, power and chemicals, stays with the maker and never rides the goods. **Pollution that a thing's own material gives off in becoming that thing rides the thing**, up to the amount that the material's make-up fixes. **A release above that amount is the maker's.** The part that rides the thing is recorded once, and only a release that was measured is recorded. Where the make-up fixes no amount, the amount is a cost constant under rows 16a to 16c. | A4, A5, §3.2b, §3.3a |
 | 2f | **A debit lands on a person only by their own act, or by their recorded acceptance.** A gift that is not recorded as a hand-off leaves the debit with the giver. Work done on a thing a person holds adds to their debit only if they accepted the work. A purchase made for other people needs evidence that they authorised it beforehand. **What counts as consent, and who may give it, is the network's published rule.** A rule that reads consent from a status, such as residence, is published as that. | A5, §2.4, §2.4a, §3.2, §3.2c |
 | 2g | **A person carries the hours of a service only when the service is not on the network's essential list and they asked for it.** Work that continues a person's life adds no debit to that person. **Where one service has many receivers, they carry what the event itself used up, in equal parts, one for each ticket.** The parts add up to that cost and never to more. Buying a ticket adds nothing until the work is done. | §4.5, §2.4a, §3.4a |
+| 2h | **A debit records only what a person took from the world or from other people.** A person's own hours are in their debit only where they are in the record of a thing: 2 hours on a repair of their own roof add 2 hours to the roof's record. **The hours that a network credits as self-care add no debit.** What the person ate and used up in those hours is debit as always. | A1, A5, §2.2, §3.2, §4.5 |
+| 2i | **Self-care is credited as one published figure, and an act that the figure covers is credited once.** A claim for cooking for oneself as separate work, in a network whose floor list covers preparing food, credits 0 hours more. **Hours of rest or pleasure for oneself credit nothing and add no debit.** A network may publish one figure for a whole kind of essential care, such as the care of a child, with its evidence rule and any limit on what one carer may claim. | §2.3, §4.2, §5.5.1 |
 | 3 | **An hour is an hour, whoever worked it.** No profession, rank, skill or hazard multiplies it. Real differences between workers show up as **material costs** instead — the extra food a labourer eats, the harm a dangerous process is later found to have caused. | A2 |
 | 3a | **Every activity a network credits is at least one of three things: production, a service, or enrichment.** An activity that is none of the three is not work, whatever the network has declared. **Which of the three it is, is never written down and never changes the number.** An hour that is more than one of them credits once. | §2.3, §4.5 |
 
@@ -349,6 +351,7 @@ Worked: *"records are never deleted"* is something you can read off an implement
 | 16c | **The network can show how it audits its cost constants.** *How* it does so is its own design (§2.6). **Having no answer is not conforming.** | §3.3a, §2.6 |
 | 16d | **For every kind of work it credits, the network publishes what evidence that work requires, before crediting any of it.** **It credits no kind of work for which it has published no rule.** *Which* kinds it covers is its own choice (§2.6, A8). **Having no published rule for something it credits is not conforming.** | §4.2, §4.5, §4.7 |
 | 16e | **A service that is not essential counts as credit only when a receiver who asked for it confirms it.** One confirming receiver is enough. **Care that a network counts as essential is on a published list, with an evidence rule for each entry.** Essential care that the receiver cannot confirm needs a second witness, made on a different path. | §4.2, §4.6, §4.3 |
+| 16f | **A baseline is credited only on proof of life.** Any contact with the network is proof. The network credits the baseline at a contact, for every day since the last one, at the number of hours it has published. **It never credits a measured length of sleep, and it never credits a day for which it has no proof.** | §2.3, §4.2, §5.5.1 |
 
 #### Row 16b, worked — why size alone is the wrong trigger
 

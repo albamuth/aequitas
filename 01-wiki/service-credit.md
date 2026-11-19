@@ -59,7 +59,7 @@ A network publishes its rule for translation work: **the translated text exists,
 
 ## Who carries the hours of a service
 
-**Terms used here.** A **service** is work done on something the receiver holds: a thing of theirs, or their own body. An **essential service** is one on the network's published list of work that continues a person's life. A receiver **asked for** a service when they consented to it.
+**Terms used here.** A **service** is work done for a receiver: on a thing that they hold, or on their person. An **essential service** is one on the network's published list of work that continues a person's life. A receiver **asked for** a service when they consented to it.
 
 > **A person carries a service's hours only when the service is not essential and they asked for it** (Foundations §4.5).
 
@@ -80,6 +80,12 @@ A network publishes its rule for translation work: **the translated text exists,
 *(Illustrative digits.)*
 
 **The receiver carries the hours of the service and the materials it used up.** They do not carry the worker's training, or the tools and buildings that were still there afterwards.
+
+**Self-care adds no debit.** A debit counts only what a person takes from the world or from other people (Foundations §2.2). At `F` = 10 a person is credited 10 hours a day for staying alive, and those hours add 0 hours of debit. The food they eat is debit as always. A person's own hours are debit only when they are in a thing: 2 hours on a repair of their own roof add 2 hours to the roof's record.
+
+**The baseline is one figure for all of self-care.** Sleep, eating, washing and cooking for oneself are inside it, and a network keeps no log of them (Foundations §2.3). A person who cooks for 1.5 hours at `F` = 10 is credited 10 hours of self-care that day, and not 11.5. A network may credit the care of a child in the same way, as one figure (Foundations §4.2).
+
+**Rest and pleasure for oneself are not work.** They are not needed to keep the person alive, so a network credits no hours for them. The same line holds for another person's hands: a paramedic who keeps a person alive adds no debit to that person, and a surgeon who does cosmetic surgery that a customer chose adds the hours to the customer's debit (Foundations §4.5).
 
 **One service, many receivers.** The receivers share what the event itself used up, in equal parts, one for each ticket. A concert that used up 120 hours puts 120 ÷ 1,000 = **0.12 hours** on each of 1,000 tickets. Buying a ticket adds 0 hours. The debit lands when the work is done. A person who hears the concert with no ticket carries nothing.
 

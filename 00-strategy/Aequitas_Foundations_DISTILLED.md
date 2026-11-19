@@ -9,8 +9,8 @@
 >
 > **Regenerate with:** `python bin/distill.py`
 
-> **Source:** [`Aequitas_Foundations.md`](Aequitas_Foundations.md) · **version 0.73**
-> **Size:** 180,927 bytes, from 329,569 — **55% of the source**
+> **Source:** [`Aequitas_Foundations.md`](Aequitas_Foundations.md) · **version 0.77**
+> **Size:** 189,780 bytes, from 344,503 — **55% of the source**
 
 **What was kept:** every heading, every rule, every table, and the stated result of every worked
 example. **What was dropped:** the explanation prose between them.
@@ -161,6 +161,22 @@ example. **What was dropped:** the explanation prose between them.
 | The tractor, the mill building and the delivery van | On their holders. They were still there after the loaf was made, so the loaf did not use them up | §4.5 |
 | The pollution from what each step used up, such as its fuel | On whoever used it up, permanently | §3.2b, line 1 |
 | The training of the farmer, the mill workers and the baker | Where the training happened, at the time | §4.5 |
+#### What a debit counts
+> **A debit counts only what a person takes from the world or from other people.**
+| What a person takes | An example | Where |
+|---|---|---|
+| **Matter and energy** | 0.8 kg of flour, water and salt. 40 litres of petrol | A1 |
+| **Another person's hours, which the person asked for** | A barber's 0.5 h | §4.5 |
+| **A thing, with the record of all the work that made it** | A loaf that has 0.3 h in its record | A5, above |
+##### An example, with the numbers
+| What the person did | Credit | Debit | Why |
+|---|--:|--:|---|
+| Ate food that reads 0.4 h | — | **0.4 h** | Taken from the world, and from the people who made it |
+| Had a haircut that they asked for, 0.5 h | — | **0.5 h** | Another person's hours |
+| Repaired their own roof, 2 h | 2 h | **2 h** | The hours are in the roof's record |
+| Cooked their own dinner, 1 h | inside the 10 h below | **0 h** | The baseline covers it (§2.3) |
+| Read a novel for pleasure, 2 h | 0 h | **0 h** | Rest and pleasure are not work (§2.3) |
+| Stayed alive | 10 h | **0 h** | Their own time, in no thing |
 #### Two things a debit is not
 > **A debit is never final.** Better measurement re-weighs it, and re-weighs every record made under the old figure, automatically (A6, §3.3). **A cost is a dated reading, not a verdict.**
 > **And A4 does not require a cost to land on the made thing.**
@@ -205,11 +221,13 @@ example. **What was dropped:** the explanation prose between them.
 |---|---|---|
 | **Production** | Matter or energy is turned into something | Milling wheat into flour |
 | **A service** | Something is done for a person, an organisation, or oneself, often with nothing to hand over | Setting a broken arm |
-| **Enrichment** | Knowledge, skill or culture reaches somebody | Teaching a child to read |
+| **Enrichment** | A person gains knowledge, skill or culture, or passes it on | Teaching a child to read. Learning to read |
 | It does not mean | Because |
 |---|---|
 | **A test of how much anybody valued the work** | Verification asks whether the work happened and whether a receiver accepted it. It never asks how much anyone valued it (§4.2). What people want is recorded by pledges and signals (§4.6) |
-| **That the worker is left out** | The human being may be the worker. The service row says *oneself*. Whether a network recognises the work of staying alive is still that network's choice (below) |
+| **That the worker is left out** | A1 names the worker: *or for themself*. Whether a network counts the work of staying alive, and for how many hours, is still that network's choice (below) |
+| **That rest and pleasure for oneself are work** | A1 says they are not. They are not needed to keep the person alive, and they benefit nobody else (below) |
+| **That work can be for an animal or a thing** | Work on an animal or a thing is done for the person it belongs to. A pet groomer works for the dog's owner, and not for the dog |
 > **The three categories decide whether an hour is creditable. They never decide how much it credits.** No rule in this system may credit production at one rate and enrichment at another, or divide a single hour between them (§4.5).
 #### The gate is the boundary. What sits inside it is the network's choice
 > **The three categories are the outer wall, and they do not vary. The list of always-credited activities sits inside that wall, and it does.**
@@ -219,8 +237,49 @@ example. **What was dropped:** the explanation prose between them.
 | **Public membership composition** (§3.3a) | A network concentrated in the sector it audits is captured by construction, and **that is visible from the log** rather than something anyone must police |
 | **The published evidence rule** (§4.2) | A network credits no kind of work for which it has published no rule, and the rule is readable before anyone joins |
 #### Why enrichment is named separately
+| The person | What the person gains | What society gains |
+|---|---|---|
+| An apprentice who trains as a plumber | A trade | A plumber who gives services that people need |
+| A student of English literature | Knowledge of a subject | A scholar who contributes to society |
+| A child in the fifth year of school | Reading, writing and arithmetic | A person who is becoming able to contribute to society |
+##### An example, with the numbers
+**A network with `F` = 10 h/day credits a school day as 5 hours.** *(Illustrative digits.)* A child in the fifth year of school is credited 10 + 5 = **15 hours** for that day. The 5 hours are the child's own time, and they are in no thing, so they add 0 hours of debit (§2.2).
+**Rest and pleasure are different.** What a person does only for their own rest or pleasure benefits nobody else, and A1 says it is not work (below).
 #### Keeping yourself alive is work a network may recognise
 > **A network publishes what it recognises as work. Time spent on recognised work is credited, at one hour for one hour** (§4.2).
+##### Why it is work: six steps from the axioms
+| # | The step | From |
+|--:|---|---|
+| 1 | A credit records time that a person spent working. The measure is time. It is not effort, and it is not output | A1, A2 |
+| 2 | Work is something a human being does for a human being. The test does not ask who pays, or whether anybody does | A1 |
+| 3 | To keep a human being alive is work. A person has to be fed, washed and rested, every day. When a nurse or a parent does it, a network credits the hours | A1, §4.5 |
+| 4 | The human being a person works for can be themself | A1: *or for themself* |
+| 5 | So the hours a person spends keeping themself alive are hours of work. Every living person works them, on every day | Steps 1 to 4 |
+| 6 | A network that counts this work credits those hours, at a published number for each activity | A7, §5.5.1 |
+###### An example
+**What is credited is the time, and never the act.** A credit does not measure value, so it cannot be based on effort. Effort differs from one person to the next, and no instrument reads it. **Time is the one measure that every person lives through in the same way.** So a network does not reward sleep. It credits the time that staying alive takes.
+**These hours add no debit.** A debit counts only what a person takes from the world or from other people (§2.2). The food a person eats is debit. The hour they spend eating it is their own time.
+**The number of hours is an estimate that the network publishes.** A network does not check how long anybody slept. It decides how many hours a day self-care takes, publishes that number, and credits it to every living member (§2.5, §5.5.1). A7 already has a network estimate what it cannot measure, by a published method. **One purpose of the number is to keep the spread between people small** (§5.5.5).
+**The evidence is proof of life.** A verified living human has demonstrably maintained itself. **It is the strongest evidence in this system and costs almost nothing to check** (§4.2). **Any contact with the network is proof: a shift log, a purchase, a pledge.** So the baseline is credited at a contact, for every day since the last one, and never at a set time of day.
+###### An example, with the numbers
+**A network with `F` = 10 h/day.** A member makes no contact with it for 7 days. At the next contact the network credits 7 × 10 = **70 hours**.
+**The test "could you pay somebody else to do it?" does not apply here.** Some accounts of unpaid work count an activity as work only if a person could pay another to do it. By that test cooking is work, and eating and sleeping are not. In these books a record of work is unique to the person who did it (A3), so nobody can pay another person to do their work, whatever the work is. And self-care that is credited is not unpaid.
+##### The baseline is one figure for all of self-care
+> **The baseline is one figure for everything a person does to keep themself alive. A network does not record how a person spent those hours.**
+###### An example, with the numbers
+**A network with `F` = 10 h/day, of which 1 hour is for eating and preparing food** (§5.5.1). On one day a person spends 1.5 hours on cooking and eating. On the next day they spend 0.5 hours.
+| | Credit for self-care |
+|---|--:|
+| The day with 1.5 hours of cooking and eating | **10 h** |
+| The day with 0.5 hours | **10 h** |
+| A claim of 1.5 hours of cooking for oneself as separate work | **0 h** more |
+##### Rest and pleasure for oneself are not work
+> **What a person does only for their own rest or pleasure is not work (A1). A network credits none of those hours.**
+| The hours | Credit | Debit for those hours |
+|---|---|---|
+| **Needed to stay alive:** sleep, eating, washing, cooking for oneself | The baseline, as one figure | None (§2.2) |
+| **Work on a thing that the person holds:** a repair of their own roof | The hours worked | The same hours, in the thing's record (§3.2) |
+| **Rest and pleasure:** a novel, a game | None | None |
 ##### What passing the gate does not license
 | The screen | What it does |
 |---|---|
@@ -235,7 +294,6 @@ example. **What was dropped:** the explanation prose between them.
 | Someone who sleeps 8, eats 1, washes 1, and works 8 | 10 + 8 = **18** |
 | Someone who claims all 24 hours as self-continuance | **24**, capped by IC-7 — and credited only for the activities the network published a rule for |
 **In plain words: naming *oneself* in the service row moved neither figure.** The day was already 24 hours long, and the floor was already a published list.
-> *(§2.3 used to argue this instead of stating it — *"maintaining a body is work when it is done for somebody else, therefore the same work when the body is your own"* — and **@amber, c40261, 2026-09-04, showed the inference was not licensed.** They were right, and the argument was never needed. **The word *body* in the service row meant an organisation, not a torso**, which is what made the confusion possible.)*
 **This is where the basic-needs floor comes from, and it is not a grant.** Credit for no time worked would be exactly the abstract, issued quantity A1 forbids, so a floor could never have been written as an allowance. **Every living human spends time on these activities, and the network counts that time at a published duration for each one.** The duration is a declared convention (§2.5), not a tally of one person's day: in a network that counts 8 hours of sleep, a person who sleeps 6 is credited 8. How many hours a network counts, and the evidence behind that number, is §5.5.1. What the floor then does to an economy is §5.5.
 ### 2.4 Transactions and sales
 > **A transaction is a hand-off. One person gives another a physical thing, and the debit riding with that thing goes too. That is the whole of a sale, and it is the only kind of sale there is.**
@@ -770,7 +828,7 @@ example. **What was dropped:** the explanation prose between them.
 | **Goods** (matter or energy) | **The hand-off.** The receiver accepts possession, and the debit that rides with it, which attests that the goods exist (§4.5). |
 | **A service** (often with no physical output) | **A receiver who asked for it confirms** that it happened. The confirmation is also the consent that puts the hours on that receiver (§4.5). One confirming receiver is enough. |
 | **Enrichment** (intangible work, such as teaching, writing or performing) | **Where it is given to other people, a receiver who asked for it confirms**, as for a service. A violinist who plays alone has given no concert. For other enrichment, evidence that the work happened, under the network's published rule. |
-| **Self-care** (the work of keeping yourself alive) | **Proof of life.** A verified living human demonstrably maintained itself. This is statistical, and it costs almost nothing to check. |
+| **Self-care** (the work of keeping yourself alive) | **Proof of life.** A verified living human demonstrably maintained itself. This is statistical, and it costs almost nothing to check. **Any contact with the network is proof.** The baseline is credited at a contact, for every day since the last one: 7 days with no contact at `F` = 10 is 70 hours at the next contact (§2.3). |
 | **Essential care** (work that continues another person's life) | **The network's published rule for that kind of care.** The receiver does not have to confirm it. Where the receiver cannot confirm, a second witness does (below). |
 #### Essential care is a published list
 > **A network that counts some care as essential publishes the list, and an evidence rule for each entry on it.** The floor is published the same way: named activities, each with its own rule (§5.5.1).
@@ -784,6 +842,18 @@ example. **What was dropped:** the explanation prose between them.
 | Honest, floor only | 3,650 h | — | — |
 | The pair, with the 14 hours on the essential list | 8,760 h | 0 h | 0.330 × 5,110 = **+1,686 h** |
 | The pair, with the 14 hours counted as any other service | 8,760 h | 5,110 h | 1,686 − 5,110 = **−3,424 h** |
+##### An entry may be one figure for a whole kind of care
+###### An example, with the numbers
+**A network with `F` = 10 h/day publishes 6 hours a day for the care of a child under 5.** A parent has one child aged 3, and works 4 hours on that day. *(Illustrative digits.)*
+| | Hours |
+|---|--:|
+| The parent's baseline | 10 |
+| Care of the child, as one figure | 6 |
+| Other work | 4 |
+| **The parent's credit for the day** | **20** |
+| Added to the child's debit by the care | **0** (§4.5) |
+**The evidence is that the child exists and is in the parent's care**, from a second witness (above). It is not a log of meals and baths.
+> **⚠️ A figure with no record of the acts has one check only, which is its evidence rule.** Two carers who each claim the whole figure for one child is the case that a network's limit has to cover. At ρ = 0.330, 6 credited hours a day with no debit beside them add 0.330 × 6 × 365 = **723 hours** a year to what a carer may carry.
 > **⚠️ The list is a lever.** A network that calls every service essential takes all service hours off its subscribers. This is the same lever as a generous floor: another network re-computes the claim through its own rules, so the credit cannot be exported (below). **That check depends on OP-22 (minimum audit disclosure), which is open.**
 #### A network never converts another network's figures into its own
 > **This is comparison, never conversion. Nothing is exchanged between models, and each party re-reads the same physical log through its own weighting.**
@@ -1004,12 +1074,22 @@ example. **What was dropped:** the explanation prose between them.
 |---|---|---|
 | **An essential service** | 0 h on the receiver | 0 h on the receiver |
 | **Any other service** | **The worker's hours are debit on the receiver** | 0 h on the receiver |
+| Whose hands do the work | Why it adds no debit |
+|---|---|
+| **The person's own.** This is self-care, which the floor credits | A debit counts only what a person takes from the world or from other people (§2.2). A person's own hours on their own life take nothing from either, and they are in no thing. Self-care at `F` = 10 credits 10 hours a day and adds 0 hours of debit (§2.3) |
+| **Another person's.** This is essential care: a parent who feeds an infant, a surgeon who operates on an accident victim | The network's published list says so, and the list is a choice that the network declares (§2.5, §4.2). Where the receiver could not consent, §2.4a gives the same answer with no list |
+| | Needed to keep the person alive | Not needed |
+|---|---|---|
+| **The person's own hands** | Credited in the baseline. No debit | Rest and pleasure: no credit and no debit (§2.3). Work on a thing that they hold: credit, and the same hours of debit (§3.2) |
+| **Another person's hands** | The worker is credited. No debit on the receiver | The worker is credited. The hours are debit on the receiver who asked |
 ##### An example, with the numbers
 | The service | The worker is credited | Added to the receiver's debit |
 |---|--:|--:|
 | A barber cuts the hair of a customer who asked, 0.5 h | 0.5 h | **0.5 h** |
 | A plumber repairs pipes that the holder asked them to fix, 2 h | 2 h | **2 h**, shared with later holders by holding time |
 | A surgeon operates on an unconscious accident victim, 3 h | 3 h | **0 h** |
+| A paramedic keeps a crash victim alive, 1 h. This is essential care | 1 h | **0 h** |
+| A surgeon does cosmetic surgery that the customer chose, 2 h | 2 h | **2 h** |
 | A doctor treats a patient who asked, 1 h, in a network whose list counts that care as essential | 1 h | **0 h** |
 | The same hour, in a network whose list does not | 1 h | **1 h** |
 | A stranger paints a fence unasked, 6 h | 0 h (§3.2) | **0 h** |
@@ -1077,6 +1157,12 @@ example. **What was dropped:** the explanation prose between them.
 | **A person** — anyone, **including the pledger** | **At once** |
 | **A fund, a cause, an initiative, an organisation** | **Only when it is distributed to named people.** Until then it sits in nobody's gate |
 | **Criteria that will name a person** — *"whoever mitigates harm from this task"*, *"whoever a panel judges to have solved this"* | **When the criteria name somebody.** If they never do, it lapses |
+###### A pledge to a budget, with the numbers
+| One member, with `C` = 80,000 h | `D` | `C + P` | `D ÷ (C + P)` |
+|---|--:|--:|--:|
+| Before the new season | 39,500 h | 80,000 h | 0.494 |
+| With the equipment, and no pledges | 40,500 h | 80,000 h | **0.506**, over ρ |
+| With the equipment, and 2,000 h pledged to her | 40,500 h | 82,000 h | **0.494** |
 > **The one condition: criteria are published before the pledge is made.** §4.2 already requires a network to publish its evidence rules before anyone joins, and A8 already requires it to publish what it runs. **A pledger choosing a fund is choosing a published rule**, and a fund that changes its criteria after collecting pledges is visible on a public pledge ledger (§4.7).
 ##### A pledge is an act, and it requires consent
 > **A budget cannot be manufactured.** It equals credit the pledger earned, and IC-7 caps an account at 24 hours of activity in 24 hours. **To back somebody with a million hours you need real, verified humans who each lived a life.** So concentration of backing is bounded by the population and nothing else, which §5.5.5 states.
@@ -1265,7 +1351,8 @@ example. **What was dropped:** the explanation prose between them.
 | Step | The rule | Where |
 |---|---|---|
 | 1 | **Credit is a record that a person spent time on work.** Not effort, not output — time spent. | **A2** (time as measure), §2.3 |
-| 2 | **A network publishes what it recognises as work, and self-continuance is an activity it may recognise.** | §2.3, §4.2, **A8** |
+| 2 | **Work is something a human being does for a human being, who may be the worker.** Keeping a person alive is such work, whoever does it. | **A1**, §2.3 |
+| 2a | **A network publishes what it recognises as work, and self-continuance is an activity it may recognise.** | §2.3, §4.2, **A8** |
 | 3 | Therefore, in a network that recognises it, **a living human accrues credit for the hours spent maintaining themselves.** | §2.3 |
 | 4 | **Every human is in the books whether they participate or not**, and a verified living person demonstrably did that maintaining. | **A7**, §4.2 (proof of life) |
 > **A person who does nothing else is still doing that work, and the books record it because it happened.**
