@@ -10,7 +10,7 @@ edges:
 ---
 # Post-Scarcity (Saadia)
 
-> **Version:** 0.2
+> **Version:** 0.3
 > **Date:** 2026-11-19
 
 > Manu Saadia's *Trekonomics* (2016): post-scarcity is **"not so much a matter of material wealth or natural bounty, but an organizational option for society."**
@@ -35,6 +35,12 @@ The replicator functions as both device and metaphor for automation, and critica
 There is also a documented critique worth taking seriously: the book underweights **social identity and in-group favoritism**. Removing material scarcity does not remove status competition — and a system where recognition is the main reward may intensify it. That is a direct warning about OP-6's popularity-plutocracy risk.
 
 **Rule for citation:** use Saadia to make the goal vivid, never to argue that the mechanism works. Leaning on fiction for feasibility is a credibility hit with exactly the audiences Aequitas needs most.
+
+## How much scarcity is made
+
+**Saadia calls post-scarcity a choice about organisation. Six sources were read in 2026-11 to test how far that goes.** Writers on every side agree that some scarcity is made by rules: patents, licences, cartels, destroyed crops. None of them measures how much. Every source that looks at physical things says some shortage is real: energy, materials, land, a skilled person's time.
+
+**The project's own count sets the bar.** By the method of the United States, the world's working hours cover 0.63 of a typical US life for every person (Foundations §3.5). So the claim that people can already make more than they consume holds only if 37.5% of today's hours are waste that can be cut. For one person that is about 518 of 1,380 hours a year. The summary and the design of a run that measures it are in [`Problem_artificial-scarcity.md`](../02-research/Problem_artificial-scarcity.md).
 
 ## Sources
 

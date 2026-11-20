@@ -10,10 +10,10 @@
 > **Regenerate with:** `python bin/distill.py`
 
 > **Source:** [`Aequitas_Foundations.md`](Aequitas_Foundations.md) · **version 0.80**
-> **Size:** 197,651 bytes, from 354,535 — **56% of the source**
+> **Size:** 203,191 bytes, from 354,535 — **57% of the source**
 
-**What was kept:** every heading, every rule, every table, and the stated result of every worked
-example. **What was dropped:** the explanation prose between them.
+**What was kept:** section 1 (the axioms) word for word, every heading, every rule, every table, and
+the stated result of every worked example. **What was dropped:** the explanation prose between them.
 
 > **So this file is complete on rules and incomplete on reasoning.** If a rule here looks wrong or
 > arbitrary, **the argument for it is in the source at the same section number.** Read that before
@@ -84,17 +84,113 @@ example. **What was dropped:** the explanation prose between them.
 > **On the credit side, the substance is *time* — and time, not effort**. A credit records *time a human spent*, and the conceptual leap Aequitas asks of a reader is to see time itself as the finite thing being spent — like money is "spent" today, except that time is possessed by every person in exactly equal measure (24 hours a day) and can be neither hoarded, lent, nor transferred (A3 (non-fungibility)). Money accumulates without limit; time structurally cannot — you get 24 hours a day and no more, ever, and you cannot buy anyone else's. Effort, hazard, and skill are real differences between workers, but they resolve as *material* costs (A2 (time as measure)), never as a time-multiplier. **So the spread of credit between two people is bounded by arithmetic, and what credit buys is the say over what gets made** (§4.6, §5.5.5). *(That bound is conditional and is an absolute maximum rather than an expected spread; at `F` = 10 a very hard working life reaches about 1.6×, not 2.4×. See §5.5.5.)*
 > **Credit is not wealth, and this document bounds no one's wealth.** Wealth is an accrual of material gains and property, and in these books property is **debit** (§3.2, §4.5). How much property a person can hold is set by the gate `D ≤ ρ·(C + P)` (§3.0), and `P`, the backing other people have pledged to them, has no per-account limit (§5.5.5). **So a person with many pledges behind them can hold more than a person with none, by any amount the pledgers' budgets allow.** What makes that different from money is that backing is a one-time grant that cannot be lent, rented, charged for, or used to hire anybody (§5.5.5), and every hour of it was earned by a verified person who spent it once (§4.6).
 ## 1. Axioms
+
+These are the immutable core. Nothing in Aequitas may contradict them, and nothing that varies below them may amend them (A8).
+
 > **Each axiom below is a definition and nothing else.** What follows from it, why it holds, and what it rules out are in §2 onward, and each axiom says where to look. **An axiom that argues for itself is doing another section's job.**
+
+**Two grounds stand behind the axioms. They are not axioms, and they are not numbered.**
+
 > **Responsibility. A person answers for their own acts.**
 > **Consent. A debit lands on a person by their own act, or by their acceptance. It never lands by another person's act alone.**
+
+**They are stated here so that a reader can see where the rules come from.** Where a person has not consented, their autonomy comes first. *Where this is worked out: §2.2 for responsibility · §2.4a for consent.*
+
+<!-- tag: fnd-a1 -->
 ### A1 (materialism of cost)
+
+**Every debit is a record of a real material or energy flow. Every credit is a record of time a person spent working.**
+
+**Work is something a human being does for a human being: for another person, for many people, or for themself. It makes a product to be consumed, it gives a service to be received, or it is enrichment.**
+
+**Enrichment is knowledge, skill or culture that a person gains or passes on. It benefits society as a whole, also where it seems to benefit one person only.**
+
+**What a person does only for their own rest or pleasure is not work.**
+
+**No abstract, issued, or fiat quantity exists anywhere in the system.**
+
+**A flow is attributed to whoever caused it. Only people act, so responsibility attaches to people, and never to a tool, a machine, or whoever owns one.**
+
+*Where this is worked out: §2.2 for what a debit is and the grounding for attribution · §2.3 for what a credit is, and for the three kinds of work · §3.1 for why stocks, bonds and currencies never appear.*
+
+<!-- tag: fnd-a2 -->
 ### A2 (time as measure)
+
+**Time is a yardstick for summarising flows. It is not itself a substance with value.**
+
+**Labour is never rate-scaled. One hour credits as one hour, whoever worked it.**
+
+**Differences between workers — exertion, hazard, and skill — are recorded as material costs, never as a multiplier on time.**
+
+*Where this is worked out: §2.3, with each of the three differences shown · §3.4a for why the unit of account never has to be chosen.*
+
+<!-- tag: fnd-a3 -->
 ### A3 (non-fungibility)
+
+**Every credit and every debit is a unique record of one specific event.**
+
+**A credit can never be transferred, traded, gambled, lent, or stolen.**
+
+**Only debit moves, and it moves only by transferring the thing it is attached to.**
+
+*Where this is worked out: §2.3 for why this follows from A1 rather than being a design choice · §3.4a for what a unique record means when a ledger is walked, and for where a parcel's identity comes from · §5.6 for the three separate jobs it does.*
+
+<!-- tag: fnd-a4 -->
 ### A4 (no externalities)
+
+**Every consequence of an activity remains inside the accounting. There is no "outside".**
+
+**A consequence is assigned to whoever caused it and to nobody else, including a consequence discovered decades later.**
+
+**Where causation is not yet resolved, the consequence is recorded and held explicitly unassigned, until an attribution witness exists.**
+
+*Where this is worked out: §2.2 for the two things A4 asks and what it does not require · §3.3 for consequences found later · §4.4 for what a network cannot see, and for what an attribution witness is.*
+
+<!-- tag: fnd-a5 -->
 ### A5 (cost, not price)
+
+**Possession decides who carries the debit that rides a thing. Taking a thing is taking on that debit; handing it on moves whatever moves with it.**
+
+**A debit is taken on by a person's own act, or by their acceptance.**
+
+**A thing's cost is the current best estimate of what was materially consumed to make it. Nothing is added to that figure, and nothing enters it that the thing did not consume.**
+
+**There is no profit in exchange. There is only debit acquired and debit discharged.**
+
+*Where this is worked out: §2.2 for how A5 and A1 divide the work · §2.4 for what a hand-off does · §2.4a for what acceptance is · §3.2 for which parts of a debit move and which stay · §4.5 for why a barn is not in the beef · §5.1 for what competition is left.*
+
+<!-- tag: fnd-a6 -->
 ### A6 (derived, not stored)
+
+**An account's standing is never stored. It is computed from the event log whenever anyone asks, by applying the current weighting model to the events.**
+
+**The log is authoritative. A balance is not.**
+
+*Where this is worked out: §3.0 for what a standing is · §3.1 for the log · §3.3 for what happens when the science improves.*
+
+<!-- tag: fnd-a7 -->
 ### A7 (universal accounting)
+
+**Every human is in the books, whether or not they take part. Credit and debit are estimated for everyone.**
+
+**An estimated position becomes usable only when the person holds a verified account and observed records have replaced the estimates.**
+
+*Where this is worked out: §4.1 for what an estimate is and is not · §4.4 for how a network estimates what it cannot see, and for a life rebuilt back to birth.*
+
+<!-- tag: fnd-a8 -->
 ### A8 (no governing body)
+
+**No organisation may acquire authority over the core rules. Governance is a property of the rules themselves, not of any institution.**
+
+**The axioms above may not vary, and neither may the conformance requirements** — [`Aequitas_Conformance.md`](Aequitas_Conformance.md).
+
+**Everything below them may differ from one trust network to the next. A network must publish what it runs, so that anybody else can re-compute its claims.**
+
+*Where this is worked out: §2.6 for which settings vary · §2.3 for which activities a network may credit, and the boundary it may not cross · §4.0 for what a trust network is and how big one may be · §4.7 for what a network owes · [`Aequitas_Conformance.md`](Aequitas_Conformance.md) for the requirements this axiom makes invariant, every one of which is reachable from here and from nowhere else in §1.*
+
+---
+
+<!-- tag: fnd-s2 -->
 ## 2. What the axioms imply
 | | |
 |---|---|

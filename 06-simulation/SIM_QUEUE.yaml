@@ -1075,3 +1075,57 @@ sim_requests:
       limit 6 says substitution was not run. Rows consulted: german-lost-crop/RESULTS.md
       sections 3 and 4.'
     request_hash: d15a8031138db164dfc12dc1ae2df9e6dac029762be6ccbb7db21d9b7ee30737
+  sr-20261120-waste-by-sector-and-the-plausible-range-of-r:
+    date: '2026-11-20'
+    status: requested
+    question: 'Waste by sector and the plausible range of rho. Take the 1,380 h/yr
+      anchor by sector (median-lifestyle, tracks 1 and 3). For each sector apply
+      the low and the high share of hours that are waste, from 02-research/Data_sector-waste.md,
+      in four classes kept apart: A, product or service made that did no good; B,
+      work that exists only for money; C, spending that is a choice of standard;
+      D, people who want work and have none. Report hours per unit and capacity
+      as a share of wants for A, A+B and A+B+C at low and high; rho* at F = 2, 6,
+      10, 14 by the stable_band_kappa method, or no edge; the world ratio beside
+      0.63; energy beside 0.19. Report D only as a point inside the Q1B band of
+      hours, never added to it. Add the network''s own work back at the Foundations
+      4.7 figure and mark it illustrative. Obey the five rules against counting
+      twice in Data_sector-waste.md. A sector with no sourced share runs at 0 and
+      is listed. If 02-research/Data_sector-waste.md is not in the checkout, report
+      Blocked. Declared thresholds: 15% of hours closes the US envelope (13.80 x
+      0.85 = 11.73 h a unit); 25 to 29% closes the world gap at the peer methods;
+      37.5% at the US method. My call: A+B is under 25%.'
+    why: 'Author ruling 2026-11-19: the wastefulness of each sector must be the
+      basis of a new sim for what values of rho are plausible. Every rho* in Foundations
+      5.5.3 is measured at a method that includes the waste. Fourteen research notes
+      of 2026-11-19 found no source that measures the size of made scarcity; a first
+      look at the collected rows gives A+B at about 6% of hours low and 17% high,
+      without food and clothing (02-research/Problem_artificial-scarcity.md, 02-research/Data_sector-waste.md).'
+    request_hash: dbfaa136615932bf1be56cb8d62675885d4377d14eaae2fd439e1804fa0e40a5
+  sr-20261120-addendum-to-sr-20261112-re-find-rho-in-stabl:
+    date: '2026-11-20'
+    status: requested
+    question: Addendum to sr-20261112-re-find-rho-in-stable-band-kappa-py-s-own-po
+      (same population, seed 7, sigma 0.80, capacity 56,446). In the sigma 0.80
+      sample, print the share whose yearly request exceeds rho x 8,760 at BOTH rho
+      = 0.330 (the sigma 0.45 edge) and the newly found rho*, at F = 2, 10, 14,
+      beside the q4 closed form at the same rho (17.74% at 0.330, F = 10). Report
+      the difference between the two sample rows.
+    why: 'tantive-space c153067 on #12739: the closed form is an expectation; a
+      sample at the new rho* can miss 17.74% on noise or population mismatch. The
+      sample at the old rho* separates a failed rho* prediction from a sample that
+      never matched the closed form. Scores eigenfriend''s cell C (c152652) cleanly.'
+    request_hash: 53579ae8a569d870df5729067642224de3c4be6470acbe53e5be2dde0b4e1196
+  sr-20261120-arm-1-of-stable-band-children-run-results-ch:
+    date: '2026-11-20'
+    status: requested
+    question: 'Arm 1 of stable_band children run (RESULTS_CHILDREN.md: no debit
+      booked for years under 18; 60,000 people, seed 7, age seeds 11-15) with capacity
+      set to 0.80, 0.85 and 0.90 of wants instead of 0.85 only. At F = 10 report
+      rho*_L, the binding period, and the margin rho*_L - 0.264 (broad basket dear
+      end, 965/3,650). Same at F = 2 and 14 against their basket ends. Declared:
+      the margin at F = 10 turns negative at capacity 0.80; the binding period does
+      not move.'
+    why: 'cinnabar c152491 on #10846: arm 1''s 0.267 clears the broad basket''s
+      dear end by 0.003, with capacity held at 0.85 (limit 5). Nobody knows whether
+      the band at F = 10 survives a small capacity change.'
+    request_hash: 9c0151558c89ef58fe9a1c068c07b7fc6dc7c45d26941389e91895b6d232b9cf

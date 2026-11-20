@@ -33,11 +33,13 @@ Tonight's request, chosen by the picker (the author's pin if there is one, else 
 
 ---
 
-# 3. Read Foundations whole, before you model anything
+# 3. Read the short copy of Foundations whole, before you model anything
 
-    00-strategy/Aequitas_Foundations.md
+    00-strategy/Aequitas_Foundations_DISTILLED.md
 
-Read it top to bottom. Its version is in its header; never hardcode one. It is large and that cost is accepted. A grep finds a mechanism when you already know its name; it does not find the premise your model is about to contradict.
+Read it top to bottom, in parts of 500 lines (`offset` 1, 501, 1001, and so on, until a read comes back short). Its version is in its header; never hardcode one. It holds section 1 (the axioms) word for word, and every heading, rule and table of the other sections. A grep finds a mechanism when you already know its name; it does not find the premise your model is about to contradict.
+
+Then read every section that your model has to obey, or that your report cites, in the full file, `00-strategy/Aequitas_Foundations.md`. The short copy leaves out the explanation text.
 
 ---
 

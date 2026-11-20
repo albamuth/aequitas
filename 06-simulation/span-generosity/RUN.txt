@@ -1,0 +1,73 @@
+{'detect': False, 'phi': 0.0, 'g': 0, 'share': np.float64(0.2), 'sd': np.float64(0.005), 'flag': np.float64(0.0)}
+{'detect': False, 'phi': 0.0, 'g': 1, 'share': np.float64(0.2), 'sd': np.float64(0.005), 'flag': np.float64(0.0)}
+{'detect': False, 'phi': 0.0, 'g': 2, 'share': np.float64(0.2), 'sd': np.float64(0.005), 'flag': np.float64(0.0)}
+{'detect': False, 'phi': 0.0, 'g': 3, 'share': np.float64(0.2), 'sd': np.float64(0.005), 'flag': np.float64(0.0)}
+{'detect': False, 'phi': 0.0, 'g': 5, 'share': np.float64(0.2), 'sd': np.float64(0.005), 'flag': np.float64(0.0)}
+{'detect': False, 'phi': 0.0, 'g': 8, 'share': np.float64(0.2), 'sd': np.float64(0.005), 'flag': np.float64(0.0)}
+{'detect': False, 'phi': 0.25, 'g': 0, 'share': np.float64(0.2), 'sd': np.float64(0.005), 'flag': np.float64(0.0)}
+{'detect': False, 'phi': 0.25, 'g': 1, 'share': np.float64(0.235), 'sd': np.float64(0.005), 'flag': np.float64(0.0)}
+{'detect': False, 'phi': 0.25, 'g': 2, 'share': np.float64(0.279), 'sd': np.float64(0.005), 'flag': np.float64(0.0)}
+{'detect': False, 'phi': 0.25, 'g': 3, 'share': np.float64(0.322), 'sd': np.float64(0.005), 'flag': np.float64(0.0)}
+{'detect': False, 'phi': 0.25, 'g': 5, 'share': np.float64(0.376), 'sd': np.float64(0.005), 'flag': np.float64(0.0)}
+{'detect': False, 'phi': 0.25, 'g': 8, 'share': np.float64(0.397), 'sd': np.float64(0.005), 'flag': np.float64(0.0)}
+{'detect': False, 'phi': 1.0, 'g': 0, 'share': np.float64(0.2), 'sd': np.float64(0.005), 'flag': np.float64(0.0)}
+{'detect': False, 'phi': 1.0, 'g': 1, 'share': np.float64(0.342), 'sd': np.float64(0.005), 'flag': np.float64(0.0)}
+{'detect': False, 'phi': 1.0, 'g': 2, 'share': np.float64(0.519), 'sd': np.float64(0.005), 'flag': np.float64(0.0)}
+{'detect': False, 'phi': 1.0, 'g': 3, 'share': np.float64(0.691), 'sd': np.float64(0.004), 'flag': np.float64(0.0)}
+{'detect': False, 'phi': 1.0, 'g': 5, 'share': np.float64(0.906), 'sd': np.float64(0.003), 'flag': np.float64(0.0)}
+{'detect': False, 'phi': 1.0, 'g': 8, 'share': np.float64(0.989), 'sd': np.float64(0.001), 'flag': np.float64(0.0)}
+{'detect': True, 'phi': 0.0, 'g': 0, 'share': np.float64(0.2), 'sd': np.float64(0.004), 'flag': np.float64(0.0)}
+{'detect': True, 'phi': 0.0, 'g': 1, 'share': np.float64(0.188), 'sd': np.float64(0.013), 'flag': np.float64(0.065)}
+{'detect': True, 'phi': 0.0, 'g': 2, 'share': np.float64(0.062), 'sd': np.float64(0.017), 'flag': np.float64(0.688)}
+{'detect': True, 'phi': 0.0, 'g': 3, 'share': np.float64(0.001), 'sd': np.float64(0.003), 'flag': np.float64(0.995)}
+{'detect': True, 'phi': 0.0, 'g': 5, 'share': np.float64(0.0), 'sd': np.float64(0.0), 'flag': np.float64(1.0)}
+{'detect': True, 'phi': 0.0, 'g': 8, 'share': np.float64(0.0), 'sd': np.float64(0.0), 'flag': np.float64(1.0)}
+{'detect': True, 'phi': 0.25, 'g': 0, 'share': np.float64(0.2), 'sd': np.float64(0.004), 'flag': np.float64(0.0)}
+{'detect': True, 'phi': 0.25, 'g': 1, 'share': np.float64(0.221), 'sd': np.float64(0.015), 'flag': np.float64(0.065)}
+{'detect': True, 'phi': 0.25, 'g': 2, 'share': np.float64(0.087), 'sd': np.float64(0.023), 'flag': np.float64(0.688)}
+{'detect': True, 'phi': 0.25, 'g': 3, 'share': np.float64(0.002), 'sd': np.float64(0.005), 'flag': np.float64(0.995)}
+{'detect': True, 'phi': 0.25, 'g': 5, 'share': np.float64(0.0), 'sd': np.float64(0.0), 'flag': np.float64(1.0)}
+{'detect': True, 'phi': 0.25, 'g': 8, 'share': np.float64(0.001), 'sd': np.float64(0.0), 'flag': np.float64(1.0)}
+{'detect': True, 'phi': 1.0, 'g': 0, 'share': np.float64(0.2), 'sd': np.float64(0.004), 'flag': np.float64(0.0)}
+{'detect': True, 'phi': 1.0, 'g': 1, 'share': np.float64(0.321), 'sd': np.float64(0.021), 'flag': np.float64(0.065)}
+{'detect': True, 'phi': 1.0, 'g': 2, 'share': np.float64(0.162), 'sd': np.float64(0.044), 'flag': np.float64(0.688)}
+{'detect': True, 'phi': 1.0, 'g': 3, 'share': np.float64(0.004), 'sd': np.float64(0.011), 'flag': np.float64(0.995)}
+{'detect': True, 'phi': 1.0, 'g': 5, 'share': np.float64(0.0), 'sd': np.float64(0.0), 'flag': np.float64(1.0)}
+{'detect': True, 'phi': 1.0, 'g': 8, 'share': np.float64(0.004), 'sd': np.float64(0.0), 'flag': np.float64(1.0)}
+{
+ "c_refuse_sweep_share_at_g5_phi1": {
+  "0": 0.9059650000000001,
+  "1": 0.7802299999999999,
+  "2": 0.567025,
+  "5": 0.061095,
+  "10": 0.00044,
+  "20": 0.0
+ },
+ "arith": {
+  "2": {
+   "rho": 1.017,
+   "budget_h_per_year": 730.0,
+   "gate_gain_h_per_year": -637.59
+  },
+  "10": {
+   "rho": 0.33,
+   "budget_h_per_year": 3650.0,
+   "gate_gain_h_per_year": -175.5
+  },
+  "14": {
+   "rho": 0.253,
+   "budget_h_per_year": 5110.0,
+   "gate_gain_h_per_year": -87.17000000000007
+  }
+ },
+ "f_control": {
+  "no_seller_discipline": 0.82262,
+  "sellers_refuse": 0.00019500000000000002
+ },
+ "min_detectable_g_by_n_obs": {
+  "4": null,
+  "25": 5,
+  "200": 2,
+  "2000": 1
+ }
+}

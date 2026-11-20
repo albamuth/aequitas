@@ -34,15 +34,17 @@
 
 ---
 
-## 2. Before anything else — read Foundations whole
+## 2. Before anything else — read the short copy of Foundations whole
 
 **Top to bottom.** Its version is in its header; never hardcode a number:
 
 ```bash
-00-strategy/Aequitas_Foundations.md
+00-strategy/Aequitas_Foundations_DISTILLED.md
 ```
 
-**It is over 256 KB, which is more than the Read tool returns in one call, and that cost is accepted.** Read it in chunks: `limit` 500, `offset` 1, then 501, 1001 and so on until a read comes back short. That is six calls and fits inside the 15 minutes in section 6. **Reading it whole is the one step you may not trim to save time. If the hour is short, shrink the run, not the read.** A simulation that contradicts an axiom is worse than no simulation, because it arrives carrying digits.
+**It is the generated short copy of Foundations:** section 1 (the axioms) word for word, and every heading, rule and table of the other sections. It is about 1,700 lines, which is more than the Read tool returns in one call. Read it in chunks: `limit` 500, `offset` 1, then 501, 1001 and so on until a read comes back short. That is four calls and fits inside the 15 minutes in section 6. **Reading it whole is the one step you may not trim to save time. If the hour is short, shrink the run, not the read.** A simulation that contradicts an axiom is worse than no simulation, because it arrives carrying digits.
+
+**The short copy leaves out the explanation text between the rules.** So read every section that your model has to obey, or that your report cites, in the full file, `00-strategy/Aequitas_Foundations.md`. Section numbers are the same in both files. *(Author ruling 2026-11-20, PLAN-2026-11-20 decision 1. The full file is 358 KB and did not fit in a run.)*
 
 > **Why a search cannot replace the read.** A grep finds a mechanism when you already know its name. **It does not find the premise your model is about to contradict.** This project has been caught by that five times.
 

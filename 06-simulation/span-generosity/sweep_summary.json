@@ -1,0 +1,37 @@
+{
+ "c_refuse_sweep_share_at_g5_phi1": {
+  "0": 0.9059650000000001,
+  "1": 0.7802299999999999,
+  "2": 0.567025,
+  "5": 0.061095,
+  "10": 0.00044,
+  "20": 0.0
+ },
+ "arith": {
+  "2": {
+   "rho": 1.017,
+   "budget_h_per_year": 730.0,
+   "gate_gain_h_per_year": -637.59
+  },
+  "10": {
+   "rho": 0.33,
+   "budget_h_per_year": 3650.0,
+   "gate_gain_h_per_year": -175.5
+  },
+  "14": {
+   "rho": 0.253,
+   "budget_h_per_year": 5110.0,
+   "gate_gain_h_per_year": -87.17000000000007
+  }
+ },
+ "f_control": {
+  "no_seller_discipline": 0.82262,
+  "sellers_refuse": 0.00019500000000000002
+ },
+ "min_detectable_g_by_n_obs": {
+  "4": null,
+  "25": 5,
+  "200": 2,
+  "2000": 1
+ }
+}
